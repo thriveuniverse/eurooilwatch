@@ -1,0 +1,55 @@
+name: Update Data Pipeline
+
+on:
+  schedule:
+    # Run at 06:00 UTC daily (08:00 CEST)
+    - cron: '0 6 * * *'
+    # Also run at 16:00 UTC on Thursdays (after EC Oil Bulletin publishes)
+    - cron: '0 16 * * 4'
+  workflow_dispatch: # Allow manual triggers
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch oil stock data
+        run: npm run fetch:stocks
+        continue-on-error: true
+
+      - name: Fetch fuel prices
+        run: npm run fetch:prices
+        continue-on-error: true
+
+      - name: Fetch Brent crude price
+        run: npm run fetch:brent
+        continue-on-error: true
+
+      - name: Generate AI analysis
+        run: npm run analyze
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        continue-on-error: true
+
+      - name: Commit updated data
+        run: |
+          git config user.name "EuroOilWatch Bot"
+          git config user.email "bot@eurooilwatch.com"
+          git add data/
+          # Only commit if there are changes
+          git diff --staged --quiet || git commit -m "chore: update data $(date +%Y-%m-%d)"
+          git push
