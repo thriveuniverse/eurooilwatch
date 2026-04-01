@@ -1,5 +1,6 @@
 import { getDashboardData } from '@/lib/data';
-import { COUNTRIES } from '@/lib/countries';
+import { COUNTRIES, EU27_CODES } from '@/lib/countries';
+import JsonLd from '@/components/JsonLd';
 import type { ExtendedCountryCode } from '@/lib/types';
 import type { Metadata } from 'next';
 
@@ -7,13 +8,25 @@ interface PageProps {
   params: { code: string };
 }
 
+export function generateStaticParams() {
+  return EU27_CODES.map((code) => ({ code: code.toLowerCase() }));
+}
+
 export function generateMetadata({ params }: PageProps): Metadata {
   const code = params.code.toUpperCase() as ExtendedCountryCode;
   const country = COUNTRIES[code];
   const name = country?.name ?? params.code;
   return {
-    title: `${name} — Fuel Reserves & Prices | EuroOilWatch`,
-    description: `Fuel reserve levels and pump prices for ${name}. Track petrol, diesel, and jet fuel stock days and weekly prices.`,
+    title: `${name} Fuel Reserves & Prices`,
+    description: `${name} fuel reserve levels and pump prices. Track petrol, diesel, and jet fuel stock days against the EU 90-day mandatory minimum. Live data from Eurostat and the EC Oil Bulletin.`,
+    alternates: {
+      canonical: `https://eurooilwatch.com/country/${params.code.toLowerCase()}`,
+    },
+    openGraph: {
+      title: `${name} — Fuel Reserves & Prices | EuroOilWatch`,
+      description: `Track ${name}'s fuel reserve levels and pump prices. Compare against the EU 90-day mandatory minimum.`,
+      url: `https://eurooilwatch.com/country/${params.code.toLowerCase()}`,
+    },
   };
 }
 
@@ -24,7 +37,7 @@ export default function CountryPage({ params }: PageProps) {
   if (!country) {
     return (
       <div className="py-20 text-center">
-        <p className="text-2xl text-gray-400">Country not found</p>
+        <h1 className="text-2xl text-gray-400">Country not found</h1>
         <a href="/" className="mt-4 inline-block text-oil-400 underline">
           Back to dashboard
         </a>
@@ -38,14 +51,16 @@ export default function CountryPage({ params }: PageProps) {
 
   return (
     <div className="space-y-6">
+      <JsonLd type="country" countryName={country.name} countryCode={code} />
+
       {/* Header */}
       <div>
-        <a href="/" className="text-xs text-oil-400 hover:underline">
+        <a href="/" className="text-xs text-oil-400 hover:underline" aria-label="Back to dashboard">
           ← Back to dashboard
         </a>
         <h1 className="mt-2 text-2xl font-bold text-white flex items-center gap-3">
-          <span className="text-3xl">{country.flag}</span>
-          {country.name}
+          <span className="text-3xl" role="img" aria-label={`${country.name} flag`}>{country.flag}</span>
+          {country.name} — Fuel Reserves & Prices
         </h1>
         {!country.isEU && (
           <span className="mt-1 inline-block text-xs bg-oil-800 text-gray-400 px-2 py-0.5 rounded">
@@ -55,9 +70,9 @@ export default function CountryPage({ params }: PageProps) {
       </div>
 
       {/* Reserves */}
-      <section className="rounded-lg border border-oil-800 bg-oil-900/30 p-5">
+      <section aria-label={`${country.name} fuel reserves`} className="rounded-lg border border-oil-800 bg-oil-900/30 p-5">
         <h2 className="text-sm font-semibold text-white mb-4">
-          Fuel Reserves
+          Fuel Reserves — {country.name}
         </h2>
         {stockData && stockData.fuels.length > 0 ? (
           <div className="space-y-3">
@@ -66,19 +81,16 @@ export default function CountryPage({ params }: PageProps) {
                 <span className="w-20 text-xs text-gray-400 capitalize">
                   {fuel.fuelType.replace('_', ' ')}
                 </span>
-                <div className="flex-1 h-3 bg-oil-800 rounded-full overflow-hidden">
+                <div className="flex-1 h-3 bg-oil-800 rounded-full overflow-hidden" role="progressbar" aria-valuenow={fuel.daysOfSupply} aria-valuemin={0} aria-valuemax={150} aria-label={`${fuel.fuelType} reserves: ${fuel.daysOfSupply} days`}>
                   <div
                     className="h-full rounded-full"
                     style={{
                       width: `${Math.min((fuel.daysOfSupply / 150) * 100, 100)}%`,
                       backgroundColor:
-                        fuel.status === 'safe'
-                          ? '#22c55e'
-                          : fuel.status === 'watch'
-                          ? '#f59e0b'
-                          : fuel.status === 'warning'
-                          ? '#f97316'
-                          : '#ef4444',
+                        fuel.status === 'safe' ? '#22c55e'
+                        : fuel.status === 'watch' ? '#f59e0b'
+                        : fuel.status === 'warning' ? '#f97316'
+                        : '#ef4444',
                     }}
                   />
                 </div>
@@ -87,13 +99,10 @@ export default function CountryPage({ params }: PageProps) {
                 </span>
                 <span
                   className={`text-xs px-1.5 py-0.5 rounded ${
-                    fuel.status === 'safe'
-                      ? 'bg-green-900/50 text-green-300'
-                      : fuel.status === 'watch'
-                      ? 'bg-yellow-900/50 text-yellow-300'
-                      : fuel.status === 'warning'
-                      ? 'bg-orange-900/50 text-orange-300'
-                      : 'bg-red-900/50 text-red-300'
+                    fuel.status === 'safe' ? 'bg-green-900/50 text-green-300'
+                    : fuel.status === 'watch' ? 'bg-yellow-900/50 text-yellow-300'
+                    : fuel.status === 'warning' ? 'bg-orange-900/50 text-orange-300'
+                    : 'bg-red-900/50 text-red-300'
                   }`}
                 >
                   {fuel.status}
@@ -101,53 +110,53 @@ export default function CountryPage({ params }: PageProps) {
               </div>
             ))}
             <p className="text-xs text-gray-500 mt-2">
-              Data period: {stockData.datePeriod} · Mandatory minimum: 90 days
+              Data period: {stockData.datePeriod} · EU mandatory minimum: 90 days of net imports
             </p>
           </div>
         ) : (
           <p className="text-sm text-gray-500">
-            Reserve data not yet available. Run the data pipeline to fetch from
-            Eurostat.
+            Reserve data not yet available for {country.name}. Run the data pipeline to fetch from Eurostat.
           </p>
         )}
       </section>
 
       {/* Prices */}
-      <section className="rounded-lg border border-oil-800 bg-oil-900/30 p-5">
-        <h2 className="text-sm font-semibold text-white mb-4">Fuel Prices</h2>
+      <section aria-label={`${country.name} fuel prices`} className="rounded-lg border border-oil-800 bg-oil-900/30 p-5">
+        <h2 className="text-sm font-semibold text-white mb-4">
+          Fuel Prices — {country.name}
+        </h2>
         {priceData ? (
           <div className="grid grid-cols-2 gap-4">
             <div className="rounded bg-oil-900/50 p-4">
               <p className="text-xs text-gray-500">Petrol (Euro-super 95)</p>
               <p className="text-2xl font-bold font-mono text-white mt-1">
-                {priceData.petrolPrice
-                  ? `€${priceData.petrolPrice.toFixed(3)}`
-                  : '—'}
+                {priceData.petrolPrice ? `€${priceData.petrolPrice.toFixed(3)}` : '—'}
               </p>
-              <p className="text-xs text-gray-500">per litre</p>
+              <p className="text-xs text-gray-500">per litre (incl. all taxes)</p>
             </div>
             <div className="rounded bg-oil-900/50 p-4">
               <p className="text-xs text-gray-500">Diesel</p>
               <p className="text-2xl font-bold font-mono text-white mt-1">
-                {priceData.dieselPrice
-                  ? `€${priceData.dieselPrice.toFixed(3)}`
-                  : '—'}
+                {priceData.dieselPrice ? `€${priceData.dieselPrice.toFixed(3)}` : '—'}
               </p>
-              <p className="text-xs text-gray-500">per litre</p>
+              <p className="text-xs text-gray-500">per litre (incl. all taxes)</p>
             </div>
           </div>
         ) : (
-          <p className="text-sm text-gray-500">Price data not yet available.</p>
+          <p className="text-sm text-gray-500">Price data not yet available for {country.name}.</p>
         )}
+        <p className="text-xs text-gray-500 mt-3">
+          Source: <a href="https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">EC Weekly Oil Bulletin</a>
+        </p>
       </section>
 
       {/* Placeholder for charts */}
-      <section className="rounded-lg border border-dashed border-oil-700 bg-oil-900/20 p-8 text-center">
+      <section className="rounded-lg border border-dashed border-oil-700 bg-oil-900/20 p-8 text-center" aria-label="Coming soon">
         <p className="text-gray-500">
-          📈 Historical charts will be added in Phase 2
+          📈 Historical charts coming soon
         </p>
         <p className="text-xs text-gray-600 mt-1">
-          Time series for stock levels and price trends
+          Time series for stock levels and price trends for {country.name}
         </p>
       </section>
     </div>

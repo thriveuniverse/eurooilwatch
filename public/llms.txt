@@ -1,0 +1,53 @@
+# EuroOilWatch
+
+> Live EU fuel reserve tracking, price monitoring, and AI-powered energy security analysis across 27 European countries.
+
+EuroOilWatch is an independent transparency dashboard that tracks fuel reserves, pump prices, and crude oil market data across the European Union's 27 member states. It presents official EU data in a clear, accessible format for policymakers, journalists, researchers, and the public.
+
+## Key Data
+
+- Oil stock levels for 27 EU countries (petrol, diesel, jet fuel) — source: Eurostat nrg_stk_oilm
+- Days of supply calculation vs 90-day EU mandatory minimum (Directive 2009/119/EC)
+- Weekly consumer fuel prices from the EC Weekly Oil Bulletin (DG Energy)
+- Brent crude oil benchmark price
+- AI-generated energy security analysis updated daily
+
+## Current Situation (March 2026)
+
+- EU average petrol reserves: ~105 days (above 90-day minimum)
+- EU average diesel reserves: ~93 days (barely above minimum)
+- 11 EU countries below the 90-day mandatory minimum for diesel
+- Germany diesel reserves: 64 days (critical)
+- Italy diesel reserves: 64 days (critical)
+- EU average petrol price: €1.783/litre
+- EU average diesel price: €1.965/litre
+- Brent crude: ~$107/barrel
+- Prices up ~26% since January 2026 due to Strait of Hormuz disruption
+
+## Pages
+
+- [Dashboard](https://eurooilwatch.com): Main dashboard with reserve gauges, prices, AI analysis, and country overview
+- [Prices](https://eurooilwatch.com/prices): EU fuel price comparison across 27 countries
+- [Methodology](https://eurooilwatch.com/methodology): Data sources, calculation methods, and limitations
+- [About](https://eurooilwatch.com/about): About the project and contact information
+- Country pages: /country/{code} for each EU member state (e.g., /country/de for Germany, /country/fr for France)
+
+## Data Sources
+
+- Eurostat: Monthly oil stock levels (nrg_stk_oilm) and supply data (nrg_cb_oilm)
+- European Commission DG Energy: Weekly Oil Bulletin consumer prices
+- Yahoo Finance: Brent crude oil futures (BZ=F)
+- Anthropic Claude: AI-generated analysis
+
+## API
+
+Data is available as JSON at:
+- /data/stocks.json — Oil stock levels by country
+- /data/prices.json — Fuel prices by country
+- /data/brent.json — Brent crude price
+- /data/analysis.json — AI-generated analysis
+
+## Contact
+
+- Email: admin@eurooilwatch.com
+- Website: https://eurooilwatch.com

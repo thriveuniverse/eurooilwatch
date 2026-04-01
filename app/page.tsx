@@ -4,6 +4,16 @@ import ReserveGauge from '@/components/ReserveGauge';
 import PriceTicker from '@/components/PriceTicker';
 import CountryGrid from '@/components/CountryGrid';
 import AnalysisPanel from '@/components/AnalysisPanel';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'EuroOilWatch — European Fuel Reserve Monitor | Live EU Dashboard',
+  description:
+    'Live EU fuel reserve tracking across 27 countries. Monitor petrol, diesel, and jet fuel stock levels against the 90-day EU mandatory minimum. Weekly prices from the EC Oil Bulletin. AI-powered analysis.',
+  alternates: {
+    canonical: 'https://eurooilwatch.com',
+  },
+};
 
 /** Revalidate every 30 minutes in production */
 export const revalidate = 1800;
@@ -11,23 +21,25 @@ export const revalidate = 1800;
 export default function DashboardPage() {
   const { stocks, prices, brent, analysis } = getDashboardData();
 
-  const petrolStatus =
-    stocks.euAverage.petrolDays > 0
-      ? stocks.euAverage.overallStatus
-      : 'watch';
-
   return (
     <div className="space-y-6">
+      {/* Accessible h1 — visually hidden but present for SEO */}
+      <h1 className="sr-only">
+        EuroOilWatch — European Fuel Reserve Monitor: Live Dashboard
+      </h1>
+
       {/* ── Hero: Status Banner ── */}
-      <StatusBanner
-        status={analysis.overallStatus}
-        statusLine={analysis.statusLine}
-        dataPeriod={stocks.dataPeriod}
-        lastUpdated={stocks.lastUpdated}
-      />
+      <section aria-label="EU fuel security status">
+        <StatusBanner
+          status={analysis.overallStatus}
+          statusLine={analysis.statusLine}
+          dataPeriod={stocks.dataPeriod}
+          lastUpdated={stocks.lastUpdated}
+        />
+      </section>
 
       {/* ── Reserve Gauges ── */}
-      <section>
+      <section aria-label="EU average fuel reserves">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-4">
           EU Average Fuel Reserves (Days of Supply)
         </h2>
@@ -81,7 +93,7 @@ export default function DashboardPage() {
       </section>
 
       {/* ── Price Ticker ── */}
-      <section>
+      <section aria-label="Market prices">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-4">
           Market Prices
         </h2>
@@ -89,15 +101,17 @@ export default function DashboardPage() {
       </section>
 
       {/* ── AI Analysis ── */}
-      <AnalysisPanel analysis={analysis} />
+      <section aria-label="AI-powered fuel security analysis">
+        <AnalysisPanel analysis={analysis} />
+      </section>
 
       {/* ── Country Grid ── */}
-      <section>
+      <section aria-label="EU27 country fuel reserve overview">
         <CountryGrid stocks={stocks.countries} prices={prices.countries} />
       </section>
 
       {/* ── Data Sources ── */}
-      <section className="rounded-lg border border-oil-800 bg-oil-900/20 px-5 py-4">
+      <section aria-label="Data sources and attribution" className="rounded-lg border border-oil-800 bg-oil-900/20 px-5 py-4">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-3">
           Data Sources
         </h2>
@@ -105,13 +119,15 @@ export default function DashboardPage() {
           <div>
             <p className="font-medium text-gray-400">Oil Stocks</p>
             <p>
-              Eurostat (nrg_stk_oilm) — monthly, ~2-month lag
+              <a href="https://ec.europa.eu/eurostat/databrowser/view/NRG_STK_OILM" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">Eurostat (nrg_stk_oilm)</a> — monthly, ~2-month lag
             </p>
             <p>Period: {stocks.dataPeriod || 'pending'}</p>
           </div>
           <div>
             <p className="font-medium text-gray-400">Fuel Prices</p>
-            <p>EC Weekly Oil Bulletin — updated every Thursday</p>
+            <p>
+              <a href="https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">EC Weekly Oil Bulletin</a> — updated every Thursday
+            </p>
             <p>Date: {prices.bulletinDate || 'pending'}</p>
           </div>
           <div>
