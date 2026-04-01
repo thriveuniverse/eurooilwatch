@@ -68,7 +68,7 @@ export const FUEL_SIEC_CODES = {
   /** Gas/diesel oil (diesel) */
   diesel: 'O4671',
   /** Kerosene-type jet fuel */
-  jet_fuel: 'O4661XO4661P',
+  jet_fuel: 'O4661',
 } as const;
 
 /** Labels for display */
