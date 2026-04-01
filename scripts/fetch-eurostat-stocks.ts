@@ -1,10 +1,10 @@
 #!/usr/bin/env npx tsx
 /**
- * EuroOilWatch — Eurostat Oil Stocks Fetcher (v3 — hybrid)
- * =========================================================
- * Monthly data (nrg_stk_oilm) for countries that have reported.
- * Annual data (nrg_stk_oil) as fallback for the rest.
- * All 27 EU countries should appear.
+ * EuroOilWatch — Eurostat Oil Stocks Fetcher (v4 — per-country latest)
+ * =====================================================================
+ * Key fix: finds the latest available month PER COUNTRY, not one global month.
+ * France may have Dec 2025 even if Jan 2026 isn't submitted yet.
+ * This eliminates most 2024 annual fallbacks.
  *
  * Usage: npx tsx scripts/fetch-eurostat-stocks.ts
  * Output: data/stocks.json
@@ -13,20 +13,10 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import type {
-  EurostatResponse,
-  FuelType,
-  FuelStock,
-  CountryStockData,
-  StockDataset,
-  ReserveStatus,
-  ExtendedCountryCode,
-  CountryCode,
+  EurostatResponse, FuelType, FuelStock, CountryStockData,
+  StockDataset, ReserveStatus, ExtendedCountryCode, CountryCode,
 } from '../lib/types';
-import {
-  COUNTRIES,
-  EU27_CODES,
-  FUEL_SIEC_CODES,
-} from '../lib/countries';
+import { COUNTRIES, EU27_CODES, FUEL_SIEC_CODES } from '../lib/countries';
 
 const BASE_URL = 'https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data';
 const OUTPUT_FILE = path.join(__dirname, '..', 'data', 'stocks.json');
@@ -39,28 +29,20 @@ async function fetchEurostat(dataset: string, params: Record<string, string | st
   url.searchParams.set('format', 'JSON');
   url.searchParams.set('lang', 'en');
   for (const [key, value] of Object.entries(params)) {
-    if (Array.isArray(value)) {
-      value.forEach(v => url.searchParams.append(key, v));
-    } else {
-      url.searchParams.set(key, value);
-    }
+    if (Array.isArray(value)) value.forEach(v => url.searchParams.append(key, v));
+    else url.searchParams.set(key, value);
   }
-
   console.log(`  Fetching: ${dataset} ...`);
   for (let attempt = 1; attempt <= 3; attempt++) {
     try {
-      const res = await fetch(url.toString(), {
-        headers: { 'User-Agent': 'EuroOilWatch/0.1' },
-      });
-      if (!res.ok) throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+      const res = await fetch(url.toString(), { headers: { 'User-Agent': 'EuroOilWatch/0.1' } });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json() as EurostatResponse;
-      const valCount = Object.keys(data.value || {}).length;
-      console.log(`  ✅ ${valCount} values, updated: ${data.updated}`);
+      console.log(`  ✅ ${Object.keys(data.value || {}).length} values, updated: ${data.updated}`);
       return data;
     } catch (err: any) {
       console.log(`  ⚠️ Attempt ${attempt}: ${err.message}`);
-      if (attempt < 3) await sleep(5000);
-      else throw err;
+      if (attempt < 3) await sleep(5000); else throw err;
     }
   }
   throw new Error('unreachable');
@@ -70,14 +52,12 @@ function parseValues(data: EurostatResponse): Map<string, number> {
   const result = new Map<string, number>();
   const dims = data.id;
   const sizes = data.size;
-
   const dimCodes: string[][] = dims.map(dimName => {
     const idx = data.dimension[dimName]?.category?.index || {};
     const arr: string[] = [];
     for (const [code, pos] of Object.entries(idx)) arr[pos as number] = code;
     return arr;
   });
-
   for (const [flatIdx, value] of Object.entries(data.value)) {
     let remaining = parseInt(flatIdx);
     const coords: string[] = new Array(dims.length);
@@ -106,128 +86,102 @@ function getStatus(days: number): ReserveStatus {
   return 'critical';
 }
 
-function getPreviousMonths(period: string, count: number): string[] {
-  const result: string[] = [];
-  const [y, m] = period.split('-').map(Number);
-  for (let i = 1; i <= count; i++) {
-    let month = m - i;
-    let year = y;
-    while (month <= 0) { month += 12; year--; }
-    result.push(`${year}-${String(month).padStart(2, '0')}`);
+/**
+ * Find the latest month that has data for a given country + fuel.
+ * Scans backwards from the most recent period.
+ */
+function findLatestValue(
+  values: Map<string, number>,
+  geo: string,
+  siec: string,
+  periods: string[]
+): { value: number; period: string } | null {
+  for (let i = periods.length - 1; i >= 0; i--) {
+    const val = values.get(`${geo}|${siec}|${periods[i]}`);
+    if (val !== undefined && val > 0) {
+      return { value: val, period: periods[i] };
+    }
   }
-  return result;
+  return null;
 }
 
 async function main() {
-  console.log('🛢️  EuroOilWatch — Fetching Oil Stock Data (v3 hybrid)');
-  console.log('=======================================================\n');
+  console.log('🛢️  EuroOilWatch — Fetching Oil Stock Data (v4 per-country)');
+  console.log('=============================================================\n');
 
   const geoCodes = EU27_CODES.map(c => COUNTRIES[c].eurostatCode);
   const fuelEntries = Object.entries(FUEL_SIEC_CODES) as [FuelType, string][];
   const siecCodes = fuelEntries.map(([, code]) => code);
 
-  // ═══════════════════════════════════════════════════════
-  // STEP 1: Fetch monthly stocks (last 12 months)
-  // ═══════════════════════════════════════════════════════
-  console.log('📦 Step 1: Monthly stocks (nrg_stk_oilm)...');
-
+  // ── Step 1: Monthly stocks (last 18 months for wider coverage) ──
+  console.log('📦 Step 1: Monthly stocks (nrg_stk_oilm, last 18 months)...');
   let monthlyStocks = new Map<string, number>();
-  let monthlyConsumption = new Map<string, number>();
-  let monthlyPeriod = '';
-
+  let monthlyPeriods: string[] = [];
   try {
-    const monthlyData = await fetchEurostat('nrg_stk_oilm', {
-      siec: siecCodes,
-      geo: geoCodes,
-      stk_flow: 'STK_CL',
-      unit: 'THS_T',
-      lastTimePeriod: '12',
+    const data = await fetchEurostat('nrg_stk_oilm', {
+      siec: siecCodes, geo: geoCodes, stk_flow: 'STK_CL', unit: 'THS_T', lastTimePeriod: '18',
     });
-    monthlyStocks = parseValues(monthlyData);
-    const periods = getTimePeriods(monthlyData);
-
-    // Find latest period with meaningful data
-    for (let i = periods.length - 1; i >= 0; i--) {
-      let count = 0;
-      for (const geo of geoCodes) {
-        if (monthlyStocks.has(`${geo}|O4652|${periods[i]}`)) count++;
-      }
-      if (count >= 3) { monthlyPeriod = periods[i]; break; }
-    }
-    if (!monthlyPeriod && periods.length > 0) monthlyPeriod = periods[periods.length - 1];
-    console.log(`  Monthly period: ${monthlyPeriod} (${monthlyStocks.size} values)`);
+    monthlyStocks = parseValues(data);
+    monthlyPeriods = getTimePeriods(data);
+    console.log(`  Periods available: ${monthlyPeriods.join(', ')}`);
   } catch (err: any) {
     console.log(`  ⚠️ Monthly stocks failed: ${err.message}`);
   }
 
-  // Consumption for monthly
+  // Monthly consumption
+  let monthlyConsumption = new Map<string, number>();
+  let consumptionPeriods: string[] = [];
   try {
-    const consData = await fetchEurostat('nrg_cb_oilm', {
-      siec: siecCodes,
-      geo: geoCodes,
-      nrg_bal: 'GID_OBS',
-      unit: 'THS_T',
-      lastTimePeriod: '12',
+    const data = await fetchEurostat('nrg_cb_oilm', {
+      siec: siecCodes, geo: geoCodes, nrg_bal: 'GID_OBS', unit: 'THS_T', lastTimePeriod: '18',
     });
-    monthlyConsumption = parseValues(consData);
-    console.log(`  Monthly consumption: ${monthlyConsumption.size} values`);
+    monthlyConsumption = parseValues(data);
+    consumptionPeriods = getTimePeriods(data);
+    console.log(`  Consumption periods: ${consumptionPeriods.join(', ')}`);
   } catch (err: any) {
     console.log(`  ⚠️ Monthly consumption failed: ${err.message}`);
   }
 
-  // ═══════════════════════════════════════════════════════
-  // STEP 2: Fetch annual stocks (fallback)
-  // ═══════════════════════════════════════════════════════
+  // ── Step 2: Annual stocks (fallback for truly missing countries) ──
   console.log('\n📦 Step 2: Annual stocks fallback (nrg_stk_oil)...');
-
   let annualStocks = new Map<string, number>();
   let annualPeriod = '';
-
   try {
-    const annualData = await fetchEurostat('nrg_stk_oil', {
-      siec: siecCodes,
-      geo: geoCodes,
-      stk_flow: 'STKCL_NAT',
-      lastTimePeriod: '3',
+    const data = await fetchEurostat('nrg_stk_oil', {
+      siec: siecCodes, geo: geoCodes, stk_flow: 'STKCL_NAT', lastTimePeriod: '3',
     });
-    annualStocks = parseValues(annualData);
-    const periods = getTimePeriods(annualData);
+    annualStocks = parseValues(data);
+    const periods = getTimePeriods(data);
     annualPeriod = periods[periods.length - 1] || '';
     console.log(`  Annual period: ${annualPeriod} (${annualStocks.size} values)`);
   } catch (err: any) {
     console.log(`  ⚠️ Annual stocks failed: ${err.message}`);
   }
 
-  // Annual consumption
   let annualConsumption = new Map<string, number>();
   try {
-    const annConsData = await fetchEurostat('nrg_cb_oil', {
-      siec: siecCodes,
-      geo: geoCodes,
-      nrg_bal: 'GID_OBS',
-      lastTimePeriod: '3',
+    const data = await fetchEurostat('nrg_cb_oil', {
+      siec: siecCodes, geo: geoCodes, nrg_bal: 'GID_OBS', lastTimePeriod: '3',
     });
-    annualConsumption = parseValues(annConsData);
+    annualConsumption = parseValues(data);
     console.log(`  Annual consumption: ${annualConsumption.size} values`);
   } catch (err: any) {
     console.log(`  ⚠️ Annual consumption failed: ${err.message}`);
   }
 
-  // ═══════════════════════════════════════════════════════
-  // STEP 3: Build country data — monthly first, annual fallback
-  // ═══════════════════════════════════════════════════════
-  console.log('\n🔧 Step 3: Building country datasets (hybrid)...\n');
+  // ── Step 3: Build per-country data with latest available month ──
+  console.log('\n🔧 Step 3: Building country datasets (per-country latest)...\n');
 
   const countries: CountryStockData[] = [];
   let totals = { petrol: 0, diesel: 0, jet: 0 };
   let counts = { petrol: 0, diesel: 0, jet: 0 };
-  let monthlyCount = 0;
-  let annualCount = 0;
+  let sourceStats = { monthly: 0, annual: 0 };
 
   for (const countryCode of EU27_CODES) {
     const country = COUNTRIES[countryCode];
     const geo = country.eurostatCode;
     const fuels: FuelStock[] = [];
+    let latestPeriodUsed = '';
     let usedMonthly = false;
     let usedAnnual = false;
 
@@ -235,27 +189,31 @@ async function main() {
       let stockVal: number | undefined;
       let consumption = 0;
       let isMonthly = false;
+      let periodUsed = '';
 
-      // ── Try monthly first ──
-      if (monthlyPeriod) {
-        stockVal = monthlyStocks.get(`${geo}|${siecCode}|${monthlyPeriod}`);
-        if (stockVal !== undefined && stockVal > 0) {
+      // ── Try monthly: find latest available month for THIS country ──
+      if (monthlyPeriods.length > 0) {
+        const found = findLatestValue(monthlyStocks, geo, siecCode, monthlyPeriods);
+        if (found) {
+          stockVal = found.value;
+          periodUsed = found.period;
           isMonthly = true;
-          // Find consumption — try same period and previous months
-          const tryPeriods = [monthlyPeriod, ...getPreviousMonths(monthlyPeriod, 3)];
-          for (const p of tryPeriods) {
+
+          // Find consumption for same or nearby period
+          const consPeriods = [found.period, ...getPreviousMonths(found.period, 3)];
+          for (const p of consPeriods) {
             const c = monthlyConsumption.get(`${geo}|${siecCode}|${p}`);
             if (c && c > 0) { consumption = c; break; }
           }
         }
       }
 
-      // ── Fall back to annual if monthly missing ──
+      // ── Fall back to annual only if no monthly at all ──
       if ((!stockVal || stockVal === 0) && annualPeriod) {
         stockVal = annualStocks.get(`${geo}|${siecCode}|${annualPeriod}`);
-        if (stockVal !== undefined && stockVal > 0) {
+        if (stockVal && stockVal > 0) {
           isMonthly = false;
-          // Annual consumption
+          periodUsed = annualPeriod;
           const c = annualConsumption.get(`${geo}|${siecCode}|${annualPeriod}`);
           if (c && c > 0) consumption = c;
         }
@@ -263,15 +221,12 @@ async function main() {
 
       if (!stockVal || stockVal === 0) continue;
 
-      // ── Calculate days of supply ──
+      // Calculate days of supply
       let daysOfSupply: number;
       if (consumption > 0) {
-        if (isMonthly) {
-          daysOfSupply = (stockVal / consumption) * 30;
-        } else {
-          // Annual: stock is end-of-year snapshot, consumption is yearly total
-          daysOfSupply = (stockVal / consumption) * 365;
-        }
+        daysOfSupply = isMonthly
+          ? (stockVal / consumption) * 30
+          : (stockVal / consumption) * 365;
       } else {
         daysOfSupply = estimateDays(stockVal, fuelType, countryCode);
       }
@@ -279,17 +234,17 @@ async function main() {
       daysOfSupply = Math.max(0, Math.min(daysOfSupply, 365));
       daysOfSupply = Math.round(daysOfSupply * 10) / 10;
 
-      const status = getStatus(daysOfSupply);
       fuels.push({
         fuelType,
         stockKilotonnes: stockVal,
         consumptionKilotonnes: consumption,
         daysOfSupply,
         mandatoryMinimumDays: MANDATORY_MINIMUM_DAYS,
-        status,
+        status: getStatus(daysOfSupply),
       });
 
       if (isMonthly) usedMonthly = true; else usedAnnual = true;
+      if (!latestPeriodUsed || periodUsed > latestPeriodUsed) latestPeriodUsed = periodUsed;
 
       if (fuelType === 'petrol') { totals.petrol += daysOfSupply; counts.petrol++; }
       if (fuelType === 'diesel') { totals.diesel += daysOfSupply; counts.diesel++; }
@@ -303,33 +258,30 @@ async function main() {
         statusOrder.indexOf(f.status) < statusOrder.indexOf(worst) ? f.status : worst
       , 'safe');
 
-      const dataPeriod = usedMonthly ? monthlyPeriod : `${annualPeriod} (annual)`;
-      const source = usedMonthly && usedAnnual ? 'mixed' : usedMonthly ? 'monthly' : 'annual';
-      const tag = source === 'monthly' ? '' : source === 'annual' ? ' ⏳' : ' ⚡';
+      const dataPeriod = usedAnnual && !usedMonthly
+        ? `${latestPeriodUsed} (annual)`
+        : latestPeriodUsed;
 
       countries.push({
-        countryCode,
-        countryName: country.name,
-        datePeriod: dataPeriod,
-        fuels,
-        averageDays: Math.round(avgDays * 10) / 10,
-        overallStatus: worstStatus,
+        countryCode, countryName: country.name, datePeriod: dataPeriod,
+        fuels, averageDays: Math.round(avgDays * 10) / 10, overallStatus: worstStatus,
       });
 
-      if (usedMonthly) monthlyCount++; else annualCount++;
+      if (usedMonthly) sourceStats.monthly++; else sourceStats.annual++;
 
-      const icon = usedMonthly ? '📅' : '📆';
+      const icon = usedAnnual && !usedMonthly ? '📆' : '📅';
+      const tag = usedAnnual && !usedMonthly ? ' ⏳' : '';
       console.log(
-        `  ${country.flag} ${country.name}${tag} — ` +
-        fuels.map(f => `${f.fuelType}: ${f.daysOfSupply}d [${f.status}]`).join(', ') +
+        `  ${country.flag} ${country.name}${tag} [${dataPeriod}] — ` +
+        fuels.map(f => `${f.fuelType}: ${f.daysOfSupply}d`).join(', ') +
         ` ${icon}`
       );
     } else {
-      console.log(`  ${country.flag} ${country.name} — ❌ no data in either source`);
+      console.log(`  ${country.flag} ${country.name} — ❌ no data`);
     }
   }
 
-  // ── EU averages ──
+  // EU averages
   const euPetrol = counts.petrol > 0 ? totals.petrol / counts.petrol : 0;
   const euDiesel = counts.diesel > 0 ? totals.diesel / counts.diesel : 0;
   const euJet = counts.jet > 0 ? totals.jet / counts.jet : 0;
@@ -338,8 +290,8 @@ async function main() {
 
   const dataset: StockDataset = {
     lastUpdated: new Date().toISOString(),
-    dataPeriod: monthlyPeriod || annualPeriod,
-    dataSource: `Eurostat hybrid: ${monthlyCount} monthly (${monthlyPeriod}), ${annualCount} annual (${annualPeriod})`,
+    dataPeriod: monthlyPeriods[monthlyPeriods.length - 1] || annualPeriod,
+    dataSource: `Eurostat: ${sourceStats.monthly} monthly, ${sourceStats.annual} annual fallback`,
     countries: countries.sort((a, b) => a.averageDays - b.averageDays),
     euAverage: {
       petrolDays: Math.round(euPetrol * 10) / 10,
@@ -353,33 +305,31 @@ async function main() {
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(dataset, null, 2));
 
-  console.log('\n' + '═'.repeat(55));
-  console.log(`📊 Countries: ${countries.length}/27 (${monthlyCount} monthly + ${annualCount} annual)`);
-  console.log(`📅 Monthly period: ${monthlyPeriod}`);
-  console.log(`📆 Annual fallback: ${annualPeriod}`);
+  console.log('\n' + '═'.repeat(60));
+  console.log(`📊 Countries: ${countries.length}/27 (${sourceStats.monthly} monthly + ${sourceStats.annual} annual)`);
   console.log(`⛽ EU avg petrol: ${euPetrol.toFixed(1)}d`);
   console.log(`🛢  EU avg diesel: ${euDiesel.toFixed(1)}d`);
   console.log(`✈️  EU avg jet:    ${euJet.toFixed(1)}d`);
   console.log(`📂 Output: ${OUTPUT_FILE}`);
 }
 
+function getPreviousMonths(period: string, count: number): string[] {
+  const result: string[] = [];
+  const [y, m] = period.split('-').map(Number);
+  for (let i = 1; i <= count; i++) {
+    let month = m - i, year = y;
+    while (month <= 0) { month += 12; year--; }
+    result.push(`${year}-${String(month).padStart(2, '0')}`);
+  }
+  return result;
+}
+
 function estimateDays(stockKt: number, fuelType: FuelType, countryCode: string): number {
   const large = ['DE', 'FR', 'IT', 'ES', 'PL'];
   const medium = ['NL', 'BE', 'AT', 'SE', 'RO', 'CZ', 'GR', 'PT', 'HU', 'IE', 'DK', 'FI', 'BG'];
-  const sizeMultiplier = large.includes(countryCode) ? 1.0 : medium.includes(countryCode) ? 0.3 : 0.1;
-
-  const baseMonthly: Record<FuelType, number> = {
-    petrol: 800 * sizeMultiplier,
-    diesel: 1500 * sizeMultiplier,
-    jet_fuel: 400 * sizeMultiplier,
-  };
-
-  const cons = baseMonthly[fuelType];
-  if (cons <= 0) return 90;
-  return (stockKt / cons) * 30;
+  const mult = large.includes(countryCode) ? 1.0 : medium.includes(countryCode) ? 0.3 : 0.1;
+  const base: Record<FuelType, number> = { petrol: 800 * mult, diesel: 1500 * mult, jet_fuel: 400 * mult };
+  return base[fuelType] > 0 ? (stockKt / base[fuelType]) * 30 : 90;
 }
 
-main().catch(err => {
-  console.error('❌ Fatal:', err.message);
-  process.exit(1);
-});
+main().catch(err => { console.error('❌ Fatal:', err.message); process.exit(1); });
