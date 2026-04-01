@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import MobileNav from '@/components/MobileNav';
 
 export const metadata: Metadata = {
   title: 'EuroOilWatch — European Fuel Reserve Monitor',
@@ -55,6 +56,7 @@ export default function RootLayout({
                 Euro<span className="text-oil-400">Oil</span>Watch
               </span>
             </a>
+            {/* Desktop nav */}
             <nav className="hidden sm:flex items-center gap-6 text-sm text-gray-400">
               <a href="/" className="hover:text-white transition">
                 Dashboard
@@ -69,6 +71,8 @@ export default function RootLayout({
                 About
               </a>
             </nav>
+            {/* Mobile nav */}
+            <MobileNav />
           </div>
         </header>
 
