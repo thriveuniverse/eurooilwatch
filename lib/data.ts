@@ -20,50 +20,27 @@ function loadJSON<T>(filename: string): T | null {
   }
 }
 
-/** Fallback data so the dashboard renders even before the pipeline runs */
 const FALLBACK_STOCKS: StockDataset = {
-  lastUpdated: new Date().toISOString(),
-  dataPeriod: 'pending',
-  dataSource: 'Awaiting first data fetch',
-  countries: [],
-  euAverage: {
-    petrolDays: 0,
-    dieselDays: 0,
-    jetFuelDays: 0,
-    overallStatus: 'watch',
-  },
+  lastUpdated: new Date().toISOString(), dataPeriod: 'pending',
+  dataSource: 'Awaiting first data fetch', countries: [],
+  euAverage: { petrolDays: 0, dieselDays: 0, jetFuelDays: 0, overallStatus: 'watch' },
 };
-
 const FALLBACK_PRICES: PriceDataset = {
-  lastUpdated: new Date().toISOString(),
-  bulletinDate: 'pending',
-  dataSource: 'Awaiting first data fetch',
-  countries: [],
+  lastUpdated: new Date().toISOString(), bulletinDate: 'pending',
+  dataSource: 'Awaiting first data fetch', countries: [],
   euAverage: { petrolPrice: 0, dieselPrice: 0 },
 };
-
 const FALLBACK_BRENT: BrentData = {
-  lastUpdated: new Date().toISOString(),
-  priceUsd: 0,
-  priceEur: 0,
-  changeUsd: 0,
-  changePct: 0,
-  dataSource: 'Awaiting first data fetch',
+  lastUpdated: new Date().toISOString(), priceUsd: 0, priceEur: 0,
+  changeUsd: 0, changePct: 0, dataSource: 'Awaiting first data fetch',
 };
-
 const FALLBACK_ANALYSIS: AIAnalysis = {
   generatedAt: new Date().toISOString(),
   statusLine: 'Data pipeline initialising — run npm run update to fetch data',
   overallStatus: 'watch',
-  fullAnalysis:
-    'EuroOilWatch is starting up. Run the data pipeline to populate this dashboard with live EU fuel reserve and price data from Eurostat and the EC Weekly Oil Bulletin.',
-  keyPoints: [
-    'Run: npm run fetch:all to pull data',
-    'Run: npm run analyze to generate AI analysis',
-    'Or: npm run update to do both',
-  ],
-  dataPeriod: 'pending',
-  model: 'none',
+  fullAnalysis: 'Run npm run update to populate the dashboard.',
+  keyPoints: ['Run: npm run fetch:all', 'Run: npm run analyze'],
+  dataPeriod: 'pending', model: 'none',
 };
 
 export function getDashboardData(): DashboardData {
@@ -73,4 +50,42 @@ export function getDashboardData(): DashboardData {
     brent: loadJSON<BrentData>('brent.json') ?? FALLBACK_BRENT,
     analysis: loadJSON<AIAnalysis>('analysis.json') ?? FALLBACK_ANALYSIS,
   };
+}
+
+export interface HistoryPoint {
+  period: string;
+  petrolDays: number | null;
+  dieselDays: number | null;
+  jetDays: number | null;
+}
+
+export interface CountryHistory {
+  countryCode: string;
+  countryName: string;
+  data: HistoryPoint[];
+}
+
+export interface HistoryDataset {
+  lastUpdated: string;
+  periods: string[];
+  countries: CountryHistory[];
+  euAverage: HistoryPoint[];
+}
+
+export function getHistoryData(): HistoryDataset | null {
+  return loadJSON<HistoryDataset>('history.json');
+}
+
+export function getCountryHistory(countryCode: string): HistoryPoint[] | null {
+  const history = getHistoryData();
+  if (!history) return null;
+  const country = history.countries.find(
+    c => c.countryCode === countryCode.toUpperCase()
+  );
+  return country?.data ?? null;
+}
+
+export function getEUHistory(): HistoryPoint[] | null {
+  const history = getHistoryData();
+  return history?.euAverage ?? null;
 }
