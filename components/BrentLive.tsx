@@ -8,7 +8,7 @@ interface BrentLiveData {
   changeUsd: number;
   changePct: number;
   loading: boolean;
-  error: boolean;
+  live: boolean;
 }
 
 export default function BrentLive({
@@ -28,65 +28,31 @@ export default function BrentLive({
     changeUsd: fallbackChange,
     changePct: fallbackChangePct,
     loading: true,
-    error: false,
+    live: false,
   });
 
   useEffect(() => {
     async function fetchBrent() {
       try {
-        // Yahoo Finance chart API — no key needed
-        const res = await fetch(
-          'https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?interval=1d&range=5d',
-          { cache: 'no-store' }
-        );
-        if (!res.ok) throw new Error('Yahoo API error');
+        const res = await fetch('/api/brent', { cache: 'no-store' });
+        if (!res.ok) throw new Error('API error');
         const json = await res.json();
-        const result = json?.chart?.result?.[0];
-        if (!result) throw new Error('No data');
-
-        const closes = result.indicators?.quote?.[0]?.close?.filter(
-          (c: any) => c != null
-        ) || [];
-        if (closes.length < 2) throw new Error('Insufficient data');
-
-        const latest = closes[closes.length - 1];
-        const previous = closes[closes.length - 2];
-        const change = latest - previous;
-        const changePct = (change / previous) * 100;
-
-        // EUR/USD rate — fetch live
-        let eurRate = 0.92; // fallback
-        try {
-          const fxRes = await fetch(
-            'https://query1.finance.yahoo.com/v8/finance/chart/EURUSD=X?interval=1d&range=1d'
-          );
-          if (fxRes.ok) {
-            const fxJson = await fxRes.json();
-            const fxCloses = fxJson?.chart?.result?.[0]?.indicators?.quote?.[0]?.close?.filter(
-              (c: any) => c != null
-            ) || [];
-            if (fxCloses.length > 0) {
-              eurRate = 1 / fxCloses[fxCloses.length - 1];
-            }
-          }
-        } catch {}
+        if (json.error) throw new Error(json.error);
 
         setData({
-          priceUsd: Math.round(latest * 100) / 100,
-          priceEur: Math.round(latest * eurRate * 100) / 100,
-          changeUsd: Math.round(change * 100) / 100,
-          changePct: Math.round(changePct * 100) / 100,
+          priceUsd: json.priceUsd,
+          priceEur: json.priceEur,
+          changeUsd: json.changeUsd,
+          changePct: json.changePct,
           loading: false,
-          error: false,
+          live: true,
         });
       } catch {
-        // Keep fallback values but mark as loaded
-        setData(prev => ({ ...prev, loading: false, error: true }));
+        setData(prev => ({ ...prev, loading: false, live: false }));
       }
     }
 
     fetchBrent();
-    // Refresh every 5 minutes
     const interval = setInterval(fetchBrent, 5 * 60 * 1000);
     return () => clearInterval(interval);
   }, []);
@@ -95,17 +61,13 @@ export default function BrentLive({
 
   return (
     <>
-      {/* Brent USD */}
       <div className="rounded-lg border border-oil-800 bg-oil-900/50 px-4 py-3">
         <div className="flex items-center justify-between">
           <p className="text-xs text-gray-500 font-mono uppercase tracking-wider">
             Brent Crude
           </p>
-          {!data.loading && !data.error && (
+          {data.live && (
             <span className="text-[9px] text-green-500 font-mono">● LIVE</span>
-          )}
-          {data.error && (
-            <span className="text-[9px] text-gray-600 font-mono">cached</span>
           )}
         </div>
         <div className="mt-1 flex items-baseline gap-2">
@@ -122,7 +84,6 @@ export default function BrentLive({
         )}
       </div>
 
-      {/* Brent EUR */}
       <div className="rounded-lg border border-oil-800 bg-oil-900/50 px-4 py-3">
         <p className="text-xs text-gray-500 font-mono uppercase tracking-wider">
           Brent (EUR)
