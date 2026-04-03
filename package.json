@@ -6,14 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "fetch:stocks": "npx tsx scripts/fetch-eurostat-stocks.ts",
-    "fetch:prices": "npx tsx scripts/fetch-oil-bulletin.ts",
-    "fetch:history": "npx tsx scripts/fetch-history.ts",
+    "lint": "next lint",
+    "fetch:stocks": "npx tsx scripts/fetch-desnz-stocks.ts",
+    "fetch:prices": "npx tsx scripts/fetch-desnz-prices.ts",
     "fetch:brent": "npx tsx scripts/fetch-brent.ts",
-    "fetch:all": "npm run fetch:stocks && npm run fetch:prices && npm run fetch:brent && npm run fetch:history",
     "analyze": "npx tsx scripts/generate-analysis.ts",
-    "update": "npm run fetch:all && npm run analyze",
-    "test:api": "npx tsx scripts/test-eurostat-api.ts"
+    "fetch:all": "npm run fetch:stocks && npm run fetch:prices && npm run fetch:brent",
+    "update": "npm run fetch:all && npm run analyze"
   },
   "dependencies": {
     "clsx": "^2.1.1",
