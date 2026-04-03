@@ -5,13 +5,16 @@ import PriceTicker from '@/components/PriceTicker';
 import CountryGrid from '@/components/CountryGrid';
 import AnalysisPanel from '@/components/AnalysisPanel';
 import StockChart from '@/components/StockChart';
+import WhatWeTrack from '@/components/WhatWeTrack';
+import WhoUsesThis from '@/components/WhoUsesThis';
 import EmailCTA from '@/components/EmailCTA';
+import ProTeaser from '@/components/ProTeaser';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'EuroOilWatch — European Fuel Reserve Monitor | EU Dashboard',
+  title: 'EuroOilWatch — EU Fuel Reserve & Price Intelligence',
   description:
-    'Track EU fuel reserve levels across 27 countries. Monitor petrol, diesel, and jet fuel stock days against the 90-day EU benchmark. Weekly prices from the EC Oil Bulletin. AI-powered analysis.',
+    'Monitor fuel reserve levels and prices across 27 EU countries. Official Eurostat data, weekly price updates, AI analysis. Used by logistics operators, analysts, and journalists.',
   alternates: { canonical: 'https://eurooilwatch.com' },
 };
 
@@ -21,7 +24,6 @@ export default function DashboardPage() {
   const { stocks, prices, brent, analysis } = getDashboardData();
   const euHistory = getEUHistory();
 
-  // Count how many countries have at least one fuel below 90 days
   const countriesBelowThreshold = stocks.countries.filter(c =>
     c.fuels.some(f => f.daysOfSupply < 90)
   ).length;
@@ -29,8 +31,9 @@ export default function DashboardPage() {
 
   return (
     <div className="space-y-6">
-      <h1 className="sr-only">EuroOilWatch — European Fuel Reserve Monitor</h1>
+      <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
+      {/* 1. Status Banner */}
       <section aria-label="EU fuel security status">
         <StatusBanner
           status={analysis.overallStatus}
@@ -40,6 +43,10 @@ export default function DashboardPage() {
         />
       </section>
 
+      {/* 2. What this tracks */}
+      <WhatWeTrack />
+
+      {/* 3. Reserve Gauges */}
       <section aria-label="EU average fuel reserves">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-4">
           EU Average Fuel Reserves (Days of Supply)
@@ -57,35 +64,52 @@ export default function DashboardPage() {
         </p>
       </section>
 
-      {/* EU Trend Chart */}
+      {/* 4. EU Trend Chart */}
       {euHistory && euHistory.length > 0 && (
         <section aria-label="EU reserve trend">
           <StockChart data={euHistory} title="EU Average Reserves — 18-Month Trend" />
         </section>
       )}
 
+      {/* 5. Market Prices */}
       <section aria-label="Market prices">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-4">Market Prices</h2>
         <PriceTicker brent={brent} prices={prices} />
       </section>
 
+      {/* 6. AI Analysis */}
       <section aria-label="AI-powered fuel security analysis">
         <AnalysisPanel analysis={analysis} />
+        <p className="mt-2 text-xs text-gray-500">
+          This analysis is delivered to your inbox every Thursday.{' '}
+          <a href="#briefing" className="text-oil-400 underline hover:text-oil-300">
+            Subscribe to the weekly briefing →
+          </a>
+        </p>
       </section>
 
-      {/* Email CTA */}
-      <EmailCTA />
+      {/* 7. Email CTA (moved up — before country grid) */}
+      <div id="briefing">
+        <EmailCTA />
+      </div>
 
+      {/* 8. Who uses this */}
+      <WhoUsesThis />
+
+      {/* 9. Country Grid */}
       <section aria-label="EU27 country fuel reserve overview">
         <CountryGrid stocks={stocks.countries} prices={prices.countries} />
-        {/* Country count clarity */}
         {totalCountries > 0 && countriesBelowThreshold > 0 && (
           <p className="mt-3 text-xs text-gray-500">
-            {countriesBelowThreshold} of {totalCountries} reporting countries are below the 90-day benchmark for at least one fuel type. Data is the latest available from Eurostat; reporting dates vary by country (see individual cards). Stock data is published monthly with an approximate 2-month lag.
+            {countriesBelowThreshold} of {totalCountries} reporting countries are below the 90-day benchmark for at least one fuel type. Data is the latest available from Eurostat; reporting dates vary by country. Stock data is published monthly with an approximate 2-month lag.
           </p>
         )}
       </section>
 
+      {/* 10. Pro Teaser */}
+      <ProTeaser />
+
+      {/* 11. Data Sources */}
       <section aria-label="Data sources" className="rounded-lg border border-oil-800 bg-oil-900/20 px-5 py-4">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-3">Data Sources</h2>
         <div className="grid sm:grid-cols-3 gap-4 text-xs text-gray-500">

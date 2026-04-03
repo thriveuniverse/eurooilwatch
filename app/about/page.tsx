@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About | EuroOilWatch',
-  description: 'About EuroOilWatch — an independent European fuel reserve and price transparency dashboard built with public EU data.',
+  description: 'About EuroOilWatch — fuel security intelligence for Europe. Who built it, who uses it, and how the data works.',
 };
 
 export default function AboutPage() {
@@ -15,79 +15,105 @@ export default function AboutPage() {
 
       <div className="space-y-4 text-sm text-gray-300 leading-relaxed">
         <p>
-          EuroOilWatch is an independent transparency dashboard that presents
-          official EU fuel reserve and price data in a clear, accessible format
-          for policymakers, journalists, researchers, logistics professionals,
-          and the public.
+          EuroOilWatch provides European fuel security intelligence by
+          aggregating official EU data into a single, readable monitoring
+          dashboard.
+        </p>
+        <p>
+          The site tracks fuel reserve levels, weekly pump prices, and crude
+          oil benchmarks across all 27 EU member states — presenting data
+          that exists publicly but is otherwise scattered across government
+          databases in technical formats.
         </p>
 
-        <p>
-          The project was inspired by{' '}
-          <a href="https://nzoilwatch.com" className="text-oil-400 underline" target="_blank" rel="noopener noreferrer">
-            NZOilWatch
-          </a>
-          , which brought fuel security transparency to New Zealand and
-          Australia. Europe has abundant official data — Eurostat, the EC Weekly
-          Oil Bulletin, national regulators — but no single place that
-          presents it clearly. EuroOilWatch fills that gap.
-        </p>
+        <h2 className="text-lg font-semibold text-white pt-2">What the dashboard covers</h2>
+        <div className="rounded-lg border border-oil-800 bg-oil-900/30 p-4 space-y-2 text-gray-400">
+          <p>Oil stock levels by country and fuel type (petrol, diesel, jet fuel)</p>
+          <p>Days-of-supply calculations against EU regulatory benchmarks</p>
+          <p>Weekly consumer fuel prices from the EC Oil Bulletin</p>
+          <p>Brent crude oil benchmark pricing, updated in near real-time</p>
+          <p>AI-generated analysis summarising the current reserve picture</p>
+          <p>18-month historical trend charts</p>
+        </div>
 
-        <h2 className="text-lg font-semibold text-white pt-2">What This Dashboard Shows</h2>
+        <h2 className="text-lg font-semibold text-white pt-2">Data and methodology</h2>
         <p>
-          EuroOilWatch aggregates the latest available official data from
-          EU institutions — not real-time tank levels. Oil stock data comes
-          from Eurostat and is published monthly with an approximate 2-month
-          lag. Fuel prices come from the EC Weekly Oil Bulletin, updated every
-          Thursday. The dashboard refreshes daily to capture new submissions
-          as they become available.
+          All reserve data comes from Eurostat (dataset nrg_stk_oilm),
+          published monthly with an approximate 2-month lag. Fuel prices come
+          from the European Commission&apos;s Weekly Oil Bulletin, updated every
+          Thursday. The dashboard refreshes daily to capture new submissions.
         </p>
-
-        <h2 className="text-lg font-semibold text-white pt-2">Why This Matters</h2>
         <p>
-          Under the Oil Stocks Directive (2009/119/EC), EU countries must
-          maintain emergency oil stocks equivalent to at least 90 days of net
-          imports or 61 days of consumption, whichever is higher. During
-          supply disruptions — such as the 2022 energy crisis and the 2026
-          Middle East conflict — these reserves are a critical safety buffer.
-          Public visibility into reserve levels helps citizens, journalists,
-          and policymakers make informed decisions.
-        </p>
-
-        <h2 className="text-lg font-semibold text-white pt-2">How It Works</h2>
-        <p>
-          An automated pipeline fetches data daily from Eurostat and the EC
-          Oil Bulletin, normalises it into a common format, and presents it
-          on this dashboard. An AI model (Claude by Anthropic) generates
-          plain-English analysis of the latest data. See the{' '}
+          This is the latest available official data — not real-time tank
+          levels. Full details on sources, calculations, and limitations are
+          on the{' '}
           <a href="/methodology" className="text-oil-400 underline">
             Methodology
           </a>{' '}
-          page for full details on sources, calculations, and limitations.
+          page.
         </p>
 
-        <h2 className="text-lg font-semibold text-white pt-2">Who Built This</h2>
+        <h2 className="text-lg font-semibold text-white pt-2">Who this is for</h2>
         <p>
-          EuroOilWatch was built by Jon, an independent developer based in
-          Europe, as a public-interest transparency project. The site is not
-          affiliated with any government, energy company, or political
-          organisation.
+          EuroOilWatch is used by logistics and fleet operators monitoring
+          diesel availability, procurement teams tracking price movements,
+          energy analysts and researchers, and journalists covering European
+          fuel supply and security.
         </p>
 
-        <h2 className="text-lg font-semibold text-white pt-2">For Journalists & Analysts</h2>
+        <h2 className="text-lg font-semibold text-white pt-2">Background</h2>
         <p>
-          If you are covering European energy, fuel security, or the current
-          supply situation and would like to discuss the data, methodology,
-          or findings, please get in touch. I&apos;m happy to provide
-          additional context, data exports, or commentary.
+          The project was built in response to the 2026 Middle East supply
+          disruptions, which highlighted that while EU fuel reserve data
+          exists publicly, it was not being presented in a format accessible
+          to non-specialists. EuroOilWatch was inspired by{' '}
+          <a href="https://nzoilwatch.com" className="text-oil-400 underline" target="_blank" rel="noopener noreferrer">
+            NZOilWatch
+          </a>
+          , which brought similar transparency to New Zealand and Australia.
+        </p>
+        <p>
+          The site is independent and not affiliated with any government,
+          energy company, or political organisation.
+        </p>
+
+        <h2 className="text-lg font-semibold text-white pt-2">For journalists and analysts</h2>
+        <p>
+          If you are covering European energy and would like to discuss the
+          data, methodology, or specific country findings, I&apos;m available for
+          background briefings, data context, or on-record commentary.
+        </p>
+        <p>
+          Data exports and custom analysis can be provided on request.
+        </p>
+
+        <h2 className="text-lg font-semibold text-white pt-2">Sister site</h2>
+        <p>
+          For UK-specific fuel monitoring, see{' '}
+          <a href="https://ukoilwatch.com" className="text-oil-400 underline" target="_blank" rel="noopener noreferrer">
+            UKOilWatch.com
+          </a>{' '}
+          (coming soon).
         </p>
 
         <h2 className="text-lg font-semibold text-white pt-2">Contact</h2>
-        <p>
-          Questions, corrections, media enquiries, or partnership proposals:{' '}
-          <a href="mailto:jon@eurooilwatch.com" className="text-oil-400 underline">
-            jon@eurooilwatch.com
-          </a>
-        </p>
+        <div className="rounded-lg border border-oil-800 bg-oil-900/30 p-4 space-y-2 text-gray-400">
+          <p>
+            <span className="text-gray-300 font-medium">Jon Kelly</span> — Founder, EuroOilWatch
+          </p>
+          <p>
+            Media, data enquiries, and commentary:{' '}
+            <a href="mailto:jon@eurooilwatch.com" className="text-oil-400 underline">
+              jon@eurooilwatch.com
+            </a>
+          </p>
+          <p>
+            Partnerships, sponsorship, or data licensing:{' '}
+            <a href="mailto:admin@eurooilwatch.com" className="text-oil-400 underline">
+              admin@eurooilwatch.com
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );

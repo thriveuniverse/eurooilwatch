@@ -19,13 +19,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
   const name = country?.name ?? params.code;
   return {
     title: `${name} Fuel Reserves & Prices`,
-    description: `${name} fuel reserve levels and pump prices. Track petrol, diesel, and jet fuel stock days against the EU 90-day mandatory minimum. Live data from Eurostat and the EC Oil Bulletin.`,
+    description: `${name} fuel reserve levels and pump prices. Track petrol, diesel, and jet fuel stock days against the EU 90-day benchmark.`,
     alternates: { canonical: `https://eurooilwatch.com/country/${params.code.toLowerCase()}` },
-    openGraph: {
-      title: `${name} — Fuel Reserves & Prices | EuroOilWatch`,
-      description: `Track ${name}'s fuel reserve levels and pump prices.`,
-      url: `https://eurooilwatch.com/country/${params.code.toLowerCase()}`,
-    },
   };
 }
 
@@ -52,25 +47,22 @@ export default function CountryPage({ params }: PageProps) {
       <JsonLd type="country" countryName={country.name} countryCode={code} />
 
       <div>
-        <a href="/" className="text-xs text-oil-400 hover:underline" aria-label="Back to dashboard">← Back to dashboard</a>
+        <a href="/" className="text-xs text-oil-400 hover:underline">← Back to dashboard</a>
         <h1 className="mt-2 text-2xl font-bold text-white flex items-center gap-3">
           <span className="text-3xl" role="img" aria-label={`${country.name} flag`}>{country.flag}</span>
           {country.name} — Fuel Reserves & Prices
         </h1>
-        {!country.isEU && (
-          <span className="mt-1 inline-block text-xs bg-oil-800 text-gray-400 px-2 py-0.5 rounded">Non-EU</span>
-        )}
       </div>
 
-      {/* Reserves bars */}
-      <section aria-label={`${country.name} fuel reserves`} className="rounded-lg border border-oil-800 bg-oil-900/30 p-5">
+      {/* Reserves */}
+      <section className="rounded-lg border border-oil-800 bg-oil-900/30 p-5">
         <h2 className="text-sm font-semibold text-white mb-4">Current Reserves</h2>
         {stockData && stockData.fuels.length > 0 ? (
           <div className="space-y-3">
             {stockData.fuels.map(fuel => (
               <div key={fuel.fuelType} className="flex items-center gap-4">
                 <span className="w-20 text-xs text-gray-400 capitalize">{fuel.fuelType.replace('_', ' ')}</span>
-                <div className="flex-1 h-3 bg-oil-800 rounded-full overflow-hidden" role="progressbar" aria-valuenow={fuel.daysOfSupply} aria-valuemin={0} aria-valuemax={150} aria-label={`${fuel.fuelType}: ${fuel.daysOfSupply} days`}>
+                <div className="flex-1 h-3 bg-oil-800 rounded-full overflow-hidden" role="progressbar" aria-valuenow={fuel.daysOfSupply} aria-valuemin={0} aria-valuemax={150}>
                   <div className="h-full rounded-full" style={{
                     width: `${Math.min((fuel.daysOfSupply / 150) * 100, 100)}%`,
                     backgroundColor: fuel.status === 'safe' ? '#22c55e' : fuel.status === 'watch' ? '#f59e0b' : fuel.status === 'warning' ? '#f97316' : '#ef4444',
@@ -82,25 +74,20 @@ export default function CountryPage({ params }: PageProps) {
                 }`}>{fuel.status}</span>
               </div>
             ))}
-            <p className="text-xs text-gray-500 mt-2">Data: {stockData.datePeriod} · Minimum: 90 days</p>
+            <p className="text-xs text-gray-500 mt-2">Data: {stockData.datePeriod} · EU benchmark: 90 days</p>
           </div>
         ) : (
           <p className="text-sm text-gray-500">Reserve data not yet available.</p>
         )}
       </section>
 
-      {/* Historical chart */}
+      {/* History chart */}
       {history && history.length > 0 && (
-        <section aria-label={`${country.name} reserve history`}>
-          <StockChart
-            data={history}
-            title={`${country.name} — Reserve History (18 months)`}
-          />
-        </section>
+        <StockChart data={history} title={`${country.name} — Reserve History (18 months)`} />
       )}
 
       {/* Prices */}
-      <section aria-label={`${country.name} fuel prices`} className="rounded-lg border border-oil-800 bg-oil-900/30 p-5">
+      <section className="rounded-lg border border-oil-800 bg-oil-900/30 p-5">
         <h2 className="text-sm font-semibold text-white mb-4">Fuel Prices</h2>
         {priceData ? (
           <div className="grid grid-cols-2 gap-4">
@@ -124,7 +111,29 @@ export default function CountryPage({ params }: PageProps) {
         )}
         <p className="text-xs text-gray-500 mt-3">
           Source: <a href="https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">EC Weekly Oil Bulletin</a>
+          {' · '}
+          <a href="/prices" className="text-oil-400 underline hover:text-oil-300">Compare with other EU countries →</a>
         </p>
+      </section>
+
+      {/* Briefing CTA */}
+      <section className="rounded-lg border border-oil-700 bg-oil-900/30 px-5 py-4">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+          <div className="flex-1">
+            <p className="text-sm text-gray-300">
+              Track {country.name}&apos;s fuel situation weekly.
+            </p>
+            <p className="text-xs text-gray-500 mt-0.5">
+              Reserve and price updates across all 27 EU countries, every Thursday.
+            </p>
+          </div>
+          <a
+            href="/#briefing"
+            className="px-4 py-2 text-sm font-medium rounded-lg bg-oil-500 hover:bg-oil-400 text-white transition whitespace-nowrap text-center"
+          >
+            Subscribe — Free
+          </a>
+        </div>
       </section>
     </div>
   );
