@@ -121,10 +121,10 @@ export default function CountryPage({ params }: PageProps) {
         <div className="flex flex-col sm:flex-row sm:items-center gap-3">
           <div className="flex-1">
             <p className="text-sm text-gray-300">
-              Track {country.name}&apos;s fuel situation weekly.
+              Track {country.name}&apos;s fuel reserves and prices.
             </p>
             <p className="text-xs text-gray-500 mt-0.5">
-              Reserve and price updates across all 27 EU countries, every Thursday.
+              Subscribe for weekly updates across all 27 EU countries.
             </p>
           </div>
           <a
