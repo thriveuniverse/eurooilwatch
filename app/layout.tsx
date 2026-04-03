@@ -100,6 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </div>
                 <div className="flex gap-4">
                   <a href="#briefing" className="hover:text-gray-300">Weekly Briefing</a>
+                  <a href="https://ukoilwatch.com" className="hover:text-gray-300">UK Data →</a>
                   <a href="mailto:jon@eurooilwatch.com" className="hover:text-gray-300">Contact</a>
                 </div>
               </div>
