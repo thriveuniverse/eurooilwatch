@@ -129,8 +129,8 @@ export default function MethodologyPage() {
             The analysis is regenerated whenever the underlying data updates.
           </p>
           <p className="mt-2 text-gray-500 text-xs italic">
-            AI analysis may contain errors and should not be relied upon for
-            financial or safety decisions. Always verify with official sources.
+            Analysis is AI-assisted and provided for informational purposes only. 
+            For important decisions, users should verify the underlying figures against official primary sources.
           </p>
         </div>
 
@@ -153,8 +153,8 @@ export default function MethodologyPage() {
             countries.
           </p>
           <p>
-            <strong>Not affiliated with any government:</strong> EuroOilWatch is
-            an independent transparency project using publicly available EU data.
+            <strong>Not affiliated with any government:</strong> EuroOilWatch is an 
+            independent fuel-monitoring platform built on publicly available EU data.
           </p>
         </div>
       </section>
