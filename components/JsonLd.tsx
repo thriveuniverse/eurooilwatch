@@ -141,6 +141,25 @@ export default function JsonLd({ type, countryName, countryCode }: JsonLdProps) 
   if (type === 'country' && countryName && countryCode) {
     schemas.push({
       '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: baseUrl,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: countryName,
+          item: `${baseUrl}/country/${countryCode.toLowerCase()}`,
+        },
+      ],
+    });
+
+    schemas.push({
+      '@context': 'https://schema.org',
       '@type': 'WebPage',
       name: `${countryName} — Fuel Reserves & Prices | EuroOilWatch`,
       description: `Fuel reserve levels and pump prices for ${countryName}. Track petrol, diesel, and jet fuel stock days and weekly prices.`,
