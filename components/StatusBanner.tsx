@@ -26,7 +26,7 @@ const STATUS_CONFIG: Record<
     bg: 'bg-red-950/40',
     border: 'border-red-800/60',
     dot: 'bg-status-critical status-dot-critical',
-    label: 'CRITICAL',
+    label: 'TIGHT',
   },
 };
 

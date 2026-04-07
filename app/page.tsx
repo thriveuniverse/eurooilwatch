@@ -62,6 +62,10 @@ export default function DashboardPage() {
         <p className="mt-3 text-center text-xs text-gray-500">
           EU benchmark: 90 days of net imports or 61 days of consumption, whichever is higher (Directive 2009/119/EC)
         </p>
+        <p className="mt-2 text-center text-xs text-gray-500 max-w-2xl mx-auto">
+          Days of supply shown here are calculated from total EU consumption, not net imports. They indicate domestic buffer capacity and are not directly comparable to formal IEA compliance figures.{' '}
+          <a href="/methodology" className="text-oil-400 hover:underline">See Methodology for details.</a>
+        </p>
       </section>
 
       {/* 4. EU Trend Chart */}

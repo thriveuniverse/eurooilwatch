@@ -102,6 +102,8 @@ async function generateAnalysis(
 
 Write a clear, factual analysis based on the data provided. Be specific — cite numbers. Do not speculate beyond what the data shows, but do highlight risks and notable trends.
 
+Important language guidance: Do NOT use the word "critical" to describe reserve levels. Use "tight", "under pressure", or "strained" instead. Reserve "critical" for specific factual references only (e.g., "critical infrastructure").
+
 Your output must be valid JSON with this exact structure:
 {
   "statusLine": "One sentence: the overall EU fuel security status right now",
