@@ -48,6 +48,13 @@ export default function MobileNav() {
               Prices
             </a>
             <a
+              href="/analysis"
+              onClick={() => setOpen(false)}
+              className="py-2.5 px-3 rounded text-sm text-gray-300 hover:text-white hover:bg-oil-800/60 transition"
+            >
+              Analysis
+            </a>
+            <a
               href="/methodology"
               onClick={() => setOpen(false)}
               className="py-2.5 px-3 rounded text-sm text-gray-300 hover:text-white hover:bg-oil-800/60 transition"
