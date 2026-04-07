@@ -41,9 +41,10 @@ function buildPrompt(
     dataContext += `Diesel ${stocks.euAverage.dieselDays} days, `;
     dataContext += `Jet fuel ${stocks.euAverage.jetFuelDays} days\n`;
     dataContext += `Overall status: ${stocks.euAverage.overallStatus}\n`;
-    dataContext += `Mandatory minimum: 90 days of net imports\n\n`;
-    dataContext += `Countries (sorted by lowest reserves first):\n`;
-    for (const c of stocks.countries.slice(0, 15)) {
+    dataContext += `Mandatory minimum: 90 days of net imports\n`;
+    dataContext += `Total countries in dataset: ${stocks.countries.length}\n\n`;
+    dataContext += `Countries (all ${stocks.countries.length}, sorted by lowest reserves first):\n`;
+    for (const c of stocks.countries) {
       const fuels = c.fuels.map(f => `${f.fuelType}: ${f.daysOfSupply}d [${f.status}]`).join(', ');
       dataContext += `- ${c.countryName}: ${fuels}\n`;
     }
@@ -167,6 +168,23 @@ Important context:
   };
 }
 
+function validateAnalysis(analysis: AIAnalysis, stocks: StockDataset | null): string[] {
+  if (!stocks) return [];
+  const warnings: string[] = [];
+  const expectedTotal = stocks.countries.length;
+  const allText = [analysis.statusLine, analysis.fullAnalysis, ...analysis.keyPoints].join(' ');
+  // Find all "X of Y" patterns and check the Y value matches actual country count
+  const ofPattern = /\bof\s+(\d+)\s+(?:EU\s+)?countr/gi;
+  let match: RegExpExecArray | null;
+  while ((match = ofPattern.exec(allText)) !== null) {
+    const cited = parseInt(match[1], 10);
+    if (cited !== expectedTotal) {
+      warnings.push(`Analysis says "of ${cited} countries" but dataset has ${expectedTotal}`);
+    }
+  }
+  return warnings;
+}
+
 // ─── Main ────────────────────────────────────────────────
 
 async function main() {
@@ -184,6 +202,12 @@ async function main() {
   }
 
   const analysis = await generateAnalysis(stocks, prices, brent);
+
+  const warnings = validateAnalysis(analysis, stocks);
+  if (warnings.length > 0) {
+    console.warn('\n⚠️  Validation warnings — review before publishing:');
+    warnings.forEach(w => console.warn(`   - ${w}`));
+  }
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(analysis, null, 2));
 
