@@ -102,7 +102,7 @@ async function generateAnalysis(
 
 Write a clear, factual analysis based on the data provided. Be specific — cite numbers. Do not speculate beyond what the data shows, but do highlight risks and notable trends.
 
-Important language guidance: Do NOT use the word "critical" to describe reserve levels. Use "tight", "under pressure", or "strained" instead. Reserve "critical" for specific factual references only (e.g., "critical infrastructure").
+Use measured language. Prefer 'under strain', 'under pressure', 'tight' over 'critical' as headline framing. Only use 'critical' for individual country-level status, not headline summaries. Frame country counts as 'X of Y countries' not just 'X countries'.
 
 Your output must be valid JSON with this exact structure:
 {
