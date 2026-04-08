@@ -84,6 +84,23 @@ export default function DashboardPage() {
       {/* 6. AI Analysis */}
       <section aria-label="AI-powered fuel security analysis">
         <AnalysisPanel analysis={analysis} />
+        <a
+          href="/news"
+          className="mt-3 flex items-center justify-between gap-4 rounded-lg border border-oil-700 bg-oil-900/40 px-4 py-3 hover:border-oil-500 hover:bg-oil-900/60 transition group"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-lg">📰</span>
+            <div>
+              <p className="text-sm font-medium text-white group-hover:text-oil-300 transition">
+                News Feed — What&apos;s Driving These Numbers?
+              </p>
+              <p className="text-xs text-gray-500">
+                Latest oil &amp; fuel supply news from leading energy sources
+              </p>
+            </div>
+          </div>
+          <span className="text-oil-400 text-sm flex-shrink-0">→</span>
+        </a>
         <p className="mt-2 text-xs text-gray-500">
           This analysis is delivered to your inbox every Thursday.{' '}
           <a href="#briefing" className="text-oil-400 underline hover:text-oil-300">
