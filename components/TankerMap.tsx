@@ -32,9 +32,10 @@ const NAV_STATUS: Record<number, string> = {
   8: 'Under way (sailing)',
 };
 
-// AIS ship types 80-89 = tankers (crude, product, chemical, gas, etc.)
-// Excludes inland waterway vessels once their type is confirmed via ShipStaticData
-function isTanker(t: number) { return t >= 80 && t <= 89; }
+// Only remove a vessel if it is POSITIVELY identified as a non-tanker.
+// Type 0 = unset/unknown — keep those. Types 80-89 = tankers — keep those.
+// Types 1-79 and 90+ = confirmed non-tankers — remove.
+function isConfirmedNonTanker(t: number) { return t > 0 && (t < 80 || t > 89); }
 
 type WsStatus = 'connecting' | 'connected' | 'disconnected' | 'no-key';
 
@@ -186,10 +187,11 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
           // ShipStaticData: record ship type; remove confirmed non-tankers
           if (data.MessageType === 'ShipStaticData') {
             const mmsi = String(data.MetaData?.MMSI);
-            const shipType = data.Message?.ShipStaticData?.Type;
-            if (shipType !== undefined) {
-              shipTypesRef.current.set(mmsi, Number(shipType));
-              if (!isTanker(Number(shipType))) {
+            const typeNum = Number(data.Message?.ShipStaticData?.Type);
+            // Only act on non-zero types — type 0 means unset, keep those vessels
+            if (typeNum > 0) {
+              shipTypesRef.current.set(mmsi, typeNum);
+              if (isConfirmedNonTanker(typeNum)) {
                 removeVessel(mmsi);
                 refreshCounts();
               }
@@ -202,9 +204,9 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
           const meta = data.MetaData;
           const mmsi = String(meta?.MMSI);
 
-          // Skip if we've confirmed this MMSI is not a tanker
+          // Skip only if we have a positive non-tanker identification
           const knownType = shipTypesRef.current.get(mmsi);
-          if (knownType !== undefined && !isTanker(knownType)) return;
+          if (knownType !== undefined && isConfirmedNonTanker(knownType)) return;
 
           const pos = data.Message?.PositionReport;
           if (!pos) return;
