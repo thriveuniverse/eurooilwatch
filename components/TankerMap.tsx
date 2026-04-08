@@ -42,7 +42,6 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
   const markersRef = useRef<Map<string, any>>(new Map());
   const wsRef = useRef<WebSocket | null>(null);
   const reconnectRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const isMountedRef = useRef(true);
 
   const [wsStatus, setWsStatus] = useState<WsStatus>('connecting');
   const [vesselCount, setVesselCount] = useState(0);
@@ -99,7 +98,6 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
     });
 
     return () => {
-      isMountedRef.current = false;
       if (mapRef.current) {
         mapRef.current.map.remove();
         mapRef.current = null;
@@ -138,7 +136,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
     } else {
       const marker = L.marker([vessel.lat, vessel.lon], { icon }).addTo(map);
       marker.on('click', () => {
-        if (isMountedRef.current) setSelectedVessel(vessel);
+        setSelectedVessel(vessel);
       });
       markersRef.current.set(vessel.mmsi, marker);
     }
@@ -173,8 +171,8 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
       };
 
       ws.onmessage = (event) => {
-        setRawMsgCount(n => n + 1);  // count every message before any processing
-        if (!isMountedRef.current) return;
+        setRawMsgCount(n => n + 1);
+        if (closed) return;
         try {
           const data = JSON.parse(event.data as string);
 
