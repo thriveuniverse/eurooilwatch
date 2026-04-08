@@ -32,6 +32,10 @@ const NAV_STATUS: Record<number, string> = {
   8: 'Under way (sailing)',
 };
 
+// AIS ship types 80-89 = tankers (crude, product, chemical, gas, etc.)
+// Excludes inland waterway vessels once their type is confirmed via ShipStaticData
+function isTanker(t: number) { return t >= 80 && t <= 89; }
+
 type WsStatus = 'connecting' | 'connected' | 'disconnected' | 'no-key';
 
 export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }: Props) {
@@ -48,6 +52,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
   const [movingCount, setMovingCount] = useState(0);
   const [selectedVessel, setSelectedVessel] = useState<Vessel | null>(null);
   const vesselDataRef = useRef<Map<string, Vessel>>(new Map());
+  const shipTypesRef = useRef<Map<string, number>>(new Map());
 
   const apiKey = process.env.NEXT_PUBLIC_AISSTREAM_API_KEY;
 
@@ -165,23 +170,42 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
         ws.send(JSON.stringify({
           APIKey: apiKey,
           BoundingBoxes: boundingBoxes,
-          FilterMessageTypes: ['PositionReport'],
+          FilterMessageTypes: ['PositionReport', 'ShipStaticData'],
         }));
       };
 
       ws.onmessage = async (event) => {
         if (closed) return;
         try {
-          // aisstream.io sends binary frames — read Blob as text before parsing
+          // aisstream.io sends binary Blob frames — read as text before parsing
           const text: string = event.data instanceof Blob
             ? await event.data.text()
             : String(event.data);
           const data = JSON.parse(text);
 
+          // ShipStaticData: record ship type; remove confirmed non-tankers
+          if (data.MessageType === 'ShipStaticData') {
+            const mmsi = String(data.MetaData?.MMSI);
+            const shipType = data.Message?.ShipStaticData?.Type;
+            if (shipType !== undefined) {
+              shipTypesRef.current.set(mmsi, Number(shipType));
+              if (!isTanker(Number(shipType))) {
+                removeVessel(mmsi);
+                refreshCounts();
+              }
+            }
+            return;
+          }
+
           if (data.MessageType !== 'PositionReport') return;
 
           const meta = data.MetaData;
           const mmsi = String(meta?.MMSI);
+
+          // Skip if we've confirmed this MMSI is not a tanker
+          const knownType = shipTypesRef.current.get(mmsi);
+          if (knownType !== undefined && !isTanker(knownType)) return;
+
           const pos = data.Message?.PositionReport;
           if (!pos) return;
 
@@ -265,11 +289,11 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
           </span>
           <span className="text-gray-500">
             {vesselCount > 0
-              ? `${vesselCount} vessel${vesselCount !== 1 ? 's' : ''} · ${movingCount} under way`
+              ? `${vesselCount} tanker${vesselCount !== 1 ? 's' : ''} · ${movingCount} under way`
               : wsStatus === 'connected' ? 'Building vessel picture…' : 'Waiting for data…'}
           </span>
         </div>
-        <span className="text-gray-600 hidden sm:inline">AIS data via aisstream.io · real-time positions</span>
+        <span className="text-gray-600 hidden sm:inline">AIS data via aisstream.io · tanker types 80–89</span>
       </div>
 
       {/* Map container */}
@@ -287,7 +311,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
 
         {/* Legend */}
         <div className="absolute bottom-6 left-3 z-[1000] bg-oil-950/90 border border-oil-800 rounded-lg px-3 py-2.5 text-xs space-y-1.5 pointer-events-none">
-          <p className="font-mono font-semibold text-gray-500 uppercase tracking-wider text-[10px] mb-1">Vessels</p>
+          <p className="font-mono font-semibold text-gray-500 uppercase tracking-wider text-[10px] mb-1">Tankers</p>
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-orange-500 flex-shrink-0" />
             <span className="text-gray-400">Under way</span>

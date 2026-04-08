@@ -75,8 +75,8 @@ export default function TankerMapPage() {
         <div className="rounded-lg border border-oil-800 bg-oil-900/20 px-4 py-3 space-y-2">
           <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase">What you&apos;re seeing</h2>
           <div className="text-xs text-gray-400 space-y-1.5">
-            <p>Vessels transmitting AIS Class A signals that self-report as tanker types (80–89), including crude oil tankers, chemical tankers, gas tankers, and refined product carriers.</p>
-            <p>Coverage spans European Atlantic coasts, the North Sea, Mediterranean, Baltic, Black Sea, and the Red Sea / Suez Canal approaches. Vessel positions update as new AIS messages are received.</p>
+            <p>Vessels self-reporting as tanker types (80–89): crude oil tankers, product tankers, chemical tankers, and gas carriers. Type confirmation arrives via static data messages — unconfirmed vessels appear briefly then are filtered.</p>
+            <p>Includes inland waterway tankers on the Rhine, Danube, and other major rivers — these may appear to be on land at low zoom levels. Zoom in to see river routing detail. Coverage also includes the Red Sea, Persian Gulf, and Strait of Hormuz.</p>
           </div>
         </div>
         <div className="rounded-lg border border-oil-800 bg-oil-900/20 px-4 py-3 space-y-2">
