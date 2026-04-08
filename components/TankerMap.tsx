@@ -47,6 +47,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
   const [wsStatus, setWsStatus] = useState<WsStatus>('connecting');
   const [vesselCount, setVesselCount] = useState(0);
   const [movingCount, setMovingCount] = useState(0);
+  const [rawMsgCount, setRawMsgCount] = useState(0);
   const [selectedVessel, setSelectedVessel] = useState<Vessel | null>(null);
   const vesselDataRef = useRef<Map<string, Vessel>>(new Map());
 
@@ -172,6 +173,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
       };
 
       ws.onmessage = (event) => {
+        setRawMsgCount(n => n + 1);  // count every message before any processing
         if (!isMountedRef.current) return;
         try {
           const data = JSON.parse(event.data as string);
@@ -264,7 +266,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
           <span className="text-gray-500">
             {vesselCount > 0
               ? `${vesselCount} vessel${vesselCount !== 1 ? 's' : ''} · ${movingCount} under way`
-              : wsStatus === 'connected' ? 'Building vessel picture…' : 'Waiting for data…'}
+              : wsStatus === 'connected' ? `Building vessel picture… (${rawMsgCount} msg)` : 'Waiting for data…'}
           </span>
         </div>
         <span className="text-gray-600 hidden sm:inline">AIS data via aisstream.io · real-time positions</span>
