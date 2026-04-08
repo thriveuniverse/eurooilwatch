@@ -240,6 +240,30 @@ export default function SupplyPage() {
         </div>
       )}
 
+      {/* Live tanker map CTA */}
+      <a
+        href="/supply/map"
+        className="flex items-center justify-between gap-4 rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
+      >
+        <div className="flex items-center gap-4">
+          <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-oil-800/60 border border-oil-700 flex items-center justify-center text-xl">
+            🗺️
+          </div>
+          <div>
+            <div className="flex items-center gap-2 mb-0.5">
+              <p className="text-sm font-semibold text-white group-hover:text-oil-300 transition">
+                Live Tanker Map — European Waters
+              </p>
+              <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-red-900/40 text-red-400 border border-red-800/50">LIVE</span>
+            </div>
+            <p className="text-xs text-gray-500">
+              Real-time AIS positions across the North Sea, Mediterranean, Baltic, and Suez approaches
+            </p>
+          </div>
+        </div>
+        <span className="text-oil-400 text-sm flex-shrink-0 group-hover:translate-x-0.5 transition-transform">→</span>
+      </a>
+
       {/* Editorial note */}
       <div className="rounded-lg border border-oil-800 bg-oil-900/20 px-5 py-4 text-xs text-gray-500 space-y-2">
         <p className="font-medium text-gray-400">About this page</p>
@@ -249,10 +273,6 @@ export default function SupplyPage() {
           publicly available information and are updated periodically — this is not a live or automated feed.
         </p>
         <p>
-          For live tanker tracking, see{' '}
-          <a href="https://www.marinetraffic.com" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">MarineTraffic</a>
-          {' '}or{' '}
-          <a href="https://www.vesselfinder.com" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">VesselFinder</a>.
           For authoritative data, see the{' '}
           <a href="https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">EIA World Oil Transit Chokepoints</a>
           {' '}and the{' '}
