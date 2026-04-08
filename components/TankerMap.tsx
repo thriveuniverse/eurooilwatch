@@ -32,11 +32,6 @@ const NAV_STATUS: Record<number, string> = {
   8: 'Under way (sailing)',
 };
 
-// Tanker ship types per ITU/IMO AIS specification
-function isTanker(shipType: number) {
-  return shipType >= 80 && shipType <= 89;
-}
-
 type WsStatus = 'connecting' | 'connected' | 'disconnected' | 'no-key';
 
 export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }: Props) {
@@ -48,9 +43,6 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
   const wsRef = useRef<WebSocket | null>(null);
   const reconnectRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isMountedRef = useRef(true);
-
-  // Ship type lookup: filled in from ShipStaticData messages
-  const shipTypesRef = useRef<Map<string, number>>(new Map());
 
   const [wsStatus, setWsStatus] = useState<WsStatus>('connecting');
   const [vesselCount, setVesselCount] = useState(0);
@@ -175,7 +167,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
         ws.send(JSON.stringify({
           APIKey: apiKey,
           BoundingBoxes: boundingBoxes,
-          FilterMessageTypes: ['PositionReport', 'ShipStaticData'],
+          FilterMessageTypes: ['PositionReport'],
         }));
       };
 
@@ -184,27 +176,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
         try {
           const data = JSON.parse(event.data as string);
 
-          // ShipStaticData: record ship type, remove non-tankers that snuck in
-          if (data.MessageType === 'ShipStaticData') {
-            const mmsi = String(data.MetaData?.MMSI);
-            const shipType = data.Message?.ShipStaticData?.Type;
-            if (shipType !== undefined) {
-              shipTypesRef.current.set(mmsi, shipType);
-              if (!isTanker(shipType)) {
-                removeVessel(mmsi);
-                refreshCounts();
-              }
-            }
-            return;
-          }
-
           if (data.MessageType !== 'PositionReport') return;
-
-          const mmsi = String(data.MetaData?.MMSI);
-          const knownType = shipTypesRef.current.get(mmsi);
-
-          // Skip if we've confirmed this vessel is not a tanker
-          if (knownType !== undefined && !isTanker(knownType)) return;
 
           const meta = data.MetaData;
           const pos = data.Message?.PositionReport;
@@ -290,11 +262,11 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
           </span>
           <span className="text-gray-500">
             {vesselCount > 0
-              ? `${vesselCount} tanker${vesselCount !== 1 ? 's' : ''} · ${movingCount} under way`
+              ? `${vesselCount} vessel${vesselCount !== 1 ? 's' : ''} · ${movingCount} under way`
               : wsStatus === 'connected' ? 'Building vessel picture…' : 'Waiting for data…'}
           </span>
         </div>
-        <span className="text-gray-600 hidden sm:inline">AIS data via aisstream.io · tanker types 80–89</span>
+        <span className="text-gray-600 hidden sm:inline">AIS data via aisstream.io · real-time positions</span>
       </div>
 
       {/* Map container */}
@@ -312,7 +284,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
 
         {/* Legend */}
         <div className="absolute bottom-6 left-3 z-[1000] bg-oil-950/90 border border-oil-800 rounded-lg px-3 py-2.5 text-xs space-y-1.5 pointer-events-none">
-          <p className="font-mono font-semibold text-gray-500 uppercase tracking-wider text-[10px] mb-1">Tankers</p>
+          <p className="font-mono font-semibold text-gray-500 uppercase tracking-wider text-[10px] mb-1">Vessels</p>
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-orange-500 flex-shrink-0" />
             <span className="text-gray-400">Under way</span>
