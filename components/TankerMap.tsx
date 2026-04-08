@@ -46,9 +46,6 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
   const [wsStatus, setWsStatus] = useState<WsStatus>('connecting');
   const [vesselCount, setVesselCount] = useState(0);
   const [movingCount, setMovingCount] = useState(0);
-  const [rawMsgCount, setRawMsgCount] = useState(0);
-  const [firstMsg, setFirstMsg] = useState('');
-  const firstMsgCaptured = useRef(false);
   const [selectedVessel, setSelectedVessel] = useState<Vessel | null>(null);
   const vesselDataRef = useRef<Map<string, Vessel>>(new Map());
 
@@ -172,15 +169,14 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
         }));
       };
 
-      ws.onmessage = (event) => {
-        setRawMsgCount(n => n + 1);
-        if (!firstMsgCaptured.current) {
-          firstMsgCaptured.current = true;
-          setFirstMsg(`[${typeof event.data}] ${String(event.data).substring(0, 160)}`);
-        }
+      ws.onmessage = async (event) => {
         if (closed) return;
         try {
-          const data = JSON.parse(event.data as string);
+          // aisstream.io sends binary frames — read Blob as text before parsing
+          const text: string = event.data instanceof Blob
+            ? await event.data.text()
+            : String(event.data);
+          const data = JSON.parse(text);
 
           if (data.MessageType !== 'PositionReport') return;
 
@@ -267,14 +263,10 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
                'Demo mode'}
             </span>
           </span>
-          <span className="text-gray-500 truncate max-w-xs sm:max-w-lg">
+          <span className="text-gray-500">
             {vesselCount > 0
               ? `${vesselCount} vessel${vesselCount !== 1 ? 's' : ''} · ${movingCount} under way`
-              : wsStatus === 'connected'
-                ? firstMsg
-                  ? `(${rawMsgCount}) ${firstMsg}`
-                  : `Building vessel picture… (${rawMsgCount} msg)`
-                : 'Waiting for data…'}
+              : wsStatus === 'connected' ? 'Building vessel picture…' : 'Waiting for data…'}
           </span>
         </div>
         <span className="text-gray-600 hidden sm:inline">AIS data via aisstream.io · real-time positions</span>
