@@ -45,14 +45,14 @@ export default function EmailCTA() {
         {status === 'success' ? (
           <p className="text-sm text-green-400">✓ You&apos;re subscribed — first briefing arrives Thursday.</p>
         ) : (
-          <form onSubmit={handleSubmit} className="flex gap-2 w-full sm:w-auto">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
             <input
               type="email" value={email} onChange={(e) => setEmail(e.target.value)}
               placeholder="you@company.com" required
-              className="flex-1 sm:w-56 px-3 py-2 text-sm rounded-lg bg-oil-950 border border-oil-700 text-white placeholder-gray-500 focus:outline-none focus:border-oil-500"
+              className="w-full sm:w-56 px-3 py-2 text-sm rounded-lg bg-oil-950 border border-oil-700 text-white placeholder-gray-500 focus:outline-none focus:border-oil-500"
               aria-label="Email address" />
             <button type="submit" disabled={status === 'loading'}
-              className="px-4 py-2 text-sm font-medium rounded-lg bg-oil-500 hover:bg-oil-400 text-white transition whitespace-nowrap disabled:opacity-50">
+              className="w-full sm:w-auto px-4 py-2 text-sm font-medium rounded-lg bg-oil-500 hover:bg-oil-400 text-white transition disabled:opacity-50">
               {status === 'loading' ? 'Subscribing...' : 'Subscribe — Free'}
             </button>
           </form>
