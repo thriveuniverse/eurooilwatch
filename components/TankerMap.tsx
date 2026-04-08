@@ -152,14 +152,14 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
     let closed = false;
 
     function connect() {
-      if (closed || !isMountedRef.current) return;
-      if (isMountedRef.current) setWsStatus('connecting');
+      if (closed) return;
+      setWsStatus('connecting');
 
       const ws = new WebSocket('wss://stream.aisstream.io/v0/stream');
       wsRef.current = ws;
 
       ws.onopen = () => {
-        if (!isMountedRef.current) { ws.close(); return; }
+        if (closed) { ws.close(); return; }
         setWsStatus('connected');
         // Note: aisstream.io does not support FilterShipType — we filter client-side
         // using ShipStaticData messages which carry the vessel type field
@@ -205,7 +205,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
       };
 
       ws.onclose = () => {
-        if (closed || !isMountedRef.current) return;
+        if (closed) return;
         setWsStatus('disconnected');
         reconnectRef.current = setTimeout(connect, 5000);
       };
