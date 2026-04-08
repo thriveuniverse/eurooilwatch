@@ -179,6 +179,7 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
           if (data.MessageType !== 'PositionReport') return;
 
           const meta = data.MetaData;
+          const mmsi = String(meta?.MMSI);
           const pos = data.Message?.PositionReport;
           if (!pos) return;
 
