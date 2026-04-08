@@ -34,8 +34,8 @@ const TankerMap = dynamic(() => import('@/components/TankerMap'), {
 // Core European waters: covers North Sea, English Channel, Baltic, Mediterranean, Black Sea
 // Red Sea / Suez approaches: covers the Suez Canal corridor and Bab-el-Mandeb
 const EU_BOUNDING_BOXES: [[number, number], [number, number]][] = [
-  [[35.0, -15.0], [66.0, 35.0]],  // European waters — Atlantic coast, North Sea, Mediterranean
-  [[10.0, 32.0],  [32.0, 44.0]],  // Red Sea / Suez approaches
+  [[35.0, -15.0], [66.0, 40.0]],  // European waters — Atlantic coast, North Sea, Med, Black Sea
+  [[10.0, 32.0],  [32.0, 62.0]],  // Red Sea, Bab-el-Mandeb, Gulf of Aden, Persian Gulf, Hormuz
 ];
 
 export default function TankerMapPage() {
