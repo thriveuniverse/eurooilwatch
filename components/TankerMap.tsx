@@ -7,8 +7,8 @@ interface Vessel {
   name: string;
   lat: number;
   lon: number;
-  sog: number;   // knots
-  cog: number;   // course over ground, degrees
+  sog: number;
+  cog: number;
   heading: number;
   navStatus: number;
   lastSeen: number;
@@ -32,6 +32,11 @@ const NAV_STATUS: Record<number, string> = {
   8: 'Under way (sailing)',
 };
 
+// Tanker ship types per ITU/IMO AIS specification
+function isTanker(shipType: number) {
+  return shipType >= 80 && shipType <= 89;
+}
+
 type WsStatus = 'connecting' | 'connected' | 'disconnected' | 'no-key';
 
 export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }: Props) {
@@ -44,6 +49,9 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
   const reconnectRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const isMountedRef = useRef(true);
 
+  // Ship type lookup: filled in from ShipStaticData messages
+  const shipTypesRef = useRef<Map<string, number>>(new Map());
+
   const [wsStatus, setWsStatus] = useState<WsStatus>('connecting');
   const [vesselCount, setVesselCount] = useState(0);
   const [movingCount, setMovingCount] = useState(0);
@@ -52,22 +60,27 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
 
   const apiKey = process.env.NEXT_PUBLIC_AISSTREAM_API_KEY;
 
-  // Update counts
   const refreshCounts = useCallback(() => {
     const all = [...vesselDataRef.current.values()];
     setVesselCount(all.length);
     setMovingCount(all.filter(v => v.sog > 0.5).length);
   }, []);
 
+  // Remove a vessel marker and data
+  const removeVessel = useCallback((mmsi: string) => {
+    vesselDataRef.current.delete(mmsi);
+    const marker = markersRef.current.get(mmsi);
+    if (marker && mapRef.current) marker.remove();
+    markersRef.current.delete(mmsi);
+  }, []);
+
   // Initialize Leaflet map
   useEffect(() => {
     if (!mapDivRef.current || mapRef.current) return;
 
-    // Dynamic import to avoid SSR issues
     import('leaflet').then(L => {
       if (!mapDivRef.current || mapRef.current) return;
 
-      // Fix default icon paths broken by webpack
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       delete (L.Icon.Default.prototype as any)._getIconUrl;
       L.Icon.Default.mergeOptions({
@@ -111,7 +124,6 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
     const color = moving ? '#f97316' : '#6b7280';
     const size = moving ? 10 : 8;
 
-    // Create direction arrow SVG for moving vessels
     const arrowSvg = moving
       ? `<polygon points="4,0 0,10 8,10" fill="${color}" opacity="0.9" transform="rotate(${vessel.cog}, 4, 5) translate(-4,-5)"/>`
       : '';
@@ -158,11 +170,12 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
       ws.onopen = () => {
         if (!isMountedRef.current) { ws.close(); return; }
         setWsStatus('connected');
+        // Note: aisstream.io does not support FilterShipType — we filter client-side
+        // using ShipStaticData messages which carry the vessel type field
         ws.send(JSON.stringify({
           APIKey: apiKey,
           BoundingBoxes: boundingBoxes,
-          FilterMessageTypes: ['PositionReport'],
-          FilterShipType: [80, 81, 82, 83, 84, 85, 86, 87, 88, 89],
+          FilterMessageTypes: ['PositionReport', 'ShipStaticData'],
         }));
       };
 
@@ -170,15 +183,36 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
         if (!isMountedRef.current) return;
         try {
           const data = JSON.parse(event.data as string);
+
+          // ShipStaticData: record ship type, remove non-tankers that snuck in
+          if (data.MessageType === 'ShipStaticData') {
+            const mmsi = String(data.MetaData?.MMSI);
+            const shipType = data.Message?.ShipStaticData?.Type;
+            if (shipType !== undefined) {
+              shipTypesRef.current.set(mmsi, shipType);
+              if (!isTanker(shipType)) {
+                removeVessel(mmsi);
+                refreshCounts();
+              }
+            }
+            return;
+          }
+
           if (data.MessageType !== 'PositionReport') return;
+
+          const mmsi = String(data.MetaData?.MMSI);
+          const knownType = shipTypesRef.current.get(mmsi);
+
+          // Skip if we've confirmed this vessel is not a tanker
+          if (knownType !== undefined && !isTanker(knownType)) return;
 
           const meta = data.MetaData;
           const pos = data.Message?.PositionReport;
           if (!pos) return;
 
           const vessel: Vessel = {
-            mmsi: String(meta.MMSI),
-            name: (meta.ShipName?.trim() || `MMSI ${meta.MMSI}`).replace(/\s+/g, ' '),
+            mmsi,
+            name: (meta.ShipName?.trim() || `MMSI ${mmsi}`).replace(/\s+/g, ' '),
             lat: Number(meta.latitude),
             lon: Number(meta.longitude),
             sog: Number(pos.Sog) || 0,
@@ -190,8 +224,6 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
 
           vesselDataRef.current.set(vessel.mmsi, vessel);
           updateVesselMarker(vessel);
-
-          // Update selected vessel info if it's still selected
           setSelectedVessel(prev => prev?.mmsi === vessel.mmsi ? vessel : prev);
           refreshCounts();
         } catch {
@@ -225,17 +257,12 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
     const interval = setInterval(() => {
       const cutoff = Date.now() - 30 * 60 * 1000;
       for (const [mmsi, vessel] of vesselDataRef.current) {
-        if (vessel.lastSeen < cutoff) {
-          vesselDataRef.current.delete(mmsi);
-          const marker = markersRef.current.get(mmsi);
-          if (marker && mapRef.current) marker.remove();
-          markersRef.current.delete(mmsi);
-        }
+        if (vessel.lastSeen < cutoff) removeVessel(mmsi);
       }
       refreshCounts();
     }, 60_000);
     return () => clearInterval(interval);
-  }, [refreshCounts]);
+  }, [refreshCounts, removeVessel]);
 
   return (
     <div className="flex flex-col h-full min-h-0">
@@ -262,15 +289,16 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
             </span>
           </span>
           <span className="text-gray-500">
-            {vesselCount > 0 ? `${vesselCount} tanker${vesselCount !== 1 ? 's' : ''} · ${movingCount} under way` : 'Waiting for data…'}
+            {vesselCount > 0
+              ? `${vesselCount} tanker${vesselCount !== 1 ? 's' : ''} · ${movingCount} under way`
+              : wsStatus === 'connected' ? 'Building vessel picture…' : 'Waiting for data…'}
           </span>
         </div>
-        <span className="text-gray-600 hidden sm:inline">AIS data via aisstream.io · vessel types 80–89</span>
+        <span className="text-gray-600 hidden sm:inline">AIS data via aisstream.io · tanker types 80–89</span>
       </div>
 
       {/* Map container */}
       <div className="relative flex-1 min-h-0">
-        {/* Leaflet CSS — injected here to keep it scoped to this component */}
         <style>{`
           @import url('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css');
           .leaflet-container { background: #06111f; }
@@ -278,8 +306,6 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
           .leaflet-control-attribution a { color: #6b7280 !important; }
           .leaflet-bar a { background: #0d1f33 !important; color: #e5e7eb !important; border-color: #1e3a5f !important; }
           .leaflet-bar a:hover { background: #1e3a5f !important; }
-          .leaflet-popup-content-wrapper { background: #0d1f33; border: 1px solid #1e3a5f; color: #e5e7eb; border-radius: 8px; }
-          .leaflet-popup-tip { background: #0d1f33; }
         `}</style>
 
         <div ref={mapDivRef} className="absolute inset-0" />
@@ -310,7 +336,6 @@ export default function TankerMap({ boundingBoxes, defaultCenter, defaultZoom }:
                 <code className="bg-oil-800 px-1 py-0.5 rounded text-oil-300">NEXT_PUBLIC_AISSTREAM_API_KEY</code>{' '}
                 to your environment variables.
               </p>
-              <p className="text-xs text-gray-600">The map will load automatically once the key is configured.</p>
             </div>
           </div>
         )}
