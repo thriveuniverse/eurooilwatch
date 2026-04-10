@@ -38,18 +38,18 @@ const CHOKEPOINTS: Chokepoint[] = [
     id: 'hormuz',
     name: 'Strait of Hormuz',
     region: 'Persian Gulf / Gulf of Oman',
-    risk: 'elevated',
-    riskLabel: 'Elevated — monitoring',
+    risk: 'critical',
+    riskLabel: 'Critical — near-standstill traffic',
     dailyFlow: '~20',
     euRelevance: 'indirect',
     coords: 'Between Iran and Oman, connecting Persian Gulf to Arabian Sea',
     summary:
-      'The world\'s most critical oil chokepoint. Roughly 20 mb/d — about 20% of global oil trade — passes through the strait, including the majority of Gulf exports from Saudi Arabia, Iraq, UAE, Kuwait, and Iran. US-Iran tensions and ceasefire negotiations create ongoing uncertainty.',
+      'The world\'s most critical oil chokepoint is in active disruption. Traffic has fallen to a small fraction of normal levels, with only a handful of vessels transiting and major operators suspending Gulf loadings. Iran is effectively controlling passage conditions. The ~20 mb/d that normally flows through the strait — around 20% of global oil trade — is severely constrained.',
     euImpact:
-      'Europe imports relatively little Gulf crude directly — the IEA estimates around 600 kb/d of Hormuz flows were routed to Europe in 2025. The primary exposure is indirect: a major Hormuz disruption triggers a global price shock and fierce competition for Atlantic Basin barrels that EU refineries normally rely on. Asian buyers losing Gulf supply immediately bid against European refiners for US, West African, and North Sea crude. Brent prices spike for all buyers regardless of direct dependence.',
+      'The global price shock from Hormuz disruption is actively under way. Asian buyers displaced from Gulf supply are competing directly with EU refiners for Atlantic Basin, North Sea, and West African barrels, driving record crude premiums. EU refiners dependent on Middle Eastern feedstocks face immediate cost increases. The disruption is compounding the existing Red Sea crisis, simultaneously closing the two routes that carry the majority of EU-bound crude from the Gulf.',
     context:
-      'Bypass capacity via Saudi Arabia\'s East-West Pipeline and the UAE\'s ADCO pipeline totals only 3.5–5.5 mb/d — far below normal Hormuz flows. A sustained closure would require IEA strategic reserve releases, demand destruction, and significant supply rerouting across all importing regions.',
-    lastReviewed: '2026-04-08',
+      'Bypass routes no longer provide meaningful relief. Saudi Arabia\'s East-West Pipeline capacity has been reduced by attacks on Saudi output; the UAE\'s ADCO pipeline cannot absorb displaced volumes at scale. IEA coordinated strategic reserve releases are under active consideration. The disruption is geopolitically linked to the Houthi/Red Sea crisis — both stem from the same regional conflict, creating a compound supply shock.',
+    lastReviewed: '2026-04-10',
     sources: [
       { label: 'IEA — Strait of Hormuz', url: 'https://www.iea.org/articles/hormuz-strait' },
       { label: 'EIA — World Oil Transit Chokepoints', url: 'https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints' },
@@ -65,12 +65,12 @@ const CHOKEPOINTS: Chokepoint[] = [
     euRelevance: 'moderate',
     coords: 'Northeast Egypt, connecting Red Sea (via Gulf of Suez) to Mediterranean',
     summary:
-      'The Suez Canal carries around 5.5 mb/d of oil and petroleum products plus significant LNG volumes. Houthi attacks on Red Sea shipping since late 2023 have forced widespread rerouting via the Cape of Good Hope, adding 10–14 days of transit time and substantial freight costs.',
+      'The Suez Canal carries around 5.5 mb/d of oil and petroleum products plus significant LNG volumes. Red Sea avoidance by commercial tankers has kept Canal transit volumes far below pre-disruption levels since late 2023. Cape of Good Hope diversion is now the operating norm for Gulf-to-Europe cargoes, and simultaneous Hormuz disruption has compounded the pressure on European supply chains.',
     euImpact:
-      'Europe is more exposed to Suez disruption than the US because it relies heavily on Middle Eastern and Asian refined products arriving via this route. Diesel and jet fuel imports from Gulf and Asian refineries have been affected by rerouting since late 2023, contributing to tight European diesel markets. Higher freight rates feed directly into import costs for EU refiners and fuel wholesalers. Countries with less domestic refining capacity — including several Eastern European states — are most exposed.',
+      'Europe\'s exposure is now acute: Cape routing adds 10–14 days and substantial cost to Middle Eastern cargo journeys, while Hormuz disruption has simultaneously constrained the volume of Gulf crude and products available for export. EU refiners in Eastern Europe and the Mediterranean with limited domestic alternatives are facing the sharpest margin and availability pressure. The compound effect of these two simultaneous disruptions is unlike any previous supply shock.',
     context:
-      'The Sumed pipeline running parallel through Egypt can carry approximately 2.5 mb/d of crude as a bypass, but not refined products. Several EU member states have adapted sourcing patterns to reduce Red Sea exposure, shifting towards Atlantic Basin, North Sea, and US suppliers — but at higher cost.',
-    lastReviewed: '2026-04-08',
+      'The Sumed pipeline can carry approximately 2.5 mb/d of crude as a bypass but not refined products. EU member states have largely adapted sourcing to Atlantic Basin suppliers, but at sustained higher cost. A Houthi ceasefire is the necessary condition for Red Sea/Suez recovery; Hormuz normalisation requires a separate political resolution.',
+    lastReviewed: '2026-04-10',
     sources: [
       { label: 'EIA — Suez Canal', url: 'https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints' },
       { label: 'IEA Oil Market Report', url: 'https://www.iea.org/reports/oil-market-report-april-2026' },
@@ -86,12 +86,12 @@ const CHOKEPOINTS: Chokepoint[] = [
     euRelevance: 'moderate',
     coords: 'Between Yemen and Djibouti/Eritrea, connecting Gulf of Aden to Red Sea',
     summary:
-      'The southern entrance to the Red Sea. Houthi forces have been targeting commercial shipping here since November 2023, forcing widespread rerouting. Around 4.5 mb/d of oil and products normally transits this route. Most major tanker operators now classify the strait as high-risk.',
+      'The southern entrance to the Red Sea remains actively disrupted by Houthi attacks since November 2023. Around 4.5 mb/d of oil and products normally transits this route; daily traffic through Bab-el-Mandeb and Suez Canal remains far below pre-attack levels. This disruption now forms part of a wider compound crisis alongside the Hormuz near-standstill — both geopolitically linked.',
     euImpact:
-      'The effective closure of Bab-el-Mandeb to many commercial tankers has had significant consequences for European fuel supply chains. Cargoes from the Middle East and Asia that would previously have taken 15–20 days to reach ARA (Amsterdam-Rotterdam-Antwerp) now take 30+ days via the Cape of Good Hope. This has tightened European diesel and jet fuel availability and raised import costs. Countries dependent on Middle Eastern diesel imports have been most affected.',
+      'ARA-bound cargoes from the Middle East continue to route via the Cape of Good Hope, adding 30+ days versus the Red Sea route. The simultaneous Hormuz disruption has compounded the effect: two of the three most important tanker corridors for EU crude and product supply are now simultaneously impaired. Eastern European states with fewer domestic supply alternatives and countries dependent on Middle Eastern diesel are most acutely affected.',
     context:
-      'The US-led Operation Prosperity Guardian has provided some naval protection but attacks have continued. Rerouting via the Cape adds approximately 3,500 nautical miles and significant fuel and time costs. Insurance premiums for vessels transiting the area remain highly elevated. No political resolution is in sight.',
-    lastReviewed: '2026-04-08',
+      'Operation Prosperity Guardian has not restored commercial transit confidence. Insurance premiums for Red Sea passage remain prohibitive. The Houthi threat and Hormuz disruption share geopolitical roots in the same regional conflict, making a coordinated resolution difficult. Compound supply shocks of this kind are unprecedented in the post-2000 era.',
+    lastReviewed: '2026-04-10',
     sources: [
       { label: 'EIA — Bab-el-Mandeb', url: 'https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints' },
     ],
@@ -146,12 +146,12 @@ const CHOKEPOINTS: Chokepoint[] = [
     euRelevance: 'direct',
     coords: 'Northwest European coast — Netherlands and Belgium',
     summary:
-      'The Amsterdam-Rotterdam-Antwerp (ARA) complex is Europe\'s largest refining and oil storage hub, handling around 4 mb/d of crude and products. It acts as the primary pricing and distribution point for Northwest European fuel markets. Rotterdam alone is the world\'s largest port by cargo volume.',
+      'The Amsterdam-Rotterdam-Antwerp (ARA) complex is Europe\'s largest refining and oil storage hub, handling around 4 mb/d of crude and products. It acts as the primary pricing and distribution point for Northwest European fuel markets. Rotterdam alone is the world\'s largest port by cargo volume. Note: shipping around Antwerp was partially halted on 10 April 2026 following an oil spill; this is an operational incident under containment rather than a structural supply route disruption.',
     euImpact:
-      'ARA is effectively the clearing hub for European diesel, petrol, and jet fuel. Prices at ARA set the reference for fuel costs across Northwest Europe and significantly influence prices as far east as Poland and the Baltic states. Any disruption to ARA operations — whether from extreme weather, infrastructure failure, or labour action — would affect fuel availability and pricing across the entire region. The EU\'s Diesel benchmark is priced at ARA.',
+      'ARA is the clearing hub for European diesel, petrol, and jet fuel. Prices at ARA set the reference for fuel costs across Northwest Europe and influence prices as far east as Poland and the Baltic states. Reduced tanker arrivals at ARA — a likely consequence of both Hormuz and Red Sea disruptions tightening Atlantic Basin cargo availability — typically precede price rises within 2–3 weeks. The Antwerp spill incident (10 April) may cause short-term delays; the structural supply picture depends on incoming cargo volumes.',
     context:
-      'ARA storage tanks hold significant commercial stocks that act as a buffer for European supply. Tanker arrivals at Rotterdam are a leading indicator for European fuel availability — reduced arrivals typically precede price rises within 2–3 weeks. ARA stock levels are published weekly by Insights Global and monitored closely by energy traders.',
-    lastReviewed: '2026-04-08',
+      'ARA commercial storage acts as a buffer for European supply disruptions. Tanker arrivals at Rotterdam are a leading indicator of fuel availability. ARA stock levels are published weekly by Insights Global and monitored closely by energy traders. In the current environment, ARA stock drawdown is the key metric to watch for early signs of downstream tightness.',
+    lastReviewed: '2026-04-10',
     sources: [
       { label: 'Port of Rotterdam', url: 'https://www.portofrotterdam.com' },
       { label: 'Insights Global — ARA stocks', url: 'https://www.insightsglobal.com' },
@@ -193,7 +193,7 @@ export default function SupplyPage() {
       {/* Status summary bar */}
       <div className="rounded-lg border border-oil-800 bg-oil-900/30 px-5 py-4">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-3">
-          Current Route Status — {new Date('2026-04-08').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+          Current Route Status — {new Date('2026-04-10').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
         </h2>
         <div className="flex flex-wrap gap-3">
           {CHOKEPOINTS.map(c => {
