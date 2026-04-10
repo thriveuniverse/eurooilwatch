@@ -9,6 +9,7 @@ import WhatWeTrack from '@/components/WhatWeTrack';
 import WhoUsesThis from '@/components/WhoUsesThis';
 import EmailCTA from '@/components/EmailCTA';
 import ProTeaser from '@/components/ProTeaser';
+import DisruptionBanner from '@/components/DisruptionBanner';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -32,6 +33,14 @@ export default function DashboardPage() {
   return (
     <div className="space-y-6">
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
+
+      {/* Disruption alert */}
+      <DisruptionBanner
+        headline="Active supply disruption"
+        body="Strait of Hormuz traffic near standstill and Red Sea rerouting ongoing simultaneously — Atlantic Basin crude at record premiums."
+        linkLabel="Supply Routes →"
+        linkHref="/supply"
+      />
 
       {/* 1. Status Banner */}
       <section aria-label="EU fuel security status">
