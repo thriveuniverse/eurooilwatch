@@ -1,0 +1,5 @@
+# Normalise line endings to LF on commit (works on Windows and Linux/Mac)
+* text=auto eol=lf
+
+# Treat newsletter HTML as text, always LF
+newsletters/**/*.html text eol=lf

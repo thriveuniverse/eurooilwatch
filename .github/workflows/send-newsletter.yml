@@ -1,0 +1,43 @@
+name: Send Newsletter
+
+# Triggers when an HTML file is pushed into newsletters/outbox/
+on:
+  push:
+    paths:
+      - 'newsletters/outbox/*.html'
+
+permissions:
+  contents: write
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Send newsletter
+        run: npm run send:newsletter
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          RESEND_AUDIENCE_ID: ${{ secrets.RESEND_AUDIENCE_ID }}
+          RESEND_FROM_ADDRESS: ${{ secrets.RESEND_FROM_ADDRESS }}
+
+      - name: Commit sent newsletter
+        run: |
+          git config user.name "EuroOilWatch Bot"
+          git config user.email "bot@eurooilwatch.com"
+          git add newsletters/
+          git diff --staged --quiet || git commit -m "chore: newsletter sent $(date +%Y-%m-%d)"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push
