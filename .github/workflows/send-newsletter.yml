@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'newsletters/outbox/*.html'
+      - 'newsletters/outbox/*.md'
 
 permissions:
   contents: write

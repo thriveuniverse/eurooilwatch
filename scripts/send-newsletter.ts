@@ -2,8 +2,8 @@
 /**
  * EuroOilWatch — Newsletter Sender
  * ==================================
- * Sends any .html files found in newsletters/outbox/ as a Resend Broadcast
- * to the full subscriber audience, then moves them to newsletters/sent/.
+ * Sends any .html or .md files found in newsletters/outbox/ as a Resend
+ * Broadcast to the full subscriber audience, then moves them to newsletters/sent/.
  *
  * Usage:
  *   npx tsx scripts/send-newsletter.ts
@@ -13,12 +13,35 @@
  *   RESEND_AUDIENCE_ID    — Resend Audience ID (subscribers)
  *   RESEND_FROM_ADDRESS   — Verified sending address, e.g. "EuroOilWatch <briefing@eurooilwatch.com>"
  *
- * Each HTML file must contain a subject line comment near the top:
+ * HTML files — subject via comment near the top:
  *   <!-- subject: EU Fuel Reserves Drop — Weekly Briefing #12 -->
+ *
+ * Markdown files — subject via frontmatter:
+ *   ---
+ *   subject: EU Fuel Reserves Drop — Weekly Briefing #12
+ *   ---
  */
 
-import fs from 'fs';
+import fs   from 'fs';
 import path from 'path';
+import matter from 'gray-matter';
+import { marked } from 'marked';
+
+// Load .env.local for local development (GitHub Actions uses secrets directly)
+function loadEnvFile() {
+  const envPath = path.join(process.cwd(), '.env.local');
+  if (!fs.existsSync(envPath)) return;
+  for (const line of fs.readFileSync(envPath, 'utf-8').split('\n')) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const eq = trimmed.indexOf('=');
+    if (eq === -1) continue;
+    const key = trimmed.slice(0, eq).trim();
+    const val = trimmed.slice(eq + 1).trim();
+    if (key && !(key in process.env)) process.env[key] = val;
+  }
+}
+loadEnvFile();
 
 const RESEND_API_KEY     = process.env.RESEND_API_KEY;
 const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
@@ -56,8 +79,93 @@ async function resendPost(endpoint: string, body: object): Promise<any> {
   return json;
 }
 
-function extractSubject(html: string, filename: string): string {
-  const match = html.match(/<!--\s*subject:\s*(.+?)\s*-->/i);
+/**
+ * Wraps converted markdown HTML in a minimal, email-client-safe template.
+ * Uses inline styles only — no external CSS, no flexbox, no grid.
+ */
+function wrapInEmailTemplate(subject: string, bodyHtml: string): string {
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${subject}</title>
+</head>
+<body style="margin:0;padding:0;background-color:#0f172a;font-family:Georgia,serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#0f172a;">
+    <tr>
+      <td align="center" style="padding:32px 16px;">
+        <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background-color:#1e293b;border-radius:8px;border:1px solid #334155;">
+          <!-- Header -->
+          <tr>
+            <td style="padding:24px 32px;border-bottom:1px solid #334155;">
+              <span style="font-size:13px;font-weight:bold;color:#94a3b8;letter-spacing:0.1em;text-transform:uppercase;">EuroOilWatch</span>
+              <span style="font-size:13px;color:#475569;margin-left:8px;">Weekly Fuel Security Briefing</span>
+            </td>
+          </tr>
+          <!-- Body -->
+          <tr>
+            <td style="padding:32px;color:#e2e8f0;font-size:15px;line-height:1.7;">
+              <style>
+                /* Scoped styles for markdown-generated content */
+                h1 { font-size:22px;font-weight:bold;color:#f8fafc;margin:0 0 16px 0; }
+                h2 { font-size:17px;font-weight:bold;color:#f1f5f9;margin:28px 0 10px 0;border-bottom:1px solid #334155;padding-bottom:6px; }
+                h3 { font-size:15px;font-weight:bold;color:#cbd5e1;margin:20px 0 8px 0; }
+                p  { margin:0 0 14px 0;color:#cbd5e1; }
+                ul, ol { margin:0 0 14px 0;padding-left:20px;color:#cbd5e1; }
+                li { margin-bottom:6px; }
+                strong { color:#f1f5f9; }
+                a  { color:#38bdf8;text-decoration:none; }
+                hr { border:none;border-top:1px solid #334155;margin:24px 0; }
+                blockquote { border-left:3px solid #475569;margin:0 0 14px 0;padding:8px 16px;color:#94a3b8; }
+                code { background:#0f172a;padding:2px 6px;border-radius:4px;font-size:13px;color:#7dd3fc; }
+              </style>
+              ${bodyHtml}
+            </td>
+          </tr>
+          <!-- Footer -->
+          <tr>
+            <td style="padding:20px 32px;border-top:1px solid #334155;text-align:center;">
+              <p style="margin:0 0 8px 0;font-size:12px;color:#475569;">
+                You're receiving this because you subscribed at <a href="https://eurooilwatch.com" style="color:#38bdf8;">eurooilwatch.com</a>
+              </p>
+              <p style="margin:0;font-size:12px;color:#334155;">
+                <a href="{{{RESEND_UNSUBSCRIBE_URL}}}" style="color:#475569;">Unsubscribe</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>`;
+}
+
+/**
+ * Parse a markdown file — returns { subject, html }
+ */
+async function parseMarkdown(raw: string, filename: string): Promise<{ subject: string; html: string }> {
+  const { data, content } = matter(raw);
+
+  if (!data.subject) {
+    throw new Error(
+      `No subject found in ${filename}.\n` +
+      `Add frontmatter at the top of the file:\n` +
+      `  ---\n  subject: Your Subject Line Here\n  ---`
+    );
+  }
+
+  const bodyHtml = await marked(content);
+  const html     = wrapInEmailTemplate(data.subject, bodyHtml);
+  return { subject: data.subject, html };
+}
+
+/**
+ * Parse an HTML file — returns { subject, html }
+ */
+function parseHtml(raw: string, filename: string): { subject: string; html: string } {
+  const match = raw.match(/<!--\s*subject:\s*(.+?)\s*-->/i);
   if (!match) {
     throw new Error(
       `No subject found in ${filename}.\n` +
@@ -65,13 +173,14 @@ function extractSubject(html: string, filename: string): string {
       `  <!-- subject: Your Subject Line Here -->`
     );
   }
-  return match[1].trim();
+  return { subject: match[1].trim(), html: raw };
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const files = fs.readdirSync(OUTBOX_DIR).filter(f => f.endsWith('.html'));
+  const files = fs.readdirSync(OUTBOX_DIR)
+    .filter(f => f.endsWith('.html') || f.endsWith('.md'));
 
   if (files.length === 0) {
     console.log('📭 No newsletters in outbox — nothing to send.');
@@ -82,20 +191,25 @@ async function main() {
 
   for (const file of files) {
     const filePath = path.join(OUTBOX_DIR, file);
-    const html     = fs.readFileSync(filePath, 'utf-8');
+    const raw      = fs.readFileSync(filePath, 'utf-8');
+    const ext      = path.extname(file);
 
     console.log(`── ${file}`);
 
-    // Extract subject
-    const subject = extractSubject(html, file);
+    const { subject, html } = ext === '.md'
+      ? await parseMarkdown(raw, file)
+      : parseHtml(raw, file);
+
     console.log(`   Subject : ${subject}`);
     console.log(`   From    : ${FROM_ADDRESS}`);
     console.log(`   Audience: ${RESEND_AUDIENCE_ID}`);
 
     // Step 1 — Create broadcast
+    const broadcastName = path.basename(file, path.extname(file)); // filename without extension
     const { id: broadcastId } = await resendPost('/broadcasts', {
       audience_id: RESEND_AUDIENCE_ID,
       from:        FROM_ADDRESS,
+      name:        broadcastName,
       subject,
       html,
     });
