@@ -43,9 +43,10 @@ function loadEnvFile() {
 }
 loadEnvFile();
 
-const RESEND_API_KEY     = process.env.RESEND_API_KEY;
-const RESEND_AUDIENCE_ID = process.env.RESEND_AUDIENCE_ID;
-const FROM_ADDRESS       = process.env.RESEND_FROM_ADDRESS || 'EuroOilWatch <briefing@eurooilwatch.com>';
+const RESEND_API_KEY    = process.env.RESEND_API_KEY;
+const RESEND_SEGMENT_ID = process.env.RESEND_SEGMENT_ID;
+const RESEND_TOPIC_ID   = process.env.RESEND_TOPIC_ID;
+const FROM_ADDRESS      = process.env.RESEND_FROM_ADDRESS || 'EuroOilWatch <briefing@eurooilwatch.com>';
 
 const OUTBOX_DIR = path.join(process.cwd(), 'newsletters', 'outbox');
 const SENT_DIR   = path.join(process.cwd(), 'newsletters', 'sent');
@@ -56,8 +57,8 @@ if (!RESEND_API_KEY) {
   console.error('❌ RESEND_API_KEY is not set.');
   process.exit(1);
 }
-if (!RESEND_AUDIENCE_ID) {
-  console.error('❌ RESEND_AUDIENCE_ID is not set.');
+if (!RESEND_SEGMENT_ID) {
+  console.error('❌ RESEND_SEGMENT_ID is not set.');
   process.exit(1);
 }
 
@@ -202,22 +203,22 @@ async function main() {
 
     console.log(`   Subject : ${subject}`);
     console.log(`   From    : ${FROM_ADDRESS}`);
-    console.log(`   Audience: ${RESEND_AUDIENCE_ID}`);
+    console.log(`   Segment : ${RESEND_SEGMENT_ID}`);
 
-    // Step 1 — Create broadcast
-    const broadcastName = path.basename(file, path.extname(file)); // filename without extension
-    const { id: broadcastId } = await resendPost('/broadcasts', {
-      audience_id: RESEND_AUDIENCE_ID,
-      from:        FROM_ADDRESS,
-      name:        broadcastName,
+    // Create and send broadcast in one step
+    const broadcastName = path.basename(file, path.extname(file));
+    const payload: Record<string, unknown> = {
+      segment_id: RESEND_SEGMENT_ID,
+      from:       FROM_ADDRESS,
+      name:       broadcastName,
       subject,
       html,
-    });
-    console.log(`   ✓ Broadcast created: ${broadcastId}`);
+      send:       true,
+    };
+    if (RESEND_TOPIC_ID) payload.topic_id = RESEND_TOPIC_ID;
 
-    // Step 2 — Send broadcast
-    await resendPost(`/broadcasts/${broadcastId}/send`, {});
-    console.log(`   ✓ Broadcast sent`);
+    const { id: broadcastId } = await resendPost('/broadcasts', payload);
+    console.log(`   ✓ Broadcast created and sent: ${broadcastId}`);
 
     // Step 3 — Move to sent/
     const datestamp = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
