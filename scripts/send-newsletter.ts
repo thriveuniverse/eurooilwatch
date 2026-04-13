@@ -10,7 +10,8 @@
  *
  * Required env vars:
  *   RESEND_API_KEY        — Resend API key
- *   RESEND_AUDIENCE_ID    — Resend Audience ID (subscribers)
+ *   RESEND_SEGMENT_ID     — Resend Segment ID (subscribers)
+ *   RESEND_TOPIC_ID       — Resend Topic ID (optional, for unsubscribe preferences)
  *   RESEND_FROM_ADDRESS   — Verified sending address, e.g. "EuroOilWatch <briefing@eurooilwatch.com>"
  *
  * HTML files — subject via comment near the top:
