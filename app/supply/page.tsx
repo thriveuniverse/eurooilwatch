@@ -1,4 +1,8 @@
 import type { Metadata } from 'next';
+import { getGDACSEvents, EVENT_TYPE_LABELS, EVENT_TYPE_ICONS } from '@/lib/gdacs';
+import type { GDACSAlertLevel } from '@/lib/gdacs';
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: 'Global Oil Supply Routes | EuroOilWatch',
@@ -172,10 +176,15 @@ const RELEVANCE_LABEL: Record<string, string> = {
   indirect: 'Indirect / price impact',
 };
 
-export default function SupplyPage() {
+export default async function SupplyPage() {
   const highRisk = CHOKEPOINTS.filter(c => c.risk === 'critical' || c.risk === 'high');
   const elevated = CHOKEPOINTS.filter(c => c.risk === 'elevated');
   const normal   = CHOKEPOINTS.filter(c => c.risk === 'normal');
+
+  const gdacsEvents = await getGDACSEvents();
+  const redEvents    = gdacsEvents.filter(e => e.alertLevel === 'Red');
+  const orangeEvents = gdacsEvents.filter(e => e.alertLevel === 'Orange');
+  const greenEvents  = gdacsEvents.filter(e => e.alertLevel === 'Green');
 
   return (
     <div className="max-w-4xl mx-auto space-y-8">
@@ -214,6 +223,65 @@ export default function SupplyPage() {
           Status reflects current editorial assessment based on publicly available information.
           Risk levels: <span className="text-green-400">Normal</span> · <span className="text-yellow-400">Elevated</span> · <span className="text-orange-400">High</span> · <span className="text-red-400">Critical</span>
         </p>
+      </div>
+
+      {/* GDACS Live Risk Signals */}
+      <div className="rounded-lg border border-oil-800 bg-oil-900/30 overflow-hidden">
+        <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-500" />
+            </span>
+            <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-400 uppercase">
+              Live Risk Signals — Past 24h
+            </h2>
+          </div>
+          <a
+            href="https://www.gdacs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[10px] text-gray-600 hover:text-gray-400 transition"
+          >
+            Source: GDACS →
+          </a>
+        </div>
+
+        {gdacsEvents.length === 0 ? (
+          <div className="px-5 py-4 text-xs text-gray-600">
+            No significant alerts in the past 24 hours, or feed unavailable.
+          </div>
+        ) : (
+          <div className="divide-y divide-oil-800/40">
+            {redEvents.length > 0 && redEvents.map(e => (
+              <GDACSEventRow key={e.id} event={e} />
+            ))}
+            {orangeEvents.length > 0 && orangeEvents.map(e => (
+              <GDACSEventRow key={e.id} event={e} />
+            ))}
+            {greenEvents.length > 0 && (
+              <>
+                {greenEvents.length > 0 && (redEvents.length > 0 || orangeEvents.length > 0) && (
+                  <div className="px-5 py-1.5 bg-oil-900/40">
+                    <p className="text-[10px] font-mono text-gray-600 uppercase tracking-wider">
+                      Green alerts — oil-relevant regions
+                    </p>
+                  </div>
+                )}
+                {greenEvents.map(e => (
+                  <GDACSEventRow key={e.id} event={e} />
+                ))}
+              </>
+            )}
+          </div>
+        )}
+
+        <div className="px-5 py-2.5 border-t border-oil-800/40 bg-oil-900/20">
+          <p className="text-[10px] text-gray-600">
+            GDACS (Global Disaster Alerting Coordination System) — UN/EC automated alerts for geophysical and weather events.
+            Red/Orange alerts shown globally. Green alerts shown only for countries with direct relevance to EU oil supply routes.
+          </p>
+        </div>
       </div>
 
       {/* High risk */}
@@ -347,5 +415,52 @@ function ChokepointCard({ chokepoint: c }: { chokepoint: Chokepoint }) {
         </div>
       </div>
     </div>
+  );
+}
+
+function GDACSEventRow({ event: e }: { event: import('@/lib/gdacs').GDACSEvent }) {
+  const ALERT_STYLES: Record<GDACSAlertLevel, string> = {
+    Red:    'bg-red-900/30 text-red-300 border-red-800/60',
+    Orange: 'bg-orange-900/30 text-orange-300 border-orange-800/60',
+    Green:  'bg-green-900/30 text-green-300 border-green-800/60',
+  };
+
+  const icon = EVENT_TYPE_ICONS[e.eventType] ?? '⚠️';
+  const typeLabel = EVENT_TYPE_LABELS[e.eventType] ?? e.eventType;
+
+  const timeAgo = (() => {
+    const diff = Date.now() - new Date(e.date).getTime();
+    const h = Math.floor(diff / 3_600_000);
+    if (h < 1) return 'just now';
+    if (h === 1) return '1h ago';
+    return `${h}h ago`;
+  })();
+
+  return (
+    <a
+      href={e.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-start gap-3 px-5 py-3 hover:bg-oil-800/20 transition group"
+    >
+      <span className="text-base flex-shrink-0 mt-0.5">{icon}</span>
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-center gap-2 mb-0.5">
+          <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded border ${ALERT_STYLES[e.alertLevel]}`}>
+            {e.alertLevel}
+          </span>
+          <span className="text-[10px] text-gray-500">{typeLabel}</span>
+          {e.country && (
+            <span className="text-[10px] text-gray-500">· {e.country}</span>
+          )}
+          <span className="text-[10px] text-gray-600">{timeAgo}</span>
+        </div>
+        <p className="text-xs text-gray-300 group-hover:text-white transition leading-snug">{e.title}</p>
+        {e.severity && (
+          <p className="text-[10px] text-gray-600 mt-0.5">{e.severity}</p>
+        )}
+      </div>
+      <span className="text-gray-600 text-xs flex-shrink-0 group-hover:text-oil-400 transition">→</span>
+    </a>
   );
 }
