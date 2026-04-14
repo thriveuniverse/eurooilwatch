@@ -1,15 +1,13 @@
 {
-  "generatedAt": "2026-04-14T06:26:46.102Z",
-  "statusLine": "European fuel stocks remain under pressure with 14 of 27 countries showing critical status in at least one fuel type, though EU-wide averages hold above mandatory minimums.",
+  "generatedAt": "2026-04-14T07:19:44.613Z",
+  "statusLine": "EU fuel reserves data loading — analysis pending",
   "overallStatus": "watch",
-  "fullAnalysis": "European fuel security shows mixed signals in early 2026, with EU-wide stock levels marginally above the 90-day mandatory minimum but significant country-level vulnerabilities persisting. While average petrol stocks reach 94.5 days and diesel 95.8 days, jet fuel remains tightest at 89.9 days. The overall watch status reflects widespread strain across member states rather than system-wide collapse.\n\nCountry-level data reveals concerning disparities, with 14 of 27 countries showing critical status in at least one fuel type. Romania faces the most severe situation with all three fuel types in critical status, including diesel stocks at just 20.2 days. Poland, Spain, and Luxembourg also show critical levels across all categories. Eastern European countries appear particularly vulnerable, with Romania, Poland, Lithuania, and Latvia all showing multiple critical designations.\n\nOil prices remain elevated at $98.3 per barrel, down slightly but still reflecting the approximately 27% increase since Middle East disruptions began. This price pressure, combined with recent strategic reserve releases by several member states, suggests the fuel security situation developed from external supply shocks rather than demand surges. Consumer prices show significant variation across the bloc, with Netherlands petrol reaching €2.334/L while Malta maintains much lower prices at €1.34/L.",
+  "fullAnalysis": "Analysis will be generated once the ANTHROPIC_API_KEY environment variable is set. The data pipeline is working and collecting information from Eurostat and the EC Oil Bulletin.",
   "keyPoints": [
-    "14 of 27 EU countries show critical fuel stock levels in at least one category, indicating widespread pressure across the bloc",
-    "Romania faces the most severe situation with all fuel types critical, including diesel at just 20.2 days—well below the 90-day minimum",
-    "Jet fuel stocks are tightest EU-wide at 89.9 days, falling below the mandatory 90-day threshold",
-    "Eastern European countries show particular vulnerability, with Poland, Lithuania, and Latvia joining Romania in multiple critical categories",
-    "Oil prices remain elevated at $98.3/barrel following Middle East supply disruptions, contributing to consumer price pressures across member states"
+    "Data pipeline active — stocks and prices being collected",
+    "AI analysis requires ANTHROPIC_API_KEY to generate",
+    "Set the env var and re-run: ANTHROPIC_API_KEY=sk-ant-xxx npm run analyze"
   ],
-  "dataPeriod": "2026-01",
-  "model": "claude-sonnet-4-20250514"
+  "dataPeriod": "2026-02",
+  "model": "placeholder"
 }
