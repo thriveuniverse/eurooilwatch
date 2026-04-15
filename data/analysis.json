@@ -1,13 +1,15 @@
 {
-  "generatedAt": "2026-04-14T07:19:44.613Z",
-  "statusLine": "EU fuel reserves data loading — analysis pending",
+  "generatedAt": "2026-04-15T06:28:26.238Z",
+  "statusLine": "EU oil security is under strain with 18 of 27 countries below the 90-day mandatory minimum for at least one fuel type, while crude prices remain elevated at $94.77/barrel.",
   "overallStatus": "watch",
-  "fullAnalysis": "Analysis will be generated once the ANTHROPIC_API_KEY environment variable is set. The data pipeline is working and collecting information from Eurostat and the EC Oil Bulletin.",
+  "fullAnalysis": "European fuel security faces significant pressure as two-thirds of EU countries struggle to maintain adequate reserves across key fuel types. Romania shows the most severe shortfalls with only 43.6 days of petrol and a critically low 20.2 days of diesel reserves, while Poland's jet fuel stocks have dropped to just 21.3 days. Major economies including Germany, France, Italy, and Spain all fall below the 90-day threshold for multiple fuel categories, indicating widespread regional stress.\n\nThe data reveals a clear geographic pattern with Eastern European nations experiencing the most acute shortages, though Western countries are not immune. Germany holds only 52.7 days of petrol reserves, while France maintains just 64.7 days. Jet fuel emerges as the most constrained category EU-wide at 91.1 days average, with 19 of 27 countries below the mandatory minimum.\n\nDespite these pressures, some resilience remains in the system. The Netherlands maintains exceptionally high diesel reserves at 215.7 days, and Nordic countries like Finland (247 days diesel) and Estonia (241.8 days petrol) show strong positions. However, with Brent crude elevated at $94.77 following recent Middle East disruptions and strategic reserve releases already deployed, the margin for further supply shocks appears limited across much of the EU.",
   "keyPoints": [
-    "Data pipeline active — stocks and prices being collected",
-    "AI analysis requires ANTHROPIC_API_KEY to generate",
-    "Set the env var and re-run: ANTHROPIC_API_KEY=sk-ant-xxx npm run analyze"
+    "18 of 27 EU countries fall below the 90-day mandatory minimum for at least one fuel type, with Romania showing critical shortages across all categories",
+    "Jet fuel reserves are most constrained EU-wide at 91.1 days average, with 19 countries below the threshold including major aviation hubs",
+    "Eastern European nations face the most severe pressures, with Poland, Romania, and Lithuania showing multiple critical-level stockpiles",
+    "Major economies Germany, France, Italy, and Spain all maintain insufficient reserves in multiple fuel categories despite their strategic importance",
+    "Crude oil prices remain elevated at $94.77/barrel following Middle East supply disruptions, limiting buffer capacity for additional shocks"
   ],
   "dataPeriod": "2026-02",
-  "model": "placeholder"
+  "model": "claude-sonnet-4-20250514"
 }
