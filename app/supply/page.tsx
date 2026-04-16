@@ -101,6 +101,27 @@ const CHOKEPOINTS: Chokepoint[] = [
     ],
   },
   {
+    id: 'south-china-sea',
+    name: 'South China Sea — Scarborough Shoal',
+    region: 'West Philippines Sea / South China Sea',
+    risk: 'high',
+    riskLabel: 'High — blockage disrupting Asian supply flows',
+    dailyFlow: '~3.4',
+    euRelevance: 'indirect',
+    coords: 'Scarborough Shoal, approximately 220km west of the Philippines, within the broader South China Sea corridor',
+    summary:
+      'Chinese naval and coast guard vessels have established a blockade around Scarborough Shoal, disrupting Philippine maritime access and raising the risk of broader interference with commercial tanker traffic through the South China Sea. The sea lane carries approximately 3.4 mb/d of oil — primarily Middle Eastern crude transiting to China, Japan, and South Korea — along with significant LNG volumes. While the blockade is currently focused on the Shoal itself rather than the main tanker lanes, the escalation introduces material operational risk to one of the world\'s busiest energy corridors.',
+    euImpact:
+      'The South China Sea does not sit on the primary EU supply route, but its disruption feeds into European fuel markets through displaced demand. If Chinese and East Asian buyers are unable to secure normal Gulf supply volumes via this corridor, they compete more aggressively for Atlantic Basin, West African, and North Sea cargoes — the same pool EU refiners draw on. This demand displacement mechanism is already active via the Hormuz disruption; a simultaneous South China Sea constraint compounds the squeeze on Atlantic Basin crude availability and supports higher prices for European buyers.',
+    context:
+      'The Scarborough Shoal has been a flashpoint in China-Philippines tensions since China effectively seized control of the feature in 2012. The current blockade escalates well beyond previous stand-offs and has drawn US statements under the Mutual Defense Treaty with the Philippines. A full closure of the broader South China Sea to commercial traffic — while not the current situation — would represent one of the most severe supply shocks in modern history, affecting roughly a third of global seaborne oil trade. The situation is being monitored by the IEA and has been noted in recent IMF growth revisions.',
+    lastReviewed: '2026-04-16',
+    sources: [
+      { label: 'EIA — South China Sea', url: 'https://www.eia.gov/international/analysis/regions-of-interest/South_China_Sea' },
+      { label: 'EIA — World Oil Transit Chokepoints', url: 'https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints' },
+    ],
+  },
+  {
     id: 'danish-straits',
     name: 'Danish Straits',
     region: 'Denmark / Sweden — Baltic Sea access',
@@ -202,7 +223,7 @@ export default async function SupplyPage() {
       {/* Status summary bar */}
       <div className="rounded-lg border border-oil-800 bg-oil-900/30 px-5 py-4">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-3">
-          Current Route Status — {new Date('2026-04-10').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+          Current Route Status — {new Date('2026-04-16').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
         </h2>
         <div className="flex flex-wrap gap-3">
           {CHOKEPOINTS.map(c => {
