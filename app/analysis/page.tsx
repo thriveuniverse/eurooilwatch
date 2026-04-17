@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
+import { getReliefWebReports } from '@/lib/reliefweb';
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: 'Analysis | EuroOilWatch',
@@ -48,11 +51,12 @@ function getArticles(): ArticleMeta[] {
   return articles.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
 
-export default function AnalysisPage() {
+export default async function AnalysisPage() {
   const articles = getArticles();
+  const rwReports = await getReliefWebReports();
 
   return (
-    <div className="max-w-3xl mx-auto space-y-8">
+    <div className="max-w-3xl mx-auto space-y-10">
       <div>
         <a href="/" className="text-xs text-oil-400 hover:underline">
           ← Back to dashboard
@@ -63,6 +67,7 @@ export default function AnalysisPage() {
         </p>
       </div>
 
+      {/* Editorial articles */}
       {articles.length === 0 ? (
         <p className="text-gray-500 text-sm">No articles yet.</p>
       ) : (
@@ -105,6 +110,76 @@ export default function AnalysisPage() {
           ))}
         </div>
       )}
+
+      {/* ReliefWeb situation reports */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between gap-3">
+          <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase">
+            UN / OCHA Situation Reports
+          </h2>
+          <a
+            href="https://reliefweb.int"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[10px] text-gray-600 hover:text-gray-400 transition"
+          >
+            Source: ReliefWeb →
+          </a>
+        </div>
+
+        {rwReports.length === 0 ? (
+          <p className="text-xs text-gray-600">No recent reports available.</p>
+        ) : (
+          <div className="space-y-3">
+            {rwReports.map((r) => (
+              <a
+                key={r.id}
+                href={r.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-lg border border-oil-800 bg-oil-900/20 p-4 hover:border-oil-700 hover:bg-oil-900/40 transition group"
+              >
+                <div className="flex flex-wrap items-center gap-2 mb-1.5">
+                  {r.date && (
+                    <time dateTime={r.date} className="text-[10px] text-gray-500">
+                      {new Date(r.date).toLocaleDateString('en-GB', {
+                        day: 'numeric',
+                        month: 'short',
+                        year: 'numeric',
+                      })}
+                    </time>
+                  )}
+                  {r.sources.length > 0 && (
+                    <>
+                      <span className="text-[10px] text-gray-600">·</span>
+                      <span className="text-[10px] text-gray-500">{r.sources.join(', ')}</span>
+                    </>
+                  )}
+                  {r.countries.length > 0 && (
+                    <>
+                      <span className="text-[10px] text-gray-600">·</span>
+                      <span className="text-[10px] text-gray-500">{r.countries.join(', ')}</span>
+                    </>
+                  )}
+                </div>
+                <h3 className="text-sm font-medium text-gray-300 group-hover:text-white transition leading-snug">
+                  {r.title}
+                </h3>
+                {r.snippet && (
+                  <p className="mt-1.5 text-xs text-gray-500 leading-relaxed line-clamp-2">
+                    {r.snippet}
+                  </p>
+                )}
+              </a>
+            ))}
+          </div>
+        )}
+
+        <p className="text-[10px] text-gray-600">
+          Situation reports sourced from ReliefWeb (UN OCHA). Filtered for relevance to oil, fuel, and energy supply security.
+          Updated hourly.
+        </p>
+      </div>
     </div>
   );
 }
