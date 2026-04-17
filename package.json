@@ -14,6 +14,7 @@
     "analyze": "npx tsx scripts/generate-analysis.ts",
     "fetch:all": "npm run fetch:stocks && npm run fetch:prices && npm run fetch:brent",
     "update": "npm run fetch:all && npm run analyze",
+    "draft:newsletter": "npx tsx scripts/generate-newsletter.ts",
     "send:newsletter": "npx tsx scripts/send-newsletter.ts",
     "setup:resend": "npx tsx scripts/setup-resend.ts"
   },
