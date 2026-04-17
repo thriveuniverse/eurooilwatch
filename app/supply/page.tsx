@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { getGDACSEvents, EVENT_TYPE_LABELS, EVENT_TYPE_ICONS } from '@/lib/gdacs';
 import type { GDACSAlertLevel } from '@/lib/gdacs';
 import { getUSGSQuakes, magSeverity } from '@/lib/usgs';
+import { getFIRMSDetections, frpSeverity } from '@/lib/firms';
 
 export const revalidate = 3600;
 
@@ -203,7 +204,11 @@ export default async function SupplyPage() {
   const elevated = CHOKEPOINTS.filter(c => c.risk === 'elevated');
   const normal   = CHOKEPOINTS.filter(c => c.risk === 'normal');
 
-  const [gdacsEvents, usgsQuakes] = await Promise.all([getGDACSEvents(), getUSGSQuakes()]);
+  const [gdacsEvents, usgsQuakes, firmsResult] = await Promise.all([
+    getGDACSEvents(),
+    getUSGSQuakes(),
+    getFIRMSDetections(),
+  ]);
   const redEvents    = gdacsEvents.filter(e => e.alertLevel === 'Red');
   const orangeEvents = gdacsEvents.filter(e => e.alertLevel === 'Orange');
   const greenEvents  = gdacsEvents.filter(e => e.alertLevel === 'Green');
@@ -339,6 +344,57 @@ export default async function SupplyPage() {
           <p className="text-[10px] text-gray-600">
             M5.0+ earthquakes near oil infrastructure regions: Middle East &amp; Gulf, North Africa, Caspian, Caucasus, North Sea, Southern Europe.
             Shallow quakes (&lt;70km) near refineries or pipelines carry highest operational risk.
+          </p>
+        </div>
+      </div>
+
+      {/* FIRMS Thermal Anomalies */}
+      <div className="rounded-lg border border-oil-800 bg-oil-900/30 overflow-hidden">
+        <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            <span className="text-sm">🔥</span>
+            <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-400 uppercase">
+              Thermal Anomalies — Major Refineries &amp; Terminals
+            </h2>
+          </div>
+          <a
+            href="https://firms.modaps.eosdis.nasa.gov"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[10px] text-gray-600 hover:text-gray-400 transition"
+          >
+            Source: NASA FIRMS →
+          </a>
+        </div>
+
+        {firmsResult.status === 'no_key' ? (
+          <div className="px-5 py-4 space-y-1">
+            <p className="text-xs text-gray-500">FIRMS API key not configured.</p>
+            <p className="text-[10px] text-gray-600">
+              Register free at{' '}
+              <a href="https://firms.modaps.eosdis.nasa.gov/api/area/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">
+                firms.modaps.eosdis.nasa.gov/api/area
+              </a>
+              {' '}— set <span className="font-mono">FIRMS_MAP_KEY</span> in <span className="font-mono">.env.local</span> and in GitHub secrets.
+            </p>
+          </div>
+        ) : firmsResult.status === 'error' ? (
+          <div className="px-5 py-4 text-xs text-gray-600">Feed temporarily unavailable.</div>
+        ) : firmsResult.detections.length === 0 ? (
+          <div className="px-5 py-4 text-xs text-gray-600">
+            No thermal anomalies detected near major refineries or terminals in the past 24 hours.
+          </div>
+        ) : (
+          <div className="divide-y divide-oil-800/40">
+            {firmsResult.detections.map(d => <FIRMSDetectionRow key={d.id} detection={d} />)}
+          </div>
+        )}
+
+        <div className="px-5 py-2.5 border-t border-oil-800/40 bg-oil-900/20">
+          <p className="text-[10px] text-gray-600">
+            NASA FIRMS VIIRS satellite detections within ~15km of 24 major EU and Gulf refineries/terminals. Past 24h.
+            FRP (Fire Radiative Power) indicates intensity — high FRP near a facility may indicate flaring, fire, or process incident.
+            Not all detections indicate incidents; flaring is routine.
           </p>
         </div>
       </div>
@@ -518,6 +574,46 @@ function GDACSEventRow({ event: e }: { event: import('@/lib/gdacs').GDACSEvent }
         {e.severity && (
           <p className="text-[10px] text-gray-600 mt-0.5">{e.severity}</p>
         )}
+      </div>
+      <span className="text-gray-600 text-xs flex-shrink-0 group-hover:text-oil-400 transition">→</span>
+    </a>
+  );
+}
+
+function FIRMSDetectionRow({ detection: d }: { detection: import('@/lib/firms').FIRMSDetection }) {
+  const severity = frpSeverity(d.frp);
+  const SEVERITY_STYLES: Record<string, string> = {
+    red:    'bg-red-900/30 text-red-300 border-red-800/60',
+    orange: 'bg-orange-900/30 text-orange-300 border-orange-800/60',
+    yellow: 'bg-yellow-900/30 text-yellow-300 border-yellow-800/60',
+    gray:   'bg-oil-800/40 text-gray-400 border-oil-700/60',
+  };
+
+  const timeLabel = (() => {
+    const [h, m] = [d.acqTime.slice(0, 2), d.acqTime.slice(2)];
+    return `${d.acqDate} ${h}:${m} UTC`;
+  })();
+
+  return (
+    <a
+      href={`https://firms.modaps.eosdis.nasa.gov/map/#d:${d.acqDate};@${d.longitude},${d.latitude},10z`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-start gap-3 px-5 py-3 hover:bg-oil-800/20 transition group"
+    >
+      <span className={`flex-shrink-0 mt-0.5 text-[10px] font-mono font-bold px-1.5 py-0.5 rounded border ${SEVERITY_STYLES[severity]}`}>
+        {d.frp.toFixed(0)} MW
+      </span>
+      <div className="min-w-0 flex-1">
+        <div className="flex flex-wrap items-center gap-2 mb-0.5">
+          <span className="text-[10px] text-gray-400">{d.refinery}</span>
+          <span className="text-[10px] text-gray-600">
+            · {d.confidence === 'h' ? 'high confidence' : 'nominal'} · {d.daynight === 'D' ? 'daytime' : 'night'} · {timeLabel}
+          </span>
+        </div>
+        <p className="text-xs text-gray-500 group-hover:text-gray-300 transition">
+          {d.latitude.toFixed(3)}°, {d.longitude.toFixed(3)}°
+        </p>
       </div>
       <span className="text-gray-600 text-xs flex-shrink-0 group-hover:text-oil-400 transition">→</span>
     </a>
