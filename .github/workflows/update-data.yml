@@ -39,6 +39,10 @@ jobs:
         run: npm run fetch:brent
         continue-on-error: true
 
+      - name: Fetch bunker fuel prices
+        run: npm run fetch:bunker
+        continue-on-error: true
+
       - name: Generate AI analysis
         run: npm run analyze
         env:

@@ -1,4 +1,6 @@
 import type { Metadata } from 'next';
+import fs from 'fs';
+import path from 'path';
 import { getGDACSEvents, EVENT_TYPE_LABELS, EVENT_TYPE_ICONS } from '@/lib/gdacs';
 import type { GDACSAlertLevel } from '@/lib/gdacs';
 import { getUSGSQuakes, magSeverity } from '@/lib/usgs';
@@ -199,6 +201,21 @@ const RELEVANCE_LABEL: Record<string, string> = {
   indirect: 'Indirect / price impact',
 };
 
+interface BunkerPort {
+  name: string; code: string; region: string; relevance: string;
+  vlsfo: number; mgo: number; vlsfoChange: number; mgoChange: number;
+}
+interface BunkerData {
+  lastUpdated: string; brentBasis: number; brentChange: number; note: string;
+  ports: BunkerPort[];
+}
+
+function readBunker(): BunkerData | null {
+  const p = path.join(process.cwd(), 'data', 'bunker.json');
+  if (!fs.existsSync(p)) return null;
+  try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; }
+}
+
 export default async function SupplyPage() {
   const highRisk = CHOKEPOINTS.filter(c => c.risk === 'critical' || c.risk === 'high');
   const elevated = CHOKEPOINTS.filter(c => c.risk === 'elevated');
@@ -209,6 +226,8 @@ export default async function SupplyPage() {
     getUSGSQuakes(),
     getFIRMSDetections(),
   ]);
+
+  const bunker = readBunker();
   const redEvents    = gdacsEvents.filter(e => e.alertLevel === 'Red');
   const orangeEvents = gdacsEvents.filter(e => e.alertLevel === 'Orange');
   const greenEvents  = gdacsEvents.filter(e => e.alertLevel === 'Green');
@@ -398,6 +417,67 @@ export default async function SupplyPage() {
           </p>
         </div>
       </div>
+
+      {/* Bunker Fuel Prices */}
+      {bunker && (
+        <div className="rounded-lg border border-oil-800 bg-oil-900/20 overflow-hidden">
+          <div className="flex items-center justify-between gap-3 px-5 py-3 border-b border-oil-800/60">
+            <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase">
+              Bunker Fuel Prices
+            </h2>
+            <a href="https://shipandbunker.com/prices" target="_blank" rel="noopener noreferrer"
+              className="text-[10px] text-gray-600 hover:text-gray-400 transition">
+              Ship & Bunker →
+            </a>
+          </div>
+          <div className="divide-y divide-oil-800/40">
+            {bunker.ports.map(p => (
+              <div key={p.code} className="px-5 py-3 flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6">
+                <div className="min-w-[130px]">
+                  <span className="text-sm font-semibold text-white">{p.name}</span>
+                  <span className="ml-2 text-[10px] text-gray-500 font-mono">{p.code}</span>
+                  <div className="text-[10px] text-gray-500 mt-0.5">{p.region}</div>
+                </div>
+                <div className="flex gap-6 flex-1">
+                  <div>
+                    <div className="text-[10px] text-gray-500 mb-0.5">VLSFO</div>
+                    <div className="flex items-baseline gap-1.5">
+                      <span className="text-sm font-mono font-semibold text-white">${p.vlsfo}</span>
+                      <span className="text-[10px] text-gray-500">/mt</span>
+                      {p.vlsfoChange !== 0 && (
+                        <span className={`text-[10px] font-mono ${p.vlsfoChange > 0 ? 'text-red-400' : 'text-emerald-400'}`}>
+                          {p.vlsfoChange > 0 ? '▲' : '▼'} {Math.abs(p.vlsfoChange).toFixed(1)}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-[10px] text-gray-500 mb-0.5">MGO</div>
+                    <div className="flex items-baseline gap-1.5">
+                      <span className="text-sm font-mono font-semibold text-white">${p.mgo}</span>
+                      <span className="text-[10px] text-gray-500">/mt</span>
+                      {p.mgoChange !== 0 && (
+                        <span className={`text-[10px] font-mono ${p.mgoChange > 0 ? 'text-red-400' : 'text-emerald-400'}`}>
+                          {p.mgoChange > 0 ? '▲' : '▼'} {Math.abs(p.mgoChange).toFixed(1)}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <div className="hidden sm:block flex-1 text-[10px] text-gray-600 leading-relaxed self-center">
+                    {p.relevance}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="px-5 py-2.5 border-t border-oil-800/40 bg-oil-900/20">
+            <p className="text-[10px] text-gray-600">
+              Estimated from Brent crude benchmark (${bunker.brentBasis}/bbl). VLSFO = IMO 2020 compliant very low sulphur fuel oil. MGO = marine gas oil (ECA-grade).
+              For exact market prices: <a href="https://shipandbunker.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">Ship & Bunker</a>, Platts.
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* High risk */}
       {highRisk.length > 0 && (
