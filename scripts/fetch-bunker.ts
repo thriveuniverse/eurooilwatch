@@ -86,6 +86,38 @@ function compute(brentUsd: number, brentChange: number): BunkerPort[] {
   ];
 }
 
+interface BunkerHistoryEntry {
+  date: string;
+  brentBasis: number;
+  rotterdam: { vlsfo: number; mgo: number };
+  fujairah:  { vlsfo: number; mgo: number };
+  singapore: { vlsfo: number; mgo: number };
+}
+
+function updateBunkerHistory(ports: BunkerPort[], brentUsd: number): void {
+  const histPath = path.join(DATA_DIR, 'bunker-history.json');
+  const today = new Date().toISOString().slice(0, 10);
+
+  let history: { lastUpdated: string; entries: BunkerHistoryEntry[] } = { lastUpdated: '', entries: [] };
+  if (fs.existsSync(histPath)) {
+    try { history = JSON.parse(fs.readFileSync(histPath, 'utf-8')); } catch { /* start fresh */ }
+  }
+
+  const byCode = Object.fromEntries(ports.map(p => [p.code, p]));
+  history.entries = history.entries.filter(e => e.date !== today);
+  history.entries.push({
+    date: today, brentBasis: brentUsd,
+    rotterdam: { vlsfo: byCode['ARA'].vlsfo,  mgo: byCode['ARA'].mgo },
+    fujairah:  { vlsfo: byCode['FUJA'].vlsfo, mgo: byCode['FUJA'].mgo },
+    singapore: { vlsfo: byCode['SING'].vlsfo, mgo: byCode['SING'].mgo },
+  });
+  history.entries = history.entries.sort((a, b) => a.date.localeCompare(b.date)).slice(-365);
+  history.lastUpdated = new Date().toISOString();
+
+  fs.writeFileSync(histPath, JSON.stringify(history, null, 2));
+  console.log(`   📊 Bunker history: ${history.entries.length} entries`);
+}
+
 async function main() {
   const brentPath = path.join(DATA_DIR, 'brent.json');
   if (!fs.existsSync(brentPath)) {
@@ -111,6 +143,8 @@ async function main() {
   for (const p of ports) {
     console.log(`   ${p.name.padEnd(12)} VLSFO $${p.vlsfo}/mt  MGO $${p.mgo}/mt`);
   }
+
+  updateBunkerHistory(ports, brent.priceUsd);
 }
 
 main().catch(err => {

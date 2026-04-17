@@ -1,7 +1,11 @@
 import { getDashboardData } from '@/lib/data';
 import { COUNTRIES } from '@/lib/countries';
 import type { Metadata } from 'next';
+import fs from 'fs';
+import path from 'path';
 import PriceHeatmap from '@/components/PriceHeatmap';
+import BrentHistoryChart from '@/components/BrentHistoryChart';
+import EUPriceHistoryChart from '@/components/EUPriceHistoryChart';
 import JsonLd from '@/components/JsonLd';
 
 export const metadata: Metadata = {
@@ -13,8 +17,16 @@ export const metadata: Metadata = {
 
 export const revalidate = 1800;
 
+function readHistory<T>(filename: string): T | null {
+  const p = path.join(process.cwd(), 'data', filename);
+  if (!fs.existsSync(p)) return null;
+  try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; }
+}
+
 export default function PricesPage() {
   const { prices } = getDashboardData();
+  const brentHistory = readHistory<{ entries: { date: string; priceUsd: number; priceEur: number }[] }>('brent-history.json');
+  const pricesHistory = readHistory<{ entries: { date: string; petrolEur: number; dieselEur: number }[] }>('prices-history.json');
 
   return (
     <div className="space-y-6">
@@ -41,6 +53,14 @@ export default function PricesPage() {
       </div>
 
       <PriceHeatmap prices={prices} />
+
+      {pricesHistory && pricesHistory.entries.length >= 2 && (
+        <EUPriceHistoryChart entries={pricesHistory.entries} />
+      )}
+
+      {brentHistory && brentHistory.entries.length >= 2 && (
+        <BrentHistoryChart entries={brentHistory.entries} />
+      )}
 
       {/* Sortable table */}
       <section className="rounded-lg border border-oil-800 bg-oil-900/30 overflow-hidden">

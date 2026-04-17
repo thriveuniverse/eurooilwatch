@@ -201,6 +201,27 @@ async function main() {
   console.log(`   EU avg petrol: €${dataset.euAverage.petrolPrice}/L`);
   console.log(`   EU avg diesel: €${dataset.euAverage.dieselPrice}/L`);
   console.log(`   Source: ${dataset.dataSource}`);
+
+  updatePricesHistory(dataset.bulletinDate, dataset.euAverage.petrolPrice, dataset.euAverage.dieselPrice);
+}
+
+function updatePricesHistory(bulletinDate: string, petrolEur: number, dieselEur: number): void {
+  const histPath = path.join(path.dirname(OUTPUT_FILE), 'prices-history.json');
+
+  let history: { lastUpdated: string; entries: { date: string; petrolEur: number; dieselEur: number }[] } =
+    { lastUpdated: '', entries: [] };
+
+  if (fs.existsSync(histPath)) {
+    try { history = JSON.parse(fs.readFileSync(histPath, 'utf-8')); } catch { /* start fresh */ }
+  }
+
+  history.entries = history.entries.filter(e => e.date !== bulletinDate);
+  history.entries.push({ date: bulletinDate, petrolEur, dieselEur });
+  history.entries = history.entries.sort((a, b) => a.date.localeCompare(b.date)).slice(-104);
+  history.lastUpdated = new Date().toISOString();
+
+  fs.writeFileSync(histPath, JSON.stringify(history, null, 2));
+  console.log(`   📊 Prices history: ${history.entries.length} weekly entries`);
 }
 
 main().catch(err => {

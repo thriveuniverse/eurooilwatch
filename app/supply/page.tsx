@@ -5,6 +5,7 @@ import { getGDACSEvents, EVENT_TYPE_LABELS, EVENT_TYPE_ICONS } from '@/lib/gdacs
 import type { GDACSAlertLevel } from '@/lib/gdacs';
 import { getUSGSQuakes, magSeverity } from '@/lib/usgs';
 import { getFIRMSDetections, frpSeverity } from '@/lib/firms';
+import BunkerHistoryChart from '@/components/BunkerHistoryChart';
 
 export const revalidate = 3600;
 
@@ -228,6 +229,13 @@ export default async function SupplyPage() {
   ]);
 
   const bunker = readBunker();
+
+  const bunkerHistoryRaw = (() => {
+    const p = path.join(process.cwd(), 'data', 'bunker-history.json');
+    if (!fs.existsSync(p)) return null;
+    try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; }
+  })();
+  const bunkerHistory = bunkerHistoryRaw?.entries?.length >= 2 ? bunkerHistoryRaw.entries : null;
   const redEvents    = gdacsEvents.filter(e => e.alertLevel === 'Red');
   const orangeEvents = gdacsEvents.filter(e => e.alertLevel === 'Orange');
   const greenEvents  = gdacsEvents.filter(e => e.alertLevel === 'Green');
@@ -478,6 +486,8 @@ export default async function SupplyPage() {
           </div>
         </div>
       )}
+
+      {bunkerHistory && <BunkerHistoryChart entries={bunkerHistory} />}
 
       {/* High risk */}
       {highRisk.length > 0 && (

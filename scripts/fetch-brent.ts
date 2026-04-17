@@ -78,6 +78,59 @@ function seedBrentData(): BrentData {
   };
 }
 
+const HISTORY_FILE = path.join(__dirname, '..', 'data', 'brent-history.json');
+const EUR_USD = 0.92;
+
+interface HistoryEntry { date: string; priceUsd: number; priceEur: number; }
+interface BrentHistory { lastUpdated: string; entries: HistoryEntry[]; }
+
+async function seedBrentHistory(): Promise<HistoryEntry[]> {
+  console.log('📅 Seeding Brent history from Yahoo Finance (1 year weekly)...');
+  try {
+    const res = await fetch(
+      'https://query1.finance.yahoo.com/v8/finance/chart/BZ=F?interval=1wk&range=1y',
+      { headers: { 'User-Agent': 'EuroOilWatch/0.1' } }
+    );
+    if (!res.ok) return [];
+    const json = await res.json();
+    const result = json?.chart?.result?.[0];
+    if (!result) return [];
+    const timestamps: number[] = result.timestamp ?? [];
+    const closes: number[] = result.indicators?.quote?.[0]?.close ?? [];
+    const entries: HistoryEntry[] = [];
+    for (let i = 0; i < timestamps.length; i++) {
+      const price = closes[i];
+      if (!price) continue;
+      const date = new Date(timestamps[i] * 1000).toISOString().slice(0, 10);
+      entries.push({ date, priceUsd: Math.round(price * 100) / 100, priceEur: Math.round(price * EUR_USD * 100) / 100 });
+    }
+    console.log(`   ✅ Seeded ${entries.length} weekly entries`);
+    return entries;
+  } catch {
+    return [];
+  }
+}
+
+async function updateBrentHistory(current: BrentData): Promise<void> {
+  const today = new Date().toISOString().slice(0, 10);
+  let history: BrentHistory;
+
+  if (!fs.existsSync(HISTORY_FILE)) {
+    const seeded = await seedBrentHistory();
+    history = { lastUpdated: new Date().toISOString(), entries: seeded };
+  } else {
+    history = JSON.parse(fs.readFileSync(HISTORY_FILE, 'utf-8'));
+  }
+
+  history.entries = history.entries.filter(e => e.date !== today);
+  history.entries.push({ date: today, priceUsd: current.priceUsd, priceEur: current.priceEur });
+  history.entries = history.entries.sort((a, b) => a.date.localeCompare(b.date)).slice(-365);
+  history.lastUpdated = new Date().toISOString();
+
+  fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
+  console.log(`   📊 History: ${history.entries.length} entries (${history.entries[0]?.date} → ${today})`);
+}
+
 async function main() {
   console.log('🛢️  EuroOilWatch — Fetching Brent Crude Price');
   console.log('==============================================');
@@ -94,6 +147,8 @@ async function main() {
 
   console.log(`\n✅ Written to ${OUTPUT_FILE}`);
   console.log(`   Brent: $${data.priceUsd} / €${data.priceEur}`);
+
+  await updateBrentHistory(data);
 }
 
 main().catch(err => {
