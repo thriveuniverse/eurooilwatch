@@ -36,8 +36,8 @@ export default function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        headline="Active supply disruption"
-        body="Strait of Hormuz traffic near standstill and Red Sea rerouting ongoing simultaneously — Atlantic Basin crude at record premiums."
+        headline="Hormuz reopened — Red Sea disruption continues"
+        body="Strait of Hormuz fully reopened April 2026 — a major supply relief. Red Sea rerouting via Cape of Good Hope remains the operational norm."
         linkLabel="Supply Routes →"
         linkHref="/supply"
       />
