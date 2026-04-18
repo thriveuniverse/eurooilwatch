@@ -31,6 +31,10 @@ jobs:
         run: npm run fetch:stocks
         continue-on-error: true
 
+      - name: Fetch stock history (18 months)
+        run: npm run fetch:history
+        continue-on-error: true
+
       - name: Fetch fuel prices
         run: npm run fetch:prices
         continue-on-error: true
