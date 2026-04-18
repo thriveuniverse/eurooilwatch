@@ -47,18 +47,18 @@ const CHOKEPOINTS: Chokepoint[] = [
     id: 'hormuz',
     name: 'Strait of Hormuz',
     region: 'Persian Gulf / Gulf of Oman',
-    risk: 'normal',
-    riskLabel: 'Normal — fully reopened April 2026',
+    risk: 'critical',
+    riskLabel: 'Critical — reclosed 18 April, US-Iran dispute',
     dailyFlow: '~20',
     euRelevance: 'indirect',
     coords: 'Between Iran and Oman, connecting Persian Gulf to Arabian Sea',
     summary:
-      'The Strait of Hormuz has fully reopened following diplomatic resolution in mid-April 2026. Tanker traffic has resumed across the waterway after weeks of near-standstill conditions. The ~20 mb/d that normally flows through the strait — around 20% of global seaborne oil trade — is returning to normal operations. Gulf loadings are resuming and major operators are scheduling return voyages.',
+      'The Strait of Hormuz has been reclosed as of 18 April 2026 — within hours of a brief diplomatic opening on 17 April. Iran shut the strait again citing the US maintaining a naval blockade on Iranian ports in breach of ceasefire terms. The closure is part of the wider US-Israel-Iran conflict that began in late February 2026. Traffic through the strait is down approximately 90% from normal: 19 transits recorded on 15 April versus the pre-crisis norm of ~138 per day. Over 230 loaded oil tankers are reported queued in the Gulf.',
     euImpact:
-      'The reopening removes the most acute supply risk for European fuel markets. Atlantic Basin crude premiums should ease as Asian buyers return to Middle Eastern supply, reducing competition with EU refiners for North Sea and West African barrels. EU refiners dependent on Middle Eastern feedstocks will see cost pressure gradually subside. Physical supply recovery will take weeks to months to fully materialise in European stock levels. Diesel and jet fuel supply chains serving EU buyers will normalise ahead of strategic reserve levels.',
+      'Approximately 20% of global seaborne oil trade — around 20 mb/d — normally transits Hormuz. The sustained near-closure has sharply tightened global crude supply, driven up Atlantic Basin crude premiums as Asian buyers compete for non-Gulf supply, and put direct upward pressure on EU feedstock costs. EU strategic reserve drawdowns have accelerated. The compound disruption — Hormuz effectively closed alongside the Red Sea — is the most severe dual chokepoint event in modern history. EU refiners dependent on Middle Eastern feedstocks face prolonged supply constraint until the geopolitical situation is resolved.',
     context:
-      'The reopening follows a diplomatic process; the underlying geopolitical fragility means continued monitoring is warranted. The Red Sea/Suez route — disrupted by Houthi attacks since late 2023 — remains closed to most commercial traffic, so Cape of Good Hope routing for Gulf-to-Europe cargoes is still the operational norm. The Hormuz reopening is nonetheless decisive: the unprecedented compound crisis that simultaneously closed both primary Gulf export corridors is now partially resolved. Watch for: pace of VLCC traffic normalisation, insurance premium recovery, and any diplomatic backsliding.',
-    lastReviewed: '2026-04-17',
+      'The 17 April ceasefire deal collapsed within hours when the US refused to lift its blockade on Iranian ports. Iran stated that Hormuz will remain under "strict management" of its armed forces until the US restores freedom of navigation for Iranian vessels. The US blockade has so far deterred over 13 merchant ships from transiting. The IRGC has called the US blockade "acts of piracy." Diplomatic back-channel talks are reported ongoing. The Red Sea/Suez route remains independently disrupted by Houthi attacks. Both primary Gulf-to-Europe export corridors are now closed simultaneously.',
+    lastReviewed: '2026-04-18',
     sources: [
       { label: 'IEA — Strait of Hormuz', url: 'https://www.iea.org/articles/hormuz-strait' },
       { label: 'EIA — World Oil Transit Chokepoints', url: 'https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints' },
@@ -74,9 +74,9 @@ const CHOKEPOINTS: Chokepoint[] = [
     euRelevance: 'moderate',
     coords: 'Northeast Egypt, connecting Red Sea (via Gulf of Suez) to Mediterranean',
     summary:
-      'The Suez Canal carries around 5.5 mb/d of oil and petroleum products plus significant LNG volumes. Red Sea avoidance by commercial tankers has kept Canal transit volumes far below pre-disruption levels since late 2023. Cape of Good Hope diversion remains the operating norm for Gulf-to-Europe cargoes. The Hormuz reopening (April 2026) has partially resolved the wider supply crisis, but Red Sea disruption continues.',
+      'The Suez Canal carries around 5.5 mb/d of oil and petroleum products plus significant LNG volumes. Red Sea avoidance by commercial tankers has kept Canal transit volumes far below pre-disruption levels since late 2023. Cape of Good Hope diversion remains the operating norm for Gulf-to-Europe cargoes. Hormuz has been reclosed as of 18 April 2026, meaning both primary Gulf-to-Europe export corridors are now simultaneously blocked.',
     euImpact:
-      'Cape routing adds 10–14 days and substantial cost to Middle Eastern cargo journeys, inflating EU import costs. EU refiners in Eastern Europe and the Mediterranean with limited domestic alternatives continue to face higher feedstock costs. The Hormuz reopening eases the compound crisis, but a full recovery in EU supply chains requires Red Sea normalisation as well.',
+      'Cape routing adds 10–14 days and substantial cost to Middle Eastern cargo journeys, inflating EU import costs. EU refiners in Eastern Europe and the Mediterranean with limited domestic alternatives continue to face higher feedstock costs. The Hormuz reclosure compounds the Red Sea disruption — a full recovery in EU supply chains now requires resolution of both crises.',
     context:
       'The Sumed pipeline can carry approximately 2.5 mb/d of crude as a bypass but not refined products. EU member states have largely adapted sourcing to Atlantic Basin suppliers, but at sustained higher cost. A Houthi ceasefire remains the necessary condition for Red Sea/Suez recovery.',
     lastReviewed: '2026-04-17',
@@ -95,11 +95,11 @@ const CHOKEPOINTS: Chokepoint[] = [
     euRelevance: 'moderate',
     coords: 'Between Yemen and Djibouti/Eritrea, connecting Gulf of Aden to Red Sea',
     summary:
-      'The southern entrance to the Red Sea remains actively disrupted by Houthi attacks since November 2023. Around 4.5 mb/d of oil and products normally transits this route; daily traffic through Bab-el-Mandeb and Suez Canal remains far below pre-attack levels. With Hormuz now reopened, Bab-el-Mandeb is the primary unresolved disruption to Gulf-to-Europe oil and product flows.',
+      'The southern entrance to the Red Sea remains actively disrupted by Houthi attacks since November 2023. Around 4.5 mb/d of oil and products normally transits this route; daily traffic through Bab-el-Mandeb and Suez Canal remains far below pre-attack levels. With Hormuz also reclosed as of 18 April 2026, both primary Gulf export corridors are simultaneously disrupted.',
     euImpact:
-      'ARA-bound cargoes from the Middle East continue to route via the Cape of Good Hope, adding 30+ days versus the Red Sea route. Eastern European states with fewer domestic supply alternatives and countries dependent on Middle Eastern diesel remain most acutely affected. The Hormuz reopening has removed the compound crisis, but Red Sea disruption alone is sufficient to keep freight costs elevated and supply chains stretched.',
+      'ARA-bound cargoes from the Middle East continue to route via the Cape of Good Hope, adding 30+ days versus the Red Sea route. Eastern European states with fewer domestic supply alternatives and countries dependent on Middle Eastern diesel remain most acutely affected. The Hormuz reclosure has reinstated the compound crisis — both disruptions active simultaneously represent the most severe supply corridor constraint since the 1973 oil embargo.',
     context:
-      'Operation Prosperity Guardian has not restored commercial transit confidence. Insurance premiums for Red Sea passage remain prohibitive. The Houthi threat is geopolitically linked to the broader regional conflict; the Hormuz reopening (April 2026) has eased wider supply pressures, but Red Sea normalisation requires a separate Houthi ceasefire and restoration of commercial transit confidence.',
+      'Operation Prosperity Guardian has not restored commercial transit confidence. Insurance premiums for Red Sea passage remain prohibitive. The Houthi threat is geopolitically linked to the broader US-Iran-Israel conflict; Hormuz reclosure (18 April) and Bab-el-Mandeb disruption now overlap, placing the entire Gulf-to-Europe oil corridor under simultaneous constraint. Red Sea normalisation requires a separate Houthi ceasefire.',
     lastReviewed: '2026-04-17',
     sources: [
       { label: 'EIA — Bab-el-Mandeb', url: 'https://www.eia.gov/international/analysis/special-topics/World_Oil_Transit_Chokepoints' },
@@ -117,7 +117,7 @@ const CHOKEPOINTS: Chokepoint[] = [
     summary:
       'Chinese naval and coast guard vessels have established a blockade around Scarborough Shoal, disrupting Philippine maritime access and raising the risk of broader interference with commercial tanker traffic through the South China Sea. The sea lane carries approximately 3.4 mb/d of oil — primarily Middle Eastern crude transiting to China, Japan, and South Korea — along with significant LNG volumes. While the blockade is currently focused on the Shoal itself rather than the main tanker lanes, the escalation introduces material operational risk to one of the world\'s busiest energy corridors.',
     euImpact:
-      'The South China Sea does not sit on the primary EU supply route, but its disruption feeds into European fuel markets through displaced demand. If Chinese and East Asian buyers are unable to secure normal Gulf supply volumes via this corridor, they compete more aggressively for Atlantic Basin, West African, and North Sea cargoes — the same pool EU refiners draw on. With Hormuz now reopened, Gulf supply to Asia is normalising, but a South China Sea escalation would revive that competition and support higher prices for European buyers.',
+      'The South China Sea does not sit on the primary EU supply route, but its disruption feeds into European fuel markets through displaced demand. If Chinese and East Asian buyers are unable to secure normal Gulf supply volumes via this corridor, they compete more aggressively for Atlantic Basin, West African, and North Sea cargoes — the same pool EU refiners draw on. With Hormuz reclosed (18 April 2026), Gulf supply to Asia is already severely constrained — a South China Sea escalation would further intensify competition for alternative supply.',
     context:
       'The Scarborough Shoal has been a flashpoint in China-Philippines tensions since China effectively seized control of the feature in 2012. The current blockade escalates well beyond previous stand-offs and has drawn US statements under the Mutual Defense Treaty with the Philippines. A full closure of the broader South China Sea to commercial traffic — while not the current situation — would represent one of the most severe supply shocks in modern history, affecting roughly a third of global seaborne oil trade. The situation is being monitored by the IEA and has been noted in recent IMF growth revisions.',
     lastReviewed: '2026-04-16',
@@ -178,7 +178,7 @@ const CHOKEPOINTS: Chokepoint[] = [
     summary:
       'The Amsterdam-Rotterdam-Antwerp (ARA) complex is Europe\'s largest refining and oil storage hub, handling around 4 mb/d of crude and products. It acts as the primary pricing and distribution point for Northwest European fuel markets. Rotterdam alone is the world\'s largest port by cargo volume. Note: shipping around Antwerp was partially halted on 10 April 2026 following an oil spill; this is an operational incident under containment rather than a structural supply route disruption.',
     euImpact:
-      'ARA is the clearing hub for European diesel, petrol, and jet fuel. Prices at ARA set the reference for fuel costs across Northwest Europe and influence prices as far east as Poland and the Baltic states. The Hormuz reopening (April 2026) should ease Atlantic Basin tightness as Gulf crude flows resume and reduce competition with EU refiners. Red Sea disruption continues to inflate freight costs for Middle Eastern cargoes. The Antwerp spill incident (10 April) is an operational matter under containment.',
+      'ARA is the clearing hub for European diesel, petrol, and jet fuel. Prices at ARA set the reference for fuel costs across Northwest Europe and influence prices as far east as Poland and the Baltic states. The Hormuz reclosure (18 April 2026) sustains Atlantic Basin tightness as Gulf crude supply remains constrained and Asian buyers compete for the same alternative supply pool as EU refiners. Red Sea disruption continues to inflate freight costs for Middle Eastern cargoes. The Antwerp spill incident (10 April) is an operational matter under containment.',
     context:
       'ARA commercial storage acts as a buffer for European supply disruptions. Tanker arrivals at Rotterdam are a leading indicator of fuel availability. ARA stock levels are published weekly by Insights Global and monitored closely by energy traders. In the current environment, ARA stock drawdown is the key metric to watch for early signs of downstream tightness.',
     lastReviewed: '2026-04-10',

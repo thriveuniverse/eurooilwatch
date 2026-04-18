@@ -36,8 +36,8 @@ export default function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        headline="Hormuz reopened — Red Sea disruption continues"
-        body="Strait of Hormuz fully reopened April 2026 — a major supply relief. Red Sea rerouting via Cape of Good Hope remains the operational norm."
+        headline="Hormuz reclosed — compound supply crisis active"
+        body="Iran shut the Strait of Hormuz again on 18 April citing the US maintaining a naval blockade on Iranian ports. Both primary Gulf export corridors are now simultaneously disrupted."
         linkLabel="Supply Routes →"
         linkHref="/supply"
       />
