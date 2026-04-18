@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-04-18T15:47:18.831607Z",
+  "brentUsd": 88.69,
+  "composite": {
+    "direction": -1,
+    "directionLabel": "BEARISH",
+    "score": -0.75,
+    "confidence": 0.75
+  },
+  "components": {
+    "reserve": {
+      "direction": -1,
+      "zScore": 0.975,
+      "currentDays": 97.4,
+      "meanDays": 92.7,
+      "label": "EU diesel reserve days vs 18-month average"
+    },
+    "momentum": {
+      "direction": -1,
+      "momentumPct": -21.21,
+      "price4wAgo": 112.57,
+      "label": "Brent 4-week price momentum"
+    },
+    "range52w": {
+      "direction": 0,
+      "percentile": 0.542,
+      "w52Low": 60.47,
+      "w52High": 112.57,
+      "label": "Brent position in 52-week range"
+    }
+  },
+  "stats": {
+    "total_predictions": 2,
+    "scored": 0,
+    "pending": 2,
+    "hits": 0,
+    "misses": 0,
+    "inconclusive": 0,
+    "hit_rate": null
+  },
+  "recentPredictions": [
+    {
+      "id": "d41ed3e1",
+      "createdAt": "2026-04-18T15:47:18.831024Z",
+      "targetDate": "2026-05-16",
+      "brentAtPrediction": 88.69,
+      "compositeDirection": -1,
+      "compositeLabel": "BEARISH",
+      "score": -0.75,
+      "confidence": 0.75,
+      "components": {
+        "reserve": {
+          "direction": -1,
+          "z_score": 0.975,
+          "momentum_pct": null,
+          "percentile": null
+        },
+        "momentum": {
+          "direction": -1,
+          "z_score": null,
+          "momentum_pct": -21.21,
+          "percentile": null
+        },
+        "crack_spread": {
+          "direction": 0,
+          "z_score": null,
+          "momentum_pct": null,
+          "percentile": 0.542
+        }
+      },
+      "outcome": null
+    },
+    {
+      "id": "91434d3f",
+      "createdAt": "2026-04-18T15:39:42.256993Z",
+      "targetDate": "2026-05-16",
+      "brentAtPrediction": 88.69,
+      "compositeDirection": -1,
+      "compositeLabel": "BEARISH",
+      "score": -0.75,
+      "confidence": 0.75,
+      "components": {
+        "reserve": {
+          "direction": -1,
+          "z_score": 0.975,
+          "momentum_pct": null,
+          "percentile": null
+        },
+        "momentum": {
+          "direction": -1,
+          "z_score": null,
+          "momentum_pct": -21.21,
+          "percentile": null
+        },
+        "crack_spread": {
+          "direction": 0,
+          "z_score": null,
+          "momentum_pct": null,
+          "percentile": 0.542
+        }
+      },
+      "outcome": null
+    }
+  ]
+}
