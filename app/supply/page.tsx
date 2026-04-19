@@ -235,6 +235,20 @@ function readMarad(): { lastUpdated: string; advisories: MaradAdvisory[] } | nul
   try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; }
 }
 
+interface CreaArticle {
+  title: string;
+  date: string;
+  link: string;
+  categories: string[];
+  tag: string;
+}
+
+function readCrea(): { lastUpdated: string; articles: CreaArticle[] } | null {
+  const p = path.join(process.cwd(), 'data', 'crea-feed.json');
+  if (!fs.existsSync(p)) return null;
+  try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; }
+}
+
 export default async function SupplyPage() {
   const highRisk = CHOKEPOINTS.filter(c => c.risk === 'critical' || c.risk === 'high');
   const elevated = CHOKEPOINTS.filter(c => c.risk === 'elevated');
@@ -248,6 +262,7 @@ export default async function SupplyPage() {
 
   const bunker = readBunker();
   const marad  = readMarad();
+  const crea   = readCrea();
 
   const bunkerHistoryRaw = (() => {
     const p = path.join(process.cwd(), 'data', 'bunker-history.json');
@@ -566,6 +581,59 @@ export default async function SupplyPage() {
           </div>
         );
       })()}
+
+      {/* CREA Energy Research */}
+      {crea && crea.articles.length > 0 && (
+        <div className="rounded-xl border border-oil-700 bg-oil-900/40 overflow-hidden">
+          <div className="px-5 py-4 border-b border-oil-800 flex items-center justify-between">
+            <div>
+              <h2 className="text-sm font-semibold text-white">Energy Research — CREA</h2>
+              <p className="text-xs text-gray-500 mt-0.5">
+                Russian fossil fuel exports, Hormuz impacts &amp; EU supply analysis · Updated {new Date(crea.lastUpdated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+              </p>
+            </div>
+            <a href="https://energyandcleanair.org" target="_blank" rel="noopener noreferrer"
+              className="text-xs text-oil-400 hover:text-white transition flex-shrink-0 ml-4">
+              All research →
+            </a>
+          </div>
+          <div className="divide-y divide-oil-800/40">
+            {crea.articles.map((a, i) => {
+              const tagStyles: Record<string, string> = {
+                'Hormuz':          'bg-red-900/50 border-red-700/50 text-red-300',
+                'Russian Exports': 'bg-orange-900/50 border-orange-700/50 text-orange-300',
+                'Sanctions':       'bg-purple-900/50 border-purple-700/50 text-purple-300',
+                'LNG':             'bg-blue-900/50 border-blue-700/50 text-blue-300',
+                'Analysis':        'bg-oil-800/60 border-oil-600/50 text-gray-400',
+              };
+              const tagStyle = tagStyles[a.tag] ?? tagStyles['Analysis'];
+              return (
+                <a key={i} href={a.link} target="_blank" rel="noopener noreferrer"
+                  className="flex items-start gap-3 px-5 py-3.5 hover:bg-oil-800/30 transition group">
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap mb-1">
+                      <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded border ${tagStyle}`}>
+                        {a.tag}
+                      </span>
+                      <span className="text-[10px] text-gray-600">
+                        {new Date(a.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                      </span>
+                    </div>
+                    <p className="text-xs font-medium text-gray-200 group-hover:text-white transition leading-snug">{a.title}</p>
+                  </div>
+                  <span className="text-gray-600 group-hover:text-gray-400 text-xs flex-shrink-0 mt-1">↗</span>
+                </a>
+              );
+            })}
+          </div>
+          <div className="px-5 py-2.5 border-t border-oil-800/40 bg-oil-900/20">
+            <p className="text-[10px] text-gray-600">
+              Source: <a href="https://energyandcleanair.org" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">Centre for Research on Energy and Clean Air (CREA)</a>.
+              Independent research on fossil fuel trade flows, sanctions enforcement, and energy transition.
+            </p>
+          </div>
+        </div>
+      )}
 
       {/* High risk */}
       {highRisk.length > 0 && (

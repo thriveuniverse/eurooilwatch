@@ -51,6 +51,10 @@ jobs:
         run: npm run fetch:marad
         continue-on-error: true
 
+      - name: Fetch CREA energy research feed
+        run: npm run fetch:crea
+        continue-on-error: true
+
       - name: Generate AI analysis
         run: npm run analyze
         env:
