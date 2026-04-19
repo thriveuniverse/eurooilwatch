@@ -217,6 +217,24 @@ function readBunker(): BunkerData | null {
   try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; }
 }
 
+interface MaradAdvisory {
+  id: string;
+  type: 'advisory' | 'alert';
+  title: string;
+  region: string;
+  incident: string;
+  severity: 'critical' | 'high' | 'elevated' | 'normal';
+  year: number;
+  num: number;
+  url: string;
+}
+
+function readMarad(): { lastUpdated: string; advisories: MaradAdvisory[] } | null {
+  const p = path.join(process.cwd(), 'data', 'marad-advisories.json');
+  if (!fs.existsSync(p)) return null;
+  try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; }
+}
+
 export default async function SupplyPage() {
   const highRisk = CHOKEPOINTS.filter(c => c.risk === 'critical' || c.risk === 'high');
   const elevated = CHOKEPOINTS.filter(c => c.risk === 'elevated');
@@ -229,6 +247,7 @@ export default async function SupplyPage() {
   ]);
 
   const bunker = readBunker();
+  const marad  = readMarad();
 
   const bunkerHistoryRaw = (() => {
     const p = path.join(process.cwd(), 'data', 'bunker-history.json');
@@ -488,6 +507,65 @@ export default async function SupplyPage() {
       )}
 
       {bunkerHistory && <BunkerHistoryChart entries={bunkerHistory} />}
+
+      {/* MARAD Maritime Advisories */}
+      {marad && marad.advisories.length > 0 && (() => {
+        const severityStyles = {
+          critical: { bar: 'bg-red-500',    badge: 'bg-red-900/50 border-red-700/50 text-red-300' },
+          high:     { bar: 'bg-orange-500', badge: 'bg-orange-900/50 border-orange-700/50 text-orange-300' },
+          elevated: { bar: 'bg-amber-500',  badge: 'bg-amber-900/50 border-amber-700/50 text-amber-300' },
+          normal:   { bar: 'bg-gray-500',   badge: 'bg-gray-800/50 border-gray-600/50 text-gray-400' },
+        };
+        const current = marad.advisories.filter(a => a.year >= 2026);
+        const older   = marad.advisories.filter(a => a.year < 2026);
+        return (
+          <div className="rounded-xl border border-oil-700 bg-oil-900/40 overflow-hidden">
+            <div className="px-5 py-4 border-b border-oil-800 flex items-center justify-between">
+              <div>
+                <h2 className="text-sm font-semibold text-white">US Maritime Security Advisories</h2>
+                <p className="text-xs text-gray-500 mt-0.5">
+                  MARAD active advisories relevant to EU supply routes · Updated {new Date(marad.lastUpdated).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })}
+                </p>
+              </div>
+              <a href="https://www.maritime.dot.gov/msci-advisories" target="_blank" rel="noopener noreferrer"
+                className="text-xs text-oil-400 hover:text-white transition flex-shrink-0 ml-4">
+                All advisories →
+              </a>
+            </div>
+            <div className="divide-y divide-oil-800/40">
+              {[...current, ...older].map(a => {
+                const s = severityStyles[a.severity];
+                return (
+                  <a key={a.id} href={a.url} target="_blank" rel="noopener noreferrer"
+                    className="flex items-start gap-3 px-5 py-3.5 hover:bg-oil-800/30 transition group">
+                    <div className={`mt-1.5 w-1 h-1 rounded-full flex-shrink-0 ${s.bar}`} />
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap mb-0.5">
+                        <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded border ${s.badge}`}>
+                          {a.severity.toUpperCase()}
+                        </span>
+                        <span className="text-[10px] font-mono text-gray-600">{a.id}</span>
+                        {a.year >= 2026 && (
+                          <span className="text-[10px] bg-oil-800 text-oil-300 px-1.5 py-0.5 rounded border border-oil-700">ACTIVE</span>
+                        )}
+                      </div>
+                      <p className="text-xs font-medium text-gray-200 group-hover:text-white transition truncate">{a.region}</p>
+                      <p className="text-xs text-gray-500 truncate">{a.incident}</p>
+                    </div>
+                    <span className="text-gray-600 group-hover:text-gray-400 text-xs flex-shrink-0 mt-1">↗</span>
+                  </a>
+                );
+              })}
+            </div>
+            <div className="px-5 py-2.5 border-t border-oil-800/40 bg-oil-900/20">
+              <p className="text-[10px] text-gray-600">
+                Source: <a href="https://www.maritime.dot.gov/msci-advisories" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400">US Maritime Administration (MARAD)</a>.
+                Filtered for regions relevant to EU fuel supply. Full advisory text on MARAD site.
+              </p>
+            </div>
+          </div>
+        );
+      })()}
 
       {/* High risk */}
       {highRisk.length > 0 && (

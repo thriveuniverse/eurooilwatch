@@ -47,6 +47,10 @@ jobs:
         run: npm run fetch:bunker
         continue-on-error: true
 
+      - name: Fetch MARAD maritime advisories
+        run: npm run fetch:marad
+        continue-on-error: true
+
       - name: Generate AI analysis
         run: npm run analyze
         env:
