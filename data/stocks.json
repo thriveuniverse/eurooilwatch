@@ -1,39 +1,39 @@
 {
-  "lastUpdated": "2026-04-20T07:11:46.306Z",
+  "lastUpdated": "2026-04-21T06:30:07.015Z",
   "dataPeriod": "2026-02",
   "dataSource": "Eurostat: 27 monthly, 0 annual fallback",
   "countries": [
     {
       "countryCode": "RO",
       "countryName": "Romania",
-      "datePeriod": "2025-12",
+      "datePeriod": "2026-01",
       "fuels": [
         {
           "fuelType": "petrol",
-          "stockKilotonnes": 199,
-          "consumptionKilotonnes": 137,
-          "daysOfSupply": 43.6,
+          "stockKilotonnes": 124,
+          "consumptionKilotonnes": 112,
+          "daysOfSupply": 33.2,
           "mandatoryMinimumDays": 90,
           "status": "critical"
         },
         {
           "fuelType": "diesel",
-          "stockKilotonnes": 462,
-          "consumptionKilotonnes": 685,
-          "daysOfSupply": 20.2,
+          "stockKilotonnes": 403,
+          "consumptionKilotonnes": 373,
+          "daysOfSupply": 32.4,
           "mandatoryMinimumDays": 90,
           "status": "critical"
         },
         {
           "fuelType": "jet_fuel",
-          "stockKilotonnes": 22,
+          "stockKilotonnes": 28,
           "consumptionKilotonnes": 11,
-          "daysOfSupply": 60,
+          "daysOfSupply": 76.4,
           "mandatoryMinimumDays": 90,
           "status": "critical"
         }
       ],
-      "averageDays": 41.3,
+      "averageDays": 47.3,
       "overallStatus": "critical"
     },
     {
@@ -67,39 +67,6 @@
         }
       ],
       "averageDays": 48,
-      "overallStatus": "critical"
-    },
-    {
-      "countryCode": "ES",
-      "countryName": "Spain",
-      "datePeriod": "2025-12",
-      "fuels": [
-        {
-          "fuelType": "petrol",
-          "stockKilotonnes": 1359.736,
-          "consumptionKilotonnes": 599.758,
-          "daysOfSupply": 68,
-          "mandatoryMinimumDays": 90,
-          "status": "critical"
-        },
-        {
-          "fuelType": "diesel",
-          "stockKilotonnes": 5120.647,
-          "consumptionKilotonnes": 2499.835,
-          "daysOfSupply": 61.5,
-          "mandatoryMinimumDays": 90,
-          "status": "critical"
-        },
-        {
-          "fuelType": "jet_fuel",
-          "stockKilotonnes": 742.201,
-          "consumptionKilotonnes": 601.507,
-          "daysOfSupply": 37,
-          "mandatoryMinimumDays": 90,
-          "status": "critical"
-        }
-      ],
-      "averageDays": 55.5,
       "overallStatus": "critical"
     },
     {
@@ -232,6 +199,39 @@
         }
       ],
       "averageDays": 61.6,
+      "overallStatus": "critical"
+    },
+    {
+      "countryCode": "ES",
+      "countryName": "Spain",
+      "datePeriod": "2026-01",
+      "fuels": [
+        {
+          "fuelType": "petrol",
+          "stockKilotonnes": 1489.241,
+          "consumptionKilotonnes": 533.966,
+          "daysOfSupply": 83.7,
+          "mandatoryMinimumDays": 90,
+          "status": "warning"
+        },
+        {
+          "fuelType": "diesel",
+          "stockKilotonnes": 5009.202,
+          "consumptionKilotonnes": 2323.693,
+          "daysOfSupply": 64.7,
+          "mandatoryMinimumDays": 90,
+          "status": "critical"
+        },
+        {
+          "fuelType": "jet_fuel",
+          "stockKilotonnes": 801.805,
+          "consumptionKilotonnes": 554.331,
+          "daysOfSupply": 43.4,
+          "mandatoryMinimumDays": 90,
+          "status": "critical"
+        }
+      ],
+      "averageDays": 63.9,
       "overallStatus": "critical"
     },
     {
@@ -896,9 +896,9 @@
     }
   ],
   "euAverage": {
-    "petrolDays": 98.7,
-    "dieselDays": 97.4,
-    "jetFuelDays": 91.1,
+    "petrolDays": 98.9,
+    "dieselDays": 98,
+    "jetFuelDays": 91.9,
     "overallStatus": "watch"
   }
 }
