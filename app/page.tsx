@@ -90,6 +90,36 @@ export default function DashboardPage() {
         <PriceTicker brent={brent} prices={prices} />
       </section>
 
+      {/* Upcoming supply event — Druzhba halt 1 May 2026 */}
+      <section aria-label="Upcoming supply event">
+        <div className="rounded-lg border border-amber-700/40 bg-amber-950/20 overflow-hidden">
+          <div className="px-5 py-3 border-b border-amber-700/30 flex items-center justify-between">
+            <h2 className="text-xs font-mono font-semibold tracking-widest text-amber-300 uppercase">
+              Upcoming Supply Event
+            </h2>
+            <span className="text-[10px] font-mono text-amber-400/70">1 May 2026</span>
+          </div>
+          <div className="px-5 py-4 space-y-2">
+            <p className="text-sm font-semibold text-white">
+              Russia halts Kazakh crude supply via Druzhba pipeline to Germany
+            </p>
+            <p className="text-xs text-gray-400 leading-relaxed">
+              PCK Schwedt refinery (supplies most of Berlin&apos;s fuel) loses ~17% of its crude from 1 May.
+              Germany says petroleum-product security is not in jeopardy because alternative routes exist,
+              but its regulator warned of regional pricing effects.
+            </p>
+            <p className="text-xs text-gray-500 leading-relaxed">
+              <span className="text-oil-300 font-medium">EU angle:</span>{' '}
+              Another layer of regional supply friction at a time when Brent is back above $100 and
+              Hormuz shipping remains heavily disrupted.
+            </p>
+          </div>
+          <div className="px-5 py-2 border-t border-amber-700/20 bg-amber-950/10">
+            <p className="text-[10px] text-gray-600">Source: Reuters.</p>
+          </div>
+        </div>
+      </section>
+
       {/* 6. AI Analysis */}
       <section aria-label="AI-powered fuel security analysis">
         <AnalysisPanel analysis={analysis} />
