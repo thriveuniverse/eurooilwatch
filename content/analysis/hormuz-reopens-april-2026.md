@@ -6,6 +6,8 @@ excerpt: "The Strait of Hormuz has fully reopened following diplomatic resolutio
 
 # Strait of Hormuz Reopens: What It Means for EU Fuel Supply
 
+> **UPDATE — 18 April 2026:** The strait was reclosed within roughly 24 hours of this article being published. Iran shut Hormuz again on 18 April after determining that the US had not lifted its naval blockade on Iranian ports as required under the diplomatic resolution. The "begins a recovery" framing below applied for less than a day; the compound supply crisis described in [The Anatomy of a System Shock](/analysis/anatomy-of-a-system-shock) remains the active scenario. Traffic remains roughly 90% below normal, with around 230 loaded tankers reported queued in the Gulf. See the [Supply Routes page](/supply) for current chokepoint status.
+
 ## The headline fact
 
 The Strait of Hormuz is fully open. Tanker traffic is resuming through the waterway following diplomatic resolution in mid-April 2026, ending weeks of near-standstill conditions that had removed roughly 20 million barrels per day — around 20% of global seaborne oil trade — from normal circulation.
