@@ -87,6 +87,31 @@ function buildPrompt(
   return dataContext;
 }
 
+// The current Middle East / US-Israel-Iran conflict began in late February 2026.
+// Use 2026-02-23 as the anchor (last weekly Brent close before escalation).
+const CONFLICT_ANCHOR_DATE = '2026-02-23';
+
+interface BrentHistoryEntry { date: string; priceUsd: number; priceEur: number }
+
+function computeBrentChangeSinceConflict(): { phrase: string; anchor: BrentHistoryEntry; latest: BrentHistoryEntry } | null {
+  const filepath = path.join(DATA_DIR, 'brent-history.json');
+  if (!fs.existsSync(filepath)) return null;
+  const history = JSON.parse(fs.readFileSync(filepath, 'utf-8'));
+  const entries: BrentHistoryEntry[] = history.entries || [];
+  if (entries.length < 2) return null;
+
+  // Anchor = entry on or just before CONFLICT_ANCHOR_DATE; falls back to earliest if anchor predates the series.
+  const anchor = [...entries]
+    .filter(e => e.date <= CONFLICT_ANCHOR_DATE)
+    .pop() ?? entries[0];
+  const latest = entries[entries.length - 1];
+  const pct = ((latest.priceUsd - anchor.priceUsd) / anchor.priceUsd) * 100;
+  const sign = pct >= 0 ? '+' : '';
+  const direction = pct >= 0 ? 'risen' : 'fallen';
+  const phrase = `Brent crude has ${direction} ${sign}${pct.toFixed(1)}% since ${anchor.date} (the last weekly close before the late-February escalation): $${anchor.priceUsd}/bbl → $${latest.priceUsd}/bbl as of ${latest.date}`;
+  return { phrase, anchor, latest };
+}
+
 async function generateAnalysis(
   stocks: StockDataset | null,
   prices: PriceDataset | null,
@@ -112,6 +137,7 @@ async function generateAnalysis(
   }
 
   const dataContext = buildPrompt(stocks, prices, brent);
+  const brentChange = computeBrentChangeSinceConflict();
 
   const systemPrompt = `You are a senior energy analyst writing for EuroOilWatch, a European fuel security transparency dashboard. Your audience includes policymakers, journalists, and concerned citizens.
 
@@ -136,7 +162,7 @@ ${dataContext}
 Important context:
 - EU countries must maintain 90 days of net imports as emergency oil stocks
 - Several EU countries have recently released strategic reserves due to Middle East supply disruptions
-- Brent crude has risen ~27% since the start of the current Middle East conflict
+- ${brentChange ? brentChange.phrase : 'Brent has moved materially since the late-February escalation; quote the change directly from the price data above rather than estimating'}
 - Date: ${new Date().toISOString().split('T')[0]}`;
 
   console.log('  Calling Claude API...');
