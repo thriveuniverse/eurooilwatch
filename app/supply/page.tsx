@@ -6,6 +6,7 @@ import type { GDACSAlertLevel } from '@/lib/gdacs';
 import { getUSGSQuakes, magSeverity } from '@/lib/usgs';
 import { getFIRMSDetections, frpSeverity } from '@/lib/firms';
 import BunkerHistoryChart from '@/components/BunkerHistoryChart';
+import AraStocksCard from '@/components/AraStocksCard';
 
 export const revalidate = 3600;
 
@@ -522,6 +523,8 @@ export default async function SupplyPage() {
       )}
 
       {bunkerHistory && <BunkerHistoryChart entries={bunkerHistory} />}
+
+      <AraStocksCard />
 
       {/* MARAD Maritime Advisories */}
       {marad && marad.advisories.length > 0 && (() => {
