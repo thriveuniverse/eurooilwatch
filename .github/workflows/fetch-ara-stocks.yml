@@ -1,0 +1,48 @@
+name: Fetch ARA Stocks (Insights Global via Argus)
+
+on:
+  schedule:
+    # Insights Global publishes Thursday 16:15 CET; Argus typically follows
+    # within a few hours. We sweep Friday 06:00 UTC (08:00 CEST) and again
+    # Saturday 06:00 UTC in case the Argus piece slipped to Friday.
+    - cron: '0 6 * * 5'
+    - cron: '0 6 * * 6'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ara-stocks
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch ARA stocks
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run fetch:ara-stocks
+
+      - name: Commit if changed
+        run: |
+          git config user.name "EuroOilWatch Bot"
+          git config user.email "bot@eurooilwatch.com"
+          git pull --rebase origin main
+          git add data/ara-stocks.json
+          git diff --staged --quiet || git commit -m "chore: update ARA stocks $(date -u +%Y-%m-%d)"
+          git push
