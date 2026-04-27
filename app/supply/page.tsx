@@ -7,6 +7,7 @@ import { getUSGSQuakes, magSeverity } from '@/lib/usgs';
 import { getFIRMSDetections, frpSeverity } from '@/lib/firms';
 import BunkerHistoryChart from '@/components/BunkerHistoryChart';
 import AraStocksCard from '@/components/AraStocksCard';
+import { maradOverrideFor } from '@/lib/marad-risk';
 
 export const revalidate = 3600;
 
@@ -251,10 +252,6 @@ function readCrea(): { lastUpdated: string; articles: CreaArticle[] } | null {
 }
 
 export default async function SupplyPage() {
-  const highRisk = CHOKEPOINTS.filter(c => c.risk === 'critical' || c.risk === 'high');
-  const elevated = CHOKEPOINTS.filter(c => c.risk === 'elevated');
-  const normal   = CHOKEPOINTS.filter(c => c.risk === 'normal');
-
   const [gdacsEvents, usgsQuakes, firmsResult] = await Promise.all([
     getGDACSEvents(),
     getUSGSQuakes(),
@@ -264,6 +261,19 @@ export default async function SupplyPage() {
   const bunker = readBunker();
   const marad  = readMarad();
   const crea   = readCrea();
+
+  const chokepoints: Chokepoint[] = CHOKEPOINTS.map(c => {
+    const ovr = marad ? maradOverrideFor(c.id, marad.advisories, marad.lastUpdated) : null;
+    return ovr ? { ...c, risk: ovr.risk, riskLabel: ovr.riskLabel, lastReviewed: ovr.lastReviewed } : c;
+  });
+
+  const highRisk = chokepoints.filter(c => c.risk === 'critical' || c.risk === 'high');
+  const elevated = chokepoints.filter(c => c.risk === 'elevated');
+  const normal   = chokepoints.filter(c => c.risk === 'normal');
+
+  const statusAsOf = marad?.lastUpdated
+    ?? chokepoints.map(c => c.lastReviewed).sort().slice(-1)[0]
+    ?? new Date().toISOString();
 
   const bunkerHistoryRaw = (() => {
     const p = path.join(process.cwd(), 'data', 'bunker-history.json');
@@ -291,10 +301,10 @@ export default async function SupplyPage() {
       {/* Status summary bar */}
       <div className="rounded-lg border border-oil-800 bg-oil-900/30 px-5 py-4">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-3">
-          Current Route Status — {new Date('2026-04-16').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
+          Current Route Status — {new Date(statusAsOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}
         </h2>
         <div className="flex flex-wrap gap-3">
-          {CHOKEPOINTS.map(c => {
+          {chokepoints.map(c => {
             const s = RISK_STYLES[c.risk];
             return (
               <a
