@@ -89,3 +89,26 @@ export function getEUHistory(): HistoryPoint[] | null {
   const history = getHistoryData();
   return history?.euAverage ?? null;
 }
+
+// ── CENTCOM advisories ──
+export interface CentcomAdvisory {
+  id: string;
+  title: string;
+  region: string;
+  incident: string;
+  severity: 'critical' | 'high' | 'elevated' | 'normal';
+  url: string;
+  publishedAt: string;
+}
+
+export interface CentcomData {
+  lastUpdated: string;
+  source: string;
+  sourceUrl: string;
+  count: number;
+  advisories: CentcomAdvisory[];
+}
+
+export function getCentcom(): CentcomData | null {
+  return loadJSON<CentcomData>('centcom-advisories.json');
+}

@@ -1,4 +1,4 @@
-import { getDashboardData, getEUHistory } from '@/lib/data';
+import { getDashboardData, getEUHistory, getCentcom } from '@/lib/data';
 import StatusBanner from '@/components/StatusBanner';
 import ReserveGauge from '@/components/ReserveGauge';
 import PriceTicker from '@/components/PriceTicker';
@@ -23,6 +23,7 @@ export const revalidate = 1800;
 
 export default function DashboardPage() {
   const { stocks, prices, brent, analysis } = getDashboardData();
+  const centcom = getCentcom();
   const euHistory = getEUHistory();
 
   const countriesBelowThreshold = stocks.countries.filter(c =>
@@ -119,6 +120,40 @@ export default function DashboardPage() {
           </div>
         </div>
       </section>
+
+      {/* CENTCOM Advisory Snapshot */}
+      {centcom && centcom.advisories.length > 0 && (
+        <section aria-label="CENTCOM advisories">
+          <div className="rounded-lg border border-oil-800 bg-oil-900/20 overflow-hidden">
+            <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between">
+              <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase">
+                CENTCOM Advisory Snapshot
+              </h2>
+              <span className="text-[10px] text-gray-600">Middle East maritime</span>
+            </div>
+            <div className="divide-y divide-oil-800/30">
+              {centcom.advisories.slice(0, 4).map(a => {
+                const dot = { critical: 'bg-red-500', high: 'bg-orange-500', elevated: 'bg-amber-500', normal: 'bg-gray-500' }[a.severity] ?? 'bg-gray-500';
+                return (
+                  <a key={a.id} href={a.url} target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-3 px-5 py-2.5 hover:bg-oil-800/30 transition group">
+                    <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${dot}`} />
+                    <span className="text-xs text-gray-300 group-hover:text-white transition flex-1 truncate">
+                      {a.region}: {a.incident}
+                    </span>
+                    <span className="text-[10px] text-gray-600 flex-shrink-0">
+                      {new Date(a.publishedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}
+                    </span>
+                  </a>
+                );
+              })}
+            </div>
+            <div className="px-5 py-2 border-t border-oil-800/40 bg-oil-900/20">
+              <p className="text-[10px] text-gray-600">Source: U.S. Central Command via DVIDS.</p>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 6. AI Analysis */}
       <section aria-label="AI-powered fuel security analysis">
