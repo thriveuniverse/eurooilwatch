@@ -112,3 +112,33 @@ export interface CentcomData {
 export function getCentcom(): CentcomData | null {
   return loadJSON<CentcomData>('centcom-advisories.json');
 }
+
+// ── Refinery outages ──
+export type RefineryOutageSeverity = 'critical' | 'high' | 'elevated' | 'normal';
+export type RefineryRegion = 'europe' | 'uk' | 'americas' | 'asia' | 'middle-east' | 'africa' | 'other';
+export type RefineryOutageType = 'fire' | 'explosion' | 'unplanned' | 'turnaround' | 'strike'
+                              | 'shutdown' | 'restart' | 'leak' | 'run-cuts' | 'unknown';
+
+export interface RefineryOutage {
+  id: string;
+  headline: string;
+  url: string;
+  source: string;
+  publishedAt: string;
+  region: RefineryRegion;
+  outageType: RefineryOutageType;
+  severity: RefineryOutageSeverity;
+  summary: string;
+}
+
+export interface RefineryOutageData {
+  lastUpdated: string;
+  source: string;
+  feeds: string[];
+  count: number;
+  outages: RefineryOutage[];
+}
+
+export function getRefineryOutages(): RefineryOutageData | null {
+  return loadJSON<RefineryOutageData>('refinery-outages.json');
+}

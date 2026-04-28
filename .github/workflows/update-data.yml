@@ -59,6 +59,10 @@ jobs:
         run: npm run fetch:crea
         continue-on-error: true
 
+      - name: Fetch refinery outages (trade-press RSS)
+        run: npm run fetch:refineries
+        continue-on-error: true
+
       - name: Generate AI analysis
         run: npm run analyze
         env:
