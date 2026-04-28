@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-27T07:30:26.259Z",
+  "lastUpdated": "2026-04-28T07:27:15.902Z",
   "dataPeriod": "2026-02",
   "dataSource": "Eurostat: 27 monthly, 0 annual fallback",
   "countries": [
@@ -183,9 +183,9 @@
         },
         {
           "fuelType": "diesel",
-          "stockKilotonnes": 398.4,
-          "consumptionKilotonnes": 128.6,
-          "daysOfSupply": 92.9,
+          "stockKilotonnes": 403.8,
+          "consumptionKilotonnes": 123.2,
+          "daysOfSupply": 98.3,
           "mandatoryMinimumDays": 90,
           "status": "watch"
         },
@@ -198,7 +198,7 @@
           "status": "critical"
         }
       ],
-      "averageDays": 61.8,
+      "averageDays": 63.6,
       "overallStatus": "critical"
     },
     {
@@ -532,6 +532,39 @@
       "overallStatus": "critical"
     },
     {
+      "countryCode": "HU",
+      "countryName": "Hungary",
+      "datePeriod": "2026-01",
+      "fuels": [
+        {
+          "fuelType": "petrol",
+          "stockKilotonnes": 561.1,
+          "consumptionKilotonnes": 105.5,
+          "daysOfSupply": 159.6,
+          "mandatoryMinimumDays": 90,
+          "status": "safe"
+        },
+        {
+          "fuelType": "diesel",
+          "stockKilotonnes": 795.4,
+          "consumptionKilotonnes": 259.3,
+          "daysOfSupply": 92,
+          "mandatoryMinimumDays": 90,
+          "status": "watch"
+        },
+        {
+          "fuelType": "jet_fuel",
+          "stockKilotonnes": 58,
+          "consumptionKilotonnes": 40.2,
+          "daysOfSupply": 43.3,
+          "mandatoryMinimumDays": 90,
+          "status": "critical"
+        }
+      ],
+      "averageDays": 98.3,
+      "overallStatus": "critical"
+    },
+    {
       "countryCode": "GR",
       "countryName": "Greece",
       "datePeriod": "2026-01",
@@ -565,69 +598,36 @@
       "overallStatus": "critical"
     },
     {
-      "countryCode": "HU",
-      "countryName": "Hungary",
+      "countryCode": "SE",
+      "countryName": "Sweden",
       "datePeriod": "2026-01",
       "fuels": [
         {
           "fuelType": "petrol",
-          "stockKilotonnes": 561.1,
-          "consumptionKilotonnes": 105.5,
-          "daysOfSupply": 159.6,
+          "stockKilotonnes": 555.801,
+          "consumptionKilotonnes": 151.054,
+          "daysOfSupply": 110.4,
           "mandatoryMinimumDays": 90,
           "status": "safe"
         },
         {
           "fuelType": "diesel",
-          "stockKilotonnes": 795.4,
-          "consumptionKilotonnes": 259.3,
-          "daysOfSupply": 92,
-          "mandatoryMinimumDays": 90,
-          "status": "watch"
-        },
-        {
-          "fuelType": "jet_fuel",
-          "stockKilotonnes": 53.6,
-          "consumptionKilotonnes": 27.3,
-          "daysOfSupply": 58.9,
-          "mandatoryMinimumDays": 90,
-          "status": "critical"
-        }
-      ],
-      "averageDays": 103.5,
-      "overallStatus": "critical"
-    },
-    {
-      "countryCode": "SE",
-      "countryName": "Sweden",
-      "datePeriod": "2025-12",
-      "fuels": [
-        {
-          "fuelType": "petrol",
-          "stockKilotonnes": 560.467,
-          "consumptionKilotonnes": 166.721,
-          "daysOfSupply": 100.9,
-          "mandatoryMinimumDays": 90,
-          "status": "safe"
-        },
-        {
-          "fuelType": "diesel",
-          "stockKilotonnes": 1406.605,
-          "consumptionKilotonnes": 370.655,
-          "daysOfSupply": 113.8,
+          "stockKilotonnes": 1336.032,
+          "consumptionKilotonnes": 391.483,
+          "daysOfSupply": 102.4,
           "mandatoryMinimumDays": 90,
           "status": "safe"
         },
         {
           "fuelType": "jet_fuel",
-          "stockKilotonnes": 203.863,
-          "consumptionKilotonnes": 56.652,
-          "daysOfSupply": 108,
+          "stockKilotonnes": 242.947,
+          "consumptionKilotonnes": 66.753,
+          "daysOfSupply": 109.2,
           "mandatoryMinimumDays": 90,
           "status": "safe"
         }
       ],
-      "averageDays": 107.6,
+      "averageDays": 107.3,
       "overallStatus": "safe"
     },
     {
@@ -896,9 +896,9 @@
     }
   ],
   "euAverage": {
-    "petrolDays": 98.9,
-    "dieselDays": 97.8,
-    "jetFuelDays": 91.9,
+    "petrolDays": 99.2,
+    "dieselDays": 97.6,
+    "jetFuelDays": 91.4,
     "overallStatus": "watch"
   }
 }
