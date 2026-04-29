@@ -40,11 +40,18 @@ interface Feed {
 }
 
 const FEEDS: Feed[] = [
+  // Maritime & oil trade press
   { name: 'gCaptain',                url: 'https://gcaptain.com/feed/' },
   { name: 'Splash247',               url: 'https://splash247.com/feed/' },
   { name: 'Maritime Executive',      url: 'https://maritime-executive.com/articles.rss' },
   { name: 'Hellenic Shipping News',  url: 'https://www.hellenicshippingnews.com/feed/' },
   { name: 'OilPrice',                url: 'https://oilprice.com/rss/main' },
+  { name: 'World Oil',               url: 'https://www.worldoil.com/rss/' },
+
+  // Press-release aggregators — collect operator releases (Shell/BP/Total/Marathon/Valero/etc)
+  // under one RSS instead of guessing each company's individual feed URL.
+  { name: 'PR Newswire — Energy',    url: 'https://www.prnewswire.com/rss/energy-latest-news/energy-latest-news-list.rss' },
+  { name: 'PR Newswire — Oil & Gas', url: 'https://www.prnewswire.com/rss/energy-latest-news/oil-energy-list.rss' },
 ];
 
 // ─── Filtering ──────────────────────────────────────────────────────────────
@@ -203,11 +210,24 @@ const REGION_MAP: { keywords: string[]; region: Region }[] = [
 ];
 
 function inferRegion(title: string, description: string): Region {
-  const text = title + ' ' + description;
+  // Count matches per region and pick the one with most. Title matches count
+  // double — the headline is the strongest editorial signal. This avoids the
+  // first-match-wins bug where (say) a passing Saudi mention beat the actual
+  // China/Sinopec subject of the article.
+  const counts: Partial<Record<Region, number>> = {};
   for (const { keywords, region } of REGION_MAP) {
-    if (makeWordRegex(keywords).test(text)) return region;
+    const re = new RegExp(`\\b(?:${keywords.map(k => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`, 'gi');
+    const titleHits = (title.match(re)?.length ?? 0);
+    const descHits  = (description.match(re)?.length ?? 0);
+    const score = titleHits * 2 + descHits;
+    if (score > 0) counts[region] = (counts[region] ?? 0) + score;
   }
-  return 'other';
+  let best: Region = 'other';
+  let bestScore = 0;
+  for (const [region, score] of Object.entries(counts) as [Region, number][]) {
+    if (score > bestScore) { best = region; bestScore = score; }
+  }
+  return best;
 }
 
 // ─── Outage type inference ──────────────────────────────────────────────────
