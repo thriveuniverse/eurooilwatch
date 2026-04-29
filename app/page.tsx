@@ -1,4 +1,4 @@
-import { getDashboardData, getEUHistory, getCentcom } from '@/lib/data';
+import { getDashboardData, getEUHistory, getCentcom, getRefineryOutages } from '@/lib/data';
 import StatusBanner from '@/components/StatusBanner';
 import ReserveGauge from '@/components/ReserveGauge';
 import PriceTicker from '@/components/PriceTicker';
@@ -25,6 +25,10 @@ export default function DashboardPage() {
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
+  const refineries = getRefineryOutages();
+  const refineryHighSeverity = refineries?.outages.filter(
+    o => o.severity === 'critical' || o.severity === 'high'
+  ).length ?? 0;
 
   const countriesBelowThreshold = stocks.countries.filter(c =>
     c.fuels.some(f => f.daysOfSupply < 90)
@@ -187,6 +191,25 @@ export default function DashboardPage() {
               </p>
               <p className="text-xs text-gray-500">
                 Latest oil &amp; fuel supply news from leading energy sources
+              </p>
+            </div>
+          </div>
+          <span className="text-oil-400 text-sm flex-shrink-0">→</span>
+        </a>
+        <a
+          href="/refineries"
+          className="mt-2 flex items-center justify-between gap-4 rounded-lg border border-oil-700 bg-oil-900/40 px-4 py-3 hover:border-oil-500 hover:bg-oil-900/60 transition group"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-lg">🏭</span>
+            <div>
+              <p className="text-sm font-medium text-white group-hover:text-oil-300 transition">
+                Refinery Outages &amp; Turnarounds <span className="ml-1 text-[10px] font-mono text-amber-400 uppercase tracking-wider">New</span>
+              </p>
+              <p className="text-xs text-gray-500">
+                {refineries && refineries.count > 0
+                  ? `${refineries.count} headline${refineries.count === 1 ? '' : 's'} tracked${refineryHighSeverity > 0 ? ` · ${refineryHighSeverity} high-severity` : ''}`
+                  : 'Refinery fires, shutdowns, strikes and turnarounds — trade-press tracker'}
               </p>
             </div>
           </div>
