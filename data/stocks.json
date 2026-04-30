@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-29T07:15:19.206Z",
+  "lastUpdated": "2026-04-30T07:24:05.464Z",
   "dataPeriod": "2026-02",
   "dataSource": "Eurostat: 27 monthly, 0 annual fallback",
   "countries": [
@@ -241,30 +241,30 @@
       "fuels": [
         {
           "fuelType": "petrol",
-          "stockKilotonnes": 333.139,
-          "consumptionKilotonnes": 129.46,
-          "daysOfSupply": 77.2,
+          "stockKilotonnes": 329.516,
+          "consumptionKilotonnes": 129.812,
+          "daysOfSupply": 76.2,
           "mandatoryMinimumDays": 90,
-          "status": "warning"
+          "status": "critical"
         },
         {
           "fuelType": "diesel",
-          "stockKilotonnes": 1105.815,
-          "consumptionKilotonnes": 443.68,
-          "daysOfSupply": 74.8,
+          "stockKilotonnes": 1104.959,
+          "consumptionKilotonnes": 436.027,
+          "daysOfSupply": 76,
           "mandatoryMinimumDays": 90,
           "status": "critical"
         },
         {
           "fuelType": "jet_fuel",
-          "stockKilotonnes": 102.19,
-          "consumptionKilotonnes": 75.09,
-          "daysOfSupply": 40.8,
+          "stockKilotonnes": 100.626,
+          "consumptionKilotonnes": 74.58,
+          "daysOfSupply": 40.5,
           "mandatoryMinimumDays": 90,
           "status": "critical"
         }
       ],
-      "averageDays": 64.3,
+      "averageDays": 64.2,
       "overallStatus": "critical"
     },
     {
@@ -367,6 +367,39 @@
       "overallStatus": "critical"
     },
     {
+      "countryCode": "HR",
+      "countryName": "Croatia",
+      "datePeriod": "2026-01",
+      "fuels": [
+        {
+          "fuelType": "petrol",
+          "stockKilotonnes": 138,
+          "consumptionKilotonnes": 36.3,
+          "daysOfSupply": 114,
+          "mandatoryMinimumDays": 90,
+          "status": "safe"
+        },
+        {
+          "fuelType": "diesel",
+          "stockKilotonnes": 403.9,
+          "consumptionKilotonnes": 182.3,
+          "daysOfSupply": 66.5,
+          "mandatoryMinimumDays": 90,
+          "status": "critical"
+        },
+        {
+          "fuelType": "jet_fuel",
+          "stockKilotonnes": 20.3,
+          "consumptionKilotonnes": 13.6,
+          "daysOfSupply": 44.8,
+          "mandatoryMinimumDays": 90,
+          "status": "critical"
+        }
+      ],
+      "averageDays": 75.1,
+      "overallStatus": "critical"
+    },
+    {
       "countryCode": "LV",
       "countryName": "Latvia",
       "datePeriod": "2026-01",
@@ -397,39 +430,6 @@
         }
       ],
       "averageDays": 76.6,
-      "overallStatus": "critical"
-    },
-    {
-      "countryCode": "HR",
-      "countryName": "Croatia",
-      "datePeriod": "2025-12",
-      "fuels": [
-        {
-          "fuelType": "petrol",
-          "stockKilotonnes": 129.3,
-          "consumptionKilotonnes": 39.9,
-          "daysOfSupply": 97.2,
-          "mandatoryMinimumDays": 90,
-          "status": "watch"
-        },
-        {
-          "fuelType": "diesel",
-          "stockKilotonnes": 400.2,
-          "consumptionKilotonnes": 200.7,
-          "daysOfSupply": 59.8,
-          "mandatoryMinimumDays": 90,
-          "status": "critical"
-        },
-        {
-          "fuelType": "jet_fuel",
-          "stockKilotonnes": 22.5,
-          "consumptionKilotonnes": 9,
-          "daysOfSupply": 75,
-          "mandatoryMinimumDays": 90,
-          "status": "critical"
-        }
-      ],
-      "averageDays": 77.3,
       "overallStatus": "critical"
     },
     {
@@ -464,39 +464,6 @@
       ],
       "averageDays": 80.9,
       "overallStatus": "critical"
-    },
-    {
-      "countryCode": "BG",
-      "countryName": "Bulgaria",
-      "datePeriod": "2025-12",
-      "fuels": [
-        {
-          "fuelType": "petrol",
-          "stockKilotonnes": 187.065,
-          "consumptionKilotonnes": 63.123,
-          "daysOfSupply": 88.9,
-          "mandatoryMinimumDays": 90,
-          "status": "watch"
-        },
-        {
-          "fuelType": "diesel",
-          "stockKilotonnes": 627.558,
-          "consumptionKilotonnes": 232.918,
-          "daysOfSupply": 80.8,
-          "mandatoryMinimumDays": 90,
-          "status": "warning"
-        },
-        {
-          "fuelType": "jet_fuel",
-          "stockKilotonnes": 39.14,
-          "consumptionKilotonnes": 14.689,
-          "daysOfSupply": 79.9,
-          "mandatoryMinimumDays": 90,
-          "status": "warning"
-        }
-      ],
-      "averageDays": 83.2,
-      "overallStatus": "warning"
     },
     {
       "countryCode": "BE",
@@ -598,6 +565,39 @@
       "overallStatus": "critical"
     },
     {
+      "countryCode": "BG",
+      "countryName": "Bulgaria",
+      "datePeriod": "2026-01",
+      "fuels": [
+        {
+          "fuelType": "petrol",
+          "stockKilotonnes": 162.212,
+          "consumptionKilotonnes": 38.12,
+          "daysOfSupply": 127.7,
+          "mandatoryMinimumDays": 90,
+          "status": "safe"
+        },
+        {
+          "fuelType": "diesel",
+          "stockKilotonnes": 699.247,
+          "consumptionKilotonnes": 211.141,
+          "daysOfSupply": 99.4,
+          "mandatoryMinimumDays": 90,
+          "status": "safe"
+        },
+        {
+          "fuelType": "jet_fuel",
+          "stockKilotonnes": 43.885,
+          "consumptionKilotonnes": 16.011,
+          "daysOfSupply": 82.2,
+          "mandatoryMinimumDays": 90,
+          "status": "warning"
+        }
+      ],
+      "averageDays": 103.1,
+      "overallStatus": "warning"
+    },
+    {
       "countryCode": "SE",
       "countryName": "Sweden",
       "datePeriod": "2026-01",
@@ -629,6 +629,39 @@
       ],
       "averageDays": 107.3,
       "overallStatus": "safe"
+    },
+    {
+      "countryCode": "FI",
+      "countryName": "Finland",
+      "datePeriod": "2026-02",
+      "fuels": [
+        {
+          "fuelType": "petrol",
+          "stockKilotonnes": 331,
+          "consumptionKilotonnes": 94,
+          "daysOfSupply": 105.6,
+          "mandatoryMinimumDays": 90,
+          "status": "safe"
+        },
+        {
+          "fuelType": "diesel",
+          "stockKilotonnes": 1924,
+          "consumptionKilotonnes": 308,
+          "daysOfSupply": 187.4,
+          "mandatoryMinimumDays": 90,
+          "status": "safe"
+        },
+        {
+          "fuelType": "jet_fuel",
+          "stockKilotonnes": 83,
+          "consumptionKilotonnes": 62,
+          "daysOfSupply": 40.2,
+          "mandatoryMinimumDays": 90,
+          "status": "critical"
+        }
+      ],
+      "averageDays": 111.1,
+      "overallStatus": "critical"
     },
     {
       "countryCode": "NL",
@@ -763,39 +796,6 @@
       "overallStatus": "watch"
     },
     {
-      "countryCode": "FI",
-      "countryName": "Finland",
-      "datePeriod": "2025-12",
-      "fuels": [
-        {
-          "fuelType": "petrol",
-          "stockKilotonnes": 331,
-          "consumptionKilotonnes": 100,
-          "daysOfSupply": 99.3,
-          "mandatoryMinimumDays": 90,
-          "status": "safe"
-        },
-        {
-          "fuelType": "diesel",
-          "stockKilotonnes": 2182,
-          "consumptionKilotonnes": 265,
-          "daysOfSupply": 247,
-          "mandatoryMinimumDays": 90,
-          "status": "safe"
-        },
-        {
-          "fuelType": "jet_fuel",
-          "stockKilotonnes": 106,
-          "consumptionKilotonnes": 71,
-          "daysOfSupply": 44.8,
-          "mandatoryMinimumDays": 90,
-          "status": "critical"
-        }
-      ],
-      "averageDays": 130.4,
-      "overallStatus": "critical"
-    },
-    {
       "countryCode": "IE",
       "countryName": "Ireland",
       "datePeriod": "2026-01",
@@ -896,9 +896,9 @@
     }
   ],
   "euAverage": {
-    "petrolDays": 99.2,
-    "dieselDays": 97.6,
-    "jetFuelDays": 91.4,
+    "petrolDays": 101.5,
+    "dieselDays": 96.3,
+    "jetFuelDays": 90.2,
     "overallStatus": "watch"
   }
 }
