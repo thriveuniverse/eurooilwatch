@@ -215,6 +215,23 @@ export default function DashboardPage() {
           </div>
           <span className="text-oil-400 text-sm flex-shrink-0">→</span>
         </a>
+        <a
+          href="/reports/from-hormuz-to-hunger"
+          className="mt-2 flex items-center justify-between gap-4 rounded-lg border border-red-900/50 bg-red-950/20 px-4 py-3 hover:border-red-700 hover:bg-red-950/30 transition group"
+        >
+          <div className="flex items-center gap-3">
+            <span className="text-lg">📕</span>
+            <div>
+              <p className="text-sm font-medium text-white group-hover:text-red-200 transition">
+                Special Report — From Hormuz to Hunger <span className="ml-1 text-[10px] font-mono text-amber-400 uppercase tracking-wider">New</span>
+              </p>
+              <p className="text-xs text-gray-500">
+                Independent systems risk analysis · The fertilizer cascade nobody is modelling · Free download
+              </p>
+            </div>
+          </div>
+          <span className="text-red-400 text-sm flex-shrink-0">→</span>
+        </a>
         <p className="mt-2 text-xs text-gray-500">
           This analysis is delivered to your inbox every Thursday.{' '}
           <a href="#briefing" className="text-oil-400 underline hover:text-oil-300">
