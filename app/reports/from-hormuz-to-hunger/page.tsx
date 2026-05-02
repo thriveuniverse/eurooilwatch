@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import HormuzReportDownloadForm from '@/components/HormuzReportDownloadForm';
 
 export const revalidate = 3600;
 
@@ -190,35 +191,8 @@ export default function HormuzReportPage() {
         </p>
       </article>
 
-      {/* Download cards */}
-      <div className="grid sm:grid-cols-2 gap-4 pt-2">
-        <a
-          href="/reports/from-hormuz-to-hunger-policy-brief.pdf"
-          className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
-        >
-          <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Policy Brief · v3.0</p>
-          <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
-            Download Policy Brief →
-          </p>
-          <p className="mt-1 text-xs text-gray-500">
-            ~25 pages · Compressed case, nine causal chains, scenarios, policy recommendations. Suitable for
-            policymakers and general readers.
-          </p>
-        </a>
-        <a
-          href="/reports/from-hormuz-to-hunger-technical-report.pdf"
-          className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
-        >
-          <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Technical Report · v3.0</p>
-          <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
-            Download Technical Report →
-          </p>
-          <p className="mt-1 text-xs text-gray-500">
-            ~80 pages · Full methodology, 30-section analysis, regional mortality conversion tables, sensitivity
-            analysis, historical calibration, anticipated objections.
-          </p>
-        </a>
-      </div>
+      {/* Email-gated download form */}
+      <HormuzReportDownloadForm siteName="EuroOilWatch" />
 
       {/* Update commitment */}
       <p className="text-xs text-gray-500 italic">
