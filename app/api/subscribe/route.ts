@@ -13,9 +13,17 @@ export async function POST(request: Request) {
     const segmentId = process.env.RESEND_SEGMENT_ID;
     const topicId = process.env.RESEND_TOPIC_ID;
     const fromAddress = process.env.RESEND_FROM_ADDRESS;
+
+    // Loud, specific logging when required env vars are missing — silent
+    // 500s have historically been hard to diagnose because the operator
+    // can't see *which* var is wrong from the client-side error alone.
     if (!apiKey) {
+      console.error('[/api/subscribe] FATAL: RESEND_API_KEY is not set — subscription cannot proceed.');
       return NextResponse.json({ error: 'Server config error' }, { status: 500 });
     }
+    if (!segmentId) console.warn('[/api/subscribe] RESEND_SEGMENT_ID is not set — new contact will not join the EuroOilWatch audience.');
+    if (!topicId) console.warn('[/api/subscribe] RESEND_TOPIC_ID is not set — new contact will have no opt-in topic recorded.');
+    if (!fromAddress) console.warn('[/api/subscribe] RESEND_FROM_ADDRESS is not set — transactional thank-you emails will be skipped.');
     const body: Record<string, unknown> = { email, unsubscribed: false };
     if (segmentId) body.segments = [{ id: segmentId }];
     if (topicId) body.topics = [{ id: topicId, subscription: 'opt_in' }];
