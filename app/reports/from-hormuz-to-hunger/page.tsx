@@ -203,6 +203,13 @@ export default function HormuzReportPage() {
       {/* Footer */}
       <footer className="border-t border-oil-800/40 pt-6 mt-8 space-y-3 text-xs text-gray-500">
         <p>
+          <strong className="text-gray-400">Methodology:</strong> This analysis was produced using the{' '}
+          <a href="/methodology/compound-cascade" className="text-oil-400 hover:underline">
+            Compound Cascade Systems Modelling Framework (v2.0)
+          </a>
+          {' '}— a reusable methodology for probabilistic risk models of systemic crises.
+        </p>
+        <p>
           <strong className="text-gray-400">Contact:</strong>{' '}
           <a href="mailto:jon@thethriveclan.com" className="text-oil-400 hover:underline">jon@thethriveclan.com</a>
         </p>
