@@ -71,10 +71,10 @@ export default function FallOfUKReportDownloadForm({ siteName }: Props) {
             </p>
           </a>
           <a
-            href="/reports/The_Fall_of_the_UK_Technical_Report_v8.pdf"
+            href="/reports/The_Fall_of_the_UK_Technical_Report_v9.pdf"
             className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
           >
-            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Technical Report · v8</p>
+            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Technical Report · v9</p>
             <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
               Technical Report →
             </p>

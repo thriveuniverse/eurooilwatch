@@ -63,7 +63,7 @@ async function sendFallOfUKThankYou(apiKey: string, fromAddress: string, to: str
     <ul>
       <li><a href="${SITE_BASE_URL}/reports/Key_Facts_at_a_Glance.pdf">Key Facts at a Glance — 1 page</a></li>
       <li><a href="${SITE_BASE_URL}/reports/The_Fall_of_the_UK_Policy_Brief_v8.pdf">Policy Brief — v8 (~25 pages)</a></li>
-      <li><a href="${SITE_BASE_URL}/reports/The_Fall_of_the_UK_Technical_Report_v8.pdf">Technical Report — v8 (~90 pages)</a></li>
+      <li><a href="${SITE_BASE_URL}/reports/The_Fall_of_the_UK_Technical_Report_v9.pdf">Technical Report — v9 (~90 pages)</a></li>
       <li><a href="${SITE_BASE_URL}/reports/Compound_Cascade_Methodology_Framework_v3_OilSites.pdf">Compound Cascade Methodology Framework — v3</a></li>
     </ul>
     <p>This analysis will be updated as new data becomes available. If you find it useful, please forward to a colleague. For questions or to discuss the methodology, contact <a href="mailto:jon@thethriveclan.com">jon@thethriveclan.com</a>.</p>
