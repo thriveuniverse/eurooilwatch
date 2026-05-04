@@ -44,11 +44,45 @@ export async function POST(request: Request) {
       sendHormuzThankYou(apiKey, fromAddress, email).catch(err =>
         console.error('Thank-you email failed:', err)
       );
+    } else if (source === 'fall-of-uk-report' && fromAddress) {
+      sendFallOfUKThankYou(apiKey, fromAddress, email).catch(err =>
+        console.error('Thank-you email failed:', err)
+      );
     }
 
     return NextResponse.json({ success: true });
   } catch {
     return NextResponse.json({ error: 'Server error' }, { status: 500 });
+  }
+}
+
+async function sendFallOfUKThankYou(apiKey: string, fromAddress: string, to: string) {
+  const html = `
+    <p>Thank you for downloading <strong>The Fall of the United Kingdom?</strong></p>
+    <p>Your downloads:</p>
+    <ul>
+      <li><a href="${SITE_BASE_URL}/reports/Key_Facts_at_a_Glance.pdf">Key Facts at a Glance — 1 page</a></li>
+      <li><a href="${SITE_BASE_URL}/reports/The_Fall_of_the_UK_Policy_Brief_v8.pdf">Policy Brief — v8 (~25 pages)</a></li>
+      <li><a href="${SITE_BASE_URL}/reports/The_Fall_of_the_UK_Technical_Report_v8.pdf">Technical Report — v8 (~90 pages)</a></li>
+      <li><a href="${SITE_BASE_URL}/reports/Compound_Cascade_Methodology_Framework_v3_OilSites.pdf">Compound Cascade Methodology Framework — v3</a></li>
+    </ul>
+    <p>This analysis will be updated as new data becomes available. If you find it useful, please forward to a colleague. For questions or to discuss the methodology, contact <a href="mailto:jon@thethriveclan.com">jon@thethriveclan.com</a>.</p>
+    <p>The methodology is also published on SSRN: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6695618">papers.ssrn.com/sol3/papers.cfm?abstract_id=6695618</a></p>
+    <p>—<br>${SITE_NAME}</p>
+  `;
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: { 'Authorization': `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      from: fromAddress,
+      to: [to],
+      subject: 'Your reports — The Fall of the United Kingdom?',
+      html,
+    }),
+  });
+  if (!res.ok) {
+    const errText = await res.text().catch(() => '');
+    throw new Error(`Resend email send ${res.status}: ${errText}`);
   }
 }
 
