@@ -64,8 +64,44 @@ export default function MethodologyPage() {
               Crude Oil Price — Market Data
             </h3>
             <p className="mt-1 text-gray-400">
-              Brent crude futures prices are fetched from public financial data
-              APIs. EUR conversion uses the current EUR/USD exchange rate.
+              We use two different Brent series for two different jobs, and
+              disclose both because they can diverge during volatile markets.
+            </p>
+            <p className="mt-2 text-gray-400">
+              The <strong className="text-gray-200">live dashboard card</strong>{' '}
+              tracks Stooq&apos;s <code className="text-gray-300">cb.f</code> front-month
+              Brent futures — intraday, freely available, refreshes client-side.
+              Front-month futures price expected near-term delivery and roll
+              between contracts.
+            </p>
+            <p className="mt-2 text-gray-400">
+              The{' '}
+              <strong className="text-gray-200">
+                &ldquo;Brent in Historical Context&rdquo; chart on{' '}
+                <a href="/prices" className="underline hover:text-gray-300">
+                  /prices
+                </a>
+              </strong>{' '}
+              draws from the U.S. Energy Information Administration&apos;s
+              Europe Brent Spot Price FOB daily series (RBRTE), which goes
+              back to 20 May 1987. EIA spot is the more authoritative
+              reference for analytical work — it&apos;s what most press and
+              policy citations mean by &ldquo;Brent.&rdquo;{' '}
+              <a
+                href="https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&amp;s=RBRTE&amp;f=D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-gray-300"
+              >
+                eia.gov &#8599;
+              </a>
+            </p>
+            <p className="mt-2 text-gray-400">
+              In normal markets the spread is about $1–3/bbl. During the
+              Iran war period of early 2026 it widened past $25/bbl as the
+              futures curve discounted a near-term ceasefire. Both are real,
+              sourced numbers — they answer different questions. EUR conversion
+              uses the current EUR/USD exchange rate.
             </p>
           </div>
         </div>
