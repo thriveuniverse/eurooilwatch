@@ -7,6 +7,7 @@ import { getUSGSQuakes, magSeverity } from '@/lib/usgs';
 import { getFIRMSDetections, frpSeverity } from '@/lib/firms';
 import BunkerHistoryChart from '@/components/BunkerHistoryChart';
 import AraStocksCard from '@/components/AraStocksCard';
+import SeaStatePanel, { type SeaStateData } from '@/components/SeaStatePanel';
 import { maradOverrideFor } from '@/lib/marad-risk';
 
 export const revalidate = 3600;
@@ -281,6 +282,13 @@ export default async function SupplyPage() {
     try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; }
   })();
   const bunkerHistory = bunkerHistoryRaw?.entries?.length >= 2 ? bunkerHistoryRaw.entries : null;
+
+  const seaState = (() => {
+    const p = path.join(process.cwd(), 'data', 'sea-state.json');
+    if (!fs.existsSync(p)) return null;
+    try { return JSON.parse(fs.readFileSync(p, 'utf-8')) as SeaStateData; } catch { return null; }
+  })();
+
   const redEvents    = gdacsEvents.filter(e => e.alertLevel === 'Red');
   const orangeEvents = gdacsEvents.filter(e => e.alertLevel === 'Orange');
   const greenEvents  = gdacsEvents.filter(e => e.alertLevel === 'Green');
@@ -297,6 +305,14 @@ export default async function SupplyPage() {
           Updated editorially — not a live tracker.
         </p>
       </div>
+
+      {/* Live sea-state panel — chokepoint conditions from Open-Meteo */}
+      {seaState && (
+        <SeaStatePanel
+          data={seaState}
+          only={['hormuz','bab-el-mandeb','suez-approaches','english-channel','skagerrak']}
+        />
+      )}
 
       {/* Status summary bar */}
       <div className="rounded-lg border border-oil-800 bg-oil-900/30 px-5 py-4">
