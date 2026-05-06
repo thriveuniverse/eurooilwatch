@@ -5,12 +5,12 @@ import PriceTicker from '@/components/PriceTicker';
 import CountryGrid from '@/components/CountryGrid';
 import AnalysisPanel from '@/components/AnalysisPanel';
 import StockChart from '@/components/StockChart';
-import WhatWeTrack from '@/components/WhatWeTrack';
-import WhoUsesThis from '@/components/WhoUsesThis';
 import EmailCTA from '@/components/EmailCTA';
-import ProTeaser from '@/components/ProTeaser';
 import DisruptionBanner from '@/components/DisruptionBanner';
 import type { Metadata } from 'next';
+import fs from 'fs';
+import path from 'path';
+import type { GasData } from '@/components/GasTracker';
 
 export const metadata: Metadata = {
   title: 'EuroOilWatch — EU Fuel Reserve & Price Intelligence',
@@ -35,6 +35,12 @@ export default function DashboardPage() {
   ).length;
   const totalCountries = stocks.countries.length;
 
+  const gas = ((): GasData | null => {
+    const p = path.join(process.cwd(), 'data', 'gas.json');
+    if (!fs.existsSync(p)) return null;
+    try { return JSON.parse(fs.readFileSync(p, 'utf-8')) as GasData; } catch { return null; }
+  })();
+
   return (
     <div className="space-y-6">
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
@@ -56,9 +62,6 @@ export default function DashboardPage() {
           lastUpdated={stocks.lastUpdated}
         />
       </section>
-
-      {/* 2. What this tracks */}
-      <WhatWeTrack />
 
       {/* 3. Reserve Gauges */}
       <section aria-label="EU average fuel reserves">
@@ -94,6 +97,62 @@ export default function DashboardPage() {
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-4">Market Prices</h2>
         <PriceTicker brent={brent} prices={prices} />
       </section>
+
+      {/* European Gas Tracker — TTF / Henry Hub spread + AGSI storage headline */}
+      {gas && (
+        <section aria-label="European gas tracker">
+          <a href="/gas" className="block rounded-lg border border-oil-800 bg-oil-900/20 hover:border-oil-700 hover:bg-oil-900/40 transition group overflow-hidden">
+            <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between">
+              <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase group-hover:text-gray-400">
+                European Gas — TTF vs Henry Hub
+              </h2>
+              <span className="text-[10px] text-oil-400 group-hover:underline">Full tracker →</span>
+            </div>
+            <div className="grid grid-cols-3 gap-px bg-oil-800/40">
+              <div className="bg-oil-900/30 px-4 py-3">
+                <p className="text-[10px] font-mono uppercase tracking-wider text-gray-500 mb-1">TTF (front-month)</p>
+                <p className="text-lg font-mono font-bold text-white">€{gas.ttf.priceEurMwh.toFixed(2)}<span className="text-xs text-gray-500 ml-0.5">/MWh</span></p>
+                <p className={`text-[10px] mt-0.5 ${gas.ttf.changePct >= 0 ? 'text-red-400' : 'text-emerald-400'}`}>
+                  {gas.ttf.changePct >= 0 ? '▲' : '▼'} {Math.abs(gas.ttf.changePct).toFixed(2)}%
+                </p>
+              </div>
+              <div className="bg-oil-900/30 px-4 py-3">
+                <p className="text-[10px] font-mono uppercase tracking-wider text-gray-500 mb-1">Henry Hub</p>
+                <p className="text-lg font-mono font-bold text-white">${gas.hh.priceUsdMmbtu.toFixed(3)}<span className="text-xs text-gray-500 ml-0.5">/MMBtu</span></p>
+                <p className={`text-[10px] mt-0.5 ${gas.hh.changePct >= 0 ? 'text-red-400' : 'text-emerald-400'}`}>
+                  {gas.hh.changePct >= 0 ? '▲' : '▼'} {Math.abs(gas.hh.changePct).toFixed(2)}%
+                </p>
+              </div>
+              <div className="bg-oil-900/30 px-4 py-3">
+                <p className="text-[10px] font-mono uppercase tracking-wider text-gray-500 mb-1">Europe pays vs US</p>
+                <p className={`text-lg font-mono font-bold ${gas.spread.ratio >= 5 ? 'text-red-400' : gas.spread.ratio >= 3 ? 'text-orange-400' : 'text-amber-400'}`}>
+                  {gas.spread.ratio.toFixed(2)}×
+                </p>
+                <p className="text-[10px] text-gray-500 mt-0.5">+${gas.spread.spreadUsdMmbtu.toFixed(2)}/MMBtu</p>
+              </div>
+            </div>
+            {gas.storage && (
+              <div className="px-5 py-2.5 border-t border-oil-800/40 bg-oil-950/30 flex items-center justify-between flex-wrap gap-2">
+                <p className="text-[11px] text-gray-400">
+                  <span className="text-gray-500">EU storage:</span>{' '}
+                  <span className={`font-mono font-semibold ${gas.storage.eu.fullPct >= 50 ? 'text-amber-400' : 'text-red-400'}`}>
+                    {gas.storage.eu.fullPct.toFixed(1)}% full
+                  </span>
+                  <span className="text-gray-500 ml-2">· gap to {gas.storage.target.fullPct}%: {(gas.storage.target.fullPct - gas.storage.eu.fullPct).toFixed(1)} pts</span>
+                </p>
+                <p className="text-[11px] text-gray-400">
+                  <span className="text-gray-500">Lowest:</span>{' '}
+                  {[...gas.storage.countries].sort((a, b) => a.fullPct - b.fullPct).slice(0, 1).map(c => (
+                    <span key={c.code}>
+                      <span className="text-red-400 font-mono font-semibold">{c.name} {c.fullPct.toFixed(1)}%</span>
+                    </span>
+                  ))}
+                </p>
+              </div>
+            )}
+          </a>
+        </section>
+      )}
 
       {/* Active supply disruption — Druzhba halt began 1 May 2026 */}
       <section aria-label="Active supply disruption">
@@ -258,15 +317,7 @@ export default function DashboardPage() {
         </p>
       </section>
 
-      {/* 7. Email CTA (moved up — before country grid) */}
-      <div id="briefing">
-        <EmailCTA />
-      </div>
-
-      {/* 8. Who uses this */}
-      <WhoUsesThis />
-
-      {/* 9. Country Grid */}
+      {/* Country Grid */}
       <section aria-label="EU27 country fuel reserve overview">
         <CountryGrid stocks={stocks.countries} prices={prices.countries} />
         {totalCountries > 0 && countriesBelowThreshold > 0 && (
@@ -276,10 +327,7 @@ export default function DashboardPage() {
         )}
       </section>
 
-      {/* 10. Pro Teaser */}
-      <ProTeaser />
-
-      {/* 11. Data Sources */}
+      {/* Data Sources */}
       <section aria-label="Data sources" className="rounded-lg border border-oil-800 bg-oil-900/20 px-5 py-4">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-3">Data Sources</h2>
         <div className="grid sm:grid-cols-3 gap-4 text-xs text-gray-500">
@@ -303,6 +351,11 @@ export default function DashboardPage() {
           Reserve data reflects the latest available Eurostat submissions per country, not real-time tank levels. Prices are national averages including all taxes. This dashboard refreshes daily to capture new submissions.
         </p>
       </section>
+
+      {/* Email CTA — at the bottom, after the operational data */}
+      <div id="briefing">
+        <EmailCTA />
+      </div>
     </div>
   );
 }

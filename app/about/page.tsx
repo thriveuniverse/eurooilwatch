@@ -1,4 +1,7 @@
 import type { Metadata } from 'next';
+import WhatWeTrack from '@/components/WhatWeTrack';
+import WhoUsesThis from '@/components/WhoUsesThis';
+import ProTeaser from '@/components/ProTeaser';
 
 export const metadata: Metadata = {
   title: 'About | EuroOilWatch',
@@ -12,6 +15,10 @@ export default function AboutPage() {
         <a href="/" className="text-xs text-oil-400 hover:underline">← Back to dashboard</a>
         <h1 className="mt-2 text-2xl font-bold text-white">About EuroOilWatch</h1>
       </div>
+
+      <WhatWeTrack />
+      <WhoUsesThis />
+      <ProTeaser />
 
       <div className="space-y-4 text-sm text-gray-300 leading-relaxed">
         <p>

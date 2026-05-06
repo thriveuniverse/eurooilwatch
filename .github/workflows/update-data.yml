@@ -51,6 +51,12 @@ jobs:
         run: npm run fetch:sea-state
         continue-on-error: true
 
+      - name: Fetch gas tracker (TTF, Henry Hub, AGSI storage)
+        run: npm run fetch:gas
+        env:
+          AGSI_API_KEY: ${{ secrets.AGSI_API_KEY }}
+        continue-on-error: true
+
       - name: Fetch bunker fuel prices
         run: npm run fetch:bunker
         continue-on-error: true
