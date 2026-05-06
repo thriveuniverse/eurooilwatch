@@ -43,6 +43,14 @@ jobs:
         run: npm run fetch:brent
         continue-on-error: true
 
+      - name: Fetch EIA Brent daily history (1987→today)
+        run: npm run fetch:brent-eia
+        continue-on-error: true
+
+      - name: Fetch sea-state at shipping chokepoints
+        run: npm run fetch:sea-state
+        continue-on-error: true
+
       - name: Fetch bunker fuel prices
         run: npm run fetch:bunker
         continue-on-error: true
