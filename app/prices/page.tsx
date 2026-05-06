@@ -5,6 +5,7 @@ import fs from 'fs';
 import path from 'path';
 import PriceHeatmap from '@/components/PriceHeatmap';
 import BrentHistoryChart from '@/components/BrentHistoryChart';
+import BrentHistoricalContext from '@/components/BrentHistoricalContext';
 import EUPriceHistoryChart from '@/components/EUPriceHistoryChart';
 import JsonLd from '@/components/JsonLd';
 
@@ -27,6 +28,12 @@ export default function PricesPage() {
   const { prices } = getDashboardData();
   const brentHistory = readHistory<{ entries: { date: string; priceUsd: number; priceEur: number }[] }>('brent-history.json');
   const pricesHistory = readHistory<{ entries: { date: string; petrolEur: number; dieselEur: number }[] }>('prices-history.json');
+  const eiaBrent = readHistory<{
+    entries: { date: string; priceUsd: number }[];
+    allTimeHigh: { date: string; priceUsd: number };
+    allTimeLow:  { date: string; priceUsd: number };
+  }>('brent-eia-daily.json');
+  const liveBrent = readHistory<{ priceUsd: number }>('brent.json');
 
   return (
     <div className="space-y-6">
@@ -60,6 +67,15 @@ export default function PricesPage() {
 
       {brentHistory && brentHistory.entries.length >= 2 && (
         <BrentHistoryChart entries={brentHistory.entries} />
+      )}
+
+      {eiaBrent && eiaBrent.entries?.length > 0 && (
+        <BrentHistoricalContext
+          entries={eiaBrent.entries}
+          allTimeHigh={eiaBrent.allTimeHigh}
+          allTimeLow={eiaBrent.allTimeLow}
+          livePriceUsd={liveBrent?.priceUsd}
+        />
       )}
 
       {/* Sortable table */}
