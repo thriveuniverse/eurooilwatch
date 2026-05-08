@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-07T17:41:20.059Z",
+  "lastUpdated": "2026-05-08T06:28:13.392Z",
   "dataPeriod": "2026-03",
   "dataSource": "Eurostat: 27 monthly, 0 annual fallback",
   "countries": [
@@ -367,39 +367,6 @@
       "overallStatus": "critical"
     },
     {
-      "countryCode": "FR",
-      "countryName": "France",
-      "datePeriod": "2026-01",
-      "fuels": [
-        {
-          "fuelType": "petrol",
-          "stockKilotonnes": 2433,
-          "consumptionKilotonnes": 891,
-          "daysOfSupply": 81.9,
-          "mandatoryMinimumDays": 90,
-          "status": "warning"
-        },
-        {
-          "fuelType": "diesel",
-          "stockKilotonnes": 8715,
-          "consumptionKilotonnes": 2743,
-          "daysOfSupply": 95.3,
-          "mandatoryMinimumDays": 90,
-          "status": "watch"
-        },
-        {
-          "fuelType": "jet_fuel",
-          "stockKilotonnes": 1281,
-          "consumptionKilotonnes": 606,
-          "daysOfSupply": 63.4,
-          "mandatoryMinimumDays": 90,
-          "status": "critical"
-        }
-      ],
-      "averageDays": 80.2,
-      "overallStatus": "critical"
-    },
-    {
       "countryCode": "SK",
       "countryName": "Slovakia",
       "datePeriod": "2026-02",
@@ -463,6 +430,39 @@
         }
       ],
       "averageDays": 82.5,
+      "overallStatus": "critical"
+    },
+    {
+      "countryCode": "FR",
+      "countryName": "France",
+      "datePeriod": "2026-02",
+      "fuels": [
+        {
+          "fuelType": "petrol",
+          "stockKilotonnes": 2445,
+          "consumptionKilotonnes": 876,
+          "daysOfSupply": 83.7,
+          "mandatoryMinimumDays": 90,
+          "status": "warning"
+        },
+        {
+          "fuelType": "diesel",
+          "stockKilotonnes": 8689,
+          "consumptionKilotonnes": 2669,
+          "daysOfSupply": 97.7,
+          "mandatoryMinimumDays": 90,
+          "status": "watch"
+        },
+        {
+          "fuelType": "jet_fuel",
+          "stockKilotonnes": 1296,
+          "consumptionKilotonnes": 576,
+          "daysOfSupply": 67.5,
+          "mandatoryMinimumDays": 90,
+          "status": "critical"
+        }
+      ],
+      "averageDays": 83,
       "overallStatus": "critical"
     },
     {
@@ -897,8 +897,8 @@
   ],
   "euAverage": {
     "petrolDays": 110.1,
-    "dieselDays": 100.5,
-    "jetFuelDays": 94.9,
+    "dieselDays": 100.6,
+    "jetFuelDays": 95.1,
     "overallStatus": "safe"
   }
 }
