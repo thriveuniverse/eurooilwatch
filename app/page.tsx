@@ -1,4 +1,6 @@
 import { getDashboardData, getEUHistory, getCentcom, getRefineryOutages } from '@/lib/data';
+import { getFIRMSDetections } from '@/lib/firms';
+import RefineryHealthPanel from '@/components/RefineryHealthPanel';
 import StatusBanner from '@/components/StatusBanner';
 import ReserveGauge from '@/components/ReserveGauge';
 import PriceTicker from '@/components/PriceTicker';
@@ -21,11 +23,12 @@ export const metadata: Metadata = {
 
 export const revalidate = 1800;
 
-export default function DashboardPage() {
+export default async function DashboardPage() {
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
   const refineries = getRefineryOutages();
+  const firmsResult = await getFIRMSDetections();
   const refineryHighSeverity = refineries?.outages.filter(
     o => o.severity === 'critical' || o.severity === 'high'
   ).length ?? 0;
@@ -184,6 +187,13 @@ export default function DashboardPage() {
           </div>
         </div>
       </section>
+
+      {/* Refinery Health Watch — NASA FIRMS thermal anomalies, compact homepage view */}
+      <RefineryHealthPanel
+        data={firmsResult}
+        mode="compact"
+        regionLabel="24 major EU and Gulf refineries / terminals"
+      />
 
       {/* CENTCOM Advisory Snapshot */}
       {centcom && centcom.advisories.length > 0 && (
