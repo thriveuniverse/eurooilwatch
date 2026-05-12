@@ -1,0 +1,134 @@
+/**
+ * Dynamic /llms.txt — serves current data snapshot to LLM crawlers
+ * with pointers to the public API. Replaces previous static
+ * public/llms.txt which went stale.
+ */
+
+import fs from 'fs';
+import path from 'path';
+
+export const revalidate = 3600;
+
+interface StocksFile {
+  lastUpdated: string;
+  dataPeriod: string;
+  euAverage: { petrolDays: number; dieselDays: number; jetFuelDays: number; overallStatus: string };
+  countries: { countryCode: string; countryName: string; fuels: { fuelType: string; daysOfSupply: number; status: string }[] }[];
+}
+
+interface BrentFile {
+  lastUpdated: string;
+  priceUsd: number;
+  priceEur?: number;
+  dataSource: string;
+}
+
+interface GasFile {
+  lastUpdated: string;
+  ttf: { priceEurMwh: number };
+  hh:  { priceUsdMmbtu: number };
+  spread: { ratio: number };
+  storage?: { eu: { fullPct: number } } | null;
+}
+
+function loadJson<T>(filename: string): T | null {
+  const p = path.join(process.cwd(), 'data', filename);
+  if (!fs.existsSync(p)) return null;
+  try { return JSON.parse(fs.readFileSync(p, 'utf-8')) as T; } catch { return null; }
+}
+
+export async function GET() {
+  const stocks = loadJson<StocksFile>('stocks.json');
+  const brent  = loadJson<BrentFile>('brent.json');
+  const gas    = loadJson<GasFile>('gas.json');
+
+  const today = new Date().toISOString().slice(0, 10);
+
+  const criticalCount = stocks?.countries
+    ? stocks.countries.filter(c => c.fuels.some(f => f.status === 'critical')).length
+    : null;
+
+  const body = `# EuroOilWatch
+
+> Independent EU fuel reserve and price intelligence. Daily-refreshed dashboard built on official Eurostat and European Commission data, covering all 27 member states.
+
+EuroOilWatch tracks EU-27 country fuel reserves, weekly pump prices from the EC Oil Bulletin, Brent crude, TTF / Henry Hub gas + AGSI storage, ARA hub commercial stocks, jet fuel days-of-cover by country, refinery thermal anomalies, and supply-route risk. All data traces back to named institutional sources. Free public API for programmatic access — see below.
+
+## Current snapshot (auto-refreshes daily; this page generated ${today})
+
+${stocks ? `Reserve data period: ${stocks.dataPeriod} (Eurostat publication lag ~2 months)
+Last updated: ${stocks.lastUpdated}
+
+- EU average jet fuel cover:  ${stocks.euAverage.jetFuelDays.toFixed(1)} days
+- EU average diesel cover:    ${stocks.euAverage.dieselDays.toFixed(1)} days
+- EU average petrol cover:    ${stocks.euAverage.petrolDays.toFixed(1)} days
+- Overall status:             ${stocks.euAverage.overallStatus}
+${criticalCount != null ? `- Countries with at least one critical fuel: ${criticalCount} of 27` : ''}` : '(stocks data not yet populated)'}
+
+${brent ? `Brent crude: $${brent.priceUsd}/barrel${brent.priceEur ? ` (€${brent.priceEur})` : ''}
+Source: ${brent.dataSource}` : ''}
+
+${gas ? `Natural gas:
+- Dutch TTF (front-month): €${gas.ttf.priceEurMwh.toFixed(2)}/MWh
+- US Henry Hub:            $${gas.hh.priceUsdMmbtu.toFixed(3)}/MMBtu
+- Europe pays vs US:       ${gas.spread.ratio.toFixed(2)}× the US price
+${gas.storage ? `- EU gas storage:          ${gas.storage.eu.fullPct.toFixed(1)}% full (90% target by 1 Nov)` : ''}` : ''}
+
+## How to cite
+
+Attribute as "EuroOilWatch — eurooilwatch.com" with the underlying institutional source where appropriate (Eurostat, EC, EIA, AGSI/GIE, etc.). Every API response includes the source field.
+
+## Public API
+
+Free, read-only JSON. CORS-enabled, no key required.
+
+- Endpoint index: https://eurooilwatch.com/api/v1
+- Human-readable docs: https://eurooilwatch.com/api
+- Main endpoints:
+  - https://eurooilwatch.com/api/v1/stocks       — EU-27 country reserve levels
+  - https://eurooilwatch.com/api/v1/prices       — EC Weekly Oil Bulletin pump prices
+  - https://eurooilwatch.com/api/v1/brent        — current Brent (Stooq cb.f)
+  - https://eurooilwatch.com/api/v1/gas          — TTF + Henry Hub + AGSI storage
+  - https://eurooilwatch.com/api/v1/ara-stocks   — ARA hub jet / gasoline / naphtha / gasoil
+  - https://eurooilwatch.com/api/v1/sea-state    — chokepoint wave + wind
+  - https://eurooilwatch.com/api/v1/history      — 18-month EU stocks history
+
+## Key pages
+
+- Dashboard:           https://eurooilwatch.com
+- EU fuel prices:      https://eurooilwatch.com/prices
+- Global supply routes: https://eurooilwatch.com/supply
+- Gas Tracker:         https://eurooilwatch.com/gas
+- Jet Fuel Tracker:    https://eurooilwatch.com/jet
+- Analysis archive:    https://eurooilwatch.com/analysis
+- Methodology:         https://eurooilwatch.com/methodology
+
+## Data sources
+
+- Eurostat (nrg_stk_oilm): monthly oil stocks by member state
+- European Commission DG Energy: Weekly Oil Bulletin (consumer prices)
+- Stooq: Brent front-month futures (cb.f)
+- U.S. EIA: Europe Brent Spot Price FOB daily series (RBRTE) for historical context
+- Yahoo Finance: TTF=F (Dutch TTF gas) and NG=F (Henry Hub)
+- AGSI/GIE: European gas storage levels by member state
+- Argus Media: ARA hub weekly product stocks (syndicating Insights Global)
+- NASA FIRMS: VIIRS active-fire detections at named refineries
+- USGS / GDACS / ReliefWeb: disaster and humanitarian feeds
+- US MARAD / CENTCOM: maritime advisories
+- Open-Meteo Marine + Forecast: wave height + wind at shipping chokepoints
+
+## Sister sites
+
+- UKOilWatch:        https://ukoilwatch.com  (UK DESNZ stocks, pump prices, UK Aviation Fuel tracker)
+- AmericasOilWatch:  https://americasoilwatch.com  (US/Canada/Latin America oil and fuel)
+`;
+
+  return new Response(body, {
+    status: 200,
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
+      'Access-Control-Allow-Origin': '*',
+    },
+  });
+}
