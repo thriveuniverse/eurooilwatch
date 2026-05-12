@@ -416,6 +416,29 @@ export default async function DashboardPage() {
         )}
       </section>
 
+      {/* Public API + cite-this-data */}
+      <section aria-label="Public API" className="rounded-lg border border-oil-800 bg-oil-900/20 overflow-hidden">
+        <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between flex-wrap gap-2">
+          <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase">
+            Cite this data — Public API
+          </h2>
+          <a href="/api" className="text-[10px] text-amber-300 hover:underline font-mono">Full docs →</a>
+        </div>
+        <div className="px-5 py-4 space-y-3">
+          <p className="text-xs text-gray-400 leading-relaxed">
+            Every number on this dashboard is available as JSON via a free, read-only API.
+            CORS-enabled, no authentication, no key required. Built for journalists, analysts,
+            researchers, and LLM agents who want to cite the source rather than scrape the page.
+          </p>
+          <pre className="bg-oil-950/60 border border-oil-800 rounded px-3 py-2 text-[11px] text-gray-300 overflow-x-auto"><code>{`curl https://eurooilwatch.com/api/v1/stocks    # EU-27 reserves
+curl https://eurooilwatch.com/api/v1/gas       # TTF + Henry Hub + AGSI
+curl https://eurooilwatch.com/api/v1           # endpoint index`}</code></pre>
+          <p className="text-[10px] text-gray-600">
+            Attribution: cite as &quot;EuroOilWatch — eurooilwatch.com&quot; alongside the underlying institutional source (Eurostat, EC, EIA, etc.) which is included in every payload.
+          </p>
+        </div>
+      </section>
+
       {/* Data Sources */}
       <section aria-label="Data sources" className="rounded-lg border border-oil-800 bg-oil-900/20 px-5 py-4">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-3">Data Sources</h2>
