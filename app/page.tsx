@@ -104,12 +104,12 @@ export default async function DashboardPage() {
       {/* European Gas Tracker — TTF / Henry Hub spread + AGSI storage headline */}
       {gas && (
         <section aria-label="European gas tracker">
-          <a href="/gas" className="block rounded-lg border border-oil-800 bg-oil-900/20 hover:border-oil-700 hover:bg-oil-900/40 transition group overflow-hidden">
-            <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between">
-              <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase group-hover:text-gray-400">
-                European Gas — TTF vs Henry Hub
+          <a href="/gas" className="block rounded-lg border border-amber-700/40 bg-oil-900/20 hover:border-amber-600/60 hover:bg-oil-900/40 transition group overflow-hidden">
+            <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between flex-wrap gap-2">
+              <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-400 uppercase group-hover:text-gray-200">
+                European Gas — TTF vs Henry Hub + AGSI Storage
               </h2>
-              <span className="text-[10px] text-oil-400 group-hover:underline">Full tracker →</span>
+              <span className="text-[10px] text-gray-500">Updated daily</span>
             </div>
             <div className="grid grid-cols-3 gap-px bg-oil-800/40">
               <div className="bg-oil-900/30 px-4 py-3">
@@ -153,6 +153,12 @@ export default async function DashboardPage() {
                 </p>
               </div>
             )}
+            <div className="px-5 py-3 border-t border-amber-700/30 bg-amber-950/20 flex items-center justify-between group-hover:bg-amber-950/30 transition">
+              <p className="text-xs text-amber-200/90 font-medium">
+                Open the full Gas Tracker — TTF vs Henry Hub history, EU storage by country, 90% refill target
+              </p>
+              <span className="text-amber-300 text-sm font-semibold group-hover:translate-x-0.5 transition-transform">→</span>
+            </div>
           </a>
         </section>
       )}
