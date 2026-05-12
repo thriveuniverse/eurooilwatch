@@ -177,12 +177,15 @@ export default async function DashboardPage() {
         })();
         return (
           <section aria-label="European jet fuel tracker">
-            <a href="/jet" className="block rounded-lg border border-oil-800 bg-oil-900/20 hover:border-oil-700 hover:bg-oil-900/40 transition group overflow-hidden">
-              <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between">
-                <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase group-hover:text-gray-400">
-                  European Jet Fuel
-                </h2>
-                <span className="text-[10px] text-oil-400 group-hover:underline">Full tracker →</span>
+            <a href="/jet" className="block rounded-lg border border-amber-700/40 bg-oil-900/20 hover:border-amber-600/60 hover:bg-oil-900/40 transition group overflow-hidden">
+              <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between flex-wrap gap-2">
+                <div className="flex items-center gap-2">
+                  <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-400 uppercase group-hover:text-gray-200">
+                    European Jet Fuel — Country Days-of-Cover + ARA Hub
+                  </h2>
+                  <span className="text-[9px] font-mono font-bold tracking-wider text-amber-300 uppercase px-1.5 py-0.5 rounded border border-amber-600/40 bg-amber-950/30">New</span>
+                </div>
+                <span className="text-[10px] text-gray-500">Updated daily</span>
               </div>
               <div className="grid grid-cols-3 gap-px bg-oil-800/40">
                 <div className="bg-oil-900/30 px-4 py-3">
@@ -215,6 +218,12 @@ export default async function DashboardPage() {
                     <p className="text-lg font-mono font-bold text-gray-500">—</p>
                   )}
                 </div>
+              </div>
+              <div className="px-5 py-3 border-t border-amber-700/30 bg-amber-950/20 flex items-center justify-between group-hover:bg-amber-950/30 transition">
+                <p className="text-xs text-amber-200/90 font-medium">
+                  Open the full Jet Fuel Tracker — 27-country breakdown, ARA hub trend, 18-month history, UK context
+                </p>
+                <span className="text-amber-300 text-sm font-semibold group-hover:translate-x-0.5 transition-transform">→</span>
               </div>
             </a>
           </section>
