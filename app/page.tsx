@@ -157,6 +157,70 @@ export default async function DashboardPage() {
         </section>
       )}
 
+      {/* European Jet Fuel Tracker — country days-of-cover + ARA hub headline */}
+      {(() => {
+        const jetRows = stocks.countries
+          .map(c => {
+            const j = c.fuels.find((f: any) => f.fuelType === 'jet_fuel');
+            return j ? { name: c.countryName, days: j.daysOfSupply, status: j.status } : null;
+          })
+          .filter((x: any): x is NonNullable<typeof x> => !!x);
+        const critical = jetRows.filter((r: any) => r.status === 'critical');
+        const stressed = [...jetRows].sort((a: any, b: any) => a.days - b.days)[0];
+        const araJet = (() => {
+          try {
+            const p = path.join(process.cwd(), 'data', 'ara-stocks.json');
+            if (!fs.existsSync(p)) return null;
+            const data = JSON.parse(fs.readFileSync(p, 'utf-8'));
+            return data.weeks?.[0]?.figures?.find((f: any) => f.product === 'jet') ?? null;
+          } catch { return null; }
+        })();
+        return (
+          <section aria-label="European jet fuel tracker">
+            <a href="/jet" className="block rounded-lg border border-oil-800 bg-oil-900/20 hover:border-oil-700 hover:bg-oil-900/40 transition group overflow-hidden">
+              <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between">
+                <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase group-hover:text-gray-400">
+                  European Jet Fuel
+                </h2>
+                <span className="text-[10px] text-oil-400 group-hover:underline">Full tracker →</span>
+              </div>
+              <div className="grid grid-cols-3 gap-px bg-oil-800/40">
+                <div className="bg-oil-900/30 px-4 py-3">
+                  <p className="text-[10px] font-mono uppercase tracking-wider text-gray-500 mb-1">EU average</p>
+                  <p className="text-lg font-mono font-bold text-white">
+                    {stocks.euAverage.jetFuelDays.toFixed(1)}<span className="text-xs text-gray-500 ml-0.5">days</span>
+                  </p>
+                  <p className="text-[10px] text-gray-500 mt-0.5">strategic + commercial</p>
+                </div>
+                <div className="bg-oil-900/30 px-4 py-3">
+                  <p className="text-[10px] font-mono uppercase tracking-wider text-gray-500 mb-1">Most-stressed</p>
+                  <p className="text-lg font-mono font-bold text-red-400">
+                    {stressed ? stressed.days.toFixed(1) : '—'}<span className="text-xs text-gray-500 ml-0.5">days</span>
+                  </p>
+                  <p className="text-[10px] text-gray-500 mt-0.5">{stressed?.name} · {critical.length} of 27 critical</p>
+                </div>
+                <div className="bg-oil-900/30 px-4 py-3">
+                  <p className="text-[10px] font-mono uppercase tracking-wider text-gray-500 mb-1">ARA hub commercial</p>
+                  {araJet?.tonnes ? (
+                    <>
+                      <p className={`text-lg font-mono font-bold ${(araJet.wowPercent ?? 0) < 0 ? 'text-orange-400' : 'text-emerald-400'}`}>
+                        {(araJet.tonnes / 1000).toFixed(0)}<span className="text-xs text-gray-500 ml-0.5">kt</span>
+                      </p>
+                      <p className="text-[10px] text-gray-500 mt-0.5">
+                        {araJet.wowPercent != null ? `${araJet.wowPercent >= 0 ? '+' : ''}${araJet.wowPercent}% WoW` : '—'}
+                        {araJet.note?.toLowerCase().includes('low') ? ' · 6-yr low' : ''}
+                      </p>
+                    </>
+                  ) : (
+                    <p className="text-lg font-mono font-bold text-gray-500">—</p>
+                  )}
+                </div>
+              </div>
+            </a>
+          </section>
+        );
+      })()}
+
       {/* Active supply disruption — Druzhba halt began 1 May 2026 */}
       <section aria-label="Active supply disruption">
         <div className="rounded-lg border border-amber-700/40 bg-amber-950/20 overflow-hidden">
