@@ -28,6 +28,7 @@ const ALLOWED = new Set([
   'marad-advisories',
   'centcom-advisories',
   'crea-feed',
+  'changelog',
 ]);
 
 const CORS_HEADERS = {
