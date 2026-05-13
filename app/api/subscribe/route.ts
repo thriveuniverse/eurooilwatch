@@ -91,8 +91,8 @@ async function sendHormuzThankYou(apiKey: string, fromAddress: string, to: strin
     <p>Thank you for downloading <strong>From Hormuz to Hunger</strong>.</p>
     <p>Your downloads:</p>
     <ul>
-      <li><a href="${SITE_BASE_URL}/reports/from-hormuz-to-hunger-policy-brief.pdf">Policy Brief — v3.0 (~25 pages)</a></li>
-      <li><a href="${SITE_BASE_URL}/reports/from-hormuz-to-hunger-technical-report.pdf">Technical Report — v3.0 (~80 pages)</a></li>
+      <li><a href="${SITE_BASE_URL}/reports/h2h_brief_v4.pdf">Policy Brief — v4 (~25 pages)</a></li>
+      <li><a href="${SITE_BASE_URL}/reports/h2h_tech_v4.pdf">Technical Report — v4 (~80 pages)</a></li>
     </ul>
     <p>This analysis will be updated as new data becomes available. If you find it useful, please forward to a colleague. For questions or to discuss the methodology, contact <a href="mailto:jon@thethriveclan.com">jon@thethriveclan.com</a>.</p>
     <p>—<br>${SITE_NAME}</p>

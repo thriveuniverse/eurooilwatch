@@ -47,10 +47,10 @@ export default function HormuzReportDownloadForm({ siteName }: Props) {
         </p>
         <div className="grid sm:grid-cols-2 gap-4 mt-5">
           <a
-            href="/reports/from-hormuz-to-hunger-policy-brief.pdf"
+            href="/reports/h2h_brief_v4.pdf"
             className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
           >
-            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Policy Brief · v3.0</p>
+            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Policy Brief · v4</p>
             <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
               Download Policy Brief →
             </p>
@@ -59,10 +59,10 @@ export default function HormuzReportDownloadForm({ siteName }: Props) {
             </p>
           </a>
           <a
-            href="/reports/from-hormuz-to-hunger-technical-report.pdf"
+            href="/reports/h2h_tech_v4.pdf"
             className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
           >
-            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Technical Report · v3.0</p>
+            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Technical Report · v4</p>
             <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
               Download Technical Report →
             </p>

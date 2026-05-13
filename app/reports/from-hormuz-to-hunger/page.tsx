@@ -34,7 +34,7 @@ export default function HormuzReportPage() {
         </h1>
 
         <p className="mt-4 text-sm text-gray-400">
-          <strong className="text-gray-300">From Hormuz to Hunger</strong> — Policy Brief v3.0 ·
+          <strong className="text-gray-300">From Hormuz to Hunger</strong> — Policy Brief v4 ·
           By <strong className="text-gray-300">Jonathan Kelly</strong> · Published 30 April 2026
         </p>
       </header>
