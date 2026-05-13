@@ -29,6 +29,23 @@ export default async function DashboardPage() {
   const euHistory = getEUHistory();
   const refineries = getRefineryOutages();
   const firmsResult = await getFIRMSDetections();
+
+  // Cross-fetch OPEC+ summary from AmericasOilWatch (canonical host)
+  const opecSummary = await (async () => {
+    try {
+      const res = await fetch('https://americasoilwatch.com/api/v1/opec', { next: { revalidate: 3600 } });
+      if (!res.ok) return null;
+      const d = await res.json();
+      if (!d?.totals) return null;
+      const russia = d.members?.find((m: any) => m.code === 'RUS')?.latestKbpd ?? null;
+      return {
+        period: d.latestDataPeriod as string | null,
+        opecMbpd: (d.totals.opecKbpd ?? 0) / 1000,
+        russiaMbpd: russia != null ? russia / 1000 : null,
+      };
+    } catch { return null; }
+  })();
+
   const refineryHighSeverity = refineries?.outages.filter(
     o => o.severity === 'critical' || o.severity === 'high'
   ).length ?? 0;
@@ -273,6 +290,36 @@ export default async function DashboardPage() {
         mode="compact"
         regionLabel="24 major EU and Gulf refineries / terminals"
       />
+
+      {/* OPEC+ Production summary — cross-fetched from AmericasOilWatch (canonical host) */}
+      {opecSummary && (
+        <section aria-label="OPEC+ production cross-link">
+          <a href="https://americasoilwatch.com/opec" target="_blank" rel="noopener" className="block rounded-lg border border-oil-800 bg-oil-900/20 hover:border-oil-700 hover:bg-oil-900/40 transition group overflow-hidden">
+            <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between flex-wrap gap-2">
+              <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase">
+                OPEC+ Production — global supply context
+              </h2>
+              <span className="text-[10px] text-oil-400 group-hover:underline">Full tracker on AmericasOilWatch ↗</span>
+            </div>
+            <div className="grid grid-cols-2 gap-px bg-oil-800/40">
+              <div className="bg-oil-900/30 px-4 py-3">
+                <p className="text-[10px] font-mono uppercase tracking-wider text-gray-500 mb-1">OPEC core</p>
+                <p className="text-lg font-mono font-bold text-white">
+                  {opecSummary.opecMbpd.toFixed(2)}<span className="text-xs text-gray-500 ml-0.5">mbpd</span>
+                </p>
+                <p className="text-[10px] text-gray-500 mt-0.5">12 members · EIA, latest available</p>
+              </div>
+              <div className="bg-oil-900/30 px-4 py-3">
+                <p className="text-[10px] font-mono uppercase tracking-wider text-gray-500 mb-1">Russia</p>
+                <p className="text-lg font-mono font-bold text-white">
+                  {opecSummary.russiaMbpd != null ? opecSummary.russiaMbpd.toFixed(2) : '—'}<span className="text-xs text-gray-500 ml-0.5">mbpd</span>
+                </p>
+                <p className="text-[10px] text-gray-500 mt-0.5">non-OPEC anchor</p>
+              </div>
+            </div>
+          </a>
+        </section>
+      )}
 
       {/* CENTCOM Advisory Snapshot */}
       {centcom && centcom.advisories.length > 0 && (
