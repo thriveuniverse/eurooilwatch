@@ -45,6 +45,7 @@ export function maradOverrideFor(
   chokepointId: string,
   advisories: MaradAdvisory[],
   lastUpdated: string,
+  currentRisk?: RiskLevel,
 ): MaradOverride | null {
   const re = REGION_PATTERN[chokepointId];
   if (!re) return null;
@@ -54,6 +55,11 @@ export function maradOverrideFor(
   const maxYear = Math.max(...matches.map(a => a.year));
   const recent = matches.filter(a => a.year === maxYear);
   const top = recent.reduce((acc, a) => (RISK_RANK[a.severity] > RISK_RANK[acc.severity] ? a : acc));
+
+  // MARAD only escalates — never downgrades editorial judgement.
+  // If MARAD's severity isn't strictly higher than the current editorial level,
+  // leave the chokepoint alone.
+  if (currentRisk && RISK_RANK[top.severity] <= RISK_RANK[currentRisk]) return null;
 
   return {
     risk: top.severity,
