@@ -4,6 +4,7 @@ import RefineryHealthPanel from '@/components/RefineryHealthPanel';
 import StatusBanner from '@/components/StatusBanner';
 import ReserveGauge from '@/components/ReserveGauge';
 import PriceTicker from '@/components/PriceTicker';
+import PhysicalSpotPanel from '@/components/PhysicalSpotPanel';
 import CountryGrid from '@/components/CountryGrid';
 import AnalysisPanel from '@/components/AnalysisPanel';
 import StockChart from '@/components/StockChart';
@@ -117,6 +118,9 @@ export default async function DashboardPage() {
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-4">Market Prices</h2>
         <PriceTicker brent={brent} prices={prices} />
       </section>
+
+      {/* Physical NWE crude — editorial spot estimate alongside Brent futures benchmark */}
+      <PhysicalSpotPanel brentUsd={brent.priceUsd} />
 
       {/* European Gas Tracker — TTF / Henry Hub spread + AGSI storage headline */}
       {gas && (

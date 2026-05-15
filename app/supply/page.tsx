@@ -504,8 +504,11 @@ export default async function SupplyPage() {
           </div>
           <div className="px-5 py-2.5 border-t border-oil-800/40 bg-oil-900/20">
             <p className="text-[10px] text-gray-600">
-              Estimated from Brent crude benchmark (${bunker.brentBasis}/bbl). VLSFO = IMO 2020 compliant very low sulphur fuel oil. MGO = marine gas oil (ECA-grade).
-              For exact market prices: <a href="https://shipandbunker.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">Ship & Bunker</a>, Platts.
+              <strong className="text-amber-400/80">Derived from Brent, not live market quotes.</strong> Formula: VLSFO ≈ Brent × 6.5 + 10, MGO ≈ Brent × 6.5 + 130 (basis ${bunker.brentBasis}/bbl).
+              During supply disruptions, real physical bunker prices for prompt delivery typically run substantially higher than this — see
+              {' '}<a href="https://shipandbunker.com" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:text-oil-300 underline">Ship & Bunker</a> or
+              {' '}<a href="https://www.bunkerindex.com" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:text-oil-300 underline">Bunker Index</a> for actual market quotes.
+              VLSFO = IMO 2020 compliant very low sulphur fuel oil. MGO = marine gas oil (ECA-grade).
             </p>
           </div>
         </div>
