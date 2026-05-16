@@ -242,8 +242,30 @@ async function main() {
   const candidates = sitemap.filter(isAraCandidate).filter(withinLookback);
 
   if (candidates.length === 0) {
-    console.log('ℹ️  No ARA articles in the last 7 days; nothing to do.');
-    return;
+    // Silent-success used to live here — turning it loud so future failures
+    // surface in Actions UI / email alerts instead of producing stale data.
+    const existing = loadExisting();
+    const lastIso = existing.lastUpdated || existing.weeks[0]?.weekEnding || '';
+    const daysSince = lastIso
+      ? Math.round((Date.now() - new Date(lastIso).getTime()) / 86_400_000)
+      : null;
+    console.error('❌ No ARA-matching articles in Argus sitemap in the last 7 days.');
+    console.error(`   Last successful data update: ${lastIso || 'never'}${daysSince ? ` (${daysSince} days ago)` : ''}`);
+    console.error('');
+    console.error('   Diagnosis (16 May 2026):');
+    console.error('   • Argus restructured article URLs to numeric-id-first slugs');
+    console.error('     (e.g. /2820473-us-oil-inventories-...) — none contain "ara-*-stocks".');
+    console.error('   • Insights Global stopped publicly publishing the weekly ARA');
+    console.error('     Independent Stocks Report — last public piece was week-4-2024.');
+    console.error('     Their current public output is the ARA *freight* market series,');
+    console.error('     not the stocks report. The stocks data appears to have moved');
+    console.error('     behind their commercial subscription.');
+    console.error('');
+    console.error('   Replacement-source options to evaluate:');
+    console.error('   • Subscribe to Insights Global / Argus (paid)');
+    console.error('   • Switch to Eurostat product-stocks (monthly lag, free)');
+    console.error('   • Disable this workflow and surface staleness in the UI');
+    process.exit(1);
   }
 
   console.log(`🎯 Found ${candidates.length} ARA candidate(s) in last ${LOOKBACK_DAYS} days:`);
