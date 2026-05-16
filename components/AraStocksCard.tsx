@@ -80,9 +80,6 @@ export default function AraStocksCard() {
   const weekEndingDate = new Date(latest.weekEnding).toLocaleDateString('en-GB', {
     day: 'numeric', month: 'short', year: 'numeric',
   });
-  const publishedDate = new Date(latest.publishedAt).toLocaleDateString('en-GB', {
-    day: 'numeric', month: 'short',
-  });
 
   return (
     <div className="rounded-xl border border-oil-700 bg-oil-900/40 overflow-hidden">
@@ -90,12 +87,21 @@ export default function AraStocksCard() {
         <div>
           <h2 className="text-sm font-semibold text-white">ARA Independent Stocks</h2>
           <p className="text-xs text-gray-500 mt-0.5">
-            Amsterdam–Rotterdam–Antwerp refining hub · Week ending {weekEndingDate} · Source: Insights Global via Argus
+            Amsterdam–Rotterdam–Antwerp refining hub · Last refresh: week ending {weekEndingDate}
           </p>
         </div>
-        <span className="text-[10px] uppercase tracking-wide text-gray-500 whitespace-nowrap">
-          Published {publishedDate}
+        <span className="text-[10px] uppercase tracking-wide text-amber-400 whitespace-nowrap">
+          Source paused
         </span>
+      </div>
+
+      <div className="px-5 py-2.5 border-b border-amber-700/40 bg-amber-950/20">
+        <p className="text-xs text-amber-200/90 leading-snug">
+          <span className="font-semibold">⚠ Data source unavailable since late April 2026.</span>
+          {' '}Argus Media restructured its article URLs and the weekly Insights Global stocks
+          report no longer appears in their public sitemap. Figures below are the last
+          successful capture and are not currently being refreshed.
+        </p>
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-px bg-oil-800">
@@ -126,11 +132,10 @@ export default function AraStocksCard() {
       <div className="px-5 py-2.5 border-t border-oil-800/40 bg-oil-900/20">
         <p className="text-[10px] text-gray-600">
           Independently-held inventories at the ARA hub — the single most-watched European refined-product signal for traders.
-          Insights Global publishes weekly Thursdays 16:15 CET, sourced directly from terminal management systems.
-          {' '}EuroOilWatch ingests via Argus Media's free syndication.
-          {data.weeks.length > 1 && <> · {data.weeks.length} weeks of history available.</>}
+          Historical source: Insights Global (publisher) syndicated via Argus Media (free feed).
+          {data.weeks.length > 1 && <> · {data.weeks.length} weeks of frozen history.</>}
           {latest.sourceUrls.length > 0 && (
-            <> · <a href={latest.sourceUrls[0]} target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">Source article →</a></>
+            <> · <a href={latest.sourceUrls[0]} target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition">Last source article →</a></>
           )}
         </p>
       </div>

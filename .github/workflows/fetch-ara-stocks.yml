@@ -1,12 +1,15 @@
 name: Fetch ARA Stocks (Insights Global via Argus)
 
 on:
-  schedule:
-    # Insights Global publishes Thursday 16:15 CET; Argus typically follows
-    # within a few hours. We sweep Friday 06:00 UTC (08:00 CEST) and again
-    # Saturday 06:00 UTC in case the Argus piece slipped to Friday.
-    - cron: '0 6 * * 5'
-    - cron: '0 6 * * 6'
+  # Cron disabled 16 May 2026. Source went dark in late April 2026:
+  # Argus Media restructured article URLs to numeric-id-first slugs and
+  # Insights Global stopped surfacing the weekly ARA stocks report in
+  # their public sitemap (likely moved behind their commercial subscription).
+  # Re-enable by un-commenting the two cron lines below once a replacement
+  # source is in place. workflow_dispatch is preserved for manual triggers.
+  # schedule:
+  #   - cron: '0 6 * * 5'
+  #   - cron: '0 6 * * 6'
   workflow_dispatch:
 
 permissions:
