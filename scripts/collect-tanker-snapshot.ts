@@ -34,6 +34,7 @@ type ZoneKey = keyof typeof ZONES;
 interface Snapshot {
   capturedAt: string;            // ISO timestamp
   captureWindowMs: number;       // how long we listened
+  messageCount?: number;         // total AIS frames received during capture (diagnostic)
   zones: Record<ZoneKey, {
     name: string;
     uniqueTankers: number;       // unique MMSIs of vessel types 80-89 seen in window
@@ -63,6 +64,10 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
   // Track last-known zone per MMSI and last-known type, then count once we know both.
   const positionZone = new Map<string, ZoneKey>();
   const knownType = new Map<string, number>();
+  // Count every frame received from the WebSocket — including non-AIS frames
+  // like errors or keepalives. Used by main() to distinguish "auth/subscription
+  // broken" (zero frames) from "data flowing but filter wrong" (frames but no tankers).
+  let messageCount = 0;
 
   function tryClassify(mmsi: string) {
     const zone = positionZone.get(mmsi);
@@ -80,6 +85,7 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
       const snapshot: Snapshot = {
         capturedAt: new Date().toISOString(),
         captureWindowMs: Date.now() - startedAt,
+        messageCount,
         zones: {
           hormuz: { name: ZONES.hormuz.name, uniqueTankers: seenInZone.hormuz.size, mmsis: [...seenInZone.hormuz] },
           ara:    { name: ZONES.ara.name,    uniqueTankers: seenInZone.ara.size,    mmsis: [...seenInZone.ara] },
@@ -105,6 +111,7 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
     });
 
     ws.addEventListener('message', (ev) => {
+      messageCount++;
       try {
         const msg = JSON.parse(ev.data as string);
         const meta = msg.MetaData;
@@ -185,6 +192,30 @@ async function main() {
   console.log('📊 Tankers in zone:');
   for (const [k, z] of Object.entries(snap.zones)) {
     console.log(`   ${k.padEnd(8)} ${z.name.padEnd(24)} ${z.uniqueTankers}`);
+  }
+  console.log(`   AIS frames received: ${snap.messageCount ?? 0}`);
+
+  // Loud-fail guards: don't persist obviously broken snapshots, and surface the
+  // failure mode in the workflow status. Without these, the collector "succeeds"
+  // (exit 0) while writing all-zero data, which is exactly how this pipeline
+  // silently broke for 30+ days before being noticed.
+  const totalTankers = Object.values(snap.zones).reduce((sum, z) => sum + z.uniqueTankers, 0);
+  if ((snap.messageCount ?? 0) === 0) {
+    console.error('');
+    console.error('❌ No AIS frames received during the capture window.');
+    console.error('   Most likely cause: AISSTREAM_API_KEY is expired, revoked, or out of quota.');
+    console.error('   The WebSocket opened but the subscription delivered no data, which usually');
+    console.error('   means auth was silently rejected or the free-tier quota is exhausted.');
+    console.error('   Check the aisstream.io dashboard. Not writing snapshot.');
+    process.exit(1);
+  }
+  if (totalTankers === 0) {
+    console.error('');
+    console.error(`❌ Received ${snap.messageCount} AIS frames but no tankers in any zone.`);
+    console.error('   Hormuz and ARA both see heavy tanker traffic — a global zero is suspicious.');
+    console.error('   Could be: BoundingBoxes spec drift, vessel-type filter mismatch (80-89),');
+    console.error('   or the subscription returned only non-position frames. Not writing snapshot.');
+    process.exit(1);
   }
 
   const file = loadExisting();
