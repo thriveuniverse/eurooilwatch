@@ -86,9 +86,18 @@ export default async function DashboardPage() {
 
       {/* 3. Reserve Gauges */}
       <section aria-label="EU average fuel reserves">
-        <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-4">
+        <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase">
           EU Average Fuel Reserves (Days of Supply)
         </h2>
+        {stocks.dataPeriod && (
+          <p className="text-[11px] text-gray-500 mb-4 mt-0.5">
+            As of {new Date(stocks.dataPeriod + '-01').toLocaleDateString('en-GB', { month: 'long', year: 'numeric' })}
+            {stocks.countriesReporting && stocks.countriesTotal && (
+              <> · {stocks.countriesReporting}/{stocks.countriesTotal} countries reporting</>
+            )}
+            {' '}· Eurostat
+          </p>
+        )}
         <div className="grid grid-cols-3 gap-4 max-w-xl mx-auto">
           <ReserveGauge label="Petrol" daysOfSupply={stocks.euAverage.petrolDays} minimumDays={90}
             status={stocks.euAverage.petrolDays >= 99 ? 'safe' : stocks.euAverage.petrolDays >= 85 ? 'watch' : stocks.euAverage.petrolDays >= 76 ? 'warning' : 'critical'} />

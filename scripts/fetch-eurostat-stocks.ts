@@ -21,6 +21,11 @@ import { COUNTRIES, EU27_CODES, FUEL_SIEC_CODES } from '../lib/countries';
 const BASE_URL = 'https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data';
 const OUTPUT_FILE = path.join(__dirname, '..', 'data', 'stocks.json');
 const MANDATORY_MINIMUM_DAYS = 90;
+// The dataset's top-level period is anchored to the latest month where at
+// least this fraction of EU27 countries have reported. Prevents the bug
+// where 1 country's advance reading makes 26 February readings look like
+// a March EU average.
+const MIN_COVERAGE_PCT = 0.8;
 
 function sleep(ms: number) { return new Promise(r => setTimeout(r, ms)); }
 
@@ -89,17 +94,49 @@ function getStatus(days: number): ReserveStatus {
 /**
  * Find the latest month that has data for a given country + fuel.
  * Scans backwards from the most recent period.
+ * If `maxPeriod` is set, any period strictly later than it is skipped
+ * — used to clamp every country to the EU-wide consensus period so
+ * advance readings from one country can't mislabel the dataset.
  */
 function findLatestValue(
   values: Map<string, number>,
   geo: string,
   siec: string,
-  periods: string[]
+  periods: string[],
+  maxPeriod?: string,
 ): { value: number; period: string } | null {
   for (let i = periods.length - 1; i >= 0; i--) {
+    if (maxPeriod && periods[i] > maxPeriod) continue;
     const val = values.get(`${geo}|${siec}|${periods[i]}`);
     if (val !== undefined && val > 0) {
       return { value: val, period: periods[i] };
+    }
+  }
+  return null;
+}
+
+/**
+ * Find the latest period where ≥MIN_COVERAGE_PCT of EU27 countries have any
+ * fuel reading. This becomes the dataset's headline period.
+ */
+function findConsensusPeriod(
+  values: Map<string, number>,
+  geoCodes: string[],
+  siecCodes: string[],
+  periods: string[],
+): { period: string; reporting: number } | null {
+  const minCountries = Math.ceil(geoCodes.length * MIN_COVERAGE_PCT);
+  for (let i = periods.length - 1; i >= 0; i--) {
+    const period = periods[i];
+    const reporting = new Set<string>();
+    for (const geo of geoCodes) {
+      for (const siec of siecCodes) {
+        const v = values.get(`${geo}|${siec}|${period}`);
+        if (v !== undefined && v > 0) { reporting.add(geo); break; }
+      }
+    }
+    if (reporting.size >= minCountries) {
+      return { period, reporting: reporting.size };
     }
   }
   return null;
@@ -169,8 +206,20 @@ async function main() {
     console.log(`  ⚠️ Annual consumption failed: ${err.message}`);
   }
 
-  // ── Step 3: Build per-country data with latest available month ──
-  console.log('\n🔧 Step 3: Building country datasets (per-country latest)...\n');
+  // ── Consensus period: latest month with ≥80% country coverage ──
+  // Without this clamp, a single country with advance data can mislabel
+  // the whole dataset's headline period.
+  const consensus = findConsensusPeriod(monthlyStocks, geoCodes, siecCodes, monthlyPeriods);
+  const consensusPeriod = consensus?.period || '';
+  const consensusReporting = consensus?.reporting || 0;
+  if (consensusPeriod) {
+    console.log(`\n🎯 Consensus period: ${consensusPeriod} (${consensusReporting}/${EU27_CODES.length} countries reporting; threshold ${Math.round(MIN_COVERAGE_PCT * 100)}%)\n`);
+  } else {
+    console.log(`\n⚠️  No period met the ${Math.round(MIN_COVERAGE_PCT * 100)}% coverage threshold. Falling back to per-country latest.\n`);
+  }
+
+  // ── Step 3: Build per-country data, clamped to the consensus period ──
+  console.log('🔧 Step 3: Building country datasets (clamped to consensus)...\n');
 
   const countries: CountryStockData[] = [];
   let totals = { petrol: 0, diesel: 0, jet: 0 };
@@ -191,9 +240,11 @@ async function main() {
       let isMonthly = false;
       let periodUsed = '';
 
-      // ── Try monthly: find latest available month for THIS country ──
+      // ── Try monthly: find latest available month for THIS country
+      //    (clamped to consensus period so no country contributes data
+      //    later than the EU-wide consensus) ──
       if (monthlyPeriods.length > 0) {
-        const found = findLatestValue(monthlyStocks, geo, siecCode, monthlyPeriods);
+        const found = findLatestValue(monthlyStocks, geo, siecCode, monthlyPeriods, consensusPeriod);
         if (found) {
           stockVal = found.value;
           periodUsed = found.period;
@@ -290,7 +341,9 @@ async function main() {
 
   const dataset: StockDataset = {
     lastUpdated: new Date().toISOString(),
-    dataPeriod: monthlyPeriods[monthlyPeriods.length - 1] || annualPeriod,
+    dataPeriod: consensusPeriod || annualPeriod,
+    countriesReporting: consensusReporting,
+    countriesTotal: EU27_CODES.length,
     dataSource: `Eurostat: ${sourceStats.monthly} monthly, ${sourceStats.annual} annual fallback`,
     countries: countries.sort((a, b) => a.averageDays - b.averageDays),
     euAverage: {

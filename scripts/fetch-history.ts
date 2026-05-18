@@ -190,8 +190,27 @@ async function main() {
     }
   }
 
-  // Calculate EU averages
-  const euAverage: HistoryPoint[] = periods.map(period => {
+  // Drop trailing periods where too few countries have reported — prevents
+  // the chart from showing a misleading 1-country "EU average" at the
+  // bleeding edge of the publication cycle.
+  const MIN_COVERAGE_PCT = 0.8;
+  const minCountries = Math.ceil(EU27_CODES.length * MIN_COVERAGE_PCT);
+  const coveredPeriods: string[] = [];
+  for (const p of periods) {
+    const fuelCounts = [
+      euTotals[p].petrol.length,
+      euTotals[p].diesel.length,
+      euTotals[p].jet.length,
+    ];
+    if (Math.max(...fuelCounts) >= minCountries) coveredPeriods.push(p);
+  }
+  const droppedPeriods = periods.filter(p => !coveredPeriods.includes(p));
+  if (droppedPeriods.length > 0) {
+    console.log(`\n  Dropped low-coverage periods (< ${Math.round(MIN_COVERAGE_PCT * 100)}%): ${droppedPeriods.join(', ')}`);
+  }
+
+  // Calculate EU averages — only for periods with adequate coverage
+  const euAverage: HistoryPoint[] = coveredPeriods.map(period => {
     const t = euTotals[period];
     const avg = (arr: number[]) => arr.length > 0 ? Math.round((arr.reduce((a, b) => a + b, 0) / arr.length) * 10) / 10 : null;
     return {
@@ -204,7 +223,7 @@ async function main() {
 
   const dataset: HistoryDataset = {
     lastUpdated: new Date().toISOString(),
-    periods,
+    periods: coveredPeriods,
     countries,
     euAverage,
   };

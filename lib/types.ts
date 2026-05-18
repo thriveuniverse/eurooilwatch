@@ -48,7 +48,11 @@ export interface CountryStockData {
 
 export interface StockDataset {
   lastUpdated: string; // ISO datetime
-  dataPeriod: string;  // e.g. "2025-12" (the month the data covers)
+  dataPeriod: string;  // e.g. "2025-12" (the consensus month with ≥80% country coverage)
+  /** Number of EU27 countries reporting at dataPeriod (≥80% by design) */
+  countriesReporting?: number;
+  /** Total countries in the universe (27 for EU27) */
+  countriesTotal?: number;
   dataSource: string;
   countries: CountryStockData[];
   euAverage: {
