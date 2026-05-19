@@ -48,7 +48,7 @@ export default function EmailCTA() {
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
             <input
               type="email" value={email} onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@company.com" required
+              placeholder="Your Email" required
               className="w-full sm:w-56 px-3 py-2 text-sm rounded-lg bg-oil-950 border border-oil-700 text-white placeholder-gray-500 focus:outline-none focus:border-oil-500"
               aria-label="Email address" />
             <button type="submit" disabled={status === 'loading'}
