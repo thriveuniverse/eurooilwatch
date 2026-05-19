@@ -137,7 +137,7 @@ export default function FallOfUKReportDownloadForm({ siteName }: Props) {
             disabled={status === 'submitting'}
             required
             className="w-full rounded-md border border-oil-800 bg-oil-950/50 px-3 py-2 text-sm text-white placeholder-gray-600 focus:border-oil-500 focus:outline-none focus:ring-1 focus:ring-oil-500 disabled:opacity-50"
-            placeholder="you@example.com"
+            placeholder="Your Email"
             autoComplete="email"
           />
         </div>
