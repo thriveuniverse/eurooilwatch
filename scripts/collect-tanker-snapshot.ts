@@ -110,10 +110,17 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
       setTimeout(closeAndResolve, CAPTURE_MS);
     });
 
-    ws.addEventListener('message', (ev) => {
+    ws.addEventListener('message', async (ev) => {
       messageCount++;
       try {
-        const msg = JSON.parse(ev.data as string);
+        // Node 22's native WebSocket delivers messages as Blob; older ws-lib
+        // builds delivered string. Handle both so we don't silently drop the
+        // entire stream (which is exactly what happened pre-20 May 2026 —
+        // 30 days of zero-tanker snapshots while 29 msgs/sec were arriving).
+        const data = typeof ev.data === 'string'
+          ? ev.data
+          : await (ev.data as Blob).text();
+        const msg = JSON.parse(data);
         const meta = msg.MetaData;
         if (!meta) return;
         const mmsi = String(meta.MMSI);
