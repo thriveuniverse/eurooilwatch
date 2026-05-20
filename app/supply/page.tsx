@@ -10,6 +10,7 @@ import BunkerHistoryChart from '@/components/BunkerHistoryChart';
 import AraStocksCard from '@/components/AraStocksCard';
 import SeaStatePanel, { type SeaStateData } from '@/components/SeaStatePanel';
 import ChokepointsMap from '@/components/ChokepointsMap';
+import TankerActivity from '@/components/TankerActivity';
 import { maradOverrideFor } from '@/lib/marad-risk';
 
 export const revalidate = 3600;
@@ -310,6 +311,9 @@ export default async function SupplyPage() {
 
       {/* Chokepoints overview map */}
       <ChokepointsMap />
+
+      {/* Tanker activity — Phase 1: live counts, baselines accumulating */}
+      <TankerActivity />
 
       {/* Live sea-state panel — chokepoint conditions from Open-Meteo */}
       {seaState && (
