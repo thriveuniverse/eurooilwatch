@@ -9,6 +9,7 @@ import RefineryHealthPanel from '@/components/RefineryHealthPanel';
 import BunkerHistoryChart from '@/components/BunkerHistoryChart';
 import AraStocksCard from '@/components/AraStocksCard';
 import SeaStatePanel, { type SeaStateData } from '@/components/SeaStatePanel';
+import WarRiskWatchPanel from '@/components/WarRiskWatchPanel';
 import ChokepointsMap from '@/components/ChokepointsMap';
 import TankerActivity from '@/components/TankerActivity';
 import { maradOverrideFor } from '@/lib/marad-risk';
@@ -322,6 +323,9 @@ export default async function SupplyPage() {
           only={['hormuz','bab-el-mandeb','suez-approaches','english-channel','skagerrak']}
         />
       )}
+
+      {/* War-Risk Watch — editorial Lloyd's / JWC indicator */}
+      <WarRiskWatchPanel />
 
       {/* Status summary bar */}
       <div className="rounded-lg border border-oil-800 bg-oil-900/30 px-5 py-4">
