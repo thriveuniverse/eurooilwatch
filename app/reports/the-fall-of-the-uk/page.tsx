@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import FallOfUKReportDownloadForm from '@/components/FallOfUKReportDownloadForm';
+import EmailCTA from '@/components/EmailCTA';
 
 export const revalidate = 3600;
 
@@ -207,8 +207,69 @@ export default function FallOfUKReportPage() {
         <h2 className="mt-10 text-xl font-bold text-white">The Reports</h2>
       </article>
 
-      {/* Email-gated download form */}
-      <FallOfUKReportDownloadForm siteName="EuroOilWatch" />
+      {/* Free direct download */}
+      <section className="space-y-5">
+        <div>
+          <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Read the full report bundle</p>
+          <h2 className="mt-2 text-xl font-bold text-white">Download · The Fall of the UK v9</h2>
+          <p className="mt-2 text-sm text-gray-400">
+            Four PDFs — key facts one-pager, policy brief, technical report, and methodology framework. Free, no signup required.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <a
+            href="/reports/Key_Facts_at_a_Glance.pdf"
+            className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
+          >
+            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Key Facts · 1 page</p>
+            <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
+              Key Facts at a Glance →
+            </p>
+            <p className="mt-1 text-xs text-gray-500">
+              The headline figure, 18 chains, 9 feedback loops, 5 scenarios — all on one page for sharing.
+            </p>
+          </a>
+          <a
+            href="/reports/The_Fall_of_the_UK_Policy_Brief_v9.pdf"
+            className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
+          >
+            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Policy Brief · v9</p>
+            <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
+              Policy Brief →
+            </p>
+            <p className="mt-1 text-xs text-gray-500">
+              ~25 pages · The compressed case for policymakers, journalists, and general readers.
+            </p>
+          </a>
+          <a
+            href="/reports/The_Fall_of_the_UK_Technical_Report_v9.pdf"
+            className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
+          >
+            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Technical Report · v9</p>
+            <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
+              Technical Report →
+            </p>
+            <p className="mt-1 text-xs text-gray-500">
+              ~90 pages · 18 causal chains, the full 18×18 interaction matrix, scenarios, sensitivity, calibration, impact conversion.
+            </p>
+          </a>
+          <a
+            href="/reports/Compound_Cascade_Methodology_Framework_v3_OilSites.pdf"
+            className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
+          >
+            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Methodology · v3</p>
+            <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
+              Compound Cascade Framework →
+            </p>
+            <p className="mt-1 text-xs text-gray-500">
+              ~22 pages · The reusable nine-step methodology behind the model. Domain-agnostic.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      {/* Newsletter CTA below the free download */}
+      <EmailCTA />
 
       {/* Update commitment */}
       <p className="text-xs text-gray-500 italic">

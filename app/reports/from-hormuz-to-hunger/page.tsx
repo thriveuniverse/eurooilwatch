@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import HormuzReportDownloadForm from '@/components/HormuzReportDownloadForm';
+import EmailCTA from '@/components/EmailCTA';
 
 export const revalidate = 3600;
 
@@ -191,8 +191,45 @@ export default function HormuzReportPage() {
         </p>
       </article>
 
-      {/* Email-gated download form */}
-      <HormuzReportDownloadForm siteName="EuroOilWatch" />
+      {/* Free direct download */}
+      <section className="space-y-5">
+        <div>
+          <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Read the full reports</p>
+          <h2 className="mt-2 text-xl font-bold text-white">Download · From Hormuz to Hunger v4</h2>
+          <p className="mt-2 text-sm text-gray-400">
+            Two PDFs — the compressed policy brief and the full technical model. Free, no signup required.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <a
+            href="/reports/h2h_brief_v4.pdf"
+            className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
+          >
+            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Policy Brief · v4</p>
+            <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
+              Download Policy Brief →
+            </p>
+            <p className="mt-1 text-xs text-gray-500">
+              ~25 pages · The compressed case, nine causal chains, scenarios, policy recommendations.
+            </p>
+          </a>
+          <a
+            href="/reports/h2h_tech_v4.pdf"
+            className="rounded-lg border border-oil-700 bg-oil-900/40 px-5 py-4 hover:border-oil-500 hover:bg-oil-900/60 transition group"
+          >
+            <p className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Technical Report · v4</p>
+            <p className="mt-2 text-sm font-semibold text-white group-hover:text-oil-300 transition">
+              Download Technical Report →
+            </p>
+            <p className="mt-1 text-xs text-gray-500">
+              ~80 pages · Full methodology, 30-section analysis, sensitivity analysis, historical calibration.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      {/* Newsletter CTA below the free download */}
+      <EmailCTA />
 
       {/* Update commitment */}
       <p className="text-xs text-gray-500 italic">
