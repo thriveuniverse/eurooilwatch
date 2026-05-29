@@ -136,6 +136,13 @@ export default function FertilizerPage() {
           <a href="https://americasoilwatch.com/fertilizer" className="text-oil-400 hover:underline">americasoilwatch.com</a>
         </p>
         <p>
+          <strong className="text-gray-400">Methodology:</strong> The cascade analysis behind this page is
+          published in <em>From Hormuz to Hunger v4</em> (30 April 2026). A revision is pending — held
+          until physical Hormuz flow data, war-risk insurance pricing, and observed transit counts
+          resolve the trajectory established by the May 2026 ceasefire framework. The v4 figures remain
+          the canonical reference until then.
+        </p>
+        <p>
           <strong className="text-gray-400">Sources:</strong> World Bank Pink Sheet, Argus, Reuters, Bloomberg,
           Green Markets, CRU, ICE, IFA, USDA Foreign Agricultural Service. Editorial reading is our market
           interpretation.
