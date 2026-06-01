@@ -1,50 +1,50 @@
 {
-  "asOf": "2026-06-01T08:29:19.522Z",
+  "asOf": "2026-06-01T10:11:00.080Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "totalStations": 9773,
-  "freshStations": 9288,
+  "totalStations": 9772,
+  "freshStations": 9293,
   "national": {
-    "stationCount": 9288,
+    "stationCount": 9293,
     "fuels": {
       "gazole": {
-        "count": 9069,
-        "mean": 2.0586,
+        "count": 9070,
+        "mean": 2.0549,
         "median": 2.035,
         "min": 1.889,
         "max": 2.665
       },
       "sp95": {
-        "count": 2646,
-        "mean": 2.0673,
-        "median": 2.069,
-        "min": 1.909,
+        "count": 2657,
+        "mean": 2.0649,
+        "median": 2.066,
+        "min": 1.625,
         "max": 2.62
       },
       "sp98": {
-        "count": 6563,
-        "mean": 2.118,
-        "median": 2.114,
+        "count": 6591,
+        "mean": 2.1147,
+        "median": 2.109,
         "min": 1.748,
         "max": 2.587
       },
       "e10": {
-        "count": 6545,
-        "mean": 2.0148,
-        "median": 1.998,
+        "count": 6561,
+        "mean": 2.0114,
+        "median": 1.99,
         "min": 1.865,
         "max": 2.437
       },
       "e85": {
-        "count": 2914,
-        "mean": 0.8469,
-        "median": 0.825,
+        "count": 2893,
+        "mean": 0.8468,
+        "median": 0.828,
         "min": 0.699,
         "max": 2.06
       },
       "gplc": {
-        "count": 1000,
-        "mean": 1.0806,
+        "count": 995,
+        "mean": 1.0802,
         "median": 1.069,
         "min": 0.85,
         "max": 2.02
@@ -52,287 +52,189 @@
     }
   },
   "regions": {
-    "GES": {
-      "name": "Grand Est",
-      "departmentCount": 10,
-      "stationCount": 826,
+    "BRE": {
+      "name": "Bretagne",
+      "departmentCount": 4,
+      "stationCount": 529,
       "fuels": {
         "gazole": {
-          "count": 804,
-          "mean": 2.0669,
-          "median": 2.055,
-          "min": 1.929,
-          "max": 2.369
+          "count": 515,
+          "mean": 2.0221,
+          "median": 1.999,
+          "min": 1.915,
+          "max": 2.35
         },
         "sp95": {
-          "count": 204,
-          "mean": 2.0801,
-          "median": 2.079,
-          "min": 1.949,
-          "max": 2.303
+          "count": 200,
+          "mean": 2.047,
+          "median": 2.029,
+          "min": 1.926,
+          "max": 2.62
         },
         "sp98": {
-          "count": 609,
-          "mean": 2.1124,
-          "median": 2.109,
-          "min": 1.973,
-          "max": 2.505
+          "count": 368,
+          "mean": 2.0872,
+          "median": 2.0845,
+          "min": 1.963,
+          "max": 2.51
         },
         "e10": {
-          "count": 613,
-          "mean": 2.0179,
-          "median": 1.999,
-          "min": 1.895,
-          "max": 2.355
+          "count": 360,
+          "mean": 1.9787,
+          "median": 1.973,
+          "min": 1.879,
+          "max": 2.242
         },
         "e85": {
-          "count": 252,
-          "mean": 0.8489,
-          "median": 0.819,
-          "min": 0.725,
-          "max": 2.06
+          "count": 131,
+          "mean": 0.8111,
+          "median": 0.798,
+          "min": 0.699,
+          "max": 1.029
         },
         "gplc": {
-          "count": 96,
-          "mean": 1.064,
-          "median": 1.0465,
-          "min": 0.949,
-          "max": 1.211
+          "count": 43,
+          "mean": 1.0338,
+          "median": 1.029,
+          "min": 0.915,
+          "max": 1.139
         }
       }
     },
-    "PAC": {
-      "name": "Provence-Alpes-Côte d'Azur",
-      "departmentCount": 6,
-      "stationCount": 741,
+    "NOR": {
+      "name": "Normandie",
+      "departmentCount": 5,
+      "stationCount": 539,
       "fuels": {
         "gazole": {
-          "count": 724,
-          "mean": 2.0582,
-          "median": 2.0395,
-          "min": 1.909,
-          "max": 2.43
+          "count": 532,
+          "mean": 2.0422,
+          "median": 2.035,
+          "min": 1.911,
+          "max": 2.343
         },
         "sp95": {
-          "count": 151,
-          "mean": 2.0811,
-          "median": 2.089,
-          "min": 1.929,
-          "max": 2.54
+          "count": 190,
+          "mean": 2.0516,
+          "median": 2.059,
+          "min": 1.625,
+          "max": 2.24
         },
         "sp98": {
-          "count": 542,
-          "mean": 2.1135,
-          "median": 2.1155,
-          "min": 1.979,
-          "max": 2.403
+          "count": 379,
+          "mean": 2.1008,
+          "median": 2.099,
+          "min": 1.975,
+          "max": 2.511
         },
         "e10": {
-          "count": 585,
-          "mean": 2.0178,
-          "median": 1.999,
-          "min": 1.873,
-          "max": 2.299
+          "count": 348,
+          "mean": 1.9993,
+          "median": 1.99,
+          "min": 1.879,
+          "max": 2.361
         },
         "e85": {
-          "count": 269,
-          "mean": 0.862,
-          "median": 0.849,
-          "min": 0.725,
-          "max": 1.099
+          "count": 145,
+          "mean": 0.8361,
+          "median": 0.8,
+          "min": 0.727,
+          "max": 1.069
         },
         "gplc": {
-          "count": 77,
-          "mean": 1.0825,
-          "median": 1.079,
-          "min": 0.94,
-          "max": 1.259
+          "count": 47,
+          "mean": 1.0633,
+          "median": 1.064,
+          "min": 0.85,
+          "max": 1.22
         }
       }
     },
     "OCC": {
       "name": "Occitanie",
       "departmentCount": 13,
-      "stationCount": 1056,
+      "stationCount": 1059,
       "fuels": {
         "gazole": {
-          "count": 1027,
-          "mean": 2.0597,
-          "median": 2.048,
+          "count": 1033,
+          "mean": 2.0577,
+          "median": 2.037,
           "min": 1.9,
           "max": 2.513
         },
         "sp95": {
-          "count": 252,
-          "mean": 2.0721,
-          "median": 2.079,
+          "count": 256,
+          "mean": 2.0704,
+          "median": 2.077,
           "min": 1.917,
           "max": 2.269
         },
         "sp98": {
-          "count": 732,
-          "mean": 2.1244,
-          "median": 2.123,
+          "count": 740,
+          "mean": 2.1222,
+          "median": 2.119,
           "min": 1.982,
           "max": 2.587
         },
         "e10": {
-          "count": 770,
-          "mean": 2.0243,
+          "count": 767,
+          "mean": 2.0223,
           "median": 1.999,
           "min": 1.865,
           "max": 2.437
         },
         "e85": {
-          "count": 387,
-          "mean": 0.8471,
+          "count": 384,
+          "mean": 0.8482,
           "median": 0.819,
           "min": 0.739,
           "max": 1.16
         },
         "gplc": {
-          "count": 119,
-          "mean": 1.0969,
+          "count": 116,
+          "mean": 1.0957,
           "median": 1.095,
           "min": 0.95,
           "max": 1.297
         }
       }
     },
-    "NAQ": {
-      "name": "Nouvelle-Aquitaine",
-      "departmentCount": 12,
-      "stationCount": 1080,
-      "fuels": {
-        "gazole": {
-          "count": 1046,
-          "mean": 2.0537,
-          "median": 2.035,
-          "min": 1.889,
-          "max": 2.49
-        },
-        "sp95": {
-          "count": 348,
-          "mean": 2.0559,
-          "median": 2.059,
-          "min": 1.92,
-          "max": 2.314
-        },
-        "sp98": {
-          "count": 771,
-          "mean": 2.1185,
-          "median": 2.119,
-          "min": 1.978,
-          "max": 2.56
-        },
-        "e10": {
-          "count": 779,
-          "mean": 2.0141,
-          "median": 1.999,
-          "min": 1.868,
-          "max": 2.362
-        },
-        "e85": {
-          "count": 359,
-          "mean": 0.8322,
-          "median": 0.799,
-          "min": 0.725,
-          "max": 1.15
-        },
-        "gplc": {
-          "count": 118,
-          "mean": 1.0788,
-          "median": 1.07,
-          "min": 0.949,
-          "max": 2.02
-        }
-      }
-    },
-    "ARA": {
-      "name": "Auvergne-Rhône-Alpes",
-      "departmentCount": 12,
-      "stationCount": 1283,
-      "fuels": {
-        "gazole": {
-          "count": 1255,
-          "mean": 2.07,
-          "median": 2.053,
-          "min": 1.919,
-          "max": 2.419
-        },
-        "sp95": {
-          "count": 392,
-          "mean": 2.0751,
-          "median": 2.079,
-          "min": 1.956,
-          "max": 2.27
-        },
-        "sp98": {
-          "count": 877,
-          "mean": 2.1343,
-          "median": 2.129,
-          "min": 1.748,
-          "max": 2.545
-        },
-        "e10": {
-          "count": 889,
-          "mean": 2.0277,
-          "median": 1.999,
-          "min": 1.879,
-          "max": 2.395
-        },
-        "e85": {
-          "count": 361,
-          "mean": 0.8617,
-          "median": 0.835,
-          "min": 0.75,
-          "max": 1.315
-        },
-        "gplc": {
-          "count": 109,
-          "mean": 1.0968,
-          "median": 1.095,
-          "min": 0.949,
-          "max": 1.369
-        }
-      }
-    },
     "IDF": {
       "name": "Île-de-France",
       "departmentCount": 8,
-      "stationCount": 794,
+      "stationCount": 792,
       "fuels": {
         "gazole": {
-          "count": 776,
-          "mean": 2.0484,
-          "median": 2.035,
+          "count": 773,
+          "mean": 2.0386,
+          "median": 2.029,
           "min": 1.919,
           "max": 2.38
         },
         "sp95": {
           "count": 132,
-          "mean": 2.0593,
-          "median": 2.038,
+          "mean": 2.0586,
+          "median": 2.028,
           "min": 1.93,
           "max": 2.329
         },
         "sp98": {
-          "count": 578,
-          "mean": 2.1089,
-          "median": 2.101,
+          "count": 582,
+          "mean": 2.1039,
+          "median": 2.099,
           "min": 1.987,
           "max": 2.439
         },
         "e10": {
-          "count": 605,
-          "mean": 2.0061,
+          "count": 606,
+          "mean": 2.0021,
           "median": 1.99,
           "min": 1.899,
           "max": 2.299
         },
         "e85": {
-          "count": 283,
-          "mean": 0.8837,
+          "count": 282,
+          "mean": 0.88,
           "median": 0.879,
           "min": 0.72,
           "max": 1.99
@@ -346,287 +248,336 @@
         }
       }
     },
-    "BFC": {
-      "name": "Bourgogne-Franche-Comté",
-      "departmentCount": 8,
-      "stationCount": 633,
+    "ARA": {
+      "name": "Auvergne-Rhône-Alpes",
+      "departmentCount": 12,
+      "stationCount": 1282,
       "fuels": {
         "gazole": {
-          "count": 620,
-          "mean": 2.0893,
-          "median": 2.079,
-          "min": 1.935,
-          "max": 2.369
-        },
-        "sp95": {
-          "count": 241,
-          "mean": 2.1026,
-          "median": 2.111,
-          "min": 1.948,
-          "max": 2.25
-        },
-        "sp98": {
-          "count": 443,
-          "mean": 2.1412,
-          "median": 2.149,
-          "min": 1.973,
-          "max": 2.388
-        },
-        "e10": {
-          "count": 403,
-          "mean": 2.0318,
-          "median": 1.999,
-          "min": 1.868,
-          "max": 2.299
-        },
-        "e85": {
-          "count": 157,
-          "mean": 0.8603,
-          "median": 0.841,
-          "min": 0.729,
-          "max": 1.276
-        },
-        "gplc": {
-          "count": 53,
-          "mean": 1.0865,
-          "median": 1.09,
-          "min": 0.949,
-          "max": 1.249
-        }
-      }
-    },
-    "NOR": {
-      "name": "Normandie",
-      "departmentCount": 5,
-      "stationCount": 538,
-      "fuels": {
-        "gazole": {
-          "count": 533,
-          "mean": 2.0447,
-          "median": 2.035,
-          "min": 1.911,
-          "max": 2.343
-        },
-        "sp95": {
-          "count": 186,
-          "mean": 2.0584,
-          "median": 2.059,
-          "min": 1.935,
-          "max": 2.259
-        },
-        "sp98": {
-          "count": 372,
-          "mean": 2.104,
-          "median": 2.0995,
-          "min": 1.975,
-          "max": 2.511
-        },
-        "e10": {
-          "count": 347,
-          "mean": 2.0025,
-          "median": 1.99,
-          "min": 1.879,
-          "max": 2.361
-        },
-        "e85": {
-          "count": 147,
-          "mean": 0.8356,
-          "median": 0.799,
-          "min": 0.727,
-          "max": 1.069
-        },
-        "gplc": {
-          "count": 48,
-          "mean": 1.0626,
-          "median": 1.057,
-          "min": 0.85,
-          "max": 1.22
-        }
-      }
-    },
-    "BRE": {
-      "name": "Bretagne",
-      "departmentCount": 4,
-      "stationCount": 529,
-      "fuels": {
-        "gazole": {
-          "count": 514,
-          "mean": 2.0274,
-          "median": 1.999,
-          "min": 1.915,
-          "max": 2.35
-        },
-        "sp95": {
-          "count": 199,
-          "mean": 2.053,
+          "count": 1255,
+          "mean": 2.0675,
           "median": 2.049,
-          "min": 1.926,
-          "max": 2.62
+          "min": 1.919,
+          "max": 2.419
+        },
+        "sp95": {
+          "count": 393,
+          "mean": 2.0731,
+          "median": 2.078,
+          "min": 1.956,
+          "max": 2.27
         },
         "sp98": {
-          "count": 366,
-          "mean": 2.0929,
-          "median": 2.0925,
-          "min": 1.963,
-          "max": 2.51
+          "count": 873,
+          "mean": 2.1322,
+          "median": 2.129,
+          "min": 1.748,
+          "max": 2.545
         },
         "e10": {
-          "count": 358,
-          "mean": 1.9845,
-          "median": 1.9785,
+          "count": 887,
+          "mean": 2.0249,
+          "median": 1.999,
           "min": 1.879,
-          "max": 2.242
+          "max": 2.395
         },
         "e85": {
-          "count": 131,
-          "mean": 0.8109,
-          "median": 0.798,
-          "min": 0.699,
-          "max": 1.029
+          "count": 358,
+          "mean": 0.8623,
+          "median": 0.839,
+          "min": 0.75,
+          "max": 1.315
         },
         "gplc": {
-          "count": 44,
-          "mean": 1.0375,
-          "median": 1.031,
-          "min": 0.915,
-          "max": 1.199
+          "count": 109,
+          "mean": 1.0968,
+          "median": 1.095,
+          "min": 0.949,
+          "max": 1.369
         }
       }
     },
     "PDL": {
       "name": "Pays de la Loire",
       "departmentCount": 5,
-      "stationCount": 525,
+      "stationCount": 527,
       "fuels": {
         "gazole": {
-          "count": 514,
-          "mean": 2.0443,
-          "median": 2.0295,
+          "count": 516,
+          "mean": 2.0404,
+          "median": 2.027,
           "min": 1.898,
           "max": 2.665
         },
         "sp95": {
           "count": 147,
-          "mean": 2.0701,
+          "mean": 2.0683,
           "median": 2.059,
           "min": 1.949,
           "max": 2.609
         },
         "sp98": {
-          "count": 373,
-          "mean": 2.1141,
+          "count": 376,
+          "mean": 2.1099,
           "median": 2.099,
           "min": 1.979,
           "max": 2.529
         },
         "e10": {
-          "count": 356,
-          "mean": 2.0127,
-          "median": 1.99,
+          "count": 357,
+          "mean": 2.0076,
+          "median": 1.989,
           "min": 1.898,
           "max": 2.389
         },
         "e85": {
-          "count": 154,
-          "mean": 0.816,
+          "count": 150,
+          "mean": 0.8166,
           "median": 0.798,
           "min": 0.719,
           "max": 1.099
         },
         "gplc": {
-          "count": 73,
-          "mean": 1.0557,
-          "median": 1.029,
+          "count": 71,
+          "mean": 1.0569,
+          "median": 1.035,
           "min": 0.957,
           "max": 1.339
+        }
+      }
+    },
+    "BFC": {
+      "name": "Bourgogne-Franche-Comté",
+      "departmentCount": 8,
+      "stationCount": 632,
+      "fuels": {
+        "gazole": {
+          "count": 615,
+          "mean": 2.0873,
+          "median": 2.069,
+          "min": 1.935,
+          "max": 2.369
+        },
+        "sp95": {
+          "count": 246,
+          "mean": 2.1003,
+          "median": 2.109,
+          "min": 1.948,
+          "max": 2.25
+        },
+        "sp98": {
+          "count": 443,
+          "mean": 2.1398,
+          "median": 2.149,
+          "min": 1.973,
+          "max": 2.388
+        },
+        "e10": {
+          "count": 405,
+          "mean": 2.0286,
+          "median": 1.999,
+          "min": 1.868,
+          "max": 2.299
+        },
+        "e85": {
+          "count": 156,
+          "mean": 0.861,
+          "median": 0.843,
+          "min": 0.739,
+          "max": 1.276
+        },
+        "gplc": {
+          "count": 54,
+          "mean": 1.0861,
+          "median": 1.09,
+          "min": 0.949,
+          "max": 1.249
         }
       }
     },
     "HDF": {
       "name": "Hauts-de-France",
       "departmentCount": 5,
-      "stationCount": 757,
+      "stationCount": 759,
       "fuels": {
         "gazole": {
           "count": 742,
-          "mean": 2.0474,
+          "mean": 2.0432,
           "median": 2.035,
           "min": 1.89,
           "max": 2.333
         },
         "sp95": {
-          "count": 177,
-          "mean": 2.0538,
-          "median": 2.059,
+          "count": 179,
+          "mean": 2.0513,
+          "median": 2.058,
           "min": 1.938,
           "max": 2.251
         },
         "sp98": {
-          "count": 565,
-          "mean": 2.1061,
-          "median": 2.101,
+          "count": 571,
+          "mean": 2.1021,
+          "median": 2.099,
           "min": 1.974,
           "max": 2.505
         },
         "e10": {
-          "count": 545,
-          "mean": 1.9988,
-          "median": 1.99,
+          "count": 554,
+          "mean": 1.9947,
+          "median": 1.989,
           "min": 1.87,
           "max": 2.355
         },
         "e85": {
           "count": 289,
-          "mean": 0.8328,
+          "mean": 0.8322,
           "median": 0.819,
           "min": 0.727,
           "max": 1.269
         },
         "gplc": {
-          "count": 79,
-          "mean": 1.0747,
-          "median": 1.059,
+          "count": 80,
+          "mean": 1.0724,
+          "median": 1.05,
           "min": 0.949,
           "max": 1.329
+        }
+      }
+    },
+    "PAC": {
+      "name": "Provence-Alpes-Côte d'Azur",
+      "departmentCount": 6,
+      "stationCount": 741,
+      "fuels": {
+        "gazole": {
+          "count": 725,
+          "mean": 2.055,
+          "median": 2.035,
+          "min": 1.909,
+          "max": 2.43
+        },
+        "sp95": {
+          "count": 152,
+          "mean": 2.0791,
+          "median": 2.085,
+          "min": 1.929,
+          "max": 2.54
+        },
+        "sp98": {
+          "count": 541,
+          "mean": 2.1111,
+          "median": 2.109,
+          "min": 1.979,
+          "max": 2.403
+        },
+        "e10": {
+          "count": 582,
+          "mean": 2.0154,
+          "median": 1.99,
+          "min": 1.873,
+          "max": 2.299
+        },
+        "e85": {
+          "count": 267,
+          "mean": 0.8617,
+          "median": 0.849,
+          "min": 0.725,
+          "max": 1.099
+        },
+        "gplc": {
+          "count": 76,
+          "mean": 1.0815,
+          "median": 1.079,
+          "min": 0.94,
+          "max": 1.259
+        }
+      }
+    },
+    "NAQ": {
+      "name": "Nouvelle-Aquitaine",
+      "departmentCount": 12,
+      "stationCount": 1082,
+      "fuels": {
+        "gazole": {
+          "count": 1048,
+          "mean": 2.0507,
+          "median": 2.035,
+          "min": 1.889,
+          "max": 2.49
+        },
+        "sp95": {
+          "count": 345,
+          "mean": 2.0545,
+          "median": 2.056,
+          "min": 1.92,
+          "max": 2.314
+        },
+        "sp98": {
+          "count": 775,
+          "mean": 2.1153,
+          "median": 2.109,
+          "min": 1.978,
+          "max": 2.56
+        },
+        "e10": {
+          "count": 782,
+          "mean": 2.0113,
+          "median": 1.99,
+          "min": 1.876,
+          "max": 2.362
+        },
+        "e85": {
+          "count": 354,
+          "mean": 0.8328,
+          "median": 0.799,
+          "min": 0.725,
+          "max": 1.15
+        },
+        "gplc": {
+          "count": 119,
+          "mean": 1.0787,
+          "median": 1.07,
+          "min": 0.949,
+          "max": 2.02
         }
       }
     },
     "CVL": {
       "name": "Centre-Val de Loire",
       "departmentCount": 6,
-      "stationCount": 423,
+      "stationCount": 422,
       "fuels": {
         "gazole": {
-          "count": 412,
-          "mean": 2.0613,
+          "count": 409,
+          "mean": 2.0588,
           "median": 2.035,
           "min": 1.925,
           "max": 2.429
         },
         "sp95": {
-          "count": 134,
-          "mean": 2.0661,
-          "median": 2.0675,
+          "count": 133,
+          "mean": 2.0649,
+          "median": 2.066,
           "min": 1.909,
           "max": 2.3
         },
         "sp98": {
           "count": 335,
-          "mean": 2.1294,
+          "mean": 2.1267,
           "median": 2.129,
           "min": 1.979,
           "max": 2.534
         },
         "e10": {
-          "count": 295,
-          "mean": 2.0189,
-          "median": 1.998,
+          "count": 296,
+          "mean": 2.0153,
+          "median": 1.995,
           "min": 1.888,
           "max": 2.365
         },
         "e85": {
           "count": 125,
-          "mean": 0.8294,
+          "mean": 0.8296,
           "median": 0.798,
           "min": 0.741,
           "max": 1.149
@@ -640,21 +591,70 @@
         }
       }
     },
+    "GES": {
+      "name": "Grand Est",
+      "departmentCount": 10,
+      "stationCount": 823,
+      "fuels": {
+        "gazole": {
+          "count": 802,
+          "mean": 2.0624,
+          "median": 2.0445,
+          "min": 1.928,
+          "max": 2.369
+        },
+        "sp95": {
+          "count": 201,
+          "mean": 2.0781,
+          "median": 2.079,
+          "min": 1.949,
+          "max": 2.303
+        },
+        "sp98": {
+          "count": 608,
+          "mean": 2.1086,
+          "median": 2.107,
+          "min": 1.973,
+          "max": 2.505
+        },
+        "e10": {
+          "count": 617,
+          "mean": 2.0136,
+          "median": 1.996,
+          "min": 1.895,
+          "max": 2.355
+        },
+        "e85": {
+          "count": 252,
+          "mean": 0.849,
+          "median": 0.8195,
+          "min": 0.725,
+          "max": 2.06
+        },
+        "gplc": {
+          "count": 96,
+          "mean": 1.0645,
+          "median": 1.0465,
+          "min": 0.949,
+          "max": 1.211
+        }
+      }
+    },
     "COR": {
       "name": "Corse",
       "departmentCount": 2,
-      "stationCount": 103,
+      "stationCount": 106,
       "fuels": {
         "gazole": {
-          "count": 102,
-          "mean": 2.1595,
+          "count": 105,
+          "mean": 2.1544,
           "median": 2.15,
-          "min": 2.071,
+          "min": 2.07,
           "max": 2.379
         },
         "sp95": {
           "count": 83,
-          "mean": 1.998,
+          "mean": 1.9976,
           "median": 1.99,
           "min": 1.94,
           "max": 2.373
@@ -676,29 +676,29 @@
       "stationCount": 67,
       "fuels": {
         "gazole": {
-          "count": 65,
-          "mean": 2.0652,
-          "median": 2.039,
-          "min": 1.948,
+          "count": 64,
+          "mean": 2.0666,
+          "median": 2.044,
+          "min": 1.94,
           "max": 2.25
         },
         "sp95": {
           "count": 27,
-          "mean": 2.0826,
+          "mean": 2.0829,
           "median": 2.086,
           "min": 1.968,
           "max": 2.199
         },
         "sp98": {
           "count": 47,
-          "mean": 2.103,
+          "mean": 2.1016,
           "median": 2.09,
-          "min": 1.99,
+          "min": 1.989,
           "max": 2.349
         },
         "e10": {
           "count": 43,
-          "mean": 1.9916,
+          "mean": 1.9912,
           "median": 1.979,
           "min": 1.928,
           "max": 2.174
@@ -726,28 +726,28 @@
       "fuels": {
         "gazole": {
           "count": 80,
-          "mean": 2.0731,
+          "mean": 2.0718,
           "median": 2.069,
           "min": 1.959,
           "max": 2.299
         },
         "sp95": {
           "count": 16,
-          "mean": 2.1128,
-          "median": 2.099,
+          "mean": 2.1078,
+          "median": 2.0945,
           "min": 2.029,
           "max": 2.21
         },
         "sp98": {
           "count": 62,
-          "mean": 2.1373,
-          "median": 2.146,
+          "mean": 2.1359,
+          "median": 2.1425,
           "min": 1.99,
           "max": 2.299
         },
         "e10": {
           "count": 66,
-          "mean": 2.0511,
+          "mean": 2.0495,
           "median": 2.048,
           "min": 1.939,
           "max": 2.199
@@ -771,32 +771,32 @@
     "12": {
       "name": "Aveyron",
       "regionCode": "OCC",
-      "stationCount": 84,
+      "stationCount": 85,
       "fuels": {
         "gazole": {
-          "count": 84,
-          "mean": 2.0581,
-          "median": 2.047,
+          "count": 85,
+          "mean": 2.0563,
+          "median": 2.039,
           "min": 1.971,
           "max": 2.25
         },
         "sp95": {
-          "count": 41,
-          "mean": 2.0665,
-          "median": 2.069,
+          "count": 42,
+          "mean": 2.064,
+          "median": 2.0545,
           "min": 1.99,
           "max": 2.209
         },
         "sp98": {
-          "count": 42,
-          "mean": 2.1289,
-          "median": 2.132,
+          "count": 43,
+          "mean": 2.1275,
+          "median": 2.129,
           "min": 1.99,
           "max": 2.248
         },
         "e10": {
-          "count": 44,
-          "mean": 2.0129,
+          "count": 43,
+          "mean": 2.0134,
           "median": 1.999,
           "min": 1.974,
           "max": 2.129
@@ -824,35 +824,35 @@
       "fuels": {
         "gazole": {
           "count": 251,
-          "mean": 2.0526,
+          "mean": 2.0509,
           "median": 2.035,
           "min": 1.91,
           "max": 2.369
         },
         "sp95": {
           "count": 46,
-          "mean": 2.0645,
+          "mean": 2.0634,
           "median": 2.059,
-          "min": 1.96,
+          "min": 1.958,
           "max": 2.219
         },
         "sp98": {
-          "count": 187,
-          "mean": 2.112,
+          "count": 185,
+          "mean": 2.1116,
           "median": 2.099,
           "min": 1.982,
           "max": 2.369
         },
         "e10": {
-          "count": 200,
-          "mean": 2.0147,
+          "count": 198,
+          "mean": 2.0135,
           "median": 1.99,
           "min": 1.873,
           "max": 2.269
         },
         "e85": {
           "count": 95,
-          "mean": 0.875,
+          "mean": 0.8747,
           "median": 0.869,
           "min": 0.726,
           "max": 1.05
@@ -873,43 +873,43 @@
       "fuels": {
         "gazole": {
           "count": 115,
-          "mean": 2.0426,
-          "median": 2.035,
+          "mean": 2.0386,
+          "median": 2.032,
           "min": 1.939,
           "max": 2.27
         },
         "sp95": {
-          "count": 42,
-          "mean": 2.0697,
-          "median": 2.079,
-          "min": 1.969,
+          "count": 44,
+          "mean": 2.0532,
+          "median": 2.059,
+          "min": 1.625,
           "max": 2.24
         },
         "sp98": {
-          "count": 79,
-          "mean": 2.109,
-          "median": 2.119,
+          "count": 82,
+          "mean": 2.1029,
+          "median": 2.1095,
           "min": 1.99,
           "max": 2.28
         },
         "e10": {
           "count": 77,
-          "mean": 2.0117,
-          "median": 1.999,
-          "min": 1.922,
+          "mean": 2.0054,
+          "median": 1.995,
+          "min": 1.93,
           "max": 2.2
         },
         "e85": {
-          "count": 30,
-          "mean": 0.8283,
+          "count": 29,
+          "mean": 0.8277,
           "median": 0.819,
-          "min": 0.741,
+          "min": 0.739,
           "max": 0.999
         },
         "gplc": {
-          "count": 15,
-          "mean": 1.0361,
-          "median": 1.029,
+          "count": 14,
+          "mean": 1.0366,
+          "median": 1.0335,
           "min": 0.85,
           "max": 1.206
         }
@@ -922,22 +922,22 @@
       "fuels": {
         "gazole": {
           "count": 43,
-          "mean": 2.0742,
+          "mean": 2.0734,
           "median": 2.075,
           "min": 1.949,
           "max": 2.25
         },
         "sp95": {
           "count": 23,
-          "mean": 2.0856,
+          "mean": 2.084,
           "median": 2.085,
           "min": 1.99,
           "max": 2.25
         },
         "sp98": {
-          "count": 22,
-          "mean": 2.162,
-          "median": 2.1765,
+          "count": 23,
+          "mean": 2.1584,
+          "median": 2.175,
           "min": 1.99,
           "max": 2.27
         },
@@ -967,32 +967,32 @@
     "16": {
       "name": "Charente",
       "regionCode": "NAQ",
-      "stationCount": 65,
+      "stationCount": 64,
       "fuels": {
         "gazole": {
-          "count": 64,
-          "mean": 2.0421,
-          "median": 2.0315,
+          "count": 63,
+          "mean": 2.0354,
+          "median": 2.022,
           "min": 1.889,
           "max": 2.25
         },
         "sp95": {
-          "count": 14,
-          "mean": 2.0797,
-          "median": 2.064,
+          "count": 13,
+          "mean": 2.0795,
+          "median": 2.045,
           "min": 1.949,
           "max": 2.314
         },
         "sp98": {
-          "count": 47,
-          "mean": 2.1188,
-          "median": 2.109,
+          "count": 46,
+          "mean": 2.1117,
+          "median": 2.104,
           "min": 1.979,
           "max": 2.346
         },
         "e10": {
           "count": 47,
-          "mean": 2.0094,
+          "mean": 2.003,
           "median": 1.99,
           "min": 1.897,
           "max": 2.175
@@ -1020,35 +1020,35 @@
       "fuels": {
         "gazole": {
           "count": 112,
-          "mean": 2.0233,
-          "median": 1.999,
+          "mean": 2.0198,
+          "median": 1.997,
           "min": 1.903,
           "max": 2.419
         },
         "sp95": {
           "count": 24,
-          "mean": 2.0235,
-          "median": 2.0015,
+          "mean": 2.0183,
+          "median": 1.99,
           "min": 1.95,
           "max": 2.145
         },
         "sp98": {
-          "count": 95,
-          "mean": 2.0949,
-          "median": 2.09,
-          "min": 1.979,
+          "count": 97,
+          "mean": 2.0904,
+          "median": 2.08,
+          "min": 1.988,
           "max": 2.504
         },
         "e10": {
-          "count": 87,
-          "mean": 1.9974,
+          "count": 88,
+          "mean": 1.9951,
           "median": 1.973,
-          "min": 1.868,
+          "min": 1.876,
           "max": 2.354
         },
         "e85": {
-          "count": 37,
-          "mean": 0.8117,
+          "count": 34,
+          "mean": 0.8154,
           "median": 0.798,
           "min": 0.739,
           "max": 1.094
@@ -1068,29 +1068,29 @@
       "stationCount": 59,
       "fuels": {
         "gazole": {
-          "count": 56,
-          "mean": 2.1013,
-          "median": 2.079,
+          "count": 55,
+          "mean": 2.098,
+          "median": 2.075,
           "min": 1.971,
           "max": 2.369
         },
         "sp95": {
           "count": 27,
-          "mean": 2.1041,
-          "median": 2.109,
+          "mean": 2.1005,
+          "median": 2.089,
           "min": 1.977,
           "max": 2.3
         },
         "sp98": {
           "count": 41,
-          "mean": 2.1676,
+          "mean": 2.166,
           "median": 2.159,
           "min": 2.008,
           "max": 2.369
         },
         "e10": {
-          "count": 36,
-          "mean": 2.0296,
+          "count": 35,
+          "mean": 2.0303,
           "median": 2.019,
           "min": 1.912,
           "max": 2.299
@@ -1118,8 +1118,8 @@
       "fuels": {
         "gazole": {
           "count": 57,
-          "mean": 2.0649,
-          "median": 2.065,
+          "mean": 2.0581,
+          "median": 2.049,
           "min": 1.949,
           "max": 2.25
         },
@@ -1132,15 +1132,15 @@
         },
         "sp98": {
           "count": 43,
-          "mean": 2.116,
-          "median": 2.128,
+          "mean": 2.1059,
+          "median": 2.097,
           "min": 1.99,
           "max": 2.279
         },
         "e10": {
-          "count": 46,
-          "mean": 2.0201,
-          "median": 2.009,
+          "count": 45,
+          "mean": 2.0129,
+          "median": 1.99,
           "min": 1.943,
           "max": 2.179
         },
@@ -1167,35 +1167,35 @@
       "fuels": {
         "gazole": {
           "count": 119,
-          "mean": 2.0907,
+          "mean": 2.0905,
           "median": 2.059,
           "min": 1.966,
           "max": 2.369
         },
         "sp95": {
           "count": 36,
-          "mean": 2.1181,
+          "mean": 2.118,
           "median": 2.1345,
           "min": 1.99,
           "max": 2.199
         },
         "sp98": {
           "count": 92,
-          "mean": 2.1353,
+          "mean": 2.1352,
           "median": 2.119,
           "min": 1.99,
           "max": 2.369
         },
         "e10": {
           "count": 86,
-          "mean": 2.0324,
+          "mean": 2.0315,
           "median": 1.999,
           "min": 1.9,
           "max": 2.299
         },
         "e85": {
           "count": 32,
-          "mean": 0.8844,
+          "mean": 0.8838,
           "median": 0.8715,
           "min": 0.759,
           "max": 0.991
@@ -1216,29 +1216,29 @@
       "fuels": {
         "gazole": {
           "count": 111,
-          "mean": 2.0274,
+          "mean": 2.0212,
           "median": 1.999,
           "min": 1.928,
           "max": 2.25
         },
         "sp95": {
           "count": 37,
-          "mean": 2.053,
-          "median": 2.049,
+          "mean": 2.0447,
+          "median": 2.003,
           "min": 1.949,
           "max": 2.45
         },
         "sp98": {
-          "count": 79,
-          "mean": 2.0936,
-          "median": 2.098,
+          "count": 82,
+          "mean": 2.086,
+          "median": 2.089,
           "min": 1.985,
           "max": 2.51
         },
         "e10": {
-          "count": 79,
-          "mean": 1.9803,
-          "median": 1.973,
+          "count": 80,
+          "mean": 1.9755,
+          "median": 1.972,
           "min": 1.883,
           "max": 2.169
         },
@@ -1265,22 +1265,22 @@
       "fuels": {
         "gazole": {
           "count": 32,
-          "mean": 2.0705,
+          "mean": 2.0662,
           "median": 2.059,
           "min": 1.949,
           "max": 2.267
         },
         "sp95": {
           "count": 12,
-          "mean": 2.0623,
-          "median": 2.051,
+          "mean": 2.053,
+          "median": 2.0375,
           "min": 1.989,
           "max": 2.23
         },
         "sp98": {
-          "count": 18,
-          "mean": 2.1404,
-          "median": 2.1545,
+          "count": 19,
+          "mean": 2.1351,
+          "median": 2.15,
           "min": 1.99,
           "max": 2.299
         },
@@ -1310,40 +1310,40 @@
     "24": {
       "name": "Dordogne",
       "regionCode": "NAQ",
-      "stationCount": 89,
+      "stationCount": 90,
       "fuels": {
         "gazole": {
-          "count": 84,
-          "mean": 2.0505,
+          "count": 85,
+          "mean": 2.048,
           "median": 2.035,
           "min": 1.945,
           "max": 2.189
         },
         "sp95": {
           "count": 40,
-          "mean": 2.0568,
-          "median": 2.0575,
+          "mean": 2.0536,
+          "median": 2.045,
           "min": 1.939,
           "max": 2.189
         },
         "sp98": {
-          "count": 68,
-          "mean": 2.1225,
-          "median": 2.1235,
+          "count": 69,
+          "mean": 2.1196,
+          "median": 2.123,
           "min": 1.99,
           "max": 2.25
         },
         "e10": {
-          "count": 55,
-          "mean": 2.0048,
-          "median": 1.999,
+          "count": 56,
+          "mean": 2.0031,
+          "median": 1.997,
           "min": 1.882,
           "max": 2.15
         },
         "e85": {
           "count": 26,
           "mean": 0.8502,
-          "median": 0.8535,
+          "median": 0.853,
           "min": 0.758,
           "max": 0.978
         },
@@ -1363,8 +1363,8 @@
       "fuels": {
         "gazole": {
           "count": 94,
-          "mean": 2.084,
-          "median": 2.079,
+          "mean": 2.0806,
+          "median": 2.0745,
           "min": 1.949,
           "max": 2.239
         },
@@ -1377,23 +1377,23 @@
         },
         "sp98": {
           "count": 66,
-          "mean": 2.1328,
-          "median": 2.124,
+          "mean": 2.1288,
+          "median": 2.1055,
           "min": 1.973,
           "max": 2.289
         },
         "e10": {
-          "count": 65,
-          "mean": 2.0184,
+          "count": 64,
+          "mean": 2.0154,
           "median": 1.999,
           "min": 1.868,
           "max": 2.202
         },
         "e85": {
-          "count": 25,
-          "mean": 0.8382,
+          "count": 24,
+          "mean": 0.8419,
           "median": 0.798,
-          "min": 0.729,
+          "min": 0.739,
           "max": 1.276
         },
         "gplc": {
@@ -1412,36 +1412,36 @@
       "fuels": {
         "gazole": {
           "count": 110,
-          "mean": 2.0649,
-          "median": 2.0395,
+          "mean": 2.0624,
+          "median": 2.035,
           "min": 1.965,
           "max": 2.399
         },
         "sp95": {
-          "count": 33,
-          "mean": 2.0675,
+          "count": 31,
+          "mean": 2.0667,
           "median": 2.059,
           "min": 1.969,
           "max": 2.24
         },
         "sp98": {
-          "count": 70,
-          "mean": 2.1556,
-          "median": 2.137,
+          "count": 68,
+          "mean": 2.154,
+          "median": 2.134,
           "min": 1.99,
           "max": 2.517
         },
         "e10": {
-          "count": 81,
-          "mean": 2.0451,
+          "count": 82,
+          "mean": 2.0417,
           "median": 2.029,
           "min": 1.899,
           "max": 2.367
         },
         "e85": {
           "count": 39,
-          "mean": 0.8531,
-          "median": 0.819,
+          "mean": 0.8545,
+          "median": 0.826,
           "min": 0.789,
           "max": 0.999
         },
@@ -1460,8 +1460,8 @@
       "stationCount": 95,
       "fuels": {
         "gazole": {
-          "count": 95,
-          "mean": 2.0342,
+          "count": 94,
+          "mean": 2.0341,
           "median": 2.019,
           "min": 1.919,
           "max": 2.269
@@ -1475,22 +1475,22 @@
         },
         "sp98": {
           "count": 73,
-          "mean": 2.0852,
+          "mean": 2.083,
           "median": 2.079,
           "min": 1.984,
           "max": 2.249
         },
         "e10": {
-          "count": 70,
-          "mean": 1.9921,
-          "median": 1.989,
+          "count": 73,
+          "mean": 1.9897,
+          "median": 1.987,
           "min": 1.897,
           "max": 2.168
         },
         "e85": {
-          "count": 34,
-          "mean": 0.8487,
-          "median": 0.834,
+          "count": 32,
+          "mean": 0.8519,
+          "median": 0.84,
           "min": 0.727,
           "max": 1.069
         },
@@ -1509,31 +1509,31 @@
       "stationCount": 73,
       "fuels": {
         "gazole": {
-          "count": 72,
-          "mean": 2.0571,
+          "count": 73,
+          "mean": 2.0552,
           "median": 2.035,
           "min": 1.929,
           "max": 2.374
         },
         "sp95": {
           "count": 19,
-          "mean": 2.0294,
+          "mean": 2.0299,
           "median": 2.018,
-          "min": 1.93,
+          "min": 1.94,
           "max": 2.139
         },
         "sp98": {
-          "count": 59,
-          "mean": 2.1276,
+          "count": 61,
+          "mean": 2.1239,
           "median": 2.095,
           "min": 1.979,
           "max": 2.534
         },
         "e10": {
-          "count": 56,
-          "mean": 2.0245,
+          "count": 59,
+          "mean": 2.02,
           "median": 1.99,
-          "min": 1.899,
+          "min": 1.889,
           "max": 2.365
         },
         "e85": {
@@ -1559,29 +1559,29 @@
       "fuels": {
         "gazole": {
           "count": 130,
-          "mean": 2.0196,
+          "mean": 2.0154,
           "median": 1.999,
           "min": 1.926,
           "max": 2.25
         },
         "sp95": {
-          "count": 68,
-          "mean": 2.0378,
-          "median": 2.029,
+          "count": 69,
+          "mean": 2.0336,
+          "median": 2.028,
           "min": 1.926,
           "max": 2.167
         },
         "sp98": {
           "count": 100,
-          "mean": 2.093,
-          "median": 2.0915,
+          "mean": 2.0891,
+          "median": 2.089,
           "min": 1.963,
           "max": 2.289
         },
         "e10": {
-          "count": 93,
-          "mean": 1.9808,
-          "median": 1.978,
+          "count": 94,
+          "mean": 1.9759,
+          "median": 1.97,
           "min": 1.89,
           "max": 2.132
         },
@@ -1593,11 +1593,11 @@
           "max": 0.859
         },
         "gplc": {
-          "count": 6,
-          "mean": 1.0627,
-          "median": 1.0415,
+          "count": 5,
+          "mean": 1.0354,
+          "median": 1.033,
           "min": 1.005,
-          "max": 1.199
+          "max": 1.07
         }
       }
     },
@@ -1608,8 +1608,8 @@
       "fuels": {
         "gazole": {
           "count": 128,
-          "mean": 2.0489,
-          "median": 2.035,
+          "mean": 2.048,
+          "median": 2.0295,
           "min": 1.939,
           "max": 2.364
         },
@@ -1621,30 +1621,30 @@
           "max": 2.22
         },
         "sp98": {
-          "count": 94,
-          "mean": 2.1167,
+          "count": 93,
+          "mean": 2.1173,
           "median": 2.119,
           "min": 1.99,
           "max": 2.364
         },
         "e10": {
-          "count": 101,
-          "mean": 2.02,
+          "count": 100,
+          "mean": 2.0185,
           "median": 1.999,
           "min": 1.889,
           "max": 2.294
         },
         "e85": {
           "count": 52,
-          "mean": 0.8359,
+          "mean": 0.8353,
           "median": 0.799,
           "min": 0.762,
           "max": 1.099
         },
         "gplc": {
-          "count": 16,
-          "mean": 1.1037,
-          "median": 1.094,
+          "count": 15,
+          "mean": 1.104,
+          "median": 1.089,
           "min": 1.028,
           "max": 1.2
         }
@@ -1656,36 +1656,36 @@
       "stationCount": 188,
       "fuels": {
         "gazole": {
-          "count": 181,
-          "mean": 2.052,
+          "count": 180,
+          "mean": 2.0503,
           "median": 2.035,
           "min": 1.906,
           "max": 2.513
         },
         "sp95": {
           "count": 36,
-          "mean": 2.0553,
+          "mean": 2.0551,
           "median": 2.0545,
           "min": 1.917,
           "max": 2.159
         },
         "sp98": {
-          "count": 138,
-          "mean": 2.1256,
-          "median": 2.1085,
+          "count": 141,
+          "mean": 2.1222,
+          "median": 2.104,
           "min": 1.982,
           "max": 2.587
         },
         "e10": {
-          "count": 131,
-          "mean": 2.0191,
-          "median": 1.998,
+          "count": 134,
+          "mean": 2.0163,
+          "median": 1.9945,
           "min": 1.865,
           "max": 2.437
         },
         "e85": {
           "count": 85,
-          "mean": 0.8496,
+          "mean": 0.8503,
           "median": 0.818,
           "min": 0.749,
           "max": 1.095
@@ -1706,77 +1706,77 @@
       "fuels": {
         "gazole": {
           "count": 43,
-          "mean": 2.0764,
+          "mean": 2.0788,
           "median": 2.079,
           "min": 1.989,
           "max": 2.25
         },
         "sp95": {
-          "count": 9,
-          "mean": 2.067,
-          "median": 2.059,
+          "count": 10,
+          "mean": 2.0593,
+          "median": 2.054,
           "min": 1.99,
           "max": 2.149
         },
         "sp98": {
           "count": 32,
-          "mean": 2.1328,
+          "mean": 2.1293,
           "median": 2.149,
           "min": 1.99,
           "max": 2.25
         },
         "e10": {
           "count": 34,
-          "mean": 2.0454,
+          "mean": 2.0434,
           "median": 2.059,
           "min": 1.927,
           "max": 2.149
         },
         "e85": {
-          "count": 11,
-          "mean": 0.8749,
-          "median": 0.87,
+          "count": 12,
+          "mean": 0.8905,
+          "median": 0.8845,
           "min": 0.795,
-          "max": 0.959
+          "max": 1.062
         },
         "gplc": {
-          "count": 2,
-          "mean": 1.2585,
-          "median": 1.2585,
+          "count": 1,
+          "mean": 1.24,
+          "median": 1.24,
           "min": 1.24,
-          "max": 1.277
+          "max": 1.24
         }
       }
     },
     "33": {
       "name": "Gironde",
       "regionCode": "NAQ",
-      "stationCount": 215,
+      "stationCount": 214,
       "fuels": {
         "gazole": {
-          "count": 211,
-          "mean": 2.0525,
+          "count": 210,
+          "mean": 2.0497,
           "median": 2.035,
           "min": 1.916,
           "max": 2.41
         },
         "sp95": {
           "count": 65,
-          "mean": 2.0419,
-          "median": 2.039,
+          "mean": 2.0414,
+          "median": 2.036,
           "min": 1.92,
           "max": 2.279
         },
         "sp98": {
-          "count": 157,
-          "mean": 2.1024,
-          "median": 2.099,
+          "count": 156,
+          "mean": 2.1002,
+          "median": 2.093,
           "min": 1.978,
           "max": 2.504
         },
         "e10": {
-          "count": 167,
-          "mean": 2.0027,
+          "count": 166,
+          "mean": 1.9996,
           "median": 1.989,
           "min": 1.889,
           "max": 2.354
@@ -1789,8 +1789,8 @@
           "max": 1.099
         },
         "gplc": {
-          "count": 30,
-          "mean": 1.0619,
+          "count": 31,
+          "mean": 1.0621,
           "median": 1.059,
           "min": 0.949,
           "max": 1.206
@@ -1800,39 +1800,39 @@
     "34": {
       "name": "Hérault",
       "regionCode": "OCC",
-      "stationCount": 148,
+      "stationCount": 149,
       "fuels": {
         "gazole": {
-          "count": 144,
-          "mean": 2.045,
-          "median": 2.0255,
+          "count": 147,
+          "mean": 2.0437,
+          "median": 2.015,
           "min": 1.948,
           "max": 2.315
         },
         "sp95": {
-          "count": 29,
-          "mean": 2.0562,
-          "median": 2.068,
+          "count": 30,
+          "mean": 2.058,
+          "median": 2.072,
           "min": 1.965,
           "max": 2.159
         },
         "sp98": {
-          "count": 116,
-          "mean": 2.1116,
+          "count": 117,
+          "mean": 2.1097,
           "median": 2.099,
           "min": 1.984,
           "max": 2.504
         },
         "e10": {
-          "count": 124,
-          "mean": 2.0178,
+          "count": 121,
+          "mean": 2.0168,
           "median": 1.99,
           "min": 1.911,
           "max": 2.354
         },
         "e85": {
-          "count": 65,
-          "mean": 0.8419,
+          "count": 63,
+          "mean": 0.8424,
           "median": 0.829,
           "min": 0.739,
           "max": 0.999
@@ -1852,36 +1852,36 @@
       "stationCount": 144,
       "fuels": {
         "gazole": {
-          "count": 140,
-          "mean": 2.0332,
-          "median": 2.028,
-          "min": 1.929,
+          "count": 141,
+          "mean": 2.0271,
+          "median": 1.999,
+          "min": 1.925,
           "max": 2.35
         },
         "sp95": {
-          "count": 45,
-          "mean": 2.0606,
-          "median": 2.078,
-          "min": 1.969,
+          "count": 46,
+          "mean": 2.0519,
+          "median": 2.059,
+          "min": 1.943,
           "max": 2.28
         },
         "sp98": {
-          "count": 91,
-          "mean": 2.095,
-          "median": 2.089,
+          "count": 90,
+          "mean": 2.0886,
+          "median": 2.0765,
           "min": 1.99,
           "max": 2.392
         },
         "e10": {
-          "count": 94,
-          "mean": 1.994,
-          "median": 1.9855,
-          "min": 1.899,
+          "count": 93,
+          "mean": 1.9837,
+          "median": 1.969,
+          "min": 1.887,
           "max": 2.242
         },
         "e85": {
-          "count": 36,
-          "mean": 0.8179,
+          "count": 37,
+          "mean": 0.8184,
           "median": 0.798,
           "min": 0.714,
           "max": 0.999
@@ -1898,32 +1898,32 @@
     "36": {
       "name": "Indre",
       "regionCode": "CVL",
-      "stationCount": 46,
+      "stationCount": 47,
       "fuels": {
         "gazole": {
           "count": 45,
-          "mean": 2.0653,
-          "median": 2.037,
+          "mean": 2.0688,
+          "median": 2.04,
           "min": 1.971,
           "max": 2.379
         },
         "sp95": {
-          "count": 17,
-          "mean": 2.0418,
-          "median": 2.027,
+          "count": 18,
+          "mean": 2.0389,
+          "median": 2.013,
           "min": 1.96,
           "max": 2.18
         },
         "sp98": {
-          "count": 34,
-          "mean": 2.1202,
-          "median": 2.11,
+          "count": 33,
+          "mean": 2.1181,
+          "median": 2.109,
           "min": 1.99,
           "max": 2.512
         },
         "e10": {
           "count": 31,
-          "mean": 2.0096,
+          "mean": 2.0052,
           "median": 1.986,
           "min": 1.909,
           "max": 2.362
@@ -1947,33 +1947,33 @@
     "37": {
       "name": "Indre-et-Loire",
       "regionCode": "CVL",
-      "stationCount": 79,
+      "stationCount": 80,
       "fuels": {
         "gazole": {
-          "count": 76,
-          "mean": 2.0348,
-          "median": 2.011,
+          "count": 77,
+          "mean": 2.0306,
+          "median": 1.999,
           "min": 1.925,
           "max": 2.429
         },
         "sp95": {
-          "count": 28,
-          "mean": 2.0471,
+          "count": 27,
+          "mean": 2.0474,
           "median": 2.039,
           "min": 1.909,
           "max": 2.129
         },
         "sp98": {
-          "count": 62,
-          "mean": 2.1076,
-          "median": 2.1055,
+          "count": 63,
+          "mean": 2.1011,
+          "median": 2.095,
           "min": 1.99,
           "max": 2.399
         },
         "e10": {
-          "count": 46,
-          "mean": 2.0076,
-          "median": 1.9845,
+          "count": 47,
+          "mean": 1.999,
+          "median": 1.969,
           "min": 1.905,
           "max": 2.299
         },
@@ -1996,39 +1996,39 @@
     "38": {
       "name": "Isère",
       "regionCode": "ARA",
-      "stationCount": 181,
+      "stationCount": 182,
       "fuels": {
         "gazole": {
-          "count": 177,
-          "mean": 2.0699,
+          "count": 179,
+          "mean": 2.0683,
           "median": 2.049,
           "min": 1.919,
           "max": 2.369
         },
         "sp95": {
-          "count": 43,
-          "mean": 2.072,
-          "median": 2.069,
-          "min": 1.99,
+          "count": 44,
+          "mean": 2.0696,
+          "median": 2.064,
+          "min": 1.979,
           "max": 2.26
         },
         "sp98": {
-          "count": 135,
-          "mean": 2.1401,
-          "median": 2.139,
+          "count": 138,
+          "mean": 2.1366,
+          "median": 2.127,
           "min": 1.748,
           "max": 2.545
         },
         "e10": {
-          "count": 136,
-          "mean": 2.0303,
+          "count": 138,
+          "mean": 2.0271,
           "median": 1.999,
           "min": 1.879,
           "max": 2.395
         },
         "e85": {
           "count": 53,
-          "mean": 0.8706,
+          "mean": 0.8701,
           "median": 0.855,
           "min": 0.757,
           "max": 1.055
@@ -2049,29 +2049,29 @@
       "fuels": {
         "gazole": {
           "count": 69,
-          "mean": 2.1019,
-          "median": 2.079,
+          "mean": 2.0978,
+          "median": 2.065,
           "min": 1.939,
           "max": 2.369
         },
         "sp95": {
-          "count": 20,
-          "mean": 2.119,
-          "median": 2.154,
+          "count": 21,
+          "mean": 2.1208,
+          "median": 2.157,
           "min": 1.948,
           "max": 2.199
         },
         "sp98": {
-          "count": 48,
-          "mean": 2.1591,
+          "count": 47,
+          "mean": 2.1654,
           "median": 2.169,
           "min": 1.99,
           "max": 2.369
         },
         "e10": {
-          "count": 43,
-          "mean": 2.0385,
-          "median": 2.039,
+          "count": 42,
+          "mean": 2.0358,
+          "median": 2.029,
           "min": 1.895,
           "max": 2.299
         },
@@ -2098,36 +2098,36 @@
       "fuels": {
         "gazole": {
           "count": 94,
-          "mean": 2.0756,
+          "mean": 2.0751,
           "median": 2.039,
           "min": 1.985,
           "max": 2.374
         },
         "sp95": {
           "count": 41,
-          "mean": 2.0906,
+          "mean": 2.0897,
           "median": 2.099,
           "min": 1.989,
           "max": 2.269
         },
         "sp98": {
-          "count": 61,
-          "mean": 2.1594,
-          "median": 2.157,
+          "count": 63,
+          "mean": 2.1538,
+          "median": 2.152,
           "min": 1.99,
           "max": 2.405
         },
         "e10": {
-          "count": 71,
-          "mean": 2.0322,
+          "count": 72,
+          "mean": 2.0301,
           "median": 1.999,
           "min": 1.932,
           "max": 2.269
         },
         "e85": {
-          "count": 33,
-          "mean": 0.8398,
-          "median": 0.799,
+          "count": 32,
+          "mean": 0.8411,
+          "median": 0.822,
           "min": 0.774,
           "max": 0.998
         },
@@ -2143,40 +2143,40 @@
     "41": {
       "name": "Loir-et-Cher",
       "regionCode": "CVL",
-      "stationCount": 57,
+      "stationCount": 55,
       "fuels": {
         "gazole": {
-          "count": 56,
-          "mean": 2.0787,
-          "median": 2.0595,
+          "count": 53,
+          "mean": 2.0722,
+          "median": 2.049,
           "min": 1.959,
           "max": 2.369
         },
         "sp95": {
           "count": 19,
-          "mean": 2.0748,
+          "mean": 2.0784,
           "median": 2.066,
           "min": 1.99,
           "max": 2.209
         },
         "sp98": {
-          "count": 47,
-          "mean": 2.1481,
+          "count": 45,
+          "mean": 2.1495,
           "median": 2.149,
           "min": 1.99,
           "max": 2.515
         },
         "e10": {
-          "count": 44,
-          "mean": 2.041,
-          "median": 2.027,
-          "min": 1.943,
+          "count": 43,
+          "mean": 2.0379,
+          "median": 2.025,
+          "min": 1.941,
           "max": 2.365
         },
         "e85": {
-          "count": 20,
-          "mean": 0.883,
-          "median": 0.8795,
+          "count": 21,
+          "mean": 0.8815,
+          "median": 0.87,
           "min": 0.789,
           "max": 1.149
         },
@@ -2196,8 +2196,8 @@
       "fuels": {
         "gazole": {
           "count": 120,
-          "mean": 2.0669,
-          "median": 2.0475,
+          "mean": 2.0646,
+          "median": 2.037,
           "min": 1.971,
           "max": 2.33
         },
@@ -2209,23 +2209,23 @@
           "max": 2.189
         },
         "sp98": {
-          "count": 77,
-          "mean": 2.1295,
+          "count": 74,
+          "mean": 2.1321,
           "median": 2.129,
           "min": 1.99,
           "max": 2.545
         },
         "e10": {
           "count": 83,
-          "mean": 2.0284,
+          "mean": 2.0277,
           "median": 1.999,
           "min": 1.942,
           "max": 2.395
         },
         "e85": {
-          "count": 39,
-          "mean": 0.8588,
-          "median": 0.859,
+          "count": 38,
+          "mean": 0.8604,
+          "median": 0.8595,
           "min": 0.763,
           "max": 1.039
         },
@@ -2245,14 +2245,14 @@
       "fuels": {
         "gazole": {
           "count": 51,
-          "mean": 2.0593,
+          "mean": 2.0585,
           "median": 2.059,
           "min": 1.949,
           "max": 2.24
         },
         "sp95": {
-          "count": 21,
-          "mean": 2.0805,
+          "count": 22,
+          "mean": 2.0764,
           "median": 2.079,
           "min": 1.99,
           "max": 2.196
@@ -2266,7 +2266,7 @@
         },
         "e10": {
           "count": 28,
-          "mean": 2.0269,
+          "mean": 2.0252,
           "median": 2.029,
           "min": 1.929,
           "max": 2.22
@@ -2293,29 +2293,29 @@
       "stationCount": 161,
       "fuels": {
         "gazole": {
-          "count": 159,
-          "mean": 2.0334,
+          "count": 158,
+          "mean": 2.0282,
           "median": 1.999,
           "min": 1.932,
           "max": 2.399
         },
         "sp95": {
           "count": 37,
-          "mean": 2.0554,
-          "median": 2.059,
+          "mean": 2.0539,
+          "median": 2.049,
           "min": 1.949,
           "max": 2.26
         },
         "sp98": {
           "count": 111,
-          "mean": 2.0933,
-          "median": 2.079,
+          "mean": 2.0884,
+          "median": 2.069,
           "min": 1.99,
           "max": 2.29
         },
         "e10": {
-          "count": 108,
-          "mean": 1.9955,
+          "count": 110,
+          "mean": 1.991,
           "median": 1.989,
           "min": 1.898,
           "max": 2.129
@@ -2328,9 +2328,9 @@
           "max": 0.999
         },
         "gplc": {
-          "count": 31,
-          "mean": 1.0243,
-          "median": 0.999,
+          "count": 30,
+          "mean": 1.0251,
+          "median": 1.0035,
           "min": 0.957,
           "max": 1.134
         }
@@ -2339,39 +2339,39 @@
     "45": {
       "name": "Loiret",
       "regionCode": "CVL",
-      "stationCount": 109,
+      "stationCount": 108,
       "fuels": {
         "gazole": {
-          "count": 107,
-          "mean": 2.051,
+          "count": 106,
+          "mean": 2.0505,
           "median": 2.035,
           "min": 1.942,
           "max": 2.29
         },
         "sp95": {
-          "count": 24,
-          "mean": 2.0846,
-          "median": 2.0945,
+          "count": 23,
+          "mean": 2.0818,
+          "median": 2.091,
           "min": 1.995,
           "max": 2.169
         },
         "sp98": {
           "count": 92,
-          "mean": 2.122,
-          "median": 2.129,
+          "mean": 2.1205,
+          "median": 2.125,
           "min": 1.99,
           "max": 2.35
         },
         "e10": {
-          "count": 82,
-          "mean": 2.0083,
+          "count": 81,
+          "mean": 2.0067,
           "median": 1.995,
           "min": 1.888,
           "max": 2.23
         },
         "e85": {
-          "count": 35,
-          "mean": 0.822,
+          "count": 34,
+          "mean": 0.8218,
           "median": 0.798,
           "min": 0.75,
           "max": 0.999
@@ -2392,7 +2392,7 @@
       "fuels": {
         "gazole": {
           "count": 59,
-          "mean": 2.096,
+          "mean": 2.0958,
           "median": 2.075,
           "min": 1.989,
           "max": 2.364
@@ -2406,14 +2406,14 @@
         },
         "sp98": {
           "count": 45,
-          "mean": 2.1281,
+          "mean": 2.128,
           "median": 2.125,
           "min": 1.99,
           "max": 2.364
         },
         "e10": {
           "count": 43,
-          "mean": 2.0369,
+          "mean": 2.0367,
           "median": 1.997,
           "min": 1.969,
           "max": 2.294
@@ -2441,15 +2441,15 @@
       "fuels": {
         "gazole": {
           "count": 76,
-          "mean": 2.069,
+          "mean": 2.0678,
           "median": 2.0595,
           "min": 1.971,
           "max": 2.25
         },
         "sp95": {
-          "count": 32,
-          "mean": 2.0472,
-          "median": 2.0565,
+          "count": 31,
+          "mean": 2.0487,
+          "median": 2.064,
           "min": 1.96,
           "max": 2.109
         },
@@ -2461,9 +2461,9 @@
           "max": 2.33
         },
         "e10": {
-          "count": 55,
-          "mean": 2.0323,
-          "median": 2.035,
+          "count": 56,
+          "mean": 2.0293,
+          "median": 2.019,
           "min": 1.943,
           "max": 2.15
         },
@@ -2490,7 +2490,7 @@
       "fuels": {
         "gazole": {
           "count": 35,
-          "mean": 2.0765,
+          "mean": 2.0744,
           "median": 2.079,
           "min": 1.969,
           "max": 2.239
@@ -2503,24 +2503,24 @@
           "max": 2.269
         },
         "sp98": {
-          "count": 17,
-          "mean": 2.1596,
-          "median": 2.169,
+          "count": 18,
+          "mean": 2.1483,
+          "median": 2.1645,
           "min": 1.99,
           "max": 2.329
         },
         "e10": {
           "count": 21,
-          "mean": 2.0586,
-          "median": 2.069,
+          "mean": 2.0557,
+          "median": 2.059,
           "min": 1.943,
           "max": 2.159
         },
         "e85": {
-          "count": 3,
-          "mean": 0.8893,
-          "median": 0.889,
-          "min": 0.88,
+          "count": 4,
+          "mean": 0.878,
+          "median": 0.8845,
+          "min": 0.844,
           "max": 0.899
         },
         "gplc": {
@@ -2535,47 +2535,47 @@
     "49": {
       "name": "Maine-et-Loire",
       "regionCode": "PDL",
-      "stationCount": 105,
+      "stationCount": 106,
       "fuels": {
         "gazole": {
-          "count": 100,
-          "mean": 2.0447,
-          "median": 2.0275,
+          "count": 101,
+          "mean": 2.04,
+          "median": 2.026,
           "min": 1.909,
           "max": 2.375
         },
         "sp95": {
           "count": 26,
-          "mean": 2.0666,
+          "mean": 2.0627,
           "median": 2.079,
           "min": 1.967,
           "max": 2.18
         },
         "sp98": {
-          "count": 76,
-          "mean": 2.1327,
-          "median": 2.113,
+          "count": 75,
+          "mean": 2.1309,
+          "median": 2.107,
           "min": 1.979,
           "max": 2.529
         },
         "e10": {
           "count": 74,
-          "mean": 2.0253,
-          "median": 1.999,
+          "mean": 2.0176,
+          "median": 1.9975,
           "min": 1.909,
           "max": 2.389
         },
         "e85": {
-          "count": 30,
-          "mean": 0.8234,
+          "count": 28,
+          "mean": 0.8259,
           "median": 0.798,
           "min": 0.747,
           "max": 0.999
         },
         "gplc": {
-          "count": 9,
-          "mean": 1.0917,
-          "median": 1.064,
+          "count": 8,
+          "mean": 1.0995,
+          "median": 1.073,
           "min": 1.009,
           "max": 1.339
         }
@@ -2584,39 +2584,39 @@
     "50": {
       "name": "Manche",
       "regionCode": "NOR",
-      "stationCount": 114,
+      "stationCount": 113,
       "fuels": {
         "gazole": {
-          "count": 112,
-          "mean": 2.0524,
+          "count": 111,
+          "mean": 2.0472,
           "median": 2.039,
           "min": 1.959,
           "max": 2.343
         },
         "sp95": {
-          "count": 44,
-          "mean": 2.064,
-          "median": 2.076,
+          "count": 45,
+          "mean": 2.0596,
+          "median": 2.059,
           "min": 1.95,
           "max": 2.165
         },
         "sp98": {
-          "count": 70,
-          "mean": 2.1156,
+          "count": 72,
+          "mean": 2.1127,
           "median": 2.099,
           "min": 1.99,
           "max": 2.511
         },
         "e10": {
-          "count": 68,
-          "mean": 2.0133,
+          "count": 65,
+          "mean": 2.0102,
           "median": 1.999,
           "min": 1.899,
           "max": 2.361
         },
         "e85": {
-          "count": 24,
-          "mean": 0.8267,
+          "count": 25,
+          "mean": 0.8256,
           "median": 0.798,
           "min": 0.733,
           "max": 0.998
@@ -2636,38 +2636,38 @@
       "stationCount": 82,
       "fuels": {
         "gazole": {
-          "count": 81,
-          "mean": 2.0564,
-          "median": 2.035,
-          "min": 1.971,
+          "count": 82,
+          "mean": 2.049,
+          "median": 2.029,
+          "min": 1.969,
           "max": 2.369
         },
         "sp95": {
           "count": 16,
-          "mean": 2.0998,
-          "median": 2.103,
+          "mean": 2.0943,
+          "median": 2.088,
           "min": 1.999,
           "max": 2.199
         },
         "sp98": {
-          "count": 66,
-          "mean": 2.1102,
-          "median": 2.099,
+          "count": 67,
+          "mean": 2.1093,
+          "median": 2.098,
           "min": 1.99,
           "max": 2.505
         },
         "e10": {
           "count": 65,
-          "mean": 2.0112,
+          "mean": 2.0099,
           "median": 1.99,
           "min": 1.943,
           "max": 2.355
         },
         "e85": {
           "count": 37,
-          "mean": 0.8563,
+          "mean": 0.8552,
           "median": 0.843,
-          "min": 0.783,
+          "min": 0.779,
           "max": 0.999
         },
         "gplc": {
@@ -2686,29 +2686,29 @@
       "fuels": {
         "gazole": {
           "count": 47,
-          "mean": 2.1033,
-          "median": 2.089,
+          "mean": 2.1017,
+          "median": 2.084,
           "min": 1.97,
           "max": 2.269
         },
         "sp95": {
           "count": 14,
-          "mean": 2.1339,
+          "mean": 2.1291,
           "median": 2.179,
           "min": 1.99,
           "max": 2.18
         },
         "sp98": {
           "count": 37,
-          "mean": 2.1549,
+          "mean": 2.153,
           "median": 2.162,
           "min": 1.99,
           "max": 2.299
         },
         "e10": {
           "count": 34,
-          "mean": 2.0452,
-          "median": 2.0335,
+          "mean": 2.0432,
+          "median": 2.0235,
           "min": 1.952,
           "max": 2.219
         },
@@ -2731,34 +2731,34 @@
     "53": {
       "name": "Mayenne",
       "regionCode": "PDL",
-      "stationCount": 51,
+      "stationCount": 49,
       "fuels": {
         "gazole": {
-          "count": 50,
-          "mean": 2.0349,
-          "median": 2.017,
+          "count": 49,
+          "mean": 2.0343,
+          "median": 2.035,
           "min": 1.949,
           "max": 2.279
         },
         "sp95": {
           "count": 22,
-          "mean": 2.0651,
+          "mean": 2.0625,
           "median": 2.069,
-          "min": 1.99,
+          "min": 1.984,
           "max": 2.139
         },
         "sp98": {
           "count": 36,
-          "mean": 2.1093,
+          "mean": 2.1072,
           "median": 2.104,
           "min": 1.99,
           "max": 2.255
         },
         "e10": {
-          "count": 27,
-          "mean": 2.0092,
-          "median": 1.999,
-          "min": 1.916,
+          "count": 25,
+          "mean": 2.0046,
+          "median": 1.99,
+          "min": 1.909,
           "max": 2.19
         },
         "e85": {
@@ -2784,43 +2784,43 @@
       "fuels": {
         "gazole": {
           "count": 84,
-          "mean": 2.0728,
-          "median": 2.059,
+          "mean": 2.0697,
+          "median": 2.0575,
           "min": 1.952,
           "max": 2.292
         },
         "sp95": {
-          "count": 26,
-          "mean": 2.0722,
-          "median": 2.078,
-          "min": 1.961,
+          "count": 25,
+          "mean": 2.0767,
+          "median": 2.079,
+          "min": 1.984,
           "max": 2.28
         },
         "sp98": {
           "count": 63,
-          "mean": 2.1305,
+          "mean": 2.125,
           "median": 2.141,
           "min": 1.99,
           "max": 2.31
         },
         "e10": {
           "count": 57,
-          "mean": 2.0301,
-          "median": 2.039,
+          "mean": 2.0248,
+          "median": 2.002,
           "min": 1.908,
           "max": 2.198
         },
         "e85": {
           "count": 26,
-          "mean": 0.8672,
-          "median": 0.8555,
+          "mean": 0.8657,
+          "median": 0.8455,
           "min": 0.729,
           "max": 1.158
         },
         "gplc": {
-          "count": 11,
-          "mean": 1.0411,
-          "median": 1.022,
+          "count": 10,
+          "mean": 1.0467,
+          "median": 1.04,
           "min": 0.985,
           "max": 1.144
         }
@@ -2833,29 +2833,29 @@
       "fuels": {
         "gazole": {
           "count": 35,
-          "mean": 2.0888,
-          "median": 2.074,
+          "mean": 2.0811,
+          "median": 2.069,
           "min": 1.967,
           "max": 2.25
         },
         "sp95": {
-          "count": 9,
-          "mean": 2.075,
-          "median": 2.085,
+          "count": 8,
+          "mean": 2.0533,
+          "median": 2.039,
           "min": 1.976,
           "max": 2.199
         },
         "sp98": {
-          "count": 25,
-          "mean": 2.1278,
-          "median": 2.121,
+          "count": 26,
+          "mean": 2.1152,
+          "median": 2.109,
           "min": 1.99,
           "max": 2.269
         },
         "e10": {
-          "count": 27,
-          "mean": 2.0235,
-          "median": 1.999,
+          "count": 28,
+          "mean": 2.0174,
+          "median": 1.9945,
           "min": 1.923,
           "max": 2.176
         },
@@ -2882,35 +2882,35 @@
       "fuels": {
         "gazole": {
           "count": 133,
-          "mean": 2.0288,
-          "median": 2.019,
+          "mean": 2.0239,
+          "median": 1.999,
           "min": 1.915,
           "max": 2.249
         },
         "sp95": {
-          "count": 49,
-          "mean": 2.0673,
-          "median": 2.062,
+          "count": 48,
+          "mean": 2.0635,
+          "median": 2.054,
           "min": 1.949,
           "max": 2.62
         },
         "sp98": {
           "count": 96,
-          "mean": 2.0903,
-          "median": 2.0965,
+          "mean": 2.085,
+          "median": 2.089,
           "min": 1.987,
           "max": 2.392
         },
         "e10": {
-          "count": 92,
-          "mean": 1.9821,
-          "median": 1.9825,
+          "count": 93,
+          "mean": 1.9792,
+          "median": 1.979,
           "min": 1.879,
           "max": 2.242
         },
         "e85": {
-          "count": 43,
-          "mean": 0.8058,
+          "count": 42,
+          "mean": 0.8055,
           "median": 0.798,
           "min": 0.699,
           "max": 1.025
@@ -2927,47 +2927,47 @@
     "57": {
       "name": "Moselle",
       "regionCode": "GES",
-      "stationCount": 123,
+      "stationCount": 122,
       "fuels": {
         "gazole": {
-          "count": 121,
-          "mean": 2.0739,
-          "median": 2.069,
+          "count": 120,
+          "mean": 2.0693,
+          "median": 2.059,
           "min": 1.949,
           "max": 2.259
         },
         "sp95": {
           "count": 28,
-          "mean": 2.0754,
-          "median": 2.089,
+          "mean": 2.0701,
+          "median": 2.074,
           "min": 1.959,
           "max": 2.199
         },
         "sp98": {
           "count": 92,
-          "mean": 2.1268,
-          "median": 2.149,
+          "mean": 2.1222,
+          "median": 2.1415,
           "min": 1.99,
           "max": 2.279
         },
         "e10": {
           "count": 96,
-          "mean": 2.0336,
-          "median": 2.035,
+          "mean": 2.0293,
+          "median": 2.0275,
           "min": 1.919,
           "max": 2.186
         },
         "e85": {
           "count": 32,
-          "mean": 0.8305,
+          "mean": 0.8314,
           "median": 0.8165,
           "min": 0.739,
           "max": 0.999
         },
         "gplc": {
-          "count": 10,
-          "mean": 1.044,
-          "median": 1.031,
+          "count": 11,
+          "mean": 1.0426,
+          "median": 1.029,
           "min": 0.949,
           "max": 1.211
         }
@@ -2980,36 +2980,36 @@
       "fuels": {
         "gazole": {
           "count": 57,
-          "mean": 2.092,
-          "median": 2.095,
+          "mean": 2.0869,
+          "median": 2.084,
           "min": 1.956,
           "max": 2.269
         },
         "sp95": {
           "count": 27,
-          "mean": 2.1144,
-          "median": 2.138,
+          "mean": 2.1115,
+          "median": 2.129,
           "min": 1.979,
           "max": 2.169
         },
         "sp98": {
-          "count": 42,
-          "mean": 2.1415,
-          "median": 2.154,
-          "min": 1.989,
+          "count": 43,
+          "mean": 2.1338,
+          "median": 2.109,
+          "min": 1.99,
           "max": 2.295
         },
         "e10": {
-          "count": 36,
-          "mean": 2.0321,
-          "median": 2.004,
+          "count": 37,
+          "mean": 2.0207,
+          "median": 1.99,
           "min": 1.899,
           "max": 2.219
         },
         "e85": {
-          "count": 15,
-          "mean": 0.8285,
-          "median": 0.839,
+          "count": 16,
+          "mean": 0.8259,
+          "median": 0.798,
           "min": 0.756,
           "max": 0.899
         },
@@ -3025,46 +3025,46 @@
     "59": {
       "name": "Nord",
       "regionCode": "HDF",
-      "stationCount": 234,
+      "stationCount": 236,
       "fuels": {
         "gazole": {
-          "count": 230,
-          "mean": 2.0446,
-          "median": 2.035,
+          "count": 232,
+          "mean": 2.0377,
+          "median": 2.032,
           "min": 1.89,
           "max": 2.291
         },
         "sp95": {
           "count": 42,
-          "mean": 2.0514,
-          "median": 2.0575,
+          "mean": 2.0459,
+          "median": 2.047,
           "min": 1.943,
           "max": 2.251
         },
         "sp98": {
-          "count": 181,
-          "mean": 2.099,
-          "median": 2.099,
+          "count": 188,
+          "mean": 2.0919,
+          "median": 2.089,
           "min": 1.974,
           "max": 2.305
         },
         "e10": {
-          "count": 180,
-          "mean": 1.9987,
-          "median": 1.9895,
+          "count": 185,
+          "mean": 1.9926,
+          "median": 1.988,
           "min": 1.87,
           "max": 2.221
         },
         "e85": {
-          "count": 102,
-          "mean": 0.8315,
+          "count": 101,
+          "mean": 0.8305,
           "median": 0.819,
           "min": 0.729,
           "max": 1.269
         },
         "gplc": {
-          "count": 23,
-          "mean": 1.049,
+          "count": 25,
+          "mean": 1.0448,
           "median": 0.999,
           "min": 0.949,
           "max": 1.329
@@ -3074,40 +3074,40 @@
     "60": {
       "name": "Oise",
       "regionCode": "HDF",
-      "stationCount": 110,
+      "stationCount": 111,
       "fuels": {
         "gazole": {
-          "count": 107,
-          "mean": 2.0382,
+          "count": 109,
+          "mean": 2.0358,
           "median": 2.035,
           "min": 1.96,
           "max": 2.25
         },
         "sp95": {
-          "count": 32,
-          "mean": 2.0451,
-          "median": 2.0495,
+          "count": 34,
+          "mean": 2.04,
+          "median": 2.0365,
           "min": 1.938,
           "max": 2.162
         },
         "sp98": {
-          "count": 74,
-          "mean": 2.1045,
-          "median": 2.1,
-          "min": 1.99,
+          "count": 75,
+          "mean": 2.0992,
+          "median": 2.099,
+          "min": 1.987,
           "max": 2.249
         },
         "e10": {
-          "count": 75,
-          "mean": 1.9918,
-          "median": 1.99,
-          "min": 1.919,
+          "count": 77,
+          "mean": 1.9881,
+          "median": 1.985,
+          "min": 1.899,
           "max": 2.15
         },
         "e85": {
           "count": 38,
-          "mean": 0.8464,
-          "median": 0.8315,
+          "mean": 0.8459,
+          "median": 0.8365,
           "min": 0.736,
           "max": 0.999
         },
@@ -3127,7 +3127,7 @@
       "fuels": {
         "gazole": {
           "count": 54,
-          "mean": 2.0629,
+          "mean": 2.0624,
           "median": 2.042,
           "min": 1.911,
           "max": 2.28
@@ -3147,8 +3147,8 @@
           "max": 2.275
         },
         "e10": {
-          "count": 30,
-          "mean": 2.0049,
+          "count": 29,
+          "mean": 2.0044,
           "median": 1.99,
           "min": 1.904,
           "max": 2.21
@@ -3172,11 +3172,11 @@
     "62": {
       "name": "Pas-de-Calais",
       "regionCode": "HDF",
-      "stationCount": 220,
+      "stationCount": 219,
       "fuels": {
         "gazole": {
-          "count": 214,
-          "mean": 2.0447,
+          "count": 211,
+          "mean": 2.0427,
           "median": 2.035,
           "min": 1.895,
           "max": 2.331
@@ -3189,23 +3189,23 @@
           "max": 2.189
         },
         "sp98": {
-          "count": 162,
-          "mean": 2.1084,
+          "count": 158,
+          "mean": 2.1088,
           "median": 2.1055,
           "min": 1.986,
           "max": 2.505
         },
         "e10": {
           "count": 157,
-          "mean": 1.9943,
-          "median": 1.989,
+          "mean": 1.9919,
+          "median": 1.984,
           "min": 1.891,
           "max": 2.21
         },
         "e85": {
           "count": 75,
-          "mean": 0.8277,
-          "median": 0.823,
+          "mean": 0.8281,
+          "median": 0.822,
           "min": 0.727,
           "max": 0.999
         },
@@ -3221,39 +3221,39 @@
     "63": {
       "name": "Puy-de-Dôme",
       "regionCode": "ARA",
-      "stationCount": 113,
+      "stationCount": 112,
       "fuels": {
         "gazole": {
           "count": 112,
-          "mean": 2.0622,
-          "median": 2.049,
+          "mean": 2.0604,
+          "median": 2.047,
           "min": 1.968,
           "max": 2.269
         },
         "sp95": {
           "count": 26,
-          "mean": 2.0633,
-          "median": 2.072,
+          "mean": 2.062,
+          "median": 2.069,
           "min": 1.99,
           "max": 2.135
         },
         "sp98": {
-          "count": 75,
-          "mean": 2.1173,
-          "median": 2.128,
+          "count": 73,
+          "mean": 2.116,
+          "median": 2.117,
           "min": 1.99,
           "max": 2.299
         },
         "e10": {
-          "count": 72,
-          "mean": 2.0181,
-          "median": 1.998,
+          "count": 73,
+          "mean": 2.0134,
+          "median": 1.99,
           "min": 1.934,
           "max": 2.219
         },
         "e85": {
           "count": 30,
-          "mean": 0.8455,
+          "mean": 0.8468,
           "median": 0.804,
           "min": 0.798,
           "max": 1.055
@@ -3274,35 +3274,35 @@
       "fuels": {
         "gazole": {
           "count": 100,
-          "mean": 2.0584,
-          "median": 2.039,
+          "mean": 2.055,
+          "median": 2.037,
           "min": 1.96,
           "max": 2.369
         },
         "sp95": {
           "count": 41,
-          "mean": 2.0706,
-          "median": 2.075,
+          "mean": 2.0677,
+          "median": 2.069,
           "min": 1.945,
           "max": 2.169
         },
         "sp98": {
           "count": 75,
-          "mean": 2.1156,
-          "median": 2.129,
+          "mean": 2.1141,
+          "median": 2.119,
           "min": 1.99,
           "max": 2.369
         },
         "e10": {
           "count": 72,
-          "mean": 2.0117,
-          "median": 1.9985,
+          "mean": 2.0095,
+          "median": 1.9945,
           "min": 1.929,
           "max": 2.269
         },
         "e85": {
-          "count": 37,
-          "mean": 0.8576,
+          "count": 36,
+          "mean": 0.8574,
           "median": 0.838,
           "min": 0.774,
           "max": 1.049
@@ -3343,9 +3343,9 @@
           "max": 2.249
         },
         "e10": {
-          "count": 30,
-          "mean": 2.0276,
-          "median": 2.0225,
+          "count": 29,
+          "mean": 2.0305,
+          "median": 2.023,
           "min": 1.939,
           "max": 2.179
         },
@@ -3368,47 +3368,47 @@
     "66": {
       "name": "Pyrénées-Orientales",
       "regionCode": "OCC",
-      "stationCount": 70,
+      "stationCount": 71,
       "fuels": {
         "gazole": {
-          "count": 68,
-          "mean": 2.0444,
-          "median": 2.027,
+          "count": 71,
+          "mean": 2.038,
+          "median": 2.019,
           "min": 1.9,
           "max": 2.369
         },
         "sp95": {
-          "count": 15,
-          "mean": 2.0538,
-          "median": 2.089,
+          "count": 16,
+          "mean": 2.0498,
+          "median": 2.059,
           "min": 1.935,
           "max": 2.19
         },
         "sp98": {
-          "count": 49,
-          "mean": 2.1141,
-          "median": 2.116,
+          "count": 52,
+          "mean": 2.11,
+          "median": 2.113,
           "min": 1.99,
           "max": 2.289
         },
         "e10": {
-          "count": 56,
-          "mean": 1.9995,
-          "median": 1.993,
+          "count": 57,
+          "mean": 1.9934,
+          "median": 1.99,
           "min": 1.889,
           "max": 2.159
         },
         "e85": {
-          "count": 27,
-          "mean": 0.8274,
+          "count": 26,
+          "mean": 0.8285,
           "median": 0.798,
           "min": 0.758,
           "max": 0.954
         },
         "gplc": {
-          "count": 5,
-          "mean": 1.0884,
-          "median": 1.056,
+          "count": 4,
+          "mean": 1.0965,
+          "median": 1.0925,
           "min": 1.04,
           "max": 1.161
         }
@@ -3417,33 +3417,33 @@
     "67": {
       "name": "Bas-Rhin",
       "regionCode": "GES",
-      "stationCount": 145,
+      "stationCount": 143,
       "fuels": {
         "gazole": {
-          "count": 143,
-          "mean": 2.0551,
+          "count": 142,
+          "mean": 2.0485,
           "median": 2.035,
-          "min": 1.929,
+          "min": 1.928,
           "max": 2.269
         },
         "sp95": {
-          "count": 25,
-          "mean": 2.0544,
+          "count": 24,
+          "mean": 2.0513,
           "median": 2.059,
           "min": 1.949,
           "max": 2.199
         },
         "sp98": {
           "count": 101,
-          "mean": 2.0912,
-          "median": 2.098,
+          "mean": 2.0849,
+          "median": 2.093,
           "min": 1.985,
           "max": 2.299
         },
         "e10": {
-          "count": 116,
-          "mean": 2.0086,
-          "median": 1.9905,
+          "count": 119,
+          "mean": 2.0012,
+          "median": 1.989,
           "min": 1.898,
           "max": 2.229
         },
@@ -3470,36 +3470,36 @@
       "fuels": {
         "gazole": {
           "count": 103,
-          "mean": 2.0593,
-          "median": 2.039,
+          "mean": 2.0528,
+          "median": 2.035,
           "min": 1.949,
           "max": 2.244
         },
         "sp95": {
           "count": 26,
-          "mean": 2.0707,
-          "median": 2.0705,
+          "mean": 2.0705,
+          "median": 2.069,
           "min": 1.954,
           "max": 2.303
         },
         "sp98": {
-          "count": 83,
-          "mean": 2.0929,
+          "count": 81,
+          "mean": 2.0892,
           "median": 2.099,
           "min": 1.979,
           "max": 2.335
         },
         "e10": {
           "count": 82,
-          "mean": 2.0103,
-          "median": 1.996,
+          "mean": 2.0052,
+          "median": 1.9925,
           "min": 1.899,
           "max": 2.166
         },
         "e85": {
           "count": 36,
-          "mean": 0.8426,
-          "median": 0.8415,
+          "mean": 0.8446,
+          "median": 0.8445,
           "min": 0.725,
           "max": 0.999
         },
@@ -3519,35 +3519,35 @@
       "fuels": {
         "gazole": {
           "count": 189,
-          "mean": 2.0646,
-          "median": 2.043,
-          "min": 1.925,
+          "mean": 2.0603,
+          "median": 2.035,
+          "min": 1.924,
           "max": 2.326
         },
         "sp95": {
-          "count": 50,
-          "mean": 2.0697,
-          "median": 2.083,
+          "count": 51,
+          "mean": 2.0631,
+          "median": 2.079,
           "min": 1.956,
           "max": 2.23
         },
         "sp98": {
           "count": 139,
-          "mean": 2.1318,
-          "median": 2.145,
+          "mean": 2.1281,
+          "median": 2.129,
           "min": 1.99,
           "max": 2.4
         },
         "e10": {
-          "count": 149,
-          "mean": 2.0188,
+          "count": 147,
+          "mean": 2.0156,
           "median": 1.999,
           "min": 1.905,
           "max": 2.25
         },
         "e85": {
-          "count": 63,
-          "mean": 0.9003,
+          "count": 62,
+          "mean": 0.9007,
           "median": 0.899,
           "min": 0.797,
           "max": 1.243
@@ -3564,45 +3564,45 @@
     "70": {
       "name": "Haute-Saône",
       "regionCode": "BFC",
-      "stationCount": 50,
+      "stationCount": 52,
       "fuels": {
         "gazole": {
-          "count": 49,
-          "mean": 2.058,
-          "median": 2.049,
-          "min": 1.989,
+          "count": 50,
+          "mean": 2.0515,
+          "median": 2.04,
+          "min": 1.96,
           "max": 2.199
         },
         "sp95": {
-          "count": 11,
-          "mean": 2.0987,
-          "median": 2.099,
-          "min": 2.02,
+          "count": 15,
+          "mean": 2.0697,
+          "median": 2.07,
+          "min": 1.99,
           "max": 2.189
         },
         "sp98": {
-          "count": 30,
-          "mean": 2.1224,
-          "median": 2.1245,
+          "count": 31,
+          "mean": 2.1198,
+          "median": 2.12,
           "min": 1.99,
           "max": 2.229
         },
         "e10": {
-          "count": 26,
-          "mean": 2.0251,
-          "median": 2.014,
+          "count": 31,
+          "mean": 2.0194,
+          "median": 1.99,
           "min": 1.959,
           "max": 2.169
         },
         "e85": {
-          "count": 9,
-          "mean": 0.8334,
+          "count": 11,
+          "mean": 0.8292,
           "median": 0.798,
-          "min": 0.75,
+          "min": 0.759,
           "max": 0.959
         },
         "gplc": {
-          "count": 1,
+          "count": 2,
           "mean": 1.07,
           "median": 1.07,
           "min": 1.07,
@@ -3613,40 +3613,40 @@
     "71": {
       "name": "Saône-et-Loire",
       "regionCode": "BFC",
-      "stationCount": 140,
+      "stationCount": 137,
       "fuels": {
         "gazole": {
-          "count": 134,
-          "mean": 2.085,
-          "median": 2.079,
+          "count": 130,
+          "mean": 2.0858,
+          "median": 2.0805,
           "min": 1.935,
           "max": 2.309
         },
         "sp95": {
           "count": 67,
-          "mean": 2.0823,
+          "mean": 2.0822,
           "median": 2.099,
           "min": 1.969,
           "max": 2.179
         },
         "sp98": {
-          "count": 97,
-          "mean": 2.1394,
+          "count": 96,
+          "mean": 2.1395,
           "median": 2.159,
           "min": 1.98,
           "max": 2.388
         },
         "e10": {
-          "count": 82,
-          "mean": 2.0267,
+          "count": 80,
+          "mean": 2.0256,
           "median": 1.999,
           "min": 1.925,
           "max": 2.238
         },
         "e85": {
-          "count": 32,
-          "mean": 0.8678,
-          "median": 0.842,
+          "count": 30,
+          "mean": 0.8725,
+          "median": 0.847,
           "min": 0.789,
           "max": 1.254
         },
@@ -3662,32 +3662,32 @@
     "72": {
       "name": "Sarthe",
       "regionCode": "PDL",
-      "stationCount": 90,
+      "stationCount": 92,
       "fuels": {
         "gazole": {
-          "count": 89,
-          "mean": 2.0666,
+          "count": 91,
+          "mean": 2.0663,
           "median": 2.039,
           "min": 1.959,
           "max": 2.394
         },
         "sp95": {
-          "count": 30,
-          "mean": 2.0915,
-          "median": 2.099,
+          "count": 32,
+          "mean": 2.0868,
+          "median": 2.094,
           "min": 1.95,
           "max": 2.21
         },
         "sp98": {
-          "count": 64,
-          "mean": 2.1413,
-          "median": 2.122,
+          "count": 66,
+          "mean": 2.1374,
+          "median": 2.1195,
           "min": 1.99,
           "max": 2.512
         },
         "e10": {
-          "count": 65,
-          "mean": 2.0322,
+          "count": 66,
+          "mean": 2.0309,
           "median": 1.999,
           "min": 1.919,
           "max": 2.362
@@ -3715,37 +3715,37 @@
       "fuels": {
         "gazole": {
           "count": 79,
-          "mean": 2.0918,
+          "mean": 2.0908,
           "median": 2.059,
           "min": 1.933,
           "max": 2.419
         },
         "sp95": {
           "count": 23,
-          "mean": 2.0667,
+          "mean": 2.0673,
           "median": 2.069,
           "min": 1.973,
           "max": 2.186
         },
         "sp98": {
           "count": 55,
-          "mean": 2.1555,
+          "mean": 2.1551,
           "median": 2.129,
           "min": 1.988,
           "max": 2.469
         },
         "e10": {
-          "count": 56,
-          "mean": 2.0583,
+          "count": 55,
+          "mean": 2.0588,
           "median": 2.029,
           "min": 1.934,
           "max": 2.329
         },
         "e85": {
           "count": 17,
-          "mean": 0.8402,
-          "median": 0.829,
-          "min": 0.789,
+          "mean": 0.8432,
+          "median": 0.833,
+          "min": 0.797,
           "max": 0.998
         },
         "gplc": {
@@ -3763,36 +3763,36 @@
       "stationCount": 120,
       "fuels": {
         "gazole": {
-          "count": 115,
-          "mean": 2.094,
-          "median": 2.085,
+          "count": 114,
+          "mean": 2.0935,
+          "median": 2.0845,
           "min": 1.95,
           "max": 2.342
         },
         "sp95": {
           "count": 37,
-          "mean": 2.0939,
-          "median": 2.1,
+          "mean": 2.0917,
+          "median": 2.085,
           "min": 1.98,
           "max": 2.27
         },
         "sp98": {
-          "count": 86,
-          "mean": 2.1468,
+          "count": 85,
+          "mean": 2.1481,
           "median": 2.139,
           "min": 1.99,
           "max": 2.537
         },
         "e10": {
-          "count": 82,
-          "mean": 2.0328,
+          "count": 79,
+          "mean": 2.0322,
           "median": 1.999,
           "min": 1.919,
           "max": 2.387
         },
         "e85": {
-          "count": 39,
-          "mean": 0.8558,
+          "count": 38,
+          "mean": 0.8549,
           "median": 0.799,
           "min": 0.759,
           "max": 0.998
@@ -3813,7 +3813,7 @@
       "fuels": {
         "gazole": {
           "count": 35,
-          "mean": 2.1141,
+          "mean": 2.1041,
           "median": 2.035,
           "min": 1.969,
           "max": 2.349
@@ -3826,15 +3826,15 @@
           "max": 2.329
         },
         "sp98": {
-          "count": 28,
-          "mean": 2.1241,
-          "median": 2.0655,
+          "count": 27,
+          "mean": 2.1205,
+          "median": 2.069,
           "min": 1.99,
           "max": 2.429
         },
         "e10": {
           "count": 28,
-          "mean": 2.0502,
+          "mean": 2.047,
           "median": 1.99,
           "min": 1.969,
           "max": 2.299
@@ -3858,40 +3858,40 @@
     "76": {
       "name": "Seine-Maritime",
       "regionCode": "NOR",
-      "stationCount": 158,
+      "stationCount": 160,
       "fuels": {
         "gazole": {
-          "count": 157,
-          "mean": 2.0409,
+          "count": 158,
+          "mean": 2.0393,
           "median": 2.035,
           "min": 1.919,
           "max": 2.27
         },
         "sp95": {
-          "count": 54,
-          "mean": 2.0485,
-          "median": 2.049,
+          "count": 55,
+          "mean": 2.0413,
+          "median": 2.039,
           "min": 1.935,
-          "max": 2.259
+          "max": 2.168
         },
         "sp98": {
-          "count": 110,
-          "mean": 2.1025,
+          "count": 112,
+          "mean": 2.0993,
           "median": 2.099,
           "min": 1.983,
           "max": 2.259
         },
         "e10": {
-          "count": 102,
-          "mean": 1.995,
+          "count": 104,
+          "mean": 1.9931,
           "median": 1.989,
           "min": 1.879,
           "max": 2.159
         },
         "e85": {
           "count": 46,
-          "mean": 0.8351,
-          "median": 0.7995,
+          "mean": 0.8361,
+          "median": 0.807,
           "min": 0.739,
           "max": 0.998
         },
@@ -3911,8 +3911,8 @@
       "fuels": {
         "gazole": {
           "count": 163,
-          "mean": 2.0462,
-          "median": 2.029,
+          "mean": 2.0432,
+          "median": 2.02,
           "min": 1.929,
           "max": 2.38
         },
@@ -3924,16 +3924,16 @@
           "max": 2.201
         },
         "sp98": {
-          "count": 133,
-          "mean": 2.1025,
-          "median": 2.093,
+          "count": 136,
+          "mean": 2.0973,
+          "median": 2.0745,
           "min": 1.987,
           "max": 2.4
         },
         "e10": {
-          "count": 123,
-          "mean": 2.005,
-          "median": 1.989,
+          "count": 124,
+          "mean": 2.0018,
+          "median": 1.985,
           "min": 1.919,
           "max": 2.25
         },
@@ -3960,8 +3960,8 @@
       "fuels": {
         "gazole": {
           "count": 139,
-          "mean": 2.044,
-          "median": 2.035,
+          "mean": 2.0358,
+          "median": 2.029,
           "min": 1.919,
           "max": 2.295
         },
@@ -3973,23 +3973,23 @@
           "max": 2.195
         },
         "sp98": {
-          "count": 100,
-          "mean": 2.1003,
-          "median": 2.0985,
+          "count": 101,
+          "mean": 2.0969,
+          "median": 2.098,
           "min": 1.989,
           "max": 2.39
         },
         "e10": {
-          "count": 108,
-          "mean": 2.0004,
+          "count": 107,
+          "mean": 1.9975,
           "median": 1.99,
           "min": 1.919,
           "max": 2.24
         },
         "e85": {
-          "count": 58,
-          "mean": 0.8663,
-          "median": 0.8615,
+          "count": 59,
+          "mean": 0.8642,
+          "median": 0.859,
           "min": 0.72,
           "max": 0.999
         },
@@ -4005,33 +4005,33 @@
     "79": {
       "name": "Deux-Sèvres",
       "regionCode": "NAQ",
-      "stationCount": 68,
+      "stationCount": 69,
       "fuels": {
         "gazole": {
-          "count": 67,
-          "mean": 2.0471,
+          "count": 68,
+          "mean": 2.045,
           "median": 2.035,
           "min": 1.925,
           "max": 2.49
         },
         "sp95": {
           "count": 18,
-          "mean": 2.0304,
+          "mean": 2.0298,
           "median": 2.009,
           "min": 1.928,
           "max": 2.139
         },
         "sp98": {
           "count": 48,
-          "mean": 2.1252,
+          "mean": 2.1246,
           "median": 2.111,
           "min": 1.99,
           "max": 2.56
         },
         "e10": {
-          "count": 48,
-          "mean": 2.0085,
-          "median": 1.99,
+          "count": 47,
+          "mean": 2.0053,
+          "median": 1.989,
           "min": 1.879,
           "max": 2.354
         },
@@ -4058,8 +4058,8 @@
       "fuels": {
         "gazole": {
           "count": 104,
-          "mean": 2.0654,
-          "median": 2.0515,
+          "mean": 2.0591,
+          "median": 2.035,
           "min": 1.935,
           "max": 2.333
         },
@@ -4071,22 +4071,22 @@
           "max": 2.15
         },
         "sp98": {
-          "count": 87,
-          "mean": 2.1148,
+          "count": 89,
+          "mean": 2.1111,
           "median": 2.109,
           "min": 1.985,
           "max": 2.505
         },
         "e10": {
-          "count": 79,
-          "mean": 2.0068,
+          "count": 81,
+          "mean": 2.004,
           "median": 1.99,
           "min": 1.878,
           "max": 2.355
         },
         "e85": {
-          "count": 36,
-          "mean": 0.8345,
+          "count": 37,
+          "mean": 0.8324,
           "median": 0.798,
           "min": 0.749,
           "max": 1.05
@@ -4107,38 +4107,38 @@
       "fuels": {
         "gazole": {
           "count": 67,
-          "mean": 2.0629,
+          "mean": 2.0601,
           "median": 2.048,
           "min": 1.961,
           "max": 2.25
         },
         "sp95": {
           "count": 18,
-          "mean": 2.0647,
+          "mean": 2.0631,
           "median": 2.079,
           "min": 1.99,
           "max": 2.129
         },
         "sp98": {
-          "count": 44,
-          "mean": 2.1065,
-          "median": 2.11,
+          "count": 45,
+          "mean": 2.1027,
+          "median": 2.109,
           "min": 1.99,
           "max": 2.229
         },
         "e10": {
           "count": 50,
-          "mean": 2.0083,
-          "median": 1.9985,
+          "mean": 2.0035,
+          "median": 1.998,
           "min": 1.943,
           "max": 2.129
         },
         "e85": {
-          "count": 26,
-          "mean": 0.8243,
+          "count": 24,
+          "mean": 0.8259,
           "median": 0.798,
           "min": 0.797,
-          "max": 0.987
+          "max": 0.982
         },
         "gplc": {
           "count": 9,
@@ -4156,22 +4156,22 @@
       "fuels": {
         "gazole": {
           "count": 62,
-          "mean": 2.065,
-          "median": 2.069,
+          "mean": 2.0624,
+          "median": 2.064,
           "min": 1.956,
           "max": 2.244
         },
         "sp95": {
           "count": 13,
-          "mean": 2.0955,
-          "median": 2.099,
+          "mean": 2.0902,
+          "median": 2.09,
           "min": 2.041,
           "max": 2.14
         },
         "sp98": {
           "count": 42,
-          "mean": 2.136,
-          "median": 2.142,
+          "mean": 2.1343,
+          "median": 2.138,
           "min": 1.99,
           "max": 2.293
         },
@@ -4201,40 +4201,40 @@
     "83": {
       "name": "Var",
       "regionCode": "PAC",
-      "stationCount": 165,
+      "stationCount": 164,
       "fuels": {
         "gazole": {
-          "count": 163,
-          "mean": 2.0501,
-          "median": 2.035,
+          "count": 161,
+          "mean": 2.0441,
+          "median": 2.029,
           "min": 1.909,
           "max": 2.43
         },
         "sp95": {
           "count": 41,
-          "mean": 2.0706,
-          "median": 2.079,
+          "mean": 2.0682,
+          "median": 2.055,
           "min": 1.929,
           "max": 2.54
         },
         "sp98": {
-          "count": 129,
-          "mean": 2.1067,
-          "median": 2.099,
+          "count": 128,
+          "mean": 2.1038,
+          "median": 2.0875,
           "min": 1.979,
           "max": 2.369
         },
         "e10": {
           "count": 136,
-          "mean": 2.0086,
-          "median": 1.989,
+          "mean": 2.0044,
+          "median": 1.988,
           "min": 1.899,
           "max": 2.299
         },
         "e85": {
-          "count": 57,
+          "count": 56,
           "mean": 0.856,
-          "median": 0.833,
+          "median": 0.834,
           "min": 0.76,
           "max": 1.055
         },
@@ -4253,9 +4253,9 @@
       "stationCount": 101,
       "fuels": {
         "gazole": {
-          "count": 98,
-          "mean": 2.0671,
-          "median": 2.0495,
+          "count": 99,
+          "mean": 2.0661,
+          "median": 2.049,
           "min": 1.956,
           "max": 2.292
         },
@@ -4268,22 +4268,22 @@
         },
         "sp98": {
           "count": 63,
-          "mean": 2.1318,
+          "mean": 2.1305,
           "median": 2.133,
           "min": 1.99,
           "max": 2.403
         },
         "e10": {
-          "count": 80,
-          "mean": 2.0329,
-          "median": 2.032,
-          "min": 1.93,
+          "count": 79,
+          "mean": 2.0321,
+          "median": 2.029,
+          "min": 1.929,
           "max": 2.267
         },
         "e85": {
-          "count": 47,
-          "mean": 0.8465,
-          "median": 0.799,
+          "count": 46,
+          "mean": 0.8477,
+          "median": 0.809,
           "min": 0.725,
           "max": 1.099
         },
@@ -4299,39 +4299,39 @@
     "85": {
       "name": "Vendée",
       "regionCode": "PDL",
-      "stationCount": 118,
+      "stationCount": 119,
       "fuels": {
         "gazole": {
-          "count": 116,
-          "mean": 2.0458,
-          "median": 2.019,
+          "count": 117,
+          "mean": 2.0394,
+          "median": 1.999,
           "min": 1.898,
           "max": 2.665
         },
         "sp95": {
-          "count": 32,
-          "mean": 2.073,
-          "median": 2.029,
+          "count": 30,
+          "mean": 2.0754,
+          "median": 2.0295,
           "min": 1.95,
           "max": 2.609
         },
         "sp98": {
-          "count": 86,
-          "mean": 2.1062,
-          "median": 2.089,
+          "count": 88,
+          "mean": 2.0996,
+          "median": 2.075,
           "min": 1.99,
           "max": 2.32
         },
         "e10": {
           "count": 82,
-          "mean": 2.0099,
-          "median": 1.9895,
+          "mean": 2.0029,
+          "median": 1.979,
           "min": 1.915,
           "max": 2.239
         },
         "e85": {
-          "count": 37,
-          "mean": 0.7827,
+          "count": 35,
+          "mean": 0.7818,
           "median": 0.759,
           "min": 0.741,
           "max": 0.889
@@ -4348,32 +4348,32 @@
     "86": {
       "name": "Vienne",
       "regionCode": "NAQ",
-      "stationCount": 70,
+      "stationCount": 72,
       "fuels": {
         "gazole": {
-          "count": 68,
-          "mean": 2.0493,
+          "count": 70,
+          "mean": 2.0464,
           "median": 2.035,
           "min": 1.899,
           "max": 2.419
         },
         "sp95": {
-          "count": 17,
-          "mean": 2.0335,
-          "median": 1.999,
-          "min": 1.989,
+          "count": 16,
+          "mean": 2.035,
+          "median": 2.0235,
+          "min": 1.98,
           "max": 2.112
         },
         "sp98": {
           "count": 48,
-          "mean": 2.1228,
-          "median": 2.119,
+          "mean": 2.1205,
+          "median": 2.109,
           "min": 1.99,
           "max": 2.364
         },
         "e10": {
-          "count": 50,
-          "mean": 2.0205,
+          "count": 52,
+          "mean": 2.0196,
           "median": 1.999,
           "min": 1.888,
           "max": 2.294
@@ -4401,8 +4401,8 @@
       "fuels": {
         "gazole": {
           "count": 81,
-          "mean": 2.0598,
-          "median": 2.048,
+          "mean": 2.0581,
+          "median": 2.045,
           "min": 1.949,
           "max": 2.342
         },
@@ -4415,14 +4415,14 @@
         },
         "sp98": {
           "count": 64,
-          "mean": 2.1384,
-          "median": 2.1485,
+          "mean": 2.1371,
+          "median": 2.148,
           "min": 1.99,
           "max": 2.512
         },
         "e10": {
           "count": 59,
-          "mean": 2.0355,
+          "mean": 2.0337,
           "median": 2.019,
           "min": 1.91,
           "max": 2.362
@@ -4450,8 +4450,8 @@
       "fuels": {
         "gazole": {
           "count": 79,
-          "mean": 2.0581,
-          "median": 2.055,
+          "mean": 2.0561,
+          "median": 2.053,
           "min": 1.929,
           "max": 2.199
         },
@@ -4464,15 +4464,15 @@
         },
         "sp98": {
           "count": 59,
-          "mean": 2.0944,
+          "mean": 2.0928,
           "median": 2.101,
           "min": 1.973,
           "max": 2.229
         },
         "e10": {
           "count": 60,
-          "mean": 2.0154,
-          "median": 1.994,
+          "mean": 2.0118,
+          "median": 1.992,
           "min": 1.895,
           "max": 2.169
         },
@@ -4498,37 +4498,37 @@
       "stationCount": 82,
       "fuels": {
         "gazole": {
-          "count": 81,
-          "mean": 2.1095,
-          "median": 2.109,
+          "count": 80,
+          "mean": 2.1076,
+          "median": 2.104,
           "min": 1.936,
           "max": 2.269
         },
         "sp95": {
           "count": 30,
-          "mean": 2.1279,
-          "median": 2.144,
+          "mean": 2.1252,
+          "median": 2.129,
           "min": 1.99,
           "max": 2.229
         },
         "sp98": {
           "count": 56,
-          "mean": 2.1674,
-          "median": 2.222,
+          "mean": 2.1633,
+          "median": 2.209,
           "min": 1.99,
           "max": 2.319
         },
         "e10": {
-          "count": 53,
-          "mean": 2.0607,
-          "median": 2.049,
+          "count": 54,
+          "mean": 2.0551,
+          "median": 2.044,
           "min": 1.891,
           "max": 2.236
         },
         "e85": {
-          "count": 22,
-          "mean": 0.8665,
-          "median": 0.8135,
+          "count": 21,
+          "mean": 0.8698,
+          "median": 0.829,
           "min": 0.749,
           "max": 1.055
         },
@@ -4547,9 +4547,9 @@
       "stationCount": 18,
       "fuels": {
         "gazole": {
-          "count": 17,
-          "mean": 2.076,
-          "median": 2.059,
+          "count": 16,
+          "mean": 2.0801,
+          "median": 2.0615,
           "min": 1.971,
           "max": 2.239
         },
@@ -4568,9 +4568,9 @@
           "max": 2.21
         },
         "e10": {
-          "count": 12,
-          "mean": 1.9962,
-          "median": 1.981,
+          "count": 11,
+          "mean": 2.001,
+          "median": 1.989,
           "min": 1.894,
           "max": 2.131
         },
@@ -4593,12 +4593,12 @@
     "91": {
       "name": "Essonne",
       "regionCode": "IDF",
-      "stationCount": 125,
+      "stationCount": 124,
       "fuels": {
         "gazole": {
-          "count": 122,
-          "mean": 2.0364,
-          "median": 2.01,
+          "count": 121,
+          "mean": 2.0236,
+          "median": 2,
           "min": 1.929,
           "max": 2.25
         },
@@ -4611,21 +4611,21 @@
         },
         "sp98": {
           "count": 98,
-          "mean": 2.1044,
-          "median": 2.1185,
+          "mean": 2.0989,
+          "median": 2.109,
           "min": 1.99,
           "max": 2.359
         },
         "e10": {
           "count": 95,
-          "mean": 1.9951,
-          "median": 1.99,
+          "mean": 1.9894,
+          "median": 1.989,
           "min": 1.899,
           "max": 2.189
         },
         "e85": {
           "count": 46,
-          "mean": 0.8819,
+          "mean": 0.8775,
           "median": 0.88,
           "min": 0.759,
           "max": 0.999
@@ -4646,10 +4646,10 @@
       "fuels": {
         "gazole": {
           "count": 64,
-          "mean": 2.0681,
+          "mean": 2.048,
           "median": 2.035,
           "min": 1.969,
-          "max": 2.309
+          "max": 2.279
         },
         "sp95": {
           "count": 2,
@@ -4660,22 +4660,22 @@
         },
         "sp98": {
           "count": 39,
-          "mean": 2.1537,
-          "median": 2.149,
+          "mean": 2.147,
+          "median": 2.147,
           "min": 1.99,
           "max": 2.439
         },
         "e10": {
-          "count": 47,
-          "mean": 2.0304,
-          "median": 1.999,
-          "min": 1.939,
+          "count": 48,
+          "mean": 2.0242,
+          "median": 1.9985,
+          "min": 1.929,
           "max": 2.259
         },
         "e85": {
           "count": 20,
-          "mean": 0.9501,
-          "median": 0.945,
+          "mean": 0.9385,
+          "median": 0.938,
           "min": 0.903,
           "max": 1.045
         },
@@ -4691,42 +4691,42 @@
     "93": {
       "name": "Seine-Saint-Denis",
       "regionCode": "IDF",
-      "stationCount": 80,
+      "stationCount": 79,
       "fuels": {
         "gazole": {
-          "count": 77,
-          "mean": 2.0447,
-          "median": 2.035,
-          "min": 1.971,
+          "count": 76,
+          "mean": 2.0277,
+          "median": 2.029,
+          "min": 1.961,
           "max": 2.25
         },
         "sp95": {
           "count": 13,
-          "mean": 2.0462,
-          "median": 2.009,
+          "mean": 2.0384,
+          "median": 2.008,
           "min": 1.993,
           "max": 2.149
         },
         "sp98": {
           "count": 54,
-          "mean": 2.1037,
-          "median": 2.107,
+          "mean": 2.0949,
+          "median": 2.094,
           "min": 1.989,
           "max": 2.299
         },
         "e10": {
           "count": 66,
-          "mean": 1.9975,
-          "median": 1.989,
-          "min": 1.947,
+          "mean": 1.9904,
+          "median": 1.9775,
+          "min": 1.929,
           "max": 2.149
         },
         "e85": {
-          "count": 25,
-          "mean": 0.892,
+          "count": 24,
+          "mean": 0.8868,
           "median": 0.899,
           "min": 0.739,
-          "max": 1.009
+          "max": 0.969
         },
         "gplc": {
           "count": 15,
@@ -4744,7 +4744,7 @@
       "fuels": {
         "gazole": {
           "count": 78,
-          "mean": 2.0589,
+          "mean": 2.0484,
           "median": 2.035,
           "min": 1.96,
           "max": 2.349
@@ -4757,25 +4757,25 @@
           "max": 2.299
         },
         "sp98": {
-          "count": 54,
-          "mean": 2.1176,
-          "median": 2.0885,
-          "min": 1.99,
+          "count": 55,
+          "mean": 2.1135,
+          "median": 2.089,
+          "min": 1.989,
           "max": 2.395
         },
         "e10": {
           "count": 61,
-          "mean": 2.0091,
+          "mean": 2.0059,
           "median": 1.99,
-          "min": 1.93,
+          "min": 1.933,
           "max": 2.239
         },
         "e85": {
-          "count": 17,
-          "mean": 0.9316,
+          "count": 16,
+          "mean": 0.9246,
           "median": 0.929,
           "min": 0.856,
-          "max": 0.989
+          "max": 0.946
         },
         "gplc": {
           "count": 13,
@@ -4792,9 +4792,9 @@
       "stationCount": 99,
       "fuels": {
         "gazole": {
-          "count": 98,
-          "mean": 2.0313,
-          "median": 2.0185,
+          "count": 97,
+          "mean": 2.0245,
+          "median": 2.009,
           "min": 1.939,
           "max": 2.23
         },
@@ -4807,21 +4807,21 @@
         },
         "sp98": {
           "count": 72,
-          "mean": 2.1061,
-          "median": 2.1005,
+          "mean": 2.1028,
+          "median": 2.0995,
           "min": 1.99,
           "max": 2.339
         },
         "e10": {
           "count": 77,
-          "mean": 2.0038,
+          "mean": 2.0018,
           "median": 1.99,
           "min": 1.925,
           "max": 2.174
         },
         "e85": {
           "count": 41,
-          "mean": 0.8645,
+          "mean": 0.8606,
           "median": 0.865,
           "min": 0.759,
           "max": 0.959
@@ -4835,6 +4835,55 @@
         }
       }
     },
+    "06": {
+      "name": "Alpes-Maritimes",
+      "regionCode": "PAC",
+      "stationCount": 127,
+      "fuels": {
+        "gazole": {
+          "count": 126,
+          "mean": 2.0609,
+          "median": 2.035,
+          "min": 1.939,
+          "max": 2.26
+        },
+        "sp95": {
+          "count": 19,
+          "mean": 2.078,
+          "median": 2.053,
+          "min": 1.979,
+          "max": 2.28
+        },
+        "sp98": {
+          "count": 101,
+          "mean": 2.1127,
+          "median": 2.108,
+          "min": 1.989,
+          "max": 2.364
+        },
+        "e10": {
+          "count": 104,
+          "mean": 2.0166,
+          "median": 1.99,
+          "min": 1.918,
+          "max": 2.2
+        },
+        "e85": {
+          "count": 46,
+          "mean": 0.8698,
+          "median": 0.879,
+          "min": 0.753,
+          "max": 0.999
+        },
+        "gplc": {
+          "count": 14,
+          "mean": 1.0484,
+          "median": 1.039,
+          "min": 0.955,
+          "max": 1.169
+        }
+      }
+    },
     "01": {
       "name": "Ain",
       "regionCode": "ARA",
@@ -4842,37 +4891,37 @@
       "fuels": {
         "gazole": {
           "count": 113,
-          "mean": 2.0601,
-          "median": 2.05,
+          "mean": 2.0561,
+          "median": 2.035,
           "min": 1.925,
           "max": 2.369
         },
         "sp95": {
           "count": 39,
-          "mean": 2.0583,
+          "mean": 2.057,
           "median": 2.05,
           "min": 1.96,
           "max": 2.189
         },
         "sp98": {
           "count": 84,
-          "mean": 2.1143,
-          "median": 2.109,
+          "mean": 2.1074,
+          "median": 2.099,
           "min": 1.99,
           "max": 2.545
         },
         "e10": {
-          "count": 78,
-          "mean": 2.0112,
-          "median": 1.99,
+          "count": 79,
+          "mean": 2.0031,
+          "median": 1.988,
           "min": 1.892,
           "max": 2.395
         },
         "e85": {
           "count": 29,
-          "mean": 0.8504,
+          "mean": 0.8501,
           "median": 0.799,
-          "min": 0.797,
+          "min": 0.789,
           "max": 1.315
         },
         "gplc": {
@@ -4884,115 +4933,143 @@
         }
       }
     },
-    "06": {
-      "name": "Alpes-Maritimes",
-      "regionCode": "PAC",
-      "stationCount": 127,
-      "fuels": {
-        "gazole": {
-          "count": 126,
-          "mean": 2.0656,
-          "median": 2.0385,
-          "min": 1.939,
-          "max": 2.26
-        },
-        "sp95": {
-          "count": 19,
-          "mean": 2.0785,
-          "median": 2.053,
-          "min": 1.989,
-          "max": 2.28
-        },
-        "sp98": {
-          "count": 101,
-          "mean": 2.1144,
-          "median": 2.109,
-          "min": 1.99,
-          "max": 2.364
-        },
-        "e10": {
-          "count": 104,
-          "mean": 2.0185,
-          "median": 1.99,
-          "min": 1.919,
-          "max": 2.2
-        },
-        "e85": {
-          "count": 46,
-          "mean": 0.8727,
-          "median": 0.879,
-          "min": 0.753,
-          "max": 1.009
-        },
-        "gplc": {
-          "count": 14,
-          "mean": 1.0484,
-          "median": 1.039,
-          "min": 0.955,
-          "max": 1.169
-        }
-      }
-    },
     "05": {
       "name": "Hautes-Alpes",
       "regionCode": "PAC",
       "stationCount": 40,
       "fuels": {
         "gazole": {
-          "count": 37,
-          "mean": 2.0659,
-          "median": 2.079,
+          "count": 38,
+          "mean": 2.0585,
+          "median": 2.057,
           "min": 1.971,
           "max": 2.169
         },
         "sp95": {
-          "count": 15,
-          "mean": 2.1089,
-          "median": 2.098,
-          "min": 2.04,
+          "count": 16,
+          "mean": 2.101,
+          "median": 2.0895,
+          "min": 2.035,
           "max": 2.23
         },
         "sp98": {
-          "count": 29,
-          "mean": 2.1118,
-          "median": 2.126,
+          "count": 30,
+          "mean": 2.1017,
+          "median": 2.119,
           "min": 1.979,
           "max": 2.24
         },
         "e10": {
           "count": 28,
-          "mean": 2.0303,
-          "median": 2.037,
+          "mean": 2.0232,
+          "median": 2.023,
           "min": 1.943,
           "max": 2.119
         },
         "e85": {
-          "count": 8,
-          "mean": 0.8468,
-          "median": 0.8525,
+          "count": 9,
+          "mean": 0.8413,
+          "median": 0.846,
           "min": 0.798,
           "max": 0.899
         },
         "gplc": {
-          "count": 4,
-          "mean": 1.1018,
-          "median": 1.099,
+          "count": 3,
+          "mean": 1.0823,
+          "median": 1.049,
           "min": 1.049,
+          "max": 1.149
+        }
+      }
+    },
+    "03": {
+      "name": "Allier",
+      "regionCode": "ARA",
+      "stationCount": 79,
+      "fuels": {
+        "gazole": {
+          "count": 78,
+          "mean": 2.0696,
+          "median": 2.04,
+          "min": 1.959,
+          "max": 2.267
+        },
+        "sp95": {
+          "count": 26,
+          "mean": 2.0893,
+          "median": 2.1,
+          "min": 1.999,
+          "max": 2.2
+        },
+        "sp98": {
+          "count": 59,
+          "mean": 2.1263,
+          "median": 2.149,
+          "min": 1.99,
+          "max": 2.289
+        },
+        "e10": {
+          "count": 56,
+          "mean": 2.0207,
+          "median": 1.99,
+          "min": 1.919,
+          "max": 2.193
+        },
+        "e85": {
+          "count": 14,
+          "mean": 0.8973,
+          "median": 0.882,
+          "min": 0.798,
+          "max": 1.154
+        },
+        "gplc": {
+          "count": 6,
+          "mean": 1.1027,
+          "median": 1.099,
+          "min": 0.999,
           "max": 1.16
+        }
+      }
+    },
+    "2B": {
+      "name": "Haute-Corse",
+      "regionCode": "COR",
+      "stationCount": 49,
+      "fuels": {
+        "gazole": {
+          "count": 48,
+          "mean": 2.1598,
+          "median": 2.155,
+          "min": 2.08,
+          "max": 2.25
+        },
+        "sp95": {
+          "count": 37,
+          "mean": 1.991,
+          "median": 1.99,
+          "min": 1.95,
+          "max": 2.05
+        },
+        "gplc": {
+          "count": 3,
+          "mean": 1.33,
+          "median": 1.34,
+          "min": 1.3,
+          "max": 1.35
         }
       }
     },
     "07": {
       "name": "Ardèche",
       "regionCode": "ARA",
-      "stationCount": 69,
+      "stationCount": 68,
       "fuels": {
         "gazole": {
-          "count": 68,
-          "mean": 2.0615,
+          "count": 67,
+          "mean": 2.0585,
           "median": 2.053,
           "min": 1.969,
-          "max": 2.25
+          "max": 2.227
         },
         "sp95": {
           "count": 27,
@@ -5031,111 +5108,6 @@
         }
       }
     },
-    "03": {
-      "name": "Allier",
-      "regionCode": "ARA",
-      "stationCount": 79,
-      "fuels": {
-        "gazole": {
-          "count": 78,
-          "mean": 2.0747,
-          "median": 2.049,
-          "min": 1.969,
-          "max": 2.267
-        },
-        "sp95": {
-          "count": 26,
-          "mean": 2.0908,
-          "median": 2.1,
-          "min": 1.999,
-          "max": 2.2
-        },
-        "sp98": {
-          "count": 59,
-          "mean": 2.131,
-          "median": 2.15,
-          "min": 1.99,
-          "max": 2.289
-        },
-        "e10": {
-          "count": 57,
-          "mean": 2.0245,
-          "median": 1.999,
-          "min": 1.939,
-          "max": 2.193
-        },
-        "e85": {
-          "count": 14,
-          "mean": 0.8909,
-          "median": 0.8705,
-          "min": 0.798,
-          "max": 1.154
-        },
-        "gplc": {
-          "count": 6,
-          "mean": 1.1027,
-          "median": 1.099,
-          "min": 0.999,
-          "max": 1.16
-        }
-      }
-    },
-    "2B": {
-      "name": "Haute-Corse",
-      "regionCode": "COR",
-      "stationCount": 46,
-      "fuels": {
-        "gazole": {
-          "count": 45,
-          "mean": 2.1586,
-          "median": 2.16,
-          "min": 2.08,
-          "max": 2.25
-        },
-        "sp95": {
-          "count": 37,
-          "mean": 1.991,
-          "median": 1.99,
-          "min": 1.95,
-          "max": 2.05
-        },
-        "gplc": {
-          "count": 3,
-          "mean": 1.33,
-          "median": 1.34,
-          "min": 1.3,
-          "max": 1.35
-        }
-      }
-    },
-    "2A": {
-      "name": "Corse-du-Sud",
-      "regionCode": "COR",
-      "stationCount": 57,
-      "fuels": {
-        "gazole": {
-          "count": 57,
-          "mean": 2.1601,
-          "median": 2.145,
-          "min": 2.071,
-          "max": 2.379
-        },
-        "sp95": {
-          "count": 46,
-          "mean": 2.0037,
-          "median": 1.99,
-          "min": 1.94,
-          "max": 2.373
-        },
-        "gplc": {
-          "count": 1,
-          "mean": 1.34,
-          "median": 1.34,
-          "min": 1.34,
-          "max": 1.34
-        }
-      }
-    },
     "08": {
       "name": "Ardennes",
       "regionCode": "GES",
@@ -5143,29 +5115,29 @@
       "fuels": {
         "gazole": {
           "count": 46,
-          "mean": 2.0734,
+          "mean": 2.0699,
           "median": 2.059,
-          "min": 1.971,
+          "min": 1.97,
           "max": 2.173
         },
         "sp95": {
           "count": 12,
-          "mean": 2.0745,
-          "median": 2.0765,
+          "mean": 2.0732,
+          "median": 2.0745,
           "min": 1.975,
           "max": 2.169
         },
         "sp98": {
-          "count": 36,
-          "mean": 2.1403,
+          "count": 35,
+          "mean": 2.1392,
           "median": 2.152,
           "min": 1.99,
           "max": 2.264
         },
         "e10": {
           "count": 33,
-          "mean": 2.0222,
-          "median": 2.004,
+          "mean": 2.0201,
+          "median": 1.999,
           "min": 1.922,
           "max": 2.132
         },
@@ -5185,6 +5157,34 @@
         }
       }
     },
+    "2A": {
+      "name": "Corse-du-Sud",
+      "regionCode": "COR",
+      "stationCount": 57,
+      "fuels": {
+        "gazole": {
+          "count": 57,
+          "mean": 2.1499,
+          "median": 2.13,
+          "min": 2.07,
+          "max": 2.379
+        },
+        "sp95": {
+          "count": 46,
+          "mean": 2.0029,
+          "median": 1.99,
+          "min": 1.94,
+          "max": 2.373
+        },
+        "gplc": {
+          "count": 1,
+          "mean": 1.34,
+          "median": 1.34,
+          "min": 1.34,
+          "max": 1.34
+        }
+      }
+    },
     "09": {
       "name": "Ariège",
       "regionCode": "OCC",
@@ -5192,8 +5192,8 @@
       "fuels": {
         "gazole": {
           "count": 32,
-          "mean": 2.0736,
-          "median": 2.062,
+          "mean": 2.0657,
+          "median": 2.0525,
           "min": 1.945,
           "max": 2.258
         },
@@ -5205,16 +5205,16 @@
           "max": 2.147
         },
         "sp98": {
-          "count": 23,
-          "mean": 2.156,
-          "median": 2.189,
+          "count": 22,
+          "mean": 2.1548,
+          "median": 2.187,
           "min": 1.99,
           "max": 2.351
         },
         "e10": {
-          "count": 27,
-          "mean": 2.0469,
-          "median": 2.054,
+          "count": 26,
+          "mean": 2.0429,
+          "median": 2.0525,
           "min": 1.945,
           "max": 2.224
         },
@@ -5240,43 +5240,43 @@
       "stationCount": 88,
       "fuels": {
         "gazole": {
-          "count": 87,
-          "mean": 2.0516,
-          "median": 2.041,
+          "count": 86,
+          "mean": 2.0488,
+          "median": 2.035,
           "min": 1.939,
           "max": 2.309
         },
         "sp95": {
           "count": 26,
-          "mean": 2.0533,
-          "median": 2.0435,
+          "mean": 2.0528,
+          "median": 2.043,
           "min": 1.965,
           "max": 2.22
         },
         "sp98": {
           "count": 61,
-          "mean": 2.1109,
+          "mean": 2.1068,
           "median": 2.099,
           "min": 1.99,
           "max": 2.349
         },
         "e10": {
           "count": 54,
-          "mean": 2.0099,
-          "median": 1.994,
+          "mean": 2.005,
+          "median": 1.99,
           "min": 1.901,
           "max": 2.239
         },
         "e85": {
           "count": 38,
-          "mean": 0.831,
-          "median": 0.808,
+          "mean": 0.8311,
+          "median": 0.8095,
           "min": 0.729,
           "max": 0.999
         },
         "gplc": {
-          "count": 15,
-          "mean": 1.1273,
+          "count": 14,
+          "mean": 1.1293,
           "median": 1.16,
           "min": 0.999,
           "max": 1.16
@@ -5286,39 +5286,39 @@
     "04": {
       "name": "Alpes-de-Haute-Provence",
       "regionCode": "PAC",
-      "stationCount": 49,
+      "stationCount": 50,
       "fuels": {
         "gazole": {
-          "count": 49,
-          "mean": 2.0709,
-          "median": 2.084,
+          "count": 50,
+          "mean": 2.0713,
+          "median": 2.0795,
           "min": 1.928,
           "max": 2.269
         },
         "sp95": {
           "count": 11,
-          "mean": 2.1116,
-          "median": 2.127,
+          "mean": 2.1071,
+          "median": 2.119,
           "min": 1.99,
           "max": 2.17
         },
         "sp98": {
-          "count": 33,
-          "mean": 2.1117,
-          "median": 2.129,
+          "count": 34,
+          "mean": 2.1039,
+          "median": 2.104,
           "min": 1.987,
           "max": 2.299
         },
         "e10": {
           "count": 37,
-          "mean": 2.0248,
-          "median": 2.003,
+          "mean": 2.0216,
+          "median": 1.999,
           "min": 1.91,
           "max": 2.219
         },
         "e85": {
-          "count": 16,
-          "mean": 0.8279,
+          "count": 15,
+          "mean": 0.8299,
           "median": 0.798,
           "min": 0.759,
           "max": 0.998
