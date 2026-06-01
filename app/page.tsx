@@ -10,6 +10,7 @@ import AnalysisPanel from '@/components/AnalysisPanel';
 import StockChart from '@/components/StockChart';
 import EmailCTA from '@/components/EmailCTA';
 import DisruptionBanner from '@/components/DisruptionBanner';
+import FuelPriceSearch from '@/components/FuelPriceSearch';
 import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
@@ -83,6 +84,9 @@ export default async function DashboardPage() {
           lastUpdated={stocks.lastUpdated}
         />
       </section>
+
+      {/* Find cheapest fuel near you (France granular) */}
+      <FuelPriceSearch />
 
       {/* 3. Reserve Gauges */}
       <section aria-label="EU average fuel reserves">
