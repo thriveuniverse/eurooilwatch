@@ -5,6 +5,7 @@ import { COUNTRIES, EU27_CODES } from '@/lib/countries';
 import JsonLd from '@/components/JsonLd';
 import StockChart from '@/components/StockChart';
 import FranceRegionalView, { type FranceData } from '@/components/FranceRegionalView';
+import SpainRegionalView, { type SpainData } from '@/components/SpainRegionalView';
 import type { ExtendedCountryCode } from '@/lib/types';
 import type { Metadata } from 'next';
 
@@ -13,6 +14,16 @@ function loadFranceData(): FranceData | null {
     const p = path.join(process.cwd(), 'data', 'france-fuel-prices.json');
     if (!fs.existsSync(p)) return null;
     return JSON.parse(fs.readFileSync(p, 'utf-8')) as FranceData;
+  } catch {
+    return null;
+  }
+}
+
+function loadSpainData(): SpainData | null {
+  try {
+    const p = path.join(process.cwd(), 'data', 'spain-fuel-prices.json');
+    if (!fs.existsSync(p)) return null;
+    return JSON.parse(fs.readFileSync(p, 'utf-8')) as SpainData;
   } catch {
     return null;
   }
@@ -133,6 +144,12 @@ export default function CountryPage({ params }: PageProps) {
       {code === 'FR' && (() => {
         const franceData = loadFranceData();
         return franceData ? <FranceRegionalView data={franceData} /> : null;
+      })()}
+
+      {/* Spain-specific: live station-level prices */}
+      {code === 'ES' && (() => {
+        const spainData = loadSpainData();
+        return spainData ? <SpainRegionalView data={spainData} /> : null;
       })()}
 
       {/* Briefing CTA */}

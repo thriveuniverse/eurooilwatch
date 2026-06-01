@@ -63,13 +63,24 @@ export default async function DashboardPage() {
     try { return JSON.parse(fs.readFileSync(p, 'utf-8')) as GasData; } catch { return null; }
   })();
 
-  const franceCities = ((): CityTuple[] => {
-    const p = path.join(process.cwd(), 'data', 'france-city-index.json');
-    if (!fs.existsSync(p)) return [];
-    try {
-      const parsed = JSON.parse(fs.readFileSync(p, 'utf-8')) as { cities?: CityTuple[] };
-      return parsed.cities ?? [];
-    } catch { return []; }
+  // Merge French + Spanish city indexes into one tuple list for the homepage typeahead.
+  // Each tuple: [ville, country, areaCode, stationCount]. Sorted by station count desc.
+  const searchCities = ((): CityTuple[] => {
+    const loadCountry = (file: string, country: 'FR' | 'ES'): CityTuple[] => {
+      const p = path.join(process.cwd(), 'data', file);
+      if (!fs.existsSync(p)) return [];
+      try {
+        const parsed = JSON.parse(fs.readFileSync(p, 'utf-8')) as {
+          cities?: [string, string, number][];
+        };
+        return (parsed.cities ?? []).map(
+          ([ville, area, n]) => [ville, country, area, n] as CityTuple
+        );
+      } catch { return []; }
+    };
+    const fr = loadCountry('france-city-index.json', 'FR');
+    const es = loadCountry('spain-city-index.json', 'ES');
+    return [...fr, ...es].sort((a, b) => b[3] - a[3]);
   })();
 
   return (
@@ -95,7 +106,7 @@ export default async function DashboardPage() {
       </section>
 
       {/* Find cheapest fuel near you (France granular) */}
-      <FuelPriceSearch cities={franceCities} />
+      <FuelPriceSearch cities={searchCities} />
 
       {/* 3. Reserve Gauges */}
       <section aria-label="EU average fuel reserves">

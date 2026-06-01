@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { EU27_CODES } from '@/lib/countries';
 import { DEPARTMENTS } from '@/lib/france-geo';
+import { PROVINCES } from '@/lib/spain-geo';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -48,6 +49,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.65,
   }));
 
+  // Spain provincia pages — daily-refreshed, station-level
+  const spainProvPages: MetadataRoute.Sitemap = Object.keys(PROVINCES).map((code) => ({
+    url: `${baseUrl}/country/es/prov/${code.toLowerCase()}`,
+    lastModified: new Date(),
+    changeFrequency: 'daily' as const,
+    priority: 0.65,
+  }));
+
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: baseUrl,                                          lastModified: new Date(),                changeFrequency: 'daily',   priority: 1.0 },
     { url: `${baseUrl}/prices`,                              lastModified: new Date(),                changeFrequency: 'weekly',  priority: 0.9 },
@@ -62,5 +71,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/about`,                               lastModified: new Date(),                changeFrequency: 'monthly', priority: 0.4 },
   ];
 
-  return [...staticRoutes, ...analysisPages, ...countryPages, ...franceDeptPages];
+  return [...staticRoutes, ...analysisPages, ...countryPages, ...franceDeptPages, ...spainProvPages];
 }
