@@ -185,6 +185,15 @@ export default function FranceRegionalView({ data }: Props) {
           </span>
         </div>
 
+        {selectedDept && (
+          <a
+            href={`/country/fr/dept/${selectedDept.toLowerCase()}`}
+            className="inline-flex items-center gap-1.5 mb-3 text-xs text-oil-300 hover:text-oil-200 underline underline-offset-2"
+          >
+            See every station in {data.departments[selectedDept]?.name} →
+          </a>
+        )}
+
         <div className="grid sm:grid-cols-2 gap-3">
           {PRIMARY_FUELS.map((f) => {
             const stat = view.fuels[f];

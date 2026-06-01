@@ -29,8 +29,8 @@ interface StationRecord {
   ville?: string;
   pop?: string; // A = autoroute, R = route
   adresse?: string;
-  latitude?: number;
-  longitude?: number;
+  latitude?: number | string;
+  longitude?: number | string;
 
   gazole_prix?: number | string | null;
   gazole_maj?: string | null;
@@ -44,6 +44,17 @@ interface StationRecord {
   e85_maj?: string | null;
   gplc_prix?: number | string | null;
   gplc_maj?: string | null;
+}
+
+interface StationOut {
+  id: string;
+  cp: string;
+  ville: string;
+  adresse: string;
+  pop: 'A' | 'R' | null;
+  lat: number | null;
+  lng: number | null;
+  fuels: Partial<Record<FuelKey, number>>;
 }
 
 interface FuelStats {
@@ -132,6 +143,7 @@ async function main() {
   const departments: Record<string, Bucket> = {};
   const deptStationCount: Record<string, number> = {};
   const regionStationCount: Record<string, number> = {};
+  const deptStations: Record<string, StationOut[]> = {};
   let freshStationCount = 0;
 
   for (const r of records) {
@@ -140,6 +152,7 @@ async function main() {
     const regionCode = DEPARTMENTS[deptCode].regionCode;
 
     let stationHasAnyFreshFuel = false;
+    const stationFuels: Partial<Record<FuelKey, number>> = {};
 
     for (const f of FUEL_KEYS) {
       const price = toNum(r[`${f}_prix` as keyof StationRecord] as never);
@@ -152,6 +165,7 @@ async function main() {
       regions[regionCode][f].push(price);
       if (!departments[deptCode]) departments[deptCode] = empty();
       departments[deptCode][f].push(price);
+      stationFuels[f] = price;
 
       stationHasAnyFreshFuel = true;
     }
@@ -160,6 +174,22 @@ async function main() {
       freshStationCount++;
       deptStationCount[deptCode] = (deptStationCount[deptCode] || 0) + 1;
       regionStationCount[regionCode] = (regionStationCount[regionCode] || 0) + 1;
+
+      // Track full station record for the per-département file
+      const lat = typeof r.latitude === 'number' ? r.latitude : parseFloat(String(r.latitude ?? ''));
+      const lng = typeof r.longitude === 'number' ? r.longitude : parseFloat(String(r.longitude ?? ''));
+      const popValue = r.pop === 'A' || r.pop === 'R' ? r.pop : null;
+      if (!deptStations[deptCode]) deptStations[deptCode] = [];
+      deptStations[deptCode].push({
+        id: String(r.id ?? ''),
+        cp: (r.cp ?? '').toString().trim(),
+        ville: (r.ville ?? '').toString().trim(),
+        adresse: (r.adresse ?? '').toString().trim(),
+        pop: popValue,
+        lat: Number.isFinite(lat) ? +lat.toFixed(5) : null,
+        lng: Number.isFinite(lng) ? +lng.toFixed(5) : null,
+        fuels: stationFuels,
+      });
     }
   }
 
@@ -215,9 +245,42 @@ async function main() {
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(out, null, 2));
 
+  // Per-département files for the static /country/fr/dept/[code] route
+  const deptDir = path.join(process.cwd(), 'data', 'france-dept');
+  fs.mkdirSync(deptDir, { recursive: true });
+
+  // Clean any obsolete files (départements that disappeared from the feed)
+  const written = new Set<string>();
+  for (const [code, stations] of Object.entries(deptStations)) {
+    const d = DEPARTMENTS[code];
+    if (!d) continue;
+    // Sort stations: ville A→Z, then adresse
+    stations.sort((a, b) => a.ville.localeCompare(b.ville) || a.adresse.localeCompare(b.adresse));
+    const deptOut = {
+      code,
+      name: d.name,
+      regionCode: d.regionCode,
+      regionName: REGIONS[d.regionCode]?.name ?? d.regionCode,
+      asOf: out.asOf,
+      source: out.source,
+      freshnessFilterDays: FRESHNESS_DAYS,
+      stationCount: stations.length,
+      fuels: out.departments[code]?.fuels ?? {},
+      stations,
+    };
+    fs.writeFileSync(path.join(deptDir, `${code}.json`), JSON.stringify(deptOut, null, 2));
+    written.add(`${code}.json`);
+  }
+  // Sweep stale dept files
+  for (const f of fs.readdirSync(deptDir)) {
+    if (f.endsWith('.json') && !written.has(f)) {
+      fs.unlinkSync(path.join(deptDir, f));
+    }
+  }
+
   const dt = ((Date.now() - t0) / 1000).toFixed(1);
   console.log(
-    `[france] wrote ${outPath}  ` +
+    `[france] wrote ${outPath} + ${written.size} per-dept files  ` +
       `(${out.freshStations} fresh / ${out.totalStations} total stations, ` +
       `${Object.keys(out.regions).length} regions, ` +
       `${Object.keys(out.departments).length} départements, ${dt}s total)`
