@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
 import { EU27_CODES } from '@/lib/countries';
 import { DEPARTMENTS } from '@/lib/france-geo';
-import { PROVINCES } from '@/lib/spain-geo';
+import { PROVINCES as ES_PROVINCES } from '@/lib/spain-geo';
+import { PROVINCES as IT_PROVINCES } from '@/lib/italy-geo';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -50,8 +51,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   // Spain provincia pages — daily-refreshed, station-level
-  const spainProvPages: MetadataRoute.Sitemap = Object.keys(PROVINCES).map((code) => ({
+  const spainProvPages: MetadataRoute.Sitemap = Object.keys(ES_PROVINCES).map((code) => ({
     url: `${baseUrl}/country/es/prov/${code.toLowerCase()}`,
+    lastModified: new Date(),
+    changeFrequency: 'daily' as const,
+    priority: 0.65,
+  }));
+
+  // Italy provincia pages — daily-refreshed, station-level
+  const italyProvPages: MetadataRoute.Sitemap = Object.keys(IT_PROVINCES).map((code) => ({
+    url: `${baseUrl}/country/it/prov/${code.toLowerCase()}`,
     lastModified: new Date(),
     changeFrequency: 'daily' as const,
     priority: 0.65,
@@ -71,5 +80,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/about`,                               lastModified: new Date(),                changeFrequency: 'monthly', priority: 0.4 },
   ];
 
-  return [...staticRoutes, ...analysisPages, ...countryPages, ...franceDeptPages, ...spainProvPages];
+  return [...staticRoutes, ...analysisPages, ...countryPages, ...franceDeptPages, ...spainProvPages, ...italyProvPages];
 }

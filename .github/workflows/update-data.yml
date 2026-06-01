@@ -65,6 +65,10 @@ jobs:
         run: npm run fetch:spain
         continue-on-error: true
 
+      - name: Fetch Italian station-level fuel prices (MIMIT)
+        run: npm run fetch:italy
+        continue-on-error: true
+
       - name: Fetch bunker fuel prices
         run: npm run fetch:bunker
         continue-on-error: true

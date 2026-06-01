@@ -6,6 +6,7 @@ import JsonLd from '@/components/JsonLd';
 import StockChart from '@/components/StockChart';
 import FranceRegionalView, { type FranceData } from '@/components/FranceRegionalView';
 import SpainRegionalView, { type SpainData } from '@/components/SpainRegionalView';
+import ItalyRegionalView, { type ItalyData } from '@/components/ItalyRegionalView';
 import type { ExtendedCountryCode } from '@/lib/types';
 import type { Metadata } from 'next';
 
@@ -24,6 +25,16 @@ function loadSpainData(): SpainData | null {
     const p = path.join(process.cwd(), 'data', 'spain-fuel-prices.json');
     if (!fs.existsSync(p)) return null;
     return JSON.parse(fs.readFileSync(p, 'utf-8')) as SpainData;
+  } catch {
+    return null;
+  }
+}
+
+function loadItalyData(): ItalyData | null {
+  try {
+    const p = path.join(process.cwd(), 'data', 'italy-fuel-prices.json');
+    if (!fs.existsSync(p)) return null;
+    return JSON.parse(fs.readFileSync(p, 'utf-8')) as ItalyData;
   } catch {
     return null;
   }
@@ -150,6 +161,12 @@ export default function CountryPage({ params }: PageProps) {
       {code === 'ES' && (() => {
         const spainData = loadSpainData();
         return spainData ? <SpainRegionalView data={spainData} /> : null;
+      })()}
+
+      {/* Italy-specific: live station-level prices */}
+      {code === 'IT' && (() => {
+        const italyData = loadItalyData();
+        return italyData ? <ItalyRegionalView data={italyData} /> : null;
       })()}
 
       {/* Briefing CTA */}

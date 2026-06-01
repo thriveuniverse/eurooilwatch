@@ -3,19 +3,20 @@
 import { useRouter } from 'next/navigation';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { DEPARTMENTS, deptFromPostalCode } from '@/lib/france-geo';
-import { PROVINCES, provFromPostalCode } from '@/lib/spain-geo';
+import { PROVINCES as ES_PROVINCES, provFromPostalCode } from '@/lib/spain-geo';
+import { PROVINCES as IT_PROVINCES } from '@/lib/italy-geo';
 
-type Country = 'FR' | 'ES';
+type Country = 'FR' | 'ES' | 'IT';
 
 const POPULAR = [
   { country: 'FR' as Country, code: '75', ville: 'Paris',    flag: '🇫🇷', filterCity: '' },
+  { country: 'IT' as Country, code: 'RM', ville: 'Roma',     flag: '🇮🇹', filterCity: 'Roma' },
   { country: 'ES' as Country, code: '28', ville: 'Madrid',   flag: '🇪🇸', filterCity: 'Madrid' },
+  { country: 'IT' as Country, code: 'MI', ville: 'Milano',   flag: '🇮🇹', filterCity: 'Milano' },
   { country: 'ES' as Country, code: '08', ville: 'Barcelona', flag: '🇪🇸', filterCity: 'Barcelona' },
   { country: 'FR' as Country, code: '13', ville: 'Marseille', flag: '🇫🇷', filterCity: 'Marseille' },
+  { country: 'IT' as Country, code: 'NA', ville: 'Napoli',   flag: '🇮🇹', filterCity: 'Napoli' },
   { country: 'FR' as Country, code: '69', ville: 'Lyon',     flag: '🇫🇷', filterCity: 'Lyon' },
-  { country: 'ES' as Country, code: '46', ville: 'Valencia', flag: '🇪🇸', filterCity: 'Valencia' },
-  { country: 'FR' as Country, code: '31', ville: 'Toulouse', flag: '🇫🇷', filterCity: 'Toulouse' },
-  { country: 'ES' as Country, code: '41', ville: 'Sevilla',  flag: '🇪🇸', filterCity: 'Sevilla' },
 ];
 
 // City tuple shipped to the client: [ville, country, areaCode, stationCount]
@@ -37,13 +38,19 @@ const MAX_SUGGESTIONS = 8;
 
 function makeSuggestionUrl(country: Country, area: string, ville: string): string {
   if (country === 'FR') return `/country/fr/dept/${area.toLowerCase()}?ville=${encodeURIComponent(ville)}`;
+  if (country === 'IT') return `/country/it/prov/${area.toLowerCase()}?ville=${encodeURIComponent(ville)}`;
   return `/country/es/prov/${area.toLowerCase()}?ville=${encodeURIComponent(ville)}`;
 }
 
 function popularUrl(country: Country, code: string, filterCity: string): string {
-  const base = country === 'FR' ? `/country/fr/dept/${code.toLowerCase()}` : `/country/es/prov/${code.toLowerCase()}`;
+  let base: string;
+  if (country === 'FR') base = `/country/fr/dept/${code.toLowerCase()}`;
+  else if (country === 'IT') base = `/country/it/prov/${code.toLowerCase()}`;
+  else base = `/country/es/prov/${code.toLowerCase()}`;
   return filterCity ? `${base}?ville=${encodeURIComponent(filterCity)}` : base;
 }
+
+const COUNTRY_FLAG: Record<Country, string> = { FR: '🇫🇷', ES: '🇪🇸', IT: '🇮🇹' };
 
 export default function FuelPriceSearch({ cities }: Props) {
   const router = useRouter();
@@ -86,26 +93,20 @@ export default function FuelPriceSearch({ cities }: Props) {
     if (!trimmed) return;
 
     if (isPostalCode) {
-      // Spanish postcodes start 01–52 unambiguously map to a provincia.
-      // French metropolitan postcodes can overlap (01–95), so we try Spain
-      // first only when the first two digits are 01–52 AND the postcode
-      // doesn't match a known popular French region. Pragmatically: try
-      // both and prefer the country whose lookup succeeds.
+      // For French/Spanish overlap (01–95) we prefer France; Italian CAPs
+      // don't reliably map to province via postal code, so we don't try.
+      // Italian users should use the city-name typeahead.
       const dept = deptFromPostalCode(trimmed);
       const prov = provFromPostalCode(trimmed);
-      // French dept lookup wins for 5-digit codes that resolve in both
-      // (France has more granular postcode-to-dept mapping for the user's
-      // likely use case — Spanish users will be more inclined to type the
-      // city name into the typeahead).
       if (dept && DEPARTMENTS[dept]) {
         router.push(`/country/fr/dept/${dept.toLowerCase()}`);
         return;
       }
-      if (prov && PROVINCES[prov]) {
+      if (prov && ES_PROVINCES[prov]) {
         router.push(`/country/es/prov/${prov.toLowerCase()}`);
         return;
       }
-      setError('No département or provincia found for that postal code.');
+      setError('No matching département or provincia found. For Italy, try typing a city name.');
       return;
     }
 
@@ -155,13 +156,13 @@ export default function FuelPriceSearch({ cities }: Props) {
       <div className="flex flex-col lg:flex-row lg:items-center gap-5">
         <div className="flex-1 min-w-0">
           <p className="text-[10px] font-mono font-semibold tracking-widest text-amber-400/90 uppercase">
-            New · live station prices · France
+            Live station prices · <strong className="text-white">🇫🇷 France</strong> + <strong className="text-white">🇮🇹 Italy</strong> + <strong className="text-white">🇪🇸 Spain</strong>
           </p>
           <h2 className="mt-1.5 text-xl sm:text-2xl font-bold text-white leading-tight">
             Find the cheapest fuel in your area
           </h2>
           <p className="mt-1.5 text-sm text-gray-300 leading-relaxed">
-            ~9,300 French stations across {cities.length.toLocaleString('en-GB')} towns, refreshed daily. Type a city or postal code.
+            Over 40,000 stations across <strong className="text-white">🇫🇷 France</strong>, <strong className="text-white">🇮🇹 Italy</strong>, and <strong className="text-white">🇪🇸 Spain</strong>, refreshed daily. Type a city or postal code.
           </p>
         </div>
 
@@ -214,7 +215,7 @@ export default function FuelPriceSearch({ cities }: Props) {
                     }`}
                   >
                     <span className="text-sm text-white truncate flex items-center gap-1.5">
-                      <span aria-hidden="true">{s.country === 'FR' ? '🇫🇷' : '🇪🇸'}</span>
+                      <span aria-hidden="true">{COUNTRY_FLAG[s.country]}</span>
                       {s.ville}
                     </span>
                     <span className="text-[10px] font-mono text-gray-400 flex-shrink-0">
@@ -254,31 +255,23 @@ export default function FuelPriceSearch({ cities }: Props) {
               <span className="font-mono text-gray-500">{d.code}</span> {d.ville}
             </a>
           ))}
-          <a
-            href="/country/fr"
-            className="text-[11px] px-2.5 py-1 rounded-full border border-oil-700 text-oil-300 hover:border-amber-600 hover:text-white transition"
-          >
+          <a href="/country/fr" className="text-[11px] px-2.5 py-1 rounded-full border border-oil-700 text-oil-300 hover:border-amber-600 hover:text-white transition">
             🇫🇷 All départements →
           </a>
-          <a
-            href="/country/es"
-            className="text-[11px] px-2.5 py-1 rounded-full border border-oil-700 text-oil-300 hover:border-amber-600 hover:text-white transition"
-          >
+          <a href="/country/it" className="text-[11px] px-2.5 py-1 rounded-full border border-oil-700 text-oil-300 hover:border-amber-600 hover:text-white transition">
+            🇮🇹 All province →
+          </a>
+          <a href="/country/es" className="text-[11px] px-2.5 py-1 rounded-full border border-oil-700 text-oil-300 hover:border-amber-600 hover:text-white transition">
             🇪🇸 All provincias →
           </a>
         </div>
       </div>
 
       <p className="mt-3 text-[10px] text-gray-500 leading-snug">
-        Granular live coverage: France 🇫🇷 and Spain 🇪🇸. Italy and Germany planned. Sources:{' '}
-        <a href="https://www.prix-carburants.gouv.fr/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">
-          prix-carburants.gouv.fr
-        </a>{' '}
-        and{' '}
-        <a href="https://geoportalgasolineras.es/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">
-          geoportalgasolineras.es
-        </a>
-        .
+        Granular live coverage: 🇫🇷 France, 🇮🇹 Italy, 🇪🇸 Spain. Germany planned. Sources:{' '}
+        <a href="https://www.prix-carburants.gouv.fr/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">prix-carburants.gouv.fr</a>,{' '}
+        <a href="https://www.mimit.gov.it/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">mimit.gov.it</a>,{' '}
+        <a href="https://geoportalgasolineras.es/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">geoportalgasolineras.es</a>.
       </p>
     </section>
   );
