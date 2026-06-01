@@ -1,26 +1,27 @@
 /**
- * Fetch German fuel-station data via tankerkoenig.de (which wraps the
- * Bundeskartellamt's MTS-K data with appropriate consumer-data licensing).
+ * Fetch German fuel-station data via tankerkoenig.de.
+ *
+ * Architecture: tankerkoenig has NO bulk station endpoint. We cover Germany
+ * with an overlapping hex-packed grid of radius-25km searches via list.php,
+ * which returns station details + current prices inline. Stations are
+ * deduplicated by ID across overlapping cells.
  *
  * REQUIRES: TANKERKOENIG_API_KEY environment variable.
- *   Apply for a free non-commercial key at
- *   https://creativecommons.tankerkoenig.de/api.html
- *   Approval typically takes 24–48 hours.
+ *   - Apply for a free non-commercial key at
+ *     https://creativecommons.tankerkoenig.de/api.html (24–48 hours approval).
+ *   - For architecture testing without a real key, set
+ *     TANKERKOENIG_API_KEY to the documented demo UUID
+ *     00000000-0000-0000-0000-000000000002 — the API returns station
+ *     locations but no real prices, so aggregation files will populate
+ *     with empty fuel stats. This proves the pipeline end-to-end.
  *
  * Output: data/germany-fuel-prices.json
- *         data/germany-land/{code}.json (16 files — one per Bundesland)
+ *         data/germany-land/{code}.json (one per Bundesland)
  *         data/germany-city-index.json
  *
- * Strategy:
- *   1. Fetch the bulk station list (tankerkoenig publishes this as a JSON
- *      dump at /json/stationen.json — free for keyholders).
- *   2. Fetch latest prices for each station via the /json/prices.php?ids=…
- *      endpoint, chunked to ≤10 stations per call per their rate limit.
- *   3. Map each station to a Bundesland via PLZ-prefix lookup.
- *   4. Aggregate to national + Bundesland level, write JSON files.
- *
- * Cadence: daily via update-data.yml. The script exits 0 (no-op) when the
- * key is missing, so the rest of the pipeline isn't blocked.
+ * Cadence: daily via update-data.yml. Script exits 0 with a clear message
+ * when TANKERKOENIG_API_KEY is not set, so the rest of the pipeline isn't
+ * blocked.
  */
 
 import * as fs from 'fs';
@@ -28,24 +29,25 @@ import * as path from 'path';
 import { BUNDESLAENDER, bundeslandFromPlz } from '../lib/germany-geo';
 
 const TK_BASE = 'https://creativecommons.tankerkoenig.de';
-// Bulk station list. Free for keyholders, ~16k stations.
-const STATIONS_ENDPOINT = `${TK_BASE}/json/stationen.json`;
-// Price lookup. Up to 10 station IDs per call.
-const PRICES_ENDPOINT = `${TK_BASE}/json/prices.php`;
-const PRICE_BATCH_SIZE = 10;
-// Soft inter-call delay to stay polite to the public endpoint.
-const REQUEST_DELAY_MS = 100;
+const LIST_ENDPOINT = `${TK_BASE}/json/list.php`;
+
+// Documented public demo key — returns station locations but no real prices.
+const DEMO_KEY = '00000000-0000-0000-0000-000000000002';
+
+// Search circle radius (max 25 km per docs)
+const SEARCH_RADIUS_KM = 25;
+// Distance between hex-grid centres (km). 37.5 = 1.5 × radius gives clear
+// overlap so no gaps even where the grid bumps up against Germany's borders.
+const GRID_SPACING_KM = 37.5;
+// Inter-call politeness delay (tankerkoenig is a small non-profit; play nice)
+const REQUEST_DELAY_MS = 150;
+
+// Germany bounding box (padded slightly beyond actual borders).
+// Sylt to Bodensee, Aachen to Görlitz.
+const BOUNDS = { minLat: 47.0, maxLat: 55.5, minLng: 5.5, maxLng: 15.5 };
 
 const FUEL_KEYS = ['gazole', 'sp95', 'sp98', 'e10', 'e85', 'gplc'] as const;
 type FuelKey = (typeof FUEL_KEYS)[number];
-
-// tankerkoenig fuel codes → standardised keys
-//   diesel  → gazole  (B7 diesel)
-//   e5      → sp95    (E5 95 RON, Germany's "Super")
-//   e10     → e10     (E10 95 RON, Germany's "Super E10")
-//   (no separate sp98 — Germany's "Super Plus" isn't in the standard
-//    tankerkoenig fuel mix; some stations include it as "super plus" but
-//    it's optional. We'll map it if present.)
 
 interface TKStation {
   id: string;
@@ -53,24 +55,24 @@ interface TKStation {
   brand?: string;
   street?: string;
   houseNumber?: string;
-  postCode?: string | number;
+  postCode?: number;
   place?: string;
   lat?: number;
   lng?: number;
+  dist?: number;
+  diesel?: number | false;
+  e5?: number | false;
+  e10?: number | false;
+  isOpen?: boolean;
 }
 
-interface TKPriceResponse {
+interface TKListResponse {
   ok: boolean;
+  license?: string;
+  data?: string;
+  status?: string;
   message?: string;
-  prices: Record<
-    string,
-    {
-      status?: string;
-      e5?: number | false;
-      e10?: number | false;
-      diesel?: number | false;
-    }
-  >;
+  stations?: TKStation[];
 }
 
 interface StationOut {
@@ -121,7 +123,7 @@ function titleCase(s: string): string {
   if (!s) return '';
   return s
     .toLowerCase()
-    .split(/(\s|-|\/)/)
+    .split(/(\s|-|\/|\.)/)
     .map((p) => (/^[a-zà-ÿäöüß']+$/i.test(p) ? p.charAt(0).toUpperCase() + p.slice(1) : p))
     .join('');
 }
@@ -130,12 +132,42 @@ function sleep(ms: number): Promise<void> {
   return new Promise((r) => setTimeout(r, ms));
 }
 
-async function fetchJson<T>(url: string): Promise<T> {
+/**
+ * Yield hex-packed grid centres covering Germany's bounding box.
+ *
+ * Honeycomb packing: rows are spaced by spacing × √3/2; alternating rows are
+ * offset by half a column to give true hex coverage rather than a square
+ * grid (more efficient — fewer cells for the same coverage).
+ */
+function* gridCentres(): Generator<{ lat: number; lng: number }> {
+  const meanLat = (BOUNDS.minLat + BOUNDS.maxLat) / 2;
+  const dLat = GRID_SPACING_KM / 111; // ~111 km per ° latitude
+  const dLng = GRID_SPACING_KM / (111 * Math.cos((meanLat * Math.PI) / 180));
+  const rowStep = (dLat * Math.sqrt(3)) / 2;
+
+  let row = 0;
+  for (let lat = BOUNDS.minLat; lat <= BOUNDS.maxLat; lat += rowStep) {
+    const lngOffset = row % 2 === 0 ? 0 : dLng / 2;
+    for (let lng = BOUNDS.minLng + lngOffset; lng <= BOUNDS.maxLng; lng += dLng) {
+      yield { lat: +lat.toFixed(4), lng: +lng.toFixed(4) };
+    }
+    row++;
+  }
+}
+
+async function fetchCircle(
+  lat: number,
+  lng: number,
+  apiKey: string
+): Promise<TKListResponse> {
+  const url =
+    `${LIST_ENDPOINT}?lat=${lat}&lng=${lng}&rad=${SEARCH_RADIUS_KM}` +
+    `&sort=dist&type=all&apikey=${apiKey}`;
   const res = await fetch(url, {
     headers: { 'User-Agent': 'EuroOilWatch fetch-germany-stations.ts (https://eurooilwatch.com)' },
   });
-  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText} from ${url}`);
-  return (await res.json()) as T;
+  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+  return (await res.json()) as TKListResponse;
 }
 
 async function main() {
@@ -143,45 +175,69 @@ async function main() {
   if (!apiKey) {
     console.log(
       '[germany] TANKERKOENIG_API_KEY not set — skipping fetch.\n' +
-        '         Apply for a free key at https://creativecommons.tankerkoenig.de/api.html\n' +
-        '         Then add TANKERKOENIG_API_KEY to .env.local + Netlify env vars.\n' +
-        '         This script will populate Germany pages on the next cron tick once the key is in place.'
+        '         Apply at https://creativecommons.tankerkoenig.de/api.html (24–48h).\n' +
+        '         For architecture testing, set TANKERKOENIG_API_KEY=' +
+        DEMO_KEY +
+        ' (no real prices, but proves the pipeline).'
     );
     process.exit(0);
   }
 
-  console.log('[germany] fetching tankerkoenig bulk station list...');
+  const isDemo = apiKey === DEMO_KEY;
+  if (isDemo) {
+    console.log(
+      '[germany] DEMO KEY mode — station locations will populate but prices will be empty.'
+    );
+  }
+
+  const centres = Array.from(gridCentres());
+  console.log(
+    `[germany] sweeping Germany with ${centres.length} radius-${SEARCH_RADIUS_KM}km search circles...`
+  );
   const t0 = Date.now();
 
-  const stations = await fetchJson<TKStation[]>(STATIONS_ENDPOINT);
-  console.log(`[germany] received ${stations.length} stations in ${(Date.now() - t0) / 1000}s`);
+  // Dedupe stations by id (overlapping circles will return the same station)
+  const uniqueStations = new Map<string, TKStation>();
+  let failedCells = 0;
 
-  // Query prices in batches of 10
-  const allFuels = new Map<string, Partial<Record<FuelKey, number>>>();
-  console.log(`[germany] fetching prices in batches of ${PRICE_BATCH_SIZE}...`);
-  for (let i = 0; i < stations.length; i += PRICE_BATCH_SIZE) {
-    const batch = stations.slice(i, i + PRICE_BATCH_SIZE);
-    const ids = batch.map((s) => s.id).join(',');
-    const url = `${PRICES_ENDPOINT}?ids=${encodeURIComponent(ids)}&apikey=${apiKey}`;
+  for (let i = 0; i < centres.length; i++) {
+    const { lat, lng } = centres[i];
     try {
-      const r = await fetchJson<TKPriceResponse>(url);
-      if (r.ok && r.prices) {
-        for (const [id, p] of Object.entries(r.prices)) {
-          if (p.status !== 'open') continue;
-          const fuels: Partial<Record<FuelKey, number>> = {};
-          if (typeof p.diesel === 'number' && p.diesel > 0 && p.diesel < 5) fuels.gazole = p.diesel;
-          if (typeof p.e5 === 'number' && p.e5 > 0 && p.e5 < 5) fuels.sp95 = p.e5;
-          if (typeof p.e10 === 'number' && p.e10 > 0 && p.e10 < 5) fuels.e10 = p.e10;
-          if (Object.keys(fuels).length > 0) allFuels.set(id, fuels);
+      const r = await fetchCircle(lat, lng, apiKey);
+      if (r.ok && Array.isArray(r.stations)) {
+        for (const s of r.stations) {
+          if (!s.id) continue;
+          // First-seen wins; later overlapping calls would just return the
+          // same station data with a different `dist` field.
+          if (!uniqueStations.has(s.id)) {
+            uniqueStations.set(s.id, s);
+          }
         }
+      } else if (!r.ok && r.message) {
+        // Hard fail on the first error — usually means the key is wrong or
+        // rate-limited. Don't burn 600 more calls.
+        console.error(`[germany] API error: ${r.message}`);
+        process.exit(1);
       }
     } catch (err) {
-      console.warn(`[germany] batch ${i / PRICE_BATCH_SIZE} failed:`, err);
+      failedCells++;
+      if (failedCells <= 3) {
+        console.warn(`[germany] cell ${i}/${centres.length} (${lat},${lng}) failed:`, err);
+      }
+    }
+    // Progress log every 50 cells
+    if ((i + 1) % 50 === 0) {
+      console.log(
+        `[germany] swept ${i + 1}/${centres.length} cells, ${uniqueStations.size} unique stations so far`
+      );
     }
     if (REQUEST_DELAY_MS) await sleep(REQUEST_DELAY_MS);
   }
 
-  console.log(`[germany] resolved ${allFuels.size} stations with prices`);
+  console.log(
+    `[germany] grid sweep done: ${uniqueStations.size} unique stations from ${centres.length} cells ` +
+      `(${failedCells} failed) in ${((Date.now() - t0) / 1000).toFixed(1)}s`
+  );
 
   // Aggregate
   type Bucket = Record<FuelKey, number[]>;
@@ -190,14 +246,22 @@ async function main() {
   const lands: Record<string, Bucket> = {};
   const landStationCount: Record<string, number> = {};
   const landStations: Record<string, StationOut[]> = {};
-  let freshStationCount = 0;
+  let pricedStationCount = 0;
+  let mappedStationCount = 0;
 
-  for (const meta of stations) {
-    const fuels = allFuels.get(meta.id);
-    if (!fuels) continue;
-    const plz = String(meta.postCode ?? '').trim();
+  for (const meta of uniqueStations.values()) {
+    const plz = String(meta.postCode ?? '').padStart(5, '0');
     const landCode = bundeslandFromPlz(plz);
     if (!landCode || !BUNDESLAENDER[landCode]) continue;
+    mappedStationCount++;
+
+    const fuels: Partial<Record<FuelKey, number>> = {};
+    if (typeof meta.diesel === 'number' && meta.diesel > 0 && meta.diesel < 5) fuels.gazole = meta.diesel;
+    if (typeof meta.e5 === 'number' && meta.e5 > 0 && meta.e5 < 5) fuels.sp95 = meta.e5;
+    if (typeof meta.e10 === 'number' && meta.e10 > 0 && meta.e10 < 5) fuels.e10 = meta.e10;
+
+    const hasAny = Object.keys(fuels).length > 0;
+    if (hasAny) pricedStationCount++;
 
     for (const f of FUEL_KEYS) {
       const v = fuels[f];
@@ -207,9 +271,9 @@ async function main() {
       lands[landCode][f].push(v);
     }
 
-    freshStationCount++;
+    // Always record the station (even without prices) so per-Land files and
+    // city index populate. Demo-mode runs go this path; real runs add prices.
     landStationCount[landCode] = (landStationCount[landCode] || 0) + 1;
-
     const ville = titleCase(meta.place ?? '');
     const adresse = titleCase(
       `${meta.street ?? ''}${meta.houseNumber ? ' ' + meta.houseNumber : ''}`.trim()
@@ -241,9 +305,12 @@ async function main() {
     asOf: new Date().toISOString(),
     source: 'https://creativecommons.tankerkoenig.de/',
     licence: 'CC BY 4.0 — Bundeskartellamt MTS-K via tankerkoenig.de',
-    totalStations: stations.length,
-    freshStations: freshStationCount,
-    national: { stationCount: freshStationCount, fuels: computeFuels(national) },
+    mode: isDemo ? 'demo' : 'live',
+    totalStations: uniqueStations.size,
+    mappedStations: mappedStationCount,
+    pricedStations: pricedStationCount,
+    freshStations: pricedStationCount, // alias used by route page
+    national: { stationCount: pricedStationCount, fuels: computeFuels(national) },
     bundeslaender: Object.fromEntries(
       Object.entries(lands).map(([code, bucket]) => {
         const land = BUNDESLAENDER[code];
@@ -259,11 +326,24 @@ async function main() {
     ),
   };
 
+  // Always emit aggregate even if every Bundesland fell back to zero priced
+  // stations — proves the architecture and gives the route page something
+  // to render while we wait for the real key.
+  if (Object.keys(out.bundeslaender).length === 0) {
+    for (const code of Object.keys(BUNDESLAENDER)) {
+      out.bundeslaender[code] = {
+        name: BUNDESLAENDER[code].name,
+        stationCount: landStationCount[code] || 0,
+        fuels: {},
+      };
+    }
+  }
+
   const outPath = path.join(process.cwd(), 'data', 'germany-fuel-prices.json');
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(out, null, 2));
 
-  // City index for homepage typeahead
+  // City index
   const cityAgg = new Map<string, { ville: string; land: string; n: number }>();
   for (const [landCode, stationsList] of Object.entries(landStations)) {
     for (const s of stationsList) {
@@ -298,6 +378,7 @@ async function main() {
       asOf: out.asOf,
       source: out.source,
       licence: out.licence,
+      mode: out.mode,
       stationCount: stationsList.length,
       fuels: out.bundeslaender[code]?.fuels ?? {},
       stations: stationsList,
@@ -309,11 +390,16 @@ async function main() {
     if (f.endsWith('.json') && !written.has(f)) fs.unlinkSync(path.join(landDir, f));
   }
 
-  const dt = ((Date.now() - t0) / 1000).toFixed(1);
   console.log(
-    `[germany] wrote ${outPath} + ${written.size} per-Bundesland files + ${cityIndex.length} cities  ` +
-      `(${out.freshStations} priced / ${out.totalStations} total stations, ${dt}s)`
+    `[germany] wrote ${outPath} + ${written.size} per-Land files + ${cityIndex.length} cities  ` +
+      `(${out.pricedStations} priced / ${out.mappedStations} mapped / ${out.totalStations} total unique stations)`
   );
+  if (isDemo) {
+    console.log(
+      '[germany] DEMO mode complete — architecture verified end-to-end. ' +
+        'Swap the real key in and run again for live prices.'
+    );
+  }
 }
 
 main().catch((err) => {
