@@ -57,6 +57,10 @@ jobs:
           AGSI_API_KEY: ${{ secrets.AGSI_API_KEY }}
         continue-on-error: true
 
+      - name: Fetch French station-level fuel prices (prix-carburants)
+        run: npm run fetch:france
+        continue-on-error: true
+
       - name: Fetch bunker fuel prices
         run: npm run fetch:bunker
         continue-on-error: true

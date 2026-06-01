@@ -190,7 +190,7 @@ export default function MethodologyPage() {
             </thead>
             <tbody>
               <SourceRow scope="All 27 EU member states" source="EC Weekly Oil Bulletin" flag="live" granularity="National weekly average" />
-              <SourceRow scope="France — granular detail" source="prix-carburants.gouv.fr open feed" flag="planned" granularity="Station-level (planned: dept/region rollups)" />
+              <SourceRow scope="France — granular detail" source="prix-carburants.gouv.fr open feed" flag="live" granularity="Station-level → département + région rollups (daily)" />
               <SourceRow scope="Germany — granular detail" source="MTS-K market-transparency feeds" flag="planned" granularity="Station-level (planned: Land rollups)" />
               <SourceRow scope="Spain — granular detail" source="Geoportal de Hidrocarburos" flag="planned" granularity="Station-level (planned: autonomous communities)" />
               <SourceRow scope="Italy — granular detail" source="MIMIT carburanti datasets" flag="planned" granularity="Station-level (planned: regions)" />

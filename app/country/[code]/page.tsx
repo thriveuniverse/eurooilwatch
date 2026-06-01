@@ -1,9 +1,22 @@
+import * as fs from 'fs';
+import * as path from 'path';
 import { getDashboardData, getCountryHistory } from '@/lib/data';
 import { COUNTRIES, EU27_CODES } from '@/lib/countries';
 import JsonLd from '@/components/JsonLd';
 import StockChart from '@/components/StockChart';
+import FranceRegionalView, { type FranceData } from '@/components/FranceRegionalView';
 import type { ExtendedCountryCode } from '@/lib/types';
 import type { Metadata } from 'next';
+
+function loadFranceData(): FranceData | null {
+  try {
+    const p = path.join(process.cwd(), 'data', 'france-fuel-prices.json');
+    if (!fs.existsSync(p)) return null;
+    return JSON.parse(fs.readFileSync(p, 'utf-8')) as FranceData;
+  } catch {
+    return null;
+  }
+}
 
 interface PageProps {
   params: { code: string };
@@ -115,6 +128,12 @@ export default function CountryPage({ params }: PageProps) {
           <a href="/prices" className="text-oil-400 underline hover:text-oil-300">Compare with other EU countries →</a>
         </p>
       </section>
+
+      {/* France-specific: live station-level prices */}
+      {code === 'FR' && (() => {
+        const franceData = loadFranceData();
+        return franceData ? <FranceRegionalView data={franceData} /> : null;
+      })()}
 
       {/* Briefing CTA */}
       <section className="rounded-lg border border-oil-700 bg-oil-900/30 px-5 py-4">
