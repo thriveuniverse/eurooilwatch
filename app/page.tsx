@@ -10,7 +10,7 @@ import AnalysisPanel from '@/components/AnalysisPanel';
 import StockChart from '@/components/StockChart';
 import EmailCTA from '@/components/EmailCTA';
 import DisruptionBanner from '@/components/DisruptionBanner';
-import FuelPriceSearch from '@/components/FuelPriceSearch';
+import FuelPriceSearch, { type CityTuple } from '@/components/FuelPriceSearch';
 import type { Metadata } from 'next';
 import fs from 'fs';
 import path from 'path';
@@ -63,6 +63,15 @@ export default async function DashboardPage() {
     try { return JSON.parse(fs.readFileSync(p, 'utf-8')) as GasData; } catch { return null; }
   })();
 
+  const franceCities = ((): CityTuple[] => {
+    const p = path.join(process.cwd(), 'data', 'france-city-index.json');
+    if (!fs.existsSync(p)) return [];
+    try {
+      const parsed = JSON.parse(fs.readFileSync(p, 'utf-8')) as { cities?: CityTuple[] };
+      return parsed.cities ?? [];
+    } catch { return []; }
+  })();
+
   return (
     <div className="space-y-6">
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
@@ -86,7 +95,7 @@ export default async function DashboardPage() {
       </section>
 
       {/* Find cheapest fuel near you (France granular) */}
-      <FuelPriceSearch />
+      <FuelPriceSearch cities={franceCities} />
 
       {/* 3. Reserve Gauges */}
       <section aria-label="EU average fuel reserves">

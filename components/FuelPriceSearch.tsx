@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { DEPARTMENTS, deptFromPostalCode } from '@/lib/france-geo';
 
 const POPULAR_DEPTS = [
@@ -14,26 +14,113 @@ const POPULAR_DEPTS = [
   { code: '44', label: 'Loire-Atlantique', ville: 'Nantes', filterCity: 'Nantes' },
 ];
 
-export default function FuelPriceSearch() {
+// City tuple from data/france-city-index.json: [ville, dept, stationCount]
+export type CityTuple = [string, string, number];
+
+interface Props {
+  cities: CityTuple[];
+}
+
+interface Suggestion {
+  ville: string;
+  dept: string;
+  stations: number;
+  url: string;
+}
+
+const MAX_SUGGESTIONS = 8;
+
+function makeSuggestionUrl(ville: string, dept: string): string {
+  return `/country/fr/dept/${dept.toLowerCase()}?ville=${encodeURIComponent(ville)}`;
+}
+
+export default function FuelPriceSearch({ cities }: Props) {
   const router = useRouter();
-  const [postal, setPostal] = useState('');
+  const [query, setQuery] = useState('');
+  const [highlightIndex, setHighlightIndex] = useState(-1);
+  const [open, setOpen] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const listRef = useRef<HTMLUListElement>(null);
+
+  const trimmed = query.trim();
+  const isPostalCode = /^\d{5}$/.test(trimmed);
+
+  const suggestions = useMemo<Suggestion[]>(() => {
+    if (!trimmed || isPostalCode) return [];
+    const q = trimmed.toLowerCase();
+    const matches: Suggestion[] = [];
+    for (const [ville, dept, n] of cities) {
+      if (ville.toLowerCase().includes(q)) {
+        matches.push({ ville, dept, stations: n, url: makeSuggestionUrl(ville, dept) });
+        if (matches.length >= MAX_SUGGESTIONS) break;
+      }
+    }
+    return matches;
+  }, [trimmed, isPostalCode, cities]);
+
+  // Reset highlight when suggestions change
+  useEffect(() => {
+    setHighlightIndex(suggestions.length > 0 ? 0 : -1);
+  }, [suggestions]);
+
+  function go(target: Suggestion) {
+    setOpen(false);
+    router.push(target.url);
+  }
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
-    const trimmed = postal.trim();
-    if (!/^\d{5}$/.test(trimmed)) {
-      setError('Enter a 5-digit French postal code (e.g. 75001).');
+    if (!trimmed) return;
+
+    if (isPostalCode) {
+      const dept = deptFromPostalCode(trimmed);
+      if (!dept || !DEPARTMENTS[dept]) {
+        setError('No département found for that postal code.');
+        return;
+      }
+      router.push(`/country/fr/dept/${dept.toLowerCase()}`);
       return;
     }
-    const dept = deptFromPostalCode(trimmed);
-    if (!dept || !DEPARTMENTS[dept]) {
-      setError('No département found for that postal code.');
+
+    if (suggestions.length === 0) {
+      setError(`No matching city found for "${trimmed}". Try a different spelling, or use a 5-digit postal code.`);
       return;
     }
-    router.push(`/country/fr/dept/${dept.toLowerCase()}`);
+
+    go(suggestions[highlightIndex >= 0 ? highlightIndex : 0]);
   }
+
+  function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
+    if (!open || suggestions.length === 0) return;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      setHighlightIndex((i) => (i + 1) % suggestions.length);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setHighlightIndex((i) => (i - 1 + suggestions.length) % suggestions.length);
+    } else if (e.key === 'Escape') {
+      setOpen(false);
+    }
+  }
+
+  // Close suggestions when clicking outside
+  useEffect(() => {
+    function onDocClick(e: MouseEvent) {
+      const target = e.target as Node;
+      if (
+        inputRef.current && !inputRef.current.contains(target) &&
+        listRef.current && !listRef.current.contains(target)
+      ) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', onDocClick);
+    return () => document.removeEventListener('mousedown', onDocClick);
+  }, []);
+
+  const showSuggestions = open && suggestions.length > 0;
 
   return (
     <section
@@ -49,25 +136,68 @@ export default function FuelPriceSearch() {
             Find the cheapest fuel in your area
           </h2>
           <p className="mt-1.5 text-sm text-gray-300 leading-relaxed">
-            ~9,300 French stations, refreshed daily. Type your postal code or pick a département.
+            ~9,300 French stations across {cities.length.toLocaleString('en-GB')} towns, refreshed daily. Type a city or postal code.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 w-full lg:w-auto lg:flex-shrink-0">
-          <label className="sr-only" htmlFor="fp-postal">French postal code</label>
-          <input
-            id="fp-postal"
-            type="text"
-            inputMode="numeric"
-            pattern="\d{5}"
-            maxLength={5}
-            placeholder="Postal code (e.g. 75001)"
-            value={postal}
-            onChange={(e) => setPostal(e.target.value.replace(/[^\d]/g, ''))}
-            className="w-full sm:w-52 px-3.5 py-2.5 text-sm rounded-md bg-oil-950 border border-oil-700 text-white placeholder-gray-500 focus:outline-none focus:border-amber-600"
-            aria-describedby={error ? 'fp-error' : undefined}
-            aria-invalid={!!error}
-          />
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 w-full lg:w-auto lg:flex-shrink-0 relative">
+          <div className="relative w-full sm:w-72">
+            <label className="sr-only" htmlFor="fp-q">City or postal code</label>
+            <input
+              id="fp-q"
+              ref={inputRef}
+              type="text"
+              placeholder="e.g. Toulouse, Paris, 75001"
+              value={query}
+              onChange={(e) => {
+                setQuery(e.target.value);
+                setOpen(true);
+                setError(null);
+              }}
+              onFocus={() => setOpen(true)}
+              onKeyDown={handleKeyDown}
+              className="w-full px-3.5 py-2.5 text-sm rounded-md bg-oil-950 border border-oil-700 text-white placeholder-gray-500 focus:outline-none focus:border-amber-600"
+              role="combobox"
+              aria-expanded={showSuggestions}
+              aria-controls="fp-listbox"
+              aria-activedescendant={highlightIndex >= 0 ? `fp-opt-${highlightIndex}` : undefined}
+              aria-autocomplete="list"
+              autoComplete="off"
+              spellCheck={false}
+            />
+
+            {showSuggestions && (
+              <ul
+                id="fp-listbox"
+                ref={listRef}
+                role="listbox"
+                className="absolute z-30 top-full left-0 right-0 mt-1 rounded-md border border-oil-700 bg-oil-950 shadow-xl overflow-hidden"
+              >
+                {suggestions.map((s, i) => (
+                  <li
+                    key={`${s.dept}|${s.ville}`}
+                    id={`fp-opt-${i}`}
+                    role="option"
+                    aria-selected={i === highlightIndex}
+                    onMouseEnter={() => setHighlightIndex(i)}
+                    onMouseDown={(e) => {
+                      e.preventDefault();
+                      go(s);
+                    }}
+                    className={`px-3.5 py-2 cursor-pointer flex items-baseline justify-between gap-3 ${
+                      i === highlightIndex ? 'bg-amber-900/40' : 'hover:bg-oil-900/60'
+                    }`}
+                  >
+                    <span className="text-sm text-white truncate">{s.ville}</span>
+                    <span className="text-[10px] font-mono text-gray-400 flex-shrink-0">
+                      {s.dept} · {s.stations} station{s.stations === 1 ? '' : 's'}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
           <button
             type="submit"
             className="px-5 py-2.5 text-sm font-semibold rounded-md bg-amber-700 hover:bg-amber-600 text-white transition whitespace-nowrap"
@@ -78,7 +208,7 @@ export default function FuelPriceSearch() {
       </div>
 
       {error && (
-        <p id="fp-error" className="mt-3 text-xs text-red-300" role="alert">
+        <p className="mt-3 text-xs text-red-300" role="alert">
           {error}
         </p>
       )}

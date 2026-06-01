@@ -245,6 +245,40 @@ async function main() {
   fs.mkdirSync(path.dirname(outPath), { recursive: true });
   fs.writeFileSync(outPath, JSON.stringify(out, null, 2));
 
+  // City index for the homepage search autocomplete (ville → dept + station count)
+  // We aggregate identical city names within a département (e.g. "Toulouse" might
+  // have stations across postal codes 31000–31500 — collapse to one entry).
+  type CityKey = string; // `${dept}|${normalisedVille}`
+  const cityAgg = new Map<CityKey, { ville: string; dept: string; n: number }>();
+  for (const [deptCode, stations] of Object.entries(deptStations)) {
+    for (const s of stations) {
+      const ville = (s.ville || '').trim();
+      if (!ville) continue;
+      const key = `${deptCode}|${ville.toLowerCase()}`;
+      const existing = cityAgg.get(key);
+      if (existing) {
+        existing.n++;
+      } else {
+        cityAgg.set(key, { ville, dept: deptCode, n: 1 });
+      }
+    }
+  }
+  // Sort by station count desc, then alphabetical. Emit as array tuples
+  // [ville, dept, stationCount] to halve the JSON size vs object form.
+  const cityIndex = Array.from(cityAgg.values())
+    .sort((a, b) => b.n - a.n || a.ville.localeCompare(b.ville))
+    .map((c) => [c.ville, c.dept, c.n] as [string, string, number]);
+
+  fs.writeFileSync(
+    path.join(process.cwd(), 'data', 'france-city-index.json'),
+    JSON.stringify({
+      asOf: out.asOf,
+      source: out.source,
+      count: cityIndex.length,
+      cities: cityIndex,
+    })
+  );
+
   // Per-département files for the static /country/fr/dept/[code] route
   const deptDir = path.join(process.cwd(), 'data', 'france-dept');
   fs.mkdirSync(deptDir, { recursive: true });
