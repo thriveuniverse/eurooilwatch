@@ -301,6 +301,16 @@ async function main() {
     return out;
   };
 
+  // Build region map (each Bundesland is its own region — Germany is flat)
+  const regions: Record<string, AreaStats> = {};
+  for (const code of Object.keys(BUNDESLAENDER)) {
+    regions[code] = {
+      name: BUNDESLAENDER[code].name,
+      stationCount: landStationCount[code] || 0,
+      fuels: computeFuels(lands[code] || empty()),
+    };
+  }
+
   const out = {
     asOf: new Date().toISOString(),
     source: 'https://creativecommons.tankerkoenig.de/',
@@ -309,34 +319,31 @@ async function main() {
     totalStations: uniqueStations.size,
     mappedStations: mappedStationCount,
     pricedStations: pricedStationCount,
-    freshStations: pricedStationCount, // alias used by route page
+    freshStations: pricedStationCount, // alias used by the route page
     national: { stationCount: pricedStationCount, fuels: computeFuels(national) },
-    bundeslaender: Object.fromEntries(
-      Object.entries(lands).map(([code, bucket]) => {
-        const land = BUNDESLAENDER[code];
-        return [
-          code,
-          {
-            name: land?.name || code,
-            stationCount: landStationCount[code] || 0,
-            fuels: computeFuels(bucket),
-          } as AreaStats,
-        ];
-      })
-    ),
+    // GermanyRegionalView (cloned from Italy/Spain) reads `regions` + `provinces`.
+    // Germany has only one level (Bundesländer), so we emit it under both shapes:
+    // - `regions` so the component renders without further changes
+    // - `provinces: {}` so the dropdown is empty / hidden
+    // - `bundeslaender` retained for any future consumer that wants the canonical
+    //   field name
+    regions,
+    provinces: {} as Record<string, AreaStats>,
+    bundeslaender: regions,
   };
 
-  // Always emit aggregate even if every Bundesland fell back to zero priced
-  // stations — proves the architecture and gives the route page something
-  // to render while we wait for the real key.
-  if (Object.keys(out.bundeslaender).length === 0) {
-    for (const code of Object.keys(BUNDESLAENDER)) {
-      out.bundeslaender[code] = {
-        name: BUNDESLAENDER[code].name,
-        stationCount: landStationCount[code] || 0,
-        fuels: {},
-      };
-    }
+  // In demo mode, just print verification stats and exit without writing.
+  // Writing demo data to disk would (a) leak misleading €1.009 prices into
+  // the live site if the files got committed, and (b) need to be cleaned
+  // up later anyway. The architecture is verified by the grid sweep itself.
+  if (isDemo) {
+    console.log(
+      `[germany] DEMO verification COMPLETE: ${out.totalStations} unique stations, ` +
+        `${Object.keys(out.regions).length} Bundesländer mapped, ` +
+        `${cityAggCount()} unique cities. No files written. ` +
+        `Swap in the real key to run for real.`
+    );
+    process.exit(0);
   }
 
   const outPath = path.join(process.cwd(), 'data', 'germany-fuel-prices.json');
@@ -345,6 +352,7 @@ async function main() {
 
   // City index
   const cityAgg = new Map<string, { ville: string; land: string; n: number }>();
+  function cityAggCount() { return cityAgg.size; } // exposed for demo log
   for (const [landCode, stationsList] of Object.entries(landStations)) {
     for (const s of stationsList) {
       const ville = s.ville.trim();
