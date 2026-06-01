@@ -3,6 +3,7 @@ import * as path from 'path';
 import type { Metadata } from 'next';
 import { DEPARTMENTS, REGIONS } from '@/lib/france-geo';
 import { notFound } from 'next/navigation';
+import DeptStationList from '@/components/DeptStationList';
 
 type FuelKey = 'gazole' | 'sp95' | 'sp98' | 'e10' | 'e85' | 'gplc';
 
@@ -86,13 +87,20 @@ export function generateMetadata({ params }: { params: { code: string } }): Meta
   };
 }
 
-export default function DeptPage({ params }: { params: { code: string } }) {
+export default function DeptPage({
+  params,
+  searchParams,
+}: {
+  params: { code: string };
+  searchParams: { ville?: string };
+}) {
   const upper = params.code.toUpperCase();
   const dept = DEPARTMENTS[upper];
   if (!dept) notFound();
 
   const data = loadDept(upper);
   const region = REGIONS[dept.regionCode];
+  const initialCity = typeof searchParams?.ville === 'string' ? searchParams.ville : '';
 
   // Sister départements in the same region (for cross-linking)
   const sisters = Object.values(DEPARTMENTS)
@@ -102,16 +110,6 @@ export default function DeptPage({ params }: { params: { code: string } }) {
   const updatedDate = data
     ? new Date(data.asOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
     : null;
-
-  // Cheapest 5 per fuel for the highlight section
-  const cheapestByFuel: Partial<Record<FuelKey, Station[]>> = {};
-  if (data) {
-    for (const f of PRIMARY) {
-      const withPrice = data.stations.filter((s) => typeof s.fuels[f] === 'number');
-      withPrice.sort((a, b) => (a.fuels[f] as number) - (b.fuels[f] as number));
-      cheapestByFuel[f] = withPrice.slice(0, 5);
-    }
-  }
 
   return (
     <div className="max-w-5xl mx-auto space-y-8">
@@ -193,78 +191,8 @@ export default function DeptPage({ params }: { params: { code: string } }) {
             </div>
           </section>
 
-          {/* Cheapest stations per fuel */}
-          <section className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">Cheapest stations in {dept.name}</h2>
-            <p className="text-sm text-gray-400">
-              Top five stations by current price, per fuel. Updated {updatedDate}.
-            </p>
-            <div className="grid md:grid-cols-2 gap-4">
-              {PRIMARY.map((f) => {
-                const list = cheapestByFuel[f] || [];
-                if (list.length === 0) return null;
-                return (
-                  <div key={f} className="rounded-lg border border-oil-800 bg-oil-900/30">
-                    <div className="px-5 py-3 border-b border-oil-800/60">
-                      <h3 className="text-sm font-semibold text-white">{FUEL_LABEL[f]}</h3>
-                    </div>
-                    <ol className="divide-y divide-oil-800/40">
-                      {list.map((s, i) => (
-                        <li key={`${f}-${s.id || i}`} className="px-5 py-3 flex items-baseline justify-between gap-3">
-                          <div className="min-w-0">
-                            <div className="text-sm text-white truncate">{s.ville || '—'}</div>
-                            <div className="text-[11px] text-gray-500 truncate">{s.adresse}</div>
-                          </div>
-                          <div className="text-base font-mono text-amber-200 flex-shrink-0">
-                            {fmt(s.fuels[f])}
-                          </div>
-                        </li>
-                      ))}
-                    </ol>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-
-          {/* Full station list */}
-          <section className="space-y-3">
-            <h2 className="text-2xl font-bold text-white">All stations in {dept.name}</h2>
-            <p className="text-sm text-gray-400">
-              {data.stationCount} stations, sorted by city. Prices in euros per litre, refreshed daily.
-            </p>
-            <div className="overflow-x-auto rounded-lg border border-oil-800">
-              <table className="w-full text-left text-sm">
-                <thead className="bg-oil-900/50">
-                  <tr>
-                    <th className="px-3 py-2 text-[10px] font-mono uppercase tracking-wider text-amber-400/80">City</th>
-                    <th className="px-3 py-2 text-[10px] font-mono uppercase tracking-wider text-amber-400/80">Address</th>
-                    <th className="px-3 py-2 text-[10px] font-mono uppercase tracking-wider text-amber-400/80 text-right">Gazole</th>
-                    <th className="px-3 py-2 text-[10px] font-mono uppercase tracking-wider text-amber-400/80 text-right">E10</th>
-                    <th className="px-3 py-2 text-[10px] font-mono uppercase tracking-wider text-amber-400/80 text-right">SP95</th>
-                    <th className="px-3 py-2 text-[10px] font-mono uppercase tracking-wider text-amber-400/80 text-right">SP98</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {data.stations.map((s, i) => (
-                    <tr key={s.id || i} className="border-t border-oil-800/40 hover:bg-oil-900/20">
-                      <td className="px-3 py-2 text-gray-200 whitespace-nowrap">
-                        {s.ville || '—'}{' '}
-                        {s.pop === 'A' && (
-                          <span className="text-[10px] font-mono uppercase text-amber-400/70">autoroute</span>
-                        )}
-                      </td>
-                      <td className="px-3 py-2 text-gray-400 text-xs">{s.adresse}</td>
-                      <td className="px-3 py-2 font-mono text-amber-200 text-right">{fmt(s.fuels.gazole)}</td>
-                      <td className="px-3 py-2 font-mono text-amber-200 text-right">{fmt(s.fuels.e10)}</td>
-                      <td className="px-3 py-2 font-mono text-amber-200 text-right">{fmt(s.fuels.sp95)}</td>
-                      <td className="px-3 py-2 font-mono text-amber-200 text-right">{fmt(s.fuels.sp98)}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </section>
+          {/* Filterable station list + cheapest-5 (client component) */}
+          <DeptStationList stations={data.stations} deptName={dept.name} initialCity={initialCity} />
         </>
       )}
 

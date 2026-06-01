@@ -5,12 +5,13 @@ import { useState } from 'react';
 import { DEPARTMENTS, deptFromPostalCode } from '@/lib/france-geo';
 
 const POPULAR_DEPTS = [
-  { code: '75', label: 'Paris',          ville: 'Paris' },
-  { code: '13', label: 'Bouches-du-Rhône', ville: 'Marseille' },
-  { code: '69', label: 'Rhône',           ville: 'Lyon' },
-  { code: '31', label: 'Haute-Garonne',   ville: 'Toulouse' },
-  { code: '06', label: 'Alpes-Maritimes', ville: 'Nice' },
-  { code: '44', label: 'Loire-Atlantique', ville: 'Nantes' },
+  // Paris dept = Paris city, so no city filter needed
+  { code: '75', label: 'Paris',          ville: 'Paris', filterCity: '' },
+  { code: '13', label: 'Bouches-du-Rhône', ville: 'Marseille', filterCity: 'Marseille' },
+  { code: '69', label: 'Rhône',           ville: 'Lyon', filterCity: 'Lyon' },
+  { code: '31', label: 'Haute-Garonne',   ville: 'Toulouse', filterCity: 'Toulouse' },
+  { code: '06', label: 'Alpes-Maritimes', ville: 'Nice', filterCity: 'Nice' },
+  { code: '44', label: 'Loire-Atlantique', ville: 'Nantes', filterCity: 'Nantes' },
 ];
 
 export default function FuelPriceSearch() {
@@ -88,7 +89,11 @@ export default function FuelPriceSearch() {
           {POPULAR_DEPTS.map((d) => (
             <a
               key={d.code}
-              href={`/country/fr/dept/${d.code.toLowerCase()}`}
+              href={
+                d.filterCity
+                  ? `/country/fr/dept/${d.code.toLowerCase()}?ville=${encodeURIComponent(d.filterCity)}`
+                  : `/country/fr/dept/${d.code.toLowerCase()}`
+              }
               className="text-[11px] px-2.5 py-1 rounded-full bg-oil-900/70 border border-oil-700 text-gray-300 hover:border-amber-600 hover:text-white transition"
             >
               <span className="font-mono text-gray-500">{d.code}</span> {d.ville}
