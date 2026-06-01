@@ -7,6 +7,7 @@ import StockChart from '@/components/StockChart';
 import FranceRegionalView, { type FranceData } from '@/components/FranceRegionalView';
 import SpainRegionalView, { type SpainData } from '@/components/SpainRegionalView';
 import ItalyRegionalView, { type ItalyData } from '@/components/ItalyRegionalView';
+import GermanyRegionalView, { type GermanyData } from '@/components/GermanyRegionalView';
 import type { ExtendedCountryCode } from '@/lib/types';
 import type { Metadata } from 'next';
 
@@ -35,6 +36,16 @@ function loadItalyData(): ItalyData | null {
     const p = path.join(process.cwd(), 'data', 'italy-fuel-prices.json');
     if (!fs.existsSync(p)) return null;
     return JSON.parse(fs.readFileSync(p, 'utf-8')) as ItalyData;
+  } catch {
+    return null;
+  }
+}
+
+function loadGermanyData(): GermanyData | null {
+  try {
+    const p = path.join(process.cwd(), 'data', 'germany-fuel-prices.json');
+    if (!fs.existsSync(p)) return null;
+    return JSON.parse(fs.readFileSync(p, 'utf-8')) as GermanyData;
   } catch {
     return null;
   }
@@ -167,6 +178,28 @@ export default function CountryPage({ params }: PageProps) {
       {code === 'IT' && (() => {
         const italyData = loadItalyData();
         return italyData ? <ItalyRegionalView data={italyData} /> : null;
+      })()}
+
+      {/* Germany-specific: live station-level prices (pending tankerkoenig API key) */}
+      {code === 'DE' && (() => {
+        const germanyData = loadGermanyData();
+        return germanyData ? <GermanyRegionalView data={germanyData} /> : (
+          <section className="rounded-lg border border-amber-700/40 bg-amber-950/20 px-5 py-4">
+            <p className="text-[10px] font-mono font-semibold tracking-widest text-amber-400/90 uppercase mb-2">
+              Coming soon
+            </p>
+            <p className="text-sm text-gray-200 leading-relaxed">
+              Granular German station-level pricing (~16,000 stations, all 16 Bundesländer, refreshed daily
+              from tankerkoenig.de / MTS-K) is built and ready — populating on the first cron tick after
+              the API key arrives.
+            </p>
+            <p className="mt-2 text-xs text-gray-400">
+              See <a href="/country/fr" className="text-oil-400 hover:underline">🇫🇷 France</a>,{' '}
+              <a href="/country/it" className="text-oil-400 hover:underline">🇮🇹 Italy</a>, or{' '}
+              <a href="/country/es" className="text-oil-400 hover:underline">🇪🇸 Spain</a> for live coverage now.
+            </p>
+          </section>
+        );
       })()}
 
       {/* Briefing CTA */}

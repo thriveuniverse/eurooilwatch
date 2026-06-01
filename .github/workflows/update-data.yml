@@ -69,6 +69,12 @@ jobs:
         run: npm run fetch:italy
         continue-on-error: true
 
+      - name: Fetch German station-level fuel prices (tankerkoenig)
+        run: npm run fetch:germany
+        env:
+          TANKERKOENIG_API_KEY: ${{ secrets.TANKERKOENIG_API_KEY }}
+        continue-on-error: true
+
       - name: Fetch bunker fuel prices
         run: npm run fetch:bunker
         continue-on-error: true
