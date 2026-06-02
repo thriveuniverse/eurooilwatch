@@ -69,10 +69,15 @@ jobs:
         run: npm run fetch:italy
         continue-on-error: true
 
-      - name: Fetch German station-level fuel prices (tankerkoenig)
-        run: npm run fetch:germany
+      - name: Fetch German station-level fuel prices (tankerkoenig bulk CSV)
+        # The live list.php API is rate-limited and bans bulk sweeps; we read
+        # the bulk CSV dataset instead (current + previous month, sparse clone).
+        run: |
+          bash scripts/clone-germany-data.sh
+          npm run fetch:germany
         env:
-          TANKERKOENIG_API_KEY: ${{ secrets.TANKERKOENIG_API_KEY }}
+          TANKERKOENIG_DATA_REPO: ${{ secrets.TANKERKOENIG_DATA_REPO }}
+          TANKERKOENIG_DATA_DIR: ${{ runner.temp }}/tankerkoenig-data
         continue-on-error: true
 
       - name: Fetch bunker fuel prices

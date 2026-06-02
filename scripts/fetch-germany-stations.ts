@@ -1,91 +1,78 @@
 /**
- * Fetch German fuel-station data via tankerkoenig.de.
+ * Build German fuel-station aggregates from tankerkoenig's BULK CSV dataset.
  *
- * Architecture: tankerkoenig has NO bulk station endpoint. We cover Germany
- * with an overlapping hex-packed grid of radius-25km searches via list.php,
- * which returns station details + current prices inline. Stations are
- * deduplicated by ID across overlapping cells.
+ * WHY NOT THE LIVE API: tankerkoenig's list.php is rate-limited to ~1 request
+ * per minute and explicitly "not meant for massive data fetching". Sweeping
+ * all of Germany (~570 radius searches) got our IP firewall-blocked. The
+ * supported way to get whole-country data is their bulk CSV git repo, which
+ * carries the full MTS-K (Bundeskartellamt) dataset with no rate limit.
  *
- * REQUIRES: TANKERKOENIG_API_KEY environment variable.
- *   - Apply for a free non-commercial key at
- *     https://creativecommons.tankerkoenig.de/api.html (24–48 hours approval).
- *   - For architecture testing without a real key, set
- *     TANKERKOENIG_API_KEY to the documented demo UUID
- *     00000000-0000-0000-0000-000000000002 — the API returns station
- *     locations but no real prices, so aggregation files will populate
- *     with empty fuel stats. This proves the pipeline end-to-end.
+ * DATA SOURCE: the tankerkoenig-data git repo on Azure DevOps
+ *   https://dev.azure.com/tankerkoenig/_git/tankerkoenig-data
+ *   - stations/<YYYY>/<MM>/<YYYY-MM-DD>-stations.csv  (one snapshot per day)
+ *       cols: uuid,name,brand,street,house_number,post_code,city,
+ *             latitude,longitude,first_active,openingtimes_json
+ *   - prices/<YYYY>/<MM>/<YYYY-MM-DD>-prices.csv      (price CHANGES per day)
+ *       cols: date,station_uuid,diesel,e5,e10,dieselchange,e5change,e10change
+ *   Licence: CC BY-NC-SA 4.0 (non-commercial).
  *
- * Output: data/germany-fuel-prices.json
- *         data/germany-land/{code}.json (one per Bundesland)
- *         data/germany-city-index.json
+ * This script does NOT clone the repo (the full history is ~20 GB). It reads
+ * already-checked-out CSVs from TANKERKOENIG_DATA_DIR. Populate that dir with
+ * a sparse, shallow, partial clone of just the current + previous month — see
+ * the "Fetch German station data" step in .github/workflows/update-data.yml,
+ * or scripts/clone-germany-data.sh for the local equivalent.
  *
- * Cadence: daily via update-data.yml. Script exits 0 with a clear message
- * when TANKERKOENIG_API_KEY is not set, so the rest of the pipeline isn't
- * blocked.
+ * Because the prices files are CHANGE logs (a station only appears on days it
+ * changed price), we read the last TK_PRICE_DAYS days and keep the most recent
+ * valid price per station per fuel. German stations repriced many times daily,
+ * so a few days covers essentially every active station.
+ *
+ * Output (unchanged shape — consumed by app/country/[code] + de/land/[code]):
+ *   data/germany-fuel-prices.json
+ *   data/germany-land/{code}.json
+ *   data/germany-city-index.json
+ *
+ * Exits 0 with a clear message when TANKERKOENIG_DATA_DIR is unset/empty, so
+ * the rest of the daily pipeline isn't blocked.
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
+import { parse } from 'csv-parse/sync';
 import { BUNDESLAENDER, bundeslandFromPlz } from '../lib/germany-geo';
 
-const TK_BASE = 'https://creativecommons.tankerkoenig.de';
-const LIST_ENDPOINT = `${TK_BASE}/json/list.php`;
+// How many recent daily price files to merge (covers stations that didn't
+// change price in the last day or two). Override with TK_PRICE_DAYS.
+const PRICE_DAYS = Number(process.env.TK_PRICE_DAYS ?? 3);
 
-// Documented public demo key — returns station locations but no real prices.
-const DEMO_KEY = '00000000-0000-0000-0000-000000000002';
-
-// Search circle radius (max 25 km per docs)
-const SEARCH_RADIUS_KM = 25;
-// Distance between hex-grid centres (km). 37.5 = 1.5 × radius gives clear
-// overlap so no gaps even where the grid bumps up against Germany's borders.
-const GRID_SPACING_KM = 37.5;
-// Inter-call politeness delay. tankerkoenig is a small non-profit and will
-// 503 then firewall-block (ECONNREFUSED) your IP if you fire requests faster
-// than roughly 1/sec — a 150ms sweep of ~570 cells got us temporarily banned.
-// Default to a courteous ~1 req/sec; override with TK_DELAY_MS if needed.
-const REQUEST_DELAY_MS = Number(process.env.TK_DELAY_MS ?? 1000);
-// Per-cell retry policy for transient 503/429 (overload / soft rate-limit).
-const MAX_RETRIES = 5;
-const RETRY_BASE_MS = 2000;
-// Circuit breaker: if this many cells fail in a row, the API has almost
-// certainly blocked us — abort cleanly rather than hammering into a hard ban.
-const MAX_CONSECUTIVE_FAILURES = 15;
-// Sanity floor. Germany has ~14k–15k stations; a healthy sweep maps most of
-// them. Anything far below this means the sweep failed, and we must NOT let
-// the degraded result overwrite good data on disk.
+// Sanity floor. Germany has ~14k–15k stations; a healthy dataset maps most of
+// them. Far below this means the CSVs were truncated/partial — don't let a
+// degraded result overwrite good data on disk.
 const MIN_PLAUSIBLE_STATIONS = 3000;
-
-// Germany bounding box (padded slightly beyond actual borders).
-// Sylt to Bodensee, Aachen to Görlitz.
-const BOUNDS = { minLat: 47.0, maxLat: 55.5, minLng: 5.5, maxLng: 15.5 };
 
 const FUEL_KEYS = ['gazole', 'sp95', 'sp98', 'e10', 'e85', 'gplc'] as const;
 type FuelKey = (typeof FUEL_KEYS)[number];
 
-interface TKStation {
-  id: string;
+interface StationCsvRow {
+  uuid: string;
   name?: string;
   brand?: string;
   street?: string;
-  houseNumber?: string;
-  postCode?: number;
-  place?: string;
-  lat?: number;
-  lng?: number;
-  dist?: number;
-  diesel?: number | false;
-  e5?: number | false;
-  e10?: number | false;
-  isOpen?: boolean;
+  house_number?: string;
+  post_code?: string;
+  city?: string;
+  latitude?: string;
+  longitude?: string;
+  [k: string]: string | undefined;
 }
 
-interface TKListResponse {
-  ok: boolean;
-  license?: string;
-  data?: string;
-  status?: string;
-  message?: string;
-  stations?: TKStation[];
+interface PriceCsvRow {
+  date?: string;
+  station_uuid: string;
+  diesel?: string;
+  e5?: string;
+  e10?: string;
+  [k: string]: string | undefined;
 }
 
 interface StationOut {
@@ -141,156 +128,96 @@ function titleCase(s: string): string {
     .join('');
 }
 
-function sleep(ms: number): Promise<void> {
-  return new Promise((r) => setTimeout(r, ms));
+/** A finite price in the plausible €/litre range, else null. */
+function toPrice(v: string | undefined): number | null {
+  if (v == null) return null;
+  const n = parseFloat(v);
+  return Number.isFinite(n) && n > 0 && n < 5 ? n : null;
 }
 
-/**
- * Yield hex-packed grid centres covering Germany's bounding box.
- *
- * Honeycomb packing: rows are spaced by spacing × √3/2; alternating rows are
- * offset by half a column to give true hex coverage rather than a square
- * grid (more efficient — fewer cells for the same coverage).
- */
-function* gridCentres(): Generator<{ lat: number; lng: number }> {
-  const meanLat = (BOUNDS.minLat + BOUNDS.maxLat) / 2;
-  const dLat = GRID_SPACING_KM / 111; // ~111 km per ° latitude
-  const dLng = GRID_SPACING_KM / (111 * Math.cos((meanLat * Math.PI) / 180));
-  const rowStep = (dLat * Math.sqrt(3)) / 2;
-
-  let row = 0;
-  for (let lat = BOUNDS.minLat; lat <= BOUNDS.maxLat; lat += rowStep) {
-    const lngOffset = row % 2 === 0 ? 0 : dLng / 2;
-    for (let lng = BOUNDS.minLng + lngOffset; lng <= BOUNDS.maxLng; lng += dLng) {
-      yield { lat: +lat.toFixed(4), lng: +lng.toFixed(4) };
-    }
-    row++;
+/** Recursively collect files under `dir` whose name ends with `suffix`. */
+function findCsvs(dir: string, suffix: string): string[] {
+  if (!fs.existsSync(dir)) return [];
+  const out: string[] = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...findCsvs(full, suffix));
+    else if (entry.isFile() && entry.name.endsWith(suffix)) out.push(full);
   }
+  return out;
 }
 
-async function fetchCircle(
-  lat: number,
-  lng: number,
-  apiKey: string
-): Promise<TKListResponse> {
-  const url =
-    `${LIST_ENDPOINT}?lat=${lat}&lng=${lng}&rad=${SEARCH_RADIUS_KM}` +
-    `&sort=dist&type=all&apikey=${apiKey}`;
-  let lastErr: unknown;
-  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
-    try {
-      const res = await fetch(url, {
-        headers: { 'User-Agent': 'EuroOilWatch fetch-germany-stations.ts (https://eurooilwatch.com)' },
-      });
-      // 503 (overload) and 429 (rate-limit) are transient — back off and retry,
-      // honouring Retry-After if the server sent one.
-      if (res.status === 503 || res.status === 429) {
-        const retryAfter = Number(res.headers.get('retry-after'));
-        const wait = Number.isFinite(retryAfter) && retryAfter > 0
-          ? retryAfter * 1000
-          : RETRY_BASE_MS * 2 ** attempt; // exponential backoff
-        if (attempt < MAX_RETRIES) {
-          await sleep(wait);
-          continue;
-        }
-        throw new Error(`HTTP ${res.status} ${res.statusText} (exhausted ${MAX_RETRIES} retries)`);
-      }
-      if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
-      return (await res.json()) as TKListResponse;
-    } catch (err) {
-      lastErr = err;
-      // Connection-level failure (e.g. ECONNREFUSED from an IP block) — back
-      // off and retry a couple of times in case it's transient.
-      if (attempt < MAX_RETRIES) {
-        await sleep(RETRY_BASE_MS * 2 ** attempt);
-        continue;
-      }
-    }
-  }
-  throw lastErr instanceof Error ? lastErr : new Error(String(lastErr));
+function parseCsv<T>(file: string): T[] {
+  return parse(fs.readFileSync(file, 'utf8'), {
+    columns: true,
+    skip_empty_lines: true,
+    relax_quotes: true,
+    relax_column_count: true,
+    bom: true,
+  }) as T[];
 }
 
-async function main() {
-  const apiKey = process.env.TANKERKOENIG_API_KEY;
-  if (!apiKey) {
+function main() {
+  const dataDir = process.env.TANKERKOENIG_DATA_DIR;
+  if (!dataDir || !fs.existsSync(dataDir)) {
     console.log(
-      '[germany] TANKERKOENIG_API_KEY not set — skipping fetch.\n' +
-        '         Apply at https://creativecommons.tankerkoenig.de/api.html (24–48h).\n' +
-        '         For architecture testing, set TANKERKOENIG_API_KEY=' +
-        DEMO_KEY +
-        ' (no real prices, but proves the pipeline).'
+      '[germany] TANKERKOENIG_DATA_DIR unset or missing — skipping.\n' +
+        '         Populate it with a sparse clone of the tankerkoenig-data repo\n' +
+        '         (see scripts/clone-germany-data.sh), then re-run.'
     );
     process.exit(0);
   }
 
-  const isDemo = apiKey === DEMO_KEY;
-  if (isDemo) {
-    console.log(
-      '[germany] DEMO KEY mode — station locations will populate but prices will be empty.'
-    );
+  // Newest stations snapshot (filenames sort lexically = chronologically).
+  const stationFiles = findCsvs(path.join(dataDir, 'stations'), '-stations.csv').sort();
+  if (stationFiles.length === 0) {
+    console.log('[germany] no *-stations.csv found under TANKERKOENIG_DATA_DIR/stations — skipping.');
+    process.exit(0);
   }
+  const stationsFile = stationFiles[stationFiles.length - 1];
 
-  const centres = Array.from(gridCentres());
-  console.log(
-    `[germany] sweeping Germany with ${centres.length} radius-${SEARCH_RADIUS_KM}km search circles...`
-  );
+  // Last PRICE_DAYS price-change files, oldest first so newer rows overwrite.
+  const priceFiles = findCsvs(path.join(dataDir, 'prices'), '-prices.csv').sort();
+  if (priceFiles.length === 0) {
+    console.log('[germany] no *-prices.csv found under TANKERKOENIG_DATA_DIR/prices — skipping.');
+    process.exit(0);
+  }
+  const recentPriceFiles = priceFiles.slice(-PRICE_DAYS);
+
   const t0 = Date.now();
+  console.log(
+    `[germany] reading ${path.basename(stationsFile)} + ${recentPriceFiles.length} price file(s): ` +
+      recentPriceFiles.map((f) => path.basename(f)).join(', ')
+  );
 
-  // Dedupe stations by id (overlapping circles will return the same station)
-  const uniqueStations = new Map<string, TKStation>();
-  let failedCells = 0;
-  let consecutiveFailures = 0;
-
-  for (let i = 0; i < centres.length; i++) {
-    const { lat, lng } = centres[i];
-    try {
-      const r = await fetchCircle(lat, lng, apiKey);
-      if (r.ok && Array.isArray(r.stations)) {
-        for (const s of r.stations) {
-          if (!s.id) continue;
-          // First-seen wins; later overlapping calls would just return the
-          // same station data with a different `dist` field.
-          if (!uniqueStations.has(s.id)) {
-            uniqueStations.set(s.id, s);
-          }
-        }
-        consecutiveFailures = 0;
-      } else if (!r.ok && r.message) {
-        // Hard fail on the first error — usually means the key is wrong or
-        // rate-limited. Don't burn 600 more calls.
-        console.error(`[germany] API error: ${r.message}`);
-        process.exit(1);
-      }
-    } catch (err) {
-      failedCells++;
-      consecutiveFailures++;
-      if (failedCells <= 3) {
-        console.warn(`[germany] cell ${i}/${centres.length} (${lat},${lng}) failed:`, err);
-      }
-      // Circuit breaker: a run of back-to-back failures (after per-cell retries
-      // already exhausted) means the API has blocked us. Abort cleanly instead
-      // of hammering all remaining cells and deepening the ban.
-      if (consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
-        console.error(
-          `[germany] ABORTING: ${consecutiveFailures} consecutive cell failures — ` +
-            `tankerkoenig is rate-limiting or blocking us. Backing off so we don't ` +
-            `escalate to a hard IP ban. No files written; existing data left intact.`
-        );
-        process.exit(1);
-      }
-    }
-    // Progress log every 50 cells
-    if ((i + 1) % 50 === 0) {
-      console.log(
-        `[germany] swept ${i + 1}/${centres.length} cells, ${uniqueStations.size} unique stations so far`
-      );
-    }
-    if (REQUEST_DELAY_MS) await sleep(REQUEST_DELAY_MS);
+  // Station metadata
+  const stationMeta = new Map<string, StationCsvRow>();
+  for (const s of parseCsv<StationCsvRow>(stationsFile)) {
+    if (s.uuid) stationMeta.set(s.uuid.trim(), s);
   }
 
+  // Latest valid price per station per fuel, merged across recent days
+  // (oldest file first, top-to-bottom chronological → last valid value wins).
+  const stationFuels = new Map<string, Partial<Record<FuelKey, number>>>();
+  let priceRows = 0;
+  for (const file of recentPriceFiles) {
+    for (const p of parseCsv<PriceCsvRow>(file)) {
+      const id = (p.station_uuid || '').trim();
+      if (!id) continue;
+      priceRows++;
+      const cur = stationFuels.get(id) || {};
+      const d = toPrice(p.diesel);
+      const e5 = toPrice(p.e5);
+      const e10 = toPrice(p.e10);
+      if (d !== null) cur.gazole = d;
+      if (e5 !== null) cur.sp95 = e5;
+      if (e10 !== null) cur.e10 = e10;
+      stationFuels.set(id, cur);
+    }
+  }
   console.log(
-    `[germany] grid sweep done: ${uniqueStations.size} unique stations from ${centres.length} cells ` +
-      `(${failedCells} failed) in ${((Date.now() - t0) / 1000).toFixed(1)}s`
+    `[germany] parsed ${stationMeta.size} stations + ${priceRows} price rows ` +
+      `(${stationFuels.size} stations with a recent price) in ${((Date.now() - t0) / 1000).toFixed(1)}s`
   );
 
   // Aggregate
@@ -303,17 +230,13 @@ async function main() {
   let pricedStationCount = 0;
   let mappedStationCount = 0;
 
-  for (const meta of uniqueStations.values()) {
-    const plz = String(meta.postCode ?? '').padStart(5, '0');
+  for (const [id, meta] of stationMeta) {
+    const plz = String(meta.post_code ?? '').padStart(5, '0');
     const landCode = bundeslandFromPlz(plz);
     if (!landCode || !BUNDESLAENDER[landCode]) continue;
     mappedStationCount++;
 
-    const fuels: Partial<Record<FuelKey, number>> = {};
-    if (typeof meta.diesel === 'number' && meta.diesel > 0 && meta.diesel < 5) fuels.gazole = meta.diesel;
-    if (typeof meta.e5 === 'number' && meta.e5 > 0 && meta.e5 < 5) fuels.sp95 = meta.e5;
-    if (typeof meta.e10 === 'number' && meta.e10 > 0 && meta.e10 < 5) fuels.e10 = meta.e10;
-
+    const fuels = stationFuels.get(id) ?? {};
     const hasAny = Object.keys(fuels).length > 0;
     if (hasAny) pricedStationCount++;
 
@@ -325,23 +248,25 @@ async function main() {
       lands[landCode][f].push(v);
     }
 
-    // Always record the station (even without prices) so per-Land files and
-    // city index populate. Demo-mode runs go this path; real runs add prices.
+    // Always record the station (even without a recent price) so per-Land
+    // files and the city index stay complete.
     landStationCount[landCode] = (landStationCount[landCode] || 0) + 1;
-    const ville = titleCase(meta.place ?? '');
+    const ville = titleCase(meta.city ?? '');
     const adresse = titleCase(
-      `${meta.street ?? ''}${meta.houseNumber ? ' ' + meta.houseNumber : ''}`.trim()
+      `${meta.street ?? ''}${meta.house_number ? ' ' + meta.house_number : ''}`.trim()
     );
     const brand = titleCase(meta.brand ?? '');
+    const lat = meta.latitude ? parseFloat(meta.latitude) : NaN;
+    const lng = meta.longitude ? parseFloat(meta.longitude) : NaN;
     if (!landStations[landCode]) landStations[landCode] = [];
     landStations[landCode].push({
-      id: meta.id,
+      id,
       cp: plz,
       ville,
       adresse,
       brand,
-      lat: typeof meta.lat === 'number' ? meta.lat : null,
-      lng: typeof meta.lng === 'number' ? meta.lng : null,
+      lat: Number.isFinite(lat) ? lat : null,
+      lng: Number.isFinite(lng) ? lng : null,
       fuels,
     });
   }
@@ -367,10 +292,10 @@ async function main() {
 
   const out = {
     asOf: new Date().toISOString(),
-    source: 'https://creativecommons.tankerkoenig.de/',
-    licence: 'CC BY 4.0 — Bundeskartellamt MTS-K via tankerkoenig.de',
-    mode: isDemo ? 'demo' : 'live',
-    totalStations: uniqueStations.size,
+    source: 'https://dev.azure.com/tankerkoenig/_git/tankerkoenig-data',
+    licence: 'CC BY-NC-SA 4.0 — Bundeskartellamt MTS-K via tankerkoenig.de',
+    mode: 'live',
+    totalStations: stationMeta.size,
     mappedStations: mappedStationCount,
     pricedStations: pricedStationCount,
     freshStations: pricedStationCount, // alias used by the route page
@@ -386,35 +311,12 @@ async function main() {
     bundeslaender: regions,
   };
 
-  // In demo mode, just print verification stats and exit without writing.
-  // Writing demo data to disk would (a) leak misleading €1.009 prices into
-  // the live site if the files got committed, and (b) need to be cleaned
-  // up later anyway. The architecture is verified by the grid sweep itself.
-  if (isDemo) {
-    const uniqueCities = new Set<string>();
-    for (const stationsList of Object.values(landStations)) {
-      for (const s of stationsList) {
-        const v = s.ville.trim();
-        if (v) uniqueCities.add(v.toLowerCase());
-      }
-    }
-    console.log(
-      `[germany] DEMO verification COMPLETE: ${out.totalStations} unique stations, ` +
-        `${Object.values(out.regions).filter((r) => r.stationCount > 0).length}/16 Bundesländer mapped, ` +
-        `${uniqueCities.size} unique cities. No files written. ` +
-        `Swap in the real key (env TANKERKOENIG_API_KEY) to run for real.`
-    );
-    process.exit(0);
-  }
-
   // Sanity guard: refuse to write an implausibly small result over good data.
-  // A healthy sweep maps most of Germany's ~14k stations; a few hundred means
-  // the sweep was throttled/blocked partway and the output is garbage.
   if (out.mappedStations < MIN_PLAUSIBLE_STATIONS) {
     console.error(
       `[germany] ABORTING: only ${out.mappedStations} stations mapped ` +
-        `(< ${MIN_PLAUSIBLE_STATIONS} expected) — the sweep was almost certainly ` +
-        `throttled or blocked. NOT writing; existing data left intact.`
+        `(< ${MIN_PLAUSIBLE_STATIONS} expected) — the CSV dataset looks partial/truncated. ` +
+        `NOT writing; existing data left intact.`
     );
     process.exit(1);
   }
@@ -472,17 +374,8 @@ async function main() {
 
   console.log(
     `[germany] wrote ${outPath} + ${written.size} per-Land files + ${cityIndex.length} cities  ` +
-      `(${out.pricedStations} priced / ${out.mappedStations} mapped / ${out.totalStations} total unique stations)`
+      `(${out.pricedStations} priced / ${out.mappedStations} mapped / ${out.totalStations} total stations)`
   );
-  if (isDemo) {
-    console.log(
-      '[germany] DEMO mode complete — architecture verified end-to-end. ' +
-        'Swap the real key in and run again for live prices.'
-    );
-  }
 }
 
-main().catch((err) => {
-  console.error('[germany] FATAL:', err);
-  process.exit(1);
-});
+main();
