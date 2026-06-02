@@ -39,8 +39,21 @@ const SEARCH_RADIUS_KM = 25;
 // Distance between hex-grid centres (km). 37.5 = 1.5 × radius gives clear
 // overlap so no gaps even where the grid bumps up against Germany's borders.
 const GRID_SPACING_KM = 37.5;
-// Inter-call politeness delay (tankerkoenig is a small non-profit; play nice)
-const REQUEST_DELAY_MS = 150;
+// Inter-call politeness delay. tankerkoenig is a small non-profit and will
+// 503 then firewall-block (ECONNREFUSED) your IP if you fire requests faster
+// than roughly 1/sec — a 150ms sweep of ~570 cells got us temporarily banned.
+// Default to a courteous ~1 req/sec; override with TK_DELAY_MS if needed.
+const REQUEST_DELAY_MS = Number(process.env.TK_DELAY_MS ?? 1000);
+// Per-cell retry policy for transient 503/429 (overload / soft rate-limit).
+const MAX_RETRIES = 5;
+const RETRY_BASE_MS = 2000;
+// Circuit breaker: if this many cells fail in a row, the API has almost
+// certainly blocked us — abort cleanly rather than hammering into a hard ban.
+const MAX_CONSECUTIVE_FAILURES = 15;
+// Sanity floor. Germany has ~14k–15k stations; a healthy sweep maps most of
+// them. Anything far below this means the sweep failed, and we must NOT let
+// the degraded result overwrite good data on disk.
+const MIN_PLAUSIBLE_STATIONS = 3000;
 
 // Germany bounding box (padded slightly beyond actual borders).
 // Sylt to Bodensee, Aachen to Görlitz.
@@ -163,11 +176,38 @@ async function fetchCircle(
   const url =
     `${LIST_ENDPOINT}?lat=${lat}&lng=${lng}&rad=${SEARCH_RADIUS_KM}` +
     `&sort=dist&type=all&apikey=${apiKey}`;
-  const res = await fetch(url, {
-    headers: { 'User-Agent': 'EuroOilWatch fetch-germany-stations.ts (https://eurooilwatch.com)' },
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
-  return (await res.json()) as TKListResponse;
+  let lastErr: unknown;
+  for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      const res = await fetch(url, {
+        headers: { 'User-Agent': 'EuroOilWatch fetch-germany-stations.ts (https://eurooilwatch.com)' },
+      });
+      // 503 (overload) and 429 (rate-limit) are transient — back off and retry,
+      // honouring Retry-After if the server sent one.
+      if (res.status === 503 || res.status === 429) {
+        const retryAfter = Number(res.headers.get('retry-after'));
+        const wait = Number.isFinite(retryAfter) && retryAfter > 0
+          ? retryAfter * 1000
+          : RETRY_BASE_MS * 2 ** attempt; // exponential backoff
+        if (attempt < MAX_RETRIES) {
+          await sleep(wait);
+          continue;
+        }
+        throw new Error(`HTTP ${res.status} ${res.statusText} (exhausted ${MAX_RETRIES} retries)`);
+      }
+      if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+      return (await res.json()) as TKListResponse;
+    } catch (err) {
+      lastErr = err;
+      // Connection-level failure (e.g. ECONNREFUSED from an IP block) — back
+      // off and retry a couple of times in case it's transient.
+      if (attempt < MAX_RETRIES) {
+        await sleep(RETRY_BASE_MS * 2 ** attempt);
+        continue;
+      }
+    }
+  }
+  throw lastErr instanceof Error ? lastErr : new Error(String(lastErr));
 }
 
 async function main() {
@@ -199,6 +239,7 @@ async function main() {
   // Dedupe stations by id (overlapping circles will return the same station)
   const uniqueStations = new Map<string, TKStation>();
   let failedCells = 0;
+  let consecutiveFailures = 0;
 
   for (let i = 0; i < centres.length; i++) {
     const { lat, lng } = centres[i];
@@ -213,6 +254,7 @@ async function main() {
             uniqueStations.set(s.id, s);
           }
         }
+        consecutiveFailures = 0;
       } else if (!r.ok && r.message) {
         // Hard fail on the first error — usually means the key is wrong or
         // rate-limited. Don't burn 600 more calls.
@@ -221,8 +263,20 @@ async function main() {
       }
     } catch (err) {
       failedCells++;
+      consecutiveFailures++;
       if (failedCells <= 3) {
         console.warn(`[germany] cell ${i}/${centres.length} (${lat},${lng}) failed:`, err);
+      }
+      // Circuit breaker: a run of back-to-back failures (after per-cell retries
+      // already exhausted) means the API has blocked us. Abort cleanly instead
+      // of hammering all remaining cells and deepening the ban.
+      if (consecutiveFailures >= MAX_CONSECUTIVE_FAILURES) {
+        console.error(
+          `[germany] ABORTING: ${consecutiveFailures} consecutive cell failures — ` +
+            `tankerkoenig is rate-limiting or blocking us. Backing off so we don't ` +
+            `escalate to a hard IP ban. No files written; existing data left intact.`
+        );
+        process.exit(1);
       }
     }
     // Progress log every 50 cells
@@ -337,13 +391,32 @@ async function main() {
   // the live site if the files got committed, and (b) need to be cleaned
   // up later anyway. The architecture is verified by the grid sweep itself.
   if (isDemo) {
+    const uniqueCities = new Set<string>();
+    for (const stationsList of Object.values(landStations)) {
+      for (const s of stationsList) {
+        const v = s.ville.trim();
+        if (v) uniqueCities.add(v.toLowerCase());
+      }
+    }
     console.log(
       `[germany] DEMO verification COMPLETE: ${out.totalStations} unique stations, ` +
-        `${Object.keys(out.regions).length} Bundesländer mapped, ` +
-        `${cityAggCount()} unique cities. No files written. ` +
-        `Swap in the real key to run for real.`
+        `${Object.values(out.regions).filter((r) => r.stationCount > 0).length}/16 Bundesländer mapped, ` +
+        `${uniqueCities.size} unique cities. No files written. ` +
+        `Swap in the real key (env TANKERKOENIG_API_KEY) to run for real.`
     );
     process.exit(0);
+  }
+
+  // Sanity guard: refuse to write an implausibly small result over good data.
+  // A healthy sweep maps most of Germany's ~14k stations; a few hundred means
+  // the sweep was throttled/blocked partway and the output is garbage.
+  if (out.mappedStations < MIN_PLAUSIBLE_STATIONS) {
+    console.error(
+      `[germany] ABORTING: only ${out.mappedStations} stations mapped ` +
+        `(< ${MIN_PLAUSIBLE_STATIONS} expected) — the sweep was almost certainly ` +
+        `throttled or blocked. NOT writing; existing data left intact.`
+    );
+    process.exit(1);
   }
 
   const outPath = path.join(process.cwd(), 'data', 'germany-fuel-prices.json');
@@ -352,7 +425,6 @@ async function main() {
 
   // City index
   const cityAgg = new Map<string, { ville: string; land: string; n: number }>();
-  function cityAggCount() { return cityAgg.size; } // exposed for demo log
   for (const [landCode, stationsList] of Object.entries(landStations)) {
     for (const s of stationsList) {
       const ville = s.ville.trim();
