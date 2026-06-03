@@ -108,11 +108,13 @@ export default function JsonLd({
       {
         '@type': 'Dataset',
         name: 'Eurostat Oil Stock Levels (nrg_stk_oilm)',
+        description: 'Eurostat monthly oil and petroleum-product stock levels for EU member states (dataset nrg_stk_oilm).',
         url: 'https://ec.europa.eu/eurostat/databrowser/view/NRG_STK_OILM',
       },
       {
         '@type': 'Dataset',
         name: 'EC Weekly Oil Bulletin',
+        description: 'European Commission weekly consumer fuel prices (petrol, diesel, heating oil) for all EU member states, including taxes.',
         url: 'https://energy.ec.europa.eu/data-and-analysis/weekly-oil-bulletin_en',
       },
     ],
