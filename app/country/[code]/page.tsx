@@ -8,8 +8,23 @@ import FranceRegionalView, { type FranceData } from '@/components/FranceRegional
 import SpainRegionalView, { type SpainData } from '@/components/SpainRegionalView';
 import ItalyRegionalView, { type ItalyData } from '@/components/ItalyRegionalView';
 import GermanyRegionalView, { type GermanyData } from '@/components/GermanyRegionalView';
+import AreaDirectory, { type DirectoryArea } from '@/components/AreaDirectory';
+import { REGIONS as FR_REGIONS, DEPARTMENTS as FR_DEPARTMENTS } from '@/lib/france-geo';
+import { REGIONS as ES_REGIONS, PROVINCES as ES_PROVINCES } from '@/lib/spain-geo';
+import { REGIONS as IT_REGIONS, PROVINCES as IT_PROVINCES } from '@/lib/italy-geo';
 import type { ExtendedCountryCode } from '@/lib/types';
 import type { Metadata } from 'next';
+
+// Build crawlable directory lists once at module load (static geo data).
+const FR_AREAS: DirectoryArea[] = Object.values(FR_DEPARTMENTS).map((d) => ({
+  code: d.code, name: d.name, group: FR_REGIONS[d.regionCode]?.name ?? 'Autres',
+}));
+const ES_AREAS: DirectoryArea[] = Object.values(ES_PROVINCES).map((p) => ({
+  code: p.code, name: p.name, group: ES_REGIONS[p.regionCode]?.name ?? 'Otras',
+}));
+const IT_AREAS: DirectoryArea[] = Object.values(IT_PROVINCES).map((p) => ({
+  code: p.code, name: p.name, group: IT_REGIONS[p.regionCode]?.name ?? 'Altre',
+}));
 
 function loadFranceData(): FranceData | null {
   try {
@@ -162,22 +177,52 @@ export default function CountryPage({ params }: PageProps) {
         </p>
       </section>
 
-      {/* France-specific: live station-level prices */}
+      {/* France-specific: live station-level prices + crawlable département directory */}
       {code === 'FR' && (() => {
         const franceData = loadFranceData();
-        return franceData ? <FranceRegionalView data={franceData} /> : null;
+        return (
+          <>
+            {franceData ? <FranceRegionalView data={franceData} /> : null}
+            <AreaDirectory
+              heading="All French départements — live fuel prices"
+              blurb="Browse live gazole, SP95-E10, SP95 and SP98 prices by station for every French département, updated daily from official prix-carburants data."
+              basePath="/country/fr/dept"
+              areas={FR_AREAS}
+            />
+          </>
+        );
       })()}
 
-      {/* Spain-specific: live station-level prices */}
+      {/* Spain-specific: live station-level prices + crawlable provincia directory */}
       {code === 'ES' && (() => {
         const spainData = loadSpainData();
-        return spainData ? <SpainRegionalView data={spainData} /> : null;
+        return (
+          <>
+            {spainData ? <SpainRegionalView data={spainData} /> : null}
+            <AreaDirectory
+              heading="All Spanish provincias — live fuel prices"
+              blurb="Browse live gasóleo A, gasolina 95 and gasolina 98 prices by station for every Spanish provincia, updated daily from the Ministerio para la Transición Ecológica."
+              basePath="/country/es/prov"
+              areas={ES_AREAS}
+            />
+          </>
+        );
       })()}
 
-      {/* Italy-specific: live station-level prices */}
+      {/* Italy-specific: live station-level prices + crawlable provincia directory */}
       {code === 'IT' && (() => {
         const italyData = loadItalyData();
-        return italyData ? <ItalyRegionalView data={italyData} /> : null;
+        return (
+          <>
+            {italyData ? <ItalyRegionalView data={italyData} /> : null}
+            <AreaDirectory
+              heading="All Italian province — live fuel prices"
+              blurb="Browse live gasolio and benzina prices by station for every Italian provincia, updated daily from the MIMIT dataset."
+              basePath="/country/it/prov"
+              areas={IT_AREAS}
+            />
+          </>
+        );
       })()}
 
       {/* Germany-specific: live station-level prices (pending tankerkoenig API key) */}
