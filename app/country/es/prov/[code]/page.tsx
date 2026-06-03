@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { PROVINCES, REGIONS } from '@/lib/spain-geo';
 import { notFound } from 'next/navigation';
 import ProvStationList from '@/components/ProvStationList';
+import JsonLd from '@/components/JsonLd';
 
 type FuelKey = 'gazole' | 'sp95' | 'sp98' | 'e10' | 'e85' | 'gplc';
 
@@ -111,6 +112,18 @@ export default function ProvPage({
 
   return (
     <div className="max-w-5xl mx-auto space-y-8">
+      <JsonLd
+        type="area"
+        countryName="Spain"
+        countryCode="ES"
+        areaName={prov.name}
+        areaKind="provincia"
+        areaPath={`/country/es/prov/${params.code.toLowerCase()}`}
+        regionName={region?.name}
+        fuels="gasóleo A, gasolina 95, gasolina 98"
+        sourceName="Ministerio para la Transición Ecológica"
+        sourceUrl="https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/"
+      />
       <div className="flex flex-wrap items-center gap-2 text-xs text-gray-500">
         <a href="/" className="text-oil-400 hover:underline">EuroOilWatch</a>
         <span>›</span>

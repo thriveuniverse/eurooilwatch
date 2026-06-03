@@ -6,12 +6,31 @@
  */
 
 interface JsonLdProps {
-  type: 'home' | 'country' | 'prices' | 'about' | 'methodology';
+  type: 'home' | 'country' | 'prices' | 'about' | 'methodology' | 'area';
   countryName?: string;
   countryCode?: string;
+  // area-specific (département / provincia station-price pages)
+  areaName?: string;
+  areaKind?: string; // "département" | "provincia"
+  areaPath?: string; // "/country/fr/dept/75"
+  regionName?: string;
+  fuels?: string; // human-readable fuel list, e.g. "gazole, SP95-E10, SP98"
+  sourceName?: string;
+  sourceUrl?: string;
 }
 
-export default function JsonLd({ type, countryName, countryCode }: JsonLdProps) {
+export default function JsonLd({
+  type,
+  countryName,
+  countryCode,
+  areaName,
+  areaKind,
+  areaPath,
+  regionName,
+  fuels,
+  sourceName,
+  sourceUrl,
+}: JsonLdProps) {
   const baseUrl = 'https://eurooilwatch.com';
 
   // Organization — appears on all pages
@@ -45,7 +64,7 @@ export default function JsonLd({ type, countryName, countryCode }: JsonLdProps) 
     '@context': 'https://schema.org',
     '@type': 'Dataset',
     name: 'EU Fuel Reserve and Price Data',
-    description: 'Monthly oil stock levels, weekly fuel prices, and crude oil benchmarks for all 27 EU member states. Sources: Eurostat (nrg_stk_oilm), EC Weekly Oil Bulletin, Yahoo Finance.',
+    description: 'Monthly oil stock levels, weekly fuel prices, and crude oil benchmarks for all 27 EU member states. Sources: Eurostat (nrg_stk_oilm), EC Weekly Oil Bulletin, Stooq.',
     url: baseUrl,
     license: 'https://ec.europa.eu/eurostat/about-us/policies/copyright',
     creator: organization,
@@ -169,6 +188,51 @@ export default function JsonLd({ type, countryName, countryCode }: JsonLdProps) 
         '@type': 'Country',
         name: countryName,
       },
+    });
+  }
+
+  if (type === 'area' && areaName && areaPath && countryName) {
+    const url = `${baseUrl}${areaPath}`;
+
+    // Breadcrumb: Home → Country → Area
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: countryName,
+          item: `${baseUrl}/country/${(countryCode ?? '').toLowerCase()}`,
+        },
+        { '@type': 'ListItem', position: 3, name: areaName, item: url },
+      ],
+    });
+
+    // Dataset: the live station-price feed for this area
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'Dataset',
+      name: `Live fuel prices — ${areaName}${areaKind ? ` (${areaKind})` : ''}`,
+      description: `Station-level ${fuels ?? 'fuel'} prices for ${areaName}${regionName ? `, ${regionName}` : ''}, ${countryName}. Updated daily${sourceName ? ` from ${sourceName}` : ''}.`,
+      url,
+      isAccessibleForFree: true,
+      creator: organization,
+      temporalCoverage: '2024/..',
+      spatialCoverage: {
+        '@type': 'Place',
+        name: `${areaName}, ${countryName}`,
+      },
+      variableMeasured: {
+        '@type': 'PropertyValue',
+        name: 'Consumer fuel prices',
+        unitText: 'EUR per litre',
+        description: `Station-level pump prices (${fuels ?? 'multiple fuel grades'}) including all taxes`,
+      },
+      ...(sourceUrl
+        ? { isBasedOn: { '@type': 'Dataset', name: sourceName ?? 'Official source', url: sourceUrl } }
+        : {}),
     });
   }
 

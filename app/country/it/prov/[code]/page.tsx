@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { PROVINCES, REGIONS } from '@/lib/italy-geo';
 import { notFound } from 'next/navigation';
 import ProvinciaStationList from '@/components/ProvinciaStationList';
+import JsonLd from '@/components/JsonLd';
 
 type FuelKey = 'gazole' | 'sp95' | 'sp98' | 'e10' | 'e85' | 'gplc';
 
@@ -111,6 +112,18 @@ export default function ProvPage({
 
   return (
     <div className="max-w-5xl mx-auto space-y-8">
+      <JsonLd
+        type="area"
+        countryName="Italy"
+        countryCode="IT"
+        areaName={prov.name}
+        areaKind="provincia"
+        areaPath={`/country/it/prov/${params.code.toLowerCase()}`}
+        regionName={region?.name}
+        fuels="gasolio, benzina, benzina 98"
+        sourceName="MIMIT"
+        sourceUrl="https://www.mimit.gov.it/it/open-data/elenco-dataset/2032336-dataset-prezzi-carburanti"
+      />
       <div className="flex flex-wrap items-center gap-2 text-xs text-gray-500">
         <a href="/" className="text-oil-400 hover:underline">EuroOilWatch</a>
         <span>›</span>

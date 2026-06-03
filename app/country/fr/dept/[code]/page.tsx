@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { DEPARTMENTS, REGIONS } from '@/lib/france-geo';
 import { notFound } from 'next/navigation';
 import DeptStationList from '@/components/DeptStationList';
+import JsonLd from '@/components/JsonLd';
 
 type FuelKey = 'gazole' | 'sp95' | 'sp98' | 'e10' | 'e85' | 'gplc';
 
@@ -113,6 +114,18 @@ export default function DeptPage({
 
   return (
     <div className="max-w-5xl mx-auto space-y-8">
+      <JsonLd
+        type="area"
+        countryName="France"
+        countryCode="FR"
+        areaName={dept.name}
+        areaKind="département"
+        areaPath={`/country/fr/dept/${params.code.toLowerCase()}`}
+        regionName={region?.name}
+        fuels="gazole, SP95-E10, SP95, SP98"
+        sourceName="prix-carburants (data.economie.gouv.fr)"
+        sourceUrl="https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/"
+      />
       {/* Breadcrumb */}
       <div className="flex flex-wrap items-center gap-2 text-xs text-gray-500">
         <a href="/" className="text-oil-400 hover:underline">EuroOilWatch</a>
