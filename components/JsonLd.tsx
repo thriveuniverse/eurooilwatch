@@ -6,7 +6,7 @@
  */
 
 interface JsonLdProps {
-  type: 'home' | 'country' | 'prices' | 'about' | 'methodology' | 'area';
+  type: 'home' | 'country' | 'prices' | 'about' | 'methodology' | 'area' | 'article';
   countryName?: string;
   countryCode?: string;
   // area-specific (département / provincia station-price pages)
@@ -17,6 +17,12 @@ interface JsonLdProps {
   fuels?: string; // human-readable fuel list, e.g. "gazole, SP95-E10, SP98"
   sourceName?: string;
   sourceUrl?: string;
+  // article-specific (analysis pages)
+  articleTitle?: string;
+  articleDescription?: string;
+  articleDate?: string;
+  articleAuthor?: string;
+  articleSlug?: string;
 }
 
 export default function JsonLd({
@@ -30,6 +36,11 @@ export default function JsonLd({
   fuels,
   sourceName,
   sourceUrl,
+  articleTitle,
+  articleDescription,
+  articleDate,
+  articleAuthor,
+  articleSlug,
 }: JsonLdProps) {
   const baseUrl = 'https://eurooilwatch.com';
 
@@ -268,6 +279,35 @@ export default function JsonLd({
       description: 'About EuroOilWatch — an independent European fuel reserve and price transparency dashboard.',
       url: `${baseUrl}/about`,
       mainEntity: organization,
+    });
+  }
+
+  if (type === 'article' && articleTitle && articleSlug) {
+    const url = `${baseUrl}/analysis/${articleSlug}`;
+
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: articleTitle,
+      description: articleDescription,
+      datePublished: articleDate,
+      dateModified: articleDate,
+      author: { '@type': 'Person', name: articleAuthor ?? 'EuroOilWatch' },
+      publisher: { '@type': 'Organization', name: 'EuroOilWatch', url: baseUrl },
+      image: `${baseUrl}/og-image.png`,
+      mainEntityOfPage: url,
+      url,
+      isPartOf: { '@id': `${baseUrl}/#website` },
+    });
+
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: baseUrl },
+        { '@type': 'ListItem', position: 2, name: 'Analysis', item: `${baseUrl}/analysis` },
+        { '@type': 'ListItem', position: 3, name: articleTitle, item: url },
+      ],
     });
   }
 

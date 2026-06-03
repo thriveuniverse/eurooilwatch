@@ -4,6 +4,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import EmailCTA from '@/components/EmailCTA';
+import JsonLd from '@/components/JsonLd';
 
 const CONTENT_DIR = path.join(process.cwd(), 'content/analysis');
 
@@ -114,6 +115,14 @@ export default function ArticlePage({
 
   return (
     <div className="max-w-3xl mx-auto space-y-8">
+      <JsonLd
+        type="article"
+        articleTitle={data.title}
+        articleDescription={data.excerpt}
+        articleDate={data.date}
+        articleAuthor={data.author}
+        articleSlug={params.slug}
+      />
       <div>
         <a href="/analysis" className="text-xs text-oil-400 hover:underline">
           ← Back to Analysis
