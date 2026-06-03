@@ -5,6 +5,7 @@ import { PROVINCES, REGIONS } from '@/lib/spain-geo';
 import { notFound } from 'next/navigation';
 import ProvStationList from '@/components/ProvStationList';
 import JsonLd from '@/components/JsonLd';
+import AreaPriceSummary, { type FuelSummaryLine } from '@/components/AreaPriceSummary';
 
 type FuelKey = 'gazole' | 'sp95' | 'sp98' | 'e10' | 'e85' | 'gplc';
 
@@ -158,6 +159,27 @@ export default function ProvPage({
           <p className="text-sm text-gray-400">Live station data is not yet available for this provincia.</p>
         )}
       </header>
+
+      {data && (() => {
+        const lines = PRIMARY.flatMap((key): FuelSummaryLine[] => {
+          const stat = data.fuels[key];
+          if (!stat || !stat.count) return [];
+          let best = Infinity;
+          let where = '';
+          for (const s of data.stations) {
+            const p = s.fuels[key];
+            if (typeof p === 'number' && p > 0 && p < best) {
+              best = p;
+              where = s.brand ? `${s.brand}, ${s.ville}` : s.ville;
+            }
+          }
+          if (!Number.isFinite(best) || !where) return [];
+          return [{ label: FUEL_LABEL[key], cheapest: best, where, average: stat.mean, count: stat.count }];
+        });
+        return lines.length ? (
+          <AreaPriceSummary areaName={prov.name} areaKind="provincia" asOf={data.asOf} lines={lines} />
+        ) : null;
+      })()}
 
       {data && (
         <>

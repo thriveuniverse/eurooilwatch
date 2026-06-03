@@ -5,6 +5,7 @@ import { DEPARTMENTS, REGIONS } from '@/lib/france-geo';
 import { notFound } from 'next/navigation';
 import DeptStationList from '@/components/DeptStationList';
 import JsonLd from '@/components/JsonLd';
+import AreaPriceSummary, { type FuelSummaryLine } from '@/components/AreaPriceSummary';
 
 type FuelKey = 'gazole' | 'sp95' | 'sp98' | 'e10' | 'e85' | 'gplc';
 
@@ -164,6 +165,24 @@ export default function DeptPage({
           <p className="text-sm text-gray-400">Live station data is not yet available for this département.</p>
         )}
       </header>
+
+      {data && (() => {
+        const lines = PRIMARY.flatMap((key): FuelSummaryLine[] => {
+          const stat = data.fuels[key];
+          if (!stat || !stat.count) return [];
+          let best = Infinity;
+          let where = '';
+          for (const s of data.stations) {
+            const p = s.fuels[key];
+            if (typeof p === 'number' && p > 0 && p < best) { best = p; where = s.ville; }
+          }
+          if (!Number.isFinite(best) || !where) return [];
+          return [{ label: FUEL_LABEL[key], cheapest: best, where, average: stat.mean, count: stat.count }];
+        });
+        return lines.length ? (
+          <AreaPriceSummary areaName={dept.name} areaKind="département" asOf={data.asOf} lines={lines} />
+        ) : null;
+      })()}
 
       {data && (
         <>
