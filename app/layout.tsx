@@ -6,6 +6,7 @@ import CookieConsent from '@/components/CookieConsent';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://eurooilwatch.com'),
+  icons: { icon: '/icon.svg', shortcut: '/icon.svg', apple: '/icon.svg' },
   title: {
     default: 'EuroOilWatch — EU Fuel Reserve & Price Intelligence',
     template: '%s | EuroOilWatch',
