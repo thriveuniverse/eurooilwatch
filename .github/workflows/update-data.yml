@@ -4,6 +4,9 @@ on:
   schedule:
     # Run at 05:00 UTC daily (07:00 CEST)
     - cron: '0 5 * * *'
+    # Second daily run at 17:00 UTC (19:00 CEST) — national station-price feeds
+    # (FR/ES/IT/DE) refresh through the day; keeps pump data fresher
+    - cron: '0 17 * * *'
     # Also run at 16:00 UTC on Thursdays (after EC Oil Bulletin publishes)
     - cron: '0 16 * * 4'
   workflow_dispatch: # Allow manual triggers
