@@ -3,35 +3,35 @@
   "name": "Cantal",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-05T08:38:41.636Z",
+  "asOf": "2026-06-05T18:57:23.416Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 46,
+  "stationCount": 47,
   "fuels": {
     "gazole": {
-      "count": 45,
-      "mean": 2.0548,
-      "median": 2.059,
+      "count": 46,
+      "mean": 2.0506,
+      "median": 2.049,
       "min": 1.939,
       "max": 2.185
     },
     "sp95": {
       "count": 28,
-      "mean": 2.0519,
+      "mean": 2.0488,
       "median": 2.048,
       "min": 1.968,
       "max": 2.25
     },
     "sp98": {
-      "count": 26,
-      "mean": 2.1126,
-      "median": 2.0965,
+      "count": 28,
+      "mean": 2.1006,
+      "median": 2.095,
       "min": 1.99,
       "max": 2.27
     },
     "e10": {
       "count": 23,
-      "mean": 1.986,
+      "mean": 1.9815,
       "median": 1.98,
       "min": 1.89,
       "max": 2.17
@@ -78,8 +78,9 @@
       "lng": 244627,
       "fuels": {
         "gazole": 1.982,
-        "sp95": 1.986,
-        "e10": 1.952
+        "sp95": 1.978,
+        "sp98": 2.1,
+        "e10": 1.939
       }
     },
     {
@@ -119,9 +120,10 @@
       "lat": 4491572,
       "lng": 243189,
       "fuels": {
-        "gazole": 1.987,
-        "sp95": 1.986,
-        "e10": 1.952
+        "gazole": 1.982,
+        "sp95": 1.978,
+        "sp98": 2.1,
+        "e10": 1.939
       }
     },
     {
@@ -133,7 +135,7 @@
       "lat": 4492300,
       "lng": 242800,
       "fuels": {
-        "gazole": 2.087,
+        "gazole": 2.079,
         "sp95": 1.99
       }
     },
@@ -246,6 +248,18 @@
       }
     },
     {
+      "id": "15130001",
+      "cp": "15130",
+      "ville": "Lafeuillade-en-Vézie",
+      "adresse": "1 rue germain prat",
+      "pop": "R",
+      "lat": 4478800,
+      "lng": 245600,
+      "fuels": {
+        "gazole": 2.164
+      }
+    },
+    {
       "id": "15290001",
       "cp": "15290",
       "ville": "Le Rouget-Pers",
@@ -296,7 +310,7 @@
       "lat": 4526200,
       "lng": 319900,
       "fuels": {
-        "gazole": 2.099,
+        "gazole": 1.999,
         "sp95": 2.085,
         "sp98": 2.15
       }
@@ -462,9 +476,9 @@
       "lat": 4500100,
       "lng": 322400,
       "fuels": {
-        "gazole": 2.119,
-        "sp95": 2.139,
-        "sp98": 2.215
+        "gazole": 2.019,
+        "sp95": 2.068,
+        "sp98": 2.095
       }
     },
     {
@@ -516,9 +530,9 @@
       "lat": 4503400,
       "lng": 309300,
       "fuels": {
-        "gazole": 2.119,
-        "sp98": 2.215,
-        "e10": 2.094
+        "gazole": 2.019,
+        "sp98": 2.095,
+        "e10": 2.018
       }
     },
     {
@@ -679,9 +693,9 @@
       "lat": 4489455.91392,
       "lng": 240159.25602,
       "fuels": {
-        "gazole": 1.959,
+        "gazole": 1.969,
         "sp95": 1.968,
-        "sp98": 2.17,
+        "sp98": 2.099,
         "e10": 1.929,
         "e85": 0.819
       }
