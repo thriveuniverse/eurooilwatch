@@ -3,24 +3,24 @@
   "name": "Haute-Corse",
   "regionCode": "COR",
   "regionName": "Corse",
-  "asOf": "2026-06-04T08:43:09.258Z",
+  "asOf": "2026-06-05T08:38:41.636Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 55,
+  "stationCount": 58,
   "fuels": {
     "gazole": {
-      "count": 54,
-      "mean": 2.1437,
-      "median": 2.15,
+      "count": 56,
+      "mean": 2.1418,
+      "median": 2.1425,
       "min": 2.08,
       "max": 2.25
     },
     "sp95": {
-      "count": 39,
-      "mean": 1.9914,
+      "count": 43,
+      "mean": 1.9992,
       "median": 1.99,
       "min": 1.95,
-      "max": 2.05
+      "max": 2.15
     },
     "gplc": {
       "count": 3,
@@ -31,6 +31,18 @@
     }
   },
   "stations": [
+    {
+      "id": "20270003",
+      "cp": "20270",
+      "ville": "Aléria",
+      "adresse": "Rn 198 Cateragghju",
+      "pop": "R",
+      "lat": 4211500,
+      "lng": 951400,
+      "fuels": {
+        "sp95": 2.15
+      }
+    },
     {
       "id": "20220006",
       "cp": "20220",
@@ -295,7 +307,8 @@
       "lat": 4231700,
       "lng": 915900,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "sp95": 2.05
       }
     },
     {
@@ -307,7 +320,8 @@
       "lat": 4230179.01771,
       "lng": 915751.78956,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "sp95": 2.05
       }
     },
     {
@@ -369,6 +383,18 @@
       "lng": 941100,
       "fuels": {
         "gazole": 2.16
+      }
+    },
+    {
+      "id": "20240001",
+      "cp": "20240",
+      "ville": "Ghisonaccia",
+      "adresse": "520 Avenue du 9 Septembre",
+      "pop": "R",
+      "lat": 4201351.14479,
+      "lng": 940397.08676,
+      "fuels": {
+        "gazole": 2.12
       }
     },
     {
@@ -546,7 +572,7 @@
       "lat": 4244623.32672,
       "lng": 950772.97779,
       "fuels": {
-        "gazole": 2.16,
+        "gazole": 2.09,
         "sp95": 1.99
       }
     },
@@ -598,7 +624,7 @@
       "lat": 4268100,
       "lng": 930400,
       "fuels": {
-        "gazole": 2.11,
+        "gazole": 2.09,
         "sp95": 1.99
       }
     },
@@ -613,6 +639,19 @@
       "fuels": {
         "gazole": 2.15,
         "sp95": 2.03
+      }
+    },
+    {
+      "id": "20217005",
+      "cp": "20217",
+      "ville": "Saint-Florent",
+      "adresse": "Route de Patrimonio",
+      "pop": "R",
+      "lat": 4268500,
+      "lng": 930700,
+      "fuels": {
+        "gazole": 2.15,
+        "sp95": 2.05
       }
     },
     {
