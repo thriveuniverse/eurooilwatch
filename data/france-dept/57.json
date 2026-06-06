@@ -3,43 +3,43 @@
   "name": "Moselle",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-06-06T07:41:18.613Z",
+  "asOf": "2026-06-06T18:04:49.161Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 125,
   "fuels": {
     "gazole": {
       "count": 125,
-      "mean": 2.0407,
+      "mean": 2.0406,
       "median": 2.028,
       "min": 1.92,
       "max": 2.189
     },
     "sp95": {
-      "count": 27,
-      "mean": 2.0207,
+      "count": 28,
+      "mean": 2.0196,
       "median": 1.99,
       "min": 1.711,
       "max": 2.15
     },
     "sp98": {
-      "count": 101,
-      "mean": 2.0745,
+      "count": 100,
+      "mean": 2.0748,
       "median": 2.079,
       "min": 1.989,
       "max": 2.244
     },
     "e10": {
       "count": 108,
-      "mean": 1.9786,
+      "mean": 1.9781,
       "median": 1.9825,
       "min": 1.881,
       "max": 2.169
     },
     "e85": {
       "count": 32,
-      "mean": 0.8268,
-      "median": 0.8035,
+      "mean": 0.828,
+      "median": 0.809,
       "min": 0.759,
       "max": 0.999
     },
@@ -145,7 +145,8 @@
       "lat": 4924100,
       "lng": 621000,
       "fuels": {
-        "gazole": 2.078
+        "gazole": 2.078,
+        "sp95": 1.99
       }
     },
     {
@@ -797,7 +798,7 @@
       "lat": 4913300,
       "lng": 666100,
       "fuels": {
-        "gazole": 2.153,
+        "gazole": 2.136,
         "sp98": 2.134,
         "e10": 2.075,
         "gplc": 1.211
@@ -1054,7 +1055,6 @@
       "lng": 622100,
       "fuels": {
         "gazole": 2.091,
-        "sp98": 1.99,
         "e10": 1.983
       }
     },
@@ -1111,7 +1111,7 @@
       "lat": 4911000,
       "lng": 620900,
       "fuels": {
-        "gazole": 1.988,
+        "gazole": 2.025,
         "sp98": 2.079,
         "e10": 1.95
       }
@@ -1125,8 +1125,8 @@
       "lat": 4932021.00467,
       "lng": 627828.54114,
       "fuels": {
-        "gazole": 2.149,
-        "sp98": 2.179,
+        "gazole": 2.109,
+        "sp98": 2.149,
         "e10": 2.099
       }
     },
@@ -1284,8 +1284,7 @@
       "fuels": {
         "gazole": 1.963,
         "sp98": 2.099,
-        "e10": 1.919,
-        "e85": 0.798
+        "e10": 1.919
       }
     },
     {
@@ -1326,7 +1325,6 @@
       "lng": 638400,
       "fuels": {
         "gazole": 2.098,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -1339,9 +1337,10 @@
       "lat": 4901700,
       "lng": 638400,
       "fuels": {
-        "gazole": 2.019,
-        "sp98": 2.099,
-        "e10": 2.059
+        "gazole": 2.029,
+        "sp98": 2.079,
+        "e10": 1.999,
+        "e85": 0.839
       }
     },
     {
@@ -1469,6 +1468,7 @@
       "lng": 618900,
       "fuels": {
         "gazole": 1.984,
+        "sp98": 1.99,
         "e10": 1.908,
         "e85": 0.869
       }
