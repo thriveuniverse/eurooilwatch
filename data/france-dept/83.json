@@ -3,55 +3,68 @@
   "name": "Var",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 127,
+  "stationCount": 166,
   "fuels": {
     "gazole": {
-      "count": 126,
-      "mean": 2.0201,
+      "count": 165,
+      "mean": 2.0258,
       "median": 1.999,
       "min": 1.905,
-      "max": 2.329
+      "max": 2.43
     },
     "sp95": {
-      "count": 26,
-      "mean": 2.0163,
-      "median": 1.9955,
+      "count": 39,
+      "mean": 2.0382,
+      "median": 2.01,
       "min": 1.909,
-      "max": 2.14
+      "max": 2.54
     },
     "sp98": {
-      "count": 104,
-      "mean": 2.07,
+      "count": 128,
+      "mean": 2.0722,
       "median": 2.059,
-      "min": 1.959,
+      "min": 1.949,
       "max": 2.349
     },
     "e10": {
-      "count": 114,
-      "mean": 1.968,
-      "median": 1.957,
-      "min": 1.881,
+      "count": 141,
+      "mean": 1.9711,
+      "median": 1.959,
+      "min": 1.879,
       "max": 2.249
     },
     "e85": {
-      "count": 38,
-      "mean": 0.8425,
-      "median": 0.829,
+      "count": 58,
+      "mean": 0.8552,
+      "median": 0.8515,
       "min": 0.78,
       "max": 1.055
     },
     "gplc": {
-      "count": 14,
-      "mean": 1.0805,
-      "median": 1.0635,
+      "count": 18,
+      "mean": 1.0747,
+      "median": 1.052,
       "min": 0.949,
       "max": 1.259
     }
   },
   "stations": [
+    {
+      "id": "83150003",
+      "cp": "83150",
+      "ville": "",
+      "adresse": "CAPITAINERIE DU PORT",
+      "pop": "R",
+      "lat": 4313408.21229,
+      "lng": 575706.84172,
+      "fuels": {
+        "gazole": 2.43,
+        "sp95": 2.54
+      }
+    },
     {
       "id": "83380002",
       "cp": "83380",
@@ -109,6 +122,35 @@
       }
     },
     {
+      "id": "83670001",
+      "cp": "83670",
+      "ville": "Barjols",
+      "adresse": "6 PLACE MARTIN FERDINAND",
+      "pop": "R",
+      "lat": 4356000,
+      "lng": 600400,
+      "fuels": {
+        "gazole": 2.089,
+        "sp98": 2.129,
+        "e10": 2.099
+      }
+    },
+    {
+      "id": "83670002",
+      "cp": "83670",
+      "ville": "Barjols",
+      "adresse": "Avenue de Tavernes",
+      "pop": "R",
+      "lat": 4356700,
+      "lng": 601200,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.079,
+        "e10": 1.969,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "83230007",
       "cp": "83230",
       "ville": "Bormes-les-Mimosas",
@@ -120,6 +162,35 @@
         "gazole": 1.96,
         "sp98": 2.055,
         "e10": 1.937
+      }
+    },
+    {
+      "id": "83230006",
+      "cp": "83230",
+      "ville": "Bormes-les-Mimosas",
+      "adresse": "78 AVENUE LOU MISTRAOU",
+      "pop": "R",
+      "lat": 4313956.22778,
+      "lng": 635685.19038,
+      "fuels": {
+        "gazole": 1.963,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "83170002",
+      "cp": "83170",
+      "ville": "Brignoles",
+      "adresse": ".RN7",
+      "pop": "R",
+      "lat": 4340900,
+      "lng": 604500,
+      "fuels": {
+        "gazole": 2.035,
+        "sp98": 2.089,
+        "e10": 2.025,
+        "e85": 0.899,
+        "gplc": 1.045
       }
     },
     {
@@ -138,6 +209,21 @@
       }
     },
     {
+      "id": "83170003",
+      "cp": "83170",
+      "ville": "Brignoles",
+      "adresse": "AV DE LA LIBERATION",
+      "pop": "R",
+      "lat": 4340600,
+      "lng": 607300,
+      "fuels": {
+        "gazole": 2.008,
+        "sp98": 2.048,
+        "e10": 1.968,
+        "e85": 0.951
+      }
+    },
+    {
       "id": "83170014",
       "cp": "83170",
       "ville": "Brignoles",
@@ -149,6 +235,36 @@
         "gazole": 1.999,
         "sp98": 2.122,
         "e10": 1.959
+      }
+    },
+    {
+      "id": "83170010",
+      "cp": "83170",
+      "ville": "Brignoles",
+      "adresse": "H.l.m. de la Route de Nice",
+      "pop": "R",
+      "lat": 4340551,
+      "lng": 607530,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.069,
+        "e10": 1.959,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "83170007",
+      "cp": "83170",
+      "ville": "Brignoles",
+      "adresse": "quartier saint jean rn7",
+      "pop": "R",
+      "lat": 4340700,
+      "lng": 605000,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 2.097,
+        "sp98": 1.979,
+        "e10": 1.881
       }
     },
     {
@@ -208,6 +324,20 @@
       }
     },
     {
+      "id": "83240007",
+      "cp": "83240",
+      "ville": "Cavalaire-sur-Mer",
+      "adresse": "AVENUE DE SAINT-RAPHAEL",
+      "pop": "R",
+      "lat": 4318400,
+      "lng": 654300,
+      "fuels": {
+        "gazole": 2.12,
+        "sp95": 2.09,
+        "e10": 2.02
+      }
+    },
+    {
       "id": "83240001",
       "cp": "83240",
       "ville": "Cavalaire-sur-Mer",
@@ -222,6 +352,37 @@
       }
     },
     {
+      "id": "83310007",
+      "cp": "83310",
+      "ville": "Cogolin",
+      "adresse": "Avenue Sigismond Coulet",
+      "pop": "R",
+      "lat": 4324900,
+      "lng": 653500,
+      "fuels": {
+        "gazole": 1.977,
+        "sp95": 1.943,
+        "sp98": 1.989,
+        "e10": 1.893,
+        "e85": 0.878
+      }
+    },
+    {
+      "id": "83580003",
+      "cp": "83580",
+      "ville": "Cogolin",
+      "adresse": "RN 98",
+      "pop": "R",
+      "lat": 4326300,
+      "lng": 658300,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.119,
+        "e10": 2.039,
+        "gplc": 1.045
+      }
+    },
+    {
       "id": "83310011",
       "cp": "83310",
       "ville": "Cogolin",
@@ -231,8 +392,6 @@
       "lng": 657700,
       "fuels": {
         "gazole": 1.978,
-        "sp98": 1.99,
-        "e10": 1.894,
         "e85": 0.879,
         "gplc": 1.019
       }
@@ -292,6 +451,21 @@
       }
     },
     {
+      "id": "83390003",
+      "cp": "83390",
+      "ville": "Cuers",
+      "adresse": "91 rue de la merlette",
+      "pop": "R",
+      "lat": 4325100,
+      "lng": 609700,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 2.029,
+        "sp98": 2.069,
+        "e10": 1.949
+      }
+    },
+    {
       "id": "83390002",
       "cp": "83390",
       "ville": "Cuers",
@@ -303,6 +477,21 @@
         "gazole": 1.999,
         "sp98": 2.079,
         "e10": 1.989
+      }
+    },
+    {
+      "id": "83300001",
+      "cp": "83300",
+      "ville": "Draguignan",
+      "adresse": "127 Avenue du Gal de GAULLE",
+      "pop": "R",
+      "lat": 4352900,
+      "lng": 647200,
+      "fuels": {
+        "gazole": 2.037,
+        "sp98": 1.99,
+        "e10": 1.964,
+        "e85": 0.879
       }
     },
     {
@@ -331,6 +520,21 @@
         "gazole": 1.998,
         "sp98": 2.119,
         "e10": 1.974
+      }
+    },
+    {
+      "id": "83300004",
+      "cp": "83300",
+      "ville": "Draguignan",
+      "adresse": "80 Avenue du Général Charles de Gaulle",
+      "pop": "R",
+      "lat": 4352900,
+      "lng": 647100,
+      "fuels": {
+        "gazole": 2.089,
+        "sp98": 2.075,
+        "e10": 2.015,
+        "e85": 0.899
       }
     },
     {
@@ -415,6 +619,21 @@
       }
     },
     {
+      "id": "83340008",
+      "cp": "83340",
+      "ville": "Flassans-sur-Issole",
+      "adresse": "ZA du Peyrouas rn7",
+      "pop": "R",
+      "lat": 4337300,
+      "lng": 620300,
+      "fuels": {
+        "gazole": 1.998,
+        "sp95": 2.098,
+        "sp98": 2.118,
+        "e10": 1.998
+      }
+    },
+    {
       "id": "83780001",
       "cp": "83780",
       "ville": "Flayosc",
@@ -436,8 +655,7 @@
       "lng": 608400,
       "fuels": {
         "gazole": 2.055,
-        "sp95": 1.99,
-        "sp98": 1.99
+        "sp95": 1.99
       }
     },
     {
@@ -499,6 +717,21 @@
       }
     },
     {
+      "id": "83600026",
+      "cp": "83600",
+      "ville": "Fréjus",
+      "adresse": "959 avenue du Maréchal de Lattre de Tassigny",
+      "pop": "R",
+      "lat": 4343100.09752,
+      "lng": 675528.03524,
+      "fuels": {
+        "gazole": 2.059,
+        "sp98": 2.099,
+        "e10": 1.999,
+        "e85": 0.859
+      }
+    },
+    {
       "id": "83600029",
       "cp": "83600",
       "ville": "Fréjus",
@@ -522,7 +755,6 @@
       "lng": 674500,
       "fuels": {
         "gazole": 1.979,
-        "sp98": 1.99,
         "e10": 1.909,
         "e85": 0.855
       }
@@ -557,6 +789,20 @@
       }
     },
     {
+      "id": "83136005",
+      "cp": "83136",
+      "ville": "Garéoult",
+      "adresse": "3, Bd de la Libération",
+      "pop": "R",
+      "lat": 4333024,
+      "lng": 604965,
+      "fuels": {
+        "gazole": 2.071,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
       "id": "83580004",
       "cp": "83580",
       "ville": "Gassin",
@@ -569,6 +815,20 @@
         "sp98": 1.992,
         "e10": 1.895,
         "gplc": 0.981
+      }
+    },
+    {
+      "id": "83560008",
+      "cp": "83560",
+      "ville": "Ginasservis",
+      "adresse": "lieu-dit La plantude 23 route de la Verdière",
+      "pop": "R",
+      "lat": 4367382.851,
+      "lng": 584779.3594,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.129,
+        "e10": 1.999
       }
     },
     {
@@ -800,6 +1060,21 @@
       }
     },
     {
+      "id": "83130004",
+      "cp": "83130",
+      "ville": "La Garde",
+      "adresse": "119 rue Pierre Revelli",
+      "pop": "R",
+      "lat": 4312994.62939,
+      "lng": 601242.08526,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 2.014,
+        "e10": 1.942,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "83130003",
       "cp": "83130",
       "ville": "La Garde",
@@ -843,6 +1118,37 @@
       }
     },
     {
+      "id": "83130008",
+      "cp": "83130",
+      "ville": "La Garde",
+      "adresse": "AIRE DES AMANDIERS CHABERTE, AUTOROUTE A57",
+      "pop": "A",
+      "lat": 4314991.85973,
+      "lng": 603399.52216,
+      "fuels": {
+        "gazole": 2.279,
+        "sp98": 2.329,
+        "e10": 2.229,
+        "e85": 0.999,
+        "gplc": 1.149
+      }
+    },
+    {
+      "id": "83250011",
+      "cp": "83250",
+      "ville": "La Londe-les-Maures",
+      "adresse": "ROUTE NATIONALE 98",
+      "pop": "R",
+      "lat": 4313100,
+      "lng": 621900,
+      "fuels": {
+        "gazole": 2.009,
+        "sp98": 2.049,
+        "e10": 1.959,
+        "e85": 0.909
+      }
+    },
+    {
       "id": "83250007",
       "cp": "83250",
       "ville": "La Londe-les-Maures",
@@ -866,8 +1172,6 @@
       "lng": 586800,
       "fuels": {
         "gazole": 1.971,
-        "sp98": 1.99,
-        "e10": 1.886,
         "e85": 0.816
       }
     },
@@ -981,9 +1285,7 @@
       "lat": 4313758.81972,
       "lng": 601336.97873,
       "fuels": {
-        "gazole": 1.985,
-        "sp98": 1.99,
-        "e10": 1.903
+        "gazole": 1.985
       }
     },
     {
@@ -1011,8 +1313,6 @@
       "lng": 580400,
       "fuels": {
         "gazole": 2.068,
-        "sp98": 1.99,
-        "e10": 1.984,
         "e85": 0.864
       }
     },
@@ -1028,6 +1328,21 @@
         "gazole": 1.977,
         "e10": 1.899,
         "e85": 0.798
+      }
+    },
+    {
+      "id": "83340011",
+      "cp": "83340",
+      "ville": "Le Cannet-des-Maures",
+      "adresse": "Quartier Les Taurelles - RN7",
+      "pop": "R",
+      "lat": 4339500,
+      "lng": 633300,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 1.99,
+        "e10": 1.889,
+        "e85": 0.829
       }
     },
     {
@@ -1075,6 +1390,35 @@
       }
     },
     {
+      "id": "83490002",
+      "cp": "83490",
+      "ville": "Le Muy",
+      "adresse": "1068 ROUTE D'AIX",
+      "pop": "R",
+      "lat": 4346800,
+      "lng": 654900,
+      "fuels": {
+        "gazole": 1.986,
+        "sp98": 2.059,
+        "e10": 1.979,
+        "e85": 0.983
+      }
+    },
+    {
+      "id": "83490001",
+      "cp": "83490",
+      "ville": "Le Muy",
+      "adresse": "145 RN 7 station total",
+      "pop": "R",
+      "lat": 4347000,
+      "lng": 656200,
+      "fuels": {
+        "gazole": 2.071,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "83490004",
       "cp": "83490",
       "ville": "Le Muy",
@@ -1100,6 +1444,20 @@
         "gazole": 1.963,
         "sp98": 2.089,
         "e10": 1.979
+      }
+    },
+    {
+      "id": "83220002",
+      "cp": "83220",
+      "ville": "Le Pradet",
+      "adresse": "157 Avenue Ganzin",
+      "pop": "R",
+      "lat": 4310700,
+      "lng": 602700,
+      "fuels": {
+        "gazole": 2,
+        "sp98": 1.989,
+        "e10": 1.909
       }
     },
     {
@@ -1163,6 +1521,20 @@
       }
     },
     {
+      "id": "83510003",
+      "cp": "83510",
+      "ville": "Lorgues",
+      "adresse": "Route des Arcs",
+      "pop": "R",
+      "lat": 4347100,
+      "lng": 638100,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
       "id": "83440003",
       "cp": "83440",
       "ville": "Montauroux",
@@ -1172,6 +1544,21 @@
       "lng": 676700,
       "fuels": {
         "gazole": 2.082
+      }
+    },
+    {
+      "id": "83440004",
+      "cp": "83440",
+      "ville": "Montauroux",
+      "adresse": "Chemin Vincent",
+      "pop": "R",
+      "lat": 4360694.79313,
+      "lng": 676358.96541,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 2.059,
+        "sp98": 2.079,
+        "e10": 1.979
       }
     },
     {
@@ -1247,6 +1634,20 @@
         "sp98": 1.98,
         "e10": 1.91,
         "e85": 0.79
+      }
+    },
+    {
+      "id": "83790001",
+      "cp": "83790",
+      "ville": "Pignans",
+      "adresse": "Lieu dit le Fege- RN97",
+      "pop": "R",
+      "lat": 4330200,
+      "lng": 623600,
+      "fuels": {
+        "gazole": 1.997,
+        "sp95": 1.975,
+        "e10": 1.942
       }
     },
     {
@@ -1431,8 +1832,7 @@
       "lat": 4318100,
       "lng": 569751,
       "fuels": {
-        "gazole": 2.15,
-        "e10": 1.99
+        "gazole": 2.15
       }
     },
     {
@@ -1525,6 +1925,22 @@
       }
     },
     {
+      "id": "83640001",
+      "cp": "83640",
+      "ville": "Saint-Zacharie",
+      "adresse": "Avenue Augustin Juramy",
+      "pop": "R",
+      "lat": 4338300,
+      "lng": 570600,
+      "fuels": {
+        "gazole": 1.929,
+        "sp95": 1.919,
+        "sp98": 1.949,
+        "e10": 1.879,
+        "e85": 0.819
+      }
+    },
+    {
       "id": "83120001",
       "cp": "83120",
       "ville": "Sainte-Maxime",
@@ -1539,6 +1955,21 @@
       }
     },
     {
+      "id": "83120006",
+      "cp": "83120",
+      "ville": "Sainte-Maxime",
+      "adresse": "24 BOULEVARD JEAN MOULIN - RD559",
+      "pop": "R",
+      "lat": 4330400,
+      "lng": 662700,
+      "fuels": {
+        "gazole": 1.991,
+        "sp98": 1.99,
+        "e10": 1.906,
+        "e85": 0.879
+      }
+    },
+    {
       "id": "83120002",
       "cp": "83120",
       "ville": "Sainte-Maxime",
@@ -1549,6 +1980,19 @@
       "fuels": {
         "gazole": 2.019,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "83690005",
+      "cp": "83690",
+      "ville": "Salernes",
+      "adresse": "Chemin de la Baume",
+      "pop": "R",
+      "lat": 4356000,
+      "lng": 625000,
+      "fuels": {
+        "gazole": 2.015,
+        "sp95": 2.091
       }
     },
     {
@@ -1576,8 +2020,7 @@
       "fuels": {
         "gazole": 1.97,
         "sp98": 1.99,
-        "e10": 1.888,
-        "e85": 0.824
+        "e10": 1.888
       }
     },
     {
@@ -1603,7 +2046,6 @@
       "lng": 581300,
       "fuels": {
         "gazole": 1.969,
-        "sp98": 1.99,
         "e10": 1.887,
         "e85": 0.824
       }
@@ -1635,8 +2077,34 @@
         "gazole": 1.964,
         "sp95": 1.992,
         "sp98": 2.03,
-        "e10": 1.897,
         "e85": 0.797
+      }
+    },
+    {
+      "id": "83140007",
+      "cp": "83140",
+      "ville": "Six-Fours-les-Plages",
+      "adresse": "RD 16 - 333 ROUTE DES SABLETTES",
+      "pop": "R",
+      "lat": 4308900,
+      "lng": 585200,
+      "fuels": {
+        "gazole": 2.058,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "83140009",
+      "cp": "83140",
+      "ville": "Six-Fours-les-Plages",
+      "adresse": "TRAVERSE DE BAYLE",
+      "pop": "R",
+      "lat": 4309200,
+      "lng": 584400,
+      "fuels": {
+        "gazole": 1.977,
+        "sp98": 2.03,
+        "e10": 1.943
       }
     },
     {
@@ -1669,6 +2137,21 @@
       }
     },
     {
+      "id": "83210006",
+      "cp": "83210",
+      "ville": "Solliès-Ville",
+      "adresse": "329 Route de la Crau",
+      "pop": "R",
+      "lat": 4316000,
+      "lng": 606400,
+      "fuels": {
+        "gazole": 1.961,
+        "sp98": 2.052,
+        "e10": 1.94,
+        "e85": 0.867
+      }
+    },
+    {
       "id": "83210001",
       "cp": "83210",
       "ville": "Solliès-Ville",
@@ -1681,6 +2164,21 @@
         "sp98": 2.028,
         "e10": 1.934,
         "e85": 0.867
+      }
+    },
+    {
+      "id": "83000010",
+      "cp": "83000",
+      "ville": "Toulon",
+      "adresse": "160 BOULEVARD G.CLEMENCEAU",
+      "pop": "R",
+      "lat": 4312400,
+      "lng": 593700,
+      "fuels": {
+        "gazole": 2.072,
+        "e10": 1.986,
+        "e85": 0.834,
+        "gplc": 0.979
       }
     },
     {
@@ -1784,6 +2282,21 @@
       }
     },
     {
+      "id": "83170012",
+      "cp": "83170",
+      "ville": "Tourves",
+      "adresse": "AUTOROUTE A8 - AIRE DE CAMBARETTE SUD - TERRASSES DE PROVENCE CENTRE",
+      "pop": "A",
+      "lat": 4342412.30141,
+      "lng": 596988.46193,
+      "fuels": {
+        "gazole": 2.184,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998
+      }
+    },
+    {
       "id": "83720001",
       "cp": "83720",
       "ville": "Trans-en-Provence",
@@ -1797,6 +2310,21 @@
         "sp98": 1.999,
         "e10": 1.93,
         "e85": 0.859
+      }
+    },
+    {
+      "id": "83720005",
+      "cp": "83720",
+      "ville": "Trans-en-Provence",
+      "adresse": "RN 555 LA FOUX",
+      "pop": "R",
+      "lat": 4351300,
+      "lng": 647700,
+      "fuels": {
+        "gazole": 1.977,
+        "sp98": 1.99,
+        "e10": 1.901,
+        "e85": 0.854
       }
     },
     {
@@ -1842,6 +2370,34 @@
         "gazole": 1.959,
         "sp98": 2.069,
         "e10": 1.959
+      }
+    },
+    {
+      "id": "83560006",
+      "cp": "83560",
+      "ville": "Vinon-sur-Verdon",
+      "adresse": "204 avenue de la République",
+      "pop": "R",
+      "lat": 4372700,
+      "lng": 581200,
+      "fuels": {
+        "gazole": 2.135,
+        "sp98": 2.206,
+        "e10": 2.08
+      }
+    },
+    {
+      "id": "83560003",
+      "cp": "83560",
+      "ville": "Vinon-sur-Verdon",
+      "adresse": "342 AVENUE DE LA REPUBLIQUE",
+      "pop": "R",
+      "lat": 4372600,
+      "lng": 581100,
+      "fuels": {
+        "gazole": 2.25,
+        "sp95": 2.22,
+        "sp98": 2.22
       }
     },
     {

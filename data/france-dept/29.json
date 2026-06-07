@@ -3,55 +3,69 @@
   "name": "Finistère",
   "regionCode": "BRE",
   "regionName": "Bretagne",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 101,
+  "stationCount": 137,
   "fuels": {
     "gazole": {
-      "count": 101,
-      "mean": 1.993,
+      "count": 137,
+      "mean": 1.9939,
       "median": 1.979,
       "min": 1.899,
       "max": 2.199
     },
     "sp95": {
-      "count": 45,
-      "mean": 1.9825,
-      "median": 1.979,
+      "count": 65,
+      "mean": 1.9884,
+      "median": 1.98,
       "min": 1.939,
-      "max": 2.101
+      "max": 2.129
     },
     "sp98": {
-      "count": 74,
-      "mean": 2.027,
-      "median": 2.019,
+      "count": 98,
+      "mean": 2.038,
+      "median": 2.029,
       "min": 1.984,
-      "max": 2.269
+      "max": 2.289
     },
     "e10": {
-      "count": 77,
-      "mean": 1.9247,
-      "median": 1.919,
+      "count": 96,
+      "mean": 1.9298,
+      "median": 1.929,
       "min": 1.874,
-      "max": 1.999
+      "max": 2.023
     },
     "e85": {
-      "count": 21,
-      "mean": 0.7931,
-      "median": 0.795,
+      "count": 26,
+      "mean": 0.7918,
+      "median": 0.792,
       "min": 0.744,
       "max": 0.849
     },
     "gplc": {
-      "count": 6,
-      "mean": 1.0212,
+      "count": 8,
+      "mean": 1.022,
       "median": 1.019,
       "min": 0.989,
       "max": 1.07
     }
   },
   "stations": [
+    {
+      "id": "29770001",
+      "cp": "29770",
+      "ville": "Audierne",
+      "adresse": "12 Rue de la République",
+      "pop": "R",
+      "lat": 4803000,
+      "lng": -455900,
+      "fuels": {
+        "gazole": 2.04,
+        "sp98": 1.99,
+        "e10": 1.971
+      }
+    },
     {
       "id": "29770002",
       "cp": "29770",
@@ -65,6 +79,21 @@
         "sp95": 1.969,
         "sp98": 1.984,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "29380001",
+      "cp": "29380",
+      "ville": "Bannalec",
+      "adresse": "Rue Eugène Lorec",
+      "pop": "R",
+      "lat": 4792700,
+      "lng": -370400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.995,
+        "sp98": 2.045,
+        "e10": 1.93
       }
     },
     {
@@ -111,6 +140,34 @@
       }
     },
     {
+      "id": "29200002",
+      "cp": "29200",
+      "ville": "Brest",
+      "adresse": "17 RUE CUIRASSE BRETAGNE",
+      "pop": "R",
+      "lat": 4840756.84317,
+      "lng": -449567.35855,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "29820002",
+      "cp": "29200",
+      "ville": "Brest",
+      "adresse": "19 Avenue 1ère Dfl",
+      "pop": "R",
+      "lat": 4837600,
+      "lng": -455500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.109,
+        "e10": 1.959
+      }
+    },
+    {
       "id": "29200004",
       "cp": "29200",
       "ville": "Brest",
@@ -123,6 +180,20 @@
         "sp98": 1.99,
         "e85": 0.829,
         "gplc": 1.07
+      }
+    },
+    {
+      "id": "29200019",
+      "cp": "29200",
+      "ville": "Brest",
+      "adresse": "29 rue de Gouesnou",
+      "pop": "R",
+      "lat": 4840800,
+      "lng": -446800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.94
       }
     },
     {
@@ -154,6 +225,19 @@
       }
     },
     {
+      "id": "29200016",
+      "cp": "29200",
+      "ville": "Brest",
+      "adresse": "ROUTE DU VIEUX ST.MARC",
+      "pop": "R",
+      "lat": 4839300,
+      "lng": -445000,
+      "fuels": {
+        "gazole": 1.955,
+        "e85": 0.829
+      }
+    },
+    {
       "id": "29510004",
       "cp": "29510",
       "ville": "Briec",
@@ -166,6 +250,36 @@
         "sp98": 2.029,
         "e10": 1.919,
         "e85": 0.798
+      }
+    },
+    {
+      "id": "29570001",
+      "cp": "29570",
+      "ville": "Camaret-sur-Mer",
+      "adresse": "RUE DES SARDINIERS",
+      "pop": "R",
+      "lat": 4827454,
+      "lng": -459482,
+      "fuels": {
+        "gazole": 1.984,
+        "sp95": 1.99,
+        "sp98": 2.093,
+        "e10": 1.951,
+        "e85": 0.757
+      }
+    },
+    {
+      "id": "29660002",
+      "cp": "29660",
+      "ville": "Carantec",
+      "adresse": "2 RUE DU PARC COZ",
+      "pop": "R",
+      "lat": 4866000,
+      "lng": -391900,
+      "fuels": {
+        "gazole": 1.981,
+        "sp95": 1.985,
+        "e10": 1.948
       }
     },
     {
@@ -184,6 +298,20 @@
       }
     },
     {
+      "id": "29833001",
+      "cp": "29270",
+      "ville": "Carhaix-Plouguer",
+      "adresse": "Rue de Callac",
+      "pop": "R",
+      "lat": 4827996,
+      "lng": -356533,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.059,
+        "e10": 1.909
+      }
+    },
+    {
       "id": "29150005",
       "cp": "29150",
       "ville": "Cast",
@@ -194,6 +322,20 @@
       "fuels": {
         "gazole": 2.159,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "29150004",
+      "cp": "29150",
+      "ville": "Châteaulin",
+      "adresse": "Grand Rue",
+      "pop": "R",
+      "lat": 4819600,
+      "lng": -409100,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 1.999,
+        "e10": 1.929
       }
     },
     {
@@ -209,6 +351,21 @@
         "sp95": 1.968,
         "sp98": 1.998,
         "e10": 1.918
+      }
+    },
+    {
+      "id": "29520001",
+      "cp": "29520",
+      "ville": "Châteauneuf-du-Faou",
+      "adresse": "Route de Morlaix",
+      "pop": "R",
+      "lat": 4819500,
+      "lng": -382000,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 2.008,
+        "e10": 1.929,
+        "gplc": 1.05
       }
     },
     {
@@ -378,8 +535,6 @@
       "lng": -432800,
       "fuels": {
         "gazole": 1.969,
-        "sp98": 1.99,
-        "e10": 1.883,
         "e85": 0.829
       }
     },
@@ -453,6 +608,19 @@
       }
     },
     {
+      "id": "29170005",
+      "cp": "29170",
+      "ville": "Fouesnant",
+      "adresse": "LIEU DIT MANER KER ELO",
+      "pop": "R",
+      "lat": 4789500,
+      "lng": -401700,
+      "fuels": {
+        "gazole": 1.964,
+        "sp95": 1.985
+      }
+    },
+    {
       "id": "29850001",
       "cp": "29850",
       "ville": "Gouesnou",
@@ -506,6 +674,35 @@
         "sp98": 2.019,
         "e10": 1.939,
         "e85": 0.789
+      }
+    },
+    {
+      "id": "29490002",
+      "cp": "29490",
+      "ville": "Guipavas",
+      "adresse": "Rue Anne de Bretagne",
+      "pop": "R",
+      "lat": 4843600,
+      "lng": -440500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.949,
+        "e10": 1.919,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "29690002",
+      "cp": "29690",
+      "ville": "Huelgoat",
+      "adresse": "Rue Paul Gauguin",
+      "pop": "R",
+      "lat": 4836800,
+      "lng": -374900,
+      "fuels": {
+        "gazole": 1.977,
+        "sp95": 1.95,
+        "e10": 1.902
       }
     },
     {
@@ -579,6 +776,20 @@
         "gazole": 1.978,
         "sp98": 2.034,
         "e10": 1.934
+      }
+    },
+    {
+      "id": "29400001",
+      "cp": "29400",
+      "ville": "Landivisiau",
+      "adresse": "63 RUE DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 4850972,
+      "lng": -407554,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.029
       }
     },
     {
@@ -739,6 +950,20 @@
       }
     },
     {
+      "id": "29140010",
+      "cp": "29140",
+      "ville": "Melgven",
+      "adresse": "ROUTE DE CADOL",
+      "pop": "R",
+      "lat": 4791498.4,
+      "lng": -384233,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 2.129,
+        "sp98": 2.21
+      }
+    },
+    {
       "id": "29300003",
       "cp": "29300",
       "ville": "Mellac",
@@ -767,6 +992,21 @@
       }
     },
     {
+      "id": "29600002",
+      "cp": "29600",
+      "ville": "Morlaix",
+      "adresse": "ZA La Boissière",
+      "pop": "R",
+      "lat": 4858700,
+      "lng": -381300,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 2.049,
+        "e10": 1.935,
+        "e85": 0.799
+      }
+    },
+    {
       "id": "29129001",
       "cp": "29920",
       "ville": "Névez",
@@ -792,6 +1032,34 @@
         "gazole": 1.999,
         "sp95": 1.979,
         "sp98": 2.019
+      }
+    },
+    {
+      "id": "29860002",
+      "cp": "29860",
+      "ville": "Plabennec",
+      "adresse": "14 Rue Marcel Bouguen",
+      "pop": "R",
+      "lat": 4850300,
+      "lng": -442700,
+      "fuels": {
+        "gazole": 1.943,
+        "sp95": 1.975,
+        "sp98": 2.075
+      }
+    },
+    {
+      "id": "29860003",
+      "cp": "29860",
+      "ville": "Plabennec",
+      "adresse": "ROUTE DE BREST",
+      "pop": "R",
+      "lat": 4849300,
+      "lng": -443100,
+      "fuels": {
+        "gazole": 1.971,
+        "sp98": 2.075,
+        "e10": 1.999
       }
     },
     {
@@ -852,6 +1120,20 @@
       }
     },
     {
+      "id": "29180001",
+      "cp": "29180",
+      "ville": "Plogonnec",
+      "adresse": "Rue de la Presqu'Île",
+      "pop": "R",
+      "lat": 4808000,
+      "lng": -419400,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.979,
+        "sp98": 2.029
+      }
+    },
+    {
       "id": "29120005",
       "cp": "29120",
       "ville": "Plomeur",
@@ -894,6 +1176,20 @@
       }
     },
     {
+      "id": "29710002",
+      "cp": "29710",
+      "ville": "Plonéis",
+      "adresse": "Rue Laënnec",
+      "pop": "R",
+      "lat": 4801400,
+      "lng": -420400,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.959
+      }
+    },
+    {
       "id": "29720003",
       "cp": "29720",
       "ville": "Plonéour-Lanvern",
@@ -924,6 +1220,20 @@
       }
     },
     {
+      "id": "29830003",
+      "cp": "29830",
+      "ville": "Ploudalmézeau",
+      "adresse": "47 Rue de Brest",
+      "pop": "R",
+      "lat": 4853800,
+      "lng": -465900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "e10": 1.979
+      }
+    },
+    {
       "id": "29830002",
       "cp": "29830",
       "ville": "Ploudalmézeau",
@@ -949,6 +1259,19 @@
         "gazole": 2.03,
         "sp98": 1.99,
         "e10": 1.943
+      }
+    },
+    {
+      "id": "29260005",
+      "cp": "29260",
+      "ville": "Ploudaniel",
+      "adresse": "ZA DE MESCODEN - D770",
+      "pop": "R",
+      "lat": 4848801.90365,
+      "lng": -429400.3144,
+      "fuels": {
+        "gazole": 2.199,
+        "sp98": 2.289
       }
     },
     {
@@ -1009,6 +1332,22 @@
       }
     },
     {
+      "id": "29470003",
+      "cp": "29470",
+      "ville": "Plougastel-Daoulas",
+      "adresse": "zac ty ar menez",
+      "pop": "R",
+      "lat": 4838300,
+      "lng": -434800,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.969,
+        "sp98": 1.999,
+        "e10": 1.899,
+        "e85": 0.759
+      }
+    },
+    {
       "id": "29217001",
       "cp": "29217",
       "ville": "Plougonvelin",
@@ -1023,6 +1362,20 @@
       }
     },
     {
+      "id": "29640001",
+      "cp": "29640",
+      "ville": "Plougonven",
+      "adresse": "Rue de Kergollot",
+      "pop": "R",
+      "lat": 4852100,
+      "lng": -371500,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.989,
+        "e10": 1.949
+      }
+    },
+    {
       "id": "29880002",
       "cp": "29880",
       "ville": "Plouguerneau",
@@ -1034,6 +1387,19 @@
         "gazole": 1.949,
         "sp98": 1.999,
         "e10": 1.899
+      }
+    },
+    {
+      "id": "29880005",
+      "cp": "29880",
+      "ville": "Plouguerneau",
+      "adresse": "Rue d'Armorique",
+      "pop": "R",
+      "lat": 4860691.645,
+      "lng": -451105.60013,
+      "fuels": {
+        "gazole": 2.129,
+        "sp95": 2.109
       }
     },
     {
@@ -1089,6 +1455,18 @@
       }
     },
     {
+      "id": "29420003",
+      "cp": "29420",
+      "ville": "Plouvorn",
+      "adresse": "3 Rue des Ajoncs d'Or",
+      "pop": "R",
+      "lat": 4857800,
+      "lng": -403300,
+      "fuels": {
+        "gazole": 2.069
+      }
+    },
+    {
       "id": "29280001",
       "cp": "29280",
       "ville": "Plouzané",
@@ -1118,6 +1496,20 @@
       }
     },
     {
+      "id": "29440001",
+      "cp": "29440",
+      "ville": "Plouzévédé",
+      "adresse": "Mescanton",
+      "pop": "R",
+      "lat": 4860600,
+      "lng": -411500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.055,
+        "e10": 1.949
+      }
+    },
+    {
       "id": "29143001",
       "cp": "29710",
       "ville": "Plozévet",
@@ -1129,6 +1521,18 @@
         "gazole": 1.939,
         "sp98": 1.999,
         "e10": 1.949
+      }
+    },
+    {
+      "id": "29700004",
+      "cp": "29700",
+      "ville": "Pluguffan",
+      "adresse": "RUE DE BEL AIR 35",
+      "pop": "R",
+      "lat": 4797200,
+      "lng": -413500,
+      "fuels": {
+        "gazole": 2.09
       }
     },
     {
@@ -1171,6 +1575,20 @@
         "gazole": 1.955,
         "e10": 1.878,
         "e85": 0.849
+      }
+    },
+    {
+      "id": "29120004",
+      "cp": "29120",
+      "ville": "Pont-l'Abbé",
+      "adresse": "Rue du Petit Train",
+      "pop": "R",
+      "lat": 4786500,
+      "lng": -423000,
+      "fuels": {
+        "gazole": 2.09,
+        "sp98": 2.079,
+        "e10": 1.969
       }
     },
     {
@@ -1219,6 +1637,21 @@
       }
     },
     {
+      "id": "29000006",
+      "cp": "29000",
+      "ville": "Quimper",
+      "adresse": "150 Route de Brest",
+      "pop": "R",
+      "lat": 4801593,
+      "lng": -408164,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.979,
+        "sp98": 2.029,
+        "e10": 1.919
+      }
+    },
+    {
       "id": "29000015",
       "cp": "29000",
       "ville": "Quimper",
@@ -1255,8 +1688,20 @@
       "lat": 4799300,
       "lng": -408400,
       "fuels": {
-        "gazole": 2.061,
-        "e10": 1.976
+        "gazole": 2.061
+      }
+    },
+    {
+      "id": "29000013",
+      "cp": "29000",
+      "ville": "Quimper",
+      "adresse": "57 ROUTE DE BREST",
+      "pop": "R",
+      "lat": 4800023,
+      "lng": -408988,
+      "fuels": {
+        "gazole": 1.962,
+        "gplc": 0.999
       }
     },
     {
@@ -1268,8 +1713,7 @@
       "lat": 4798000,
       "lng": -408400,
       "fuels": {
-        "gazole": 1.962,
-        "e10": 1.883
+        "gazole": 1.962
       }
     },
     {
@@ -1346,6 +1790,21 @@
       }
     },
     {
+      "id": "29140002",
+      "cp": "29140",
+      "ville": "Rosporden",
+      "adresse": "Route de Quimper",
+      "pop": "R",
+      "lat": 4796500,
+      "lng": -385200,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.029,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "29510005",
       "cp": "29170",
       "ville": "Saint-Évarzec",
@@ -1403,6 +1862,21 @@
       }
     },
     {
+      "id": "29250002",
+      "cp": "29250",
+      "ville": "Saint-Pol-de-Léon",
+      "adresse": "rue de brest",
+      "pop": "R",
+      "lat": 4867900,
+      "lng": -399900,
+      "fuels": {
+        "gazole": 1.952,
+        "sp95": 1.985,
+        "sp98": 2.129,
+        "e10": 2.023
+      }
+    },
+    {
       "id": "29290002",
       "cp": "29290",
       "ville": "Saint-Renan",
@@ -1457,6 +1931,34 @@
         "sp98": 1.99,
         "e10": 1.88,
         "e85": 0.829
+      }
+    },
+    {
+      "id": "29390002",
+      "cp": "29390",
+      "ville": "Scaër",
+      "adresse": "23 RUE DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 4802000,
+      "lng": -371900,
+      "fuels": {
+        "gazole": 1.953,
+        "sp95": 1.98,
+        "sp98": 2.055
+      }
+    },
+    {
+      "id": "29450001",
+      "cp": "29450",
+      "ville": "Sizun",
+      "adresse": "ZA du Pont Bleu",
+      "pop": "R",
+      "lat": 4841100,
+      "lng": -408700,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.989,
+        "sp98": 2.039
       }
     },
     {

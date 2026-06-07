@@ -3,55 +3,69 @@
   "name": "Loire-Atlantique",
   "regionCode": "PDL",
   "regionName": "Pays de la Loire",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 121,
+  "stationCount": 164,
   "fuels": {
     "gazole": {
-      "count": 120,
-      "mean": 2.0053,
+      "count": 163,
+      "mean": 2.0049,
       "median": 1.989,
       "min": 1.938,
       "max": 2.199
     },
     "sp95": {
-      "count": 34,
-      "mean": 1.9998,
+      "count": 44,
+      "mean": 2.0047,
       "median": 1.99,
       "min": 1.955,
-      "max": 2.19
+      "max": 2.2
     },
     "sp98": {
-      "count": 102,
-      "mean": 2.0308,
+      "count": 132,
+      "mean": 2.0302,
       "median": 2.009,
-      "min": 1.979,
+      "min": 1.974,
       "max": 2.259
     },
     "e10": {
-      "count": 89,
-      "mean": 1.9441,
-      "median": 1.94,
-      "min": 1.868,
+      "count": 121,
+      "mean": 1.9431,
+      "median": 1.939,
+      "min": 1.862,
       "max": 2.129
     },
     "e85": {
-      "count": 44,
-      "mean": 0.8278,
-      "median": 0.812,
-      "min": 0.749,
+      "count": 60,
+      "mean": 0.8204,
+      "median": 0.8035,
+      "min": 0.725,
       "max": 1.008
     },
     "gplc": {
-      "count": 19,
-      "mean": 1.0212,
-      "median": 1.008,
+      "count": 28,
+      "mean": 1.0187,
+      "median": 0.999,
       "min": 0.957,
-      "max": 1.089
+      "max": 1.179
     }
   },
   "stations": [
+    {
+      "id": "44140004",
+      "cp": "44140",
+      "ville": "Aigrefeuille-sur-Maine",
+      "adresse": "Avenue de Nantes ZA le Haut Coin",
+      "pop": "R",
+      "lat": 4708200,
+      "lng": -141200,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 2.019,
+        "e10": 1.899
+      }
+    },
     {
       "id": "44150004",
       "cp": "44150",
@@ -64,6 +78,20 @@
         "gazole": 1.979,
         "sp98": 1.999,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "44150007",
+      "cp": "44150",
+      "ville": "Ancenis-Saint-Géréon",
+      "adresse": "BOULEVARD PASTEUR",
+      "pop": "R",
+      "lat": 4737310.50513,
+      "lng": -117835.65175,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.996,
+        "e10": 1.918
       }
     },
     {
@@ -80,6 +108,34 @@
         "sp98": 1.989,
         "e10": 1.909,
         "e85": 0.795
+      }
+    },
+    {
+      "id": "44150001",
+      "cp": "44150",
+      "ville": "Ancenis-Saint-Géréon",
+      "adresse": "L'Aubinière",
+      "pop": "R",
+      "lat": 4739700,
+      "lng": -119000,
+      "fuels": {
+        "gazole": 2.09,
+        "sp95": 2.2,
+        "sp98": 2.23,
+        "gplc": 1.179
+      }
+    },
+    {
+      "id": "44115003",
+      "cp": "44115",
+      "ville": "Basse-Goulaine",
+      "adresse": "226 BLD DE LA LOIRE",
+      "pop": "R",
+      "lat": 4722200,
+      "lng": -147300,
+      "fuels": {
+        "gazole": 1.949,
+        "gplc": 0.979
       }
     },
     {
@@ -183,6 +239,32 @@
       }
     },
     {
+      "id": "44340005",
+      "cp": "44340",
+      "ville": "Bouguenais",
+      "adresse": "ROCADE SUD",
+      "pop": "R",
+      "lat": 4716700,
+      "lng": -157500,
+      "fuels": {
+        "gazole": 1.952,
+        "gplc": 0.979
+      }
+    },
+    {
+      "id": "44340004",
+      "cp": "44340",
+      "ville": "Bouguenais",
+      "adresse": "ZONE NANTES ATLANTIQUE",
+      "pop": "R",
+      "lat": 4715900,
+      "lng": -160000,
+      "fuels": {
+        "gazole": 2.09,
+        "sp95": 1.99
+      }
+    },
+    {
       "id": "44750002",
       "cp": "44750",
       "ville": "Campbon",
@@ -225,6 +307,20 @@
       }
     },
     {
+      "id": "44470006",
+      "cp": "44470",
+      "ville": "Carquefou",
+      "adresse": "RN 23 ROUTE DE PARIS",
+      "pop": "R",
+      "lat": 4726600,
+      "lng": -148800,
+      "fuels": {
+        "gazole": 1.944,
+        "e85": 0.816,
+        "gplc": 0.979
+      }
+    },
+    {
       "id": "44110002",
       "cp": "44110",
       "ville": "Châteaubriant",
@@ -234,6 +330,20 @@
       "lng": -138900,
       "fuels": {
         "gazole": 2.041
+      }
+    },
+    {
+      "id": "44110001",
+      "cp": "44110",
+      "ville": "Châteaubriant",
+      "adresse": "ROUTE DE SAINT AUBIN DES CHATEAUX",
+      "pop": "R",
+      "lat": 4771600,
+      "lng": -139200,
+      "fuels": {
+        "gazole": 1.995,
+        "sp95": 2.099,
+        "e10": 2.059
       }
     },
     {
@@ -296,6 +406,22 @@
       }
     },
     {
+      "id": "44190008",
+      "cp": "44190",
+      "ville": "Clisson",
+      "adresse": "Rue des Malifestes",
+      "pop": "R",
+      "lat": 4709900,
+      "lng": -128200,
+      "fuels": {
+        "gazole": 1.938,
+        "sp95": 1.974,
+        "sp98": 2.022,
+        "e10": 1.924,
+        "e85": 0.748
+      }
+    },
+    {
       "id": "44220002",
       "cp": "44220",
       "ville": "Couëron",
@@ -349,6 +475,32 @@
       }
     },
     {
+      "id": "44590001",
+      "cp": "44590",
+      "ville": "Derval",
+      "adresse": "48 Rue Châteaubriant",
+      "pop": "R",
+      "lat": 4766800,
+      "lng": -166300,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.04,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "44590002",
+      "cp": "44590",
+      "ville": "Derval",
+      "adresse": "Lieu-dit Le Mortier",
+      "pop": "R",
+      "lat": 4764800,
+      "lng": -166900,
+      "fuels": {
+        "gazole": 2.199
+      }
+    },
+    {
       "id": "44450002",
       "cp": "44450",
       "ville": "Divatte-sur-Loire",
@@ -374,6 +526,21 @@
         "gazole": 2,
         "sp98": 2.069,
         "e10": 1.959
+      }
+    },
+    {
+      "id": "44140002",
+      "cp": "44140",
+      "ville": "Geneston",
+      "adresse": "1 Avenue de la Vendée",
+      "pop": "R",
+      "lat": 4705500,
+      "lng": -151100,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 1.993,
+        "e10": 1.916,
+        "e85": 0.798
       }
     },
     {
@@ -418,6 +585,34 @@
         "sp98": 1.99,
         "e10": 1.949,
         "e85": 0.859
+      }
+    },
+    {
+      "id": "44119006",
+      "cp": "44119",
+      "ville": "Grandchamp-des-Fontaines",
+      "adresse": "RUE DES SPORTS ZA DE BELLEVUE",
+      "pop": "R",
+      "lat": 4735705.066,
+      "lng": -160162.96214,
+      "fuels": {
+        "gazole": 2.036,
+        "sp98": 2.059,
+        "e10": 1.897
+      }
+    },
+    {
+      "id": "44290002",
+      "cp": "44290",
+      "ville": "Guémené-Penfao",
+      "adresse": "10 Rue de Châteaubriant",
+      "pop": "R",
+      "lat": 4762800,
+      "lng": -183100,
+      "fuels": {
+        "gazole": 2.055,
+        "sp98": 1.99,
+        "e10": 1.953
       }
     },
     {
@@ -478,6 +673,35 @@
       }
     },
     {
+      "id": "44410001",
+      "cp": "44410",
+      "ville": "Herbignac",
+      "adresse": "7 AVENUE DE LA MONNERAYE",
+      "pop": "R",
+      "lat": 4745000,
+      "lng": -231400,
+      "fuels": {
+        "gazole": 1.971,
+        "sp98": 1.999,
+        "e10": 1.949,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "44810001",
+      "cp": "44810",
+      "ville": "Héric",
+      "adresse": "51 RUE DE L'OCEAN",
+      "pop": "R",
+      "lat": 4741492,
+      "lng": -166024,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.049,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "44500004",
       "cp": "44500",
       "ville": "La Baule-Escoublac",
@@ -492,6 +716,49 @@
       }
     },
     {
+      "id": "44410007",
+      "cp": "44410",
+      "ville": "La Chapelle-des-Marais",
+      "adresse": "4 RUE DES LEVEES MIRAUD",
+      "pop": "R",
+      "lat": 4744800,
+      "lng": -224100,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.959
+      }
+    },
+    {
+      "id": "44260005",
+      "cp": "44260",
+      "ville": "La Chapelle-Launay",
+      "adresse": "Parc comemrcial de la Colleraye",
+      "pop": "R",
+      "lat": 4736862.194,
+      "lng": -196231.179,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 1.999,
+        "e10": 1.949,
+        "e85": 0.749
+      }
+    },
+    {
+      "id": "44240004",
+      "cp": "44240",
+      "ville": "La Chapelle-sur-Erdre",
+      "adresse": "15 Rue de Sucé",
+      "pop": "R",
+      "lat": 4730200,
+      "lng": -154800,
+      "fuels": {
+        "gazole": 1.974,
+        "sp98": 2.039,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "44240011",
       "cp": "44240",
       "ville": "La Chapelle-sur-Erdre",
@@ -502,7 +769,6 @@
       "fuels": {
         "gazole": 1.946,
         "sp98": 1.98,
-        "e10": 1.868,
         "e85": 0.816,
         "gplc": 0.979
       }
@@ -552,6 +818,20 @@
         "e10": 1.989,
         "e85": 0.819,
         "gplc": 1.085
+      }
+    },
+    {
+      "id": "44770001",
+      "cp": "44770",
+      "ville": "La Plaine-sur-Mer",
+      "adresse": "1 Rue des Filets",
+      "pop": "R",
+      "lat": 4714100,
+      "lng": -218900,
+      "fuels": {
+        "gazole": 2,
+        "sp98": 1.99,
+        "e10": 1.929
       }
     },
     {
@@ -627,6 +907,20 @@
       }
     },
     {
+      "id": "44640002",
+      "cp": "44640",
+      "ville": "Le Pellerin",
+      "adresse": "28 Rue de la Jouardais",
+      "pop": "R",
+      "lat": 4719800,
+      "lng": -175800,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
       "id": "44510001",
       "cp": "44510",
       "ville": "Le Pouliguen",
@@ -652,6 +946,21 @@
         "gazole": 1.979,
         "sp98": 1.999,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "44840002",
+      "cp": "44840",
+      "ville": "Les Sorinières",
+      "adresse": "AUTOROUTE A83 - AIRE DE LA GRASSINIÈRE",
+      "pop": "A",
+      "lat": 4715900,
+      "lng": -151300,
+      "fuels": {
+        "gazole": 2.038,
+        "e10": 1.951,
+        "e85": 0.825,
+        "gplc": 0.989
       }
     },
     {
@@ -822,6 +1131,34 @@
       }
     },
     {
+      "id": "44100004",
+      "cp": "44100",
+      "ville": "Nantes",
+      "adresse": "110 boulevard Égalite ( place zola )",
+      "pop": "R",
+      "lat": 4721400,
+      "lng": -158600,
+      "fuels": {
+        "gazole": 2.119,
+        "sp98": 2.169,
+        "e10": 2.069
+      }
+    },
+    {
+      "id": "44300017",
+      "cp": "44300",
+      "ville": "Nantes",
+      "adresse": "14 route de Paris",
+      "pop": "R",
+      "lat": 4725100,
+      "lng": -151800,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.979,
+        "e10": 1.899
+      }
+    },
+    {
       "id": "44000009",
       "cp": "44200",
       "ville": "Nantes",
@@ -867,6 +1204,22 @@
       }
     },
     {
+      "id": "44300016",
+      "cp": "44300",
+      "ville": "Nantes",
+      "adresse": "272, ROUTE DE SAINTE LUCE",
+      "pop": "R",
+      "lat": 4724100,
+      "lng": -150800,
+      "fuels": {
+        "gazole": 1.951,
+        "sp98": 1.974,
+        "e10": 1.862,
+        "e85": 0.819,
+        "gplc": 0.979
+      }
+    },
+    {
       "id": "44100005",
       "cp": "44100",
       "ville": "Nantes",
@@ -878,6 +1231,18 @@
         "gazole": 2.049,
         "e10": 1.97,
         "e85": 0.836
+      }
+    },
+    {
+      "id": "44000005",
+      "cp": "44300",
+      "ville": "Nantes",
+      "adresse": "55 Boulevard Jules Verne",
+      "pop": "R",
+      "lat": 4723769,
+      "lng": -153264,
+      "fuels": {
+        "gazole": 2.15
       }
     },
     {
@@ -904,7 +1269,6 @@
       "lng": -156947,
       "fuels": {
         "gazole": 2.046,
-        "sp98": 1.99,
         "e85": 0.834
       }
     },
@@ -935,6 +1299,22 @@
         "sp95": 1.955,
         "e10": 1.909,
         "gplc": 0.979
+      }
+    },
+    {
+      "id": "44272001",
+      "cp": "44200",
+      "ville": "Nantes",
+      "adresse": "RUE GAETAN RONDEAU",
+      "pop": "R",
+      "lat": 4720600,
+      "lng": -153500,
+      "fuels": {
+        "gazole": 2.034,
+        "sp95": 2.033,
+        "sp98": 2.049,
+        "e10": 1.989,
+        "e85": 0.835
       }
     },
     {
@@ -1125,6 +1505,34 @@
       }
     },
     {
+      "id": "44210004",
+      "cp": "44210",
+      "ville": "Pornic",
+      "adresse": "Route Bleue",
+      "pop": "R",
+      "lat": 4712435.7,
+      "lng": -210363.5,
+      "fuels": {
+        "gazole": 2.092,
+        "sp98": 1.99,
+        "e10": 1.971
+      }
+    },
+    {
+      "id": "44210002",
+      "cp": "44210",
+      "ville": "Pornic",
+      "adresse": "Route de Nantes",
+      "pop": "R",
+      "lat": 4711293,
+      "lng": -208468,
+      "fuels": {
+        "gazole": 1.97,
+        "sp95": 1.978,
+        "e10": 1.906
+      }
+    },
+    {
       "id": "44200002",
       "cp": "44210",
       "ville": "Pornic",
@@ -1148,6 +1556,22 @@
       "lng": -231800,
       "fuels": {
         "gazole": 2.027
+      }
+    },
+    {
+      "id": "44380007",
+      "cp": "44380",
+      "ville": "Pornichet",
+      "adresse": "Avenue du Baulois",
+      "pop": "R",
+      "lat": 4726546.70513,
+      "lng": -233357.48699,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.969,
+        "sp98": 1.999,
+        "e10": 1.919,
+        "e85": 0.798
       }
     },
     {
@@ -1188,6 +1612,20 @@
       "lng": -155900,
       "fuels": {
         "gazole": 1.997,
+        "sp98": 2.01,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "44400006",
+      "cp": "44400",
+      "ville": "Rezé",
+      "adresse": "29 Rue de la Blordière",
+      "pop": "R",
+      "lat": 4718000,
+      "lng": -153300,
+      "fuels": {
+        "gazole": 2.002,
         "sp98": 2.01,
         "e10": 1.939
       }
@@ -1282,6 +1720,35 @@
       }
     },
     {
+      "id": "44360009",
+      "cp": "44360",
+      "ville": "Saint-Étienne-de-Montluc",
+      "adresse": "D17 - ROUTE DE COUERON",
+      "pop": "R",
+      "lat": 4727400,
+      "lng": -178000,
+      "fuels": {
+        "gazole": 2.031,
+        "sp98": 1.99,
+        "e10": 1.93
+      }
+    },
+    {
+      "id": "44360007",
+      "cp": "44360",
+      "ville": "Saint-Étienne-de-Montluc",
+      "adresse": "LIEU DIT TOURNEBRIDE",
+      "pop": "R",
+      "lat": 4727800,
+      "lng": -172100,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.979,
+        "e10": 1.899,
+        "e85": 0.749
+      }
+    },
+    {
       "id": "44530003",
       "cp": "44530",
       "ville": "Saint-Gildas-des-Bois",
@@ -1335,9 +1802,39 @@
       "lng": -161900,
       "fuels": {
         "gazole": 1.954,
-        "sp98": 1.986,
-        "e10": 1.868,
         "gplc": 0.979
+      }
+    },
+    {
+      "id": "44802001",
+      "cp": "44800",
+      "ville": "Saint-Herblain",
+      "adresse": "Boulevard de la Baule",
+      "pop": "R",
+      "lat": 4722200,
+      "lng": -160600,
+      "fuels": {
+        "gazole": 2.009,
+        "sp95": 1.989,
+        "sp98": 2.053,
+        "e10": 1.905,
+        "e85": 0.725
+      }
+    },
+    {
+      "id": "44800004",
+      "cp": "44800",
+      "ville": "Saint-Herblain",
+      "adresse": "Zone Atlantis",
+      "pop": "R",
+      "lat": 4722600,
+      "lng": -163500,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.979,
+        "e10": 1.899,
+        "e85": 0.739,
+        "gplc": 0.991
       }
     },
     {
@@ -1548,6 +2045,20 @@
       }
     },
     {
+      "id": "44230003",
+      "cp": "44230",
+      "ville": "Saint-Sébastien-sur-Loire",
+      "adresse": "2 Rue Pierre Mendès France",
+      "pop": "R",
+      "lat": 4719200,
+      "lng": -149200,
+      "fuels": {
+        "gazole": 1.963,
+        "sp98": 2.054,
+        "e10": 1.942
+      }
+    },
+    {
       "id": "44230004",
       "cp": "44230",
       "ville": "Saint-Sébastien-sur-Loire",
@@ -1559,6 +2070,21 @@
         "gazole": 1.96,
         "sp98": 2.049,
         "e10": 1.943
+      }
+    },
+    {
+      "id": "44230002",
+      "cp": "44230",
+      "ville": "Saint-Sébastien-sur-Loire",
+      "adresse": "80 Boulevard des Pas Enchantés",
+      "pop": "R",
+      "lat": 4720903.35568,
+      "lng": -151091.41112,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 2.019,
+        "sp98": 2.049,
+        "e10": 1.945
       }
     },
     {
@@ -1634,6 +2160,35 @@
       }
     },
     {
+      "id": "44119005",
+      "cp": "44119",
+      "ville": "Treillières",
+      "adresse": "ROUTE NATIONALE 137 - AIRE DE LAMBRECY EST (sens Nantes => Rennes)",
+      "pop": "R",
+      "lat": 4733600,
+      "lng": -165200,
+      "fuels": {
+        "gazole": 2.139,
+        "e85": 0.998,
+        "gplc": 1.048
+      }
+    },
+    {
+      "id": "44119004",
+      "cp": "44119",
+      "ville": "Treillières",
+      "adresse": "Rue de Rennes",
+      "pop": "R",
+      "lat": 4733220.77308,
+      "lng": -161741.22929,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 1.979,
+        "e10": 1.899,
+        "e85": 0.795
+      }
+    },
+    {
       "id": "44570007",
       "cp": "44570",
       "ville": "Trignac",
@@ -1650,6 +2205,19 @@
       }
     },
     {
+      "id": "44570006",
+      "cp": "44570",
+      "ville": "Trignac",
+      "adresse": "ROUTE DE ST NAZAIRE - Z.C. SAVIN",
+      "pop": "R",
+      "lat": 4729300,
+      "lng": -220900,
+      "fuels": {
+        "gazole": 1.953,
+        "e85": 0.842
+      }
+    },
+    {
       "id": "44570001",
       "cp": "44570",
       "ville": "Trignac",
@@ -1662,6 +2230,23 @@
         "sp98": 1.988,
         "e10": 1.899,
         "gplc": 1.008
+      }
+    },
+    {
+      "id": "44330003",
+      "cp": "44330",
+      "ville": "Vallet",
+      "adresse": "28 Route de clisson",
+      "pop": "R",
+      "lat": 4715822.92809,
+      "lng": -127479.20509,
+      "fuels": {
+        "gazole": 1.955,
+        "sp95": 1.964,
+        "sp98": 2.049,
+        "e10": 1.925,
+        "e85": 0.764,
+        "gplc": 0.999
       }
     },
     {
@@ -1776,6 +2361,34 @@
         "sp95": 1.976,
         "sp98": 1.99,
         "e10": 1.948
+      }
+    },
+    {
+      "id": "44360005",
+      "cp": "44360",
+      "ville": "Vigneux-de-Bretagne",
+      "adresse": "RUE DU PETIT PRINCE",
+      "pop": "R",
+      "lat": 4732000,
+      "lng": -173800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.034,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "44580002",
+      "cp": "44580",
+      "ville": "Villeneuve-en-Retz",
+      "adresse": "Chemin de la Culee",
+      "pop": "R",
+      "lat": 4704693,
+      "lng": -195644,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.949
       }
     },
     {

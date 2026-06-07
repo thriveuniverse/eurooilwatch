@@ -3,55 +3,69 @@
   "name": "Loir-et-Cher",
   "regionCode": "CVL",
   "regionName": "Centre-Val de Loire",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 44,
+  "stationCount": 59,
   "fuels": {
     "gazole": {
-      "count": 44,
-      "mean": 2.0626,
-      "median": 2.0205,
-      "min": 1.965,
-      "max": 2.339
+      "count": 59,
+      "mean": 2.0602,
+      "median": 2.019,
+      "min": 1.963,
+      "max": 2.392
     },
     "sp95": {
-      "count": 16,
-      "mean": 2.0301,
+      "count": 20,
+      "mean": 2.0303,
       "median": 2.002,
-      "min": 1.99,
+      "min": 1.985,
       "max": 2.151
     },
     "sp98": {
-      "count": 36,
-      "mean": 2.0931,
-      "median": 2.07,
+      "count": 47,
+      "mean": 2.1023,
+      "median": 2.076,
       "min": 1.99,
-      "max": 2.269
+      "max": 2.525
     },
     "e10": {
-      "count": 33,
-      "mean": 1.9918,
-      "median": 1.979,
-      "min": 1.886,
-      "max": 2.169
+      "count": 45,
+      "mean": 2.0004,
+      "median": 1.981,
+      "min": 1.885,
+      "max": 2.375
     },
     "e85": {
-      "count": 15,
-      "mean": 0.8877,
+      "count": 19,
+      "mean": 0.8828,
       "median": 0.879,
       "min": 0.789,
       "max": 1.149
     },
     "gplc": {
-      "count": 5,
-      "mean": 1.0326,
-      "median": 1.064,
-      "min": 0.955,
+      "count": 8,
+      "mean": 1.0299,
+      "median": 1.0615,
+      "min": 0.949,
       "max": 1.099
     }
   },
   "stations": [
+    {
+      "id": "41240002",
+      "cp": "41240",
+      "ville": "Beauce la Romaine",
+      "adresse": "2 Bis Voie Romaine",
+      "pop": "R",
+      "lat": 4790700,
+      "lng": 152100,
+      "fuels": {
+        "gazole": 1.963,
+        "sp98": 1.991,
+        "e10": 1.885
+      }
+    },
     {
       "id": "41240003",
       "cp": "41240",
@@ -66,6 +80,20 @@
       }
     },
     {
+      "id": "41000022",
+      "cp": "41000",
+      "ville": "Blois",
+      "adresse": "1 rue de la Quinière",
+      "pop": "R",
+      "lat": 4758142.5784,
+      "lng": 129938.05014,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.995,
+        "e10": 1.984
+      }
+    },
+    {
       "id": "41000020",
       "cp": "41000",
       "ville": "Blois",
@@ -77,6 +105,20 @@
         "gazole": 1.999,
         "sp95": 1.995,
         "sp98": 2.189
+      }
+    },
+    {
+      "id": "41000019",
+      "cp": "41000",
+      "ville": "Blois",
+      "adresse": "107, AVENUE DE VENDOME",
+      "pop": "R",
+      "lat": 4760400,
+      "lng": 131500,
+      "fuels": {
+        "gazole": 1.973,
+        "e85": 0.894,
+        "gplc": 0.949
       }
     },
     {
@@ -269,6 +311,20 @@
       }
     },
     {
+      "id": "41600001",
+      "cp": "41600",
+      "ville": "Lamotte-Beuvron",
+      "adresse": "20 RUE GAUGIRAN",
+      "pop": "R",
+      "lat": 4760100,
+      "lng": 202700,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.099,
+        "e10": 1.999
+      }
+    },
+    {
       "id": "41600006",
       "cp": "41600",
       "ville": "Lamotte-Beuvron",
@@ -278,8 +334,21 @@
       "lng": 202315.85765,
       "fuels": {
         "gazole": 2.111,
-        "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "41600005",
+      "cp": "41600",
+      "ville": "Lamotte-Beuvron",
+      "adresse": "93 Avenue de Vierzon",
+      "pop": "R",
+      "lat": 4758500,
+      "lng": 202600,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.099,
+        "e10": 1.999
       }
     },
     {
@@ -312,6 +381,22 @@
       }
     },
     {
+      "id": "41500001",
+      "cp": "41500",
+      "ville": "Mer",
+      "adresse": "RTE DE BLOIS",
+      "pop": "R",
+      "lat": 4769700,
+      "lng": 150100,
+      "fuels": {
+        "gazole": 2.009,
+        "sp98": 2.095,
+        "e10": 1.959,
+        "e85": 0.789,
+        "gplc": 1.059
+      }
+    },
+    {
       "id": "41170002",
       "cp": "41170",
       "ville": "Mondoubleau",
@@ -327,6 +412,35 @@
       }
     },
     {
+      "id": "41250001",
+      "cp": "41250",
+      "ville": "Mont-près-Chambord",
+      "adresse": "45, rue des Morines",
+      "pop": "R",
+      "lat": 4756200,
+      "lng": 145000,
+      "fuels": {
+        "gazole": 1.986,
+        "sp98": 1.998,
+        "e10": 1.923,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "41800003",
+      "cp": "41800",
+      "ville": "Montoire-sur-le-Loir",
+      "adresse": "14 Boulevard Mermoz",
+      "pop": "R",
+      "lat": 4775700,
+      "lng": 86100,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.179,
+        "e10": 2.079
+      }
+    },
+    {
       "id": "41800002",
       "cp": "41800",
       "ville": "Montoire-sur-le-Loir",
@@ -339,6 +453,20 @@
         "sp95": 2.149,
         "sp98": 2.179,
         "e10": 1.979
+      }
+    },
+    {
+      "id": "41400006",
+      "cp": "41400",
+      "ville": "Montrichard Val de Cher",
+      "adresse": "60 Route de Tours",
+      "pop": "R",
+      "lat": 4734200,
+      "lng": 117800,
+      "fuels": {
+        "gazole": 2.009,
+        "sp98": 2.179,
+        "e10": 2.059
       }
     },
     {
@@ -394,6 +522,22 @@
         "gazole": 2.029,
         "sp98": 2.059,
         "e10": 1.969
+      }
+    },
+    {
+      "id": "41200009",
+      "cp": "41200",
+      "ville": "Pruniers-en-Sologne",
+      "adresse": "AUTOROUTE A85 - AIRE DE ROMORANTIN",
+      "pop": "A",
+      "lat": 4733809.76593,
+      "lng": 166604.67696,
+      "fuels": {
+        "gazole": 2.202,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.978,
+        "gplc": 1.068
       }
     },
     {
@@ -541,6 +685,49 @@
       }
     },
     {
+      "id": "41300001",
+      "cp": "41300",
+      "ville": "Salbris",
+      "adresse": "74 BD REPUBLIQUE",
+      "pop": "R",
+      "lat": 4742400,
+      "lng": 205300,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 2.08,
+        "sp98": 2.1
+      }
+    },
+    {
+      "id": "41300002",
+      "cp": "41300",
+      "ville": "Salbris",
+      "adresse": "AVENUE DE LA RESISTANCE",
+      "pop": "R",
+      "lat": 4742900,
+      "lng": 206000,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.095,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "41130003",
+      "cp": "41130",
+      "ville": "Selles-sur-Cher",
+      "adresse": "Avenue Cher Sologne",
+      "pop": "R",
+      "lat": 4728500,
+      "lng": 153800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.065,
+        "sp98": 2.055,
+        "e10": 1.999
+      }
+    },
+    {
       "id": "41300007",
       "cp": "41300",
       "ville": "Theillay",
@@ -576,8 +763,7 @@
       "lat": 4779700,
       "lng": 105900,
       "fuels": {
-        "gazole": 1.968,
-        "e10": 1.886
+        "gazole": 1.968
       }
     },
     {
@@ -641,6 +827,20 @@
       }
     },
     {
+      "id": "41000005",
+      "cp": "41000",
+      "ville": "Villerbon",
+      "adresse": "A10 - Aire de Blois-Villerbon",
+      "pop": "A",
+      "lat": 4766600,
+      "lng": 138800,
+      "fuels": {
+        "gazole": 2.392,
+        "sp98": 2.525,
+        "e10": 2.375
+      }
+    },
+    {
       "id": "41000021",
       "cp": "41000",
       "ville": "Villerbon",
@@ -666,9 +866,23 @@
       "lng": 137039.328,
       "fuels": {
         "gazole": 1.972,
-        "sp98": 1.99,
         "e10": 1.891,
         "e85": 0.889
+      }
+    },
+    {
+      "id": "41350003",
+      "cp": "41350",
+      "ville": "Vineuil",
+      "adresse": "RUE PAUL VALERY",
+      "pop": "R",
+      "lat": 4758400,
+      "lng": 137500,
+      "fuels": {
+        "gazole": 2.006,
+        "sp95": 1.985,
+        "sp98": 2.033,
+        "e10": 1.922
       }
     },
     {

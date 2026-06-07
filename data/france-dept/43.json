@@ -3,45 +3,45 @@
   "name": "Haute-Loire",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 36,
+  "stationCount": 50,
   "fuels": {
     "gazole": {
-      "count": 35,
-      "mean": 2.0367,
+      "count": 49,
+      "mean": 2.0364,
       "median": 2.012,
       "min": 1.969,
       "max": 2.186
     },
     "sp95": {
-      "count": 17,
-      "mean": 2.0598,
+      "count": 22,
+      "mean": 2.0475,
       "median": 2.049,
       "min": 1.939,
       "max": 2.196
     },
     "sp98": {
-      "count": 23,
-      "mean": 2.0776,
+      "count": 31,
+      "mean": 2.0804,
       "median": 2.072,
       "min": 1.99,
       "max": 2.22
     },
     "e10": {
-      "count": 19,
-      "mean": 1.9872,
+      "count": 28,
+      "mean": 1.9831,
       "median": 1.969,
       "min": 1.904,
       "max": 2.12
     },
     "e85": {
-      "count": 8,
-      "mean": 0.8397,
+      "count": 9,
+      "mean": 0.8544,
       "median": 0.855,
       "min": 0.798,
-      "max": 0.869
+      "max": 0.972
     },
     "gplc": {
       "count": 2,
@@ -52,6 +52,34 @@
     }
   },
   "stations": [
+    {
+      "id": "43000002",
+      "cp": "43000",
+      "ville": "Aiguilhe",
+      "adresse": "16 Avenue de Bonneville",
+      "pop": "R",
+      "lat": 4505000,
+      "lng": 388800,
+      "fuels": {
+        "gazole": 2.07,
+        "sp98": 2.13,
+        "e10": 1.97
+      }
+    },
+    {
+      "id": "43110002",
+      "cp": "43110",
+      "ville": "Aurec-sur-Loire",
+      "adresse": "ROUTE DE FIRMINY",
+      "pop": "R",
+      "lat": 4537163.7089,
+      "lng": 420778.38597,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 2.085,
+        "e10": 1.975
+      }
+    },
     {
       "id": "43210003",
       "cp": "43210",
@@ -79,6 +107,19 @@
       }
     },
     {
+      "id": "43100002",
+      "cp": "43100",
+      "ville": "Brioude",
+      "adresse": "AVENUE JEAN JAURES",
+      "pop": "R",
+      "lat": 4528900,
+      "lng": 336900,
+      "fuels": {
+        "gazole": 2.097,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "43100006",
       "cp": "43100",
       "ville": "Brioude",
@@ -90,6 +131,20 @@
         "gazole": 2.02,
         "sp98": 2.072,
         "e10": 1.968
+      }
+    },
+    {
+      "id": "43100001",
+      "cp": "43100",
+      "ville": "Brioude",
+      "adresse": "Route de Clermont",
+      "pop": "R",
+      "lat": 4531100,
+      "lng": 337500,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 1.992,
+        "sp98": 2.089
       }
     },
     {
@@ -106,6 +161,20 @@
         "e10": 1.918,
         "e85": 0.869,
         "gplc": 0.939
+      }
+    },
+    {
+      "id": "43770001",
+      "cp": "43770",
+      "ville": "Chadrac",
+      "adresse": "17 Avenue des Champs Élysées",
+      "pop": "R",
+      "lat": 4505300,
+      "lng": 390000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.055,
+        "e10": 1.959
       }
     },
     {
@@ -151,6 +220,32 @@
       }
     },
     {
+      "id": "43500001",
+      "cp": "43500",
+      "ville": "Craponne-sur-Arzon",
+      "adresse": "ZA LE VERNET ROUTE DU PUY",
+      "pop": "R",
+      "lat": 4532544.86675,
+      "lng": 383961.40865,
+      "fuels": {
+        "gazole": 2.093,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "43220001",
+      "cp": "43220",
+      "ville": "Dunières",
+      "adresse": "Rue Traversière",
+      "pop": "R",
+      "lat": 4521400,
+      "lng": 434600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999
+      }
+    },
+    {
       "id": "43340001",
       "cp": "43340",
       "ville": "Landos",
@@ -162,6 +257,47 @@
         "gazole": 2.012,
         "sp95": 2.089,
         "e85": 0.855
+      }
+    },
+    {
+      "id": "43300004",
+      "cp": "43300",
+      "ville": "Langeac",
+      "adresse": "56 AVENUE D'AUVERGNE",
+      "pop": "R",
+      "lat": 4510938.38,
+      "lng": 349199.15,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 2.169,
+        "e10": 2.049
+      }
+    },
+    {
+      "id": "43300002",
+      "cp": "43300",
+      "ville": "Langeac",
+      "adresse": "Avenue d'Auvergne",
+      "pop": "R",
+      "lat": 4511200,
+      "lng": 349200,
+      "fuels": {
+        "gazole": 1.995,
+        "sp95": 2.099
+      }
+    },
+    {
+      "id": "43400001",
+      "cp": "43400",
+      "ville": "Le Chambon-sur-Lignon",
+      "adresse": "Route de Saint-Agrève-Valence",
+      "pop": "R",
+      "lat": 4505556,
+      "lng": 431412,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 1.949,
+        "e10": 1.919
       }
     },
     {
@@ -193,6 +329,33 @@
       }
     },
     {
+      "id": "43000004",
+      "cp": "43000",
+      "ville": "Le Puy-en-Velay",
+      "adresse": "106 Avenue Maréchal Foch",
+      "pop": "R",
+      "lat": 4503300,
+      "lng": 388600,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 2.055,
+        "e10": 1.959,
+        "e85": 0.972
+      }
+    },
+    {
+      "id": "43000011",
+      "cp": "43000",
+      "ville": "Le Puy-en-Velay",
+      "adresse": "31 Bd Maréchal Joffre",
+      "pop": "R",
+      "lat": 4504908.36308,
+      "lng": 389402.9428,
+      "fuels": {
+        "gazole": 2.143
+      }
+    },
+    {
       "id": "43410001",
       "cp": "43410",
       "ville": "Lempdes-sur-Allagnon",
@@ -204,6 +367,20 @@
         "gazole": 2.078,
         "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "43360004",
+      "cp": "43360",
+      "ville": "Lorlanges",
+      "adresse": "A75 AIRE DE LAFAYETTE",
+      "pop": "A",
+      "lat": 4533824.4,
+      "lng": 327431.3,
+      "fuels": {
+        "gazole": 2.1,
+        "sp98": 2.155,
+        "e10": 2.08
       }
     },
     {
@@ -259,6 +436,20 @@
         "gazole": 2.013,
         "sp95": 2.006,
         "sp98": 2.061
+      }
+    },
+    {
+      "id": "43130001",
+      "cp": "43130",
+      "ville": "Retournac",
+      "adresse": "Rue Jean-Baptiste Ribeyron",
+      "pop": "R",
+      "lat": 4521100,
+      "lng": 403000,
+      "fuels": {
+        "gazole": 2.009,
+        "sp98": 2.049,
+        "e10": 1.949
       }
     },
     {
@@ -490,8 +681,8 @@
       "lng": 391500,
       "fuels": {
         "gazole": 2.01,
-        "sp98": 2.129,
-        "e10": 2.019,
+        "sp98": 2.049,
+        "e10": 1.939,
         "e85": 0.798
       }
     },

@@ -3,52 +3,52 @@
   "name": "Hautes-Alpes",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 32,
+  "stationCount": 41,
   "fuels": {
     "gazole": {
-      "count": 31,
-      "mean": 2.0178,
-      "median": 2.021,
+      "count": 40,
+      "mean": 2.0233,
+      "median": 2.025,
       "min": 1.965,
-      "max": 2.099
+      "max": 2.19
     },
     "sp95": {
-      "count": 12,
-      "mean": 2.0433,
-      "median": 2.024,
+      "count": 16,
+      "mean": 2.0445,
+      "median": 2.034,
       "min": 1.996,
       "max": 2.118
     },
     "sp98": {
-      "count": 24,
-      "mean": 2.0597,
-      "median": 2.047,
+      "count": 31,
+      "mean": 2.0585,
+      "median": 2.045,
       "min": 1.979,
-      "max": 2.149
+      "max": 2.15
     },
     "e10": {
-      "count": 24,
-      "mean": 1.9757,
-      "median": 1.952,
-      "min": 1.901,
+      "count": 29,
+      "mean": 1.9722,
+      "median": 1.95,
+      "min": 1.884,
       "max": 2.069
     },
     "e85": {
-      "count": 6,
-      "mean": 0.8278,
-      "median": 0.829,
+      "count": 7,
+      "mean": 0.8446,
+      "median": 0.853,
       "min": 0.798,
-      "max": 0.859
+      "max": 0.89
     },
     "gplc": {
-      "count": 2,
-      "mean": 1.029,
+      "count": 3,
+      "mean": 1.0523,
       "median": 1.029,
       "min": 1.029,
-      "max": 1.029
+      "max": 1.099
     }
   },
   "stations": [
@@ -79,6 +79,22 @@
       }
     },
     {
+      "id": "5100008",
+      "cp": "05100",
+      "ville": "Briançon",
+      "adresse": "AV. DU DAUPHINE",
+      "pop": "R",
+      "lat": 4490371.83286,
+      "lng": 662908.58578,
+      "fuels": {
+        "gazole": 1.998,
+        "sp98": 1.99,
+        "e10": 1.918,
+        "e85": 0.853,
+        "gplc": 1.099
+      }
+    },
+    {
       "id": "5100004",
       "cp": "05100",
       "ville": "Briançon",
@@ -103,6 +119,18 @@
       "lng": 618157,
       "fuels": {
         "gazole": 2.069
+      }
+    },
+    {
+      "id": "5350001",
+      "cp": "05350",
+      "ville": "Château-Ville-Vieille",
+      "adresse": "2507 Route du Queyras",
+      "pop": "R",
+      "lat": 4475900,
+      "lng": 680800,
+      "fuels": {
+        "gazole": 2.19
       }
     },
     {
@@ -163,6 +191,21 @@
       }
     },
     {
+      "id": "5200001",
+      "cp": "05200",
+      "ville": "Embrun",
+      "adresse": "Zone d'Entraigues",
+      "pop": "R",
+      "lat": 4455100,
+      "lng": 648900,
+      "fuels": {
+        "gazole": 2.01,
+        "sp95": 2.015,
+        "sp98": 2.033,
+        "e10": 1.948
+      }
+    },
+    {
       "id": "5600005",
       "cp": "05600",
       "ville": "Eygliers",
@@ -175,6 +218,20 @@
         "sp95": 2.009,
         "sp98": 2.039,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "5260002",
+      "cp": "05260",
+      "ville": "Forest-Saint-Julien",
+      "adresse": "Pré du Cros",
+      "pop": "R",
+      "lat": 4464394.1,
+      "lng": 613696.4,
+      "fuels": {
+        "gazole": 2.03,
+        "sp95": 2.09,
+        "sp98": 2.13
       }
     },
     {
@@ -346,8 +403,21 @@
       "lng": 582300,
       "fuels": {
         "gazole": 1.97,
-        "e10": 2.019,
-        "e85": 0.798
+        "e10": 2.019
+      }
+    },
+    {
+      "id": "5300001",
+      "cp": "05300",
+      "ville": "Laragne-Montéglin",
+      "adresse": "50 Avenue de Provence",
+      "pop": "R",
+      "lat": 4431000,
+      "lng": 583200,
+      "fuels": {
+        "gazole": 2.084,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -379,6 +449,21 @@
       }
     },
     {
+      "id": "5100009",
+      "cp": "05100",
+      "ville": "Montgenèvre",
+      "adresse": "RN 94",
+      "pop": "R",
+      "lat": 4493400,
+      "lng": 673300,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.15,
+        "e10": 2.039,
+        "e85": 0.89
+      }
+    },
+    {
       "id": "5190002",
       "cp": "05190",
       "ville": "Remollon",
@@ -390,6 +475,19 @@
         "gazole": 2.029,
         "sp98": 2.069,
         "e10": 1.999
+      }
+    },
+    {
+      "id": "5500002",
+      "cp": "05500",
+      "ville": "Saint-Bonnet-en-Champsaur",
+      "adresse": "ZA DU MOULIN",
+      "pop": "R",
+      "lat": 4467577.32172,
+      "lng": 607589.24851,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.029
       }
     },
     {
@@ -432,6 +530,34 @@
         "gazole": 1.999,
         "sp98": 2.089,
         "e10": 2.019
+      }
+    },
+    {
+      "id": "5700002",
+      "cp": "05700",
+      "ville": "Serres",
+      "adresse": "RD 1075- quartier les Chambons",
+      "pop": "R",
+      "lat": 4443500,
+      "lng": 571300,
+      "fuels": {
+        "gazole": 2.038,
+        "sp95": 2.058,
+        "sp98": 2.088
+      }
+    },
+    {
+      "id": "5130002",
+      "cp": "05130",
+      "ville": "Tallard",
+      "adresse": "230 avenue Pierre Bernard Reymond",
+      "pop": "R",
+      "lat": 4445959.9636,
+      "lng": 603513.92064,
+      "fuels": {
+        "gazole": 1.992,
+        "sp98": 1.998,
+        "e10": 1.884
       }
     },
     {

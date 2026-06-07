@@ -3,55 +3,69 @@
   "name": "Gard",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 93,
+  "stationCount": 130,
   "fuels": {
     "gazole": {
-      "count": 93,
-      "mean": 2.015,
-      "median": 1.993,
+      "count": 130,
+      "mean": 2.0234,
+      "median": 1.999,
       "min": 1.919,
       "max": 2.294
     },
     "sp95": {
-      "count": 28,
-      "mean": 2.0163,
-      "median": 1.999,
-      "min": 1.969,
-      "max": 2.11
+      "count": 39,
+      "mean": 2.0274,
+      "median": 2.003,
+      "min": 1.951,
+      "max": 2.199
     },
     "sp98": {
-      "count": 69,
-      "mean": 2.063,
-      "median": 2.057,
-      "min": 1.989,
+      "count": 94,
+      "mean": 2.0713,
+      "median": 2.059,
+      "min": 1.984,
       "max": 2.294
     },
     "e10": {
-      "count": 73,
-      "mean": 1.9618,
-      "median": 1.949,
-      "min": 1.87,
+      "count": 100,
+      "mean": 1.9723,
+      "median": 1.9555,
+      "min": 1.868,
       "max": 2.21
     },
     "e85": {
-      "count": 30,
-      "mean": 0.8058,
-      "median": 0.798,
+      "count": 45,
+      "mean": 0.8196,
+      "median": 0.799,
       "min": 0.739,
-      "max": 0.899
+      "max": 1.099
     },
     "gplc": {
-      "count": 8,
-      "mean": 1.084,
-      "median": 1.0605,
+      "count": 13,
+      "mean": 1.0897,
+      "median": 1.061,
       "min": 0.999,
       "max": 1.2
     }
   },
   "stations": [
+    {
+      "id": "30220002",
+      "cp": "30220",
+      "ville": "Aigues-Mortes",
+      "adresse": "1121 Route de Nîmes",
+      "pop": "R",
+      "lat": 4357400,
+      "lng": 419600,
+      "fuels": {
+        "gazole": 1.984,
+        "sp98": 2.11,
+        "e10": 1.945
+      }
+    },
     {
       "id": "30220001",
       "cp": "30220",
@@ -83,6 +97,20 @@
       }
     },
     {
+      "id": "30470001",
+      "cp": "30470",
+      "ville": "Aimargues",
+      "adresse": "Route des Plages",
+      "pop": "R",
+      "lat": 4369400,
+      "lng": 420300,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.019,
+        "e10": 1.949
+      }
+    },
+    {
       "id": "30100012",
       "cp": "30100",
       "ville": "Alès",
@@ -97,6 +125,22 @@
       }
     },
     {
+      "id": "30100011",
+      "cp": "30100",
+      "ville": "Alès",
+      "adresse": "2 AVENUE D'INDY",
+      "pop": "R",
+      "lat": 4413500,
+      "lng": 409200,
+      "fuels": {
+        "gazole": 2.08,
+        "sp95": 2.05,
+        "sp98": 2.13,
+        "e10": 2,
+        "e85": 0.75
+      }
+    },
+    {
       "id": "30100003",
       "cp": "30100",
       "ville": "Alès",
@@ -108,6 +152,48 @@
         "gazole": 1.99,
         "sp98": 2.059,
         "e10": 1.96
+      }
+    },
+    {
+      "id": "30100014",
+      "cp": "30100",
+      "ville": "Alès",
+      "adresse": "44 AV CARNOT",
+      "pop": "R",
+      "lat": 4412100,
+      "lng": 408700,
+      "fuels": {
+        "gazole": 2.05,
+        "sp98": 1.99,
+        "e10": 1.96
+      }
+    },
+    {
+      "id": "30100019",
+      "cp": "30100",
+      "ville": "Alès",
+      "adresse": "541 Quai de Bilina",
+      "pop": "R",
+      "lat": 4413228.36021,
+      "lng": 407407.37418,
+      "fuels": {
+        "gazole": 1.98,
+        "sp98": 2.059,
+        "e10": 1.97
+      }
+    },
+    {
+      "id": "30100018",
+      "cp": "30100",
+      "ville": "Alès",
+      "adresse": "CENTRE COMMERCIAL LIDL 173 RTE DE NIMES",
+      "pop": "R",
+      "lat": 4411400,
+      "lng": 410100,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 1.999,
+        "e10": 1.949
       }
     },
     {
@@ -165,7 +251,6 @@
       "lng": 410400,
       "fuels": {
         "gazole": 1.961,
-        "sp98": 1.99,
         "e85": 0.843
       }
     },
@@ -181,6 +266,19 @@
         "gazole": 2.049,
         "sp95": 1.999,
         "e10": 1.949
+      }
+    },
+    {
+      "id": "30140002",
+      "cp": "30140",
+      "ville": "Anduze",
+      "adresse": "24 Avenue du Pasteur Rollin",
+      "pop": "R",
+      "lat": 4405184,
+      "lng": 398507,
+      "fuels": {
+        "gazole": 2.059,
+        "sp98": 2.139
       }
     },
     {
@@ -209,6 +307,20 @@
         "gazole": 1.989,
         "sp98": 2.099,
         "e10": 1.959
+      }
+    },
+    {
+      "id": "30390002",
+      "cp": "30390",
+      "ville": "Aramon",
+      "adresse": "760 AVENUE DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 4389682.61263,
+      "lng": 469267.74241,
+      "fuels": {
+        "gazole": 2.065,
+        "sp95": 2.092,
+        "e10": 2.042
       }
     },
     {
@@ -250,8 +362,22 @@
       "lng": 462000,
       "fuels": {
         "gazole": 2.085,
-        "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "30330001",
+      "cp": "30200",
+      "ville": "Bagnols-sur-Cèze",
+      "adresse": "AVENUE DE LA MAYRE",
+      "pop": "R",
+      "lat": 4415700,
+      "lng": 462300,
+      "fuels": {
+        "gazole": 2.053,
+        "sp98": 2.059,
+        "e10": 1.935,
+        "e85": 0.795
       }
     },
     {
@@ -293,7 +419,6 @@
       "fuels": {
         "gazole": 1.966,
         "sp98": 1.99,
-        "e10": 1.903,
         "e85": 0.839
       }
     },
@@ -310,6 +435,20 @@
       }
     },
     {
+      "id": "30300003",
+      "cp": "30300",
+      "ville": "Beaucaire",
+      "adresse": "Route de Nimes",
+      "pop": "R",
+      "lat": 4381700,
+      "lng": 461600,
+      "fuels": {
+        "gazole": 2.046,
+        "e10": 1.94,
+        "e85": 0.806
+      }
+    },
+    {
       "id": "30300005",
       "cp": "30300",
       "ville": "Beaucaire",
@@ -321,6 +460,19 @@
         "gazole": 2.049,
         "e10": 2.029,
         "e85": 0.899
+      }
+    },
+    {
+      "id": "30640001",
+      "cp": "30640",
+      "ville": "Beauvoisin",
+      "adresse": "711 avenue Cabassan Clarettes",
+      "pop": "R",
+      "lat": 4372600,
+      "lng": 433000,
+      "fuels": {
+        "gazole": 1.995,
+        "e10": 1.994
       }
     },
     {
@@ -347,6 +499,20 @@
       "lng": 428200,
       "fuels": {
         "gazole": 1.959
+      }
+    },
+    {
+      "id": "30160001",
+      "cp": "30160",
+      "ville": "Bessèges",
+      "adresse": "Rue du Docteur Paul Vermale",
+      "pop": "R",
+      "lat": 4429233,
+      "lng": 409340,
+      "fuels": {
+        "gazole": 2.09,
+        "sp95": 2.09,
+        "sp98": 2.19
       }
     },
     {
@@ -378,6 +544,20 @@
       }
     },
     {
+      "id": "30190002",
+      "cp": "30190",
+      "ville": "Boucoiran-et-Nozières",
+      "adresse": "RN106",
+      "pop": "R",
+      "lat": 4397608.7048,
+      "lng": 420349.40976,
+      "fuels": {
+        "gazole": 2.21,
+        "sp95": 2.199,
+        "e10": 2.165
+      }
+    },
+    {
       "id": "30230002",
       "cp": "30230",
       "ville": "Bouillargues",
@@ -404,6 +584,35 @@
         "sp98": 2.069,
         "e10": 1.939,
         "e85": 0.799
+      }
+    },
+    {
+      "id": "30132003",
+      "cp": "30132",
+      "ville": "Caissargues",
+      "adresse": "ROUTE DE ST GILLES",
+      "pop": "R",
+      "lat": 4378400,
+      "lng": 439300,
+      "fuels": {
+        "gazole": 2.099,
+        "sp95": 2.089,
+        "sp98": 2.199,
+        "e85": 0.899
+      }
+    },
+    {
+      "id": "30420001",
+      "cp": "30420",
+      "ville": "Calvisson",
+      "adresse": "163 route de sommieres",
+      "pop": "R",
+      "lat": 4378100,
+      "lng": 420100,
+      "fuels": {
+        "gazole": 2.066,
+        "sp98": 1.99,
+        "e10": 1.982
       }
     },
     {
@@ -473,6 +682,34 @@
         "gazole": 2.07,
         "sp98": 1.99,
         "e10": 1.982
+      }
+    },
+    {
+      "id": "30128001",
+      "cp": "30128",
+      "ville": "Garons",
+      "adresse": "1 rue Jacques Flory, Rte de Bouillargues",
+      "pop": "R",
+      "lat": 4377766.76153,
+      "lng": 442860.0306,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.049,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "30330003",
+      "cp": "30330",
+      "ville": "Gaujac",
+      "adresse": "RD 310",
+      "pop": "R",
+      "lat": 4407600,
+      "lng": 458600,
+      "fuels": {
+        "gazole": 1.982,
+        "sp98": 2.144,
+        "e10": 2.01
       }
     },
     {
@@ -576,6 +813,20 @@
       }
     },
     {
+      "id": "30240001",
+      "cp": "30240",
+      "ville": "Le Grau-du-Roi",
+      "adresse": "ZA du Port de Pêche",
+      "pop": "R",
+      "lat": 4352200,
+      "lng": 413900,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 2.059,
+        "e10": 1.949
+      }
+    },
+    {
       "id": "30120002",
       "cp": "30120",
       "ville": "Le Vigan",
@@ -657,6 +908,20 @@
       }
     },
     {
+      "id": "30129002",
+      "cp": "30129",
+      "ville": "Manduel",
+      "adresse": "DE LA REPUBLIQUE",
+      "pop": "R",
+      "lat": 4382100,
+      "lng": 446900,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.951,
+        "sp98": 2.005
+      }
+    },
+    {
       "id": "30320001",
       "cp": "30320",
       "ville": "Marguerittes",
@@ -686,6 +951,22 @@
       }
     },
     {
+      "id": "30320006",
+      "cp": "30320",
+      "ville": "Marguerittes",
+      "adresse": "AUTOROUTE A9 - AIRE DE MARGUERITES NORD",
+      "pop": "A",
+      "lat": 4387500,
+      "lng": 445000,
+      "fuels": {
+        "gazole": 2.215,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.098
+      }
+    },
+    {
       "id": "30340007",
       "cp": "30340",
       "ville": "Méjannes-lès-Alès",
@@ -698,6 +979,21 @@
         "sp98": 2.027,
         "e10": 1.96,
         "e85": 0.739
+      }
+    },
+    {
+      "id": "30340006",
+      "cp": "30340",
+      "ville": "Méjannes-lès-Alès",
+      "adresse": "RTE D'UZES",
+      "pop": "R",
+      "lat": 4410000,
+      "lng": 413800,
+      "fuels": {
+        "gazole": 2.07,
+        "e10": 2.02,
+        "e85": 0.75,
+        "gplc": 1.2
       }
     },
     {
@@ -726,6 +1022,21 @@
         "sp95": 1.988,
         "sp98": 2.056,
         "e10": 1.919,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "30490002",
+      "cp": "30490",
+      "ville": "Montfrin",
+      "adresse": "13 Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4387300,
+      "lng": 459600,
+      "fuels": {
+        "gazole": 1.958,
+        "sp95": 2.015,
+        "sp98": 2.139,
         "e85": 0.798
       }
     },
@@ -797,8 +1108,39 @@
       "lat": 4381305,
       "lng": 433267,
       "fuels": {
-        "gazole": 2.046,
-        "e10": 1.962
+        "gazole": 2.046
+      }
+    },
+    {
+      "id": "30900017",
+      "cp": "30900",
+      "ville": "Nîmes",
+      "adresse": "2705 RTE DE MONTPELLIER",
+      "pop": "R",
+      "lat": 4381000,
+      "lng": 432900,
+      "fuels": {
+        "gazole": 1.958,
+        "sp98": 1.984,
+        "e10": 1.868,
+        "e85": 0.837,
+        "gplc": 1.049
+      }
+    },
+    {
+      "id": "30000021",
+      "cp": "30000",
+      "ville": "Nîmes",
+      "adresse": "314 route d'Avignon",
+      "pop": "R",
+      "lat": 4385100,
+      "lng": 440100,
+      "fuels": {
+        "gazole": 2.056,
+        "sp98": 1.99,
+        "e10": 1.971,
+        "e85": 0.864,
+        "gplc": 1.049
       }
     },
     {
@@ -858,6 +1200,20 @@
         "sp95": 1.996,
         "e10": 1.889,
         "gplc": 1.06
+      }
+    },
+    {
+      "id": "30000006",
+      "cp": "30900",
+      "ville": "Nîmes",
+      "adresse": "47 Boulevard Talabot",
+      "pop": "R",
+      "lat": 4383800,
+      "lng": 437200,
+      "fuels": {
+        "gazole": 1.967,
+        "sp98": 2.081,
+        "e10": 1.956
       }
     },
     {
@@ -1010,6 +1366,20 @@
       }
     },
     {
+      "id": "30130010",
+      "cp": "30130",
+      "ville": "Pont-Saint-Esprit",
+      "adresse": "PLACE DU PLAN",
+      "pop": "R",
+      "lat": 4425800,
+      "lng": 464900,
+      "fuels": {
+        "gazole": 2.075,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "30260002",
       "cp": "30260",
       "ville": "Quissac",
@@ -1020,6 +1390,20 @@
       "fuels": {
         "gazole": 2.07,
         "sp95": 2.079
+      }
+    },
+    {
+      "id": "30260001",
+      "cp": "30260",
+      "ville": "Quissac",
+      "adresse": "639 Avenue de l'Aigoual",
+      "pop": "R",
+      "lat": 4391400,
+      "lng": 399500,
+      "fuels": {
+        "gazole": 2.119,
+        "sp95": 2.079,
+        "sp98": 2.169
       }
     },
     {
@@ -1064,6 +1448,21 @@
       }
     },
     {
+      "id": "30210001",
+      "cp": "30210",
+      "ville": "Remoulins",
+      "adresse": "Impasse Roussin",
+      "pop": "R",
+      "lat": 4393900,
+      "lng": 457400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.999,
+        "e85": 0.849
+      }
+    },
+    {
       "id": "30650001",
       "cp": "30650",
       "ville": "Rochefort-du-Gard",
@@ -1075,6 +1474,20 @@
         "gazole": 2.194,
         "sp98": 2.229,
         "e10": 2.14
+      }
+    },
+    {
+      "id": "30150002",
+      "cp": "30150",
+      "ville": "Roquemaure",
+      "adresse": "ROUTE D'AVIGNON",
+      "pop": "R",
+      "lat": 4404500,
+      "lng": 478700,
+      "fuels": {
+        "gazole": 2.249,
+        "e10": 2.169,
+        "e85": 1.099
       }
     },
     {
@@ -1116,6 +1529,19 @@
       "lng": 419600,
       "fuels": {
         "gazole": 2.19
+      }
+    },
+    {
+      "id": "30380002",
+      "cp": "30380",
+      "ville": "Saint-Christol-lez-Alès",
+      "adresse": "1296 AVENUE JEAN MOULIN",
+      "pop": "R",
+      "lat": 4407300,
+      "lng": 408100,
+      "fuels": {
+        "gazole": 1.954,
+        "e10": 1.944
       }
     },
     {
@@ -1220,6 +1646,21 @@
       }
     },
     {
+      "id": "30760001",
+      "cp": "30760",
+      "ville": "Saint-Julien-de-Peyrolas",
+      "adresse": "75 chemin dechetterie",
+      "pop": "R",
+      "lat": 4429396.8,
+      "lng": 456786.9,
+      "fuels": {
+        "gazole": 2.149,
+        "sp98": 2.199,
+        "e10": 2.099,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "30220003",
       "cp": "30220",
       "ville": "Saint-Laurent-d'Aigouze",
@@ -1247,6 +1688,21 @@
         "sp98": 2.08,
         "e10": 2.01,
         "e85": 0.75
+      }
+    },
+    {
+      "id": "30290002",
+      "cp": "30290",
+      "ville": "Saint-Victor-la-Coste",
+      "adresse": "chemin des lonnes, route des vignerons",
+      "pop": "R",
+      "lat": 4406200,
+      "lng": 463900,
+      "fuels": {
+        "gazole": 1.982,
+        "sp98": 2.144,
+        "e10": 2.01,
+        "e85": 0.799
       }
     },
     {
@@ -1279,6 +1735,21 @@
       }
     },
     {
+      "id": "30126005",
+      "cp": "30126",
+      "ville": "Tavel",
+      "adresse": "AUTOROUTE A9",
+      "pop": "A",
+      "lat": 4400100,
+      "lng": 470100,
+      "fuels": {
+        "gazole": 2.238,
+        "sp98": 2.241,
+        "e10": 2.139,
+        "gplc": 1.098
+      }
+    },
+    {
       "id": "30700007",
       "cp": "30700",
       "ville": "Uzès",
@@ -1288,8 +1759,6 @@
       "lng": 441900,
       "fuels": {
         "gazole": 1.975,
-        "sp98": 1.99,
-        "e10": 1.891,
         "e85": 0.824
       }
     },
@@ -1304,6 +1773,21 @@
       "fuels": {
         "gazole": 1.985,
         "sp98": 2.057
+      }
+    },
+    {
+      "id": "30700001",
+      "cp": "30700",
+      "ville": "Uzès",
+      "adresse": "PONT DES CHARETTES",
+      "pop": "R",
+      "lat": 4399000,
+      "lng": 442900,
+      "fuels": {
+        "gazole": 2.024,
+        "sp95": 1.989,
+        "sp98": 2.072,
+        "e10": 1.92
       }
     },
     {
@@ -1334,6 +1818,22 @@
       }
     },
     {
+      "id": "30310001",
+      "cp": "30310",
+      "ville": "Vergèze",
+      "adresse": "Route de Codognan",
+      "pop": "R",
+      "lat": 4373729.3,
+      "lng": 421791.1,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.999,
+        "sp98": 2.019,
+        "e10": 1.919,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "30360002",
       "cp": "30360",
       "ville": "Vézénobres",
@@ -1345,6 +1845,33 @@
         "gazole": 1.999,
         "sp95": 2.009,
         "sp98": 2.079
+      }
+    },
+    {
+      "id": "30400004",
+      "cp": "30400",
+      "ville": "Villeneuve-lès-Avignon",
+      "adresse": "128, Avenue Général Leclerc",
+      "pop": "R",
+      "lat": 4395800,
+      "lng": 477900,
+      "fuels": {
+        "gazole": 2.098,
+        "sp98": 2.169,
+        "e10": 2.059
+      }
+    },
+    {
+      "id": "30400005",
+      "cp": "30400",
+      "ville": "Villeneuve-lès-Avignon",
+      "adresse": "97 AVENUE GÉNÉRAL LECLERC",
+      "pop": "R",
+      "lat": 4395800,
+      "lng": 477800,
+      "fuels": {
+        "gazole": 1.958,
+        "e85": 0.859
       }
     },
     {

@@ -3,52 +3,52 @@
   "name": "Territoire de Belfort",
   "regionCode": "BFC",
   "regionName": "Bourgogne-Franche-Comté",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 11,
+  "stationCount": 18,
   "fuels": {
     "gazole": {
-      "count": 11,
-      "mean": 2.022,
-      "median": 2.016,
+      "count": 18,
+      "mean": 2.0261,
+      "median": 2.0085,
       "min": 1.965,
-      "max": 2.09
+      "max": 2.099
     },
     "sp95": {
-      "count": 4,
-      "mean": 2.078,
-      "median": 2.0695,
-      "min": 2.053,
-      "max": 2.12
+      "count": 7,
+      "mean": 2.0796,
+      "median": 2.073,
+      "min": 1.987,
+      "max": 2.129
     },
     "sp98": {
-      "count": 8,
-      "mean": 2.0292,
-      "median": 1.994,
+      "count": 14,
+      "mean": 2.0398,
+      "median": 1.997,
       "min": 1.99,
-      "max": 2.16
+      "max": 2.169
     },
     "e10": {
-      "count": 9,
-      "mean": 1.9323,
-      "median": 1.94,
+      "count": 13,
+      "mean": 1.9265,
+      "median": 1.939,
       "min": 1.864,
       "max": 2.038
     },
     "e85": {
-      "count": 5,
-      "mean": 0.8572,
-      "median": 0.869,
+      "count": 6,
+      "mean": 0.8642,
+      "median": 0.8715,
       "min": 0.799,
-      "max": 0.875
+      "max": 0.899
     },
     "gplc": {
-      "count": 3,
-      "mean": 1.0297,
-      "median": 1.035,
+      "count": 4,
+      "mean": 1.0507,
+      "median": 1.057,
       "min": 0.999,
-      "max": 1.055
+      "max": 1.09
     }
   },
   "stations": [
@@ -128,6 +128,49 @@
       }
     },
     {
+      "id": "90000002",
+      "cp": "90000",
+      "ville": "Belfort",
+      "adresse": "4 Faubourg de Brisach",
+      "pop": "R",
+      "lat": 4764000,
+      "lng": 686800,
+      "fuels": {
+        "gazole": 2.059,
+        "sp98": 1.99,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "90000015",
+      "cp": "90000",
+      "ville": "Belfort",
+      "adresse": "56, AVENUE DU GENERAL LECLERC",
+      "pop": "R",
+      "lat": 4763600,
+      "lng": 683800,
+      "fuels": {
+        "gazole": 1.971,
+        "sp98": 1.99,
+        "e10": 1.864
+      }
+    },
+    {
+      "id": "90000009",
+      "cp": "90000",
+      "ville": "Belfort",
+      "adresse": "57 Avenue d'Altkirch",
+      "pop": "R",
+      "lat": 4763600,
+      "lng": 687300,
+      "fuels": {
+        "gazole": 2.099,
+        "sp95": 2.129,
+        "sp98": 2.169,
+        "e85": 0.899
+      }
+    },
+    {
       "id": "90000013",
       "cp": "90000",
       "ville": "Belfort",
@@ -139,8 +182,7 @@
         "gazole": 2.055,
         "sp98": 1.99,
         "e10": 1.94,
-        "e85": 0.874,
-        "gplc": 1.035
+        "e85": 0.874
       }
     },
     {
@@ -156,6 +198,35 @@
         "sp98": 1.991,
         "e10": 1.893,
         "gplc": 1.055
+      }
+    },
+    {
+      "id": "90100003",
+      "cp": "90100",
+      "ville": "Delle",
+      "adresse": "37 FAUBOURG DE BELFORT",
+      "pop": "R",
+      "lat": 4751200,
+      "lng": 699900,
+      "fuels": {
+        "gazole": 2.001,
+        "sp98": 2.008,
+        "e10": 1.901
+      }
+    },
+    {
+      "id": "90100004",
+      "cp": "90100",
+      "ville": "Delle",
+      "adresse": "62 faubourg de Belfort",
+      "pop": "R",
+      "lat": 4751100,
+      "lng": 700100,
+      "fuels": {
+        "gazole": 2.099,
+        "sp95": 2.129,
+        "sp98": 2.169,
+        "gplc": 1.09
       }
     },
     {
@@ -200,6 +271,19 @@
       }
     },
     {
+      "id": "90130002",
+      "cp": "90130",
+      "ville": "Montreux-Château",
+      "adresse": "1 RUE DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 4760687.9,
+      "lng": 700409.1,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "90300004",
       "cp": "90300",
       "ville": "Offemont",
@@ -211,6 +295,21 @@
         "gazole": 1.999,
         "e10": 1.979,
         "e85": 0.799
+      }
+    },
+    {
+      "id": "90300002",
+      "cp": "90300",
+      "ville": "Valdoie",
+      "adresse": "30, rue de Turenne",
+      "pop": "R",
+      "lat": 4766862.6011,
+      "lng": 684220.30872,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.987,
+        "sp98": 1.997,
+        "gplc": 1.059
       }
     }
   ]

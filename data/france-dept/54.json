@@ -3,55 +3,68 @@
   "name": "Meurthe-et-Moselle",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 74,
+  "stationCount": 90,
   "fuels": {
     "gazole": {
-      "count": 73,
-      "mean": 2.0569,
-      "median": 2.037,
-      "min": 1.978,
+      "count": 88,
+      "mean": 2.0513,
+      "median": 2.029,
+      "min": 1.975,
       "max": 2.262
     },
     "sp95": {
-      "count": 21,
-      "mean": 2.016,
+      "count": 24,
+      "mean": 2.0228,
       "median": 2.009,
-      "min": 1.972,
-      "max": 2.099
+      "min": 1.959,
+      "max": 2.28
     },
     "sp98": {
-      "count": 55,
-      "mean": 2.0892,
-      "median": 2.084,
-      "min": 1.99,
+      "count": 67,
+      "mean": 2.0844,
+      "median": 2.081,
+      "min": 1.989,
       "max": 2.31
     },
     "e10": {
-      "count": 55,
-      "mean": 1.9917,
-      "median": 1.99,
-      "min": 1.902,
+      "count": 65,
+      "mean": 1.9869,
+      "median": 1.984,
+      "min": 1.879,
       "max": 2.198
     },
     "e85": {
-      "count": 23,
-      "mean": 0.8678,
+      "count": 28,
+      "mean": 0.8606,
       "median": 0.849,
-      "min": 0.795,
+      "min": 0.729,
       "max": 1.158
     },
     "gplc": {
-      "count": 8,
-      "mean": 1.0376,
-      "median": 1.034,
-      "min": 0.975,
+      "count": 12,
+      "mean": 1.0304,
+      "median": 1.032,
+      "min": 0.949,
       "max": 1.145
     }
   },
   "stations": [
+    {
+      "id": "54450002",
+      "cp": "54450",
+      "ville": "Avricourt",
+      "adresse": "11 GRANDE RUE",
+      "pop": "R",
+      "lat": 4864400,
+      "lng": 680600,
+      "fuels": {
+        "gazole": 2.08,
+        "sp95": 1.961
+      }
+    },
     {
       "id": "54120002",
       "cp": "54120",
@@ -150,6 +163,20 @@
       }
     },
     {
+      "id": "54250001",
+      "cp": "54250",
+      "ville": "Champigneulles",
+      "adresse": "Rue de Frouard",
+      "pop": "R",
+      "lat": 4873800,
+      "lng": 616200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.047,
+        "e10": 1.993
+      }
+    },
+    {
       "id": "54300007",
       "cp": "54300",
       "ville": "Chanteheux",
@@ -179,6 +206,20 @@
       }
     },
     {
+      "id": "54170004",
+      "cp": "54170",
+      "ville": "Colombey-les-Belles",
+      "adresse": "17 Rue du Curtin",
+      "pop": "R",
+      "lat": 4853498.06422,
+      "lng": 589627.12434,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 2.079,
+        "e10": 1.999
+      }
+    },
+    {
       "id": "54170001",
       "cp": "54170",
       "ville": "Colombey-les-Belles",
@@ -189,6 +230,22 @@
       "fuels": {
         "gazole": 2.25,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "54800003",
+      "cp": "54800",
+      "ville": "Conflans-en-Jarnisy",
+      "adresse": "N.I. du Val de l'Orne CONFLANS EN JARNISY",
+      "pop": "R",
+      "lat": 4916400,
+      "lng": 583600,
+      "fuels": {
+        "gazole": 2.018,
+        "sp98": 2.068,
+        "e10": 1.958,
+        "e85": 0.873,
+        "gplc": 1.054
       }
     },
     {
@@ -241,9 +298,7 @@
       "lng": 607105.1,
       "fuels": {
         "gazole": 2.037,
-        "sp95": 1.996,
-        "sp98": 2.01,
-        "e10": 1.996
+        "sp98": 2.01
       }
     },
     {
@@ -257,6 +312,20 @@
       "fuels": {
         "gazole": 2.016,
         "e10": 1.915
+      }
+    },
+    {
+      "id": "54110001",
+      "cp": "54110",
+      "ville": "Dombasle-sur-Meurthe",
+      "adresse": "1 rue Victor Prouvé",
+      "pop": "R",
+      "lat": 4861000,
+      "lng": 635200,
+      "fuels": {
+        "gazole": 2.092,
+        "sp98": 2.141,
+        "e10": 2.041
       }
     },
     {
@@ -434,6 +503,19 @@
       }
     },
     {
+      "id": "54800001",
+      "cp": "54800",
+      "ville": "Jarny",
+      "adresse": "48 Rue de Verdun",
+      "pop": "R",
+      "lat": 4916569.54684,
+      "lng": 586370.85587,
+      "fuels": {
+        "gazole": 2.042,
+        "e10": 1.959
+      }
+    },
+    {
       "id": "54140001",
       "cp": "54140",
       "ville": "Jarville-la-Malgrange",
@@ -499,6 +581,37 @@
       "fuels": {
         "gazole": 1.985,
         "e10": 1.911
+      }
+    },
+    {
+      "id": "54520004",
+      "cp": "54520",
+      "ville": "Laxou",
+      "adresse": "12 Avenue de la Résistance",
+      "pop": "R",
+      "lat": 4869400,
+      "lng": 613100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.099,
+        "e10": 1.999,
+        "e85": 0.849,
+        "gplc": 0.949
+      }
+    },
+    {
+      "id": "54520007",
+      "cp": "54520",
+      "ville": "Laxou",
+      "adresse": "5 AVENUE DE LA RESISTANCE",
+      "pop": "R",
+      "lat": 4869407.41618,
+      "lng": 613189.71709,
+      "fuels": {
+        "gazole": 1.985,
+        "sp98": 1.99,
+        "e10": 1.911,
+        "e85": 0.889
       }
     },
     {
@@ -601,6 +714,19 @@
       }
     },
     {
+      "id": "54300002",
+      "cp": "54300",
+      "ville": "Lunéville",
+      "adresse": "60 Boulevard Georges Pompidou",
+      "pop": "R",
+      "lat": 4859664,
+      "lng": 647738,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 1.99
+      }
+    },
+    {
       "id": "54300008",
       "cp": "54300",
       "ville": "Lunéville",
@@ -668,6 +794,22 @@
       "fuels": {
         "gazole": 2.099,
         "e10": 1.999
+      }
+    },
+    {
+      "id": "54300001",
+      "cp": "54300",
+      "ville": "Moncel-lès-Lunéville",
+      "adresse": "6 rue tuilier",
+      "pop": "R",
+      "lat": 4857900,
+      "lng": 651800,
+      "fuels": {
+        "gazole": 2.01,
+        "sp95": 1.959,
+        "sp98": 2.16,
+        "e10": 1.949,
+        "e85": 0.729
       }
     },
     {
@@ -896,6 +1038,18 @@
       }
     },
     {
+      "id": "54470002",
+      "cp": "54470",
+      "ville": "Thiaucourt-Regniéville",
+      "adresse": "ZA de la Louviére",
+      "pop": "R",
+      "lat": 4894700,
+      "lng": 587600,
+      "fuels": {
+        "gazole": 2.039
+      }
+    },
+    {
       "id": "54510001",
       "cp": "54510",
       "ville": "Tomblaine",
@@ -941,6 +1095,21 @@
       }
     },
     {
+      "id": "54200007",
+      "cp": "54200",
+      "ville": "Toul",
+      "adresse": "678 Avenue du Général Bigeard",
+      "pop": "R",
+      "lat": 4866400,
+      "lng": 588800,
+      "fuels": {
+        "gazole": 2,
+        "sp98": 2.081,
+        "e10": 1.988,
+        "gplc": 1.082
+      }
+    },
+    {
       "id": "54200012",
       "cp": "54200",
       "ville": "Toul",
@@ -965,6 +1134,20 @@
       "lng": 593700,
       "fuels": {
         "gazole": 2.17
+      }
+    },
+    {
+      "id": "54150002",
+      "cp": "54150",
+      "ville": "Val de Briey",
+      "adresse": "Avenue Marguerite Puhl Demange",
+      "pop": "R",
+      "lat": 4925800,
+      "lng": 594100,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 2.009,
+        "sp98": 2.069
       }
     },
     {
@@ -1058,6 +1241,33 @@
       }
     },
     {
+      "id": "54920002",
+      "cp": "54920",
+      "ville": "Villers-la-Montagne",
+      "adresse": "35 route nationale",
+      "pop": "R",
+      "lat": 4947100,
+      "lng": 582100,
+      "fuels": {
+        "sp95": 2.28
+      }
+    },
+    {
+      "id": "54600004",
+      "cp": "54600",
+      "ville": "Villers-lès-Nancy",
+      "adresse": "110 Avenue Paul Muller",
+      "pop": "R",
+      "lat": 4865700,
+      "lng": 611200,
+      "fuels": {
+        "gazole": 2.028,
+        "sp98": 2.039,
+        "e10": 1.927,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "54600002",
       "cp": "54600",
       "ville": "Villers-lès-Nancy",
@@ -1084,6 +1294,21 @@
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.869
+      }
+    },
+    {
+      "id": "54300011",
+      "cp": "54300",
+      "ville": "Vitrimont",
+      "adresse": "AUTOROUTE A33 - AIRE D'ANTHELUPT",
+      "pop": "A",
+      "lat": 4859080.87327,
+      "lng": 641838.68421,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 1.989,
+        "e10": 1.879,
+        "gplc": 0.979
       }
     },
     {

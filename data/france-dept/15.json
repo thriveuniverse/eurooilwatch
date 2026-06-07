@@ -3,45 +3,45 @@
   "name": "Cantal",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 33,
+  "stationCount": 46,
   "fuels": {
     "gazole": {
-      "count": 33,
-      "mean": 2.0506,
-      "median": 2.039,
+      "count": 45,
+      "mean": 2.0457,
+      "median": 2.025,
       "min": 1.969,
       "max": 2.18
     },
     "sp95": {
-      "count": 17,
-      "mean": 2.0502,
-      "median": 2.068,
-      "min": 1.978,
-      "max": 2.13
+      "count": 27,
+      "mean": 2.045,
+      "median": 2.048,
+      "min": 1.968,
+      "max": 2.25
     },
     "sp98": {
-      "count": 19,
-      "mean": 2.0998,
-      "median": 2.095,
+      "count": 27,
+      "mean": 2.0888,
+      "median": 2.09,
       "min": 1.99,
       "max": 2.27
     },
     "e10": {
-      "count": 16,
-      "mean": 1.9848,
-      "median": 1.9835,
+      "count": 23,
+      "mean": 1.978,
+      "median": 1.982,
       "min": 1.897,
       "max": 2.17
     },
     "e85": {
-      "count": 1,
-      "mean": 0.798,
+      "count": 5,
+      "mean": 0.8064,
       "median": 0.798,
       "min": 0.798,
-      "max": 0.798
+      "max": 0.819
     },
     "gplc": {
       "count": 1,
@@ -52,6 +52,51 @@
     }
   },
   "stations": [
+    {
+      "id": "15100005",
+      "cp": "15100",
+      "ville": "Andelat",
+      "adresse": "Route d'Aurillac",
+      "pop": "R",
+      "lat": 4503800,
+      "lng": 306500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.048,
+        "sp98": 2.075,
+        "e10": 1.998,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "15000009",
+      "cp": "15000",
+      "ville": "Aurillac",
+      "adresse": "120 Avenue du Général Leclerc",
+      "pop": "R",
+      "lat": 4490916,
+      "lng": 244627,
+      "fuels": {
+        "gazole": 2.022,
+        "sp95": 1.978,
+        "sp98": 2.1,
+        "e10": 1.982
+      }
+    },
+    {
+      "id": "15000005",
+      "cp": "15000",
+      "ville": "Aurillac",
+      "adresse": "16 Avenue du 4 Septembre 1870",
+      "pop": "R",
+      "lat": 4492300,
+      "lng": 243500,
+      "fuels": {
+        "gazole": 2.079,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
     {
       "id": "15000018",
       "cp": "15000",
@@ -79,6 +124,33 @@
         "sp95": 1.978,
         "sp98": 2.1,
         "e10": 1.982
+      }
+    },
+    {
+      "id": "15000003",
+      "cp": "15000",
+      "ville": "Aurillac",
+      "adresse": "86 BLD LOUIS DAUZIER",
+      "pop": "R",
+      "lat": 4492300,
+      "lng": 242800,
+      "fuels": {
+        "gazole": 2.079,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "15000012",
+      "cp": "15000",
+      "ville": "Aurillac",
+      "adresse": "Avenue de Conthe",
+      "pop": "R",
+      "lat": 4491353.62218,
+      "lng": 242706.47024,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 2.08,
+        "sp98": 2.13
       }
     },
     {
@@ -121,6 +193,18 @@
       "fuels": {
         "gazole": 2.099,
         "sp95": 2.109
+      }
+    },
+    {
+      "id": "15190004",
+      "cp": "15190",
+      "ville": "Condat",
+      "adresse": "8 RUE SAINT NAZAIRE",
+      "pop": "R",
+      "lat": 4533883.70059,
+      "lng": 275901.62852,
+      "fuels": {
+        "gazole": 2.135
       }
     },
     {
@@ -233,6 +317,20 @@
       }
     },
     {
+      "id": "15200004",
+      "cp": "15200",
+      "ville": "Mauriac",
+      "adresse": "Avenue de la Gare",
+      "pop": "R",
+      "lat": 4522200,
+      "lng": 234000,
+      "fuels": {
+        "gazole": 2.015,
+        "sp98": 2.071,
+        "e10": 1.95
+      }
+    },
+    {
       "id": "15600001",
       "cp": "15600",
       "ville": "Maurs",
@@ -314,6 +412,20 @@
       }
     },
     {
+      "id": "15700005",
+      "cp": "15700",
+      "ville": "Pleaux",
+      "adresse": "RUE DU BOURNAT",
+      "pop": "R",
+      "lat": 4513346.491,
+      "lng": 222264.433,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 2.019,
+        "e10": 1.949
+      }
+    },
+    {
       "id": "15400004",
       "cp": "15400",
       "ville": "Riom-ès-Montagnes",
@@ -353,6 +465,33 @@
         "gazole": 2.019,
         "sp95": 2.068,
         "sp98": 2.095
+      }
+    },
+    {
+      "id": "15310001",
+      "cp": "15310",
+      "ville": "Saint-Cernin",
+      "adresse": "12 rue des Ecoles",
+      "pop": "R",
+      "lat": 4505700,
+      "lng": 242200,
+      "fuels": {
+        "sp95": 2.25
+      }
+    },
+    {
+      "id": "15600003",
+      "cp": "15600",
+      "ville": "Saint-Étienne-de-Maurs",
+      "adresse": "8 AVENUE D'AURILLAC",
+      "pop": "R",
+      "lat": 4471400,
+      "lng": 220300,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.055,
+        "e10": 1.932,
+        "e85": 0.798
       }
     },
     {
@@ -424,6 +563,21 @@
       }
     },
     {
+      "id": "15100012",
+      "cp": "15100",
+      "ville": "Saint-Georges",
+      "adresse": "ZAC du Crozatier",
+      "pop": "R",
+      "lat": 4503203.5,
+      "lng": 313041.2,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 2.048,
+        "e10": 1.998,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "15220002",
       "cp": "15220",
       "ville": "Saint-Mamet-la-Salvetat",
@@ -475,6 +629,20 @@
       }
     },
     {
+      "id": "15130005",
+      "cp": "15130",
+      "ville": "Vézac",
+      "adresse": "12 Hameau de Louradou",
+      "pop": "R",
+      "lat": 4490070.42558,
+      "lng": 251117.39255,
+      "fuels": {
+        "gazole": 2.155,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
       "id": "15800002",
       "cp": "15800",
       "ville": "Vic-sur-Cère",
@@ -500,6 +668,22 @@
         "gazole": 2.039,
         "sp98": 2.095,
         "e10": 1.995
+      }
+    },
+    {
+      "id": "15000017",
+      "cp": "15000",
+      "ville": "Ytrac",
+      "adresse": "ZAC de la Sablière",
+      "pop": "R",
+      "lat": 4489455.91392,
+      "lng": 240159.25602,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.968,
+        "sp98": 2.09,
+        "e10": 1.929,
+        "e85": 0.819
       }
     }
   ]

@@ -3,55 +3,69 @@
   "name": "Alpes-Maritimes",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 91,
+  "stationCount": 129,
   "fuels": {
     "gazole": {
-      "count": 90,
-      "mean": 2.069,
-      "median": 2.0725,
-      "min": 1.952,
+      "count": 128,
+      "mean": 2.0666,
+      "median": 2.066,
+      "min": 1.909,
       "max": 2.394
     },
     "sp95": {
-      "count": 12,
-      "mean": 2.0669,
-      "median": 2.0585,
+      "count": 18,
+      "mean": 2.0646,
+      "median": 2.039,
       "min": 1.969,
       "max": 2.28
     },
     "sp98": {
-      "count": 82,
-      "mean": 2.0852,
-      "median": 2.0665,
+      "count": 109,
+      "mean": 2.0788,
+      "median": 2.06,
       "min": 1.989,
       "max": 2.523
     },
     "e10": {
-      "count": 82,
-      "mean": 1.991,
+      "count": 115,
+      "mean": 1.9839,
       "median": 1.99,
       "min": 1.881,
       "max": 2.373
     },
     "e85": {
-      "count": 30,
-      "mean": 0.8648,
-      "median": 0.869,
+      "count": 47,
+      "mean": 0.8627,
+      "median": 0.865,
       "min": 0.753,
       "max": 0.998
     },
     "gplc": {
-      "count": 10,
-      "mean": 1.0502,
-      "median": 1.045,
+      "count": 14,
+      "mean": 1.0356,
+      "median": 1.019,
       "min": 0.955,
       "max": 1.169
     }
   },
   "stations": [
+    {
+      "id": "6160008",
+      "cp": "06160",
+      "ville": "Antibes",
+      "adresse": "122-124 Boulevard Raymond Poincaré",
+      "pop": "R",
+      "lat": 4357275.3662,
+      "lng": 710165.17559,
+      "fuels": {
+        "gazole": 2.149,
+        "sp98": 2.169,
+        "e10": 2.069
+      }
+    },
     {
       "id": "6600007",
       "cp": "06600",
@@ -91,8 +105,64 @@
       "lng": 708800,
       "fuels": {
         "gazole": 2.09,
-        "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "6600022",
+      "cp": "06600",
+      "ville": "Antibes",
+      "adresse": "2 AVENUE DE NICE",
+      "pop": "R",
+      "lat": 4358900,
+      "lng": 712000,
+      "fuels": {
+        "gazole": 2.126,
+        "e10": 1.99,
+        "e85": 0.869
+      }
+    },
+    {
+      "id": "6600008",
+      "cp": "06600",
+      "ville": "Antibes",
+      "adresse": "20 Boulevard Maréchal Leclerc",
+      "pop": "R",
+      "lat": 4357400,
+      "lng": 712400,
+      "fuels": {
+        "gazole": 2.04,
+        "sp98": 2.009,
+        "e10": 1.929,
+        "e85": 0.959
+      }
+    },
+    {
+      "id": "6600010",
+      "cp": "06600",
+      "ville": "Antibes",
+      "adresse": "236 Route de Grasse",
+      "pop": "R",
+      "lat": 4359200,
+      "lng": 710500,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 2.108,
+        "e10": 2.028
+      }
+    },
+    {
+      "id": "6600009",
+      "cp": "06600",
+      "ville": "Antibes",
+      "adresse": "29 BD GENERAL VAUTRIN",
+      "pop": "R",
+      "lat": 4358700,
+      "lng": 711900,
+      "fuels": {
+        "gazole": 2.04,
+        "sp98": 2.06,
+        "e10": 1.929
       }
     },
     {
@@ -122,6 +192,48 @@
         "sp95": 1.992,
         "sp98": 2.06,
         "e10": 1.919
+      }
+    },
+    {
+      "id": "6600024",
+      "cp": "06600",
+      "ville": "Antibes",
+      "adresse": "RD 35 1856 RTE DE GRASSE",
+      "pop": "R",
+      "lat": 4359900,
+      "lng": 708700,
+      "fuels": {
+        "gazole": 1.988,
+        "e10": 1.903,
+        "e85": 0.845
+      }
+    },
+    {
+      "id": "6310002",
+      "cp": "06310",
+      "ville": "Beaulieu-sur-Mer",
+      "adresse": "RN.559 BASSE CORNICHE",
+      "pop": "R",
+      "lat": 4370743,
+      "lng": 733406,
+      "fuels": {
+        "gazole": 2.115,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "6240004",
+      "cp": "06240",
+      "ville": "Beausoleil",
+      "adresse": "96 avenue Prince Rainier III",
+      "pop": "R",
+      "lat": 4374476.81075,
+      "lng": 742661.6781,
+      "fuels": {
+        "gazole": 2.169,
+        "sp95": 2.119,
+        "sp98": 2.189
       }
     },
     {
@@ -257,6 +369,34 @@
       }
     },
     {
+      "id": "6800018",
+      "cp": "06800",
+      "ville": "Cagnes-sur-Mer",
+      "adresse": "81 AV. DE LA GARE CD 36",
+      "pop": "R",
+      "lat": 4366223,
+      "lng": 714933,
+      "fuels": {
+        "gazole": 2.077,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "6800006",
+      "cp": "06800",
+      "ville": "Cagnes-sur-Mer",
+      "adresse": "Boulevard de la Plage",
+      "pop": "R",
+      "lat": 4365700,
+      "lng": 717400,
+      "fuels": {
+        "gazole": 2.129,
+        "sp98": 2.129,
+        "e10": 2.029
+      }
+    },
+    {
       "id": "6800020",
       "cp": "06800",
       "ville": "Cagnes-sur-Mer",
@@ -265,9 +405,7 @@
       "lat": 4365400,
       "lng": 714800,
       "fuels": {
-        "gazole": 1.97,
-        "sp98": 1.99,
-        "e10": 1.887
+        "gazole": 1.97
       }
     },
     {
@@ -339,6 +477,21 @@
       }
     },
     {
+      "id": "6400010",
+      "cp": "06400",
+      "ville": "Cannes",
+      "adresse": "57 BD DU RIOU",
+      "pop": "R",
+      "lat": 4355900,
+      "lng": 700200,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.864
+      }
+    },
+    {
       "id": "6400005",
       "cp": "06400",
       "ville": "Cannes",
@@ -350,6 +503,51 @@
         "gazole": 2.26,
         "sp95": 2.28,
         "sp98": 2.3
+      }
+    },
+    {
+      "id": "6150008",
+      "cp": "06150",
+      "ville": "Cannes",
+      "adresse": "AEROPORT CANNES MANDELIEU RN 7",
+      "pop": "R",
+      "lat": 4355000,
+      "lng": 695800,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 1.99,
+        "e10": 1.908,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "6150005",
+      "cp": "06150",
+      "ville": "Cannes",
+      "adresse": "Avenue Francis Tonner",
+      "pop": "R",
+      "lat": 4355000,
+      "lng": 697000,
+      "fuels": {
+        "gazole": 1.909,
+        "sp98": 1.99,
+        "e10": 1.925,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "6156001",
+      "cp": "06150",
+      "ville": "Cannes",
+      "adresse": "Z.I. Les Tourrades",
+      "pop": "R",
+      "lat": 4357100,
+      "lng": 695900,
+      "fuels": {
+        "gazole": 2.058,
+        "sp98": 2.053,
+        "e10": 1.941,
+        "e85": 0.81
       }
     },
     {
@@ -481,6 +679,22 @@
       }
     },
     {
+      "id": "6130001",
+      "cp": "06130",
+      "ville": "Grasse",
+      "adresse": "158 route de cannes",
+      "pop": "R",
+      "lat": 4363500,
+      "lng": 695200,
+      "fuels": {
+        "gazole": 2.024,
+        "sp98": 2.035,
+        "e10": 1.938,
+        "e85": 0.754,
+        "gplc": 0.999
+      }
+    },
+    {
       "id": "6520001",
       "cp": "06520",
       "ville": "Grasse",
@@ -492,6 +706,21 @@
         "gazole": 2.033,
         "sp98": 2.069,
         "e10": 1.947
+      }
+    },
+    {
+      "id": "6130008",
+      "cp": "06130",
+      "ville": "Grasse",
+      "adresse": "35 Avenue de la Libération",
+      "pop": "R",
+      "lat": 4364800,
+      "lng": 691500,
+      "fuels": {
+        "gazole": 2.033,
+        "sp98": 2.069,
+        "e10": 1.947,
+        "e85": 0.962
       }
     },
     {
@@ -554,6 +783,21 @@
       }
     },
     {
+      "id": "6550002",
+      "cp": "06550",
+      "ville": "La Roquette-sur-Siagne",
+      "adresse": "Avenue de la République",
+      "pop": "R",
+      "lat": 4357600,
+      "lng": 695200,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.059,
+        "e10": 1.979,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "6345001",
       "cp": "06345",
       "ville": "La Trinité",
@@ -581,6 +825,50 @@
         "sp98": 2.228,
         "e10": 2.128,
         "gplc": 1.063
+      }
+    },
+    {
+      "id": "6110004",
+      "cp": "06110",
+      "ville": "Le Cannet",
+      "adresse": "150 AVENUE DU CAMPON",
+      "pop": "R",
+      "lat": 4357500,
+      "lng": 701200,
+      "fuels": {
+        "gazole": 1.985,
+        "sp98": 2.044,
+        "e10": 1.89,
+        "e85": 0.974
+      }
+    },
+    {
+      "id": "6110011",
+      "cp": "06110",
+      "ville": "Le Cannet",
+      "adresse": "34 Avenue Franklin Roosevelt",
+      "pop": "R",
+      "lat": 4357050.9,
+      "lng": 700294.5,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 2.015,
+        "sp98": 2.03,
+        "e10": 1.945
+      }
+    },
+    {
+      "id": "6110006",
+      "cp": "06110",
+      "ville": "Le Cannet",
+      "adresse": "46 Avenue Franklin Roosevelt",
+      "pop": "R",
+      "lat": 4357300,
+      "lng": 700100,
+      "fuels": {
+        "gazole": 2.02,
+        "sp98": 2.03,
+        "e10": 1.945
       }
     },
     {
@@ -668,6 +956,35 @@
       }
     },
     {
+      "id": "6670008",
+      "cp": "06670",
+      "ville": "Levens",
+      "adresse": "2 avenue Charles David",
+      "pop": "R",
+      "lat": 4385600,
+      "lng": 722700,
+      "fuels": {
+        "gazole": 2.224,
+        "sp95": 2.269
+      }
+    },
+    {
+      "id": "6210010",
+      "cp": "06210",
+      "ville": "Mandelieu-la-Napoule",
+      "adresse": "AVENUE DE FREJUS",
+      "pop": "R",
+      "lat": 4353400,
+      "lng": 693400,
+      "fuels": {
+        "gazole": 1.983,
+        "sp98": 1.992,
+        "e10": 1.907,
+        "e85": 0.939,
+        "gplc": 0.999
+      }
+    },
+    {
       "id": "6210009",
       "cp": "06210",
       "ville": "Mandelieu-la-Napoule",
@@ -729,6 +1046,34 @@
       }
     },
     {
+      "id": "6500008",
+      "cp": "06500",
+      "ville": "Menton",
+      "adresse": "PORTE DE FRANCE",
+      "pop": "R",
+      "lat": 4378400,
+      "lng": 752100,
+      "fuels": {
+        "gazole": 2.137,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "6370002",
+      "cp": "06370",
+      "ville": "Mouans-Sartoux",
+      "adresse": "1005 chemin des Gourettes",
+      "pop": "R",
+      "lat": 4361390.093,
+      "lng": 697646.643,
+      "fuels": {
+        "gazole": 1.988,
+        "sp98": 2.037,
+        "e10": 1.943,
+        "e85": 0.754
+      }
+    },
+    {
       "id": "6250011",
       "cp": "06250",
       "ville": "Mougins",
@@ -770,6 +1115,21 @@
         "sp98": 2.049,
         "e10": 1.919,
         "e85": 0.879
+      }
+    },
+    {
+      "id": "6250010",
+      "cp": "06250",
+      "ville": "Mougins",
+      "adresse": "492 ROUTE DU CANNET",
+      "pop": "R",
+      "lat": 4358338.64141,
+      "lng": 700956.78559,
+      "fuels": {
+        "gazole": 1.972,
+        "sp98": 1.99,
+        "e10": 1.891,
+        "e85": 0.885
       }
     },
     {
@@ -858,6 +1218,20 @@
       }
     },
     {
+      "id": "6200026",
+      "cp": "06200",
+      "ville": "Nice",
+      "adresse": "217 PROMENADE DES ANGLAIS",
+      "pop": "R",
+      "lat": 4368588,
+      "lng": 723677,
+      "fuels": {
+        "gazole": 2.094,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "6300016",
       "cp": "06300",
       "ville": "Nice",
@@ -914,6 +1288,36 @@
         "sp98": 1.989,
         "e10": 1.908,
         "gplc": 0.979
+      }
+    },
+    {
+      "id": "6201001",
+      "cp": "06200",
+      "ville": "Nice",
+      "adresse": "606 boulevard du mercantour",
+      "pop": "R",
+      "lat": 4373000,
+      "lng": 718600,
+      "fuels": {
+        "gazole": 2.041,
+        "sp95": 1.987,
+        "sp98": 2.077,
+        "e10": 1.919,
+        "gplc": 0.98
+      }
+    },
+    {
+      "id": "62000015",
+      "cp": "06200",
+      "ville": "Nice",
+      "adresse": "61 AVENUE STE MARGUERITE",
+      "pop": "R",
+      "lat": 4367800,
+      "lng": 721900,
+      "fuels": {
+        "gazole": 2.149,
+        "sp98": 2.179,
+        "e10": 2.079
       }
     },
     {
@@ -982,7 +1386,6 @@
       "lng": 729300,
       "fuels": {
         "gazole": 2.25,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -1016,6 +1419,21 @@
       }
     },
     {
+      "id": "6000037",
+      "cp": "06000",
+      "ville": "Nice",
+      "adresse": "PONT VINCENT AURIOL",
+      "pop": "R",
+      "lat": 4371700,
+      "lng": 728200,
+      "fuels": {
+        "gazole": 2.089,
+        "sp98": 2.059,
+        "e10": 2.015,
+        "e85": 0.899
+      }
+    },
+    {
       "id": "6200028",
       "cp": "06200",
       "ville": "Nice",
@@ -1029,6 +1447,20 @@
         "e10": 1.99,
         "e85": 0.884,
         "gplc": 1.019
+      }
+    },
+    {
+      "id": "6670007",
+      "cp": "06670",
+      "ville": "Nice",
+      "adresse": "RD 6202",
+      "pop": "R",
+      "lat": 4376000,
+      "lng": 720000,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 1.99,
+        "e10": 1.918
       }
     },
     {
@@ -1131,6 +1563,21 @@
       }
     },
     {
+      "id": "6190008",
+      "cp": "06190",
+      "ville": "Roquebrune-Cap-Martin",
+      "adresse": "175 AVENUE PASTEUR - RD 6007",
+      "pop": "R",
+      "lat": 4376400,
+      "lng": 748100,
+      "fuels": {
+        "gazole": 2.055,
+        "sp98": 1.99,
+        "e10": 1.963,
+        "e85": 0.854
+      }
+    },
+    {
       "id": "6190011",
       "cp": "06190",
       "ville": "Roquebrune-Cap-Martin",
@@ -1142,6 +1589,20 @@
         "gazole": 2.169,
         "sp98": 2.179,
         "e10": 2.079
+      }
+    },
+    {
+      "id": "6330002",
+      "cp": "06330",
+      "ville": "Roquefort-les-Pins",
+      "adresse": "PLAN DE ROQUEFORT",
+      "pop": "R",
+      "lat": 4366800,
+      "lng": 704300,
+      "fuels": {
+        "gazole": 2.08,
+        "sp98": 2.08,
+        "e10": 1.96
       }
     },
     {
@@ -1170,6 +1631,19 @@
         "gazole": 1.999,
         "sp95": 1.999,
         "sp98": 2.11
+      }
+    },
+    {
+      "id": "6660003",
+      "cp": "06660",
+      "ville": "Saint-Étienne-de-Tinée",
+      "adresse": "route de nice",
+      "pop": "R",
+      "lat": 4422600,
+      "lng": 696000,
+      "fuels": {
+        "gazole": 2.19,
+        "sp95": 1.99
       }
     },
     {
@@ -1215,6 +1689,21 @@
         "gazole": 2.085,
         "sp98": 2.169,
         "e10": 2.079
+      }
+    },
+    {
+      "id": "6460002",
+      "cp": "06460",
+      "ville": "Saint-Vallier-de-Thiey",
+      "adresse": "CHEMIN ST ANNE",
+      "pop": "R",
+      "lat": 4369800,
+      "lng": 684100,
+      "fuels": {
+        "gazole": 2.076,
+        "sp98": 2.106,
+        "e10": 1.996,
+        "e85": 0.798
       }
     },
     {
@@ -1274,6 +1763,34 @@
       }
     },
     {
+      "id": "6560001",
+      "cp": "06560",
+      "ville": "Valbonne",
+      "adresse": "Chemin du Darbousson",
+      "pop": "R",
+      "lat": 4364500,
+      "lng": 704900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.979,
+        "sp98": 2.055
+      }
+    },
+    {
+      "id": "6220003",
+      "cp": "06220",
+      "ville": "Vallauris",
+      "adresse": "117 Vieille Route de Cannes",
+      "pop": "R",
+      "lat": 4356968,
+      "lng": 704684,
+      "fuels": {
+        "gazole": 2.078,
+        "sp98": 2.079,
+        "e10": 1.958
+      }
+    },
+    {
       "id": "6220006",
       "cp": "06220",
       "ville": "Vallauris",
@@ -1298,8 +1815,21 @@
       "lng": 706200,
       "fuels": {
         "gazole": 2.09,
-        "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "6140004",
+      "cp": "06140",
+      "ville": "Vence",
+      "adresse": "891 ROUTE DE ST PAUL",
+      "pop": "R",
+      "lat": 4371502.59799,
+      "lng": 711711.80266,
+      "fuels": {
+        "gazole": 2.132,
+        "e10": 1.99,
+        "gplc": 1.019
       }
     },
     {
@@ -1328,6 +1858,19 @@
         "gazole": 2.023,
         "sp98": 2.021,
         "e10": 1.941
+      }
+    },
+    {
+      "id": "6230003",
+      "cp": "06230",
+      "ville": "Villefranche-sur-Mer",
+      "adresse": "1280 BOULEVARD NAPOLEON 3",
+      "pop": "R",
+      "lat": 4370600,
+      "lng": 732000,
+      "fuels": {
+        "gazole": 2.115,
+        "e10": 1.99
       }
     },
     {

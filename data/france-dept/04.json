@@ -3,50 +3,50 @@
   "name": "Alpes-de-Haute-Provence",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 35,
+  "stationCount": 50,
   "fuels": {
     "gazole": {
-      "count": 35,
-      "mean": 2.062,
-      "median": 2.05,
-      "min": 1.945,
+      "count": 50,
+      "mean": 2.0543,
+      "median": 2.048,
+      "min": 1.916,
       "max": 2.25
     },
     "sp95": {
-      "count": 7,
-      "mean": 2.0663,
-      "median": 2.069,
-      "min": 2.032,
-      "max": 2.099
+      "count": 10,
+      "mean": 2.0712,
+      "median": 2.074,
+      "min": 1.99,
+      "max": 2.129
     },
     "sp98": {
-      "count": 23,
-      "mean": 2.0557,
+      "count": 35,
+      "mean": 2.0524,
       "median": 2.059,
       "min": 1.979,
       "max": 2.279
     },
     "e10": {
-      "count": 25,
-      "mean": 1.9712,
-      "median": 1.967,
+      "count": 37,
+      "mean": 1.9642,
+      "median": 1.962,
       "min": 1.868,
       "max": 2.179
     },
     "e85": {
-      "count": 9,
-      "mean": 0.8286,
+      "count": 12,
+      "mean": 0.8277,
       "median": 0.798,
       "min": 0.759,
       "max": 0.998
     },
     "gplc": {
-      "count": 5,
-      "mean": 1.0142,
-      "median": 0.989,
+      "count": 4,
+      "mean": 1.0105,
+      "median": 0.979,
       "min": 0.924,
       "max": 1.16
     }
@@ -93,6 +93,34 @@
       }
     },
     {
+      "id": "4120004",
+      "cp": "04120",
+      "ville": "Castellane",
+      "adresse": "Boulevard Saint Michel",
+      "pop": "R",
+      "lat": 4385100,
+      "lng": 650800,
+      "fuels": {
+        "gazole": 2.125,
+        "sp98": 2.139,
+        "e10": 2.059
+      }
+    },
+    {
+      "id": "4120006",
+      "cp": "04120",
+      "ville": "Castellane",
+      "adresse": "D4085 route de digne",
+      "pop": "R",
+      "lat": 4385191.76999,
+      "lng": 650789.13552,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.082,
+        "e10": 1.963
+      }
+    },
+    {
       "id": "4280001",
       "cp": "04280",
       "ville": "Céreste-en-Luberon",
@@ -104,6 +132,34 @@
         "gazole": 1.996,
         "sp98": 2.054,
         "e10": 1.967
+      }
+    },
+    {
+      "id": "4160008",
+      "cp": "04160",
+      "ville": "Château-Arnoux-Saint-Auban",
+      "adresse": "30 ROUTE NATIONALE 96",
+      "pop": "R",
+      "lat": 4407461.64721,
+      "lng": 599264.32546,
+      "fuels": {
+        "gazole": 1.967,
+        "sp98": 1.987,
+        "e10": 1.882,
+        "e85": 0.779
+      }
+    },
+    {
+      "id": "4160007",
+      "cp": "04160",
+      "ville": "Château-Arnoux-Saint-Auban",
+      "adresse": "5 AVENUE CALENDAL QUARTIER DE L'EMPRUNT",
+      "pop": "R",
+      "lat": 4410700,
+      "lng": 600500,
+      "fuels": {
+        "gazole": 1.967,
+        "e10": 1.882
       }
     },
     {
@@ -144,8 +200,7 @@
         "gazole": 1.982,
         "sp98": 1.99,
         "e10": 1.893,
-        "e85": 0.829,
-        "gplc": 1.029
+        "e85": 0.829
       }
     },
     {
@@ -190,6 +245,49 @@
         "e10": 1.962,
         "e85": 0.798,
         "gplc": 0.924
+      }
+    },
+    {
+      "id": "4320001",
+      "cp": "04320",
+      "ville": "Entrevaux",
+      "adresse": "STATION RN 4202",
+      "pop": "R",
+      "lat": 4394900,
+      "lng": 681000,
+      "fuels": {
+        "gazole": 2.129,
+        "sp98": 2.149,
+        "e10": 2.049
+      }
+    },
+    {
+      "id": "4320002",
+      "cp": "04320",
+      "ville": "Entrevaux",
+      "adresse": "ZA LE BREC 2",
+      "pop": "R",
+      "lat": 4396500,
+      "lng": 678600,
+      "fuels": {
+        "gazole": 1.916,
+        "sp98": 1.995,
+        "e10": 1.887,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "4300002",
+      "cp": "04300",
+      "ville": "Forcalquier",
+      "adresse": "Avenue des Chalus",
+      "pop": "R",
+      "lat": 4395817,
+      "lng": 579229,
+      "fuels": {
+        "gazole": 1.992,
+        "sp98": 2.079,
+        "e10": 1.959
       }
     },
     {
@@ -291,6 +389,20 @@
       }
     },
     {
+      "id": "4100010",
+      "cp": "04100",
+      "ville": "Manosque",
+      "adresse": "214 AV. FREDERIC MISTRAL",
+      "pop": "R",
+      "lat": 4382400,
+      "lng": 578800,
+      "fuels": {
+        "gazole": 2.046,
+        "sp98": 1.99,
+        "e10": 1.964
+      }
+    },
+    {
       "id": "4100012",
       "cp": "04100",
       "ville": "Manosque",
@@ -301,6 +413,19 @@
       "fuels": {
         "gazole": 2.05,
         "e10": 2
+      }
+    },
+    {
+      "id": "4100009",
+      "cp": "04100",
+      "ville": "Manosque",
+      "adresse": "Avenue Mestre Raoul Arnaud",
+      "pop": "R",
+      "lat": 4383100,
+      "lng": 577900,
+      "fuels": {
+        "gazole": 2.099,
+        "sp95": 2.129
       }
     },
     {
@@ -347,6 +472,21 @@
         "gazole": 1.945,
         "sp98": 1.99,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "4103001",
+      "cp": "04100",
+      "ville": "Manosque",
+      "adresse": "ZI St JosephBP335",
+      "pop": "R",
+      "lat": 4381800,
+      "lng": 579900,
+      "fuels": {
+        "gazole": 1.97,
+        "sp98": 1.99,
+        "e10": 1.92,
+        "e85": 0.898
       }
     },
     {
@@ -405,6 +545,20 @@
       }
     },
     {
+      "id": "4200003",
+      "cp": "04200",
+      "ville": "Peipin",
+      "adresse": "route de Sisteron",
+      "pop": "R",
+      "lat": 4414295,
+      "lng": 595926,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.069,
+        "e10": 1.959
+      }
+    },
+    {
       "id": "4500003",
       "cp": "04500",
       "ville": "Riez",
@@ -428,6 +582,20 @@
       "lng": 608700,
       "fuels": {
         "gazole": 2.23
+      }
+    },
+    {
+      "id": "4170002",
+      "cp": "04170",
+      "ville": "Saint-André-les-Alpes",
+      "adresse": "RN 202",
+      "pop": "R",
+      "lat": 4396700,
+      "lng": 650700,
+      "fuels": {
+        "gazole": 2.19,
+        "sp95": 1.99,
+        "sp98": 1.99
       }
     },
     {
@@ -467,6 +635,20 @@
         "gazole": 2.026,
         "sp98": 2.074,
         "e10": 1.96
+      }
+    },
+    {
+      "id": "4200007",
+      "cp": "04200",
+      "ville": "Sisteron",
+      "adresse": "10 AVENUE DE LA LIBERATION",
+      "pop": "R",
+      "lat": 4419200,
+      "lng": 594500,
+      "fuels": {
+        "gazole": 1.967,
+        "sp98": 1.987,
+        "e10": 1.882
       }
     },
     {
@@ -512,6 +694,33 @@
         "sp95": 2.069,
         "sp98": 2.079,
         "e10": 2.029
+      }
+    },
+    {
+      "id": "4210006",
+      "cp": "04210",
+      "ville": "Valensole",
+      "adresse": "RTE DE MANOSQUE",
+      "pop": "R",
+      "lat": 4383600,
+      "lng": 597700,
+      "fuels": {
+        "gazole": 1.998,
+        "sp98": 2.095,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "4210004",
+      "cp": "04210",
+      "ville": "Valensole",
+      "adresse": "Rue des Tapis",
+      "pop": "R",
+      "lat": 4383800,
+      "lng": 598700,
+      "fuels": {
+        "gazole": 2.099,
+        "sp95": 2.129
       }
     },
     {

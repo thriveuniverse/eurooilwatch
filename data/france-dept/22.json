@@ -3,52 +3,52 @@
   "name": "Côtes-d'Armor",
   "regionCode": "BRE",
   "regionName": "Bretagne",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 72,
+  "stationCount": 109,
   "fuels": {
     "gazole": {
-      "count": 72,
-      "mean": 2.0033,
-      "median": 1.987,
+      "count": 109,
+      "mean": 2.0055,
+      "median": 1.989,
       "min": 1.949,
-      "max": 2.201
+      "max": 2.239
     },
     "sp95": {
-      "count": 28,
-      "mean": 2.0037,
-      "median": 1.986,
+      "count": 36,
+      "mean": 1.9991,
+      "median": 1.9805,
       "min": 1.87,
       "max": 2.45
     },
     "sp98": {
-      "count": 53,
-      "mean": 2.0374,
+      "count": 84,
+      "mean": 2.0397,
       "median": 2.02,
       "min": 1.979,
       "max": 2.51
     },
     "e10": {
-      "count": 49,
-      "mean": 1.9265,
+      "count": 79,
+      "mean": 1.9366,
       "median": 1.929,
       "min": 1.873,
-      "max": 1.999
+      "max": 2.149
     },
     "e85": {
-      "count": 9,
-      "mean": 0.8354,
-      "median": 0.827,
+      "count": 20,
+      "mean": 0.8307,
+      "median": 0.821,
       "min": 0.798,
-      "max": 0.899
+      "max": 0.965
     },
     "gplc": {
-      "count": 6,
-      "mean": 1.0252,
-      "median": 1.024,
+      "count": 8,
+      "mean": 1.0336,
+      "median": 1.029,
       "min": 0.999,
-      "max": 1.07
+      "max": 1.089
     }
   },
   "stations": [
@@ -64,6 +64,20 @@
         "gazole": 1.989,
         "sp95": 1.949,
         "sp98": 1.999
+      }
+    },
+    {
+      "id": "22650001",
+      "cp": "22650",
+      "ville": "Beaussais-sur-Mer",
+      "adresse": "ROUTE DE ST JACUT",
+      "pop": "R",
+      "lat": 4857700,
+      "lng": -215200,
+      "fuels": {
+        "gazole": 2.067,
+        "sp98": 1.99,
+        "e10": 1.95
       }
     },
     {
@@ -138,6 +152,20 @@
       }
     },
     {
+      "id": "22250001",
+      "cp": "22250",
+      "ville": "Broons",
+      "adresse": "Rue du Pilaga",
+      "pop": "R",
+      "lat": 4831500,
+      "lng": -225000,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.949,
+        "sp98": 1.989
+      }
+    },
+    {
       "id": "22250002",
       "cp": "22250",
       "ville": "Broons",
@@ -194,6 +222,19 @@
       }
     },
     {
+      "id": "22100009",
+      "cp": "22100",
+      "ville": "Dinan",
+      "adresse": "52 RUE DE BREST",
+      "pop": "R",
+      "lat": 4845300,
+      "lng": -205700,
+      "fuels": {
+        "gazole": 2.04,
+        "e85": 0.828
+      }
+    },
+    {
       "id": "22104001",
       "cp": "22100",
       "ville": "Dinan",
@@ -205,6 +246,21 @@
         "gazole": 1.974,
         "sp95": 1.974,
         "sp98": 2.02
+      }
+    },
+    {
+      "id": "22430001",
+      "cp": "22430",
+      "ville": "Erquy",
+      "adresse": "LES JEANNETTES",
+      "pop": "R",
+      "lat": 4862200,
+      "lng": -243900,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.019,
+        "e10": 1.939,
+        "e85": 0.798
       }
     },
     {
@@ -302,6 +358,22 @@
       }
     },
     {
+      "id": "22120007",
+      "cp": "22120",
+      "ville": "Hillion",
+      "adresse": "RN 12 LA VILLE CARIO",
+      "pop": "R",
+      "lat": 4851453.74,
+      "lng": -266667.60186,
+      "fuels": {
+        "gazole": 2.239,
+        "sp98": 2.239,
+        "e10": 2.139,
+        "e85": 0.965,
+        "gplc": 1.089
+      }
+    },
+    {
       "id": "22400001",
       "cp": "22400",
       "ville": "Lamballe-Armor",
@@ -314,6 +386,20 @@
         "sp95": 1.949,
         "sp98": 1.999,
         "e10": 1.879
+      }
+    },
+    {
+      "id": "22400005",
+      "cp": "22400",
+      "ville": "Lamballe-Armor",
+      "adresse": "25 avenue Georges Clemenceau",
+      "pop": "R",
+      "lat": 4846200,
+      "lng": -250400,
+      "fuels": {
+        "gazole": 1.98,
+        "sp98": 1.999,
+        "e10": 1.889
       }
     },
     {
@@ -346,6 +432,20 @@
       }
     },
     {
+      "id": "22400010",
+      "cp": "22400",
+      "ville": "Lamballe-Armor",
+      "adresse": "708 rue du Verger",
+      "pop": "R",
+      "lat": 4853188.13981,
+      "lng": -257770.83107,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.099,
+        "e10": 1.92
+      }
+    },
+    {
       "id": "22140003",
       "cp": "22140",
       "ville": "Landebaëron",
@@ -359,6 +459,22 @@
       }
     },
     {
+      "id": "22360001",
+      "cp": "22360",
+      "ville": "Langueux",
+      "adresse": "Rue Jules Verne",
+      "pop": "R",
+      "lat": 4849600,
+      "lng": -272800,
+      "fuels": {
+        "gazole": 1.996,
+        "sp95": 1.961,
+        "sp98": 2.03,
+        "e10": 1.917,
+        "e85": 0.83
+      }
+    },
+    {
       "id": "22302001",
       "cp": "22300",
       "ville": "Lannion",
@@ -369,6 +485,20 @@
       "fuels": {
         "gazole": 1.967,
         "e10": 1.884
+      }
+    },
+    {
+      "id": "22300002",
+      "cp": "22300",
+      "ville": "Lannion",
+      "adresse": "Route de Guingamp",
+      "pop": "R",
+      "lat": 4872639.682,
+      "lng": -344608.82,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.979,
+        "e10": 1.929
       }
     },
     {
@@ -399,6 +529,34 @@
         "sp98": 1.989,
         "e10": 1.929,
         "e85": 0.798
+      }
+    },
+    {
+      "id": "22300007",
+      "cp": "22300",
+      "ville": "Lannion",
+      "adresse": "RUE JEAN PAUL SARTRE",
+      "pop": "R",
+      "lat": 4874500,
+      "lng": -347700,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.005,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "22100011",
+      "cp": "22100",
+      "ville": "Lanvallay",
+      "adresse": "16 route de Normandie",
+      "pop": "R",
+      "lat": 4846070.66334,
+      "lng": -201516.70081,
+      "fuels": {
+        "gazole": 2.179,
+        "sp98": 2.239,
+        "e10": 2.149
       }
     },
     {
@@ -445,6 +603,32 @@
       }
     },
     {
+      "id": "22740001",
+      "cp": "22740",
+      "ville": "Lézardrieux",
+      "adresse": "12 ZA de Kerscavet",
+      "pop": "R",
+      "lat": 4878276.6,
+      "lng": -312317.9,
+      "fuels": {
+        "gazole": 1.974
+      }
+    },
+    {
+      "id": "22540002",
+      "cp": "22540",
+      "ville": "Louargat",
+      "adresse": "Chemin de l'Oratoire",
+      "pop": "R",
+      "lat": 4857000,
+      "lng": -333900,
+      "fuels": {
+        "gazole": 2.096,
+        "sp98": 2.169,
+        "e10": 2.048
+      }
+    },
+    {
       "id": "22600008",
       "cp": "22600",
       "ville": "Loudéac",
@@ -486,6 +670,22 @@
       }
     },
     {
+      "id": "22600006",
+      "cp": "22600",
+      "ville": "Loudéac",
+      "adresse": "PARC ACTIVITÉS DE KER D'HERVÉ",
+      "pop": "R",
+      "lat": 4819337.64835,
+      "lng": -275740.38781,
+      "fuels": {
+        "gazole": 1.96,
+        "sp95": 2.04,
+        "e10": 1.88,
+        "e85": 0.818,
+        "gplc": 1.029
+      }
+    },
+    {
       "id": "22550001",
       "cp": "22550",
       "ville": "Matignon",
@@ -497,6 +697,35 @@
         "gazole": 1.965,
         "sp98": 2.099,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "22230004",
+      "cp": "22230",
+      "ville": "Merdrignac",
+      "adresse": "2 Pont de L'Hyvet",
+      "pop": "R",
+      "lat": 4819100,
+      "lng": -240400,
+      "fuels": {
+        "gazole": 2.046,
+        "sp98": 1.99,
+        "e10": 1.964
+      }
+    },
+    {
+      "id": "22230003",
+      "cp": "22230",
+      "ville": "Merdrignac",
+      "adresse": "Rue Chanoine le Texier",
+      "pop": "R",
+      "lat": 4819538,
+      "lng": -241743,
+      "fuels": {
+        "gazole": 2.015,
+        "sp95": 2.017,
+        "sp98": 2.161,
+        "e10": 2.025
       }
     },
     {
@@ -544,6 +773,20 @@
       }
     },
     {
+      "id": "22500001",
+      "cp": "22500",
+      "ville": "Paimpol",
+      "adresse": "RUE RAYMOND PELLIER",
+      "pop": "R",
+      "lat": 4877300,
+      "lng": -303900,
+      "fuels": {
+        "gazole": 1.966,
+        "sp98": 2.044,
+        "e10": 1.928
+      }
+    },
+    {
       "id": "22500003",
       "cp": "22500",
       "ville": "Paimpol",
@@ -569,6 +812,21 @@
         "gazole": 1.989,
         "sp95": 1.969,
         "sp98": 2.029
+      }
+    },
+    {
+      "id": "22700004",
+      "cp": "22700",
+      "ville": "Perros-Guirec",
+      "adresse": "6 Rue de Kervilzic",
+      "pop": "R",
+      "lat": 4880519.53227,
+      "lng": -345977.00544,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 1.979,
+        "e10": 1.929,
+        "e85": 0.799
       }
     },
     {
@@ -615,6 +873,21 @@
       }
     },
     {
+      "id": "22980002",
+      "cp": "22980",
+      "ville": "Plélan-le-Petit",
+      "adresse": "8 Rue des Rouairies",
+      "pop": "R",
+      "lat": 4843200,
+      "lng": -221700,
+      "fuels": {
+        "gazole": 2.005,
+        "sp98": 2.014,
+        "e10": 1.905,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "22210001",
       "cp": "22210",
       "ville": "Plémet",
@@ -629,6 +902,20 @@
       }
     },
     {
+      "id": "22640003",
+      "cp": "22640",
+      "ville": "Plénée-Jugon",
+      "adresse": "13 Rue de la République",
+      "pop": "R",
+      "lat": 4836786.18791,
+      "lng": -239491.06209,
+      "fuels": {
+        "gazole": 1.966,
+        "sp98": 2.029,
+        "e10": 1.929
+      }
+    },
+    {
       "id": "22370001",
       "cp": "22370",
       "ville": "Pléneuf-Val-André",
@@ -640,6 +927,21 @@
         "gazole": 1.979,
         "sp95": 1.949,
         "e10": 1.905
+      }
+    },
+    {
+      "id": "22190001",
+      "cp": "22190",
+      "ville": "Plérin",
+      "adresse": "Zac du Plateau",
+      "pop": "R",
+      "lat": 4853400,
+      "lng": -276000,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 1.99,
+        "e10": 1.895,
+        "e85": 0.808
       }
     },
     {
@@ -671,6 +973,20 @@
       }
     },
     {
+      "id": "22310001",
+      "cp": "22310",
+      "ville": "Plestin-les-Grèves",
+      "adresse": "RUE DES CLOS",
+      "pop": "R",
+      "lat": 4865700,
+      "lng": -363300,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.049,
+        "e10": 1.935
+      }
+    },
+    {
       "id": "22610001",
       "cp": "22610",
       "ville": "Pleubian",
@@ -682,6 +998,20 @@
         "gazole": 2.058,
         "sp95": 1.998,
         "sp98": 2.098
+      }
+    },
+    {
+      "id": "22150005",
+      "cp": "22150",
+      "ville": "Plœuc-L'Hermitage",
+      "adresse": "35 RUE DE MONTIFAULT",
+      "pop": "R",
+      "lat": 4835079.047,
+      "lng": -276064.927,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.029,
+        "e10": 1.929
       }
     },
     {
@@ -736,6 +1066,32 @@
         "gazole": 1.985,
         "sp95": 1.979,
         "sp98": 2.019
+      }
+    },
+    {
+      "id": "22470001",
+      "cp": "22470",
+      "ville": "Plouézec",
+      "adresse": "19 Route de Saint Brieuc",
+      "pop": "R",
+      "lat": 4874646.12707,
+      "lng": -298230.67889,
+      "fuels": {
+        "gazole": 1.984,
+        "sp98": 2.029,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "22440004",
+      "cp": "22440",
+      "ville": "Ploufragan",
+      "adresse": "29 AVENUE DES CHATELETS",
+      "pop": "R",
+      "lat": 4846800.5,
+      "lng": -279405.4,
+      "fuels": {
+        "gazole": 2.029
       }
     },
     {
@@ -794,6 +1150,20 @@
       }
     },
     {
+      "id": "22300005",
+      "cp": "22300",
+      "ville": "Ploulec'h",
+      "adresse": "Zone Commerciale BEL AIR / Axe Lannion-Morlaix D786",
+      "pop": "R",
+      "lat": 4872100,
+      "lng": -348200,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 1.999,
+        "e10": 1.929
+      }
+    },
+    {
       "id": "22203001",
       "cp": "22200",
       "ville": "Ploumagoar",
@@ -824,6 +1194,21 @@
       }
     },
     {
+      "id": "22810002",
+      "cp": "22810",
+      "ville": "Plounévez-Moëdec",
+      "adresse": "RN 12",
+      "pop": "R",
+      "lat": 4854944,
+      "lng": -345286,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 1.99,
+        "e10": 1.967,
+        "e85": 0.856
+      }
+    },
+    {
       "id": "22240001",
       "cp": "22240",
       "ville": "Plurien",
@@ -851,6 +1236,21 @@
       }
     },
     {
+      "id": "22590001",
+      "cp": "22590",
+      "ville": "Pordic",
+      "adresse": "ZONE DE KERIBET",
+      "pop": "R",
+      "lat": 4856208.73349,
+      "lng": -281178.84065,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 1.999,
+        "e10": 1.899,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "22120005",
       "cp": "22120",
       "ville": "Quessoy",
@@ -862,6 +1262,21 @@
         "gazole": 1.979,
         "sp98": 2.034,
         "e10": 1.937
+      }
+    },
+    {
+      "id": "22100001",
+      "cp": "22100",
+      "ville": "Quévert",
+      "adresse": "C CIAL LE CHENE",
+      "pop": "R",
+      "lat": 4846400,
+      "lng": -208700,
+      "fuels": {
+        "gazole": 1.974,
+        "sp95": 1.974,
+        "sp98": 2.02,
+        "e10": 1.954
       }
     },
     {
@@ -891,6 +1306,19 @@
         "sp98": 2.019,
         "e10": 1.899,
         "gplc": 1.035
+      }
+    },
+    {
+      "id": "22400011",
+      "cp": "22400",
+      "ville": "Saint-Alban",
+      "adresse": "11 Rue des Croix Roses",
+      "pop": "R",
+      "lat": 4855900,
+      "lng": -254400,
+      "fuels": {
+        "gazole": 2.048,
+        "e10": 1.965
       }
     },
     {
@@ -951,6 +1379,20 @@
       }
     },
     {
+      "id": "22350006",
+      "cp": "22350",
+      "ville": "Saint-Jouan-de-l'Isle",
+      "adresse": "ZA de Kergoët",
+      "pop": "A",
+      "lat": 4827405.06203,
+      "lng": -218640.86188,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.099,
+        "e10": 1.989
+      }
+    },
+    {
       "id": "22130001",
       "cp": "22130",
       "ville": "Saint-Lormel",
@@ -962,6 +1404,20 @@
         "gazole": 1.969,
         "sp98": 2.02,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "22480001",
+      "cp": "22480",
+      "ville": "Saint-Nicolas-du-Pélem",
+      "adresse": "CROAS DOM HERRY",
+      "pop": "R",
+      "lat": 4830669.76252,
+      "lng": -316397.73754,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.979,
+        "sp98": 2.009
       }
     },
     {
@@ -979,6 +1435,35 @@
       }
     },
     {
+      "id": "22410001",
+      "cp": "22410",
+      "ville": "Saint-Quay-Portrieux",
+      "adresse": "Rue Pierre Loti",
+      "pop": "R",
+      "lat": 4865863.00721,
+      "lng": -285839.47609,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.108,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "22100004",
+      "cp": "22100",
+      "ville": "Taden",
+      "adresse": "Le Pré des Landes",
+      "pop": "R",
+      "lat": 4847751.4863,
+      "lng": -204293.39389,
+      "fuels": {
+        "gazole": 1.998,
+        "sp98": 2.026,
+        "e10": 1.939,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "22560001",
       "cp": "22560",
       "ville": "Trébeurden",
@@ -993,6 +1478,20 @@
       }
     },
     {
+      "id": "22730001",
+      "cp": "22730",
+      "ville": "Trégastel",
+      "adresse": "RUE POUL PALUD",
+      "pop": "R",
+      "lat": 4882400,
+      "lng": -349800,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.969,
+        "sp98": 1.979
+      }
+    },
+    {
       "id": "22950003",
       "cp": "22950",
       "ville": "Trégueux",
@@ -1004,6 +1503,20 @@
         "gazole": 2.04,
         "sp95": 2.01,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "22220001",
+      "cp": "22220",
+      "ville": "Tréguier",
+      "adresse": "BL JEAN GUEHENNO",
+      "pop": "R",
+      "lat": 4877800,
+      "lng": -323200,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.975,
+        "sp98": 2.028
       }
     },
     {
@@ -1029,7 +1542,6 @@
       "lng": -282700,
       "fuels": {
         "gazole": 2.092,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -1045,6 +1557,20 @@
         "gazole": 1.969,
         "sp98": 2.02,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "22120001",
+      "cp": "22120",
+      "ville": "Yffiniac",
+      "adresse": "C. C. DE LA BAIE",
+      "pop": "R",
+      "lat": 4848100,
+      "lng": -267378,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.016,
+        "e10": 1.937
       }
     },
     {

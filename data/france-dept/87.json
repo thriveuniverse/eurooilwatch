@@ -3,49 +3,49 @@
   "name": "Haute-Vienne",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-07T08:18:36.160Z",
+  "asOf": "2026-06-07T18:02:29.586Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 59,
+  "stationCount": 83,
   "fuels": {
     "gazole": {
-      "count": 56,
-      "mean": 2.0242,
+      "count": 80,
+      "mean": 2.0369,
       "median": 1.999,
       "min": 1.914,
-      "max": 2.215
+      "max": 2.391
     },
     "sp95": {
-      "count": 22,
-      "mean": 2.0189,
-      "median": 1.9995,
+      "count": 32,
+      "mean": 2.0226,
+      "median": 1.999,
       "min": 1.954,
-      "max": 2.19
+      "max": 2.219
     },
     "sp98": {
-      "count": 47,
-      "mean": 2.0843,
-      "median": 2.069,
+      "count": 64,
+      "mean": 2.0926,
+      "median": 2.0715,
       "min": 1.984,
-      "max": 2.29
+      "max": 2.524
     },
     "e10": {
-      "count": 44,
-      "mean": 1.9876,
+      "count": 59,
+      "mean": 1.9971,
       "median": 1.965,
-      "min": 1.875,
-      "max": 2.2
+      "min": 1.909,
+      "max": 2.374
     },
     "e85": {
-      "count": 18,
-      "mean": 0.8149,
-      "median": 0.804,
+      "count": 23,
+      "mean": 0.8159,
+      "median": 0.799,
       "min": 0.769,
       "max": 0.889
     },
     "gplc": {
-      "count": 5,
-      "mean": 1.0342,
+      "count": 7,
+      "mean": 1.0496,
       "median": 0.999,
       "min": 0.95,
       "max": 1.224
@@ -196,6 +196,35 @@
       }
     },
     {
+      "id": "87230003",
+      "cp": "87230",
+      "ville": "Châlus",
+      "adresse": "62, Avenue Jean Jaurès",
+      "pop": "R",
+      "lat": 4566100,
+      "lng": 98600,
+      "fuels": {
+        "gazole": 2.169,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "87130001",
+      "cp": "87130",
+      "ville": "Châteauneuf-la-Forêt",
+      "adresse": "LE ROUCHILLOUX",
+      "pop": "R",
+      "lat": 4570942,
+      "lng": 159823,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.099,
+        "e10": 2.03,
+        "e85": 0.799
+      }
+    },
+    {
       "id": "87290001",
       "cp": "87290",
       "ville": "Châteauponsac",
@@ -219,6 +248,20 @@
       "lng": 127200,
       "fuels": {
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "87270005",
+      "cp": "87270",
+      "ville": "Couzeix",
+      "adresse": "187 Avenue de Limoges",
+      "pop": "R",
+      "lat": 4587900,
+      "lng": 123800,
+      "fuels": {
+        "gazole": 2.011,
+        "sp98": 2.089,
+        "e10": 1.949
       }
     },
     {
@@ -248,6 +291,32 @@
         "sp95": 1.959,
         "sp98": 2.039,
         "e10": 1.909
+      }
+    },
+    {
+      "id": "87120003",
+      "cp": "87120",
+      "ville": "Eymoutiers",
+      "adresse": "1 Promenade des Sports",
+      "pop": "R",
+      "lat": 4573900,
+      "lng": 173900,
+      "fuels": {
+        "gazole": 2.19
+      }
+    },
+    {
+      "id": "87120005",
+      "cp": "87120",
+      "ville": "Eymoutiers",
+      "adresse": "1, rue Léon Jouhaud - Claud",
+      "pop": "R",
+      "lat": 4573821.5265,
+      "lng": 173525.01558,
+      "fuels": {
+        "gazole": 2.025,
+        "sp98": 2.074,
+        "e10": 1.962
       }
     },
     {
@@ -308,6 +377,34 @@
       }
     },
     {
+      "id": "87410002",
+      "cp": "87410",
+      "ville": "Le Palais-sur-Vienne",
+      "adresse": "Avenue de Limoges",
+      "pop": "R",
+      "lat": 4585600.17,
+      "lng": 130939.86,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.049,
+        "e10": 1.965
+      }
+    },
+    {
+      "id": "87100012",
+      "cp": "87100",
+      "ville": "Limoges",
+      "adresse": "100 boulevard de la borie",
+      "pop": "R",
+      "lat": 4583800,
+      "lng": 123200,
+      "fuels": {
+        "gazole": 2.119,
+        "e10": 2.089,
+        "e85": 0.855
+      }
+    },
+    {
       "id": "87000024",
       "cp": "87100",
       "ville": "Limoges",
@@ -358,9 +455,7 @@
       "lat": 4590700,
       "lng": 129700,
       "fuels": {
-        "gazole": 1.966,
-        "sp98": 1.99,
-        "e10": 1.875
+        "gazole": 1.966
       }
     },
     {
@@ -373,6 +468,20 @@
       "lng": 126600,
       "fuels": {
         "e85": 0.824
+      }
+    },
+    {
+      "id": "87000028",
+      "cp": "87000",
+      "ville": "Limoges",
+      "adresse": "26 RUE WAGNER",
+      "pop": "R",
+      "lat": 4581845.7256,
+      "lng": 124929.94847,
+      "fuels": {
+        "gazole": 1.987,
+        "sp95": 1.999,
+        "e10": 1.918
       }
     },
     {
@@ -401,6 +510,20 @@
         "gazole": 1.985,
         "sp98": 2.04,
         "e10": 1.965
+      }
+    },
+    {
+      "id": "87000030",
+      "cp": "87000",
+      "ville": "Limoges",
+      "adresse": "38, Avenue des Casseaux",
+      "pop": "R",
+      "lat": 4583700,
+      "lng": 127800,
+      "fuels": {
+        "gazole": 1.987,
+        "sp98": 2.04,
+        "e10": 1.916
       }
     },
     {
@@ -507,6 +630,21 @@
       }
     },
     {
+      "id": "87100006",
+      "cp": "87100",
+      "ville": "Limoges",
+      "adresse": "Avenue Émile Labussière",
+      "pop": "R",
+      "lat": 4584300,
+      "lng": 125200,
+      "fuels": {
+        "gazole": 2.024,
+        "sp98": 2.085,
+        "e10": 1.968,
+        "e85": 0.779
+      }
+    },
+    {
       "id": "87100010",
       "cp": "87100",
       "ville": "Limoges",
@@ -516,8 +654,6 @@
       "lng": 124194.30256,
       "fuels": {
         "gazole": 2.057,
-        "sp98": 1.99,
-        "e10": 1.966,
         "e85": 0.836
       }
     },
@@ -625,6 +761,20 @@
       }
     },
     {
+      "id": "87800002",
+      "cp": "87800",
+      "ville": "Nexon",
+      "adresse": "route de la meyze",
+      "pop": "R",
+      "lat": 4567929,
+      "lng": 118634,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.089,
+        "e10": 1.979
+      }
+    },
+    {
       "id": "87510001",
       "cp": "87510",
       "ville": "Nieul",
@@ -650,6 +800,34 @@
         "gazole": 1.949,
         "sp95": 2.079,
         "sp98": 2.099
+      }
+    },
+    {
+      "id": "87150005",
+      "cp": "87150",
+      "ville": "Oradour-sur-Vayres",
+      "adresse": "1 RUE JEAN SEGUREL",
+      "pop": "R",
+      "lat": 4573200,
+      "lng": 87000,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.099,
+        "sp98": 2.159
+      }
+    },
+    {
+      "id": "87350002",
+      "cp": "87350",
+      "ville": "Panazol",
+      "adresse": "5 Avenue du Président Carnot",
+      "pop": "R",
+      "lat": 4583000,
+      "lng": 129700,
+      "fuels": {
+        "gazole": 2.159,
+        "sp95": 1.99,
+        "sp98": 1.99
       }
     },
     {
@@ -722,6 +900,21 @@
       }
     },
     {
+      "id": "87600004",
+      "cp": "87600",
+      "ville": "Rochechouart",
+      "adresse": "ZAC de la fabrique, Rue de la Gare",
+      "pop": "R",
+      "lat": 4583300,
+      "lng": 83100,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.099,
+        "e10": 1.999,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "87380003",
       "cp": "87380",
       "ville": "Saint-Germain-les-Belles",
@@ -748,6 +941,35 @@
         "e10": 1.989,
         "e85": 0.849,
         "gplc": 0.999
+      }
+    },
+    {
+      "id": "87200001",
+      "cp": "87200",
+      "ville": "Saint-Junien",
+      "adresse": "Av. Nelson Mandela",
+      "pop": "R",
+      "lat": 4589700,
+      "lng": 92000,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.099,
+        "e10": 1.959
+      }
+    },
+    {
+      "id": "87200003",
+      "cp": "87200",
+      "ville": "Saint-Junien",
+      "adresse": "Avenue d'Oradour sur Glane",
+      "pop": "R",
+      "lat": 4589600,
+      "lng": 91500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.979,
+        "sp98": 1.999,
+        "e10": 1.959
       }
     },
     {
@@ -808,6 +1030,21 @@
       }
     },
     {
+      "id": "87440001",
+      "cp": "87440",
+      "ville": "Saint-Mathieu",
+      "adresse": "Route de Rochechouart",
+      "pop": "R",
+      "lat": 4571000,
+      "lng": 76300,
+      "fuels": {
+        "gazole": 1.965,
+        "sp95": 1.989,
+        "sp98": 2.042,
+        "e10": 1.965
+      }
+    },
+    {
       "id": "87800004",
       "cp": "87800",
       "ville": "Saint-Maurice-les-Brousses",
@@ -847,6 +1084,64 @@
         "gazole": 2.099,
         "sp95": 2.129,
         "e10": 2.089
+      }
+    },
+    {
+      "id": "87160008",
+      "cp": "87160",
+      "ville": "Saint-Sulpice-les-Feuilles",
+      "adresse": "AUT A 20  AIRE DE BOISMANDE",
+      "pop": "A",
+      "lat": 4631379.4,
+      "lng": 142028.3,
+      "fuels": {
+        "gazole": 2.391,
+        "sp98": 2.524,
+        "e10": 2.374,
+        "gplc": 1.113
+      }
+    },
+    {
+      "id": "87160002",
+      "cp": "87160",
+      "ville": "Saint-Sulpice-les-Feuilles",
+      "adresse": "AUTOROUTE A 20",
+      "pop": "A",
+      "lat": 4631300,
+      "lng": 141900,
+      "fuels": {
+        "gazole": 2.204,
+        "sp98": 2.228,
+        "e10": 2.128,
+        "gplc": 1.063
+      }
+    },
+    {
+      "id": "87500005",
+      "cp": "87500",
+      "ville": "Saint-Yrieix-la-Perche",
+      "adresse": "Avenue de Périgueux",
+      "pop": "R",
+      "lat": 4550400,
+      "lng": 120100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.065,
+        "sp98": 2.085
+      }
+    },
+    {
+      "id": "87500003",
+      "cp": "87500",
+      "ville": "Saint-Yrieix-la-Perche",
+      "adresse": "AVENUE JEAN PIERRE TIMBAUT",
+      "pop": "R",
+      "lat": 4551600,
+      "lng": 119900,
+      "fuels": {
+        "gazole": 2.159,
+        "sp95": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -891,6 +1186,48 @@
         "gazole": 1.954,
         "sp98": 2.03,
         "e10": 2.04
+      }
+    },
+    {
+      "id": "87320001",
+      "cp": "87320",
+      "ville": "Val-d'Oire-et-Gartempe",
+      "adresse": "23 BEAULIEU",
+      "pop": "R",
+      "lat": 4623200,
+      "lng": 89800,
+      "fuels": {
+        "gazole": 2.189,
+        "sp95": 2.219
+      }
+    },
+    {
+      "id": "87430003",
+      "cp": "87430",
+      "ville": "Verneuil-sur-Vienne",
+      "adresse": "les betoulles",
+      "pop": "R",
+      "lat": 4585600,
+      "lng": 114600,
+      "fuels": {
+        "gazole": 1.988,
+        "sp95": 1.989,
+        "sp98": 2.029
+      }
+    },
+    {
+      "id": "87430004",
+      "cp": "87430",
+      "ville": "Verneuil-sur-Vienne",
+      "adresse": "RN 141",
+      "pop": "R",
+      "lat": 4584680.8624,
+      "lng": 117204.99263,
+      "fuels": {
+        "gazole": 2.119,
+        "sp98": 2.179,
+        "e10": 2.069,
+        "e85": 0.865
       }
     }
   ]
