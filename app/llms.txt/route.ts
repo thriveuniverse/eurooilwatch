@@ -52,7 +52,7 @@ export async function GET() {
 
 > Independent EU fuel reserve and price intelligence. Daily-refreshed dashboard built on official Eurostat and European Commission data, covering all 27 member states.
 
-EuroOilWatch tracks EU-27 country fuel reserves, weekly pump prices from the EC Oil Bulletin, Brent crude, TTF / Henry Hub gas + AGSI storage, ARA hub commercial stocks, jet fuel days-of-cover by country, refinery thermal anomalies, and supply-route risk. All data traces back to named institutional sources. Free public API for programmatic access — see below.
+EuroOilWatch tracks EU-27 country fuel reserves, weekly pump prices from the EC Oil Bulletin, station-level pump prices for France, Spain and Italy (national open-data feeds, refreshed twice daily), Brent crude, TTF / Henry Hub gas + AGSI storage, ARA hub commercial stocks, jet fuel days-of-cover by country, refinery thermal anomalies, and supply-route risk. All data traces back to named institutional sources. Free public API for programmatic access — see below.
 
 ## Current snapshot (auto-refreshes daily; this page generated ${today})
 
@@ -97,6 +97,9 @@ Free, read-only JSON. CORS-enabled, no key required.
 
 - Dashboard:           https://eurooilwatch.com
 - EU fuel prices:      https://eurooilwatch.com/prices
+- France station prices: https://eurooilwatch.com/country/fr
+- Spain station prices:  https://eurooilwatch.com/country/es
+- Italy station prices:  https://eurooilwatch.com/country/it
 - Global supply routes: https://eurooilwatch.com/supply
 - Gas Tracker:         https://eurooilwatch.com/gas
 - Jet Fuel Tracker:    https://eurooilwatch.com/jet
@@ -107,6 +110,9 @@ Free, read-only JSON. CORS-enabled, no key required.
 
 - Eurostat (nrg_stk_oilm): monthly oil stocks by member state
 - European Commission DG Energy: Weekly Oil Bulletin (consumer prices)
+- France: data.gouv.fr prix-carburants (instantaneous station-level prices)
+- Spain: Geoportal de Hidrocarburos, Ministerio para la Transición Ecológica (station-level prices)
+- Italy: MIMIT Osservaprezzi Carburanti (station-level prices)
 - Stooq: Brent front-month futures (cb.f)
 - U.S. EIA: Europe Brent Spot Price FOB daily series (RBRTE) for historical context
 - Yahoo Finance: TTF=F (Dutch TTF gas) and NG=F (Henry Hub)
