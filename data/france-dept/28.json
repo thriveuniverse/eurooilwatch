@@ -3,42 +3,42 @@
   "name": "Eure-et-Loir",
   "regionCode": "CVL",
   "regionName": "Centre-Val de Loire",
-  "asOf": "2026-06-06T18:04:49.161Z",
+  "asOf": "2026-06-07T08:18:36.160Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 72,
+  "stationCount": 53,
   "fuels": {
     "gazole": {
-      "count": 72,
-      "mean": 2.046,
-      "median": 2.0045,
-      "min": 1.918,
+      "count": 53,
+      "mean": 2.0441,
+      "median": 2.006,
+      "min": 1.934,
       "max": 2.392
     },
     "sp95": {
-      "count": 20,
-      "mean": 1.9835,
-      "median": 1.9835,
+      "count": 16,
+      "mean": 1.9904,
+      "median": 1.989,
       "min": 1.899,
       "max": 2.131
     },
     "sp98": {
-      "count": 66,
-      "mean": 2.0722,
-      "median": 2.025,
+      "count": 49,
+      "mean": 2.0669,
+      "median": 2.022,
       "min": 1.936,
       "max": 2.525
     },
     "e10": {
-      "count": 62,
-      "mean": 1.9746,
+      "count": 46,
+      "mean": 1.969,
       "median": 1.935,
       "min": 1.857,
       "max": 2.375
     },
     "e85": {
-      "count": 23,
-      "mean": 0.8212,
+      "count": 19,
+      "mean": 0.8224,
       "median": 0.798,
       "min": 0.759,
       "max": 1.005
@@ -52,21 +52,6 @@
     }
   },
   "stations": [
-    {
-      "id": "28300008",
-      "cp": "28300",
-      "ville": "Amilly",
-      "adresse": "RD 923 - ROUTE DU MANS",
-      "pop": "R",
-      "lat": 4843700,
-      "lng": 142400,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 1.99,
-        "e10": 1.885,
-        "e85": 0.825
-      }
-    },
     {
       "id": "28260005",
       "cp": "28260",
@@ -113,22 +98,6 @@
       }
     },
     {
-      "id": "28700004",
-      "cp": "28700",
-      "ville": "Auneau-Bleury-Saint-Symphorien",
-      "adresse": "Zac du Pays Alnelois",
-      "pop": "R",
-      "lat": 4847800,
-      "lng": 176800,
-      "fuels": {
-        "gazole": 1.939,
-        "sp95": 1.906,
-        "sp98": 1.969,
-        "e10": 1.865,
-        "e85": 0.769
-      }
-    },
-    {
       "id": "28330003",
       "cp": "28330",
       "ville": "Authon-du-Perche",
@@ -140,20 +109,6 @@
         "gazole": 2.089,
         "sp95": 2.079,
         "sp98": 2.169
-      }
-    },
-    {
-      "id": "28120003",
-      "cp": "28120",
-      "ville": "Bailleau-le-Pin",
-      "adresse": "Rue de Beauce",
-      "pop": "R",
-      "lat": 4836400,
-      "lng": 133000,
-      "fuels": {
-        "gazole": 2.099,
-        "sp98": 2.179,
-        "e10": 2.059
       }
     },
     {
@@ -169,20 +124,6 @@
         "sp95": 1.899,
         "sp98": 1.937,
         "e10": 1.857
-      }
-    },
-    {
-      "id": "28800001",
-      "cp": "28800",
-      "ville": "Bonneval",
-      "adresse": "2 rue denis papin za de la louveterie",
-      "pop": "R",
-      "lat": 4818700,
-      "lng": 139100,
-      "fuels": {
-        "gazole": 2.06,
-        "sp98": 2.067,
-        "e10": 1.948
       }
     },
     {
@@ -243,20 +184,6 @@
       }
     },
     {
-      "id": "28300005",
-      "cp": "28300",
-      "ville": "Champhol",
-      "adresse": "Rue du Bois Musquet",
-      "pop": "R",
-      "lat": 4847300,
-      "lng": 150800,
-      "fuels": {
-        "gazole": 2.004,
-        "sp98": 2.052,
-        "e10": 1.945
-      }
-    },
-    {
       "id": "28000002",
       "cp": "28000",
       "ville": "Chartres",
@@ -287,6 +214,20 @@
       }
     },
     {
+      "id": "28000010",
+      "cp": "28000",
+      "ville": "Chartres",
+      "adresse": "AV FRANCOIS ARAGO",
+      "pop": "R",
+      "lat": 4843600,
+      "lng": 152100,
+      "fuels": {
+        "gazole": 1.951,
+        "sp98": 1.989,
+        "e10": 1.87
+      }
+    },
+    {
       "id": "28000009",
       "cp": "28000",
       "ville": "Chartres",
@@ -299,20 +240,6 @@
         "sp98": 1.99,
         "e10": 1.957,
         "e85": 0.829
-      }
-    },
-    {
-      "id": "28000010",
-      "cp": "28000",
-      "ville": "Chartres",
-      "adresse": "AV FRANCOIS ARAGO",
-      "pop": "R",
-      "lat": 4843600,
-      "lng": 152100,
-      "fuels": {
-        "gazole": 1.951,
-        "sp98": 1.989,
-        "e10": 1.87
       }
     },
     {
@@ -405,20 +332,6 @@
       }
     },
     {
-      "id": "28220002",
-      "cp": "28220",
-      "ville": "Cloyes-les-Trois-Rivières",
-      "adresse": "route de romilly",
-      "pop": "R",
-      "lat": 4799000,
-      "lng": 125600,
-      "fuels": {
-        "gazole": 2.005,
-        "sp95": 1.979,
-        "sp98": 2.019
-      }
-    },
-    {
       "id": "28210003",
       "cp": "28210",
       "ville": "Coulombs",
@@ -430,20 +343,6 @@
         "gazole": 2.095,
         "sp98": 1.99,
         "e10": 1.985
-      }
-    },
-    {
-      "id": "28190003",
-      "cp": "28190",
-      "ville": "Courville-sur-Eure",
-      "adresse": "rue de beauce",
-      "pop": "R",
-      "lat": 4845000,
-      "lng": 125400,
-      "fuels": {
-        "gazole": 1.995,
-        "sp98": 2.029,
-        "e10": 1.935
       }
     },
     {
@@ -550,20 +449,6 @@
       }
     },
     {
-      "id": "28300009",
-      "cp": "28300",
-      "ville": "Gasville-Oisème",
-      "adresse": "Aire de Bois-Paris A11 Sens Province/Paris",
-      "pop": "A",
-      "lat": 4846700,
-      "lng": 157900,
-      "fuels": {
-        "gazole": 2.387,
-        "sp98": 2.519,
-        "e10": 2.369
-      }
-    },
-    {
       "id": "28300010",
       "cp": "28300",
       "ville": "Gasville-Oisème",
@@ -592,34 +477,6 @@
         "e10": 1.864,
         "e85": 0.769,
         "gplc": 1.169
-      }
-    },
-    {
-      "id": "28120002",
-      "cp": "28120",
-      "ville": "Illiers-Combray",
-      "adresse": "48 avenue Marcel Proust",
-      "pop": "R",
-      "lat": 4830500,
-      "lng": 125700,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 1.994,
-        "e10": 1.899
-      }
-    },
-    {
-      "id": "28310006",
-      "cp": "28310",
-      "ville": "Janville-en-Beauce",
-      "adresse": "14 Avenue du Général de Gaulle",
-      "pop": "R",
-      "lat": 4819700,
-      "lng": 189200,
-      "fuels": {
-        "gazole": 2.005,
-        "sp98": 2.039,
-        "e10": 1.929
       }
     },
     {
@@ -721,34 +578,6 @@
       }
     },
     {
-      "id": "28170002",
-      "cp": "28170",
-      "ville": "Maillebois",
-      "adresse": "50 Rue H.Latham",
-      "pop": "R",
-      "lat": 4863119,
-      "lng": 114832,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.969,
-        "sp98": 1.999
-      }
-    },
-    {
-      "id": "28130003",
-      "cp": "28130",
-      "ville": "Maintenon",
-      "adresse": "Route Bouglainval",
-      "pop": "R",
-      "lat": 4858000,
-      "lng": 157000,
-      "fuels": {
-        "gazole": 2.002,
-        "sp98": 2.049,
-        "e10": 1.935
-      }
-    },
-    {
       "id": "28130001",
       "cp": "28130",
       "ville": "Maintenon",
@@ -790,49 +619,6 @@
         "gazole": 1.983,
         "sp98": 2.009,
         "e10": 1.901
-      }
-    },
-    {
-      "id": "28310004",
-      "cp": "28310",
-      "ville": "Neuville Saint Denis",
-      "adresse": "AUT A 10 - AIRE DE VAL NEUVY",
-      "pop": "A",
-      "lat": 4827200,
-      "lng": 185800,
-      "fuels": {
-        "gazole": 2.392,
-        "sp98": 2.525,
-        "e10": 2.375
-      }
-    },
-    {
-      "id": "28210002",
-      "cp": "28210",
-      "ville": "Nogent-le-Roi",
-      "adresse": "LE SALUT NOTRE DAME",
-      "pop": "R",
-      "lat": 4863900,
-      "lng": 151500,
-      "fuels": {
-        "gazole": 1.961,
-        "sp98": 2.055,
-        "e10": 1.945,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "28400005",
-      "cp": "28400",
-      "ville": "Nogent-le-Rotrou",
-      "adresse": "3 ROUTE DU MANS",
-      "pop": "R",
-      "lat": 4830600,
-      "lng": 80800,
-      "fuels": {
-        "gazole": 2.05,
-        "sp98": 1.99,
-        "e10": 1.964
       }
     },
     {
@@ -896,21 +682,6 @@
       }
     },
     {
-      "id": "28190001",
-      "cp": "28190",
-      "ville": "Saint-Georges-sur-Eure",
-      "adresse": "Rue de Dolmont",
-      "pop": "R",
-      "lat": 4842400,
-      "lng": 136100,
-      "fuels": {
-        "gazole": 1.918,
-        "sp95": 1.969,
-        "sp98": 2.025,
-        "e10": 1.91
-      }
-    },
-    {
       "id": "28350001",
       "cp": "28350",
       "ville": "Saint-Lubin-des-Joncherets",
@@ -922,33 +693,6 @@
         "gazole": 1.957,
         "sp98": 2.009,
         "e10": 1.935
-      }
-    },
-    {
-      "id": "28500008",
-      "cp": "28500",
-      "ville": "Saint-Rémy-sur-Avre",
-      "adresse": "RN 12 COTE NORD",
-      "pop": "R",
-      "lat": 4876000,
-      "lng": 124000,
-      "fuels": {
-        "gazole": 1.965,
-        "sp98": 1.99,
-        "e10": 1.887,
-        "e85": 0.869
-      }
-    },
-    {
-      "id": "28800002",
-      "cp": "28800",
-      "ville": "Sancheville",
-      "adresse": "25 RUE D'ORLEANS",
-      "pop": "R",
-      "lat": 4819150.25,
-      "lng": 157898.29,
-      "fuels": {
-        "gazole": 2.179
       }
     },
     {
@@ -1007,19 +751,6 @@
         "sp98": 2.055,
         "e10": 1.955,
         "e85": 0.819
-      }
-    },
-    {
-      "id": "28290002",
-      "cp": "28290",
-      "ville": "Vald'Yerre",
-      "adresse": "Route de Brou - Arrou",
-      "pop": "R",
-      "lat": 4810369.7,
-      "lng": 111963,
-      "fuels": {
-        "gazole": 2.069,
-        "e10": 1.999
       }
     },
     {

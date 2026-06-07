@@ -3,69 +3,55 @@
   "name": "Mayenne",
   "regionCode": "PDL",
   "regionName": "Pays de la Loire",
-  "asOf": "2026-06-06T18:04:49.161Z",
+  "asOf": "2026-06-07T08:18:36.160Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 54,
+  "stationCount": 30,
   "fuels": {
     "gazole": {
-      "count": 54,
-      "mean": 2.0227,
-      "median": 1.999,
+      "count": 30,
+      "mean": 2.0263,
+      "median": 2.012,
       "min": 1.959,
       "max": 2.249
     },
     "sp95": {
-      "count": 26,
-      "mean": 2.0197,
+      "count": 14,
+      "mean": 2.0178,
       "median": 1.999,
       "min": 1.973,
-      "max": 2.13
+      "max": 2.089
     },
     "sp98": {
-      "count": 43,
-      "mean": 2.0592,
+      "count": 25,
+      "mean": 2.051,
       "median": 2.039,
-      "min": 1.98,
+      "min": 1.99,
       "max": 2.249
     },
     "e10": {
-      "count": 30,
-      "mean": 1.9622,
-      "median": 1.96,
+      "count": 18,
+      "mean": 1.9667,
+      "median": 1.9645,
       "min": 1.883,
-      "max": 2.153
+      "max": 2.149
     },
     "e85": {
-      "count": 11,
-      "mean": 0.8291,
-      "median": 0.813,
+      "count": 6,
+      "mean": 0.8457,
+      "median": 0.8465,
       "min": 0.76,
       "max": 0.939
     },
     "gplc": {
-      "count": 7,
-      "mean": 1.0139,
-      "median": 0.995,
+      "count": 4,
+      "mean": 1.0092,
+      "median": 0.992,
       "min": 0.989,
-      "max": 1.07
+      "max": 1.064
     }
   },
   "stations": [
-    {
-      "id": "53300003",
-      "cp": "53300",
-      "ville": "Ambrières-les-Vallées",
-      "adresse": "4 RUE DES VALLEES",
-      "pop": "R",
-      "lat": 4839606.95,
-      "lng": -62468.13,
-      "fuels": {
-        "gazole": 2.135,
-        "sp95": 2.13,
-        "sp98": 2.215
-      }
-    },
     {
       "id": "53240001",
       "cp": "53240",
@@ -78,18 +64,6 @@
         "gazole": 1.989,
         "sp95": 1.999,
         "sp98": 2.089
-      }
-    },
-    {
-      "id": "53240002",
-      "cp": "53240",
-      "ville": "Andouillé",
-      "adresse": "ZA DE LA MALADRERIE",
-      "pop": "R",
-      "lat": 4817300,
-      "lng": -79300,
-      "fuels": {
-        "gazole": 1.982
       }
     },
     {
@@ -137,49 +111,6 @@
       }
     },
     {
-      "id": "53960003",
-      "cp": "53960",
-      "ville": "Bonchamp-lès-Laval",
-      "adresse": "Rue du Bois-Hedin",
-      "pop": "R",
-      "lat": 4807324.52705,
-      "lng": -69312.6691,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.989,
-        "sp98": 2.029
-      }
-    },
-    {
-      "id": "53810001",
-      "cp": "53810",
-      "ville": "Changé",
-      "adresse": "Impasse des Sablons",
-      "pop": "R",
-      "lat": 4810000,
-      "lng": -78200,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 2.014,
-        "sp98": 2.069,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "53200003",
-      "cp": "53200",
-      "ville": "Château-Gontier-sur-Mayenne",
-      "adresse": "11 Avenue René Cassin",
-      "pop": "R",
-      "lat": 4783600,
-      "lng": -68900,
-      "fuels": {
-        "gazole": 2.054,
-        "sp95": 1.99,
-        "gplc": 1.07
-      }
-    },
-    {
       "id": "53200006",
       "cp": "53200",
       "ville": "Château-Gontier-sur-Mayenne",
@@ -207,20 +138,6 @@
         "sp98": 1.993,
         "e85": 0.76,
         "gplc": 0.995
-      }
-    },
-    {
-      "id": "53230003",
-      "cp": "53230",
-      "ville": "Cossé-le-Vivien",
-      "adresse": "ROUTE DE CRAON",
-      "pop": "R",
-      "lat": 4794461.95,
-      "lng": -91107.767,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 1.999,
-        "sp98": 2.079
       }
     },
     {
@@ -252,21 +169,6 @@
       }
     },
     {
-      "id": "53400001",
-      "cp": "53400",
-      "ville": "Craon",
-      "adresse": "Z.A. LA PEPINIERE",
-      "pop": "R",
-      "lat": 4784300,
-      "lng": -97100,
-      "fuels": {
-        "gazole": 2.005,
-        "sp98": 2.037,
-        "e10": 1.96,
-        "e85": 0.76
-      }
-    },
-    {
       "id": "53500004",
       "cp": "53500",
       "ville": "Ernée",
@@ -278,33 +180,6 @@
         "gazole": 2.025,
         "sp95": 1.999,
         "e10": 1.985
-      }
-    },
-    {
-      "id": "53500001",
-      "cp": "53500",
-      "ville": "Ernée",
-      "adresse": "LES SEMONDIERES",
-      "pop": "R",
-      "lat": 4829000,
-      "lng": -92800,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.159
-      }
-    },
-    {
-      "id": "53500003",
-      "cp": "53500",
-      "ville": "Ernée",
-      "adresse": "ROUTE DE MAYENNE",
-      "pop": "R",
-      "lat": 4829700,
-      "lng": -91300,
-      "fuels": {
-        "gazole": 2.056,
-        "sp98": 1.99,
-        "e10": 1.99
       }
     },
     {
@@ -350,33 +225,6 @@
       }
     },
     {
-      "id": "53600007",
-      "cp": "53600",
-      "ville": "Évron",
-      "adresse": "route de Sillé",
-      "pop": "R",
-      "lat": 4815600,
-      "lng": -40300,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 2.029
-      }
-    },
-    {
-      "id": "53190001",
-      "cp": "53190",
-      "ville": "Fougerolles-du-Plessis",
-      "adresse": "HAUT DU PLESSIS ROUTE DE LANDIVY",
-      "pop": "R",
-      "lat": 4847500,
-      "lng": -98100,
-      "fuels": {
-        "gazole": 1.971,
-        "sp95": 2.049,
-        "e10": 1.999
-      }
-    },
-    {
       "id": "53120004",
       "cp": "53120",
       "ville": "Gorron",
@@ -417,20 +265,6 @@
       }
     },
     {
-      "id": "53410003",
-      "cp": "53410",
-      "ville": "La Gravelle",
-      "adresse": "2 route Neuve",
-      "pop": "R",
-      "lat": 4807400,
-      "lng": -101600,
-      "fuels": {
-        "gazole": 2.179,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "53110001",
       "cp": "53110",
       "ville": "Lassay-les-Châteaux",
@@ -442,20 +276,6 @@
         "gazole": 1.978,
         "sp98": 2.029,
         "e10": 1.959
-      }
-    },
-    {
-      "id": "53000005",
-      "cp": "53000",
-      "ville": "Laval",
-      "adresse": "140 Avenue de Fougères",
-      "pop": "R",
-      "lat": 4807959,
-      "lng": -79216,
-      "fuels": {
-        "gazole": 2.088,
-        "sp98": 1.99,
-        "e10": 1.981
       }
     },
     {
@@ -484,38 +304,6 @@
         "gazole": 1.969,
         "e85": 0.839,
         "gplc": 0.989
-      }
-    },
-    {
-      "id": "53002001",
-      "cp": "53000",
-      "ville": "Laval",
-      "adresse": "46 avenue de lattre de tassigny",
-      "pop": "R",
-      "lat": 4807900,
-      "lng": -79900,
-      "fuels": {
-        "gazole": 2.029,
-        "sp95": 1.989,
-        "sp98": 2.039,
-        "e10": 1.909,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "53061001",
-      "cp": "53000",
-      "ville": "Laval",
-      "adresse": "60, avenue de la Comm. Européenne",
-      "pop": "R",
-      "lat": 4805600,
-      "lng": -73600,
-      "fuels": {
-        "gazole": 1.968,
-        "sp98": 1.982,
-        "e10": 1.89,
-        "e85": 0.799,
-        "gplc": 0.995
       }
     },
     {
@@ -558,34 +346,6 @@
         "sp98": 1.99,
         "e10": 1.974,
         "e85": 0.854
-      }
-    },
-    {
-      "id": "53410001",
-      "cp": "53410",
-      "ville": "Le Bourgneuf-la-Forêt",
-      "adresse": "Route de Laval",
-      "pop": "R",
-      "lat": 4816100,
-      "lng": -96800,
-      "fuels": {
-        "gazole": 1.968,
-        "sp95": 2.058,
-        "sp98": 2.138
-      }
-    },
-    {
-      "id": "53320002",
-      "cp": "53320",
-      "ville": "Loiron-Ruillé",
-      "adresse": "R.D. n 115",
-      "pop": "R",
-      "lat": 4806600,
-      "lng": -93500,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "sp98": 2.049
       }
     },
     {
@@ -632,34 +392,6 @@
       }
     },
     {
-      "id": "53100007",
-      "cp": "53100",
-      "ville": "Mayenne",
-      "adresse": "ROUTE DE PARIS - Boulevard Paul Lintier",
-      "pop": "R",
-      "lat": 4830977.2314,
-      "lng": -60549.9136,
-      "fuels": {
-        "gazole": 1.967,
-        "e10": 1.89,
-        "e85": 0.899
-      }
-    },
-    {
-      "id": "53100001",
-      "cp": "53100",
-      "ville": "Mayenne",
-      "adresse": "Rue de Bretagne",
-      "pop": "R",
-      "lat": 4830817,
-      "lng": -62956,
-      "fuels": {
-        "gazole": 2.009,
-        "sp95": 2.039,
-        "sp98": 2.059
-      }
-    },
-    {
       "id": "53170001",
       "cp": "53170",
       "ville": "Meslay-du-Maine",
@@ -668,10 +400,10 @@
       "lat": 4795400,
       "lng": -56100,
       "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.029,
+        "gazole": 2.029,
+        "sp98": 2.039,
         "e10": 1.949,
-        "e85": 0.849
+        "e85": 0.869
       }
     },
     {
@@ -685,7 +417,8 @@
       "fuels": {
         "gazole": 1.999,
         "sp95": 2.089,
-        "sp98": 2.129
+        "sp98": 2.049,
+        "e10": 2.019
       }
     },
     {
@@ -701,49 +434,6 @@
         "sp98": 1.99,
         "e10": 1.883,
         "e85": 0.813
-      }
-    },
-    {
-      "id": "53140001",
-      "cp": "53140",
-      "ville": "Pré-en-Pail-Saint-Samson",
-      "adresse": "zone Normandie Maine",
-      "pop": "R",
-      "lat": 4845927.72097,
-      "lng": -20190.78559,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.099,
-        "e10": 1.966
-      }
-    },
-    {
-      "id": "53800001",
-      "cp": "53800",
-      "ville": "Renazé",
-      "adresse": "RN 171",
-      "pop": "R",
-      "lat": 4779300,
-      "lng": -106700,
-      "fuels": {
-        "gazole": 2.008,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "53940001",
-      "cp": "53940",
-      "ville": "Saint-Berthevin",
-      "adresse": "62 BOULEVARD LOUIS ARMAND",
-      "pop": "R",
-      "lat": 4806500,
-      "lng": -81100,
-      "fuels": {
-        "gazole": 1.968,
-        "sp98": 1.98,
-        "e10": 1.899,
-        "e85": 0.799,
-        "gplc": 0.995
       }
     },
     {
@@ -772,34 +462,6 @@
         "gazole": 2.059,
         "sp95": 2.059,
         "sp98": 2.129
-      }
-    },
-    {
-      "id": "53270002",
-      "cp": "53270",
-      "ville": "Thorigné-en-Charnie",
-      "adresse": "AUTOROUTE A81AIRE DE LA VALLEE DE L'ERVE",
-      "pop": "A",
-      "lat": 4802701.5557,
-      "lng": -34336.20389,
-      "fuels": {
-        "gazole": 2.18,
-        "sp98": 2.228,
-        "e10": 2.153
-      }
-    },
-    {
-      "id": "53480002",
-      "cp": "53480",
-      "ville": "Vaiges",
-      "adresse": "le perray",
-      "pop": "R",
-      "lat": 4803900,
-      "lng": -47500,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.979,
-        "sp98": 2.069
       }
     },
     {

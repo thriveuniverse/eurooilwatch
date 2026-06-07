@@ -3,50 +3,50 @@
   "name": "Orne",
   "regionCode": "NOR",
   "regionName": "Normandie",
-  "asOf": "2026-06-06T18:04:49.161Z",
+  "asOf": "2026-06-07T08:18:36.160Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 57,
+  "stationCount": 47,
   "fuels": {
     "gazole": {
-      "count": 57,
-      "mean": 2.0446,
-      "median": 2.02,
+      "count": 47,
+      "mean": 2.0484,
+      "median": 2.029,
       "min": 1.911,
       "max": 2.25
     },
     "sp95": {
-      "count": 24,
-      "mean": 2.023,
-      "median": 1.9945,
+      "count": 19,
+      "mean": 2.0344,
+      "median": 2.015,
       "min": 1.952,
       "max": 2.21
     },
     "sp98": {
-      "count": 38,
-      "mean": 2.0719,
+      "count": 30,
+      "mean": 2.0723,
       "median": 2.0605,
       "min": 1.975,
       "max": 2.248
     },
     "e10": {
-      "count": 33,
-      "mean": 1.9733,
-      "median": 1.965,
+      "count": 28,
+      "mean": 1.9776,
+      "median": 1.9655,
       "min": 1.91,
       "max": 2.173
     },
     "e85": {
-      "count": 13,
-      "mean": 0.837,
-      "median": 0.798,
-      "min": 0.75,
+      "count": 12,
+      "mean": 0.8442,
+      "median": 0.802,
+      "min": 0.751,
       "max": 0.998
     },
     "gplc": {
-      "count": 5,
-      "mean": 1.091,
-      "median": 1.068,
+      "count": 4,
+      "mean": 1.0915,
+      "median": 1.064,
       "min": 1.029,
       "max": 1.209
     }
@@ -61,7 +61,8 @@
       "lat": 4843488.16,
       "lng": 9830.53,
       "fuels": {
-        "gazole": 2.172,
+        "gazole": 2.019,
+        "sp95": 2.172,
         "sp98": 2.234
       }
     },
@@ -108,20 +109,6 @@
       }
     },
     {
-      "id": "61200001",
-      "cp": "61200",
-      "ville": "Argentan",
-      "adresse": "1 rue de Champagne",
-      "pop": "R",
-      "lat": 4874900,
-      "lng": -2700,
-      "fuels": {
-        "gazole": 1.968,
-        "sp95": 1.98,
-        "sp98": 2.07
-      }
-    },
-    {
       "id": "61200006",
       "cp": "61200",
       "ville": "Argentan",
@@ -147,21 +134,6 @@
         "gazole": 2.051,
         "sp98": 1.99,
         "e10": 1.966
-      }
-    },
-    {
-      "id": "61200007",
-      "cp": "61200",
-      "ville": "Argentan",
-      "adresse": "Avenue de la 2ème D.B.",
-      "pop": "R",
-      "lat": 4873272.78,
-      "lng": -3485.91,
-      "fuels": {
-        "gazole": 1.992,
-        "sp95": 1.99,
-        "sp98": 2.051,
-        "e10": 1.919
       }
     },
     {
@@ -204,20 +176,6 @@
       }
     },
     {
-      "id": "61220001",
-      "cp": "61220",
-      "ville": "Briouze",
-      "adresse": "RUE D'ARGENTAN",
-      "pop": "R",
-      "lat": 4869900,
-      "lng": -36400,
-      "fuels": {
-        "gazole": 2.156,
-        "sp95": 2.159,
-        "sp98": 2.21
-      }
-    },
-    {
       "id": "61320002",
       "cp": "61320",
       "ville": "Carrouges",
@@ -256,19 +214,6 @@
         "gazole": 2.099,
         "e10": 2.099,
         "e85": 0.946
-      }
-    },
-    {
-      "id": "61250002",
-      "cp": "61250",
-      "ville": "Condé-sur-Sarthe",
-      "adresse": "28 Rue d'Alençon",
-      "pop": "R",
-      "lat": 4843500,
-      "lng": 5400,
-      "fuels": {
-        "gazole": 2.072,
-        "e10": 1.99
       }
     },
     {
@@ -400,20 +345,6 @@
       }
     },
     {
-      "id": "61100008",
-      "cp": "61100",
-      "ville": "Flers",
-      "adresse": "route de domfront",
-      "pop": "R",
-      "lat": 4873331.02,
-      "lng": -57645.91,
-      "fuels": {
-        "gazole": 1.97,
-        "sp98": 1.976,
-        "e10": 1.92
-      }
-    },
-    {
       "id": "61230007",
       "cp": "61230",
       "ville": "Gacé",
@@ -443,19 +374,6 @@
       }
     },
     {
-      "id": "61300002",
-      "cp": "61300",
-      "ville": "L'Aigle",
-      "adresse": "3 Avenue Comtesse de Ségur",
-      "pop": "R",
-      "lat": 4876400,
-      "lng": 61900,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 1.956
-      }
-    },
-    {
       "id": "61600003",
       "cp": "61600",
       "ville": "La Ferté Macé",
@@ -467,22 +385,6 @@
         "gazole": 1.999,
         "sp98": 2.029,
         "e10": 1.943
-      }
-    },
-    {
-      "id": "61600002",
-      "cp": "61600",
-      "ville": "La Ferté Macé",
-      "adresse": "Route de Bagnoles",
-      "pop": "R",
-      "lat": 4857500,
-      "lng": -37000,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.998,
-        "e10": 1.919,
-        "e85": 0.75,
-        "gplc": 1.089
       }
     },
     {
@@ -498,20 +400,6 @@
         "sp98": 2.248,
         "e10": 2.173,
         "gplc": 1.209
-      }
-    },
-    {
-      "id": "61290002",
-      "cp": "61290",
-      "ville": "Longny les Villages",
-      "adresse": "19 Bis Rue du Dr Jean Vivares",
-      "pop": "R",
-      "lat": 4852653.54,
-      "lng": 74970.7,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.129,
-        "e10": 1.999
       }
     },
     {
@@ -581,20 +469,6 @@
         "gazole": 2.049,
         "sp95": 1.989,
         "sp98": 2.099
-      }
-    },
-    {
-      "id": "61100003",
-      "cp": "61100",
-      "ville": "Saint-Georges-des-Groseillers",
-      "adresse": "Le Tremblay",
-      "pop": "R",
-      "lat": 4875287.18,
-      "lng": -57672.66,
-      "fuels": {
-        "gazole": 1.97,
-        "sp95": 1.988,
-        "sp98": 2.059
       }
     },
     {
@@ -735,20 +609,6 @@
       "fuels": {
         "gazole": 2.071,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "61500004",
-      "cp": "61500",
-      "ville": "Sées",
-      "adresse": "Rue du général Leclerc",
-      "pop": "R",
-      "lat": 4859926.2,
-      "lng": 17176.35,
-      "fuels": {
-        "gazole": 2.029,
-        "sp95": 1.999,
-        "sp98": 2.069
       }
     },
     {

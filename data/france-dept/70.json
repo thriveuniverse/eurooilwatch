@@ -3,45 +3,45 @@
   "name": "Haute-Saône",
   "regionCode": "BFC",
   "regionName": "Bourgogne-Franche-Comté",
-  "asOf": "2026-06-06T18:04:49.161Z",
+  "asOf": "2026-06-07T08:18:36.160Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 56,
+  "stationCount": 41,
   "fuels": {
     "gazole": {
-      "count": 55,
-      "mean": 2.023,
+      "count": 41,
+      "mean": 2.0222,
       "median": 2.012,
       "min": 1.941,
       "max": 2.13
     },
     "sp95": {
-      "count": 18,
-      "mean": 2.019,
-      "median": 1.997,
+      "count": 13,
+      "mean": 2.0208,
+      "median": 1.999,
       "min": 1.948,
-      "max": 2.149
+      "max": 2.129
     },
     "sp98": {
-      "count": 36,
-      "mean": 2.0505,
+      "count": 23,
+      "mean": 2.0494,
       "median": 2.04,
       "min": 1.987,
       "max": 2.179
     },
     "e10": {
-      "count": 39,
-      "mean": 1.9787,
-      "median": 1.986,
+      "count": 28,
+      "mean": 1.9715,
+      "median": 1.98,
       "min": 1.868,
-      "max": 2.129
+      "max": 2.049
     },
     "e85": {
-      "count": 10,
-      "mean": 0.818,
-      "median": 0.798,
+      "count": 8,
+      "mean": 0.804,
+      "median": 0.794,
       "min": 0.789,
-      "max": 0.899
+      "max": 0.879
     },
     "gplc": {
       "count": 2,
@@ -52,19 +52,6 @@
     }
   },
   "stations": [
-    {
-      "id": "70100007",
-      "cp": "70100",
-      "ville": "Arc-lès-Gray",
-      "adresse": "2 Avenue Charles Couyba",
-      "pop": "R",
-      "lat": 4745500,
-      "lng": 558900,
-      "fuels": {
-        "gazole": 2.079,
-        "sp95": 2.149
-      }
-    },
     {
       "id": "70100008",
       "cp": "70100",
@@ -135,20 +122,6 @@
       }
     },
     {
-      "id": "70800003",
-      "cp": "70800",
-      "ville": "Conflans-sur-Lanterne",
-      "adresse": "1 avenue Parmentier",
-      "pop": "R",
-      "lat": 4781200,
-      "lng": 620800,
-      "fuels": {
-        "gazole": 2.059,
-        "sp95": 1.979,
-        "sp98": 2.099
-      }
-    },
-    {
       "id": "70320004",
       "cp": "70320",
       "ville": "Corbenay",
@@ -203,20 +176,6 @@
       }
     },
     {
-      "id": "70160001",
-      "cp": "70160",
-      "ville": "Faverney",
-      "adresse": "Rue VOLTA",
-      "pop": "R",
-      "lat": 4776500,
-      "lng": 610100,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "sp98": 2.099
-      }
-    },
-    {
       "id": "70220003",
       "cp": "70220",
       "ville": "Fougerolles-Saint-Valbert",
@@ -228,20 +187,6 @@
         "gazole": 1.975,
         "sp98": 2.05,
         "e10": 1.949
-      }
-    },
-    {
-      "id": "70130001",
-      "cp": "70130",
-      "ville": "Fresne-Saint-Mamès",
-      "adresse": "12, avenue des Peupliers",
-      "pop": "R",
-      "lat": 4755100,
-      "lng": 585600,
-      "fuels": {
-        "gazole": 2.056,
-        "sp98": 2.096,
-        "e10": 1.996
       }
     },
     {
@@ -286,35 +231,6 @@
       }
     },
     {
-      "id": "70700004",
-      "cp": "70700",
-      "ville": "Gy",
-      "adresse": "Rue Sous les Vorpes",
-      "pop": "R",
-      "lat": 4741100,
-      "lng": 581900,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.069,
-        "e10": 1.999
-      }
-    },
-    {
-      "id": "70400004",
-      "cp": "70400",
-      "ville": "Héricourt",
-      "adresse": "100 FAUBOURG DE MONTBELIARD",
-      "pop": "R",
-      "lat": 4756300,
-      "lng": 675900,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.949,
-        "sp98": 1.989,
-        "e10": 1.919
-      }
-    },
-    {
       "id": "70400003",
       "cp": "70400",
       "ville": "Héricourt",
@@ -356,20 +272,6 @@
       }
     },
     {
-      "id": "70200006",
-      "cp": "70200",
-      "ville": "Lure",
-      "adresse": "16 Rue de Belfort",
-      "pop": "R",
-      "lat": 4767500,
-      "lng": 652100,
-      "fuels": {
-        "gazole": 2.061,
-        "sp98": 1.99,
-        "e10": 1.966
-      }
-    },
-    {
       "id": "70200008",
       "cp": "70200",
       "ville": "Lure",
@@ -382,18 +284,6 @@
         "sp95": 1.99,
         "e10": 1.98,
         "e85": 0.79
-      }
-    },
-    {
-      "id": "70200001",
-      "cp": "70200",
-      "ville": "Lure",
-      "adresse": "Rue carnot",
-      "pop": "R",
-      "lat": 4767900,
-      "lng": 650100,
-      "fuels": {
-        "e10": 1.999
       }
     },
     {
@@ -466,20 +356,6 @@
       }
     },
     {
-      "id": "70300001",
-      "cp": "70300",
-      "ville": "Luxeuil-les-Bains",
-      "adresse": "RN 57",
-      "pop": "R",
-      "lat": 4782100,
-      "lng": 639200,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "70120003",
       "cp": "70120",
       "ville": "Malvillers",
@@ -521,21 +397,6 @@
       }
     },
     {
-      "id": "70230001",
-      "cp": "70230",
-      "ville": "Montbozon",
-      "adresse": "RUE DU VAY DU SOLEIL",
-      "pop": "R",
-      "lat": 4746900,
-      "lng": 624900,
-      "fuels": {
-        "gazole": 2.099,
-        "sp98": 2.169,
-        "e10": 2.129,
-        "e85": 0.899
-      }
-    },
-    {
       "id": "70000007",
       "cp": "70000",
       "ville": "Navenne",
@@ -547,20 +408,6 @@
         "gazole": 1.97,
         "sp98": 2.04,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "70190005",
-      "cp": "70190",
-      "ville": "Neuvelle-lès-Cromary",
-      "adresse": "RUE DES CYTISES",
-      "pop": "R",
-      "lat": 4741800,
-      "lng": 607500,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.04,
-        "e10": 1.999
       }
     },
     {
@@ -604,20 +451,6 @@
       }
     },
     {
-      "id": "70170003",
-      "cp": "70170",
-      "ville": "Port-sur-Saône",
-      "adresse": "2 AVENUE DE VERDUN",
-      "pop": "R",
-      "lat": 4768747,
-      "lng": 605020.9,
-      "fuels": {
-        "gazole": 1.988,
-        "sp98": 2.069,
-        "e10": 1.999
-      }
-    },
-    {
       "id": "70000009",
       "cp": "70000",
       "ville": "Pusey",
@@ -645,20 +478,6 @@
         "gazole": 2.04,
         "sp98": 2.12,
         "e10": 2.03
-      }
-    },
-    {
-      "id": "70250005",
-      "cp": "70250",
-      "ville": "Ronchamp",
-      "adresse": "1B Rue du Plain",
-      "pop": "R",
-      "lat": 4769700,
-      "lng": 664300,
-      "fuels": {
-        "gazole": 1.997,
-        "sp95": 1.995,
-        "sp98": 2.042
       }
     },
     {
@@ -768,35 +587,6 @@
         "gazole": 2.019,
         "sp98": 2.041,
         "e10": 1.981
-      }
-    },
-    {
-      "id": "70000008",
-      "cp": "70000",
-      "ville": "Vesoul",
-      "adresse": "Carrefour de la Vaugine",
-      "pop": "R",
-      "lat": 4764064.391,
-      "lng": 614428.007,
-      "fuels": {
-        "gazole": 1.965,
-        "sp98": 2.04,
-        "e10": 1.98
-      }
-    },
-    {
-      "id": "70004001",
-      "cp": "70004",
-      "ville": "Vesoul",
-      "adresse": "RN 19 ROUTE DE PARIS BP 30217",
-      "pop": "R",
-      "lat": 4763380.86408,
-      "lng": 615894.45222,
-      "fuels": {
-        "gazole": 2.097,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.849
       }
     },
     {

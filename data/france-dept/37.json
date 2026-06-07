@@ -3,69 +3,55 @@
   "name": "Indre-et-Loire",
   "regionCode": "CVL",
   "regionName": "Centre-Val de Loire",
-  "asOf": "2026-06-06T18:04:49.161Z",
+  "asOf": "2026-06-07T08:18:36.160Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 84,
+  "stationCount": 60,
   "fuels": {
     "gazole": {
-      "count": 83,
-      "mean": 2.0254,
+      "count": 60,
+      "mean": 2.0315,
       "median": 1.995,
       "min": 1.948,
-      "max": 2.409
+      "max": 2.35
     },
     "sp95": {
-      "count": 30,
-      "mean": 1.9932,
+      "count": 23,
+      "mean": 1.9919,
       "median": 1.989,
       "min": 1.959,
       "max": 2.055
     },
     "sp98": {
-      "count": 76,
-      "mean": 2.0429,
-      "median": 2.021,
+      "count": 53,
+      "mean": 2.0403,
+      "median": 2.019,
       "min": 1.99,
       "max": 2.409
     },
     "e10": {
-      "count": 57,
-      "mean": 1.953,
-      "median": 1.929,
-      "min": 1.876,
+      "count": 39,
+      "mean": 1.9527,
+      "median": 1.925,
+      "min": 1.886,
       "max": 2.259
     },
     "e85": {
-      "count": 25,
-      "mean": 0.8179,
-      "median": 0.799,
-      "min": 0.761,
+      "count": 15,
+      "mean": 0.8327,
+      "median": 0.816,
+      "min": 0.765,
       "max": 0.999
     },
     "gplc": {
-      "count": 10,
-      "mean": 1.0977,
-      "median": 1.079,
+      "count": 7,
+      "mean": 1.0886,
+      "median": 1.069,
       "min": 0.981,
       "max": 1.339
     }
   },
   "stations": [
-    {
-      "id": "37340002",
-      "cp": "37340",
-      "ville": "Ambillou",
-      "adresse": "Place des Petits Pavés",
-      "pop": "R",
-      "lat": 4745100,
-      "lng": 45500,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.989,
-        "sp98": 2.079
-      }
-    },
     {
       "id": "37400006",
       "cp": "37400",
@@ -209,21 +195,6 @@
       }
     },
     {
-      "id": "37150003",
-      "cp": "37150",
-      "ville": "Bléré",
-      "adresse": "5 Avenue du 11 Novembre 1918",
-      "pop": "R",
-      "lat": 4732500,
-      "lng": 100400,
-      "fuels": {
-        "gazole": 1.998,
-        "sp98": 2.023,
-        "e10": 1.917,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "37140001",
       "cp": "37140",
       "ville": "Bourgueil",
@@ -239,33 +210,6 @@
       }
     },
     {
-      "id": "37170006",
-      "cp": "37170",
-      "ville": "Chambray-lès-Tours",
-      "adresse": "340 avenue du grand sud RD910",
-      "pop": "R",
-      "lat": 4731700,
-      "lng": 71100,
-      "fuels": {
-        "gazole": 1.961,
-        "sp98": 1.99,
-        "e10": 1.886,
-        "e85": 0.819
-      }
-    },
-    {
-      "id": "37170007",
-      "cp": "37170",
-      "ville": "Chambray-lès-Tours",
-      "adresse": "77 GRAND SUD AVENUE",
-      "pop": "R",
-      "lat": 4734200,
-      "lng": 70400,
-      "fuels": {
-        "gazole": 1.959
-      }
-    },
-    {
       "id": "37172001",
       "cp": "37170",
       "ville": "Chambray-lès-Tours",
@@ -278,21 +222,6 @@
         "sp98": 1.999,
         "e10": 1.899,
         "gplc": 0.981
-      }
-    },
-    {
-      "id": "37390003",
-      "cp": "37390",
-      "ville": "Chanceaux-sur-Choisille",
-      "adresse": "ZAC DE LA GRANDE PIECE",
-      "pop": "R",
-      "lat": 4747000,
-      "lng": 70200,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.989,
-        "sp98": 2.059,
-        "e10": 1.919
       }
     },
     {
@@ -354,22 +283,6 @@
       }
     },
     {
-      "id": "37500003",
-      "cp": "37500",
-      "ville": "Chinon",
-      "adresse": "Route de Tours",
-      "pop": "R",
-      "lat": 4717400,
-      "lng": 25100,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.008,
-        "e10": 1.909,
-        "e85": 0.765,
-        "gplc": 1.099
-      }
-    },
-    {
       "id": "37150004",
       "cp": "37150",
       "ville": "Civray-de-Touraine",
@@ -381,20 +294,6 @@
         "gazole": 2.057,
         "sp98": 1.99,
         "e10": 1.976
-      }
-    },
-    {
-      "id": "37320010",
-      "cp": "37320",
-      "ville": "Cormery",
-      "adresse": "ZA Du Bois Joly RD 82-9000",
-      "pop": "R",
-      "lat": 4725700,
-      "lng": 84200,
-      "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.099,
-        "e10": 2.049
       }
     },
     {
@@ -425,20 +324,6 @@
       }
     },
     {
-      "id": "37320001",
-      "cp": "37320",
-      "ville": "Esvres",
-      "adresse": "ZAE Le Grand Berchenay",
-      "pop": "R",
-      "lat": 4729100,
-      "lng": 79000,
-      "fuels": {
-        "gazole": 1.971,
-        "sp98": 2.033,
-        "e10": 1.918
-      }
-    },
-    {
       "id": "37230003",
       "cp": "37230",
       "ville": "Fondettes",
@@ -450,19 +335,6 @@
         "gazole": 1.949,
         "sp98": 1.999,
         "e10": 1.899
-      }
-    },
-    {
-      "id": "37300008",
-      "cp": "37300",
-      "ville": "Joué-lès-Tours",
-      "adresse": "119-123 BD JEAN JAURES",
-      "pop": "R",
-      "lat": 4734900,
-      "lng": 66100,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 1.99
       }
     },
     {
@@ -489,9 +361,9 @@
       "lat": 4733800,
       "lng": 65700,
       "fuels": {
-        "gazole": 2,
-        "sp98": 2.039,
-        "e10": 1.919
+        "gazole": 2.009,
+        "sp98": 2.049,
+        "e10": 1.929
       }
     },
     {
@@ -534,34 +406,6 @@
         "gazole": 1.989,
         "sp95": 1.989,
         "sp98": 2.029
-      }
-    },
-    {
-      "id": "37220001",
-      "cp": "37220",
-      "ville": "L'Île-Bouchard",
-      "adresse": "CENTRE CIAL LA ROCADE",
-      "pop": "R",
-      "lat": 4712200,
-      "lng": 43100,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.008,
-        "e85": 0.761
-      }
-    },
-    {
-      "id": "37390004",
-      "cp": "37390",
-      "ville": "La Membrolle-sur-Choisille",
-      "adresse": "81 route de Château-la-Vallière",
-      "pop": "R",
-      "lat": 4744200,
-      "lng": 62400,
-      "fuels": {
-        "gazole": 2.009,
-        "sp98": 1.99,
-        "e10": 1.942
       }
     },
     {
@@ -636,37 +480,6 @@
       }
     },
     {
-      "id": "37600001",
-      "cp": "37600",
-      "ville": "Loches",
-      "adresse": "ROUTE DE VAUZELLES",
-      "pop": "R",
-      "lat": 4713000,
-      "lng": 98400,
-      "fuels": {
-        "gazole": 1.995,
-        "sp95": 1.985,
-        "sp98": 2.019,
-        "e10": 1.939,
-        "e85": 0.789,
-        "gplc": 0.999
-      }
-    },
-    {
-      "id": "37230004",
-      "cp": "37230",
-      "ville": "Luynes",
-      "adresse": "ZONE INDUSTRIELLE DU CHAPELET",
-      "pop": "R",
-      "lat": 4739200,
-      "lng": 53900,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.045,
-        "e10": 1.935
-      }
-    },
-    {
       "id": "37380004",
       "cp": "37380",
       "ville": "Monnaie",
@@ -698,21 +511,6 @@
       }
     },
     {
-      "id": "37380001",
-      "cp": "37380",
-      "ville": "Monnaie",
-      "adresse": "La Croix Poêlon",
-      "pop": "R",
-      "lat": 4750100,
-      "lng": 78900,
-      "fuels": {
-        "gazole": 2.013,
-        "sp95": 2.022,
-        "sp98": 2.067,
-        "e85": 0.794
-      }
-    },
-    {
       "id": "37270001",
       "cp": "37270",
       "ville": "Montlouis-sur-Loire",
@@ -725,36 +523,6 @@
         "sp98": 1.999,
         "e10": 1.919,
         "e85": 0.779
-      }
-    },
-    {
-      "id": "37260001",
-      "cp": "37260",
-      "ville": "Monts",
-      "adresse": "RUE DE LA VASSELIERE",
-      "pop": "R",
-      "lat": 4727673,
-      "lng": 64244,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 2.029,
-        "sp98": 2.049,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "37530002",
-      "cp": "37530",
-      "ville": "Nazelles-Négron",
-      "adresse": "Boulevard du Sevrage",
-      "pop": "R",
-      "lat": 4742300,
-      "lng": 97600,
-      "fuels": {
-        "gazole": 1.996,
-        "sp98": 2.045,
-        "e10": 1.949,
-        "e85": 0.798
       }
     },
     {
@@ -912,21 +680,6 @@
       }
     },
     {
-      "id": "37800008",
-      "cp": "37800",
-      "ville": "Saint-Épain",
-      "adresse": "Autoroute A10 Aire de Fontaine Colette",
-      "pop": "A",
-      "lat": 4716600,
-      "lng": 63200,
-      "fuels": {
-        "gazole": 2.409,
-        "sp98": 2.379,
-        "e10": 2.229,
-        "gplc": 1.259
-      }
-    },
-    {
       "id": "37700010",
       "cp": "37700",
       "ville": "Saint-Pierre-des-Corps",
@@ -941,21 +694,6 @@
       }
     },
     {
-      "id": "37700001",
-      "cp": "37700",
-      "ville": "Saint-Pierre-des-Corps",
-      "adresse": "Avenue Jacques DUCLOS",
-      "pop": "R",
-      "lat": 4738000,
-      "lng": 71500,
-      "fuels": {
-        "gazole": 2.057,
-        "sp95": 1.99,
-        "sp98": 2,
-        "e10": 1.951
-      }
-    },
-    {
       "id": "37700011",
       "cp": "37700",
       "ville": "Saint-Pierre-des-Corps",
@@ -967,7 +705,6 @@
         "gazole": 1.968,
         "sp98": 1.99,
         "e10": 1.904,
-        "e85": 0.816,
         "gplc": 0.989
       }
     },
@@ -1016,20 +753,6 @@
       }
     },
     {
-      "id": "37000016",
-      "cp": "37000",
-      "ville": "Tours",
-      "adresse": "13 à 17 rue du 501e régiment",
-      "pop": "R",
-      "lat": 4739377.902,
-      "lng": 66974.657,
-      "fuels": {
-        "gazole": 1.972,
-        "sp95": 1.979,
-        "sp98": 2.05
-      }
-    },
-    {
       "id": "37000007",
       "cp": "37000",
       "ville": "Tours",
@@ -1060,20 +783,6 @@
       }
     },
     {
-      "id": "37100010",
-      "cp": "37100",
-      "ville": "Tours",
-      "adresse": "45, QUAI DE MARMOUTIER",
-      "pop": "R",
-      "lat": 4740385,
-      "lng": 72656,
-      "fuels": {
-        "gazole": 2.062,
-        "sp98": 1.99,
-        "e10": 1.98
-      }
-    },
-    {
       "id": "37000014",
       "cp": "37000",
       "ville": "Tours",
@@ -1101,19 +810,6 @@
       }
     },
     {
-      "id": "37000011",
-      "cp": "37000",
-      "ville": "Tours",
-      "adresse": "89 Boulevard Richard Wagner",
-      "pop": "R",
-      "lat": 4737500,
-      "lng": 70900,
-      "fuels": {
-        "sp98": 2.109,
-        "e10": 1.959
-      }
-    },
-    {
       "id": "37100001",
       "cp": "37100",
       "ville": "Tours",
@@ -1126,21 +822,6 @@
         "sp98": 2.039,
         "e10": 1.918,
         "e85": 0.789
-      }
-    },
-    {
-      "id": "37100011",
-      "cp": "37100",
-      "ville": "Tours",
-      "adresse": "RUE ABEL GANCE - ZAC DE L'AEROGA",
-      "pop": "R",
-      "lat": 4742644.47325,
-      "lng": 71075.64989,
-      "fuels": {
-        "gazole": 1.962,
-        "sp98": 1.99,
-        "e10": 1.876,
-        "e85": 0.819
       }
     },
     {
@@ -1187,21 +868,6 @@
       }
     },
     {
-      "id": "37270005",
-      "cp": "37270",
-      "ville": "Véretz",
-      "adresse": "62 CHEMIN DE LA BUSSARDIERE",
-      "pop": "R",
-      "lat": 4735500,
-      "lng": 81700,
-      "fuels": {
-        "gazole": 2.002,
-        "sp98": 1.999,
-        "e10": 1.901,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "37210002",
       "cp": "37210",
       "ville": "Vernou-sur-Brenne",
@@ -1241,20 +907,6 @@
         "gazole": 1.963,
         "sp95": 1.968,
         "sp98": 2.018
-      }
-    },
-    {
-      "id": "37290001",
-      "cp": "37290",
-      "ville": "Yzeures-sur-Creuse",
-      "adresse": "Les Chalussons",
-      "pop": "R",
-      "lat": 4678398.29037,
-      "lng": 88024.43228,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.109,
-        "e10": 1.965
       }
     }
   ]

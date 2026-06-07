@@ -3,15 +3,15 @@
   "name": "Paris",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-06-06T18:04:49.161Z",
+  "asOf": "2026-06-07T08:18:36.160Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 39,
+  "stationCount": 31,
   "fuels": {
     "gazole": {
-      "count": 35,
-      "mean": 2.1459,
-      "median": 2.138,
+      "count": 28,
+      "mean": 2.1353,
+      "median": 2.133,
       "min": 1.979,
       "max": 2.329
     },
@@ -23,22 +23,22 @@
       "max": 2.299
     },
     "sp98": {
-      "count": 30,
-      "mean": 2.0935,
+      "count": 24,
+      "mean": 2.0898,
       "median": 2.032,
       "min": 1.985,
       "max": 2.399
     },
     "e10": {
-      "count": 30,
-      "mean": 2.0302,
+      "count": 23,
+      "mean": 2.0118,
       "median": 1.99,
       "min": 1.939,
-      "max": 2.25
+      "max": 2.199
     },
     "e85": {
-      "count": 12,
-      "mean": 0.944,
+      "count": 8,
+      "mean": 0.9603,
       "median": 0.919,
       "min": 0.889,
       "max": 1.129
@@ -171,7 +171,6 @@
       "lng": 231600,
       "fuels": {
         "gazole": 2.149,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -212,6 +211,7 @@
       "fuels": {
         "gazole": 2.017,
         "sp98": 1.99,
+        "e10": 1.952,
         "gplc": 1.019
       }
     },
@@ -241,20 +241,6 @@
         "gazole": 2.117,
         "sp98": 1.99,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "75016017",
-      "cp": "75016",
-      "ville": "Paris",
-      "adresse": "2 AV DE LA PORTE DE ST CLOUD",
-      "pop": "R",
-      "lat": 4883868,
-      "lng": 225394,
-      "fuels": {
-        "gazole": 2.137,
-        "e10": 1.99,
-        "e85": 0.899
       }
     },
     {
@@ -302,35 +288,6 @@
       }
     },
     {
-      "id": "75020008",
-      "cp": "75020",
-      "ville": "Paris",
-      "adresse": "217 BOULEVARD MARECHAL DAVOUT",
-      "pop": "R",
-      "lat": 4886300,
-      "lng": 240700,
-      "fuels": {
-        "gazole": 2.114,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.919
-      }
-    },
-    {
-      "id": "75013026",
-      "cp": "75013",
-      "ville": "Paris",
-      "adresse": "231 Rue de Tolbiac",
-      "pop": "R",
-      "lat": 4882600,
-      "lng": 234400,
-      "fuels": {
-        "gazole": 2.255,
-        "sp98": 2.23,
-        "e10": 2.25
-      }
-    },
-    {
       "id": "75012020",
       "cp": "75012",
       "ville": "Paris",
@@ -345,20 +302,6 @@
       }
     },
     {
-      "id": "75016022",
-      "cp": "75016",
-      "ville": "Paris",
-      "adresse": "26 AV PAUL DOUMER",
-      "pop": "R",
-      "lat": 4886100,
-      "lng": 228300,
-      "fuels": {
-        "gazole": 2.239,
-        "sp98": 2.249,
-        "e10": 2.119
-      }
-    },
-    {
       "id": "75013022",
       "cp": "75013",
       "ville": "Paris",
@@ -368,37 +311,9 @@
       "lng": 236000,
       "fuels": {
         "gazole": 2.138,
-        "e10": 1.99,
-        "e85": 0.919
-      }
-    },
-    {
-      "id": "75018014",
-      "cp": "75018",
-      "ville": "Paris",
-      "adresse": "32 AVENUE DE LA PORTE DE ST OUEN",
-      "pop": "R",
-      "lat": 4889952.59995,
-      "lng": 232987.43609,
-      "fuels": {
-        "gazole": 2.135,
         "sp98": 1.99,
         "e10": 1.99,
-        "e85": 0.909
-      }
-    },
-    {
-      "id": "75012023",
-      "cp": "75012",
-      "ville": "Paris",
-      "adresse": "32 rue de Reuilly",
-      "pop": "R",
-      "lat": 4884655.403,
-      "lng": 238741.851,
-      "fuels": {
-        "gazole": 2.179,
-        "sp98": 2.199,
-        "e10": 2.099
+        "e85": 0.919
       }
     },
     {
@@ -470,19 +385,6 @@
       }
     },
     {
-      "id": "75016023",
-      "cp": "75016",
-      "ville": "Paris",
-      "adresse": "7 BOULEVARD MURAT",
-      "pop": "R",
-      "lat": 4884700,
-      "lng": 225900,
-      "fuels": {
-        "gazole": 2.259,
-        "e10": 2.159
-      }
-    },
-    {
       "id": "75013028",
       "cp": "75013",
       "ville": "Paris",
@@ -550,20 +452,6 @@
         "gazole": 2.249,
         "sp98": 2.269,
         "e10": 2.199
-      }
-    },
-    {
-      "id": "75015026",
-      "cp": "75015",
-      "ville": "Paris",
-      "adresse": "QUAI D'ISSY LES MOULINEAUX",
-      "pop": "R",
-      "lat": 4883500,
-      "lng": 226600,
-      "fuels": {
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.919
       }
     },
     {

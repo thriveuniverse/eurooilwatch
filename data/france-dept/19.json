@@ -3,52 +3,52 @@
   "name": "Corrèze",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-06T18:04:49.161Z",
+  "asOf": "2026-06-07T08:18:36.160Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 57,
+  "stationCount": 40,
   "fuels": {
     "gazole": {
-      "count": 57,
-      "mean": 2.0514,
-      "median": 2.024,
+      "count": 40,
+      "mean": 2.0452,
+      "median": 2.019,
       "min": 1.969,
-      "max": 2.25
+      "max": 2.219
     },
     "sp95": {
-      "count": 17,
-      "mean": 2.0286,
+      "count": 10,
+      "mean": 2.0233,
       "median": 1.998,
       "min": 1.979,
       "max": 2.193
     },
     "sp98": {
-      "count": 46,
-      "mean": 2.0752,
-      "median": 2.049,
+      "count": 32,
+      "mean": 2.0823,
+      "median": 2.064,
       "min": 1.99,
       "max": 2.279
     },
     "e10": {
-      "count": 46,
-      "mean": 1.9796,
-      "median": 1.9705,
+      "count": 33,
+      "mean": 1.9831,
+      "median": 1.97,
       "min": 1.887,
       "max": 2.179
     },
     "e85": {
-      "count": 14,
-      "mean": 0.8414,
-      "median": 0.819,
+      "count": 9,
+      "mean": 0.8427,
+      "median": 0.829,
       "min": 0.798,
       "max": 0.988
     },
     "gplc": {
-      "count": 3,
-      "mean": 1.1067,
-      "median": 1.079,
+      "count": 2,
+      "mean": 1.0785,
+      "median": 1.0785,
       "min": 1.078,
-      "max": 1.163
+      "max": 1.079
     }
   },
   "stations": [
@@ -82,20 +82,6 @@
       }
     },
     {
-      "id": "19400005",
-      "cp": "19400",
-      "ville": "Argentat-sur-Dordogne",
-      "adresse": "25, avenue des XAINTRIES",
-      "pop": "R",
-      "lat": 4509100,
-      "lng": 194100,
-      "fuels": {
-        "gazole": 2.25,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "19400006",
       "cp": "19400",
       "ville": "Argentat-sur-Dordogne",
@@ -107,20 +93,6 @@
         "gazole": 2.019,
         "sp98": 2.069,
         "e10": 1.979
-      }
-    },
-    {
-      "id": "19190001",
-      "cp": "19190",
-      "ville": "Beynat",
-      "adresse": "RD 921",
-      "pop": "R",
-      "lat": 4512554.2414,
-      "lng": 172250.66548,
-      "fuels": {
-        "gazole": 2.079,
-        "sp98": 2.199,
-        "e10": 2.039
       }
     },
     {
@@ -308,20 +280,6 @@
       }
     },
     {
-      "id": "19270003",
-      "cp": "19270",
-      "ville": "Donzenac",
-      "adresse": "155 rue de la riviére",
-      "pop": "R",
-      "lat": 4521900,
-      "lng": 152100,
-      "fuels": {
-        "gazole": 1.973,
-        "sp98": 2.009,
-        "e10": 1.899
-      }
-    },
-    {
       "id": "19300002",
       "cp": "19300",
       "ville": "Égletons",
@@ -350,64 +308,6 @@
       }
     },
     {
-      "id": "19300003",
-      "cp": "19300",
-      "ville": "Égletons",
-      "adresse": "CHAULAUDRE",
-      "pop": "R",
-      "lat": 4539800,
-      "lng": 203600,
-      "fuels": {
-        "gazole": 2.083,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.855
-      }
-    },
-    {
-      "id": "19340002",
-      "cp": "19340",
-      "ville": "Eygurande",
-      "adresse": "STATION TOTAL CONTACT EYGURANDE - RN 89",
-      "pop": "R",
-      "lat": 4564600,
-      "lng": 244500,
-      "fuels": {
-        "gazole": 2.09,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "19150002",
-      "cp": "19150",
-      "ville": "Laguenne-sur-Avalouze",
-      "adresse": "1 Avenue de Coulaud",
-      "pop": "R",
-      "lat": 4524621,
-      "lng": 177323,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "sp98": 2.039,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "19210001",
-      "cp": "19210",
-      "ville": "Lubersac",
-      "adresse": "Avenue du 8 Mai 1945",
-      "pop": "R",
-      "lat": 4543800,
-      "lng": 139700,
-      "fuels": {
-        "gazole": 2.039,
-        "sp95": 2.049,
-        "sp98": 2.189,
-        "e10": 1.979
-      }
-    },
-    {
       "id": "19360003",
       "cp": "19360",
       "ville": "Malemort",
@@ -420,21 +320,6 @@
         "sp98": 2.049,
         "e10": 1.959,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "19100009",
-      "cp": "19100",
-      "ville": "Malemort",
-      "adresse": "Impasse du Pilou",
-      "pop": "R",
-      "lat": 4515800,
-      "lng": 156300,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.979,
-        "e10": 1.915,
-        "e85": 0.798
       }
     },
     {
@@ -538,63 +423,6 @@
       }
     },
     {
-      "id": "19130004",
-      "cp": "19130",
-      "ville": "Objat",
-      "adresse": "Lieu-dit Bridal",
-      "pop": "R",
-      "lat": 4524500,
-      "lng": 141300,
-      "fuels": {
-        "gazole": 1.987,
-        "e10": 1.945,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "19130003",
-      "cp": "19130",
-      "ville": "Objat",
-      "adresse": "Route de Brive",
-      "pop": "R",
-      "lat": 4524400,
-      "lng": 141500,
-      "fuels": {
-        "gazole": 1.987,
-        "sp98": 1.99,
-        "e10": 1.91
-      }
-    },
-    {
-      "id": "19130001",
-      "cp": "19130",
-      "ville": "Saint-Aulaire",
-      "adresse": "15 av Général de Gaulle",
-      "pop": "R",
-      "lat": 4523073,
-      "lng": 137255,
-      "fuels": {
-        "gazole": 2.11,
-        "sp95": 2.123,
-        "sp98": 2.093,
-        "e10": 1.975
-      }
-    },
-    {
-      "id": "19330002",
-      "cp": "19330",
-      "ville": "Saint-Mexant",
-      "adresse": "Lieu-dit La Chapelle",
-      "pop": "R",
-      "lat": 4528398,
-      "lng": 165828,
-      "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.079,
-        "e10": 1.979
-      }
-    },
-    {
       "id": "19600004",
       "cp": "19600",
       "ville": "Saint-Pantaléon-de-Larche",
@@ -606,20 +434,6 @@
         "gazole": 2.154,
         "sp98": 2.242,
         "e10": 2.127
-      }
-    },
-    {
-      "id": "19270004",
-      "cp": "19270",
-      "ville": "Saint-Pardoux-l'Ortigier",
-      "adresse": "LA CROIX DE FER",
-      "pop": "R",
-      "lat": 4531063.40375,
-      "lng": 156254.61875,
-      "fuels": {
-        "gazole": 2.25,
-        "sp95": 1.99,
-        "sp98": 1.99
       }
     },
     {
@@ -665,20 +479,6 @@
       }
     },
     {
-      "id": "19260002",
-      "cp": "19260",
-      "ville": "Treignac",
-      "adresse": "Route d'Egletons",
-      "pop": "R",
-      "lat": 4553300,
-      "lng": 180400,
-      "fuels": {
-        "gazole": 1.988,
-        "sp98": 2.03,
-        "e10": 1.924
-      }
-    },
-    {
       "id": "19000008",
       "cp": "19000",
       "ville": "Tulle",
@@ -690,21 +490,6 @@
         "gazole": 2.069,
         "sp98": 1.99,
         "e10": 1.983
-      }
-    },
-    {
-      "id": "19000002",
-      "cp": "19000",
-      "ville": "Tulle",
-      "adresse": "14 RUE DU DOCTEUR RAMON",
-      "pop": "R",
-      "lat": 4525800,
-      "lng": 174900,
-      "fuels": {
-        "gazole": 1.995,
-        "sp95": 1.997,
-        "sp98": 2.036,
-        "e10": 1.948
       }
     },
     {
@@ -733,20 +518,6 @@
         "gazole": 2.099,
         "sp98": 2.199,
         "e10": 2.099
-      }
-    },
-    {
-      "id": "19200002",
-      "cp": "19200",
-      "ville": "Ussel",
-      "adresse": "56 Avenue du Général Leclerc",
-      "pop": "R",
-      "lat": 4555700,
-      "lng": 230200,
-      "fuels": {
-        "gazole": 2.09,
-        "sp95": 2.116,
-        "e85": 0.946
       }
     },
     {
@@ -845,21 +616,6 @@
         "gazole": 2.199,
         "sp95": 2.193,
         "sp98": 2.254
-      }
-    },
-    {
-      "id": "19800005",
-      "cp": "19800",
-      "ville": "Vitrac-sur-Montane",
-      "adresse": "AIRE DE LA CORREZE - AUTOROUTE A8",
-      "pop": "A",
-      "lat": 4535945.71,
-      "lng": 193726.25,
-      "fuels": {
-        "gazole": 2.154,
-        "sp98": 2.202,
-        "e10": 2.127,
-        "gplc": 1.163
       }
     }
   ]

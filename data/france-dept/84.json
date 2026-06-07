@@ -3,70 +3,55 @@
   "name": "Vaucluse",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-06-06T18:04:49.161Z",
+  "asOf": "2026-06-07T08:18:36.160Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 106,
+  "stationCount": 80,
   "fuels": {
     "gazole": {
-      "count": 105,
-      "mean": 2.038,
-      "median": 1.999,
-      "min": 1.919,
+      "count": 80,
+      "mean": 2.0396,
+      "median": 2.007,
+      "min": 1.949,
       "max": 2.31
     },
     "sp95": {
-      "count": 21,
-      "mean": 2.0655,
-      "median": 2.059,
-      "min": 1.995,
+      "count": 15,
+      "mean": 2.0639,
+      "median": 2.049,
+      "min": 1.999,
       "max": 2.2
     },
     "sp98": {
-      "count": 79,
-      "mean": 2.0795,
-      "median": 2.069,
-      "min": 1.988,
+      "count": 57,
+      "mean": 2.0876,
+      "median": 2.071,
+      "min": 1.989,
       "max": 2.378
     },
     "e10": {
-      "count": 86,
-      "mean": 1.9825,
-      "median": 1.975,
-      "min": 1.876,
+      "count": 67,
+      "mean": 1.9861,
+      "median": 1.971,
+      "min": 1.878,
       "max": 2.252
     },
     "e85": {
-      "count": 47,
-      "mean": 0.8495,
-      "median": 0.829,
+      "count": 36,
+      "mean": 0.857,
+      "median": 0.8415,
       "min": 0.735,
       "max": 1.099
     },
     "gplc": {
-      "count": 9,
-      "mean": 1.091,
+      "count": 7,
+      "mean": 1.1001,
       "median": 1.078,
       "min": 1.041,
       "max": 1.206
     }
   },
   "stations": [
-    {
-      "id": "84400007",
-      "cp": "84400",
-      "ville": "Apt",
-      "adresse": "382 AV. DE LANCON RN 100",
-      "pop": "R",
-      "lat": 4388345.4,
-      "lng": 538128,
-      "fuels": {
-        "gazole": 1.955,
-        "sp98": 1.99,
-        "e85": 0.838,
-        "gplc": 1.049
-      }
-    },
     {
       "id": "84400001",
       "cp": "84400",
@@ -93,21 +78,6 @@
         "gazole": 2.249,
         "e10": 2.149,
         "e85": 1.099
-      }
-    },
-    {
-      "id": "84400003",
-      "cp": "84400",
-      "ville": "Apt",
-      "adresse": "Chemin des Abattoirs",
-      "pop": "R",
-      "lat": 4388300,
-      "lng": 538100,
-      "fuels": {
-        "gazole": 1.965,
-        "sp95": 1.995,
-        "sp98": 2.025,
-        "e10": 1.939
       }
     },
     {
@@ -168,21 +138,6 @@
       }
     },
     {
-      "id": "84000008",
-      "cp": "84000",
-      "ville": "Avignon",
-      "adresse": "18 Route de Lyon",
-      "pop": "R",
-      "lat": 4395100,
-      "lng": 482500,
-      "fuels": {
-        "gazole": 1.973,
-        "sp98": 2.049,
-        "e10": 1.969,
-        "e85": 0.969
-      }
-    },
-    {
       "id": "84000017",
       "cp": "84000",
       "ville": "Avignon",
@@ -240,20 +195,6 @@
       }
     },
     {
-      "id": "84140007",
-      "cp": "84140",
-      "ville": "Avignon",
-      "adresse": "4316 RTE DE MARSEILLE",
-      "pop": "R",
-      "lat": 4390700,
-      "lng": 489000,
-      "fuels": {
-        "gazole": 1.96,
-        "sp98": 1.99,
-        "e10": 1.876
-      }
-    },
-    {
       "id": "84140006",
       "cp": "84140",
       "ville": "Avignon",
@@ -262,6 +203,7 @@
       "lat": 4393100,
       "lng": 487400,
       "fuels": {
+        "gazole": 2.061,
         "e85": 0.844
       }
     },
@@ -274,8 +216,7 @@
       "lat": 4393500,
       "lng": 484800,
       "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.988
+        "gazole": 1.969
       }
     },
     {
@@ -320,21 +261,6 @@
         "sp98": 2.189,
         "e10": 2.109,
         "e85": 1.054
-      }
-    },
-    {
-      "id": "84500007",
-      "cp": "84500",
-      "ville": "Bollène",
-      "adresse": "Avenue Jean Giono STATION 2 ROND POINT",
-      "pop": "R",
-      "lat": 4428689.20341,
-      "lng": 475063.55196,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.04,
-        "e10": 1.932,
-        "e85": 0.798
       }
     },
     {
@@ -408,20 +334,6 @@
       }
     },
     {
-      "id": "84850002",
-      "cp": "84850",
-      "ville": "Camaret-sur-Aigues",
-      "adresse": "RD43 CHEMIN DE PIOLENC",
-      "pop": "R",
-      "lat": 4416079.56196,
-      "lng": 487432.99835,
-      "fuels": {
-        "gazole": 2.029,
-        "sp98": 2.079,
-        "e10": 1.996
-      }
-    },
-    {
       "id": "84330005",
       "cp": "84330",
       "ville": "Caromb",
@@ -447,19 +359,6 @@
         "gazole": 1.999,
         "sp98": 2.049,
         "e10": 1.959
-      }
-    },
-    {
-      "id": "84200008",
-      "cp": "84200",
-      "ville": "Carpentras",
-      "adresse": "2875 Route de malaucene",
-      "pop": "R",
-      "lat": 4408000,
-      "lng": 506700,
-      "fuels": {
-        "gazole": 2.109,
-        "sp98": 2.169
       }
     },
     {
@@ -502,48 +401,6 @@
         "gazole": 2.049,
         "sp95": 2.119,
         "sp98": 2.149
-      }
-    },
-    {
-      "id": "84976001",
-      "cp": "84200",
-      "ville": "Carpentras",
-      "adresse": "Boulevard Naquet",
-      "pop": "R",
-      "lat": 4405145,
-      "lng": 504122,
-      "fuels": {
-        "gazole": 2.039,
-        "sp95": 2.059,
-        "e10": 2.019
-      }
-    },
-    {
-      "id": "84510001",
-      "cp": "84510",
-      "ville": "Caumont-sur-Durance",
-      "adresse": "65 route de Gadagne",
-      "pop": "R",
-      "lat": 4390600,
-      "lng": 494800,
-      "fuels": {
-        "gazole": 1.997,
-        "e10": 1.989
-      }
-    },
-    {
-      "id": "84300006",
-      "cp": "84300",
-      "ville": "Cavaillon",
-      "adresse": "130 allée Roch Pape",
-      "pop": "R",
-      "lat": 4382900,
-      "lng": 503500,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.037,
-        "e10": 1.926,
-        "e85": 0.798
       }
     },
     {
@@ -605,20 +462,6 @@
       }
     },
     {
-      "id": "84470001",
-      "cp": "84470",
-      "ville": "Châteauneuf-de-Gadagne",
-      "adresse": "778 Route d'Avignon",
-      "pop": "R",
-      "lat": 4392849,
-      "lng": 493805,
-      "fuels": {
-        "gazole": 2.08,
-        "sp98": 2.15,
-        "e10": 2.07
-      }
-    },
-    {
       "id": "84230001",
       "cp": "84230",
       "ville": "Châteauneuf-du-Pape",
@@ -630,20 +473,6 @@
         "gazole": 2.019,
         "sp98": 2.099,
         "e10": 1.999
-      }
-    },
-    {
-      "id": "84350002",
-      "cp": "84350",
-      "ville": "Courthézon",
-      "adresse": "ROUTE DE CHATEAUNEUF DU PAPE",
-      "pop": "R",
-      "lat": 4407971.07,
-      "lng": 487885.74,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.12,
-        "e10": 2.029
       }
     },
     {
@@ -675,20 +504,6 @@
       }
     },
     {
-      "id": "84600003",
-      "cp": "84600",
-      "ville": "Grillon",
-      "adresse": "Route de Valréas . Quartier les Mouilieres",
-      "pop": "R",
-      "lat": 4439400,
-      "lng": 494200,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.069,
-        "e10": 1.989
-      }
-    },
-    {
       "id": "84150001",
       "cp": "84150",
       "ville": "Jonquières",
@@ -714,21 +529,6 @@
         "gazole": 1.985,
         "sp98": 2.059,
         "e10": 1.949
-      }
-    },
-    {
-      "id": "84800004",
-      "cp": "84800",
-      "ville": "L'Isle-sur-la-Sorgue",
-      "adresse": "RN 100 PL. EMILE CHAR",
-      "pop": "R",
-      "lat": 4391800,
-      "lng": 505000,
-      "fuels": {
-        "gazole": 2.069,
-        "sp98": 1.99,
-        "e10": 1.987,
-        "e85": 0.864
       }
     },
     {
@@ -774,36 +574,6 @@
       }
     },
     {
-      "id": "84360004",
-      "cp": "84360",
-      "ville": "Lauris",
-      "adresse": "1 Avenue Philippe de Girard",
-      "pop": "R",
-      "lat": 4374937.15923,
-      "lng": 530978.77455,
-      "fuels": {
-        "gazole": 2.099,
-        "sp95": 2.129,
-        "sp98": 2.169
-      }
-    },
-    {
-      "id": "84130010",
-      "cp": "84130",
-      "ville": "Le Pontet",
-      "adresse": "1661 RTE DE SORGUES - RN 7",
-      "pop": "R",
-      "lat": 4397800,
-      "lng": 485800,
-      "fuels": {
-        "gazole": 2.067,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.874,
-        "gplc": 1.069
-      }
-    },
-    {
       "id": "84130014",
       "cp": "84130",
       "ville": "Le Pontet",
@@ -815,20 +585,6 @@
         "gazole": 2.099,
         "sp98": 2.179,
         "e10": 2.089
-      }
-    },
-    {
-      "id": "84130012",
-      "cp": "84130",
-      "ville": "Le Pontet",
-      "adresse": "36 av charles de Gaulle",
-      "pop": "R",
-      "lat": 4395800,
-      "lng": 485000,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.049,
-        "e10": 1.979
       }
     },
     {
@@ -861,19 +617,6 @@
       }
     },
     {
-      "id": "84250002",
-      "cp": "84250",
-      "ville": "Le Thor",
-      "adresse": "180 AVENUE DE LA LIBERATION",
-      "pop": "R",
-      "lat": 4392743.59,
-      "lng": 499879.12,
-      "fuels": {
-        "gazole": 2.15,
-        "sp95": 2.13
-      }
-    },
-    {
       "id": "84250001",
       "cp": "84250",
       "ville": "Le Thor",
@@ -886,20 +629,6 @@
         "sp98": 2.059,
         "e10": 1.999,
         "e85": 0.798
-      }
-    },
-    {
-      "id": "84340002",
-      "cp": "84340",
-      "ville": "Malaucène",
-      "adresse": "2 Rond Point des Remparts",
-      "pop": "R",
-      "lat": 4417600,
-      "lng": 512900,
-      "fuels": {
-        "gazole": 2.11,
-        "sp95": 2.09,
-        "sp98": 2.11
       }
     },
     {
@@ -971,33 +700,6 @@
         "gazole": 2.089,
         "sp98": 2.149,
         "e10": 2.049
-      }
-    },
-    {
-      "id": "84310002",
-      "cp": "84310",
-      "ville": "Morières-lès-Avignon",
-      "adresse": "28 Chemin du Clos Neuf",
-      "pop": "R",
-      "lat": 4394345,
-      "lng": 490789,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 1.989,
-        "e10": 1.929,
-        "e85": 0.779
-      }
-    },
-    {
-      "id": "84310003",
-      "cp": "84310",
-      "ville": "Morières-lès-Avignon",
-      "adresse": "502 Avenue Jean Monnet",
-      "pop": "R",
-      "lat": 4394100,
-      "lng": 489700,
-      "fuels": {
-        "gazole": 2.13
       }
     },
     {
@@ -1132,21 +834,6 @@
       }
     },
     {
-      "id": "84107001",
-      "cp": "84100",
-      "ville": "Orange",
-      "adresse": "Route de Jonquieres",
-      "pop": "R",
-      "lat": 4412000,
-      "lng": 484000,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.12,
-        "e10": 2.035,
-        "e85": 0.819
-      }
-    },
-    {
       "id": "84100006",
       "cp": "84100",
       "ville": "Orange",
@@ -1175,21 +862,6 @@
       }
     },
     {
-      "id": "84210001",
-      "cp": "84210",
-      "ville": "Pernes-les-Fontaines",
-      "adresse": "680 Route de la Buissonne",
-      "pop": "R",
-      "lat": 4400918,
-      "lng": 505110,
-      "fuels": {
-        "gazole": 2.04,
-        "sp98": 2.046,
-        "e10": 1.928,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "84120008",
       "cp": "84120",
       "ville": "Pertuis",
@@ -1202,22 +874,6 @@
         "sp98": 2.119,
         "e10": 1.959,
         "e85": 0.735
-      }
-    },
-    {
-      "id": "84120001",
-      "cp": "84120",
-      "ville": "Pertuis",
-      "adresse": "Boulevard Jean Guigues (=des Jardins)",
-      "pop": "R",
-      "lat": 4369500,
-      "lng": 549300,
-      "fuels": {
-        "gazole": 1.991,
-        "sp95": 2.014,
-        "sp98": 2.121,
-        "e10": 1.962,
-        "e85": 0.742
       }
     },
     {
@@ -1494,21 +1150,6 @@
       }
     },
     {
-      "id": "84600002",
-      "cp": "84600",
-      "ville": "Valréas",
-      "adresse": "Route d'Orange",
-      "pop": "R",
-      "lat": 4437300,
-      "lng": 498100,
-      "fuels": {
-        "gazole": 2.001,
-        "sp98": 2.007,
-        "e10": 1.893,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "84601001",
       "cp": "84600",
       "ville": "Valréas",
@@ -1517,9 +1158,9 @@
       "lat": 4438600,
       "lng": 500700,
       "fuels": {
-        "gazole": 1.919,
-        "sp98": 1.989,
-        "e10": 1.908,
+        "gazole": 1.949,
+        "sp98": 1.999,
+        "e10": 1.919,
         "e85": 0.769,
         "gplc": 1.041
       }
@@ -1551,18 +1192,6 @@
         "sp98": 1.99,
         "e10": 1.98,
         "e85": 0.864
-      }
-    },
-    {
-      "id": "84570002",
-      "cp": "84570",
-      "ville": "Villes-sur-Auzon",
-      "adresse": "24 AVENUE JEAN JAURES",
-      "pop": "R",
-      "lat": 4405779.26729,
-      "lng": 523142.68211,
-      "fuels": {
-        "gazole": 2.219
       }
     }
   ]
