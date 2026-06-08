@@ -352,10 +352,13 @@ document.getElementById('reset').addEventListener('click',()=>{
   buildCards();
 })();
 </script>
-<script>/* iframe auto-resize: post height to parent so the host page can size the frame */
-(function(){function postH(){try{parent.postMessage({oilwatchToolHeight:document.documentElement.scrollHeight},'*');}catch(e){}}
-window.addEventListener('load',postH);window.addEventListener('resize',postH);
-if(window.ResizeObserver){new ResizeObserver(postH).observe(document.body);}
-setTimeout(postH,300);setTimeout(postH,1200);})();</script>
+<script>/* iframe auto-resize: report true content height to the host (no 100vh feedback loop) */
+(function(){
+  if(window.self!==window.top){document.documentElement.style.minHeight='0';document.body.style.minHeight='0';}
+  function postH(){try{parent.postMessage({oilwatchToolHeight:document.body.scrollHeight},'*');}catch(e){}}
+  window.addEventListener('load',postH);window.addEventListener('resize',postH);
+  if(window.ResizeObserver){new ResizeObserver(function(){postH();}).observe(document.body);}
+  setTimeout(postH,300);setTimeout(postH,1200);
+})();</script>
 </body>
 </html>

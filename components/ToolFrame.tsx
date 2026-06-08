@@ -21,7 +21,9 @@ export default function ToolFrame({
     function onMsg(e: MessageEvent) {
       const d = e.data as { oilwatchToolHeight?: number } | null;
       if (d && typeof d === 'object' && typeof d.oilwatchToolHeight === 'number') {
-        setH(Math.max(minHeight, Math.ceil(d.oilwatchToolHeight) + 24));
+        const nh = Math.max(minHeight, Math.ceil(d.oilwatchToolHeight) + 8);
+        // only resize on a real change — prevents the resize-observer feedback loop
+        setH((prev) => (Math.abs(nh - prev) > 8 ? nh : prev));
       }
     }
     window.addEventListener('message', onMsg);
