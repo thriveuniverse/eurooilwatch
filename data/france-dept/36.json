@@ -3,52 +3,52 @@
   "name": "Indre",
   "regionCode": "CVL",
   "regionName": "Centre-Val de Loire",
-  "asOf": "2026-06-08T09:18:08.769Z",
+  "asOf": "2026-06-08T19:21:21.372Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 44,
   "fuels": {
     "gazole": {
       "count": 44,
-      "mean": 2.0437,
+      "mean": 2.0433,
       "median": 1.999,
       "min": 1.962,
-      "max": 2.419
+      "max": 2.396
     },
     "sp95": {
-      "count": 16,
-      "mean": 2.0078,
-      "median": 1.995,
+      "count": 17,
+      "mean": 2.0061,
+      "median": 1.99,
       "min": 1.96,
       "max": 2.169
     },
     "sp98": {
-      "count": 37,
-      "mean": 2.0635,
-      "median": 2.042,
+      "count": 38,
+      "mean": 2.0606,
+      "median": 2.0405,
       "min": 1.99,
       "max": 2.524
     },
     "e10": {
       "count": 34,
-      "mean": 1.9631,
+      "mean": 1.9622,
       "median": 1.959,
       "min": 1.882,
       "max": 2.374
     },
     "e85": {
       "count": 11,
-      "mean": 0.8552,
+      "mean": 0.8566,
       "median": 0.851,
       "min": 0.754,
       "max": 0.98
     },
     "gplc": {
       "count": 5,
-      "mean": 1.0538,
+      "mean": 1.054,
       "median": 1.058,
       "min": 0.989,
-      "max": 1.112
+      "max": 1.113
     }
   },
   "stations": [
@@ -250,6 +250,7 @@
       "lng": 170741.60372,
       "fuels": {
         "gazole": 1.993,
+        "sp98": 1.99,
         "e10": 1.917,
         "e85": 0.851
       }
@@ -336,6 +337,7 @@
       "lng": 200300,
       "fuels": {
         "gazole": 1.985,
+        "sp95": 1.989,
         "sp98": 2.019,
         "e10": 1.959,
         "e85": 0.799
@@ -437,9 +439,9 @@
       "lat": 4657500,
       "lng": 153500,
       "fuels": {
-        "gazole": 2.007,
-        "sp98": 2.084,
-        "e10": 1.962
+        "gazole": 2.043,
+        "sp98": 2.048,
+        "e10": 1.932
       }
     },
     {
@@ -451,8 +453,8 @@
       "lat": 4679952,
       "lng": 173367,
       "fuels": {
-        "gazole": 1.989,
-        "sp95": 1.998,
+        "gazole": 1.998,
+        "sp95": 1.988,
         "sp98": 2.029,
         "e10": 1.922
       }
@@ -493,10 +495,10 @@
       "lat": 4697300,
       "lng": 161200,
       "fuels": {
-        "gazole": 2.039,
+        "gazole": 1.999,
         "sp98": 2.049,
         "e10": 1.959,
-        "e85": 0.859
+        "e85": 0.875
       }
     },
     {
@@ -677,10 +679,10 @@
       "lat": 4672400,
       "lng": 160400,
       "fuels": {
-        "gazole": 2.419,
+        "gazole": 2.396,
         "sp98": 2.524,
         "e10": 2.374,
-        "gplc": 1.112
+        "gplc": 1.113
       }
     }
   ]
