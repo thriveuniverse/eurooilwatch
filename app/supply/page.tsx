@@ -55,12 +55,12 @@ const CHOKEPOINTS: Chokepoint[] = [
     name: 'Strait of Hormuz',
     region: 'Persian Gulf / Gulf of Oman',
     risk: 'critical',
-    riskLabel: 'Critical — constrained; limited negotiated transits',
+    riskLabel: 'Critical — open on paper, restricted in practice',
     dailyFlow: '~20',
     euRelevance: 'indirect',
     coords: 'Between Iran and Oman, connecting Persian Gulf to Arabian Sea',
     summary:
-      'The Strait of Hormuz remains the master variable for global oil. After the conflict that began in late February 2026 effectively closed it, the EIA assumed Hormuz stayed shut into late May, with traffic only beginning to pick up in June. Iran now says the strait will reopen only under new conditions — including possible transit fees set with Oman — which Washington opposes and Oman has reportedly declined to support. Flows are limited, negotiated and far below normal: Hormuz may be reopening in form, but not yet in function.',
+      'The Strait of Hormuz remains the master variable for global oil. After the conflict that began in late February 2026 effectively closed it, the EIA assumed Hormuz stayed shut into late May, with traffic only beginning to pick up in June. Iran now says the strait will reopen only under new conditions — including possible transit fees set with Oman — which Washington opposes and Oman has reportedly declined to support. Iran describes the strait as open, but in practice only a handful of crude, product and LNG vessels have exited recently — often with AIS gaps or under heightened risk — while overall Gulf flows stay far below normal. Open on paper, restricted in practice.',
     euImpact:
       'Approximately 20% of global seaborne oil and LNG — around 20 mb/d of oil — normally transits Hormuz. The IEA put Gulf output affected by the closure around 14.4 mb/d below pre-war levels, with total supply losses since February of roughly 12.8 mb/d, which it has called the largest disruption on record. Atlantic Basin crude premiums stay elevated as Asian buyers compete for non-Gulf supply, putting direct upward pressure on EU feedstock costs. Crucially, Middle East jet-fuel arrivals into Europe fell from about 330,000 to 60,000 b/d between March and April (IEA) — diesel and jet are where the squeeze reaches EU industry and aviation first.',
     context:
