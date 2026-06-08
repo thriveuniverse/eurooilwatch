@@ -3,7 +3,7 @@ import { EU27_CODES } from '@/lib/countries';
 import { DEPARTMENTS } from '@/lib/france-geo';
 import { PROVINCES as ES_PROVINCES } from '@/lib/spain-geo';
 import { PROVINCES as IT_PROVINCES } from '@/lib/italy-geo';
-import { BUNDESLAENDER } from '@/lib/germany-geo';
+import { PROVINCES as PT_PROVINCES } from '@/lib/portugal-geo';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
@@ -67,12 +67,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.65,
   }));
 
-  // Germany Bundesland pages — daily-refreshed when API key in place, otherwise static placeholder
-  const germanyLandPages: MetadataRoute.Sitemap = Object.keys(BUNDESLAENDER).map((code) => ({
-    url: `${baseUrl}/country/de/land/${code.toLowerCase()}`,
+  // Portugal distrito pages — daily-refreshed, station-level (DGEG open data)
+  const portugalDistritoPages: MetadataRoute.Sitemap = Object.keys(PT_PROVINCES).map((code) => ({
+    url: `${baseUrl}/country/pt/distrito/${code.toLowerCase()}`,
     lastModified: new Date(),
     changeFrequency: 'daily' as const,
-    priority: 0.6,
+    priority: 0.65,
   }));
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -90,5 +90,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/about`,                               lastModified: new Date(),                changeFrequency: 'monthly', priority: 0.4 },
   ];
 
-  return [...staticRoutes, ...analysisPages, ...countryPages, ...franceDeptPages, ...spainProvPages, ...italyProvPages, ...germanyLandPages];
+  return [...staticRoutes, ...analysisPages, ...countryPages, ...franceDeptPages, ...spainProvPages, ...italyProvPages, ...portugalDistritoPages];
 }

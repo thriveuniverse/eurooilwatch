@@ -268,10 +268,11 @@ export default function FuelPriceSearch({ cities }: Props) {
       </div>
 
       <p className="mt-3 text-[10px] text-gray-500 leading-snug">
-        Granular live coverage: 🇫🇷 France, 🇮🇹 Italy, 🇪🇸 Spain. Germany planned. Sources:{' '}
+        Granular live coverage: 🇫🇷 France, 🇮🇹 Italy, 🇪🇸 Spain, 🇵🇹 Portugal. Sources:{' '}
         <a href="https://www.prix-carburants.gouv.fr/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">prix-carburants.gouv.fr</a>,{' '}
         <a href="https://www.mimit.gov.it/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">mimit.gov.it</a>,{' '}
-        <a href="https://geoportalgasolineras.es/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">geoportalgasolineras.es</a>.
+        <a href="https://geoportalgasolineras.es/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">geoportalgasolineras.es</a>,{' '}
+        <a href="https://precoscombustiveis.dgeg.gov.pt/" target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">precoscombustiveis.dgeg.gov.pt</a>.
       </p>
     </section>
   );
