@@ -92,6 +92,9 @@ Free, read-only JSON. CORS-enabled, no key required.
   - https://eurooilwatch.com/api/v1/ara-stocks   — ARA hub jet / gasoline / naphtha / gasoil
   - https://eurooilwatch.com/api/v1/sea-state    — chokepoint wave + wind
   - https://eurooilwatch.com/api/v1/history      — 18-month EU stocks history
+  - https://eurooilwatch.com/api/v1/france-fuel-prices — FR station prices: national + regions + departments (prix-carburants)
+  - https://eurooilwatch.com/api/v1/spain-fuel-prices  — ES station prices: national + regions + provinces (Geoportal de Hidrocarburos)
+  - https://eurooilwatch.com/api/v1/italy-fuel-prices  — IT station prices: national + regions + provinces (MIMIT)
 
 ## Key pages
 
