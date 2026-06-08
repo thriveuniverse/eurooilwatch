@@ -6,7 +6,7 @@ import { DEPARTMENTS, deptFromPostalCode } from '@/lib/france-geo';
 import { PROVINCES as ES_PROVINCES, provFromPostalCode } from '@/lib/spain-geo';
 import { PROVINCES as IT_PROVINCES } from '@/lib/italy-geo';
 
-type Country = 'FR' | 'ES' | 'IT';
+type Country = 'FR' | 'ES' | 'IT' | 'PT';
 
 const POPULAR = [
   { country: 'FR' as Country, code: '75', ville: 'Paris',    flag: '🇫🇷', filterCity: '' },
@@ -39,6 +39,7 @@ const MAX_SUGGESTIONS = 8;
 function makeSuggestionUrl(country: Country, area: string, ville: string): string {
   if (country === 'FR') return `/country/fr/dept/${area.toLowerCase()}?ville=${encodeURIComponent(ville)}`;
   if (country === 'IT') return `/country/it/prov/${area.toLowerCase()}?ville=${encodeURIComponent(ville)}`;
+  if (country === 'PT') return `/country/pt/distrito/${area.toLowerCase()}?ville=${encodeURIComponent(ville)}`;
   return `/country/es/prov/${area.toLowerCase()}?ville=${encodeURIComponent(ville)}`;
 }
 
@@ -46,11 +47,12 @@ function popularUrl(country: Country, code: string, filterCity: string): string 
   let base: string;
   if (country === 'FR') base = `/country/fr/dept/${code.toLowerCase()}`;
   else if (country === 'IT') base = `/country/it/prov/${code.toLowerCase()}`;
+  else if (country === 'PT') base = `/country/pt/distrito/${code.toLowerCase()}`;
   else base = `/country/es/prov/${code.toLowerCase()}`;
   return filterCity ? `${base}?ville=${encodeURIComponent(filterCity)}` : base;
 }
 
-const COUNTRY_FLAG: Record<Country, string> = { FR: '🇫🇷', ES: '🇪🇸', IT: '🇮🇹' };
+const COUNTRY_FLAG: Record<Country, string> = { FR: '🇫🇷', ES: '🇪🇸', IT: '🇮🇹', PT: '🇵🇹' };
 
 export default function FuelPriceSearch({ cities }: Props) {
   const router = useRouter();

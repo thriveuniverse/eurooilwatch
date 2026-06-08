@@ -66,7 +66,7 @@ export default async function DashboardPage() {
   // Merge French + Spanish city indexes into one tuple list for the homepage typeahead.
   // Each tuple: [ville, country, areaCode, stationCount]. Sorted by station count desc.
   const searchCities = ((): CityTuple[] => {
-    const loadCountry = (file: string, country: 'FR' | 'ES' | 'IT'): CityTuple[] => {
+    const loadCountry = (file: string, country: 'FR' | 'ES' | 'IT' | 'PT'): CityTuple[] => {
       const p = path.join(process.cwd(), 'data', file);
       if (!fs.existsSync(p)) return [];
       try {
@@ -81,7 +81,8 @@ export default async function DashboardPage() {
     const fr = loadCountry('france-city-index.json', 'FR');
     const es = loadCountry('spain-city-index.json', 'ES');
     const it = loadCountry('italy-city-index.json', 'IT');
-    return [...fr, ...es, ...it].sort((a, b) => b[3] - a[3]);
+    const pt = loadCountry('portugal-city-index.json', 'PT');
+    return [...fr, ...es, ...it, ...pt].sort((a, b) => b[3] - a[3]);
   })();
 
   return (

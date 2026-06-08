@@ -22,9 +22,9 @@ export const REGIONS: Record<string, Region> = {
   L: { code: 'L', name: 'Lisboa e Vale do Tejo' },
   AL: { code: 'AL', name: 'Alentejo' },
   AG: { code: 'AG', name: 'Algarve' },
-  AC: { code: 'AC', name: 'Açores' },
-  MA: { code: 'MA', name: 'Madeira' },
 };
+// Note: DGEG's "Preços dos Combustíveis Online" covers Continental Portugal only —
+// the Açores and Madeira archipelagos are not in the feed, so they are excluded.
 
 export const PROVINCES: Record<string, Province> = {
   AVEIRO: { code: 'AVEIRO', name: 'Aveiro', regionCode: 'C' },
@@ -45,8 +45,6 @@ export const PROVINCES: Record<string, Province> = {
   'VIANA-DO-CASTELO': { code: 'VIANA-DO-CASTELO', name: 'Viana do Castelo', regionCode: 'N' },
   'VILA-REAL': { code: 'VILA-REAL', name: 'Vila Real', regionCode: 'N' },
   VISEU: { code: 'VISEU', name: 'Viseu', regionCode: 'C' },
-  ACORES: { code: 'ACORES', name: 'Açores', regionCode: 'AC' },
-  MADEIRA: { code: 'MADEIRA', name: 'Madeira', regionCode: 'MA' },
 };
 
 /** strip accents + lowercase */
