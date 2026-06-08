@@ -3,15 +3,15 @@
   "name": "Paris",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-06-07T18:02:29.586Z",
+  "asOf": "2026-06-08T09:18:08.769Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 40,
+  "stationCount": 38,
   "fuels": {
     "gazole": {
-      "count": 36,
-      "mean": 2.1459,
-      "median": 2.138,
+      "count": 34,
+      "mean": 2.1431,
+      "median": 2.1375,
       "min": 1.979,
       "max": 2.329
     },
@@ -24,17 +24,17 @@
     },
     "sp98": {
       "count": 28,
-      "mean": 2.1034,
-      "median": 2.0395,
+      "mean": 2.1016,
+      "median": 2.035,
       "min": 1.985,
       "max": 2.399
     },
     "e10": {
-      "count": 31,
-      "mean": 2.0277,
+      "count": 32,
+      "mean": 2.022,
       "median": 1.99,
       "min": 1.939,
-      "max": 2.25
+      "max": 2.199
     },
     "e85": {
       "count": 12,
@@ -103,7 +103,9 @@
       "lat": 4887100,
       "lng": 240900,
       "fuels": {
-        "gazole": 2.138
+        "gazole": 2.138,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -131,18 +133,6 @@
         "gazole": 2.122,
         "e10": 1.99,
         "e85": 0.919
-      }
-    },
-    {
-      "id": "75019015",
-      "cp": "75019",
-      "ville": "Paris",
-      "adresse": "121 RUE MANIN",
-      "pop": "R",
-      "lat": 4888400,
-      "lng": 239000,
-      "fuels": {
-        "gazole": 2.115
       }
     },
     {
@@ -209,7 +199,6 @@
       "lng": 235900,
       "fuels": {
         "gazole": 2.017,
-        "sp98": 1.99,
         "e10": 1.952,
         "gplc": 1.019
       }
@@ -281,8 +270,8 @@
       "lng": 237000,
       "fuels": {
         "gazole": 2.018,
-        "sp98": 2.037,
-        "e10": 1.957
+        "sp98": 2.028,
+        "e10": 1.948
       }
     },
     {
@@ -324,9 +313,9 @@
       "lat": 4882600,
       "lng": 234400,
       "fuels": {
-        "gazole": 2.255,
-        "sp98": 2.3,
-        "e10": 2.25
+        "gazole": 2.129,
+        "sp98": 2.259,
+        "e10": 2.115
       }
     },
     {
@@ -369,18 +358,6 @@
         "gazole": 2.138,
         "e10": 1.99,
         "e85": 0.919
-      }
-    },
-    {
-      "id": "75018013",
-      "cp": "75018",
-      "ville": "Paris",
-      "adresse": "30 AV PTE CLIGNANCOURT",
-      "pop": "R",
-      "lat": 4890000,
-      "lng": 234400,
-      "fuels": {
-        "gazole": 2.145
       }
     },
     {
