@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OilWatch — The Doom Loop Engine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0d10;--panel:#11161b;--panel2:#0d1217;--line:#1d262d;
+    --ink:#e7eef3;--muted:#76858f;--faint:#4a565e;
+    --accent:#2dd4bf;--accent-dim:#1b7a70;
+    --absorbed:#2dd4bf;--strained:#d8c24a;--broken:#e8483c;--high:#e0852e;
+    --grid:rgba(255,255,255,0.022);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--ink);font-family:'IBM Plex Mono',monospace;font-size:14px;line-height:1.5;
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:34px 34px;min-height:100vh;padding:clamp(14px,3vw,40px);}
+  .wrap{max-width:1100px;margin:0 auto}
+  .eyebrow{font-size:11px;letter-spacing:.42em;color:var(--accent);text-transform:uppercase;font-weight:600}
+  h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(24px,5vw,40px);letter-spacing:-.01em;line-height:1.04;margin:6px 0 4px}
+  .sub{color:var(--muted);font-size:13px;max-width:68ch}
+  .meta-row{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+  .meta{font-size:11px;color:var(--muted)}.meta b{color:var(--ink);font-weight:600}.meta .accent{color:var(--accent)}
+  h2{font-family:'Syne',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:26px 0 12px;display:flex;align-items:center;gap:10px}
+  h2::after{content:"";flex:1;height:1px;background:var(--line)}
+  .ctrls{display:grid;gap:14px;grid-template-columns:1fr}
+  @media(min-width:720px){.ctrls{grid-template-columns:1fr 1fr}}
+  .card{border:1px solid var(--line);background:linear-gradient(180deg,var(--panel),var(--panel2));border-radius:4px;padding:15px 17px}
+  .card .lab{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .card .lab b{color:var(--accent);font-weight:600}
+  .seg{display:flex;gap:7px;margin-top:11px;flex-wrap:wrap}
+  .seg button{flex:1;min-width:96px;cursor:pointer;font-family:inherit;font-size:12px;background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:10px 8px;transition:all .18s}
+  .seg button:hover{border-color:var(--accent-dim);color:var(--ink)}
+  .seg button.on{background:var(--accent);color:#04100e;border-color:var(--accent);font-weight:600}
+  .slide-row{display:flex;align-items:center;gap:12px;margin-top:13px}
+  input[type=range]{flex:1;-webkit-appearance:none;height:3px;background:var(--line);border-radius:3px;outline:none}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--accent);cursor:pointer;border:2px solid var(--bg)}
+  input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--accent);cursor:pointer;border:2px solid var(--bg)}
+  .slide-val{font-family:'Syne',sans-serif;font-weight:800;font-size:19px;min-width:62px;text-align:right}
+  .note{font-size:11px;color:var(--faint);margin-top:10px;line-height:1.45}
+  .note.warn{color:var(--high)}
+  .dash{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));margin-bottom:6px}
+  .stat{border:1px solid var(--line);background:var(--panel2);border-radius:4px;padding:14px 15px}
+  .stat .k{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+  .stat .v{font-family:'Syne',sans-serif;font-weight:800;font-size:28px;line-height:1;margin-top:7px}
+  .stat .v small{font-size:13px;color:var(--faint);font-weight:600}
+  .stat .x{font-size:11px;color:var(--faint);margin-top:5px;line-height:1.3}
+  .regime{display:inline-block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:3px 9px;border-radius:99px;margin-top:8px;font-weight:600}
+  .regime.damped{color:var(--absorbed);border:1px solid rgba(45,212,191,.4)}
+  .regime.critical{color:var(--high);border:1px solid rgba(224,133,46,.5)}
+  .regime.runaway{color:var(--broken);border:1px solid rgba(232,72,60,.5)}
+  .bands{display:flex;gap:0;border:1px solid var(--line);border-radius:4px;overflow:hidden;margin:14px 0}
+  .band{padding:13px 14px;text-align:center;transition:flex .4s ease}
+  .band .pct{font-family:'Syne',sans-serif;font-weight:800;font-size:24px;line-height:1}
+  .band .nm{font-size:10px;letter-spacing:.12em;text-transform:uppercase;margin-top:5px;opacity:.85}
+  .band.absorbed{background:rgba(45,212,191,.13);color:var(--absorbed)}
+  .band.strained{background:rgba(216,194,74,.13);color:var(--strained)}
+  .band.broken{background:rgba(232,72,60,.14);color:var(--broken)}
+  canvas{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:4px;background:var(--panel2)}
+  .axis{display:flex;justify-content:space-between;font-size:10px;color:var(--faint);margin-top:6px;padding:0 2px}
+  table{width:100%;border-collapse:collapse;font-size:12px}
+  th{text-align:left;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;padding:7px 8px;border-bottom:1px solid var(--line)}
+  td{padding:8px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  .nname{font-weight:600;color:var(--ink)}
+  input[type=number]{width:58px;background:var(--panel2);border:1px solid var(--line);color:var(--ink);font-family:inherit;font-size:13px;font-weight:600;padding:5px 7px;border-radius:3px;text-align:right}
+  input[type=number]:focus{outline:none;border-color:var(--accent)}
+  .sbar{height:4px;background:var(--line);border-radius:3px;overflow:hidden;min-width:56px;margin-top:5px}
+  .sbar i{display:block;height:100%;background:var(--accent);border-radius:3px;transition:width .3s}
+  .stxt{font-size:11px;color:var(--muted)}
+  .edge{display:flex;align-items:center;gap:9px;padding:7px 0;border-bottom:1px solid var(--line);font-size:12px}
+  .edge:last-child{border:none}
+  .edge .from{color:var(--high);flex:1;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .edge .arr{color:var(--faint)}
+  .edge .to{color:var(--accent);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .edge input[type=range]{flex:none;width:80px}
+  .edge .w{font-weight:600;min-width:34px;text-align:right}
+  footer{margin-top:28px;border-top:1px solid var(--line);padding-top:16px}
+  .methods{font-size:11px;color:var(--muted);line-height:1.65}
+  .methods b{color:var(--ink);font-weight:600}
+  .actions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;align-items:center}
+  .actions button{font-family:inherit;font-size:11.5px;letter-spacing:.05em;cursor:pointer;background:transparent;border:1px solid var(--line);color:var(--muted);padding:9px 15px;border-radius:3px;transition:all .18s}
+  #reset:hover{border-color:var(--broken);color:var(--broken)}
+  #rerun:hover{border-color:var(--accent);color:var(--accent)}
+  .saved{font-size:10.5px;color:var(--faint)}
+  .sweepbtn{font-family:inherit;font-size:11.5px;cursor:pointer;background:transparent;border:1px solid var(--accent-dim);color:var(--accent);padding:7px 13px;border-radius:3px;margin-left:6px}
+  .sweepbtn:hover{border-color:var(--accent)}
+  #tornado{margin-top:6px}
+  .trow{display:flex;align-items:center;gap:10px;padding:5px 0;font-size:12px}
+  .tlab{flex:0 0 40%;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .tbarwrap{flex:1;height:10px;background:var(--line);border-radius:3px;overflow:hidden}
+  .tbar{display:block;height:100%;background:linear-gradient(90deg,var(--accent-dim),var(--accent));border-radius:3px;transition:width .3s}
+  .tval{flex:0 0 60px;text-align:right;color:var(--muted);font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">OilWatch Intelligence · Compound-cascade simulator</div>
+    <h1>The Doom Loop Engine</h1>
+    <p class="sub">Continuous, saturating stress dynamics on a node graph, coupled to a depleting buffer (the drawable inventory above the allocation floor). The loop gain is now the actual Jacobian spectral radius of the dynamics — and it rises as the cushion thins, so tipping is reachable and bounded. A reasoning instrument: it propagates assumptions, it does not validate them.</p>
+    <div class="meta-row">
+      <span class="meta">TRIALS · <b id="ntrials">—</b></span>
+      <span class="meta">ENGINE · <b>continuous saturating + buffer feedback</b></span>
+      <span class="meta">ENDPOINT · <span class="accent">cushion breaches the allocation floor</span></span>
+    </div>
+  </header>
+
+  <h2>Controls</h2>
+  <div class="ctrls">
+    <div class="card">
+      <div class="lab">Master variable · <b>Ceasefire state</b></div>
+      <div class="seg" id="seg">
+        <button data-s="holds">Holds</button>
+        <button data-s="fragile">Fragile</button>
+        <button data-s="collapsed">Collapsed</button>
+      </div>
+      <p class="note">Scales each node's exogenous drive by its war-sensitivity. The structural edges stay fixed; only the spark rate changes.</p>
+    </div>
+    <div class="card">
+      <div class="lab">Demand destruction · <b>net-draw brake</b></div>
+      <div class="slide-row"><input type="range" id="dd" min="0" max="1" step="0.05" value="0.6"><span class="slide-val" id="ddval">0.60</span></div>
+      <p class="note">The stabilising loop, now physical: high system stress destroys consumption, cutting the rate at which the buffer is drawn down. Slide to 0 to remove the brake and watch the cushion empty; raise it to find where the buffer holds above its floor.</p>
+    </div>
+    <div class="card">
+      <div class="lab">Draw scale · <b>stress → M bbl/d drawdown</b></div>
+      <div class="slide-row"><input type="range" id="draw" min="1" max="12" step="0.5" value="6"><span class="slide-val" id="drawval">6.0</span></div>
+      <p class="note warn">⚠ This is the new bridge assumption B+D adds: how many million barrels/day of net buffer draw a fully-stressed system implies. It is a judgement, not a measurement — it is exposed here precisely so it can't hide.</p>
+    </div>
+    <div class="card">
+      <div class="lab">Starting cushion · <b>drawable billion bbl before allocation</b></div>
+      <div class="slide-row"><input type="range" id="cushion" min="0.3" max="2" step="0.05" value="0.8"><span class="slide-val" id="cushionval">0.80</span></div>
+      <p class="note">The reservoir, in <b>billion barrels</b>. Allocation (the endpoint) fires when it hits zero. Default 0.8 = the amount realistically drawable before operational stress; slide up toward ~1.85 to include strategic/emergency stocks (see methods). Buffer feedback strength: <input type="range" id="fb" min="0" max="2" step="0.1" value="1" style="vertical-align:middle;width:90px"> <span id="fbval">1.0</span>× — how hard scarcity feeds back into the stress network (the doom-loop coupling).</p>
+    </div>
+  </div>
+
+  <h2>Outcome</h2>
+  <div class="dash">
+    <div class="stat">
+      <div class="k">Scarcity loop gain</div>
+      <div class="v" id="rho">—</div>
+      <div class="x" id="rhox">net-draw acceleration, full cushion → floor (&gt;1 = self-reinforcing)</div>
+      <div class="regime damped" id="regime">—</div>
+    </div>
+    <div class="stat">
+      <div class="k">Net draw at the floor</div>
+      <div class="v" id="rhofloor">—</div>
+      <div class="x">≤ 0 → demand destruction holds the line · &gt; 0 → cushion keeps emptying</div>
+    </div>
+    <div class="stat">
+      <div class="k">Allocation reached</div>
+      <div class="v" id="pend">—<small>%</small></div>
+      <div class="x">P(cushion breaches floor within horizon)</div>
+    </div>
+    <div class="stat">
+      <div class="k">Time to allocation</div>
+      <div class="v" id="when">—<small>mo</small></div>
+      <div class="x" id="whenx">median, among trials that breach</div>
+    </div>
+  </div>
+
+  <div class="bands" id="bands">
+    <div class="band absorbed" id="b-abs"><div class="pct">—</div><div class="nm">Absorbed</div></div>
+    <div class="band strained" id="b-str"><div class="pct">—</div><div class="nm">Strained</div></div>
+    <div class="band broken" id="b-brk"><div class="pct">—</div><div class="nm">Broken</div></div>
+  </div>
+
+  <h2>Drawable cushion (billion bbl) over the horizon</h2>
+  <canvas id="fan" width="1060" height="240"></canvas>
+  <div class="axis"><span>month 0</span><span id="axmid">→ time</span><span id="axend">horizon</span></div>
+  <p class="note" style="margin-top:8px">Median trajectory (solid) with the P10–P90 fan across <span id="ntrials2">—</span> stochastic trials. The red line is the allocation floor; where the fan touches it is where a major economy crosses from price rationing into physical allocation.</p>
+
+  <h2>Sensitivity — what actually moves the outcome</h2>
+  <p class="note">Each input is swept ±50% of its current value (clamped to its range), holding the rest fixed; bars rank inputs by how many percentage points they move P(allocation). The long bars are the assumptions your conclusion hinges on — the ones worth defending; the short ones you can stop arguing about. <button id="sweep" class="sweepbtn">Run sweep</button></p>
+  <div id="tornado"></div>
+
+  <h2>Nodes — equilibrium stress &amp; drawdown weight</h2>
+  <table>
+    <thead><tr><th>Node</th><th>Spark&nbsp;%</th><th>Draw wt</th><th>Equilibrium stress</th></tr></thead>
+    <tbody id="noderows"></tbody>
+  </table>
+
+  <h2>Interaction edges — “if A is stressed, it raises B”</h2>
+  <div id="edgelist"></div>
+
+  <footer>
+    <div class="methods">
+      <b>How it runs.</b> Each node carries a continuous stress level in [0,1] that relaxes each month toward a saturating function of its drive — exogenous spark (scenario-scaled) + weighted stress from upstream nodes + a scarcity term proportional to how far the buffer has fallen. The buffer is a real reservoir: a stress-weighted deficit is converted to a net drawdown in M bbl/d (via the <b>draw-scale</b> bridge), throttled by <b>demand destruction</b>, and integrated down month by month. <b>Allocation</b> fires when the drawable cushion hits zero. <b>The loop.</b> The node graph itself is feed-forward (no cycles), so its standalone gain is zero — the entire feedback loop is <i>node → buffer → node</i>: stress draws the cushion down, a thinner cushion raises the scarcity term, which raises stress. So instead of a node eigenvalue we report the <b>scarcity loop gain</b> (how much the net draw accelerates from full cushion to the floor) and the <b>net draw at the floor</b> in M bbl/d. If demand destruction pulls net draw to ≤ 0 at maximum scarcity, an interior buffer level holds (self-limiting); if it stays positive, no equilibrium exists above the floor and the cushion empties — a threshold, bounded by the buffer hitting zero, not a runaway to infinity. <b>Bands:</b> Broken = cushion breached; Strained = more than half the cushion eaten without breach; Absorbed = the system held. Every edge weight, draw weight, the draw-scale bridge and the buffer parameters are subjective inputs — change them and argue with the result.
+      <br><br>
+      <b>Calibrating the cushion.</b> "Drawable" has no single value — it depends on definition. OECD commercial stocks stood at ~2.84 billion bbl (Jan 2026); OECD government + obligated strategic stocks add ~1.85 billion bbl; but the amount realistically drawable before operational stress (≈20%-minimum tank bottoms, pipeline fill, ~65% refinery minimums) is far smaller — a May 2026 estimate put it near ~0.8 billion bbl. This tool defaults to <b>0.8</b> (the conservative operational figure) and lets the cushion slider span up toward the strategic-inclusive range. The cushion is also a moving target: global observed inventories hit a multi-year high (~8.2 billion bbl) in early 2026 and have been drawn down since.
+      <br><br>
+      <b>Sources:</b>
+      <a href="https://www.iea.org/reports/oil-market-report-may-2026" style="color:var(--accent)">IEA Oil Market Report — May 2026</a> ·
+      <a href="https://www.iea.org/reports/oil-market-report-january-2026" style="color:var(--accent)">IEA OMR — Jan 2026</a> ·
+      <a href="https://www.rigzone.com/news/inventories_acting_as_shock_absorber_of_global_oil_system-01-may-2026-183585-article/" style="color:var(--accent)">Rigzone (May 2026)</a> ·
+      <a href="https://oilprice.com/Energy/Crude-Oil/Oil-Market-Runs-Down-Safety-Cushion-as-Supply-Shock-Worsens.html" style="color:var(--accent)">OilPrice (May 2026)</a>
+    </div>
+    <div class="actions">
+      <button id="rerun">Re-run</button>
+      <button id="reset">Reset to defaults</button>
+      <span class="saved" id="saved">edits persist automatically</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+const KEY='oilwatch-cascade-bd-v2';
+const N=3000, H=24, DT_DAYS=30.4, KRATE=0.5, KSTEEP=4, KCENTER=0.85, EQSTEPS=240;
+
+const NODES=[
+  {id:'houthi',   name:'Houthi / Red Sea strike', spark:34, sens:'high',     draw:0.45, bufFb:0.15},
+  {id:'abqaiq',   name:'Abqaiq strike',           spark:13, sens:'high',     draw:0.85, bufFb:0.10},
+  {id:'insurance',name:'Insurance seizure',       spark:10, sens:'high',     draw:0.40, bufFb:0.30},
+  {id:'attrition',name:'Petroline attrition',     spark:50, sens:'high',     draw:0.15, bufFb:0.05},
+  {id:'recovery', name:'Recovery stalls',         spark:60, sens:'moderate', draw:0.50, bufFb:0.35},
+  {id:'diesel',   name:'Regional diesel crunch',  spark:22, sens:'moderate', draw:0.40, bufFb:0.20},
+  {id:'compound', name:'Compound 2nd shock',      spark:30, sens:'low',      draw:0.45, bufFb:0.10},
+];
+const IDX=Object.fromEntries(NODES.map((n,i)=>[n.id,i]));
+const MULT={holds:{high:.45,moderate:.7,low:.9},fragile:{high:1,moderate:1,low:1},collapsed:{high:1.85,moderate:1.35,low:1.1}};
+
+const EDGES=[
+  {from:'houthi',to:'insurance',w:.6},{from:'houthi',to:'diesel',w:.4},{from:'houthi',to:'recovery',w:.45},{from:'houthi',to:'abqaiq',w:.12},
+  {from:'abqaiq',to:'insurance',w:.7},{from:'abqaiq',to:'diesel',w:.6},{from:'abqaiq',to:'recovery',w:.6},
+  {from:'attrition',to:'recovery',w:.3},{from:'attrition',to:'diesel',w:.2},
+  {from:'insurance',to:'diesel',w:.4},
+  {from:'recovery',to:'diesel',w:.4},
+  {from:'compound',to:'diesel',w:.5},{from:'compound',to:'recovery',w:.3},
+];
+
+let state={};
+function defaults(){
+  state={scenario:'fragile',dd:0.6,draw:6,cushion:0.8,fb:1.0,sparks:{},draws:{},edges:{}};
+  NODES.forEach(n=>{state.sparks[n.id]=n.spark;state.draws[n.id]=n.draw;});
+  EDGES.forEach((e,i)=>state.edges[i]=e.w);
+}
+defaults();
+
+function load(){try{const raw=localStorage.getItem(KEY);if(raw){const s=JSON.parse(raw);
+  state.scenario=s.scenario||'fragile';state.dd=s.dd??0.6;state.draw=s.draw??6;state.cushion=s.cushion??0.8;state.fb=s.fb??1.0;
+  NODES.forEach(n=>{state.sparks[n.id]=s.sparks?.[n.id]??n.spark;state.draws[n.id]=s.draws?.[n.id]??n.draw;});
+  EDGES.forEach((e,i)=>state.edges[i]=s.edges?.[i]??e.w);}}catch(e){}}
+let st;function save(){flash();clearTimeout(st);st=setTimeout(()=>{try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}},400);}
+function flash(){const el=document.getElementById('saved');el.textContent='saving…';setTimeout(()=>el.textContent='saved',400);}
+
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const sat=d=>1/(1+Math.exp(-KSTEEP*(d-KCENTER)));
+function adjSpark(i){const n=NODES[i];return clamp(state.sparks[n.id]/100*MULT[state.scenario][n.sens],0,.95);}
+
+function buildW(){const n=NODES.length,W=Array.from({length:n},()=>Array(n).fill(0));
+  EDGES.forEach((e,i)=>{W[IDX[e.from]][IDX[e.to]]=clamp(state.edges[i],0,.95);});return W;}
+
+// one month of node dynamics given current stress x, buffer-stress bs, spark vector s
+function nodeStep(x,bs,s,W,fb){const n=NODES.length,nx=new Array(n);
+  for(let i=0;i<n;i++){let drive=s[i]+fb*NODES[i].bufFb*bs;
+    for(let j=0;j<n;j++)drive+=W[j][i]*x[j];
+    const target=sat(drive);nx[i]=clamp(x[i]+(target-x[i])*KRATE,0,1);}
+  return nx;
+}
+function totalDraw(){return NODES.reduce((a,n)=>a+state.draws[n.id],0)||1;}
+
+// relax node net to equilibrium at a fixed buffer-stress with mean sparks
+function equilibrium(bs,W,s,fb){let x=new Array(NODES.length).fill(0.05);
+  for(let k=0;k<EQSTEPS;k++)x=nodeStep(x,bs,s,W,fb);return x;}
+
+// ---- config-driven core (lets the sensitivity sweep vary one input at a time) ----
+function cfgFromState(){return {scenario:state.scenario,dd:state.dd,draw:state.draw,cushion:state.cushion,fb:state.fb,
+  sparks:{...state.sparks},draws:{...state.draws},edges:{...state.edges}};}
+function cfgAdj(c){return NODES.map(nd=>clamp(c.sparks[nd.id]/100*MULT[c.scenario][nd.sens],0,.95));}
+function cfgW(c){const n=NODES.length,W=Array.from({length:n},()=>Array(n).fill(0));
+  EDGES.forEach((e,i)=>{W[IDX[e.from]][IDX[e.to]]=clamp(c.edges[i],0,.95);});return W;}
+function cfgTDraw(c){return NODES.reduce((a,nd)=>a+c.draws[nd.id],0)||1;}
+function trial(c,meanS,W,tDraw){const n=NODES.length,C0=c.cushion,traj=new Float32Array(H+1);
+  const s=meanS.map(v=>clamp(v*(0.5+Math.random()),0,.97));
+  let x=new Array(n).fill(0.05),B=C0,minB=C0,breach=-1;traj[0]=B;
+  for(let m=1;m<=H;m++){const bs=clamp(1-B/C0,0,1);x=nodeStep(x,bs,s,W,c.fb);
+    let def=0;for(let i=0;i<n;i++)def+=c.draws[NODES[i].id]*x[i];def/=tDraw;
+    const gross=c.draw*def,ddf=clamp(c.dd*def,0,.95),net=Math.max(0,gross*(1-ddf)-0.5);
+    B=Math.max(0,B-net*DT_DAYS/1000);if(B<minB)minB=B;if(B<=0&&breach<0)breach=m;traj[m]=B;}
+  return {breach,minB,traj};}
+function pAlloc(c,nn){const meanS=cfgAdj(c),W=cfgW(c),tDraw=cfgTDraw(c);let brk=0;
+  for(let t=0;t<nn;t++)if(trial(c,meanS,W,tDraw).breach>=0)brk++;return brk/nn;}
+
+function runSim(){
+  const cfg=cfgFromState(),n=NODES.length,W=cfgW(cfg),tDraw=cfgTDraw(cfg),C0=cfg.cushion,meanS=cfgAdj(cfg);
+  // Scarcity-loop diagnostics (deterministic, mean sparks). The node graph is feed-forward;
+  // the only feedback loop is node->buffer->node, so we measure the net buffer draw (M bbl/d) at
+  // full cushion vs at the floor, and whether demand destruction arrests it at maximum scarcity.
+  const netAt=bs=>{const x=equilibrium(bs,W,meanS,cfg.fb);let def=0;
+    for(let i=0;i<n;i++)def+=cfg.draws[NODES[i].id]*x[i];def/=tDraw;
+    const gross=cfg.draw*def,ddf=clamp(cfg.dd*def,0,.95);return gross*(1-ddf)-0.5;};
+  const net0=netAt(0),net1=netAt(1),scGain=net0>0.02?net1/net0:(net1>0.02?99:1);
+
+  // Monte Carlo: stochastic spark intensities, full buffer-coupled trajectory
+  const trajP=Array.from({length:H+1},()=>new Float32Array(N));
+  let broken=0,strained=0,absorbed=0;const whenArr=[];
+  for(let t=0;t<N;t++){const r=trial(cfg,meanS,W,tDraw);
+    for(let m=0;m<=H;m++)trajP[m][t]=r.traj[m];
+    if(r.breach>=0){broken++;whenArr.push(r.breach);}
+    else if(r.minB<0.5*C0)strained++;else absorbed++;}
+  // per-month percentiles for the fan
+  const pct=[];for(let m=0;m<=H;m++){const a=Float32Array.from(trajP[m]).sort();
+    pct.push({p10:a[Math.floor(N*0.1)],p50:a[Math.floor(N*0.5)],p90:a[Math.floor(N*0.9)]});}
+  whenArr.sort((a,b)=>a-b);
+  const medWhen=whenArr.length?whenArr[Math.floor(whenArr.length*0.5)]:null;
+  const bsEq=clamp(1-pct[H].p50/C0,0,1),xeq=equilibrium(bsEq,W,meanS,cfg.fb);
+  return {net0,net1,scGain,broken,strained,absorbed,pct,medWhen,C0,xeq};
+}
+
+// ---- sensitivity sweep: vary each input ±50% and rank by how far P(allocation) moves ----
+const SWEEP_BAND=0.5, SWEEP_N=1000;
+function sweepItems(){const it=[];
+  NODES.forEach(nd=>it.push({label:'spark · '+nd.name,base:state.sparks[nd.id],lo:0,hi:100,set:(c,v)=>c.sparks[nd.id]=v}));
+  NODES.forEach(nd=>it.push({label:'draw wt · '+nd.name,base:state.draws[nd.id],lo:0,hi:1,set:(c,v)=>c.draws[nd.id]=v}));
+  EDGES.forEach((e,i)=>it.push({label:NODES[IDX[e.from]].name+' → '+NODES[IDX[e.to]].name,base:state.edges[i],lo:0,hi:.95,set:(c,v)=>c.edges[i]=v}));
+  it.push({label:'demand destruction',base:state.dd,lo:0,hi:1,set:(c,v)=>c.dd=v});
+  it.push({label:'draw scale',base:state.draw,lo:1,hi:12,set:(c,v)=>c.draw=v});
+  it.push({label:'starting cushion',base:state.cushion,lo:.3,hi:2,set:(c,v)=>c.cushion=v});
+  it.push({label:'buffer feedback',base:state.fb,lo:0,hi:2,set:(c,v)=>c.fb=v});
+  return it;}
+function runSweep(){const rows=[];
+  for(const it of sweepItems()){const cA=cfgFromState(),cB=cfgFromState();
+    it.set(cA,clamp(it.base*(1-SWEEP_BAND),it.lo,it.hi));
+    it.set(cB,clamp(it.base*(1+SWEEP_BAND),it.lo,it.hi));
+    const pL=pAlloc(cA,SWEEP_N)*100,pH=pAlloc(cB,SWEEP_N)*100;
+    rows.push({label:it.label,swing:Math.abs(pH-pL)});}
+  rows.sort((a,b)=>b.swing-a.swing);
+  const top=rows.slice(0,12),mx=Math.max(1,...top.map(r=>r.swing));
+  document.getElementById('tornado').innerHTML=top.map(r=>
+    '<div class="trow"><span class="tlab">'+r.label+'</span>'+
+    '<span class="tbarwrap"><i class="tbar" style="width:'+(r.swing/mx*100).toFixed(1)+'%"></i></span>'+
+    '<span class="tval">±'+r.swing.toFixed(0)+' pts</span></div>').join('');}
+
+function drawFan(pct,C0){const cv=document.getElementById('fan'),ctx=cv.getContext('2d');
+  const W=cv.width,Ht=cv.height,padL=8,padR=8,padT=10,padB=8;
+  const x=m=>padL+(m/H)*(W-padL-padR);
+  const ymax=C0*1.08, y=v=>padT+(1-v/ymax)*(Ht-padT-padB);
+  ctx.clearRect(0,0,W,Ht);
+  // floor line (y=0)
+  ctx.strokeStyle='#e8483c';ctx.globalAlpha=.9;ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(padL,y(0));ctx.lineTo(W-padR,y(0));ctx.stroke();
+  ctx.globalAlpha=1;
+  // P10-P90 band
+  ctx.beginPath();ctx.moveTo(x(0),y(pct[0].p90));
+  for(let m=1;m<=H;m++)ctx.lineTo(x(m),y(pct[m].p90));
+  for(let m=H;m>=0;m--)ctx.lineTo(x(m),y(pct[m].p10));
+  ctx.closePath();ctx.fillStyle='rgba(45,212,191,0.13)';ctx.fill();
+  // median
+  ctx.beginPath();ctx.moveTo(x(0),y(pct[0].p50));
+  for(let m=1;m<=H;m++)ctx.lineTo(x(m),y(pct[m].p50));
+  ctx.strokeStyle='#2dd4bf';ctx.lineWidth=2;ctx.stroke();
+}
+
+function render(r){
+  document.getElementById('ntrials').textContent=N.toLocaleString();
+  document.getElementById('ntrials2').textContent=N.toLocaleString();
+  document.getElementById('rho').textContent=r.scGain>=99?'∞':r.scGain.toFixed(1)+'×';
+  document.getElementById('rhofloor').innerHTML=r.net1.toFixed(1)+'<small>M bbl/d</small>';
+  const reg=document.getElementById('regime');
+  if(r.net1<=0){reg.className='regime damped';reg.textContent='Self-limiting — draw arrested at the floor';}
+  else if(r.net1<=1){reg.className='regime critical';reg.textContent='Near the line — slow bleed at the floor';}
+  else{reg.className='regime runaway';reg.textContent='Cushion empties — draw outruns destruction';}
+  document.getElementById('pend').innerHTML=(r.broken/N*100).toFixed(1)+'<small>%</small>';
+  document.getElementById('when').innerHTML=r.medWhen!=null?(r.medWhen+'<small>mo</small>'):'—<small></small>';
+  document.getElementById('whenx').textContent=r.medWhen!=null?('median, among the '+(r.broken/N*100).toFixed(0)+'% that breach'):'no breach within '+H+' months';
+  const tot=N,set=(id,v)=>document.querySelector('#'+id+' .pct').textContent=(v/tot*100).toFixed(0)+'%';
+  set('b-abs',r.absorbed);set('b-str',r.strained);set('b-brk',r.broken);
+  document.getElementById('b-abs').style.flex=Math.max(.6,r.absorbed/tot*3+.4);
+  document.getElementById('b-str').style.flex=Math.max(.6,r.strained/tot*3+.4);
+  document.getElementById('b-brk').style.flex=Math.max(.6,r.broken/tot*3+.4);
+  document.getElementById('axend').textContent=H+' months';
+  document.getElementById('axmid').textContent='→ '+Math.round(H/2)+' mo';
+  drawFan(r.pct,r.C0);
+  NODES.forEach((nd,i)=>{const s=r.xeq[i];
+    const fb=document.getElementById('sb-'+nd.id);if(fb)fb.style.width=(s*100)+'%';
+    const ft=document.getElementById('sx-'+nd.id);if(ft)ft.textContent=(s*100).toFixed(0)+'%';});
+}
+
+function buildNodeRows(){const tb=document.getElementById('noderows');tb.innerHTML='';
+  NODES.forEach(nd=>{const tr=document.createElement('tr');
+    tr.innerHTML='<td class="nname">'+nd.name+'</td>'+
+      '<td><input type="number" min="0" max="100" step="1" data-spark="'+nd.id+'" value="'+state.sparks[nd.id]+'"></td>'+
+      '<td><input type="number" min="0" max="1" step="0.05" data-draw="'+nd.id+'" value="'+state.draws[nd.id]+'"></td>'+
+      '<td><div class="stxt"><span id="sx-'+nd.id+'">—</span></div><div class="sbar"><i id="sb-'+nd.id+'"></i></div></td>';
+    tb.appendChild(tr);});
+  tb.querySelectorAll('[data-spark]').forEach(inp=>inp.addEventListener('input',()=>{state.sparks[inp.dataset.spark]=clamp(+inp.value||0,0,100);go();save();}));
+  tb.querySelectorAll('[data-draw]').forEach(inp=>inp.addEventListener('input',()=>{state.draws[inp.dataset.draw]=clamp(+inp.value||0,0,1);go();save();}));
+}
+function buildEdges(){const el=document.getElementById('edgelist');el.innerHTML='';
+  EDGES.forEach((e,i)=>{const row=document.createElement('div');row.className='edge';
+    row.innerHTML='<span class="from">'+NODES[IDX[e.from]].name+'</span>'+
+      '<span class="arr">→</span><span class="to">'+NODES[IDX[e.to]].name+'</span>'+
+      '<input type="range" min="0" max="0.95" step="0.05" data-edge="'+i+'" value="'+state.edges[i]+'">'+
+      '<span class="w" id="ew-'+i+'">'+(+state.edges[i]).toFixed(2)+'</span>';
+    el.appendChild(row);});
+  el.querySelectorAll('[data-edge]').forEach(s=>s.addEventListener('input',()=>{const i=+s.dataset.edge;
+    state.edges[i]=+s.value;document.getElementById('ew-'+i).textContent=(+s.value).toFixed(2);go();save();}));
+}
+
+function setScenario(s){state.scenario=s;document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.s===s));go();save();}
+document.getElementById('seg').addEventListener('click',e=>{const b=e.target.closest('button');if(b)setScenario(b.dataset.s);});
+function bindSlider(id,valId,key,fmt){const el=document.getElementById(id),v=document.getElementById(valId);
+  el.addEventListener('input',()=>{state[key]=+el.value;v.textContent=fmt(+el.value);go();save();});}
+bindSlider('dd','ddval','dd',x=>x.toFixed(2));
+bindSlider('draw','drawval','draw',x=>x.toFixed(1));
+bindSlider('cushion','cushionval','cushion',x=>x.toFixed(2));
+bindSlider('fb','fbval','fb',x=>x.toFixed(1)+'×');
+document.getElementById('rerun').addEventListener('click',()=>go());
+document.getElementById('sweep').addEventListener('click',()=>{const b=document.getElementById('sweep');b.textContent='computing…';setTimeout(()=>{runSweep();b.textContent='Re-run sweep';},30);});
+document.getElementById('reset').addEventListener('click',()=>{defaults();syncInputs();setScenario('fragile');});
+
+let goT;function go(){clearTimeout(goT);goT=setTimeout(()=>render(runSim()),120);}
+function syncInputs(){
+  document.getElementById('dd').value=state.dd;document.getElementById('ddval').textContent=(+state.dd).toFixed(2);
+  document.getElementById('draw').value=state.draw;document.getElementById('drawval').textContent=(+state.draw).toFixed(1);
+  document.getElementById('cushion').value=state.cushion;document.getElementById('cushionval').textContent=(+state.cushion).toFixed(2);
+  document.getElementById('fb').value=state.fb;document.getElementById('fbval').textContent=(+state.fb).toFixed(1)+'×';
+  document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.s===state.scenario));
+  buildNodeRows();buildEdges();
+}
+(function init(){load();syncInputs();render(runSim());})();
+</script>
+<script>/* iframe auto-resize: post height to parent so the host page can size the frame */
+(function(){function postH(){try{parent.postMessage({oilwatchToolHeight:document.documentElement.scrollHeight},'*');}catch(e){}}
+window.addEventListener('load',postH);window.addEventListener('resize',postH);
+if(window.ResizeObserver){new ResizeObserver(postH).observe(document.body);}
+setTimeout(postH,300);setTimeout(postH,1200);})();</script>
+</body>
+</html>

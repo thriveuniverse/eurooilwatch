@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OilWatch — Systemic Fragility Monitor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0d10; --panel:#11161b; --panel2:#0d1217; --line:#1d262d;
+    --ink:#e7eef3; --muted:#76858f; --faint:#4a565e;
+    --accent:#2dd4bf; --accent-dim:#1b7a70;
+    --low:#2dd4bf; --elevated:#d8c24a; --high:#e0852e; --critical:#e8483c;
+    --grid:rgba(255,255,255,0.022);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:'IBM Plex Mono',monospace; font-size:14px; line-height:1.5;
+    background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+    background-size:34px 34px;
+    min-height:100vh; padding:clamp(14px,3vw,40px);
+  }
+  .wrap{max-width:1080px;margin:0 auto}
+
+  /* masthead */
+  .eyebrow{font-size:11px;letter-spacing:.42em;color:var(--accent);text-transform:uppercase;font-weight:600}
+  h1{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(26px,5vw,44px);letter-spacing:-.01em;line-height:1.02;margin:6px 0 4px}
+  .sub{color:var(--muted);font-size:13px;max-width:60ch}
+  .meta-row{display:flex;flex-wrap:wrap;gap:18px;align-items:baseline;margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+  .meta{font-size:11px;color:var(--muted);letter-spacing:.04em}
+  .meta b{color:var(--ink);font-weight:600}
+  .meta .accent{color:var(--accent)}
+
+  /* master variable */
+  .master{margin:22px 0;border:1px solid var(--line);background:linear-gradient(180deg,var(--panel),var(--panel2));border-radius:4px;padding:16px 18px}
+  .master .lab{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  .master .lab b{color:var(--accent);font-weight:600}
+  .seg{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+  .seg button{
+    flex:1;min-width:120px;cursor:pointer;font-family:inherit;font-size:12.5px;letter-spacing:.03em;
+    background:transparent;color:var(--muted);border:1px solid var(--line);border-radius:3px;
+    padding:11px 10px;transition:all .18s ease;font-weight:500
+  }
+  .seg button:hover{border-color:var(--accent-dim);color:var(--ink)}
+  .seg button.on{background:var(--accent);color:#04100e;border-color:var(--accent);font-weight:600}
+  .seg button .mul{display:block;font-size:10px;opacity:.7;margin-top:3px;letter-spacing:.02em}
+  .master .note{font-size:11px;color:var(--faint);margin-top:11px;line-height:1.45}
+
+  /* stress gauge */
+  .gauge{display:flex;gap:16px;align-items:stretch;margin:20px 0;flex-wrap:wrap}
+  .gauge .box{border:1px solid var(--line);border-radius:4px;background:var(--panel2);padding:15px 17px;flex:1;min-width:200px}
+  .gauge .k{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .gauge .v{font-family:'Syne',sans-serif;font-weight:800;font-size:34px;line-height:1;margin-top:8px}
+  .gauge .v small{font-size:15px;color:var(--faint);font-weight:600}
+  .gauge .topname{font-size:12.5px;color:var(--ink);margin-top:7px;line-height:1.3}
+  .stressbar{height:5px;border-radius:3px;background:var(--line);margin-top:11px;overflow:hidden}
+  .stressbar i{display:block;height:100%;border-radius:3px;transition:width .4s ease,background .4s ease}
+
+  /* column legend (desktop) */
+  .colhead{display:none}
+
+  /* node cards */
+  #nodes{display:flex;flex-direction:column;gap:10px}
+  .node{
+    border:1px solid var(--line);border-radius:4px;background:var(--panel);
+    padding:15px 16px;position:relative;overflow:hidden;
+    opacity:0;transform:translateY(8px);animation:rise .5s ease forwards
+  }
+  @keyframes rise{to{opacity:1;transform:none}}
+  .node::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--sevcol,var(--line));transition:background .35s}
+  .ntop{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
+  .rank{font-family:'Syne',sans-serif;font-weight:800;font-size:20px;color:var(--faint);min-width:30px}
+  .nbody{flex:1}
+  .nname{font-family:'Syne',sans-serif;font-weight:700;font-size:16px;letter-spacing:-.005em;line-height:1.15}
+  .nmech{color:var(--muted);font-size:12px;margin-top:4px;line-height:1.4}
+  .sens{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;padding:2px 7px;border-radius:99px;border:1px solid var(--line);color:var(--muted);white-space:nowrap;align-self:flex-start;margin-top:3px}
+  .sens.high{color:var(--high);border-color:rgba(224,133,46,.4)}
+  .sens.moderate{color:var(--elevated);border-color:rgba(216,194,74,.35)}
+  .sens.low{color:var(--low);border-color:rgba(45,212,191,.3)}
+
+  .scorebox{text-align:right;min-width:78px}
+  .score{font-family:'Syne',sans-serif;font-weight:800;font-size:30px;line-height:1;color:var(--sevcol,var(--ink))}
+  .scorelab{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-top:2px}
+
+  .hbar{height:5px;border-radius:3px;background:var(--line);margin:13px 0 14px;overflow:hidden}
+  .hbar i{display:block;height:100%;border-radius:3px;background:var(--sevcol,var(--accent));transition:width .35s ease,background .35s ease}
+
+  .controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+  .ctl label{font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:5px}
+  .ctl .inrow{display:flex;align-items:baseline;gap:7px}
+  input[type=number]{
+    width:66px;background:var(--panel2);border:1px solid var(--line);color:var(--ink);
+    font-family:inherit;font-size:15px;font-weight:600;padding:6px 8px;border-radius:3px;text-align:right
+  }
+  input[type=number]:focus{outline:none;border-color:var(--accent)}
+  .adj{font-size:11px;color:var(--muted)}
+  .adj b{color:var(--accent);font-weight:600}
+  .adj.same{visibility:hidden}
+  textarea{
+    width:100%;background:var(--panel2);border:1px solid var(--line);color:var(--ink);
+    font-family:inherit;font-size:11.5px;line-height:1.4;padding:7px 9px;border-radius:3px;resize:vertical;min-height:46px
+  }
+  textarea:focus{outline:none;border-color:var(--accent)}
+  textarea.reading{min-height:40px;color:var(--accent)}
+  textarea.reading::placeholder{color:var(--faint)}
+  .indi{grid-column:1/-1}
+  .read{grid-column:1/-1}
+
+  /* footer */
+  footer{margin-top:26px;border-top:1px solid var(--line);padding-top:16px}
+  .methods{font-size:11px;color:var(--muted);line-height:1.6}
+  .methods h3{font-family:'Syne',sans-serif;font-size:12px;letter-spacing:.04em;color:var(--ink);text-transform:uppercase;margin-bottom:7px;font-weight:700}
+  .methods b{color:var(--ink);font-weight:600}
+  .anchor{display:flex;gap:9px;flex-wrap:wrap;margin-top:8px}
+  .anchor span{font-size:10.5px;border:1px solid var(--line);border-radius:3px;padding:3px 8px;color:var(--muted)}
+  .actions{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;align-items:center}
+  .actions button{font-family:inherit;font-size:11.5px;letter-spacing:.05em;cursor:pointer;background:transparent;border:1px solid var(--line);color:var(--muted);padding:9px 15px;border-radius:3px;transition:all .18s}
+  .actions button:hover{border-color:var(--critical);color:var(--critical)}
+  .saved{font-size:10.5px;color:var(--faint);letter-spacing:.04em}
+  .saved.flash{color:var(--accent);transition:color .2s}
+
+  @media(min-width:760px){
+    .controls{grid-template-columns:120px 110px 1fr 1fr}
+    .indi,.read{grid-column:auto}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">OilWatch Intelligence</div>
+    <h1>Systemic Fragility Monitor</h1>
+    <p class="sub">Node-level failure-mode model for the global oil supply system. Probabilities are subjective and correlated through the master variable — a reasoning scaffold, not a forecast.</p>
+    <div class="meta-row">
+      <span class="meta">HORIZON · <b>12 months</b></span>
+      <span class="meta">SCORE · <b>P(adj) × Impact</b>, 0–10</span>
+      <span class="meta">RANK · <span class="accent">expected harm, descending</span></span>
+      <span class="meta">UPDATED · <b id="stamp">—</b></span>
+    </div>
+  </header>
+
+  <section class="master">
+    <div class="lab">Master variable · <b>Ceasefire state</b></div>
+    <div class="seg" id="seg">
+      <button data-s="holds">Holds<span class="mul">war nodes ×0.45</span></button>
+      <button data-s="fragile">Fragile · current<span class="mul">baseline ×1.0</span></button>
+      <button data-s="collapsed">Collapsed<span class="mul">war nodes ×1.85</span></button>
+    </div>
+    <p class="note">Flipping this re-prices every war-conditional node by its sensitivity and re-ranks the board. This is where the correlations live: on the “collapsed” branch the war-driven nodes move together, which is exactly why their probabilities must never be summed.</p>
+  </section>
+
+  <section class="gauge">
+    <div class="box">
+      <div class="k">System stress index</div>
+      <div class="v"><span id="stress">—</span><small>/10</small></div>
+      <div class="stressbar"><i id="stressbar"></i></div>
+    </div>
+    <div class="box">
+      <div class="k">Highest expected-harm node</div>
+      <div class="v" style="font-size:20px"><span id="topscore">—</span><small>/10</small></div>
+      <div class="topname" id="topname">—</div>
+    </div>
+  </section>
+
+  <div id="nodes"></div>
+
+  <footer>
+    <div class="methods">
+      <h3>Methodology</h3>
+      <b>Score</b> = scenario-adjusted probability × impact, normalised 0–10. <b>Adjusted probability</b> = your base estimate (read as the “fragile / current” state) scaled by the master-variable multiplier for that node’s war-sensitivity, capped at 95%. Bars and the rail colour shade by severity. The <b>stress index</b> is the mean of the top three scores — a deliberately blunt heuristic, since the nodes are correlated and a true joint model would need a dependency structure.
+      <div class="anchor">
+        <span><b style="color:var(--critical)">9–10</b> major-economy diesel allocation / multi-year route loss</span>
+        <span><b style="color:var(--high)">7–8</b> sustained regional shortage / key route down</span>
+        <span><b style="color:var(--elevated)">5–6</b> extended deficit, sharp volatility, manageable</span>
+        <span><b style="color:var(--low)">1–4</b> localised or temporary disruption</span>
+      </div>
+    </div>
+    <div class="actions">
+      <button id="reset">Reset to defaults</button>
+      <span class="saved" id="saved">edits persist automatically</span>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+const KEY='oilwatch-fragility-v1';
+
+const DEFAULTS=[
+  {id:'recovery',name:"Recovery doesn't arrive on schedule",mech:"The V-shaped rebound fails — reservoir, infrastructure and tanker lags extend the deficit past consensus.",baseProb:65,impact:6,sens:'moderate',indicator:"ME production ramp vs IEA schedule; rig reactivation counts.",reading:''},
+  {id:'diesel',name:"Regional diesel / jet crunch",mech:"An import-dependent market tips into shortage — products are tighter than crude. US West Coast is the canary.",baseProb:48,impact:6,sens:'moderate',indicator:"Distillate cracks & days-of-cover (US West Coast, Europe); LA jet differential.",reading:''},
+  {id:'houthi',name:"Houthi strike on Red Sea / Yanbu",mech:"The bypass valve is chilled — removes the route holding prices off parabolic. The trip-wire.",baseProb:38,impact:8,sens:'high',indicator:"First confirmed Houthi engagement of a Red Sea merchant vessel; Yanbu throughput dip.",reading:''},
+  {id:'compound',name:"Compound second shock on thin buffers",mech:"An ordinary disruption (Gulf hurricane, Russian export hit) isn't absorbed because no slack remains.",baseProb:32,impact:7,sens:'low',indicator:"NOAA tracks into US Gulf refining; Russian Baltic/Black Sea volumes; OECD stock level.",reading:''},
+  {id:'attrition',name:"Petroline attrition",mech:"Repeated pump-station hits keep the bypass degraded — days to repair each, but the margin stays thin.",baseProb:55,impact:3,sens:'high',indicator:"SPA / Aramco outage notices; Yanbu loadings.",reading:''},
+  {id:'allocation',name:"Buffer floor breached — diesel allocation",mech:"A major economy crosses from price rationing into physical allocation. The endpoint — downstream of the rest.",baseProb:20,impact:10,sens:'moderate',indicator:"OECD commercial stocks vs ~1.1 Gb drawable floor; global draw rate (mb/d).",reading:''},
+  {id:'abqaiq',name:"Severe Abqaiq strike",mech:"Both export routes killed at the inlet — multi-year stabilisation-train repair under fire. The fat tail.",baseProb:15,impact:10,sens:'high',indicator:"Drone/missile activity over Eastern Province; Abqaiq strike reports; stabilisation-train status.",reading:''},
+  {id:'insurance',name:"Insurance / financial seizure",mech:"War-risk premiums freeze flows independent of physical capacity. An amplifier more than a trigger.",baseProb:30,impact:7,sens:'high',indicator:"War-risk premium (% of hull); insurer suspension notices; Gulf tanker fixtures.",reading:''}
+];
+
+const MULT={
+  holds:    {high:0.45,moderate:0.7, low:0.9 },
+  fragile:  {high:1.0, moderate:1.0, low:1.0 },
+  collapsed:{high:1.85,moderate:1.35,low:1.1 }
+};
+
+let state={scenario:'fragile',nodes:DEFAULTS.map(n=>({...n}))};
+
+/* ---- persistence (localStorage; graceful fallback) ---- */
+function load(){
+  try{
+    const raw=localStorage.getItem(KEY);
+    if(raw){const s=JSON.parse(raw);
+      state.scenario=s.scenario||'fragile';
+      state.nodes=DEFAULTS.map(d=>{const sv=(s.nodes||[]).find(x=>x.id===d.id)||{};
+        return {...d,baseProb:sv.baseProb??d.baseProb,impact:sv.impact??d.impact,indicator:sv.indicator??d.indicator,reading:sv.reading??d.reading};});
+    }
+  }catch(e){/* no saved state or storage unavailable — use defaults */}
+}
+let saveT;
+function save(){
+  flashSaved();
+  clearTimeout(saveT);
+  saveT=setTimeout(()=>{
+    try{
+      const slim={scenario:state.scenario,nodes:state.nodes.map(n=>({id:n.id,baseProb:n.baseProb,impact:n.impact,indicator:n.indicator,reading:n.reading}))};
+      localStorage.setItem(KEY,JSON.stringify(slim));
+    }catch(e){/* in-memory only */}
+  },400);
+}
+function flashSaved(){const el=document.getElementById('saved');el.textContent='saving…';el.classList.add('flash');
+  setTimeout(()=>{el.textContent='saved · '+new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});},420);}
+
+/* ---- model ---- */
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+function adjProb(n){return clamp(Math.round(n.baseProb*MULT[state.scenario][n.sens]),0,95);}
+function score(n){return adjProb(n)/100*n.impact;} // 0–10
+function sevColor(s){return s>=6?'var(--critical)':s>=4?'var(--high)':s>=2?'var(--elevated)':'var(--low)';}
+
+/* ---- render ---- */
+const nodesEl=document.getElementById('nodes');
+function buildCards(){
+  nodesEl.innerHTML='';
+  state.nodes.forEach((n,i)=>{
+    const c=document.createElement('div');
+    c.className='node';c.id='n-'+n.id;c.style.animationDelay=(i*55)+'ms';
+    c.innerHTML=`
+      <div class="ntop">
+        <div class="rank" data-rank></div>
+        <div class="nbody">
+          <div class="nname">${n.name}</div>
+          <div class="nmech">${n.mech}</div>
+        </div>
+        <span class="sens ${n.sens}">${n.sens} war-sens</span>
+        <div class="scorebox">
+          <div class="score" data-score>—</div>
+          <div class="scorelab">exp. harm</div>
+        </div>
+      </div>
+      <div class="hbar"><i data-bar></i></div>
+      <div class="controls">
+        <div class="ctl">
+          <label>Base prob (%)</label>
+          <div class="inrow">
+            <input type="number" min="0" max="100" step="1" data-f="baseProb" value="${n.baseProb}">
+          </div>
+          <div class="adj" data-adj></div>
+        </div>
+        <div class="ctl">
+          <label>Impact (1–10)</label>
+          <input type="number" min="1" max="10" step="1" data-f="impact" value="${n.impact}">
+        </div>
+        <div class="ctl indi">
+          <label>Leading indicator</label>
+          <textarea data-f="indicator">${n.indicator}</textarea>
+        </div>
+        <div class="ctl read">
+          <label>Latest reading / log</label>
+          <textarea class="reading" data-f="reading" placeholder="log the current data point…">${n.reading}</textarea>
+        </div>
+      </div>`;
+    // wire inputs
+    c.querySelectorAll('[data-f]').forEach(inp=>{
+      const f=inp.getAttribute('data-f');
+      const ev=(f==='baseProb'||f==='impact')?'input':'input';
+      inp.addEventListener(ev,()=>{
+        let v=inp.value;
+        if(f==='baseProb'){v=clamp(parseFloat(v)||0,0,100);}
+        else if(f==='impact'){v=clamp(parseFloat(v)||0,1,10);}
+        n[f]=v;
+        recompute(); save();
+      });
+      if(f==='baseProb'||f==='impact'){
+        inp.addEventListener('blur',()=>{inp.value=n[f];recompute();});
+      }
+    });
+    nodesEl.appendChild(c);
+  });
+  recompute();
+}
+
+function recompute(){
+  // rank by score desc
+  const ranked=[...state.nodes].sort((a,b)=>score(b)-score(a));
+  ranked.forEach((n,idx)=>{
+    const c=document.getElementById('n-'+n.id);
+    c.style.order=idx;
+    const s=score(n), col=sevColor(s);
+    c.style.setProperty('--sevcol',col);
+    c.querySelector('[data-rank]').textContent=String(idx+1).padStart(2,'0');
+    c.querySelector('[data-score]').textContent=s.toFixed(1);
+    c.querySelector('[data-bar]').style.width=(s/10*100)+'%';
+    const a=adjProb(n);
+    const adjEl=c.querySelector('[data-adj]');
+    if(a===n.baseProb){adjEl.classList.add('same');adjEl.innerHTML='';}
+    else{adjEl.classList.remove('same');adjEl.innerHTML=`scenario-adj → <b>${a}%</b>`;}
+  });
+  // stress index = mean of top 3
+  const top3=ranked.slice(0,3).map(score);
+  const stress=top3.reduce((x,y)=>x+y,0)/top3.length;
+  document.getElementById('stress').textContent=stress.toFixed(1);
+  const sb=document.getElementById('stressbar');
+  sb.style.width=(stress/10*100)+'%';sb.style.background=sevColor(stress);
+  document.getElementById('topscore').textContent=score(ranked[0]).toFixed(1);
+  document.getElementById('topscore').style.color=sevColor(score(ranked[0]));
+  document.getElementById('topname').textContent=ranked[0].name;
+  document.getElementById('stamp').textContent=new Date().toLocaleDateString([],{day:'2-digit',month:'short',year:'numeric'});
+}
+
+/* scenario toggle */
+function setScenario(s){
+  state.scenario=s;
+  document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.s===s));
+  recompute(); save();
+}
+document.getElementById('seg').addEventListener('click',e=>{
+  const b=e.target.closest('button'); if(!b)return; setScenario(b.dataset.s);
+});
+
+document.getElementById('reset').addEventListener('click',()=>{
+  state={scenario:'fragile',nodes:DEFAULTS.map(n=>({...n}))};
+  setScenario('fragile'); buildCards();
+});
+
+(function init(){
+  load();
+  document.querySelectorAll('#seg button').forEach(b=>b.classList.toggle('on',b.dataset.s===state.scenario));
+  buildCards();
+})();
+</script>
+<script>/* iframe auto-resize: post height to parent so the host page can size the frame */
+(function(){function postH(){try{parent.postMessage({oilwatchToolHeight:document.documentElement.scrollHeight},'*');}catch(e){}}
+window.addEventListener('load',postH);window.addEventListener('resize',postH);
+if(window.ResizeObserver){new ResizeObserver(postH).observe(document.body);}
+setTimeout(postH,300);setTimeout(postH,1200);})();</script>
+</body>
+</html>

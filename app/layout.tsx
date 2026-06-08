@@ -79,6 +79,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/signals" className="hover:text-white transition">Signals</a>
               <a href="/analysis" className="hover:text-white transition">Analysis</a>
               <a href="/news" className="hover:text-white transition">News</a>
+              <a href="/doom-loop" className="hover:text-white transition">Doom Loop</a>
               <a href="/methodology" className="hover:text-white transition">Methodology</a>
               <a href="/about" className="hover:text-white transition">About</a>
             </nav>
