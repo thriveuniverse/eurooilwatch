@@ -17,6 +17,8 @@ const POPULAR = [
   { country: 'FR' as Country, code: '13', ville: 'Marseille', flag: '🇫🇷', filterCity: 'Marseille' },
   { country: 'IT' as Country, code: 'NA', ville: 'Napoli',   flag: '🇮🇹', filterCity: 'Napoli' },
   { country: 'FR' as Country, code: '69', ville: 'Lyon',     flag: '🇫🇷', filterCity: 'Lyon' },
+  { country: 'PT' as Country, code: 'LISBOA', ville: 'Lisboa', flag: '🇵🇹', filterCity: 'Lisboa' },
+  { country: 'PT' as Country, code: 'PORTO',  ville: 'Porto',  flag: '🇵🇹', filterCity: 'Porto' },
 ];
 
 // City tuple shipped to the client: [ville, country, areaCode, stationCount]
@@ -158,13 +160,13 @@ export default function FuelPriceSearch({ cities }: Props) {
       <div className="flex flex-col lg:flex-row lg:items-center gap-5">
         <div className="flex-1 min-w-0">
           <p className="text-[10px] font-mono font-semibold tracking-widest text-amber-400/90 uppercase">
-            Live station prices · <strong className="text-white">🇫🇷 France</strong> + <strong className="text-white">🇮🇹 Italy</strong> + <strong className="text-white">🇪🇸 Spain</strong>
+            Live station prices · <strong className="text-white">🇫🇷 France</strong> + <strong className="text-white">🇮🇹 Italy</strong> + <strong className="text-white">🇪🇸 Spain</strong> + <strong className="text-white">🇵🇹 Portugal</strong>
           </p>
           <h2 className="mt-1.5 text-xl sm:text-2xl font-bold text-white leading-tight">
             Find the cheapest fuel in your area
           </h2>
           <p className="mt-1.5 text-sm text-gray-300 leading-relaxed">
-            Over 40,000 stations across <strong className="text-white">🇫🇷 France</strong>, <strong className="text-white">🇮🇹 Italy</strong>, and <strong className="text-white">🇪🇸 Spain</strong>, refreshed daily. Type a city or postal code.
+            Over 45,000 stations across <strong className="text-white">🇫🇷 France</strong>, <strong className="text-white">🇮🇹 Italy</strong>, <strong className="text-white">🇪🇸 Spain</strong>, and <strong className="text-white">🇵🇹 Portugal</strong>, refreshed daily. Type a city or postal code.
           </p>
         </div>
 
@@ -265,6 +267,9 @@ export default function FuelPriceSearch({ cities }: Props) {
           </a>
           <a href="/country/es" className="text-[11px] px-2.5 py-1 rounded-full border border-oil-700 text-oil-300 hover:border-amber-600 hover:text-white transition">
             🇪🇸 All provincias →
+          </a>
+          <a href="/country/pt" className="text-[11px] px-2.5 py-1 rounded-full border border-oil-700 text-oil-300 hover:border-amber-600 hover:text-white transition">
+            🇵🇹 All distritos →
           </a>
         </div>
       </div>
