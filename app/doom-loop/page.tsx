@@ -71,7 +71,7 @@ export default function DoomLoopPage() {
           re-priced by the ceasefire master-variable and ranked by expected harm. The on-ramp: scannable in
           seconds.
         </p>
-        <ToolFrame src="/fragility-monitor.html" title="Systemic Fragility Monitor" minHeight={1500} />
+        <ToolFrame src="/fragility-monitor.html" title="Systemic Fragility Monitor" minHeight={600} />
       </section>
 
       {/* Tool 2 — Doom Loop Engine */}
@@ -83,7 +83,7 @@ export default function DoomLoopPage() {
           trials on every change and reports the probability of allocation, the time-to-allocation, and — via
           the sensitivity sweep — which assumptions actually move the answer.
         </p>
-        <ToolFrame src="/doom-loop-engine.html" title="The Doom Loop Engine" minHeight={2200} />
+        <ToolFrame src="/doom-loop-engine.html" title="The Doom Loop Engine" minHeight={900} />
       </section>
 
       {/* Callout — two numbers do the heavy lifting */}
