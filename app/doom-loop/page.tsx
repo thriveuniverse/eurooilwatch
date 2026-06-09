@@ -39,7 +39,7 @@ export default function DoomLoopPage() {
         </div>
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">The Doom Loop Engine</h1>
         <p className="text-sm text-gray-400 leading-relaxed max-w-3xl">
-          Two interactive instruments for thinking about how an oil-supply shock could compound. They are
+          Three interactive instruments for thinking about how an oil-supply shock could compound. They are
           reasoning scaffolds, not forecasts: every probability, edge and buffer figure is a subjective input
           you can change. The tools propagate your assumptions — they do not validate them. Their value is that
           a sceptic can sit down, move the sliders, and watch the catastrophe either build or dissolve under
@@ -50,16 +50,17 @@ export default function DoomLoopPage() {
       {/* Two tools, two questions */}
       <section className="rounded-lg border border-oil-800 bg-oil-900/30 px-5 py-4">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-400 uppercase mb-2">
-          Two tools, two questions
+          Three tools, three questions
         </h2>
         <p className="text-sm text-gray-400 leading-relaxed">
-          The two instruments answer <span className="text-gray-200">different</span> questions and can
+          The three instruments answer <span className="text-gray-200">different</span> questions and can
           legitimately disagree. The <span className="text-oil-300">Fragility Monitor</span> ranks the
           individual failure modes by expected harm — <em>what to worry about most right now</em>. The{' '}
           <span className="text-oil-300">Doom Loop Engine</span> lets those failure modes interact and draw down
-          a finite buffer — <em>whether they compound into allocation, and when</em>. A risk can top the
-          first while barely moving the second; that is the difference between a big standalone threat and a
-          big <em>systemic</em> one, not a contradiction.
+          a finite buffer — <em>whether they compound into allocation, and when</em>. The{' '}
+          <span className="text-oil-300">Vulnerability Tiering</span> ranks which countries a sustained shock
+          pushes toward collapse — <em>where, and in what order</em>. A risk can top one and barely move
+          another; that is the difference between a big standalone threat and a big <em>systemic</em> one.
         </p>
       </section>
 
@@ -113,6 +114,18 @@ export default function DoomLoopPage() {
         <blockquote className="border-l-2 border-oil-500 pl-4 text-sm italic text-oil-200">
           The vulnerability was never in the wiring — it&apos;s in the cushion.
         </blockquote>
+      </section>
+
+      {/* Tool 3 — Vulnerability Tiering */}
+      <section className="space-y-3">
+        <h2 className="text-lg font-bold text-white">3 · Vulnerability Tiering</h2>
+        <p className="text-sm text-gray-400 leading-relaxed max-w-3xl">
+          Where, and in what order. The same shock produces collapse in one country and a survivable recession
+          in its neighbour — decided by three stacked multipliers: oil-import exposure, cereal-import dependence
+          (the diesel→food channel), and FX reserves (coping), combined conjunctively and ranked. Reserves are a
+          live World Bank pull; cereal and oil are sourced seeds. A susceptibility map, not a forecast.
+        </p>
+        <ToolFrame src="/vulnerability-tiering.html" title="Vulnerability Tiering" minHeight={900} />
       </section>
 
       <p className="text-sm text-gray-500">
