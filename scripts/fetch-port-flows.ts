@@ -84,6 +84,7 @@ function build(p: { id: string; key: string; name: string; cc: string; tags: str
     key: p.key, name: p.name, cc: p.cc, tags: p.tags, portid: p.id,
     latestDate: isoDate(rows[0].date),
     imp7, exp7, total7,
+    baseImp: base.imp, baseExp: base.exp,
     baseline2023Total: baseTotal,
     pctTotal: pct(total7, baseTotal),
     dir, series,

@@ -13,6 +13,7 @@ import WarRiskWatchPanel from '@/components/WarRiskWatchPanel';
 import ChokepointsMap from '@/components/ChokepointsMap';
 import ChokepointTransitPanel, { type PortwatchData } from '@/components/ChokepointTransitPanel';
 import PortFlowPanel, { type PortFlowData } from '@/components/PortFlowPanel';
+import EuropeBarrelTracker from '@/components/EuropeBarrelTracker';
 import TankerActivity from '@/components/TankerActivity';
 import { maradOverrideFor } from '@/lib/marad-risk';
 
@@ -333,6 +334,9 @@ export default async function SupplyPage() {
 
       {/* Port oil-flow monitor — IMF PortWatch daily tanker volumes vs baseline */}
       {portFlows && <PortFlowPanel data={portFlows} site="euro" />}
+
+      {/* Europe Replacement Barrel Tracker — EuroOilWatch only */}
+      {portFlows && <EuropeBarrelTracker data={portFlows} />}
 
       {/* Tanker activity — Phase 1: live counts, baselines accumulating */}
       <TankerActivity />
