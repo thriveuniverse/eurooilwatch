@@ -96,6 +96,10 @@ jobs:
         run: npm run fetch:portwatch
         continue-on-error: true
 
+      - name: Fetch IMF PortWatch port oil-flow data
+        run: npm run fetch:port-flows
+        continue-on-error: true
+
       - name: Fetch refinery outages (trade-press RSS)
         run: npm run fetch:refineries
         continue-on-error: true
