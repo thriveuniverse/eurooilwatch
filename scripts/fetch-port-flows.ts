@@ -16,16 +16,36 @@ const UA = 'OilWatch fetch-port-flows.ts';
 const BASELINE_YEAR = 2023;
 
 // Major crude/product ports with good AIS coverage (Saudi terminals read ~0 in
-// PortWatch and are deliberately excluded). cc = flag/region tag.
+// PortWatch and are deliberately excluded). cc = flag; tags drive per-site display:
+// 'uk'|'euro'|'americas' = regional focus for that site; 'global' = shown on all.
 const PORTS = [
-  { id: 'port1114', key: 'rotterdam', name: 'Rotterdam', cc: 'NL' },
-  { id: 'port57', key: 'antwerp', name: 'Antwerp', cc: 'BE' },
-  { id: 'port264', key: 'corpus', name: 'Corpus Christi', cc: 'US' },
-  { id: 'port664', key: 'la-lb', name: 'Los Angeles–Long Beach', cc: 'US' },
-  { id: 'port373', key: 'galveston', name: 'Galveston', cc: 'US' },
-  { id: 'port833', key: 'novorossiysk', name: 'Novorossiysk', cc: 'RU' },
-  { id: 'port362', key: 'fujairah', name: 'Fujairah', cc: 'AE' },
-  { id: 'port1160', key: 'santos', name: 'Santos', cc: 'BR' },
+  // NW Europe (UK + Euro suppliers) + global
+  { id: 'port1114', key: 'rotterdam', name: 'Rotterdam', cc: 'NL', tags: ['uk', 'euro', 'global'] },
+  { id: 'port57', key: 'antwerp', name: 'Antwerp', cc: 'BE', tags: ['uk', 'euro'] },
+  // UK terminals
+  { id: 'port342', key: 'fawley', name: 'Fawley', cc: 'GB', tags: ['uk'] },
+  { id: 'port740', key: 'milford-haven', name: 'Milford Haven', cc: 'GB', tags: ['uk'] },
+  { id: 'port493', key: 'immingham', name: 'Immingham', cc: 'GB', tags: ['uk'] },
+  { id: 'port415', key: 'grangemouth', name: 'Grangemouth', cc: 'GB', tags: ['uk'] },
+  // Euro / Med / Baltic
+  { id: 'port1318', key: 'trieste', name: 'Trieste', cc: 'IT', tags: ['euro'] },
+  { id: 'port80', key: 'augusta', name: 'Augusta', cc: 'IT', tags: ['euro'] },
+  { id: 'port380', key: 'gdansk', name: 'Gdansk', cc: 'PL', tags: ['euro'] },
+  { id: 'port1200', key: 'sines', name: 'Sines', cc: 'PT', tags: ['euro'] },
+  { id: 'port31', key: 'algeciras', name: 'Algeciras', cc: 'ES', tags: ['euro'] },
+  { id: 'port908', key: 'piraeus', name: 'Piraeus', cc: 'GR', tags: ['euro'] },
+  { id: 'port1020', key: 'primorsk', name: 'Primorsk', cc: 'RU', tags: ['euro'] },
+  // Russian export hub (Euro/Med relevance + global narrative)
+  { id: 'port833', key: 'novorossiysk', name: 'Novorossiysk', cc: 'RU', tags: ['euro', 'global'] },
+  // Americas
+  { id: 'port481', key: 'houston', name: 'Houston', cc: 'US', tags: ['americas', 'global'] },
+  { id: 'port264', key: 'corpus', name: 'Corpus Christi', cc: 'US', tags: ['americas'] },
+  { id: 'port373', key: 'galveston', name: 'Galveston', cc: 'US', tags: ['americas'] },
+  { id: 'port664', key: 'la-lb', name: 'Los Angeles–Long Beach', cc: 'US', tags: ['americas'] },
+  { id: 'port1160', key: 'santos', name: 'Santos', cc: 'BR', tags: ['americas'] },
+  { id: 'port218', key: 'cartagena', name: 'Cartagena', cc: 'CO', tags: ['americas'] },
+  // Gulf hub — global narrative, shown everywhere
+  { id: 'port362', key: 'fujairah', name: 'Fujairah', cc: 'AE', tags: ['global'] },
 ];
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -50,7 +70,7 @@ const isoDate = (ms: number) => new Date(ms).toISOString().slice(0, 10);
 const avg = (xs: number[]) => (xs.length ? +(xs.reduce((a, b) => a + b, 0) / xs.length).toFixed(0) : null);
 const pct = (a: number | null, b: number | null) => (a != null && b && b > 0 ? Math.round((a / b) * 100) : null);
 
-function build(p: { id: string; key: string; name: string; cc: string }, rows: any[], base: { imp: number | null; exp: number | null }) {
+function build(p: { id: string; key: string; name: string; cc: string; tags: string[] }, rows: any[], base: { imp: number | null; exp: number | null }) {
   if (!rows.length) return null;
   rows.sort((a, b) => b.date - a.date);
   const f7 = rows.slice(0, 7);
@@ -61,7 +81,7 @@ function build(p: { id: string; key: string; name: string; cc: string }, rows: a
   const dir = imp7 != null && exp7 != null ? (imp7 > exp7 * 1.25 ? 'import' : exp7 > imp7 * 1.25 ? 'export' : 'balanced') : null;
   const series = rows.slice(0, 90).reverse().map((r) => ({ d: isoDate(r.date), v: r.imp + r.exp }));
   return {
-    key: p.key, name: p.name, cc: p.cc, portid: p.id,
+    key: p.key, name: p.name, cc: p.cc, tags: p.tags, portid: p.id,
     latestDate: isoDate(rows[0].date),
     imp7, exp7, total7,
     baseline2023Total: baseTotal,

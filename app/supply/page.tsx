@@ -331,7 +331,7 @@ export default async function SupplyPage() {
       {portwatch && <ChokepointTransitPanel data={portwatch} />}
 
       {/* Port oil-flow monitor — IMF PortWatch daily tanker volumes vs baseline */}
-      {portFlows && <PortFlowPanel data={portFlows} />}
+      {portFlows && <PortFlowPanel data={portFlows} site="euro" />}
 
       {/* Tanker activity — Phase 1: live counts, baselines accumulating */}
       <TankerActivity />

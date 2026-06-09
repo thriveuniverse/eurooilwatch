@@ -1,10 +1,11 @@
 // Port Oil-Flow Monitor — daily tanker import/export volume at major hubs vs 2023.
 // Data: IMF PortWatch Daily_Ports_Data (AIS estimates) via scripts/fetch-port-flows.ts.
-// Server component — renders from data/port-flows.json passed as prop.
+// Server component. Takes `site` and splits the master roster into a regional focus
+// (ports tagged for this site) + global hubs (shown on all sites).
 
 interface SeriesPt { d: string; v: number }
 interface Port {
-  key: string; name: string; cc: string; portid: string; latestDate: string;
+  key: string; name: string; cc: string; tags: string[]; portid: string; latestDate: string;
   imp7: number | null; exp7: number | null; total7: number | null;
   baseline2023Total: number | null; pctTotal: number | null;
   dir: 'import' | 'export' | 'balanced' | null; series: SeriesPt[];
@@ -13,8 +14,12 @@ export interface PortFlowData {
   asOf: string; source: string; sourceUrl: string; units: string; note: string;
   baselineYear: number; ports: Port[];
 }
+type Site = 'uk' | 'euro' | 'americas';
 
-const FLAG: Record<string, string> = { NL: '🇳🇱', BE: '🇧🇪', US: '🇺🇸', RU: '🇷🇺', AE: '🇦🇪', BR: '🇧🇷' };
+const FLAG: Record<string, string> = {
+  NL: '🇳🇱', BE: '🇧🇪', US: '🇺🇸', RU: '🇷🇺', AE: '🇦🇪', BR: '🇧🇷', GB: '🇬🇧',
+  IT: '🇮🇹', PL: '🇵🇱', PT: '🇵🇹', ES: '🇪🇸', GR: '🇬🇷', CO: '🇨🇴',
+};
 const kt = (t: number | null) => (t == null ? '—' : Math.round(t / 1000).toLocaleString());
 
 function sev(pct: number | null) {
@@ -38,10 +43,35 @@ function Spark({ pts, color }: { pts: number[]; color: string }) {
   );
 }
 
-export default function PortFlowPanel({ data }: { data: PortFlowData }) {
+function Row({ p }: { p: Port }) {
+  const s = sev(p.pctTotal);
+  const dirTag =
+    p.dir === 'export' ? <span className="text-orange-300">net export</span>
+    : p.dir === 'import' ? <span className="text-sky-300">net import</span>
+    : <span className="text-gray-400">balanced</span>;
+  return (
+    <div className="flex items-center gap-3 py-2.5">
+      <span className="text-base shrink-0">{FLAG[p.cc] || '🚢'}</span>
+      <div className="min-w-[150px] flex-1">
+        <div className="text-sm text-white">{p.name}</div>
+        <div className="text-[11px] text-gray-500">↓ {kt(p.imp7)} in · ↑ {kt(p.exp7)} out kt/d · {dirTag}</div>
+      </div>
+      <Spark pts={p.series.map((x) => x.v)} color={s.bar} />
+      <div className="text-right min-w-[88px]">
+        <div className={`text-lg font-bold ${s.txt}`}>{p.pctTotal != null ? `${p.pctTotal}%` : '—'}</div>
+        <div className="text-[10px] text-gray-500 leading-tight">{s.label}</div>
+      </div>
+    </div>
+  );
+}
+
+export default function PortFlowPanel({ data, site }: { data: PortFlowData; site: Site }) {
   if (!data?.ports?.length) return null;
-  const rows = [...data.ports].sort((a, b) => (b.total7 ?? 0) - (a.total7 ?? 0));
-  const latest = rows.map((r) => r.latestDate).sort().at(-1);
+  const byTotal = (a: Port, b: Port) => (b.total7 ?? 0) - (a.total7 ?? 0);
+  const regional = data.ports.filter((p) => p.tags?.includes(site)).sort(byTotal);
+  const global = data.ports.filter((p) => p.tags?.includes('global') && !p.tags?.includes(site)).sort(byTotal);
+  const latest = data.ports.map((r) => r.latestDate).sort().at(-1);
+  const regionLabel = site === 'uk' ? 'UK & NW Europe' : site === 'euro' ? 'Europe, Med & Baltic' : 'Americas';
 
   return (
     <div className="rounded-lg border border-oil-800 bg-oil-900/30 px-5 py-4">
@@ -54,31 +84,18 @@ export default function PortFlowPanel({ data }: { data: PortFlowData }) {
         compares to the 2023 average. Where the barrels are actually going.
       </p>
 
-      <div className="mt-4 divide-y divide-oil-800/70">
-        {rows.map((p) => {
-          const s = sev(p.pctTotal);
-          const dirTag =
-            p.dir === 'export' ? <span className="text-orange-300">net export</span>
-            : p.dir === 'import' ? <span className="text-sky-300">net import</span>
-            : <span className="text-gray-400">balanced</span>;
-          return (
-            <div key={p.key} className="flex items-center gap-3 py-2.5">
-              <span className="text-base shrink-0">{FLAG[p.cc] || '🚢'}</span>
-              <div className="min-w-[150px] flex-1">
-                <div className="text-sm text-white">{p.name}</div>
-                <div className="text-[11px] text-gray-500">
-                  ↓ {kt(p.imp7)} in · ↑ {kt(p.exp7)} out kt/d · {dirTag}
-                </div>
-              </div>
-              <Spark pts={p.series.map((x) => x.v)} color={s.bar} />
-              <div className="text-right min-w-[88px]">
-                <div className={`text-lg font-bold ${s.txt}`}>{p.pctTotal != null ? `${p.pctTotal}%` : '—'}</div>
-                <div className="text-[10px] text-gray-500 leading-tight">{s.label}</div>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      {regional.length > 0 && (
+        <>
+          <h3 className="mt-4 text-[10px] font-mono font-semibold tracking-[0.2em] text-oil-400 uppercase">{regionLabel}</h3>
+          <div className="mt-1 divide-y divide-oil-800/70">{regional.map((p) => <Row key={p.key} p={p} />)}</div>
+        </>
+      )}
+      {global.length > 0 && (
+        <>
+          <h3 className="mt-5 text-[10px] font-mono font-semibold tracking-[0.2em] text-oil-400 uppercase">Global oil hubs</h3>
+          <div className="mt-1 divide-y divide-oil-800/70">{global.map((p) => <Row key={p.key} p={p} />)}</div>
+        </>
+      )}
 
       <p className="mt-3 text-[11px] text-gray-500 leading-relaxed">
         Latest data {latest}. Volumes in thousand tonnes/day (kt/d), trailing 7-day average vs {data.baselineYear}.
