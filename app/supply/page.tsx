@@ -320,7 +320,8 @@ export default async function SupplyPage() {
         <h1 className="mt-2 text-2xl font-bold text-white">Global Oil Supply Routes</h1>
         <p className="mt-2 text-sm text-gray-400 max-w-2xl">
           Status of the key maritime chokepoints and supply routes that affect European fuel security.
-          Updated editorially — not a live tracker.
+          The transit, port-flow and sea-state panels below refresh daily from satellite-AIS and weather feeds; the
+          chokepoint risk assessments further down are maintained editorially.
         </p>
       </div>
 
