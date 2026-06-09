@@ -11,6 +11,7 @@ import AraStocksCard from '@/components/AraStocksCard';
 import SeaStatePanel, { type SeaStateData } from '@/components/SeaStatePanel';
 import WarRiskWatchPanel from '@/components/WarRiskWatchPanel';
 import ChokepointsMap from '@/components/ChokepointsMap';
+import ChokepointTransitPanel, { type PortwatchData } from '@/components/ChokepointTransitPanel';
 import TankerActivity from '@/components/TankerActivity';
 import { maradOverrideFor } from '@/lib/marad-risk';
 
@@ -293,6 +294,12 @@ export default async function SupplyPage() {
     try { return JSON.parse(fs.readFileSync(p, 'utf-8')) as SeaStateData; } catch { return null; }
   })();
 
+  const portwatch = (() => {
+    const p = path.join(process.cwd(), 'data', 'portwatch-chokepoints.json');
+    if (!fs.existsSync(p)) return null;
+    try { return JSON.parse(fs.readFileSync(p, 'utf-8')) as PortwatchData; } catch { return null; }
+  })();
+
   const redEvents    = gdacsEvents.filter(e => e.alertLevel === 'Red');
   const orangeEvents = gdacsEvents.filter(e => e.alertLevel === 'Orange');
   const greenEvents  = gdacsEvents.filter(e => e.alertLevel === 'Green');
@@ -312,6 +319,9 @@ export default async function SupplyPage() {
 
       {/* Chokepoints overview map */}
       <ChokepointsMap />
+
+      {/* Live chokepoint transit monitor — IMF PortWatch daily transits vs baseline */}
+      {portwatch && <ChokepointTransitPanel data={portwatch} />}
 
       {/* Tanker activity — Phase 1: live counts, baselines accumulating */}
       <TankerActivity />
