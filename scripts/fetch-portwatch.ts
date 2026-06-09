@@ -49,21 +49,23 @@ const isoDate = (ms: number) => new Date(ms).toISOString().slice(0, 10);
 const avg = (xs: number[]) => (xs.length ? +(xs.reduce((a, b) => a + b, 0) / xs.length).toFixed(1) : null);
 const pct = (a: number | null, b: number | null) => (a != null && b && b > 0 ? Math.round((a / b) * 100) : null);
 
-function buildChokepoint(cp: { id: string; key: string; name: string }, rows: any[], base: { total: number | null; tanker: number | null }) {
+function buildChokepoint(cp: { id: string; key: string; name: string }, rows: any[], base: { total: number | null; tanker: number | null; captanker: number | null }) {
   if (!rows.length) return null;
   rows.sort((a, b) => b.date - a.date); // newest first
   const first = (n: number) => rows.slice(0, n);
   const avg7 = { total: avg(first(7).map((r) => r.total)), tanker: avg(first(7).map((r) => r.tanker)) };
-  const avg30 = { total: avg(first(30).map((r) => r.total)), tanker: avg(first(30).map((r) => r.tanker)) };
-  const series = rows.slice(0, 90).reverse().map((r) => ({ d: isoDate(r.date), t: r.total, k: r.tanker }));
+  const tankerTonnage7 = avg(first(7).map((r) => r.captanker)); // DWT-weighted, the truer flow proxy
+  const series = rows.slice(0, 90).reverse().map((r) => ({ d: isoDate(r.date), t: r.total, k: r.tanker, c: r.captanker }));
   return {
     key: cp.key, name: cp.name, portid: cp.id,
     latestDate: isoDate(rows[0].date),
     latest: { total: rows[0].total, tanker: rows[0].tanker },
-    avg7, avg30,
+    avg7,
+    tankerTonnage7,
     baseline2023: base,
     pctTotal: pct(avg7.total, base.total),
     pctTanker: pct(avg7.tanker, base.tanker),
+    pctTankerTonnage: pct(tankerTonnage7, base.captanker), // headline: DWT vs 2023
     series,
   };
 }
@@ -76,14 +78,14 @@ async function main() {
   // Query 1: recent daily rows for ALL chokepoints in one call
   const recent = await aget({
     where: `portid IN (${ids}) AND date >= DATE '${cutoff}'`,
-    outFields: 'portid,date,n_total,n_tanker',
+    outFields: 'portid,date,n_total,n_tanker,capacity_tanker',
     orderByFields: 'date DESC',
     resultRecordCount: '2000',
   });
   const byId: Record<string, any[]> = {};
   for (const f of recent.features || []) {
     const a = f.attributes;
-    (byId[a.portid] ||= []).push({ date: a.date, total: a.n_total ?? 0, tanker: a.n_tanker ?? 0 });
+    (byId[a.portid] ||= []).push({ date: a.date, total: a.n_total ?? 0, tanker: a.n_tanker ?? 0, captanker: a.capacity_tanker ?? 0 });
   }
 
   // Query 2: 2023 baseline averages, grouped by chokepoint
@@ -92,21 +94,23 @@ async function main() {
     outStatistics: JSON.stringify([
       { statisticType: 'avg', onStatisticField: 'n_total', outStatisticFieldName: 'a_total' },
       { statisticType: 'avg', onStatisticField: 'n_tanker', outStatisticFieldName: 'a_tanker' },
+      { statisticType: 'avg', onStatisticField: 'capacity_tanker', outStatisticFieldName: 'a_capt' },
     ]),
     groupByFieldsForStatistics: 'portid',
   });
-  const baseById: Record<string, { total: number | null; tanker: number | null }> = {};
+  const baseById: Record<string, { total: number | null; tanker: number | null; captanker: number | null }> = {};
   for (const f of stats.features || []) {
     const a = f.attributes;
     baseById[a.portid] = {
       total: a.a_total != null ? +(+a.a_total).toFixed(1) : null,
       tanker: a.a_tanker != null ? +(+a.a_tanker).toFixed(1) : null,
+      captanker: a.a_capt != null ? +(+a.a_capt).toFixed(0) : null,
     };
   }
 
   const chokepoints = [];
   for (const cp of CHOKEPOINTS) {
-    const r = buildChokepoint(cp, byId[cp.id] || [], baseById[cp.id] || { total: null, tanker: null });
+    const r = buildChokepoint(cp, byId[cp.id] || [], baseById[cp.id] || { total: null, tanker: null, captanker: null });
     if (r) { chokepoints.push(r); console.log(`  ✓ ${cp.name}: ${r.avg7.total}/day total, ${r.avg7.tanker} tanker (${r.pctTotal}% of 2023)`); }
     else console.warn(`  ⚠ ${cp.name}: no recent rows`);
   }
