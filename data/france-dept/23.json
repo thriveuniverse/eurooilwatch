@@ -3,52 +3,52 @@
   "name": "Creuse",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-09T08:26:21.617Z",
+  "asOf": "2026-06-09T19:12:36.490Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 32,
+  "stationCount": 31,
   "fuels": {
     "gazole": {
-      "count": 32,
-      "mean": 2.0476,
-      "median": 2.0195,
+      "count": 31,
+      "mean": 2.0457,
+      "median": 2.019,
       "min": 1.96,
       "max": 2.298
     },
     "sp95": {
       "count": 14,
-      "mean": 2.0219,
+      "mean": 2.0209,
       "median": 1.999,
       "min": 1.984,
       "max": 2.116
     },
     "sp98": {
       "count": 20,
-      "mean": 2.1042,
-      "median": 2.0935,
+      "mean": 2.0987,
+      "median": 2.084,
       "min": 1.989,
       "max": 2.239
     },
     "e10": {
-      "count": 23,
-      "mean": 1.9913,
-      "median": 1.969,
+      "count": 22,
+      "mean": 1.9914,
+      "median": 1.9675,
       "min": 1.888,
       "max": 2.149
     },
     "e85": {
-      "count": 6,
-      "mean": 0.843,
-      "median": 0.852,
+      "count": 5,
+      "mean": 0.8418,
+      "median": 0.855,
       "min": 0.798,
       "max": 0.883
     },
     "gplc": {
       "count": 1,
-      "mean": 1.036,
-      "median": 1.036,
-      "min": 1.036,
-      "max": 1.036
+      "mean": 1.089,
+      "median": 1.089,
+      "min": 1.089,
+      "max": 1.089
     }
   },
   "stations": [
@@ -75,9 +75,9 @@
       "lat": 4594800,
       "lng": 217200,
       "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.006,
-        "sp98": 2.158
+        "gazole": 1.979,
+        "sp95": 1.992,
+        "sp98": 2.046
       }
     },
     {
@@ -313,7 +313,7 @@
       "lat": 4616800,
       "lng": 188800,
       "fuels": {
-        "gazole": 1.999,
+        "gazole": 2.019,
         "sp95": 1.999,
         "sp98": 2.099,
         "e10": 1.966
@@ -418,21 +418,6 @@
       }
     },
     {
-      "id": "23140003",
-      "cp": "23140",
-      "ville": "Parsac",
-      "adresse": "ROUTE NATIONALE 145 - AIRE DE PARSAC",
-      "pop": "R",
-      "lat": 4619615.64503,
-      "lng": 218365.47132,
-      "fuels": {
-        "gazole": 2.105,
-        "e10": 1.99,
-        "e85": 0.849,
-        "gplc": 1.036
-      }
-    },
-    {
       "id": "23300010",
       "cp": "23300",
       "ville": "Saint-Maurice-la-Souterraine",
@@ -456,7 +441,8 @@
         "gazole": 2.199,
         "sp98": 2.239,
         "e10": 2.149,
-        "e85": 0.875
+        "e85": 0.875,
+        "gplc": 1.089
       }
     },
     {
