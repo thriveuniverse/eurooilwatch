@@ -141,17 +141,17 @@ export default async function DashboardPage() {
         </p>
       </section>
 
+      {/* Weekly briefing sign-up — above the reserves trend (the email list is the asset) */}
+      <div id="briefing">
+        <EmailCTA prominent />
+      </div>
+
       {/* 4. EU Trend Chart */}
       {euHistory && euHistory.length > 0 && (
         <section aria-label="EU reserve trend">
           <StockChart data={euHistory} title="EU Average Reserves — 18-Month Trend" />
         </section>
       )}
-
-      {/* Weekly briefing sign-up — high + prominent (the email list is the asset) */}
-      <div id="briefing">
-        <EmailCTA prominent />
-      </div>
 
       {/* 5. Market Prices */}
       <section aria-label="Market prices">
