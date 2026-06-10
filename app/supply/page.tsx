@@ -259,6 +259,28 @@ function readCrea(): { lastUpdated: string; articles: CreaArticle[] } | null {
   try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; }
 }
 
+// Live transit override — derive a tracked chokepoint's risk badge from IMF PortWatch
+// tanker tonnage vs the 2023 norm, so the status auto-updates with the data (the
+// editorial summary/impact/context still provide the "why"). MARAD security advisories
+// are layered on top and can escalate further.
+const KEY_ALIAS: Record<string, string> = { 'turkish-straits': 'bosporus' };
+function portwatchOverrideFor(
+  id: string,
+  pw: PortwatchData | null,
+): { risk: RiskLevel; riskLabel: string; asOf: string } | null {
+  const key = KEY_ALIAS[id] || id;
+  const cp = pw?.chokepoints?.find((k) => k.key === key);
+  if (!cp || cp.pctTankerTonnage == null) return null;
+  const p = cp.pctTankerTonnage;
+  let risk: RiskLevel, phrase: string;
+  if (p < 25) { risk = 'critical'; phrase = `at ${p}% of the 2023 norm`; }
+  else if (p < 60) { risk = 'high'; phrase = `down to ${p}% of the 2023 norm`; }
+  else if (p < 85) { risk = 'elevated'; phrase = `at ${p}% of the 2023 norm`; }
+  else { risk = 'normal'; phrase = `near the 2023 norm (${p}%)`; }
+  const cap = risk[0].toUpperCase() + risk.slice(1);
+  return { risk, riskLabel: `${cap} — tanker tonnage ${phrase} (live · IMF PortWatch)`, asOf: cp.latestDate };
+}
+
 export default async function SupplyPage() {
   const [gdacsEvents, usgsQuakes, firmsResult] = await Promise.all([
     getGDACSEvents(),
@@ -270,10 +292,20 @@ export default async function SupplyPage() {
   const marad  = readMarad();
   const crea   = readCrea();
 
-  const chokepoints: Chokepoint[] = CHOKEPOINTS.map(c => {
-    const ovr = marad ? maradOverrideFor(c.id, marad.advisories, marad.lastUpdated, c.risk) : null;
-    return ovr ? { ...c, risk: ovr.risk, riskLabel: ovr.riskLabel, lastReviewed: ovr.lastReviewed } : c;
-  });
+  const chokepoints: Chokepoint[] = (() => {
+    const pwPath = path.join(process.cwd(), 'data', 'portwatch-chokepoints.json');
+    let pw: PortwatchData | null = null;
+    if (fs.existsSync(pwPath)) { try { pw = JSON.parse(fs.readFileSync(pwPath, 'utf-8')); } catch { pw = null; } }
+    return CHOKEPOINTS.map(c => {
+      let cc = c;
+      // 1. live transit (IMF PortWatch) drives the badge from current flow
+      const live = portwatchOverrideFor(c.id, pw);
+      if (live) cc = { ...cc, risk: live.risk, riskLabel: live.riskLabel, lastReviewed: live.asOf };
+      // 2. MARAD security advisories layered on top — can escalate further
+      const ovr = marad ? maradOverrideFor(cc.id, marad.advisories, marad.lastUpdated, cc.risk) : null;
+      return ovr ? { ...cc, risk: ovr.risk, riskLabel: ovr.riskLabel, lastReviewed: ovr.lastReviewed } : cc;
+    });
+  })();
 
   const highRisk = chokepoints.filter(c => c.risk === 'critical' || c.risk === 'high');
   const elevated = chokepoints.filter(c => c.risk === 'elevated');
