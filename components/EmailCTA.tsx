@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-export default function EmailCTA() {
+export default function EmailCTA({ prominent = false }: { prominent?: boolean }) {
   const [email, setEmail] = useState('');
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
@@ -30,10 +30,13 @@ export default function EmailCTA() {
   };
 
   return (
-    <section className="rounded-lg border border-oil-700 bg-gradient-to-r from-oil-900/80 to-oil-800/40 px-5 py-5">
+    <section className={prominent
+      ? 'rounded-lg border-2 border-oil-500 bg-gradient-to-r from-oil-800/80 to-oil-900/40 px-5 py-5 shadow-lg shadow-oil-950/40'
+      : 'rounded-lg border border-oil-700 bg-gradient-to-r from-oil-900/80 to-oil-800/40 px-5 py-5'}>
       <div className="flex flex-col sm:flex-row sm:items-center gap-4">
         <div className="flex-1">
-          <h2 className="text-sm font-semibold text-white">Weekly Fuel Security Briefing</h2>
+          {prominent && <div className="text-[11px] font-mono font-semibold tracking-[0.22em] text-oil-400 uppercase mb-1">📬 Free weekly email</div>}
+          <h2 className={`${prominent ? 'text-lg' : 'text-sm'} font-semibold text-white`}>Weekly Fuel Security Briefing</h2>
           <p className="mt-1 text-xs text-gray-400">
             Every Thursday: reserve status changes, price movements, and supply-risk
             signals across all 27 EU countries — in one concise email.

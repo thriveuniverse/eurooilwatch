@@ -148,6 +148,11 @@ export default async function DashboardPage() {
         </section>
       )}
 
+      {/* Weekly briefing sign-up — high + prominent (the email list is the asset) */}
+      <div id="briefing">
+        <EmailCTA prominent />
+      </div>
+
       {/* 5. Market Prices */}
       <section aria-label="Market prices">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase mb-4">Market Prices</h2>
@@ -563,10 +568,6 @@ curl https://eurooilwatch.com/api/v1           # endpoint index`}</code></pre>
         </p>
       </section>
 
-      {/* Email CTA — at the bottom, after the operational data */}
-      <div id="briefing">
-        <EmailCTA />
-      </div>
     </div>
   );
 }
