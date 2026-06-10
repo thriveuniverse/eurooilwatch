@@ -52,7 +52,7 @@ export async function GET() {
 
 > Independent EU fuel reserve and price intelligence. Daily-refreshed dashboard built on official Eurostat and European Commission data, covering all 27 member states.
 
-EuroOilWatch tracks EU-27 country fuel reserves, weekly pump prices from the EC Oil Bulletin, station-level pump prices for France, Spain and Italy (national open-data feeds, refreshed twice daily), Brent crude, TTF / Henry Hub gas + AGSI storage, ARA hub commercial stocks, jet fuel days-of-cover by country, refinery thermal anomalies, and supply-route risk. All data traces back to named institutional sources. Free public API for programmatic access — see below.
+EuroOilWatch tracks EU-27 country fuel reserves, weekly pump prices from the EC Oil Bulletin, station-level pump prices for France, Spain and Italy (national open-data feeds, refreshed twice daily), Brent crude, TTF / Henry Hub gas + AGSI storage, ARA hub commercial stocks, jet fuel days-of-cover by country, refinery thermal anomalies, supply-route risk, live chokepoint ship-transit and port oil-flow data (IMF PortWatch) including a Europe Replacement Barrel Tracker, and interactive compound-cascade risk tools. All data traces back to named institutional sources. Free public API for programmatic access — see below.
 
 ## Current snapshot (auto-refreshes daily; this page generated ${today})
 
@@ -103,7 +103,8 @@ Free, read-only JSON. CORS-enabled, no key required.
 - France station prices: https://eurooilwatch.com/country/fr
 - Spain station prices:  https://eurooilwatch.com/country/es
 - Italy station prices:  https://eurooilwatch.com/country/it
-- Global supply routes: https://eurooilwatch.com/supply
+- Global supply routes — live chokepoint transit, port oil-flow + Europe Replacement Barrel Tracker, Oil Route Stress score (IMF PortWatch): https://eurooilwatch.com/supply
+- Doom Loop Engine — interactive oil-supply cascade tools (Fragility Monitor, Doom Loop Engine, Vulnerability Tiering): https://eurooilwatch.com/doom-loop
 - Gas Tracker:         https://eurooilwatch.com/gas
 - Jet Fuel Tracker:    https://eurooilwatch.com/jet
 - Analysis archive:    https://eurooilwatch.com/analysis
@@ -124,6 +125,7 @@ Free, read-only JSON. CORS-enabled, no key required.
 - NASA FIRMS: VIIRS active-fire detections at named refineries
 - USGS / GDACS / ReliefWeb: disaster and humanitarian feeds
 - US MARAD / CENTCOM: maritime advisories
+- IMF PortWatch: satellite-AIS daily chokepoint ship-transit + port trade-flow estimates
 - Open-Meteo Marine + Forecast: wave height + wind at shipping chokepoints
 
 ## Sister sites
