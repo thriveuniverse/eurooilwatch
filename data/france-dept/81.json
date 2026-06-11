@@ -3,52 +3,52 @@
   "name": "Tarn",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-11T09:07:41.530Z",
+  "asOf": "2026-06-11T18:40:33.511Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 70,
+  "stationCount": 69,
   "fuels": {
     "gazole": {
-      "count": 70,
-      "mean": 2.02,
-      "median": 1.998,
+      "count": 69,
+      "mean": 2.0175,
+      "median": 1.995,
       "min": 1.939,
       "max": 2.2
     },
     "sp95": {
       "count": 22,
-      "mean": 2.0093,
+      "mean": 2.0061,
       "median": 1.9935,
       "min": 1.929,
       "max": 2.16
     },
     "sp98": {
       "count": 54,
-      "mean": 2.033,
-      "median": 2.0195,
+      "mean": 2.03,
+      "median": 2.0085,
       "min": 1.989,
       "max": 2.124
     },
     "e10": {
       "count": 53,
-      "mean": 1.9495,
-      "median": 1.95,
+      "mean": 1.9484,
+      "median": 1.949,
       "min": 1.889,
       "max": 2.046
     },
     "e85": {
-      "count": 26,
-      "mean": 0.8299,
+      "count": 28,
+      "mean": 0.8284,
       "median": 0.798,
       "min": 0.797,
       "max": 0.975
     },
     "gplc": {
-      "count": 8,
-      "mean": 1.0381,
-      "median": 1.052,
+      "count": 9,
+      "mean": 1.0417,
+      "median": 1.059,
       "min": 0.95,
-      "max": 1.069
+      "max": 1.07
     }
   },
   "stations": [
@@ -61,7 +61,7 @@
       "lat": 4388352.6,
       "lng": 246826.8,
       "fuels": {
-        "gazole": 2.085,
+        "gazole": 2.089,
         "sp95": 1.99
       }
     },
@@ -134,7 +134,7 @@
       "fuels": {
         "gazole": 1.991,
         "sp98": 2.039,
-        "e10": 1.958,
+        "e10": 1.9,
         "e85": 0.973
       }
     },
@@ -147,9 +147,9 @@
       "lat": 4393100,
       "lng": 218300,
       "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.069,
-        "sp98": 2.059
+        "gazole": 1.984,
+        "sp95": 1.999,
+        "sp98": 1.999
       }
     },
     {
@@ -207,7 +207,8 @@
       "fuels": {
         "gazole": 1.939,
         "sp98": 2.049,
-        "e10": 1.969
+        "e10": 1.969,
+        "e85": 0.809
       }
     },
     {
@@ -221,7 +222,8 @@
       "fuels": {
         "gazole": 2.129,
         "sp95": 1.99,
-        "sp98": 1.99
+        "sp98": 1.99,
+        "gplc": 1.07
       }
     },
     {
@@ -542,18 +544,6 @@
         "sp98": 2.09,
         "e10": 1.95,
         "e85": 0.798
-      }
-    },
-    {
-      "id": "81300003",
-      "cp": "81300",
-      "ville": "Graulhet",
-      "adresse": "Avenue Rhin et Danube",
-      "pop": "R",
-      "lat": 4376100,
-      "lng": 197200,
-      "fuels": {
-        "gazole": 2.179
       }
     },
     {
@@ -893,8 +883,9 @@
       "lng": 173800,
       "fuels": {
         "gazole": 1.983,
-        "sp98": 2.098,
-        "e10": 1.889
+        "sp98": 1.999,
+        "e10": 1.889,
+        "e85": 0.809
       }
     },
     {
