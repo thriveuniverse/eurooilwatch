@@ -86,6 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/news`,                                lastModified: new Date(),                changeFrequency: 'daily',   priority: 0.7 },
     { url: `${baseUrl}/methodology`,                         lastModified: new Date(),                changeFrequency: 'monthly', priority: 0.5 },
     { url: `${baseUrl}/doom-loop`,                           lastModified: new Date(),                changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/runway`,                              lastModified: new Date(),                changeFrequency: 'monthly', priority: 0.7 },
     { url: `${baseUrl}/about`,                               lastModified: new Date(),                changeFrequency: 'monthly', priority: 0.4 },
   ];
 

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OilWatch — Hoarding Feedback Runway</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+  :root{
+    --bg:#0A0D11; --panel:#141A22; --panel-2:#10151C;
+    --line:rgba(255,255,255,.07); --grid:rgba(255,255,255,.05);
+    --ink:#ECEEF1; --muted:#7C8794; --faint:#4A535E;
+    --steel:#6E8597; --amber:#F4B23E; --hot:#E8631A;
+    --danger:#D2344B; --danger-dim:rgba(210,52,75,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;padding:clamp(18px,4vw,48px);background-image:radial-gradient(120% 80% at 80% -10%, rgba(244,178,62,.05), transparent 60%);min-height:100vh;}
+  .wrap{max-width:1080px;margin:0 auto}
+  .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:var(--amber);display:flex;align-items:center;gap:10px;margin-bottom:22px;}
+  .eyebrow::before{content:"";width:26px;height:1px;background:var(--amber);opacity:.7}
+  h1{font-size:clamp(34px,7vw,64px);font-weight:700;line-height:.98;letter-spacing:-.025em;margin-bottom:14px;}
+  h1 em{font-style:normal;color:var(--amber)}
+  .lede{font-size:clamp(15px,2.2vw,18px);color:var(--muted);max-width:50ch;font-weight:400;}
+  .deck{display:grid;grid-template-columns:1fr 300px;gap:20px;margin-top:clamp(26px,5vw,44px);align-items:stretch;}
+  @media(max-width:780px){.deck{grid-template-columns:1fr}}
+  .card{background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid var(--line);border-radius:14px;padding:18px;}
+  .chartcard{padding:14px 10px 6px 6px;overflow:hidden}
+  svg{display:block;width:100%;height:auto}
+  .rlabel{font-family:'IBM Plex Mono',monospace;font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--faint);}
+  .breach-date{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:clamp(30px,6.5vw,42px);line-height:1;color:var(--danger);letter-spacing:-.01em;margin:6px 0 2px;transition:color .25s;}
+  .breach-date.flash{animation:pulse .45s ease}
+  @keyframes pulse{0%{transform:scale(1)}40%{transform:scale(1.06)}100%{transform:scale(1)}}
+  .breach-sub{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ink)}
+  .breach-sub b{color:var(--amber);font-weight:600}
+  .ref{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--muted);margin-top:12px;padding-top:12px;border-top:1px solid var(--line);}
+  .ref .sw{display:inline-block;width:18px;height:2px;background:var(--steel);vertical-align:middle;margin-right:7px}
+  .divider{height:1px;background:var(--line);margin:18px 0}
+  .ctrl{margin-bottom:18px}
+  .ctrl:last-child{margin-bottom:4px}
+  .ctrl-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px}
+  .ctrl-name{font-size:13px;font-weight:500;color:var(--ink)}
+  .ctrl-val{font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;color:var(--amber)}
+  .ctrl-hint{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--faint);letter-spacing:.04em;margin-top:7px}
+  input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:3px;background:linear-gradient(90deg,var(--amber) var(--fill,40%),rgba(255,255,255,.12) var(--fill,40%));border-radius:2px;outline:none;cursor:pointer;}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:16px;height:16px;border-radius:50%;background:var(--amber);border:3px solid var(--bg);box-shadow:0 0 0 1px var(--amber);cursor:pointer;}
+  input[type=range]::-moz-range-thumb{width:13px;height:13px;border-radius:50%;background:var(--amber);border:3px solid var(--bg);box-shadow:0 0 0 1px var(--amber);cursor:pointer;}
+  .presets{display:flex;flex-wrap:wrap;gap:7px;margin-top:4px}
+  .chip{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.04em;color:var(--muted);background:transparent;border:1px solid var(--line);padding:6px 11px;border-radius:999px;cursor:pointer;transition:.18s;}
+  .chip:hover{color:var(--ink);border-color:var(--faint)}
+  .chip.active{color:var(--bg);background:var(--amber);border-color:var(--amber);font-weight:600}
+  .foot{font-family:'IBM Plex Mono',monospace;font-size:10.5px;line-height:1.75;color:var(--faint);margin-top:24px;max-width:92ch;letter-spacing:.01em;}
+  .foot b{color:var(--muted);font-weight:500}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">OilWatch · Compound Cascade · Hormuz</div>
+  <h1>Fear is the<br><em>accelerant.</em></h1>
+  <p class="lede">The accessible-inventory runway runs in months, not weeks — but it assumes the draw rate holds steady. It won't. Once shortage becomes visible, precautionary buying pulls demand forward and the glide steepens toward the floor. Drag the dial to see how much fear compresses the timeline.</p>
+
+  <div class="deck">
+    <div class="card chartcard">
+      <svg id="chart" viewBox="0 0 720 470" role="img" aria-label="Inventory runway collapse chart"></svg>
+    </div>
+    <div class="card readout">
+      <div class="rlabel">Operating floor breached</div>
+      <div id="breachDate" class="breach-date">—</div>
+      <div class="breach-sub"><span id="breachDays">—</span> days from today · brought forward <b id="broughtFwd">—</b></div>
+      <div class="ref">
+        <span class="sw"></span>Linear runway (draw holds)<br>
+        <span style="color:var(--ink)">~May 2027 · ~329 days</span>
+      </div>
+      <div class="divider"></div>
+      <div class="ctrl">
+        <div class="ctrl-top"><span class="ctrl-name">Precautionary demand</span><span class="ctrl-val" id="pmaxVal">+2.0 mb/d</span></div>
+        <input type="range" id="pmax" min="0" max="6" step="0.5" value="2">
+        <div class="ctrl-hint">extra draw on the accessible buffer once realisation hits</div>
+      </div>
+      <div class="ctrl">
+        <div class="ctrl-top"><span class="ctrl-name">Realisation trigger</span><span class="ctrl-val" id="trigVal">day 40</span></div>
+        <input type="range" id="trig" min="0" max="120" step="1" value="40">
+        <div class="ctrl-hint">when the panic begins</div>
+      </div>
+      <div class="presets" id="presets">
+        <button class="chip" data-p="0"   data-t="120">Calm</button>
+        <button class="chip" data-p="1"   data-t="60">Mild</button>
+        <button class="chip active" data-p="2" data-t="40">Default</button>
+        <button class="chip" data-p="3.5" data-t="25">Acute</button>
+        <button class="chip" data-p="5"   data-t="14">Severe</button>
+      </div>
+    </div>
+  </div>
+
+  <p class="foot">
+    <b>Reads as:</b> buffer = OECD commercial stock above the systemic operating floor (~527 mb est, as of 12 Jun 2026). Structural net draw on the <b>accessible</b> buffer ≈ 1.6 mb/d — the OECD-paced rate implied by the EIA's Jan→Dec path (stocks 2,838→2,300 mb), <b>not</b> the 6.3–8.5 mb/d total global observed draw, which is met largely from non-OECD / on-water / opaque-China stock. Panic demand ramps with depletion (logistic, k=6, f₀=0.35) — a one-off scramble that pulls demand forward. &nbsp;<b>Caveat:</b> the operating-floor level and the panic parameters are OilWatch estimates, not reported data. This is a behavioural scenario model, not a price forecast. (v2 — corrects the v1 draw-vs-buffer mismatch that compressed the runway to weeks.)
+  </p>
+</div>
+
+<script>
+(function(){
+  // ---- model (matches runway_model.py v2) ----
+  const B0=527, DS=1.6, K=6, F0=0.35, DT=0.25, DAYMAX=400;
+  const TODAY=new Date(2026,5,12); // 12 Jun 2026
+  function series(Pmax, Ttrig){
+    let B=B0, t=0; const pts=[[0,B0]]; let breach=null;
+    while(t<DAYMAX){
+      const depl=1-B/B0;
+      const dp=(t>=Ttrig)? Pmax/(1+Math.exp(-K*(depl-F0))):0;
+      B-=(DS+dp)*DT; t+=DT;
+      if(B<=0){ if(breach===null) breach=t; pts.push([t,0]); break; }
+      pts.push([t,B]);
+    }
+    return {pts,breach};
+  }
+  const fmt=d=>{const x=new Date(TODAY.getTime()+d*864e5);
+    return x.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});};
+  const fmtShort=d=>{const x=new Date(TODAY.getTime()+d*864e5);
+    return x.toLocaleDateString('en-GB',{month:'short',year:'2-digit'});};
+
+  const W=720,H=470, padL=52,padR=26,padT=22,padB=42;
+  const x=d=>padL+(d/DAYMAX)*(W-padL-padR);
+  const y=b=>padT+(1-b/B0)*(H-padT-padB);
+  const svg=document.getElementById('chart');
+  const NS='http://www.w3.org/2000/svg';
+  const el=(n,a)=>{const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);return e;};
+  const path=pts=>pts.map((p,i)=>(i?'L':'M')+x(p[0]).toFixed(1)+' '+y(p[1]).toFixed(1)).join(' ');
+
+  function buildStatic(){
+    svg.appendChild(el('rect',{x:padL,y:y(0),width:W-padL-padR,height:padB-6,fill:'var(--danger-dim)'}));
+    [0,132,264,396,527].forEach(v=>{
+      svg.appendChild(el('line',{x1:padL,y1:y(v),x2:W-padR,y2:y(v),stroke:'var(--grid)'}));
+      const t=el('text',{x:padL-9,y:y(v)+3.5,'text-anchor':'end',fill:'var(--faint)','font-family':'IBM Plex Mono','font-size':'10'});
+      t.textContent=v; svg.appendChild(t);
+    });
+    const yt=el('text',{x:padL-9,y:y(527)-9,'text-anchor':'end',fill:'var(--muted)','font-family':'IBM Plex Mono','font-size':'9','letter-spacing':'.08em'});
+    yt.textContent='mb'; svg.appendChild(yt);
+    // x ticks (days from 12 Jun 2026): Aug, Nov, Feb '27, May '27
+    [[19,'Jul'],[111,'Oct'],[203,'Jan ’27'],[293,'Apr ’27']].forEach(([d,lab])=>{
+      svg.appendChild(el('line',{x1:x(d),y1:padT,x2:x(d),y2:y(0),stroke:'var(--grid)'}));
+      const t=el('text',{x:x(d),y:H-padB+18,'text-anchor':'middle',fill:'var(--faint)','font-family':'IBM Plex Mono','font-size':'10'}); t.textContent=lab; svg.appendChild(t);
+    });
+    svg.appendChild(el('line',{x1:padL,y1:y(0),x2:W-padR,y2:y(0),stroke:'var(--danger)','stroke-width':'1.5','stroke-dasharray':'2 4'}));
+    const fl=el('text',{x:W-padR,y:y(0)+18,'text-anchor':'end',fill:'var(--danger)','font-family':'IBM Plex Mono','font-size':'10','font-weight':'600','letter-spacing':'.06em'});
+    fl.textContent='OPERATING FLOOR — systemic shortage (est)'; svg.appendChild(fl);
+    const defs=el('defs',{});
+    const g=el('linearGradient',{id:'fg',x1:0,y1:y(527),x2:0,y2:y(0),gradientUnits:'userSpaceOnUse'});
+    g.appendChild(el('stop',{offset:'0%','stop-color':'var(--amber)'}));
+    g.appendChild(el('stop',{offset:'55%','stop-color':'var(--hot)'}));
+    g.appendChild(el('stop',{offset:'100%','stop-color':'var(--danger)'}));
+    defs.appendChild(g); svg.appendChild(defs);
+    const lin=series(0,999);
+    svg.appendChild(el('path',{d:path(lin.pts),fill:'none',stroke:'var(--steel)','stroke-width':'1.6','stroke-dasharray':'3 3','opacity':'.85'}));
+    if(lin.breach!==null) svg.appendChild(el('circle',{cx:x(lin.breach),cy:y(0),r:'2.5',fill:'var(--steel)'}));
+  }
+
+  const dyn=el('g',{});
+  buildStatic(); svg.appendChild(dyn);
+  const fbPath=el('path',{fill:'none',stroke:'url(#fg)','stroke-width':'2.6','stroke-linecap':'round','stroke-linejoin':'round'});
+  const fbArea=el('path',{fill:'url(#fg)','fill-opacity':'.08'});
+  const marker=el('circle',{r:'5',fill:'var(--danger)',stroke:'var(--bg)','stroke-width':'2'});
+  const mLabelBg=el('rect',{rx:'3',fill:'var(--bg)',stroke:'var(--danger)','stroke-width':'1','opacity':'.95'});
+  const mLabel=el('text',{fill:'var(--danger)','font-family':'IBM Plex Mono','font-size':'11.5','font-weight':'600','text-anchor':'middle'});
+  dyn.append(fbArea,fbPath,mLabelBg,mLabel,marker);
+
+  const dEl=document.getElementById('breachDate'),daysEl=document.getElementById('breachDays'),fwdEl=document.getElementById('broughtFwd'),
+        pmaxV=document.getElementById('pmaxVal'),trigV=document.getElementById('trigVal'),pmaxI=document.getElementById('pmax'),trigI=document.getElementById('trig');
+  const LINEAR=B0/DS; // ~329 days
+
+  function fillTrack(inp){const min=+inp.min,max=+inp.max;inp.style.setProperty('--fill',((inp.value-min)/(max-min)*100)+'%');}
+  let prevDate='';
+  function render(animate){
+    const Pmax=+pmaxI.value, Ttrig=+trigI.value;
+    pmaxV.textContent=(Pmax>0?'+':'')+Pmax.toFixed(1)+' mb/d';
+    trigV.textContent='day '+Ttrig;
+    fillTrack(pmaxI); fillTrack(trigI);
+    const s=series(Pmax,Ttrig);
+    const br=s.breach!==null?s.breach:DAYMAX;
+    fbPath.setAttribute('d',path(s.pts));
+    fbArea.setAttribute('d',path(s.pts)+` L ${x(br).toFixed(1)} ${y(0)} L ${x(0)} ${y(0)} Z`);
+    const mx=x(br),my=y(0);
+    marker.setAttribute('cx',mx); marker.setAttribute('cy',my);
+    const lab=fmtShort(br), lw=lab.length*7+16;
+    let lx=Math.min(Math.max(mx,padL+lw/2),W-padR-lw/2);
+    mLabel.setAttribute('x',lx); mLabel.setAttribute('y',my-14); mLabel.textContent=lab;
+    mLabelBg.setAttribute('x',lx-lw/2); mLabelBg.setAttribute('y',my-28); mLabelBg.setAttribute('width',lw); mLabelBg.setAttribute('height',18);
+    const dateStr=fmt(br);
+    dEl.textContent = s.breach!==null ? dateStr : '> '+fmt(DAYMAX);
+    daysEl.textContent=Math.round(br);
+    const fwd=Math.round(LINEAR-br);
+    fwdEl.textContent=fwd<=0?'—':`${fwd} days (${(fwd/30).toFixed(1)} mo)`;
+    if(animate && dateStr!==prevDate){dEl.classList.remove('flash');void dEl.offsetWidth;dEl.classList.add('flash');}
+    prevDate=dateStr;
+  }
+  function intro(){
+    render(false);
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const L=fbPath.getTotalLength();
+    fbPath.style.strokeDasharray=L; fbPath.style.strokeDashoffset=L;
+    fbArea.style.opacity=0; marker.style.opacity=0; mLabel.style.opacity=0; mLabelBg.style.opacity=0;
+    fbPath.animate([{strokeDashoffset:L},{strokeDashoffset:0}],{duration:1100,easing:'cubic-bezier(.5,0,.2,1)',fill:'forwards'});
+    setTimeout(()=>{fbPath.style.strokeDasharray='none';[fbArea,marker,mLabel,mLabelBg].forEach(e=>e.animate([{opacity:0},{opacity:1}],{duration:400,fill:'forwards'}));},1000);
+  }
+  [pmaxI,trigI].forEach(i=>i.addEventListener('input',()=>{render(true);document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));}));
+  document.getElementById('presets').addEventListener('click',e=>{
+    const b=e.target.closest('.chip'); if(!b)return;
+    pmaxI.value=b.dataset.p; trigI.value=b.dataset.t;
+    document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active')); b.classList.add('active'); render(true);
+  });
+  intro();
+})();
+</script>
+<script>/* iframe auto-resize for ToolFrame embedding */
+(function(){
+  if(window.self!==window.top){document.documentElement.style.minHeight='0';document.body.style.minHeight='0';}
+  function postH(){try{parent.postMessage({oilwatchToolHeight:document.body.scrollHeight},'*');}catch(e){}}
+  window.addEventListener('load',postH);window.addEventListener('resize',postH);
+  if(window.ResizeObserver){new ResizeObserver(function(){postH();}).observe(document.body);}
+  setTimeout(postH,300);setTimeout(postH,1200);
+})();</script>
+</body>
+</html>

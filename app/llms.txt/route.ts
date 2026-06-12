@@ -105,6 +105,7 @@ Free, read-only JSON. CORS-enabled, no key required.
 - Italy station prices:  https://eurooilwatch.com/country/it
 - Global supply routes — live chokepoint transit, port oil-flow + Europe Replacement Barrel Tracker, Oil Route Stress score (IMF PortWatch): https://eurooilwatch.com/supply
 - Doom Loop Engine — interactive oil-supply cascade tools (Fragility Monitor, Doom Loop Engine, Vulnerability Tiering): https://eurooilwatch.com/doom-loop
+- The Hormuz Inventory Runway — interactive depletion model (accessible cushion drains in months; hoarding-feedback scenario): https://eurooilwatch.com/runway
 - Gas Tracker:         https://eurooilwatch.com/gas
 - Jet Fuel Tracker:    https://eurooilwatch.com/jet
 - Analysis archive:    https://eurooilwatch.com/analysis
