@@ -3,68 +3,55 @@
   "name": "Nièvre",
   "regionCode": "BFC",
   "regionName": "Bourgogne-Franche-Comté",
-  "asOf": "2026-06-12T08:53:47.167Z",
+  "asOf": "2026-06-12T19:03:22.838Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 56,
+  "stationCount": 30,
   "fuels": {
     "gazole": {
-      "count": 54,
-      "mean": 2.0236,
+      "count": 28,
+      "mean": 2.016,
       "median": 1.999,
-      "min": 1.957,
-      "max": 2.205
+      "min": 1.966,
+      "max": 2.189
     },
     "sp95": {
-      "count": 26,
-      "mean": 2.0655,
-      "median": 2.079,
-      "min": 1.99,
-      "max": 2.149
+      "count": 12,
+      "mean": 2.0647,
+      "median": 2.0735,
+      "min": 2.013,
+      "max": 2.099
     },
     "sp98": {
-      "count": 44,
-      "mean": 2.106,
+      "count": 28,
+      "mean": 2.0973,
       "median": 2.088,
       "min": 1.99,
       "max": 2.239
     },
     "e10": {
-      "count": 37,
-      "mean": 1.9814,
-      "median": 1.959,
-      "min": 1.896,
+      "count": 22,
+      "mean": 1.99,
+      "median": 1.963,
+      "min": 1.915,
       "max": 2.139
     },
     "e85": {
-      "count": 14,
-      "mean": 0.8345,
-      "median": 0.8085,
-      "min": 0.771,
+      "count": 7,
+      "mean": 0.873,
+      "median": 0.839,
+      "min": 0.809,
       "max": 1.055
     },
     "gplc": {
-      "count": 2,
-      "mean": 1.047,
-      "median": 1.047,
-      "min": 0.989,
+      "count": 1,
+      "mean": 1.105,
+      "median": 1.105,
+      "min": 1.105,
       "max": 1.105
     }
   },
   "stations": [
-    {
-      "id": "58420002",
-      "cp": "58420",
-      "ville": "Brinon-sur-Beuvron",
-      "adresse": "9000 rue du père castor",
-      "pop": "R",
-      "lat": 4727400,
-      "lng": 349300,
-      "fuels": {
-        "gazole": 2.155,
-        "sp95": 2.059
-      }
-    },
     {
       "id": "58340001",
       "cp": "58340",
@@ -111,48 +98,6 @@
       }
     },
     {
-      "id": "58120001",
-      "cp": "58120",
-      "ville": "Château-Chinon (Ville)",
-      "adresse": "RUE JEAN MARIE THEVENIN",
-      "pop": "R",
-      "lat": 4706104.27856,
-      "lng": 393594.09809,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.079,
-        "sp98": 2.199
-      }
-    },
-    {
-      "id": "58110001",
-      "cp": "58110",
-      "ville": "Châtillon-en-Bazois",
-      "adresse": "68 ROUTE D'ALLUY",
-      "pop": "R",
-      "lat": 4704500,
-      "lng": 364300,
-      "fuels": {
-        "gazole": 2.139,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "58110003",
-      "cp": "58110",
-      "ville": "Châtillon-en-Bazois",
-      "adresse": "CHAMPS DE LA BARRIERE",
-      "pop": "R",
-      "lat": 4705200,
-      "lng": 365400,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.099,
-        "sp98": 2.199,
-        "e10": 2.079
-      }
-    },
-    {
       "id": "58500003",
       "cp": "58500",
       "ville": "Clamecy",
@@ -181,20 +126,6 @@
       }
     },
     {
-      "id": "58800002",
-      "cp": "58800",
-      "ville": "Corbigny",
-      "adresse": "5 Pl. du Champ de Foire",
-      "pop": "R",
-      "lat": 4725515.32928,
-      "lng": 368415.38044,
-      "fuels": {
-        "gazole": 2.028,
-        "sp95": 2.048,
-        "sp98": 2.158
-      }
-    },
-    {
       "id": "58800001",
       "cp": "58800",
       "ville": "Corbigny",
@@ -209,18 +140,6 @@
       }
     },
     {
-      "id": "58200009",
-      "cp": "58200",
-      "ville": "Cosne-Cours-sur-Loire",
-      "adresse": "103 rue du Maréchal Leclerc",
-      "pop": "R",
-      "lat": 4741200,
-      "lng": 292700,
-      "fuels": {
-        "gazole": 1.957
-      }
-    },
-    {
       "id": "58200008",
       "cp": "58200",
       "ville": "Cosne-Cours-sur-Loire",
@@ -230,21 +149,6 @@
       "lng": 292300,
       "fuels": {
         "e85": 0.879
-      }
-    },
-    {
-      "id": "58200003",
-      "cp": "58200",
-      "ville": "Cosne-Cours-sur-Loire",
-      "adresse": "CHEMIN DU GRAND CHAMP",
-      "pop": "R",
-      "lat": 4738600,
-      "lng": 292100,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.199,
-        "e10": 2.049,
-        "e85": 0.849
       }
     },
     {
@@ -277,21 +181,6 @@
       }
     },
     {
-      "id": "58660001",
-      "cp": "58660",
-      "ville": "Coulanges-lès-Nevers",
-      "adresse": "Boulevard Beauregard",
-      "pop": "R",
-      "lat": 4701100,
-      "lng": 317800,
-      "fuels": {
-        "gazole": 1.984,
-        "sp98": 2.02,
-        "e10": 1.916,
-        "e85": 0.772
-      }
-    },
-    {
       "id": "58300005",
       "cp": "58300",
       "ville": "Decize",
@@ -304,93 +193,6 @@
         "sp95": 2.029,
         "sp98": 2.079,
         "e10": 1.959
-      }
-    },
-    {
-      "id": "58300004",
-      "cp": "58300",
-      "ville": "Decize",
-      "adresse": "Route de Champvert",
-      "pop": "R",
-      "lat": 4683600,
-      "lng": 347200,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 2.097,
-        "e10": 1.969
-      }
-    },
-    {
-      "id": "58300001",
-      "cp": "58300",
-      "ville": "Decize",
-      "adresse": "Route de Champvert",
-      "pop": "R",
-      "lat": 4683800,
-      "lng": 347900,
-      "fuels": {
-        "gazole": 2.01,
-        "sp98": 2.17,
-        "e10": 1.965
-      }
-    },
-    {
-      "id": "58220001",
-      "cp": "58220",
-      "ville": "Donzy",
-      "adresse": "1 rue Guy de Jean",
-      "pop": "R",
-      "lat": 4737000,
-      "lng": 312700,
-      "fuels": {
-        "gazole": 1.993,
-        "sp98": 2.039,
-        "e10": 1.939,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "58530001",
-      "cp": "58530",
-      "ville": "Dornecy",
-      "adresse": "8 Avenue Leclerc",
-      "pop": "R",
-      "lat": 4743421.72692,
-      "lng": 358873.70816,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.039,
-        "sp98": 2.159
-      }
-    },
-    {
-      "id": "58390003",
-      "cp": "58390",
-      "ville": "Dornes",
-      "adresse": "ROUTE DE MOULIN - LIEU DIT LES BLONDEAUX",
-      "pop": "R",
-      "lat": 4669900,
-      "lng": 335200,
-      "fuels": {
-        "gazole": 1.968,
-        "sp98": 2.169,
-        "e10": 1.988,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "58600002",
-      "cp": "58600",
-      "ville": "Fourchambault",
-      "adresse": "9 rue du 4 Septembre",
-      "pop": "R",
-      "lat": 4702300,
-      "lng": 308252,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.039,
-        "e10": 1.945,
-        "e85": 0.797
       }
     },
     {
@@ -433,21 +235,6 @@
         "gazole": 1.999,
         "sp95": 2.099,
         "sp98": 2.149
-      }
-    },
-    {
-      "id": "58400002",
-      "cp": "58400",
-      "ville": "La Charité-sur-Loire",
-      "adresse": "Z.I LES PLANTES DES RELIGIEUSES",
-      "pop": "R",
-      "lat": 4718300,
-      "lng": 302800,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.029,
-        "e10": 1.919,
-        "e85": 0.798
       }
     },
     {
@@ -518,9 +305,9 @@
       "lat": 4688600,
       "lng": 315300,
       "fuels": {
-        "gazole": 2.205,
-        "sp98": 2.215,
-        "e10": 2.019
+        "gazole": 2.095,
+        "sp98": 2.169,
+        "e10": 2.045
       }
     },
     {
@@ -533,8 +320,8 @@
       "lng": 308700,
       "fuels": {
         "gazole": 1.989,
-        "sp98": 2.089,
-        "e10": 1.959
+        "sp98": 2.099,
+        "e10": 1.969
       }
     },
     {
@@ -552,20 +339,6 @@
       }
     },
     {
-      "id": "58290001",
-      "cp": "58290",
-      "ville": "Moulins-Engilbert",
-      "adresse": "PLACE DU CHAMP DE FOIRE",
-      "pop": "R",
-      "lat": 4698300,
-      "lng": 380800,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.099,
-        "sp98": 2.199
-      }
-    },
-    {
       "id": "58000010",
       "cp": "58000",
       "ville": "Nevers",
@@ -574,22 +347,9 @@
       "lat": 4698700,
       "lng": 316200,
       "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.079,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "58000014",
-      "cp": "58000",
-      "ville": "Nevers",
-      "adresse": "2 rue de vauzelles",
-      "pop": "R",
-      "lat": 4700028.63675,
-      "lng": 315528.28522,
-      "fuels": {
-        "gazole": 2.099,
-        "sp95": 2.079
+        "gazole": 1.989,
+        "sp98": 2.089,
+        "e10": 1.969
       }
     },
     {
@@ -630,10 +390,10 @@
       "lat": 4698700,
       "lng": 317000,
       "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.029,
-        "e10": 1.909,
-        "e85": 0.798,
+        "gazole": 1.966,
+        "sp98": 2.019,
+        "e10": 1.915,
+        "e85": 0.809,
         "gplc": 1.105
       }
     },
@@ -679,34 +439,6 @@
       }
     },
     {
-      "id": "58270001",
-      "cp": "58270",
-      "ville": "Saint-Benin-d'Azy",
-      "adresse": "ZAC DE LA BADELLE",
-      "pop": "R",
-      "lat": 4700500,
-      "lng": 339800,
-      "fuels": {
-        "gazole": 1.997,
-        "sp98": 2.004,
-        "e10": 1.896
-      }
-    },
-    {
-      "id": "58000012",
-      "cp": "58000",
-      "ville": "Saint-Éloi",
-      "adresse": "IMPASSE DE LA SABLIERE",
-      "pop": "R",
-      "lat": 4698400,
-      "lng": 321100,
-      "fuels": {
-        "gazole": 1.967,
-        "sp95": 2.012,
-        "e10": 1.916
-      }
-    },
-    {
       "id": "58300003",
       "cp": "58300",
       "ville": "Saint-Léger-des-Vignes",
@@ -716,48 +448,8 @@
       "lng": 346500,
       "fuels": {
         "gazole": 2.17,
-        "sp98": 2.2,
+        "sp98": 2.1,
         "e10": 2.12
-      }
-    },
-    {
-      "id": "58240001",
-      "cp": "58240",
-      "ville": "Saint-Pierre-le-Moûtier",
-      "adresse": "AVENUE DU 8 MAI",
-      "pop": "R",
-      "lat": 4679000,
-      "lng": 312500,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.149,
-        "e10": 2.099
-      }
-    },
-    {
-      "id": "58330001",
-      "cp": "58330",
-      "ville": "Saint-Saulge",
-      "adresse": "Faubourg de Premery",
-      "pop": "R",
-      "lat": 4710600,
-      "lng": 351200,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.099
-      }
-    },
-    {
-      "id": "58160002",
-      "cp": "58160",
-      "ville": "Sauvigny-les-Bois",
-      "adresse": "24, Route de Nevers",
-      "pop": "R",
-      "lat": 4694081.4258,
-      "lng": 325816.13049,
-      "fuels": {
-        "gazole": 2.179,
-        "sp95": 1.99
       }
     },
     {
@@ -786,63 +478,6 @@
         "gazole": 1.999,
         "sp95": 2.029,
         "sp98": 2.059
-      }
-    },
-    {
-      "id": "58150003",
-      "cp": "58150",
-      "ville": "Tracy-sur-Loire",
-      "adresse": "AUTOROUTE A77 - AIRE DES VIGNOBLES",
-      "pop": "A",
-      "lat": 4733730,
-      "lng": 292728,
-      "fuels": {
-        "gazole": 2.199,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "58640004",
-      "cp": "58640",
-      "ville": "Varennes-Vauzelles",
-      "adresse": "16 BLD CAMILLE DAGONNEAU",
-      "pop": "R",
-      "lat": 4700869,
-      "lng": 315225,
-      "fuels": {
-        "gazole": 2.08,
-        "e10": 1.99,
-        "gplc": 0.989
-      }
-    },
-    {
-      "id": "58640001",
-      "cp": "58640",
-      "ville": "Varennes-Vauzelles",
-      "adresse": "Boulevard Camille Dagonneau",
-      "pop": "R",
-      "lat": 4702100,
-      "lng": 314700,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.029,
-        "e10": 1.925,
-        "e85": 0.771
-      }
-    },
-    {
-      "id": "58210001",
-      "cp": "58210",
-      "ville": "Varzy",
-      "adresse": "AVENUE DE LA CHARITE",
-      "pop": "R",
-      "lat": 4735500,
-      "lng": 338600,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.089,
-        "sp98": 2.199
       }
     }
   ]

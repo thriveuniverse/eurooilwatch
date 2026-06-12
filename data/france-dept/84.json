@@ -3,154 +3,55 @@
   "name": "Vaucluse",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-06-12T08:53:47.167Z",
+  "asOf": "2026-06-12T19:03:22.838Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 106,
+  "stationCount": 35,
   "fuels": {
     "gazole": {
-      "count": 104,
-      "mean": 2.0259,
-      "median": 1.999,
-      "min": 1.945,
-      "max": 2.27
+      "count": 35,
+      "mean": 2.0374,
+      "median": 2.001,
+      "min": 1.958,
+      "max": 2.302
     },
     "sp95": {
-      "count": 23,
-      "mean": 2.0414,
-      "median": 2.049,
+      "count": 7,
+      "mean": 2.0399,
+      "median": 2.059,
       "min": 1.879,
-      "max": 2.142
+      "max": 2.12
     },
     "sp98": {
-      "count": 80,
-      "mean": 2.0589,
-      "median": 2.049,
+      "count": 27,
+      "mean": 2.0696,
+      "median": 2.05,
       "min": 1.989,
-      "max": 2.34
+      "max": 2.384
     },
     "e10": {
-      "count": 89,
-      "mean": 1.963,
-      "median": 1.95,
-      "min": 1.893,
-      "max": 2.212
+      "count": 29,
+      "mean": 1.9706,
+      "median": 1.959,
+      "min": 1.885,
+      "max": 2.259
     },
     "e85": {
-      "count": 52,
-      "mean": 0.8417,
-      "median": 0.812,
-      "min": 0.742,
-      "max": 1.099
+      "count": 16,
+      "mean": 0.8558,
+      "median": 0.824,
+      "min": 0.779,
+      "max": 1.055
     },
     "gplc": {
-      "count": 9,
-      "mean": 1.0937,
-      "median": 1.078,
-      "min": 1.029,
+      "count": 4,
+      "mean": 1.13,
+      "median": 1.1275,
+      "min": 1.059,
       "max": 1.206
     }
   },
   "stations": [
-    {
-      "id": "84400007",
-      "cp": "84400",
-      "ville": "Apt",
-      "adresse": "382 AV. DE LANCON RN 100",
-      "pop": "R",
-      "lat": 4388345.4,
-      "lng": 538128,
-      "fuels": {
-        "gazole": 1.951,
-        "sp98": 1.99,
-        "e10": 1.91,
-        "e85": 0.819,
-        "gplc": 1.029
-      }
-    },
-    {
-      "id": "84400001",
-      "cp": "84400",
-      "ville": "Apt",
-      "adresse": "Avenue lançon",
-      "pop": "R",
-      "lat": 4388436.6,
-      "lng": 537959.7,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 1.999,
-        "e10": 1.915
-      }
-    },
-    {
-      "id": "84400004",
-      "cp": "84400",
-      "ville": "Apt",
-      "adresse": "Boulevard de la Libération",
-      "pop": "R",
-      "lat": 4387500,
-      "lng": 540400,
-      "fuels": {
-        "gazole": 2.249,
-        "e10": 2.149,
-        "e85": 1.099
-      }
-    },
-    {
-      "id": "84400003",
-      "cp": "84400",
-      "ville": "Apt",
-      "adresse": "Chemin des Abattoirs",
-      "pop": "R",
-      "lat": 4388300,
-      "lng": 538100,
-      "fuels": {
-        "gazole": 1.949,
-        "sp95": 1.979,
-        "sp98": 1.999,
-        "e10": 1.915
-      }
-    },
-    {
-      "id": "84810002",
-      "cp": "84810",
-      "ville": "Aubignan",
-      "adresse": "avenue Majoral Jouve",
-      "pop": "R",
-      "lat": 4409204.53,
-      "lng": 502966.13,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "e10": 1.999
-      }
-    },
-    {
-      "id": "84000009",
-      "cp": "84000",
-      "ville": "Avignon",
-      "adresse": "10 Avenue Eisenhower",
-      "pop": "R",
-      "lat": 4394000,
-      "lng": 479800,
-      "fuels": {
-        "gazole": 1.954,
-        "sp95": 1.999,
-        "e10": 1.899
-      }
-    },
-    {
-      "id": "84000007",
-      "cp": "84000",
-      "ville": "Avignon",
-      "adresse": "16 Boulevard Saint-Michel",
-      "pop": "R",
-      "lat": 4394300,
-      "lng": 481100,
-      "fuels": {
-        "e10": 1.989
-      }
-    },
     {
       "id": "84000001",
       "cp": "84000",
@@ -168,52 +69,6 @@
       }
     },
     {
-      "id": "84000008",
-      "cp": "84000",
-      "ville": "Avignon",
-      "adresse": "18 Route de Lyon",
-      "pop": "R",
-      "lat": 4395100,
-      "lng": 482500,
-      "fuels": {
-        "gazole": 1.988,
-        "sp98": 2.036,
-        "e10": 1.935,
-        "e85": 0.969
-      }
-    },
-    {
-      "id": "84000017",
-      "cp": "84000",
-      "ville": "Avignon",
-      "adresse": "191 Route de Tarascon",
-      "pop": "R",
-      "lat": 4391892.91395,
-      "lng": 480941.60711,
-      "fuels": {
-        "gazole": 1.986,
-        "sp95": 2.016,
-        "sp98": 2.139,
-        "e10": 1.947,
-        "e85": 0.919
-      }
-    },
-    {
-      "id": "84000018",
-      "cp": "84000",
-      "ville": "Avignon",
-      "adresse": "20 AVENUE PIERRE SEMARD",
-      "pop": "R",
-      "lat": 4394285.49052,
-      "lng": 481584.35596,
-      "fuels": {
-        "gazole": 2.065,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.853
-      }
-    },
-    {
       "id": "84000011",
       "cp": "84000",
       "ville": "Avignon",
@@ -222,7 +77,10 @@
       "lat": 4394000,
       "lng": 483000,
       "fuels": {
-        "gazole": 2.092
+        "gazole": 2.032,
+        "sp98": 2.136,
+        "e10": 1.989,
+        "e85": 0.809
       }
     },
     {
@@ -234,23 +92,9 @@
       "lat": 4392947.30985,
       "lng": 479102.45587,
       "fuels": {
-        "gazole": 2.01,
-        "sp98": 2.04,
-        "e10": 1.899
-      }
-    },
-    {
-      "id": "84140007",
-      "cp": "84140",
-      "ville": "Avignon",
-      "adresse": "4316 RTE DE MARSEILLE",
-      "pop": "R",
-      "lat": 4390700,
-      "lng": 489000,
-      "fuels": {
-        "gazole": 1.956,
+        "gazole": 1.989,
         "sp98": 1.99,
-        "e10": 1.909
+        "e10": 1.885
       }
     },
     {
@@ -284,79 +128,6 @@
       }
     },
     {
-      "id": "84000020",
-      "cp": "84000",
-      "ville": "Avignon",
-      "adresse": "COURTINE OUEST-ROCADE CH. DE GAU",
-      "pop": "R",
-      "lat": 4393200,
-      "lng": 478300,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 1.99,
-        "e10": 1.911,
-        "e85": 0.845
-      }
-    },
-    {
-      "id": "84013001",
-      "cp": "84140",
-      "ville": "Avignon",
-      "adresse": "Route de Marseille",
-      "pop": "R",
-      "lat": 4392125.9562,
-      "lng": 486701.76329,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.04,
-        "e10": 1.895,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "84190001",
-      "cp": "84190",
-      "ville": "Beaumes-de-Venise",
-      "adresse": "route de carpentras",
-      "pop": "R",
-      "lat": 4411600,
-      "lng": 501600,
-      "fuels": {
-        "gazole": 2.129,
-        "sp98": 2.189,
-        "e10": 2.109,
-        "e85": 1.054
-      }
-    },
-    {
-      "id": "84500007",
-      "cp": "84500",
-      "ville": "Bollène",
-      "adresse": "Avenue Jean Giono STATION 2 ROND POINT",
-      "pop": "R",
-      "lat": 4428689.20341,
-      "lng": 475063.55196,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.04,
-        "e10": 1.932,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "84500001",
-      "cp": "84500",
-      "ville": "Bollène",
-      "adresse": "BP 24 QUARTIER LA DEVERASSE",
-      "pop": "R",
-      "lat": 4428867.83969,
-      "lng": 474894.67083,
-      "fuels": {
-        "gazole": 2.083,
-        "e85": 0.829
-      }
-    },
-    {
       "id": "84507001",
       "cp": "84500",
       "ville": "Bollène",
@@ -366,7 +137,6 @@
       "lng": 474500,
       "fuels": {
         "gazole": 1.978,
-        "sp95": 1.999,
         "e10": 1.91
       }
     },
@@ -381,36 +151,6 @@
       "fuels": {
         "gazole": 2.19,
         "sp95": 2.12
-      }
-    },
-    {
-      "id": "84160003",
-      "cp": "84160",
-      "ville": "Cadenet",
-      "adresse": "4 impasse Louis Astic, Zone artisanale Les Meillères",
-      "pop": "R",
-      "lat": 4372800,
-      "lng": 536800,
-      "fuels": {
-        "gazole": 1.978,
-        "sp95": 1.993,
-        "sp98": 2.009,
-        "e85": 0.859
-      }
-    },
-    {
-      "id": "84850001",
-      "cp": "84850",
-      "ville": "Camaret-sur-Aigues",
-      "adresse": "110 Rte de Violès",
-      "pop": "R",
-      "lat": 4416282.20501,
-      "lng": 487670.82704,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.049,
-        "sp98": 2.056,
-        "e10": 1.95
       }
     },
     {
@@ -470,92 +210,6 @@
       }
     },
     {
-      "id": "84200012",
-      "cp": "84200",
-      "ville": "Carpentras",
-      "adresse": "417 bis avenue du Mont Ventoux",
-      "pop": "R",
-      "lat": 4405700,
-      "lng": 505800,
-      "fuels": {
-        "gazole": 1.985,
-        "e10": 1.945,
-        "e85": 0.797
-      }
-    },
-    {
-      "id": "84200011",
-      "cp": "84200",
-      "ville": "Carpentras",
-      "adresse": "80 chemin de la Lègue",
-      "pop": "R",
-      "lat": 4405500,
-      "lng": 505400,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.049,
-        "e10": 1.929,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "84200006",
-      "cp": "84200",
-      "ville": "Carpentras",
-      "adresse": "AVENUE DES MARCHES",
-      "pop": "R",
-      "lat": 4403400,
-      "lng": 503900,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.059,
-        "sp98": 2.089
-      }
-    },
-    {
-      "id": "84976001",
-      "cp": "84200",
-      "ville": "Carpentras",
-      "adresse": "Boulevard Naquet",
-      "pop": "R",
-      "lat": 4405145,
-      "lng": 504122,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.009,
-        "e10": 1.989,
-        "e85": 0.769
-      }
-    },
-    {
-      "id": "84510001",
-      "cp": "84510",
-      "ville": "Caumont-sur-Durance",
-      "adresse": "65 route de Gadagne",
-      "pop": "R",
-      "lat": 4390600,
-      "lng": 494800,
-      "fuels": {
-        "gazole": 1.985,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "84300006",
-      "cp": "84300",
-      "ville": "Cavaillon",
-      "adresse": "130 allée Roch Pape",
-      "pop": "R",
-      "lat": 4382900,
-      "lng": 503500,
-      "fuels": {
-        "gazole": 1.968,
-        "sp98": 2.014,
-        "e10": 1.899,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "84300013",
       "cp": "84300",
       "ville": "Cavaillon",
@@ -567,22 +221,6 @@
         "gazole": 1.999,
         "sp95": 2.049,
         "e85": 0.849
-      }
-    },
-    {
-      "id": "84300011",
-      "cp": "84300",
-      "ville": "Cavaillon",
-      "adresse": "264 Avenue de Cheval Blanc",
-      "pop": "R",
-      "lat": 4383100,
-      "lng": 505400,
-      "fuels": {
-        "gazole": 1.96,
-        "sp98": 1.99,
-        "e10": 1.916,
-        "e85": 0.815,
-        "gplc": 1.049
       }
     },
     {
@@ -600,74 +238,6 @@
       }
     },
     {
-      "id": "84300003",
-      "cp": "84300",
-      "ville": "Cavaillon",
-      "adresse": "ROUTE D'AVIGNON",
-      "pop": "R",
-      "lat": 4385600,
-      "lng": 501800,
-      "fuels": {
-        "gazole": 2.086
-      }
-    },
-    {
-      "id": "84230001",
-      "cp": "84230",
-      "ville": "Châteauneuf-du-Pape",
-      "adresse": "Avenue Louis Pasteur",
-      "pop": "R",
-      "lat": 4405800,
-      "lng": 483500,
-      "fuels": {
-        "gazole": 2.019,
-        "sp98": 2.099,
-        "e10": 1.999
-      }
-    },
-    {
-      "id": "84350002",
-      "cp": "84350",
-      "ville": "Courthézon",
-      "adresse": "ROUTE DE CHATEAUNEUF DU PAPE",
-      "pop": "R",
-      "lat": 4407971.07,
-      "lng": 487885.74,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.049,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "84320001",
-      "cp": "84320",
-      "ville": "Entraigues-sur-la-Sorgue",
-      "adresse": "515 Route de Carpentras",
-      "pop": "R",
-      "lat": 4400500,
-      "lng": 493200,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 1.999,
-        "e10": 1.899,
-        "e85": 0.799
-      }
-    },
-    {
-      "id": "84220002",
-      "cp": "84220",
-      "ville": "Gordes",
-      "adresse": "Les Imberts",
-      "pop": "R",
-      "lat": 4388557,
-      "lng": 516824,
-      "fuels": {
-        "gazole": 2.04,
-        "sp95": 2.06
-      }
-    },
-    {
       "id": "84600003",
       "cp": "84600",
       "ville": "Grillon",
@@ -682,79 +252,6 @@
       }
     },
     {
-      "id": "84150001",
-      "cp": "84150",
-      "ville": "Jonquières",
-      "adresse": "85 Avenue de la Libération",
-      "pop": "R",
-      "lat": 4411569,
-      "lng": 489531,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.099,
-        "e10": 1.999
-      }
-    },
-    {
-      "id": "84800001",
-      "cp": "84800",
-      "ville": "L'Isle-sur-la-Sorgue",
-      "adresse": "82 CHEMIN DES ESPELUGUES",
-      "pop": "R",
-      "lat": 4392500,
-      "lng": 506300,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.039,
-        "e10": 1.939,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "84800004",
-      "cp": "84800",
-      "ville": "L'Isle-sur-la-Sorgue",
-      "adresse": "RN 100 PL. EMILE CHAR",
-      "pop": "R",
-      "lat": 4391800,
-      "lng": 505000,
-      "fuels": {
-        "gazole": 2.065,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.852
-      }
-    },
-    {
-      "id": "84800003",
-      "cp": "84800",
-      "ville": "L'Isle-sur-la-Sorgue",
-      "adresse": "Route de Carpentras",
-      "pop": "R",
-      "lat": 4393100,
-      "lng": 506400,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.039,
-        "e10": 1.939,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "84240001",
-      "cp": "84240",
-      "ville": "La Tour-d'Aigues",
-      "adresse": "428 Boulevard St Roch",
-      "pop": "R",
-      "lat": 4372100,
-      "lng": 554200,
-      "fuels": {
-        "gazole": 2.038,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "84840003",
       "cp": "84840",
       "ville": "Lapalud",
@@ -766,20 +263,6 @@
         "gazole": 1.989,
         "e10": 1.989,
         "e85": 0.799
-      }
-    },
-    {
-      "id": "84360004",
-      "cp": "84360",
-      "ville": "Lauris",
-      "adresse": "1 Avenue Philippe de Girard",
-      "pop": "R",
-      "lat": 4374937.15923,
-      "lng": 530978.77455,
-      "fuels": {
-        "gazole": 2.099,
-        "sp95": 2.129,
-        "sp98": 2.169
       }
     },
     {
@@ -813,76 +296,6 @@
       }
     },
     {
-      "id": "84130012",
-      "cp": "84130",
-      "ville": "Le Pontet",
-      "adresse": "36 av charles de Gaulle",
-      "pop": "R",
-      "lat": 4395800,
-      "lng": 485000,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.049,
-        "e10": 1.989
-      }
-    },
-    {
-      "id": "84130011",
-      "cp": "84130",
-      "ville": "Le Pontet",
-      "adresse": "CD 225 RTE DES BORDS DU RHONE",
-      "pop": "R",
-      "lat": 4396300,
-      "lng": 485300,
-      "fuels": {
-        "e10": 1.931
-      }
-    },
-    {
-      "id": "84130001",
-      "cp": "84130",
-      "ville": "Le Pontet",
-      "adresse": "ZAC DU SAINT TRONQUET, Rte de Carpentras",
-      "pop": "R",
-      "lat": 4397893.50853,
-      "lng": 487714.85994,
-      "fuels": {
-        "gazole": 1.964,
-        "sp98": 1.989,
-        "e10": 1.909,
-        "e85": 0.779,
-        "gplc": 1.089
-      }
-    },
-    {
-      "id": "84250002",
-      "cp": "84250",
-      "ville": "Le Thor",
-      "adresse": "180 AVENUE DE LA LIBERATION",
-      "pop": "R",
-      "lat": 4392743.59,
-      "lng": 499879.12,
-      "fuels": {
-        "gazole": 2.15,
-        "sp95": 2.13
-      }
-    },
-    {
-      "id": "84250001",
-      "cp": "84250",
-      "ville": "Le Thor",
-      "adresse": "Route d'Avignon",
-      "pop": "R",
-      "lat": 4392500,
-      "lng": 497800,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.049,
-        "e10": 1.939,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "84340002",
       "cp": "84340",
       "ville": "Malaucène",
@@ -894,34 +307,6 @@
         "gazole": 2.11,
         "sp95": 2.09,
         "sp98": 2.11
-      }
-    },
-    {
-      "id": "84660001",
-      "cp": "84660",
-      "ville": "Maubec",
-      "adresse": "Route de Cavaillon",
-      "pop": "R",
-      "lat": 4386584,
-      "lng": 514004,
-      "fuels": {
-        "gazole": 2.08,
-        "sp95": 2.03,
-        "sp98": 2.1
-      }
-    },
-    {
-      "id": "84200003",
-      "cp": "84380",
-      "ville": "Mazan",
-      "adresse": "La Venue de Carpentras",
-      "pop": "R",
-      "lat": 4405877,
-      "lng": 511102,
-      "fuels": {
-        "gazole": 2.172,
-        "sp95": 2.142,
-        "sp98": 2.168
       }
     },
     {
@@ -983,35 +368,6 @@
       }
     },
     {
-      "id": "84310003",
-      "cp": "84310",
-      "ville": "Morières-lès-Avignon",
-      "adresse": "502 Avenue Jean Monnet",
-      "pop": "R",
-      "lat": 4394100,
-      "lng": 489700,
-      "fuels": {
-        "gazole": 2.09,
-        "sp98": 2.15,
-        "e10": 2.01
-      }
-    },
-    {
-      "id": "84310004",
-      "cp": "84310",
-      "ville": "Morières-lès-Avignon",
-      "adresse": "Autoroute A7 (Sens Lyon - Marseille)",
-      "pop": "A",
-      "lat": 4392500,
-      "lng": 491300,
-      "fuels": {
-        "gazole": 2.198,
-        "sp98": 2.177,
-        "e10": 2.076,
-        "gplc": 1.078
-      }
-    },
-    {
       "id": "84550004",
       "cp": "84550",
       "ville": "Mornas",
@@ -1020,112 +376,11 @@
       "lat": 4419500,
       "lng": 473100,
       "fuels": {
-        "gazole": 2.27,
-        "sp98": 2.34,
-        "e10": 2.212,
+        "gazole": 2.302,
+        "sp98": 2.384,
+        "e10": 2.259,
         "e85": 1.008,
         "gplc": 1.206
-      }
-    },
-    {
-      "id": "84550005",
-      "cp": "84550",
-      "ville": "Mornas",
-      "adresse": "Autoroute A7 Aire de Mornas Les Adrets",
-      "pop": "A",
-      "lat": 4421600,
-      "lng": 472300,
-      "fuels": {
-        "gazole": 2.144,
-        "sp98": 2.179,
-        "e10": 2.087,
-        "e85": 0.937,
-        "gplc": 1.078
-      }
-    },
-    {
-      "id": "84550003",
-      "cp": "84550",
-      "ville": "Mornas",
-      "adresse": "Route d'orange",
-      "pop": "R",
-      "lat": 4419700,
-      "lng": 473700,
-      "fuels": {
-        "gazole": 2.029,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "84660002",
-      "cp": "84660",
-      "ville": "Oppède",
-      "adresse": "Avenue du Tourail",
-      "pop": "R",
-      "lat": 4386696,
-      "lng": 514882,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.019,
-        "e10": 1.919,
-        "e85": 0.829
-      }
-    },
-    {
-      "id": "84100005",
-      "cp": "84100",
-      "ville": "Orange",
-      "adresse": "286 Avenue Charles de Gaulle",
-      "pop": "R",
-      "lat": 4413600,
-      "lng": 480100,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.056,
-        "e10": 1.95,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "84100011",
-      "cp": "84100",
-      "ville": "Orange",
-      "adresse": "QUARTIER DE L'ARGENSOL",
-      "pop": "R",
-      "lat": 4413400,
-      "lng": 481700,
-      "fuels": {
-        "gazole": 1.999,
-        "e10": 1.999
-      }
-    },
-    {
-      "id": "84100009",
-      "cp": "84100",
-      "ville": "Orange",
-      "adresse": "R N 7 - AV. DE LATTRE DE TASSIG",
-      "pop": "R",
-      "lat": 4413559,
-      "lng": 481309,
-      "fuels": {
-        "gazole": 2.085,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.844
-      }
-    },
-    {
-      "id": "84100004",
-      "cp": "84100",
-      "ville": "Orange",
-      "adresse": "RN 7 AVE DES FOURCHESVIEILLES",
-      "pop": "R",
-      "lat": 4415300,
-      "lng": 480300,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.056,
-        "e10": 1.95
       }
     },
     {
@@ -1137,37 +392,10 @@
       "lat": 4412000,
       "lng": 484000,
       "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.056,
-        "e10": 1.95,
+        "gazole": 1.989,
+        "sp98": 2.05,
+        "e10": 1.94,
         "e85": 0.819
-      }
-    },
-    {
-      "id": "84100006",
-      "cp": "84100",
-      "ville": "Orange",
-      "adresse": "Route de Roquemaure",
-      "pop": "R",
-      "lat": 4411800,
-      "lng": 479700,
-      "fuels": {
-        "gazole": 2.075,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "84210003",
-      "cp": "84210",
-      "ville": "Pernes-les-Fontaines",
-      "adresse": "542 Avenue Charles de Gaulle",
-      "pop": "R",
-      "lat": 4400500,
-      "lng": 505100,
-      "fuels": {
-        "gazole": 2.109,
-        "e10": 2.012
       }
     },
     {
@@ -1186,50 +414,6 @@
       }
     },
     {
-      "id": "84120008",
-      "cp": "84120",
-      "ville": "Pertuis",
-      "adresse": "408 rue de la Tour",
-      "pop": "R",
-      "lat": 4369700,
-      "lng": 550500,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.108,
-        "e10": 1.929,
-        "e85": 0.759
-      }
-    },
-    {
-      "id": "84120009",
-      "cp": "84120",
-      "ville": "Pertuis",
-      "adresse": "80 Avenue du 8 Mai 1945",
-      "pop": "R",
-      "lat": 4368672,
-      "lng": 550214.3,
-      "fuels": {
-        "gazole": 2.12,
-        "sp95": 2.1,
-        "sp98": 2.15
-      }
-    },
-    {
-      "id": "84120001",
-      "cp": "84120",
-      "ville": "Pertuis",
-      "adresse": "Boulevard Jean Guigues (=des Jardins)",
-      "pop": "R",
-      "lat": 4369500,
-      "lng": 549300,
-      "fuels": {
-        "gazole": 1.958,
-        "sp95": 1.98,
-        "sp98": 2.084,
-        "e10": 1.922
-      }
-    },
-    {
       "id": "84120007",
       "cp": "84120",
       "ville": "Pertuis",
@@ -1242,20 +426,6 @@
         "sp95": 1.983,
         "sp98": 2.084,
         "e10": 1.924
-      }
-    },
-    {
-      "id": "84120006",
-      "cp": "84120",
-      "ville": "Pertuis",
-      "adresse": "Route d'Aix en Provence, Quartier Saint Martin",
-      "pop": "R",
-      "lat": 4368100,
-      "lng": 550100,
-      "fuels": {
-        "gazole": 2.011,
-        "e10": 1.962,
-        "e85": 0.742
       }
     },
     {
@@ -1274,35 +444,6 @@
       }
     },
     {
-      "id": "84160001",
-      "cp": "84160",
-      "ville": "Puyvert",
-      "adresse": "17 RD 973, Domaine de la VALETTE",
-      "pop": "R",
-      "lat": 4374700,
-      "lng": 533700,
-      "fuels": {
-        "gazole": 1.945,
-        "sp98": 2.008,
-        "e10": 1.909,
-        "e85": 0.759
-      }
-    },
-    {
-      "id": "84440001",
-      "cp": "84440",
-      "ville": "Robion",
-      "adresse": "74 avenue de provence",
-      "pop": "R",
-      "lat": 4384726.8,
-      "lng": 510555.9,
-      "fuels": {
-        "gazole": 2.064,
-        "sp98": 2.116,
-        "e10": 2.053
-      }
-    },
-    {
       "id": "84220003",
       "cp": "84220",
       "ville": "Roussillon",
@@ -1314,35 +455,6 @@
         "gazole": 2.028,
         "e10": 1.986,
         "e85": 0.899
-      }
-    },
-    {
-      "id": "84330004",
-      "cp": "84330",
-      "ville": "Saint-Pierre-de-Vassols",
-      "adresse": "ROUTE DE BEDOIN",
-      "pop": "R",
-      "lat": 4409679.89675,
-      "lng": 514097.5148,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.069,
-        "e10": 1.929
-      }
-    },
-    {
-      "id": "84110005",
-      "cp": "84110",
-      "ville": "Saint-Romain-en-Viennois",
-      "adresse": "Route de Nyons",
-      "pop": "R",
-      "lat": 4424743.80081,
-      "lng": 509314.22309,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.019,
-        "e10": 1.929,
-        "e85": 0.809
       }
     },
     {
@@ -1360,36 +472,6 @@
       }
     },
     {
-      "id": "84260001",
-      "cp": "84260",
-      "ville": "Sarrians",
-      "adresse": "Route de Carpentras",
-      "pop": "R",
-      "lat": 4408120,
-      "lng": 498365,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.089,
-        "e10": 1.939,
-        "e85": 0.839
-      }
-    },
-    {
-      "id": "84390001",
-      "cp": "84390",
-      "ville": "Sault",
-      "adresse": "QUARTIER DE MOUGNE",
-      "pop": "R",
-      "lat": 4410150,
-      "lng": 541452,
-      "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.079,
-        "e10": 1.999,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "84110006",
       "cp": "84110",
       "ville": "Séguret",
@@ -1400,35 +482,6 @@
       "fuels": {
         "gazole": 2.059,
         "sp95": 2.059
-      }
-    },
-    {
-      "id": "84700004",
-      "cp": "84700",
-      "ville": "Sorgues",
-      "adresse": "1238 ROUTE D'ORANGE",
-      "pop": "R",
-      "lat": 4400900,
-      "lng": 487300,
-      "fuels": {
-        "gazole": 1.977,
-        "sp98": 2.139,
-        "e10": 1.934,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "84700005",
-      "cp": "84700",
-      "ville": "Sorgues",
-      "adresse": "2232 AV. D'ORANGE",
-      "pop": "R",
-      "lat": 4402700,
-      "lng": 487400,
-      "fuels": {
-        "gazole": 1.977,
-        "sp98": 1.99,
-        "e10": 1.934
       }
     },
     {
@@ -1461,50 +514,6 @@
       }
     },
     {
-      "id": "84700002",
-      "cp": "84700",
-      "ville": "Sorgues",
-      "adresse": "ROUTE NATIONALE 7",
-      "pop": "R",
-      "lat": 4402600,
-      "lng": 487300,
-      "fuels": {
-        "gazole": 1.986,
-        "sp98": 2.055,
-        "e10": 1.975
-      }
-    },
-    {
-      "id": "84110004",
-      "cp": "84110",
-      "ville": "Vaison-la-Romaine",
-      "adresse": "Avenue Marcel Pagnol",
-      "pop": "R",
-      "lat": 4424300,
-      "lng": 508200,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.019,
-        "e10": 1.929,
-        "e85": 0.797
-      }
-    },
-    {
-      "id": "84110001",
-      "cp": "84110",
-      "ville": "Vaison-la-Romaine",
-      "adresse": "AVENUE VICTOR HUGO",
-      "pop": "R",
-      "lat": 4424200,
-      "lng": 507900,
-      "fuels": {
-        "gazole": 1.978,
-        "sp98": 1.99,
-        "e10": 1.933,
-        "e85": 0.824
-      }
-    },
-    {
       "id": "84600002",
       "cp": "84600",
       "ville": "Valréas",
@@ -1520,21 +529,6 @@
       }
     },
     {
-      "id": "84601001",
-      "cp": "84600",
-      "ville": "Valréas",
-      "adresse": "Route de Nyons",
-      "pop": "R",
-      "lat": 4438600,
-      "lng": 500700,
-      "fuels": {
-        "gazole": 1.958,
-        "sp98": 1.989,
-        "e10": 1.909,
-        "e85": 0.779
-      }
-    },
-    {
       "id": "84270002",
       "cp": "84270",
       "ville": "Vedène",
@@ -1546,20 +540,6 @@
         "gazole": 2.104,
         "sp98": 2.11,
         "e10": 1.984
-      }
-    },
-    {
-      "id": "84740002",
-      "cp": "84740",
-      "ville": "Velleron",
-      "adresse": "319, ROUTE DE CAVAILLON - D31",
-      "pop": "R",
-      "lat": 4395700,
-      "lng": 502900,
-      "fuels": {
-        "gazole": 2.065,
-        "e10": 1.99,
-        "e85": 0.852
       }
     },
     {

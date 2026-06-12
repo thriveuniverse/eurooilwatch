@@ -3,85 +3,55 @@
   "name": "Eure",
   "regionCode": "NOR",
   "regionName": "Normandie",
-  "asOf": "2026-06-12T08:53:47.167Z",
+  "asOf": "2026-06-12T19:03:22.838Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 95,
+  "stationCount": 44,
   "fuels": {
     "gazole": {
-      "count": 95,
-      "mean": 2.0096,
+      "count": 44,
+      "mean": 2.0105,
       "median": 1.999,
-      "min": 1.926,
+      "min": 1.933,
       "max": 2.189
     },
     "sp95": {
-      "count": 23,
-      "mean": 1.9945,
-      "median": 1.998,
-      "min": 1.929,
-      "max": 2.105
+      "count": 14,
+      "mean": 1.9959,
+      "median": 1.9945,
+      "min": 1.969,
+      "max": 2.035
     },
     "sp98": {
-      "count": 85,
-      "mean": 2.038,
+      "count": 37,
+      "mean": 2.0402,
       "median": 2.039,
-      "min": 1.968,
+      "min": 1.973,
       "max": 2.249
     },
     "e10": {
-      "count": 76,
-      "mean": 1.9487,
-      "median": 1.9385,
-      "min": 1.879,
+      "count": 33,
+      "mean": 1.9444,
+      "median": 1.929,
+      "min": 1.881,
       "max": 2.149
     },
     "e85": {
-      "count": 41,
-      "mean": 0.8422,
-      "median": 0.819,
+      "count": 16,
+      "mean": 0.8322,
+      "median": 0.809,
       "min": 0.764,
       "max": 1.069
     },
     "gplc": {
-      "count": 11,
-      "mean": 1.0855,
+      "count": 1,
+      "mean": 1.07,
       "median": 1.07,
-      "min": 0.999,
-      "max": 1.206
+      "min": 1.07,
+      "max": 1.07
     }
   },
   "stations": [
-    {
-      "id": "27370001",
-      "cp": "27370",
-      "ville": "Amfreville-Saint-Amand",
-      "adresse": "Rue de la République",
-      "pop": "R",
-      "lat": 4921000,
-      "lng": 93700,
-      "fuels": {
-        "gazole": 2.039,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "27930010",
-      "cp": "27930",
-      "ville": "Angerville-la-Campagne",
-      "adresse": "4 ROUTE D'ORLEANS",
-      "pop": "R",
-      "lat": 4899572.2,
-      "lng": 115579.1,
-      "fuels": {
-        "gazole": 2.051,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.855,
-        "gplc": 1.118
-      }
-    },
     {
       "id": "27300007",
       "cp": "27300",
@@ -104,9 +74,9 @@
       "lat": 4908550,
       "lng": 59836,
       "fuels": {
-        "gazole": 1.997,
-        "sp98": 2.043,
-        "e10": 1.927
+        "gazole": 1.989,
+        "sp98": 2.029,
+        "e10": 1.915
       }
     },
     {
@@ -138,22 +108,6 @@
       }
     },
     {
-      "id": "27210009",
-      "cp": "27210",
-      "ville": "Beuzeville",
-      "adresse": "Autoroute A13",
-      "pop": "A",
-      "lat": 4932492.72589,
-      "lng": 32840.99617,
-      "fuels": {
-        "gazole": 2.128,
-        "sp98": 2.163,
-        "e10": 2.071,
-        "e85": 0.989,
-        "gplc": 1.064
-      }
-    },
-    {
       "id": "27210006",
       "cp": "27210",
       "ville": "Beuzeville",
@@ -181,37 +135,6 @@
         "sp98": 2.019,
         "e10": 1.909,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "27310009",
-      "cp": "27310",
-      "ville": "Bosgouet",
-      "adresse": "A13 - AIRE DE BOSGOUET NORD",
-      "pop": "A",
-      "lat": 4936118,
-      "lng": 86445.7,
-      "fuels": {
-        "gazole": 2.105,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.998
-      }
-    },
-    {
-      "id": "27310010",
-      "cp": "27310",
-      "ville": "Bosgouet",
-      "adresse": "aire de bosgouet sud",
-      "pop": "A",
-      "lat": 4936100,
-      "lng": 86000,
-      "fuels": {
-        "gazole": 2.094,
-        "sp98": 2.129,
-        "e10": 2.037,
-        "e85": 0.996,
-        "gplc": 1.121
       }
     },
     {
@@ -271,21 +194,6 @@
       }
     },
     {
-      "id": "27160001",
-      "cp": "27160",
-      "ville": "Breteuil",
-      "adresse": "route de Conches",
-      "pop": "R",
-      "lat": 4885200,
-      "lng": 92000,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.105,
-        "sp98": 2.119,
-        "e10": 2.009
-      }
-    },
-    {
       "id": "27800002",
       "cp": "27800",
       "ville": "Brionne",
@@ -308,8 +216,8 @@
       "lat": 4919900,
       "lng": 71600,
       "fuels": {
-        "gazole": 2.05,
-        "sp95": 1.998
+        "gazole": 2.011,
+        "sp95": 2.015
       }
     },
     {
@@ -324,63 +232,6 @@
         "gazole": 1.963,
         "sp98": 2.043,
         "e10": 1.923
-      }
-    },
-    {
-      "id": "27930001",
-      "cp": "27190",
-      "ville": "Conches-en-Ouche",
-      "adresse": "13 AVENUE JEAN MOULIN",
-      "pop": "R",
-      "lat": 4895706.02407,
-      "lng": 93545.35676,
-      "fuels": {
-        "gazole": 2.019,
-        "sp95": 1.999,
-        "sp98": 2.059
-      }
-    },
-    {
-      "id": "27190002",
-      "cp": "27190",
-      "ville": "Conches-en-Ouche",
-      "adresse": "Rue Eugène Pottier",
-      "pop": "R",
-      "lat": 4895539,
-      "lng": 94694,
-      "fuels": {
-        "gazole": 2.009,
-        "sp95": 1.999,
-        "sp98": 2.049,
-        "e10": 1.939,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "27170003",
-      "cp": "27170",
-      "ville": "Écardenville-la-Campagne",
-      "adresse": "2 route Nationale 13",
-      "pop": "R",
-      "lat": 4912300,
-      "lng": 84800,
-      "fuels": {
-        "gazole": 2.039,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "27260001",
-      "cp": "27260",
-      "ville": "Épaignes",
-      "adresse": "12 Route des Anglais",
-      "pop": "R",
-      "lat": 4927900,
-      "lng": 43800,
-      "fuels": {
-        "gazole": 2.062,
-        "sp98": 1.99,
-        "e10": 1.99
       }
     },
     {
@@ -405,50 +256,10 @@
       "lat": 4930600,
       "lng": 161300,
       "fuels": {
-        "gazole": 2.026,
+        "gazole": 1.999,
         "sp95": 1.999,
         "sp98": 2.04,
         "e10": 1.965
-      }
-    },
-    {
-      "id": "27150001",
-      "cp": "27150",
-      "ville": "Étrépagny",
-      "adresse": "ZA PORTE ROUGE",
-      "pop": "R",
-      "lat": 4930100,
-      "lng": 161900,
-      "fuels": {
-        "gazole": 2.026,
-        "sp98": 2.04,
-        "e10": 1.965
-      }
-    },
-    {
-      "id": "27350003",
-      "cp": "27350",
-      "ville": "Étréville",
-      "adresse": "Route de Médine",
-      "pop": "R",
-      "lat": 4937100,
-      "lng": 62900,
-      "fuels": {
-        "gazole": 2.064
-      }
-    },
-    {
-      "id": "27000004",
-      "cp": "27000",
-      "ville": "Évreux",
-      "adresse": "1 Rue de Fauville",
-      "pop": "R",
-      "lat": 4902379,
-      "lng": 117388,
-      "fuels": {
-        "gazole": 1.965,
-        "sp98": 2.02,
-        "e10": 1.91
       }
     },
     {
@@ -462,36 +273,6 @@
       "fuels": {
         "gazole": 1.952,
         "e10": 1.911
-      }
-    },
-    {
-      "id": "27009001",
-      "cp": "27000",
-      "ville": "Évreux",
-      "adresse": "Boulevard de Normandie",
-      "pop": "R",
-      "lat": 4902200,
-      "lng": 113600,
-      "fuels": {
-        "gazole": 1.945,
-        "sp98": 2.013,
-        "e10": 1.89,
-        "gplc": 0.999
-      }
-    },
-    {
-      "id": "27930002",
-      "cp": "27930",
-      "ville": "Évreux",
-      "adresse": "Route Nationnale 13",
-      "pop": "R",
-      "lat": 4901500,
-      "lng": 117400,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.049,
-        "e10": 1.92,
-        "e85": 0.836
       }
     },
     {
@@ -524,21 +305,6 @@
       }
     },
     {
-      "id": "27380003",
-      "cp": "27380",
-      "ville": "Fleury-sur-Andelle",
-      "adresse": "RUE DU GENERAL DE GAULLE",
-      "pop": "R",
-      "lat": 4936541.3477,
-      "lng": 134996.81837,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 1.999,
-        "sp98": 2.069,
-        "e85": 0.839
-      }
-    },
-    {
       "id": "27600001",
       "cp": "27600",
       "ville": "Gaillon",
@@ -551,35 +317,6 @@
         "sp98": 1.992,
         "e10": 1.914,
         "e85": 0.798
-      }
-    },
-    {
-      "id": "27620002",
-      "cp": "27620",
-      "ville": "Gasny",
-      "adresse": "ROUTE DE FOURGES",
-      "pop": "R",
-      "lat": 4909375,
-      "lng": 160616,
-      "fuels": {
-        "gazole": 1.933,
-        "sp98": 1.973,
-        "e10": 1.902
-      }
-    },
-    {
-      "id": "27140002",
-      "cp": "27140",
-      "ville": "Gisors",
-      "adresse": "30 Rue du Bouloir",
-      "pop": "R",
-      "lat": 4927900,
-      "lng": 178700,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.041,
-        "e10": 1.939,
-        "e85": 0.838
       }
     },
     {
@@ -598,63 +335,6 @@
       }
     },
     {
-      "id": "27520001",
-      "cp": "27520",
-      "ville": "Grand Bourgtheroulde",
-      "adresse": "300 Chemin Vautier",
-      "pop": "R",
-      "lat": 4929100,
-      "lng": 87500,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.929,
-        "e85": 0.829
-      }
-    },
-    {
-      "id": "27930008",
-      "cp": "27930",
-      "ville": "Gravigny",
-      "adresse": "44 BIS AVENUE ARISTIDE BRIAND",
-      "pop": "R",
-      "lat": 4904400,
-      "lng": 116100,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 1.99,
-        "e10": 1.909,
-        "e85": 0.836
-      }
-    },
-    {
-      "id": "27460003",
-      "cp": "27460",
-      "ville": "Igoville",
-      "adresse": "RN 15",
-      "pop": "R",
-      "lat": 4932000,
-      "lng": 115600,
-      "fuels": {
-        "gazole": 1.988,
-        "sp98": 2.038,
-        "e10": 1.958
-      }
-    },
-    {
-      "id": "27460002",
-      "cp": "27460",
-      "ville": "Igoville",
-      "adresse": "RN 15",
-      "pop": "R",
-      "lat": 4931200,
-      "lng": 115800,
-      "fuels": {
-        "gazole": 2.053,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "27460001",
       "cp": "27460",
       "ville": "Igoville",
@@ -667,36 +347,6 @@
         "sp95": 1.999,
         "e10": 1.949,
         "e85": 0.819
-      }
-    },
-    {
-      "id": "27406001",
-      "cp": "27400",
-      "ville": "Incarville",
-      "adresse": "RUE DES PRES",
-      "pop": "R",
-      "lat": 4923500,
-      "lng": 118300,
-      "fuels": {
-        "gazole": 1.926,
-        "sp95": 1.969,
-        "sp98": 1.989,
-        "e10": 1.883,
-        "e85": 0.79
-      }
-    },
-    {
-      "id": "27540001",
-      "cp": "27540",
-      "ville": "Ivry-la-Bataille",
-      "adresse": "17 Rue d'Ézy",
-      "pop": "R",
-      "lat": 4888100,
-      "lng": 146000,
-      "fuels": {
-        "gazole": 1.999,
-        "e10": 1.999,
-        "e85": 0.809
       }
     },
     {
@@ -722,9 +372,9 @@
       "lat": 4911000,
       "lng": 145100,
       "fuels": {
-        "gazole": 2.048,
+        "gazole": 1.989,
         "sp98": 1.99,
-        "e10": 1.99
+        "e10": 1.983
       }
     },
     {
@@ -749,38 +399,9 @@
       "lat": 4877600,
       "lng": 121100,
       "fuels": {
-        "gazole": 1.978,
-        "sp98": 2.019,
-        "e10": 1.942
-      }
-    },
-    {
-      "id": "27110003",
-      "cp": "27110",
-      "ville": "Le Neubourg",
-      "adresse": "39b Av. de la Libération",
-      "pop": "R",
-      "lat": 4914255.95289,
-      "lng": 90352.51082,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.02,
-        "e10": 1.915,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "27110002",
-      "cp": "27110",
-      "ville": "Le Neubourg",
-      "adresse": "Route de Louviers",
-      "pop": "R",
-      "lat": 4914900,
-      "lng": 91900,
-      "fuels": {
-        "gazole": 1.926,
-        "sp98": 1.968,
-        "e10": 1.883
+        "gazole": 1.945,
+        "sp98": 1.989,
+        "e10": 1.919
       }
     },
     {
@@ -814,50 +435,6 @@
       }
     },
     {
-      "id": "27700007",
-      "cp": "27700",
-      "ville": "Les Andelys",
-      "adresse": "50 AVENUE DE LA REPUBLIQUE",
-      "pop": "R",
-      "lat": 4924484.03571,
-      "lng": 141006.49428,
-      "fuels": {
-        "gazole": 2.037,
-        "sp98": 2.055,
-        "e10": 1.938
-      }
-    },
-    {
-      "id": "27700004",
-      "cp": "27700",
-      "ville": "Les Andelys",
-      "adresse": "rue Planches",
-      "pop": "R",
-      "lat": 4924865,
-      "lng": 143769,
-      "fuels": {
-        "gazole": 2.001,
-        "sp98": 2.055,
-        "e10": 1.938,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "27340001",
-      "cp": "27340",
-      "ville": "Les Damps",
-      "adresse": "75 Avenue Forêt de Bord",
-      "pop": "R",
-      "lat": 4930163.7,
-      "lng": 116555.4,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.039,
-        "e10": 1.949,
-        "e85": 0.819
-      }
-    },
-    {
       "id": "27560001",
       "cp": "27560",
       "ville": "Lieurey",
@@ -872,21 +449,6 @@
       }
     },
     {
-      "id": "27404001",
-      "cp": "27400",
-      "ville": "Louviers",
-      "adresse": "4 place jean jaures",
-      "pop": "R",
-      "lat": 4921000,
-      "lng": 117000,
-      "fuels": {
-        "gazole": 2.023,
-        "sp98": 1.99,
-        "e10": 1.959,
-        "gplc": 1.07
-      }
-    },
-    {
       "id": "27400001",
       "cp": "27400",
       "ville": "Louviers",
@@ -897,36 +459,8 @@
       "fuels": {
         "gazole": 1.949,
         "sp98": 1.999,
-        "e10": 1.879
-      }
-    },
-    {
-      "id": "27810001",
-      "cp": "27810",
-      "ville": "Marcilly-sur-Eure",
-      "adresse": "90 route de dreux",
-      "pop": "R",
-      "lat": 4881691.9,
-      "lng": 134427.6,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.979,
-        "e85": 0.839
-      }
-    },
-    {
-      "id": "27300004",
-      "cp": "27300",
-      "ville": "Menneval",
-      "adresse": "Route de Rouen",
-      "pop": "R",
-      "lat": 4910500,
-      "lng": 61300,
-      "fuels": {
-        "gazole": 1.926,
-        "sp98": 1.968,
-        "e10": 1.883,
-        "e85": 0.78
+        "e10": 1.889,
+        "e85": 0.809
       }
     },
     {
@@ -941,36 +475,6 @@
         "gazole": 2.039,
         "sp98": 2.049,
         "e10": 1.915
-      }
-    },
-    {
-      "id": "27240001",
-      "cp": "27240",
-      "ville": "Mesnils-sur-Iton",
-      "adresse": "ROUTE DE VERNEUIL",
-      "pop": "R",
-      "lat": 4886599,
-      "lng": 107086,
-      "fuels": {
-        "gazole": 2.029,
-        "sp98": 2.069,
-        "e10": 1.945
-      }
-    },
-    {
-      "id": "27300006",
-      "cp": "27300",
-      "ville": "Nassandres sur Risle",
-      "adresse": "RD 613 - CARREFOUR DE MALBROUCK",
-      "pop": "R",
-      "lat": 4915500,
-      "lng": 67300,
-      "fuels": {
-        "gazole": 1.936,
-        "sp98": 1.99,
-        "e10": 1.902,
-        "e85": 0.834,
-        "gplc": 1.054
       }
     },
     {
@@ -1018,37 +522,6 @@
       }
     },
     {
-      "id": "27120003",
-      "cp": "27120",
-      "ville": "Pacy-sur-Eure",
-      "adresse": "71 Rue Marcel Moisson",
-      "pop": "R",
-      "lat": 4901300,
-      "lng": 137800,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.039,
-        "e10": 1.949,
-        "e85": 0.789
-      }
-    },
-    {
-      "id": "27120002",
-      "cp": "27120",
-      "ville": "Pacy-sur-Eure",
-      "adresse": "rue du 18 Juin 40",
-      "pop": "R",
-      "lat": 4901000,
-      "lng": 139700,
-      "fuels": {
-        "gazole": 1.959,
-        "sp95": 1.97,
-        "sp98": 2.01,
-        "e10": 1.899,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "27910001",
       "cp": "27910",
       "ville": "Perriers-sur-Andelle",
@@ -1060,34 +533,6 @@
         "gazole": 2.019,
         "sp98": 2.069,
         "e10": 1.949
-      }
-    },
-    {
-      "id": "27500005",
-      "cp": "27500",
-      "ville": "Pont-Audemer",
-      "adresse": "7 RUE DU GENERAL KOENIG",
-      "pop": "R",
-      "lat": 4934900,
-      "lng": 52800,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 1.999,
-        "e10": 1.922
-      }
-    },
-    {
-      "id": "27500001",
-      "cp": "27500",
-      "ville": "Pont-Audemer",
-      "adresse": "Avenue de l'Europe",
-      "pop": "R",
-      "lat": 4934984.83373,
-      "lng": 53089.61386,
-      "fuels": {
-        "gazole": 2.015,
-        "sp98": 2.056,
-        "e10": 1.933
       }
     },
     {
@@ -1119,48 +564,6 @@
       }
     },
     {
-      "id": "27610001",
-      "cp": "27610",
-      "ville": "Pont-Saint-Pierre",
-      "adresse": "Route de Pont Saint-Pierre",
-      "pop": "R",
-      "lat": 4933564.84139,
-      "lng": 126824.11513,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.099,
-        "e10": 1.969
-      }
-    },
-    {
-      "id": "27350004",
-      "cp": "27350",
-      "ville": "Routot",
-      "adresse": "19 RUE DU ROUMOIS",
-      "pop": "R",
-      "lat": 4937883.2,
-      "lng": 72481.1,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "sp98": 2.069
-      }
-    },
-    {
-      "id": "27250002",
-      "cp": "27250",
-      "ville": "Rugles",
-      "adresse": "Za Du, Le Petit Hanoy",
-      "pop": "R",
-      "lat": 4881800,
-      "lng": 70000,
-      "fuels": {
-        "gazole": 1.995,
-        "sp98": 2.033,
-        "e10": 1.919
-      }
-    },
-    {
       "id": "27220001",
       "cp": "27220",
       "ville": "Saint-André-de-l'Eure",
@@ -1173,36 +576,6 @@
         "sp98": 2.049,
         "e10": 1.929,
         "e85": 0.829
-      }
-    },
-    {
-      "id": "27600006",
-      "cp": "27600",
-      "ville": "Saint-Aubin-sur-Gaillon",
-      "adresse": "15 Rue de la Côté des Sables",
-      "pop": "R",
-      "lat": 4915300,
-      "lng": 136600,
-      "fuels": {
-        "gazole": 1.962,
-        "sp98": 1.99,
-        "e10": 1.928,
-        "e85": 0.819
-      }
-    },
-    {
-      "id": "27950002",
-      "cp": "27950",
-      "ville": "Saint-Marcel",
-      "adresse": "Rue des Prés",
-      "pop": "R",
-      "lat": 4910324,
-      "lng": 145322,
-      "fuels": {
-        "gazole": 1.933,
-        "sp98": 1.973,
-        "e10": 1.902,
-        "e85": 0.809
       }
     },
     {
@@ -1236,20 +609,6 @@
       }
     },
     {
-      "id": "27260002",
-      "cp": "27260",
-      "ville": "Saint-Pierre-de-Cormeilles",
-      "adresse": "Route de Lisieux",
-      "pop": "R",
-      "lat": 4924100,
-      "lng": 38000,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.079,
-        "e10": 1.929
-      }
-    },
-    {
       "id": "27370002",
       "cp": "27370",
       "ville": "Saint-Pierre-des-Fleurs",
@@ -1280,35 +639,6 @@
       }
     },
     {
-      "id": "27230006",
-      "cp": "27230",
-      "ville": "Thiberville",
-      "adresse": "2 Rue de Lisieux",
-      "pop": "R",
-      "lat": 4913600,
-      "lng": 45400,
-      "fuels": {
-        "gazole": 2.077,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "27100001",
-      "cp": "27100",
-      "ville": "Val-de-Reuil",
-      "adresse": "Place des 4 Saisons",
-      "pop": "R",
-      "lat": 4927067.23,
-      "lng": 120716.1403,
-      "fuels": {
-        "gazole": 1.94,
-        "sp98": 1.969,
-        "e10": 1.88,
-        "e85": 0.792,
-        "gplc": 0.999
-      }
-    },
-    {
       "id": "27130002",
       "cp": "27130",
       "ville": "Verneuil d'Avre et d'Iton",
@@ -1317,54 +647,8 @@
       "lat": 4874700,
       "lng": 92900,
       "fuels": {
-        "gazole": 2.051,
-        "sp98": 1.99,
+        "gazole": 2.055,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "27130005",
-      "cp": "27130",
-      "ville": "Verneuil d'Avre et d'Iton",
-      "adresse": "RN12 Route de Montagne",
-      "pop": "R",
-      "lat": 4873300,
-      "lng": 92100,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 2.039,
-        "e10": 1.919,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "27130001",
-      "cp": "27130",
-      "ville": "Verneuil d'Avre et d'Iton",
-      "adresse": "ZA PONT ROUGE",
-      "pop": "R",
-      "lat": 4873900,
-      "lng": 94200,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.059,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "27200004",
-      "cp": "27200",
-      "ville": "Vernon",
-      "adresse": "73 Avenue de Paris",
-      "pop": "R",
-      "lat": 4908800,
-      "lng": 149400,
-      "fuels": {
-        "gazole": 2.099,
-        "sp98": 2.169,
-        "e10": 2.079,
-        "e85": 0.965,
-        "gplc": 1.089
       }
     },
     {
@@ -1395,37 +679,6 @@
         "sp98": 1.973,
         "e10": 1.902,
         "e85": 0.764
-      }
-    },
-    {
-      "id": "27400011",
-      "cp": "27400",
-      "ville": "Vironvay",
-      "adresse": "A13 Aire De Vironvay Nord",
-      "pop": "A",
-      "lat": 4921138.4,
-      "lng": 122003.7,
-      "fuels": {
-        "gazole": 2.124,
-        "sp98": 2.159,
-        "e10": 2.068,
-        "e85": 0.929,
-        "gplc": 1.151
-      }
-    },
-    {
-      "id": "27400007",
-      "cp": "27400",
-      "ville": "Vironvay",
-      "adresse": "Autoroute A13 - Aire de Vironvay Sud",
-      "pop": "A",
-      "lat": 4920600,
-      "lng": 121800,
-      "fuels": {
-        "gazole": 2.138,
-        "sp98": 2.139,
-        "e10": 2.06,
-        "gplc": 1.206
       }
     }
   ]

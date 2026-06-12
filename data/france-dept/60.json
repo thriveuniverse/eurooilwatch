@@ -3,70 +3,55 @@
   "name": "Oise",
   "regionCode": "HDF",
   "regionName": "Hauts-de-France",
-  "asOf": "2026-06-12T08:53:47.167Z",
+  "asOf": "2026-06-12T19:03:22.838Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 115,
+  "stationCount": 46,
   "fuels": {
     "gazole": {
-      "count": 112,
-      "mean": 2.0044,
-      "median": 1.998,
-      "min": 1.945,
-      "max": 2.125
+      "count": 44,
+      "mean": 2.0085,
+      "median": 1.999,
+      "min": 1.95,
+      "max": 2.109
     },
     "sp95": {
-      "count": 39,
-      "mean": 1.9999,
-      "median": 1.996,
+      "count": 18,
+      "mean": 1.9931,
+      "median": 1.9955,
       "min": 1.969,
-      "max": 2.099
+      "max": 2.01
     },
     "sp98": {
-      "count": 97,
-      "mean": 2.0374,
-      "median": 2.023,
+      "count": 36,
+      "mean": 2.0541,
+      "median": 2.048,
       "min": 1.985,
-      "max": 2.19
+      "max": 2.187
     },
     "e10": {
-      "count": 93,
-      "mean": 1.9485,
-      "median": 1.941,
-      "min": 1.901,
+      "count": 35,
+      "mean": 1.9554,
+      "median": 1.949,
+      "min": 1.909,
       "max": 2.075
     },
     "e85": {
-      "count": 47,
-      "mean": 0.8434,
+      "count": 19,
+      "mean": 0.8555,
       "median": 0.824,
       "min": 0.773,
-      "max": 0.999
+      "max": 0.998
     },
     "gplc": {
-      "count": 13,
-      "mean": 1.013,
-      "median": 0.999,
-      "min": 0.923,
+      "count": 4,
+      "mean": 1.0557,
+      "median": 1.0325,
+      "min": 0.989,
       "max": 1.169
     }
   },
   "stations": [
-    {
-      "id": "60000017",
-      "cp": "60000",
-      "ville": "Allonne",
-      "adresse": "ZAC SAINT-MATHURIN - RD1001",
-      "pop": "R",
-      "lat": 4940249.50354,
-      "lng": 212786.69713,
-      "fuels": {
-        "gazole": 1.971,
-        "sp98": 1.99,
-        "e10": 1.941,
-        "e85": 0.835
-      }
-    },
     {
       "id": "60110006",
       "cp": "60110",
@@ -83,75 +68,6 @@
       }
     },
     {
-      "id": "60110004",
-      "cp": "60110",
-      "ville": "Amblainville",
-      "adresse": "A16 - SORTIE 13",
-      "pop": "A",
-      "lat": 4921043,
-      "lng": 215118.7,
-      "fuels": {
-        "gazole": 2.098,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "60390004",
-      "cp": "60390",
-      "ville": "Auneuil",
-      "adresse": "100 route de Gisors",
-      "pop": "R",
-      "lat": 4937148.5,
-      "lng": 198803.2,
-      "fuels": {
-        "gazole": 1.998,
-        "sp98": 1.996,
-        "e10": 1.918
-      }
-    },
-    {
-      "id": "60390001",
-      "cp": "60390",
-      "ville": "Auneuil",
-      "adresse": "450 Rue des Aulnes",
-      "pop": "R",
-      "lat": 4936800,
-      "lng": 198700,
-      "fuels": {
-        "gazole": 1.998,
-        "sp98": 1.996,
-        "e10": 1.918
-      }
-    },
-    {
-      "id": "60000006",
-      "cp": "60000",
-      "ville": "Beauvais",
-      "adresse": "1 AVE KENNEDY",
-      "pop": "R",
-      "lat": 4943000,
-      "lng": 209200,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.075,
-        "e10": 1.946
-      }
-    },
-    {
-      "id": "60000001",
-      "cp": "60000",
-      "ville": "Beauvais",
-      "adresse": "1 Avenue Descartes",
-      "pop": "R",
-      "lat": 4940900,
-      "lng": 211500,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.015,
-        "e10": 1.926
-      }
-    },
-    {
       "id": "60000015",
       "cp": "60000",
       "ville": "Beauvais",
@@ -163,7 +79,7 @@
         "gazole": 2.009,
         "sp98": 2.139,
         "e10": 1.969,
-        "e85": 0.959,
+        "e85": 0.967,
         "gplc": 1.169
       }
     },
@@ -178,50 +94,8 @@
       "fuels": {
         "gazole": 1.969,
         "sp95": 1.974,
-        "sp98": 2.015
-      }
-    },
-    {
-      "id": "60000011",
-      "cp": "60000",
-      "ville": "Beauvais",
-      "adresse": "9 Avenue Montaigne",
-      "pop": "R",
-      "lat": 4941000,
-      "lng": 210900,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "sp98": 2.19
-      }
-    },
-    {
-      "id": "60000007",
-      "cp": "60000",
-      "ville": "Beauvais",
-      "adresse": "AVENUE NELSON MANDELA",
-      "pop": "R",
-      "lat": 4943100,
-      "lng": 207100,
-      "fuels": {
-        "gazole": 2.018,
-        "sp98": 2.126,
-        "e10": 1.946
-      }
-    },
-    {
-      "id": "60000012",
-      "cp": "60000",
-      "ville": "Beauvais",
-      "adresse": "RN 31 - ROUTE DE CLERMONT",
-      "pop": "R",
-      "lat": 4943100,
-      "lng": 211800,
-      "fuels": {
-        "gazole": 2.061,
-        "e10": 1.99,
-        "e85": 0.889,
-        "gplc": 0.999
+        "sp98": 2.015,
+        "e85": 0.809
       }
     },
     {
@@ -238,20 +112,6 @@
         "sp98": 2.109,
         "e10": 1.965,
         "e85": 0.849
-      }
-    },
-    {
-      "id": "60540002",
-      "cp": "60540",
-      "ville": "Bornel",
-      "adresse": "10 RUE LOUIS DENOUAL",
-      "pop": "R",
-      "lat": 4920136.05,
-      "lng": 220429.72,
-      "fuels": {
-        "gazole": 1.995,
-        "sp95": 1.981,
-        "sp98": 2.045
       }
     },
     {
@@ -279,51 +139,8 @@
       "lat": 4963500,
       "lng": 228600,
       "fuels": {
-        "gazole": 2.039,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "60120005",
-      "cp": "60120",
-      "ville": "Breteuil",
-      "adresse": "88 rue d`Amiens les Hiebles ZAC NORD",
-      "pop": "R",
-      "lat": 4964100,
-      "lng": 227900,
-      "fuels": {
-        "gazole": 1.959,
-        "sp95": 1.995,
-        "e10": 1.945,
-        "e85": 0.78
-      }
-    },
-    {
-      "id": "60120002",
-      "cp": "60120",
-      "ville": "Breteuil",
-      "adresse": "Rue d'Amiens",
-      "pop": "R",
-      "lat": 4963618,
-      "lng": 229025,
-      "fuels": {
-        "gazole": 1.97,
-        "sp95": 2.034,
-        "sp98": 2.19
-      }
-    },
-    {
-      "id": "60600001",
-      "cp": "60600",
-      "ville": "Breuil-le-Vert",
-      "adresse": "Route de Paris",
-      "pop": "R",
-      "lat": 4936200,
-      "lng": 242200,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.019,
-        "e10": 1.919
+        "gazole": 1.98,
+        "e10": 1.979
       }
     },
     {
@@ -371,66 +188,6 @@
       }
     },
     {
-      "id": "60210003",
-      "cp": "60210",
-      "ville": "Cempuis",
-      "adresse": "Route de Crèvecoeur",
-      "pop": "R",
-      "lat": 4966600,
-      "lng": 195900,
-      "fuels": {
-        "gazole": 1.975,
-        "sp95": 1.981,
-        "e10": 1.914,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "60300010",
-      "cp": "60300",
-      "ville": "Chamant",
-      "adresse": "DEVIATION NORD DE SENLIS - Avenue du Poteau",
-      "pop": "R",
-      "lat": 4922100,
-      "lng": 259300,
-      "fuels": {
-        "gazole": 2.063,
-        "sp95": 1.99,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.842
-      }
-    },
-    {
-      "id": "60230004",
-      "cp": "60230",
-      "ville": "Chambly",
-      "adresse": "RN1 ROUTE PARIS",
-      "pop": "R",
-      "lat": 4918800,
-      "lng": 223500,
-      "fuels": {
-        "gazole": 1.97,
-        "sp98": 1.99,
-        "e10": 1.927,
-        "gplc": 0.944
-      }
-    },
-    {
-      "id": "60230002",
-      "cp": "60230",
-      "ville": "Chambly",
-      "adresse": "Rue Truffaut",
-      "pop": "R",
-      "lat": 4915621.78442,
-      "lng": 225460.61424,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 1.99,
-        "e10": 1.942
-      }
-    },
-    {
       "id": "60500010",
       "cp": "60500",
       "ville": "Chantilly",
@@ -442,49 +199,7 @@
         "gazole": 1.999,
         "sp98": 2.139,
         "e10": 1.969,
-        "e85": 0.939
-      }
-    },
-    {
-      "id": "60500002",
-      "cp": "60500",
-      "ville": "Chantilly",
-      "adresse": "41 Avenue du Général Leclerc",
-      "pop": "R",
-      "lat": 4917800,
-      "lng": 245600,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.02,
-        "e10": 1.953
-      }
-    },
-    {
-      "id": "60500008",
-      "cp": "60500",
-      "ville": "Chantilly",
-      "adresse": "Allée de l'Europe",
-      "pop": "R",
-      "lat": 4920200,
-      "lng": 246300,
-      "fuels": {
-        "gazole": 2.025,
-        "sp95": 2.049,
-        "sp98": 2.089
-      }
-    },
-    {
-      "id": "60240001",
-      "cp": "60240",
-      "ville": "Chaumont-en-Vexin",
-      "adresse": "ZAC du moulin d'Angean",
-      "pop": "R",
-      "lat": 4927200,
-      "lng": 187400,
-      "fuels": {
-        "gazole": 1.984,
-        "sp98": 2.01,
-        "e10": 1.902
+        "e85": 0.949
       }
     },
     {
@@ -499,35 +214,6 @@
         "gazole": 1.999,
         "sp98": 2.099,
         "e10": 1.969
-      }
-    },
-    {
-      "id": "60280003",
-      "cp": "60280",
-      "ville": "Clairoix",
-      "adresse": "254 avenue de la république",
-      "pop": "R",
-      "lat": 4943126.68816,
-      "lng": 283734.34751,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.039,
-        "e10": 1.909
-      }
-    },
-    {
-      "id": "60600004",
-      "cp": "60600",
-      "ville": "Clermont",
-      "adresse": "Rue Gérard de Nerval",
-      "pop": "R",
-      "lat": 4938260,
-      "lng": 240177,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.976,
-        "sp98": 2.019,
-        "e10": 1.919
       }
     },
     {
@@ -546,20 +232,6 @@
       }
     },
     {
-      "id": "60200006",
-      "cp": "60200",
-      "ville": "Compiègne",
-      "adresse": "12 Avenue des Martyrs de la Liberté",
-      "pop": "R",
-      "lat": 4940100,
-      "lng": 280700,
-      "fuels": {
-        "gazole": 2.013,
-        "sp98": 2.01,
-        "e10": 1.963
-      }
-    },
-    {
       "id": "60200002",
       "cp": "60200",
       "ville": "Compiègne",
@@ -570,62 +242,6 @@
       "fuels": {
         "gazole": 2.03,
         "sp95": 2.01
-      }
-    },
-    {
-      "id": "60200012",
-      "cp": "60200",
-      "ville": "Compiègne",
-      "adresse": "142 RUE DE PARIS",
-      "pop": "R",
-      "lat": 4940700,
-      "lng": 281300,
-      "fuels": {
-        "gazole": 1.955,
-        "sp98": 1.99,
-        "e10": 1.922,
-        "e85": 0.821
-      }
-    },
-    {
-      "id": "60200005",
-      "cp": "60200",
-      "ville": "Compiègne",
-      "adresse": "20 Rue de Clermont",
-      "pop": "R",
-      "lat": 4941900,
-      "lng": 282000,
-      "fuels": {
-        "gazole": 2.002,
-        "sp98": 2.05,
-        "e10": 1.96
-      }
-    },
-    {
-      "id": "60200001",
-      "cp": "60200",
-      "ville": "Compiègne",
-      "adresse": "47 Rue Notre-Dame de Bon Secours",
-      "pop": "R",
-      "lat": 4941300,
-      "lng": 281600,
-      "fuels": {
-        "gazole": 1.958,
-        "sp98": 2.023,
-        "e10": 1.922
-      }
-    },
-    {
-      "id": "60200011",
-      "cp": "60200",
-      "ville": "Compiègne",
-      "adresse": "Avenue de l' Europe",
-      "pop": "R",
-      "lat": 4938626,
-      "lng": 278480,
-      "fuels": {
-        "gazole": 2.049,
-        "e10": 1.99
       }
     },
     {
@@ -657,21 +273,6 @@
       }
     },
     {
-      "id": "60800008",
-      "cp": "60800",
-      "ville": "Crépy-en-Valois",
-      "adresse": "9 Rue Saint-Germain",
-      "pop": "R",
-      "lat": 4923000,
-      "lng": 290600,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.06,
-        "e10": 1.97,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "60800003",
       "cp": "60800",
       "ville": "Crépy-en-Valois",
@@ -695,7 +296,7 @@
       "lng": 290549.13759,
       "fuels": {
         "gazole": 1.989,
-        "sp95": 1.999,
+        "sp95": 1.969,
         "sp98": 2.029,
         "e10": 1.929,
         "e85": 0.798
@@ -757,34 +358,6 @@
       }
     },
     {
-      "id": "60420003",
-      "cp": "60420",
-      "ville": "Ferrières",
-      "adresse": "16 RUE DU CALVAIRE",
-      "pop": "R",
-      "lat": 4959283.57516,
-      "lng": 251334.34965,
-      "fuels": {
-        "gazole": 2.01,
-        "sp95": 2.02
-      }
-    },
-    {
-      "id": "60600006",
-      "cp": "60600",
-      "ville": "Fitz-James",
-      "adresse": "Rue Nelson Mandela",
-      "pop": "R",
-      "lat": 4939600,
-      "lng": 241900,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.019,
-        "e10": 1.919,
-        "e85": 0.882
-      }
-    },
-    {
       "id": "60220006",
       "cp": "60220",
       "ville": "Formerie",
@@ -812,35 +385,6 @@
       }
     },
     {
-      "id": "60000008",
-      "cp": "60000",
-      "ville": "Goincourt",
-      "adresse": "42 Rue Juliette Nevouet",
-      "pop": "R",
-      "lat": 4943300,
-      "lng": 204600,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 1.997,
-        "e10": 1.919,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "60270003",
-      "cp": "60270",
-      "ville": "Gouvieux",
-      "adresse": "Rue Blanche",
-      "pop": "R",
-      "lat": 4918875.57485,
-      "lng": 241333.81102,
-      "fuels": {
-        "gazole": 1.96,
-        "sp98": 2.018,
-        "e10": 1.911
-      }
-    },
-    {
       "id": "60210002",
       "cp": "60210",
       "ville": "Grandvilliers",
@@ -852,20 +396,6 @@
         "gazole": 1.999,
         "sp95": 1.993,
         "sp98": 2.083
-      }
-    },
-    {
-      "id": "60640001",
-      "cp": "60640",
-      "ville": "Guiscard",
-      "adresse": "206 Rue Marcel Poulin",
-      "pop": "R",
-      "lat": 4965500,
-      "lng": 305000,
-      "fuels": {
-        "gazole": 2.04,
-        "sp98": 1.99,
-        "e10": 1.987
       }
     },
     {
@@ -893,38 +423,9 @@
       "lng": 223900,
       "fuels": {
         "gazole": 1.979,
-        "sp95": 1.985,
-        "sp98": 2.045,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "60680003",
-      "cp": "60680",
-      "ville": "Jonquières",
-      "adresse": "RN 31 - ROUTE DE CLERMONT",
-      "pop": "R",
-      "lat": 4940300,
-      "lng": 273900,
-      "fuels": {
-        "gazole": 1.952,
-        "sp98": 1.99,
-        "e10": 1.916,
-        "e85": 0.825
-      }
-    },
-    {
-      "id": "95472001",
-      "cp": "60520",
-      "ville": "La Chapelle-en-Serval",
-      "adresse": "RD922",
-      "pop": "R",
-      "lat": 4910100,
-      "lng": 252800,
-      "fuels": {
-        "gazole": 2.025,
-        "sp98": 2.069,
-        "e10": 1.969
+        "sp95": 1.999,
+        "sp98": 2.049,
+        "e10": 1.929
       }
     },
     {
@@ -936,40 +437,9 @@
       "lat": 4955100,
       "lng": 275200,
       "fuels": {
-        "gazole": 2.065,
-        "sp98": 2.096,
-        "e10": 1.979
-      }
-    },
-    {
-      "id": "60610002",
-      "cp": "60610",
-      "ville": "Lacroix-Saint-Ouen",
-      "adresse": "ZAC DES JARDIN, Le Prieuré",
-      "pop": "R",
-      "lat": 4935731.88775,
-      "lng": 277637.5791,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 2.009,
-        "e10": 1.919,
-        "e85": 0.799
-      }
-    },
-    {
-      "id": "60260001",
-      "cp": "60260",
-      "ville": "Lamorlaye",
-      "adresse": "79 Avenue de la Libération",
-      "pop": "R",
-      "lat": 4915600,
-      "lng": 244500,
-      "fuels": {
-        "gazole": 2.009,
-        "sp95": 1.976,
-        "sp98": 2.05,
-        "e10": 1.932,
-        "e85": 0.799
+        "gazole": 2.039,
+        "sp98": 2.101,
+        "e10": 1.955
       }
     },
     {
@@ -1003,35 +473,6 @@
       }
     },
     {
-      "id": "60330004",
-      "cp": "60330",
-      "ville": "Le Plessis-Belleville",
-      "adresse": "5 ROUTE DE PARIS",
-      "pop": "R",
-      "lat": 4909669.65608,
-      "lng": 274946.76177,
-      "fuels": {
-        "gazole": 1.974,
-        "sp98": 1.99,
-        "e10": 1.937,
-        "e85": 0.831,
-        "gplc": 1.021
-      }
-    },
-    {
-      "id": "60140002",
-      "cp": "60140",
-      "ville": "Liancourt",
-      "adresse": "6 Rue Victor Hugo",
-      "pop": "R",
-      "lat": 4932900,
-      "lng": 246400,
-      "fuels": {
-        "gazole": 2.055,
-        "sp95": 1.99
-      }
-    },
-    {
       "id": "60140003",
       "cp": "60140",
       "ville": "Liancourt",
@@ -1043,33 +484,6 @@
         "gazole": 1.99,
         "sp98": 2.05,
         "e10": 1.96
-      }
-    },
-    {
-      "id": "60150005",
-      "cp": "60150",
-      "ville": "Longueil-Annel",
-      "adresse": "ZI LE CHAMP SAINTE CROIX",
-      "pop": "R",
-      "lat": 4947000,
-      "lng": 286000,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.999,
-        "e10": 1.94
-      }
-    },
-    {
-      "id": "60126001",
-      "cp": "60126",
-      "ville": "Longueil-Sainte-Marie",
-      "adresse": "202 RUE DE PICARDIE",
-      "pop": "R",
-      "lat": 4935900,
-      "lng": 271800,
-      "fuels": {
-        "gazole": 2.099,
-        "sp95": 2.099
       }
     },
     {
@@ -1087,22 +501,6 @@
       }
     },
     {
-      "id": "60690001",
-      "cp": "60690",
-      "ville": "Marseille-en-Beauvaisis",
-      "adresse": "145 DU GENERAL LECLERC",
-      "pop": "R",
-      "lat": 4958200,
-      "lng": 195400,
-      "fuels": {
-        "gazole": 1.957,
-        "sp95": 1.996,
-        "sp98": 2.047,
-        "e10": 1.929,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "60110002",
       "cp": "60110",
       "ville": "Méru",
@@ -1114,64 +512,6 @@
         "gazole": 1.999,
         "sp98": 1.99,
         "e10": 1.942
-      }
-    },
-    {
-      "id": "60160003",
-      "cp": "60160",
-      "ville": "Montataire",
-      "adresse": "33, RUE GUY MOQUET",
-      "pop": "R",
-      "lat": 4925600,
-      "lng": 243200,
-      "fuels": {
-        "gazole": 1.952,
-        "sp98": 1.99,
-        "e10": 1.914,
-        "e85": 0.812
-      }
-    },
-    {
-      "id": "60160002",
-      "cp": "60160",
-      "ville": "Montataire",
-      "adresse": "Rue André Ginisti",
-      "pop": "R",
-      "lat": 4925300,
-      "lng": 242800,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.049,
-        "e10": 1.979,
-        "e85": 0.799
-      }
-    },
-    {
-      "id": "60190003",
-      "cp": "60190",
-      "ville": "Moyvillers",
-      "adresse": "RN 17 / RN 31",
-      "pop": "R",
-      "lat": 4940300,
-      "lng": 262600,
-      "fuels": {
-        "gazole": 2.051,
-        "e10": 1.99,
-        "e85": 0.845
-      }
-    },
-    {
-      "id": "60190002",
-      "cp": "60190",
-      "ville": "Moyvillers",
-      "adresse": "Rue de la Sècherie",
-      "pop": "R",
-      "lat": 4941449,
-      "lng": 264666,
-      "fuels": {
-        "gazole": 2.031,
-        "sp95": 1.999,
-        "sp98": 2.061
       }
     },
     {
@@ -1221,22 +561,6 @@
       }
     },
     {
-      "id": "60180001",
-      "cp": "60180",
-      "ville": "Nogent-sur-Oise",
-      "adresse": "Rue du Marais Sec",
-      "pop": "R",
-      "lat": 4927600,
-      "lng": 248600,
-      "fuels": {
-        "gazole": 1.962,
-        "sp98": 1.99,
-        "e10": 1.928,
-        "e85": 0.839,
-        "gplc": 0.989
-      }
-    },
-    {
       "id": "60400005",
       "cp": "60400",
       "ville": "Noyon",
@@ -1275,9 +599,7 @@
       "lat": 4941700,
       "lng": 192400,
       "fuels": {
-        "gazole": 2.009,
-        "sp95": 2.028,
-        "sp98": 2.101
+        "gazole": 2.009
       }
     },
     {
@@ -1289,6 +611,7 @@
       "lat": 4913100,
       "lng": 252100,
       "fuels": {
+        "gazole": 2.039,
         "sp98": 2.099,
         "e10": 1.999
       }
@@ -1303,145 +626,8 @@
       "lng": 260400,
       "fuels": {
         "gazole": 1.95,
-        "sp98": 1.99,
         "e10": 1.909,
         "e85": 0.862
-      }
-    },
-    {
-      "id": "60700002",
-      "cp": "60700",
-      "ville": "Pont-Sainte-Maxence",
-      "adresse": "783 Rue Pasteur",
-      "pop": "R",
-      "lat": 4930628.541,
-      "lng": 259302.77243,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.998,
-        "sp98": 2.038,
-        "e10": 1.92
-      }
-    },
-    {
-      "id": "60700005",
-      "cp": "60700",
-      "ville": "Pont-Sainte-Maxence",
-      "adresse": "Av. d'Auvelais",
-      "pop": "R",
-      "lat": 4931700,
-      "lng": 260600,
-      "fuels": {
-        "gazole": 1.945,
-        "sp95": 1.982,
-        "sp98": 2.008,
-        "e10": 1.908,
-        "e85": 0.869
-      }
-    },
-    {
-      "id": "60290005",
-      "cp": "60290",
-      "ville": "Rantigny",
-      "adresse": "RN.16 RTE DE CLERMONT",
-      "pop": "R",
-      "lat": 4933700,
-      "lng": 243400,
-      "fuels": {
-        "gazole": 1.95,
-        "sp98": 1.99,
-        "e10": 1.916,
-        "e85": 0.815
-      }
-    },
-    {
-      "id": "60490009",
-      "cp": "60490",
-      "ville": "Ressons-sur-Matz",
-      "adresse": "A1 SENS LILLE/PARIS REPERE 80.260",
-      "pop": "A",
-      "lat": 4951964.96137,
-      "lng": 271955.33558,
-      "fuels": {
-        "gazole": 2.079,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.998,
-        "gplc": 1.058
-      }
-    },
-    {
-      "id": "60490007",
-      "cp": "60490",
-      "ville": "Ressons-sur-Matz",
-      "adresse": "AUTOROUTE A1 - AIRE DE RESSONS EST",
-      "pop": "A",
-      "lat": 4952360,
-      "lng": 272292,
-      "fuels": {
-        "gazole": 2.125,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.999,
-        "gplc": 1.069
-      }
-    },
-    {
-      "id": "60170003",
-      "cp": "60170",
-      "ville": "Ribécourt-Dreslincourt",
-      "adresse": "ZAC DE LA GRERIE",
-      "pop": "R",
-      "lat": 4951500,
-      "lng": 292400,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.05,
-        "e10": 1.961
-      }
-    },
-    {
-      "id": "60650007",
-      "cp": "60650",
-      "ville": "Saint-Aubin-en-Bray",
-      "adresse": "58 route nationale",
-      "pop": "R",
-      "lat": 4943894.9,
-      "lng": 188718.4,
-      "fuels": {
-        "gazole": 1.958,
-        "sp98": 2.031,
-        "e10": 1.938
-      }
-    },
-    {
-      "id": "60130001",
-      "cp": "60130",
-      "ville": "Saint-Just-en-Chaussée",
-      "adresse": "Z.I. Nord",
-      "pop": "R",
-      "lat": 4951200,
-      "lng": 243100,
-      "fuels": {
-        "gazole": 1.956,
-        "sp95": 1.98,
-        "sp98": 2.035,
-        "e85": 0.78
-      }
-    },
-    {
-      "id": "60740001",
-      "cp": "60740",
-      "ville": "Saint-Maximin",
-      "adresse": "RD1016",
-      "pop": "R",
-      "lat": 4923900,
-      "lng": 247100,
-      "fuels": {
-        "gazole": 2,
-        "sp98": 2.05,
-        "e10": 1.98,
-        "gplc": 0.959
       }
     },
     {
@@ -1454,22 +640,7 @@
       "lng": 219868.64029,
       "fuels": {
         "gazole": 2.069,
-        "sp98": 1.99,
         "e85": 0.839
-      }
-    },
-    {
-      "id": "60730002",
-      "cp": "60730",
-      "ville": "Sainte-Geneviève",
-      "adresse": "Centre Commercial du Château",
-      "pop": "R",
-      "lat": 4929000,
-      "lng": 220100,
-      "fuels": {
-        "gazole": 1.978,
-        "sp98": 1.999,
-        "e10": 1.918
       }
     },
     {
@@ -1481,55 +652,10 @@
       "lat": 4920800,
       "lng": 259000,
       "fuels": {
-        "gazole": 2.059,
+        "gazole": 2.069,
         "sp98": 2.139,
         "e10": 1.989,
-        "e85": 0.959
-      }
-    },
-    {
-      "id": "60300009",
-      "cp": "60300",
-      "ville": "Senlis",
-      "adresse": "64 avenue du Général de Gaulle",
-      "pop": "R",
-      "lat": 4920834.5395,
-      "lng": 260231.27084,
-      "fuels": {
-        "gazole": 2.068,
-        "e10": 1.99,
-        "e85": 0.855
-      }
-    },
-    {
-      "id": "60300007",
-      "cp": "60300",
-      "ville": "Senlis",
-      "adresse": "64/66 AV. MAL FOCH",
-      "pop": "R",
-      "lat": 4921100,
-      "lng": 259300,
-      "fuels": {
-        "gazole": 2.07,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.842,
-        "gplc": 0.984
-      }
-    },
-    {
-      "id": "60300005",
-      "cp": "60300",
-      "ville": "Senlis",
-      "adresse": "Centre Commercial Villevert",
-      "pop": "R",
-      "lat": 4922100,
-      "lng": 259100,
-      "fuels": {
-        "gazole": 1.987,
-        "sp98": 2.027,
-        "e10": 1.927,
-        "e85": 0.809
+        "e85": 0.969
       }
     },
     {
@@ -1586,136 +712,6 @@
         "e10": 1.94,
         "e85": 0.789,
         "gplc": 1.015
-      }
-    },
-    {
-      "id": "60005001",
-      "cp": "60000",
-      "ville": "Tillé",
-      "adresse": "Route d' Amiens",
-      "pop": "R",
-      "lat": 4945600,
-      "lng": 210000,
-      "fuels": {
-        "gazole": 2.086,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "60590001",
-      "cp": "60590",
-      "ville": "Trie-Château",
-      "adresse": "RN 181",
-      "pop": "R",
-      "lat": 4928900,
-      "lng": 180700,
-      "fuels": {
-        "gazole": 1.954,
-        "sp95": 1.988,
-        "sp98": 2.009,
-        "e10": 1.901
-      }
-    },
-    {
-      "id": "60112002",
-      "cp": "60112",
-      "ville": "Troissereux",
-      "adresse": "Rue de Dieppe",
-      "pop": "R",
-      "lat": 4948400,
-      "lng": 204700,
-      "fuels": {
-        "gazole": 2.046,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "60350002",
-      "cp": "60350",
-      "ville": "Trosly-Breuil",
-      "adresse": "19 Route de Reims",
-      "pop": "R",
-      "lat": 4940100,
-      "lng": 299400,
-      "fuels": {
-        "gazole": 1.968,
-        "sp98": 2.02,
-        "e10": 1.94,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "60280001",
-      "cp": "60280",
-      "ville": "Venette",
-      "adresse": "6 Avenue de l'Europe",
-      "pop": "R",
-      "lat": 4940800,
-      "lng": 278100,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 2.013,
-        "sp98": 2.062,
-        "e10": 1.928,
-        "e85": 0.808,
-        "gplc": 0.923
-      }
-    },
-    {
-      "id": "60410003",
-      "cp": "60410",
-      "ville": "Verberie",
-      "adresse": "Rue Juliette Adam",
-      "pop": "R",
-      "lat": 4930900,
-      "lng": 273000,
-      "fuels": {
-        "gazole": 2.059,
-        "sp95": 2.029,
-        "sp98": 2.099
-      }
-    },
-    {
-      "id": "60870002",
-      "cp": "60870",
-      "ville": "Villers-Saint-Paul",
-      "adresse": "Avenue des Pommiers",
-      "pop": "R",
-      "lat": 4928900,
-      "lng": 250000,
-      "fuels": {
-        "gazole": 2.013
-      }
-    },
-    {
-      "id": "60870003",
-      "cp": "60870",
-      "ville": "Villers-Saint-Paul",
-      "adresse": "ROCADE INDUSTRIELLE",
-      "pop": "R",
-      "lat": 4928400,
-      "lng": 249200,
-      "fuels": {
-        "gazole": 1.962,
-        "sp98": 1.99,
-        "e10": 1.928,
-        "e85": 0.839
-      }
-    },
-    {
-      "id": "60340001",
-      "cp": "60340",
-      "ville": "Villers-sous-Saint-Leu",
-      "adresse": "ROUTE DE PRECY",
-      "pop": "R",
-      "lat": 4920800,
-      "lng": 239100,
-      "fuels": {
-        "gazole": 2.01,
-        "sp98": 2.061,
-        "e10": 1.932
       }
     }
   ]

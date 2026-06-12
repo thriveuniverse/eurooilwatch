@@ -3,69 +3,55 @@
   "name": "Puy-de-Dôme",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-12T08:53:47.167Z",
+  "asOf": "2026-06-12T19:03:22.838Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 117,
+  "stationCount": 53,
   "fuels": {
     "gazole": {
-      "count": 117,
-      "mean": 2.0259,
+      "count": 53,
+      "mean": 2.0176,
       "median": 1.999,
       "min": 1.955,
-      "max": 2.229
+      "max": 2.15
     },
     "sp95": {
-      "count": 31,
-      "mean": 2.0244,
+      "count": 15,
+      "mean": 2.0234,
       "median": 2.009,
       "min": 1.964,
       "max": 2.11
     },
     "sp98": {
-      "count": 95,
-      "mean": 2.0474,
-      "median": 2.048,
+      "count": 47,
+      "mean": 2.0482,
+      "median": 2.039,
       "min": 1.989,
-      "max": 2.279
+      "max": 2.159
     },
     "e10": {
-      "count": 99,
-      "mean": 1.9559,
+      "count": 44,
+      "mean": 1.9536,
       "median": 1.949,
       "min": 1.893,
-      "max": 2.179
+      "max": 2.058
     },
     "e85": {
-      "count": 37,
-      "mean": 0.8526,
-      "median": 0.828,
+      "count": 12,
+      "mean": 0.8409,
+      "median": 0.832,
       "min": 0.798,
-      "max": 1.055
+      "max": 0.935
     },
     "gplc": {
-      "count": 9,
-      "mean": 1.0571,
-      "median": 1.04,
-      "min": 0.979,
-      "max": 1.16
+      "count": 4,
+      "mean": 1.0423,
+      "median": 1.0195,
+      "min": 0.981,
+      "max": 1.149
     }
   },
   "stations": [
-    {
-      "id": "63260003",
-      "cp": "63260",
-      "ville": "Aigueperse",
-      "adresse": "ZAC De Juilhat",
-      "pop": "R",
-      "lat": 4601000,
-      "lng": 319700,
-      "fuels": {
-        "gazole": 2.045,
-        "sp98": 2.099,
-        "e10": 1.969
-      }
-    },
     {
       "id": "63600004",
       "cp": "63600",
@@ -92,35 +78,6 @@
         "gazole": 1.999,
         "sp95": 2.009,
         "sp98": 2.069
-      }
-    },
-    {
-      "id": "63220001",
-      "cp": "63220",
-      "ville": "Arlanc",
-      "adresse": "route de beurriéres",
-      "pop": "R",
-      "lat": 4541400,
-      "lng": 372500,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.029,
-        "sp98": 2.099,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "63170008",
-      "cp": "63170",
-      "ville": "Aubière",
-      "adresse": "10 AV. DU ROUSSILLON",
-      "pop": "R",
-      "lat": 4575500,
-      "lng": 313000,
-      "fuels": {
-        "gazole": 1.977,
-        "e10": 1.935,
-        "e85": 0.822
       }
     },
     {
@@ -184,35 +141,6 @@
       }
     },
     {
-      "id": "63610001",
-      "cp": "63610",
-      "ville": "Besse-et-Saint-Anastaise",
-      "adresse": "Route de Compains",
-      "pop": "R",
-      "lat": 4550979.54446,
-      "lng": 293548.59904,
-      "fuels": {
-        "gazole": 2.015,
-        "sp98": 2.05,
-        "e10": 1.95,
-        "e85": 0.828
-      }
-    },
-    {
-      "id": "63160004",
-      "cp": "63160",
-      "ville": "Billom",
-      "adresse": "5 ROUTE DE CLERMONT",
-      "pop": "R",
-      "lat": 4572856.2504,
-      "lng": 333950.19954,
-      "fuels": {
-        "gazole": 2.069,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "63160002",
       "cp": "63160",
       "ville": "Billom",
@@ -241,21 +169,6 @@
       }
     },
     {
-      "id": "63112001",
-      "cp": "63112",
-      "ville": "Blanzat",
-      "adresse": "ZA la Fontaine",
-      "pop": "R",
-      "lat": 4582500,
-      "lng": 307300,
-      "fuels": {
-        "gazole": 1.96,
-        "sp98": 2.039,
-        "e10": 1.919,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "63760001",
       "cp": "63760",
       "ville": "Bourg-Lastic",
@@ -268,76 +181,6 @@
         "sp98": 2.075,
         "e10": 1.965,
         "e85": 0.798
-      }
-    },
-    {
-      "id": "63570003",
-      "cp": "63570",
-      "ville": "Brassac-les-Mines",
-      "adresse": "2 Rue des saraillères",
-      "pop": "R",
-      "lat": 4541400,
-      "lng": 332000,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.059,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "63118001",
-      "cp": "63118",
-      "ville": "Cébazat",
-      "adresse": "Route de Châteaugay",
-      "pop": "R",
-      "lat": 4583600,
-      "lng": 309500,
-      "fuels": {
-        "gazole": 1.96,
-        "sp98": 2.039,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "63122002",
-      "cp": "63122",
-      "ville": "Ceyrat",
-      "adresse": "Avenue de Royat",
-      "pop": "R",
-      "lat": 4574600,
-      "lng": 305900,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.025,
-        "e10": 1.899,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "63250001",
-      "cp": "63250",
-      "ville": "Chabreloche",
-      "adresse": "24 ROUTE DE CLERMONT",
-      "pop": "R",
-      "lat": 4587901.32,
-      "lng": 369231.49,
-      "fuels": {
-        "gazole": 2.066,
-        "e10": 2
-      }
-    },
-    {
-      "id": "63400001",
-      "cp": "63400",
-      "ville": "Chamalières",
-      "adresse": "77 AV DE ROYAT",
-      "pop": "R",
-      "lat": 4577500,
-      "lng": 306400,
-      "fuels": {
-        "gazole": 2.004,
-        "sp98": 2.059,
-        "e10": 1.931
       }
     },
     {
@@ -356,63 +199,6 @@
       }
     },
     {
-      "id": "63320001",
-      "cp": "63320",
-      "ville": "Champeix",
-      "adresse": "ROUTE DE MONTAIGUT LE BLANC",
-      "pop": "R",
-      "lat": 4559000,
-      "lng": 312100,
-      "fuels": {
-        "gazole": 2.015,
-        "sp98": 2.05,
-        "e10": 1.95
-      }
-    },
-    {
-      "id": "63440003",
-      "cp": "63440",
-      "ville": "Champs",
-      "adresse": "AUTOROUTE A71 - AIRE DES VOLCANS D'AUVERGNE",
-      "pop": "A",
-      "lat": 4605870.7223,
-      "lng": 311405.33076,
-      "fuels": {
-        "gazole": 2.184,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.998,
-        "gplc": 1.098
-      }
-    },
-    {
-      "id": "63119001",
-      "cp": "63119",
-      "ville": "Châteaugay",
-      "adresse": "ZAC DU CHAMP DE L'ALLEE",
-      "pop": "R",
-      "lat": 4584930.37018,
-      "lng": 308272.83697,
-      "fuels": {
-        "gazole": 2.14,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "63140002",
-      "cp": "63140",
-      "ville": "Châtel-Guyon",
-      "adresse": "3 Route de Riom",
-      "pop": "R",
-      "lat": 4591853,
-      "lng": 307300,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 1.969,
-        "e85": 0.819
-      }
-    },
-    {
       "id": "63140001",
       "cp": "63140",
       "ville": "Châtel-Guyon",
@@ -423,63 +209,6 @@
       "fuels": {
         "gazole": 2.089,
         "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "63000023",
-      "cp": "63000",
-      "ville": "Clermont-Ferrand",
-      "adresse": "108 BLD ETIENNE CLEMENTEL",
-      "pop": "R",
-      "lat": 4580662,
-      "lng": 310943,
-      "fuels": {
-        "gazole": 2.067,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "63000025",
-      "cp": "63000",
-      "ville": "Clermont-Ferrand",
-      "adresse": "140 BLD LAVOISIER",
-      "pop": "R",
-      "lat": 4578294.60422,
-      "lng": 307388.18241,
-      "fuels": {
-        "gazole": 1.975,
-        "sp98": 1.99,
-        "e10": 1.938
-      }
-    },
-    {
-      "id": "63000009",
-      "cp": "63000",
-      "ville": "Clermont-Ferrand",
-      "adresse": "153 BD GUSTAVE FLAUBERT",
-      "pop": "R",
-      "lat": 4576400,
-      "lng": 312700,
-      "fuels": {
-        "gazole": 2.003,
-        "sp98": 2.053,
-        "e10": 1.91
-      }
-    },
-    {
-      "id": "63000019",
-      "cp": "63000",
-      "ville": "Clermont-Ferrand",
-      "adresse": "2 Avenue Marx Dormoy",
-      "pop": "R",
-      "lat": 4577171.9,
-      "lng": 308099.8,
-      "fuels": {
-        "gazole": 2.06,
-        "sp98": 2.09,
         "e10": 1.99
       }
     },
@@ -500,48 +229,6 @@
       }
     },
     {
-      "id": "63000007",
-      "cp": "63000",
-      "ville": "Clermont-Ferrand",
-      "adresse": "21 BOULEVARD POCHET LAGAYE",
-      "pop": "R",
-      "lat": 4576600,
-      "lng": 310500,
-      "fuels": {
-        "gazole": 1.967,
-        "sp98": 2.028,
-        "e10": 1.908
-      }
-    },
-    {
-      "id": "63000022",
-      "cp": "63000",
-      "ville": "Clermont-Ferrand",
-      "adresse": "24 BOULEVARD AMBROISE BRUGIERE",
-      "pop": "R",
-      "lat": 4578900,
-      "lng": 311800,
-      "fuels": {
-        "gazole": 2.06,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "63000001",
-      "cp": "63000",
-      "ville": "Clermont-Ferrand",
-      "adresse": "60 Boulevard Lafayette",
-      "pop": "R",
-      "lat": 4577300,
-      "lng": 309600,
-      "fuels": {
-        "gazole": 2.064,
-        "e10": 1.99,
-        "e85": 0.886
-      }
-    },
-    {
       "id": "63000026",
       "cp": "63000",
       "ville": "Clermont-Ferrand",
@@ -554,66 +241,6 @@
         "sp98": 1.99,
         "e10": 1.927,
         "e85": 0.825
-      }
-    },
-    {
-      "id": "63000014",
-      "cp": "63000",
-      "ville": "Clermont-Ferrand",
-      "adresse": "98 rue Fontgiève",
-      "pop": "R",
-      "lat": 4578100,
-      "lng": 307700,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.05,
-        "e10": 1.922
-      }
-    },
-    {
-      "id": "63000008",
-      "cp": "63100",
-      "ville": "Clermont-Ferrand",
-      "adresse": "AV DU PUY DE DOME",
-      "pop": "R",
-      "lat": 4578800,
-      "lng": 305800,
-      "fuels": {
-        "gazole": 2.017,
-        "sp98": 2.059,
-        "e10": 1.931,
-        "e85": 0.985
-      }
-    },
-    {
-      "id": "63000024",
-      "cp": "63000",
-      "ville": "Clermont-Ferrand",
-      "adresse": "AVENUE DU PUY DE DOME",
-      "pop": "R",
-      "lat": 4578800,
-      "lng": 305700,
-      "fuels": {
-        "gazole": 1.996,
-        "e10": 1.943,
-        "e85": 0.914
-      }
-    },
-    {
-      "id": "63000015",
-      "cp": "63000",
-      "ville": "Clermont-Ferrand",
-      "adresse": "Boulevard Gustave Flaubert",
-      "pop": "R",
-      "lat": 4576198.6,
-      "lng": 312696,
-      "fuels": {
-        "gazole": 1.958,
-        "sp95": 1.978,
-        "sp98": 2.019,
-        "e10": 1.899,
-        "e85": 0.798,
-        "gplc": 0.979
       }
     },
     {
@@ -631,33 +258,6 @@
       }
     },
     {
-      "id": "63460003",
-      "cp": "63460",
-      "ville": "Combronde",
-      "adresse": "131 Avenue Étienne Clémentel",
-      "pop": "R",
-      "lat": 4598400,
-      "lng": 308700,
-      "fuels": {
-        "gazole": 1.998,
-        "sp98": 2.049,
-        "e10": 1.911
-      }
-    },
-    {
-      "id": "63800002",
-      "cp": "63800",
-      "ville": "Cournon-d'Auvergne",
-      "adresse": "AVENUE DES DOMES",
-      "pop": "R",
-      "lat": 4573143.00709,
-      "lng": 319576.41126,
-      "fuels": {
-        "gazole": 1.959,
-        "e10": 1.919
-      }
-    },
-    {
       "id": "63800004",
       "cp": "63800",
       "ville": "Cournon-d'Auvergne",
@@ -666,24 +266,9 @@
       "lat": 4574500,
       "lng": 317700,
       "fuels": {
-        "gazole": 2.052,
+        "gazole": 1.993,
         "sp98": 1.99,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "63120003",
-      "cp": "63120",
-      "ville": "Courpière",
-      "adresse": "22 AVENUE JEAN JAURES",
-      "pop": "R",
-      "lat": 4575900,
-      "lng": 354200,
-      "fuels": {
-        "gazole": 2.009,
-        "sp95": 2.079,
-        "sp98": 2.129,
-        "e85": 0.819
       }
     },
     {
@@ -715,19 +300,6 @@
       }
     },
     {
-      "id": "63850001",
-      "cp": "63850",
-      "ville": "Égliseneuve-d'Entraigues",
-      "adresse": "ROUTE DE BESSE",
-      "pop": "R",
-      "lat": 4540800,
-      "lng": 282700,
-      "fuels": {
-        "gazole": 2.059,
-        "sp95": 2.085
-      }
-    },
-    {
       "id": "63720003",
       "cp": "63720",
       "ville": "Ennezat",
@@ -736,24 +308,9 @@
       "lat": 4589543.76994,
       "lng": 321164.79041,
       "fuels": {
-        "gazole": 1.972,
+        "gazole": 1.979,
         "sp98": 2.039,
-        "e10": 1.898
-      }
-    },
-    {
-      "id": "63360001",
-      "cp": "63360",
-      "ville": "Gerzat",
-      "adresse": "ALLEE DE FONCHENILLE",
-      "pop": "R",
-      "lat": 4581675,
-      "lng": 315286,
-      "fuels": {
-        "gazole": 1.972,
-        "sp95": 1.978,
-        "sp98": 2.052,
-        "e10": 1.95
+        "e10": 1.914
       }
     },
     {
@@ -765,7 +322,7 @@
       "lat": 4581800,
       "lng": 315400,
       "fuels": {
-        "gazole": 2.071,
+        "gazole": 2.012,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.846
@@ -786,35 +343,6 @@
       }
     },
     {
-      "id": "63620001",
-      "cp": "63620",
-      "ville": "Giat",
-      "adresse": "ROUTE DE SAINT AVIT",
-      "pop": "R",
-      "lat": 4580467,
-      "lng": 247016,
-      "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.145,
-        "e10": 2.055
-      }
-    },
-    {
-      "id": "63500008",
-      "cp": "63500",
-      "ville": "Issoire",
-      "adresse": "488 route de Perrier",
-      "pop": "R",
-      "lat": 4554375.20354,
-      "lng": 323249.09729,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 2.059,
-        "sp98": 2.059,
-        "e10": 1.929
-      }
-    },
-    {
       "id": "63500006",
       "cp": "63500",
       "ville": "Issoire",
@@ -827,79 +355,6 @@
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.849
-      }
-    },
-    {
-      "id": "63500007",
-      "cp": "63500",
-      "ville": "Issoire",
-      "adresse": "61 AVENUE KENNEDY",
-      "pop": "R",
-      "lat": 4555370.09095,
-      "lng": 324943.75978,
-      "fuels": {
-        "gazole": 1.985,
-        "sp98": 1.99,
-        "e10": 1.934,
-        "e85": 0.829
-      }
-    },
-    {
-      "id": "63500002",
-      "cp": "63500",
-      "ville": "Issoire",
-      "adresse": "RUE JEAN BIGOT",
-      "pop": "R",
-      "lat": 4555200,
-      "lng": 326800,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.059,
-        "e10": 1.929,
-        "e85": 0.828
-      }
-    },
-    {
-      "id": "63150002",
-      "cp": "63150",
-      "ville": "La Bourboule",
-      "adresse": "230 AV DU MARECHAL LECLERC",
-      "pop": "R",
-      "lat": 4559400,
-      "lng": 276200,
-      "fuels": {
-        "gazole": 1.996,
-        "sp98": 2.099,
-        "e10": 1.906
-      }
-    },
-    {
-      "id": "63150001",
-      "cp": "63150",
-      "ville": "La Bourboule",
-      "adresse": "BOULEVARD DES VERNIERES",
-      "pop": "R",
-      "lat": 4559100,
-      "lng": 275800,
-      "fuels": {
-        "gazole": 1.984,
-        "sp98": 2.099,
-        "e10": 1.999,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "63230001",
-      "cp": "63230",
-      "ville": "La Goutelle",
-      "adresse": "6 AVENUE DES VOLCANS - D941",
-      "pop": "R",
-      "lat": 4584100,
-      "lng": 275900,
-      "fuels": {
-        "gazole": 2.089,
-        "sp98": 1.99,
-        "e10": 1.99
       }
     },
     {
@@ -945,21 +400,6 @@
       }
     },
     {
-      "id": "63670001",
-      "cp": "63670",
-      "ville": "Le Cendre",
-      "adresse": "Rue Jean Mermoz",
-      "pop": "R",
-      "lat": 4572600,
-      "lng": 318800,
-      "fuels": {
-        "gazole": 1.958,
-        "sp98": 2.019,
-        "e10": 1.899,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "63450004",
       "cp": "63450",
       "ville": "Le Crest",
@@ -969,23 +409,8 @@
       "lng": 314300,
       "fuels": {
         "gazole": 2.067,
+        "sp98": 1.99,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "63370001",
-      "cp": "63370",
-      "ville": "Lempdes",
-      "adresse": "26 Avenue de l Europe",
-      "pop": "A",
-      "lat": 4577700,
-      "lng": 319700,
-      "fuels": {
-        "gazole": 1.968,
-        "sp95": 1.979,
-        "e10": 1.9,
-        "e85": 0.798,
-        "gplc": 0.999
       }
     },
     {
@@ -1001,22 +426,6 @@
         "sp98": 2.029,
         "e10": 1.919,
         "e85": 0.798
-      }
-    },
-    {
-      "id": "63190009",
-      "cp": "63190",
-      "ville": "Lezoux",
-      "adresse": "ROUTE DE CLERMONT FERRAND,LA CROIX CHADEYRAS",
-      "pop": "R",
-      "lat": 4582600,
-      "lng": 336800,
-      "fuels": {
-        "gazole": 2.009,
-        "sp95": 2.038,
-        "sp98": 2.048,
-        "e10": 1.989,
-        "e85": 0.876
       }
     },
     {
@@ -1060,20 +469,6 @@
         "gazole": 2.099,
         "sp98": 2.139,
         "e10": 2.049
-      }
-    },
-    {
-      "id": "63410004",
-      "cp": "63410",
-      "ville": "Manzat",
-      "adresse": "ROUTE DE RIOM",
-      "pop": "R",
-      "lat": 4596292.87,
-      "lng": 294906.73,
-      "fuels": {
-        "gazole": 2.199,
-        "sp95": 1.99,
-        "e10": 1.99
       }
     },
     {
@@ -1134,20 +529,6 @@
       }
     },
     {
-      "id": "63940001",
-      "cp": "63940",
-      "ville": "Marsac-en-Livradois",
-      "adresse": "19 Avenue du Livradois",
-      "pop": "R",
-      "lat": 4548106,
-      "lng": 372648,
-      "fuels": {
-        "gazole": 2.12,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "63200001",
       "cp": "63200",
       "ville": "Ménétrol",
@@ -1165,34 +546,6 @@
       }
     },
     {
-      "id": "63240001",
-      "cp": "63240",
-      "ville": "Mont-Dore",
-      "adresse": "5 Boulevard Mirabeau",
-      "pop": "R",
-      "lat": 4557600,
-      "lng": 280400,
-      "fuels": {
-        "gazole": 2.12,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "63700006",
-      "cp": "63700",
-      "ville": "Montaigut-en-Combraille",
-      "adresse": "1 AVENUE DU BOURBONNAIS",
-      "pop": "R",
-      "lat": 4618400,
-      "lng": 280200,
-      "fuels": {
-        "gazole": 2.084,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "63790001",
       "cp": "63790",
       "ville": "Murol",
@@ -1207,32 +560,6 @@
       }
     },
     {
-      "id": "63210001",
-      "cp": "63210",
-      "ville": "Nébouzat",
-      "adresse": "LES QUATRE ROUTES",
-      "pop": "R",
-      "lat": 4572613,
-      "lng": 289526,
-      "fuels": {
-        "gazole": 2.072
-      }
-    },
-    {
-      "id": "63190011",
-      "cp": "63190",
-      "ville": "Orléat",
-      "adresse": "AUTOROUTE A89 - AIRE LIMAGNE SUD",
-      "pop": "A",
-      "lat": 4585100,
-      "lng": 340500,
-      "fuels": {
-        "gazole": 2.178,
-        "e10": 1.99,
-        "e85": 0.998
-      }
-    },
-    {
       "id": "63800005",
       "cp": "63800",
       "ville": "Pérignat-sur-Allier",
@@ -1243,20 +570,6 @@
       "fuels": {
         "gazole": 1.989,
         "sp98": 2.059,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "63330002",
-      "cp": "63330",
-      "ville": "Pionsat",
-      "adresse": "Route Lafayette",
-      "pop": "R",
-      "lat": 4611100,
-      "lng": 269800,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.049,
         "e10": 1.939
       }
     },
@@ -1276,21 +589,6 @@
       }
     },
     {
-      "id": "63430002",
-      "cp": "63430",
-      "ville": "Pont-du-Château",
-      "adresse": "64 AVENUE DE LYON",
-      "pop": "R",
-      "lat": 4578800,
-      "lng": 326800,
-      "fuels": {
-        "gazole": 2.065,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.896
-      }
-    },
-    {
       "id": "63430004",
       "cp": "63430",
       "ville": "Pont-du-Château",
@@ -1302,20 +600,6 @@
         "gazole": 1.959,
         "sp95": 1.987,
         "e10": 1.929
-      }
-    },
-    {
-      "id": "63380003",
-      "cp": "63380",
-      "ville": "Pontaumur",
-      "adresse": "2 rue paroueix",
-      "pop": "R",
-      "lat": 4587000,
-      "lng": 267300,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.038,
-        "e10": 1.94
       }
     },
     {
@@ -1333,62 +617,6 @@
       }
     },
     {
-      "id": "63290001",
-      "cp": "63290",
-      "ville": "Puy-Guillaume",
-      "adresse": "31 avenue E. Vaillant",
-      "pop": "R",
-      "lat": 4595500,
-      "lng": 347800,
-      "fuels": {
-        "gazole": 2.08,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "63310002",
-      "cp": "63310",
-      "ville": "Randan",
-      "adresse": "Place des Charmes",
-      "pop": "R",
-      "lat": 4601700,
-      "lng": 334900,
-      "fuels": {
-        "gazole": 1.994,
-        "sp98": 1.99,
-        "e10": 1.977
-      }
-    },
-    {
-      "id": "63200004",
-      "cp": "63200",
-      "ville": "Riom",
-      "adresse": "31 Avenue de Paris",
-      "pop": "R",
-      "lat": 4590000,
-      "lng": 311700,
-      "fuels": {
-        "gazole": 1.981,
-        "sp98": 2.048,
-        "e10": 1.907
-      }
-    },
-    {
-      "id": "63200002",
-      "cp": "63200",
-      "ville": "Riom",
-      "adresse": "37, avenue de Clermont Ferrand",
-      "pop": "R",
-      "lat": 4588400,
-      "lng": 311500,
-      "fuels": {
-        "gazole": 2.089,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "63200006",
       "cp": "63200",
       "ville": "Riom",
@@ -1400,34 +628,6 @@
         "gazole": 2.075,
         "sp98": 2.129,
         "e10": 1.999
-      }
-    },
-    {
-      "id": "63210003",
-      "cp": "63210",
-      "ville": "Rochefort-Montagne",
-      "adresse": "Route d'Herment",
-      "pop": "R",
-      "lat": 4568500,
-      "lng": 279600,
-      "fuels": {
-        "gazole": 1.99,
-        "e10": 1.962,
-        "e85": 0.859
-      }
-    },
-    {
-      "id": "63210002",
-      "cp": "63210",
-      "ville": "Rochefort-Montagne",
-      "adresse": "RTE N 89",
-      "pop": "R",
-      "lat": 4568700,
-      "lng": 280500,
-      "fuels": {
-        "gazole": 2.05,
-        "sp95": 2.08,
-        "sp98": 2.12
       }
     },
     {
@@ -1445,20 +645,6 @@
       }
     },
     {
-      "id": "63540002",
-      "cp": "63540",
-      "ville": "Romagnat",
-      "adresse": "32 AVENUE JEAN JAURES / Route De Beaumont",
-      "pop": "R",
-      "lat": 4573700,
-      "lng": 309900,
-      "fuels": {
-        "gazole": 2.082,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "63450002",
       "cp": "63450",
       "ville": "Saint-Amant-Tallende",
@@ -1470,19 +656,6 @@
         "gazole": 1.985,
         "sp98": 2.059,
         "e10": 1.949
-      }
-    },
-    {
-      "id": "63660001",
-      "cp": "63660",
-      "ville": "Saint-Anthème",
-      "adresse": "Route d'Ambert",
-      "pop": "R",
-      "lat": 4552300,
-      "lng": 391100,
-      "fuels": {
-        "gazole": 2.108,
-        "sp95": 2.099
       }
     },
     {
@@ -1529,21 +702,6 @@
       }
     },
     {
-      "id": "63780001",
-      "cp": "63780",
-      "ville": "Saint-Georges-de-Mons",
-      "adresse": "D19 CHAMPS GRELIERE",
-      "pop": "R",
-      "lat": 4594000,
-      "lng": 283700,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.039,
-        "e10": 1.929,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "63340001",
       "cp": "63340",
       "ville": "Saint-Germain-Lembron",
@@ -1555,20 +713,6 @@
         "gazole": 1.984,
         "sp98": 2.059,
         "e10": 1.934
-      }
-    },
-    {
-      "id": "63390001",
-      "cp": "63390",
-      "ville": "Saint-Gervais-d'Auvergne",
-      "adresse": "RUE DE L`EGALITE",
-      "pop": "R",
-      "lat": 4603078.72738,
-      "lng": 282101.92793,
-      "fuels": {
-        "gazole": 2.029,
-        "sp95": 1.989,
-        "sp98": 2.079
       }
     },
     {
@@ -1595,8 +739,8 @@
       "lng": 336694.37459,
       "fuels": {
         "gazole": 2.02,
-        "sp95": 2.089,
-        "sp98": 2.144
+        "sp95": 2.057,
+        "sp98": 2.113
       }
     },
     {
@@ -1614,21 +758,6 @@
       }
     },
     {
-      "id": "63300007",
-      "cp": "63300",
-      "ville": "Thiers",
-      "adresse": "38 avenue du Général de Gaulle",
-      "pop": "R",
-      "lat": 4584200,
-      "lng": 351500,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 2.039,
-        "sp98": 2.079,
-        "gplc": 1.109
-      }
-    },
-    {
       "id": "63300003",
       "cp": "63300",
       "ville": "Thiers",
@@ -1637,8 +766,7 @@
       "lat": 4584800,
       "lng": 353000,
       "fuels": {
-        "gazole": 2.139,
-        "e10": 1.99
+        "gazole": 2.139
       }
     },
     {
@@ -1656,21 +784,6 @@
       }
     },
     {
-      "id": "63300001",
-      "cp": "63300",
-      "ville": "Thiers",
-      "adresse": "rue François Truffaut",
-      "pop": "R",
-      "lat": 4583900,
-      "lng": 351000,
-      "fuels": {
-        "gazole": 1.973,
-        "sp95": 1.993,
-        "sp98": 2.042,
-        "e10": 1.895
-      }
-    },
-    {
       "id": "63300002",
       "cp": "63300",
       "ville": "Thiers",
@@ -1679,7 +792,7 @@
       "lat": 4585500,
       "lng": 350800,
       "fuels": {
-        "gazole": 2.074,
+        "gazole": 2.015,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -1695,36 +808,6 @@
       "fuels": {
         "gazole": 1.989,
         "e10": 1.939
-      }
-    },
-    {
-      "id": "63960002",
-      "cp": "63960",
-      "ville": "Veyre-Monton",
-      "adresse": "A75",
-      "pop": "A",
-      "lat": 4566100,
-      "lng": 315300,
-      "fuels": {
-        "gazole": 2.229,
-        "sp98": 2.279,
-        "e10": 2.179,
-        "e85": 1.055,
-        "gplc": 1.16
-      }
-    },
-    {
-      "id": "63270002",
-      "cp": "63270",
-      "ville": "Vic-le-Comte",
-      "adresse": "ZAC des Meules 2",
-      "pop": "R",
-      "lat": 4564621.6,
-      "lng": 322648.8,
-      "fuels": {
-        "gazole": 1.979,
-        "e10": 1.939,
-        "e85": 0.798
       }
     }
   ]

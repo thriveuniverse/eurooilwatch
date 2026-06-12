@@ -3,70 +3,55 @@
   "name": "Charente-Maritime",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-12T08:53:47.167Z",
+  "asOf": "2026-06-12T19:03:22.838Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 114,
+  "stationCount": 48,
   "fuels": {
     "gazole": {
-      "count": 113,
-      "mean": 1.996,
-      "median": 1.975,
-      "min": 1.91,
+      "count": 48,
+      "mean": 2.0137,
+      "median": 1.979,
+      "min": 1.923,
       "max": 2.379
     },
     "sp95": {
-      "count": 28,
-      "mean": 1.9763,
-      "median": 1.972,
-      "min": 1.933,
+      "count": 13,
+      "mean": 1.9835,
+      "median": 1.968,
+      "min": 1.95,
       "max": 2.09
     },
     "sp98": {
-      "count": 103,
-      "mean": 2.0337,
-      "median": 2.002,
-      "min": 1.958,
+      "count": 43,
+      "mean": 2.06,
+      "median": 2.01,
+      "min": 1.965,
       "max": 2.546
     },
     "e10": {
-      "count": 92,
-      "mean": 1.9459,
+      "count": 39,
+      "mean": 1.9673,
       "median": 1.915,
-      "min": 1.863,
+      "min": 1.871,
       "max": 2.396
     },
     "e85": {
-      "count": 43,
-      "mean": 0.8127,
+      "count": 11,
+      "mean": 0.8371,
       "median": 0.809,
-      "min": 0.75,
+      "min": 0.763,
       "max": 1.094
     },
     "gplc": {
-      "count": 12,
-      "mean": 1.0942,
-      "median": 1.094,
+      "count": 7,
+      "mean": 1.1034,
+      "median": 1.089,
       "min": 0.989,
       "max": 1.339
     }
   },
   "stations": [
-    {
-      "id": "17290003",
-      "cp": "17290",
-      "ville": "Aigrefeuille-d'Aunis",
-      "adresse": "Place de la Renaissance",
-      "pop": "R",
-      "lat": 4611624,
-      "lng": -93553,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 1.985,
-        "e10": 1.879,
-        "e85": 0.809
-      }
-    },
     {
       "id": "17230004",
       "cp": "17230",
@@ -83,20 +68,6 @@
       }
     },
     {
-      "id": "17540001",
-      "cp": "17540",
-      "ville": "Angliers",
-      "adresse": "1 route de la mer",
-      "pop": "R",
-      "lat": 4621296.41345,
-      "lng": -95411.9606,
-      "fuels": {
-        "gazole": 2.17,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
       "id": "17690002",
       "cp": "17690",
       "ville": "Angoulins",
@@ -105,24 +76,9 @@
       "lat": 4610000,
       "lng": -109200,
       "fuels": {
-        "gazole": 1.945,
+        "gazole": 1.949,
         "sp98": 1.99,
-        "e10": 1.884
-      }
-    },
-    {
-      "id": "17690004",
-      "cp": "17690",
-      "ville": "Angoulins",
-      "adresse": "Route de la Rochelle RN137",
-      "pop": "R",
-      "lat": 4610200,
-      "lng": -109300,
-      "fuels": {
-        "gazole": 2.079,
-        "sp98": 2.129,
-        "e10": 2.039,
-        "e85": 0.845
+        "e10": 1.899
       }
     },
     {
@@ -157,20 +113,6 @@
       }
     },
     {
-      "id": "17590002",
-      "cp": "17590",
-      "ville": "Ars-en-Ré",
-      "adresse": "Route Départementale 735",
-      "pop": "R",
-      "lat": 4620400,
-      "lng": -151200,
-      "fuels": {
-        "gazole": 1.941,
-        "sp95": 1.955,
-        "sp98": 1.999
-      }
-    },
-    {
       "id": "17530003",
       "cp": "17530",
       "ville": "Arvert",
@@ -180,8 +122,8 @@
       "lng": -112100,
       "fuels": {
         "gazole": 1.999,
-        "sp95": 1.995,
-        "sp98": 2.009
+        "sp95": 2.015,
+        "sp98": 2.029
       }
     },
     {
@@ -222,9 +164,9 @@
       "lat": 4613100,
       "lng": -109900,
       "fuels": {
-        "gazole": 2.028,
+        "gazole": 1.969,
         "sp98": 1.99,
-        "e10": 1.986
+        "e10": 1.966
       }
     },
     {
@@ -236,9 +178,9 @@
       "lat": 4613860,
       "lng": -113925,
       "fuels": {
-        "gazole": 1.977,
-        "sp95": 1.943,
-        "sp98": 2.019
+        "gazole": 1.969,
+        "sp95": 1.96,
+        "sp98": 2.037
       }
     },
     {
@@ -273,62 +215,6 @@
       }
     },
     {
-      "id": "17560004",
-      "cp": "17560",
-      "ville": "Bourcefranc-le-Chapus",
-      "adresse": "20 avenue du general de gaulle",
-      "pop": "R",
-      "lat": 4585473.6,
-      "lng": -116725.6,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.969
-      }
-    },
-    {
-      "id": "17920001",
-      "cp": "17920",
-      "ville": "Breuillet",
-      "adresse": "46 route du Magarin",
-      "pop": "R",
-      "lat": 4569900,
-      "lng": -105300,
-      "fuels": {
-        "gazole": 2.099,
-        "sp98": 2.139,
-        "e10": 2.059,
-        "gplc": 1.089
-      }
-    },
-    {
-      "id": "17770002",
-      "cp": "17770",
-      "ville": "Burie",
-      "adresse": "20 BD GOULEBENEZE",
-      "pop": "R",
-      "lat": 4577508.10375,
-      "lng": -42216.13732,
-      "fuels": {
-        "gazole": 2.015,
-        "sp95": 1.991,
-        "sp98": 2.069
-      }
-    },
-    {
-      "id": "17210004",
-      "cp": "17210",
-      "ville": "Chevanceaux",
-      "adresse": "LA GARE",
-      "pop": "R",
-      "lat": 4529351.82,
-      "lng": -23916.88,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.05,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "17600005",
       "cp": "17600",
       "ville": "Corme-Royal",
@@ -337,22 +223,8 @@
       "lat": 4574625.835,
       "lng": -81248.55135,
       "fuels": {
-        "sp95": 2.01
-      }
-    },
-    {
-      "id": "17120002",
-      "cp": "17120",
-      "ville": "Cozes",
-      "adresse": "30 Boulevard des Dandonneaux",
-      "pop": "R",
-      "lat": 4558500,
-      "lng": -83500,
-      "fuels": {
-        "gazole": 1.975,
-        "sp98": 2.029,
-        "e10": 1.939,
-        "e85": 0.799
+        "gazole": 2.09,
+        "sp95": 2.03
       }
     },
     {
@@ -370,20 +242,6 @@
       }
     },
     {
-      "id": "17139001",
-      "cp": "17139",
-      "ville": "Dompierre-sur-Mer",
-      "adresse": "RUE DE L'ADJUDANT GALLAND",
-      "pop": "R",
-      "lat": 4618933.169,
-      "lng": -106930.786,
-      "fuels": {
-        "gazole": 1.959,
-        "sp95": 1.985,
-        "sp98": 2
-      }
-    },
-    {
       "id": "17620002",
       "cp": "17620",
       "ville": "Échillais",
@@ -394,8 +252,7 @@
       "fuels": {
         "gazole": 1.929,
         "sp98": 1.989,
-        "e10": 1.899,
-        "e85": 0.789
+        "e10": 1.899
       }
     },
     {
@@ -429,35 +286,6 @@
       }
     },
     {
-      "id": "17450001",
-      "cp": "17450",
-      "ville": "Fouras",
-      "adresse": "9 rue Dieu me Garde",
-      "pop": "R",
-      "lat": 4599074,
-      "lng": -107620,
-      "fuels": {
-        "gazole": 1.974,
-        "sp98": 2.002,
-        "e10": 1.933,
-        "e85": 0.789
-      }
-    },
-    {
-      "id": "17260001",
-      "cp": "17260",
-      "ville": "Gémozac",
-      "adresse": "ROUTE DE SAINTES",
-      "pop": "R",
-      "lat": 4557600,
-      "lng": -67800,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.005,
-        "e10": 1.915
-      }
-    },
-    {
       "id": "17520002",
       "cp": "17520",
       "ville": "Jarnac-Champagne",
@@ -471,67 +299,6 @@
       }
     },
     {
-      "id": "17500002",
-      "cp": "17500",
-      "ville": "Jonzac",
-      "adresse": "Avenue Monseigneur Chauvin",
-      "pop": "R",
-      "lat": 4545516.75,
-      "lng": -44091.49,
-      "fuels": {
-        "gazole": 1.929,
-        "sp98": 2.028,
-        "e10": 1.915,
-        "e85": 0.808
-      }
-    },
-    {
-      "id": "17500003",
-      "cp": "17500",
-      "ville": "Jonzac",
-      "adresse": "PARC COMMERCIAL DE LA SOURCE",
-      "pop": "R",
-      "lat": 4543829.66,
-      "lng": -45152.24,
-      "fuels": {
-        "gazole": 1.93,
-        "sp98": 2.029,
-        "e10": 1.916,
-        "e85": 0.809,
-        "gplc": 1.099
-      }
-    },
-    {
-      "id": "17630001",
-      "cp": "17630",
-      "ville": "La Flotte",
-      "adresse": "Rue Caillotière",
-      "pop": "R",
-      "lat": 4617900,
-      "lng": -132800,
-      "fuels": {
-        "gazole": 1.937,
-        "sp95": 1.939,
-        "sp98": 1.979,
-        "e10": 1.885
-      }
-    },
-    {
-      "id": "17000005",
-      "cp": "17000",
-      "ville": "La Rochelle",
-      "adresse": "124 Boulevard André Sautel",
-      "pop": "R",
-      "lat": 4617000,
-      "lng": -112700,
-      "fuels": {
-        "gazole": 1.923,
-        "sp98": 1.965,
-        "e10": 1.863,
-        "e85": 0.795
-      }
-    },
-    {
       "id": "17000010",
       "cp": "17000",
       "ville": "La Rochelle",
@@ -540,53 +307,9 @@
       "lat": 4616200,
       "lng": -120300,
       "fuels": {
-        "gazole": 2.039,
-        "sp98": 2.109,
-        "e10": 1.989
-      }
-    },
-    {
-      "id": "17000007",
-      "cp": "17000",
-      "ville": "La Rochelle",
-      "adresse": "Rue de Béthencourt",
-      "pop": "R",
-      "lat": 4617100,
-      "lng": -120400,
-      "fuels": {
-        "gazole": 2.079,
-        "sp98": 2.139,
-        "e10": 2.059,
-        "e85": 0.835
-      }
-    },
-    {
-      "id": "17000012",
-      "cp": "17000",
-      "ville": "La Rochelle",
-      "adresse": "RUE JEAN-PAUL SARTRE",
-      "pop": "R",
-      "lat": 4615600,
-      "lng": -111900,
-      "fuels": {
-        "gazole": 2.022,
-        "sp98": 1.99,
-        "e10": 1.981,
-        "e85": 0.814
-      }
-    },
-    {
-      "id": "17390002",
-      "cp": "17390",
-      "ville": "La Tremblade",
-      "adresse": "ZAC DES BREGAUDIERES",
-      "pop": "R",
-      "lat": 4576000,
-      "lng": -112900,
-      "fuels": {
-        "gazole": 1.93,
-        "sp98": 1.99,
-        "e10": 1.919
+        "gazole": 2.049,
+        "sp98": 2.129,
+        "e10": 2.009
       }
     },
     {
@@ -644,22 +367,7 @@
       "fuels": {
         "gazole": 1.979,
         "sp98": 2.089,
-        "e10": 1.959,
-        "e85": 0.869
-      }
-    },
-    {
-      "id": "17570001",
-      "cp": "17570",
-      "ville": "Les Mathes",
-      "adresse": "4 AVENUE ROYAN",
-      "pop": "R",
-      "lat": 4568700,
-      "lng": -117100,
-      "fuels": {
-        "gazole": 2.177,
-        "sp95": 1.99,
-        "sp98": 1.99
+        "e10": 1.959
       }
     },
     {
@@ -677,21 +385,6 @@
       }
     },
     {
-      "id": "17320004",
-      "cp": "17320",
-      "ville": "Marennes-Hiers-Brouage",
-      "adresse": "LA CHAINADE",
-      "pop": "R",
-      "lat": 4583164.173,
-      "lng": -112359.33,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.969,
-        "sp98": 2.089,
-        "e85": 0.869
-      }
-    },
-    {
       "id": "17320002",
       "cp": "17320",
       "ville": "Marennes-Hiers-Brouage",
@@ -706,20 +399,6 @@
       }
     },
     {
-      "id": "17160001",
-      "cp": "17160",
-      "ville": "Matha",
-      "adresse": "3 Allée de la Croix Becquet",
-      "pop": "R",
-      "lat": 4586900,
-      "lng": -30500,
-      "fuels": {
-        "gazole": 1.962,
-        "sp98": 1.999,
-        "e10": 1.899
-      }
-    },
-    {
       "id": "17600004",
       "cp": "17600",
       "ville": "Médis",
@@ -731,20 +410,6 @@
         "gazole": 1.949,
         "sp95": 1.965,
         "e10": 1.915
-      }
-    },
-    {
-      "id": "17132001",
-      "cp": "17132",
-      "ville": "Meschers-sur-Gironde",
-      "adresse": "47 RUE DE L'EGLISE",
-      "pop": "R",
-      "lat": 4555900,
-      "lng": -95400,
-      "fuels": {
-        "gazole": 1.97,
-        "sp98": 2.015,
-        "e10": 1.939
       }
     },
     {
@@ -772,23 +437,8 @@
       "lng": -39297.32322,
       "fuels": {
         "gazole": 1.979,
-        "sp98": 2.029,
+        "sp98": 2.039,
         "e10": 1.919
-      }
-    },
-    {
-      "id": "17130004",
-      "cp": "17130",
-      "ville": "Montendre",
-      "adresse": "Boulevard de Saintonge",
-      "pop": "R",
-      "lat": 4529000,
-      "lng": -41000,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.029,
-        "e10": 1.919,
-        "e85": 0.809
       }
     },
     {
@@ -802,33 +452,6 @@
       "fuels": {
         "gazole": 2.08,
         "e10": 1.952
-      }
-    },
-    {
-      "id": "17270001",
-      "cp": "17270",
-      "ville": "Montguyon",
-      "adresse": "Zone commerciale de clairvent",
-      "pop": "R",
-      "lat": 4521213.97979,
-      "lng": -17719.77228,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.039,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "17137001",
-      "cp": "17137",
-      "ville": "Nieul-sur-Mer",
-      "adresse": "44 Avenue de la Rochelle",
-      "pop": "R",
-      "lat": 4619800,
-      "lng": -115800,
-      "fuels": {
-        "gazole": 2.09,
-        "sp95": 1.99
       }
     },
     {
@@ -847,22 +470,6 @@
       }
     },
     {
-      "id": "17800004",
-      "cp": "17800",
-      "ville": "Pons",
-      "adresse": "Route de Coudenne",
-      "pop": "R",
-      "lat": 4557900,
-      "lng": -55800,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.005,
-        "e10": 1.915,
-        "e85": 0.789,
-        "gplc": 1.099
-      }
-    },
-    {
       "id": "17250002",
       "cp": "17250",
       "ville": "Pont-l'Abbé-d'Arnoult",
@@ -871,9 +478,9 @@
       "lat": 4583000,
       "lng": -87700,
       "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.975,
-        "sp98": 2.055
+        "gazole": 1.945,
+        "sp95": 1.959,
+        "sp98": 2.039
       }
     },
     {
@@ -907,21 +514,6 @@
       }
     },
     {
-      "id": "17285001",
-      "cp": "17138",
-      "ville": "Puilboreau",
-      "adresse": "rue du 14 juillet",
-      "pop": "R",
-      "lat": 4617364.60061,
-      "lng": -111758.83184,
-      "fuels": {
-        "gazole": 1.91,
-        "sp98": 1.964,
-        "e10": 1.879,
-        "e85": 0.75
-      }
-    },
-    {
       "id": "17300006",
       "cp": "17300",
       "ville": "Rochefort",
@@ -931,23 +523,8 @@
       "lng": -97600,
       "fuels": {
         "gazole": 1.989,
-        "sp98": 2.089,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "17300003",
-      "cp": "17300",
-      "ville": "Rochefort",
-      "adresse": "Impasse du 11 Novembre 1918",
-      "pop": "R",
-      "lat": 4592900,
-      "lng": -95800,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 1.995,
-        "e10": 1.904,
-        "e85": 0.809
+        "sp98": 2.099,
+        "e10": 1.949
       }
     },
     {
@@ -966,21 +543,6 @@
       }
     },
     {
-      "id": "17200008",
-      "cp": "17200",
-      "ville": "Royan",
-      "adresse": "1, AV DE LA LIBERATION",
-      "pop": "R",
-      "lat": 4562357,
-      "lng": -101317,
-      "fuels": {
-        "gazole": 1.943,
-        "sp98": 1.99,
-        "e10": 1.906,
-        "e85": 0.819
-      }
-    },
-    {
       "id": "17200003",
       "cp": "17200",
       "ville": "Royan",
@@ -991,35 +553,6 @@
       "fuels": {
         "gazole": 2.035,
         "sp98": 1.99
-      }
-    },
-    {
-      "id": "17200009",
-      "cp": "17200",
-      "ville": "Royan",
-      "adresse": "8 AVENUE MARYSE BASTIE",
-      "pop": "R",
-      "lat": 4562472.81492,
-      "lng": -101645.69128,
-      "fuels": {
-        "gazole": 1.943,
-        "sp98": 1.99,
-        "e10": 1.906
-      }
-    },
-    {
-      "id": "17200001",
-      "cp": "17200",
-      "ville": "Royan",
-      "adresse": "Boulevard du Colonel Baillet",
-      "pop": "R",
-      "lat": 4562955,
-      "lng": -103904,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.029,
-        "e10": 1.959,
-        "e85": 0.799
       }
     },
     {
@@ -1038,20 +571,6 @@
       }
     },
     {
-      "id": "17360001",
-      "cp": "17360",
-      "ville": "Saint-Aigulin",
-      "adresse": "8 Avenue du Maréchal Leclerc",
-      "pop": "R",
-      "lat": 4515900,
-      "lng": -1900,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 1.999,
-        "e10": 1.909
-      }
-    },
-    {
       "id": "17220001",
       "cp": "17220",
       "ville": "Saint-Christophe",
@@ -1063,78 +582,6 @@
         "gazole": 1.94,
         "sp98": 1.988,
         "e10": 1.879
-      }
-    },
-    {
-      "id": "17240001",
-      "cp": "17240",
-      "ville": "Saint-Genis-de-Saintonge",
-      "adresse": "75 AVENUE de Saintes",
-      "pop": "R",
-      "lat": 4548900,
-      "lng": -56600,
-      "fuels": {
-        "gazole": 1.978,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.842
-      }
-    },
-    {
-      "id": "17110001",
-      "cp": "17110",
-      "ville": "Saint-Georges-de-Didonne",
-      "adresse": "68 Avenue du Maréchal Juin",
-      "pop": "R",
-      "lat": 4561200,
-      "lng": -99100,
-      "fuels": {
-        "gazole": 1.975,
-        "sp98": 2.025,
-        "e10": 1.925,
-        "e85": 0.795
-      }
-    },
-    {
-      "id": "17400003",
-      "cp": "17400",
-      "ville": "Saint-Jean-d'Angély",
-      "adresse": "Rue Alexandre Dumas",
-      "pop": "R",
-      "lat": 4595287,
-      "lng": -52991,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.055,
-        "e10": 1.965
-      }
-    },
-    {
-      "id": "17400002",
-      "cp": "17400",
-      "ville": "Saint-Jean-d'Angély",
-      "adresse": "Rue de la Sacristinerie",
-      "pop": "R",
-      "lat": 4594400,
-      "lng": -50500,
-      "fuels": {
-        "gazole": 1.99,
-        "sp95": 2.015,
-        "sp98": 2.055
-      }
-    },
-    {
-      "id": "17400008",
-      "cp": "17400",
-      "ville": "Saint-Jean-d'Angély",
-      "adresse": "Zac de la Grenoblerie, 6 Rue Roger Menaud",
-      "pop": "R",
-      "lat": 4594832.78787,
-      "lng": -49988.83737,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.055,
-        "e10": 1.965
       }
     },
     {
@@ -1182,91 +629,6 @@
       }
     },
     {
-      "id": "17410001",
-      "cp": "17410",
-      "ville": "Saint-Martin-de-Ré",
-      "adresse": "Route de la Flotte",
-      "pop": "R",
-      "lat": 4619800,
-      "lng": -135500,
-      "fuels": {
-        "gazole": 1.934,
-        "sp95": 1.95,
-        "sp98": 1.979,
-        "e10": 1.898
-      }
-    },
-    {
-      "id": "17420001",
-      "cp": "17420",
-      "ville": "Saint-Palais-sur-Mer",
-      "adresse": "Avenue Charles de Gaulle",
-      "pop": "R",
-      "lat": 4565100,
-      "lng": -108500,
-      "fuels": {
-        "gazole": 1.974,
-        "sp98": 2.109,
-        "e10": 1.927
-      }
-    },
-    {
-      "id": "17310001",
-      "cp": "17310",
-      "ville": "Saint-Pierre-d'Oléron",
-      "adresse": "1 Avenue du Général Leclerc",
-      "pop": "R",
-      "lat": 4593945,
-      "lng": -130820,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.01,
-        "e10": 1.91,
-        "e85": 0.755
-      }
-    },
-    {
-      "id": "17310004",
-      "cp": "17310",
-      "ville": "Saint-Pierre-d'Oléron",
-      "adresse": "2 Route des Mirouelles",
-      "pop": "R",
-      "lat": 4594300,
-      "lng": -132100,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.95,
-        "sp98": 2.01,
-        "e85": 0.755
-      }
-    },
-    {
-      "id": "17310003",
-      "cp": "17310",
-      "ville": "Saint-Pierre-d'Oléron",
-      "adresse": "41 av du moulin blanc",
-      "pop": "R",
-      "lat": 4593500,
-      "lng": -130000,
-      "fuels": {
-        "gazole": 2.19
-      }
-    },
-    {
-      "id": "17250003",
-      "cp": "17250",
-      "ville": "Saint-Porchaire",
-      "adresse": "Rue du gros chêne",
-      "pop": "R",
-      "lat": 4581400,
-      "lng": -77400,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 1.997,
-        "e10": 1.887
-      }
-    },
-    {
       "id": "17220003",
       "cp": "17220",
       "ville": "Saint-Rogatien",
@@ -1278,20 +640,6 @@
         "gazole": 1.978,
         "sp98": 1.997,
         "e10": 1.908
-      }
-    },
-    {
-      "id": "17170003",
-      "cp": "17170",
-      "ville": "Saint-Sauveur-d'Aunis",
-      "adresse": "AV DE LA JUILLERIE",
-      "pop": "R",
-      "lat": 4622656.32575,
-      "lng": -87152.97856,
-      "fuels": {
-        "gazole": 1.988,
-        "sp95": 1.933,
-        "sp98": 2.006
       }
     },
     {
@@ -1309,91 +657,6 @@
       }
     },
     {
-      "id": "17350003",
-      "cp": "17350",
-      "ville": "Saint-Savinien",
-      "adresse": "ROUTE DE SAINTES",
-      "pop": "R",
-      "lat": 4587419,
-      "lng": -67693,
-      "fuels": {
-        "gazole": 1.999,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "17200006",
-      "cp": "17200",
-      "ville": "Saint-Sulpice-de-Royan",
-      "adresse": "ROUTE DE ROCHEFORT",
-      "pop": "R",
-      "lat": 4566900,
-      "lng": -101000,
-      "fuels": {
-        "gazole": 1.936,
-        "sp98": 2.009,
-        "e10": 1.908
-      }
-    },
-    {
-      "id": "17138010",
-      "cp": "17138",
-      "ville": "Saint-Xandre",
-      "adresse": "43 rue des sports",
-      "pop": "R",
-      "lat": 4620593.78489,
-      "lng": -109388.59978,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.059,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "17740001",
-      "cp": "17740",
-      "ville": "Sainte-Marie-de-Ré",
-      "adresse": "CD201",
-      "pop": "R",
-      "lat": 4615800,
-      "lng": -132400,
-      "fuels": {
-        "gazole": 2.026,
-        "sp98": 1.99,
-        "e10": 1.979
-      }
-    },
-    {
-      "id": "17100007",
-      "cp": "17100",
-      "ville": "Saintes",
-      "adresse": "11 Rue de Lamothe",
-      "pop": "R",
-      "lat": 4573900,
-      "lng": -60300,
-      "fuels": {
-        "gazole": 1.92,
-        "sp98": 1.97,
-        "e10": 1.87,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "17100005",
-      "cp": "17100",
-      "ville": "Saintes",
-      "adresse": "15 Rue Champagne Saint Georges",
-      "pop": "R",
-      "lat": 4574600,
-      "lng": -67400,
-      "fuels": {
-        "gazole": 1.934,
-        "sp98": 1.989,
-        "e10": 1.9,
-        "e85": 0.795
-      }
-    },
-    {
       "id": "17100011",
       "cp": "17100",
       "ville": "Saintes",
@@ -1408,95 +671,6 @@
       }
     },
     {
-      "id": "17100014",
-      "cp": "17100",
-      "ville": "Saintes",
-      "adresse": "31, Cours Lemercier",
-      "pop": "R",
-      "lat": 4574747.4,
-      "lng": -63948.7,
-      "fuels": {
-        "gazole": 2.056,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "17100013",
-      "cp": "17100",
-      "ville": "Saintes",
-      "adresse": "AVENUE DE SAINTONGES",
-      "pop": "R",
-      "lat": 4574100,
-      "lng": -62500,
-      "fuels": {
-        "gazole": 1.945,
-        "sp98": 1.99,
-        "e10": 1.903,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "17100006",
-      "cp": "17100",
-      "ville": "Saintes",
-      "adresse": "Cours Charles de Gaulle",
-      "pop": "R",
-      "lat": 4574100.88003,
-      "lng": -62603.35922,
-      "fuels": {
-        "gazole": 1.96,
-        "sp98": 1.999,
-        "e10": 1.915,
-        "e85": 0.79
-      }
-    },
-    {
-      "id": "17102001",
-      "cp": "17100",
-      "ville": "Saintes",
-      "adresse": "cours du Maréchal Leclerc",
-      "pop": "R",
-      "lat": 4575624.74472,
-      "lng": -65210.47687,
-      "fuels": {
-        "gazole": 1.934,
-        "sp98": 1.989,
-        "e10": 1.887,
-        "e85": 0.795,
-        "gplc": 1.099
-      }
-    },
-    {
-      "id": "17100008",
-      "cp": "17100",
-      "ville": "Saintes",
-      "adresse": "Cours Hector Berlioz",
-      "pop": "R",
-      "lat": 4573600,
-      "lng": -64900,
-      "fuels": {
-        "gazole": 1.935,
-        "sp98": 1.995,
-        "e10": 1.9,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "17100001",
-      "cp": "17100",
-      "ville": "Saintes",
-      "adresse": "Route de Bordeaux",
-      "pop": "R",
-      "lat": 4571900,
-      "lng": -63600,
-      "fuels": {
-        "gazole": 2.061,
-        "sp98": 1.958,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "17220002",
       "cp": "17220",
       "ville": "Salles-sur-Mer",
@@ -1505,23 +679,9 @@
       "lat": 4608400,
       "lng": -107400,
       "fuels": {
-        "gazole": 1.968,
-        "sp98": 2.006,
-        "e10": 1.896
-      }
-    },
-    {
-      "id": "17600001",
-      "cp": "17600",
-      "ville": "Saujon",
-      "adresse": "ROUTE DE SAINTES",
-      "pop": "R",
-      "lat": 4567900,
-      "lng": -91500,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 1.999,
-        "e10": 1.915
+        "gazole": 1.946,
+        "sp98": 2.016,
+        "e10": 1.905
       }
     },
     {
@@ -1539,20 +699,6 @@
       }
     },
     {
-      "id": "17120005",
-      "cp": "17120",
-      "ville": "Semussac",
-      "adresse": "1 ZA LE PRE CHARDON",
-      "pop": "R",
-      "lat": 4560400,
-      "lng": -91400,
-      "fuels": {
-        "gazole": 1.957,
-        "sp98": 2.041,
-        "e10": 1.944
-      }
-    },
-    {
       "id": "17780001",
       "cp": "17780",
       "ville": "Soubise",
@@ -1563,64 +709,6 @@
       "fuels": {
         "gazole": 1.949,
         "e10": 1.899
-      }
-    },
-    {
-      "id": "17700001",
-      "cp": "17700",
-      "ville": "Surgères",
-      "adresse": "13 Avenue Saint-Pierre",
-      "pop": "R",
-      "lat": 4610400,
-      "lng": -75400,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 2.051,
-        "e10": 1.962
-      }
-    },
-    {
-      "id": "17700004",
-      "cp": "17700",
-      "ville": "Surgères",
-      "adresse": "24 Chemin de la perche",
-      "pop": "R",
-      "lat": 4610662.83687,
-      "lng": -76915.3093,
-      "fuels": {
-        "gazole": 1.927,
-        "sp98": 1.965,
-        "e10": 1.886,
-        "e85": 0.809,
-        "gplc": 1.02
-      }
-    },
-    {
-      "id": "17700002",
-      "cp": "17700",
-      "ville": "Surgères",
-      "adresse": "44 Rue Audry de Puyravault",
-      "pop": "R",
-      "lat": 4610900,
-      "lng": -75400,
-      "fuels": {
-        "gazole": 2.02,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "17700003",
-      "cp": "17700",
-      "ville": "Surgères",
-      "adresse": "Espace Jean-Philippe Rameau",
-      "pop": "R",
-      "lat": 4611100,
-      "lng": -73900,
-      "fuels": {
-        "gazole": 1.92,
-        "sp98": 1.963,
-        "e10": 1.884,
-        "e85": 0.785
       }
     },
     {
@@ -1637,50 +725,6 @@
         "e10": 1.904,
         "e85": 0.811,
         "gplc": 0.999
-      }
-    },
-    {
-      "id": "17430001",
-      "cp": "17430",
-      "ville": "Tonnay-Charente",
-      "adresse": "ZAC DE LA VARENNE   N 137",
-      "pop": "R",
-      "lat": 4594600,
-      "lng": -88900,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 1.989,
-        "e10": 1.895,
-        "e85": 0.789
-      }
-    },
-    {
-      "id": "17640002",
-      "cp": "17640",
-      "ville": "Vaux-sur-Mer",
-      "adresse": "5 rue Jacques Yves Cousteau",
-      "pop": "R",
-      "lat": 4564700,
-      "lng": -104900,
-      "fuels": {
-        "gazole": 1.953,
-        "sp95": 1.976,
-        "e10": 1.91,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "17640003",
-      "cp": "17640",
-      "ville": "Vaux-sur-Mer",
-      "adresse": "6 AVENUE DES HAUTES FOLIES",
-      "pop": "R",
-      "lat": 4563709.3,
-      "lng": -106352.59,
-      "fuels": {
-        "gazole": 2.056,
-        "sp98": 2.081,
-        "e10": 2.004
       }
     },
     {

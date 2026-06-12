@@ -3,52 +3,52 @@
   "name": "Calvados",
   "regionCode": "NOR",
   "regionName": "Normandie",
-  "asOf": "2026-06-12T08:53:47.167Z",
+  "asOf": "2026-06-12T19:03:22.838Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 119,
+  "stationCount": 54,
   "fuels": {
     "gazole": {
-      "count": 117,
-      "mean": 2.0032,
-      "median": 1.995,
-      "min": 1.914,
-      "max": 2.21
+      "count": 53,
+      "mean": 1.993,
+      "median": 1.989,
+      "min": 1.934,
+      "max": 2.11
     },
     "sp95": {
-      "count": 41,
-      "mean": 1.9999,
-      "median": 1.996,
+      "count": 21,
+      "mean": 1.9954,
+      "median": 1.989,
       "min": 1.947,
       "max": 2.129
     },
     "sp98": {
-      "count": 97,
-      "mean": 2.0364,
-      "median": 2.027,
+      "count": 46,
+      "mean": 2.0332,
+      "median": 2.017,
       "min": 1.987,
-      "max": 2.23
+      "max": 2.189
     },
     "e10": {
-      "count": 91,
-      "mean": 1.9534,
-      "median": 1.948,
+      "count": 42,
+      "mean": 1.9462,
+      "median": 1.939,
       "min": 1.888,
-      "max": 2.103
+      "max": 2.054
     },
     "e85": {
-      "count": 38,
-      "mean": 0.8174,
-      "median": 0.809,
+      "count": 19,
+      "mean": 0.8043,
+      "median": 0.799,
       "min": 0.755,
-      "max": 0.999
+      "max": 0.849
     },
     "gplc": {
-      "count": 13,
-      "mean": 1.0348,
-      "median": 0.999,
+      "count": 6,
+      "mean": 1.0152,
+      "median": 1.022,
       "min": 0.899,
-      "max": 1.206
+      "max": 1.137
     }
   },
   "stations": [
@@ -81,47 +81,6 @@
       }
     },
     {
-      "id": "14640001",
-      "cp": "14640",
-      "ville": "Auberville",
-      "adresse": "585 rue de la Brigade Piron",
-      "pop": "R",
-      "lat": 4930700,
-      "lng": -2700,
-      "fuels": {
-        "gazole": 2.21,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "14520002",
-      "cp": "14520",
-      "ville": "Aure sur Mer",
-      "adresse": "45 ROUTE D'OMAHA",
-      "pop": "R",
-      "lat": 4934761,
-      "lng": -80672,
-      "fuels": {
-        "gazole": 2.15
-      }
-    },
-    {
-      "id": "14400003",
-      "cp": "14400",
-      "ville": "Bayeux",
-      "adresse": "16 Boulevard Sadi-Carnot",
-      "pop": "R",
-      "lat": 4927100,
-      "lng": -69900,
-      "fuels": {
-        "gazole": 1.973,
-        "sp98": 1.99,
-        "e10": 1.946,
-        "e85": 0.861
-      }
-    },
-    {
       "id": "14404001",
       "cp": "14400",
       "ville": "Bayeux",
@@ -148,34 +107,6 @@
         "gazole": 1.976,
         "sp98": 2.035,
         "e10": 1.955
-      }
-    },
-    {
-      "id": "14400009",
-      "cp": "14400",
-      "ville": "Bayeux",
-      "adresse": "CTRE CIAL EINDHOVEN RTE DE VAUX/AURE",
-      "pop": "R",
-      "lat": 4928800,
-      "lng": -70400,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.073,
-        "e10": 1.931
-      }
-    },
-    {
-      "id": "14990002",
-      "cp": "14990",
-      "ville": "Bernières-sur-Mer",
-      "adresse": "356 RUE VICTOR TESNIERES",
-      "pop": "R",
-      "lat": 4933400,
-      "lng": -42000,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.049,
-        "e10": 1.959
       }
     },
     {
@@ -220,34 +151,6 @@
         "sp98": 2.049,
         "e10": 1.919,
         "e85": 0.789
-      }
-    },
-    {
-      "id": "14760002",
-      "cp": "14760",
-      "ville": "Bretteville-sur-Odon",
-      "adresse": "ROUTE DE BRETAGNE",
-      "pop": "R",
-      "lat": 4916575,
-      "lng": -41597,
-      "fuels": {
-        "gazole": 1.95,
-        "e85": 0.818,
-        "gplc": 0.999
-      }
-    },
-    {
-      "id": "14390001",
-      "cp": "14390",
-      "ville": "Cabourg",
-      "adresse": "RD 400",
-      "pop": "R",
-      "lat": 4928814,
-      "lng": -12678,
-      "fuels": {
-        "gazole": 1.985,
-        "sp95": 2.015,
-        "sp98": 2.045
       }
     },
     {
@@ -312,35 +215,6 @@
       }
     },
     {
-      "id": "14000009",
-      "cp": "14000",
-      "ville": "Caen",
-      "adresse": "7 RUE ROBERT KASKOREFF",
-      "pop": "R",
-      "lat": 4918300,
-      "lng": -40300,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.029,
-        "e10": 1.999
-      }
-    },
-    {
-      "id": "14000019",
-      "cp": "14000",
-      "ville": "Caen",
-      "adresse": "73-75, AVENUE G. CLEMENCEAU",
-      "pop": "R",
-      "lat": 4918856,
-      "lng": -35025,
-      "fuels": {
-        "gazole": 2.053,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "gplc": 0.999
-      }
-    },
-    {
       "id": "14000020",
       "cp": "14000",
       "ville": "Caen",
@@ -352,20 +226,6 @@
         "gazole": 1.95,
         "sp98": 1.99,
         "e10": 1.918,
-        "e85": 0.811
-      }
-    },
-    {
-      "id": "14000021",
-      "cp": "14000",
-      "ville": "Caen",
-      "adresse": "AVENUE COTE DE NACRE",
-      "pop": "R",
-      "lat": 4919979,
-      "lng": -36004,
-      "fuels": {
-        "gazole": 1.949,
-        "e10": 1.916,
         "e85": 0.811,
         "gplc": 0.999
       }
@@ -413,20 +273,6 @@
       }
     },
     {
-      "id": "14110002",
-      "cp": "14110",
-      "ville": "Condé-en-Normandie",
-      "adresse": "Parc Commercial St JACQUES",
-      "pop": "R",
-      "lat": 4885624,
-      "lng": -53892,
-      "fuels": {
-        "gazole": 1.946,
-        "sp95": 1.996,
-        "sp98": 2.036
-      }
-    },
-    {
       "id": "14110003",
       "cp": "14110",
       "ville": "Condé-en-Normandie",
@@ -441,34 +287,6 @@
       }
     },
     {
-      "id": "14123010",
-      "cp": "14123",
-      "ville": "Cormelles-le-Royal",
-      "adresse": "2 RUE DE L'INDUSTRIE",
-      "pop": "R",
-      "lat": 4915769.71739,
-      "lng": -32601.01571,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "sp98": 2.069
-      }
-    },
-    {
-      "id": "14123009",
-      "cp": "14123",
-      "ville": "Cormelles-le-Royal",
-      "adresse": "Rue des Frères Lumière",
-      "pop": "R",
-      "lat": 4915400,
-      "lng": -31400,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.999,
-        "e10": 1.919
-      }
-    },
-    {
       "id": "14470002",
       "cp": "14470",
       "ville": "Courseulles-sur-Mer",
@@ -477,10 +295,10 @@
       "lat": 4932300,
       "lng": -45200,
       "fuels": {
-        "gazole": 1.979,
-        "sp98": 1.99,
-        "e10": 1.916,
-        "e85": 0.798,
+        "gazole": 1.949,
+        "sp98": 2.007,
+        "e10": 1.899,
+        "e85": 0.788,
         "gplc": 1.045
       }
     },
@@ -498,79 +316,6 @@
       }
     },
     {
-      "id": "14480001",
-      "cp": "14480",
-      "ville": "Creully sur Seulles",
-      "adresse": "1 rue du grand clos",
-      "pop": "R",
-      "lat": 4928000,
-      "lng": -53500,
-      "fuels": {
-        "gazole": 1.994,
-        "sp98": 2.039,
-        "e10": 1.918
-      }
-    },
-    {
-      "id": "14800008",
-      "cp": "14800",
-      "ville": "Deauville",
-      "adresse": "Avenue de la République",
-      "pop": "R",
-      "lat": 4935600,
-      "lng": 7100,
-      "fuels": {
-        "gazole": 2.149,
-        "sp98": 2.159,
-        "e10": 2.069,
-        "e85": 0.975,
-        "gplc": 1.089
-      }
-    },
-    {
-      "id": "14160004",
-      "cp": "14160",
-      "ville": "Dives-sur-Mer",
-      "adresse": "106, RUE DU GENERAL DE GAULLE",
-      "pop": "R",
-      "lat": 4928517,
-      "lng": -10960,
-      "fuels": {
-        "gazole": 2.046,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "14160003",
-      "cp": "14160",
-      "ville": "Dives-sur-Mer",
-      "adresse": "Avenue des Résistants",
-      "pop": "R",
-      "lat": 4928100,
-      "lng": -10000,
-      "fuels": {
-        "gazole": 1.998,
-        "sp98": 2.048,
-        "e10": 1.968
-      }
-    },
-    {
-      "id": "14160002",
-      "cp": "14160",
-      "ville": "Dives-sur-Mer",
-      "adresse": "Boulevard Maurice Thorez",
-      "pop": "R",
-      "lat": 4927600,
-      "lng": -10300,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.049,
-        "e10": 1.969
-      }
-    },
-    {
       "id": "14440001",
       "cp": "14440",
       "ville": "Douvres-la-Délivrande",
@@ -581,50 +326,6 @@
       "fuels": {
         "gazole": 2.05,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "14440002",
-      "cp": "14440",
-      "ville": "Douvres-la-Délivrande",
-      "adresse": "Voie des Alliés",
-      "pop": "R",
-      "lat": 4930000,
-      "lng": -38200,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.989,
-        "sp98": 2.029,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "14430001",
-      "cp": "14430",
-      "ville": "Dozulé",
-      "adresse": "18 Grande Rue",
-      "pop": "R",
-      "lat": 4923100,
-      "lng": -4400,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.005,
-        "sp98": 2.019
-      }
-    },
-    {
-      "id": "14600004",
-      "cp": "14600",
-      "ville": "Équemauville",
-      "adresse": "Route de Trouville",
-      "pop": "R",
-      "lat": 4939700,
-      "lng": 21100,
-      "fuels": {
-        "gazole": 1.976,
-        "sp98": 2.048,
-        "e10": 1.933,
-        "e85": 0.809
       }
     },
     {
@@ -656,20 +357,6 @@
       }
     },
     {
-      "id": "14700007",
-      "cp": "14700",
-      "ville": "Falaise",
-      "adresse": "Route d'Argentan",
-      "pop": "R",
-      "lat": 4888700,
-      "lng": -19100,
-      "fuels": {
-        "gazole": 2.089,
-        "sp98": 2.168,
-        "e10": 2.049
-      }
-    },
-    {
       "id": "14700005",
       "cp": "14700",
       "ville": "Falaise",
@@ -679,35 +366,6 @@
       "lng": -17900,
       "fuels": {
         "sp98": 1.99
-      }
-    },
-    {
-      "id": "14700004",
-      "cp": "14700",
-      "ville": "Falaise",
-      "adresse": "ZONE EXPANSIA RUE DES SENTES",
-      "pop": "R",
-      "lat": 4891100,
-      "lng": -20600,
-      "fuels": {
-        "gazole": 1.936,
-        "sp95": 1.996,
-        "e10": 1.948,
-        "e85": 0.779
-      }
-    },
-    {
-      "id": "14123001",
-      "cp": "14123",
-      "ville": "Fleury-sur-Orne",
-      "adresse": "51bis Av. d'Harcourt",
-      "pop": "R",
-      "lat": 4915727.31122,
-      "lng": -36860.8344,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.999,
-        "e10": 1.919
       }
     },
     {
@@ -726,52 +384,6 @@
       }
     },
     {
-      "id": "14730001",
-      "cp": "14730",
-      "ville": "Giberville",
-      "adresse": "AUTOROUTE A13 AIRE DE GIBERVILLE SUD",
-      "pop": "A",
-      "lat": 4916600,
-      "lng": -27600,
-      "fuels": {
-        "gazole": 2.159,
-        "sp98": 2.174,
-        "e10": 2.103,
-        "e85": 0.999,
-        "gplc": 1.206
-      }
-    },
-    {
-      "id": "14450001",
-      "cp": "14450",
-      "ville": "Grandcamp-Maisy",
-      "adresse": "Avenue Emile DAMECOUR",
-      "pop": "R",
-      "lat": 4938500,
-      "lng": -105000,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.969,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "14200009",
-      "cp": "14200",
-      "ville": "Hérouville-Saint-Clair",
-      "adresse": "1, RUE GUYON DE GUERCHEVILLE",
-      "pop": "R",
-      "lat": 4920025.30377,
-      "lng": -34489.71173,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 1.99,
-        "e10": 1.916,
-        "e85": 0.811,
-        "gplc": 0.999
-      }
-    },
-    {
       "id": "14200006",
       "cp": "14200",
       "ville": "Hérouville-Saint-Clair",
@@ -784,20 +396,6 @@
         "sp98": 2.019,
         "e10": 1.909,
         "e85": 0.789
-      }
-    },
-    {
-      "id": "14200008",
-      "cp": "14200",
-      "ville": "Hérouville-Saint-Clair",
-      "adresse": "Avenue de Garbsen",
-      "pop": "R",
-      "lat": 4921334.65264,
-      "lng": -34202.80313,
-      "fuels": {
-        "gazole": 1.945,
-        "sp98": 1.99,
-        "e10": 1.901
       }
     },
     {
@@ -816,35 +414,6 @@
       }
     },
     {
-      "id": "14600007",
-      "cp": "14600",
-      "ville": "Honfleur",
-      "adresse": "COURS JEAN DE VIENNE",
-      "pop": "R",
-      "lat": 4941300,
-      "lng": 25000,
-      "fuels": {
-        "gazole": 1.956,
-        "sp98": 1.99,
-        "e10": 1.925,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "14600003",
-      "cp": "14600",
-      "ville": "Honfleur",
-      "adresse": "Zone Industrielle Portuaire",
-      "pop": "R",
-      "lat": 4941657,
-      "lng": 25936,
-      "fuels": {
-        "gazole": 1.961,
-        "sp98": 2.006,
-        "e10": 1.933
-      }
-    },
-    {
       "id": "14123004",
       "cp": "14123",
       "ville": "Ifs",
@@ -857,134 +426,6 @@
         "sp95": 1.959,
         "e10": 1.919,
         "e85": 0.789
-      }
-    },
-    {
-      "id": "14123008",
-      "cp": "14123",
-      "ville": "Ifs",
-      "adresse": "389, ROUTE DE CAEN - RN 158",
-      "pop": "R",
-      "lat": 4915400.414,
-      "lng": -34387.914,
-      "fuels": {
-        "gazole": 2.053,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.816
-      }
-    },
-    {
-      "id": "14123005",
-      "cp": "14123",
-      "ville": "Ifs",
-      "adresse": "Avenue Jean Vilar - Boulevard Yitzhak Rabin ZAC du Hoguet",
-      "pop": "R",
-      "lat": 4915000,
-      "lng": -35200,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.969,
-        "e10": 1.919,
-        "e85": 0.789
-      }
-    },
-    {
-      "id": "14123007",
-      "cp": "14123",
-      "ville": "Ifs",
-      "adresse": "RN 158 RTE DE FALAISE",
-      "pop": "R",
-      "lat": 4914210,
-      "lng": -33738.5,
-      "fuels": {
-        "gazole": 1.944
-      }
-    },
-    {
-      "id": "14230003",
-      "cp": "14230",
-      "ville": "Isigny-sur-Mer",
-      "adresse": "Place de l'hôtel de ville",
-      "pop": "R",
-      "lat": 4931862.92,
-      "lng": -110089.57,
-      "fuels": {
-        "gazole": 2.029,
-        "sp95": 2.039,
-        "sp98": 2.119
-      }
-    },
-    {
-      "id": "14230002",
-      "cp": "14230",
-      "ville": "Isigny-sur-Mer",
-      "adresse": "RUE DE LITTRY",
-      "pop": "R",
-      "lat": 4931300,
-      "lng": -109900,
-      "fuels": {
-        "gazole": 1.995,
-        "sp98": 2.049,
-        "e10": 1.948,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "14330001",
-      "cp": "14330",
-      "ville": "Le Molay-Littry",
-      "adresse": "rue de la gare",
-      "pop": "R",
-      "lat": 4924800,
-      "lng": -87800,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.999,
-        "e10": 1.899,
-        "e85": 0.769
-      }
-    },
-    {
-      "id": "14260002",
-      "cp": "14260",
-      "ville": "Les Monts d'Aunay",
-      "adresse": "ROUTE DE VILLERS BOCAGE",
-      "pop": "R",
-      "lat": 4902600,
-      "lng": -63200,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.029,
-        "e10": 1.915
-      }
-    },
-    {
-      "id": "14780003",
-      "cp": "14780",
-      "ville": "Lion-sur-Mer",
-      "adresse": "21 BOULEVARD PAUL DOUMER",
-      "pop": "R",
-      "lat": 4930182.7,
-      "lng": -31864.3,
-      "fuels": {
-        "gazole": 2.029,
-        "sp95": 1.999,
-        "sp98": 2.12
-      }
-    },
-    {
-      "id": "14100007",
-      "cp": "14100",
-      "ville": "Lisieux",
-      "adresse": "Avenue Georges Pompidou",
-      "pop": "R",
-      "lat": 4913300,
-      "lng": 22500,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 1.99,
-        "e10": 1.889
       }
     },
     {
@@ -1018,35 +459,6 @@
       }
     },
     {
-      "id": "14111001",
-      "cp": "14111",
-      "ville": "Louvigny",
-      "adresse": "Longue Vue des Photographes",
-      "pop": "R",
-      "lat": 4916100,
-      "lng": -40000,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.039,
-        "e10": 1.919,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "14920001",
-      "cp": "14920",
-      "ville": "Mathieu",
-      "adresse": "LIEU DIT MANOIR ET CLOS DU PIN",
-      "pop": "R",
-      "lat": 4924200,
-      "lng": -37200,
-      "fuels": {
-        "gazole": 1.966,
-        "sp98": 2.027,
-        "e10": 1.943
-      }
-    },
-    {
       "id": "14270003",
       "cp": "14270",
       "ville": "Mézidon Vallée d'Auge",
@@ -1055,8 +467,9 @@
       "lat": 4907348.9242,
       "lng": -7323.3903,
       "fuels": {
-        "sp95": 1.987,
-        "sp98": 2.066
+        "gazole": 2.005,
+        "sp95": 2.01,
+        "sp98": 2.087
       }
     },
     {
@@ -1069,8 +482,8 @@
       "lng": -32807,
       "fuels": {
         "gazole": 1.999,
-        "sp98": 2.099,
-        "e10": 1.999
+        "sp98": 2.059,
+        "e10": 1.969
       }
     },
     {
@@ -1082,25 +495,10 @@
       "lat": 4917200,
       "lng": -33000,
       "fuels": {
-        "gazole": 2.055,
+        "gazole": 2.005,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.849
-      }
-    },
-    {
-      "id": "14125001",
-      "cp": "14120",
-      "ville": "Mondeville",
-      "adresse": "ZAC DE L'ETOILE",
-      "pop": "R",
-      "lat": 4916300,
-      "lng": -29800,
-      "fuels": {
-        "gazole": 1.996,
-        "sp95": 1.98,
-        "sp98": 2.048,
-        "e10": 1.938
       }
     },
     {
@@ -1118,20 +516,6 @@
       }
     },
     {
-      "id": "14380003",
-      "cp": "14380",
-      "ville": "Noues de Sienne",
-      "adresse": "Rue de Vire",
-      "pop": "R",
-      "lat": 4884100,
-      "lng": -104300,
-      "fuels": {
-        "gazole": 2.11,
-        "sp95": 2.11,
-        "sp98": 2.23
-      }
-    },
-    {
       "id": "14290001",
       "cp": "14290",
       "ville": "Orbec",
@@ -1142,20 +526,6 @@
       "fuels": {
         "gazole": 1.999,
         "sp98": 2.139,
-        "e10": 2.029
-      }
-    },
-    {
-      "id": "14290002",
-      "cp": "14290",
-      "ville": "Orbec",
-      "adresse": "RUE DE LISIEUX",
-      "pop": "R",
-      "lat": 4902401.7,
-      "lng": 40408.2,
-      "fuels": {
-        "gazole": 1.995,
-        "sp98": 2.099,
         "e10": 2.029
       }
     },
@@ -1172,20 +542,6 @@
         "sp95": 1.989,
         "sp98": 2.029,
         "e10": 1.949
-      }
-    },
-    {
-      "id": "14150001",
-      "cp": "14150",
-      "ville": "Ouistreham",
-      "adresse": "84 Route de Caen",
-      "pop": "R",
-      "lat": 4926900,
-      "lng": -25800,
-      "fuels": {
-        "gazole": 1.998,
-        "sp98": 2.078,
-        "e10": 1.998
       }
     },
     {
@@ -1220,34 +576,6 @@
       }
     },
     {
-      "id": "14130003",
-      "cp": "14130",
-      "ville": "Pont-l'Évêque",
-      "adresse": "Route de Rouen",
-      "pop": "R",
-      "lat": 4929235,
-      "lng": 19338,
-      "fuels": {
-        "gazole": 1.961,
-        "sp98": 1.999,
-        "e10": 1.925
-      }
-    },
-    {
-      "id": "14130001",
-      "cp": "14130",
-      "ville": "Pont-l'Évêque",
-      "adresse": "Rue G CLEMENCEAU  zone industrielle",
-      "pop": "R",
-      "lat": 4928865,
-      "lng": 19554,
-      "fuels": {
-        "gazole": 2.053,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "14520004",
       "cp": "14520",
       "ville": "Port-en-Bessin-Huppain",
@@ -1259,35 +587,6 @@
         "gazole": 1.955,
         "sp98": 1.999,
         "e10": 1.899
-      }
-    },
-    {
-      "id": "14420003",
-      "cp": "14420",
-      "ville": "Potigny",
-      "adresse": "Rue du Général Leclerc - Lieu-dit La Glacière",
-      "pop": "R",
-      "lat": 4896537.67859,
-      "lng": -23967.15313,
-      "fuels": {
-        "gazole": 1.995,
-        "sp95": 2,
-        "sp98": 2.077
-      }
-    },
-    {
-      "id": "14980002",
-      "cp": "14980",
-      "ville": "Rots",
-      "adresse": "LA CROIX VAUTIER",
-      "pop": "R",
-      "lat": 4920000,
-      "lng": -45900,
-      "fuels": {
-        "gazole": 1.996,
-        "sp98": 2.03,
-        "e10": 1.999,
-        "gplc": 0.999
       }
     },
     {
@@ -1305,21 +604,6 @@
       }
     },
     {
-      "id": "14280002",
-      "cp": "14280",
-      "ville": "Saint-Contest",
-      "adresse": "Rue du Clos Barbey",
-      "pop": "R",
-      "lat": 4920100,
-      "lng": -39800,
-      "fuels": {
-        "gazole": 1.914,
-        "sp98": 1.999,
-        "e10": 1.899,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "14100009",
       "cp": "14100",
       "ville": "Saint-Désir",
@@ -1330,33 +614,6 @@
       "fuels": {
         "gazole": 2.033,
         "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "14130008",
-      "cp": "14130",
-      "ville": "Saint-Gatien-des-Bois",
-      "adresse": "Lieu dit le plain chêne",
-      "pop": "R",
-      "lat": 4936978.89386,
-      "lng": 20111.98032,
-      "fuels": {
-        "gazole": 2.052,
-        "e10": 1.99,
-        "e85": 0.829
-      }
-    },
-    {
-      "id": "14320001",
-      "cp": "14320",
-      "ville": "Saint-Martin-de-May",
-      "adresse": "35 Route de Harcourt",
-      "pop": "R",
-      "lat": 4911493,
-      "lng": -37436,
-      "fuels": {
-        "gazole": 2.07,
         "e10": 1.99
       }
     },
@@ -1372,90 +629,6 @@
         "gazole": 1.989,
         "sp95": 1.979,
         "sp98": 2.059
-      }
-    },
-    {
-      "id": "14170006",
-      "cp": "14170",
-      "ville": "Saint-Pierre-en-Auge",
-      "adresse": "ROUTE DE LISIEUX",
-      "pop": "R",
-      "lat": 4902486.49197,
-      "lng": -2625.77922,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.09,
-        "e10": 1.969,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "14170001",
-      "cp": "14170",
-      "ville": "Saint-Pierre-en-Auge",
-      "adresse": "Route de Livarot",
-      "pop": "R",
-      "lat": 4902470,
-      "lng": -2358,
-      "fuels": {
-        "gazole": 2.051,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "14400011",
-      "cp": "14400",
-      "ville": "Saint-Vigor-le-Grand",
-      "adresse": "ROUTE D'ESQUAY-SUR-SEULLES",
-      "pop": "R",
-      "lat": 4927400,
-      "lng": -68500,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.035,
-        "e10": 1.955,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "14540001",
-      "cp": "14540",
-      "ville": "Soliers",
-      "adresse": "route de Caen",
-      "pop": "R",
-      "lat": 4914011.63603,
-      "lng": -30050.85051,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999
-      }
-    },
-    {
-      "id": "14350002",
-      "cp": "14350",
-      "ville": "Souleuvre en Bocage",
-      "adresse": "9 RUE DU 19 MARS 1962",
-      "pop": "R",
-      "lat": 4901100,
-      "lng": -85200,
-      "fuels": {
-        "gazole": 2.065,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "14380002",
-      "cp": "14380",
-      "ville": "Tessy-Bocage",
-      "adresse": "3 route de caen",
-      "pop": "R",
-      "lat": 4893800,
-      "lng": -103300,
-      "fuels": {
-        "gazole": 2.12,
-        "sp98": 1.99,
-        "e10": 1.99
       }
     },
     {
@@ -1511,7 +684,7 @@
       "lat": 4898100,
       "lng": -47700,
       "fuels": {
-        "gazole": 1.969,
+        "gazole": 1.945,
         "sp95": 2.129,
         "sp98": 2.189,
         "e85": 0.849
@@ -1546,62 +719,6 @@
       }
     },
     {
-      "id": "14800006",
-      "cp": "14800",
-      "ville": "Touques",
-      "adresse": "Route Nationale",
-      "pop": "R",
-      "lat": 4934700,
-      "lng": 9500,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.98,
-        "sp98": 2.023
-      }
-    },
-    {
-      "id": "14710001",
-      "cp": "14710",
-      "ville": "Trévières",
-      "adresse": "1 place Charles Delangle",
-      "pop": "R",
-      "lat": 4931400,
-      "lng": -90600,
-      "fuels": {
-        "gazole": 2.079,
-        "sp95": 2.031
-      }
-    },
-    {
-      "id": "14670001",
-      "cp": "14670",
-      "ville": "Troarn",
-      "adresse": "Route de rouen",
-      "pop": "R",
-      "lat": 4918200,
-      "lng": -18200,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.999,
-        "sp98": 2.019,
-        "e10": 1.929
-      }
-    },
-    {
-      "id": "14410004",
-      "cp": "14410",
-      "ville": "Valdallière",
-      "adresse": "1 ROUTE DE SAINT GERMAIN",
-      "pop": "R",
-      "lat": 4885361.63049,
-      "lng": -66465.8746,
-      "fuels": {
-        "gazole": 2.016,
-        "sp95": 2.019,
-        "e10": 1.94
-      }
-    },
-    {
       "id": "14400010",
       "cp": "14400",
       "ville": "Vaucelles",
@@ -1615,19 +732,6 @@
         "e10": 1.925,
         "e85": 0.824,
         "gplc": 0.899
-      }
-    },
-    {
-      "id": "14790002",
-      "cp": "14790",
-      "ville": "Verson",
-      "adresse": "62 rue du general leclerc",
-      "pop": "R",
-      "lat": 4915600,
-      "lng": -45000,
-      "fuels": {
-        "gazole": 2.058,
-        "e10": 1.99
       }
     },
     {
@@ -1673,20 +777,6 @@
       }
     },
     {
-      "id": "14500013",
-      "cp": "14500",
-      "ville": "Vire Normandie",
-      "adresse": "2 rue Barbey d'Aurévilly",
-      "pop": "R",
-      "lat": 4882650.48599,
-      "lng": -88829.93929,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.029,
-        "e10": 1.969
-      }
-    },
-    {
       "id": "14500003",
       "cp": "14500",
       "ville": "Vire Normandie",
@@ -1695,7 +785,7 @@
       "lat": 4886400,
       "lng": -87100,
       "fuels": {
-        "gazole": 1.995,
+        "gazole": 1.989,
         "sp95": 1.999,
         "sp98": 2.029
       }
@@ -1713,21 +803,6 @@
         "sp98": 1.987,
         "e10": 1.905,
         "e85": 0.797
-      }
-    },
-    {
-      "id": "14500001",
-      "cp": "14500",
-      "ville": "Vire Normandie",
-      "adresse": "RTE DE CAEN",
-      "pop": "R",
-      "lat": 4885368.91606,
-      "lng": -88014.22984,
-      "fuels": {
-        "gazole": 2.061,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "gplc": 1.07
       }
     },
     {

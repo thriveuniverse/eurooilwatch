@@ -3,82 +3,55 @@
   "name": "Haute-Savoie",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-12T08:53:47.167Z",
+  "asOf": "2026-06-12T19:03:22.838Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 120,
+  "stationCount": 68,
   "fuels": {
     "gazole": {
-      "count": 119,
-      "mean": 2.0641,
-      "median": 2.039,
+      "count": 67,
+      "mean": 2.064,
+      "median": 2.049,
       "min": 1.96,
-      "max": 2.392
+      "max": 2.229
     },
     "sp95": {
-      "count": 38,
-      "mean": 2.0309,
-      "median": 2.014,
-      "min": 1.954,
-      "max": 2.189
+      "count": 24,
+      "mean": 2.024,
+      "median": 2.009,
+      "min": 1.959,
+      "max": 2.109
     },
     "sp98": {
-      "count": 100,
-      "mean": 2.0739,
-      "median": 2.059,
+      "count": 57,
+      "mean": 2.0751,
+      "median": 2.069,
       "min": 1.98,
-      "max": 2.553
+      "max": 2.249
     },
     "e10": {
-      "count": 87,
-      "mean": 1.9745,
-      "median": 1.959,
-      "min": 1.889,
-      "max": 2.403
+      "count": 50,
+      "mean": 1.9792,
+      "median": 1.9725,
+      "min": 1.896,
+      "max": 2.139
     },
     "e85": {
-      "count": 37,
-      "mean": 0.8589,
-      "median": 0.829,
+      "count": 24,
+      "mean": 0.8601,
+      "median": 0.8375,
       "min": 0.778,
       "max": 0.998
     },
     "gplc": {
-      "count": 16,
-      "mean": 1.0683,
-      "median": 1.0745,
-      "min": 0.989,
+      "count": 8,
+      "mean": 1.0881,
+      "median": 1.0785,
+      "min": 1.035,
       "max": 1.16
     }
   },
   "stations": [
-    {
-      "id": "74540001",
-      "cp": "74540",
-      "ville": "Alby-sur-Chéran",
-      "adresse": "ROUTE D'AIX LES BAINS N° 1463",
-      "pop": "R",
-      "lat": 4581900,
-      "lng": 600400,
-      "fuels": {
-        "gazole": 2.082,
-        "e10": 1.99,
-        "gplc": 1.07
-      }
-    },
-    {
-      "id": "74200014",
-      "cp": "74200",
-      "ville": "Allinges",
-      "adresse": "157 Route des Blaves",
-      "pop": "R",
-      "lat": 4633538,
-      "lng": 648231,
-      "fuels": {
-        "gazole": 1.968,
-        "sp95": 2.01
-      }
-    },
     {
       "id": "74200019",
       "cp": "74200",
@@ -88,9 +61,9 @@
       "lat": 4634300,
       "lng": 647700,
       "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.129,
-        "e10": 2.029
+        "gazole": 2.059,
+        "sp98": 2.098,
+        "e10": 1.999
       }
     },
     {
@@ -196,36 +169,6 @@
       }
     },
     {
-      "id": "74000014",
-      "cp": "74000",
-      "ville": "Annecy",
-      "adresse": "18 BD.DE LA ROCADE",
-      "pop": "R",
-      "lat": 4590803,
-      "lng": 611613,
-      "fuels": {
-        "gazole": 1.994,
-        "sp98": 1.99,
-        "e10": 1.965,
-        "e85": 0.895,
-        "gplc": 0.989
-      }
-    },
-    {
-      "id": "74960013",
-      "cp": "74960",
-      "ville": "Annecy",
-      "adresse": "20 ROUTE DES CREUSES",
-      "pop": "R",
-      "lat": 4589432.8,
-      "lng": 610692.1,
-      "fuels": {
-        "gazole": 2.129,
-        "sp98": 2.149,
-        "e10": 2.049
-      }
-    },
-    {
       "id": "74000020",
       "cp": "74000",
       "ville": "Annecy",
@@ -249,36 +192,9 @@
       "lat": 4589500,
       "lng": 612000,
       "fuels": {
-        "gazole": 2.019,
+        "gazole": 2.009,
         "sp98": 2.039,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "74960005",
-      "cp": "74960",
-      "ville": "Annecy",
-      "adresse": "60 Route des Creuses",
-      "pop": "R",
-      "lat": 4589200,
-      "lng": 609200,
-      "fuels": {
-        "gazole": 1.995,
-        "sp98": 2.048,
-        "e10": 1.94
-      }
-    },
-    {
-      "id": "74600015",
-      "cp": "74600",
-      "ville": "Annecy",
-      "adresse": "637 AVENUE D'AIX LES BAINS",
-      "pop": "R",
-      "lat": 4585200,
-      "lng": 606200,
-      "fuels": {
-        "gazole": 2.19,
-        "e10": 1.971
+        "e10": 1.929
       }
     },
     {
@@ -293,8 +209,7 @@
         "gazole": 2.209,
         "sp98": 1.99,
         "e10": 1.99,
-        "e85": 0.998,
-        "gplc": 1.088
+        "e85": 0.998
       }
     },
     {
@@ -313,21 +228,6 @@
       }
     },
     {
-      "id": "74600017",
-      "cp": "74600",
-      "ville": "Annecy",
-      "adresse": "AVENUE D AIX LES BAINS",
-      "pop": "R",
-      "lat": 4587700,
-      "lng": 608900,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.039,
-        "e10": 1.935,
-        "gplc": 0.989
-      }
-    },
-    {
       "id": "74000004",
       "cp": "74000",
       "ville": "Annecy",
@@ -336,7 +236,7 @@
       "lat": 4591700,
       "lng": 612800,
       "fuels": {
-        "gazole": 1.986,
+        "gazole": 2.003,
         "sp98": 2.054,
         "e10": 1.974,
         "e85": 0.957
@@ -365,39 +265,10 @@
       "lat": 4619443.68316,
       "lng": 625514.70418,
       "fuels": {
-        "gazole": 2.009,
-        "sp98": 2.049,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "74100005",
-      "cp": "74100",
-      "ville": "Annemasse",
-      "adresse": "6 Route des Vallées",
-      "pop": "R",
-      "lat": 4619400,
-      "lng": 624100,
-      "fuels": {
-        "gazole": 2.018,
-        "sp98": 2.046,
-        "e10": 1.928,
-        "e85": 0.962,
+        "gazole": 1.999,
+        "sp98": 2.039,
+        "e10": 1.915,
         "gplc": 1.065
-      }
-    },
-    {
-      "id": "74100010",
-      "cp": "74100",
-      "ville": "Annemasse",
-      "adresse": "66 ROUTE D'ETREMBIERES",
-      "pop": "R",
-      "lat": 4618600,
-      "lng": 623100,
-      "fuels": {
-        "gazole": 2.084,
-        "sp98": 1.99,
-        "e10": 1.99
       }
     },
     {
@@ -424,51 +295,9 @@
       "lat": 4618200,
       "lng": 623800,
       "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.089,
-        "e10": 1.955
-      }
-    },
-    {
-      "id": "74200003",
-      "cp": "74200",
-      "ville": "Anthy-sur-Léman",
-      "adresse": "RTE DE GENEVE",
-      "pop": "R",
-      "lat": 4634900,
-      "lng": 643200,
-      "fuels": {
         "gazole": 1.999,
-        "sp98": 2.091,
-        "e10": 1.969
-      }
-    },
-    {
-      "id": "74370001",
-      "cp": "74370",
-      "ville": "Argonay",
-      "adresse": "STATION TOTAL RN.203",
-      "pop": "R",
-      "lat": 4594200,
-      "lng": 614900,
-      "fuels": {
-        "gazole": 2.092,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "74420001",
-      "cp": "74420",
-      "ville": "Boëge",
-      "adresse": "191 Rue Vallée Verte",
-      "pop": "R",
-      "lat": 4620800,
-      "lng": 640300,
-      "fuels": {
-        "gazole": 2.15,
-        "sp95": 2.14,
-        "sp98": 2.18
+        "sp98": 2.069,
+        "e10": 1.929
       }
     },
     {
@@ -504,34 +333,6 @@
       }
     },
     {
-      "id": "74130001",
-      "cp": "74130",
-      "ville": "Bonneville",
-      "adresse": "61 rue des Grebes Huppés",
-      "pop": "R",
-      "lat": 4607300,
-      "lng": 641900,
-      "fuels": {
-        "gazole": 2.034,
-        "sp98": 2.063,
-        "e10": 1.937
-      }
-    },
-    {
-      "id": "74130004",
-      "cp": "74130",
-      "ville": "Bonneville",
-      "adresse": "Aire de Pontchy Bonneville - A40",
-      "pop": "A",
-      "lat": 4606500,
-      "lng": 640900,
-      "fuels": {
-        "gazole": 2.392,
-        "sp98": 2.553,
-        "e10": 2.403
-      }
-    },
-    {
       "id": "74890001",
       "cp": "74890",
       "ville": "Bons-en-Chablais",
@@ -544,63 +345,6 @@
         "sp98": 2.087,
         "e10": 1.955,
         "e85": 0.825
-      }
-    },
-    {
-      "id": "74270005",
-      "cp": "74270",
-      "ville": "Chêne-en-Semine",
-      "adresse": "147 Rue du Retord",
-      "pop": "R",
-      "lat": 4606221.10038,
-      "lng": 586564.18177,
-      "fuels": {
-        "gazole": 2.079,
-        "sp95": 2.069,
-        "sp98": 2.099
-      }
-    },
-    {
-      "id": "74300003",
-      "cp": "74300",
-      "ville": "Cluses",
-      "adresse": "1 Avenue du Mont-Blanc",
-      "pop": "R",
-      "lat": 4605900,
-      "lng": 657400,
-      "fuels": {
-        "gazole": 2.013,
-        "sp98": 2.051,
-        "e10": 1.971,
-        "e85": 0.982
-      }
-    },
-    {
-      "id": "74302001",
-      "cp": "74300",
-      "ville": "Cluses",
-      "adresse": "819 Avenue de la République",
-      "pop": "R",
-      "lat": 4606100,
-      "lng": 656400,
-      "fuels": {
-        "gazole": 2.087,
-        "sp98": 1.99,
-        "gplc": 1.1
-      }
-    },
-    {
-      "id": "74300001",
-      "cp": "74300",
-      "ville": "Cluses",
-      "adresse": "913 AVENUE GEORGES CLEMENCEAU",
-      "pop": "R",
-      "lat": 4606852.4,
-      "lng": 656802.1,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.019,
-        "sp98": 2.099
       }
     },
     {
@@ -619,34 +363,6 @@
       }
     },
     {
-      "id": "74120011",
-      "cp": "74120",
-      "ville": "Demi-Quartier",
-      "adresse": "271 Route de Sallanches",
-      "pop": "R",
-      "lat": 4587144.65117,
-      "lng": 663059.23018,
-      "fuels": {
-        "gazole": 2.021,
-        "sp98": 2.039,
-        "e10": 1.925
-      }
-    },
-    {
-      "id": "74700003",
-      "cp": "74700",
-      "ville": "Domancy",
-      "adresse": "119 Chemin de la Zone Commerciale",
-      "pop": "R",
-      "lat": 4590400,
-      "lng": 668300,
-      "fuels": {
-        "gazole": 2.003,
-        "sp98": 2.055,
-        "e10": 1.959
-      }
-    },
-    {
       "id": "74210002",
       "cp": "74210",
       "ville": "Doussard",
@@ -655,9 +371,9 @@
       "lat": 4577600,
       "lng": 622200,
       "fuels": {
-        "gazole": 2.06,
-        "sp95": 2.104,
-        "sp98": 2.159
+        "gazole": 2.094,
+        "sp95": 2.067,
+        "sp98": 2.117
       }
     },
     {
@@ -700,50 +416,6 @@
       "fuels": {
         "gazole": 2.18,
         "sp98": 1.99
-      }
-    },
-    {
-      "id": "74330001",
-      "cp": "74330",
-      "ville": "Epagny Metz-Tessy",
-      "adresse": "ZI La Mandallaz",
-      "pop": "R",
-      "lat": 4594000,
-      "lng": 607300,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.039,
-        "e10": 1.935,
-        "e85": 0.798,
-        "gplc": 0.989
-      }
-    },
-    {
-      "id": "74500011",
-      "cp": "74500",
-      "ville": "Évian-les-Bains",
-      "adresse": "7 AVENUE DES BOCQUIES",
-      "pop": "R",
-      "lat": 4639647.9,
-      "lng": 657308.7,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.029,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "74500009",
-      "cp": "74500",
-      "ville": "Évian-les-Bains",
-      "adresse": "9 AVENUE ANNA DE NOUAILLES",
-      "pop": "R",
-      "lat": 4639900,
-      "lng": 658000,
-      "fuels": {
-        "gazole": 2.099,
-        "sp95": 2.069,
-        "sp98": 2.169
       }
     },
     {
@@ -797,9 +469,9 @@
       "lat": 4616383.43197,
       "lng": 634948.33496,
       "fuels": {
-        "gazole": 2.179,
-        "sp95": 2.189,
-        "sp98": 2.259
+        "gazole": 2.119,
+        "sp95": 2.099,
+        "sp98": 2.169
       }
     },
     {
@@ -817,21 +489,6 @@
       }
     },
     {
-      "id": "74240001",
-      "cp": "74240",
-      "ville": "Gaillard",
-      "adresse": "5 Rue René Cassin",
-      "pop": "R",
-      "lat": 4618000,
-      "lng": 621800,
-      "fuels": {
-        "gazole": 2.019,
-        "sp95": 2.009,
-        "e10": 1.945,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "74130016",
       "cp": "74130",
       "ville": "Glières-Val-de-Borne",
@@ -846,20 +503,6 @@
       }
     },
     {
-      "id": "74570004",
-      "cp": "74570",
-      "ville": "Groisy",
-      "adresse": "81 ROUTE DU PLOT",
-      "pop": "R",
-      "lat": 4600600,
-      "lng": 618700,
-      "fuels": {
-        "gazole": 2.025,
-        "sp95": 1.999,
-        "sp98": 2.064
-      }
-    },
-    {
       "id": "74570011",
       "cp": "74570",
       "ville": "Groisy",
@@ -867,20 +510,6 @@
       "pop": "A",
       "lat": 4599859.1794,
       "lng": 616615.44958,
-      "fuels": {
-        "gazole": 2.229,
-        "sp98": 2.239,
-        "e10": 2.139
-      }
-    },
-    {
-      "id": "74570012",
-      "cp": "74570",
-      "ville": "Groisy",
-      "adresse": "aire de groisy",
-      "pop": "A",
-      "lat": 4600000,
-      "lng": 616800,
       "fuels": {
         "gazole": 2.229,
         "sp98": 2.239,
@@ -917,18 +546,6 @@
       }
     },
     {
-      "id": "74220002",
-      "cp": "74220",
-      "ville": "La Clusaz",
-      "adresse": "664 route des grandes alpes",
-      "pop": "R",
-      "lat": 4590602.5,
-      "lng": 642248.5,
-      "fuels": {
-        "gazole": 2.169
-      }
-    },
-    {
       "id": "74800001",
       "cp": "74800",
       "ville": "La Roche-sur-Foron",
@@ -938,18 +555,6 @@
       "lng": 630528,
       "fuels": {
         "gazole": 2.199
-      }
-    },
-    {
-      "id": "74260002",
-      "cp": "74260",
-      "ville": "Les Gets",
-      "adresse": "2917 ROUTE DES GRANDES ALPES",
-      "pop": "R",
-      "lat": 4614900,
-      "lng": 665600,
-      "fuels": {
-        "gazole": 2.149
       }
     },
     {
@@ -983,35 +588,6 @@
       }
     },
     {
-      "id": "74230004",
-      "cp": "74230",
-      "ville": "Les Villards-sur-Thônes",
-      "adresse": "Lieu-dit Les Perrils",
-      "pop": "R",
-      "lat": 4590800,
-      "lng": 636500,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.079,
-        "e10": 1.979
-      }
-    },
-    {
-      "id": "74140003",
-      "cp": "74140",
-      "ville": "Loisin",
-      "adresse": "Route Nationale 206 THOLOMAZ",
-      "pop": "R",
-      "lat": 4627100,
-      "lng": 631400,
-      "fuels": {
-        "gazole": 2.009,
-        "sp98": 2.039,
-        "e10": 1.959,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "74500005",
       "cp": "74500",
       "ville": "Lugrin",
@@ -1020,9 +596,10 @@
       "lat": 4640500,
       "lng": 665100,
       "fuels": {
-        "gazole": 2.029,
-        "sp98": 2.059,
-        "e10": 1.939
+        "gazole": 1.999,
+        "sp98": 2.049,
+        "e10": 1.939,
+        "e85": 0.809
       }
     },
     {
@@ -1041,66 +618,6 @@
       }
     },
     {
-      "id": "74970001",
-      "cp": "74970",
-      "ville": "Marignier",
-      "adresse": "40, RUE DES CLUS",
-      "pop": "R",
-      "lat": 4608000,
-      "lng": 650200,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 1.989,
-        "e10": 1.889,
-        "e85": 0.779
-      }
-    },
-    {
-      "id": "74120006",
-      "cp": "74120",
-      "ville": "Megève",
-      "adresse": "ROUTE NATIONALE 522",
-      "pop": "R",
-      "lat": 4586500,
-      "lng": 662600,
-      "fuels": {
-        "gazole": 2.124,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.949
-      }
-    },
-    {
-      "id": "74270006",
-      "cp": "74270",
-      "ville": "Musièges",
-      "adresse": "ZA DES BONNETS",
-      "pop": "R",
-      "lat": 4601600,
-      "lng": 594400,
-      "fuels": {
-        "gazole": 1.964,
-        "sp98": 1.998,
-        "e10": 1.891,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "74190003",
-      "cp": "74190",
-      "ville": "Passy",
-      "adresse": "91 Avenue de Marlioz",
-      "pop": "R",
-      "lat": 4591878,
-      "lng": 670405,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.025,
-        "sp98": 2.079,
-        "e10": 1.959
-      }
-    },
-    {
       "id": "74550001",
       "cp": "74550",
       "ville": "Perrignier",
@@ -1111,64 +628,6 @@
       "fuels": {
         "gazole": 2.189,
         "sp95": 1.99
-      }
-    },
-    {
-      "id": "74930003",
-      "cp": "74930",
-      "ville": "Pers-Jussy",
-      "adresse": "Z.A.E DES CONTAMINES",
-      "pop": "R",
-      "lat": 4612260.7407,
-      "lng": 626784.04785,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.09,
-        "e10": 1.968
-      }
-    },
-    {
-      "id": "74120004",
-      "cp": "74120",
-      "ville": "Praz-sur-Arly",
-      "adresse": "Route de Megève",
-      "pop": "R",
-      "lat": 4583991,
-      "lng": 657942,
-      "fuels": {
-        "gazole": 2.021,
-        "sp98": 2.039,
-        "e10": 1.923
-      }
-    },
-    {
-      "id": "74500012",
-      "cp": "74500",
-      "ville": "Publier",
-      "adresse": "RUE DE CARTHERAY",
-      "pop": "R",
-      "lat": 4639000,
-      "lng": 652500,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.009,
-        "e10": 1.889,
-        "e85": 0.798,
-        "gplc": 1.084
-      }
-    },
-    {
-      "id": "74930001",
-      "cp": "74930",
-      "ville": "Reignier-Ésery",
-      "adresse": "210 rue de BERSAT",
-      "pop": "R",
-      "lat": 4613200,
-      "lng": 627000,
-      "fuels": {
-        "gazole": 2.024,
-        "sp98": 2.067,
-        "e10": 1.942
       }
     },
     {
@@ -1186,21 +645,6 @@
       }
     },
     {
-      "id": "74150002",
-      "cp": "74150",
-      "ville": "Rumilly",
-      "adresse": "Boulevard de l'Europe",
-      "pop": "R",
-      "lat": 4585633.99863,
-      "lng": 594841.81554,
-      "fuels": {
-        "gazole": 1.96,
-        "sp98": 2.035,
-        "e10": 1.895,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "74540002",
       "cp": "74540",
       "ville": "Saint-Félix",
@@ -1209,60 +653,7 @@
       "lat": 4580200,
       "lng": 597400,
       "fuels": {
-        "gazole": 2.159
-      }
-    },
-    {
-      "id": "74170001",
-      "cp": "74170",
-      "ville": "Saint-Gervais-les-Bains",
-      "adresse": "1215 Avenue de Miage",
-      "pop": "R",
-      "lat": 4588000,
-      "lng": 671700,
-      "fuels": {
-        "gazole": 2.199,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "74430001",
-      "cp": "74430",
-      "ville": "Saint-Jean-d'Aulps",
-      "adresse": "LE VERNAY BRON",
-      "pop": "R",
-      "lat": 4623541.56534,
-      "lng": 665508.23844,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.069,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "74450001",
-      "cp": "74450",
-      "ville": "Saint-Jean-de-Sixt",
-      "adresse": "223 Route de la Clusaz",
-      "pop": "R",
-      "lat": 4591500,
-      "lng": 641900,
-      "fuels": {
-        "gazole": 2.25
-      }
-    },
-    {
-      "id": "74180001",
-      "cp": "74490",
-      "ville": "Saint-Jeoire",
-      "adresse": "123 ROUTE DE MONTRENAZ",
-      "pop": "R",
-      "lat": 4613500,
-      "lng": 646100,
-      "fuels": {
-        "gazole": 1.981,
-        "sp95": 1.954,
-        "e10": 1.889
+        "gazole": 2.149
       }
     },
     {
@@ -1275,23 +666,9 @@
       "lng": 607000,
       "fuels": {
         "gazole": 2.057,
-        "sp98": 2.072,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "74800002",
-      "cp": "74800",
-      "ville": "Saint-Pierre-en-Faucigny",
-      "adresse": "3515 Avenue du Mont-Blanc",
-      "pop": "R",
-      "lat": 4607300,
-      "lng": 639200,
-      "fuels": {
-        "gazole": 2.004,
-        "sp98": 2.027,
-        "e10": 1.967,
-        "e85": 0.971
+        "sp98": 2.077,
+        "e10": 1.956,
+        "e85": 0.809
       }
     },
     {
@@ -1310,20 +687,6 @@
       }
     },
     {
-      "id": "74700006",
-      "cp": "74700",
-      "ville": "Sallanches",
-      "adresse": "45 RUE LEON CURRAL",
-      "pop": "R",
-      "lat": 4593271.9,
-      "lng": 663771.1,
-      "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.059,
-        "e10": 1.999
-      }
-    },
-    {
       "id": "74700005",
       "cp": "74700",
       "ville": "Sallanches",
@@ -1333,7 +696,6 @@
       "lng": 663012.18221,
       "fuels": {
         "gazole": 2.007,
-        "sp98": 1.99,
         "e10": 1.971,
         "e85": 0.875,
         "gplc": 1.035
@@ -1378,20 +740,6 @@
         "gazole": 2.089,
         "sp98": 2.13,
         "e10": 2.01
-      }
-    },
-    {
-      "id": "74320001",
-      "cp": "74320",
-      "ville": "Sevrier",
-      "adresse": "75 Route des Pontets",
-      "pop": "R",
-      "lat": 4584501,
-      "lng": 615048,
-      "fuels": {
-        "gazole": 2.095,
-        "sp95": 2.04,
-        "sp98": 2.135
       }
     },
     {
@@ -1458,24 +806,9 @@
       "lat": 4588600,
       "lng": 632900,
       "fuels": {
-        "gazole": 2.144,
-        "sp98": 2.097,
-        "e10": 1.979
-      }
-    },
-    {
-      "id": "74230006",
-      "cp": "74230",
-      "ville": "Thônes",
-      "adresse": "Avenue d'Annecy",
-      "pop": "R",
-      "lat": 4588200,
-      "lng": 632300,
-      "fuels": {
-        "gazole": 2.159,
-        "sp95": 2.109,
-        "sp98": 2.169,
-        "e85": 0.829
+        "gazole": 2.118,
+        "sp98": 2.098,
+        "e10": 1.974
       }
     },
     {
@@ -1488,6 +821,8 @@
       "lng": 645600,
       "fuels": {
         "gazole": 2.077,
+        "sp98": 1.99,
+        "e10": 1.99,
         "e85": 0.849
       }
     },
@@ -1561,20 +896,6 @@
         "gazole": 1.999,
         "sp95": 1.989,
         "e10": 1.979
-      }
-    },
-    {
-      "id": "74520010",
-      "cp": "74520",
-      "ville": "Valleiry",
-      "adresse": "37 chemin des artisans",
-      "pop": "R",
-      "lat": 4610800,
-      "lng": 596900,
-      "fuels": {
-        "gazole": 2.018,
-        "sp98": 2.085,
-        "e10": 1.959
       }
     },
     {
@@ -1652,20 +973,6 @@
       }
     },
     {
-      "id": "74100009",
-      "cp": "74100",
-      "ville": "Vétraz-Monthoux",
-      "adresse": "132 Route de Bonneville",
-      "pop": "R",
-      "lat": 4617800,
-      "lng": 624200,
-      "fuels": {
-        "gazole": 2.25,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
       "id": "74100008",
       "cp": "74100",
       "ville": "Vétraz-Monthoux",
@@ -1706,52 +1013,6 @@
         "gazole": 2.005,
         "sp95": 2.009,
         "e10": 1.919
-      }
-    },
-    {
-      "id": "74500003",
-      "cp": "74500",
-      "ville": "Vinzier",
-      "adresse": "267 ROUTE DE VERS LES GRANGES",
-      "pop": "R",
-      "lat": 4635200,
-      "lng": 661600,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.059,
-        "e10": 1.949,
-        "e85": 0.799
-      }
-    },
-    {
-      "id": "74250001",
-      "cp": "74250",
-      "ville": "Viuz-en-Sallaz",
-      "adresse": "3841 ROUTE DU FER A CHEVAL",
-      "pop": "R",
-      "lat": 4614200,
-      "lng": 640500,
-      "fuels": {
-        "gazole": 2.077,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "74130018",
-      "cp": "74130",
-      "ville": "Vougy",
-      "adresse": "1612 ROUTE DU MONT-BLANC",
-      "pop": "R",
-      "lat": 4606600,
-      "lng": 651100,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.959,
-        "sp98": 1.989,
-        "e10": 1.889,
-        "e85": 0.779,
-        "gplc": 1.079
       }
     },
     {

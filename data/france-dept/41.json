@@ -3,69 +3,55 @@
   "name": "Loir-et-Cher",
   "regionCode": "CVL",
   "regionName": "Centre-Val de Loire",
-  "asOf": "2026-06-12T08:53:47.167Z",
+  "asOf": "2026-06-12T19:03:22.838Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 61,
+  "stationCount": 21,
   "fuels": {
     "gazole": {
-      "count": 61,
-      "mean": 2.0495,
-      "median": 1.999,
-      "min": 1.956,
-      "max": 2.383
+      "count": 20,
+      "mean": 2.0583,
+      "median": 2.024,
+      "min": 1.957,
+      "max": 2.269
     },
     "sp95": {
-      "count": 22,
-      "mean": 2.0083,
-      "median": 1.9925,
-      "min": 1.968,
-      "max": 2.095
+      "count": 5,
+      "mean": 2.0182,
+      "median": 2.015,
+      "min": 1.987,
+      "max": 2.06
     },
     "sp98": {
-      "count": 55,
-      "mean": 2.0746,
-      "median": 2.045,
-      "min": 1.988,
-      "max": 2.557
+      "count": 21,
+      "mean": 2.092,
+      "median": 2.079,
+      "min": 1.99,
+      "max": 2.266
     },
     "e10": {
-      "count": 48,
-      "mean": 1.9919,
-      "median": 1.9755,
-      "min": 1.902,
-      "max": 2.407
+      "count": 15,
+      "mean": 1.9956,
+      "median": 1.949,
+      "min": 1.909,
+      "max": 2.166
     },
     "e85": {
-      "count": 20,
-      "mean": 0.8838,
-      "median": 0.8745,
-      "min": 0.799,
+      "count": 6,
+      "mean": 0.9318,
+      "median": 0.8995,
+      "min": 0.809,
       "max": 1.149
     },
     "gplc": {
-      "count": 10,
-      "mean": 1.0347,
-      "median": 1.064,
-      "min": 0.949,
+      "count": 4,
+      "mean": 1.0715,
+      "median": 1.0765,
+      "min": 1.034,
       "max": 1.099
     }
   },
   "stations": [
-    {
-      "id": "41240002",
-      "cp": "41240",
-      "ville": "Beauce la Romaine",
-      "adresse": "2 Bis Voie Romaine",
-      "pop": "R",
-      "lat": 4790700,
-      "lng": 152100,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.039,
-        "e10": 1.929
-      }
-    },
     {
       "id": "41240003",
       "cp": "41240",
@@ -80,109 +66,6 @@
       }
     },
     {
-      "id": "41000022",
-      "cp": "41000",
-      "ville": "Blois",
-      "adresse": "1 rue de la Quinière",
-      "pop": "R",
-      "lat": 4758142.5784,
-      "lng": 129938.05014,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.995,
-        "e10": 1.975
-      }
-    },
-    {
-      "id": "41000020",
-      "cp": "41000",
-      "ville": "Blois",
-      "adresse": "1 rue Duguay Trouin",
-      "pop": "R",
-      "lat": 4759557.56316,
-      "lng": 130107.17506,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.995,
-        "sp98": 2.189
-      }
-    },
-    {
-      "id": "41000019",
-      "cp": "41000",
-      "ville": "Blois",
-      "adresse": "107, AVENUE DE VENDOME",
-      "pop": "R",
-      "lat": 4760400,
-      "lng": 131500,
-      "fuels": {
-        "gazole": 1.965,
-        "sp98": 1.99,
-        "e10": 1.933,
-        "e85": 0.891,
-        "gplc": 0.949
-      }
-    },
-    {
-      "id": "41000007",
-      "cp": "41000",
-      "ville": "Blois",
-      "adresse": "15 rue du bout des haies",
-      "pop": "R",
-      "lat": 4761000,
-      "lng": 132700,
-      "fuels": {
-        "gazole": 1.985,
-        "sp95": 1.99,
-        "e10": 1.975,
-        "e85": 0.9,
-        "gplc": 0.955
-      }
-    },
-    {
-      "id": "41000023",
-      "cp": "41000",
-      "ville": "Blois",
-      "adresse": "Rue Edouard Branly, zup nord",
-      "pop": "R",
-      "lat": 4758853.00469,
-      "lng": 131283.41029,
-      "fuels": {
-        "gazole": 2.159,
-        "sp98": 2.199,
-        "e10": 2.069,
-        "e85": 0.845
-      }
-    },
-    {
-      "id": "41120002",
-      "cp": "41120",
-      "ville": "Chailles",
-      "adresse": "RUE DE LA LIBERATION",
-      "pop": "R",
-      "lat": 4752356,
-      "lng": 130304,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.059,
-        "e10": 1.979
-      }
-    },
-    {
-      "id": "41320002",
-      "cp": "41320",
-      "ville": "Châtres-sur-Cher",
-      "adresse": "88 rue Nationale",
-      "pop": "R",
-      "lat": 4726759.15214,
-      "lng": 188331.18792,
-      "fuels": {
-        "gazole": 2.059,
-        "sp95": 2.018,
-        "sp98": 2.072
-      }
-    },
-    {
       "id": "41600007",
       "cp": "41600",
       "ville": "Chaumont-sur-Tharonne",
@@ -191,70 +74,11 @@
       "lat": 4766500,
       "lng": 192500,
       "fuels": {
-        "gazole": 2.164,
-        "sp98": 2.199,
-        "e10": 2.099,
+        "gazole": 2.064,
+        "sp98": 2.099,
+        "e10": 1.999,
         "e85": 0.929,
         "gplc": 1.099
-      }
-    },
-    {
-      "id": "41600004",
-      "cp": "41600",
-      "ville": "Chaumont-sur-Tharonne",
-      "adresse": "AUTOROUTE A 71",
-      "pop": "A",
-      "lat": 4766300,
-      "lng": 193000,
-      "fuels": {
-        "gazole": 2.224,
-        "sp98": 2.247,
-        "e10": 2.147,
-        "gplc": 1.064
-      }
-    },
-    {
-      "id": "41400001",
-      "cp": "41400",
-      "ville": "Chissay-en-Touraine",
-      "adresse": "rue de Chenonceaux",
-      "pop": "R",
-      "lat": 4734200,
-      "lng": 116300,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.095,
-        "sp98": 2.032,
-        "e10": 2.052
-      }
-    },
-    {
-      "id": "41360003",
-      "cp": "41360",
-      "ville": "Épuisay",
-      "adresse": "ROUTE DU MANS",
-      "pop": "R",
-      "lat": 4790189.04008,
-      "lng": 91750.49295,
-      "fuels": {
-        "gazole": 2.25,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "41400004",
-      "cp": "41400",
-      "ville": "Faverolles-sur-Cher",
-      "adresse": "CENTRE COMMERCIAL MONTPARNASSE",
-      "pop": "R",
-      "lat": 4731800,
-      "lng": 118600,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.032,
-        "e10": 2.052,
-        "e85": 0.85
       }
     },
     {
@@ -282,21 +106,6 @@
       "fuels": {
         "gazole": 2.19,
         "sp98": 1.99
-      }
-    },
-    {
-      "id": "41260001",
-      "cp": "41260",
-      "ville": "La Chaussée-Saint-Victor",
-      "adresse": "1 route Nationale 152",
-      "pop": "R",
-      "lat": 4761100,
-      "lng": 135900,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.05,
-        "e10": 1.989,
-        "e85": 0.9
       }
     },
     {
@@ -328,62 +137,6 @@
       }
     },
     {
-      "id": "41600006",
-      "cp": "41600",
-      "ville": "Lamotte-Beuvron",
-      "adresse": "5 AV. DE L'HOTEL DE VILLE",
-      "pop": "R",
-      "lat": 4759944.4952,
-      "lng": 202315.85765,
-      "fuels": {
-        "gazole": 2.103,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "41600005",
-      "cp": "41600",
-      "ville": "Lamotte-Beuvron",
-      "adresse": "93 Avenue de Vierzon",
-      "pop": "R",
-      "lat": 4758500,
-      "lng": 202600,
-      "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.079,
-        "e10": 1.979,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "41700006",
-      "cp": "41700",
-      "ville": "Le Controis-en-Sologne",
-      "adresse": "16 Avenue du Général De Gaulle",
-      "pop": "R",
-      "lat": 4742500,
-      "lng": 142800,
-      "fuels": {
-        "gazole": 2.037,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "41700004",
-      "cp": "41700",
-      "ville": "Le Controis-en-Sologne",
-      "adresse": "69 Route de Cheverny",
-      "pop": "R",
-      "lat": 4743000,
-      "lng": 143400,
-      "fuels": {
-        "gazole": 1.984,
-        "sp98": 1.989,
-        "e10": 1.915
-      }
-    },
-    {
       "id": "41370004",
       "cp": "41370",
       "ville": "Marchenoir",
@@ -398,51 +151,6 @@
       }
     },
     {
-      "id": "41500001",
-      "cp": "41500",
-      "ville": "Mer",
-      "adresse": "RTE DE BLOIS",
-      "pop": "R",
-      "lat": 4769700,
-      "lng": 150100,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.059,
-        "e10": 1.929,
-        "e85": 0.809,
-        "gplc": 1.069
-      }
-    },
-    {
-      "id": "41170002",
-      "cp": "41170",
-      "ville": "Mondoubleau",
-      "adresse": "Route de Cloyes",
-      "pop": "R",
-      "lat": 4798300,
-      "lng": 91300,
-      "fuels": {
-        "gazole": 2.025,
-        "sp95": 2.053,
-        "sp98": 2.079,
-        "e10": 2.017
-      }
-    },
-    {
-      "id": "41250001",
-      "cp": "41250",
-      "ville": "Mont-près-Chambord",
-      "adresse": "45, rue des Morines",
-      "pop": "R",
-      "lat": 4756200,
-      "lng": 145000,
-      "fuels": {
-        "gazole": 1.964,
-        "sp98": 1.99,
-        "e10": 1.924
-      }
-    },
-    {
       "id": "41800003",
       "cp": "41800",
       "ville": "Montoire-sur-le-Loir",
@@ -451,23 +159,7 @@
       "lat": 4775700,
       "lng": 86100,
       "fuels": {
-        "gazole": 2.099,
         "sp98": 2.179
-      }
-    },
-    {
-      "id": "41800002",
-      "cp": "41800",
-      "ville": "Montoire-sur-le-Loir",
-      "adresse": "avenue de la Paix",
-      "pop": "R",
-      "lat": 4775900,
-      "lng": 87600,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 1.999,
-        "sp98": 2.029,
-        "e10": 1.939
       }
     },
     {
@@ -482,19 +174,6 @@
         "gazole": 1.999,
         "sp98": 2.179,
         "e10": 2.059
-      }
-    },
-    {
-      "id": "41230001",
-      "cp": "41230",
-      "ville": "Mur-de-Sologne",
-      "adresse": "341, route de Blois",
-      "pop": "R",
-      "lat": 4741300,
-      "lng": 160500,
-      "fuels": {
-        "gazole": 2.25,
-        "sp95": 1.99
       }
     },
     {
@@ -541,79 +220,6 @@
       }
     },
     {
-      "id": "41200009",
-      "cp": "41200",
-      "ville": "Pruniers-en-Sologne",
-      "adresse": "AUTOROUTE A85 - AIRE DE ROMORANTIN",
-      "pop": "A",
-      "lat": 4733809.76593,
-      "lng": 166604.67696,
-      "fuels": {
-        "gazole": 2.194,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.978,
-        "gplc": 1.068
-      }
-    },
-    {
-      "id": "41200006",
-      "cp": "41200",
-      "ville": "Pruniers-en-Sologne",
-      "adresse": "La Brigaudière",
-      "pop": "R",
-      "lat": 4734600,
-      "lng": 172800,
-      "fuels": {
-        "gazole": 2,
-        "sp95": 1.99,
-        "sp98": 2.035,
-        "e10": 1.935
-      }
-    },
-    {
-      "id": "41200010",
-      "cp": "41200",
-      "ville": "Romorantin-Lanthenay",
-      "adresse": "1 RUE DES CHARDONNES",
-      "pop": "R",
-      "lat": 4737100,
-      "lng": 171300,
-      "fuels": {
-        "gazole": 1.998,
-        "sp95": 1.98,
-        "e10": 1.93,
-        "e85": 0.835
-      }
-    },
-    {
-      "id": "41200002",
-      "cp": "41200",
-      "ville": "Romorantin-Lanthenay",
-      "adresse": "4 Avenue de Villefranche",
-      "pop": "R",
-      "lat": 4735300,
-      "lng": 174400,
-      "fuels": {
-        "gazole": 2.073,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "41200003",
-      "cp": "41200",
-      "ville": "Romorantin-Lanthenay",
-      "adresse": "81 Avenue de Paris",
-      "pop": "R",
-      "lat": 4737800,
-      "lng": 173700,
-      "fuels": {
-        "gazole": 1.998,
-        "sp95": 1.98,
-        "sp98": 2.025
-      }
-    },
-    {
       "id": "41200001",
       "cp": "41200",
       "ville": "Romorantin-Lanthenay",
@@ -630,65 +236,6 @@
       }
     },
     {
-      "id": "41110001",
-      "cp": "41110",
-      "ville": "Saint-Aignan",
-      "adresse": "Impasse des Terres Rouges",
-      "pop": "R",
-      "lat": 4726053,
-      "lng": 136226,
-      "fuels": {
-        "gazole": 1.985,
-        "sp95": 1.979,
-        "sp98": 2.039,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "41400002",
-      "cp": "41400",
-      "ville": "Saint-Georges-sur-Cher",
-      "adresse": "RN 76",
-      "pop": "R",
-      "lat": 4732981.25,
-      "lng": 115006.25,
-      "fuels": {
-        "gazole": 2.056,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "41220001",
-      "cp": "41220",
-      "ville": "Saint-Laurent-Nouan",
-      "adresse": "AVENUE DE SOLOGNE",
-      "pop": "R",
-      "lat": 4771500,
-      "lng": 161300,
-      "fuels": {
-        "gazole": 2.019,
-        "sp98": 2.049,
-        "e10": 1.959,
-        "e85": 0.799
-      }
-    },
-    {
-      "id": "41100002",
-      "cp": "41100",
-      "ville": "Saint-Ouen",
-      "adresse": "RN10 71 Route de Paris",
-      "pop": "R",
-      "lat": 4781671,
-      "lng": 107590,
-      "fuels": {
-        "gazole": 2.052,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.879
-      }
-    },
-    {
       "id": "41100003",
       "cp": "41100",
       "ville": "Saint-Ouen",
@@ -697,38 +244,10 @@
       "lat": 4780500,
       "lng": 107100,
       "fuels": {
-        "gazole": 1.956,
+        "gazole": 1.957,
         "sp98": 1.99,
-        "e10": 1.902,
+        "e10": 1.909,
         "e85": 0.87
-      }
-    },
-    {
-      "id": "41300001",
-      "cp": "41300",
-      "ville": "Salbris",
-      "adresse": "74 BD REPUBLIQUE",
-      "pop": "R",
-      "lat": 4742400,
-      "lng": 205300,
-      "fuels": {
-        "gazole": 1.985,
-        "sp95": 2.08,
-        "sp98": 2.1
-      }
-    },
-    {
-      "id": "41300002",
-      "cp": "41300",
-      "ville": "Salbris",
-      "adresse": "AVENUE DE LA RESISTANCE",
-      "pop": "R",
-      "lat": 4742900,
-      "lng": 206000,
-      "fuels": {
-        "gazole": 2.039,
-        "sp98": 2.045,
-        "e10": 1.969
       }
     },
     {
@@ -743,21 +262,6 @@
         "gazole": 2.057,
         "sp95": 2.06,
         "sp98": 2.087
-      }
-    },
-    {
-      "id": "41130003",
-      "cp": "41130",
-      "ville": "Selles-sur-Cher",
-      "adresse": "Avenue Cher Sologne",
-      "pop": "R",
-      "lat": 4728500,
-      "lng": 153800,
-      "fuels": {
-        "gazole": 1.998,
-        "sp95": 2,
-        "sp98": 2.045,
-        "e10": 1.98
       }
     },
     {
@@ -805,21 +309,6 @@
       }
     },
     {
-      "id": "41100004",
-      "cp": "41100",
-      "ville": "Vendôme",
-      "adresse": "74 Rue de Courtiras",
-      "pop": "R",
-      "lat": 4780300,
-      "lng": 104400,
-      "fuels": {
-        "gazole": 1.957,
-        "sp95": 1.968,
-        "sp98": 1.988,
-        "e10": 1.909
-      }
-    },
-    {
       "id": "41100005",
       "cp": "41100",
       "ville": "Vendôme",
@@ -832,51 +321,6 @@
         "sp98": 2.029,
         "e10": 1.919,
         "gplc": 1.034
-      }
-    },
-    {
-      "id": "41150005",
-      "cp": "41150",
-      "ville": "Veuzain-sur-Loire",
-      "adresse": "35 rue Gustave Marc",
-      "pop": "R",
-      "lat": 4749744.6,
-      "lng": 117828.3,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.059,
-        "e10": 1.979,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "41000001",
-      "cp": "41000",
-      "ville": "Villebarou",
-      "adresse": "ROUTE DE VENDOME",
-      "pop": "R",
-      "lat": 4762400,
-      "lng": 129700,
-      "fuels": {
-        "gazole": 1.986,
-        "sp98": 2.067,
-        "e10": 1.976,
-        "e85": 0.891,
-        "gplc": 0.956
-      }
-    },
-    {
-      "id": "41000005",
-      "cp": "41000",
-      "ville": "Villerbon",
-      "adresse": "A10 - Aire de Blois-Villerbon",
-      "pop": "A",
-      "lat": 4766600,
-      "lng": 138800,
-      "fuels": {
-        "gazole": 2.383,
-        "sp98": 2.557,
-        "e10": 2.407
       }
     },
     {
@@ -896,21 +340,6 @@
       }
     },
     {
-      "id": "41350007",
-      "cp": "41350",
-      "ville": "Vineuil",
-      "adresse": "D 174",
-      "pop": "R",
-      "lat": 4757023.447,
-      "lng": 137039.328,
-      "fuels": {
-        "gazole": 1.964,
-        "sp98": 1.99,
-        "e10": 1.924,
-        "e85": 0.889
-      }
-    },
-    {
       "id": "41350003",
       "cp": "41350",
       "ville": "Vineuil",
@@ -923,20 +352,6 @@
         "sp95": 1.99,
         "sp98": 2.033,
         "e10": 1.919
-      }
-    },
-    {
-      "id": "41350001",
-      "cp": "41350",
-      "ville": "Vineuil",
-      "adresse": "ZI Les Gâts de Coeur",
-      "pop": "R",
-      "lat": 4756900,
-      "lng": 137100,
-      "fuels": {
-        "gazole": 1.964,
-        "sp98": 1.99,
-        "e10": 1.924
       }
     }
   ]
