@@ -80,7 +80,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/prices`,                              lastModified: new Date(),                changeFrequency: 'weekly',  priority: 0.9 },
     { url: `${baseUrl}/supply`,                              lastModified: new Date(),                changeFrequency: 'daily',   priority: 0.9 },
     { url: `${baseUrl}/fertilizer`,                          lastModified: new Date(),                changeFrequency: 'weekly',  priority: 0.85 },
-    { url: `${baseUrl}/signals`,                             lastModified: new Date(),                changeFrequency: 'daily',   priority: 0.8 },
     { url: `${baseUrl}/analysis`,                            lastModified: new Date(),                changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${baseUrl}/reports/from-hormuz-to-hunger`,       lastModified: new Date('2026-04-30'),    changeFrequency: 'monthly', priority: 0.8 },
     { url: `${baseUrl}/reports/the-fall-of-the-uk`,          lastModified: new Date('2026-04-30'),    changeFrequency: 'monthly', priority: 0.7 },
