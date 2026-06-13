@@ -3,52 +3,52 @@
   "name": "Val-de-Marne",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 50,
+  "stationCount": 79,
   "fuels": {
     "gazole": {
-      "count": 49,
-      "mean": 2.0494,
-      "median": 2.029,
-      "min": 1.943,
-      "max": 2.255
+      "count": 78,
+      "mean": 2.0396,
+      "median": 2.037,
+      "min": 1.931,
+      "max": 2.299
     },
     "sp95": {
-      "count": 7,
-      "mean": 2.0317,
-      "median": 1.963,
+      "count": 11,
+      "mean": 2.0187,
+      "median": 1.979,
       "min": 1.96,
-      "max": 2.229
+      "max": 2.207
     },
     "sp98": {
-      "count": 44,
-      "mean": 2.0753,
-      "median": 2.0455,
+      "count": 69,
+      "mean": 2.0936,
+      "median": 2.047,
       "min": 1.988,
       "max": 2.353
     },
     "e10": {
-      "count": 46,
-      "mean": 1.9812,
-      "median": 1.9765,
+      "count": 73,
+      "mean": 1.9943,
+      "median": 1.989,
       "min": 1.902,
-      "max": 2.183
+      "max": 2.229
     },
     "e85": {
-      "count": 14,
-      "mean": 0.9194,
-      "median": 0.912,
-      "min": 0.845,
-      "max": 0.979
+      "count": 24,
+      "mean": 0.9355,
+      "median": 0.9185,
+      "min": 0.858,
+      "max": 1.149
     },
     "gplc": {
-      "count": 11,
-      "mean": 1.1267,
+      "count": 12,
+      "mean": 1.1653,
       "median": 1.169,
-      "min": 0.949,
-      "max": 1.259
+      "min": 1.008,
+      "max": 1.269
     }
   },
   "stations": [
@@ -61,9 +61,24 @@
       "lat": 4880430,
       "lng": 241212,
       "fuels": {
-        "gazole": 2.097,
+        "gazole": 2.038,
         "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "94110004",
+      "cp": "94110",
+      "ville": "Arcueil",
+      "adresse": "20 Avenue Paul Vaillant-Couturier",
+      "pop": "R",
+      "lat": 4880100,
+      "lng": 234000,
+      "fuels": {
+        "gazole": 2.008,
+        "sp98": 2.088,
+        "e10": 2.008,
+        "e85": 0.92
       }
     },
     {
@@ -78,6 +93,19 @@
         "gazole": 2.139,
         "sp98": 2.259,
         "e10": 2.109
+      }
+    },
+    {
+      "id": "94110005",
+      "cp": "94110",
+      "ville": "Arcueil",
+      "adresse": "89 AV A. BRIAND",
+      "pop": "R",
+      "lat": 4880400,
+      "lng": 232500,
+      "fuels": {
+        "gazole": 2.081,
+        "e10": 1.99
       }
     },
     {
@@ -116,7 +144,7 @@
       "lat": 4876669.31421,
       "lng": 249011.01736,
       "fuels": {
-        "gazole": 1.958,
+        "gazole": 1.933,
         "sp95": 1.96,
         "sp98": 1.988,
         "e10": 1.902
@@ -131,9 +159,9 @@
       "lat": 4876500,
       "lng": 247800,
       "fuels": {
-        "gazole": 1.993,
-        "sp98": 2.043,
-        "e10": 1.963
+        "gazole": 1.974,
+        "sp98": 2.047,
+        "e10": 1.967
       }
     },
     {
@@ -145,7 +173,7 @@
       "lat": 4882300,
       "lng": 249500,
       "fuels": {
-        "gazole": 2.133,
+        "gazole": 2.074,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -182,6 +210,22 @@
       }
     },
     {
+      "id": "94220003",
+      "cp": "94220",
+      "ville": "Charenton-le-Pont",
+      "adresse": "114 Rue de Paris",
+      "pop": "R",
+      "lat": 4882500,
+      "lng": 240800,
+      "fuels": {
+        "gazole": 2.119,
+        "sp98": 2.329,
+        "e10": 2.229,
+        "e85": 1.149,
+        "gplc": 1.269
+      }
+    },
+    {
       "id": "94220004",
       "cp": "94220",
       "ville": "Charenton-le-Pont",
@@ -190,7 +234,7 @@
       "lat": 4882225,
       "lng": 240285,
       "fuels": {
-        "gazole": 2.096
+        "gazole": 2.037
       }
     },
     {
@@ -202,8 +246,8 @@
       "lat": 4879900,
       "lng": 254300,
       "fuels": {
-        "gazole": 1.997,
-        "e10": 1.968,
+        "gazole": 1.938,
+        "e10": 1.948,
         "e85": 0.899
       }
     },
@@ -216,9 +260,52 @@
       "lat": 4876462.3659,
       "lng": 235664.44221,
       "fuels": {
-        "gazole": 2.127,
+        "gazole": 2.068,
         "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "94550002",
+      "cp": "94550",
+      "ville": "Chevilly-Larue",
+      "adresse": "14 AV DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 4877313,
+      "lng": 233780,
+      "fuels": {
+        "gazole": 2.072,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.919
+      }
+    },
+    {
+      "id": "94550001",
+      "cp": "94550",
+      "ville": "Chevilly-Larue",
+      "adresse": "264 Avenue de Stalingrad",
+      "pop": "R",
+      "lat": 4876700,
+      "lng": 236800,
+      "fuels": {
+        "gazole": 2,
+        "sp98": 2.045,
+        "e10": 1.965,
+        "e85": 0.924
+      }
+    },
+    {
+      "id": "94594003",
+      "cp": "94594",
+      "ville": "Chevilly-Larue",
+      "adresse": "RUE DU VIADUC",
+      "pop": "R",
+      "lat": 4876047.32681,
+      "lng": 234866.14441,
+      "fuels": {
+        "gazole": 2.139,
+        "sp98": 2.099
       }
     },
     {
@@ -230,8 +317,38 @@
       "lat": 4877100,
       "lng": 240900,
       "fuels": {
-        "gazole": 2.08,
+        "gazole": 2.021,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "94600005",
+      "cp": "94600",
+      "ville": "Choisy-le-Roi",
+      "adresse": "36 Avenue de Lugo",
+      "pop": "R",
+      "lat": 4877200,
+      "lng": 240900,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.979,
+        "sp98": 1.999,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "94012001",
+      "cp": "94000",
+      "ville": "Créteil",
+      "adresse": "119 Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4878186.72046,
+      "lng": 245789.45751,
+      "fuels": {
+        "gazole": 1.971,
+        "sp95": 1.971,
+        "sp98": 2.058,
+        "e10": 1.903
       }
     },
     {
@@ -250,6 +367,20 @@
       }
     },
     {
+      "id": "94000009",
+      "cp": "94000",
+      "ville": "Créteil",
+      "adresse": "63 Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4879038.82983,
+      "lng": 244517.40423,
+      "fuels": {
+        "gazole": 1.944,
+        "sp98": 1.99,
+        "e10": 1.953
+      }
+    },
+    {
       "id": "94000006",
       "cp": "94000",
       "ville": "Créteil",
@@ -258,9 +389,9 @@
       "lat": 4879000,
       "lng": 246400,
       "fuels": {
-        "gazole": 2.255,
-        "sp95": 2.229,
-        "sp98": 2.309
+        "gazole": 2.199,
+        "sp95": 2.207,
+        "sp98": 2.296
       }
     },
     {
@@ -272,7 +403,7 @@
       "lat": 4877982.43197,
       "lng": 244086.83431,
       "fuels": {
-        "gazole": 2.125,
+        "gazole": 2.066,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.909,
@@ -288,9 +419,9 @@
       "lat": 4877736.5167,
       "lng": 244091.42048,
       "fuels": {
-        "gazole": 1.991,
+        "gazole": 1.932,
         "sp98": 1.99,
-        "e10": 1.961,
+        "e10": 1.941,
         "gplc": 1.008
       }
     },
@@ -303,10 +434,25 @@
       "lat": 4878292,
       "lng": 244670,
       "fuels": {
-        "gazole": 1.996,
+        "gazole": 1.937,
         "sp98": 1.99,
-        "e10": 1.972,
+        "e10": 1.952,
         "e85": 0.909
+      }
+    },
+    {
+      "id": "94120005",
+      "cp": "94120",
+      "ville": "Fontenay-sous-Bois",
+      "adresse": "236 Avenue de la République",
+      "pop": "R",
+      "lat": 4885300,
+      "lng": 246600,
+      "fuels": {
+        "gazole": 2.248,
+        "sp98": 2.298,
+        "e10": 2.129,
+        "e85": 1.099
       }
     },
     {
@@ -333,9 +479,37 @@
       "lat": 4881400,
       "lng": 234800,
       "fuels": {
-        "gazole": 2.034,
+        "gazole": 2.008,
         "sp98": 2.088,
         "e10": 2.008
+      }
+    },
+    {
+      "id": "94204001",
+      "cp": "94200",
+      "ville": "Ivry-sur-Seine",
+      "adresse": "10 Rue Westermeyer",
+      "pop": "R",
+      "lat": 4881900,
+      "lng": 239600,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.988,
+        "sp98": 2.044,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "94200008",
+      "cp": "94200",
+      "ville": "Ivry-sur-Seine",
+      "adresse": "168-180 BLD DE STALINGRAD",
+      "pop": "R",
+      "lat": 4880595,
+      "lng": 237609,
+      "fuels": {
+        "gazole": 2.07,
+        "e85": 0.919
       }
     },
     {
@@ -368,6 +542,34 @@
       }
     },
     {
+      "id": "94340007",
+      "cp": "94340",
+      "ville": "Joinville-le-Pont",
+      "adresse": "39 RUE CHAPSAL",
+      "pop": "R",
+      "lat": 4882200,
+      "lng": 246500,
+      "fuels": {
+        "gazole": 2.169,
+        "sp98": 2.289,
+        "e10": 2.109
+      }
+    },
+    {
+      "id": "94240004",
+      "cp": "94240",
+      "ville": "L'Haÿ-les-Roses",
+      "adresse": "110 Boulevard Paul Vaillant-Couturier",
+      "pop": "R",
+      "lat": 4877700,
+      "lng": 234000,
+      "fuels": {
+        "gazole": 2.139,
+        "sp98": 2.169,
+        "e10": 1.999
+      }
+    },
+    {
       "id": "94510001",
       "cp": "94510",
       "ville": "La Queue-en-Brie",
@@ -382,6 +584,20 @@
       }
     },
     {
+      "id": "94270005",
+      "cp": "94270",
+      "ville": "Le Kremlin-Bicêtre",
+      "adresse": "Avenue de Fontainebleau",
+      "pop": "R",
+      "lat": 4880770.67683,
+      "lng": 236264.14755,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.085,
+        "e10": 1.999
+      }
+    },
+    {
       "id": "94170002",
       "cp": "94170",
       "ville": "Le Perreux-sur-Marne",
@@ -390,10 +606,24 @@
       "lat": 4885100,
       "lng": 249500,
       "fuels": {
-        "gazole": 1.996,
-        "sp98": 2.048,
-        "e10": 1.968,
+        "gazole": 1.98,
+        "sp98": 2.043,
+        "e10": 1.963,
         "e85": 0.918
+      }
+    },
+    {
+      "id": "94170004",
+      "cp": "94170",
+      "ville": "Le Perreux-sur-Marne",
+      "adresse": "44-46 Avenue de BRY",
+      "pop": "R",
+      "lat": 4883500,
+      "lng": 249700,
+      "fuels": {
+        "gazole": 2.089,
+        "sp98": 2.202,
+        "e10": 2.163
       }
     },
     {
@@ -423,6 +653,21 @@
       }
     },
     {
+      "id": "94450004",
+      "cp": "94450",
+      "ville": "Limeil-Brévannes",
+      "adresse": "1 BIS AV GABRIEL PERI",
+      "pop": "R",
+      "lat": 4875500,
+      "lng": 248400,
+      "fuels": {
+        "gazole": 1.934,
+        "sp98": 1.99,
+        "e10": 1.943,
+        "e85": 0.909
+      }
+    },
+    {
       "id": "94700008",
       "cp": "94700",
       "ville": "Maisons-Alfort",
@@ -431,7 +676,7 @@
       "lat": 4880623,
       "lng": 243809,
       "fuels": {
-        "gazole": 2.137,
+        "gazole": 2.078,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.919
@@ -446,9 +691,24 @@
       "lat": 4880200,
       "lng": 243600,
       "fuels": {
-        "gazole": 2.012,
-        "sp98": 2.062,
-        "e10": 1.982
+        "gazole": 1.989,
+        "sp98": 2.043,
+        "e10": 1.963
+      }
+    },
+    {
+      "id": "94700007",
+      "cp": "94700",
+      "ville": "Maisons-Alfort",
+      "adresse": "99 AVENUE DU GL LECLERC",
+      "pop": "R",
+      "lat": 4880694.77421,
+      "lng": 243827.16637,
+      "fuels": {
+        "gazole": 2.159,
+        "sp98": 2.249,
+        "e10": 2.149,
+        "e85": 0.919
       }
     },
     {
@@ -460,7 +720,7 @@
       "lat": 4884300,
       "lng": 248600,
       "fuels": {
-        "gazole": 2.125,
+        "gazole": 2.066,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -488,9 +748,9 @@
       "lat": 4874588,
       "lng": 238308,
       "fuels": {
-        "gazole": 1.99,
+        "gazole": 1.931,
         "sp98": 1.99,
-        "e10": 1.965,
+        "e10": 1.945,
         "gplc": 1.019
       }
     },
@@ -503,7 +763,7 @@
       "lat": 4874300,
       "lng": 240800,
       "fuels": {
-        "gazole": 1.96,
+        "gazole": 1.94,
         "sp95": 1.96,
         "sp98": 1.99,
         "e10": 1.91
@@ -518,12 +778,55 @@
       "lat": 4879300,
       "lng": 255400,
       "fuels": {
-        "gazole": 1.958,
-        "sp95": 1.963,
-        "sp98": 2.03,
-        "e10": 1.911,
-        "e85": 0.845,
-        "gplc": 0.949
+        "gazole": 1.972,
+        "sp95": 2.004,
+        "sp98": 2.074,
+        "e10": 1.952,
+        "e85": 0.858
+      }
+    },
+    {
+      "id": "94542003",
+      "cp": "94542",
+      "ville": "Paray-Vieille-Poste",
+      "adresse": "SARL Jaby, ORLY Ouest 453",
+      "pop": "R",
+      "lat": 4873200,
+      "lng": 236600,
+      "fuels": {
+        "gazole": 2.149,
+        "sp98": 2.249,
+        "e10": 1.999,
+        "e85": 0.899,
+        "gplc": 1.269
+      }
+    },
+    {
+      "id": "94160001",
+      "cp": "94160",
+      "ville": "Paris",
+      "adresse": "186 Avenue Gallieni",
+      "pop": "R",
+      "lat": 4884700,
+      "lng": 241600,
+      "fuels": {
+        "gazole": 2.299,
+        "sp98": 2.299,
+        "e10": 2.199
+      }
+    },
+    {
+      "id": "94150005",
+      "cp": "94150",
+      "ville": "Rungis",
+      "adresse": "AUTOROUTE A106 - AIRE DE RUNGIS DELTA PONDO",
+      "pop": "A",
+      "lat": 4875758.28377,
+      "lng": 234834.60056,
+      "fuels": {
+        "gazole": 2.066,
+        "e10": 1.99,
+        "e85": 0.909
       }
     },
     {
@@ -571,6 +874,48 @@
       }
     },
     {
+      "id": "94100011",
+      "cp": "94100",
+      "ville": "Saint-Maur-des-Fossés",
+      "adresse": "57 BD DE CRETEIL",
+      "pop": "R",
+      "lat": 4879800,
+      "lng": 248100,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.209,
+        "e10": 2.059
+      }
+    },
+    {
+      "id": "94100005",
+      "cp": "94100",
+      "ville": "Saint-Maur-des-Fossés",
+      "adresse": "57, Rue Delerue",
+      "pop": "R",
+      "lat": 4879623.71628,
+      "lng": 249299.10966,
+      "fuels": {
+        "gazole": 1.931,
+        "sp98": 2.051,
+        "e10": 2.01
+      }
+    },
+    {
+      "id": "94100013",
+      "cp": "94100",
+      "ville": "Saint-Maur-des-Fossés",
+      "adresse": "64 AVENUE FOCH",
+      "pop": "R",
+      "lat": 4880057.83,
+      "lng": 249499.24,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.199,
+        "e10": 2.049
+      }
+    },
+    {
       "id": "94100006",
       "cp": "94100",
       "ville": "Saint-Maur-des-Fossés",
@@ -579,9 +924,9 @@
       "lat": 4879900,
       "lng": 250000,
       "fuels": {
-        "gazole": 2.012,
-        "sp98": 2.053,
-        "e10": 1.973
+        "gazole": 1.982,
+        "sp98": 2.042,
+        "e10": 1.962
       }
     },
     {
@@ -593,9 +938,50 @@
       "lat": 4877300,
       "lng": 250000,
       "fuels": {
-        "gazole": 2.021,
-        "sp98": 2.062,
-        "e10": 1.982
+        "gazole": 1.978,
+        "sp98": 2.042,
+        "e10": 1.962
+      }
+    },
+    {
+      "id": "94370007",
+      "cp": "94370",
+      "ville": "Sucy-en-Brie",
+      "adresse": "13 Rue Maurice Berteaux",
+      "pop": "R",
+      "lat": 4877300,
+      "lng": 251700,
+      "fuels": {
+        "gazole": 2.013,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "94370008",
+      "cp": "94370",
+      "ville": "Sucy-en-Brie",
+      "adresse": "63/71 AV DU GENERAL LECLERC",
+      "pop": "R",
+      "lat": 4877700,
+      "lng": 251100,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 1.99,
+        "e10": 1.953
+      }
+    },
+    {
+      "id": "94370005",
+      "cp": "94370",
+      "ville": "Sucy-en-Brie",
+      "adresse": "69 Route de la Queue en Brie",
+      "pop": "R",
+      "lat": 4876100,
+      "lng": 253300,
+      "fuels": {
+        "gazole": 2.129,
+        "e10": 2.059
       }
     },
     {
@@ -607,7 +993,7 @@
       "lat": 4875000,
       "lng": 238900,
       "fuels": {
-        "gazole": 2.121,
+        "gazole": 2.062,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.919
@@ -622,9 +1008,9 @@
       "lat": 4876800,
       "lng": 240300,
       "fuels": {
-        "gazole": 2.001,
-        "sp98": 2.051,
-        "e10": 1.971
+        "gazole": 1.982,
+        "sp98": 2.039,
+        "e10": 1.959
       }
     },
     {
@@ -641,6 +1027,20 @@
         "e10": 1.989,
         "e85": 0.969,
         "gplc": 1.169
+      }
+    },
+    {
+      "id": "94460001",
+      "cp": "94460",
+      "ville": "Valenton",
+      "adresse": "44 rue Sablonnière",
+      "pop": "R",
+      "lat": 4874926,
+      "lng": 245465,
+      "fuels": {
+        "gazole": 2.124,
+        "sp98": 2.206,
+        "e10": 1.951
       }
     },
     {
@@ -667,9 +1067,9 @@
       "lat": 4879300,
       "lng": 237000,
       "fuels": {
-        "gazole": 2.003,
+        "gazole": 1.944,
         "sp98": 1.99,
-        "e10": 1.974,
+        "e10": 1.954,
         "e85": 0.904
       }
     },
@@ -682,10 +1082,25 @@
       "lat": 4878541.75679,
       "lng": 236659.97553,
       "fuels": {
-        "gazole": 2.003,
+        "gazole": 1.944,
         "sp98": 1.99,
-        "e10": 1.974,
+        "e10": 1.954,
         "e85": 0.904
+      }
+    },
+    {
+      "id": "94290003",
+      "cp": "94290",
+      "ville": "Villeneuve-le-Roi",
+      "adresse": "32 Avenue le Foll",
+      "pop": "R",
+      "lat": 4872873.93112,
+      "lng": 243184.46308,
+      "fuels": {
+        "gazole": 2.037,
+        "sp95": 2.027,
+        "sp98": 2.077,
+        "e10": 1.977
       }
     },
     {
@@ -738,9 +1153,9 @@
       "lat": 4878200,
       "lng": 239500,
       "fuels": {
-        "gazole": 2.01,
-        "sp98": 2.06,
-        "e10": 1.98
+        "gazole": 2.002,
+        "sp98": 2.045,
+        "e10": 1.965
       }
     },
     {
@@ -767,9 +1182,9 @@
       "lat": 4879300,
       "lng": 239000,
       "fuels": {
-        "gazole": 2.001,
+        "gazole": 1.942,
         "sp98": 1.99,
-        "e10": 1.971,
+        "e10": 1.951,
         "e85": 0.904
       }
     }

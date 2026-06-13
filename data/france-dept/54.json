@@ -3,52 +3,52 @@
   "name": "Meurthe-et-Moselle",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 47,
+  "stationCount": 90,
   "fuels": {
     "gazole": {
-      "count": 46,
-      "mean": 2.0431,
-      "median": 2.0315,
-      "min": 1.966,
-      "max": 2.206
+      "count": 89,
+      "mean": 2.0283,
+      "median": 2.015,
+      "min": 1.908,
+      "max": 2.2
     },
     "sp95": {
-      "count": 11,
-      "mean": 2.0103,
-      "median": 1.999,
-      "min": 1.961,
+      "count": 24,
+      "mean": 2.0065,
+      "median": 1.99,
+      "min": 1.959,
       "max": 2.099
     },
     "sp98": {
-      "count": 37,
-      "mean": 2.0717,
+      "count": 71,
+      "mean": 2.0692,
       "median": 2.063,
       "min": 1.99,
       "max": 2.203
     },
     "e10": {
-      "count": 34,
-      "mean": 1.9773,
-      "median": 1.969,
-      "min": 1.912,
+      "count": 66,
+      "mean": 1.972,
+      "median": 1.9585,
+      "min": 1.892,
       "max": 2.103
     },
     "e85": {
-      "count": 13,
-      "mean": 0.8542,
-      "median": 0.849,
+      "count": 28,
+      "mean": 0.8543,
+      "median": 0.844,
       "min": 0.795,
-      "max": 0.998
+      "max": 1.158
     },
     "gplc": {
-      "count": 7,
-      "mean": 1.0066,
-      "median": 0.999,
+      "count": 11,
+      "mean": 1.0247,
+      "median": 1.01,
       "min": 0.949,
-      "max": 1.066
+      "max": 1.132
     }
   },
   "stations": [
@@ -74,9 +74,9 @@
       "lat": 4845803,
       "lng": 674080,
       "fuels": {
-        "gazole": 2.098,
+        "gazole": 2.039,
         "sp98": 1.99,
-        "e10": 1.99,
+        "e10": 1.982,
         "e85": 0.829
       }
     },
@@ -108,6 +108,34 @@
       }
     },
     {
+      "id": "54290001",
+      "cp": "54290",
+      "ville": "Bayon",
+      "adresse": "2 rue de Virecourt",
+      "pop": "R",
+      "lat": 4847017.85367,
+      "lng": 631258.50625,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.039,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "54360003",
+      "cp": "54360",
+      "ville": "Blainville-sur-l'Eau",
+      "adresse": "25 Avenue Pierre Semard",
+      "pop": "R",
+      "lat": 4855600,
+      "lng": 639800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.989,
+        "sp98": 2.027
+      }
+    },
+    {
       "id": "54450003",
       "cp": "54450",
       "ville": "Blâmont",
@@ -117,7 +145,21 @@
       "lng": 684452,
       "fuels": {
         "gazole": 1.988,
-        "e10": 1.925
+        "e10": 1.925,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "54134002",
+      "cp": "54134",
+      "ville": "Ceintrey",
+      "adresse": "Rte de Tantonville",
+      "pop": "R",
+      "lat": 4852168.9,
+      "lng": 615755.7,
+      "fuels": {
+        "gazole": 2.093,
+        "sp95": 1.99
       }
     },
     {
@@ -135,6 +177,35 @@
       }
     },
     {
+      "id": "54300007",
+      "cp": "54300",
+      "ville": "Chanteheux",
+      "adresse": "1 Rue Denis Papin",
+      "pop": "R",
+      "lat": 4859200,
+      "lng": 652800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.039,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "54200014",
+      "cp": "54200",
+      "ville": "Chaudeney-sur-Moselle",
+      "adresse": "AUTOROUTE A31 - AIRE DE TOUL DOMMARTIN",
+      "pop": "A",
+      "lat": 4866160.71957,
+      "lng": 590900.26116,
+      "fuels": {
+        "gazole": 2.129,
+        "sp98": 2.187,
+        "e10": 2.094,
+        "e85": 1.158
+      }
+    },
+    {
       "id": "54480001",
       "cp": "54480",
       "ville": "Cirey-sur-Vezouze",
@@ -143,9 +214,52 @@
       "lat": 4857900,
       "lng": 694300,
       "fuels": {
-        "gazole": 2.049,
+        "gazole": 1.999,
         "sp95": 2.099,
         "sp98": 2.199
+      }
+    },
+    {
+      "id": "54170004",
+      "cp": "54170",
+      "ville": "Colombey-les-Belles",
+      "adresse": "17 Rue du Curtin",
+      "pop": "R",
+      "lat": 4853498.06422,
+      "lng": 589627.12434,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.079,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "54170001",
+      "cp": "54170",
+      "ville": "Colombey-les-Belles",
+      "adresse": "97 Rue Carnot",
+      "pop": "R",
+      "lat": 4852333,
+      "lng": 589412,
+      "fuels": {
+        "gazole": 2.17,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "54800003",
+      "cp": "54800",
+      "ville": "Conflans-en-Jarnisy",
+      "adresse": "N.I. du Val de l'Orne CONFLANS EN JARNISY",
+      "pop": "R",
+      "lat": 4916400,
+      "lng": 583600,
+      "fuels": {
+        "gazole": 2.018,
+        "sp98": 2.068,
+        "e10": 1.958,
+        "e85": 0.871,
+        "gplc": 1.056
       }
     },
     {
@@ -157,7 +271,7 @@
       "lat": 4879284.5,
       "lng": 614503.3,
       "fuels": {
-        "gazole": 2.082,
+        "gazole": 2.023,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.889
@@ -205,6 +319,50 @@
       }
     },
     {
+      "id": "54380010",
+      "cp": "54380",
+      "ville": "Dieulouard",
+      "adresse": "RUE EMILE GALLE",
+      "pop": "R",
+      "lat": 4883199.07631,
+      "lng": 606426.20759,
+      "fuels": {
+        "gazole": 1.96,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "54110001",
+      "cp": "54110",
+      "ville": "Dombasle-sur-Meurthe",
+      "adresse": "1 rue Victor Prouvé",
+      "pop": "R",
+      "lat": 4861000,
+      "lng": 635200,
+      "fuels": {
+        "gazole": 2.092,
+        "sp98": 2.141,
+        "e10": 2.041
+      }
+    },
+    {
+      "id": "54204001",
+      "cp": "54200",
+      "ville": "Dommartin-lès-Toul",
+      "adresse": "POLE COMMERCIAL JEANNE D'ARC",
+      "pop": "R",
+      "lat": 4867400,
+      "lng": 592500,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.969,
+        "sp98": 2.029,
+        "e10": 1.938,
+        "e85": 0.795
+      }
+    },
+    {
       "id": "54200008",
       "cp": "54200",
       "ville": "Écrouves",
@@ -216,6 +374,20 @@
         "gazole": 1.969,
         "sp98": 2.029,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "54270002",
+      "cp": "54270",
+      "ville": "Essey-lès-Nancy",
+      "adresse": "55 Avenue du 69ème Régiment d'Infanterie",
+      "pop": "R",
+      "lat": 4870800,
+      "lng": 623500,
+      "fuels": {
+        "gazole": 2.021,
+        "sp98": 2.045,
+        "e10": 1.989
       }
     },
     {
@@ -234,6 +406,21 @@
       }
     },
     {
+      "id": "54390001",
+      "cp": "54390",
+      "ville": "Frouard",
+      "adresse": "2 Rue du Bois",
+      "pop": "R",
+      "lat": 4874200,
+      "lng": 614900,
+      "fuels": {
+        "gazole": 1.962,
+        "sp98": 2.044,
+        "e10": 1.948,
+        "e85": 0.819
+      }
+    },
+    {
       "id": "54390002",
       "cp": "54390",
       "ville": "Frouard",
@@ -245,6 +432,46 @@
         "gazole": 2.08,
         "sp98": 2.17,
         "e10": 2.06
+      }
+    },
+    {
+      "id": "54830001",
+      "cp": "54830",
+      "ville": "Gerbéviller",
+      "adresse": "18 Rue du Général Leclerc",
+      "pop": "R",
+      "lat": 4849700,
+      "lng": 651400,
+      "fuels": {
+        "gazole": 2.16
+      }
+    },
+    {
+      "id": "54840004",
+      "cp": "54840",
+      "ville": "Gondreville",
+      "adresse": "Rue de la Croix Saint-Nicolas",
+      "pop": "R",
+      "lat": 4869100,
+      "lng": 596900,
+      "fuels": {
+        "gazole": 1.988,
+        "sp95": 1.989,
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "54310001",
+      "cp": "54310",
+      "ville": "Homécourt",
+      "adresse": "RUE JEAN MOULIN",
+      "pop": "R",
+      "lat": 4922400,
+      "lng": 599900,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.079,
+        "e10": 1.969
       }
     },
     {
@@ -264,6 +491,34 @@
       }
     },
     {
+      "id": "54800006",
+      "cp": "54800",
+      "ville": "Jarny",
+      "adresse": "18-32, rue de Metz",
+      "pop": "R",
+      "lat": 4915400,
+      "lng": 589200,
+      "fuels": {
+        "gazole": 2.079,
+        "e10": 1.99,
+        "e85": 0.869
+      }
+    },
+    {
+      "id": "54800004",
+      "cp": "54800",
+      "ville": "Jarny",
+      "adresse": "40 Avenue Lafayette",
+      "pop": "R",
+      "lat": 4916000,
+      "lng": 588100,
+      "fuels": {
+        "gazole": 2.099,
+        "sp95": 2.099,
+        "sp98": 2.159
+      }
+    },
+    {
       "id": "54800001",
       "cp": "54800",
       "ville": "Jarny",
@@ -274,6 +529,21 @@
       "fuels": {
         "gazole": 2.042,
         "e10": 1.969
+      }
+    },
+    {
+      "id": "54140001",
+      "cp": "54140",
+      "ville": "Jarville-la-Malgrange",
+      "adresse": "Rue de la République",
+      "pop": "R",
+      "lat": 4867000,
+      "lng": 620700,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.063,
+        "e10": 1.949,
+        "e85": 0.798
       }
     },
     {
@@ -291,6 +561,20 @@
       }
     },
     {
+      "id": "54970001",
+      "cp": "54970",
+      "ville": "Landres",
+      "adresse": "37 Rue de Verdun",
+      "pop": "R",
+      "lat": 4931900,
+      "lng": 579900,
+      "fuels": {
+        "gazole": 2.058,
+        "sp98": 2.12,
+        "e10": 1.966
+      }
+    },
+    {
       "id": "54150004",
       "cp": "54150",
       "ville": "Lantéfontaine",
@@ -301,6 +585,20 @@
       "fuels": {
         "gazole": 2.19,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "54520006",
+      "cp": "54520",
+      "ville": "Laxou",
+      "adresse": "10 AVENUE DE LA RESISTANCE",
+      "pop": "R",
+      "lat": 4869400,
+      "lng": 613300,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.99,
+        "e10": 1.924
       }
     },
     {
@@ -317,6 +615,21 @@
         "e10": 1.999,
         "e85": 0.849,
         "gplc": 0.949
+      }
+    },
+    {
+      "id": "54520007",
+      "cp": "54520",
+      "ville": "Laxou",
+      "adresse": "5 AVENUE DE LA RESISTANCE",
+      "pop": "R",
+      "lat": 4869407.41618,
+      "lng": 613189.71709,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.99,
+        "e10": 1.924,
+        "e85": 0.849
       }
     },
     {
@@ -345,6 +658,20 @@
       }
     },
     {
+      "id": "54460001",
+      "cp": "54460",
+      "ville": "Liverdun",
+      "adresse": "32, Route de Frouard",
+      "pop": "R",
+      "lat": 4875000,
+      "lng": 608100,
+      "fuels": {
+        "gazole": 1.963,
+        "sp98": 2.045,
+        "e10": 1.959
+      }
+    },
+    {
       "id": "54700010",
       "cp": "54700",
       "ville": "Loisy",
@@ -353,11 +680,54 @@
       "lat": 4885585.63022,
       "lng": 608777.35239,
       "fuels": {
-        "gazole": 2.111,
+        "gazole": 2.052,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.998,
         "gplc": 1.058
+      }
+    },
+    {
+      "id": "54700011",
+      "cp": "54700",
+      "ville": "Loisy",
+      "adresse": "AUTOROUTE A31AIRE DE LOISY",
+      "pop": "A",
+      "lat": 4886058.81721,
+      "lng": 609169.35289,
+      "fuels": {
+        "gazole": 2.105,
+        "sp98": 2.14,
+        "e10": 2.049,
+        "gplc": 1.132
+      }
+    },
+    {
+      "id": "54260003",
+      "cp": "54260",
+      "ville": "Longuyon",
+      "adresse": "ROUTE D'ARRANCY",
+      "pop": "R",
+      "lat": 4943169.11832,
+      "lng": 561589.82609,
+      "fuels": {
+        "gazole": 1.925,
+        "e10": 1.933
+      }
+    },
+    {
+      "id": "54710001",
+      "cp": "54710",
+      "ville": "Ludres",
+      "adresse": "Chemin du Bon Curé",
+      "pop": "R",
+      "lat": 4861646.79799,
+      "lng": 617530.41191,
+      "fuels": {
+        "gazole": 2.082,
+        "sp95": 2.02,
+        "sp98": 2.091,
+        "e85": 0.809
       }
     },
     {
@@ -426,9 +796,37 @@
       "lat": 4871000,
       "lng": 617500,
       "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.029,
+        "gazole": 1.979,
+        "sp95": 2.019,
         "sp98": 2.069
+      }
+    },
+    {
+      "id": "54960001",
+      "cp": "54960",
+      "ville": "Mercy-le-Bas",
+      "adresse": "2A avenue des marronniers",
+      "pop": "R",
+      "lat": 4939434.84089,
+      "lng": 575669.93362,
+      "fuels": {
+        "gazole": 2.099,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "54300001",
+      "cp": "54300",
+      "ville": "Moncel-lès-Lunéville",
+      "adresse": "6 rue tuilier",
+      "pop": "R",
+      "lat": 4857900,
+      "lng": 651800,
+      "fuels": {
+        "gazole": 2.01,
+        "sp95": 1.959,
+        "sp98": 2.04,
+        "e10": 1.949
       }
     },
     {
@@ -446,6 +844,48 @@
       }
     },
     {
+      "id": "54000008",
+      "cp": "54000",
+      "ville": "Nancy",
+      "adresse": "40 Avenue de la Libération",
+      "pop": "R",
+      "lat": 4869200,
+      "lng": 616800,
+      "fuels": {
+        "gazole": 2.052,
+        "sp98": 2.076,
+        "e10": 1.996
+      }
+    },
+    {
+      "id": "54000009",
+      "cp": "54000",
+      "ville": "Nancy",
+      "adresse": "47 Boulevard Jean Jaurès",
+      "pop": "R",
+      "lat": 4868100,
+      "lng": 617900,
+      "fuels": {
+        "gazole": 2.169,
+        "sp98": 2.099,
+        "e10": 2.019
+      }
+    },
+    {
+      "id": "54000014",
+      "cp": "54000",
+      "ville": "Nancy",
+      "adresse": "6 AVENUE DE BOUFFLERS",
+      "pop": "R",
+      "lat": 4868926.1,
+      "lng": 616174.8,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.075,
+        "sp98": 2.146
+      }
+    },
+    {
       "id": "54230001",
       "cp": "54230",
       "ville": "Neuves-Maisons",
@@ -454,9 +894,24 @@
       "lat": 4861500,
       "lng": 610400,
       "fuels": {
-        "gazole": 2.016,
-        "sp98": 2.103,
+        "gazole": 2.015,
+        "sp98": 2.097,
         "e10": 1.946
+      }
+    },
+    {
+      "id": "54230002",
+      "cp": "54230",
+      "ville": "Neuves-Maisons",
+      "adresse": "Rue Pasteur",
+      "pop": "R",
+      "lat": 4861300,
+      "lng": 609600,
+      "fuels": {
+        "gazole": 1.984,
+        "sp95": 2.004,
+        "sp98": 2.085,
+        "e10": 1.937
       }
     },
     {
@@ -508,10 +963,38 @@
       "lat": 4876800,
       "lng": 612400,
       "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.149,
+        "gazole": 1.999,
+        "sp98": 2.099,
         "e10": 1.999,
-        "e85": 0.899
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "54700006",
+      "cp": "54700",
+      "ville": "Pont-à-Mousson",
+      "adresse": "CENTRE COMMERCIAL MONTRICHARD",
+      "pop": "R",
+      "lat": 4890900,
+      "lng": 604400,
+      "fuels": {
+        "gazole": 1.956,
+        "sp98": 2.022,
+        "e10": 1.91
+      }
+    },
+    {
+      "id": "54700009",
+      "cp": "54700",
+      "ville": "Pont-à-Mousson",
+      "adresse": "Le Pré Latour",
+      "pop": "R",
+      "lat": 4891700,
+      "lng": 606500,
+      "fuels": {
+        "gazole": 1.971,
+        "sp98": 2.039,
+        "e10": 1.922
       }
     },
     {
@@ -529,6 +1012,21 @@
       }
     },
     {
+      "id": "54630001",
+      "cp": "54630",
+      "ville": "Richardménil",
+      "adresse": "AUTOROUTE A 330",
+      "pop": "A",
+      "lat": 4860700,
+      "lng": 617400,
+      "fuels": {
+        "gazole": 2.056,
+        "sp98": 2.135,
+        "e10": 2.035,
+        "gplc": 1.063
+      }
+    },
+    {
       "id": "54210002",
       "cp": "54210",
       "ville": "Saint-Nicolas-de-Port",
@@ -540,6 +1038,21 @@
         "gazole": 2.049,
         "sp98": 2.063,
         "e10": 1.949
+      }
+    },
+    {
+      "id": "54280003",
+      "cp": "54280",
+      "ville": "Seichamps",
+      "adresse": "RD 674",
+      "pop": "R",
+      "lat": 4871324.35118,
+      "lng": 624935.7016,
+      "fuels": {
+        "gazole": 1.911,
+        "sp98": 1.99,
+        "e10": 1.913,
+        "e85": 0.849
       }
     },
     {
@@ -624,7 +1137,7 @@
       "lat": 4867219,
       "lng": 588828,
       "fuels": {
-        "gazole": 2.072,
+        "gazole": 2.013,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.839
@@ -643,6 +1156,34 @@
       }
     },
     {
+      "id": "54150002",
+      "cp": "54150",
+      "ville": "Val de Briey",
+      "adresse": "Avenue Marguerite Puhl Demange",
+      "pop": "R",
+      "lat": 4925800,
+      "lng": 594100,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.989,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "54121001",
+      "cp": "54121",
+      "ville": "Vandières",
+      "adresse": "28, rue Charles de Gaulle",
+      "pop": "R",
+      "lat": 4895100,
+      "lng": 603800,
+      "fuels": {
+        "gazole": 2.015,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "54500008",
       "cp": "54500",
       "ville": "Vandœuvre-lès-Nancy",
@@ -651,9 +1192,9 @@
       "lat": 4864965,
       "lng": 614633,
       "fuels": {
-        "gazole": 1.971,
+        "gazole": 1.912,
         "sp98": 1.99,
-        "e10": 1.935,
+        "e10": 1.915,
         "e85": 0.839
       }
     },
@@ -666,11 +1207,40 @@
       "lat": 4865400,
       "lng": 617700,
       "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
+        "gazole": 1.972,
+        "sp95": 1.969,
         "sp98": 2.085,
-        "e10": 1.999,
+        "e10": 1.955,
         "gplc": 1.01
+      }
+    },
+    {
+      "id": "54500004",
+      "cp": "54500",
+      "ville": "Vandœuvre-lès-Nancy",
+      "adresse": "22 Avenue Jeanne d'Arc",
+      "pop": "R",
+      "lat": 4866000,
+      "lng": 618300,
+      "fuels": {
+        "gazole": 1.998,
+        "sp98": 2.094,
+        "e10": 2.026,
+        "e85": 0.953
+      }
+    },
+    {
+      "id": "54500007",
+      "cp": "54500",
+      "ville": "Vandœuvre-lès-Nancy",
+      "adresse": "R.N.57 LE DERNIER SOU",
+      "pop": "R",
+      "lat": 4865500,
+      "lng": 618600,
+      "fuels": {
+        "gazole": 1.916,
+        "e85": 0.859,
+        "gplc": 0.975
       }
     },
     {
@@ -688,6 +1258,50 @@
       }
     },
     {
+      "id": "54600004",
+      "cp": "54600",
+      "ville": "Villers-lès-Nancy",
+      "adresse": "110 Avenue Paul Muller",
+      "pop": "R",
+      "lat": 4865700,
+      "lng": 611200,
+      "fuels": {
+        "gazole": 1.967,
+        "sp98": 2.016,
+        "e10": 1.907,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "54600002",
+      "cp": "54600",
+      "ville": "Villers-lès-Nancy",
+      "adresse": "31 boulevard de Baudricourt",
+      "pop": "R",
+      "lat": 4867500,
+      "lng": 616300,
+      "fuels": {
+        "gazole": 2.092,
+        "sp95": 1.972,
+        "e10": 1.952
+      }
+    },
+    {
+      "id": "54600005",
+      "cp": "54600",
+      "ville": "Villers-lès-Nancy",
+      "adresse": "BD DES AIGUILLETTES",
+      "pop": "R",
+      "lat": 4867308,
+      "lng": 615342,
+      "fuels": {
+        "gazole": 2.021,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.869
+      }
+    },
+    {
       "id": "54300011",
       "cp": "54300",
       "ville": "Vitrimont",
@@ -696,9 +1310,9 @@
       "lat": 4859080.87327,
       "lng": 641838.68421,
       "fuels": {
-        "gazole": 1.967,
+        "gazole": 1.908,
         "sp98": 1.99,
-        "e10": 1.912,
+        "e10": 1.892,
         "gplc": 0.979
       }
     },
@@ -711,7 +1325,7 @@
       "lat": 4859100,
       "lng": 642600,
       "fuels": {
-        "gazole": 2.206,
+        "gazole": 2.178,
         "sp98": 2.203,
         "e10": 2.103,
         "gplc": 1.066

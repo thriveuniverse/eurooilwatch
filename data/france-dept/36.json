@@ -3,52 +3,52 @@
   "name": "Indre",
   "regionCode": "CVL",
   "regionName": "Centre-Val de Loire",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 25,
+  "stationCount": 44,
   "fuels": {
     "gazole": {
-      "count": 25,
-      "mean": 2.0401,
-      "median": 2,
-      "min": 1.955,
-      "max": 2.382
+      "count": 44,
+      "mean": 2.0146,
+      "median": 1.999,
+      "min": 1.895,
+      "max": 2.387
     },
     "sp95": {
-      "count": 13,
-      "mean": 1.9939,
-      "median": 1.985,
+      "count": 18,
+      "mean": 1.9974,
+      "median": 1.99,
       "min": 1.96,
       "max": 2.09
     },
     "sp98": {
-      "count": 20,
-      "mean": 2.0695,
-      "median": 2.042,
+      "count": 39,
+      "mean": 2.0518,
+      "median": 2.035,
       "min": 1.99,
       "max": 2.556
     },
     "e10": {
-      "count": 16,
-      "mean": 1.9801,
-      "median": 1.9505,
-      "min": 1.91,
+      "count": 32,
+      "mean": 1.9603,
+      "median": 1.942,
+      "min": 1.895,
       "max": 2.406
     },
     "e85": {
-      "count": 5,
-      "mean": 0.877,
-      "median": 0.844,
+      "count": 12,
+      "mean": 0.8542,
+      "median": 0.8475,
       "min": 0.774,
       "max": 0.98
     },
     "gplc": {
-      "count": 3,
-      "mean": 1.0537,
-      "median": 1.058,
-      "min": 0.989,
-      "max": 1.114
+      "count": 5,
+      "mean": 1.027,
+      "median": 0.989,
+      "min": 0.984,
+      "max": 1.115
     }
   },
   "stations": [
@@ -68,6 +68,49 @@
       }
     },
     {
+      "id": "36140002",
+      "cp": "36140",
+      "ville": "Aigurande",
+      "adresse": "La Combette",
+      "pop": "R",
+      "lat": 4643700,
+      "lng": 182700,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 2.015,
+        "e10": 1.926
+      }
+    },
+    {
+      "id": "36120001",
+      "cp": "36120",
+      "ville": "Ardentes",
+      "adresse": "2 Avenue de Verdun",
+      "pop": "R",
+      "lat": 4674600,
+      "lng": 184600,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.105,
+        "e10": 1.975
+      }
+    },
+    {
+      "id": "36200002",
+      "cp": "36200",
+      "ville": "Argenton-sur-Creuse",
+      "adresse": "Route de Limoges",
+      "pop": "R",
+      "lat": 4657643,
+      "lng": 151152,
+      "fuels": {
+        "gazole": 1.913,
+        "sp98": 1.99,
+        "e10": 1.911,
+        "e85": 0.851
+      }
+    },
+    {
       "id": "36500002",
       "cp": "36500",
       "ville": "Buzançais",
@@ -78,6 +121,63 @@
       "fuels": {
         "gazole": 2.14,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "36500003",
+      "cp": "36500",
+      "ville": "Buzançais",
+      "adresse": "Route de Beauvais",
+      "pop": "R",
+      "lat": 4688900,
+      "lng": 140200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.099,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "36500004",
+      "cp": "36500",
+      "ville": "Buzançais",
+      "adresse": "Route de Beauvais LD Les Chaumes",
+      "pop": "R",
+      "lat": 4689000,
+      "lng": 140100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.049,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "36500005",
+      "cp": "36500",
+      "ville": "Buzançais",
+      "adresse": "route de chateauroux",
+      "pop": "R",
+      "lat": 4688797.95857,
+      "lng": 143432.91894,
+      "fuels": {
+        "gazole": 2.035,
+        "sp95": 2.045,
+        "sp98": 2.082
+      }
+    },
+    {
+      "id": "36210001",
+      "cp": "36210",
+      "ville": "Chabris",
+      "adresse": "ROUTE DE VALENCAY",
+      "pop": "R",
+      "lat": 4724800,
+      "lng": 163800,
+      "fuels": {
+        "gazole": 2,
+        "sp95": 1.99,
+        "sp98": 2.035,
+        "e10": 1.935
       }
     },
     {
@@ -118,9 +218,25 @@
       "lat": 4680612,
       "lng": 169604,
       "fuels": {
-        "gazole": 1.962,
+        "gazole": 1.903,
         "sp98": 1.99,
-        "e10": 1.922
+        "e10": 1.902
+      }
+    },
+    {
+      "id": "36000016",
+      "cp": "36000",
+      "ville": "Châteauroux",
+      "adresse": "RN 20 - ROCADE SUD",
+      "pop": "R",
+      "lat": 4679298,
+      "lng": 171655,
+      "fuels": {
+        "gazole": 1.903,
+        "sp98": 1.99,
+        "e10": 1.903,
+        "e85": 0.859,
+        "gplc": 0.984
       }
     },
     {
@@ -136,6 +252,34 @@
         "sp98": 2.049,
         "e10": 1.979,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "36700001",
+      "cp": "36700",
+      "ville": "Châtillon-sur-Indre",
+      "adresse": "ROUTE DE TOURS",
+      "pop": "R",
+      "lat": 4699100,
+      "lng": 116700,
+      "fuels": {
+        "gazole": 2.093,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "36130004",
+      "cp": "36130",
+      "ville": "Déols",
+      "adresse": "RD 920",
+      "pop": "R",
+      "lat": 4685027.30809,
+      "lng": 170741.60372,
+      "fuels": {
+        "gazole": 1.926,
+        "sp98": 1.99,
+        "e10": 1.93,
+        "e85": 0.851
       }
     },
     {
@@ -168,6 +312,80 @@
       }
     },
     {
+      "id": "36100006",
+      "cp": "36100",
+      "ville": "Issoudun",
+      "adresse": "215 AVENUE DES COINCHETTES",
+      "pop": "R",
+      "lat": 4695060.83353,
+      "lng": 200731.49683,
+      "fuels": {
+        "gazole": 1.994,
+        "sp95": 1.994,
+        "sp98": 2.039,
+        "e10": 1.957
+      }
+    },
+    {
+      "id": "36100001",
+      "cp": "36100",
+      "ville": "Issoudun",
+      "adresse": "59 Rue Haute Saint-Paterne",
+      "pop": "R",
+      "lat": 4694210,
+      "lng": 198786,
+      "fuels": {
+        "gazole": 2.03,
+        "sp95": 2.01,
+        "sp98": 2.059
+      }
+    },
+    {
+      "id": "36100002",
+      "cp": "36100",
+      "ville": "Issoudun",
+      "adresse": "Rue de la Limoise",
+      "pop": "R",
+      "lat": 4695700,
+      "lng": 200300,
+      "fuels": {
+        "gazole": 1.994,
+        "sp95": 1.994,
+        "sp98": 2.039,
+        "e10": 1.957,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "36400004",
+      "cp": "36400",
+      "ville": "La Châtre",
+      "adresse": "18 rue des Ajoncs",
+      "pop": "R",
+      "lat": 4657400,
+      "lng": 197700,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.024,
+        "e10": 1.938,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "36400005",
+      "cp": "36400",
+      "ville": "La Châtre",
+      "adresse": "Avenue d'Auvergne",
+      "pop": "R",
+      "lat": 4658282,
+      "lng": 199916,
+      "fuels": {
+        "gazole": 1.895,
+        "sp98": 1.99,
+        "e10": 1.895
+      }
+    },
+    {
       "id": "36400001",
       "cp": "36400",
       "ville": "La Châtre",
@@ -176,7 +394,7 @@
       "lat": 4658200,
       "lng": 200100,
       "fuels": {
-        "gazole": 1.993,
+        "gazole": 1.989,
         "sp95": 1.985,
         "sp98": 2.024,
         "e10": 1.938
@@ -212,6 +430,34 @@
       }
     },
     {
+      "id": "36400006",
+      "cp": "36400",
+      "ville": "Le Magny",
+      "adresse": "33 Rte de Neuvy",
+      "pop": "R",
+      "lat": 4657600,
+      "lng": 196100,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.019,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "36200001",
+      "cp": "36200",
+      "ville": "Le Pêchereau",
+      "adresse": "Route de Gargilesse PAUMULE",
+      "pop": "R",
+      "lat": 4657500,
+      "lng": 153500,
+      "fuels": {
+        "gazole": 2.043,
+        "sp98": 2.048,
+        "e10": 1.932
+      }
+    },
+    {
       "id": "36000010",
       "cp": "36000",
       "ville": "Le Poinçonnet",
@@ -242,6 +488,21 @@
       }
     },
     {
+      "id": "36110001",
+      "cp": "36110",
+      "ville": "Levroux",
+      "adresse": "Route de Villegongis",
+      "pop": "R",
+      "lat": 4697300,
+      "lng": 161200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.049,
+        "e10": 1.959,
+        "e85": 0.875
+      }
+    },
+    {
       "id": "36350002",
       "cp": "36350",
       "ville": "Luant",
@@ -250,7 +511,7 @@
       "lat": 4671357.57278,
       "lng": 159025.97579,
       "fuels": {
-        "gazole": 2.177,
+        "gazole": 2.118,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.978,
@@ -328,6 +589,22 @@
       }
     },
     {
+      "id": "36250003",
+      "cp": "36250",
+      "ville": "Saint-Maur",
+      "adresse": "226 Route de Tours",
+      "pop": "R",
+      "lat": 4682069.1597,
+      "lng": 166665.4919,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.02,
+        "e10": 1.932,
+        "e85": 0.821,
+        "gplc": 0.989
+      }
+    },
+    {
       "id": "36250007",
       "cp": "36250",
       "ville": "Saint-Maur",
@@ -336,7 +613,7 @@
       "lat": 4678058,
       "lng": 165276,
       "fuels": {
-        "gazole": 1.959
+        "gazole": 1.901
       }
     },
     {
@@ -403,10 +680,10 @@
       "lat": 4672400,
       "lng": 160400,
       "fuels": {
-        "gazole": 2.382,
+        "gazole": 2.387,
         "sp98": 2.556,
         "e10": 2.406,
-        "gplc": 1.114
+        "gplc": 1.115
       }
     }
   ]

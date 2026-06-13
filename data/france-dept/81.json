@@ -3,55 +3,82 @@
   "name": "Tarn",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 33,
+  "stationCount": 69,
   "fuels": {
     "gazole": {
-      "count": 33,
-      "mean": 2.004,
-      "median": 1.99,
-      "min": 1.939,
-      "max": 2.167
+      "count": 68,
+      "mean": 2.0049,
+      "median": 1.982,
+      "min": 1.909,
+      "max": 2.19
     },
     "sp95": {
-      "count": 11,
-      "mean": 1.9949,
-      "median": 1.992,
-      "min": 1.945,
+      "count": 22,
+      "mean": 1.9947,
+      "median": 1.991,
+      "min": 1.929,
       "max": 2.09
     },
     "sp98": {
-      "count": 28,
-      "mean": 2.029,
-      "median": 2.0235,
-      "min": 1.989,
+      "count": 52,
+      "mean": 2.0273,
+      "median": 2.004,
+      "min": 1.979,
       "max": 2.17
     },
     "e10": {
-      "count": 27,
-      "mean": 1.9323,
-      "median": 1.925,
-      "min": 1.889,
-      "max": 1.99
+      "count": 53,
+      "mean": 1.936,
+      "median": 1.919,
+      "min": 1.859,
+      "max": 2.046
     },
     "e85": {
-      "count": 17,
-      "mean": 0.822,
-      "median": 0.798,
-      "min": 0.798,
+      "count": 32,
+      "mean": 0.8217,
+      "median": 0.8035,
+      "min": 0.741,
       "max": 0.976
     },
     "gplc": {
-      "count": 5,
-      "mean": 1.0446,
+      "count": 9,
+      "mean": 1.0439,
       "median": 1.059,
       "min": 0.999,
       "max": 1.07
     }
   },
   "stations": [
+    {
+      "id": "81250006",
+      "cp": "81250",
+      "ville": "Alban",
+      "adresse": "13 AVENUE DE MILLAU",
+      "pop": "R",
+      "lat": 4388352.6,
+      "lng": 246826.8,
+      "fuels": {
+        "gazole": 2.03,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "81250004",
+      "cp": "81250",
+      "ville": "Alban",
+      "adresse": "lieu dit ginestous",
+      "pop": "R",
+      "lat": 4388905.345,
+      "lng": 246155.885,
+      "fuels": {
+        "gazole": 2.09,
+        "sp98": 2.09,
+        "e10": 1.99
+      }
+    },
     {
       "id": "81000011",
       "cp": "81000",
@@ -64,6 +91,20 @@
         "gazole": 2.02,
         "sp95": 2.05,
         "sp98": 2.07
+      }
+    },
+    {
+      "id": "81000004",
+      "cp": "81000",
+      "ville": "Albi",
+      "adresse": "120 Avenue François Verdier",
+      "pop": "R",
+      "lat": 4392000,
+      "lng": 213200,
+      "fuels": {
+        "gazole": 2.139,
+        "e10": 1.99,
+        "gplc": 1.045
       }
     },
     {
@@ -90,10 +131,38 @@
       "lat": 4392200,
       "lng": 216600,
       "fuels": {
-        "gazole": 1.991,
-        "sp98": 2.039,
+        "gazole": 1.981,
+        "sp98": 2.029,
         "e10": 1.9,
-        "e85": 0.973
+        "e85": 0.967
+      }
+    },
+    {
+      "id": "81000010",
+      "cp": "81000",
+      "ville": "Albi",
+      "adresse": "3 rue des trois buissons",
+      "pop": "R",
+      "lat": 4393100,
+      "lng": 218300,
+      "fuels": {
+        "gazole": 1.984,
+        "sp95": 1.999,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "81000002",
+      "cp": "81000",
+      "ville": "Albi",
+      "adresse": "40 ROUTE DE CORDES",
+      "pop": "R",
+      "lat": 4394553.9324,
+      "lng": 213315.07709,
+      "fuels": {
+        "gazole": 2.154,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -180,9 +249,94 @@
       "fuels": {
         "gazole": 1.969,
         "sp98": 1.999,
-        "e10": 1.929,
+        "e10": 1.915,
         "e85": 0.798,
         "gplc": 1.059
+      }
+    },
+    {
+      "id": "81660001",
+      "cp": "81660",
+      "ville": "Bout-du-Pont-de-Larn",
+      "adresse": "CD 54 - RN 112 lieu dit Lagarrigue",
+      "pop": "R",
+      "lat": 4349800,
+      "lng": 240000,
+      "fuels": {
+        "gazole": 1.939,
+        "sp95": 2.029,
+        "sp98": 2.049,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "81260001",
+      "cp": "81260",
+      "ville": "Brassac",
+      "adresse": "Route de Castres",
+      "pop": "R",
+      "lat": 4362922.99112,
+      "lng": 248484.0677,
+      "fuels": {
+        "gazole": 2.058,
+        "sp98": 2.116,
+        "e10": 2.046
+      }
+    },
+    {
+      "id": "81600004",
+      "cp": "81600",
+      "ville": "Brens",
+      "adresse": "zone de xansos route de Graulhet",
+      "pop": "R",
+      "lat": 4388900,
+      "lng": 191000,
+      "fuels": {
+        "gazole": 1.979,
+        "e10": 1.896,
+        "e85": 0.798,
+        "gplc": 1.059
+      }
+    },
+    {
+      "id": "81130001",
+      "cp": "81130",
+      "ville": "Cagnac-les-Mines",
+      "adresse": "RUE DE LA SIGALARIE",
+      "pop": "R",
+      "lat": 4398900,
+      "lng": 213900,
+      "fuels": {
+        "gazole": 1.96,
+        "sp98": 1.999,
+        "e10": 1.891
+      }
+    },
+    {
+      "id": "81400002",
+      "cp": "81400",
+      "ville": "Carmaux",
+      "adresse": "97 Avenue Albert Thomas",
+      "pop": "R",
+      "lat": 4404800,
+      "lng": 215800,
+      "fuels": {
+        "gazole": 2.057,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "81400004",
+      "cp": "81400",
+      "ville": "Carmaux",
+      "adresse": "Rue Henri Stendhal",
+      "pop": "R",
+      "lat": 4405200,
+      "lng": 216000,
+      "fuels": {
+        "gazole": 1.96,
+        "sp98": 1.999,
+        "e10": 1.891
       }
     },
     {
@@ -201,6 +355,79 @@
       }
     },
     {
+      "id": "81115001",
+      "cp": "81100",
+      "ville": "Castres",
+      "adresse": "10, Rue Albert Calmette",
+      "pop": "R",
+      "lat": 4358900,
+      "lng": 218600,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 1.99,
+        "e10": 1.919,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "81100003",
+      "cp": "81100",
+      "ville": "Castres",
+      "adresse": "154 Avenue Charles de Gaulle",
+      "pop": "R",
+      "lat": 4359700,
+      "lng": 226000,
+      "fuels": {
+        "gazole": 1.998,
+        "sp98": 2.124,
+        "e10": 2.028
+      }
+    },
+    {
+      "id": "81100004",
+      "cp": "81100",
+      "ville": "Castres",
+      "adresse": "BOULEVARD CARNOT",
+      "pop": "R",
+      "lat": 4360700,
+      "lng": 224500,
+      "fuels": {
+        "gazole": 2.046,
+        "sp98": 2.03,
+        "e10": 1.927
+      }
+    },
+    {
+      "id": "81100007",
+      "cp": "81100",
+      "ville": "Castres",
+      "adresse": "Boulevard Pierre Mendès France",
+      "pop": "R",
+      "lat": 4359600,
+      "lng": 222800,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 2.009,
+        "e10": 1.895,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "81100008",
+      "cp": "81100",
+      "ville": "Castres",
+      "adresse": "Lieu-Dit Plombières",
+      "pop": "R",
+      "lat": 4362200,
+      "lng": 221500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.99,
+        "e10": 1.895,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "81100010",
       "cp": "81100",
       "ville": "Castres",
@@ -214,6 +441,22 @@
         "e10": 1.895,
         "e85": 0.798,
         "gplc": 1.036
+      }
+    },
+    {
+      "id": "81100006",
+      "cp": "81100",
+      "ville": "Castres",
+      "adresse": "RUE FRANCOIS COUPERIN,C.C LAMEILHE",
+      "pop": "R",
+      "lat": 4359200,
+      "lng": 225500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 2.009,
+        "sp98": 1.99,
+        "e10": 1.895,
+        "e85": 0.809
       }
     },
     {
@@ -286,9 +529,9 @@
       "lat": 4375969.17928,
       "lng": 196428.40918,
       "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.09,
-        "e10": 1.95,
+        "gazole": 1.969,
+        "sp98": 1.989,
+        "e10": 1.915,
         "e85": 0.798
       }
     },
@@ -306,6 +549,18 @@
         "sp98": 2.05,
         "e10": 1.92,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "81220002",
+      "cp": "81220",
+      "ville": "Guitalens-L'Albarède",
+      "adresse": "444 Avenue de Cocagne",
+      "pop": "R",
+      "lat": 4364300,
+      "lng": 204600,
+      "fuels": {
+        "sp95": 1.99
       }
     },
     {
@@ -338,6 +593,20 @@
       }
     },
     {
+      "id": "81240001",
+      "cp": "81240",
+      "ville": "Lacabarède",
+      "adresse": "83 GRAND RUE",
+      "pop": "R",
+      "lat": 4347023.12071,
+      "lng": 257731.93759,
+      "fuels": {
+        "gazole": 1.998,
+        "sp98": 2.124,
+        "e10": 2.028
+      }
+    },
+    {
       "id": "81320002",
       "cp": "81230",
       "ville": "Lacaune",
@@ -351,6 +620,51 @@
       }
     },
     {
+      "id": "81230005",
+      "cp": "81230",
+      "ville": "Lacaune",
+      "adresse": "Rue Henri Antoine",
+      "pop": "R",
+      "lat": 4370942.62662,
+      "lng": 269745.76787,
+      "fuels": {
+        "gazole": 1.964,
+        "e10": 1.915,
+        "e85": 0.844
+      }
+    },
+    {
+      "id": "81500003",
+      "cp": "81500",
+      "ville": "Lavaur",
+      "adresse": "44 Avenue Jacques Besse",
+      "pop": "R",
+      "lat": 4370900,
+      "lng": 181700,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.02,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "81500007",
+      "cp": "81500",
+      "ville": "Lavaur",
+      "adresse": "QUAI DE LA TOUR DES RONDES",
+      "pop": "R",
+      "lat": 4369597.8,
+      "lng": 181649.9,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.099,
+        "e10": 1.999,
+        "e85": 0.899,
+        "gplc": 1.069
+      }
+    },
+    {
       "id": "81500004",
       "cp": "81500",
       "ville": "Lavaur",
@@ -359,10 +673,22 @@
       "lat": 4370400,
       "lng": 180000,
       "fuels": {
-        "gazole": 1.976,
-        "sp98": 2.04,
-        "e10": 1.95,
-        "e85": 0.809
+        "gazole": 1.92,
+        "sp98": 1.994,
+        "e10": 1.902,
+        "e85": 0.741
+      }
+    },
+    {
+      "id": "81990001",
+      "cp": "81990",
+      "ville": "Le Sequestre",
+      "adresse": "1 Rue de Mélaudie",
+      "pop": "R",
+      "lat": 4391700,
+      "lng": 211400,
+      "fuels": {
+        "gazole": 2.115
       }
     },
     {
@@ -460,9 +786,23 @@
       "lat": 4384200,
       "lng": 184600,
       "fuels": {
-        "gazole": 2.072,
+        "gazole": 2.013,
         "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "81320001",
+      "cp": "81320",
+      "ville": "Murat-sur-Vèbre",
+      "adresse": "AVENUE DU LANGUEDOC",
+      "pop": "R",
+      "lat": 4368309.70502,
+      "lng": 285996.42539,
+      "fuels": {
+        "gazole": 1.998,
+        "sp95": 2.045,
+        "sp98": 2.124
       }
     },
     {
@@ -479,6 +819,21 @@
       }
     },
     {
+      "id": "81990003",
+      "cp": "81990",
+      "ville": "Puygouzon",
+      "adresse": "1 rue d'al causse",
+      "pop": "R",
+      "lat": 4389247.503,
+      "lng": 216522.366,
+      "fuels": {
+        "gazole": 1.96,
+        "sp95": 1.929,
+        "sp98": 1.99,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "81700006",
       "cp": "81700",
       "ville": "Puylaurens",
@@ -490,6 +845,48 @@
         "gazole": 1.999,
         "sp95": 1.97,
         "sp98": 2.049
+      }
+    },
+    {
+      "id": "81700003",
+      "cp": "81700",
+      "ville": "Puylaurens",
+      "adresse": "ROUTE DE REVEL",
+      "pop": "R",
+      "lat": 4356700,
+      "lng": 200600,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.02,
+        "e10": 1.915
+      }
+    },
+    {
+      "id": "81800004",
+      "cp": "81800",
+      "ville": "Rabastens",
+      "adresse": "LIEU DIT L'HERMITAGE",
+      "pop": "R",
+      "lat": 4383000,
+      "lng": 173800,
+      "fuels": {
+        "gazole": 1.983,
+        "sp98": 1.999,
+        "e10": 1.889,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "81800003",
+      "cp": "81800",
+      "ville": "Rabastens",
+      "adresse": "Route d'Albi",
+      "pop": "R",
+      "lat": 4382975,
+      "lng": 174016,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 1.959
       }
     },
     {
@@ -509,6 +906,19 @@
       }
     },
     {
+      "id": "81120001",
+      "cp": "81120",
+      "ville": "Réalmont",
+      "adresse": "42 Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4377200,
+      "lng": 218300,
+      "fuels": {
+        "gazole": 2.051,
+        "sp95": 1.99
+      }
+    },
+    {
       "id": "81160001",
       "cp": "81160",
       "ville": "Saint-Juéry",
@@ -523,6 +933,22 @@
       }
     },
     {
+      "id": "81370001",
+      "cp": "81370",
+      "ville": "Saint-Sulpice-la-Pointe",
+      "adresse": "254 Avenue des Terres Noires",
+      "pop": "R",
+      "lat": 4377000,
+      "lng": 167300,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 1.979,
+        "e10": 1.859,
+        "e85": 0.785,
+        "gplc": 0.999
+      }
+    },
+    {
       "id": "81370003",
       "cp": "81370",
       "ville": "Saint-Sulpice-la-Pointe",
@@ -534,6 +960,91 @@
         "gazole": 2.029,
         "sp95": 1.959,
         "sp98": 2.089
+      }
+    },
+    {
+      "id": "81370004",
+      "cp": "81370",
+      "ville": "Saint-Sulpice-la-Pointe",
+      "adresse": "SORTIE 5 A68 - ZAC PORTES DU TARN",
+      "pop": "R",
+      "lat": 4375300,
+      "lng": 165900,
+      "fuels": {
+        "gazole": 2.015,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.834
+      }
+    },
+    {
+      "id": "81710002",
+      "cp": "81710",
+      "ville": "Saïx",
+      "adresse": "11 BIS ROUTE DE TOULOUSE",
+      "pop": "R",
+      "lat": 4358000,
+      "lng": 217500,
+      "fuels": {
+        "gazole": 1.909,
+        "sp98": 1.99,
+        "e10": 1.919,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "81350001",
+      "cp": "81350",
+      "ville": "Saussenac",
+      "adresse": "5630 RTE DE VALENCE D'ALBIGEOIS",
+      "pop": "R",
+      "lat": 4399630.4,
+      "lng": 227149.5,
+      "fuels": {
+        "gazole": 2.049,
+        "e10": 1.989,
+        "e85": 0.929
+      }
+    },
+    {
+      "id": "81540001",
+      "cp": "81540",
+      "ville": "Sorèze",
+      "adresse": "2 passage du verrier",
+      "pop": "R",
+      "lat": 4345000,
+      "lng": 206400,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.045,
+        "e10": 1.969,
+        "e85": 0.797
+      }
+    },
+    {
+      "id": "81580001",
+      "cp": "81580",
+      "ville": "Soual",
+      "adresse": "ZA de la Prade",
+      "pop": "R",
+      "lat": 4356600,
+      "lng": 213000,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.019,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "81430001",
+      "cp": "81430",
+      "ville": "Villefranche-d'Albigeois",
+      "adresse": "Route de Millau",
+      "pop": "R",
+      "lat": 4389489,
+      "lng": 234154,
+      "fuels": {
+        "gazole": 2.19
       }
     }
   ]

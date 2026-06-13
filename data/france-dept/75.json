@@ -3,52 +3,52 @@
   "name": "Paris",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 17,
+  "stationCount": 40,
   "fuels": {
     "gazole": {
-      "count": 16,
-      "mean": 2.147,
-      "median": 2.1295,
-      "min": 2.009,
-      "max": 2.329
+      "count": 36,
+      "mean": 2.1117,
+      "median": 2.0765,
+      "min": 1.939,
+      "max": 2.59
     },
     "sp95": {
-      "count": 2,
-      "mean": 2.249,
-      "median": 2.249,
+      "count": 3,
+      "mean": 2.296,
+      "median": 2.299,
       "min": 2.199,
-      "max": 2.299
+      "max": 2.39
     },
     "sp98": {
-      "count": 11,
-      "mean": 2.1133,
-      "median": 1.99,
-      "min": 1.99,
-      "max": 2.399
+      "count": 34,
+      "mean": 2.0984,
+      "median": 2.015,
+      "min": 1.988,
+      "max": 2.46
     },
     "e10": {
-      "count": 14,
-      "mean": 2.0177,
+      "count": 34,
+      "mean": 2.024,
       "median": 1.99,
-      "min": 1.985,
+      "min": 1.949,
       "max": 2.199
     },
     "e85": {
-      "count": 5,
-      "mean": 0.909,
-      "median": 0.909,
+      "count": 11,
+      "mean": 0.9463,
+      "median": 0.919,
       "min": 0.899,
-      "max": 0.919
+      "max": 1.129
     },
     "gplc": {
-      "count": 1,
-      "mean": 0.999,
-      "median": 0.999,
+      "count": 2,
+      "mean": 1.019,
+      "median": 1.019,
       "min": 0.999,
-      "max": 0.999
+      "max": 1.039
     }
   },
   "stations": [
@@ -81,6 +81,47 @@
       }
     },
     {
+      "id": "75015030",
+      "cp": "75015",
+      "ville": "Paris",
+      "adresse": "1 QUATER BOULEVARD VICTOR",
+      "pop": "R",
+      "lat": 4883400,
+      "lng": 228500,
+      "fuels": {
+        "gazole": 2.089,
+        "sp98": 2.209,
+        "e10": 2.059
+      }
+    },
+    {
+      "id": "75020010",
+      "cp": "75020",
+      "ville": "Paris",
+      "adresse": "101 BLD MORTIER",
+      "pop": "R",
+      "lat": 4887100,
+      "lng": 240900,
+      "fuels": {
+        "gazole": 2.071,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "75015034",
+      "cp": "75015",
+      "ville": "Paris",
+      "adresse": "11 BOULEVARD GARIBALDI",
+      "pop": "R",
+      "lat": 4884800,
+      "lng": 230300,
+      "fuels": {
+        "gazole": 2.179,
+        "sp98": 2.219
+      }
+    },
+    {
       "id": "75013024",
       "cp": "75013",
       "ville": "Paris",
@@ -89,10 +130,39 @@
       "lat": 4883500,
       "lng": 235800,
       "fuels": {
-        "gazole": 2.114,
+        "gazole": 2.055,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.919
+      }
+    },
+    {
+      "id": "75019015",
+      "cp": "75019",
+      "ville": "Paris",
+      "adresse": "121 RUE MANIN",
+      "pop": "R",
+      "lat": 4888400,
+      "lng": 239000,
+      "fuels": {
+        "gazole": 2.048,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "75015003",
+      "cp": "75015",
+      "ville": "Paris",
+      "adresse": "151 Rue de la Convention",
+      "pop": "R",
+      "lat": 4883900,
+      "lng": 229200,
+      "fuels": {
+        "gazole": 2.179,
+        "sp98": 2.219,
+        "e10": 2.099,
+        "e85": 1.129
       }
     },
     {
@@ -104,8 +174,23 @@
       "lat": 4883200,
       "lng": 231600,
       "fuels": {
-        "gazole": 2.141,
+        "gazole": 2.082,
+        "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "75008006",
+      "cp": "75008",
+      "ville": "Paris",
+      "adresse": "164 Boulevard Haussmann",
+      "pop": "R",
+      "lat": 4887500,
+      "lng": 231000,
+      "fuels": {
+        "gazole": 2.13,
+        "sp98": 2.22,
+        "e10": 2.09
       }
     },
     {
@@ -117,10 +202,38 @@
       "lat": 4883200,
       "lng": 235900,
       "fuels": {
-        "gazole": 2.009,
+        "gazole": 1.95,
         "sp98": 1.99,
-        "e10": 1.985,
+        "e10": 1.965,
         "gplc": 0.999
+      }
+    },
+    {
+      "id": "75015011",
+      "cp": "75015",
+      "ville": "Paris",
+      "adresse": "19 BD DES FRERES VOISINS",
+      "pop": "R",
+      "lat": 4882800,
+      "lng": 227200,
+      "fuels": {
+        "gazole": 1.985,
+        "sp98": 2.04,
+        "e10": 1.96
+      }
+    },
+    {
+      "id": "75017017",
+      "cp": "75017",
+      "ville": "Paris",
+      "adresse": "190 AVENUE DE CLICHY",
+      "pop": "R",
+      "lat": 4889345,
+      "lng": 231540,
+      "fuels": {
+        "gazole": 2.05,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -132,9 +245,81 @@
       "lat": 4883868,
       "lng": 225394,
       "fuels": {
-        "gazole": 2.129,
+        "gazole": 2.07,
         "e10": 1.99,
         "e85": 0.899
+      }
+    },
+    {
+      "id": "92300004",
+      "cp": "75017",
+      "ville": "Paris",
+      "adresse": "2/10 BLD FORT DE VAUX",
+      "pop": "R",
+      "lat": 4889300,
+      "lng": 230200,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.988,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "75010003",
+      "cp": "75010",
+      "ville": "Paris",
+      "adresse": "2/6 RUE LOUIS BLANC",
+      "pop": "R",
+      "lat": 4887900,
+      "lng": 237000,
+      "fuels": {
+        "gazole": 1.988,
+        "sp98": 2.045,
+        "e10": 1.965
+      }
+    },
+    {
+      "id": "75015036",
+      "cp": "75015",
+      "ville": "Paris",
+      "adresse": "21 AVENUE EMILE ZOLA",
+      "pop": "R",
+      "lat": 4884644.3,
+      "lng": 228012.6,
+      "fuels": {
+        "gazole": 2.179,
+        "sp98": 2.199,
+        "e10": 2.099,
+        "e85": 1.069
+      }
+    },
+    {
+      "id": "75020008",
+      "cp": "75020",
+      "ville": "Paris",
+      "adresse": "217 BOULEVARD MARECHAL DAVOUT",
+      "pop": "R",
+      "lat": 4886300,
+      "lng": 240700,
+      "fuels": {
+        "gazole": 2.047,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.919
+      }
+    },
+    {
+      "id": "75013026",
+      "cp": "75013",
+      "ville": "Paris",
+      "adresse": "231 Rue de Tolbiac",
+      "pop": "R",
+      "lat": 4882600,
+      "lng": 234400,
+      "fuels": {
+        "gazole": 2.129,
+        "sp98": 2.259,
+        "e10": 2.115
       }
     },
     {
@@ -146,7 +331,7 @@
       "lat": 4883905,
       "lng": 238906,
       "fuels": {
-        "gazole": 2.116,
+        "gazole": 2.057,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -174,7 +359,8 @@
       "lat": 4881700,
       "lng": 236000,
       "fuels": {
-        "gazole": 2.13,
+        "gazole": 2.071,
+        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.919
       }
@@ -188,7 +374,7 @@
       "lat": 4890000,
       "lng": 234400,
       "fuels": {
-        "gazole": 2.137,
+        "gazole": 2.078,
         "e10": 1.99
       }
     },
@@ -201,9 +387,23 @@
       "lat": 4889952.59995,
       "lng": 232987.43609,
       "fuels": {
-        "gazole": 2.127,
+        "gazole": 2.068,
         "e10": 1.99,
         "e85": 0.899
+      }
+    },
+    {
+      "id": "75012023",
+      "cp": "75012",
+      "ville": "Paris",
+      "adresse": "32 rue de Reuilly",
+      "pop": "R",
+      "lat": 4884655.403,
+      "lng": 238741.851,
+      "fuels": {
+        "gazole": 2.119,
+        "sp98": 2.219,
+        "e10": 2.099
       }
     },
     {
@@ -215,7 +415,21 @@
       "lat": 4885200,
       "lng": 229000,
       "fuels": {
-        "gazole": 2.14
+        "gazole": 2.081
+      }
+    },
+    {
+      "id": "75012010",
+      "cp": "75012",
+      "ville": "Paris",
+      "adresse": "36 Quai de la Rapée",
+      "pop": "R",
+      "lat": 4884200,
+      "lng": 237300,
+      "fuels": {
+        "gazole": 2.013,
+        "sp98": 2.054,
+        "e10": 1.974
       }
     },
     {
@@ -227,7 +441,7 @@
       "lat": 4885862,
       "lng": 231125,
       "fuels": {
-        "gazole": 2.12,
+        "gazole": 2.061,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -255,7 +469,62 @@
       "lat": 4884600,
       "lng": 240100,
       "fuels": {
-        "gazole": 2.113,
+        "gazole": 2.054,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "75016023",
+      "cp": "75016",
+      "ville": "Paris",
+      "adresse": "7 BOULEVARD MURAT",
+      "pop": "R",
+      "lat": 4884700,
+      "lng": 225900,
+      "fuels": {
+        "gazole": 2.229,
+        "e10": 2.199
+      }
+    },
+    {
+      "id": "75001003",
+      "cp": "75001",
+      "ville": "Paris",
+      "adresse": "8,10,10bis Rue Bailleul",
+      "pop": "R",
+      "lat": 4886100,
+      "lng": 234100,
+      "fuels": {
+        "gazole": 2.59,
+        "sp95": 2.39,
+        "sp98": 2.46
+      }
+    },
+    {
+      "id": "75013028",
+      "cp": "75013",
+      "ville": "Paris",
+      "adresse": "85 RUE JEANNE DARC",
+      "pop": "R",
+      "lat": 4883200,
+      "lng": 236500,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.069,
+        "e10": 2.059
+      }
+    },
+    {
+      "id": "75016029",
+      "cp": "75016",
+      "ville": "Paris",
+      "adresse": "99 AVENUE DE VERSAILLES",
+      "pop": "R",
+      "lat": 4884500,
+      "lng": 227100,
+      "fuels": {
+        "gazole": 2.199,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -275,6 +544,21 @@
       }
     },
     {
+      "id": "75019014",
+      "cp": "75019",
+      "ville": "Paris",
+      "adresse": "BLD DU PERIPHERIQUE INTERIEUR",
+      "pop": "R",
+      "lat": 4890000,
+      "lng": 237300,
+      "fuels": {
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.909,
+        "gplc": 1.039
+      }
+    },
+    {
       "id": "75016006",
       "cp": "75116",
       "ville": "Paris",
@@ -286,6 +570,46 @@
         "gazole": 2.249,
         "sp98": 2.269,
         "e10": 2.199
+      }
+    },
+    {
+      "id": "75015026",
+      "cp": "75015",
+      "ville": "Paris",
+      "adresse": "QUAI D'ISSY LES MOULINEAUX",
+      "pop": "R",
+      "lat": 4883500,
+      "lng": 226600,
+      "fuels": {
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.919
+      }
+    },
+    {
+      "id": "75013023",
+      "cp": "75013",
+      "ville": "Paris",
+      "adresse": "RUE JEAN-BAPTISTE BERLIER - QUAI",
+      "pop": "R",
+      "lat": 4882586,
+      "lng": 238433,
+      "fuels": {
+        "gazole": 2.075
+      }
+    },
+    {
+      "id": "75014010",
+      "cp": "75014",
+      "ville": "Paris",
+      "adresse": "RUE LEGION ETRANGERE",
+      "pop": "R",
+      "lat": 4882900,
+      "lng": 232600,
+      "fuels": {
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.919
       }
     }
   ]

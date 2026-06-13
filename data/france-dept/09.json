@@ -3,52 +3,52 @@
   "name": "Ariège",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 13,
+  "stationCount": 31,
   "fuels": {
     "gazole": {
-      "count": 13,
-      "mean": 2.0534,
-      "median": 2.019,
-      "min": 1.945,
+      "count": 31,
+      "mean": 2.0204,
+      "median": 1.999,
+      "min": 1.903,
       "max": 2.258
     },
     "sp95": {
-      "count": 1,
-      "mean": 2.085,
-      "median": 2.085,
-      "min": 2.085,
+      "count": 6,
+      "mean": 2.0282,
+      "median": 2.033,
+      "min": 1.963,
       "max": 2.085
     },
     "sp98": {
-      "count": 13,
-      "mean": 2.1336,
-      "median": 2.142,
-      "min": 2.035,
+      "count": 22,
+      "mean": 2.103,
+      "median": 2.093,
+      "min": 1.968,
       "max": 2.351
     },
     "e10": {
-      "count": 12,
-      "mean": 1.9993,
-      "median": 1.974,
-      "min": 1.915,
+      "count": 30,
+      "mean": 1.976,
+      "median": 1.9715,
+      "min": 1.849,
       "max": 2.224
     },
     "e85": {
-      "count": 7,
-      "mean": 0.8367,
+      "count": 17,
+      "mean": 0.8374,
       "median": 0.809,
-      "min": 0.795,
+      "min": 0.777,
       "max": 0.935
     },
     "gplc": {
-      "count": 1,
-      "mean": 1.095,
-      "median": 1.095,
+      "count": 2,
+      "mean": 1.096,
+      "median": 1.096,
       "min": 1.095,
-      "max": 1.095
+      "max": 1.097
     }
   },
   "stations": [
@@ -67,6 +67,33 @@
       }
     },
     {
+      "id": "9000003",
+      "cp": "09000",
+      "ville": "Foix",
+      "adresse": "CONCESSIONNAIRE RENAULT -ROUTE D",
+      "pop": "R",
+      "lat": 4294967.40212,
+      "lng": 162517.42883,
+      "fuels": {
+        "gazole": 2.107,
+        "e10": 1.99,
+        "e85": 0.872
+      }
+    },
+    {
+      "id": "9000006",
+      "cp": "09000",
+      "ville": "Foix",
+      "adresse": "Route d'Espagne",
+      "pop": "R",
+      "lat": 4294921.61384,
+      "lng": 162635.15913,
+      "fuels": {
+        "gazole": 1.975,
+        "e10": 1.949
+      }
+    },
+    {
       "id": "9000004",
       "cp": "09000",
       "ville": "Foix",
@@ -78,6 +105,20 @@
         "gazole": 1.973,
         "sp98": 2.06,
         "e10": 1.948
+      }
+    },
+    {
+      "id": "9240004",
+      "cp": "09240",
+      "ville": "La Bastide-de-Sérou",
+      "adresse": "45 faubourg sainte croix",
+      "pop": "R",
+      "lat": 4301196,
+      "lng": 142975.1,
+      "fuels": {
+        "gazole": 2.006,
+        "sp98": 2.094,
+        "e10": 1.966
       }
     },
     {
@@ -93,6 +134,36 @@
         "sp95": 2.085,
         "sp98": 2.151,
         "e85": 0.885
+      }
+    },
+    {
+      "id": "9600003",
+      "cp": "09600",
+      "ville": "Laroque-d'Olmes",
+      "adresse": "Avenue du 11 Novembre 1918",
+      "pop": "R",
+      "lat": 4297860,
+      "lng": 186859,
+      "fuels": {
+        "gazole": 1.998,
+        "sp98": 2.199,
+        "e10": 1.956,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "9300002",
+      "cp": "09300",
+      "ville": "Lavelanet",
+      "adresse": "Route de FOIX",
+      "pop": "R",
+      "lat": 4293739,
+      "lng": 185335,
+      "fuels": {
+        "gazole": 2.008,
+        "sp98": 2.06,
+        "e10": 1.977,
+        "e85": 0.798
       }
     },
     {
@@ -118,10 +189,10 @@
       "lat": 4328100,
       "lng": 134800,
       "fuels": {
-        "gazole": 1.997,
-        "sp98": 2.064,
-        "e10": 1.925,
-        "e85": 0.825
+        "gazole": 1.937,
+        "sp98": 1.968,
+        "e10": 1.849,
+        "e85": 0.785
       }
     },
     {
@@ -133,9 +204,81 @@
       "lat": 4325100,
       "lng": 167800,
       "fuels": {
-        "gazole": 2.019,
-        "sp98": 2.149,
-        "e10": 1.989
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "9500003",
+      "cp": "09500",
+      "ville": "Mirepoix",
+      "adresse": "13 avenue CHARLES DE GAULLE",
+      "pop": "R",
+      "lat": 4308400,
+      "lng": 187700,
+      "fuels": {
+        "gazole": 1.961,
+        "sp95": 1.963,
+        "sp98": 1.998,
+        "e10": 1.896,
+        "e85": 0.777
+      }
+    },
+    {
+      "id": "9500001",
+      "cp": "09500",
+      "ville": "Mirepoix",
+      "adresse": "247 AV CHARLES DE GAULLE",
+      "pop": "R",
+      "lat": 4308500,
+      "lng": 187600,
+      "fuels": {
+        "gazole": 1.903,
+        "e10": 1.921,
+        "e85": 0.863
+      }
+    },
+    {
+      "id": "9140003",
+      "cp": "09140",
+      "ville": "Oust",
+      "adresse": "Hameau de Roquemaurel",
+      "pop": "R",
+      "lat": 4288314.17949,
+      "lng": 121508.59611,
+      "fuels": {
+        "gazole": 2.033,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.869
+      }
+    },
+    {
+      "id": "9100003",
+      "cp": "09100",
+      "ville": "Pamiers",
+      "adresse": "6 Avenue de Foix",
+      "pop": "R",
+      "lat": 4310400,
+      "lng": 162100,
+      "fuels": {
+        "gazole": 2.004,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "9100002",
+      "cp": "09100",
+      "ville": "Pamiers",
+      "adresse": "CARREFOUR DE LESTANG",
+      "pop": "R",
+      "lat": 4312000,
+      "lng": 161100,
+      "fuels": {
+        "gazole": 2.063,
+        "e10": 1.99,
+        "e85": 0.871
       }
     },
     {
@@ -154,6 +297,21 @@
       }
     },
     {
+      "id": "9100001",
+      "cp": "09100",
+      "ville": "Pamiers",
+      "adresse": "Route de Mirepoix",
+      "pop": "R",
+      "lat": 4310300,
+      "lng": 163100,
+      "fuels": {
+        "gazole": 1.948,
+        "sp95": 2.005,
+        "e10": 1.925,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "9110003",
       "cp": "09110",
       "ville": "Perles-et-Castelet",
@@ -165,6 +323,38 @@
         "gazole": 2.085,
         "sp98": 2.092,
         "e10": 2.051
+      }
+    },
+    {
+      "id": "9200003",
+      "cp": "09200",
+      "ville": "Saint-Girons",
+      "adresse": "5 avenue de la Résistance",
+      "pop": "R",
+      "lat": 4297935,
+      "lng": 114450,
+      "fuels": {
+        "gazole": 2.037,
+        "sp95": 2.027,
+        "sp98": 2.097,
+        "e10": 2.027,
+        "e85": 0.877,
+        "gplc": 1.097
+      }
+    },
+    {
+      "id": "9200001",
+      "cp": "09200",
+      "ville": "Saint-Girons",
+      "adresse": "ROUTE D'EYCHEIL",
+      "pop": "R",
+      "lat": 4297349.89856,
+      "lng": 115202.33135,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.097,
+        "e10": 1.978,
+        "e85": 0.875
       }
     },
     {
@@ -184,6 +374,20 @@
       }
     },
     {
+      "id": "9190004",
+      "cp": "09190",
+      "ville": "Saint-Lizier",
+      "adresse": "60 ROUTE DE TOULOUSE",
+      "pop": "R",
+      "lat": 4300603.8629,
+      "lng": 112578.17697,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.039,
+        "e10": 1.978
+      }
+    },
+    {
       "id": "9190002",
       "cp": "09190",
       "ville": "Saint-Lizier",
@@ -192,10 +396,10 @@
       "lat": 4299300,
       "lng": 114100,
       "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.199,
-        "e10": 1.959,
-        "e85": 0.799
+        "gazole": 1.948,
+        "sp98": 2.146,
+        "e10": 1.907,
+        "e85": 0.809
       }
     },
     {
@@ -224,8 +428,22 @@
       "fuels": {
         "gazole": 1.965,
         "sp98": 2.055,
-        "e10": 1.935,
+        "e10": 1.925,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "9110001",
+      "cp": "09110",
+      "ville": "Savignac-les-Ormeaux",
+      "adresse": "RN 20",
+      "pop": "R",
+      "lat": 4273000,
+      "lng": 182100,
+      "fuels": {
+        "gazole": 2.01,
+        "sp95": 2.05,
+        "e10": 1.99
       }
     },
     {
@@ -240,6 +458,47 @@
         "gazole": 2.25,
         "sp98": 2.351,
         "e10": 2.224
+      }
+    },
+    {
+      "id": "9400001",
+      "cp": "09400",
+      "ville": "Tarascon-sur-Ariège",
+      "adresse": "Route de Quié",
+      "pop": "R",
+      "lat": 4284500,
+      "lng": 159800,
+      "fuels": {
+        "gazole": 1.974,
+        "e10": 1.948
+      }
+    },
+    {
+      "id": "9220001",
+      "cp": "09220",
+      "ville": "Val-de-Sos",
+      "adresse": "6 Rue de l'Eglise",
+      "pop": "R",
+      "lat": 4276990,
+      "lng": 150032,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.199,
+        "e10": 2.089
+      }
+    },
+    {
+      "id": "9340001",
+      "cp": "09340",
+      "ville": "Verniolle",
+      "adresse": "120 rue Clément Ader",
+      "pop": "R",
+      "lat": 4307900,
+      "lng": 163800,
+      "fuels": {
+        "gazole": 1.945,
+        "sp98": 2.035,
+        "e10": 1.915
       }
     }
   ]

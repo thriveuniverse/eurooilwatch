@@ -3,55 +3,70 @@
   "name": "Territoire de Belfort",
   "regionCode": "BFC",
   "regionName": "Bourgogne-Franche-Comté",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 7,
+  "stationCount": 18,
   "fuels": {
     "gazole": {
-      "count": 7,
-      "mean": 2.0166,
-      "median": 1.999,
-      "min": 1.961,
+      "count": 18,
+      "mean": 1.985,
+      "median": 1.9885,
+      "min": 1.904,
       "max": 2.069
     },
     "sp95": {
-      "count": 5,
-      "mean": 2.04,
-      "median": 2.07,
-      "min": 1.985,
+      "count": 7,
+      "mean": 2.0231,
+      "median": 1.987,
+      "min": 1.975,
       "max": 2.079
     },
     "sp98": {
-      "count": 6,
-      "mean": 2.0448,
-      "median": 2.0455,
+      "count": 15,
+      "mean": 2.015,
+      "median": 1.997,
       "min": 1.99,
       "max": 2.099
     },
     "e10": {
-      "count": 4,
-      "mean": 1.9198,
-      "median": 1.922,
-      "min": 1.885,
-      "max": 1.95
+      "count": 13,
+      "mean": 1.9195,
+      "median": 1.915,
+      "min": 1.874,
+      "max": 1.964
     },
     "e85": {
-      "count": 3,
-      "mean": 0.8457,
+      "count": 7,
+      "mean": 0.8511,
       "median": 0.869,
       "min": 0.799,
-      "max": 0.869
+      "max": 0.874
     },
     "gplc": {
-      "count": 1,
-      "mean": 1.09,
-      "median": 1.09,
-      "min": 1.09,
+      "count": 4,
+      "mean": 1.0407,
+      "median": 1.057,
+      "min": 0.959,
       "max": 1.09
     }
   },
   "stations": [
+    {
+      "id": "90400001",
+      "cp": "90400",
+      "ville": "Andelnans",
+      "adresse": "Route de montbéliard",
+      "pop": "R",
+      "lat": 4760000,
+      "lng": 686200,
+      "fuels": {
+        "gazole": 1.96,
+        "sp98": 1.997,
+        "e10": 1.876,
+        "e85": 0.869
+      }
+    },
     {
       "id": "90500001",
       "cp": "90500",
@@ -90,11 +105,40 @@
       "lat": 4762800,
       "lng": 686200,
       "fuels": {
-        "gazole": 1.961,
+        "gazole": 1.918,
         "sp95": 1.987,
         "sp98": 1.99,
-        "e10": 1.885,
+        "e10": 1.892,
         "e85": 0.869
+      }
+    },
+    {
+      "id": "90000014",
+      "cp": "90000",
+      "ville": "Belfort",
+      "adresse": "3 rue de Besançon",
+      "pop": "R",
+      "lat": 4762600,
+      "lng": 686000,
+      "fuels": {
+        "gazole": 1.904,
+        "sp98": 1.99,
+        "e10": 1.877,
+        "e85": 0.869
+      }
+    },
+    {
+      "id": "90000002",
+      "cp": "90000",
+      "ville": "Belfort",
+      "adresse": "4 Faubourg de Brisach",
+      "pop": "R",
+      "lat": 4764000,
+      "lng": 686800,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 1.99,
+        "e10": 1.959
       }
     },
     {
@@ -106,9 +150,9 @@
       "lat": 4763600,
       "lng": 683800,
       "fuels": {
-        "gazole": 1.963,
+        "gazole": 1.904,
         "sp98": 1.99,
-        "e10": 1.897
+        "e10": 1.877
       }
     },
     {
@@ -127,6 +171,52 @@
       }
     },
     {
+      "id": "90000013",
+      "cp": "90000",
+      "ville": "Belfort",
+      "adresse": "AVENUE D'ALTKIRCH",
+      "pop": "R",
+      "lat": 4763100,
+      "lng": 686700,
+      "fuels": {
+        "gazole": 1.988,
+        "sp98": 1.99,
+        "e10": 1.953,
+        "e85": 0.874,
+        "gplc": 0.959
+      }
+    },
+    {
+      "id": "90160001",
+      "cp": "90160",
+      "ville": "Bessoncourt",
+      "adresse": "CD 419",
+      "pop": "A",
+      "lat": 4764100,
+      "lng": 691600,
+      "fuels": {
+        "gazole": 1.961,
+        "sp98": 1.991,
+        "e10": 1.874,
+        "gplc": 1.055
+      }
+    },
+    {
+      "id": "90100003",
+      "cp": "90100",
+      "ville": "Delle",
+      "adresse": "37 FAUBOURG DE BELFORT",
+      "pop": "R",
+      "lat": 4751200,
+      "lng": 699900,
+      "fuels": {
+        "gazole": 1.968,
+        "sp98": 2.012,
+        "e10": 1.906,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "90100004",
       "cp": "90100",
       "ville": "Delle",
@@ -142,6 +232,60 @@
       }
     },
     {
+      "id": "90200002",
+      "cp": "90200",
+      "ville": "Giromagny",
+      "adresse": "3 ZAC du Mont Jean",
+      "pop": "R",
+      "lat": 4773700,
+      "lng": 683600,
+      "fuels": {
+        "gazole": 1.965,
+        "sp95": 1.975,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "90200003",
+      "cp": "90200",
+      "ville": "Giromagny",
+      "adresse": "72 Faubourg de Belfort",
+      "pop": "R",
+      "lat": 4773500,
+      "lng": 683000,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 1.99,
+        "e10": 1.963
+      }
+    },
+    {
+      "id": "90150001",
+      "cp": "90150",
+      "ville": "Menoncourt",
+      "adresse": "Rue de la baume, RD83",
+      "pop": "R",
+      "lat": 4768800,
+      "lng": 695500,
+      "fuels": {
+        "gazole": 1.988,
+        "e10": 1.964
+      }
+    },
+    {
+      "id": "90130002",
+      "cp": "90130",
+      "ville": "Montreux-Château",
+      "adresse": "1 RUE DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 4760687.9,
+      "lng": 700409.1,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.915
+      }
+    },
+    {
       "id": "90300004",
       "cp": "90300",
       "ville": "Offemont",
@@ -153,6 +297,21 @@
         "gazole": 1.999,
         "e10": 1.947,
         "e85": 0.799
+      }
+    },
+    {
+      "id": "90300002",
+      "cp": "90300",
+      "ville": "Valdoie",
+      "adresse": "30, rue de Turenne",
+      "pop": "R",
+      "lat": 4766862.6011,
+      "lng": 684220.30872,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.987,
+        "sp98": 1.997,
+        "gplc": 1.059
       }
     }
   ]

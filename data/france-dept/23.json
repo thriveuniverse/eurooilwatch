@@ -3,45 +3,52 @@
   "name": "Creuse",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 13,
+  "stationCount": 31,
   "fuels": {
     "gazole": {
-      "count": 13,
-      "mean": 2.0404,
+      "count": 31,
+      "mean": 2.0344,
       "median": 1.999,
-      "min": 1.979,
-      "max": 2.266
+      "min": 1.969,
+      "max": 2.242
     },
     "sp95": {
-      "count": 6,
-      "mean": 2.0095,
-      "median": 1.992,
+      "count": 13,
+      "mean": 2.0162,
+      "median": 1.999,
       "min": 1.969,
       "max": 2.116
     },
     "sp98": {
-      "count": 9,
-      "mean": 2.0799,
-      "median": 2.058,
-      "min": 2.046,
-      "max": 2.209
+      "count": 20,
+      "mean": 2.0946,
+      "median": 2.074,
+      "min": 2.024,
+      "max": 2.239
     },
     "e10": {
-      "count": 6,
-      "mean": 1.9407,
-      "median": 1.9385,
-      "min": 1.938,
-      "max": 1.949
+      "count": 21,
+      "mean": 1.9812,
+      "median": 1.958,
+      "min": 1.9,
+      "max": 2.129
     },
     "e85": {
+      "count": 4,
+      "mean": 0.8415,
+      "median": 0.841,
+      "min": 0.809,
+      "max": 0.875
+    },
+    "gplc": {
       "count": 1,
-      "mean": 0.827,
-      "median": 0.827,
-      "min": 0.827,
-      "max": 0.827
+      "mean": 1.089,
+      "median": 1.089,
+      "min": 1.089,
+      "max": 1.089
     }
   },
   "stations": [
@@ -88,6 +95,20 @@
       }
     },
     {
+      "id": "23700001",
+      "cp": "23700",
+      "ville": "Auzances",
+      "adresse": "10 Route d'Aubusson",
+      "pop": "R",
+      "lat": 4602700,
+      "lng": 249700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.049,
+        "e10": 1.999
+      }
+    },
+    {
       "id": "23210003",
       "cp": "23210",
       "ville": "Bénévent-l'Abbaye",
@@ -98,6 +119,21 @@
       "fuels": {
         "gazole": 2.089,
         "sp95": 1.999
+      }
+    },
+    {
+      "id": "23220001",
+      "cp": "23220",
+      "ville": "Bonnat",
+      "adresse": "38 avenue de la marche",
+      "pop": "R",
+      "lat": 4631600,
+      "lng": 191600,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.069,
+        "e10": 1.959,
+        "e85": 0.809
       }
     },
     {
@@ -115,6 +151,20 @@
       }
     },
     {
+      "id": "23400004",
+      "cp": "23400",
+      "ville": "Bourganeuf",
+      "adresse": "RUE DU PUY",
+      "pop": "R",
+      "lat": 4595472.36383,
+      "lng": 176475.46488,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.058,
+        "e10": 1.958
+      }
+    },
+    {
       "id": "23600001",
       "cp": "23600",
       "ville": "Boussac",
@@ -126,6 +176,34 @@
         "gazole": 1.999,
         "sp98": 2.079,
         "e10": 1.949
+      }
+    },
+    {
+      "id": "23600002",
+      "cp": "23600",
+      "ville": "Boussac",
+      "adresse": "Avenue Pierre Leroux",
+      "pop": "R",
+      "lat": 4634900,
+      "lng": 221700,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 2.059,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "23170001",
+      "cp": "23170",
+      "ville": "Chambon-sur-Voueize",
+      "adresse": "ROUTE D'EVAUX LES BAINS",
+      "pop": "R",
+      "lat": 4618600,
+      "lng": 243000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.079,
+        "e10": 1.989
       }
     },
     {
@@ -143,6 +221,34 @@
       }
     },
     {
+      "id": "23800001",
+      "cp": "23800",
+      "ville": "Dun-le-Palestel",
+      "adresse": "7 avenue d'Auvergne",
+      "pop": "R",
+      "lat": 4630300,
+      "lng": 166900,
+      "fuels": {
+        "gazole": 1.978,
+        "sp98": 2.024,
+        "e10": 1.9
+      }
+    },
+    {
+      "id": "23110002",
+      "cp": "23110",
+      "ville": "Évaux-les-Bains",
+      "adresse": "55 Avenue de la République",
+      "pop": "R",
+      "lat": 4616900,
+      "lng": 248300,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.049,
+        "e10": 2.009
+      }
+    },
+    {
       "id": "23500002",
       "cp": "23500",
       "ville": "Felletin",
@@ -154,6 +260,20 @@
         "gazole": 1.995,
         "sp95": 1.992,
         "sp98": 2.046
+      }
+    },
+    {
+      "id": "23290001",
+      "cp": "23290",
+      "ville": "Fursac",
+      "adresse": "8 route de la souterraine",
+      "pop": "R",
+      "lat": 4615000,
+      "lng": 151000,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.199,
+        "e10": 2.089
       }
     },
     {
@@ -171,6 +291,20 @@
       }
     },
     {
+      "id": "23000008",
+      "cp": "23000",
+      "ville": "Guéret",
+      "adresse": "14 AVENUE PIERRE MENDES FRANCE",
+      "pop": "R",
+      "lat": 4616200,
+      "lng": 187300,
+      "fuels": {
+        "gazole": 1.984,
+        "sp95": 1.999,
+        "e10": 1.938
+      }
+    },
+    {
       "id": "23000001",
       "cp": "23000",
       "ville": "Guéret",
@@ -181,6 +315,48 @@
       "fuels": {
         "gazole": 2.019,
         "e10": 1.938
+      }
+    },
+    {
+      "id": "23008001",
+      "cp": "23000",
+      "ville": "Guéret",
+      "adresse": "Avenue du Berry 36",
+      "pop": "R",
+      "lat": 4618000,
+      "lng": 187600,
+      "fuels": {
+        "gazole": 1.984,
+        "sp95": 2.019,
+        "sp98": 2.039,
+        "e10": 1.938
+      }
+    },
+    {
+      "id": "23000007",
+      "cp": "23000",
+      "ville": "Guéret",
+      "adresse": "Rue du Docteur Manouvrier",
+      "pop": "R",
+      "lat": 4616800,
+      "lng": 187400,
+      "fuels": {
+        "gazole": 2.129,
+        "sp98": 2.159,
+        "e10": 2.099
+      }
+    },
+    {
+      "id": "23300012",
+      "cp": "23300",
+      "ville": "La Souterraine",
+      "adresse": "7 Av. de la République",
+      "pop": "R",
+      "lat": 4623901.92355,
+      "lng": 149485.83345,
+      "fuels": {
+        "gazole": 2.065,
+        "sp95": 1.99
       }
     },
     {
@@ -199,6 +375,47 @@
       }
     },
     {
+      "id": "23300011",
+      "cp": "23300",
+      "ville": "La Souterraine",
+      "adresse": "RUE FRANCOIS DURAND",
+      "pop": "R",
+      "lat": 4623207.38393,
+      "lng": 148416.63869,
+      "fuels": {
+        "gazole": 2.069,
+        "e10": 2.038
+      }
+    },
+    {
+      "id": "23300002",
+      "cp": "23300",
+      "ville": "La Souterraine",
+      "adresse": "ZA LA PRADE",
+      "pop": "R",
+      "lat": 4623100,
+      "lng": 150500,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.159,
+        "e10": 2.039,
+        "e85": 0.855
+      }
+    },
+    {
+      "id": "23240002",
+      "cp": "23240",
+      "ville": "Le Grand-Bourg",
+      "adresse": "ZA les bois verts",
+      "pop": "R",
+      "lat": 4616600,
+      "lng": 164900,
+      "fuels": {
+        "gazole": 2.008,
+        "sp95": 1.998
+      }
+    },
+    {
       "id": "23300010",
       "cp": "23300",
       "ville": "Saint-Maurice-la-Souterraine",
@@ -207,7 +424,50 @@
       "lat": 4620444,
       "lng": 138583,
       "fuels": {
-        "gazole": 2.266
+        "gazole": 2.242
+      }
+    },
+    {
+      "id": "23000004",
+      "cp": "23000",
+      "ville": "Saint-Sulpice-le-Guérétois",
+      "adresse": "AIRE DES MONTS DE GUERET",
+      "pop": "R",
+      "lat": 4618300,
+      "lng": 184600,
+      "fuels": {
+        "gazole": 2.169,
+        "sp98": 2.239,
+        "e10": 2.129,
+        "e85": 0.875,
+        "gplc": 1.089
+      }
+    },
+    {
+      "id": "23320001",
+      "cp": "23320",
+      "ville": "Saint-Vaury",
+      "adresse": "RTE DE LA BRIONNE",
+      "pop": "R",
+      "lat": 4620000,
+      "lng": 176000,
+      "fuels": {
+        "gazole": 1.998,
+        "sp95": 2.039,
+        "e10": 1.958
+      }
+    },
+    {
+      "id": "23000006",
+      "cp": "23000",
+      "ville": "Sainte-Feyre",
+      "adresse": "Le Verger Sainte Feyre",
+      "pop": "R",
+      "lat": 4617672.80503,
+      "lng": 189791.91985,
+      "fuels": {
+        "gazole": 1.969,
+        "e10": 1.919
       }
     },
     {

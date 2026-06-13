@@ -3,55 +3,100 @@
   "name": "Aisne",
   "regionCode": "HDF",
   "regionName": "Hauts-de-France",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 33,
+  "stationCount": 84,
   "fuels": {
     "gazole": {
-      "count": 33,
-      "mean": 2.028,
-      "median": 2,
-      "min": 1.939,
+      "count": 84,
+      "mean": 2.0034,
+      "median": 1.992,
+      "min": 1.901,
       "max": 2.229
     },
     "sp95": {
-      "count": 14,
-      "mean": 2.0106,
+      "count": 26,
+      "mean": 2.0045,
       "median": 1.9945,
-      "min": 1.97,
+      "min": 1.959,
       "max": 2.149
     },
     "sp98": {
-      "count": 26,
-      "mean": 2.0669,
-      "median": 2.0445,
-      "min": 1.99,
+      "count": 67,
+      "mean": 2.0471,
+      "median": 2.037,
+      "min": 1.962,
       "max": 2.279
     },
     "e10": {
-      "count": 21,
-      "mean": 1.9937,
-      "median": 1.987,
-      "min": 1.899,
+      "count": 60,
+      "mean": 1.958,
+      "median": 1.9445,
+      "min": 1.88,
       "max": 2.179
     },
     "e85": {
-      "count": 11,
-      "mean": 0.824,
-      "median": 0.819,
+      "count": 35,
+      "mean": 0.8347,
+      "median": 0.809,
       "min": 0.755,
-      "max": 0.941
+      "max": 0.999
     },
     "gplc": {
-      "count": 3,
-      "mean": 1.1063,
-      "median": 1.16,
+      "count": 8,
+      "mean": 1.1073,
+      "median": 1.157,
       "min": 0.999,
       "max": 1.16
     }
   },
   "stations": [
+    {
+      "id": "2320002",
+      "cp": "02320",
+      "ville": "Anizy-le-Grand",
+      "adresse": "Rue de Coucy",
+      "pop": "R",
+      "lat": 4950600,
+      "lng": 344000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.049,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "2300002",
+      "cp": "02300",
+      "ville": "Autreville",
+      "adresse": "CHEMIN DEPARTEMENTAL 937",
+      "pop": "R",
+      "lat": 4959100,
+      "lng": 323400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.964,
+        "sp98": 2.047
+      }
+    },
+    {
+      "id": "2800003",
+      "cp": "02800",
+      "ville": "Beautor",
+      "adresse": "Le Chemin Blanc",
+      "pop": "R",
+      "lat": 4966000,
+      "lng": 334600,
+      "fuels": {
+        "gazole": 2.017,
+        "sp98": 1.988,
+        "e10": 1.981,
+        "e85": 0.817,
+        "gplc": 1.158
+      }
+    },
     {
       "id": "2420001",
       "cp": "02420",
@@ -63,6 +108,63 @@
       "fuels": {
         "gazole": 2.15,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "2300009",
+      "cp": "02300",
+      "ville": "Blérancourt",
+      "adresse": "24 rue du point du jour",
+      "pop": "R",
+      "lat": 4951975.29,
+      "lng": 314929.08,
+      "fuels": {
+        "gazole": 2.044,
+        "sp95": 1.999,
+        "sp98": 2.095
+      }
+    },
+    {
+      "id": "2110002",
+      "cp": "02110",
+      "ville": "Bohain-en-Vermandois",
+      "adresse": "rue de Saint-Quentin",
+      "pop": "R",
+      "lat": 4998100,
+      "lng": 345100,
+      "fuels": {
+        "gazole": 1.985,
+        "sp98": 2.06,
+        "e10": 1.95
+      }
+    },
+    {
+      "id": "2220001",
+      "cp": "02220",
+      "ville": "Braine",
+      "adresse": "34 BD DE MONTPELLIER",
+      "pop": "R",
+      "lat": 4934100,
+      "lng": 352900,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.049,
+        "e10": 1.919,
+        "e85": 0.859
+      }
+    },
+    {
+      "id": "2860001",
+      "cp": "02860",
+      "ville": "Bruyères-et-Montbérault",
+      "adresse": "89 RUE PORTE DE LAON",
+      "pop": "R",
+      "lat": 4953200,
+      "lng": 365300,
+      "fuels": {
+        "gazole": 2.005,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -123,6 +225,35 @@
       }
     },
     {
+      "id": "2400001",
+      "cp": "02400",
+      "ville": "Château-Thierry",
+      "adresse": "37 Avenue d'Essômes",
+      "pop": "R",
+      "lat": 4904000,
+      "lng": 338700,
+      "fuels": {
+        "gazole": 1.966,
+        "sp95": 1.99,
+        "sp98": 2.05,
+        "e10": 1.922
+      }
+    },
+    {
+      "id": "2400004",
+      "cp": "02400",
+      "ville": "Château-Thierry",
+      "adresse": "Z.I rue de la Plaine",
+      "pop": "R",
+      "lat": 4903700,
+      "lng": 339000,
+      "fuels": {
+        "gazole": 1.909,
+        "e10": 1.909,
+        "e85": 0.755
+      }
+    },
+    {
       "id": "2400007",
       "cp": "02400",
       "ville": "Château-Thierry",
@@ -152,6 +283,48 @@
       }
     },
     {
+      "id": "2700001",
+      "cp": "02700",
+      "ville": "Condren",
+      "adresse": "213 Boulevard Gambetta",
+      "pop": "R",
+      "lat": 4965000,
+      "lng": 328000,
+      "fuels": {
+        "gazole": 1.992
+      }
+    },
+    {
+      "id": "2380002",
+      "cp": "02380",
+      "ville": "Crécy-au-Mont",
+      "adresse": "D1 - LIEU DIT LE PRE MONTRE",
+      "pop": "R",
+      "lat": 4948900,
+      "lng": 333600,
+      "fuels": {
+        "gazole": 1.902,
+        "sp98": 1.99,
+        "e10": 1.914,
+        "e85": 0.825
+      }
+    },
+    {
+      "id": "2880001",
+      "cp": "02880",
+      "ville": "Crouy",
+      "adresse": "Rue du Stade",
+      "pop": "R",
+      "lat": 4939800,
+      "lng": 335600,
+      "fuels": {
+        "gazole": 1.946,
+        "sp95": 1.969,
+        "sp98": 2.019,
+        "e10": 1.899
+      }
+    },
+    {
       "id": "2340002",
       "cp": "02340",
       "ville": "Dizy-le-Gros",
@@ -162,6 +335,34 @@
       "fuels": {
         "gazole": 2.069,
         "e10": 2.009
+      }
+    },
+    {
+      "id": "2580002",
+      "cp": "02580",
+      "ville": "Étréaupont",
+      "adresse": "14 RUE DU MONVINAGE",
+      "pop": "R",
+      "lat": 4990354.43,
+      "lng": 391399.88,
+      "fuels": {
+        "gazole": 2.049,
+        "e10": 2.019
+      }
+    },
+    {
+      "id": "2100001",
+      "cp": "02100",
+      "ville": "Fayet",
+      "adresse": "route d'Amiens",
+      "pop": "R",
+      "lat": 4985800,
+      "lng": 325300,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 2.001,
+        "e10": 1.901,
+        "e85": 0.798
       }
     },
     {
@@ -236,6 +437,21 @@
       }
     },
     {
+      "id": "2430001",
+      "cp": "02430",
+      "ville": "Gauchy",
+      "adresse": "Rue Auguste Delaune",
+      "pop": "R",
+      "lat": 4982606,
+      "lng": 327920,
+      "fuels": {
+        "gazole": 1.967,
+        "sp98": 2.029,
+        "e10": 1.929,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "2120006",
       "cp": "02120",
       "ville": "Guise",
@@ -250,6 +466,49 @@
       }
     },
     {
+      "id": "2120004",
+      "cp": "02120",
+      "ville": "Guise",
+      "adresse": "Rue des Docteurs Devillers",
+      "pop": "R",
+      "lat": 4990249,
+      "lng": 363841,
+      "fuels": {
+        "gazole": 1.958,
+        "sp98": 2.024,
+        "e10": 1.915
+      }
+    },
+    {
+      "id": "2100009",
+      "cp": "02100",
+      "ville": "Harly",
+      "adresse": "Route de Guise",
+      "pop": "R",
+      "lat": 4984300,
+      "lng": 332300,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.039,
+        "e10": 1.939,
+        "e85": 0.792
+      }
+    },
+    {
+      "id": "2500004",
+      "cp": "02500",
+      "ville": "Hirson",
+      "adresse": "102 RUE CHARLES DE GAULLE",
+      "pop": "R",
+      "lat": 4992100,
+      "lng": 408400,
+      "fuels": {
+        "gazole": 1.908,
+        "sp98": 1.99,
+        "e10": 1.906
+      }
+    },
+    {
       "id": "2500001",
       "cp": "02500",
       "ville": "Hirson",
@@ -261,6 +520,20 @@
         "gazole": 1.967,
         "sp98": 1.99,
         "e10": 1.926
+      }
+    },
+    {
+      "id": "2500003",
+      "cp": "02500",
+      "ville": "Hirson",
+      "adresse": "Avenue du General Debeney",
+      "pop": "R",
+      "lat": 4991600,
+      "lng": 407700,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 1.988,
+        "e10": 1.924
       }
     },
     {
@@ -365,6 +638,76 @@
       }
     },
     {
+      "id": "2000013",
+      "cp": "02000",
+      "ville": "Laon",
+      "adresse": "RUE DU DOCTEUR MENU",
+      "pop": "R",
+      "lat": 4956134.3,
+      "lng": 364099.9,
+      "fuels": {
+        "gazole": 1.968,
+        "sp95": 1.97
+      }
+    },
+    {
+      "id": "2000011",
+      "cp": "02000",
+      "ville": "Laon",
+      "adresse": "ZAC DU CHAMP DU ROY",
+      "pop": "R",
+      "lat": 4957100,
+      "lng": 365500,
+      "fuels": {
+        "gazole": 1.906,
+        "sp98": 1.99,
+        "e10": 1.907,
+        "e85": 0.879
+      }
+    },
+    {
+      "id": "2000002",
+      "cp": "02000",
+      "ville": "Laon",
+      "adresse": "ZAC ILE DE FRANCE",
+      "pop": "R",
+      "lat": 4954800,
+      "lng": 361600,
+      "fuels": {
+        "gazole": 1.992,
+        "sp98": 2.09,
+        "e10": 1.95
+      }
+    },
+    {
+      "id": "2170001",
+      "cp": "02170",
+      "ville": "Le Nouvion-en-Thiérache",
+      "adresse": "RUE DES VERRIERS",
+      "pop": "R",
+      "lat": 5001300,
+      "lng": 378100,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.019,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "2340001",
+      "cp": "02340",
+      "ville": "Lislet",
+      "adresse": "14 ROUTE DE MONTCORNET",
+      "pop": "R",
+      "lat": 4968900,
+      "lng": 402200,
+      "fuels": {
+        "gazole": 2.005,
+        "sp98": 2.045,
+        "e10": 1.93
+      }
+    },
+    {
       "id": "2250004",
       "cp": "02250",
       "ville": "Marle",
@@ -379,6 +722,45 @@
       }
     },
     {
+      "id": "2250001",
+      "cp": "02250",
+      "ville": "Marle",
+      "adresse": "Rue Saint Nicolas",
+      "pop": "R",
+      "lat": 4974300,
+      "lng": 377300,
+      "fuels": {
+        "gazole": 1.999
+      }
+    },
+    {
+      "id": "2200016",
+      "cp": "02200",
+      "ville": "Mercin-et-Vaux",
+      "adresse": "Avenue de Compiègne",
+      "pop": "R",
+      "lat": 4938104.31776,
+      "lng": 330062.84453,
+      "fuels": {
+        "gazole": 1.941,
+        "sp98": 1.962,
+        "e10": 1.881
+      }
+    },
+    {
+      "id": "2310003",
+      "cp": "02310",
+      "ville": "Montreuil-aux-Lions",
+      "adresse": "74 AVENUE DE PARIS",
+      "pop": "R",
+      "lat": 4902126.4,
+      "lng": 318882.5,
+      "fuels": {
+        "gazole": 2.115,
+        "sp95": 1.99
+      }
+    },
+    {
       "id": "2470001",
       "cp": "02470",
       "ville": "Neuilly-Saint-Front",
@@ -390,6 +772,108 @@
         "gazole": 2,
         "sp98": 2.037,
         "e10": 1.96
+      }
+    },
+    {
+      "id": "2100021",
+      "cp": "02100",
+      "ville": "Neuville-Saint-Amand",
+      "adresse": "rue de la Fère",
+      "pop": "R",
+      "lat": 4982437.906,
+      "lng": 331075.437,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.039,
+        "e10": 1.939,
+        "e85": 0.792
+      }
+    },
+    {
+      "id": "2210002",
+      "cp": "02210",
+      "ville": "Oulchy-le-Château",
+      "adresse": "11 avenue de la gare",
+      "pop": "R",
+      "lat": 4920225.5,
+      "lng": 336552.4,
+      "fuels": {
+        "gazole": 2.09,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "2320001",
+      "cp": "02320",
+      "ville": "Pinon",
+      "adresse": "34 bis rue du 7ème Bca",
+      "pop": "R",
+      "lat": 4949900,
+      "lng": 345100,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.949,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "2290002",
+      "cp": "02290",
+      "ville": "Ressons-le-Long",
+      "adresse": "AVENUE DE LA GARE",
+      "pop": "R",
+      "lat": 4939680.71428,
+      "lng": 311562.949,
+      "fuels": {
+        "gazole": 1.968,
+        "sp98": 2.02,
+        "e10": 1.94,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "2240001",
+      "cp": "02240",
+      "ville": "Ribemont",
+      "adresse": "74 Rue Blondel",
+      "pop": "R",
+      "lat": 4980095,
+      "lng": 346696,
+      "fuels": {
+        "gazole": 1.938,
+        "e10": 1.88,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "2360001",
+      "cp": "02360",
+      "ville": "Rozoy-sur-Serre",
+      "adresse": "Lieu dit du grand hôtel",
+      "pop": "R",
+      "lat": 4970400,
+      "lng": 411200,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.045,
+        "e10": 1.93,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "2280001",
+      "cp": "02820",
+      "ville": "Saint-Erme-Outre-et-Ramecourt",
+      "adresse": "CD 24, route de liesse",
+      "pop": "R",
+      "lat": 4953100,
+      "lng": 385600,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 1.999,
+        "e10": 1.899,
+        "e85": 0.809
       }
     },
     {
@@ -434,6 +918,95 @@
       }
     },
     {
+      "id": "2100011",
+      "cp": "02100",
+      "ville": "Saint-Quentin",
+      "adresse": "98 rue Alexandre Dumas",
+      "pop": "R",
+      "lat": 4984800,
+      "lng": 327200,
+      "fuels": {
+        "gazole": 1.901,
+        "sp98": 1.99,
+        "e10": 1.904,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "2100020",
+      "cp": "02100",
+      "ville": "Saint-Quentin",
+      "adresse": "BLD CAMILLE GUERIN",
+      "pop": "R",
+      "lat": 4983400,
+      "lng": 330000,
+      "fuels": {
+        "gazole": 1.902,
+        "sp98": 1.99,
+        "e10": 1.901,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "2100012",
+      "cp": "02100",
+      "ville": "Saint-Quentin",
+      "adresse": "Route de BOHAIN",
+      "pop": "R",
+      "lat": 4986500,
+      "lng": 329100,
+      "fuels": {
+        "gazole": 2.023,
+        "sp98": 2.075,
+        "e10": 1.958
+      }
+    },
+    {
+      "id": "2100013",
+      "cp": "02100",
+      "ville": "Saint-Quentin",
+      "adresse": "Rue Antoine Parmentier",
+      "pop": "R",
+      "lat": 4985366.40026,
+      "lng": 326295.97062,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 2.029,
+        "e10": 1.92,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "2200007",
+      "cp": "02200",
+      "ville": "Soissons",
+      "adresse": "1 Place de Laon",
+      "pop": "R",
+      "lat": 4938600,
+      "lng": 333300,
+      "fuels": {
+        "gazole": 1.955,
+        "sp98": 2.081,
+        "e10": 1.908
+      }
+    },
+    {
+      "id": "2200001",
+      "cp": "02200",
+      "ville": "Soissons",
+      "adresse": "3 Avenue Raymonde Fiolet",
+      "pop": "R",
+      "lat": 4937000,
+      "lng": 331500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.028,
+        "e10": 1.899,
+        "e85": 0.809,
+        "gplc": 0.999
+      }
+    },
+    {
       "id": "2200010",
       "cp": "02200",
       "ville": "Soissons",
@@ -457,7 +1030,7 @@
       "lat": 4936800,
       "lng": 332900,
       "fuels": {
-        "gazole": 2.053,
+        "gazole": 1.994,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.834
@@ -472,11 +1045,99 @@
       "lat": 4937100,
       "lng": 334100,
       "fuels": {
-        "gazole": 1.962,
+        "gazole": 1.903,
         "sp98": 1.99,
-        "e10": 1.929,
+        "e10": 1.909,
         "e85": 0.821,
         "gplc": 0.999
+      }
+    },
+    {
+      "id": "2200013",
+      "cp": "02200",
+      "ville": "Soissons",
+      "adresse": "AV.DE COMPIEGNE - RN.31",
+      "pop": "R",
+      "lat": 4938100,
+      "lng": 330200,
+      "fuels": {
+        "gazole": 2.022,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.841
+      }
+    },
+    {
+      "id": "2690002",
+      "cp": "02690",
+      "ville": "Urvillers",
+      "adresse": "AUTOROUTE A26 - AIRE D'URVILLERS",
+      "pop": "A",
+      "lat": 4978547.40826,
+      "lng": 333427.34139,
+      "fuels": {
+        "gazole": 2.04,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.068
+      }
+    },
+    {
+      "id": "2370005",
+      "cp": "02370",
+      "ville": "Vailly-sur-Aisne",
+      "adresse": "20 AVENUE JEAN JAURES",
+      "pop": "R",
+      "lat": 4940563.60063,
+      "lng": 351497.54981,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "2200008",
+      "cp": "02200",
+      "ville": "Vauxbuin",
+      "adresse": "183 ROUTE DE PARIS",
+      "pop": "R",
+      "lat": 4936400,
+      "lng": 330400,
+      "fuels": {
+        "gazole": 1.958,
+        "sp98": 2.032,
+        "e10": 1.908
+      }
+    },
+    {
+      "id": "2200012",
+      "cp": "02200",
+      "ville": "Venizel",
+      "adresse": "2 Rue d'Acy",
+      "pop": "R",
+      "lat": 4936223.77489,
+      "lng": 340357.93389,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.959,
+        "sp98": 2.019
+      }
+    },
+    {
+      "id": "2140003",
+      "cp": "02140",
+      "ville": "Vervins",
+      "adresse": "ZI de la Briquetterie",
+      "pop": "R",
+      "lat": 4983877.77882,
+      "lng": 391678.7944,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.078,
+        "e10": 1.959,
+        "e85": 0.809
       }
     },
     {
@@ -494,6 +1155,65 @@
       }
     },
     {
+      "id": "2190003",
+      "cp": "02190",
+      "ville": "Villeneuve-sur-Aisne",
+      "adresse": "A26 - Aire du Champ Roland",
+      "pop": "A",
+      "lat": 4944872,
+      "lng": 392652,
+      "fuels": {
+        "gazole": 2.13,
+        "sp98": 2.161,
+        "e10": 2.067,
+        "e85": 0.999,
+        "gplc": 1.157
+      }
+    },
+    {
+      "id": "2190005",
+      "cp": "02190",
+      "ville": "Villeneuve-sur-Aisne",
+      "adresse": "AUT A 26- AIRE DU MONT NIZY",
+      "pop": "A",
+      "lat": 4944508.407,
+      "lng": 392761.87077,
+      "fuels": {
+        "gazole": 2.129,
+        "sp98": 2.161,
+        "e10": 2.066,
+        "e85": 0.999,
+        "gplc": 1.157
+      }
+    },
+    {
+      "id": "2600006",
+      "cp": "02600",
+      "ville": "Villers-Cotterêts",
+      "adresse": "231rd rue du general leclerc",
+      "pop": "R",
+      "lat": 4925600,
+      "lng": 308000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.036,
+        "e85": 0.867
+      }
+    },
+    {
+      "id": "2600005",
+      "cp": "02600",
+      "ville": "Villers-Cotterêts",
+      "adresse": "36 ROUTE DE LA FERTE MILON",
+      "pop": "R",
+      "lat": 4924600,
+      "lng": 309600,
+      "fuels": {
+        "gazole": 2.069
+      }
+    },
+    {
       "id": "2603001",
       "cp": "02600",
       "ville": "Villers-Cotterêts",
@@ -507,6 +1227,19 @@
         "sp98": 2.037,
         "e10": 1.96,
         "e85": 0.788
+      }
+    },
+    {
+      "id": "2600008",
+      "cp": "02600",
+      "ville": "Villers-Cotterêts",
+      "adresse": "Route nationale 2, chemin de la Noue",
+      "pop": "R",
+      "lat": 4925197.539,
+      "lng": 305857.68862,
+      "fuels": {
+        "gazole": 2.1,
+        "sp95": 2.11
       }
     },
     {

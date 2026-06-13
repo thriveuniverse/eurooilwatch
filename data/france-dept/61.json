@@ -3,55 +3,68 @@
   "name": "Orne",
   "regionCode": "NOR",
   "regionName": "Normandie",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 29,
+  "stationCount": 57,
   "fuels": {
     "gazole": {
-      "count": 29,
-      "mean": 2.0402,
-      "median": 2.02,
-      "min": 1.939,
+      "count": 57,
+      "mean": 2.0179,
+      "median": 1.999,
+      "min": 1.911,
       "max": 2.199
     },
     "sp95": {
-      "count": 15,
-      "mean": 2.0235,
-      "median": 1.999,
-      "min": 1.959,
+      "count": 26,
+      "mean": 2.0064,
+      "median": 1.9935,
+      "min": 1.925,
       "max": 2.159
     },
     "sp98": {
-      "count": 22,
-      "mean": 2.0672,
-      "median": 2.054,
-      "min": 1.99,
-      "max": 2.21
+      "count": 45,
+      "mean": 2.0586,
+      "median": 2.049,
+      "min": 1.98,
+      "max": 2.234
     },
     "e10": {
-      "count": 18,
-      "mean": 1.9692,
-      "median": 1.962,
+      "count": 33,
+      "mean": 1.9687,
+      "median": 1.969,
       "min": 1.899,
       "max": 2.135
     },
     "e85": {
-      "count": 8,
-      "mean": 0.8273,
-      "median": 0.802,
+      "count": 14,
+      "mean": 0.8469,
+      "median": 0.8075,
       "min": 0.768,
       "max": 1.045
     },
     "gplc": {
-      "count": 2,
-      "mean": 1.1425,
-      "median": 1.1425,
-      "min": 1.089,
+      "count": 4,
+      "mean": 1.1033,
+      "median": 1.0785,
+      "min": 1.06,
       "max": 1.196
     }
   },
   "stations": [
+    {
+      "id": "61000006",
+      "cp": "61000",
+      "ville": "Alençon",
+      "adresse": "1 rue Denis Papin",
+      "pop": "R",
+      "lat": 4843488.16,
+      "lng": 9830.53,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.234
+      }
+    },
     {
       "id": "61000008",
       "cp": "61000",
@@ -74,9 +87,65 @@
       "lat": 4844400,
       "lng": 10000,
       "fuels": {
-        "gazole": 1.97,
-        "e10": 1.943,
+        "gazole": 1.911,
+        "e10": 1.923,
         "e85": 0.825
+      }
+    },
+    {
+      "id": "61000005",
+      "cp": "61000",
+      "ville": "Alençon",
+      "adresse": "71 Avenue de Quakenbruck",
+      "pop": "R",
+      "lat": 4844000,
+      "lng": 10500,
+      "fuels": {
+        "gazole": 1.994,
+        "sp98": 2.077,
+        "e10": 1.974
+      }
+    },
+    {
+      "id": "61200001",
+      "cp": "61200",
+      "ville": "Argentan",
+      "adresse": "1 rue de Champagne",
+      "pop": "R",
+      "lat": 4874900,
+      "lng": -2700,
+      "fuels": {
+        "gazole": 2.003,
+        "sp95": 1.965,
+        "sp98": 2.019
+      }
+    },
+    {
+      "id": "61200006",
+      "cp": "61200",
+      "ville": "Argentan",
+      "adresse": "21-23 Rue Pierre Bérégovoy",
+      "pop": "R",
+      "lat": 4875200,
+      "lng": -1300,
+      "fuels": {
+        "gazole": 1.927,
+        "sp95": 1.95,
+        "sp98": 1.98
+      }
+    },
+    {
+      "id": "61200003",
+      "cp": "61200",
+      "ville": "Argentan",
+      "adresse": "24 Avenue de Paris",
+      "pop": "R",
+      "lat": 4874900,
+      "lng": -1100,
+      "fuels": {
+        "gazole": 1.984,
+        "sp98": 1.99,
+        "e10": 1.979
       }
     },
     {
@@ -88,10 +157,10 @@
       "lat": 4873272.78,
       "lng": -3485.91,
       "fuels": {
-        "gazole": 1.962,
-        "sp95": 1.979,
-        "sp98": 2.014,
-        "e10": 1.901
+        "gazole": 1.963,
+        "sp95": 1.984,
+        "sp98": 2.033,
+        "e10": 1.919
       }
     },
     {
@@ -119,6 +188,19 @@
       "fuels": {
         "gazole": 2.14,
         "sp95": 2.05
+      }
+    },
+    {
+      "id": "61130004",
+      "cp": "61130",
+      "ville": "Belforêt-en-Perche",
+      "adresse": "le champs des fosses",
+      "pop": "R",
+      "lat": 4837159.88988,
+      "lng": 58314.80331,
+      "fuels": {
+        "gazole": 2.14,
+        "sp95": 1.99
       }
     },
     {
@@ -171,7 +253,7 @@
       "lat": 4843500,
       "lng": 5400,
       "fuels": {
-        "gazole": 2.064,
+        "gazole": 2.005,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -191,6 +273,50 @@
       }
     },
     {
+      "id": "61700004",
+      "cp": "61700",
+      "ville": "Domfront en Poiraie",
+      "adresse": "111 Rue du Maréchal Foch",
+      "pop": "R",
+      "lat": 4858900,
+      "lng": -63500,
+      "fuels": {
+        "gazole": 2.045,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.845
+      }
+    },
+    {
+      "id": "61700003",
+      "cp": "61700",
+      "ville": "Domfront en Poiraie",
+      "adresse": "16 Rue du Mont Margantin",
+      "pop": "R",
+      "lat": 4858890.87,
+      "lng": -64377.85,
+      "fuels": {
+        "gazole": 1.957,
+        "sp95": 1.947,
+        "sp98": 2.037
+      }
+    },
+    {
+      "id": "61700002",
+      "cp": "61700",
+      "ville": "Domfront en Poiraie",
+      "adresse": "RUE DU MARECHAL FOCH",
+      "pop": "R",
+      "lat": 4858085.09413,
+      "lng": -64038.86653,
+      "fuels": {
+        "gazole": 1.947,
+        "sp98": 2.039,
+        "e10": 1.999,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "61150001",
       "cp": "61150",
       "ville": "Écouché-les-Vallées",
@@ -201,6 +327,22 @@
       "fuels": {
         "gazole": 2.02,
         "sp95": 2.015
+      }
+    },
+    {
+      "id": "61200008",
+      "cp": "61200",
+      "ville": "Écouché-les-Vallées",
+      "adresse": "Lieu-dit Les Fermes",
+      "pop": "A",
+      "lat": 4872221.6324,
+      "lng": -5692.14178,
+      "fuels": {
+        "gazole": 2.16,
+        "sp98": 2.19,
+        "e10": 2.1,
+        "e85": 0.99,
+        "gplc": 1.06
       }
     },
     {
@@ -249,6 +391,20 @@
       }
     },
     {
+      "id": "61100008",
+      "cp": "61100",
+      "ville": "Flers",
+      "adresse": "route de domfront",
+      "pop": "R",
+      "lat": 4873331.02,
+      "lng": -57645.91,
+      "fuels": {
+        "gazole": 1.944,
+        "sp98": 1.987,
+        "e10": 1.914
+      }
+    },
+    {
       "id": "61230007",
       "cp": "61230",
       "ville": "Gacé",
@@ -272,9 +428,37 @@
       "lat": 4878900,
       "lng": 29400,
       "fuels": {
-        "gazole": 2.061,
+        "gazole": 2.002,
         "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "61300002",
+      "cp": "61300",
+      "ville": "L'Aigle",
+      "adresse": "3 Avenue Comtesse de Ségur",
+      "pop": "R",
+      "lat": 4876400,
+      "lng": 61900,
+      "fuels": {
+        "gazole": 1.919,
+        "sp95": 1.925,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "61600003",
+      "cp": "61600",
+      "ville": "La Ferté Macé",
+      "adresse": "Boulevard de la Forêt d'Andaine",
+      "pop": "R",
+      "lat": 4858681.67,
+      "lng": -36540.37,
+      "fuels": {
+        "gazole": 1.971,
+        "sp98": 2.075,
+        "e10": 1.942
       }
     },
     {
@@ -309,6 +493,20 @@
       }
     },
     {
+      "id": "61290002",
+      "cp": "61290",
+      "ville": "Longny les Villages",
+      "adresse": "19 Bis Rue du Dr Jean Vivares",
+      "pop": "R",
+      "lat": 4852653.54,
+      "lng": 74970.7,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.089,
+        "e10": 1.969
+      }
+    },
+    {
       "id": "61240001",
       "cp": "61240",
       "ville": "Merlerault-le-Pin",
@@ -320,6 +518,19 @@
         "gazole": 1.997,
         "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "61400004",
+      "cp": "61400",
+      "ville": "Mortagne-au-Perche",
+      "adresse": "16 Rue du Faubourg Saint Eloi",
+      "pop": "R",
+      "lat": 4852283.01,
+      "lng": 54242.11,
+      "fuels": {
+        "gazole": 2.089,
+        "sp95": 1.979
       }
     },
     {
@@ -367,6 +578,33 @@
       }
     },
     {
+      "id": "61100003",
+      "cp": "61100",
+      "ville": "Saint-Georges-des-Groseillers",
+      "adresse": "Le Tremblay",
+      "pop": "R",
+      "lat": 4875287.18,
+      "lng": -57672.66,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 2.024,
+        "sp98": 2.059
+      }
+    },
+    {
+      "id": "61130002",
+      "cp": "61130",
+      "ville": "Saint-Germain-de-la-Coudre",
+      "adresse": "La Lointinière",
+      "pop": "R",
+      "lat": 4826100,
+      "lng": 60400,
+      "fuels": {
+        "gazole": 2.034,
+        "sp95": 1.997
+      }
+    },
+    {
       "id": "61000012",
       "cp": "61000",
       "ville": "Saint-Germain-du-Corbéis",
@@ -378,6 +616,133 @@
         "gazole": 2.033,
         "sp95": 1.979,
         "sp98": 2.099
+      }
+    },
+    {
+      "id": "61170001",
+      "cp": "61170",
+      "ville": "Saint-Julien-sur-Sarthe",
+      "adresse": "Lieu-Dit les Naudières",
+      "pop": "R",
+      "lat": 4850233.5,
+      "lng": 36026.1,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.035,
+        "sp98": 2.085,
+        "e10": 1.969,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "61400005",
+      "cp": "61400",
+      "ville": "Saint-Langis-lès-Mortagne",
+      "adresse": "Les Gaillons",
+      "pop": "R",
+      "lat": 4853187.31989,
+      "lng": 51166.49626,
+      "fuels": {
+        "gazole": 1.988,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "61400001",
+      "cp": "61400",
+      "ville": "Saint-Langis-lès-Mortagne",
+      "adresse": "Route d'Alençon Ancienne RN 12",
+      "pop": "R",
+      "lat": 4852700,
+      "lng": 53400,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.019,
+        "e10": 1.91
+      }
+    },
+    {
+      "id": "61130001",
+      "cp": "61130",
+      "ville": "Saint-Martin-du-Vieux-Bellême",
+      "adresse": "Rue Guillaume SEZNEC",
+      "pop": "R",
+      "lat": 4837500,
+      "lng": 54200,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.999,
+        "sp98": 2.059
+      }
+    },
+    {
+      "id": "61790001",
+      "cp": "61790",
+      "ville": "Saint-Pierre-du-Regard",
+      "adresse": "ZA LA REMAIZIERE",
+      "pop": "R",
+      "lat": 4882929.56,
+      "lng": -56169.43,
+      "fuels": {
+        "gazole": 1.947,
+        "sp98": 2.013,
+        "e10": 1.91
+      }
+    },
+    {
+      "id": "61302001",
+      "cp": "61300",
+      "ville": "Saint-Sulpice-sur-Risle",
+      "adresse": "Route De Paris Bp 45",
+      "pop": "R",
+      "lat": 4876051.66,
+      "lng": 64210.13,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 2.089,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "61500003",
+      "cp": "61500",
+      "ville": "Sées",
+      "adresse": "Route de Mortagne",
+      "pop": "R",
+      "lat": 4860713.26,
+      "lng": 18592.66,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.069,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "61500002",
+      "cp": "61500",
+      "ville": "Sées",
+      "adresse": "ROUTE DE MORTAGNE",
+      "pop": "R",
+      "lat": 4860600,
+      "lng": 18400,
+      "fuels": {
+        "gazole": 2.004,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "61500004",
+      "cp": "61500",
+      "ville": "Sées",
+      "adresse": "Rue du général Leclerc",
+      "pop": "R",
+      "lat": 4859926.2,
+      "lng": 17176.35,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 1.999,
+        "sp98": 2.069
       }
     },
     {
@@ -409,6 +774,18 @@
       }
     },
     {
+      "id": "61160001",
+      "cp": "61160",
+      "ville": "Trun",
+      "adresse": "Avenue de la Cavée d'Auge",
+      "pop": "R",
+      "lat": 4884511.4,
+      "lng": 3699.49,
+      "fuels": {
+        "gazole": 1.987
+      }
+    },
+    {
       "id": "61260003",
       "cp": "61260",
       "ville": "Val-au-Perche",
@@ -434,6 +811,22 @@
         "gazole": 2.029,
         "sp98": 2.059,
         "e10": 1.969
+      }
+    },
+    {
+      "id": "61250003",
+      "cp": "61250",
+      "ville": "Valframbert",
+      "adresse": "AUTOROUTE A28 - AIRE DE LA DENTELLE D'ALENÇON",
+      "pop": "A",
+      "lat": 4845673.83918,
+      "lng": 12705.8789,
+      "fuels": {
+        "gazole": 2.102,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.068
       }
     },
     {

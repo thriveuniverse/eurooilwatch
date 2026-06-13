@@ -3,51 +3,51 @@
   "name": "Gers",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 25,
+  "stationCount": 50,
   "fuels": {
     "gazole": {
-      "count": 25,
-      "mean": 2.0388,
-      "median": 1.999,
-      "min": 1.969,
+      "count": 50,
+      "mean": 2.0367,
+      "median": 2.011,
+      "min": 1.919,
       "max": 2.19
     },
     "sp95": {
-      "count": 5,
-      "mean": 1.9894,
+      "count": 13,
+      "mean": 1.9932,
       "median": 1.99,
-      "min": 1.95,
-      "max": 2.019
+      "min": 1.909,
+      "max": 2.11
     },
     "sp98": {
-      "count": 19,
-      "mean": 2.0529,
-      "median": 2.049,
+      "count": 36,
+      "mean": 2.0542,
+      "median": 2.054,
       "min": 1.99,
-      "max": 2.149
+      "max": 2.16
     },
     "e10": {
-      "count": 18,
-      "mean": 1.9761,
-      "median": 1.972,
-      "min": 1.927,
+      "count": 37,
+      "mean": 1.9683,
+      "median": 1.959,
+      "min": 1.87,
       "max": 2.135
     },
     "e85": {
-      "count": 5,
-      "mean": 0.8928,
-      "median": 0.839,
-      "min": 0.809,
+      "count": 10,
+      "mean": 0.8872,
+      "median": 0.8725,
+      "min": 0.795,
       "max": 1.062
     },
     "gplc": {
-      "count": 2,
-      "mean": 1.24,
-      "median": 1.24,
-      "min": 1.24,
+      "count": 5,
+      "mean": 1.1738,
+      "median": 1.15,
+      "min": 1.11,
       "max": 1.24
     }
   },
@@ -65,6 +65,63 @@
       }
     },
     {
+      "id": "32000002",
+      "cp": "32000",
+      "ville": "Auch",
+      "adresse": "203 Rue Victor Hugo",
+      "pop": "R",
+      "lat": 4365500,
+      "lng": 56600,
+      "fuels": {
+        "gazole": 2.052,
+        "e10": 2.064,
+        "e85": 0.85
+      }
+    },
+    {
+      "id": "32000004",
+      "cp": "32000",
+      "ville": "Auch",
+      "adresse": "A CLARAC",
+      "pop": "R",
+      "lat": 4366400,
+      "lng": 59100,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.929,
+        "e85": 0.795
+      }
+    },
+    {
+      "id": "32000005",
+      "cp": "32000",
+      "ville": "Auch",
+      "adresse": "Avenue Pierre De Montesquiou",
+      "pop": "R",
+      "lat": 4363700,
+      "lng": 59000,
+      "fuels": {
+        "gazole": 2.169,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "32000001",
+      "cp": "32000",
+      "ville": "Auch",
+      "adresse": "ROUTE DE TARBES",
+      "pop": "R",
+      "lat": 4363100,
+      "lng": 58200,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.929,
+        "gplc": 1.129
+      }
+    },
+    {
       "id": "32000006",
       "cp": "32000",
       "ville": "Auch",
@@ -77,6 +134,21 @@
         "sp98": 2.039,
         "e10": 1.929,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "32150003",
+      "cp": "32150",
+      "ville": "Cazaubon",
+      "adresse": "BOULEVARD DES PYRENEES",
+      "pop": "R",
+      "lat": 4393400,
+      "lng": -6400,
+      "fuels": {
+        "gazole": 2.07,
+        "sp95": 1.99,
+        "sp98": 1.99,
+        "gplc": 1.11
       }
     },
     {
@@ -138,6 +210,34 @@
       }
     },
     {
+      "id": "32100002",
+      "cp": "32100",
+      "ville": "Condom",
+      "adresse": "rue Bonnemaison",
+      "pop": "R",
+      "lat": 4395976,
+      "lng": 37835,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 2.015,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "32190005",
+      "cp": "32190",
+      "ville": "Dému",
+      "adresse": "17 route du fezensac",
+      "pop": "R",
+      "lat": 4376512.67524,
+      "lng": 16785.3215,
+      "fuels": {
+        "gazole": 2.075,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "32800001",
       "cp": "32800",
       "ville": "Eauze",
@@ -163,6 +263,32 @@
         "gazole": 1.969,
         "sp98": 2.019,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "32500005",
+      "cp": "32500",
+      "ville": "Fleurance",
+      "adresse": "1 Avenue du Corps Franc Pommiès",
+      "pop": "R",
+      "lat": 4385300,
+      "lng": 66400,
+      "fuels": {
+        "gazole": 2.169
+      }
+    },
+    {
+      "id": "32500002",
+      "cp": "32500",
+      "ville": "Fleurance",
+      "adresse": "23,AV. DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 4384400,
+      "lng": 66200,
+      "fuels": {
+        "gazole": 2.01,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -208,6 +334,21 @@
       }
     },
     {
+      "id": "32200001",
+      "cp": "32200",
+      "ville": "Gimont",
+      "adresse": "Boulevard du Nord",
+      "pop": "R",
+      "lat": 4362600,
+      "lng": 88000,
+      "fuels": {
+        "gazole": 2.059,
+        "sp98": 2.069,
+        "e10": 1.949,
+        "e85": 0.959
+      }
+    },
+    {
       "id": "32600001",
       "cp": "32600",
       "ville": "L'Isle-Jourdain",
@@ -216,10 +357,24 @@
       "lat": 4361400,
       "lng": 108900,
       "fuels": {
-        "gazole": 2.039,
-        "sp95": 2.019,
-        "sp98": 2.049,
-        "e10": 1.989
+        "gazole": 1.926,
+        "sp95": 1.909,
+        "sp98": 1.99,
+        "e10": 1.87
+      }
+    },
+    {
+      "id": "32600002",
+      "cp": "32600",
+      "ville": "L'Isle-Jourdain",
+      "adresse": "Route de Samatan Lombez",
+      "pop": "R",
+      "lat": 4360100,
+      "lng": 106900,
+      "fuels": {
+        "gazole": 1.919,
+        "sp95": 1.939,
+        "e85": 0.909
       }
     },
     {
@@ -236,6 +391,50 @@
       }
     },
     {
+      "id": "32700002",
+      "cp": "32700",
+      "ville": "Lectoure",
+      "adresse": "LES MOULINS DE LA JUSTICE",
+      "pop": "R",
+      "lat": 4393600,
+      "lng": 64300,
+      "fuels": {
+        "gazole": 1.986,
+        "sp98": 2.061,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "32700001",
+      "cp": "32700",
+      "ville": "Lectoure",
+      "adresse": "Route de Fleurance",
+      "pop": "R",
+      "lat": 4391700,
+      "lng": 62800,
+      "fuels": {
+        "gazole": 2.14,
+        "sp95": 2.11,
+        "sp98": 2.16,
+        "gplc": 1.15
+      }
+    },
+    {
+      "id": "32220001",
+      "cp": "32220",
+      "ville": "Lombez",
+      "adresse": "Avenue Maquis Meilhan",
+      "pop": "R",
+      "lat": 4347068,
+      "lng": 92231,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.999,
+        "sp98": 2.079,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "32230003",
       "cp": "32230",
       "ville": "Marciac",
@@ -247,6 +446,35 @@
         "gazole": 1.999,
         "sp98": 2.039,
         "e10": 1.969
+      }
+    },
+    {
+      "id": "32140001",
+      "cp": "32140",
+      "ville": "Masseube",
+      "adresse": "ROUTE D'AUCH",
+      "pop": "R",
+      "lat": 4344300,
+      "lng": 57800,
+      "fuels": {
+        "gazole": 2.055,
+        "sp98": 2.099,
+        "e10": 1.998
+      }
+    },
+    {
+      "id": "32120002",
+      "cp": "32120",
+      "ville": "Mauvezin",
+      "adresse": "Route d'Auch",
+      "pop": "R",
+      "lat": 4373100,
+      "lng": 88100,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.039,
+        "e10": 1.939,
+        "e85": 0.895
       }
     },
     {
@@ -275,6 +503,34 @@
         "gazole": 2.135,
         "sp95": 1.95,
         "e85": 1.062
+      }
+    },
+    {
+      "id": "32300002",
+      "cp": "32300",
+      "ville": "Mirande",
+      "adresse": "Boulevard des Pyrénées",
+      "pop": "R",
+      "lat": 4351500,
+      "lng": 39900,
+      "fuels": {
+        "gazole": 2.055,
+        "sp98": 2.099,
+        "e10": 1.959
+      }
+    },
+    {
+      "id": "32250001",
+      "cp": "32250",
+      "ville": "Montréal",
+      "adresse": "61 rue Aurensan - Quatier Saint Orens",
+      "pop": "R",
+      "lat": 4395018.79883,
+      "lng": 20801.0089,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.09,
+        "e10": 1.97
       }
     },
     {
@@ -320,6 +576,33 @@
       }
     },
     {
+      "id": "32160001",
+      "cp": "32160",
+      "ville": "Plaisance",
+      "adresse": "8 rue du Pin",
+      "pop": "R",
+      "lat": 4360100,
+      "lng": 4200,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.059,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "32810003",
+      "cp": "32810",
+      "ville": "Preignan",
+      "adresse": "\"Las Arribères\" RN21",
+      "pop": "R",
+      "lat": 4371200,
+      "lng": 62200,
+      "fuels": {
+        "gazole": 2.19
+      }
+    },
+    {
       "id": "32400003",
       "cp": "32400",
       "ville": "Riscle",
@@ -329,6 +612,20 @@
       "lng": -7900,
       "fuels": {
         "gazole": 2.13
+      }
+    },
+    {
+      "id": "32400006",
+      "cp": "32400",
+      "ville": "Riscle",
+      "adresse": "Lieu dit La Parade",
+      "pop": "R",
+      "lat": 4365700,
+      "lng": -7500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "e10": 1.939
       }
     },
     {
@@ -343,6 +640,20 @@
         "gazole": 1.979,
         "sp98": 2.039,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "32300001",
+      "cp": "32300",
+      "ville": "Saint-Martin",
+      "adresse": "Route de Tarbes",
+      "pop": "R",
+      "lat": 4350100,
+      "lng": 39400,
+      "fuels": {
+        "gazole": 2.055,
+        "sp98": 2.099,
+        "e10": 1.959
       }
     },
     {
@@ -368,9 +679,50 @@
       "lat": 4348982.65,
       "lng": 93190.67,
       "fuels": {
-        "gazole": 1.999,
+        "gazole": 2.019,
         "sp95": 1.989,
         "sp98": 2.069
+      }
+    },
+    {
+      "id": "32260002",
+      "cp": "32260",
+      "ville": "Seissan",
+      "adresse": "RUE DU VISCONTE",
+      "pop": "R",
+      "lat": 4349400,
+      "lng": 59400,
+      "fuels": {
+        "gazole": 2.069,
+        "sp95": 2.049,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "84400008",
+      "cp": "32240",
+      "ville": "Toujouse",
+      "adresse": "ROUTE D'ESTANG",
+      "pop": "R",
+      "lat": 4382400,
+      "lng": -15500,
+      "fuels": {
+        "gazole": 1.99,
+        "e10": 2.02
+      }
+    },
+    {
+      "id": "32310004",
+      "cp": "32310",
+      "ville": "Valence-sur-Baïse",
+      "adresse": "Route D'Auche, Lieu Dit Haut Rege",
+      "pop": "R",
+      "lat": 4386900,
+      "lng": 39200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.089,
+        "e10": 1.985
       }
     },
     {

@@ -3,50 +3,50 @@
   "name": "Lot",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 31,
+  "stationCount": 60,
   "fuels": {
     "gazole": {
-      "count": 31,
-      "mean": 2.0445,
-      "median": 1.999,
+      "count": 59,
+      "mean": 2.0368,
+      "median": 2.002,
       "min": 1.949,
       "max": 2.264
     },
     "sp95": {
-      "count": 5,
-      "mean": 2.0256,
-      "median": 1.995,
-      "min": 1.99,
-      "max": 2.129
+      "count": 9,
+      "mean": 1.9917,
+      "median": 1.99,
+      "min": 1.979,
+      "max": 2.024
     },
     "sp98": {
-      "count": 26,
-      "mean": 2.0725,
-      "median": 2.0625,
+      "count": 46,
+      "mean": 2.064,
+      "median": 2.062,
       "min": 1.95,
       "max": 2.294
     },
     "e10": {
-      "count": 24,
-      "mean": 1.976,
-      "median": 1.9645,
+      "count": 46,
+      "mean": 1.9689,
+      "median": 1.9525,
       "min": 1.899,
       "max": 2.194
     },
     "e85": {
-      "count": 13,
-      "mean": 0.8456,
-      "median": 0.811,
-      "min": 0.798,
+      "count": 20,
+      "mean": 0.8384,
+      "median": 0.81,
+      "min": 0.797,
       "max": 1.159
     },
     "gplc": {
-      "count": 3,
-      "mean": 1.0973,
-      "median": 1.079,
+      "count": 4,
+      "mean": 1.108,
+      "median": 1.1095,
       "min": 1.064,
       "max": 1.149
     }
@@ -62,8 +62,8 @@
       "lng": 155200,
       "fuels": {
         "gazole": 1.975,
-        "sp98": 2.059,
-        "e10": 1.919,
+        "sp98": 2.039,
+        "e10": 1.909,
         "e85": 0.809
       }
     },
@@ -82,6 +82,19 @@
       }
     },
     {
+      "id": "46130003",
+      "cp": "46130",
+      "ville": "Bretenoux",
+      "adresse": "513 Avenue de la Libération",
+      "pop": "R",
+      "lat": 4491200,
+      "lng": 184200,
+      "fuels": {
+        "gazole": 2.18,
+        "sp95": 1.99
+      }
+    },
+    {
       "id": "46000012",
       "cp": "46000",
       "ville": "Cahors",
@@ -90,11 +103,55 @@
       "lat": 4442100,
       "lng": 143900,
       "fuels": {
-        "gazole": 2.061,
+        "gazole": 2.002,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.829,
         "gplc": 1.079
+      }
+    },
+    {
+      "id": "46000013",
+      "cp": "46000",
+      "ville": "Cahors",
+      "adresse": "47, Avenue du 7 ème R.I.",
+      "pop": "R",
+      "lat": 4444928.69,
+      "lng": 143723.62051,
+      "fuels": {
+        "sp98": 2.179,
+        "e10": 2.099,
+        "e85": 0.865
+      }
+    },
+    {
+      "id": "46000007",
+      "cp": "46000",
+      "ville": "Cahors",
+      "adresse": "Avenue Maryse Bastié",
+      "pop": "R",
+      "lat": 4446100,
+      "lng": 142300,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.085,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "46000008",
+      "cp": "46000",
+      "ville": "Cahors",
+      "adresse": "Combe du Paysan",
+      "pop": "R",
+      "lat": 4446900,
+      "lng": 143000,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.059,
+        "e10": 1.928,
+        "e85": 0.809
       }
     },
     {
@@ -106,9 +163,9 @@
       "lat": 4447401.09059,
       "lng": 142880.14894,
       "fuels": {
-        "gazole": 2.061,
+        "gazole": 2.002,
         "sp98": 1.99,
-        "e10": 1.99
+        "e10": 1.987
       }
     },
     {
@@ -126,6 +183,19 @@
       }
     },
     {
+      "id": "46160002",
+      "cp": "46160",
+      "ville": "Cajarc",
+      "adresse": "230 avenue Germain Canet",
+      "pop": "R",
+      "lat": 4448900,
+      "lng": 184600,
+      "fuels": {
+        "gazole": 2.029,
+        "e10": 1.95
+      }
+    },
+    {
       "id": "46160001",
       "cp": "46160",
       "ville": "Cajarc",
@@ -140,6 +210,22 @@
       }
     },
     {
+      "id": "46100002",
+      "cp": "46100",
+      "ville": "Capdenac",
+      "adresse": "Le Couquet CAPDENAC LE HAUT",
+      "pop": "R",
+      "lat": 4459500,
+      "lng": 206200,
+      "fuels": {
+        "gazole": 1.971,
+        "sp98": 2.064,
+        "e10": 1.932,
+        "e85": 0.797,
+        "gplc": 1.14
+      }
+    },
+    {
       "id": "46170001",
       "cp": "46170",
       "ville": "Castelnau-Montratier",
@@ -151,6 +237,18 @@
         "gazole": 1.999,
         "sp98": 2.099,
         "e10": 1.979
+      }
+    },
+    {
+      "id": "46150001",
+      "cp": "46150",
+      "ville": "Catus",
+      "adresse": "LE CRABOL",
+      "pop": "R",
+      "lat": 4455400,
+      "lng": 133800,
+      "fuels": {
+        "gazole": 2.112
       }
     },
     {
@@ -226,6 +324,20 @@
       }
     },
     {
+      "id": "46100007",
+      "cp": "46100",
+      "ville": "Figeac",
+      "adresse": "15 Avenue Président Georges Pompidou",
+      "pop": "R",
+      "lat": 4460700,
+      "lng": 202400,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 1.999,
+        "sp98": 2.079
+      }
+    },
+    {
       "id": "46100005",
       "cp": "46100",
       "ville": "Figeac",
@@ -250,6 +362,33 @@
       "fuels": {
         "gazole": 2.14,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "46300007",
+      "cp": "46300",
+      "ville": "Gourdon",
+      "adresse": "5 Boulevard de la Madeleine",
+      "pop": "R",
+      "lat": 4474000,
+      "lng": 139100,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.129
+      }
+    },
+    {
+      "id": "46300011",
+      "cp": "46300",
+      "ville": "Gourdon",
+      "adresse": "9 BOULEVARD DE LA MADELEINE",
+      "pop": "R",
+      "lat": 4474000,
+      "lng": 139100,
+      "fuels": {
+        "gazole": 2.006,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -297,6 +436,74 @@
       }
     },
     {
+      "id": "46300006",
+      "cp": "46300",
+      "ville": "Gourdon",
+      "adresse": "Route de Salviac",
+      "pop": "R",
+      "lat": 4472000,
+      "lng": 136800,
+      "fuels": {
+        "gazole": 2.129,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "46500006",
+      "cp": "46500",
+      "ville": "Gramat",
+      "adresse": "1 RUE LOUIS FAJOLLES",
+      "pop": "R",
+      "lat": 4478100,
+      "lng": 172700,
+      "fuels": {
+        "gazole": 1.95,
+        "sp98": 2.2,
+        "e10": 1.9
+      }
+    },
+    {
+      "id": "46500007",
+      "cp": "46500",
+      "ville": "Gramat",
+      "adresse": "37 Av. Louis Mazet",
+      "pop": "R",
+      "lat": 4477442.11782,
+      "lng": 172147.45854,
+      "fuels": {
+        "gazole": 2.171
+      }
+    },
+    {
+      "id": "46500003",
+      "cp": "46500",
+      "ville": "Gramat",
+      "adresse": "route de Brive",
+      "pop": "R",
+      "lat": 4478700,
+      "lng": 172000,
+      "fuels": {
+        "gazole": 1.95,
+        "sp95": 1.979,
+        "sp98": 1.99,
+        "e10": 1.9,
+        "e85": 0.811
+      }
+    },
+    {
+      "id": "46500001",
+      "cp": "46500",
+      "ville": "Gramat",
+      "adresse": "ROUTE DE ST CERE",
+      "pop": "R",
+      "lat": 4478723,
+      "lng": 174089,
+      "fuels": {
+        "gazole": 2.12
+      }
+    },
+    {
       "id": "46420001",
       "cp": "46120",
       "ville": "Lacapelle-Marival",
@@ -325,6 +532,20 @@
       }
     },
     {
+      "id": "46230005",
+      "cp": "46230",
+      "ville": "Lalbenque",
+      "adresse": "231 ROUTE DE CAHORS",
+      "pop": "R",
+      "lat": 4434351.21363,
+      "lng": 154147.36829,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.099,
+        "e10": 1.955
+      }
+    },
+    {
       "id": "46230004",
       "cp": "46230",
       "ville": "Lalbenque",
@@ -335,6 +556,31 @@
       "fuels": {
         "gazole": 2.15,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "46090003",
+      "cp": "46090",
+      "ville": "Lamagdelaine",
+      "adresse": "318 ROUTE DE CAHORS",
+      "pop": "R",
+      "lat": 4446900,
+      "lng": 148300,
+      "fuels": {
+        "gazole": 2.009,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "46300009",
+      "cp": "46300",
+      "ville": "Le Vigan-en-Quercy",
+      "adresse": "ZA LES MILLEPOISES",
+      "pop": "R",
+      "lat": 4474221.29,
+      "lng": 143556.97,
+      "fuels": {
+        "gazole": 2.039
       }
     },
     {
@@ -349,6 +595,20 @@
         "gazole": 2.059,
         "sp98": 2.069,
         "e10": 1.949
+      }
+    },
+    {
+      "id": "46260002",
+      "cp": "46260",
+      "ville": "Limogne-en-Quercy",
+      "adresse": "309 AVENUE DE CAHORS",
+      "pop": "R",
+      "lat": 4439600,
+      "lng": 176800,
+      "fuels": {
+        "gazole": 2.07,
+        "sp98": 1.99,
+        "e10": 1.96
       }
     },
     {
@@ -381,17 +641,16 @@
       }
     },
     {
-      "id": "46800002",
+      "id": "46800003",
       "cp": "46800",
       "ville": "Montcuq-en-Quercy-Blanc",
-      "adresse": "Lieu-dit le moulin de Pleysse",
+      "adresse": "2264 Avenue saint jean",
       "pop": "R",
-      "lat": 4434200,
-      "lng": 120400,
+      "lat": 4433900,
+      "lng": 120100,
       "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.129,
-        "sp98": 2.209
+        "gazole": 2.047,
+        "e10": 1.99
       }
     },
     {
@@ -408,6 +667,33 @@
       }
     },
     {
+      "id": "46350002",
+      "cp": "46350",
+      "ville": "Payrac",
+      "adresse": "523 avenue de toulouse",
+      "pop": "R",
+      "lat": 4479800,
+      "lng": 147300,
+      "fuels": {
+        "gazole": 2.095
+      }
+    },
+    {
+      "id": "46090002",
+      "cp": "46000",
+      "ville": "Pradines",
+      "adresse": "Route de Luzech",
+      "pop": "R",
+      "lat": 4446400,
+      "lng": 142100,
+      "fuels": {
+        "gazole": 1.968,
+        "sp98": 2.038,
+        "e10": 1.908,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "46220005",
       "cp": "46220",
       "ville": "Prayssac",
@@ -420,6 +706,20 @@
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.842
+      }
+    },
+    {
+      "id": "46220003",
+      "cp": "46220",
+      "ville": "Prayssac",
+      "adresse": "Chemin des Gaulies",
+      "pop": "R",
+      "lat": 4450200,
+      "lng": 118600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.079,
+        "e10": 1.949
       }
     },
     {
@@ -453,6 +753,78 @@
       }
     },
     {
+      "id": "46700001",
+      "cp": "46700",
+      "ville": "Puy-l'Évêque",
+      "adresse": "14 rue des platanes",
+      "pop": "R",
+      "lat": 4450100,
+      "lng": 114300,
+      "fuels": {
+        "gazole": 2.017,
+        "sp98": 2.079,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "46400004",
+      "cp": "46400",
+      "ville": "Saint-Céré",
+      "adresse": "401 Avenue de Monzie",
+      "pop": "R",
+      "lat": 4486000,
+      "lng": 188200,
+      "fuels": {
+        "gazole": 2.119,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.887
+      }
+    },
+    {
+      "id": "46400002",
+      "cp": "46400",
+      "ville": "Saint-Laurent-les-Tours",
+      "adresse": "1125 avenue Charles de Gaulle",
+      "pop": "R",
+      "lat": 4486700,
+      "lng": 188700,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.979,
+        "sp98": 1.99,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "46340001",
+      "cp": "46340",
+      "ville": "Salviac",
+      "adresse": "Les Peyroutilles",
+      "pop": "R",
+      "lat": 4467984.43205,
+      "lng": 126093.30196,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "46140004",
+      "cp": "46140",
+      "ville": "Sauzet",
+      "adresse": "LA SEOUNE EST",
+      "pop": "R",
+      "lat": 4440781.7,
+      "lng": 125763.8,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.14,
+        "e10": 2.02
+      }
+    },
+    {
       "id": "46200004",
       "cp": "46200",
       "ville": "Souillac",
@@ -482,6 +854,21 @@
       }
     },
     {
+      "id": "46200001",
+      "cp": "46200",
+      "ville": "Souillac",
+      "adresse": "Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4489900,
+      "lng": 147700,
+      "fuels": {
+        "gazole": 1.982,
+        "sp95": 1.979,
+        "sp98": 1.99,
+        "e10": 1.979
+      }
+    },
+    {
       "id": "46330001",
       "cp": "46330",
       "ville": "Tour-de-Faure",
@@ -493,6 +880,20 @@
         "gazole": 2.12,
         "sp98": 2.16,
         "e10": 2.096
+      }
+    },
+    {
+      "id": "46110003",
+      "cp": "46110",
+      "ville": "Vayrac",
+      "adresse": "189, avenue de Saint Céré",
+      "pop": "R",
+      "lat": 4495300,
+      "lng": 170300,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.129,
+        "e10": 2.03
       }
     }
   ]

@@ -3,51 +3,51 @@
   "name": "Hauts-de-Seine",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-06-12T19:03:22.838Z",
+  "asOf": "2026-06-13T08:16:33.196Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 37,
+  "stationCount": 65,
   "fuels": {
     "gazole": {
-      "count": 37,
-      "mean": 2.0783,
-      "median": 2.049,
-      "min": 1.989,
+      "count": 65,
+      "mean": 2.0557,
+      "median": 2.053,
+      "min": 1.93,
       "max": 2.309
     },
     "sp95": {
-      "count": 1,
-      "mean": 2.079,
-      "median": 2.079,
-      "min": 2.079,
+      "count": 2,
+      "mean": 2.0485,
+      "median": 2.0485,
+      "min": 2.018,
       "max": 2.079
     },
     "sp98": {
-      "count": 31,
-      "mean": 2.0914,
-      "median": 2.063,
+      "count": 56,
+      "mean": 2.0866,
+      "median": 2.0475,
       "min": 1.99,
       "max": 2.389
     },
     "e10": {
-      "count": 34,
-      "mean": 2.0054,
-      "median": 1.989,
-      "min": 1.939,
+      "count": 61,
+      "mean": 2.0016,
+      "median": 1.99,
+      "min": 1.919,
       "max": 2.209
     },
     "e85": {
-      "count": 14,
-      "mean": 0.936,
-      "median": 0.9315,
-      "min": 0.899,
+      "count": 26,
+      "mean": 0.9314,
+      "median": 0.925,
+      "min": 0.894,
       "max": 0.979
     },
     "gplc": {
-      "count": 2,
-      "mean": 1.024,
-      "median": 1.024,
-      "min": 1.009,
+      "count": 5,
+      "mean": 1.018,
+      "median": 1.019,
+      "min": 0.999,
       "max": 1.039
     }
   },
@@ -61,9 +61,25 @@
       "lat": 4873800,
       "lng": 229500,
       "fuels": {
-        "gazole": 1.989,
+        "gazole": 1.93,
         "sp98": 1.99,
-        "e10": 1.961
+        "e10": 1.941
+      }
+    },
+    {
+      "id": "92160001",
+      "cp": "92160",
+      "ville": "Antony",
+      "adresse": "134 Rue Pascal",
+      "pop": "R",
+      "lat": 4874000,
+      "lng": 231500,
+      "fuels": {
+        "gazole": 2,
+        "sp98": 2.052,
+        "e10": 1.919,
+        "e85": 0.944,
+        "gplc": 0.999
       }
     },
     {
@@ -76,9 +92,51 @@
       "lng": 230800,
       "fuels": {
         "gazole": 2.026,
-        "sp98": 2.041,
-        "e10": 1.961,
+        "sp98": 2.038,
+        "e10": 1.958,
         "e85": 0.944
+      }
+    },
+    {
+      "id": "92600007",
+      "cp": "92600",
+      "ville": "Asnières-sur-Seine",
+      "adresse": "96 Avenue d'Argenteuil",
+      "pop": "R",
+      "lat": 4891500,
+      "lng": 228300,
+      "fuels": {
+        "gazole": 2.139,
+        "sp98": 2.249,
+        "e10": 2.119
+      }
+    },
+    {
+      "id": "92220009",
+      "cp": "92220",
+      "ville": "Bagneux",
+      "adresse": "12 Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4879700,
+      "lng": 229800,
+      "fuels": {
+        "gazole": 2.139,
+        "sp98": 2.149,
+        "e10": 2.019
+      }
+    },
+    {
+      "id": "92100015",
+      "cp": "92100",
+      "ville": "Boulogne-Billancourt",
+      "adresse": "108 AV.A MORIZET",
+      "pop": "R",
+      "lat": 4884000,
+      "lng": 223100,
+      "fuels": {
+        "gazole": 2.084,
+        "e10": 1.99,
+        "e85": 0.915
       }
     },
     {
@@ -94,6 +152,20 @@
       }
     },
     {
+      "id": "92100016",
+      "cp": "92100",
+      "ville": "Boulogne-Billancourt",
+      "adresse": "263 BOULEVARD JEAN JAURES",
+      "pop": "R",
+      "lat": 4882600,
+      "lng": 224800,
+      "fuels": {
+        "gazole": 2.129,
+        "sp98": 2.249,
+        "e10": 2.069
+      }
+    },
+    {
       "id": "92100014",
       "cp": "92100",
       "ville": "Boulogne-Billancourt",
@@ -102,7 +174,7 @@
       "lat": 4883585,
       "lng": 223898,
       "fuels": {
-        "gazole": 2.143,
+        "gazole": 2.084,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -116,7 +188,7 @@
       "lat": 4878600,
       "lng": 231700,
       "fuels": {
-        "gazole": 2.109,
+        "gazole": 2.05,
         "e10": 1.99
       }
     },
@@ -135,6 +207,21 @@
       }
     },
     {
+      "id": "92140016",
+      "cp": "92140",
+      "ville": "Clamart",
+      "adresse": "1 AVENUE CLAUDE TREBIGNAUD",
+      "pop": "R",
+      "lat": 4879400,
+      "lng": 225200,
+      "fuels": {
+        "gazole": 1.95,
+        "sp98": 1.99,
+        "e10": 1.963,
+        "e85": 0.909
+      }
+    },
+    {
       "id": "92140014",
       "cp": "92140",
       "ville": "Clamart",
@@ -143,7 +230,7 @@
       "lat": 4878500,
       "lng": 225100,
       "fuels": {
-        "gazole": 2.131,
+        "gazole": 2.072,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -157,10 +244,52 @@
       "lat": 4878000,
       "lng": 223800,
       "fuels": {
-        "gazole": 2.009,
-        "sp98": 2.063,
-        "e10": 1.983,
+        "gazole": 1.988,
+        "sp98": 2.049,
+        "e10": 1.969,
         "e85": 0.925
+      }
+    },
+    {
+      "id": "92140009",
+      "cp": "92140",
+      "ville": "Clamart",
+      "adresse": "5 Rue de Vanves",
+      "pop": "R",
+      "lat": 4881200,
+      "lng": 227100,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.229,
+        "e10": 2.049
+      }
+    },
+    {
+      "id": "92140015",
+      "cp": "92140",
+      "ville": "Clamart",
+      "adresse": "6 AVENUE CLAUDE TREBIGNAUD",
+      "pop": "R",
+      "lat": 4879300,
+      "lng": 225300,
+      "fuels": {
+        "gazole": 1.95,
+        "sp98": 1.99,
+        "e10": 1.963,
+        "e85": 0.909
+      }
+    },
+    {
+      "id": "92110011",
+      "cp": "92110",
+      "ville": "Clichy",
+      "adresse": "10 BLD DU GENERAL LECLERC",
+      "pop": "R",
+      "lat": 4890000,
+      "lng": 231700,
+      "fuels": {
+        "gazole": 2.076,
+        "sp98": 1.99
       }
     },
     {
@@ -172,9 +301,9 @@
       "lat": 4890700,
       "lng": 230100,
       "fuels": {
-        "gazole": 2.008,
+        "gazole": 1.949,
         "sp98": 1.99,
-        "e10": 1.981,
+        "e10": 1.961,
         "e85": 0.899
       }
     },
@@ -193,6 +322,22 @@
       }
     },
     {
+      "id": "92000018",
+      "cp": "92000",
+      "ville": "Colombes",
+      "adresse": "47 BLD DU HAVRE",
+      "pop": "R",
+      "lat": 4891900,
+      "lng": 222300,
+      "fuels": {
+        "gazole": 2.061,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.894,
+        "gplc": 1.019
+      }
+    },
+    {
       "id": "92700023",
       "cp": "92700",
       "ville": "Colombes",
@@ -208,6 +353,21 @@
       }
     },
     {
+      "id": "92400016",
+      "cp": "92400",
+      "ville": "Courbevoie",
+      "adresse": "41 QUAI PAUL DOUMER",
+      "pop": "R",
+      "lat": 4889400,
+      "lng": 226000,
+      "fuels": {
+        "gazole": 2.082,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.915
+      }
+    },
+    {
       "id": "92400020",
       "cp": "92400",
       "ville": "Courbevoie",
@@ -216,9 +376,39 @@
       "lat": 4890000,
       "lng": 226100,
       "fuels": {
-        "gazole": 2.006,
+        "gazole": 1.947,
         "sp98": 1.99,
-        "e10": 1.979
+        "e10": 1.959
+      }
+    },
+    {
+      "id": "92400018",
+      "cp": "92400",
+      "ville": "Courbevoie",
+      "adresse": "53-55 RUE DE L'ALMA",
+      "pop": "R",
+      "lat": 4889685,
+      "lng": 225419,
+      "fuels": {
+        "gazole": 2.053,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "92400017",
+      "cp": "92400",
+      "ville": "Courbevoie",
+      "adresse": "72 BLD DE VERDUN",
+      "pop": "R",
+      "lat": 4890200,
+      "lng": 225900,
+      "fuels": {
+        "gazole": 2.053,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.915,
+        "gplc": 1.024
       }
     },
     {
@@ -244,10 +434,24 @@
       "lat": 4879300,
       "lng": 229000,
       "fuels": {
-        "gazole": 2.009,
-        "sp98": 2.063,
-        "e10": 1.983,
+        "gazole": 1.985,
+        "sp98": 2.047,
+        "e10": 1.967,
         "e85": 0.928
+      }
+    },
+    {
+      "id": "92380007",
+      "cp": "92380",
+      "ville": "Garches",
+      "adresse": "173 179 RUE DE LA PORTE JAUNE",
+      "pop": "R",
+      "lat": 4885100,
+      "lng": 220400,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.159,
+        "e10": 2.009
       }
     },
     {
@@ -266,6 +470,49 @@
       }
     },
     {
+      "id": "92230003",
+      "cp": "92230",
+      "ville": "Gennevilliers",
+      "adresse": "21 Rue Louis Calmel",
+      "pop": "R",
+      "lat": 4892600,
+      "lng": 229200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.099,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "92600009",
+      "cp": "92600",
+      "ville": "Gennevilliers",
+      "adresse": "272 AVENUE DES GRESILLONS",
+      "pop": "R",
+      "lat": 4892000,
+      "lng": 231300,
+      "fuels": {
+        "gazole": 2.073,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "92230011",
+      "cp": "92230",
+      "ville": "Gennevilliers",
+      "adresse": "37 AVENUE LUCIEN LANTERNIER",
+      "pop": "R",
+      "lat": 4893200,
+      "lng": 229000,
+      "fuels": {
+        "gazole": 1.943,
+        "sp98": 1.99,
+        "e10": 1.956,
+        "e85": 0.899
+      }
+    },
+    {
       "id": "92130005",
       "cp": "92130",
       "ville": "Issy-les-Moulineaux",
@@ -274,9 +521,9 @@
       "lat": 4881800,
       "lng": 227700,
       "fuels": {
-        "gazole": 2.006,
-        "sp98": 2.06,
-        "e10": 1.98,
+        "gazole": 1.996,
+        "sp98": 2.043,
+        "e10": 1.963,
         "e85": 0.925
       }
     },
@@ -289,9 +536,9 @@
       "lat": 4882784.166,
       "lng": 227133.643,
       "fuels": {
-        "gazole": 2.006,
+        "gazole": 1.947,
         "sp98": 1.99,
-        "e10": 1.98
+        "e10": 1.96
       }
     },
     {
@@ -303,9 +550,9 @@
       "lat": 4890600,
       "lng": 223600,
       "fuels": {
-        "gazole": 2.015,
-        "sp98": 2.068,
-        "e10": 1.988,
+        "gazole": 1.99,
+        "sp98": 2.048,
+        "e10": 1.968,
         "e85": 0.935
       }
     },
@@ -322,6 +569,20 @@
         "sp98": 2.279,
         "e10": 2.109,
         "e85": 0.979
+      }
+    },
+    {
+      "id": "92300014",
+      "cp": "92300",
+      "ville": "Levallois-Perret",
+      "adresse": "106, rue du président wilson",
+      "pop": "R",
+      "lat": 4889600,
+      "lng": 228700,
+      "fuels": {
+        "gazole": 2.089,
+        "sp98": 2.219,
+        "e10": 2.039
       }
     },
     {
@@ -346,8 +607,22 @@
       "lat": 4882100,
       "lng": 231200,
       "fuels": {
-        "gazole": 2.075,
+        "gazole": 2.016,
         "e85": 0.919
+      }
+    },
+    {
+      "id": "92240001",
+      "cp": "92240",
+      "ville": "Malakoff",
+      "adresse": "22 Boulevard Gabriel Péri",
+      "pop": "R",
+      "lat": 4881915,
+      "lng": 229591,
+      "fuels": {
+        "gazole": 2.169,
+        "sp98": 2.199,
+        "e10": 2.099
       }
     },
     {
@@ -363,6 +638,20 @@
         "sp98": 2.132,
         "e10": 2.002,
         "e85": 0.959
+      }
+    },
+    {
+      "id": "92190003",
+      "cp": "92190",
+      "ville": "Meudon",
+      "adresse": "97 TER ROUTE DU PAVE DES GARDES",
+      "pop": "R",
+      "lat": 4881320.03,
+      "lng": 221690.094,
+      "fuels": {
+        "gazole": 2.05,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -390,9 +679,9 @@
       "lat": 4888327,
       "lng": 220390.52,
       "fuels": {
-        "gazole": 2.015,
+        "gazole": 1.956,
         "sp98": 1.99,
-        "e10": 1.98
+        "e10": 1.96
       }
     },
     {
@@ -404,9 +693,24 @@
       "lat": 4888100,
       "lng": 220600,
       "fuels": {
-        "gazole": 2.015,
+        "gazole": 1.956,
         "sp98": 1.99,
-        "e10": 1.98
+        "e10": 1.96
+      }
+    },
+    {
+      "id": "92000019",
+      "cp": "92000",
+      "ville": "Nanterre",
+      "adresse": "77, AVENUE LENINE",
+      "pop": "R",
+      "lat": 4888800,
+      "lng": 219000,
+      "fuels": {
+        "gazole": 1.951,
+        "sp98": 1.99,
+        "e10": 1.96,
+        "e85": 0.899
       }
     },
     {
@@ -437,6 +741,20 @@
       }
     },
     {
+      "id": "92200005",
+      "cp": "92200",
+      "ville": "Neuilly-sur-Seine",
+      "adresse": "RUE ACHILE PERETTI - TOTAL",
+      "pop": "R",
+      "lat": 4888361.34,
+      "lng": 227251.78,
+      "fuels": {
+        "gazole": 2.076,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "92800008",
       "cp": "92800",
       "ville": "Puteaux",
@@ -464,6 +782,34 @@
       }
     },
     {
+      "id": "92500012",
+      "cp": "92500",
+      "ville": "Rueil-Malmaison",
+      "adresse": "119 AVENUE DU PDT POMPIDOU",
+      "pop": "R",
+      "lat": 4886843,
+      "lng": 219878,
+      "fuels": {
+        "gazole": 2.054,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "92500017",
+      "cp": "92500",
+      "ville": "Rueil-Malmaison",
+      "adresse": "155 AVENUE PAUL DOUMER",
+      "pop": "R",
+      "lat": 4887062.22,
+      "lng": 218045.32,
+      "fuels": {
+        "gazole": 2.189,
+        "sp98": 2.199,
+        "e10": 2.099,
+        "e85": 0.965
+      }
+    },
+    {
       "id": "92500015",
       "cp": "92500",
       "ville": "Rueil-Malmaison",
@@ -486,7 +832,7 @@
       "lat": 4886800,
       "lng": 219100,
       "fuels": {
-        "gazole": 2.14,
+        "gazole": 2.081,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -500,9 +846,24 @@
       "lat": 4884200,
       "lng": 220200,
       "fuels": {
-        "gazole": 2.007,
-        "sp98": 2.063,
-        "e10": 1.983
+        "gazole": 1.979,
+        "sp98": 2.052,
+        "e10": 1.972
+      }
+    },
+    {
+      "id": "92210008",
+      "cp": "92210",
+      "ville": "Saint-Cloud",
+      "adresse": "35 Boulevard de la République",
+      "pop": "R",
+      "lat": 4884500,
+      "lng": 221000,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.189,
+        "e10": 2.019,
+        "e85": 0.979
       }
     },
     {
@@ -514,11 +875,39 @@
       "lat": 4885500,
       "lng": 222300,
       "fuels": {
-        "gazole": 2.007,
+        "gazole": 1.948,
         "sp98": 1.99,
-        "e10": 1.983,
+        "e10": 1.963,
         "e85": 0.909,
         "gplc": 1.009
+      }
+    },
+    {
+      "id": "92220010",
+      "cp": "92220",
+      "ville": "Sceaux",
+      "adresse": "98T AV DE BOURG LA REINE",
+      "pop": "R",
+      "lat": 4878500,
+      "lng": 230500,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.199,
+        "e10": 1.999,
+        "e85": 0.969
+      }
+    },
+    {
+      "id": "92150006",
+      "cp": "92150",
+      "ville": "Suresnes",
+      "adresse": "131 BOULEVARD HENRI SELLIER",
+      "pop": "R",
+      "lat": 4886500,
+      "lng": 221900,
+      "fuels": {
+        "gazole": 2.082,
+        "e10": 1.99
       }
     },
     {
@@ -544,10 +933,25 @@
       "lat": 4882274,
       "lng": 229497,
       "fuels": {
-        "gazole": 2.115,
+        "gazole": 2.056,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.915
+      }
+    },
+    {
+      "id": "92420002",
+      "cp": "92420",
+      "ville": "Vaucresson",
+      "adresse": "18 Boulevard de la République",
+      "pop": "R",
+      "lat": 4883900,
+      "lng": 216600,
+      "fuels": {
+        "gazole": 1.983,
+        "sp95": 2.018,
+        "sp98": 2.039,
+        "e10": 1.966
       }
     },
     {
@@ -559,9 +963,9 @@
       "lat": 4881900,
       "lng": 216800,
       "fuels": {
-        "gazole": 2.001,
-        "sp98": 2.054,
-        "e10": 1.974
+        "gazole": 1.993,
+        "sp98": 2.042,
+        "e10": 1.962
       }
     },
     {
