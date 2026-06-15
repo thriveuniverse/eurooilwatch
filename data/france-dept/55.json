@@ -3,51 +3,51 @@
   "name": "Meuse",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 20,
+  "stationCount": 36,
   "fuels": {
     "gazole": {
-      "count": 20,
-      "mean": 2.0128,
+      "count": 36,
+      "mean": 2.0157,
       "median": 1.997,
       "min": 1.917,
-      "max": 2.107
+      "max": 2.169
     },
     "sp95": {
-      "count": 5,
-      "mean": 2.0172,
-      "median": 1.989,
+      "count": 9,
+      "mean": 2.0396,
+      "median": 2.017,
       "min": 1.989,
-      "max": 2.08
+      "max": 2.169
     },
     "sp98": {
-      "count": 14,
-      "mean": 2.0672,
-      "median": 2.0625,
+      "count": 28,
+      "mean": 2.0634,
+      "median": 2.056,
       "min": 1.99,
-      "max": 2.198
+      "max": 2.219
     },
     "e10": {
-      "count": 16,
-      "mean": 1.9705,
-      "median": 1.967,
+      "count": 29,
+      "mean": 1.9629,
+      "median": 1.949,
       "min": 1.915,
-      "max": 2.077
+      "max": 2.079
     },
     "e85": {
-      "count": 6,
-      "mean": 0.8205,
+      "count": 10,
+      "mean": 0.8267,
       "median": 0.819,
-      "min": 0.798,
-      "max": 0.849
+      "min": 0.788,
+      "max": 0.898
     },
     "gplc": {
-      "count": 3,
-      "mean": 1.1373,
-      "median": 1.211,
-      "min": 0.99,
+      "count": 4,
+      "mean": 1.1003,
+      "median": 1.1005,
+      "min": 0.989,
       "max": 1.211
     }
   },
@@ -66,6 +66,49 @@
       }
     },
     {
+      "id": "55000004",
+      "cp": "55000",
+      "ville": "Bar-le-Duc",
+      "adresse": "Avenue de la Grande Terre",
+      "pop": "R",
+      "lat": 4875700,
+      "lng": 519200,
+      "fuels": {
+        "gazole": 1.97,
+        "sp98": 2.022,
+        "e10": 1.918,
+        "e85": 0.788
+      }
+    },
+    {
+      "id": "55100003",
+      "cp": "55100",
+      "ville": "Belleville-sur-Meuse",
+      "adresse": "2 Avenue Miribel",
+      "pop": "R",
+      "lat": 4916800,
+      "lng": 538700,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 2.059,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "55430001",
+      "cp": "55430",
+      "ville": "Belleville-sur-Meuse",
+      "adresse": "6 Rue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4916840.341,
+      "lng": 538679.00423,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.055,
+        "e10": 1.929
+      }
+    },
+    {
       "id": "55290001",
       "cp": "55290",
       "ville": "Bure",
@@ -76,6 +119,21 @@
       "fuels": {
         "gazole": 1.989,
         "e10": 1.975
+      }
+    },
+    {
+      "id": "55300003",
+      "cp": "55300",
+      "ville": "Chauvoncourt",
+      "adresse": "Route de Bar le Duc",
+      "pop": "R",
+      "lat": 4890200,
+      "lng": 551500,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 2.067,
+        "e10": 1.943,
+        "e85": 0.809
       }
     },
     {
@@ -123,6 +181,60 @@
       }
     },
     {
+      "id": "55110002",
+      "cp": "55110",
+      "ville": "Consenvoye",
+      "adresse": "36 BIS ROUTE NATIONALE",
+      "pop": "R",
+      "lat": 4928611.10956,
+      "lng": 528841.10553,
+      "fuels": {
+        "gazole": 2.089
+      }
+    },
+    {
+      "id": "55320001",
+      "cp": "55320",
+      "ville": "Dieue-sur-Meuse",
+      "adresse": "Lieu-dit le moulin Charlier",
+      "pop": "R",
+      "lat": 4907700,
+      "lng": 544800,
+      "fuels": {
+        "gazole": 1.996,
+        "sp98": 2.049,
+        "e10": 1.926
+      }
+    },
+    {
+      "id": "55110003",
+      "cp": "55110",
+      "ville": "Dun-sur-Meuse",
+      "adresse": "29 rue Ste Marguerite",
+      "pop": "R",
+      "lat": 4939100,
+      "lng": 518300,
+      "fuels": {
+        "gazole": 2.089,
+        "e10": 2.079,
+        "e85": 0.898
+      }
+    },
+    {
+      "id": "55400003",
+      "cp": "55400",
+      "ville": "Étain",
+      "adresse": "30 Rue du 3ème RHC",
+      "pop": "R",
+      "lat": 4921700,
+      "lng": 564300,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.069,
+        "e10": 1.949
+      }
+    },
+    {
       "id": "55000003",
       "cp": "55000",
       "ville": "Fains-Véel",
@@ -152,6 +264,20 @@
       }
     },
     {
+      "id": "55160015",
+      "cp": "55160",
+      "ville": "Fresnes-en-Woëvre",
+      "adresse": "15 rue de VERDUN",
+      "pop": "R",
+      "lat": 4910000,
+      "lng": 562400,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.119,
+        "e10": 1.989
+      }
+    },
+    {
       "id": "55160014",
       "cp": "55160",
       "ville": "Haudiomont",
@@ -167,6 +293,20 @@
       }
     },
     {
+      "id": "55130002",
+      "cp": "55130",
+      "ville": "Houdelaincourt",
+      "adresse": "10 Rue d'Abainville",
+      "pop": "R",
+      "lat": 4855000,
+      "lng": 548100,
+      "fuels": {
+        "gazole": 2.169,
+        "sp95": 2.169,
+        "sp98": 2.219
+      }
+    },
+    {
       "id": "55500002",
       "cp": "55500",
       "ville": "Ligny-en-Barrois",
@@ -175,9 +315,23 @@
       "lat": 4868769,
       "lng": 532119,
       "fuels": {
-        "gazole": 2.065,
+        "gazole": 2.039,
         "sp98": 1.99,
-        "e10": 1.99
+        "e10": 1.963
+      }
+    },
+    {
+      "id": "55500001",
+      "cp": "55500",
+      "ville": "Ligny-en-Barrois",
+      "adresse": "Rue de la Ballastière",
+      "pop": "R",
+      "lat": 4867700,
+      "lng": 532600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.049,
+        "sp98": 2.099
       }
     },
     {
@@ -209,6 +363,21 @@
       }
     },
     {
+      "id": "55800002",
+      "cp": "55800",
+      "ville": "Revigny-sur-Ornain",
+      "adresse": "30 rue de la tresse",
+      "pop": "R",
+      "lat": 4882500,
+      "lng": 499300,
+      "fuels": {
+        "gazole": 1.973,
+        "sp95": 2.009,
+        "sp98": 2.049,
+        "e10": 1.945
+      }
+    },
+    {
       "id": "55300002",
       "cp": "55300",
       "ville": "Saint-Mihiel",
@@ -221,6 +390,20 @@
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.829
+      }
+    },
+    {
+      "id": "55300004",
+      "cp": "55300",
+      "ville": "Saint-Mihiel",
+      "adresse": "RUE DU DOCTEUR THIERRY",
+      "pop": "R",
+      "lat": 4888900,
+      "lng": 554300,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.929
       }
     },
     {
@@ -247,8 +430,8 @@
       "lat": 4948385.31193,
       "lng": 520339.75146,
       "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.989
+        "gazole": 1.966,
+        "sp95": 2.002
       }
     },
     {
@@ -260,9 +443,9 @@
       "lat": 4948300,
       "lng": 520200,
       "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.989,
-        "e10": 1.925,
+        "gazole": 1.966,
+        "sp95": 2.002,
+        "e10": 1.938,
         "e85": 0.809
       }
     },
@@ -278,6 +461,20 @@
         "gazole": 2.06,
         "sp95": 2.08,
         "sp98": 2.16
+      }
+    },
+    {
+      "id": "55140001",
+      "cp": "55140",
+      "ville": "Vaucouleurs",
+      "adresse": "6 rue des Gites",
+      "pop": "R",
+      "lat": 4860362,
+      "lng": 566686,
+      "fuels": {
+        "gazole": 1.997,
+        "sp95": 2.017,
+        "e10": 1.952
       }
     },
     {
@@ -302,6 +499,7 @@
       "lng": 538000,
       "fuels": {
         "gazole": 1.992,
+        "sp98": 1.99,
         "e10": 1.988,
         "e85": 0.829
       }
@@ -323,6 +521,21 @@
       }
     },
     {
+      "id": "55100004",
+      "cp": "55100",
+      "ville": "Verdun",
+      "adresse": "Place Maurice Genevoix",
+      "pop": "R",
+      "lat": 4916500,
+      "lng": 538000,
+      "fuels": {
+        "gazole": 1.988,
+        "sp98": 2.008,
+        "e10": 1.923,
+        "gplc": 0.989
+      }
+    },
+    {
       "id": "55210003",
       "cp": "55210",
       "ville": "Vigneulles-lès-Hattonchâtel",
@@ -334,6 +547,21 @@
         "gazole": 1.989,
         "sp98": 2.022,
         "e10": 1.916
+      }
+    },
+    {
+      "id": "55210001",
+      "cp": "55210",
+      "ville": "Vigneulles-lès-Hattonchâtel",
+      "adresse": "63 Rue Raymond Poincaré",
+      "pop": "R",
+      "lat": 4898000,
+      "lng": 571300,
+      "fuels": {
+        "gazole": 2.072,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.849
       }
     }
   ]

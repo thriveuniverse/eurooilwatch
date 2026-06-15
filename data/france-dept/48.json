@@ -3,45 +3,45 @@
   "name": "Lozère",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 26,
+  "stationCount": 35,
   "fuels": {
     "gazole": {
-      "count": 26,
-      "mean": 2.0183,
+      "count": 35,
+      "mean": 2.0118,
       "median": 1.999,
       "min": 1.91,
       "max": 2.15
     },
     "sp95": {
-      "count": 6,
-      "mean": 2.0657,
+      "count": 10,
+      "mean": 2.0541,
       "median": 2.053,
-      "min": 2.019,
+      "min": 1.989,
       "max": 2.149
     },
     "sp98": {
-      "count": 12,
-      "mean": 2.0768,
-      "median": 2.084,
+      "count": 16,
+      "mean": 2.0753,
+      "median": 2.089,
       "min": 1.99,
       "max": 2.188
     },
     "e10": {
-      "count": 18,
-      "mean": 1.9747,
+      "count": 24,
+      "mean": 1.9748,
       "median": 1.964,
       "min": 1.901,
       "max": 2.08
     },
     "e85": {
-      "count": 6,
-      "mean": 0.814,
-      "median": 0.814,
+      "count": 7,
+      "mean": 0.8261,
+      "median": 0.819,
       "min": 0.799,
-      "max": 0.839
+      "max": 0.899
     }
   },
   "stations": [
@@ -151,6 +151,20 @@
       }
     },
     {
+      "id": "48310001",
+      "cp": "48310",
+      "ville": "Fournels",
+      "adresse": "Route de Saint Juery",
+      "pop": "R",
+      "lat": 4481700,
+      "lng": 311700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.989,
+        "e10": 1.959
+      }
+    },
+    {
       "id": "48600001",
       "cp": "48600",
       "ville": "Grandrieu",
@@ -160,6 +174,19 @@
       "lng": 363000,
       "fuels": {
         "gazole": 1.999
+      }
+    },
+    {
+      "id": "48600003",
+      "cp": "48600",
+      "ville": "Grandrieu",
+      "adresse": "ROUTE DE ST CHELY",
+      "pop": "R",
+      "lat": 4478400,
+      "lng": 363600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.089
       }
     },
     {
@@ -191,6 +218,48 @@
       }
     },
     {
+      "id": "48300003",
+      "cp": "48300",
+      "ville": "Langogne",
+      "adresse": "Avenue Jean Moulin",
+      "pop": "R",
+      "lat": 4472425,
+      "lng": 386052,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.105,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "48300001",
+      "cp": "48300",
+      "ville": "Langogne",
+      "adresse": "Quartier du Pont d'Allier",
+      "pop": "R",
+      "lat": 4473530,
+      "lng": 385840,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.079,
+        "sp98": 2.11
+      }
+    },
+    {
+      "id": "48140002",
+      "cp": "48140",
+      "ville": "Le Malzieu-Ville",
+      "adresse": "route de saugues",
+      "pop": "R",
+      "lat": 4485600,
+      "lng": 333200,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.099,
+        "e10": 2.019
+      }
+    },
+    {
       "id": "48200008",
       "cp": "48200",
       "ville": "Les Monts-Verts",
@@ -202,6 +271,47 @@
         "gazole": 2.085,
         "sp98": 2.112,
         "e10": 2.018
+      }
+    },
+    {
+      "id": "48100007",
+      "cp": "48100",
+      "ville": "Marvejols",
+      "adresse": "4 BIS PROMENADE LOUIS CABANETTE",
+      "pop": "R",
+      "lat": 4454400,
+      "lng": 328700,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 1.999,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "48100004",
+      "cp": "48100",
+      "ville": "Marvejols",
+      "adresse": "Avenue Théophile Roussel",
+      "pop": "R",
+      "lat": 4455700,
+      "lng": 329100,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.939,
+        "e85": 0.899
+      }
+    },
+    {
+      "id": "48100002",
+      "cp": "48100",
+      "ville": "Marvejols",
+      "adresse": "Boulevard Maréchal Foch",
+      "pop": "R",
+      "lat": 4455129.36314,
+      "lng": 329110.64193,
+      "fuels": {
+        "gazole": 2.029,
+        "e10": 2.009
       }
     },
     {
@@ -299,8 +409,8 @@
       "lat": 4463336,
       "lng": 347619,
       "fuels": {
-        "gazole": 2.15,
-        "sp98": 2.17,
+        "gazole": 2.03,
+        "sp98": 2.14,
         "e10": 2.08
       }
     },
@@ -355,6 +465,19 @@
       "fuels": {
         "gazole": 2.15,
         "sp95": 2.1
+      }
+    },
+    {
+      "id": "48200001",
+      "cp": "48200",
+      "ville": "Saint-Chély-d'Apcher",
+      "adresse": "AVENUE PIGNIDE",
+      "pop": "R",
+      "lat": 4479700,
+      "lng": 327800,
+      "fuels": {
+        "gazole": 2.003,
+        "sp95": 1.99
       }
     },
     {

@@ -3,55 +3,67 @@
   "name": "Doubs",
   "regionCode": "BFC",
   "regionName": "Bourgogne-Franche-Comté",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 62,
+  "stationCount": 97,
   "fuels": {
     "gazole": {
-      "count": 61,
-      "mean": 2.0135,
-      "median": 2.004,
+      "count": 97,
+      "mean": 2.0187,
+      "median": 2.008,
       "min": 1.921,
-      "max": 2.109
+      "max": 2.25
     },
     "sp95": {
-      "count": 28,
-      "mean": 2.0202,
-      "median": 1.989,
+      "count": 43,
+      "mean": 2.0267,
+      "median": 1.995,
       "min": 1.965,
       "max": 2.129
     },
     "sp98": {
-      "count": 47,
-      "mean": 2.0561,
-      "median": 2.049,
-      "min": 1.984,
+      "count": 73,
+      "mean": 2.0577,
+      "median": 2.04,
+      "min": 1.967,
       "max": 2.218
     },
     "e10": {
-      "count": 46,
-      "mean": 1.9574,
-      "median": 1.9405,
-      "min": 1.887,
+      "count": 69,
+      "mean": 1.9592,
+      "median": 1.939,
+      "min": 1.869,
       "max": 2.105
     },
     "e85": {
-      "count": 18,
-      "mean": 0.8177,
-      "median": 0.804,
-      "min": 0.77,
-      "max": 0.998
+      "count": 29,
+      "mean": 0.8262,
+      "median": 0.809,
+      "min": 0.769,
+      "max": 1.14
     },
     "gplc": {
-      "count": 3,
-      "mean": 1.0847,
+      "count": 5,
+      "mean": 1.0704,
       "median": 1.097,
-      "min": 1.058,
+      "min": 0.999,
       "max": 1.099
     }
   },
   "stations": [
+    {
+      "id": "25750002",
+      "cp": "25750",
+      "ville": "Aibre",
+      "adresse": "29 grande rue",
+      "pop": "R",
+      "lat": 4754907.39,
+      "lng": 669603.72,
+      "fuels": {
+        "gazole": 2.25
+      }
+    },
     {
       "id": "25330001",
       "cp": "25330",
@@ -81,6 +93,20 @@
       }
     },
     {
+      "id": "25750003",
+      "cp": "25750",
+      "ville": "Arcey",
+      "adresse": "4 IMPASSE DE LA CHEVU",
+      "pop": "R",
+      "lat": 4751862.7,
+      "lng": 665295.9,
+      "fuels": {
+        "gazole": 1.948,
+        "e10": 1.895,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "25400003",
       "cp": "25400",
       "ville": "Audincourt",
@@ -93,6 +119,21 @@
         "sp95": 1.965,
         "sp98": 1.984,
         "e10": 1.887
+      }
+    },
+    {
+      "id": "25400004",
+      "cp": "25400",
+      "ville": "Audincourt",
+      "adresse": "66 RUE DE SELONCOURT",
+      "pop": "R",
+      "lat": 4747500,
+      "lng": 684700,
+      "fuels": {
+        "gazole": 1.972,
+        "sp95": 1.969,
+        "sp98": 1.995,
+        "e10": 1.905
       }
     },
     {
@@ -139,6 +180,19 @@
         "e10": 1.899,
         "e85": 0.789,
         "gplc": 1.099
+      }
+    },
+    {
+      "id": "25110001",
+      "cp": "25110",
+      "ville": "Baume-les-Dames",
+      "adresse": "2 Avenue du Général Leclerc",
+      "pop": "R",
+      "lat": 4735200,
+      "lng": 635800,
+      "fuels": {
+        "gazole": 2.09,
+        "sp95": 1.99
       }
     },
     {
@@ -308,8 +362,6 @@
       "lng": 596300,
       "fuels": {
         "gazole": 2.016,
-        "sp98": 1.99,
-        "e10": 1.974,
         "e85": 0.819
       }
     },
@@ -328,6 +380,49 @@
       }
     },
     {
+      "id": "25720013",
+      "cp": "25720",
+      "ville": "Beure",
+      "adresse": "ROUTE DE LYON",
+      "pop": "R",
+      "lat": 4720723.1,
+      "lng": 599907.6,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.099,
+        "e10": 1.999,
+        "gplc": 1.099
+      }
+    },
+    {
+      "id": "25310001",
+      "cp": "25310",
+      "ville": "Blamont",
+      "adresse": "32  GRANDE RUE",
+      "pop": "R",
+      "lat": 4739111.4566,
+      "lng": 684714.52368,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "25022001",
+      "cp": "25220",
+      "ville": "Chalezeule",
+      "adresse": "1 chemin Voie des Agasses",
+      "pop": "R",
+      "lat": 4726400,
+      "lng": 606700,
+      "fuels": {
+        "gazole": 2.023,
+        "sp98": 2.095,
+        "e10": 1.929
+      }
+    },
+    {
       "id": "25220002",
       "cp": "25220",
       "ville": "Chalezeule",
@@ -339,6 +434,90 @@
         "gazole": 2.079,
         "sp98": 2.129,
         "e10": 2.099
+      }
+    },
+    {
+      "id": "25000021",
+      "cp": "25320",
+      "ville": "Chemaudin et Vaux",
+      "adresse": "RN 73",
+      "pop": "R",
+      "lat": 4720500,
+      "lng": 588700,
+      "fuels": {
+        "gazole": 2.013,
+        "sp98": 1.99,
+        "e10": 1.98
+      }
+    },
+    {
+      "id": "25200003",
+      "cp": "25200",
+      "ville": "Courcelles-lès-Montbéliard",
+      "adresse": "119 faubourg de besançon",
+      "pop": "R",
+      "lat": 4750900,
+      "lng": 677900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 1.989,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "25680001",
+      "cp": "25680",
+      "ville": "Cuse-et-Adrisans",
+      "adresse": "ZA DU PRE ROND",
+      "pop": "R",
+      "lat": 4748100,
+      "lng": 638100,
+      "fuels": {
+        "gazole": 2.007,
+        "sp98": 1.99,
+        "e10": 1.987
+      }
+    },
+    {
+      "id": "25490001",
+      "cp": "25490",
+      "ville": "Dampierre-les-Bois",
+      "adresse": "COMBE DU MAGNY",
+      "pop": "R",
+      "lat": 4751900,
+      "lng": 691600,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 1.999,
+        "e10": 1.902,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "25420006",
+      "cp": "25420",
+      "ville": "Dampierre-sur-le-Doubs",
+      "adresse": "grande rue",
+      "pop": "R",
+      "lat": 4747453.77418,
+      "lng": 672954.97381,
+      "fuels": {
+        "gazole": 1.98,
+        "sp98": 1.999,
+        "e10": 1.94
+      }
+    },
+    {
+      "id": "25450001",
+      "cp": "25450",
+      "ville": "Damprichard",
+      "adresse": "21 RUE DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 4724749.3,
+      "lng": 687872,
+      "fuels": {
+        "gazole": 2.16,
+        "sp95": 2.12
       }
     },
     {
@@ -388,6 +567,35 @@
       }
     },
     {
+      "id": "25480004",
+      "cp": "25480",
+      "ville": "École-Valentin",
+      "adresse": "rue de la combe du puits",
+      "pop": "R",
+      "lat": 4727700,
+      "lng": 599400,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.129,
+        "e10": 2.099
+      }
+    },
+    {
+      "id": "25150006",
+      "cp": "25150",
+      "ville": "Écot",
+      "adresse": "Autoroute A36",
+      "pop": "A",
+      "lat": 4744100,
+      "lng": 672900,
+      "fuels": {
+        "gazole": 2.13,
+        "sp98": 2.137,
+        "e10": 2.097,
+        "e85": 1.14
+      }
+    },
+    {
       "id": "25400005",
       "cp": "25400",
       "ville": "Exincourt",
@@ -429,6 +637,19 @@
       }
     },
     {
+      "id": "25650002",
+      "cp": "25650",
+      "ville": "Gilley",
+      "adresse": "ZA LES CAVES",
+      "pop": "R",
+      "lat": 4704739.00737,
+      "lng": 649753.26782,
+      "fuels": {
+        "gazole": 2.049,
+        "e10": 2.019
+      }
+    },
+    {
       "id": "25300006",
       "cp": "25300",
       "ville": "Houtaud",
@@ -441,6 +662,21 @@
         "sp95": 1.989,
         "sp98": 2.027,
         "e10": 1.937
+      }
+    },
+    {
+      "id": "25250002",
+      "cp": "25250",
+      "ville": "L'Isle-sur-le-Doubs",
+      "adresse": "Avenue Foch",
+      "pop": "R",
+      "lat": 4744672.06332,
+      "lng": 657943.38078,
+      "fuels": {
+        "gazole": 1.942,
+        "sp98": 1.999,
+        "e10": 1.895,
+        "e85": 0.809
       }
     },
     {
@@ -458,6 +694,35 @@
       }
     },
     {
+      "id": "25210002",
+      "cp": "25210",
+      "ville": "Le Russey",
+      "adresse": "8 Avenue du Maréchal de Lattre de Tassigny",
+      "pop": "R",
+      "lat": 4716200,
+      "lng": 672800,
+      "fuels": {
+        "gazole": 2.049,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "25210004",
+      "cp": "25210",
+      "ville": "Le Russey",
+      "adresse": "AVENUE DE LATTRE DE TASSIGNY",
+      "pop": "R",
+      "lat": 4715484.94,
+      "lng": 671999.6,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 2.099,
+        "sp98": 2.199,
+        "e10": 1.999,
+        "e85": 0.799
+      }
+    },
+    {
       "id": "25300012",
       "cp": "25300",
       "ville": "Les Fourgs",
@@ -468,6 +733,21 @@
       "fuels": {
         "gazole": 2.059,
         "e10": 2.019
+      }
+    },
+    {
+      "id": "25370002",
+      "cp": "25370",
+      "ville": "Les Hôpitaux-Neufs",
+      "adresse": "52, route de Lausanne",
+      "pop": "R",
+      "lat": 4677182,
+      "lng": 637855,
+      "fuels": {
+        "gazole": 1.972,
+        "sp95": 1.981,
+        "sp98": 2.025,
+        "e85": 0.809
       }
     },
     {
@@ -600,6 +880,54 @@
       }
     },
     {
+      "id": "25200005",
+      "cp": "25200",
+      "ville": "Montbéliard",
+      "adresse": "LE PIED DES GOUTTES",
+      "pop": "R",
+      "lat": 4749900,
+      "lng": 681400,
+      "fuels": {
+        "gazole": 1.941,
+        "sp95": 1.965,
+        "sp98": 1.984,
+        "e10": 1.904,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "25200001",
+      "cp": "25200",
+      "ville": "Montbéliard",
+      "adresse": "ROUTE DE BETHONCOURT",
+      "pop": "R",
+      "lat": 4752700,
+      "lng": 681000,
+      "fuels": {
+        "gazole": 1.95,
+        "sp95": 1.966,
+        "sp98": 1.983,
+        "e10": 1.906,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "25500001",
+      "cp": "25500",
+      "ville": "Morteau",
+      "adresse": "15 RUE SAINT MICHEL",
+      "pop": "R",
+      "lat": 4705600,
+      "lng": 660900,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 2.099,
+        "sp98": 2.199,
+        "e10": 1.999,
+        "e85": 0.799
+      }
+    },
+    {
       "id": "25500007",
       "cp": "25500",
       "ville": "Morteau",
@@ -628,6 +956,21 @@
       }
     },
     {
+      "id": "25500005",
+      "cp": "25500",
+      "ville": "Morteau",
+      "adresse": "ROUTE DU PRE DES COMBES",
+      "pop": "R",
+      "lat": 4705600,
+      "lng": 661700,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 2.019,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "25240001",
       "cp": "25240",
       "ville": "Mouthe",
@@ -650,9 +993,23 @@
       "lat": 4712900,
       "lng": 652200,
       "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.969,
-        "sp98": 2.016
+        "gazole": 1.969,
+        "sp95": 1.966,
+        "sp98": 2.009
+      }
+    },
+    {
+      "id": "25290001",
+      "cp": "25290",
+      "ville": "Ornans",
+      "adresse": "2 rue de cantley",
+      "pop": "R",
+      "lat": 4711000,
+      "lng": 612600,
+      "fuels": {
+        "gazole": 2.089,
+        "sp95": 2.099,
+        "sp98": 2.149
       }
     },
     {
@@ -707,6 +1064,7 @@
       "lng": 596800,
       "fuels": {
         "gazole": 2.016,
+        "sp98": 1.99,
         "e10": 1.984
       }
     },
@@ -726,6 +1084,18 @@
       }
     },
     {
+      "id": "25150005",
+      "cp": "25150",
+      "ville": "Pont-de-Roide-Vermondans",
+      "adresse": "59 Rue de Montbéliard",
+      "pop": "R",
+      "lat": 4738900,
+      "lng": 677200,
+      "fuels": {
+        "gazole": 2.076
+      }
+    },
+    {
       "id": "25300002",
       "cp": "25300",
       "ville": "Pontarlier",
@@ -734,8 +1104,22 @@
       "lat": 4690900,
       "lng": 633500,
       "fuels": {
-        "gazole": 2.004,
-        "sp95": 1.99
+        "gazole": 2.004
+      }
+    },
+    {
+      "id": "25300009",
+      "cp": "25300",
+      "ville": "Pontarlier",
+      "adresse": "18 Avenue de l'Armée de l'Est",
+      "pop": "R",
+      "lat": 4689300,
+      "lng": 636500,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.139,
+        "e10": 2.099,
+        "e85": 0.899
       }
     },
     {
@@ -750,6 +1134,18 @@
         "gazole": 1.999,
         "sp98": 2.029,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "25300007",
+      "cp": "25300",
+      "ville": "Pontarlier",
+      "adresse": "Rue Pierre Déchanet",
+      "pop": "R",
+      "lat": 4690200,
+      "lng": 633400,
+      "fuels": {
+        "gazole": 1.995
       }
     },
     {
@@ -782,6 +1178,21 @@
       }
     },
     {
+      "id": "25220003",
+      "cp": "25220",
+      "ville": "Roche-lez-Beaupré",
+      "adresse": "Zone Artisanale des Prés Chalots",
+      "pop": "R",
+      "lat": 4727300,
+      "lng": 610200,
+      "fuels": {
+        "gazole": 2.008,
+        "sp95": 1.995,
+        "sp98": 2.063,
+        "e10": 1.899
+      }
+    },
+    {
       "id": "25410007",
       "cp": "25410",
       "ville": "Saint-Vit",
@@ -793,6 +1204,20 @@
         "gazole": 1.975,
         "sp95": 1.969,
         "e10": 1.9
+      }
+    },
+    {
+      "id": "25410004",
+      "cp": "25410",
+      "ville": "Saint-Vit",
+      "adresse": "2 Rue de Besançon",
+      "pop": "R",
+      "lat": 4718400,
+      "lng": 581500,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 1.969,
+        "sp98": 1.999
       }
     },
     {
@@ -808,6 +1233,21 @@
         "sp98": 1.999,
         "e10": 1.9,
         "e85": 0.798
+      }
+    },
+    {
+      "id": "25430001",
+      "cp": "25430",
+      "ville": "Sancey",
+      "adresse": "2 Route de Clerval",
+      "pop": "R",
+      "lat": 4730600,
+      "lng": 659500,
+      "fuels": {
+        "gazole": 2.079,
+        "sp95": 2.129,
+        "sp98": 2.149,
+        "e10": 2.099
       }
     },
     {
@@ -850,6 +1290,35 @@
         "sp95": 1.989,
         "sp98": 2.039,
         "e10": 1.989
+      }
+    },
+    {
+      "id": "25230002",
+      "cp": "25230",
+      "ville": "Seloncourt",
+      "adresse": "28 Avenue du Général Leclerc",
+      "pop": "R",
+      "lat": 4745900,
+      "lng": 686700,
+      "fuels": {
+        "gazole": 1.938,
+        "sp98": 1.967,
+        "e10": 1.869
+      }
+    },
+    {
+      "id": "25800002",
+      "cp": "25800",
+      "ville": "Valdahon",
+      "adresse": "12 GRANDE RUE",
+      "pop": "R",
+      "lat": 4714800,
+      "lng": 633500,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 1.997,
+        "e10": 1.889,
+        "e85": 0.769
       }
     },
     {
@@ -896,6 +1365,34 @@
       }
     },
     {
+      "id": "25530001",
+      "cp": "25530",
+      "ville": "Vercel-Villedieu-le-Camp",
+      "adresse": "Rue des Fourches",
+      "pop": "R",
+      "lat": 4718000,
+      "lng": 639000,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.999,
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "25600004",
+      "cp": "25600",
+      "ville": "Vieux-Charmont",
+      "adresse": "81 RUE DE BELFORT",
+      "pop": "R",
+      "lat": 4752826.75856,
+      "lng": 684104.93843,
+      "fuels": {
+        "gazole": 2.087,
+        "sp95": 2.075,
+        "sp98": 2.123
+      }
+    },
+    {
       "id": "25130002",
       "cp": "25130",
       "ville": "Villers-le-Lac",
@@ -925,7 +1422,7 @@
       }
     },
     {
-      "id": "25420002",
+      "id": "25420001",
       "cp": "25420",
       "ville": "Voujeaucourt",
       "adresse": "Rue de la Cray",
@@ -933,8 +1430,9 @@
       "lat": 4748200,
       "lng": 678000,
       "fuels": {
-        "sp98": 1.99,
-        "e10": 1.957
+        "gazole": 2.079,
+        "sp95": 2.099,
+        "sp98": 2.139
       }
     }
   ]

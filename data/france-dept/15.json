@@ -3,42 +3,42 @@
   "name": "Cantal",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 38,
+  "stationCount": 45,
   "fuels": {
     "gazole": {
-      "count": 38,
-      "mean": 2.0247,
-      "median": 2.0085,
+      "count": 45,
+      "mean": 2.0253,
+      "median": 2.016,
       "min": 1.907,
-      "max": 2.17
+      "max": 2.21
     },
     "sp95": {
-      "count": 22,
-      "mean": 2.0158,
-      "median": 1.998,
+      "count": 26,
+      "mean": 2.0216,
+      "median": 1.9985,
       "min": 1.952,
-      "max": 2.075
+      "max": 2.17
     },
     "sp98": {
-      "count": 24,
-      "mean": 2.0816,
-      "median": 2.0825,
+      "count": 26,
+      "mean": 2.0913,
+      "median": 2.0875,
       "min": 1.99,
-      "max": 2.229
+      "max": 2.23
     },
     "e10": {
-      "count": 19,
-      "mean": 1.9623,
-      "median": 1.949,
+      "count": 23,
+      "mean": 1.9605,
+      "median": 1.943,
       "min": 1.896,
       "max": 2.1
     },
     "e85": {
-      "count": 5,
-      "mean": 0.8192,
+      "count": 7,
+      "mean": 0.8179,
       "median": 0.809,
       "min": 0.809,
       "max": 0.859
@@ -52,6 +52,20 @@
     }
   },
   "stations": [
+    {
+      "id": "15100005",
+      "cp": "15100",
+      "ville": "Andelat",
+      "adresse": "Route d'Aurillac",
+      "pop": "R",
+      "lat": 4503800,
+      "lng": 306500,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "e10": 1.935
+      }
+    },
     {
       "id": "15000009",
       "cp": "15000",
@@ -76,9 +90,7 @@
       "lat": 4492300,
       "lng": 243500,
       "fuels": {
-        "gazole": 2.016,
-        "sp95": 1.99,
-        "sp98": 1.99
+        "gazole": 2.016
       }
     },
     {
@@ -107,7 +119,21 @@
         "gazole": 1.976,
         "sp95": 1.982,
         "sp98": 2.09,
-        "e10": 1.932
+        "e10": 1.932,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "15000003",
+      "cp": "15000",
+      "ville": "Aurillac",
+      "adresse": "86 BLD LOUIS DAUZIER",
+      "pop": "R",
+      "lat": 4492300,
+      "lng": 242800,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 1.99
       }
     },
     {
@@ -139,6 +165,21 @@
       }
     },
     {
+      "id": "15004002",
+      "cp": "15000",
+      "ville": "Aurillac",
+      "adresse": "Rue de la Jordanne",
+      "pop": "R",
+      "lat": 4491400,
+      "lng": 244100,
+      "fuels": {
+        "gazole": 1.917,
+        "sp95": 1.962,
+        "e10": 1.906,
+        "e85": 0.82
+      }
+    },
+    {
       "id": "15110003",
       "cp": "15110",
       "ville": "Chaudes-Aigues",
@@ -166,6 +207,19 @@
       }
     },
     {
+      "id": "15190001",
+      "cp": "15190",
+      "ville": "Condat",
+      "adresse": "ROUTE DU STADE",
+      "pop": "R",
+      "lat": 4533826,
+      "lng": 276036,
+      "fuels": {
+        "gazole": 2.079,
+        "sp95": 2.086
+      }
+    },
+    {
       "id": "15250001",
       "cp": "15250",
       "ville": "Jussac",
@@ -186,9 +240,9 @@
       "lat": 4499661,
       "lng": 242166,
       "fuels": {
-        "gazole": 1.996,
-        "sp95": 1.986,
-        "e10": 1.952
+        "gazole": 1.976,
+        "sp95": 1.982,
+        "e10": 1.932
       }
     },
     {
@@ -436,6 +490,20 @@
       }
     },
     {
+      "id": "15310001",
+      "cp": "15310",
+      "ville": "Saint-Cernin",
+      "adresse": "12 rue des Ecoles",
+      "pop": "R",
+      "lat": 4505700,
+      "lng": 242200,
+      "fuels": {
+        "gazole": 2.21,
+        "sp95": 2.17,
+        "sp98": 2.23
+      }
+    },
+    {
       "id": "15600003",
       "cp": "15600",
       "ville": "Saint-Étienne-de-Maurs",
@@ -462,6 +530,20 @@
         "gazole": 1.999,
         "sp95": 2.029,
         "e85": 0.859
+      }
+    },
+    {
+      "id": "15100011",
+      "cp": "15100",
+      "ville": "Saint-Flour",
+      "adresse": "31 avenue de la republique",
+      "pop": "R",
+      "lat": 4503400,
+      "lng": 309300,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.095,
+        "e10": 2.018
       }
     },
     {
@@ -561,6 +643,20 @@
         "sp98": 2.09,
         "e10": 1.982,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "15210001",
+      "cp": "15210",
+      "ville": "Ydes",
+      "adresse": "Avenue Roger BESSE",
+      "pop": "R",
+      "lat": 4534000,
+      "lng": 243400,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.079,
+        "e10": 1.969
       }
     },
     {

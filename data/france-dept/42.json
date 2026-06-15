@@ -3,55 +3,68 @@
   "name": "Loire",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 77,
+  "stationCount": 122,
   "fuels": {
     "gazole": {
-      "count": 76,
-      "mean": 2.023,
-      "median": 2.002,
+      "count": 121,
+      "mean": 2.0129,
+      "median": 1.999,
       "min": 1.901,
-      "max": 2.378
+      "max": 2.256
     },
     "sp95": {
-      "count": 29,
-      "mean": 1.9968,
+      "count": 44,
+      "mean": 2.0023,
       "median": 1.99,
-      "min": 1.959,
-      "max": 2.069
+      "min": 1.955,
+      "max": 2.146
     },
     "sp98": {
-      "count": 52,
-      "mean": 2.0789,
-      "median": 2.062,
+      "count": 82,
+      "mean": 2.0623,
+      "median": 2.0585,
       "min": 1.977,
-      "max": 2.569
+      "max": 2.467
     },
     "e10": {
-      "count": 55,
-      "mean": 1.9732,
-      "median": 1.95,
+      "count": 87,
+      "mean": 1.9665,
+      "median": 1.959,
       "min": 1.886,
-      "max": 2.419
+      "max": 2.317
     },
     "e85": {
-      "count": 28,
-      "mean": 0.8508,
-      "median": 0.8295,
+      "count": 44,
+      "mean": 0.8565,
+      "median": 0.839,
       "min": 0.778,
       "max": 1.069
     },
     "gplc": {
-      "count": 7,
-      "mean": 1.0349,
-      "median": 0.995,
-      "min": 0.995,
-      "max": 1.16
+      "count": 14,
+      "mean": 1.066,
+      "median": 1.012,
+      "min": 0.923,
+      "max": 1.239
     }
   },
   "stations": [
+    {
+      "id": "42160003",
+      "cp": "42160",
+      "ville": "Andrézieux-Bouthéon",
+      "adresse": "2 Avenue de Saint-Etienne",
+      "pop": "R",
+      "lat": 4552643.99047,
+      "lng": 425946.1554,
+      "fuels": {
+        "gazole": 1.994,
+        "e10": 1.99
+      }
+    },
     {
       "id": "42480001",
       "cp": "42480",
@@ -76,9 +89,9 @@
       "lat": 4552500,
       "lng": 429600,
       "fuels": {
-        "gazole": 1.984,
+        "gazole": 1.953,
         "sp98": 1.99,
-        "e10": 1.982,
+        "e10": 1.949,
         "e85": 0.839
       }
     },
@@ -96,6 +109,20 @@
         "e10": 1.886,
         "e85": 0.789,
         "gplc": 0.995
+      }
+    },
+    {
+      "id": "42510003",
+      "cp": "42510",
+      "ville": "Balbigny",
+      "adresse": "51 Route de Roanne",
+      "pop": "R",
+      "lat": 4582500,
+      "lng": 417700,
+      "fuels": {
+        "gazole": 2.03,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -122,8 +149,7 @@
       "lat": 4564700,
       "lng": 429700,
       "fuels": {
-        "gazole": 2.075,
-        "sp95": 1.99
+        "gazole": 2.075
       }
     },
     {
@@ -163,7 +189,9 @@
       "lat": 4530000,
       "lng": 458200,
       "fuels": {
-        "gazole": 2.038
+        "gazole": 2.038,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -175,7 +203,23 @@
       "lat": 4529800,
       "lng": 457400,
       "fuels": {
-        "sp98": 2.129
+        "gazole": 1.979,
+        "sp95": 1.999,
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "42330002",
+      "cp": "42330",
+      "ville": "Chambœuf",
+      "adresse": "ZA La Grange, route de Rivas",
+      "pop": "R",
+      "lat": 4558400,
+      "lng": 430300,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 1.999,
+        "e10": 1.909
       }
     },
     {
@@ -203,6 +247,20 @@
         "gazole": 1.979,
         "sp98": 2.035,
         "e10": 1.899
+      }
+    },
+    {
+      "id": "42410002",
+      "cp": "42410",
+      "ville": "Chavanay",
+      "adresse": "ZA de Verlieu RN 86",
+      "pop": "R",
+      "lat": 4542694.682,
+      "lng": 474170.034,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.979,
+        "e85": 0.839
       }
     },
     {
@@ -235,6 +293,35 @@
       }
     },
     {
+      "id": "42110003",
+      "cp": "42110",
+      "ville": "Civens",
+      "adresse": "Route de Roanne RN 82",
+      "pop": "R",
+      "lat": 4575338.71084,
+      "lng": 421969.76236,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 2.024,
+        "e10": 1.906,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "42120005",
+      "cp": "42120",
+      "ville": "Commelle-Vernay",
+      "adresse": "Allée du Parc",
+      "pop": "R",
+      "lat": 4599900,
+      "lng": 406100,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.965,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "42510005",
       "cp": "42510",
       "ville": "Épercieux-Saint-Paul",
@@ -244,8 +331,8 @@
       "lng": 419681,
       "fuels": {
         "gazole": 1.999,
-        "sp98": 2.033,
-        "e10": 1.915
+        "sp98": 2.036,
+        "e10": 1.918
       }
     },
     {
@@ -260,6 +347,35 @@
         "gazole": 1.976,
         "e10": 1.906,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "42110006",
+      "cp": "42110",
+      "ville": "Feurs",
+      "adresse": "RN 89",
+      "pop": "R",
+      "lat": 4574300,
+      "lng": 420800,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "gplc": 1.029
+      }
+    },
+    {
+      "id": "42110001",
+      "cp": "42110",
+      "ville": "Feurs",
+      "adresse": "ROUTE DE SAINT ETIENNE",
+      "pop": "R",
+      "lat": 4572200,
+      "lng": 422700,
+      "fuels": {
+        "gazole": 2.003,
+        "sp98": 2.072,
+        "e10": 1.925
       }
     },
     {
@@ -307,6 +423,21 @@
       }
     },
     {
+      "id": "42152007",
+      "cp": "42152",
+      "ville": "L'Horme",
+      "adresse": "19 Bis avenue Berthelot",
+      "pop": "R",
+      "lat": 4549000,
+      "lng": 455200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.069,
+        "e10": 1.969,
+        "e85": 0.869
+      }
+    },
+    {
       "id": "42152001",
       "cp": "42152",
       "ville": "L'Horme",
@@ -322,6 +453,21 @@
       }
     },
     {
+      "id": "42152003",
+      "cp": "42152",
+      "ville": "L'Horme",
+      "adresse": "Rue du Plat du Gier",
+      "pop": "R",
+      "lat": 4549206.34879,
+      "lng": 455639.10044,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.099,
+        "e10": 1.965,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "42480002",
       "cp": "42480",
       "ville": "La Fouillouse",
@@ -333,6 +479,20 @@
         "gazole": 1.987,
         "sp98": 2.033,
         "e10": 1.948
+      }
+    },
+    {
+      "id": "42310001",
+      "cp": "42310",
+      "ville": "La Pacaudière",
+      "adresse": "ROUTE DE VIVANS",
+      "pop": "R",
+      "lat": 4617623.14807,
+      "lng": 387152.0919,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.039,
+        "sp98": 2.079
       }
     },
     {
@@ -392,6 +552,64 @@
       }
     },
     {
+      "id": "42500013",
+      "cp": "42500",
+      "ville": "Le Chambon-Feugerolles",
+      "adresse": "Terre Ronde",
+      "pop": "R",
+      "lat": 4539027.48443,
+      "lng": 431530.39431,
+      "fuels": {
+        "gazole": 1.994,
+        "sp95": 1.989,
+        "e10": 1.944
+      }
+    },
+    {
+      "id": "42120004",
+      "cp": "42120",
+      "ville": "Le Coteau",
+      "adresse": "31 boulevard Charles de Gaulle",
+      "pop": "R",
+      "lat": 4601500.06195,
+      "lng": 409651.00174,
+      "fuels": {
+        "gazole": 2.024,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.882
+      }
+    },
+    {
+      "id": "42120002",
+      "cp": "42120",
+      "ville": "Le Coteau",
+      "adresse": "52 Boulevard Charles de Gaulle",
+      "pop": "R",
+      "lat": 4601100,
+      "lng": 409700,
+      "fuels": {
+        "gazole": 2.069,
+        "sp95": 2.049,
+        "e85": 0.949,
+        "gplc": 1.095
+      }
+    },
+    {
+      "id": "42120006",
+      "cp": "42120",
+      "ville": "Le Coteau",
+      "adresse": "LES PLAINES",
+      "pop": "R",
+      "lat": 4601533.9,
+      "lng": 409089.3,
+      "fuels": {
+        "gazole": 2.01,
+        "sp95": 1.975,
+        "sp98": 2.078
+      }
+    },
+    {
       "id": "42155001",
       "cp": "42155",
       "ville": "Lentigny",
@@ -414,9 +632,9 @@
       "lat": 4585444,
       "lng": 381064,
       "fuels": {
-        "gazole": 2.164,
-        "sp98": 2.199,
-        "e10": 2.099,
+        "gazole": 2.044,
+        "sp98": 2.079,
+        "e10": 1.989,
         "e85": 0.929
       }
     },
@@ -429,10 +647,56 @@
       "lat": 4585602.3,
       "lng": 381192.9,
       "fuels": {
-        "gazole": 2.378,
-        "sp98": 2.569,
-        "e10": 2.419,
+        "gazole": 2.256,
+        "sp98": 2.467,
+        "e10": 2.317,
         "gplc": 1.109
+      }
+    },
+    {
+      "id": "42420001",
+      "cp": "42420",
+      "ville": "Lorette",
+      "adresse": "RUE D'ASSAILLY",
+      "pop": "R",
+      "lat": 4551000,
+      "lng": 457400,
+      "fuels": {
+        "gazole": 1.995,
+        "sp95": 1.975,
+        "sp98": 2.159
+      }
+    },
+    {
+      "id": "42334001",
+      "cp": "42334",
+      "ville": "Mably",
+      "adresse": "Rue Jean de La Fontaine",
+      "pop": "R",
+      "lat": 4606600,
+      "lng": 405700,
+      "fuels": {
+        "gazole": 2.008,
+        "sp95": 1.988,
+        "sp98": 2.107,
+        "e10": 1.971,
+        "gplc": 0.923
+      }
+    },
+    {
+      "id": "42600010",
+      "cp": "42600",
+      "ville": "Magneux-Haute-Rive",
+      "adresse": "A 72 aire de la Plaine du Forez est",
+      "pop": "A",
+      "lat": 4567949,
+      "lng": 415646,
+      "fuels": {
+        "gazole": 2.124,
+        "sp98": 2.189,
+        "e10": 2.099,
+        "e85": 0.999,
+        "gplc": 1.16
       }
     },
     {
@@ -444,9 +708,9 @@
       "lat": 4567995.8,
       "lng": 415643.1,
       "fuels": {
-        "gazole": 2.378,
-        "sp98": 2.569,
-        "e10": 2.419
+        "gazole": 2.256,
+        "sp98": 2.467,
+        "e10": 2.317
       }
     },
     {
@@ -486,9 +750,33 @@
       "lat": 4559600,
       "lng": 408300,
       "fuels": {
-        "gazole": 1.969,
-        "e10": 1.929,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "42210001",
+      "cp": "42210",
+      "ville": "Montrond-les-Bains",
+      "adresse": "114 Rue du Rival",
+      "pop": "R",
+      "lat": 4564400,
+      "lng": 423400,
+      "fuels": {
+        "gazole": 1.995,
+        "sp95": 1.955,
+        "sp98": 2.035
+      }
+    },
+    {
+      "id": "42210003",
+      "cp": "42210",
+      "ville": "Montrond-les-Bains",
+      "adresse": "444 route de Saint Etienne",
+      "pop": "R",
+      "lat": 4563477,
+      "lng": 423902,
+      "fuels": {
+        "gazole": 2.095
       }
     },
     {
@@ -576,6 +864,20 @@
       }
     },
     {
+      "id": "42120003",
+      "cp": "42120",
+      "ville": "Perreux",
+      "adresse": "Z.A. LES PLAINES 1033 RUE DU COMMERCE",
+      "pop": "R",
+      "lat": 4602900,
+      "lng": 409600,
+      "fuels": {
+        "gazole": 2.01,
+        "sp98": 2.078,
+        "e10": 1.946
+      }
+    },
+    {
       "id": "42720001",
       "cp": "42720",
       "ville": "Pouilly-sous-Charlieu",
@@ -612,9 +914,9 @@
       "lat": 4605700,
       "lng": 392800,
       "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.099,
-        "e10": 1.999
+        "gazole": 2.029,
+        "sp98": 2.079,
+        "e10": 1.979
       }
     },
     {
@@ -661,6 +963,20 @@
       }
     },
     {
+      "id": "42800005",
+      "cp": "42800",
+      "ville": "Rive-de-Gier",
+      "adresse": "1 PLACE DU COMMERCE",
+      "pop": "R",
+      "lat": 4552078,
+      "lng": 459901.8,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "42800003",
       "cp": "42800",
       "ville": "Rive-de-Gier",
@@ -675,6 +991,20 @@
       }
     },
     {
+      "id": "42800001",
+      "cp": "42800",
+      "ville": "Rive-de-Gier",
+      "adresse": "Rue Jean-Baptiste Berlier",
+      "pop": "R",
+      "lat": 4552600,
+      "lng": 460800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.059
+      }
+    },
+    {
       "id": "42300013",
       "cp": "42300",
       "ville": "Roanne",
@@ -683,9 +1013,38 @@
       "lat": 4603706.52,
       "lng": 407440.98,
       "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.069,
+        "gazole": 1.979,
+        "sp98": 2.049,
         "e10": 1.949
+      }
+    },
+    {
+      "id": "42300010",
+      "cp": "42300",
+      "ville": "Roanne",
+      "adresse": "52 bd Jean-Baptiste Clément",
+      "pop": "R",
+      "lat": 4604100,
+      "lng": 408100,
+      "fuels": {
+        "gazole": 1.981,
+        "sp95": 2.001,
+        "sp98": 2.058,
+        "e85": 0.877
+      }
+    },
+    {
+      "id": "42300012",
+      "cp": "42300",
+      "ville": "Roanne",
+      "adresse": "82, rue Auguste Dourdein",
+      "pop": "R",
+      "lat": 4604100,
+      "lng": 405500,
+      "fuels": {
+        "gazole": 1.948,
+        "sp98": 1.99,
+        "e10": 1.967
       }
     },
     {
@@ -697,7 +1056,7 @@
       "lat": 4543436.14775,
       "lng": 433156.14235,
       "fuels": {
-        "gazole": 2.059,
+        "gazole": 1.999,
         "sp95": 2.059,
         "e10": 1.999
       }
@@ -715,6 +1074,32 @@
         "sp98": 2.079,
         "e10": 1.979,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "42380005",
+      "cp": "42380",
+      "ville": "Saint-Bonnet-le-Château",
+      "adresse": "2 Boulevard du Haut Forez",
+      "pop": "R",
+      "lat": 4542700,
+      "lng": 406400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.146,
+        "e10": 1.996
+      }
+    },
+    {
+      "id": "42380004",
+      "cp": "42380",
+      "ville": "Saint-Bonnet-le-Château",
+      "adresse": "Boulevard de l'Europe",
+      "pop": "R",
+      "lat": 4543200,
+      "lng": 406300,
+      "fuels": {
+        "gazole": 2.099
       }
     },
     {
@@ -763,6 +1148,20 @@
       }
     },
     {
+      "id": "42160005",
+      "cp": "42160",
+      "ville": "Saint-Cyprien",
+      "adresse": "9 Rue des Prairies",
+      "pop": "R",
+      "lat": 4552800,
+      "lng": 423200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.05,
+        "e10": 1.959
+      }
+    },
+    {
       "id": "42100018",
       "cp": "42100",
       "ville": "Saint-Étienne",
@@ -772,8 +1171,6 @@
       "lng": 441000,
       "fuels": {
         "gazole": 1.905,
-        "sp98": 1.99,
-        "e10": 1.905,
         "e85": 0.839,
         "gplc": 0.995
       }
@@ -792,6 +1189,50 @@
         "e10": 1.9,
         "e85": 0.839,
         "gplc": 0.995
+      }
+    },
+    {
+      "id": "42000019",
+      "cp": "42000",
+      "ville": "Saint-Étienne",
+      "adresse": "114-114 rue des Aciéries",
+      "pop": "R",
+      "lat": 4546000,
+      "lng": 439700,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.099,
+        "e10": 1.999,
+        "e85": 0.929
+      }
+    },
+    {
+      "id": "42100019",
+      "cp": "42100",
+      "ville": "Saint-Étienne",
+      "adresse": "12 BD KARL MARX",
+      "pop": "R",
+      "lat": 4542400,
+      "lng": 441100,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.059,
+        "e10": 1.969,
+        "gplc": 1.239
+      }
+    },
+    {
+      "id": "42100017",
+      "cp": "42100",
+      "ville": "Saint-Étienne",
+      "adresse": "148 RUE ANTOINE DURAFOUR",
+      "pop": "R",
+      "lat": 4542200,
+      "lng": 439700,
+      "fuels": {
+        "gazole": 2.003,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -818,10 +1259,24 @@
       "lat": 4544631.8,
       "lng": 440647.1,
       "fuels": {
-        "gazole": 2.009,
+        "gazole": 1.949,
         "sp95": 2.009,
         "e10": 1.959,
         "e85": 0.819
+      }
+    },
+    {
+      "id": "42100005",
+      "cp": "42100",
+      "ville": "Saint-Étienne",
+      "adresse": "36 Rue de Terrenoire",
+      "pop": "R",
+      "lat": 4543300,
+      "lng": 441500,
+      "fuels": {
+        "gazole": 1.971,
+        "sp98": 2.021,
+        "e10": 1.941
       }
     },
     {
@@ -833,8 +1288,67 @@
       "lat": 4543739.81037,
       "lng": 441098.30691,
       "fuels": {
-        "gazole": 1.959,
-        "e10": 1.949
+        "gazole": 1.979,
+        "e10": 1.949,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "42100021",
+      "cp": "42100",
+      "ville": "Saint-Étienne",
+      "adresse": "9 boulevard karl marx",
+      "pop": "R",
+      "lat": 4542400,
+      "lng": 441000,
+      "fuels": {
+        "gazole": 1.998,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "42000014",
+      "cp": "42000",
+      "ville": "Saint-Étienne",
+      "adresse": "94 BOULEVARD MENDES FRANCE",
+      "pop": "R",
+      "lat": 4543890.4572,
+      "lng": 437886.61816,
+      "fuels": {
+        "gazole": 1.902,
+        "sp98": 1.99,
+        "e10": 1.901,
+        "e85": 0.842
+      }
+    },
+    {
+      "id": "42100022",
+      "cp": "42100",
+      "ville": "Saint-Étienne",
+      "adresse": "QUARTIER DE MONTHIEU140 RUE DE LA MONTAT",
+      "pop": "R",
+      "lat": 4544200,
+      "lng": 441900,
+      "fuels": {
+        "gazole": 1.95,
+        "sp98": 1.99,
+        "e10": 1.905,
+        "e85": 0.839,
+        "gplc": 0.995
+      }
+    },
+    {
+      "id": "42330003",
+      "cp": "42330",
+      "ville": "Saint-Galmier",
+      "adresse": "Rue de la Richelande",
+      "pop": "R",
+      "lat": 4558600,
+      "lng": 431200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 1.999,
+        "e10": 1.909
       }
     },
     {
@@ -852,6 +1366,46 @@
       }
     },
     {
+      "id": "42260001",
+      "cp": "42260",
+      "ville": "Saint-Germain-Laval",
+      "adresse": "Rue de la Loire",
+      "pop": "R",
+      "lat": 4583300,
+      "lng": 401900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.079,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "42640001",
+      "cp": "42640",
+      "ville": "Saint-Germain-Lespinasse",
+      "adresse": "304, rue de Persigny",
+      "pop": "R",
+      "lat": 4610300,
+      "lng": 396700,
+      "fuels": {
+        "gazole": 2.03
+      }
+    },
+    {
+      "id": "42370001",
+      "cp": "42370",
+      "ville": "Saint-Haon-le-Châtel",
+      "adresse": "1500 route de renaison",
+      "pop": "R",
+      "lat": 4606300,
+      "lng": 392000,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.039,
+        "sp98": 2.079
+      }
+    },
+    {
       "id": "42570001",
       "cp": "42570",
       "ville": "Saint-Héand",
@@ -863,6 +1417,35 @@
         "gazole": 1.97,
         "sp95": 1.969,
         "e10": 1.9
+      }
+    },
+    {
+      "id": "42650001",
+      "cp": "42650",
+      "ville": "Saint-Jean-Bonnefonds",
+      "adresse": "Lieu-Dit la Maison Rouge",
+      "pop": "R",
+      "lat": 4544300,
+      "lng": 446200,
+      "fuels": {
+        "gazole": 2.109,
+        "sp98": 2.089,
+        "e10": 1.999,
+        "gplc": 1.239
+      }
+    },
+    {
+      "id": "42430001",
+      "cp": "42430",
+      "ville": "Saint-Just-en-Chevalet",
+      "adresse": "160 rue du pont de combre",
+      "pop": "R",
+      "lat": 4591500,
+      "lng": 384400,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.989,
+        "e85": 0.885
       }
     },
     {
@@ -890,6 +1473,20 @@
         "gazole": 1.999,
         "sp98": 2.05,
         "e10": 1.959
+      }
+    },
+    {
+      "id": "42170003",
+      "cp": "42170",
+      "ville": "Saint-Just-Saint-Rambert",
+      "adresse": "Rond-Point Charles de Gaulle",
+      "pop": "R",
+      "lat": 4550700,
+      "lng": 426400,
+      "fuels": {
+        "gazole": 2.005,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -933,6 +1530,20 @@
       }
     },
     {
+      "id": "42190003",
+      "cp": "42190",
+      "ville": "Saint-Nizier-sous-Charlieu",
+      "adresse": "538 rue magellan",
+      "pop": "R",
+      "lat": 4615200,
+      "lng": 415600,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.035,
+        "e10": 1.899
+      }
+    },
+    {
       "id": "42270002",
       "cp": "42270",
       "ville": "Saint-Priest-en-Jarez",
@@ -946,6 +1557,21 @@
         "sp98": 2.099,
         "e10": 1.913,
         "e85": 0.79
+      }
+    },
+    {
+      "id": "42640002",
+      "cp": "42640",
+      "ville": "Saint-Romain-la-Motte",
+      "adresse": "2715 Route de Roanne",
+      "pop": "R",
+      "lat": 4608300,
+      "lng": 402500,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "e10": 1.999,
+        "e85": 0.879
       }
     },
     {
@@ -1028,9 +1654,9 @@
       "lat": 4548100,
       "lng": 444400,
       "fuels": {
-        "gazole": 2.02,
+        "gazole": 1.989,
         "sp98": 1.99,
-        "e10": 1.99
+        "e10": 1.976
       }
     },
     {
@@ -1060,6 +1686,20 @@
       "fuels": {
         "gazole": 2.069,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "42450003",
+      "cp": "42450",
+      "ville": "Sury-le-Comtal",
+      "adresse": "Le Parc des VERCHERES",
+      "pop": "R",
+      "lat": 4553900,
+      "lng": 418900,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.959,
+        "e85": 0.809
       }
     },
     {

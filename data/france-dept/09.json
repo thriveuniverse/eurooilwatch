@@ -3,52 +3,52 @@
   "name": "Ariège",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 21,
+  "stationCount": 31,
   "fuels": {
     "gazole": {
-      "count": 21,
-      "mean": 2.0043,
+      "count": 31,
+      "mean": 2.0147,
       "median": 1.999,
       "min": 1.903,
-      "max": 2.147
+      "max": 2.258
     },
     "sp95": {
-      "count": 4,
-      "mean": 2.0383,
-      "median": 2.0445,
+      "count": 6,
+      "mean": 2.0333,
+      "median": 2.033,
       "min": 1.979,
       "max": 2.085
     },
     "sp98": {
-      "count": 14,
-      "mean": 2.1017,
-      "median": 2.0595,
-      "min": 2.029,
+      "count": 22,
+      "mean": 2.1073,
+      "median": 2.088,
+      "min": 1.99,
       "max": 2.289
     },
     "e10": {
-      "count": 20,
-      "mean": 1.97,
-      "median": 1.9635,
+      "count": 28,
+      "mean": 1.974,
+      "median": 1.9585,
       "min": 1.899,
       "max": 2.098
     },
     "e85": {
-      "count": 11,
-      "mean": 0.8629,
-      "median": 0.871,
+      "count": 17,
+      "mean": 0.8508,
+      "median": 0.863,
       "min": 0.795,
       "max": 0.981
     },
     "gplc": {
-      "count": 2,
-      "mean": 1.095,
+      "count": 3,
+      "mean": 1.0957,
       "median": 1.095,
       "min": 1.095,
-      "max": 1.095
+      "max": 1.097
     }
   },
   "stations": [
@@ -76,7 +76,6 @@
       "lng": 162517.42883,
       "fuels": {
         "gazole": 2.048,
-        "e10": 1.99,
         "e85": 0.872
       }
     },
@@ -108,6 +107,20 @@
       }
     },
     {
+      "id": "9240004",
+      "cp": "09240",
+      "ville": "La Bastide-de-Sérou",
+      "adresse": "45 faubourg sainte croix",
+      "pop": "R",
+      "lat": 4301196,
+      "lng": 142975.1,
+      "fuels": {
+        "gazole": 2.025,
+        "sp98": 2.084,
+        "e10": 1.958
+      }
+    },
+    {
       "id": "9600002",
       "cp": "09600",
       "ville": "Laroque-d'Olmes",
@@ -120,6 +133,50 @@
         "sp95": 2.085,
         "sp98": 2.151,
         "e85": 0.885
+      }
+    },
+    {
+      "id": "9600003",
+      "cp": "09600",
+      "ville": "Laroque-d'Olmes",
+      "adresse": "Avenue du 11 Novembre 1918",
+      "pop": "R",
+      "lat": 4297860,
+      "lng": 186859,
+      "fuels": {
+        "gazole": 1.998,
+        "sp98": 2.199,
+        "e10": 1.956,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "9300002",
+      "cp": "09300",
+      "ville": "Lavelanet",
+      "adresse": "Route de FOIX",
+      "pop": "R",
+      "lat": 4293739,
+      "lng": 185335,
+      "fuels": {
+        "gazole": 2.008,
+        "sp98": 2.06,
+        "e10": 1.97,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "9300005",
+      "cp": "09300",
+      "ville": "Lavelanet",
+      "adresse": "RUE DU 8 MAI 1945",
+      "pop": "R",
+      "lat": 4292800,
+      "lng": 185800,
+      "fuels": {
+        "gazole": 2.258,
+        "sp98": 2.215,
+        "e10": 2.07
       }
     },
     {
@@ -182,6 +239,21 @@
       }
     },
     {
+      "id": "9140003",
+      "cp": "09140",
+      "ville": "Oust",
+      "adresse": "Hameau de Roquemaurel",
+      "pop": "R",
+      "lat": 4288314.17949,
+      "lng": 121508.59611,
+      "fuels": {
+        "gazole": 2.033,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.869
+      }
+    },
+    {
       "id": "9100003",
       "cp": "09100",
       "ville": "Pamiers",
@@ -190,8 +262,7 @@
       "lat": 4310400,
       "lng": 162100,
       "fuels": {
-        "gazole": 2.004,
-        "e10": 1.99
+        "gazole": 2.004
       }
     },
     {
@@ -221,6 +292,52 @@
         "sp98": 2.055,
         "e10": 1.915,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "9100001",
+      "cp": "09100",
+      "ville": "Pamiers",
+      "adresse": "Route de Mirepoix",
+      "pop": "R",
+      "lat": 4310300,
+      "lng": 163100,
+      "fuels": {
+        "gazole": 1.948,
+        "sp95": 2.02,
+        "e10": 1.925,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "9110003",
+      "cp": "09110",
+      "ville": "Perles-et-Castelet",
+      "adresse": "ZA N20 ALLEE DU BOIS DES ESQUERS",
+      "pop": "R",
+      "lat": 4274423.17,
+      "lng": 178556.73,
+      "fuels": {
+        "gazole": 2.085,
+        "sp98": 2.092,
+        "e10": 2.051
+      }
+    },
+    {
+      "id": "9200003",
+      "cp": "09200",
+      "ville": "Saint-Girons",
+      "adresse": "5 avenue de la Résistance",
+      "pop": "R",
+      "lat": 4297935,
+      "lng": 114450,
+      "fuels": {
+        "gazole": 2.037,
+        "sp95": 2.027,
+        "sp98": 2.097,
+        "e10": 2.027,
+        "e85": 0.877,
+        "gplc": 1.097
       }
     },
     {
@@ -266,6 +383,21 @@
         "gazole": 1.999,
         "sp95": 2.039,
         "e10": 1.978
+      }
+    },
+    {
+      "id": "9190002",
+      "cp": "09190",
+      "ville": "Saint-Lizier",
+      "adresse": "Le Pont du Baup",
+      "pop": "R",
+      "lat": 4299300,
+      "lng": 114100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.199,
+        "e10": 1.959,
+        "e85": 0.809
       }
     },
     {
@@ -325,6 +457,19 @@
         "gazole": 2.147,
         "sp98": 2.289,
         "e10": 2.098
+      }
+    },
+    {
+      "id": "9400001",
+      "cp": "09400",
+      "ville": "Tarascon-sur-Ariège",
+      "adresse": "Route de Quié",
+      "pop": "R",
+      "lat": 4284500,
+      "lng": 159800,
+      "fuels": {
+        "gazole": 1.974,
+        "e10": 1.948
       }
     },
     {

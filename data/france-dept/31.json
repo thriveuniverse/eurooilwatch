@@ -3,51 +3,51 @@
   "name": "Haute-Garonne",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 128,
+  "stationCount": 191,
   "fuels": {
     "gazole": {
-      "count": 126,
-      "mean": 1.9967,
-      "median": 1.9825,
+      "count": 189,
+      "mean": 1.995,
+      "median": 1.986,
       "min": 1.899,
       "max": 2.513
     },
     "sp95": {
-      "count": 32,
-      "mean": 1.9866,
+      "count": 44,
+      "mean": 1.9922,
       "median": 1.99,
-      "min": 1.922,
+      "min": 1.949,
       "max": 2.07
     },
     "sp98": {
-      "count": 95,
-      "mean": 2.0564,
-      "median": 2.035,
+      "count": 143,
+      "mean": 2.0536,
+      "median": 2.036,
       "min": 1.974,
       "max": 2.587
     },
     "e10": {
-      "count": 109,
-      "mean": 1.9541,
+      "count": 161,
+      "mean": 1.9524,
       "median": 1.929,
       "min": 1.867,
       "max": 2.437
     },
     "e85": {
-      "count": 59,
-      "mean": 0.8463,
+      "count": 98,
+      "mean": 0.8472,
       "median": 0.809,
       "min": 0.781,
       "max": 1.01
     },
     "gplc": {
-      "count": 18,
-      "mean": 1.0829,
-      "median": 1.099,
-      "min": 1.007,
+      "count": 23,
+      "mean": 1.0746,
+      "median": 1.088,
+      "min": 0.999,
       "max": 1.181
     }
   },
@@ -110,6 +110,21 @@
       }
     },
     {
+      "id": "31190003",
+      "cp": "31190",
+      "ville": "Auterive",
+      "adresse": "89 Route de Toulouse",
+      "pop": "R",
+      "lat": 4336353.8424,
+      "lng": 145777.13619,
+      "fuels": {
+        "gazole": 2.007,
+        "sp98": 2.033,
+        "e10": 1.915,
+        "e85": 0.8
+      }
+    },
+    {
       "id": "31190002",
       "cp": "31190",
       "ville": "Auterive",
@@ -141,6 +156,22 @@
       }
     },
     {
+      "id": "31290008",
+      "cp": "31290",
+      "ville": "Avignonet-Lauragais",
+      "adresse": "AUTOROUTE A61 - AIRE DU PORT LAURAGAIS SUD",
+      "pop": "A",
+      "lat": 4335332.06269,
+      "lng": 180632.4048,
+      "fuels": {
+        "gazole": 2.073,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.088
+      }
+    },
+    {
       "id": "31290004",
       "cp": "31290",
       "ville": "Avignonet-Lauragais",
@@ -150,6 +181,20 @@
       "lng": 177500,
       "fuels": {
         "gazole": 2.024,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "31130011",
+      "cp": "31130",
+      "ville": "Balma",
+      "adresse": "104 ROUTE DE CASTRES",
+      "pop": "R",
+      "lat": 4358938.16159,
+      "lng": 151400.18981,
+      "fuels": {
+        "gazole": 2.085,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -167,6 +212,49 @@
         "sp98": 2.004,
         "e10": 1.924,
         "e85": 0.98
+      }
+    },
+    {
+      "id": "31130008",
+      "cp": "31130",
+      "ville": "Balma",
+      "adresse": "43 AVENUE DES AEROSTIERS",
+      "pop": "R",
+      "lat": 4360917,
+      "lng": 149007,
+      "fuels": {
+        "gazole": 1.921,
+        "e85": 0.845,
+        "gplc": 1.019
+      }
+    },
+    {
+      "id": "31130004",
+      "cp": "31130",
+      "ville": "Balma",
+      "adresse": "Chemin des Arènes",
+      "pop": "R",
+      "lat": 4361300,
+      "lng": 148800,
+      "fuels": {
+        "gazole": 2.079,
+        "e10": 1.989,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "31700007",
+      "cp": "31700",
+      "ville": "Beauzelle",
+      "adresse": "Avenue de Garossos",
+      "pop": "R",
+      "lat": 4366800,
+      "lng": 136500,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.027,
+        "e10": 1.905,
+        "e85": 0.809
       }
     },
     {
@@ -210,9 +298,23 @@
       "lng": 138500,
       "fuels": {
         "gazole": 1.906,
-        "e10": 1.902,
         "e85": 0.829,
         "gplc": 1.007
+      }
+    },
+    {
+      "id": "31700005",
+      "cp": "31700",
+      "ville": "Blagnac",
+      "adresse": "2 Allée Émile Zola",
+      "pop": "R",
+      "lat": 4364700,
+      "lng": 136800,
+      "fuels": {
+        "gazole": 1.906,
+        "sp98": 1.999,
+        "e10": 1.889,
+        "e85": 0.798
       }
     },
     {
@@ -230,6 +332,19 @@
       }
     },
     {
+      "id": "31700010",
+      "cp": "31700",
+      "ville": "Blagnac",
+      "adresse": "RD 902",
+      "pop": "R",
+      "lat": 4364100,
+      "lng": 137500,
+      "fuels": {
+        "gazole": 1.906,
+        "e10": 1.902
+      }
+    },
+    {
       "id": "31620002",
       "cp": "31620",
       "ville": "Bouloc",
@@ -241,6 +356,34 @@
         "gazole": 2.006,
         "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "31620009",
+      "cp": "31620",
+      "ville": "Bouloc",
+      "adresse": "ZI LES PELISSIERES",
+      "pop": "R",
+      "lat": 4378400,
+      "lng": 140200,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.019,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "31350004",
+      "cp": "31350",
+      "ville": "Boulogne-sur-Gesse",
+      "adresse": "avenue Charles Suran",
+      "pop": "R",
+      "lat": 4328550.29033,
+      "lng": 65090.65207,
+      "fuels": {
+        "gazole": 2.099,
+        "e10": 2.019,
+        "e85": 0.999
       }
     },
     {
@@ -286,6 +429,50 @@
       }
     },
     {
+      "id": "31150002",
+      "cp": "31150",
+      "ville": "Bruguières",
+      "adresse": "Avenue du Bruguet",
+      "pop": "R",
+      "lat": 4372100,
+      "lng": 141500,
+      "fuels": {
+        "gazole": 1.987,
+        "sp98": 1.999,
+        "e10": 1.925,
+        "e85": 0.785
+      }
+    },
+    {
+      "id": "31660004",
+      "cp": "31660",
+      "ville": "Buzet-sur-Tarn",
+      "adresse": "Impasse Al Croz",
+      "pop": "R",
+      "lat": 4377800,
+      "lng": 162400,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 2.099,
+        "e10": 1.987,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "31480004",
+      "cp": "31480",
+      "ville": "Cadours",
+      "adresse": "LD LASSOULAN",
+      "pop": "R",
+      "lat": 4372953.28699,
+      "lng": 106006.13169,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.069,
+        "e10": 1.959
+      }
+    },
+    {
       "id": "31410003",
       "cp": "31410",
       "ville": "Capens",
@@ -316,6 +503,21 @@
       }
     },
     {
+      "id": "31390002",
+      "cp": "31390",
+      "ville": "Carbonne",
+      "adresse": "3 avenue Jean Monnet - Lieu-dit Millet",
+      "pop": "R",
+      "lat": 4330900,
+      "lng": 122200,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.999,
+        "e10": 1.929,
+        "e85": 0.789
+      }
+    },
+    {
       "id": "31390001",
       "cp": "31390",
       "ville": "Carbonne",
@@ -327,6 +529,20 @@
         "gazole": 1.959,
         "sp98": 1.999,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "31320001",
+      "cp": "31320",
+      "ville": "Castanet-Tolosan",
+      "adresse": "Route de Labège",
+      "pop": "R",
+      "lat": 4352100,
+      "lng": 151200,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.039,
+        "e10": 1.909
       }
     },
     {
@@ -353,9 +569,9 @@
       "lat": 4369000,
       "lng": 145200,
       "fuels": {
-        "gazole": 1.963,
+        "gazole": 1.939,
         "sp98": 2.035,
-        "e10": 1.919,
+        "e10": 1.908,
         "e85": 0.781
       }
     },
@@ -464,6 +680,36 @@
       }
     },
     {
+      "id": "31210007",
+      "cp": "31210",
+      "ville": "Clarac",
+      "adresse": "A64 aire du comminges",
+      "pop": "A",
+      "lat": 4311100,
+      "lng": 61400,
+      "fuels": {
+        "gazole": 2.164,
+        "sp98": 2.199,
+        "e10": 2.107,
+        "e85": 0.949
+      }
+    },
+    {
+      "id": "31770004",
+      "cp": "31770",
+      "ville": "Colomiers",
+      "adresse": "2 Avenue Edouard Serres",
+      "pop": "R",
+      "lat": 4361000,
+      "lng": 135300,
+      "fuels": {
+        "gazole": 1.966,
+        "sp98": 2.009,
+        "e10": 1.922,
+        "e85": 0.962
+      }
+    },
+    {
       "id": "31770005",
       "cp": "31770",
       "ville": "Colomiers",
@@ -473,7 +719,6 @@
       "lng": 133600,
       "fuels": {
         "gazole": 1.928,
-        "sp95": 1.922,
         "e10": 1.922,
         "e85": 0.869
       }
@@ -493,6 +738,20 @@
       }
     },
     {
+      "id": "31700006",
+      "cp": "31700",
+      "ville": "Cornebarrieu",
+      "adresse": "Avenue Dewoitine",
+      "pop": "R",
+      "lat": 4364900,
+      "lng": 133700,
+      "fuels": {
+        "gazole": 1.937,
+        "sp98": 1.998,
+        "e10": 1.888
+      }
+    },
+    {
       "id": "31270004",
       "cp": "31270",
       "ville": "Cugnaux",
@@ -501,10 +760,11 @@
       "lat": 4352900,
       "lng": 135000,
       "fuels": {
-        "gazole": 1.923,
-        "sp95": 1.932,
-        "sp98": 1.974,
-        "e10": 1.867
+        "gazole": 1.943,
+        "sp95": 1.952,
+        "sp98": 1.994,
+        "e10": 1.887,
+        "e85": 0.809
       }
     },
     {
@@ -594,8 +854,8 @@
       "fuels": {
         "gazole": 1.908,
         "sp95": 1.959,
-        "sp98": 1.988,
-        "e10": 1.905
+        "sp98": 1.989,
+        "e10": 1.889
       }
     },
     {
@@ -611,6 +871,34 @@
         "sp95": 1.969,
         "e10": 1.909,
         "gplc": 1.009
+      }
+    },
+    {
+      "id": "31130007",
+      "cp": "31130",
+      "ville": "Flourens",
+      "adresse": "Lieu dit MOUSSARD  Route de Castres",
+      "pop": "R",
+      "lat": 4358833.7374,
+      "lng": 157823.97856,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 1.985,
+        "sp98": 1.999,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "31470001",
+      "cp": "31470",
+      "ville": "Fonsorbes",
+      "adresse": "3124 ROUTE DE TARBES",
+      "pop": "R",
+      "lat": 4354109,
+      "lng": 123845,
+      "fuels": {
+        "gazole": 1.965,
+        "e10": 1.956
       }
     },
     {
@@ -666,10 +954,26 @@
       "lat": 4383200,
       "lng": 139000,
       "fuels": {
-        "gazole": 1.979,
-        "sp95": 2.019,
+        "gazole": 1.949,
+        "sp95": 1.999,
         "sp98": 2.019,
-        "e10": 1.899
+        "e10": 1.889,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "31270003",
+      "cp": "31270",
+      "ville": "Frouzins",
+      "adresse": "CHEMIN MAILHEAUX",
+      "pop": "R",
+      "lat": 4352500,
+      "lng": 132300,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.05,
+        "e10": 1.922,
+        "e85": 0.818
       }
     },
     {
@@ -728,7 +1032,7 @@
         "gazole": 1.975,
         "sp98": 2.049,
         "e10": 1.929,
-        "e85": 0.798
+        "e85": 0.809
       }
     },
     {
@@ -784,7 +1088,7 @@
       "lat": 4338600,
       "lng": 83500,
       "fuels": {
-        "gazole": 2.034,
+        "gazole": 2.003,
         "sp98": 1.99
       }
     },
@@ -797,9 +1101,9 @@
       "lat": 4339954,
       "lng": 84542,
       "fuels": {
-        "gazole": 1.978,
-        "sp98": 2.148,
-        "e10": 1.998
+        "gazole": 1.999,
+        "sp98": 2.068,
+        "e10": 1.949
       }
     },
     {
@@ -832,6 +1136,36 @@
       }
     },
     {
+      "id": "31240002",
+      "cp": "31240",
+      "ville": "L'Union",
+      "adresse": "AVENUE DE BAYONNE",
+      "pop": "R",
+      "lat": 4364900,
+      "lng": 148400,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "31880001",
+      "cp": "31880",
+      "ville": "La Salvetat-Saint-Gilles",
+      "adresse": "Avenue des Capitouls",
+      "pop": "R",
+      "lat": 4358200,
+      "lng": 127500,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.049,
+        "sp98": 2.099,
+        "e10": 1.999,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "31860005",
       "cp": "31860",
       "ville": "Labarthe-sur-Lèze",
@@ -855,9 +1189,9 @@
       "lat": 4345554.64271,
       "lng": 141651.30594,
       "fuels": {
-        "gazole": 1.998,
+        "gazole": 1.967,
         "sp98": 1.99,
-        "e10": 1.981
+        "e10": 1.948
       }
     },
     {
@@ -875,6 +1209,22 @@
       }
     },
     {
+      "id": "31673001",
+      "cp": "31670",
+      "ville": "Labège",
+      "adresse": "Centre Commercial LABEGE 2",
+      "pop": "R",
+      "lat": 4355100,
+      "lng": 150400,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 2.003,
+        "sp98": 2.092,
+        "e10": 1.916,
+        "e85": 0.835
+      }
+    },
+    {
       "id": "31800009",
       "cp": "31800",
       "ville": "Landorthe",
@@ -887,6 +1237,20 @@
         "sp98": 1.99,
         "e10": 1.99,
         "gplc": 1.099
+      }
+    },
+    {
+      "id": "31570002",
+      "cp": "31570",
+      "ville": "Lanta",
+      "adresse": "8 route de Caraman",
+      "pop": "R",
+      "lat": 4356100,
+      "lng": 165500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "e10": 1.979
       }
     },
     {
@@ -915,6 +1279,20 @@
         "gazole": 1.984,
         "sp95": 1.964,
         "sp98": 2.024
+      }
+    },
+    {
+      "id": "31390003",
+      "cp": "31390",
+      "ville": "Lavelanet-de-Comminges",
+      "adresse": "Le Village",
+      "pop": "R",
+      "lat": 4326100,
+      "lng": 111600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.099,
+        "e10": 1.989
       }
     },
     {
@@ -976,6 +1354,34 @@
       }
     },
     {
+      "id": "31410009",
+      "cp": "31410",
+      "ville": "Longages",
+      "adresse": "6 Chemin de Lavernose",
+      "pop": "R",
+      "lat": 4335624.57037,
+      "lng": 123654.02985,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.025,
+        "e10": 1.899,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "31410001",
+      "cp": "31410",
+      "ville": "Longages",
+      "adresse": "Grand'Rue",
+      "pop": "R",
+      "lat": 4335500,
+      "lng": 123900,
+      "fuels": {
+        "gazole": 1.994,
+        "sp95": 1.99
+      }
+    },
+    {
       "id": "31260001",
       "cp": "31260",
       "ville": "Mane",
@@ -987,6 +1393,20 @@
         "gazole": 1.959,
         "sp98": 2.019,
         "e10": 1.899
+      }
+    },
+    {
+      "id": "31220001",
+      "cp": "31220",
+      "ville": "Martres-Tolosane",
+      "adresse": "Avenue des Pyrénées",
+      "pop": "R",
+      "lat": 4319845,
+      "lng": 100901,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.019,
+        "e10": 1.929
       }
     },
     {
@@ -1031,6 +1451,36 @@
       }
     },
     {
+      "id": "31310002",
+      "cp": "31310",
+      "ville": "Montesquieu-Volvestre",
+      "adresse": "Avenue des Pyrénées",
+      "pop": "R",
+      "lat": 4320100,
+      "lng": 122700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.048,
+        "e10": 1.937,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "31450003",
+      "cp": "31450",
+      "ville": "Montgiscard",
+      "adresse": "Route Départ. 813 Lieu dit en Rouzaut",
+      "pop": "R",
+      "lat": 4345400,
+      "lng": 158500,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.039,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "31850003",
       "cp": "31850",
       "ville": "Montrabé",
@@ -1039,11 +1489,25 @@
       "lat": 4365000,
       "lng": 153200,
       "fuels": {
-        "gazole": 1.997,
+        "gazole": 1.987,
         "sp95": 1.985,
-        "sp98": 2.098,
-        "e10": 1.987,
+        "sp98": 2.057,
+        "e10": 1.976,
         "e85": 0.798
+      }
+    },
+    {
+      "id": "31210006",
+      "cp": "31210",
+      "ville": "Montréjeau",
+      "adresse": "21 BIS AVENUE DE SAINT GAUDENS",
+      "pop": "R",
+      "lat": 4308750.68572,
+      "lng": 57594.11475,
+      "fuels": {
+        "gazole": 2.035,
+        "sp95": 2.065,
+        "sp98": 2.165
       }
     },
     {
@@ -1057,6 +1521,20 @@
       "fuels": {
         "gazole": 2.026,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "31210009",
+      "cp": "31210",
+      "ville": "Montréjeau",
+      "adresse": "Avenue du nord (50 Avenue des Tourreilles)",
+      "pop": "R",
+      "lat": 4308897.4,
+      "lng": 56317.9,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.129,
+        "e10": 1.999
       }
     },
     {
@@ -1074,6 +1552,21 @@
       }
     },
     {
+      "id": "31600006",
+      "cp": "31600",
+      "ville": "Muret",
+      "adresse": "1 BIS BOULEVARD JOFFRERY",
+      "pop": "R",
+      "lat": 4346100,
+      "lng": 132600,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 2.034,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "31600010",
       "cp": "31600",
       "ville": "Muret",
@@ -1085,7 +1578,34 @@
         "gazole": 1.979,
         "sp98": 2.026,
         "e10": 1.899,
-        "e85": 0.798
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "31600011",
+      "cp": "31600",
+      "ville": "Muret",
+      "adresse": "68 avenue Jacques Douzans",
+      "pop": "R",
+      "lat": 4346900,
+      "lng": 132900,
+      "fuels": {
+        "gazole": 2.059,
+        "sp98": 2.119,
+        "e10": 2.029,
+        "e85": 0.945
+      }
+    },
+    {
+      "id": "31600007",
+      "cp": "31600",
+      "ville": "Muret",
+      "adresse": "RN 117 - LIEU DIT GUERIN",
+      "pop": "R",
+      "lat": 4348845.23805,
+      "lng": 134028.33354,
+      "fuels": {
+        "gazole": 1.904
       }
     },
     {
@@ -1141,10 +1661,10 @@
       "lat": 4360785,
       "lng": 128404,
       "fuels": {
-        "gazole": 1.997,
-        "sp95": 1.966,
-        "sp98": 2.04,
-        "e10": 1.922
+        "gazole": 1.995,
+        "sp95": 1.977,
+        "sp98": 2.052,
+        "e10": 1.932
       }
     },
     {
@@ -1205,6 +1725,21 @@
       }
     },
     {
+      "id": "31120009",
+      "cp": "31120",
+      "ville": "Portet-sur-Garonne",
+      "adresse": "106 ROUTE D'ESPAGNE",
+      "pop": "R",
+      "lat": 4352500,
+      "lng": 139900,
+      "fuels": {
+        "gazole": 1.992,
+        "e10": 1.99,
+        "e85": 0.829,
+        "gplc": 0.999
+      }
+    },
+    {
       "id": "31120010",
       "cp": "31120",
       "ville": "Portet-sur-Garonne",
@@ -1214,9 +1749,37 @@
       "lng": 139971,
       "fuels": {
         "gazole": 1.904,
-        "sp98": 1.99,
         "e10": 1.897,
         "e85": 0.819
+      }
+    },
+    {
+      "id": "31120005",
+      "cp": "31120",
+      "ville": "Portet-sur-Garonne",
+      "adresse": "50 Route d'Espagne",
+      "pop": "R",
+      "lat": 4354300,
+      "lng": 141600,
+      "fuels": {
+        "gazole": 1.991,
+        "e10": 1.957
+      }
+    },
+    {
+      "id": "31120001",
+      "cp": "31120",
+      "ville": "Portet-sur-Garonne",
+      "adresse": "Boulevard de l'Europe",
+      "pop": "R",
+      "lat": 4353348.46651,
+      "lng": 140041.76074,
+      "fuels": {
+        "gazole": 1.933,
+        "sp95": 1.95,
+        "sp98": 2.017,
+        "e10": 1.887,
+        "e85": 0.795
       }
     },
     {
@@ -1228,8 +1791,7 @@
       "lat": 4351800,
       "lng": 141800,
       "fuels": {
-        "gazole": 1.999,
-        "e10": 1.99
+        "gazole": 1.999
       }
     },
     {
@@ -1248,6 +1810,21 @@
       }
     },
     {
+      "id": "31520007",
+      "cp": "31520",
+      "ville": "Ramonville-Saint-Agne",
+      "adresse": "53 Av. Tolosane",
+      "pop": "R",
+      "lat": 4354777.44756,
+      "lng": 147238.85701,
+      "fuels": {
+        "gazole": 2.089,
+        "sp98": 2.149,
+        "e10": 2.029,
+        "e85": 0.955
+      }
+    },
+    {
       "id": "31520005",
       "cp": "31520",
       "ville": "Ramonville-Saint-Agne",
@@ -1257,8 +1834,22 @@
       "lng": 147921,
       "fuels": {
         "gazole": 2.005,
-        "e10": 1.99,
         "e85": 0.839
+      }
+    },
+    {
+      "id": "31250004",
+      "cp": "31250",
+      "ville": "Revel",
+      "adresse": "3 RUE CLEMENCE ISAURE",
+      "pop": "R",
+      "lat": 4345400,
+      "lng": 199400,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.049,
+        "e10": 1.969,
+        "e85": 0.809
       }
     },
     {
@@ -1303,6 +1894,21 @@
         "sp98": 1.989,
         "e10": 1.939,
         "gplc": 1.099
+      }
+    },
+    {
+      "id": "31120006",
+      "cp": "31120",
+      "ville": "Roques",
+      "adresse": "1 Allée de Fraïxinet",
+      "pop": "R",
+      "lat": 4351200,
+      "lng": 136900,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.999,
+        "e10": 1.899,
+        "e85": 0.795
       }
     },
     {
@@ -1387,8 +1993,7 @@
       "lat": 4373800,
       "lng": 137300,
       "fuels": {
-        "gazole": 2.002,
-        "e10": 1.99
+        "gazole": 2.002
       }
     },
     {
@@ -1434,6 +2039,20 @@
       }
     },
     {
+      "id": "31470005",
+      "cp": "31470",
+      "ville": "Saint-Lys",
+      "adresse": "95 Avenue du Languedoc",
+      "pop": "R",
+      "lat": 4351195,
+      "lng": 118972,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 2.013,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "31360002",
       "cp": "31360",
       "ville": "Saint-Martory",
@@ -1444,6 +2063,20 @@
       "fuels": {
         "gazole": 1.979,
         "e10": 1.899
+      }
+    },
+    {
+      "id": "31650003",
+      "cp": "31650",
+      "ville": "Saint-Orens-de-Gameville",
+      "adresse": "5 AV DE GAMEVILLE",
+      "pop": "R",
+      "lat": 4355600,
+      "lng": 153100,
+      "fuels": {
+        "gazole": 1.922,
+        "e10": 1.916,
+        "e85": 0.836
       }
     },
     {
@@ -1459,6 +2092,35 @@
         "sp95": 1.985,
         "sp98": 1.999,
         "e10": 1.916
+      }
+    },
+    {
+      "id": "31530003",
+      "cp": "31530",
+      "ville": "Saint-Paul-sur-Save",
+      "adresse": "ZA DE LARCENNE",
+      "pop": "R",
+      "lat": 4369800,
+      "lng": 121900,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.999,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "31790004",
+      "cp": "31790",
+      "ville": "Saint-Sauveur",
+      "adresse": "52 ROUTE DE CEPET",
+      "pop": "R",
+      "lat": 4375600,
+      "lng": 140800,
+      "fuels": {
+        "gazole": 2.009,
+        "sp98": 2.069,
+        "e10": 1.97
       }
     },
     {
@@ -1562,6 +2224,21 @@
       }
     },
     {
+      "id": "31100004",
+      "cp": "31100",
+      "ville": "Toulouse",
+      "adresse": "138 bis Route de Seysses",
+      "pop": "R",
+      "lat": 4355883.14923,
+      "lng": 140298.83363,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.989,
+        "sp98": 2.039,
+        "e85": 0.799
+      }
+    },
+    {
       "id": "31500012",
       "cp": "31500",
       "ville": "Toulouse",
@@ -1662,6 +2339,35 @@
       }
     },
     {
+      "id": "31500007",
+      "cp": "31000",
+      "ville": "Toulouse",
+      "adresse": "231 FAUBOURG BONNEFOY",
+      "pop": "R",
+      "lat": 4362600,
+      "lng": 145900,
+      "fuels": {
+        "gazole": 1.987,
+        "sp98": 2.051,
+        "e10": 1.953
+      }
+    },
+    {
+      "id": "31100003",
+      "cp": "31100",
+      "ville": "Toulouse",
+      "adresse": "30 Chemin de Ferro-Lébrès",
+      "pop": "R",
+      "lat": 4358400,
+      "lng": 137200,
+      "fuels": {
+        "gazole": 1.974,
+        "sp98": 2.048,
+        "e10": 1.902,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "31000001",
       "cp": "31100",
       "ville": "Toulouse",
@@ -1670,7 +2376,7 @@
       "lat": 4358800,
       "lng": 141000,
       "fuels": {
-        "gazole": 2.007,
+        "gazole": 1.976,
         "sp95": 1.99
       }
     },
@@ -1698,6 +2404,20 @@
         "gazole": 1.907,
         "e85": 0.819,
         "gplc": 1.007
+      }
+    },
+    {
+      "id": "31400010",
+      "cp": "31400",
+      "ville": "Toulouse",
+      "adresse": "36 ALLEE DES DEMOISELLES",
+      "pop": "R",
+      "lat": 4359000,
+      "lng": 145500,
+      "fuels": {
+        "gazole": 2.018,
+        "e10": 1.99,
+        "e85": 0.849
       }
     },
     {
@@ -1759,6 +2479,21 @@
       }
     },
     {
+      "id": "31300008",
+      "cp": "31300",
+      "ville": "Toulouse",
+      "adresse": "6 AVENUE DU GOUPE MORHANGE",
+      "pop": "A",
+      "lat": 4360100,
+      "lng": 139900,
+      "fuels": {
+        "gazole": 2.006,
+        "e10": 1.99,
+        "e85": 0.851,
+        "gplc": 1.028
+      }
+    },
+    {
       "id": "31500013",
       "cp": "31500",
       "ville": "Toulouse",
@@ -1786,6 +2521,22 @@
       }
     },
     {
+      "id": "31400002",
+      "cp": "31400",
+      "ville": "Toulouse",
+      "adresse": "68 Route de Revel",
+      "pop": "R",
+      "lat": 4357500,
+      "lng": 149000,
+      "fuels": {
+        "gazole": 2.129,
+        "sp98": 2.199,
+        "e10": 2.059,
+        "e85": 0.965,
+        "gplc": 1.089
+      }
+    },
+    {
       "id": "31100011",
       "cp": "31100",
       "ville": "Toulouse",
@@ -1794,8 +2545,21 @@
       "lat": 4357400,
       "lng": 142400,
       "fuels": {
-        "gazole": 1.907,
-        "e10": 1.901
+        "gazole": 1.907
+      }
+    },
+    {
+      "id": "31400006",
+      "cp": "31400",
+      "ville": "Toulouse",
+      "adresse": "90 Route de Revel",
+      "pop": "R",
+      "lat": 4357500,
+      "lng": 149000,
+      "fuels": {
+        "gazole": 1.952,
+        "sp98": 2.001,
+        "e10": 1.921
       }
     },
     {
@@ -1828,6 +2592,49 @@
       }
     },
     {
+      "id": "31500006",
+      "cp": "31500",
+      "ville": "Toulouse",
+      "adresse": "AVENUE YVES BRUNAUD",
+      "pop": "R",
+      "lat": 4361900,
+      "lng": 146800,
+      "fuels": {
+        "gazole": 1.994,
+        "sp98": 2.051,
+        "e10": 1.971
+      }
+    },
+    {
+      "id": "31170008",
+      "cp": "31170",
+      "ville": "Tournefeuille",
+      "adresse": "20 boulevard Vincent Auriol",
+      "pop": "R",
+      "lat": 4358635.1,
+      "lng": 134797.2,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.169,
+        "e10": 2.059,
+        "e85": 0.955
+      }
+    },
+    {
+      "id": "31170002",
+      "cp": "31170",
+      "ville": "Tournefeuille",
+      "adresse": "5 Rue Bertrand Panouse",
+      "pop": "R",
+      "lat": 4358200,
+      "lng": 134400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.049,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "31170004",
       "cp": "31170",
       "ville": "Tournefeuille",
@@ -1837,6 +2644,7 @@
       "lng": 132700,
       "fuels": {
         "gazole": 2.019,
+        "sp95": 1.99,
         "e10": 1.99
       }
     },
@@ -1885,6 +2693,49 @@
       }
     },
     {
+      "id": "31590004",
+      "cp": "31590",
+      "ville": "Verfeil",
+      "adresse": "2 Avenue de Lavaur",
+      "pop": "R",
+      "lat": 4365800,
+      "lng": 166700,
+      "fuels": {
+        "gazole": 2.008,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "31810003",
+      "cp": "31810",
+      "ville": "Vernet",
+      "adresse": "AVENUE DE TOULOUSE",
+      "pop": "R",
+      "lat": 4343800,
+      "lng": 142600,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "31290005",
+      "cp": "31290",
+      "ville": "Villefranche-de-Lauragais",
+      "adresse": "170 Avenue de la République",
+      "pop": "R",
+      "lat": 4340300,
+      "lng": 171200,
+      "fuels": {
+        "gazole": 1.968,
+        "sp98": 2.038,
+        "e10": 1.918,
+        "e85": 0.972
+      }
+    },
+    {
       "id": "31290011",
       "cp": "31290",
       "ville": "Villefranche-de-Lauragais",
@@ -1896,6 +2747,67 @@
         "gazole": 1.959,
         "sp98": 2.029,
         "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "31290007",
+      "cp": "31290",
+      "ville": "Villefranche-de-Lauragais",
+      "adresse": "RN 113",
+      "pop": "R",
+      "lat": 4340600,
+      "lng": 170900,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.999,
+        "sp98": 2.039,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "31290001",
+      "cp": "31290",
+      "ville": "Villefranche-de-Lauragais",
+      "adresse": "ZAC de Borde Blanche",
+      "pop": "R",
+      "lat": 4339900,
+      "lng": 170300,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.999,
+        "sp98": 2.039,
+        "e10": 1.909,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "31340001",
+      "cp": "31340",
+      "ville": "Villemur-sur-Tarn",
+      "adresse": "31 Rue Pierre Marchet",
+      "pop": "R",
+      "lat": 4385900,
+      "lng": 150500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.019,
+        "e10": 1.889,
+        "e85": 0.788
+      }
+    },
+    {
+      "id": "31270007",
+      "cp": "31270",
+      "ville": "Villeneuve-Tolosane",
+      "adresse": "8 AVENUE DE FRANCAZAL",
+      "pop": "R",
+      "lat": 4352400,
+      "lng": 134300,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 1.99,
+        "e10": 1.924,
         "e85": 0.809
       }
     }

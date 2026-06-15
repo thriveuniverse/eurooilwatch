@@ -3,52 +3,52 @@
   "name": "Gironde",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 143,
+  "stationCount": 216,
   "fuels": {
     "gazole": {
-      "count": 140,
-      "mean": 1.9927,
-      "median": 1.969,
-      "min": 1.882,
-      "max": 2.39
+      "count": 211,
+      "mean": 1.9848,
+      "median": 1.967,
+      "min": 1.865,
+      "max": 2.37
     },
     "sp95": {
-      "count": 45,
-      "mean": 1.9817,
+      "count": 65,
+      "mean": 1.9813,
       "median": 1.979,
       "min": 1.899,
       "max": 2.159
     },
     "sp98": {
-      "count": 110,
-      "mean": 2.0461,
-      "median": 2.0125,
+      "count": 172,
+      "mean": 2.0385,
+      "median": 2.0105,
       "min": 1.939,
-      "max": 2.546
+      "max": 2.45
     },
     "e10": {
-      "count": 115,
-      "mean": 1.9517,
-      "median": 1.929,
-      "min": 1.87,
-      "max": 2.396
+      "count": 175,
+      "mean": 1.9401,
+      "median": 1.923,
+      "min": 1.849,
+      "max": 2.3
     },
     "e85": {
-      "count": 53,
-      "mean": 0.8188,
+      "count": 84,
+      "mean": 0.8177,
       "median": 0.809,
-      "min": 0.759,
+      "min": 0.749,
       "max": 0.999
     },
     "gplc": {
-      "count": 18,
-      "mean": 1.0526,
-      "median": 1.0555,
+      "count": 31,
+      "mean": 1.0547,
+      "median": 1.058,
       "min": 0.923,
-      "max": 1.149
+      "max": 1.206
     }
   },
   "stations": [
@@ -76,6 +76,21 @@
       "fuels": {
         "gazole": 2.099,
         "e10": 2.119
+      }
+    },
+    {
+      "id": "33440002",
+      "cp": "33440",
+      "ville": "Ambarès-et-Lagrave",
+      "adresse": "R.N. 10",
+      "pop": "R",
+      "lat": 4491900,
+      "lng": -48000,
+      "fuels": {
+        "gazole": 1.882,
+        "sp98": 1.966,
+        "e10": 1.87,
+        "e85": 0.759
       }
     },
     {
@@ -152,6 +167,50 @@
       }
     },
     {
+      "id": "33740001",
+      "cp": "33740",
+      "ville": "Arès",
+      "adresse": "Route de Bordeaux",
+      "pop": "R",
+      "lat": 4476900,
+      "lng": -111100,
+      "fuels": {
+        "gazole": 1.954,
+        "sp95": 1.954,
+        "sp98": 1.989,
+        "e10": 1.899,
+        "e85": 0.899
+      }
+    },
+    {
+      "id": "33460003",
+      "cp": "33460",
+      "ville": "Arsac",
+      "adresse": "13 avenue de soubeyran",
+      "pop": "R",
+      "lat": 4499400,
+      "lng": -69300,
+      "fuels": {
+        "gazole": 2.09,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "33370008",
+      "cp": "33370",
+      "ville": "Artigues-près-Bordeaux",
+      "adresse": "6 ave de la prairie",
+      "pop": "R",
+      "lat": 4486800,
+      "lng": -49700,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 2.073,
+        "sp98": 2.045,
+        "e10": 1.924
+      }
+    },
+    {
       "id": "33370006",
       "cp": "33370",
       "ville": "Artigues-près-Bordeaux",
@@ -179,6 +238,52 @@
         "gazole": 1.897,
         "sp98": 1.99,
         "e10": 1.893
+      }
+    },
+    {
+      "id": "33500007",
+      "cp": "33500",
+      "ville": "Arveyres",
+      "adresse": "RN 89",
+      "pop": "R",
+      "lat": 4491320.01846,
+      "lng": -25401.93527,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "33980002",
+      "cp": "33980",
+      "ville": "Audenge",
+      "adresse": "ROUTE DE BORDEAUX",
+      "pop": "R",
+      "lat": 4469600,
+      "lng": -97900,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.95,
+        "sp98": 2.049,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "33480003",
+      "cp": "33480",
+      "ville": "Avensan",
+      "adresse": "Route de Bordeaux",
+      "pop": "R",
+      "lat": 4502300,
+      "lng": -78900,
+      "fuels": {
+        "gazole": 1.955,
+        "sp95": 1.989,
+        "sp98": 2.035,
+        "e10": 1.925,
+        "e85": 0.809
       }
     },
     {
@@ -230,7 +335,7 @@
       "lat": 4443387.74007,
       "lng": -21895.28827,
       "fuels": {
-        "gazole": 1.959,
+        "gazole": 1.919,
         "sp95": 1.949,
         "sp98": 1.999,
         "e10": 1.899
@@ -354,6 +459,37 @@
       }
     },
     {
+      "id": "33750003",
+      "cp": "33750",
+      "ville": "Beychac-et-Caillau",
+      "adresse": "RN 89",
+      "pop": "R",
+      "lat": 4488100,
+      "lng": -35600,
+      "fuels": {
+        "gazole": 1.891,
+        "sp98": 1.99,
+        "e10": 1.882,
+        "e85": 0.814
+      }
+    },
+    {
+      "id": "33380001",
+      "cp": "33380",
+      "ville": "Biganos",
+      "adresse": "Rue des Fonderies",
+      "pop": "R",
+      "lat": 4463700,
+      "lng": -96000,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.99,
+        "e10": 1.929,
+        "e85": 0.79,
+        "gplc": 1.039
+      }
+    },
+    {
       "id": "33290009",
       "cp": "33290",
       "ville": "Blanquefort",
@@ -365,6 +501,21 @@
         "gazole": 1.892,
         "e10": 1.878,
         "e85": 0.843
+      }
+    },
+    {
+      "id": "33390003",
+      "cp": "33390",
+      "ville": "Blaye",
+      "adresse": "Route de Bordeaux",
+      "pop": "R",
+      "lat": 4512700,
+      "lng": -64300,
+      "fuels": {
+        "gazole": 1.947,
+        "sp98": 2.155,
+        "e10": 1.898,
+        "e85": 0.749
       }
     },
     {
@@ -393,7 +544,37 @@
       "fuels": {
         "gazole": 1.894,
         "sp98": 1.99,
+        "e10": 1.884,
         "e85": 0.811
+      }
+    },
+    {
+      "id": "33000024",
+      "cp": "33000",
+      "ville": "Bordeaux",
+      "adresse": "127 COURS DU MEDOC",
+      "pop": "R",
+      "lat": 4486100,
+      "lng": -57000,
+      "fuels": {
+        "gazole": 1.898,
+        "sp98": 1.99,
+        "e10": 1.89,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "33300005",
+      "cp": "33300",
+      "ville": "Bordeaux",
+      "adresse": "140 BOULEVARD GODARD",
+      "pop": "R",
+      "lat": 4486190,
+      "lng": -58572,
+      "fuels": {
+        "gazole": 1.896,
+        "sp98": 1.99,
+        "e10": 1.886
       }
     },
     {
@@ -405,9 +586,21 @@
       "lat": 4486300,
       "lng": -56700,
       "fuels": {
-        "gazole": 1.969,
+        "gazole": 1.999,
         "sp95": 2.049,
         "e10": 1.962
+      }
+    },
+    {
+      "id": "33000010",
+      "cp": "33200",
+      "ville": "Bordeaux",
+      "adresse": "21 Rue André Maginot",
+      "pop": "R",
+      "lat": 4484100,
+      "lng": -62600,
+      "fuels": {
+        "gazole": 1.959
       }
     },
     {
@@ -434,8 +627,21 @@
       "lng": -61200,
       "fuels": {
         "gazole": 1.895,
-        "sp98": 1.99,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "33000016",
+      "cp": "33000",
+      "ville": "Bordeaux",
+      "adresse": "313 Cours Maréchal-Gallieni",
+      "pop": "R",
+      "lat": 4481900,
+      "lng": -60200,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.119,
+        "e10": 1.969
       }
     },
     {
@@ -510,6 +716,21 @@
       }
     },
     {
+      "id": "33523001",
+      "cp": "33520",
+      "ville": "Bruges",
+      "adresse": "427 Route du Médoc",
+      "pop": "R",
+      "lat": 4487400,
+      "lng": -61700,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.989,
+        "e10": 1.893,
+        "e85": 0.785
+      }
+    },
+    {
       "id": "33520003",
       "cp": "33520",
       "ville": "Bruges",
@@ -525,6 +746,48 @@
       }
     },
     {
+      "id": "33520002",
+      "cp": "33520",
+      "ville": "Bruges",
+      "adresse": "A630 ROC.PRESQU'ILE LAC COTE2",
+      "pop": "A",
+      "lat": 4488800,
+      "lng": -57900,
+      "fuels": {
+        "gazole": 2.105,
+        "sp98": 2.132,
+        "e10": 2.032,
+        "gplc": 1.063
+      }
+    },
+    {
+      "id": "33140006",
+      "cp": "33140",
+      "ville": "Cadaujac",
+      "adresse": "450 Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4475214,
+      "lng": -53211,
+      "fuels": {
+        "gazole": 1.955,
+        "sp98": 2.035,
+        "e10": 1.925
+      }
+    },
+    {
+      "id": "33240014",
+      "cp": "33240",
+      "ville": "Cadillac-en-Fronsadais",
+      "adresse": "38 AV DU FRONSADAIS",
+      "pop": "R",
+      "lat": 4496875.5777,
+      "lng": -37666.95377,
+      "fuels": {
+        "gazole": 2.006,
+        "sp95": 1.99
+      }
+    },
+    {
       "id": "33410001",
       "cp": "33410",
       "ville": "Cadillac-sur-Garonne",
@@ -535,6 +798,20 @@
       "fuels": {
         "gazole": 2.11,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "33360002",
+      "cp": "33360",
+      "ville": "Camblanes-et-Meynac",
+      "adresse": "Route de Morillon",
+      "pop": "R",
+      "lat": 4476511,
+      "lng": -48520,
+      "fuels": {
+        "gazole": 1.934,
+        "sp98": 2.027,
+        "e10": 1.899
       }
     },
     {
@@ -636,6 +913,48 @@
       }
     },
     {
+      "id": "33150003",
+      "cp": "33150",
+      "ville": "Cenon",
+      "adresse": "Avenue René Cassagne",
+      "pop": "R",
+      "lat": 4485400,
+      "lng": -51700,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.109,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "33720005",
+      "cp": "33720",
+      "ville": "Cérons",
+      "adresse": "La Tour Rn 113",
+      "pop": "R",
+      "lat": 4463300,
+      "lng": -33500,
+      "fuels": {
+        "gazole": 2.13,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "33610005",
+      "cp": "33610",
+      "ville": "Cestas",
+      "adresse": "8 Avenue de Verdun",
+      "pop": "R",
+      "lat": 4478000,
+      "lng": -69000,
+      "fuels": {
+        "gazole": 1.931,
+        "sp95": 1.969,
+        "sp98": 2.016,
+        "e10": 1.894
+      }
+    },
+    {
       "id": "33610007",
       "cp": "33610",
       "ville": "Cestas",
@@ -644,9 +963,9 @@
       "lat": 4474300,
       "lng": -70600,
       "fuels": {
-        "gazole": 2.39,
-        "sp98": 2.463,
-        "e10": 2.313
+        "gazole": 2.37,
+        "sp98": 2.45,
+        "e10": 2.3
       }
     },
     {
@@ -658,9 +977,9 @@
       "lat": 4474600,
       "lng": -70300,
       "fuels": {
-        "gazole": 2.296,
-        "sp98": 2.463,
-        "e10": 2.313
+        "gazole": 2.219,
+        "sp98": 2.378,
+        "e10": 2.228
       }
     },
     {
@@ -707,6 +1026,22 @@
         "sp98": 2.019,
         "e10": 1.909,
         "e85": 0.776
+      }
+    },
+    {
+      "id": "33240005",
+      "cp": "33240",
+      "ville": "Cubzac-les-Ponts",
+      "adresse": "AUTOROUTE A10 CUBZAC LES PONTS",
+      "pop": "A",
+      "lat": 4497500,
+      "lng": -43300,
+      "fuels": {
+        "gazole": 2.159,
+        "sp98": 2.174,
+        "e10": 2.103,
+        "e85": 0.998,
+        "gplc": 1.206
       }
     },
     {
@@ -776,9 +1111,9 @@
       "lat": 4482500,
       "lng": -44400,
       "fuels": {
-        "gazole": 1.947,
-        "sp98": 1.981,
-        "e10": 1.885,
+        "gazole": 1.909,
+        "sp98": 1.982,
+        "e10": 1.883,
         "e85": 0.796
       }
     },
@@ -832,9 +1167,9 @@
       "lat": 4458500,
       "lng": -8100,
       "fuels": {
-        "gazole": 1.993,
+        "gazole": 1.967,
         "sp98": 1.99,
-        "e10": 1.99
+        "e10": 1.958
       }
     },
     {
@@ -880,6 +1215,21 @@
         "sp98": 1.99,
         "e10": 1.884,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "23300008",
+      "cp": "33170",
+      "ville": "Gradignan",
+      "adresse": "77 rue de la croix de monjous",
+      "pop": "R",
+      "lat": 4477600,
+      "lng": -59500,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.139,
+        "e10": 2.049,
+        "e85": 0.835
       }
     },
     {
@@ -937,7 +1287,6 @@
       "lng": -106700,
       "fuels": {
         "gazole": 1.959,
-        "sp95": 1.998,
         "sp98": 2.056
       }
     },
@@ -953,6 +1302,20 @@
         "gazole": 1.959,
         "sp98": 2.019,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "33450009",
+      "cp": "33450",
+      "ville": "Izon",
+      "adresse": "7 avenue de cavernes",
+      "pop": "R",
+      "lat": 4492173.07916,
+      "lng": -37072.98614,
+      "fuels": {
+        "gazole": 1.965,
+        "e10": 1.889,
+        "e85": 0.798
       }
     },
     {
@@ -984,6 +1347,21 @@
       }
     },
     {
+      "id": "33190004",
+      "cp": "33190",
+      "ville": "La Réole",
+      "adresse": "25 Rue Frimont-Ouest",
+      "pop": "R",
+      "lat": 4458387,
+      "lng": -6804,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.049,
+        "e10": 1.949,
+        "e85": 0.798
+      }
+    },
+    {
       "id": "33670001",
       "cp": "33670",
       "ville": "La Sauve",
@@ -995,6 +1373,22 @@
         "gazole": 1.949,
         "sp98": 2.009,
         "e10": 1.909
+      }
+    },
+    {
+      "id": "33260011",
+      "cp": "33260",
+      "ville": "La Teste-de-Buch",
+      "adresse": "Avenue de l'Europe",
+      "pop": "R",
+      "lat": 4461800,
+      "lng": -112300,
+      "fuels": {
+        "gazole": 1.89,
+        "sp95": 1.97,
+        "sp98": 1.99,
+        "e10": 1.895,
+        "e85": 0.78
       }
     },
     {
@@ -1043,6 +1437,20 @@
       }
     },
     {
+      "id": "33260001",
+      "cp": "33260",
+      "ville": "La Teste-de-Buch",
+      "adresse": "RUE LAGRUA",
+      "pop": "R",
+      "lat": 4464100,
+      "lng": -115600,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.039,
+        "e10": 1.929
+      }
+    },
+    {
       "id": "33680004",
       "cp": "33680",
       "ville": "Lacanau",
@@ -1079,8 +1487,22 @@
       "lat": 4497654,
       "lng": -106739,
       "fuels": {
-        "gazole": 1.894,
-        "e10": 1.893
+        "gazole": 1.868,
+        "e10": 1.86
+      }
+    },
+    {
+      "id": "33720009",
+      "cp": "33720",
+      "ville": "Landiras",
+      "adresse": "99 ROUTE DE GUILLOS",
+      "pop": "R",
+      "lat": 4456200,
+      "lng": -41900,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.029,
+        "e10": 1.899
       }
     },
     {
@@ -1168,9 +1590,23 @@
       "lat": 4470300,
       "lng": -103700,
       "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.049,
-        "e10": 1.919
+        "gazole": 1.959,
+        "sp98": 2.059,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "33360003",
+      "cp": "33360",
+      "ville": "Latresne",
+      "adresse": "9 AV DE LA LIBERATION",
+      "pop": "R",
+      "lat": 4478300,
+      "lng": -49600,
+      "fuels": {
+        "gazole": 1.986,
+        "sp98": 1.99,
+        "e10": 1.98
       }
     },
     {
@@ -1212,8 +1648,7 @@
       "lng": -69400,
       "fuels": {
         "gazole": 1.985,
-        "sp98": 1.99,
-        "e10": 1.977
+        "sp98": 1.99
       }
     },
     {
@@ -1225,8 +1660,24 @@
       "lat": 4494839,
       "lng": -63068,
       "fuels": {
-        "gazole": 1.891,
+        "gazole": 1.865,
+        "sp98": 1.968,
+        "e10": 1.849,
         "e85": 0.843
+      }
+    },
+    {
+      "id": "33290003",
+      "cp": "33290",
+      "ville": "Le Pian-Médoc",
+      "adresse": "Route de Pauillac",
+      "pop": "R",
+      "lat": 4495436,
+      "lng": -62917,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.998,
+        "e10": 1.898
       }
     },
     {
@@ -1255,6 +1706,34 @@
         "gazole": 1.989,
         "sp95": 1.979,
         "sp98": 2.039
+      }
+    },
+    {
+      "id": "33470003",
+      "cp": "33470",
+      "ville": "Le Teich",
+      "adresse": "Avenue de Bordeaux",
+      "pop": "R",
+      "lat": 4462200,
+      "lng": -101800,
+      "fuels": {
+        "gazole": 2.008,
+        "sp95": 2.041,
+        "sp98": 2.084
+      }
+    },
+    {
+      "id": "33950003",
+      "cp": "33950",
+      "ville": "Lège-Cap-Ferret",
+      "adresse": "5 Avenue De La Presqu'île",
+      "pop": "R",
+      "lat": 4479033.98987,
+      "lng": -114608.24065,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 1.969,
+        "sp98": 2.079
       }
     },
     {
@@ -1524,6 +2003,50 @@
       }
     },
     {
+      "id": "33700020",
+      "cp": "33700",
+      "ville": "Mérignac",
+      "adresse": "127 AV. DE L YSER",
+      "pop": "R",
+      "lat": 4484200,
+      "lng": -66600,
+      "fuels": {
+        "gazole": 1.984,
+        "sp98": 1.99,
+        "gplc": 1.039
+      }
+    },
+    {
+      "id": "33700021",
+      "cp": "33700",
+      "ville": "Mérignac",
+      "adresse": "243 AV DE LA MARNE",
+      "pop": "R",
+      "lat": 4483265,
+      "lng": -64392,
+      "fuels": {
+        "sp98": 1.99,
+        "e10": 1.878
+      }
+    },
+    {
+      "id": "33700001",
+      "cp": "33700",
+      "ville": "Mérignac",
+      "adresse": "52 avenue de la somme",
+      "pop": "R",
+      "lat": 4483000,
+      "lng": -65400,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.984,
+        "sp98": 2.044,
+        "e10": 1.919,
+        "e85": 0.765,
+        "gplc": 1.059
+      }
+    },
+    {
       "id": "33700012",
       "cp": "33700",
       "ville": "Mérignac",
@@ -1531,6 +2054,20 @@
       "pop": "R",
       "lat": 4485600,
       "lng": -65400,
+      "fuels": {
+        "gazole": 1.944,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "33700010",
+      "cp": "33700",
+      "ville": "Mérignac",
+      "adresse": "Av. des Frères Robinson",
+      "pop": "R",
+      "lat": 4484786.79749,
+      "lng": -65871.49874,
       "fuels": {
         "gazole": 1.944,
         "sp98": 1.999,
@@ -1546,10 +2083,56 @@
       "lat": 4483400,
       "lng": -61700,
       "fuels": {
-        "gazole": 1.954,
+        "gazole": 1.959,
         "sp98": 2.019,
         "e10": 1.909,
-        "e85": 0.759
+        "e85": 0.757
+      }
+    },
+    {
+      "id": "33700025",
+      "cp": "33700",
+      "ville": "Mérignac",
+      "adresse": "Domaine de Peychotte2 Allée des Conviviales",
+      "pop": "R",
+      "lat": 4482800,
+      "lng": -62100,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.019,
+        "e10": 1.909,
+        "e85": 0.756
+      }
+    },
+    {
+      "id": "33700023",
+      "cp": "33700",
+      "ville": "Mérignac",
+      "adresse": "Rocade Périphérique exterieur aire du truc",
+      "pop": "A",
+      "lat": 4484970.95021,
+      "lng": -66664.77547,
+      "fuels": {
+        "gazole": 1.884,
+        "sp98": 1.99,
+        "e10": 1.878,
+        "gplc": 1.039
+      }
+    },
+    {
+      "id": "33700022",
+      "cp": "33700",
+      "ville": "Mérignac",
+      "adresse": "ROCADE PÉRIPHÉRIQUE INTERIEUR",
+      "pop": "A",
+      "lat": 4485000,
+      "lng": -66700,
+      "fuels": {
+        "gazole": 1.884,
+        "sp98": 1.99,
+        "e10": 1.878,
+        "e85": 0.809,
+        "gplc": 1.039
       }
     },
     {
@@ -1568,6 +2151,48 @@
       }
     },
     {
+      "id": "33380006",
+      "cp": "33380",
+      "ville": "Mios",
+      "adresse": "48 Avenue de la République",
+      "pop": "R",
+      "lat": 4461258.1,
+      "lng": -94627.5,
+      "fuels": {
+        "gazole": 2.02,
+        "e10": 1.984
+      }
+    },
+    {
+      "id": "33380005",
+      "cp": "33380",
+      "ville": "Mios",
+      "adresse": "AVENUE ZAC 2000",
+      "pop": "R",
+      "lat": 4466000,
+      "lng": -82900,
+      "fuels": {
+        "gazole": 1.994,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "33580002",
+      "cp": "33580",
+      "ville": "Monségur",
+      "adresse": "5, AVENUE JEAN PAUL GLANET",
+      "pop": "R",
+      "lat": 4464998.22,
+      "lng": 8761.1,
+      "fuels": {
+        "gazole": 1.966,
+        "sp95": 1.975,
+        "sp98": 2.039
+      }
+    },
+    {
       "id": "33450008",
       "cp": "33450",
       "ville": "Montussan",
@@ -1578,6 +2203,34 @@
       "fuels": {
         "gazole": 1.99,
         "e10": 1.899
+      }
+    },
+    {
+      "id": "33730003",
+      "cp": "33730",
+      "ville": "Noaillan",
+      "adresse": "D8  le bourg est",
+      "pop": "R",
+      "lat": 4448121.57,
+      "lng": -36714.31,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.045,
+        "e10": 1.925
+      }
+    },
+    {
+      "id": "33290004",
+      "cp": "33290",
+      "ville": "Parempuyre",
+      "adresse": "20 Avenue Philippe et Hubert Dassier",
+      "pop": "R",
+      "lat": 4494765,
+      "lng": -60351,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.989,
+        "e10": 1.898
       }
     },
     {
@@ -1633,10 +2286,23 @@
       "lng": -64989.14235,
       "fuels": {
         "gazole": 1.989,
-        "sp98": 1.99,
         "e10": 1.981,
         "e85": 0.823,
         "gplc": 1.023
+      }
+    },
+    {
+      "id": "33600006",
+      "cp": "33600",
+      "ville": "Pessac",
+      "adresse": "3 Avenue du Général Leclerc",
+      "pop": "R",
+      "lat": 4479900,
+      "lng": -66400,
+      "fuels": {
+        "gazole": 2.012,
+        "sp98": 2.021,
+        "e10": 1.941
       }
     },
     {
@@ -1652,6 +2318,21 @@
         "sp98": 1.99,
         "e10": 1.986,
         "e85": 0.823
+      }
+    },
+    {
+      "id": "33600011",
+      "cp": "33600",
+      "ville": "Pessac",
+      "adresse": "77 BIS AV DU GAL LECLERC",
+      "pop": "R",
+      "lat": 4479200,
+      "lng": -67100,
+      "fuels": {
+        "gazole": 1.896,
+        "sp98": 1.99,
+        "e10": 1.887,
+        "e85": 0.809
       }
     },
     {
@@ -1699,6 +2380,23 @@
       }
     },
     {
+      "id": "33220006",
+      "cp": "33220",
+      "ville": "Pineuilh",
+      "adresse": "80 avenue de la Résistance",
+      "pop": "R",
+      "lat": 4482600,
+      "lng": 22100,
+      "fuels": {
+        "gazole": 1.938,
+        "sp95": 1.939,
+        "sp98": 1.979,
+        "e10": 1.877,
+        "e85": 0.853,
+        "gplc": 1.068
+      }
+    },
+    {
       "id": "33720006",
       "cp": "33720",
       "ville": "Podensac",
@@ -1722,8 +2420,52 @@
       "lng": -36582,
       "fuels": {
         "gazole": 1.899,
-        "sp95": 1.934,
+        "sp95": 1.949,
         "sp98": 1.99
+      }
+    },
+    {
+      "id": "33220001",
+      "cp": "33220",
+      "ville": "Port-Sainte-Foy-et-Ponchapt",
+      "adresse": "113 Avenue de Bordeaux",
+      "pop": "R",
+      "lat": 4484500,
+      "lng": 18100,
+      "fuels": {
+        "gazole": 1.929,
+        "sp95": 1.949,
+        "sp98": 1.999,
+        "e10": 1.897
+      }
+    },
+    {
+      "id": "33640002",
+      "cp": "33640",
+      "ville": "Portets",
+      "adresse": "43 Route des Graves",
+      "pop": "R",
+      "lat": 4468800,
+      "lng": -41700,
+      "fuels": {
+        "gazole": 2.15,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "33210011",
+      "cp": "33210",
+      "ville": "Preignac",
+      "adresse": "16 ROUTE DE BORDEAUX",
+      "pop": "R",
+      "lat": 4457007.02602,
+      "lng": -29929.49257,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.99,
+        "e10": 1.901,
+        "e85": 0.819
       }
     },
     {
@@ -1755,6 +2497,21 @@
       }
     },
     {
+      "id": "33240011",
+      "cp": "33240",
+      "ville": "Saint-André-de-Cubzac",
+      "adresse": "4 RUE NATIONALE",
+      "pop": "R",
+      "lat": 4498900,
+      "lng": -44900,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 1.99,
+        "e10": 1.971,
+        "e85": 0.819
+      }
+    },
+    {
       "id": "33240010",
       "cp": "33240",
       "ville": "Saint-André-de-Cubzac",
@@ -1764,9 +2521,24 @@
       "lng": -43082.80702,
       "fuels": {
         "gazole": 2.049,
+        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.998,
         "gplc": 1.048
+      }
+    },
+    {
+      "id": "33240013",
+      "cp": "33240",
+      "ville": "Saint-André-de-Cubzac",
+      "adresse": "Zac DE LA GAROSSE AVENUE DE L'EUROPE",
+      "pop": "R",
+      "lat": 4501300,
+      "lng": -42500,
+      "fuels": {
+        "gazole": 1.948,
+        "e10": 1.905,
+        "e85": 0.759
       }
     },
     {
@@ -1821,9 +2593,22 @@
       "lat": 4480100,
       "lng": -77900,
       "fuels": {
-        "gazole": 2.12,
         "sp95": 1.99,
         "sp98": 1.99
+      }
+    },
+    {
+      "id": "33127006",
+      "cp": "33127",
+      "ville": "Saint-Jean-d'Illac",
+      "adresse": "ALLEE JEAN JACQUES ROUSSEAU",
+      "pop": "R",
+      "lat": 4481000,
+      "lng": -77500,
+      "fuels": {
+        "gazole": 1.988,
+        "sp98": 2.055,
+        "e10": 1.94
       }
     },
     {
@@ -1853,6 +2638,20 @@
         "gazole": 1.978,
         "sp95": 1.959,
         "sp98": 1.989
+      }
+    },
+    {
+      "id": "33450005",
+      "cp": "33450",
+      "ville": "Saint-Loubès",
+      "adresse": "25 Route d'Ambarès",
+      "pop": "R",
+      "lat": 4492100,
+      "lng": -45000,
+      "fuels": {
+        "gazole": 1.882,
+        "sp98": 1.99,
+        "e10": 1.873
       }
     },
     {
@@ -1900,6 +2699,23 @@
       }
     },
     {
+      "id": "33167001",
+      "cp": "33160",
+      "ville": "Saint-Médard-en-Jalles",
+      "adresse": "34, Avenue Descartes",
+      "pop": "R",
+      "lat": 4488400,
+      "lng": -69100,
+      "fuels": {
+        "gazole": 1.883,
+        "sp95": 1.968,
+        "sp98": 1.989,
+        "e10": 1.877,
+        "e85": 0.765,
+        "gplc": 1.059
+      }
+    },
+    {
       "id": "33160003",
       "cp": "33160",
       "ville": "Saint-Médard-en-Jalles",
@@ -1915,6 +2731,22 @@
       }
     },
     {
+      "id": "33720008",
+      "cp": "33720",
+      "ville": "Saint-Michel-de-Rieufret",
+      "adresse": "A62-AIRE DES TERRES DE GRAVES SUD",
+      "pop": "A",
+      "lat": 4464500,
+      "lng": -43600,
+      "fuels": {
+        "gazole": 2.085,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.078
+      }
+    },
+    {
       "id": "33720010",
       "cp": "33720",
       "ville": "Saint-Michel-de-Rieufret",
@@ -1923,9 +2755,9 @@
       "lat": 4464749.1,
       "lng": -43686.3,
       "fuels": {
-        "gazole": 2.379,
-        "sp98": 2.546,
-        "e10": 2.396,
+        "gazole": 2.261,
+        "sp98": 2.449,
+        "e10": 2.299,
         "gplc": 1.108
       }
     },
@@ -1957,6 +2789,22 @@
       }
     },
     {
+      "id": "33660003",
+      "cp": "33660",
+      "ville": "Saint-Seurin-sur-l'Isle",
+      "adresse": "SUPER U 7, RUE DU BARRY NORD",
+      "pop": "R",
+      "lat": 4501500,
+      "lng": -1300,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.999,
+        "sp98": 2.049,
+        "e85": 0.829,
+        "gplc": 1.079
+      }
+    },
+    {
       "id": "33450002",
       "cp": "33450",
       "ville": "Saint-Sulpice-et-Cameyrac",
@@ -1968,6 +2816,20 @@
         "gazole": 1.939,
         "sp98": 1.988,
         "e10": 1.889
+      }
+    },
+    {
+      "id": "33113002",
+      "cp": "33113",
+      "ville": "Saint-Symphorien",
+      "adresse": "Route de Sore",
+      "pop": "R",
+      "lat": 4442900,
+      "lng": -49100,
+      "fuels": {
+        "gazole": 1.981,
+        "sp98": 2.016,
+        "e10": 1.903
       }
     },
     {
@@ -1983,6 +2845,35 @@
         "sp98": 1.966,
         "e10": 1.87,
         "e85": 0.759
+      }
+    },
+    {
+      "id": "33480006",
+      "cp": "33480",
+      "ville": "Sainte-Hélène",
+      "adresse": "18 ROUTE DE L'OCEAN",
+      "pop": "R",
+      "lat": 4496700,
+      "lng": -89300,
+      "fuels": {
+        "gazole": 1.968,
+        "sp98": 2.039,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "33370016",
+      "cp": "33370",
+      "ville": "Sallebœuf",
+      "adresse": "Avenue du Périgord lieu dit Les terres douces",
+      "pop": "R",
+      "lat": 4483300,
+      "lng": -40500,
+      "fuels": {
+        "gazole": 1.987,
+        "sp95": 1.993,
+        "sp98": 2.011
       }
     },
     {
@@ -2027,6 +2918,50 @@
       }
     },
     {
+      "id": "33920005",
+      "cp": "33920",
+      "ville": "Saugon",
+      "adresse": "AUTOROUTE A10",
+      "pop": "A",
+      "lat": 4518921.87638,
+      "lng": -49089.50745,
+      "fuels": {
+        "gazole": 2.164,
+        "sp98": 2.229,
+        "e10": 2.127
+      }
+    },
+    {
+      "id": "33540001",
+      "cp": "33540",
+      "ville": "Sauveterre-de-Guyenne",
+      "adresse": "Route de Libourne",
+      "pop": "R",
+      "lat": 4469800,
+      "lng": -8900,
+      "fuels": {
+        "gazole": 1.889,
+        "sp98": 1.999,
+        "e10": 1.899,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "33780001",
+      "cp": "33780",
+      "ville": "Soulac-sur-Mer",
+      "adresse": "3 rue Jean Goudineau",
+      "pop": "R",
+      "lat": 4551400,
+      "lng": -111300,
+      "fuels": {
+        "gazole": 2.001,
+        "sp98": 2.049,
+        "e10": 1.93,
+        "e85": 0.766
+      }
+    },
+    {
       "id": "33400011",
       "cp": "33400",
       "ville": "Talence",
@@ -2037,6 +2972,46 @@
       "fuels": {
         "gazole": 1.939,
         "sp98": 2.059
+      }
+    },
+    {
+      "id": "33400009",
+      "cp": "33400",
+      "ville": "Talence",
+      "adresse": "7 Rue Pierre Corneille",
+      "pop": "R",
+      "lat": 4478900,
+      "lng": -58700,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 2.059,
+        "e10": 1.889
+      }
+    },
+    {
+      "id": "33402001",
+      "cp": "33400",
+      "ville": "Talence",
+      "adresse": "Rue Pacaris BP 109",
+      "pop": "R",
+      "lat": 4479956,
+      "lng": -58415,
+      "fuels": {
+        "gazole": 1.9,
+        "sp95": 1.92,
+        "e10": 1.87
+      }
+    },
+    {
+      "id": "33760001",
+      "cp": "33760",
+      "ville": "Targon",
+      "adresse": "6 rue du Manoir",
+      "pop": "R",
+      "lat": 4473500,
+      "lng": -26000,
+      "fuels": {
+        "gazole": 2.07
       }
     },
     {
@@ -2054,6 +3029,34 @@
       }
     },
     {
+      "id": "33370002",
+      "cp": "33370",
+      "ville": "Tresses",
+      "adresse": "59 Avenue de Branne",
+      "pop": "R",
+      "lat": 4483800,
+      "lng": -48600,
+      "fuels": {
+        "gazole": 1.896
+      }
+    },
+    {
+      "id": "33370014",
+      "cp": "33370",
+      "ville": "Tresses",
+      "adresse": "80 AVENUE DE BRANNE",
+      "pop": "R",
+      "lat": 4484000,
+      "lng": -49200,
+      "fuels": {
+        "gazole": 1.896,
+        "sp98": 1.99,
+        "e10": 1.885,
+        "e85": 0.811,
+        "gplc": 0.999
+      }
+    },
+    {
       "id": "33730002",
       "cp": "33730",
       "ville": "Uzeste",
@@ -2062,7 +3065,6 @@
       "lat": 4444300,
       "lng": -32700,
       "fuels": {
-        "gazole": 1.99,
         "e10": 2.03
       }
     },
@@ -2075,8 +3077,37 @@
       "lat": 4537680.5,
       "lng": -114411.7,
       "fuels": {
+        "gazole": 2.13,
         "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "33930002",
+      "cp": "33930",
+      "ville": "Vendays-Montalivet",
+      "adresse": "LAYGUE BASSE",
+      "pop": "R",
+      "lat": 4535615,
+      "lng": -106209,
+      "fuels": {
+        "gazole": 2.02,
+        "sp98": 2.08,
+        "e10": 1.95,
+        "e85": 0.85
+      }
+    },
+    {
+      "id": "33730001",
+      "cp": "33730",
+      "ville": "Villandraut",
+      "adresse": "15 Rue Lafon Isore",
+      "pop": "R",
+      "lat": 4446000,
+      "lng": -37500,
+      "fuels": {
+        "gazole": 2.09,
+        "sp95": 1.99
       }
     },
     {
@@ -2088,7 +3119,7 @@
       "lat": 4477000,
       "lng": -57900,
       "fuels": {
-        "gazole": 1.969,
+        "gazole": 1.959,
         "e10": 1.899
       }
     },
@@ -2104,6 +3135,35 @@
         "gazole": 1.928,
         "sp98": 2.059,
         "e10": 1.903
+      }
+    },
+    {
+      "id": "33140012",
+      "cp": "33140",
+      "ville": "Villenave-d'Ornon",
+      "adresse": "C C BORDEAUX SUDAVENUE DES PYRENEES - RTE DE TOULOUSE",
+      "pop": "R",
+      "lat": 4477400,
+      "lng": -56300,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.985,
+        "e10": 1.878,
+        "gplc": 0.981
+      }
+    },
+    {
+      "id": "33370005",
+      "cp": "33370",
+      "ville": "Yvrac",
+      "adresse": "Zone Activité les Tabernottes",
+      "pop": "R",
+      "lat": 4487100,
+      "lng": -46900,
+      "fuels": {
+        "gazole": 1.95,
+        "sp98": 1.999,
+        "e10": 1.899
       }
     }
   ]

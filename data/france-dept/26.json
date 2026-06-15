@@ -3,55 +3,67 @@
   "name": "Drôme",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 77,
+  "stationCount": 114,
   "fuels": {
     "gazole": {
-      "count": 76,
-      "mean": 2.0167,
-      "median": 1.994,
+      "count": 113,
+      "mean": 2.009,
+      "median": 1.991,
       "min": 1.891,
-      "max": 2.381
+      "max": 2.259
     },
     "sp95": {
-      "count": 19,
-      "mean": 2.0301,
+      "count": 29,
+      "mean": 2.0291,
       "median": 2.029,
-      "min": 1.965,
+      "min": 1.959,
       "max": 2.195
     },
     "sp98": {
-      "count": 55,
-      "mean": 2.0898,
-      "median": 2.069,
+      "count": 86,
+      "mean": 2.0742,
+      "median": 2.059,
       "min": 1.99,
-      "max": 2.546
+      "max": 2.444
     },
     "e10": {
-      "count": 61,
-      "mean": 1.9825,
-      "median": 1.956,
+      "count": 90,
+      "mean": 1.9692,
+      "median": 1.949,
       "min": 1.884,
-      "max": 2.396
+      "max": 2.294
     },
     "e85": {
-      "count": 28,
-      "mean": 0.8365,
-      "median": 0.821,
-      "min": 0.798,
-      "max": 0.998
+      "count": 45,
+      "mean": 0.8438,
+      "median": 0.819,
+      "min": 0.795,
+      "max": 0.999
     },
     "gplc": {
-      "count": 13,
-      "mean": 1.1098,
+      "count": 15,
+      "mean": 1.1071,
       "median": 1.099,
       "min": 1.019,
       "max": 1.299
     }
   },
   "stations": [
+    {
+      "id": "26300008",
+      "cp": "26300",
+      "ville": "Alixan",
+      "adresse": "1, Av Dauphiné-Provence",
+      "pop": "R",
+      "lat": 4497600,
+      "lng": 502800,
+      "fuels": {
+        "gazole": 2.088
+      }
+    },
     {
       "id": "26300012",
       "cp": "26300",
@@ -66,6 +78,21 @@
       }
     },
     {
+      "id": "26300005",
+      "cp": "26300",
+      "ville": "Alixan",
+      "adresse": "ROUTE NATIONALE 532",
+      "pop": "R",
+      "lat": 4499900,
+      "lng": 500100,
+      "fuels": {
+        "gazole": 1.941,
+        "sp98": 2.019,
+        "e10": 1.915,
+        "e85": 0.977
+      }
+    },
+    {
       "id": "26780008",
       "cp": "26780",
       "ville": "Allan",
@@ -74,9 +101,9 @@
       "lat": 4451600,
       "lng": 478000,
       "fuels": {
-        "gazole": 2.381,
-        "sp98": 2.546,
-        "e10": 2.396,
+        "gazole": 2.259,
+        "sp98": 2.444,
+        "e10": 2.294,
         "gplc": 1.122
       }
     },
@@ -89,9 +116,9 @@
       "lat": 4451400,
       "lng": 478300,
       "fuels": {
-        "gazole": 2.381,
-        "sp98": 2.546,
-        "e10": 2.396,
+        "gazole": 2.259,
+        "sp98": 2.444,
+        "e10": 2.294,
         "gplc": 1.156
       }
     },
@@ -124,6 +151,21 @@
         "sp98": 2.109,
         "e10": 1.959,
         "e85": 0.819
+      }
+    },
+    {
+      "id": "26760001",
+      "cp": "26760",
+      "ville": "Beaumont-lès-Valence",
+      "adresse": "Route de Valence",
+      "pop": "R",
+      "lat": 4487100,
+      "lng": 494200,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.959,
+        "e10": 1.914,
+        "e85": 0.795
       }
     },
     {
@@ -283,6 +325,36 @@
       }
     },
     {
+      "id": "26780007",
+      "cp": "26780",
+      "ville": "Châteauneuf-du-Rhône",
+      "adresse": "RN 7",
+      "pop": "R",
+      "lat": 4451918.21962,
+      "lng": 474530.22157,
+      "fuels": {
+        "gazole": 1.896,
+        "sp98": 1.99,
+        "e10": 1.899,
+        "e85": 0.815
+      }
+    },
+    {
+      "id": "26300013",
+      "cp": "26300",
+      "ville": "Châteauneuf-sur-Isère",
+      "adresse": "rond point du gymnase - quartier les peches",
+      "pop": "R",
+      "lat": 4500700,
+      "lng": 492800,
+      "fuels": {
+        "gazole": 1.996,
+        "sp98": 2.07,
+        "e10": 1.935,
+        "e85": 0.856
+      }
+    },
+    {
       "id": "26300003",
       "cp": "26300",
       "ville": "Chatuzange-le-Goubet",
@@ -291,9 +363,8 @@
       "lat": 4503700,
       "lng": 507000,
       "fuels": {
-        "gazole": 2.009,
-        "sp98": 1.99,
-        "e10": 1.99
+        "gazole": 1.978,
+        "e10": 1.971
       }
     },
     {
@@ -361,9 +432,9 @@
       "lat": 4472600,
       "lng": 503000,
       "fuels": {
-        "gazole": 2.099,
-        "sp98": 2.129,
-        "e10": 2.029,
+        "gazole": 2.029,
+        "sp98": 2.099,
+        "e10": 1.999,
         "gplc": 1.099
       }
     },
@@ -389,8 +460,8 @@
       "lat": 4473185.03237,
       "lng": 500154.44516,
       "fuels": {
-        "gazole": 1.973,
-        "e10": 1.939
+        "gazole": 1.959,
+        "e10": 1.959
       }
     },
     {
@@ -421,6 +492,20 @@
       }
     },
     {
+      "id": "26150002",
+      "cp": "26150",
+      "ville": "Die",
+      "adresse": "135 route de gap",
+      "pop": "R",
+      "lat": 4474800,
+      "lng": 538100,
+      "fuels": {
+        "gazole": 2.05,
+        "sp95": 2.08,
+        "sp98": 2.11
+      }
+    },
+    {
       "id": "26150001",
       "cp": "26150",
       "ville": "Die",
@@ -434,6 +519,20 @@
         "sp98": 2.071,
         "e10": 1.941,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "26220001",
+      "cp": "26220",
+      "ville": "Dieulefit",
+      "adresse": "181 Route de Montélimar",
+      "pop": "R",
+      "lat": 4452100,
+      "lng": 505600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.029,
+        "sp98": 2.069
       }
     },
     {
@@ -480,6 +579,19 @@
       }
     },
     {
+      "id": "26800005",
+      "cp": "26800",
+      "ville": "Étoile-sur-Rhône",
+      "adresse": "Les Basseaux",
+      "pop": "R",
+      "lat": 4485000,
+      "lng": 487000,
+      "fuels": {
+        "gazole": 1.96,
+        "e10": 1.899
+      }
+    },
+    {
       "id": "26730001",
       "cp": "26730",
       "ville": "Eymeux",
@@ -488,8 +600,23 @@
       "lat": 4505600,
       "lng": 519200,
       "fuels": {
-        "gazole": 2.003,
-        "e10": 1.99
+        "gazole": 1.972,
+        "e10": 1.97
+      }
+    },
+    {
+      "id": "26400009",
+      "cp": "26400",
+      "ville": "Grane",
+      "adresse": "2 montée du beffroi",
+      "pop": "R",
+      "lat": 4473400,
+      "lng": 492500,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 2.109,
+        "e10": 1.969,
+        "e85": 0.819
       }
     },
     {
@@ -505,6 +632,35 @@
         "sp98": 2.079,
         "e10": 1.949,
         "e85": 0.798
+      }
+    },
+    {
+      "id": "26390001",
+      "cp": "26390",
+      "ville": "Hauterives",
+      "adresse": "6 route de Romans",
+      "pop": "R",
+      "lat": 4525600,
+      "lng": 502600,
+      "fuels": {
+        "gazole": 1.955,
+        "sp98": 2.049,
+        "e10": 1.935
+      }
+    },
+    {
+      "id": "26730006",
+      "cp": "26730",
+      "ville": "La Baume-d'Hostun",
+      "adresse": "Autoroute A49 - Aire Porte de la DromeSens Grenoble - Valence",
+      "pop": "A",
+      "lat": 4507600,
+      "lng": 521100,
+      "fuels": {
+        "gazole": 2.204,
+        "sp98": 2.242,
+        "e10": 2.142,
+        "e85": 0.999
       }
     },
     {
@@ -546,6 +702,33 @@
       "lng": 486100,
       "fuels": {
         "gazole": 2.19
+      }
+    },
+    {
+      "id": "26740003",
+      "cp": "26740",
+      "ville": "Les Tourrettes",
+      "adresse": "RN 7",
+      "pop": "R",
+      "lat": 4466700,
+      "lng": 479300,
+      "fuels": {
+        "gazole": 1.991,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "26250001",
+      "cp": "26250",
+      "ville": "Livron-sur-Drôme",
+      "adresse": "113 AVENUE LEON AUBIN",
+      "pop": "R",
+      "lat": 4477700,
+      "lng": 484700,
+      "fuels": {
+        "gazole": 2.059,
+        "sp98": 2.099,
+        "e10": 1.999
       }
     },
     {
@@ -623,6 +806,35 @@
       }
     },
     {
+      "id": "26200008",
+      "cp": "26200",
+      "ville": "Montélimar",
+      "adresse": "24 avenue John Fitzgerald Kennedy",
+      "pop": "R",
+      "lat": 4455513.686,
+      "lng": 473743.342,
+      "fuels": {
+        "gazole": 1.956,
+        "sp98": 1.999,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "26200007",
+      "cp": "26200",
+      "ville": "Montélimar",
+      "adresse": "25 RUE PAUL LOUBET",
+      "pop": "R",
+      "lat": 4456300,
+      "lng": 474700,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.919,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "26200004",
       "cp": "26200",
       "ville": "Montélimar",
@@ -653,6 +865,20 @@
       }
     },
     {
+      "id": "26208001",
+      "cp": "26200",
+      "ville": "Montélimar",
+      "adresse": "Route de Marseille",
+      "pop": "R",
+      "lat": 4453200,
+      "lng": 474800,
+      "fuels": {
+        "gazole": 1.956,
+        "sp98": 1.999,
+        "e10": 1.909
+      }
+    },
+    {
       "id": "26200003",
       "cp": "26200",
       "ville": "Montélimar",
@@ -664,6 +890,20 @@
         "gazole": 1.96,
         "sp98": 2.002,
         "e10": 1.922
+      }
+    },
+    {
+      "id": "26200009",
+      "cp": "26200",
+      "ville": "Montélimar",
+      "adresse": "ZA Avenue du Meyrol",
+      "pop": "R",
+      "lat": 4457500,
+      "lng": 474400,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.069,
+        "e10": 2.019
       }
     },
     {
@@ -725,6 +965,35 @@
       }
     },
     {
+      "id": "26700002",
+      "cp": "26700",
+      "ville": "Pierrelatte",
+      "adresse": "21 route de St Paul",
+      "pop": "R",
+      "lat": 4440390.5,
+      "lng": 468950.8,
+      "fuels": {
+        "gazole": 1.978,
+        "sp98": 1.999,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "26700001",
+      "cp": "26700",
+      "ville": "Pierrelatte",
+      "adresse": "CC LA CROIX D'OR",
+      "pop": "R",
+      "lat": 4437701,
+      "lng": 470128,
+      "fuels": {
+        "gazole": 1.978,
+        "sp98": 1.999,
+        "e10": 1.909,
+        "e85": 0.799
+      }
+    },
+    {
       "id": "26600011",
       "cp": "26600",
       "ville": "Pont-de-l'Isère",
@@ -764,8 +1033,68 @@
       "lng": 487000,
       "fuels": {
         "gazole": 1.898,
+        "sp98": 1.99,
         "e10": 1.9,
         "e85": 0.829
+      }
+    },
+    {
+      "id": "26800008",
+      "cp": "26800",
+      "ville": "Portes-lès-Valence",
+      "adresse": "15 AVE JEAN JAURES",
+      "pop": "R",
+      "lat": 4487872.8,
+      "lng": 487818.4,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.079,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "26800002",
+      "cp": "26800",
+      "ville": "Portes-lès-Valence",
+      "adresse": "A7 AIRE DE PORTES LES VALENCE",
+      "pop": "A",
+      "lat": 4486708.107,
+      "lng": 486473.757,
+      "fuels": {
+        "gazole": 2.189,
+        "sp98": 2.239,
+        "e10": 2.139,
+        "e85": 0.985,
+        "gplc": 1.16
+      }
+    },
+    {
+      "id": "26800007",
+      "cp": "26800",
+      "ville": "Portes-lès-Valence",
+      "adresse": "AUTOROUTE A7 - AIRE PORTE LES VALENCE EST",
+      "pop": "A",
+      "lat": 4486400,
+      "lng": 486600,
+      "fuels": {
+        "gazole": 2.103,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.978
+      }
+    },
+    {
+      "id": "26800009",
+      "cp": "26800",
+      "ville": "Portes-lès-Valence",
+      "adresse": "PLACE DU 8 MAI 1945",
+      "pop": "R",
+      "lat": 4487500,
+      "lng": 487900,
+      "fuels": {
+        "gazole": 1.96,
+        "e10": 1.899,
+        "e85": 0.819
       }
     },
     {
@@ -827,6 +1156,21 @@
       }
     },
     {
+      "id": "26100002",
+      "cp": "26100",
+      "ville": "Romans-sur-Isère",
+      "adresse": "Route de Tain",
+      "pop": "R",
+      "lat": 4504300,
+      "lng": 502900,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 2.029,
+        "sp98": 2.069,
+        "e10": 1.989
+      }
+    },
+    {
       "id": "26340000",
       "cp": "26340",
       "ville": "Saillans",
@@ -866,6 +1210,34 @@
         "sp98": 2.019,
         "e10": 1.915,
         "e85": 0.835
+      }
+    },
+    {
+      "id": "26190002",
+      "cp": "26190",
+      "ville": "Saint-Jean-en-Royans",
+      "adresse": "Zone d'activité de la roue est",
+      "pop": "R",
+      "lat": 4502500,
+      "lng": 528700,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.969,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "26190001",
+      "cp": "26190",
+      "ville": "Saint-Laurent-en-Royans",
+      "adresse": "Route de Saint-Thomas",
+      "pop": "R",
+      "lat": 4503300,
+      "lng": 530900,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 2.019,
+        "sp98": 2.05
       }
     },
     {
@@ -951,6 +1323,21 @@
       }
     },
     {
+      "id": "26140004",
+      "cp": "26140",
+      "ville": "Saint-Rambert-d'Albon",
+      "adresse": "ZA LA TULANDIERE 26 route de la Maison Blanche",
+      "pop": "R",
+      "lat": 4528700,
+      "lng": 481500,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.999,
+        "e10": 1.885,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "26210001",
       "cp": "26210",
       "ville": "Saint-Sorlin-en-Valloire",
@@ -988,6 +1375,36 @@
         "gazole": 1.949,
         "sp98": 1.999,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "26240002",
+      "cp": "26240",
+      "ville": "Saint-Vallier",
+      "adresse": "31 avenue de quebec",
+      "pop": "R",
+      "lat": 4519500,
+      "lng": 481400,
+      "fuels": {
+        "gazole": 1.996,
+        "sp98": 1.99,
+        "e10": 1.988,
+        "e85": 0.833
+      }
+    },
+    {
+      "id": "26240006",
+      "cp": "26240",
+      "ville": "Saint-Vallier",
+      "adresse": "INTERVAL - 1 CHEMIN DE LA BRASSIERE",
+      "pop": "R",
+      "lat": 4517123.42,
+      "lng": 481396.8,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 1.999,
+        "e10": 1.885,
+        "e85": 0.809
       }
     },
     {
@@ -1035,6 +1452,92 @@
       }
     },
     {
+      "id": "26600016",
+      "cp": "26600",
+      "ville": "Tain-l'Hermitage",
+      "adresse": "20 AVENUE PRESIDENT ROOSEVELT",
+      "pop": "R",
+      "lat": 4506800,
+      "lng": 484500,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.039,
+        "sp98": 2.079
+      }
+    },
+    {
+      "id": "26600015",
+      "cp": "26600",
+      "ville": "Tain-l'Hermitage",
+      "adresse": "49 AVENUE DU PRESIDENT ROOSEVELT",
+      "pop": "R",
+      "lat": 4506800,
+      "lng": 484800,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.019,
+        "e10": 1.895,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "26600002",
+      "cp": "26600",
+      "ville": "Tain-l'Hermitage",
+      "adresse": "PLACE DU MARCHE AUX FRUITS",
+      "pop": "R",
+      "lat": 4507200,
+      "lng": 483400,
+      "fuels": {
+        "gazole": 1.993,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "26600007",
+      "cp": "26600",
+      "ville": "Tain-l'Hermitage",
+      "adresse": "route de Romans",
+      "pop": "R",
+      "lat": 4506863.2053,
+      "lng": 486562.18404,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 2.019,
+        "e10": 1.895,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "26790003",
+      "cp": "26790",
+      "ville": "Tulette",
+      "adresse": "rte de nyons",
+      "pop": "R",
+      "lat": 4428700,
+      "lng": 494300,
+      "fuels": {
+        "gazole": 2.102,
+        "sp95": 2.16,
+        "sp98": 2.195
+      }
+    },
+    {
+      "id": "26790005",
+      "cp": "26790",
+      "ville": "Tulette",
+      "adresse": "ZONE INTERMARCHE - ROUTE D ORANGE - LE PEYRON",
+      "pop": "R",
+      "lat": 4428000,
+      "lng": 492200,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.999,
+        "sp98": 2.055,
+        "e10": 1.979
+      }
+    },
+    {
       "id": "26000005",
       "cp": "26000",
       "ville": "Valence",
@@ -1061,6 +1564,20 @@
         "e10": 1.899,
         "e85": 0.829,
         "gplc": 1.019
+      }
+    },
+    {
+      "id": "26000008",
+      "cp": "26000",
+      "ville": "Valence",
+      "adresse": "295 Avenue de Chabeuil",
+      "pop": "R",
+      "lat": 4492700,
+      "lng": 491500,
+      "fuels": {
+        "gazole": 1.996,
+        "sp98": 2.053,
+        "e10": 1.949
       }
     },
     {
@@ -1118,6 +1635,22 @@
         "sp98": 1.99,
         "e10": 1.917,
         "e85": 0.823
+      }
+    },
+    {
+      "id": "26000016",
+      "cp": "26000",
+      "ville": "Valence",
+      "adresse": "BOULEVARD GUSTAVE ANDRE",
+      "pop": "R",
+      "lat": 4494000,
+      "lng": 491000,
+      "fuels": {
+        "gazole": 1.902,
+        "sp98": 1.99,
+        "e10": 1.901,
+        "e85": 0.829,
+        "gplc": 1.019
       }
     },
     {

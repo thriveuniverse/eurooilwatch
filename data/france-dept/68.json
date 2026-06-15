@@ -3,52 +3,52 @@
   "name": "Haut-Rhin",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 79,
+  "stationCount": 111,
   "fuels": {
     "gazole": {
-      "count": 77,
-      "mean": 1.9972,
-      "median": 1.985,
+      "count": 109,
+      "mean": 1.993,
+      "median": 1.981,
       "min": 1.896,
-      "max": 2.253
+      "max": 2.199
     },
     "sp95": {
-      "count": 22,
-      "mean": 1.9906,
+      "count": 27,
+      "mean": 1.9972,
       "median": 1.975,
       "min": 1.938,
-      "max": 2.094
+      "max": 2.156
     },
     "sp98": {
-      "count": 68,
-      "mean": 2.0195,
+      "count": 95,
+      "mean": 2.0177,
       "median": 1.999,
       "min": 1.965,
-      "max": 2.293
+      "max": 2.256
     },
     "e10": {
-      "count": 65,
-      "mean": 1.9424,
-      "median": 1.936,
+      "count": 94,
+      "mean": 1.9389,
+      "median": 1.9325,
       "min": 1.86,
       "max": 2.099
     },
     "e85": {
-      "count": 25,
-      "mean": 0.8408,
-      "median": 0.839,
-      "min": 0.735,
-      "max": 0.957
+      "count": 43,
+      "mean": 0.838,
+      "median": 0.829,
+      "min": 0.725,
+      "max": 0.999
     },
     "gplc": {
-      "count": 5,
-      "mean": 0.9948,
+      "count": 10,
+      "mean": 1.0265,
       "median": 0.999,
       "min": 0.988,
-      "max": 0.999
+      "max": 1.129
     }
   },
   "stations": [
@@ -64,6 +64,36 @@
         "gazole": 1.96,
         "sp95": 1.949,
         "sp98": 1.979
+      }
+    },
+    {
+      "id": "68130003",
+      "cp": "68130",
+      "ville": "Altkirch",
+      "adresse": "Route de Mulhouse",
+      "pop": "R",
+      "lat": 4762900,
+      "lng": 726000,
+      "fuels": {
+        "gazole": 1.96,
+        "sp98": 1.979,
+        "e10": 1.906,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "68870001",
+      "cp": "68870",
+      "ville": "Bartenheim",
+      "adresse": "Carrefour de l'Europe",
+      "pop": "R",
+      "lat": 4763600,
+      "lng": 749300,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 1.999,
+        "e10": 1.929,
+        "e85": 0.809
       }
     },
     {
@@ -110,6 +140,37 @@
       }
     },
     {
+      "id": "68520011",
+      "cp": "68520",
+      "ville": "Burnhaupt-le-Bas",
+      "adresse": "Aire de Porte d' Alsace - A36",
+      "pop": "A",
+      "lat": 4771600,
+      "lng": 713800,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.069,
+        "e10": 1.979,
+        "e85": 0.999,
+        "gplc": 1.129
+      }
+    },
+    {
+      "id": "68520006",
+      "cp": "68520",
+      "ville": "Burnhaupt-le-Bas",
+      "adresse": "AUTOROUTE A36 - AIRE PORTE D'ALSACE",
+      "pop": "A",
+      "lat": 4771700,
+      "lng": 713900,
+      "fuels": {
+        "gazole": 2.108,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.978
+      }
+    },
+    {
       "id": "68520004",
       "cp": "68520",
       "ville": "Burnhaupt-le-Haut",
@@ -146,9 +207,9 @@
       "lat": 4779500,
       "lng": 717200,
       "fuels": {
-        "gazole": 1.976,
+        "gazole": 1.949,
         "sp98": 1.99,
-        "e10": 1.959
+        "e10": 1.926
       }
     },
     {
@@ -175,9 +236,38 @@
       "lng": 736600,
       "fuels": {
         "gazole": 1.896,
-        "sp98": 1.999,
         "e10": 1.875,
         "gplc": 0.989
+      }
+    },
+    {
+      "id": "68000006",
+      "cp": "68000",
+      "ville": "Colmar",
+      "adresse": "11 Route de Wintzenheim",
+      "pop": "R",
+      "lat": 4806900,
+      "lng": 733000,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 1.99,
+        "e10": 1.962,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "68000012",
+      "cp": "68000",
+      "ville": "Colmar",
+      "adresse": "111 Route de Neuf-Brisach",
+      "pop": "R",
+      "lat": 4808000,
+      "lng": 737500,
+      "fuels": {
+        "gazole": 1.955,
+        "sp95": 1.938,
+        "e10": 1.935,
+        "e85": 0.726
       }
     },
     {
@@ -207,6 +297,20 @@
         "gazole": 2.059,
         "sp95": 1.999,
         "sp98": 2.059
+      }
+    },
+    {
+      "id": "68000021",
+      "cp": "68000",
+      "ville": "Colmar",
+      "adresse": "122 rue du Ladhof",
+      "pop": "R",
+      "lat": 4807734.71,
+      "lng": 735811.04319,
+      "fuels": {
+        "gazole": 2.069,
+        "e10": 1.976,
+        "e85": 0.819
       }
     },
     {
@@ -274,6 +378,7 @@
       "lng": 736700,
       "fuels": {
         "gazole": 1.981,
+        "sp98": 1.99,
         "e10": 1.959,
         "e85": 0.819
       }
@@ -304,6 +409,20 @@
         "gazole": 1.969,
         "sp98": 1.999,
         "e10": 1.904
+      }
+    },
+    {
+      "id": "68190003",
+      "cp": "68190",
+      "ville": "Ensisheim",
+      "adresse": "10 RUE DE LA GARE",
+      "pop": "R",
+      "lat": 4786500,
+      "lng": 734700,
+      "fuels": {
+        "gazole": 1.97,
+        "sp95": 1.979,
+        "sp98": 1.999
       }
     },
     {
@@ -405,6 +524,20 @@
       }
     },
     {
+      "id": "68220001",
+      "cp": "68220",
+      "ville": "Hésingue",
+      "adresse": "118a Rue de Saint-Louis",
+      "pop": "R",
+      "lat": 4757800,
+      "lng": 753900,
+      "fuels": {
+        "gazole": 2.199,
+        "sp95": 2.156,
+        "sp98": 2.189
+      }
+    },
+    {
       "id": "68560001",
       "cp": "68560",
       "ville": "Hirsingue",
@@ -429,7 +562,7 @@
       "lat": 4807303.92,
       "lng": 740098.27,
       "fuels": {
-        "gazole": 1.978,
+        "gazole": 1.955,
         "sp95": 1.938
       }
     },
@@ -446,6 +579,22 @@
         "sp98": 2.015,
         "e10": 1.982,
         "e85": 0.924
+      }
+    },
+    {
+      "id": "68019001",
+      "cp": "68125",
+      "ville": "Houssen",
+      "adresse": "ZAC du Buhlfeld",
+      "pop": "R",
+      "lat": 4813000,
+      "lng": 736900,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.946,
+        "e85": 0.725,
+        "gplc": 0.989
       }
     },
     {
@@ -478,6 +627,21 @@
       }
     },
     {
+      "id": "68640001",
+      "cp": "68640",
+      "ville": "Illtal",
+      "adresse": "4 rue de la république",
+      "pop": "R",
+      "lat": 4755600,
+      "lng": 730700,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.959,
+        "sp98": 1.99,
+        "e10": 1.899
+      }
+    },
+    {
       "id": "68313001",
       "cp": "68110",
       "ville": "Illzach",
@@ -486,12 +650,40 @@
       "lat": 4777200,
       "lng": 738700,
       "fuels": {
-        "gazole": 1.955,
-        "sp95": 2.094,
-        "sp98": 1.989,
-        "e10": 1.902,
-        "e85": 0.853,
+        "gazole": 1.961,
+        "sp95": 2.098,
+        "sp98": 1.994,
+        "e10": 1.907,
+        "e85": 0.858,
         "gplc": 0.999
+      }
+    },
+    {
+      "id": "68110006",
+      "cp": "68110",
+      "ville": "Illzach",
+      "adresse": "77 AVENUE DE FRIBOURG",
+      "pop": "R",
+      "lat": 4776800,
+      "lng": 738700,
+      "fuels": {
+        "gazole": 1.904,
+        "e10": 1.882
+      }
+    },
+    {
+      "id": "68110010",
+      "cp": "68110",
+      "ville": "Illzach",
+      "adresse": "CD 38 RUE DES VOSGES",
+      "pop": "R",
+      "lat": 4777822.2,
+      "lng": 735208.3,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.099,
+        "e10": 1.999,
+        "gplc": 1.099
       }
     },
     {
@@ -505,6 +697,20 @@
       "fuels": {
         "gazole": 2.09,
         "sp95": 2.08
+      }
+    },
+    {
+      "id": "68040001",
+      "cp": "68040",
+      "ville": "Ingersheim",
+      "adresse": "126 Route de Colmar",
+      "pop": "R",
+      "lat": 4808936,
+      "lng": 731870,
+      "fuels": {
+        "gazole": 1.957,
+        "sp98": 1.99,
+        "e10": 1.924
       }
     },
     {
@@ -550,6 +756,48 @@
       }
     },
     {
+      "id": "68680003",
+      "cp": "68680",
+      "ville": "Kembs",
+      "adresse": "38 rue de l'artisanat",
+      "pop": "R",
+      "lat": 4767800,
+      "lng": 750100,
+      "fuels": {
+        "gazole": 2.11
+      }
+    },
+    {
+      "id": "68260001",
+      "cp": "68260",
+      "ville": "Kingersheim",
+      "adresse": "45 Rue d'illzach",
+      "pop": "R",
+      "lat": 4779100,
+      "lng": 734200,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 1.979,
+        "e10": 1.901,
+        "e85": 0.882
+      }
+    },
+    {
+      "id": "68910002",
+      "cp": "68910",
+      "ville": "Labaroche",
+      "adresse": "153 LA CHAPELLE",
+      "pop": "R",
+      "lat": 4811500,
+      "lng": 719600,
+      "fuels": {
+        "gazole": 1.988,
+        "sp98": 1.999,
+        "e10": 1.897,
+        "e85": 0.835
+      }
+    },
+    {
       "id": "68460002",
       "cp": "68460",
       "ville": "Lutterbach",
@@ -558,9 +806,23 @@
       "lat": 4775927.81948,
       "lng": 727887.08437,
       "fuels": {
-        "gazole": 1.989,
+        "gazole": 1.969,
         "sp95": 1.959,
         "sp98": 2.019
+      }
+    },
+    {
+      "id": "68460001",
+      "cp": "68460",
+      "ville": "Lutterbach",
+      "adresse": "RN 66",
+      "pop": "R",
+      "lat": 4776800,
+      "lng": 725200,
+      "fuels": {
+        "gazole": 1.904,
+        "sp98": 1.99,
+        "e10": 1.882
       }
     },
     {
@@ -586,9 +848,9 @@
       "lat": 4815531.7,
       "lng": 731982.6,
       "fuels": {
-        "gazole": 2.015,
-        "sp98": 2.02,
-        "e10": 1.908,
+        "gazole": 1.985,
+        "sp98": 2.021,
+        "e10": 1.918,
         "e85": 0.819
       }
     },
@@ -646,6 +908,21 @@
         "gazole": 2.049,
         "sp98": 2.079,
         "e10": 1.979
+      }
+    },
+    {
+      "id": "68200018",
+      "cp": "68200",
+      "ville": "Mulhouse",
+      "adresse": "185 AV DE COLMAR",
+      "pop": "R",
+      "lat": 4776200,
+      "lng": 732600,
+      "fuels": {
+        "gazole": 1.898,
+        "sp98": 1.99,
+        "e10": 1.878,
+        "e85": 0.851
       }
     },
     {
@@ -723,6 +1000,21 @@
       }
     },
     {
+      "id": "68100006",
+      "cp": "68100",
+      "ville": "Mulhouse",
+      "adresse": "8 Porte du Miroir",
+      "pop": "R",
+      "lat": 4774200,
+      "lng": 733700,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.099,
+        "e10": 1.999,
+        "e85": 0.799
+      }
+    },
+    {
       "id": "68140003",
       "cp": "68140",
       "ville": "Munster",
@@ -746,7 +1038,6 @@
       "lng": 715500,
       "fuels": {
         "gazole": 1.994,
-        "sp98": 1.99,
         "e10": 1.974,
         "e85": 0.839
       }
@@ -766,6 +1057,21 @@
       }
     },
     {
+      "id": "68127002",
+      "cp": "68127",
+      "ville": "Niederentzen",
+      "adresse": "2 RUE DES ALPES",
+      "pop": "R",
+      "lat": 4795000,
+      "lng": 737500,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.939,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "68127001",
       "cp": "68127",
       "ville": "Niederhergheim",
@@ -778,6 +1084,21 @@
         "sp98": 2.169,
         "e10": 2.099,
         "e85": 0.899
+      }
+    },
+    {
+      "id": "68480004",
+      "cp": "68480",
+      "ville": "Oltingue",
+      "adresse": "58 rue principale",
+      "pop": "R",
+      "lat": 4749300,
+      "lng": 739100,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.019,
+        "e10": 1.939,
+        "e85": 0.789
       }
     },
     {
@@ -822,6 +1143,20 @@
       }
     },
     {
+      "id": "68120005",
+      "cp": "68120",
+      "ville": "Pfastatt",
+      "adresse": "15 ROUTE DE THANN",
+      "pop": "R",
+      "lat": 4775838.68539,
+      "lng": 729400.23699,
+      "fuels": {
+        "gazole": 1.907,
+        "sp98": 1.99,
+        "e10": 1.891
+      }
+    },
+    {
       "id": "68150003",
       "cp": "68150",
       "ville": "Ribeauvillé",
@@ -834,6 +1169,50 @@
         "sp95": 1.975,
         "e10": 1.908,
         "e85": 0.735
+      }
+    },
+    {
+      "id": "68400001",
+      "cp": "68400",
+      "ville": "Riedisheim",
+      "adresse": "Rue du Stade",
+      "pop": "R",
+      "lat": 4774700,
+      "lng": 735700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.009,
+        "e10": 1.947
+      }
+    },
+    {
+      "id": "68170004",
+      "cp": "68170",
+      "ville": "Rixheim",
+      "adresse": "64 RUE DE MULHOUSE",
+      "pop": "R",
+      "lat": 4775400,
+      "lng": 739700,
+      "fuels": {
+        "gazole": 1.903,
+        "sp95": 2.094,
+        "sp98": 1.988,
+        "e10": 1.903,
+        "e85": 0.854
+      }
+    },
+    {
+      "id": "68170002",
+      "cp": "68170",
+      "ville": "Rixheim",
+      "adresse": "65 Rue de l'Île Napoléon",
+      "pop": "R",
+      "lat": 4775851,
+      "lng": 740024,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 1.999,
+        "e10": 1.915
       }
     },
     {
@@ -864,6 +1243,22 @@
         "sp98": 2.029,
         "e10": 1.939,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "68250004",
+      "cp": "68250",
+      "ville": "Rouffach",
+      "adresse": "RN 83",
+      "pop": "R",
+      "lat": 4794500,
+      "lng": 728900,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 1.99,
+        "e10": 1.975,
+        "e85": 0.819,
+        "gplc": 1.049
       }
     },
     {
@@ -940,6 +1335,20 @@
       }
     },
     {
+      "id": "68160005",
+      "cp": "68160",
+      "ville": "Sainte-Croix-aux-Mines",
+      "adresse": "ZA LES MOULES RUE MAURICE BURRUS",
+      "pop": "R",
+      "lat": 4825300,
+      "lng": 719300,
+      "fuels": {
+        "gazole": 2.016,
+        "sp98": 2.019,
+        "e10": 1.91
+      }
+    },
+    {
       "id": "68160002",
       "cp": "68160",
       "ville": "Sainte-Marie-aux-Mines",
@@ -951,6 +1360,21 @@
         "gazole": 1.999,
         "sp95": 1.995,
         "sp98": 2.029
+      }
+    },
+    {
+      "id": "68160004",
+      "cp": "68160",
+      "ville": "Sainte-Marie-aux-Mines",
+      "adresse": "RN 59 Sur-le-Pré",
+      "pop": "R",
+      "lat": 4825400,
+      "lng": 720400,
+      "fuels": {
+        "gazole": 1.914,
+        "sp98": 1.99,
+        "e10": 1.89,
+        "gplc": 1.025
       }
     },
     {
@@ -976,8 +1400,8 @@
       "lat": 4777700,
       "lng": 737900,
       "fuels": {
-        "gazole": 2.253,
-        "sp98": 2.293
+        "gazole": 2.159,
+        "sp98": 2.256
       }
     },
     {
@@ -1023,6 +1447,21 @@
       }
     },
     {
+      "id": "68360004",
+      "cp": "68360",
+      "ville": "Soultz-Haut-Rhin",
+      "adresse": "9 Route de Guebwiller",
+      "pop": "R",
+      "lat": 4789800,
+      "lng": 722200,
+      "fuels": {
+        "gazole": 1.993,
+        "sp98": 1.99,
+        "e10": 1.969,
+        "e85": 0.859
+      }
+    },
+    {
       "id": "68140002",
       "cp": "68140",
       "ville": "Stosswihr",
@@ -1051,6 +1490,20 @@
       }
     },
     {
+      "id": "68190001",
+      "cp": "68190",
+      "ville": "Ungersheim",
+      "adresse": "RUE DE PULVERSHEIM",
+      "pop": "R",
+      "lat": 4785800,
+      "lng": 728900,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.979,
+        "e10": 1.889
+      }
+    },
+    {
       "id": "68480002",
       "cp": "68480",
       "ville": "Vieux-Ferrette",
@@ -1062,6 +1515,21 @@
         "gazole": 1.969,
         "sp98": 1.979,
         "e10": 1.899
+      }
+    },
+    {
+      "id": "68800002",
+      "cp": "68800",
+      "ville": "Vieux-Thann",
+      "adresse": "1 Rue Émile Pienoz Kachler",
+      "pop": "R",
+      "lat": 4780400,
+      "lng": 712000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 1.999,
+        "e10": 1.999,
+        "e85": 0.809
       }
     },
     {
@@ -1148,9 +1616,9 @@
       "lat": 4780600,
       "lng": 733700,
       "fuels": {
-        "gazole": 1.999,
+        "gazole": 1.975,
         "sp98": 2.029,
-        "e10": 1.909,
+        "e10": 1.905,
         "e85": 0.957
       }
     },
@@ -1165,7 +1633,7 @@
       "fuels": {
         "gazole": 1.965,
         "sp98": 1.979,
-        "e10": 1.895
+        "e10": 1.9
       }
     },
     {
@@ -1177,9 +1645,9 @@
       "lat": 4762337.55393,
       "lng": 727143.92615,
       "fuels": {
-        "gazole": 1.984,
+        "gazole": 1.957,
         "sp98": 1.99,
-        "e10": 1.972,
+        "e10": 1.939,
         "e85": 0.829
       }
     }

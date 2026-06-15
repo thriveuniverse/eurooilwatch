@@ -3,52 +3,52 @@
   "name": "Eure-et-Loir",
   "regionCode": "CVL",
   "regionName": "Centre-Val de Loire",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 49,
+  "stationCount": 73,
   "fuels": {
     "gazole": {
-      "count": 49,
-      "mean": 1.9903,
-      "median": 1.965,
-      "min": 1.884,
-      "max": 2.383
+      "count": 73,
+      "mean": 1.9971,
+      "median": 1.969,
+      "min": 1.879,
+      "max": 2.294
     },
     "sp95": {
-      "count": 12,
-      "mean": 1.981,
-      "median": 1.9795,
-      "min": 1.954,
-      "max": 2.002
+      "count": 21,
+      "mean": 1.9823,
+      "median": 1.979,
+      "min": 1.941,
+      "max": 2.079
     },
     "sp98": {
-      "count": 44,
-      "mean": 2.0575,
-      "median": 2.036,
+      "count": 66,
+      "mean": 2.0622,
+      "median": 2.0245,
       "min": 1.97,
-      "max": 2.557
+      "max": 2.459
     },
     "e10": {
-      "count": 43,
-      "mean": 1.9591,
-      "median": 1.929,
+      "count": 62,
+      "mean": 1.964,
+      "median": 1.9295,
       "min": 1.883,
-      "max": 2.407
+      "max": 2.309
     },
     "e85": {
-      "count": 19,
-      "mean": 0.8209,
+      "count": 23,
+      "mean": 0.8207,
       "median": 0.809,
       "min": 0.769,
       "max": 1.005
     },
     "gplc": {
-      "count": 4,
-      "mean": 1.0018,
+      "count": 8,
+      "mean": 1.0535,
       "median": 0.994,
       "min": 0.964,
-      "max": 1.055
+      "max": 1.329
     }
   },
   "stations": [
@@ -128,6 +128,20 @@
       }
     },
     {
+      "id": "28330003",
+      "cp": "28330",
+      "ville": "Authon-du-Perche",
+      "adresse": "16 Avenue Jean Moulin",
+      "pop": "R",
+      "lat": 4819400,
+      "lng": 89900,
+      "fuels": {
+        "gazole": 2.089,
+        "sp95": 2.079,
+        "sp98": 2.169
+      }
+    },
+    {
       "id": "28120003",
       "cp": "28120",
       "ville": "Bailleau-le-Pin",
@@ -139,6 +153,49 @@
         "gazole": 1.97,
         "sp98": 2.099,
         "e10": 1.989
+      }
+    },
+    {
+      "id": "28600002",
+      "cp": "28630",
+      "ville": "Barjouville",
+      "adresse": "1 rue des Orvilles",
+      "pop": "R",
+      "lat": 4841000,
+      "lng": 146300,
+      "fuels": {
+        "gazole": 1.879,
+        "sp95": 1.955,
+        "sp98": 1.986,
+        "e10": 1.885
+      }
+    },
+    {
+      "id": "28800001",
+      "cp": "28800",
+      "ville": "Bonneval",
+      "adresse": "2 rue denis papin za de la louveterie",
+      "pop": "R",
+      "lat": 4818700,
+      "lng": 139100,
+      "fuels": {
+        "gazole": 1.991,
+        "sp98": 2.058,
+        "e10": 1.94
+      }
+    },
+    {
+      "id": "28270003",
+      "cp": "28270",
+      "ville": "Brezolles",
+      "adresse": "56, rue de paris",
+      "pop": "R",
+      "lat": 4869000,
+      "lng": 107900,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 2.029,
+        "sp98": 2.089
       }
     },
     {
@@ -154,6 +211,20 @@
         "sp98": 2.059,
         "e10": 1.939,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "28160003",
+      "cp": "28160",
+      "ville": "Brou",
+      "adresse": "32 AVENUE GALLIENI",
+      "pop": "R",
+      "lat": 4820900,
+      "lng": 117800,
+      "fuels": {
+        "gazole": 2.18,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -183,6 +254,36 @@
         "gazole": 1.965,
         "sp98": 2.036,
         "e10": 1.928
+      }
+    },
+    {
+      "id": "28000002",
+      "cp": "28000",
+      "ville": "Chartres",
+      "adresse": "106 Rue du Bourgneuf",
+      "pop": "R",
+      "lat": 4846300,
+      "lng": 148000,
+      "fuels": {
+        "gazole": 1.957,
+        "sp95": 1.941,
+        "sp98": 1.99,
+        "e10": 1.941
+      }
+    },
+    {
+      "id": "28000011",
+      "cp": "28000",
+      "ville": "Chartres",
+      "adresse": "34 rue jean mermoz",
+      "pop": "R",
+      "lat": 4845000,
+      "lng": 150600,
+      "fuels": {
+        "gazole": 1.89,
+        "sp98": 1.99,
+        "e10": 1.89,
+        "gplc": 0.969
       }
     },
     {
@@ -248,6 +349,19 @@
       }
     },
     {
+      "id": "28200002",
+      "cp": "28200",
+      "ville": "Châteaudun",
+      "adresse": "8 BD DU 8 MAI",
+      "pop": "R",
+      "lat": 4806200,
+      "lng": 133500,
+      "fuels": {
+        "gazole": 1.991,
+        "e10": 1.986
+      }
+    },
+    {
       "id": "28200005",
       "cp": "28200",
       "ville": "Châteaudun",
@@ -277,6 +391,20 @@
       }
     },
     {
+      "id": "28500006",
+      "cp": "28500",
+      "ville": "Cherisy",
+      "adresse": "ZAC DES FORTS",
+      "pop": "R",
+      "lat": 4874300,
+      "lng": 142500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.059
+      }
+    },
+    {
       "id": "28220002",
       "cp": "28220",
       "ville": "Cloyes-les-Trois-Rivières",
@@ -291,6 +419,34 @@
       }
     },
     {
+      "id": "28210003",
+      "cp": "28210",
+      "ville": "Coulombs",
+      "adresse": "19 Rue de Verdun",
+      "pop": "R",
+      "lat": 4865000,
+      "lng": 153800,
+      "fuels": {
+        "gazole": 2.014,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "28190003",
+      "cp": "28190",
+      "ville": "Courville-sur-Eure",
+      "adresse": "rue de beauce",
+      "pop": "R",
+      "lat": 4845000,
+      "lng": 125400,
+      "fuels": {
+        "gazole": 1.945,
+        "sp98": 2.014,
+        "e10": 1.915
+      }
+    },
+    {
       "id": "28160004",
       "cp": "28160",
       "ville": "Dampierre-sous-Brou",
@@ -302,6 +458,36 @@
         "gazole": 2.239,
         "sp98": 2.248,
         "e10": 2.148
+      }
+    },
+    {
+      "id": "28100006",
+      "cp": "28100",
+      "ville": "Dreux",
+      "adresse": "126 AV DU GAL LECLERC",
+      "pop": "R",
+      "lat": 4874300,
+      "lng": 139000,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.99,
+        "e10": 1.898,
+        "e85": 0.832,
+        "gplc": 0.989
+      }
+    },
+    {
+      "id": "28100002",
+      "cp": "28100",
+      "ville": "Dreux",
+      "adresse": "Rue Bautzen",
+      "pop": "R",
+      "lat": 4873700,
+      "lng": 135100,
+      "fuels": {
+        "gazole": 1.922,
+        "sp98": 1.972,
+        "e10": 1.886
       }
     },
     {
@@ -335,6 +521,21 @@
       }
     },
     {
+      "id": "28160008",
+      "cp": "28160",
+      "ville": "Frazé",
+      "adresse": "Autoroute A11Aire des manoirs du Perche",
+      "pop": "A",
+      "lat": 4824100,
+      "lng": 108400,
+      "fuels": {
+        "gazole": 2.294,
+        "sp98": 2.454,
+        "e10": 2.274,
+        "gplc": 1.329
+      }
+    },
+    {
       "id": "28310010",
       "cp": "28310",
       "ville": "Fresnay-l'Évêque",
@@ -343,9 +544,9 @@
       "lat": 4827500,
       "lng": 185600,
       "fuels": {
-        "gazole": 2.383,
-        "sp98": 2.557,
-        "e10": 2.407
+        "gazole": 2.265,
+        "sp98": 2.459,
+        "e10": 2.309
       }
     },
     {
@@ -363,6 +564,20 @@
       }
     },
     {
+      "id": "28300009",
+      "cp": "28300",
+      "ville": "Gasville-Oisème",
+      "adresse": "Aire de Bois-Paris A11 Sens Province/Paris",
+      "pop": "A",
+      "lat": 4846700,
+      "lng": 157900,
+      "fuels": {
+        "gazole": 2.26,
+        "sp98": 2.453,
+        "e10": 2.303
+      }
+    },
+    {
       "id": "28300010",
       "cp": "28300",
       "ville": "Gasville-Oisème",
@@ -371,9 +586,26 @@
       "lat": 4846800,
       "lng": 157900,
       "fuels": {
-        "gazole": 2.378,
-        "sp98": 2.551,
-        "e10": 2.401
+        "gazole": 2.26,
+        "sp98": 2.453,
+        "e10": 2.303
+      }
+    },
+    {
+      "id": "28130002",
+      "cp": "28130",
+      "ville": "Hanches",
+      "adresse": "Route de Gallardon",
+      "pop": "R",
+      "lat": 4859300,
+      "lng": 167800,
+      "fuels": {
+        "gazole": 1.886,
+        "sp95": 1.954,
+        "sp98": 1.985,
+        "e10": 1.886,
+        "e85": 0.769,
+        "gplc": 1.134
       }
     },
     {
@@ -415,6 +647,20 @@
       "fuels": {
         "gazole": 1.977,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "28330002",
+      "cp": "28330",
+      "ville": "La Bazoche-Gouet",
+      "adresse": "CHEMIN DEPARTEMENTAL 9",
+      "pop": "R",
+      "lat": 4814400,
+      "lng": 97200,
+      "fuels": {
+        "gazole": 1.996,
+        "sp98": 2.095,
+        "e10": 1.975
       }
     },
     {
@@ -483,8 +729,22 @@
       "lat": 4841700,
       "lng": 146500,
       "fuels": {
-        "gazole": 1.965,
-        "e10": 1.963
+        "gazole": 1.939,
+        "e10": 1.93
+      }
+    },
+    {
+      "id": "28170002",
+      "cp": "28170",
+      "ville": "Maillebois",
+      "adresse": "50 Rue H.Latham",
+      "pop": "R",
+      "lat": 4863119,
+      "lng": 114832,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.949,
+        "sp98": 1.979
       }
     },
     {
@@ -527,6 +787,7 @@
       "fuels": {
         "gazole": 1.934,
         "sp98": 2.036,
+        "e10": 1.923,
         "e85": 0.809
       }
     },
@@ -542,6 +803,35 @@
         "gazole": 1.949,
         "sp98": 2.02,
         "e10": 1.909
+      }
+    },
+    {
+      "id": "28310004",
+      "cp": "28310",
+      "ville": "Neuville Saint Denis",
+      "adresse": "AUT A 10 - AIRE DE VAL NEUVY",
+      "pop": "A",
+      "lat": 4827200,
+      "lng": 185800,
+      "fuels": {
+        "gazole": 2.265,
+        "sp98": 2.459,
+        "e10": 2.309
+      }
+    },
+    {
+      "id": "28210002",
+      "cp": "28210",
+      "ville": "Nogent-le-Roi",
+      "adresse": "LE SALUT NOTRE DAME",
+      "pop": "R",
+      "lat": 4863900,
+      "lng": 151500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.075,
+        "e10": 1.959,
+        "e85": 0.809
       }
     },
     {
@@ -572,6 +862,19 @@
         "e10": 1.899,
         "e85": 0.799,
         "gplc": 1.055
+      }
+    },
+    {
+      "id": "28310012",
+      "cp": "28310",
+      "ville": "Oinville-Saint-Liphard",
+      "adresse": "CHAMPILORY RN20",
+      "pop": "R",
+      "lat": 4822483.74,
+      "lng": 195114.78,
+      "fuels": {
+        "gazole": 2.09,
+        "sp95": 1.99
       }
     },
     {
@@ -635,6 +938,35 @@
       }
     },
     {
+      "id": "28500008",
+      "cp": "28500",
+      "ville": "Saint-Rémy-sur-Avre",
+      "adresse": "RN 12 COTE NORD",
+      "pop": "R",
+      "lat": 4876000,
+      "lng": 124000,
+      "fuels": {
+        "gazole": 1.898,
+        "sp98": 1.99,
+        "e10": 1.9,
+        "e85": 0.869
+      }
+    },
+    {
+      "id": "28250001",
+      "cp": "28250",
+      "ville": "Senonches",
+      "adresse": "54 route de la Ferté Vidame",
+      "pop": "R",
+      "lat": 4857000,
+      "lng": 102400,
+      "fuels": {
+        "gazole": 1.963,
+        "sp98": 2.005,
+        "e10": 1.905
+      }
+    },
+    {
       "id": "28630004",
       "cp": "28630",
       "ville": "Sours",
@@ -646,6 +978,20 @@
         "gazole": 2.029,
         "sp98": 2.039,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "28480001",
+      "cp": "28480",
+      "ville": "Thiron-Gardais",
+      "adresse": "83 rue de l'étang",
+      "pop": "R",
+      "lat": 4831300,
+      "lng": 99100,
+      "fuels": {
+        "gazole": 2.12,
+        "sp95": 1.96,
+        "sp98": 1.98
       }
     },
     {

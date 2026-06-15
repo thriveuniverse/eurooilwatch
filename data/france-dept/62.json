@@ -3,55 +3,69 @@
   "name": "Pas-de-Calais",
   "regionCode": "HDF",
   "regionName": "Hauts-de-France",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 136,
+  "stationCount": 224,
   "fuels": {
     "gazole": {
-      "count": 134,
-      "mean": 1.9896,
-      "median": 1.979,
+      "count": 219,
+      "mean": 1.9907,
+      "median": 1.98,
       "min": 1.882,
-      "max": 2.242
+      "max": 2.245
     },
     "sp95": {
-      "count": 29,
-      "mean": 1.9801,
-      "median": 1.972,
+      "count": 57,
+      "mean": 1.9867,
+      "median": 1.987,
       "min": 1.93,
-      "max": 2.059
+      "max": 2.089
     },
     "sp98": {
-      "count": 109,
-      "mean": 2.0393,
-      "median": 2.035,
+      "count": 186,
+      "mean": 2.0438,
+      "median": 2.038,
       "min": 1.952,
-      "max": 2.22
+      "max": 2.45
     },
     "e10": {
-      "count": 112,
-      "mean": 1.9441,
-      "median": 1.9285,
+      "count": 174,
+      "mean": 1.9421,
+      "median": 1.924,
       "min": 1.879,
-      "max": 2.12
+      "max": 2.139
     },
     "e85": {
-      "count": 48,
-      "mean": 0.8262,
+      "count": 78,
+      "mean": 0.8256,
       "median": 0.809,
       "min": 0.759,
       "max": 0.999
     },
     "gplc": {
-      "count": 15,
-      "mean": 1.0233,
+      "count": 22,
+      "mean": 1.0211,
       "median": 0.999,
-      "min": 0.923,
-      "max": 1.145
+      "min": 0.919,
+      "max": 1.206
     }
   },
   "stations": [
+    {
+      "id": "62217003",
+      "cp": "62217",
+      "ville": "Achicourt",
+      "adresse": "Rue du 19 Mars 1962",
+      "pop": "R",
+      "lat": 5027400,
+      "lng": 276700,
+      "fuels": {
+        "gazole": 1.943,
+        "sp98": 2.028,
+        "e10": 1.915
+      }
+    },
     {
       "id": "62120001",
       "cp": "62120",
@@ -82,6 +96,46 @@
         "sp98": 2.049,
         "e10": 1.927,
         "e85": 0.906
+      }
+    },
+    {
+      "id": "62160001",
+      "cp": "62160",
+      "ville": "Aix-Noulette",
+      "adresse": "Impasse de l'Épinette",
+      "pop": "R",
+      "lat": 5044300,
+      "lng": 269600,
+      "fuels": {
+        "gazole": 1.965,
+        "sp95": 1.938,
+        "sp98": 2.017
+      }
+    },
+    {
+      "id": "62142001",
+      "cp": "62142",
+      "ville": "Alincthun",
+      "adresse": "L D LES PICHOTTESZA LEGERE",
+      "pop": "R",
+      "lat": 5073900,
+      "lng": 180200,
+      "fuels": {
+        "gazole": 1.999
+      }
+    },
+    {
+      "id": "62164001",
+      "cp": "62164",
+      "ville": "Ambleteuse",
+      "adresse": "38 route nationale",
+      "pop": "R",
+      "lat": 5080900,
+      "lng": 161200,
+      "fuels": {
+        "gazole": 1.998,
+        "sp95": 1.968,
+        "sp98": 2.078
       }
     },
     {
@@ -153,6 +207,50 @@
       }
     },
     {
+      "id": "62219001",
+      "cp": "62219",
+      "ville": "Arques",
+      "adresse": "Avenue des Frais Fonds",
+      "pop": "R",
+      "lat": 5073500,
+      "lng": 227400,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.009,
+        "e10": 1.909,
+        "gplc": 1.06
+      }
+    },
+    {
+      "id": "62510002",
+      "cp": "62510",
+      "ville": "Arques",
+      "adresse": "Avenue Georges Brassens",
+      "pop": "R",
+      "lat": 5073600,
+      "lng": 228000,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 1.946,
+        "sp98": 2.043
+      }
+    },
+    {
+      "id": "62510003",
+      "cp": "62510",
+      "ville": "Arques",
+      "adresse": "Rue bernard CHOCHOY",
+      "pop": "R",
+      "lat": 5072700,
+      "lng": 230000,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.019,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "62000016",
       "cp": "62000",
       "ville": "Arras",
@@ -165,6 +263,21 @@
         "sp98": 2.129,
         "e10": 2.049,
         "e85": 0.935
+      }
+    },
+    {
+      "id": "62000014",
+      "cp": "62000",
+      "ville": "Arras",
+      "adresse": "138 PLACE DE THECOSLOVAQUIE",
+      "pop": "R",
+      "lat": 5029700,
+      "lng": 276900,
+      "fuels": {
+        "gazole": 1.89,
+        "sp98": 1.99,
+        "e10": 1.89,
+        "e85": 0.833
       }
     },
     {
@@ -206,7 +319,7 @@
       "lat": 5028087,
       "lng": 278103,
       "fuels": {
-        "gazole": 1.939,
+        "gazole": 1.929,
         "sp95": 1.959,
         "sp98": 1.99,
         "e10": 1.899,
@@ -271,6 +384,20 @@
       }
     },
     {
+      "id": "62260002",
+      "cp": "62260",
+      "ville": "Auchel",
+      "adresse": "RUE D ALLOUAGNE",
+      "pop": "R",
+      "lat": 5051600,
+      "lng": 247600,
+      "fuels": {
+        "gazole": 1.98,
+        "sp98": 2.045,
+        "e10": 1.922
+      }
+    },
+    {
       "id": "62770001",
       "cp": "62770",
       "ville": "Auchy-lès-Hesdin",
@@ -282,6 +409,21 @@
         "gazole": 1.999,
         "sp95": 1.999,
         "sp98": 2.079
+      }
+    },
+    {
+      "id": "62138002",
+      "cp": "62138",
+      "ville": "Auchy-les-Mines",
+      "adresse": "ZAC DES FLANDRES",
+      "pop": "R",
+      "lat": 5051000,
+      "lng": 278400,
+      "fuels": {
+        "gazole": 1.939,
+        "sp95": 1.991,
+        "sp98": 2.064,
+        "gplc": 0.923
       }
     },
     {
@@ -323,6 +465,33 @@
         "gazole": 1.962,
         "e10": 1.909,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "62810001",
+      "cp": "62810",
+      "ville": "Avesnes-le-Comte",
+      "adresse": "1000 avenue Francois Mitterand",
+      "pop": "R",
+      "lat": 5027889,
+      "lng": 253606,
+      "fuels": {
+        "gazole": 2.03,
+        "sp95": 1.969,
+        "sp98": 2.07
+      }
+    },
+    {
+      "id": "62810002",
+      "cp": "62810",
+      "ville": "Avesnes-le-Comte",
+      "adresse": "149 Grand Rue",
+      "pop": "R",
+      "lat": 5027800,
+      "lng": 253300,
+      "fuels": {
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -392,7 +561,21 @@
         "gazole": 1.948,
         "sp98": 2.011,
         "e10": 1.903,
-        "e85": 0.798
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "62860007",
+      "cp": "62860",
+      "ville": "Baralle",
+      "adresse": "AIRE DE BARALLE AUTOROUTE A 26",
+      "pop": "A",
+      "lat": 5022500,
+      "lng": 306900,
+      "fuels": {
+        "gazole": 2.084,
+        "sp98": 2.119,
+        "e10": 2.028
       }
     },
     {
@@ -424,6 +607,34 @@
       }
     },
     {
+      "id": "62620002",
+      "cp": "62620",
+      "ville": "Barlin",
+      "adresse": "Rue de la Plaine",
+      "pop": "R",
+      "lat": 5045400,
+      "lng": 260700,
+      "fuels": {
+        "gazole": 2.066,
+        "e10": 1.919,
+        "e85": 0.803
+      }
+    },
+    {
+      "id": "62123005",
+      "cp": "62123",
+      "ville": "Beaumetz-lès-Loges",
+      "adresse": "9 Rue nationale 25",
+      "pop": "R",
+      "lat": 5024093.05508,
+      "lng": 265734.50375,
+      "fuels": {
+        "gazole": 1.997,
+        "sp95": 1.992,
+        "sp98": 2.059
+      }
+    },
+    {
       "id": "62217001",
       "cp": "62217",
       "ville": "Beaurains",
@@ -435,6 +646,21 @@
         "gazole": 1.992,
         "sp98": 2.073,
         "e10": 1.946
+      }
+    },
+    {
+      "id": "62990001",
+      "cp": "62990",
+      "ville": "Beaurainville",
+      "adresse": "rue du 21 mai 1940",
+      "pop": "R",
+      "lat": 5042500,
+      "lng": 190100,
+      "fuels": {
+        "gazole": 2.025,
+        "sp95": 1.999,
+        "e10": 1.949,
+        "e85": 0.899
       }
     },
     {
@@ -452,6 +678,36 @@
       }
     },
     {
+      "id": "62600002",
+      "cp": "62600",
+      "ville": "Berck",
+      "adresse": "940 AVENUE DE VERDUN",
+      "pop": "R",
+      "lat": 5040508.99239,
+      "lng": 159571.57117,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.989,
+        "sp98": 1.999,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "62400004",
+      "cp": "62400",
+      "ville": "Béthune",
+      "adresse": "612 Rue d'Aire",
+      "pop": "R",
+      "lat": 5053900,
+      "lng": 263100,
+      "fuels": {
+        "gazole": 2.001,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.844
+      }
+    },
+    {
       "id": "62400002",
       "cp": "62400",
       "ville": "Béthune",
@@ -460,7 +716,6 @@
       "lat": 5052500,
       "lng": 265000,
       "fuels": {
-        "gazole": 1.996,
         "sp98": 2.035,
         "e10": 1.949,
         "e85": 0.805
@@ -477,9 +732,22 @@
       "fuels": {
         "gazole": 1.996,
         "sp98": 2,
-        "e10": 1.949,
-        "e85": 0.809,
-        "gplc": 1.05
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "62660004",
+      "cp": "62660",
+      "ville": "Beuvry",
+      "adresse": "195 ROUTE NATIONALE",
+      "pop": "R",
+      "lat": 5052300,
+      "lng": 268100,
+      "fuels": {
+        "gazole": 2.003,
+        "sp98": 1.99,
+        "e10": 1.986,
+        "e85": 0.844
       }
     },
     {
@@ -512,6 +780,20 @@
       }
     },
     {
+      "id": "62118002",
+      "cp": "62118",
+      "ville": "Biache-Saint-Vaast",
+      "adresse": "RUE DU MARECHAL FOCH",
+      "pop": "R",
+      "lat": 5030600,
+      "lng": 295200,
+      "fuels": {
+        "gazole": 1.961,
+        "sp98": 1.991,
+        "e10": 1.908
+      }
+    },
+    {
       "id": "62200005",
       "cp": "62200",
       "ville": "Boulogne-sur-Mer",
@@ -524,6 +806,35 @@
         "sp98": 1.99,
         "e10": 1.981,
         "e85": 0.822
+      }
+    },
+    {
+      "id": "62200004",
+      "cp": "62200",
+      "ville": "Boulogne-sur-Mer",
+      "adresse": "Avenue Percier et Fontaine",
+      "pop": "R",
+      "lat": 5074000,
+      "lng": 161300,
+      "fuels": {
+        "gazole": 1.959,
+        "e10": 1.95
+      }
+    },
+    {
+      "id": "62700001",
+      "cp": "62700",
+      "ville": "Bruay-la-Buissière",
+      "adresse": "1115 avenue de la liberation",
+      "pop": "R",
+      "lat": 5049400,
+      "lng": 257200,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.049,
+        "e10": 1.919,
+        "e85": 0.809,
+        "gplc": 0.999
       }
     },
     {
@@ -558,6 +869,34 @@
       }
     },
     {
+      "id": "62116001",
+      "cp": "62116",
+      "ville": "Bucquoy",
+      "adresse": "62 RUE DE DIERVILLE",
+      "pop": "R",
+      "lat": 5014800,
+      "lng": 271700,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.088,
+        "e10": 1.998
+      }
+    },
+    {
+      "id": "62160002",
+      "cp": "62160",
+      "ville": "Bully-les-Mines",
+      "adresse": "18 rue Casimir Beugnet",
+      "pop": "R",
+      "lat": 5044800,
+      "lng": 272000,
+      "fuels": {
+        "gazole": 2.018,
+        "sp95": 1.986,
+        "sp98": 2.063
+      }
+    },
+    {
       "id": "62160004",
       "cp": "62160",
       "ville": "Bully-les-Mines",
@@ -567,9 +906,20 @@
       "lng": 272100,
       "fuels": {
         "gazole": 1.959,
-        "sp98": 2.039,
-        "e10": 1.899,
-        "e85": 0.809
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "62100027",
+      "cp": "62100",
+      "ville": "Calais",
+      "adresse": "150 AVENUE ROGER SALENGRO",
+      "pop": "R",
+      "lat": 5094500,
+      "lng": 182700,
+      "fuels": {
+        "gazole": 1.989,
+        "e10": 1.98
       }
     },
     {
@@ -584,6 +934,20 @@
         "gazole": 1.969,
         "sp95": 1.969,
         "sp98": 2.069
+      }
+    },
+    {
+      "id": "62100002",
+      "cp": "62100",
+      "ville": "Calais",
+      "adresse": "23 Rue Paul Bert",
+      "pop": "R",
+      "lat": 5095300,
+      "lng": 185300,
+      "fuels": {
+        "gazole": 2.003,
+        "sp98": 1.99,
+        "e10": 1.98
       }
     },
     {
@@ -627,6 +991,36 @@
         "gazole": 2.149,
         "sp98": 2.169,
         "e10": 2.059
+      }
+    },
+    {
+      "id": "62100016",
+      "cp": "62100",
+      "ville": "Calais",
+      "adresse": "56 Avenue Antoine de Saint-Exupéry",
+      "pop": "R",
+      "lat": 5094600,
+      "lng": 189300,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.049,
+        "e10": 1.912,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "62100006",
+      "cp": "62100",
+      "ville": "Calais",
+      "adresse": "70 Avenue Roger Salengro",
+      "pop": "R",
+      "lat": 5094600,
+      "lng": 183700,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.159,
+        "e10": 2.049,
+        "e85": 0.925
       }
     },
     {
@@ -684,8 +1078,8 @@
       "lat": 5049331,
       "lng": 249567.2,
       "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.99,
+        "gazole": 1.973,
+        "sp95": 1.96,
         "sp98": 1.99
       }
     },
@@ -740,9 +1134,10 @@
       "lat": 5071700,
       "lng": 233200,
       "fuels": {
-        "gazole": 1.969,
+        "gazole": 1.928,
         "sp98": 2.106,
-        "e10": 1.89
+        "e10": 1.901,
+        "e85": 0.809
       }
     },
     {
@@ -757,6 +1152,21 @@
         "gazole": 2.02,
         "sp95": 1.97,
         "sp98": 2.06
+      }
+    },
+    {
+      "id": "62220002",
+      "cp": "62220",
+      "ville": "Carvin",
+      "adresse": "165 route de Meurchin",
+      "pop": "R",
+      "lat": 5049800,
+      "lng": 294500,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.049,
+        "e10": 1.949,
+        "e85": 0.777
       }
     },
     {
@@ -811,9 +1221,25 @@
       "lat": 5054400,
       "lng": 254100,
       "fuels": {
-        "gazole": 2.003,
+        "gazole": 1.977,
         "sp98": 1.99,
-        "e10": 1.984
+        "e10": 1.951
+      }
+    },
+    {
+      "id": "62901001",
+      "cp": "62231",
+      "ville": "Coquelles",
+      "adresse": "1001 BOULEVARD DU KENT",
+      "pop": "R",
+      "lat": 5093700,
+      "lng": 180900,
+      "fuels": {
+        "gazole": 1.972,
+        "sp95": 1.97,
+        "sp98": 2.051,
+        "e10": 1.924,
+        "gplc": 0.969
       }
     },
     {
@@ -839,6 +1265,21 @@
       "fuels": {
         "gazole": 1.894,
         "e10": 1.893
+      }
+    },
+    {
+      "id": "62137002",
+      "cp": "62137",
+      "ville": "Coulogne",
+      "adresse": "509 route de Saint-Omer",
+      "pop": "R",
+      "lat": 5092500,
+      "lng": 190500,
+      "fuels": {
+        "gazole": 1.939,
+        "sp95": 1.969,
+        "e10": 1.929,
+        "e85": 0.849
       }
     },
     {
@@ -872,6 +1313,34 @@
       }
     },
     {
+      "id": "62710002",
+      "cp": "62710",
+      "ville": "Courrières",
+      "adresse": "Rue Roger Salengro",
+      "pop": "R",
+      "lat": 5046087.79622,
+      "lng": 296092.28568,
+      "fuels": {
+        "gazole": 1.936,
+        "sp98": 1.975,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "62128011",
+      "cp": "62128",
+      "ville": "Croisilles",
+      "adresse": "21 rue du pont",
+      "pop": "R",
+      "lat": 5019927.60057,
+      "lng": 288267.62228,
+      "fuels": {
+        "gazole": 2.139,
+        "sp95": 2.085,
+        "sp98": 2.199
+      }
+    },
+    {
       "id": "62780004",
       "cp": "62780",
       "ville": "Cucq",
@@ -895,9 +1364,9 @@
       "lat": 5028300,
       "lng": 273900,
       "fuels": {
-        "gazole": 1.939,
+        "gazole": 1.929,
         "sp98": 1.999,
-        "e10": 1.925,
+        "e10": 1.904,
         "e85": 0.764
       }
     },
@@ -927,6 +1396,20 @@
         "sp95": 1.99,
         "sp98": 2.07,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "62240003",
+      "cp": "62240",
+      "ville": "Desvres",
+      "adresse": "RN 341 ROUTE DE BOULOGNE",
+      "pop": "R",
+      "lat": 5066900,
+      "lng": 182300,
+      "fuels": {
+        "gazole": 2.008,
+        "sp98": 2.079,
+        "e10": 1.948
       }
     },
     {
@@ -973,6 +1456,19 @@
       }
     },
     {
+      "id": "62400003",
+      "cp": "62400",
+      "ville": "Essars",
+      "adresse": "Rue du 11 Novembre",
+      "pop": "R",
+      "lat": 5054721,
+      "lng": 266418,
+      "fuels": {
+        "gazole": 1.977,
+        "sp98": 2.045
+      }
+    },
+    {
       "id": "62630002",
       "cp": "62630",
       "ville": "Étaples",
@@ -983,6 +1479,19 @@
       "fuels": {
         "gazole": 2.03,
         "sp95": 2.026
+      }
+    },
+    {
+      "id": "62630006",
+      "cp": "62630",
+      "ville": "Étaples",
+      "adresse": "Autoroute A16 péage le touquet",
+      "pop": "A",
+      "lat": 5050700,
+      "lng": 168000,
+      "fuels": {
+        "gazole": 2.245,
+        "sp98": 2.45
       }
     },
     {
@@ -1074,6 +1583,20 @@
       }
     },
     {
+      "id": "62270002",
+      "cp": "62270",
+      "ville": "Frévent",
+      "adresse": "5,RUE JULES FERRY",
+      "pop": "R",
+      "lat": 5027748,
+      "lng": 229229,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.019,
+        "sp98": 2.109
+      }
+    },
+    {
       "id": "62310003",
       "cp": "62310",
       "ville": "Fruges",
@@ -1104,6 +1627,91 @@
       }
     },
     {
+      "id": "62160003",
+      "cp": "62160",
+      "ville": "Grenay",
+      "adresse": "22 Rue François Beaucamp",
+      "pop": "R",
+      "lat": 5044800,
+      "lng": 273800,
+      "fuels": {
+        "gazole": 1.968,
+        "sp98": 2.048,
+        "e10": 1.908
+      }
+    },
+    {
+      "id": "62330002",
+      "cp": "62330",
+      "ville": "Guarbecque",
+      "adresse": "Rue Delcourt",
+      "pop": "R",
+      "lat": 5061200,
+      "lng": 249300,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 2.014,
+        "e10": 1.879
+      }
+    },
+    {
+      "id": "62340001",
+      "cp": "62340",
+      "ville": "Guînes",
+      "adresse": "ZAE DU MOULIN A HUILE",
+      "pop": "R",
+      "lat": 5086200,
+      "lng": 188500,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.086,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "62940001",
+      "cp": "62940",
+      "ville": "Haillicourt",
+      "adresse": "RUE EMILE ZOLA",
+      "pop": "R",
+      "lat": 5046700,
+      "lng": 256500,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.067,
+        "e10": 1.901
+      }
+    },
+    {
+      "id": "62440001",
+      "cp": "62440",
+      "ville": "Harnes",
+      "adresse": "Chemin de la Grosse Borne",
+      "pop": "R",
+      "lat": 5045500,
+      "lng": 290400,
+      "fuels": {
+        "gazole": 1.943,
+        "sp98": 2.044,
+        "e10": 1.901
+      }
+    },
+    {
+      "id": "62147001",
+      "cp": "62147",
+      "ville": "Havrincourt",
+      "adresse": "Autoroute A2 Aire d'Havrincourt",
+      "pop": "A",
+      "lat": 5012218.65341,
+      "lng": 308928.16536,
+      "fuels": {
+        "gazole": 2.189,
+        "sp98": 2.239,
+        "e10": 2.139,
+        "gplc": 1.16
+      }
+    },
+    {
       "id": "62147005",
       "cp": "62147",
       "ville": "Havrincourt",
@@ -1115,6 +1723,34 @@
         "gazole": 2.105,
         "sp98": 2.14,
         "e10": 2.049
+      }
+    },
+    {
+      "id": "62110003",
+      "cp": "62110",
+      "ville": "Hénin-Beaumont",
+      "adresse": "115 RUE PASTEUR",
+      "pop": "R",
+      "lat": 5041839,
+      "lng": 294714,
+      "fuels": {
+        "gazole": 1.984,
+        "sp98": 1.99,
+        "e10": 1.972
+      }
+    },
+    {
+      "id": "62110001",
+      "cp": "62110",
+      "ville": "Hénin-Beaumont",
+      "adresse": "1230 BOULEVARD ALBERT SCHWEITZER",
+      "pop": "R",
+      "lat": 5041600,
+      "lng": 297600,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 1.99,
+        "e10": 1.983
       }
     },
     {
@@ -1147,6 +1783,34 @@
       }
     },
     {
+      "id": "62147006",
+      "cp": "62147",
+      "ville": "Hermies",
+      "adresse": "22 BIS GRAND PLACE",
+      "pop": "R",
+      "lat": 5011138.2,
+      "lng": 303605.6,
+      "fuels": {
+        "e10": 1.95,
+        "e85": 0.899
+      }
+    },
+    {
+      "id": "62530001",
+      "cp": "62530",
+      "ville": "Hersin-Coupigny",
+      "adresse": "Rue Victor Hugo",
+      "pop": "R",
+      "lat": 5045200,
+      "lng": 263700,
+      "fuels": {
+        "gazole": 1.985,
+        "sp98": 2.029,
+        "e10": 1.919,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "62150002",
       "cp": "62150",
       "ville": "Houdain",
@@ -1172,6 +1836,33 @@
         "gazole": 1.999,
         "sp95": 1.989,
         "sp98": 2.049
+      }
+    },
+    {
+      "id": "62130006",
+      "cp": "62130",
+      "ville": "Humières",
+      "adresse": "16 RN 39",
+      "pop": "R",
+      "lat": 5039100,
+      "lng": 220300,
+      "fuels": {
+        "gazole": 2.18,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "62330001",
+      "cp": "62330",
+      "ville": "Isbergues",
+      "adresse": "Rue de l'Eglise Berguette",
+      "pop": "R",
+      "lat": 5060900,
+      "lng": 247200,
+      "fuels": {
+        "gazole": 1.961,
+        "sp95": 1.935,
+        "sp98": 2.015
       }
     },
     {
@@ -1217,6 +1908,34 @@
       }
     },
     {
+      "id": "62840006",
+      "cp": "62840",
+      "ville": "Laventie",
+      "adresse": "57 rue Robert Parfait",
+      "pop": "R",
+      "lat": 5062577.3,
+      "lng": 277264.1,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.989,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "62480001",
+      "cp": "62480",
+      "ville": "Le Portel",
+      "adresse": "Impasse Stein",
+      "pop": "R",
+      "lat": 5071000,
+      "lng": 157700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.099,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "62780003",
       "cp": "62780",
       "ville": "Le Touquet-Paris-Plage",
@@ -1229,6 +1948,34 @@
         "sp98": 2.016,
         "e10": 1.903,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "62520001",
+      "cp": "62520",
+      "ville": "Le Touquet-Paris-Plage",
+      "adresse": "Avenue Georges Besse",
+      "pop": "R",
+      "lat": 5051152,
+      "lng": 162056,
+      "fuels": {
+        "gazole": 2.121,
+        "sp98": 2.059,
+        "e10": 1.898
+      }
+    },
+    {
+      "id": "62790001",
+      "cp": "62790",
+      "ville": "Leforest",
+      "adresse": "AVENUE MITTERRAND",
+      "pop": "R",
+      "lat": 5043700,
+      "lng": 305700,
+      "fuels": {
+        "gazole": 1.98,
+        "sp95": 1.991,
+        "sp98": 2.078
       }
     },
     {
@@ -1247,6 +1994,20 @@
       }
     },
     {
+      "id": "62300006",
+      "cp": "62300",
+      "ville": "Lens",
+      "adresse": "162 Avenue Alfred Maes",
+      "pop": "R",
+      "lat": 5042700,
+      "lng": 280600,
+      "fuels": {
+        "gazole": 2.123,
+        "sp98": 2.046,
+        "e10": 1.966
+      }
+    },
+    {
       "id": "62300005",
       "cp": "62300",
       "ville": "Lens",
@@ -1258,6 +2019,36 @@
         "gazole": 1.975,
         "sp98": 2.028,
         "e10": 1.948
+      }
+    },
+    {
+      "id": "62300014",
+      "cp": "62300",
+      "ville": "Lens",
+      "adresse": "44 ROUTE D ARRAS",
+      "pop": "R",
+      "lat": 5042700,
+      "lng": 281900,
+      "fuels": {
+        "gazole": 1.911,
+        "sp98": 1.99,
+        "e10": 1.911,
+        "e85": 0.823,
+        "gplc": 0.929
+      }
+    },
+    {
+      "id": "62300018",
+      "cp": "62300",
+      "ville": "Lens",
+      "adresse": "53 ROUTE D'ARRAS",
+      "pop": "R",
+      "lat": 5042538.9,
+      "lng": 282407.5,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.99,
+        "e10": 1.91
       }
     },
     {
@@ -1286,6 +2077,20 @@
         "sp98": 1.99,
         "e10": 1.974,
         "e85": 0.831
+      }
+    },
+    {
+      "id": "62250011",
+      "cp": "62250",
+      "ville": "Leubringhen",
+      "adresse": "AUTOROUTE A16 - AIRE DES DEUX CAPS",
+      "pop": "A",
+      "lat": 5085976.536,
+      "lng": 173284.823,
+      "fuels": {
+        "gazole": 1.896,
+        "sp98": 1.99,
+        "e10": 1.903
       }
     },
     {
@@ -1327,9 +2132,24 @@
         "gazole": 1.947,
         "sp95": 2.009,
         "sp98": 1.993,
-        "e10": 1.915,
+        "e10": 1.907,
         "e85": 0.806,
         "gplc": 0.924
+      }
+    },
+    {
+      "id": "62800004",
+      "cp": "62800",
+      "ville": "Liévin",
+      "adresse": "69 RUE DE LATTRE DE TASSIGNY",
+      "pop": "R",
+      "lat": 5041800,
+      "lng": 276900,
+      "fuels": {
+        "gazole": 1.89,
+        "sp98": 1.99,
+        "e10": 1.892,
+        "gplc": 0.919
       }
     },
     {
@@ -1342,6 +2162,8 @@
       "lng": 246400,
       "fuels": {
         "gazole": 1.902,
+        "sp98": 1.99,
+        "e10": 1.892,
         "e85": 0.829
       }
     },
@@ -1360,6 +2182,21 @@
       }
     },
     {
+      "id": "62750002",
+      "cp": "62750",
+      "ville": "Loos-en-Gohelle",
+      "adresse": "Rue du Grand Mont",
+      "pop": "R",
+      "lat": 5044606,
+      "lng": 279736,
+      "fuels": {
+        "gazole": 1.945,
+        "sp98": 2.031,
+        "e10": 1.918,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "62380001",
       "cp": "62380",
       "ville": "Lumbres",
@@ -1372,6 +2209,20 @@
         "sp98": 1.99,
         "e10": 1.981,
         "e85": 0.829
+      }
+    },
+    {
+      "id": "62380002",
+      "cp": "62380",
+      "ville": "Lumbres",
+      "adresse": "Route d'Acquin",
+      "pop": "R",
+      "lat": 5070917.07625,
+      "lng": 211618.47508,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.019,
+        "e10": 1.929
       }
     },
     {
@@ -1422,6 +2273,8 @@
       "lat": 5037288.12989,
       "lng": 202248.9606,
       "fuels": {
+        "gazole": 1.96,
+        "sp98": 2.045,
         "e10": 1.932,
         "e85": 0.809
       }
@@ -1451,6 +2304,35 @@
         "gazole": 1.949,
         "sp98": 2.039,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "62161001",
+      "cp": "62161",
+      "ville": "Marœuil",
+      "adresse": "Rue de Neuville",
+      "pop": "R",
+      "lat": 5032800,
+      "lng": 271300,
+      "fuels": {
+        "gazole": 2.069,
+        "sp95": 2.029,
+        "sp98": 2.119
+      }
+    },
+    {
+      "id": "62250005",
+      "cp": "62250",
+      "ville": "Marquise",
+      "adresse": "72 Avenue Ferber",
+      "pop": "R",
+      "lat": 5081660,
+      "lng": 170267,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 1.99,
+        "e10": 1.97,
+        "e85": 0.834
       }
     },
     {
@@ -1497,6 +2379,21 @@
       }
     },
     {
+      "id": "62680001",
+      "cp": "62680",
+      "ville": "Méricourt",
+      "adresse": "avenue 10 Mars",
+      "pop": "R",
+      "lat": 5040500,
+      "lng": 287600,
+      "fuels": {
+        "gazole": 1.94,
+        "sp98": 2.026,
+        "e10": 1.913,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "62640003",
       "cp": "62640",
       "ville": "Montigny-en-Gohelle",
@@ -1505,8 +2402,8 @@
       "lat": 5041909,
       "lng": 292884,
       "fuels": {
-        "gazole": 1.957,
-        "e10": 1.914,
+        "gazole": 1.953,
+        "e10": 1.926,
         "e85": 0.809
       }
     },
@@ -1521,6 +2418,21 @@
       "fuels": {
         "gazole": 2.079,
         "e10": 1.979
+      }
+    },
+    {
+      "id": "62170005",
+      "cp": "62170",
+      "ville": "Montreuil-sur-Mer",
+      "adresse": "43 AV.GAL LECLERC",
+      "pop": "R",
+      "lat": 5045800,
+      "lng": 175800,
+      "fuels": {
+        "gazole": 1.888,
+        "sp98": 1.99,
+        "e10": 1.887,
+        "e85": 0.819
       }
     },
     {
@@ -1566,6 +2478,21 @@
       }
     },
     {
+      "id": "62290001",
+      "cp": "62290",
+      "ville": "Nœux-les-Mines",
+      "adresse": "Rue de Mazingarbe",
+      "pop": "R",
+      "lat": 5047753.377,
+      "lng": 267814.649,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.975,
+        "e10": 1.899,
+        "e85": 0.796
+      }
+    },
+    {
       "id": "62950001",
       "cp": "62950",
       "ville": "Noyelles-Godault",
@@ -1594,6 +2521,107 @@
         "sp95": 1.969,
         "sp98": 2.009,
         "e10": 1.899
+      }
+    },
+    {
+      "id": "62250010",
+      "cp": "62250",
+      "ville": "Offrethun",
+      "adresse": "AUTOROUTE A16 - AIRE DE L'EPITRE",
+      "pop": "A",
+      "lat": 5078500,
+      "lng": 169400,
+      "fuels": {
+        "gazole": 1.888,
+        "sp98": 1.99,
+        "e10": 1.885,
+        "e85": 0.821
+      }
+    },
+    {
+      "id": "62590001",
+      "cp": "62590",
+      "ville": "Oignies",
+      "adresse": "38 Rue Émile Zola",
+      "pop": "R",
+      "lat": 5047000,
+      "lng": 299600,
+      "fuels": {
+        "gazole": 1.967,
+        "sp98": 2.027,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "62230003",
+      "cp": "62230",
+      "ville": "Outreau",
+      "adresse": "Boulevard Industriel",
+      "pop": "R",
+      "lat": 5070189.85096,
+      "lng": 160839.52491,
+      "fuels": {
+        "gazole": 1.945,
+        "sp95": 1.969,
+        "e10": 1.903,
+        "e85": 0.765
+      }
+    },
+    {
+      "id": "62230004",
+      "cp": "62230",
+      "ville": "Outreau",
+      "adresse": "BOULEVARD MONTESQUIEU",
+      "pop": "R",
+      "lat": 5071100,
+      "lng": 160100,
+      "fuels": {
+        "gazole": 1.89,
+        "sp98": 1.99,
+        "e10": 1.884,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "62215006",
+      "cp": "62215",
+      "ville": "Oye-Plage",
+      "adresse": "PLACE DE GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 5097900,
+      "lng": 204200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.129
+      }
+    },
+    {
+      "id": "62550002",
+      "cp": "62550",
+      "ville": "Pernes",
+      "adresse": "245 AVENUE KENNEDY",
+      "pop": "R",
+      "lat": 5048500,
+      "lng": 241400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.049,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "62120015",
+      "cp": "62120",
+      "ville": "Racquinghem",
+      "adresse": "ROUTE NATIONALE 43",
+      "pop": "R",
+      "lat": 5069787.90357,
+      "lng": 235114.55119,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 1.999,
+        "e10": 1.969
       }
     },
     {
@@ -1635,9 +2663,9 @@
       "lat": 5039300,
       "lng": 292300,
       "fuels": {
-        "gazole": 1.995,
-        "sp98": 2.078,
-        "e10": 1.912
+        "gazole": 1.994,
+        "sp98": 2.09,
+        "e10": 1.923
       }
     },
     {
@@ -1842,6 +2870,136 @@
       }
     },
     {
+      "id": "62223001",
+      "cp": "62223",
+      "ville": "Saint-Nicolas",
+      "adresse": "Route de Lille",
+      "pop": "R",
+      "lat": 5030400,
+      "lng": 278900,
+      "fuels": {
+        "gazole": 1.941,
+        "sp95": 1.965,
+        "sp98": 2.01,
+        "e10": 1.925,
+        "e85": 0.764
+      }
+    },
+    {
+      "id": "62500005",
+      "cp": "62500",
+      "ville": "Saint-Omer",
+      "adresse": "1, RUE DES MADELEINES",
+      "pop": "R",
+      "lat": 5074400,
+      "lng": 226000,
+      "fuels": {
+        "e10": 1.911,
+        "e85": 0.901
+      }
+    },
+    {
+      "id": "62500003",
+      "cp": "62500",
+      "ville": "Saint-Omer",
+      "adresse": "109 Rue d'Arras",
+      "pop": "R",
+      "lat": 5074400,
+      "lng": 226000,
+      "fuels": {
+        "gazole": 2.003,
+        "sp98": 2.001,
+        "e10": 1.921,
+        "e85": 0.915
+      }
+    },
+    {
+      "id": "62130001",
+      "cp": "62130",
+      "ville": "Saint-Pol-sur-Ternoise",
+      "adresse": "184 Rue de Béthune",
+      "pop": "R",
+      "lat": 5038700,
+      "lng": 234900,
+      "fuels": {
+        "gazole": 2.054,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "62130003",
+      "cp": "62130",
+      "ville": "Saint-Pol-sur-Ternoise",
+      "adresse": "3 Rue René Cassin",
+      "pop": "R",
+      "lat": 5038805.66805,
+      "lng": 234838.715,
+      "fuels": {
+        "gazole": 1.983,
+        "sp98": 2.02,
+        "e10": 1.91,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "62130002",
+      "cp": "62130",
+      "ville": "Saint-Pol-sur-Ternoise",
+      "adresse": "Rue d'Arras",
+      "pop": "R",
+      "lat": 5038100,
+      "lng": 234200,
+      "fuels": {
+        "gazole": 1.992,
+        "sp98": 2.004,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "62350002",
+      "cp": "62350",
+      "ville": "Saint-Venant",
+      "adresse": "Rue de Busnes",
+      "pop": "R",
+      "lat": 5062000,
+      "lng": 254200,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 1.999,
+        "sp98": 2.079
+      }
+    },
+    {
+      "id": "62223002",
+      "cp": "62223",
+      "ville": "Sainte-Catherine",
+      "adresse": "Route de Béthune",
+      "pop": "R",
+      "lat": 5031341.11452,
+      "lng": 276193.77797,
+      "fuels": {
+        "gazole": 1.938,
+        "sp98": 2.023,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "62830002",
+      "cp": "62830",
+      "ville": "Samer",
+      "adresse": "route de Desvres",
+      "pop": "R",
+      "lat": 5063900,
+      "lng": 175900,
+      "fuels": {
+        "gazole": 1.955,
+        "sp95": 1.959,
+        "e10": 1.915,
+        "e85": 0.759
+      }
+    },
+    {
       "id": "62690002",
       "cp": "62690",
       "ville": "Savy-Berlette",
@@ -1853,6 +3011,20 @@
         "gazole": 2.01,
         "sp98": 1.99,
         "e10": 1.981
+      }
+    },
+    {
+      "id": "62153004",
+      "cp": "62153",
+      "ville": "Souchez",
+      "adresse": "AUTOROUTE A26 - AIRE DE SOUCHEZ",
+      "pop": "A",
+      "lat": 5040430.398,
+      "lng": 274274.77755,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.109,
+        "e10": 2.019
       }
     },
     {
@@ -1924,6 +3096,20 @@
       }
     },
     {
+      "id": "62131001",
+      "cp": "62131",
+      "ville": "Verquin",
+      "adresse": "D 937 ZAC DU BEAUPRE",
+      "pop": "R",
+      "lat": 5050200,
+      "lng": 265200,
+      "fuels": {
+        "gazole": 1.996,
+        "sp98": 2.089,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "62180004",
       "cp": "62180",
       "ville": "Verton",
@@ -1935,6 +3121,20 @@
         "gazole": 2.06,
         "sp98": 2.06,
         "e10": 1.93
+      }
+    },
+    {
+      "id": "62580003",
+      "cp": "62580",
+      "ville": "Vimy",
+      "adresse": "Rue saint Nazaire",
+      "pop": "R",
+      "lat": 5037614.96992,
+      "lng": 280702.52244,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.987,
+        "sp98": 2.066
       }
     },
     {
@@ -1953,6 +3153,20 @@
       }
     },
     {
+      "id": "62156002",
+      "cp": "62156",
+      "ville": "Vis-en-Artois",
+      "adresse": "2 rue de Cherisy",
+      "pop": "R",
+      "lat": 5024610.85,
+      "lng": 294152.06,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 2.089,
+        "sp98": 2.199
+      }
+    },
+    {
       "id": "62490002",
       "cp": "62490",
       "ville": "Vitry-en-Artois",
@@ -1961,9 +3175,52 @@
       "lat": 5033300,
       "lng": 300200,
       "fuels": {
-        "gazole": 1.961,
-        "sp98": 2.007,
-        "e10": 1.933
+        "gazole": 1.907,
+        "sp98": 2.005,
+        "e10": 1.92
+      }
+    },
+    {
+      "id": "62128010",
+      "cp": "62128",
+      "ville": "Wancourt",
+      "adresse": "Autoroute A1 - Aire de Wancourt",
+      "pop": "A",
+      "lat": 5026100,
+      "lng": 286400,
+      "fuels": {
+        "gazole": 2.105,
+        "sp98": 2.072,
+        "e10": 2.042,
+        "gplc": 1.206
+      }
+    },
+    {
+      "id": "62930001",
+      "cp": "62930",
+      "ville": "Wimereux",
+      "adresse": "Rue du Bon Air",
+      "pop": "R",
+      "lat": 5077800,
+      "lng": 161700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "62126001",
+      "cp": "62126",
+      "ville": "Wimille",
+      "adresse": "99 Rue Raoul Lebeurre",
+      "pop": "R",
+      "lat": 5076535,
+      "lng": 161844,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.079,
+        "sp98": 2.099
       }
     },
     {

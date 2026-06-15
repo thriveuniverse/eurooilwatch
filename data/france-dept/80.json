@@ -3,55 +3,69 @@
   "name": "Somme",
   "regionCode": "HDF",
   "regionName": "Hauts-de-France",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 70,
+  "stationCount": 107,
   "fuels": {
     "gazole": {
-      "count": 70,
-      "mean": 2.0081,
+      "count": 106,
+      "mean": 2.0078,
       "median": 1.989,
-      "min": 1.885,
-      "max": 2.364
+      "min": 1.908,
+      "max": 2.25
     },
     "sp95": {
-      "count": 11,
-      "mean": 2.0071,
-      "median": 1.999,
-      "min": 1.959,
+      "count": 21,
+      "mean": 2.0037,
+      "median": 1.99,
+      "min": 1.947,
       "max": 2.142
     },
     "sp98": {
-      "count": 56,
-      "mean": 2.0612,
-      "median": 2.039,
+      "count": 86,
+      "mean": 2.0616,
+      "median": 2.046,
       "min": 1.99,
-      "max": 2.547
+      "max": 2.45
     },
     "e10": {
-      "count": 56,
-      "mean": 1.9622,
-      "median": 1.9395,
+      "count": 81,
+      "mean": 1.9586,
+      "median": 1.94,
       "min": 1.883,
-      "max": 2.397
+      "max": 2.3
     },
     "e85": {
-      "count": 27,
-      "mean": 0.845,
+      "count": 39,
+      "mean": 0.8443,
       "median": 0.809,
       "min": 0.798,
       "max": 1.05
     },
     "gplc": {
-      "count": 7,
-      "mean": 1.1656,
-      "median": 1.16,
+      "count": 10,
+      "mean": 1.1632,
+      "median": 1.134,
       "min": 1.026,
       "max": 1.329
     }
   },
   "stations": [
+    {
+      "id": "80100012",
+      "cp": "80100",
+      "ville": "Abbeville",
+      "adresse": "1 Rue Philippe Duclercq",
+      "pop": "R",
+      "lat": 5012800,
+      "lng": 183300,
+      "fuels": {
+        "gazole": 1.938,
+        "e10": 1.924,
+        "e85": 0.874
+      }
+    },
     {
       "id": "80100009",
       "cp": "80100",
@@ -76,7 +90,6 @@
       "lat": 5011300,
       "lng": 182900,
       "fuels": {
-        "gazole": 1.885,
         "e10": 1.883,
         "e85": 0.822
       }
@@ -90,9 +103,38 @@
       "lat": 5011300,
       "lng": 182900,
       "fuels": {
-        "gazole": 1.944,
+        "gazole": 1.94,
         "sp98": 1.999,
-        "e10": 1.902
+        "e10": 1.914
+      }
+    },
+    {
+      "id": "80100011",
+      "cp": "80100",
+      "ville": "Abbeville",
+      "adresse": "3 place de l amiral courbet",
+      "pop": "R",
+      "lat": 5010786.73479,
+      "lng": 183176.01958,
+      "fuels": {
+        "gazole": 1.978,
+        "sp98": 1.99,
+        "e10": 1.96
+      }
+    },
+    {
+      "id": "80100002",
+      "cp": "80100",
+      "ville": "Abbeville",
+      "adresse": "Avenue Vincent Auriol",
+      "pop": "R",
+      "lat": 5009981.1078,
+      "lng": 185638.83006,
+      "fuels": {
+        "gazole": 1.935,
+        "sp98": 1.999,
+        "e10": 1.909,
+        "e85": 0.809
       }
     },
     {
@@ -166,6 +208,19 @@
       }
     },
     {
+      "id": "80270003",
+      "cp": "80270",
+      "ville": "Airaines",
+      "adresse": "33 AVENUE DU GENERAL LECLERC",
+      "pop": "R",
+      "lat": 4996299.40177,
+      "lng": 194354.11088,
+      "fuels": {
+        "gazole": 2.126,
+        "sp95": 1.99
+      }
+    },
+    {
       "id": "80270001",
       "cp": "80270",
       "ville": "Airaines",
@@ -189,6 +244,7 @@
       "lng": 266600,
       "fuels": {
         "gazole": 1.98,
+        "sp98": 1.99,
         "e10": 1.973,
         "gplc": 1.026
       }
@@ -205,6 +261,21 @@
         "gazole": 1.959,
         "sp98": 2.049,
         "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "80300005",
+      "cp": "80300",
+      "ville": "Albert",
+      "adresse": "Zone Commerciale chemin croisé de bellevue",
+      "pop": "R",
+      "lat": 4999400,
+      "lng": 265700,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.059,
+        "e10": 1.949,
         "e85": 0.809
       }
     },
@@ -296,6 +367,21 @@
       }
     },
     {
+      "id": "80000007",
+      "cp": "80080",
+      "ville": "Amiens",
+      "adresse": "BOULEVARD DE ROUBAIX",
+      "pop": "R",
+      "lat": 4990800,
+      "lng": 231800,
+      "fuels": {
+        "gazole": 1.947,
+        "sp98": 2.036,
+        "e10": 1.941,
+        "e85": 0.93
+      }
+    },
+    {
       "id": "80300004",
       "cp": "80080",
       "ville": "Amiens",
@@ -308,6 +394,20 @@
         "sp98": 2.091,
         "e10": 1.942,
         "e85": 0.872
+      }
+    },
+    {
+      "id": "80090003",
+      "cp": "80090",
+      "ville": "Amiens",
+      "adresse": "Rue Pierre Rollin",
+      "pop": "R",
+      "lat": 4987700,
+      "lng": 231300,
+      "fuels": {
+        "gazole": 2.059,
+        "sp98": 2.159,
+        "e10": 2.009
       }
     },
     {
@@ -342,6 +442,20 @@
       }
     },
     {
+      "id": "80460003",
+      "cp": "80460",
+      "ville": "Ault",
+      "adresse": "Avenue du Général Leclerc",
+      "pop": "R",
+      "lat": 5009824,
+      "lng": 145590,
+      "fuels": {
+        "gazole": 2.045,
+        "sp95": 2.069,
+        "sp98": 2.099
+      }
+    },
+    {
       "id": "80430002",
       "cp": "80430",
       "ville": "Beaucamps-le-Vieux",
@@ -356,6 +470,35 @@
       }
     },
     {
+      "id": "80370002",
+      "cp": "80370",
+      "ville": "Bernaville",
+      "adresse": "11 Rue de Canaples",
+      "pop": "R",
+      "lat": 5013100,
+      "lng": 217200,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.959,
+        "e85": 0.899
+      }
+    },
+    {
+      "id": "80850001",
+      "cp": "80850",
+      "ville": "Berteaucourt-les-Dames",
+      "adresse": "Rue Lucien Peyrat",
+      "pop": "R",
+      "lat": 5004600,
+      "lng": 214800,
+      "fuels": {
+        "gazole": 1.942,
+        "sp98": 2.039,
+        "e10": 1.883,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "80230006",
       "cp": "80230",
       "ville": "Boismont",
@@ -367,6 +510,20 @@
         "gazole": 1.988,
         "sp98": 1.99,
         "e10": 1.979
+      }
+    },
+    {
+      "id": "80230003",
+      "cp": "80230",
+      "ville": "Boismont",
+      "adresse": "HAMEAU DE PINCHEFALISE",
+      "pop": "R",
+      "lat": 5017200,
+      "lng": 164900,
+      "fuels": {
+        "gazole": 1.981,
+        "sp95": 1.947,
+        "sp98": 2.03
       }
     },
     {
@@ -393,6 +550,32 @@
       "lng": 195771,
       "fuels": {
         "gazole": 2.25
+      }
+    },
+    {
+      "id": "80340004",
+      "cp": "80340",
+      "ville": "Bray-sur-Somme",
+      "adresse": "3 rue Castel",
+      "pop": "R",
+      "lat": 4993969.75,
+      "lng": 271766.2,
+      "fuels": {
+        "gazole": 2.06,
+        "sp95": 1.999,
+        "sp98": 2.09
+      }
+    },
+    {
+      "id": "80340003",
+      "cp": "80340",
+      "ville": "Bray-sur-Somme",
+      "adresse": "zi route d'etinehem",
+      "pop": "R",
+      "lat": 4993800,
+      "lng": 271800,
+      "fuels": {
+        "gazole": 1.99
       }
     },
     {
@@ -463,6 +646,21 @@
         "gazole": 1.939,
         "sp95": 1.959,
         "sp98": 2.049
+      }
+    },
+    {
+      "id": "80290008",
+      "cp": "80290",
+      "ville": "Croixrault",
+      "adresse": "A29 Aire de CROIXRAULT",
+      "pop": "A",
+      "lat": 4980800,
+      "lng": 196800,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.074,
+        "e10": 1.983,
+        "e85": 0.917
       }
     },
     {
@@ -597,6 +795,20 @@
       }
     },
     {
+      "id": "80210001",
+      "cp": "80210",
+      "ville": "Feuquières-en-Vimeu",
+      "adresse": "43 RUE VICTOR HUGO",
+      "pop": "R",
+      "lat": 5006153.703,
+      "lng": 159455.665,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 1.975,
+        "sp98": 2.059
+      }
+    },
+    {
       "id": "80210002",
       "cp": "80210",
       "ville": "Feuquières-en-Vimeu",
@@ -627,6 +839,51 @@
       }
     },
     {
+      "id": "80420004",
+      "cp": "80420",
+      "ville": "Flixecourt",
+      "adresse": "Route de Vignacourt",
+      "pop": "R",
+      "lat": 5001100,
+      "lng": 209400,
+      "fuels": {
+        "gazole": 1.943,
+        "sp98": 2.04,
+        "e10": 1.884,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "80420003",
+      "cp": "80420",
+      "ville": "Flixecourt",
+      "adresse": "ZAC des Hauts du Val de Nievre",
+      "pop": "R",
+      "lat": 5002800,
+      "lng": 206700,
+      "fuels": {
+        "gazole": 1.943,
+        "sp98": 2.04,
+        "e10": 1.919,
+        "gplc": 1.08
+      }
+    },
+    {
+      "id": "80510004",
+      "cp": "80510",
+      "ville": "Fontaine-sur-Somme",
+      "adresse": "RUE DU 8 MAI",
+      "pop": "R",
+      "lat": 5002900,
+      "lng": 194300,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.929,
+        "e85": 0.819
+      }
+    },
+    {
       "id": "80800006",
       "cp": "80800",
       "ville": "Fouilloy",
@@ -638,6 +895,21 @@
         "gazole": 1.989,
         "sp98": 2.049,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "80140006",
+      "cp": "80140",
+      "ville": "Framicourt",
+      "adresse": "AUTOROUTE A 28",
+      "pop": "A",
+      "lat": 4996200,
+      "lng": 166500,
+      "fuels": {
+        "gazole": 2.149,
+        "sp98": 2.219,
+        "e10": 2.119,
+        "gplc": 1.329
       }
     },
     {
@@ -668,6 +940,35 @@
       }
     },
     {
+      "id": "80190003",
+      "cp": "80220",
+      "ville": "Gamaches",
+      "adresse": "Rue charles de gaulle",
+      "pop": "R",
+      "lat": 4998300,
+      "lng": 156200,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.989,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "80590002",
+      "cp": "80290",
+      "ville": "Gauville",
+      "adresse": "2 et 4 rue du Viaduc",
+      "pop": "R",
+      "lat": 4978100,
+      "lng": 179200,
+      "fuels": {
+        "gazole": 1.993,
+        "sp95": 2.016,
+        "sp98": 2.065,
+        "e10": 1.949
+      }
+    },
+    {
       "id": "80440003",
       "cp": "80440",
       "ville": "Glisy",
@@ -679,6 +980,34 @@
         "gazole": 1.936,
         "sp98": 1.998,
         "e10": 1.934
+      }
+    },
+    {
+      "id": "80400005",
+      "cp": "80400",
+      "ville": "Ham",
+      "adresse": "Route de chauny",
+      "pop": "R",
+      "lat": 4974205.76217,
+      "lng": 309176.20514,
+      "fuels": {
+        "gazole": 1.993,
+        "sp98": 2.045,
+        "e10": 1.956
+      }
+    },
+    {
+      "id": "80550001",
+      "cp": "80550",
+      "ville": "Le Crotoy",
+      "adresse": "rue du 8 mai",
+      "pop": "R",
+      "lat": 5021700,
+      "lng": 162500,
+      "fuels": {
+        "gazole": 2.099,
+        "sp95": 2.093,
+        "sp98": 2.173
       }
     },
     {
@@ -746,9 +1075,9 @@
       "lat": 4964844,
       "lng": 258299,
       "fuels": {
-        "gazole": 1.979,
+        "gazole": 1.959,
         "sp98": 2.05,
-        "e10": 1.959,
+        "e10": 1.949,
         "e85": 0.799
       }
     },
@@ -762,7 +1091,6 @@
       "lng": 246992.37044,
       "fuels": {
         "gazole": 2.02,
-        "e10": 1.99,
         "e85": 0.846
       }
     },
@@ -808,6 +1136,33 @@
       }
     },
     {
+      "id": "80190001",
+      "cp": "80190",
+      "ville": "Nesle",
+      "adresse": "Pôle Activité du Pays Neslois - Route de Rouy",
+      "pop": "R",
+      "lat": 4976000,
+      "lng": 291400,
+      "fuels": {
+        "gazole": 2.021,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "80190002",
+      "cp": "80190",
+      "ville": "Nesle",
+      "adresse": "Route de Rouy",
+      "pop": "R",
+      "lat": 4976400,
+      "lng": 292100,
+      "fuels": {
+        "gazole": 1.963,
+        "sp98": 2.02,
+        "e10": 1.9
+      }
+    },
+    {
       "id": "80100003",
       "cp": "80860",
       "ville": "Nouvion",
@@ -819,6 +1174,21 @@
         "gazole": 2.029,
         "sp95": 1.989,
         "sp98": 2.089
+      }
+    },
+    {
+      "id": "80140003",
+      "cp": "80140",
+      "ville": "Oisemont",
+      "adresse": "les Quarante",
+      "pop": "R",
+      "lat": 4995923.68199,
+      "lng": 176647.04551,
+      "fuels": {
+        "gazole": 1.961,
+        "sp98": 2.047,
+        "e10": 1.934,
+        "e85": 0.809
       }
     },
     {
@@ -864,6 +1234,21 @@
       }
     },
     {
+      "id": "80290006",
+      "cp": "80290",
+      "ville": "Poix-de-Picardie",
+      "adresse": "2 RUE DE MENESVILLERS",
+      "pop": "R",
+      "lat": 4977400,
+      "lng": 199000,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.045,
+        "e10": 1.948,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "80290007",
       "cp": "80290",
       "ville": "Poix-de-Picardie",
@@ -875,6 +1260,61 @@
         "gazole": 1.991,
         "sp98": 1.99,
         "e10": 1.987
+      }
+    },
+    {
+      "id": "80290001",
+      "cp": "80290",
+      "ville": "Poix-de-Picardie",
+      "adresse": "RUE DU CAPITAINE FAY",
+      "pop": "R",
+      "lat": 4977600,
+      "lng": 197800,
+      "fuels": {
+        "gazole": 2.063,
+        "sp98": 2.151,
+        "e10": 2.015
+      }
+    },
+    {
+      "id": "80580001",
+      "cp": "80580",
+      "ville": "Pont-Remy",
+      "adresse": "RUE JEAN MOULIN",
+      "pop": "R",
+      "lat": 5005800.8,
+      "lng": 190025.44,
+      "fuels": {
+        "gazole": 1.934,
+        "sp98": 2.033,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "80120001",
+      "cp": "80120",
+      "ville": "Quend",
+      "adresse": "rue des pommiers",
+      "pop": "R",
+      "lat": 5033100,
+      "lng": 158900,
+      "fuels": {
+        "gazole": 2.02,
+        "sp95": 1.962,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "80260004",
+      "cp": "80260",
+      "ville": "Rainneville",
+      "adresse": "5 rue d'Amiens",
+      "pop": "R",
+      "lat": 4997000,
+      "lng": 235300,
+      "fuels": {
+        "gazole": 2.25,
+        "e10": 1.99
       }
     },
     {
@@ -915,9 +1355,23 @@
       "lat": 4982600,
       "lng": 271200,
       "fuels": {
-        "gazole": 1.987,
-        "sp98": 2.004,
+        "gazole": 1.963,
+        "sp98": 2.049,
+        "e10": 1.937,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "80700010",
+      "cp": "80700",
+      "ville": "Roye",
+      "adresse": "CHEMIN DEPARTEMENTAL 54 E",
+      "pop": "R",
+      "lat": 4970500,
+      "lng": 276600,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.079
       }
     },
     {
@@ -950,6 +1404,20 @@
       }
     },
     {
+      "id": "80120004",
+      "cp": "80120",
+      "ville": "Rue",
+      "adresse": "28/30 RUE PORTE DE BECRAY",
+      "pop": "R",
+      "lat": 5027100,
+      "lng": 166900,
+      "fuels": {
+        "gazole": 1.98,
+        "sp98": 2.03,
+        "e10": 1.937
+      }
+    },
+    {
       "id": "80120003",
       "cp": "80120",
       "ville": "Rue",
@@ -972,9 +1440,9 @@
       "lat": 5016700,
       "lng": 175500,
       "fuels": {
-        "gazole": 2.364,
-        "sp98": 2.547,
-        "e10": 2.397,
+        "gazole": 2.247,
+        "sp98": 2.45,
+        "e10": 2.3,
         "gplc": 1.241
       }
     },
@@ -1018,7 +1486,7 @@
       "fuels": {
         "gazole": 1.949,
         "sp98": 2.015,
-        "e10": 1.899
+        "e10": 1.905
       }
     },
     {
@@ -1030,8 +1498,63 @@
       "lat": 4987100,
       "lng": 226100,
       "fuels": {
-        "gazole": 1.959,
+        "gazole": 1.923,
         "e10": 1.905
+      }
+    },
+    {
+      "id": "80480001",
+      "cp": "80480",
+      "ville": "Salouël",
+      "adresse": "2 Route de Normandie",
+      "pop": "R",
+      "lat": 4987000,
+      "lng": 224100,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.025,
+        "e10": 1.905
+      }
+    },
+    {
+      "id": "80260001",
+      "cp": "80260",
+      "ville": "Villers-Bocage",
+      "adresse": "Rue du Château d'Eau",
+      "pop": "R",
+      "lat": 5000100,
+      "lng": 231600,
+      "fuels": {
+        "gazole": 2.016
+      }
+    },
+    {
+      "id": "80380001",
+      "cp": "80800",
+      "ville": "Villers-Bretonneux",
+      "adresse": "21 RUE DES TAVERNES",
+      "pop": "R",
+      "lat": 4987100,
+      "lng": 251200,
+      "fuels": {
+        "gazole": 1.996,
+        "sp98": 1.99,
+        "e10": 1.988
+      }
+    },
+    {
+      "id": "80800007",
+      "cp": "80800",
+      "ville": "Villers-Bretonneux",
+      "adresse": "Autoroute A29 aire de Villers-Bretonneux",
+      "pop": "A",
+      "lat": 4986288.4,
+      "lng": 252134,
+      "fuels": {
+        "gazole": 2.128,
+        "sp98": 2.163,
+        "e10": 2.071,
+        "gplc": 1.064
       }
     },
     {

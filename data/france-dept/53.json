@@ -3,45 +3,45 @@
   "name": "Mayenne",
   "regionCode": "PDL",
   "regionName": "Pays de la Loire",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 39,
+  "stationCount": 53,
   "fuels": {
     "gazole": {
-      "count": 36,
-      "mean": 1.9713,
-      "median": 1.9645,
+      "count": 50,
+      "mean": 1.9799,
+      "median": 1.974,
       "min": 1.895,
-      "max": 2.209
+      "max": 2.189
     },
     "sp95": {
-      "count": 17,
-      "mean": 1.9922,
-      "median": 1.989,
-      "min": 1.96,
+      "count": 25,
+      "mean": 1.9942,
+      "median": 1.995,
+      "min": 1.952,
       "max": 2.039
     },
     "sp98": {
-      "count": 29,
-      "mean": 2.0336,
+      "count": 41,
+      "mean": 2.0345,
       "median": 2.019,
       "min": 1.98,
       "max": 2.239
     },
     "e10": {
-      "count": 25,
-      "mean": 1.9498,
-      "median": 1.929,
+      "count": 30,
+      "mean": 1.953,
+      "median": 1.9315,
       "min": 1.891,
       "max": 2.139
     },
     "e85": {
-      "count": 8,
-      "mean": 0.8157,
-      "median": 0.804,
+      "count": 11,
+      "mean": 0.8353,
+      "median": 0.813,
       "min": 0.784,
-      "max": 0.899
+      "max": 0.939
     },
     "gplc": {
       "count": 8,
@@ -53,6 +53,34 @@
   },
   "stations": [
     {
+      "id": "53300003",
+      "cp": "53300",
+      "ville": "Ambrières-les-Vallées",
+      "adresse": "4 RUE DES VALLEES",
+      "pop": "R",
+      "lat": 4839606.95,
+      "lng": -62468.13,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.952,
+        "sp98": 2.035
+      }
+    },
+    {
+      "id": "53240001",
+      "cp": "53240",
+      "ville": "Andouillé",
+      "adresse": "1 RUE FREDERIC CHAPLET",
+      "pop": "R",
+      "lat": 4817400,
+      "lng": -78300,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.089
+      }
+    },
+    {
       "id": "53240002",
       "cp": "53240",
       "ville": "Andouillé",
@@ -62,6 +90,21 @@
       "lng": -79300,
       "fuels": {
         "gazole": 1.982
+      }
+    },
+    {
+      "id": "53210001",
+      "cp": "53210",
+      "ville": "Argentré",
+      "adresse": "Chemin des marzelles",
+      "pop": "R",
+      "lat": 4808500,
+      "lng": -64300,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.039,
+        "e10": 1.969
       }
     },
     {
@@ -87,7 +130,7 @@
       "lat": 4809500,
       "lng": -69500,
       "fuels": {
-        "gazole": 2.209,
+        "gazole": 2.189,
         "sp98": 2.239,
         "e10": 2.139,
         "gplc": 1.064
@@ -159,7 +202,7 @@
       "lat": 4783000,
       "lng": -68600,
       "fuels": {
-        "gazole": 1.919,
+        "gazole": 1.914,
         "sp95": 1.96,
         "sp98": 1.98,
         "e85": 0.784,
@@ -176,6 +219,20 @@
       "lng": -91107.767,
       "fuels": {
         "gazole": 1.979
+      }
+    },
+    {
+      "id": "53230001",
+      "cp": "53230",
+      "ville": "Cossé-le-Vivien",
+      "adresse": "Rue de Nantes",
+      "pop": "R",
+      "lat": 4793900,
+      "lng": -91500,
+      "fuels": {
+        "gazole": 1.993,
+        "sp98": 1.99,
+        "e10": 1.986
       }
     },
     {
@@ -318,6 +375,33 @@
       }
     },
     {
+      "id": "53970001",
+      "cp": "53970",
+      "ville": "L'Huisserie",
+      "adresse": "ZONE ARTIZ DE L'AUBEPIN",
+      "pop": "R",
+      "lat": 4802500,
+      "lng": -76900,
+      "fuels": {
+        "gazole": 1.954,
+        "sp95": 1.999,
+        "sp98": 2.075
+      }
+    },
+    {
+      "id": "53410003",
+      "cp": "53410",
+      "ville": "La Gravelle",
+      "adresse": "2 route Neuve",
+      "pop": "R",
+      "lat": 4807400,
+      "lng": -101600,
+      "fuels": {
+        "gazole": 2.119,
+        "sp98": 1.99
+      }
+    },
+    {
       "id": "53110001",
       "cp": "53110",
       "ville": "Lassay-les-Châteaux",
@@ -369,7 +453,6 @@
       "lng": -79400,
       "fuels": {
         "sp98": 1.99,
-        "e10": 1.903,
         "e85": 0.839,
         "gplc": 0.989
       }
@@ -407,6 +490,20 @@
       }
     },
     {
+      "id": "53000006",
+      "cp": "53000",
+      "ville": "Laval",
+      "adresse": "61 Boulevard Félix Grat",
+      "pop": "R",
+      "lat": 4806828.48174,
+      "lng": -76181.83363,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.045,
+        "e10": 1.919
+      }
+    },
+    {
       "id": "53000010",
       "cp": "53000",
       "ville": "Laval",
@@ -415,9 +512,23 @@
       "lat": 4805963,
       "lng": -77497,
       "fuels": {
-        "sp98": 1.99,
         "e10": 1.9,
         "gplc": 0.989
+      }
+    },
+    {
+      "id": "53000009",
+      "cp": "53000",
+      "ville": "Laval",
+      "adresse": "ROUTE DE MAYENNE - RN 162",
+      "pop": "R",
+      "lat": 4807900,
+      "lng": -75300,
+      "fuels": {
+        "gazole": 1.996,
+        "sp98": 1.99,
+        "e10": 1.987,
+        "e85": 0.854
       }
     },
     {
@@ -446,6 +557,35 @@
         "gazole": 1.999,
         "sp95": 1.999,
         "sp98": 2.049
+      }
+    },
+    {
+      "id": "53950002",
+      "cp": "53950",
+      "ville": "Louverné",
+      "adresse": "9 rue du lavoir ROUTE DE ST jEAN",
+      "pop": "R",
+      "lat": 4812200,
+      "lng": -72400,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 1.999,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "53102001",
+      "cp": "53100",
+      "ville": "Mayenne",
+      "adresse": "550 Boulevard Jean Monnet",
+      "pop": "R",
+      "lat": 4828900,
+      "lng": -62000,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 2.029,
+        "e10": 1.929,
+        "e85": 0.939
       }
     },
     {
@@ -487,6 +627,49 @@
         "sp98": 1.99,
         "e10": 1.903,
         "e85": 0.899
+      }
+    },
+    {
+      "id": "53100001",
+      "cp": "53100",
+      "ville": "Mayenne",
+      "adresse": "Rue de Bretagne",
+      "pop": "R",
+      "lat": 4830817,
+      "lng": -62956,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 2.039,
+        "sp98": 2.059
+      }
+    },
+    {
+      "id": "53170001",
+      "cp": "53170",
+      "ville": "Meslay-du-Maine",
+      "adresse": "RUE DES TILLEULS",
+      "pop": "R",
+      "lat": 4795400,
+      "lng": -56100,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.049,
+        "e10": 1.959,
+        "e85": 0.869
+      }
+    },
+    {
+      "id": "53150001",
+      "cp": "53150",
+      "ville": "Montsûrs",
+      "adresse": "Rue de la Libération",
+      "pop": "R",
+      "lat": 4814066,
+      "lng": -55581,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.989,
+        "sp98": 2.019
       }
     },
     {
@@ -548,6 +731,20 @@
       }
     },
     {
+      "id": "53370001",
+      "cp": "53370",
+      "ville": "Saint-Pierre-des-Nids",
+      "adresse": "32 Rue des Avaloirs",
+      "pop": "R",
+      "lat": 4840000,
+      "lng": -10500,
+      "fuels": {
+        "gazole": 2.17,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
       "id": "53410004",
       "cp": "53410",
       "ville": "Saint-Pierre-la-Cour",
@@ -584,9 +781,8 @@
       "lat": 4803900,
       "lng": -47500,
       "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.979,
-        "sp98": 2.069
+        "gazole": 1.989,
+        "sp95": 1.999
       }
     },
     {

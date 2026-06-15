@@ -3,55 +3,69 @@
   "name": "Deux-Sèvres",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 39,
+  "stationCount": 66,
   "fuels": {
     "gazole": {
-      "count": 39,
-      "mean": 1.9924,
-      "median": 1.96,
+      "count": 66,
+      "mean": 1.9872,
+      "median": 1.954,
       "min": 1.861,
-      "max": 2.279
+      "max": 2.29
     },
     "sp95": {
-      "count": 14,
-      "mean": 1.9669,
+      "count": 20,
+      "mean": 1.9699,
       "median": 1.969,
       "min": 1.929,
       "max": 1.999
     },
     "sp98": {
-      "count": 30,
-      "mean": 2.0341,
-      "median": 2.002,
+      "count": 53,
+      "mean": 2.0455,
+      "median": 2.009,
       "min": 1.965,
-      "max": 2.209
+      "max": 2.48
     },
     "e10": {
-      "count": 26,
-      "mean": 1.9496,
-      "median": 1.929,
-      "min": 1.869,
-      "max": 2.119
+      "count": 50,
+      "mean": 1.9483,
+      "median": 1.9185,
+      "min": 1.882,
+      "max": 2.299
     },
     "e85": {
-      "count": 12,
-      "mean": 0.8359,
-      "median": 0.809,
+      "count": 23,
+      "mean": 0.8459,
+      "median": 0.819,
       "min": 0.761,
-      "max": 0.998
+      "max": 1.15
     },
     "gplc": {
-      "count": 4,
-      "mean": 1.0953,
+      "count": 6,
+      "mean": 1.0867,
       "median": 1.083,
-      "min": 1.054,
+      "min": 1.049,
       "max": 1.161
     }
   },
   "stations": [
+    {
+      "id": "79230004",
+      "cp": "79230",
+      "ville": "Aiffres",
+      "adresse": "A10 Aire de Poitou Charentes",
+      "pop": "A",
+      "lat": 4627800,
+      "lng": -44600,
+      "fuels": {
+        "gazole": 2.261,
+        "sp98": 2.449,
+        "e10": 2.299
+      }
+    },
     {
       "id": "79600004",
       "cp": "79600",
@@ -62,6 +76,20 @@
       "lng": -13301.6,
       "fuels": {
         "gazole": 2.1
+      }
+    },
+    {
+      "id": "79600003",
+      "cp": "79600",
+      "ville": "Airvault",
+      "adresse": "Route de Poitiers",
+      "pop": "R",
+      "lat": 4682500,
+      "lng": -12900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.029,
+        "e10": 1.949
       }
     },
     {
@@ -88,6 +116,21 @@
       "lng": -44223,
       "fuels": {
         "gazole": 2.18
+      }
+    },
+    {
+      "id": "79400003",
+      "cp": "79400",
+      "ville": "Azay-le-Brûlé",
+      "adresse": "la Plaine d'Azia",
+      "pop": "R",
+      "lat": 4640727,
+      "lng": -22500,
+      "fuels": {
+        "gazole": 1.929,
+        "sp95": 1.969,
+        "sp98": 1.999,
+        "e10": 1.889
       }
     },
     {
@@ -121,6 +164,21 @@
       }
     },
     {
+      "id": "79300007",
+      "cp": "79300",
+      "ville": "Bressuire",
+      "adresse": "1 RUE JEAN GIONO",
+      "pop": "R",
+      "lat": 4685049.38272,
+      "lng": -47524.0064,
+      "fuels": {
+        "gazole": 1.89,
+        "sp98": 1.99,
+        "e10": 1.891,
+        "e85": 0.821
+      }
+    },
+    {
       "id": "79300005",
       "cp": "79300",
       "ville": "Bressuire",
@@ -129,10 +187,108 @@
       "lat": 4685000,
       "lng": -49900,
       "fuels": {
-        "gazole": 1.929,
+        "gazole": 1.909,
         "sp98": 2.009,
         "e10": 1.911,
         "e85": 0.821
+      }
+    },
+    {
+      "id": "79300001",
+      "cp": "79300",
+      "ville": "Bressuire",
+      "adresse": "27 Boulevard de l'Europe",
+      "pop": "R",
+      "lat": 4683500,
+      "lng": -48200,
+      "fuels": {
+        "gazole": 1.909,
+        "sp95": 1.989,
+        "e10": 1.891
+      }
+    },
+    {
+      "id": "79300006",
+      "cp": "79300",
+      "ville": "Bressuire",
+      "adresse": "Boulevard de Thouars",
+      "pop": "R",
+      "lat": 4684600,
+      "lng": -48300,
+      "fuels": {
+        "gazole": 1.909,
+        "sp98": 2.009,
+        "e10": 1.911,
+        "e85": 0.821
+      }
+    },
+    {
+      "id": "79170001",
+      "cp": "79170",
+      "ville": "Brioux-sur-Boutonne",
+      "adresse": "Avenue de Royan",
+      "pop": "R",
+      "lat": 4614000,
+      "lng": -22100,
+      "fuels": {
+        "gazole": 1.989,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "79370001",
+      "cp": "79370",
+      "ville": "Celles-sur-Belle",
+      "adresse": "22 rue des Acacias",
+      "pop": "R",
+      "lat": 4626800,
+      "lng": -22400,
+      "fuels": {
+        "gazole": 1.96,
+        "sp98": 2.043,
+        "e10": 1.917
+      }
+    },
+    {
+      "id": "79140002",
+      "cp": "79140",
+      "ville": "Cerizay",
+      "adresse": "Avenue de la Gare",
+      "pop": "R",
+      "lat": 4681800,
+      "lng": -66600,
+      "fuels": {
+        "gazole": 1.952,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "79140001",
+      "cp": "79140",
+      "ville": "Cerizay",
+      "adresse": "BOULEVARD GEORGES POMPIDOU",
+      "pop": "R",
+      "lat": 4682583,
+      "lng": -66177,
+      "fuels": {
+        "gazole": 1.956,
+        "sp98": 2.018,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "79220001",
+      "cp": "79220",
+      "ville": "Champdeniers",
+      "adresse": "50, RUE DE LA GRANGE LUCAS",
+      "pop": "R",
+      "lat": 4648800,
+      "lng": -39800,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.999,
+        "e10": 1.899
       }
     },
     {
@@ -175,6 +331,22 @@
         "gazole": 1.991,
         "sp95": 1.999,
         "sp98": 2.086
+      }
+    },
+    {
+      "id": "79180002",
+      "cp": "79180",
+      "ville": "Chauray",
+      "adresse": "659, RTE DE PARIS",
+      "pop": "R",
+      "lat": 4634047.54302,
+      "lng": -39532.42525,
+      "fuels": {
+        "gazole": 1.89,
+        "sp98": 1.99,
+        "e10": 1.882,
+        "e85": 0.819,
+        "gplc": 1.049
       }
     },
     {
@@ -302,6 +474,50 @@
       }
     },
     {
+      "id": "79120002",
+      "cp": "79120",
+      "ville": "Lezay",
+      "adresse": "23 route de Melle",
+      "pop": "R",
+      "lat": 4626246.95011,
+      "lng": -1366.4468,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.009,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "79460001",
+      "cp": "79460",
+      "ville": "Magné",
+      "adresse": "AV DU MARAIS POITEVIN",
+      "pop": "R",
+      "lat": 4631600,
+      "lng": -55700,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.969,
+        "sp98": 2.019,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "79700001",
+      "cp": "79700",
+      "ville": "Mauléon",
+      "adresse": "38 route de Poitiers",
+      "pop": "R",
+      "lat": 4692200,
+      "lng": -73900,
+      "fuels": {
+        "gazole": 1.909,
+        "sp98": 1.999,
+        "e10": 1.899,
+        "e85": 0.829
+      }
+    },
+    {
       "id": "79210001",
       "cp": "79210",
       "ville": "Mauzé-sur-le-Mignon",
@@ -310,9 +526,9 @@
       "lat": 4619806,
       "lng": -66833,
       "fuels": {
-        "gazole": 1.921,
-        "sp98": 1.985,
-        "e10": 1.869,
+        "gazole": 1.929,
+        "sp98": 2.009,
+        "e10": 1.899,
         "e85": 0.809
       }
     },
@@ -328,6 +544,36 @@
         "gazole": 1.96,
         "sp98": 1.99,
         "e10": 1.961
+      }
+    },
+    {
+      "id": "79500005",
+      "cp": "79500",
+      "ville": "Melle",
+      "adresse": "41 route de Poitiers",
+      "pop": "R",
+      "lat": 4622400,
+      "lng": -13000,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 2.009,
+        "e10": 1.909,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "79500002",
+      "cp": "79500",
+      "ville": "Melle",
+      "adresse": "Avenue Clément Pineau",
+      "pop": "R",
+      "lat": 4622700,
+      "lng": -12700,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 2.009,
+        "e10": 1.909,
+        "e85": 0.799
       }
     },
     {
@@ -384,6 +630,36 @@
         "gazole": 1.939,
         "sp98": 2.079,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "79000005",
+      "cp": "79000",
+      "ville": "Niort",
+      "adresse": "232 Avenue de Paris",
+      "pop": "R",
+      "lat": 4633028,
+      "lng": -44093,
+      "fuels": {
+        "gazole": 1.904,
+        "sp98": 1.99,
+        "e10": 1.889
+      }
+    },
+    {
+      "id": "79000008",
+      "cp": "79000",
+      "ville": "Niort",
+      "adresse": "358 Route d'Aiffres",
+      "pop": "R",
+      "lat": 4630400,
+      "lng": -43800,
+      "fuels": {
+        "gazole": 1.909,
+        "sp95": 1.954,
+        "sp98": 2.009,
+        "e10": 1.899,
+        "e85": 0.809
       }
     },
     {
@@ -506,6 +782,21 @@
       }
     },
     {
+      "id": "79200011",
+      "cp": "79200",
+      "ville": "Parthenay",
+      "adresse": "20 boulevard Georges Clémenceau",
+      "pop": "R",
+      "lat": 4664090.9,
+      "lng": -26153.1,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.129,
+        "e10": 2.049,
+        "e85": 0.845
+      }
+    },
+    {
       "id": "79208001",
       "cp": "79200",
       "ville": "Parthenay",
@@ -536,6 +827,20 @@
       }
     },
     {
+      "id": "79400004",
+      "cp": "79400",
+      "ville": "Saint-Maixent-l'École",
+      "adresse": "7 voie Charles VII",
+      "pop": "R",
+      "lat": 4641800,
+      "lng": -19500,
+      "fuels": {
+        "gazole": 1.945,
+        "sp98": 2,
+        "e10": 1.89
+      }
+    },
+    {
       "id": "79330001",
       "cp": "79330",
       "ville": "Saint-Varent",
@@ -548,6 +853,20 @@
         "sp95": 1.979,
         "sp98": 2.029,
         "e10": 1.949
+      }
+    },
+    {
+      "id": "79190001",
+      "cp": "79190",
+      "ville": "Sauzé-entre-Bois",
+      "adresse": "Route de Montalembert",
+      "pop": "R",
+      "lat": 4613300,
+      "lng": 12000,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 2.019,
+        "e10": 1.909
       }
     },
     {
@@ -565,6 +884,35 @@
       }
     },
     {
+      "id": "79100009",
+      "cp": "79100",
+      "ville": "Thouars",
+      "adresse": "2 PASSAGE DU COMMERCE",
+      "pop": "R",
+      "lat": 4699265.52182,
+      "lng": -23625.5475,
+      "fuels": {
+        "gazole": 2.099,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "79100006",
+      "cp": "79100",
+      "ville": "Thouars",
+      "adresse": "22 boulevard jacques menard",
+      "pop": "R",
+      "lat": 4697572.6,
+      "lng": -19232.7,
+      "fuels": {
+        "gazole": 1.987,
+        "sp95": 1.99,
+        "sp98": 1.99,
+        "e85": 0.923,
+        "gplc": 1.09
+      }
+    },
+    {
       "id": "79100012",
       "cp": "79100",
       "ville": "Thouars",
@@ -574,6 +922,20 @@
       "lng": -19737.7,
       "fuels": {
         "gazole": 2.1
+      }
+    },
+    {
+      "id": "79100001",
+      "cp": "79100",
+      "ville": "Thouars",
+      "adresse": "BD PORT GENTIL",
+      "pop": "R",
+      "lat": 4697762,
+      "lng": -19815,
+      "fuels": {
+        "gazole": 1.962,
+        "sp98": 2.007,
+        "e10": 1.949
       }
     },
     {
@@ -589,6 +951,34 @@
         "sp98": 2.005,
         "e10": 1.929,
         "e85": 0.905
+      }
+    },
+    {
+      "id": "79340002",
+      "cp": "79340",
+      "ville": "Vasles",
+      "adresse": "20 BIS GRAND'RUE",
+      "pop": "R",
+      "lat": 4657500,
+      "lng": -1800,
+      "fuels": {
+        "gazole": 2.29,
+        "sp98": 2.48,
+        "e85": 1.15
+      }
+    },
+    {
+      "id": "79160003",
+      "cp": "79160",
+      "ville": "Villiers-en-Plaine",
+      "adresse": "AUTOROUTE A83 AIRE DES DEUX SEVRES",
+      "pop": "A",
+      "lat": 4642900,
+      "lng": -50700,
+      "fuels": {
+        "gazole": 2.14,
+        "sp98": 2.17,
+        "e10": 2.08
       }
     },
     {

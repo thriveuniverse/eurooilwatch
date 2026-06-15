@@ -3,55 +3,69 @@
   "name": "Sarthe",
   "regionCode": "PDL",
   "regionName": "Pays de la Loire",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 57,
+  "stationCount": 89,
   "fuels": {
     "gazole": {
-      "count": 55,
-      "mean": 2.0251,
-      "median": 1.999,
-      "min": 1.904,
+      "count": 87,
+      "mean": 2.0126,
+      "median": 1.989,
+      "min": 1.899,
       "max": 2.294
     },
     "sp95": {
-      "count": 21,
-      "mean": 2.0217,
-      "median": 1.999,
+      "count": 32,
+      "mean": 2.0082,
+      "median": 1.99,
       "min": 1.959,
       "max": 2.192
     },
     "sp98": {
-      "count": 44,
-      "mean": 2.0793,
-      "median": 2.0545,
-      "min": 1.99,
-      "max": 2.294
+      "count": 72,
+      "mean": 2.0696,
+      "median": 2.039,
+      "min": 1.975,
+      "max": 2.458
     },
     "e10": {
-      "count": 43,
-      "mean": 1.9855,
-      "median": 1.979,
-      "min": 1.915,
-      "max": 2.224
+      "count": 72,
+      "mean": 1.9767,
+      "median": 1.956,
+      "min": 1.883,
+      "max": 2.308
     },
     "e85": {
-      "count": 12,
-      "mean": 0.8404,
-      "median": 0.8175,
+      "count": 17,
+      "mean": 0.8362,
+      "median": 0.82,
       "min": 0.72,
       "max": 0.998
     },
     "gplc": {
-      "count": 9,
-      "mean": 1.0681,
+      "count": 15,
+      "mean": 1.0677,
       "median": 1.088,
-      "min": 0.972,
-      "max": 1.149
+      "min": 0.969,
+      "max": 1.192
     }
   },
   "stations": [
+    {
+      "id": "72700007",
+      "cp": "72700",
+      "ville": "Allonnes",
+      "adresse": "2 AV GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 4797327.78701,
+      "lng": 15860.62941,
+      "fuels": {
+        "gazole": 1.945,
+        "sp98": 1.999,
+        "e10": 1.918
+      }
+    },
     {
       "id": "72700002",
       "cp": "72700",
@@ -61,10 +75,25 @@
       "lat": 4797624.58643,
       "lng": 15674.96621,
       "fuels": {
-        "gazole": 1.959,
+        "gazole": 1.945,
         "sp95": 1.969,
         "e10": 1.918,
         "gplc": 0.999
+      }
+    },
+    {
+      "id": "72610001",
+      "cp": "72610",
+      "ville": "Arçonnay",
+      "adresse": "Route du Mans",
+      "pop": "R",
+      "lat": 4840802,
+      "lng": 8612,
+      "fuels": {
+        "gazole": 1.929,
+        "sp95": 1.979,
+        "e10": 1.929,
+        "e85": 0.819
       }
     },
     {
@@ -76,9 +105,26 @@
       "lat": 4793400,
       "lng": 18700,
       "fuels": {
-        "gazole": 2.125,
-        "sp98": 2.195,
-        "e10": 2.059
+        "gazole": 2.069,
+        "sp98": 2.169,
+        "e10": 2.019
+      }
+    },
+    {
+      "id": "72230007",
+      "cp": "72230",
+      "ville": "Arnage",
+      "adresse": "C. C. RIVE SUD",
+      "pop": "R",
+      "lat": 4794000,
+      "lng": 18400,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.969,
+        "sp98": 2.019,
+        "e10": 1.918,
+        "e85": 0.825,
+        "gplc": 0.981
       }
     },
     {
@@ -94,6 +140,21 @@
         "sp95": 1.999,
         "sp98": 2.049,
         "e10": 1.999
+      }
+    },
+    {
+      "id": "72170001",
+      "cp": "72170",
+      "ville": "Beaumont-sur-Sarthe",
+      "adresse": "RUE HENRI DE NAVARRE",
+      "pop": "R",
+      "lat": 4822900,
+      "lng": 12800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.029,
+        "e10": 1.949
       }
     },
     {
@@ -123,6 +184,21 @@
       }
     },
     {
+      "id": "72110001",
+      "cp": "72110",
+      "ville": "Bonnétable",
+      "adresse": "43 AVENUE DU 8 MAI 1945",
+      "pop": "R",
+      "lat": 4817200,
+      "lng": 42000,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.959,
+        "e85": 0.789
+      }
+    },
+    {
       "id": "72110004",
       "cp": "72110",
       "ville": "Bonnétable",
@@ -134,6 +210,34 @@
         "gazole": 2.12,
         "sp95": 2.1,
         "sp98": 2.18
+      }
+    },
+    {
+      "id": "72440002",
+      "cp": "72440",
+      "ville": "Bouloire",
+      "adresse": "1 Rue Nationale",
+      "pop": "R",
+      "lat": 4797500,
+      "lng": 54600,
+      "fuels": {
+        "gazole": 2.001,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "72440001",
+      "cp": "72440",
+      "ville": "Bouloire",
+      "adresse": "129 RUE NATIONALE",
+      "pop": "R",
+      "lat": 4797200,
+      "lng": 55600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.009,
+        "sp98": 2.059
       }
     },
     {
@@ -151,6 +255,34 @@
       }
     },
     {
+      "id": "72330001",
+      "cp": "72330",
+      "ville": "Cérans-Foulletourte",
+      "adresse": "62 Rue Nationale",
+      "pop": "R",
+      "lat": 4783000,
+      "lng": 7700,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.989,
+        "sp98": 2.089
+      }
+    },
+    {
+      "id": "72470005",
+      "cp": "72470",
+      "ville": "Champagné",
+      "adresse": "LA CHESNAIE RTE DE FATINES",
+      "pop": "R",
+      "lat": 4801589.3,
+      "lng": 33156.12,
+      "fuels": {
+        "gazole": 1.984,
+        "sp98": 2.019,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "72470004",
       "cp": "72470",
       "ville": "Champagné",
@@ -160,7 +292,6 @@
       "lng": 32800,
       "fuels": {
         "gazole": 1.934,
-        "sp98": 1.99,
         "e10": 1.929
       }
     },
@@ -177,6 +308,34 @@
         "sp95": 1.979,
         "sp98": 2.018,
         "e10": 1.918
+      }
+    },
+    {
+      "id": "72550002",
+      "cp": "72550",
+      "ville": "Chaufour-Notre-Dame",
+      "adresse": "RELAIS DE LA COLOMBERIE LA GROIE RD357",
+      "pop": "R",
+      "lat": 4802400,
+      "lng": 6600,
+      "fuels": {
+        "gazole": 2.083,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "72400002",
+      "cp": "72400",
+      "ville": "Cherré-Au",
+      "adresse": "94-96 Av. de Verdun",
+      "pop": "R",
+      "lat": 4819400,
+      "lng": 66900,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.99,
+        "e10": 1.899
       }
     },
     {
@@ -202,8 +361,7 @@
       "lat": 4806100,
       "lng": 49700,
       "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.059,
+        "gazole": 1.979,
         "e10": 1.929
       }
     },
@@ -246,7 +404,9 @@
       "lat": 4784073.23885,
       "lng": 26260.40947,
       "fuels": {
-        "gazole": 1.904
+        "gazole": 1.904,
+        "sp98": 1.99,
+        "e10": 1.904
       }
     },
     {
@@ -258,9 +418,9 @@
       "lat": 4829900,
       "lng": 9700,
       "fuels": {
-        "gazole": 2.001,
+        "gazole": 1.975,
         "sp98": 1.99,
-        "e10": 1.99
+        "e10": 1.967
       }
     },
     {
@@ -290,6 +450,19 @@
         "gazole": 1.979,
         "sp95": 2.029,
         "sp98": 2.059
+      }
+    },
+    {
+      "id": "72300010",
+      "cp": "72300",
+      "ville": "La Chapelle-d'Aligné",
+      "adresse": "2 AVENUE DU POIRIER ROUGE",
+      "pop": "R",
+      "lat": 4773190.6524,
+      "lng": -23805.42857,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 1.982
       }
     },
     {
@@ -330,10 +503,10 @@
       "lat": 4817800,
       "lng": 66300,
       "fuels": {
-        "gazole": 1.923,
-        "sp95": 2.037,
-        "sp98": 2.057,
-        "e10": 1.927,
+        "gazole": 1.902,
+        "sp95": 1.969,
+        "sp98": 1.989,
+        "e10": 1.897,
         "gplc": 1.02
       }
     },
@@ -410,6 +583,35 @@
       }
     },
     {
+      "id": "72210001",
+      "cp": "72210",
+      "ville": "La Suze-sur-Sarthe",
+      "adresse": "Route des Trunetières",
+      "pop": "R",
+      "lat": 4789200,
+      "lng": 4700,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.979,
+        "sp98": 2.019,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "72150002",
+      "cp": "72150",
+      "ville": "Le Grand-Lucé",
+      "adresse": "La Florière",
+      "pop": "R",
+      "lat": 4787000,
+      "lng": 46700,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.019,
+        "e10": 1.929
+      }
+    },
+    {
       "id": "72800003",
       "cp": "72800",
       "ville": "Le Lude",
@@ -424,6 +626,20 @@
       }
     },
     {
+      "id": "72800002",
+      "cp": "72800",
+      "ville": "Le Lude",
+      "adresse": "Avenue de Saumur",
+      "pop": "R",
+      "lat": 4764000,
+      "lng": 15400,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.007,
+        "e10": 1.904
+      }
+    },
+    {
       "id": "72100014",
       "cp": "72100",
       "ville": "Le Mans",
@@ -432,7 +648,39 @@
       "lat": 4799700,
       "lng": 18700,
       "fuels": {
-        "gazole": 1.938
+        "gazole": 1.938,
+        "sp98": 1.99,
+        "e10": 1.911
+      }
+    },
+    {
+      "id": "72100012",
+      "cp": "72100",
+      "ville": "Le Mans",
+      "adresse": "146 AVENUE DU DR JEAN MAC",
+      "pop": "R",
+      "lat": 4798000,
+      "lng": 22100,
+      "fuels": {
+        "gazole": 1.933,
+        "sp98": 1.99,
+        "e10": 1.934,
+        "gplc": 0.969
+      }
+    },
+    {
+      "id": "72100001",
+      "cp": "72100",
+      "ville": "Le Mans",
+      "adresse": "168 Rue d'Arnage",
+      "pop": "R",
+      "lat": 4798500,
+      "lng": 18600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.039,
+        "e10": 1.949,
+        "gplc": 1.089
       }
     },
     {
@@ -447,6 +695,35 @@
         "gazole": 1.999,
         "sp95": 2.018,
         "e10": 1.999
+      }
+    },
+    {
+      "id": "72000001",
+      "cp": "72000",
+      "ville": "Le Mans",
+      "adresse": "2 Rue de Bonnétable",
+      "pop": "R",
+      "lat": 4801700,
+      "lng": 21900,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.14,
+        "e10": 2.069
+      }
+    },
+    {
+      "id": "72000014",
+      "cp": "72000",
+      "ville": "Le Mans",
+      "adresse": "284 Avenue Léon Bollée",
+      "pop": "R",
+      "lat": 4799700,
+      "lng": 22800,
+      "fuels": {
+        "gazole": 1.973,
+        "sp95": 2.018,
+        "sp98": 2.028,
+        "e10": 1.91
       }
     },
     {
@@ -489,6 +766,20 @@
       }
     },
     {
+      "id": "72100004",
+      "cp": "72100",
+      "ville": "Le Mans",
+      "adresse": "AVENUE FELIX GENESLAY",
+      "pop": "R",
+      "lat": 4796400,
+      "lng": 20100,
+      "fuels": {
+        "gazole": 2.033,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "72000015",
       "cp": "72000",
       "ville": "Le Mans",
@@ -515,6 +806,34 @@
         "gazole": 1.928,
         "e85": 0.839,
         "gplc": 0.972
+      }
+    },
+    {
+      "id": "72016001",
+      "cp": "72000",
+      "ville": "Le Mans",
+      "adresse": "Route de Bonnetable",
+      "pop": "R",
+      "lat": 4802200,
+      "lng": 22800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.079,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "72000021",
+      "cp": "72000",
+      "ville": "Le Mans",
+      "adresse": "ROUTE DE LAVAL",
+      "pop": "R",
+      "lat": 4801700,
+      "lng": 14200,
+      "fuels": {
+        "gazole": 1.931,
+        "sp98": 1.99,
+        "e10": 1.924
       }
     },
     {
@@ -548,6 +867,19 @@
       }
     },
     {
+      "id": "72170004",
+      "cp": "72170",
+      "ville": "Maresché",
+      "adresse": "GARE DE PEAGE MARESCHE A28",
+      "pop": "A",
+      "lat": 4819753.3,
+      "lng": 16889,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "72260001",
       "cp": "72260",
       "ville": "Marolles-les-Braults",
@@ -570,9 +902,9 @@
       "lat": 4775700,
       "lng": 27200,
       "fuels": {
-        "gazole": 2.099,
+        "gazole": 2.059,
         "sp95": 2.136,
-        "sp98": 1.999
+        "sp98": 2.199
       }
     },
     {
@@ -587,6 +919,20 @@
         "gazole": 1.985,
         "sp98": 2.045,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "72450001",
+      "cp": "72450",
+      "ville": "Montfort-le-Gesnois",
+      "adresse": "Rue des Violettes",
+      "pop": "R",
+      "lat": 4805200,
+      "lng": 41900,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.019,
+        "e10": 1.919
       }
     },
     {
@@ -619,6 +965,36 @@
       }
     },
     {
+      "id": "72300005",
+      "cp": "72300",
+      "ville": "Parcé-sur-Sarthe",
+      "adresse": "AUT A 11 - AIRE DE PARCE OUEST",
+      "pop": "A",
+      "lat": 4780749.02846,
+      "lng": -16714.88567,
+      "fuels": {
+        "gazole": 2.265,
+        "sp98": 2.458,
+        "e10": 2.308,
+        "gplc": 1.16
+      }
+    },
+    {
+      "id": "72300004",
+      "cp": "72300",
+      "ville": "Parcé-sur-Sarthe",
+      "adresse": "AUT A11 - AIRE DE PARCE EST",
+      "pop": "A",
+      "lat": 4780300,
+      "lng": -16800,
+      "fuels": {
+        "gazole": 2.265,
+        "sp98": 2.458,
+        "e10": 2.308,
+        "gplc": 1.192
+      }
+    },
+    {
       "id": "72250001",
       "cp": "72250",
       "ville": "Parigné-l'Évêque",
@@ -635,6 +1011,48 @@
       }
     },
     {
+      "id": "72300009",
+      "cp": "72300",
+      "ville": "Sablé-sur-Sarthe",
+      "adresse": "LE PETIT ERABLE, ROUTE DE LAVAL",
+      "pop": "R",
+      "lat": 4785634.42159,
+      "lng": -36064.98361,
+      "fuels": {
+        "gazole": 1.962,
+        "sp98": 1.99,
+        "e10": 1.953,
+        "e85": 0.854
+      }
+    },
+    {
+      "id": "72300003",
+      "cp": "72300",
+      "ville": "Sablé-sur-Sarthe",
+      "adresse": "Route de la Flèche",
+      "pop": "R",
+      "lat": 4783052,
+      "lng": -31316,
+      "fuels": {
+        "gazole": 1.937,
+        "sp95": 1.999
+      }
+    },
+    {
+      "id": "72300006",
+      "cp": "72300",
+      "ville": "Sablé-sur-Sarthe",
+      "adresse": "route de LAVAL",
+      "pop": "R",
+      "lat": 4785200,
+      "lng": -35300,
+      "fuels": {
+        "gazole": 1.937,
+        "sp98": 1.985,
+        "e10": 1.905
+      }
+    },
+    {
       "id": "72120003",
       "cp": "72120",
       "ville": "Saint-Calais",
@@ -643,8 +1061,22 @@
       "lat": 4791800,
       "lng": 74600,
       "fuels": {
-        "gazole": 2.031,
+        "gazole": 2.005,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "72120001",
+      "cp": "72120",
+      "ville": "Saint-Calais",
+      "adresse": "ZA DU PRESSOIR",
+      "pop": "R",
+      "lat": 4791900,
+      "lng": 76600,
+      "fuels": {
+        "gazole": 2.035,
+        "sp95": 1.961,
+        "sp98": 2.052
       }
     },
     {
@@ -688,6 +1120,21 @@
         "gazole": 1.999,
         "sp98": 2.079,
         "e10": 1.979
+      }
+    },
+    {
+      "id": "72140001",
+      "cp": "72140",
+      "ville": "Saint-Rémy-de-Sillé",
+      "adresse": "ROUTE DU MANS",
+      "pop": "R",
+      "lat": 4818124.38775,
+      "lng": -12340.47489,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.99,
+        "sp98": 2.019,
+        "e10": 1.959
       }
     },
     {
@@ -790,6 +1237,22 @@
         "gazole": 1.982,
         "sp98": 1.99,
         "e10": 1.974
+      }
+    },
+    {
+      "id": "72300007",
+      "cp": "72300",
+      "ville": "Solesmes",
+      "adresse": "Rue du Mans",
+      "pop": "R",
+      "lat": 4783800,
+      "lng": -30000,
+      "fuels": {
+        "gazole": 1.927,
+        "sp98": 1.975,
+        "e10": 1.883,
+        "e85": 0.844,
+        "gplc": 1.011
       }
     },
     {

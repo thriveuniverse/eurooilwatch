@@ -3,51 +3,51 @@
   "name": "Hautes-Pyrénées",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-15T10:50:26.063Z",
+  "asOf": "2026-06-15T20:24:05.320Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 24,
+  "stationCount": 45,
   "fuels": {
     "gazole": {
-      "count": 24,
-      "mean": 2.0038,
-      "median": 1.999,
+      "count": 45,
+      "mean": 2.0212,
+      "median": 2.006,
       "min": 1.924,
-      "max": 2.1
+      "max": 2.199
     },
     "sp95": {
-      "count": 6,
-      "mean": 2.0363,
-      "median": 2.029,
-      "min": 1.99,
+      "count": 10,
+      "mean": 2.0277,
+      "median": 2.019,
+      "min": 1.988,
       "max": 2.091
     },
     "sp98": {
-      "count": 19,
-      "mean": 2.0523,
+      "count": 33,
+      "mean": 2.0638,
       "median": 2.065,
       "min": 1.99,
-      "max": 2.11
+      "max": 2.2
     },
     "e10": {
-      "count": 20,
-      "mean": 1.9547,
+      "count": 37,
+      "mean": 1.9625,
       "median": 1.949,
-      "min": 1.919,
-      "max": 1.99
+      "min": 1.917,
+      "max": 2.17
     },
     "e85": {
-      "count": 13,
-      "mean": 0.9898,
-      "median": 0.919,
-      "min": 0.809,
+      "count": 20,
+      "mean": 0.9495,
+      "median": 0.9185,
+      "min": 0.798,
       "max": 1.959
     },
     "gplc": {
-      "count": 2,
-      "mean": 1.156,
-      "median": 1.156,
-      "min": 1.044,
+      "count": 4,
+      "mean": 1.07,
+      "median": 1.044,
+      "min": 0.924,
       "max": 1.268
     }
   },
@@ -97,6 +97,19 @@
       }
     },
     {
+      "id": "65240001",
+      "cp": "65240",
+      "ville": "Arreau",
+      "adresse": "LIEU DIT PLAS",
+      "pop": "R",
+      "lat": 4289922.58853,
+      "lng": 35364.24737,
+      "fuels": {
+        "gazole": 2.089,
+        "sp98": 2.059
+      }
+    },
+    {
       "id": "65800004",
       "cp": "65800",
       "ville": "Aureilhan",
@@ -139,6 +152,33 @@
       }
     },
     {
+      "id": "65460003",
+      "cp": "65460",
+      "ville": "Bazet",
+      "adresse": "21 route Départementale 935",
+      "pop": "R",
+      "lat": 4328800,
+      "lng": 6900,
+      "fuels": {
+        "gazole": 2.006,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "65170002",
+      "cp": "65170",
+      "ville": "Bourisp",
+      "adresse": "ROUTE DE VIELLE AURE",
+      "pop": "R",
+      "lat": 4282800,
+      "lng": 33300,
+      "fuels": {
+        "gazole": 2.191,
+        "sp95": 2.091,
+        "sp98": 2.161
+      }
+    },
+    {
       "id": "65130001",
       "cp": "65130",
       "ville": "Capvern",
@@ -148,6 +188,33 @@
       "lng": 35700,
       "fuels": {
         "gazole": 1.999,
+        "sp98": 2.069,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "65230003",
+      "cp": "65230",
+      "ville": "Castelnau-Magnoac",
+      "adresse": "11 route du Gers",
+      "pop": "R",
+      "lat": 4329900,
+      "lng": 51800,
+      "fuels": {
+        "gazole": 2.049
+      }
+    },
+    {
+      "id": "65230002",
+      "cp": "65230",
+      "ville": "Castelnau-Magnoac",
+      "adresse": "ROUTE DE TOULOUSE",
+      "pop": "R",
+      "lat": 4329300,
+      "lng": 51500,
+      "fuels": {
+        "gazole": 1.989,
         "sp98": 2.069,
         "e10": 1.949,
         "e85": 0.809
@@ -186,6 +253,93 @@
       }
     },
     {
+      "id": "65220002",
+      "cp": "65220",
+      "ville": "Lalanne-Trie",
+      "adresse": "Route de Tarbes",
+      "pop": "R",
+      "lat": 4331100,
+      "lng": 33300,
+      "fuels": {
+        "gazole": 2.015,
+        "sp98": 2.109,
+        "e10": 1.955,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "65310001",
+      "cp": "65310",
+      "ville": "Laloubère",
+      "adresse": "D935 Route de Bagnères",
+      "pop": "R",
+      "lat": 4320600,
+      "lng": 7200,
+      "fuels": {
+        "gazole": 1.983,
+        "sp98": 2.029,
+        "e10": 1.918,
+        "gplc": 0.924
+      }
+    },
+    {
+      "id": "65300003",
+      "cp": "65300",
+      "ville": "Lannemezan",
+      "adresse": "265 Route de Toulouse",
+      "pop": "R",
+      "lat": 4311900,
+      "lng": 41100,
+      "fuels": {
+        "gazole": 2.07,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "65300002",
+      "cp": "65300",
+      "ville": "Lannemezan",
+      "adresse": "CENTRE COMMERCIAL LA RAMONDIA",
+      "pop": "R",
+      "lat": 4309800,
+      "lng": 39900,
+      "fuels": {
+        "gazole": 2.042,
+        "sp98": 2.079,
+        "e10": 1.959
+      }
+    },
+    {
+      "id": "65510001",
+      "cp": "65510",
+      "ville": "Loudenvielle",
+      "adresse": "Loudenvielle",
+      "pop": "R",
+      "lat": 4279900,
+      "lng": 41000,
+      "fuels": {
+        "gazole": 2.199,
+        "sp98": 2.199,
+        "e10": 2.129
+      }
+    },
+    {
+      "id": "65100009",
+      "cp": "65100",
+      "ville": "Lourdes",
+      "adresse": "25 BOULEVARD DE LAPACCA",
+      "pop": "R",
+      "lat": 4309700,
+      "lng": -3800,
+      "fuels": {
+        "gazole": 1.924,
+        "e10": 1.919,
+        "e85": 0.915,
+        "gplc": 1.044
+      }
+    },
+    {
       "id": "65100004",
       "cp": "65100",
       "ville": "Lourdes",
@@ -212,6 +366,19 @@
         "sp98": 2.007,
         "e10": 1.919,
         "e85": 0.913
+      }
+    },
+    {
+      "id": "65100008",
+      "cp": "65100",
+      "ville": "Lourdes",
+      "adresse": "Avenue François Abadie",
+      "pop": "R",
+      "lat": 4310985,
+      "lng": -3764,
+      "fuels": {
+        "gazole": 1.969,
+        "e10": 1.919
       }
     },
     {
@@ -268,7 +435,7 @@
       "lat": 4327800,
       "lng": 11600,
       "fuels": {
-        "gazole": 1.959,
+        "gazole": 1.948,
         "sp98": 1.999,
         "e10": 1.926,
         "e85": 0.919
@@ -290,6 +457,74 @@
       }
     },
     {
+      "id": "65200005",
+      "cp": "65200",
+      "ville": "Pouzac",
+      "adresse": "83 Avenue de la Mongie",
+      "pop": "R",
+      "lat": 4308000,
+      "lng": 14000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "65140003",
+      "cp": "65140",
+      "ville": "Rabastens-de-Bigorre",
+      "adresse": "5 rue francis cruzel",
+      "pop": "R",
+      "lat": 4338900,
+      "lng": 14500,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.099,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "65120002",
+      "cp": "65120",
+      "ville": "Saligos",
+      "adresse": "quartier larise",
+      "pop": "R",
+      "lat": 4289100,
+      "lng": -2400,
+      "fuels": {
+        "gazole": 2.15,
+        "sp98": 2.2,
+        "e10": 2.17
+      }
+    },
+    {
+      "id": "65410001",
+      "cp": "65410",
+      "ville": "Sarrancolin",
+      "adresse": "ROUTE DE SAINT LARY",
+      "pop": "R",
+      "lat": 4297300,
+      "lng": 37600,
+      "fuels": {
+        "gazole": 2.13,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "65600002",
+      "cp": "65600",
+      "ville": "Séméac",
+      "adresse": "86 Avenue François Mitterrand",
+      "pop": "R",
+      "lat": 4322400,
+      "lng": 10200,
+      "fuels": {
+        "gazole": 2.109,
+        "sp95": 1.99
+      }
+    },
+    {
       "id": "65600001",
       "cp": "65600",
       "ville": "Séméac",
@@ -301,6 +536,22 @@
         "gazole": 2.089,
         "e10": 1.99,
         "e85": 0.924
+      }
+    },
+    {
+      "id": "65000007",
+      "cp": "65000",
+      "ville": "Tarbes",
+      "adresse": "1 rue Jean Perrin",
+      "pop": "R",
+      "lat": 4322000,
+      "lng": 8000,
+      "fuels": {
+        "gazole": 1.932,
+        "sp95": 1.988,
+        "sp98": 2.005,
+        "e10": 1.917,
+        "e85": 0.918
       }
     },
     {
@@ -328,8 +579,39 @@
       "lng": 6200,
       "fuels": {
         "gazole": 1.933,
+        "e10": 1.923,
         "e85": 0.923,
         "gplc": 1.044
+      }
+    },
+    {
+      "id": "65000004",
+      "cp": "65000",
+      "ville": "Tarbes",
+      "adresse": "BD DE LATTRE DE TASSIGNY",
+      "pop": "R",
+      "lat": 4322300,
+      "lng": 5800,
+      "fuels": {
+        "gazole": 1.948,
+        "sp98": 2.006,
+        "e10": 1.926,
+        "e85": 0.954
+      }
+    },
+    {
+      "id": "65000001",
+      "cp": "65000",
+      "ville": "Tarbes",
+      "adresse": "Place Germain Claverie",
+      "pop": "R",
+      "lat": 4322800,
+      "lng": 8800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.048,
+        "e10": 1.929,
+        "e85": 0.919
       }
     },
     {
@@ -371,6 +653,20 @@
         "gazole": 1.999,
         "sp98": 2.085,
         "e10": 1.979
+      }
+    },
+    {
+      "id": "65500002",
+      "cp": "65500",
+      "ville": "Vic-en-Bigorre",
+      "adresse": "2 Quai Rossignol",
+      "pop": "R",
+      "lat": 4338400,
+      "lng": 5100,
+      "fuels": {
+        "gazole": 2.03,
+        "e10": 1.999,
+        "e85": 0.798
       }
     },
     {
