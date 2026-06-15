@@ -98,7 +98,7 @@ export default function PortFlowPanel({ data, site }: { data: PortFlowData; site
       )}
 
       <p className="mt-3 text-[11px] text-gray-500 leading-relaxed">
-        Latest data {latest}. Volumes in thousand tonnes/day (kt/d), trailing 7-day average vs {data.baselineYear}.
+        Latest data {latest} (PortWatch reports ~a week in arrears — it confirms shifts after the fact, not in real time). Volumes in thousand tonnes/day (kt/d), trailing 7-day average vs {data.baselineYear}.
         Source:{' '}
         <a href={data.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">
           IMF PortWatch

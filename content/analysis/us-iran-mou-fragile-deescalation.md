@@ -1,7 +1,7 @@
 ---
 title: "Fragile De-escalation: What the U.S.–Iran MOU Changes for Europe"
 date: "2026-06-15"
-excerpt: "A tentative U.S.–Iran memorandum of understanding has shifted Europe's oil-risk picture from active supply shock toward fragile de-escalation. The relief is real — but a paper deal isn't barrels: our transit monitor still shows Hormuz near 1% of its 2023 tanker tonnage. Acute risk reduced; recovery unverified."
+excerpt: "A tentative U.S.–Iran memorandum of understanding has shifted Europe's oil-risk picture from active supply shock toward fragile de-escalation. The relief is real — but a paper deal isn't barrels, and the satellite-transit data that would confirm a reopening lags by about a week. Acute risk reduced; recovery unverified."
 author: "Jon Kelly"
 ---
 
@@ -13,7 +13,7 @@ Markets reacted immediately: part of the war-risk premium has come out of crude.
 
 ## A paper deal is not barrels
 
-This is the distinction our instruments are built to hold. **A signature on a framework is not oil in a tanker.** As of the latest satellite-AIS data, EuroOilWatch's [Chokepoint Transit Monitor](/supply) still shows the Strait of Hormuz at roughly **1% of its 2023 tanker tonnage** — a thin trickle, not a reopening — and the Oil Route Stress score stays elevated for the same reason. *We mark recovery from tanker counts, not communiqués.* When the deal becomes real flow, the transit data will show it, and only then will the dashboard move.
+This is the distinction our instruments are built to hold. **A signature on a framework is not oil in a tanker.** Price and news are the *leading* signals, and they have moved. Hard confirmation of actual flow *lags*: PortWatch publishes its satellite-AIS transit counts with roughly a week's delay, and its latest reading — the week to 7 June, **before** this MOU — put the Strait of Hormuz at about **1% of its 2023 tanker tonnage**. That figure will be among the *last* things to register a real reopening, which is exactly the point: a price drop today is not proof of barrels moving. EuroOilWatch's [Chokepoint Transit Monitor](/supply) and the Oil Route Stress score mark recovery only when the (lagging) tanker data shows the ships actually moving — so watch it over the coming **weeks, not hours**.
 
 Even a clean reopening does not reset the system overnight: the inventory drawn down over the disruption must be **rebuilt against ongoing demand**, which on our [runway model](/runway) is a matter of months. The agreement buys time; it does not rebuild the buffers the disruption consumed.
 

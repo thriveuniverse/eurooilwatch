@@ -92,6 +92,7 @@ export default function ChokepointTransitPanel({ data }: { data: PortwatchData }
   if (!data?.chokepoints?.length) return null;
   const rows = [...data.chokepoints].sort((a, b) => (a.pctTankerTonnage ?? 999) - (b.pctTankerTonnage ?? 999));
   const latest = rows.map((r) => r.latestDate).sort().at(-1);
+  const lagDays = latest ? Math.round((Date.now() - Date.parse(latest)) / 86400000) : null;
   const stress = routeStress(data.chokepoints);
   const ss = STRESS_STYLE[stress.label];
 
@@ -148,7 +149,8 @@ export default function ChokepointTransitPanel({ data }: { data: PortwatchData }
       </div>
 
       <p className="mt-3 text-[11px] text-gray-500 leading-relaxed">
-        Latest data {latest}. The % is <span className="text-gray-400">tanker capacity (DWT)</span> vs the {data.baselineYear}
+        Latest data {latest}{lagDays != null ? ` (≈${lagDays} days ago)` : ''} — PortWatch reports in arrears, so it confirms shifts{' '}
+        <span className="text-gray-400">after the fact, not in real time</span>. The % is <span className="text-gray-400">tanker capacity (DWT)</span> vs the {data.baselineYear}
         {' '}daily average (trailing 7-day); ship counts shown for context. Lanes marked{' '}
         <span className="text-amber-300/90">AIS low</span> are conflict zones where spoofing, jamming or vessels going dark
         can make figures undercount actual movement. Source:{' '}
