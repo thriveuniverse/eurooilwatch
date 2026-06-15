@@ -3,45 +3,45 @@
   "name": "Hautes-Alpes",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 41,
+  "stationCount": 26,
   "fuels": {
     "gazole": {
-      "count": 40,
-      "mean": 2.0023,
+      "count": 25,
+      "mean": 1.9929,
       "median": 1.999,
       "min": 1.92,
-      "max": 2.19
+      "max": 2.079
     },
     "sp95": {
-      "count": 15,
-      "mean": 2.0331,
+      "count": 11,
+      "mean": 2.0224,
       "median": 2.019,
-      "min": 1.994,
+      "min": 1.97,
       "max": 2.09
     },
     "sp98": {
-      "count": 30,
-      "mean": 2.0516,
+      "count": 21,
+      "mean": 2.0451,
       "median": 2.049,
       "min": 1.99,
       "max": 2.13
     },
     "e10": {
-      "count": 30,
-      "mean": 1.9601,
-      "median": 1.9495,
-      "min": 1.914,
+      "count": 17,
+      "mean": 1.9558,
+      "median": 1.945,
+      "min": 1.9,
       "max": 2.039
     },
     "e85": {
-      "count": 11,
-      "mean": 0.8275,
-      "median": 0.815,
-      "min": 0.798,
-      "max": 0.89
+      "count": 6,
+      "mean": 0.826,
+      "median": 0.8175,
+      "min": 0.799,
+      "max": 0.859
     },
     "gplc": {
       "count": 3,
@@ -52,21 +52,6 @@
     }
   },
   "stations": [
-    {
-      "id": "5200004",
-      "cp": "05200",
-      "ville": "Baratier",
-      "adresse": "359 Route des portes du lac Route Nationale 94",
-      "pop": "R",
-      "lat": 4453800,
-      "lng": 649700,
-      "fuels": {
-        "gazole": 1.97,
-        "sp98": 2.035,
-        "e10": 1.925,
-        "e85": 0.809
-      }
-    },
     {
       "id": "5200009",
       "cp": "05200",
@@ -90,47 +75,7 @@
       "fuels": {
         "gazole": 1.935,
         "sp98": 1.99,
-        "e10": 1.931,
         "gplc": 1.059
-      }
-    },
-    {
-      "id": "5100004",
-      "cp": "05100",
-      "ville": "Briançon",
-      "adresse": "CENTRE COMMERCIAL SUD",
-      "pop": "R",
-      "lat": 4488194.54708,
-      "lng": 662336.7784,
-      "fuels": {
-        "gazole": 1.993,
-        "sp98": 2.037,
-        "e10": 1.917,
-        "e85": 0.815
-      }
-    },
-    {
-      "id": "5260001",
-      "cp": "05260",
-      "ville": "Chabottes",
-      "adresse": "RN. 544 PLAINE DE CHABOTTES",
-      "pop": "R",
-      "lat": 4464668,
-      "lng": 618157,
-      "fuels": {
-        "gazole": 2.069
-      }
-    },
-    {
-      "id": "5350001",
-      "cp": "05350",
-      "ville": "Château-Ville-Vieille",
-      "adresse": "2507 Route du Queyras",
-      "pop": "R",
-      "lat": 4475900,
-      "lng": 680800,
-      "fuels": {
-        "gazole": 2.19
       }
     },
     {
@@ -142,23 +87,10 @@
       "lat": 4454758,
       "lng": 626906,
       "fuels": {
-        "gazole": 1.989,
+        "gazole": 1.979,
         "sp98": 2.039,
         "e10": 1.929,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "5230008",
-      "cp": "05230",
-      "ville": "Chorges",
-      "adresse": "RN 94 LA GRANDE ILE",
-      "pop": "R",
-      "lat": 4455163.93791,
-      "lng": 625559.08359,
-      "fuels": {
-        "gazole": 1.92,
-        "e10": 1.914
+        "e85": 0.809
       }
     },
     {
@@ -199,9 +131,9 @@
       "lat": 4455100,
       "lng": 648900,
       "fuels": {
-        "gazole": 1.969,
-        "sp95": 2.014,
-        "sp98": 2.034,
+        "gazole": 1.955,
+        "sp95": 1.979,
+        "sp98": 1.999,
         "e10": 1.924,
         "e85": 0.799
       }
@@ -230,7 +162,7 @@
       "lat": 4464394.1,
       "lng": 613696.4,
       "fuels": {
-        "gazole": 2.03,
+        "gazole": 1.99,
         "sp95": 2.09,
         "sp98": 2.13
       }
@@ -296,20 +228,6 @@
       }
     },
     {
-      "id": "5000010",
-      "cp": "05000",
-      "ville": "Gap",
-      "adresse": "Avenue de Provence",
-      "pop": "R",
-      "lat": 4454400,
-      "lng": 606100,
-      "fuels": {
-        "gazole": 1.974,
-        "sp98": 2.034,
-        "e10": 1.954
-      }
-    },
-    {
       "id": "5000005",
       "cp": "05000",
       "ville": "Gap",
@@ -324,34 +242,6 @@
       }
     },
     {
-      "id": "5000006",
-      "cp": "05000",
-      "ville": "Gap",
-      "adresse": "Route des Fauvins",
-      "pop": "R",
-      "lat": 4456400,
-      "lng": 609400,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.049,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "5600002",
-      "cp": "05600",
-      "ville": "Guillestre",
-      "adresse": "Le Villard",
-      "pop": "R",
-      "lat": 4466100,
-      "lng": 661800,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 2.019,
-        "sp98": 2.049
-      }
-    },
-    {
       "id": "5600006",
       "cp": "05600",
       "ville": "Guillestre",
@@ -360,10 +250,10 @@
       "lat": 4466086.71251,
       "lng": 665321.68195,
       "fuels": {
-        "gazole": 2.033,
-        "sp95": 1.996,
-        "sp98": 2.08,
-        "e10": 1.95
+        "gazole": 2.015,
+        "sp95": 1.97,
+        "sp98": 2.05,
+        "e10": 1.9
       }
     },
     {
@@ -395,20 +285,6 @@
       }
     },
     {
-      "id": "5300005",
-      "cp": "05300",
-      "ville": "Laragne-Montéglin",
-      "adresse": "1 RUE DU MAQUIS MORVAN",
-      "pop": "R",
-      "lat": 4431100,
-      "lng": 582300,
-      "fuels": {
-        "gazole": 1.999,
-        "e10": 1.959,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "5300001",
       "cp": "05300",
       "ville": "Laragne-Montéglin",
@@ -417,8 +293,7 @@
       "lat": 4431000,
       "lng": 583200,
       "fuels": {
-        "gazole": 2.021,
-        "e10": 1.99
+        "gazole": 2.021
       }
     },
     {
@@ -433,49 +308,6 @@
         "gazole": 1.999,
         "sp98": 2.089,
         "e10": 1.959
-      }
-    },
-    {
-      "id": "5220001",
-      "cp": "05220",
-      "ville": "Le Monêtier-les-Bains",
-      "adresse": "RD 1091 Lieu-dit \"Pré-Bagnols\"",
-      "pop": "R",
-      "lat": 4497200,
-      "lng": 651900,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.019,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "5100009",
-      "cp": "05100",
-      "ville": "Montgenèvre",
-      "adresse": "RN 94",
-      "pop": "R",
-      "lat": 4493400,
-      "lng": 673300,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.11,
-        "e10": 1.99,
-        "e85": 0.89
-      }
-    },
-    {
-      "id": "5190002",
-      "cp": "05190",
-      "ville": "Remollon",
-      "adresse": "Les Graves",
-      "pop": "R",
-      "lat": 4446700,
-      "lng": 617900,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.049,
-        "e10": 1.969
       }
     },
     {
@@ -500,9 +332,9 @@
       "lat": 4485300,
       "lng": 658200,
       "fuels": {
-        "gazole": 2.039,
-        "sp95": 2.087,
-        "e10": 2.039
+        "gazole": 1.999,
+        "sp95": 2.019,
+        "e10": 1.99
       }
     },
     {
@@ -514,8 +346,8 @@
       "lat": 4452500,
       "lng": 640800,
       "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.034,
+        "gazole": 1.955,
+        "sp98": 1.999,
         "e10": 1.924
       }
     },
@@ -531,20 +363,6 @@
         "gazole": 1.999,
         "sp98": 2.089,
         "e10": 2.019
-      }
-    },
-    {
-      "id": "5700002",
-      "cp": "05700",
-      "ville": "Serres",
-      "adresse": "RD 1075- quartier les Chambons",
-      "pop": "R",
-      "lat": 4443500,
-      "lng": 571300,
-      "fuels": {
-        "gazole": 2.038,
-        "sp95": 2.058,
-        "sp98": 2.088
       }
     },
     {
@@ -588,35 +406,6 @@
         "gazole": 2.079,
         "sp95": 2.089,
         "sp98": 2.119
-      }
-    },
-    {
-      "id": "5400003",
-      "cp": "05400",
-      "ville": "Veynes",
-      "adresse": "1256 route de gap",
-      "pop": "R",
-      "lat": 4453700,
-      "lng": 583500,
-      "fuels": {
-        "gazole": 2.019,
-        "sp98": 2.049,
-        "e10": 1.999
-      }
-    },
-    {
-      "id": "5400002",
-      "cp": "05400",
-      "ville": "Veynes",
-      "adresse": "route de gap",
-      "pop": "R",
-      "lat": 4453627,
-      "lng": 583174,
-      "fuels": {
-        "gazole": 2.019,
-        "sp95": 2.025,
-        "e10": 1.969,
-        "e85": 0.835
       }
     },
     {

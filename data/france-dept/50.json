@@ -3,50 +3,50 @@
   "name": "Manche",
   "regionCode": "NOR",
   "regionName": "Normandie",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 118,
+  "stationCount": 80,
   "fuels": {
     "gazole": {
-      "count": 118,
-      "mean": 2.0022,
-      "median": 1.9845,
+      "count": 80,
+      "mean": 1.9986,
+      "median": 1.985,
       "min": 1.879,
       "max": 2.378
     },
     "sp95": {
-      "count": 47,
-      "mean": 1.9977,
-      "median": 1.999,
+      "count": 32,
+      "mean": 2.0014,
+      "median": 1.9975,
       "min": 1.939,
       "max": 2.079
     },
     "sp98": {
-      "count": 92,
-      "mean": 2.0409,
-      "median": 2.0305,
+      "count": 59,
+      "mean": 2.0475,
+      "median": 2.039,
       "min": 1.989,
       "max": 2.562
     },
     "e10": {
-      "count": 76,
-      "mean": 1.9529,
-      "median": 1.94,
+      "count": 52,
+      "mean": 1.9522,
+      "median": 1.937,
       "min": 1.889,
       "max": 2.412
     },
     "e85": {
-      "count": 28,
-      "mean": 0.8179,
+      "count": 19,
+      "mean": 0.8133,
       "median": 0.809,
-      "min": 0.735,
-      "max": 0.998
+      "min": 0.739,
+      "max": 0.869
     },
     "gplc": {
-      "count": 8,
-      "mean": 1.045,
-      "median": 1.0545,
+      "count": 4,
+      "mean": 1.0383,
+      "median": 1.045,
       "min": 0.923,
       "max": 1.14
     }
@@ -117,10 +117,10 @@
       "lat": 4865285.87672,
       "lng": -135003.07435,
       "fuels": {
-        "gazole": 2.001,
-        "sp98": 2.096,
-        "e10": 1.945,
-        "e85": 0.735,
+        "gazole": 2,
+        "sp98": 2.11,
+        "e10": 1.958,
+        "e85": 0.739,
         "gplc": 0.923
       }
     },
@@ -147,8 +147,7 @@
       "lng": -134000,
       "fuels": {
         "gazole": 1.979,
-        "sp98": 2.075,
-        "e10": 1.935
+        "sp98": 2.075
       }
     },
     {
@@ -166,36 +165,6 @@
       }
     },
     {
-      "id": "50270002",
-      "cp": "50270",
-      "ville": "Barneville-Carteret",
-      "adresse": "le pont rose",
-      "pop": "R",
-      "lat": 4938496,
-      "lng": -175198,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.039,
-        "e10": 1.929,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "50170007",
-      "cp": "50170",
-      "ville": "Beauvoir",
-      "adresse": "1BIS ROUTE DU MONT SAINT-MICHEL",
-      "pop": "R",
-      "lat": 4859525.06918,
-      "lng": -151269.6713,
-      "fuels": {
-        "gazole": 1.974,
-        "sp95": 1.999,
-        "sp98": 2.022,
-        "e10": 1.999
-      }
-    },
-    {
       "id": "50560001",
       "cp": "50560",
       "ville": "Blainville-sur-Mer",
@@ -207,20 +176,6 @@
         "gazole": 1.988,
         "sp98": 2.04,
         "e10": 1.924
-      }
-    },
-    {
-      "id": "50370002",
-      "cp": "50370",
-      "ville": "Brécey",
-      "adresse": "5 Rue Jeanne d'Arc",
-      "pop": "R",
-      "lat": 4872241.84794,
-      "lng": -116704.61922,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.069,
-        "e10": 1.939
       }
     },
     {
@@ -266,21 +221,6 @@
       }
     },
     {
-      "id": "50290003",
-      "cp": "50290",
-      "ville": "Bréhal",
-      "adresse": "ZA DES CLOS DES MARES",
-      "pop": "R",
-      "lat": 4890200,
-      "lng": -151400,
-      "fuels": {
-        "gazole": 1.946,
-        "sp95": 1.989,
-        "sp98": 2.039,
-        "e85": 0.739
-      }
-    },
-    {
       "id": "50260003",
       "cp": "50260",
       "ville": "Bricquebec-en-Cotentin",
@@ -290,7 +230,7 @@
       "lng": -164000,
       "fuels": {
         "gazole": 1.959,
-        "sp98": 1.99,
+        "sp98": 2.03,
         "e10": 1.945
       }
     },
@@ -308,34 +248,6 @@
         "sp98": 2.03,
         "e10": 1.95,
         "e85": 0.81
-      }
-    },
-    {
-      "id": "50260004",
-      "cp": "50260",
-      "ville": "Bricquebec-en-Cotentin",
-      "adresse": "41b Rue des Frères Fremine",
-      "pop": "R",
-      "lat": 4947300,
-      "lng": -162800,
-      "fuels": {
-        "gazole": 1.991,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "50500003",
-      "cp": "50500",
-      "ville": "Carentan-les-Marais",
-      "adresse": "Chemin de la Chuque",
-      "pop": "R",
-      "lat": 4930200,
-      "lng": -123100,
-      "fuels": {
-        "gazole": 1.948,
-        "sp95": 1.995,
-        "sp98": 2.05
       }
     },
     {
@@ -377,6 +289,7 @@
       "fuels": {
         "gazole": 1.899,
         "sp98": 1.99,
+        "e10": 1.907,
         "e85": 0.864,
         "gplc": 1.07
       }
@@ -396,20 +309,6 @@
       }
     },
     {
-      "id": "50500005",
-      "cp": "50500",
-      "ville": "Carentan-les-Marais",
-      "adresse": "RUE DE LA GUINGUETTE",
-      "pop": "R",
-      "lat": 4930200,
-      "lng": -126300,
-      "fuels": {
-        "gazole": 1.948,
-        "sp98": 1.99,
-        "e10": 1.94
-      }
-    },
-    {
       "id": "50510001",
       "cp": "50510",
       "ville": "Cérences",
@@ -425,32 +324,6 @@
       }
     },
     {
-      "id": "50110006",
-      "cp": "50110",
-      "ville": "Cherbourg-en-Cotentin",
-      "adresse": "2F Route de DENNEVILLE",
-      "pop": "R",
-      "lat": 4965345.91485,
-      "lng": -154932.46888,
-      "fuels": {
-        "gazole": 2,
-        "sp95": 2,
-        "sp98": 2.06
-      }
-    },
-    {
-      "id": "50110001",
-      "cp": "50110",
-      "ville": "Cherbourg-en-Cotentin",
-      "adresse": "39 Boulevard de l'Est",
-      "pop": "R",
-      "lat": 4963500,
-      "lng": -158700,
-      "fuels": {
-        "gazole": 2.045
-      }
-    },
-    {
       "id": "50110003",
       "cp": "50110",
       "ville": "Cherbourg-en-Cotentin",
@@ -459,27 +332,10 @@
       "lat": 4963500,
       "lng": -159200,
       "fuels": {
-        "gazole": 1.939,
+        "gazole": 1.934,
         "sp95": 1.999,
-        "sp98": 2.016,
-        "e10": 1.926,
-        "e85": 0.798,
-        "gplc": 1.02
-      }
-    },
-    {
-      "id": "50460001",
-      "cp": "50460",
-      "ville": "Cherbourg-en-Cotentin",
-      "adresse": "5, rue des Claires",
-      "pop": "R",
-      "lat": 4966000,
-      "lng": -168600,
-      "fuels": {
-        "gazole": 1.955,
-        "sp95": 1.999,
-        "sp98": 2.003,
-        "e10": 1.914,
+        "sp98": 2.018,
+        "e10": 1.935,
         "e85": 0.798,
         "gplc": 1.02
       }
@@ -493,10 +349,9 @@
       "lat": 4963700,
       "lng": -159600,
       "fuels": {
-        "gazole": 1.96,
+        "gazole": 1.945,
         "sp98": 2.02,
-        "e10": 1.93,
-        "e85": 0.798
+        "e10": 1.93
       }
     },
     {
@@ -528,22 +383,6 @@
       }
     },
     {
-      "id": "50470001",
-      "cp": "50470",
-      "ville": "Cherbourg-en-Cotentin",
-      "adresse": "Centre Commercial du Cotentin",
-      "pop": "R",
-      "lat": 4960019.20935,
-      "lng": -159900.82883,
-      "fuels": {
-        "gazole": 1.955,
-        "sp98": 2.012,
-        "e10": 1.914,
-        "e85": 0.798,
-        "gplc": 1.039
-      }
-    },
-    {
       "id": "50100003",
       "cp": "50100",
       "ville": "Cherbourg-en-Cotentin",
@@ -554,22 +393,8 @@
       "fuels": {
         "gazole": 1.955,
         "sp98": 2.014,
-        "e10": 1.914
-      }
-    },
-    {
-      "id": "50100007",
-      "cp": "50100",
-      "ville": "Cherbourg-en-Cotentin",
-      "adresse": "RUE DE LA SALINE",
-      "pop": "R",
-      "lat": 4963500,
-      "lng": -161500,
-      "fuels": {
-        "gazole": 1.905,
-        "sp98": 1.99,
-        "e10": 1.902,
-        "e85": 0.832
+        "e10": 1.914,
+        "e85": 0.809
       }
     },
     {
@@ -613,20 +438,6 @@
         "sp98": 1.99,
         "e10": 1.908,
         "e85": 0.829
-      }
-    },
-    {
-      "id": "50200012",
-      "cp": "50200",
-      "ville": "Coutances",
-      "adresse": "56 avenue de la République",
-      "pop": "R",
-      "lat": 4905700,
-      "lng": -143100,
-      "fuels": {
-        "gazole": 1.953,
-        "sp98": 1.99,
-        "e10": 1.944
       }
     },
     {
@@ -727,34 +538,6 @@
       }
     },
     {
-      "id": "50220002",
-      "cp": "50220",
-      "ville": "Ducey-Les Chéris",
-      "adresse": "59 Avenue Émile Dehousse",
-      "pop": "R",
-      "lat": 4861700,
-      "lng": -128000,
-      "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.099,
-        "e10": 1.969
-      }
-    },
-    {
-      "id": "50450001",
-      "cp": "50450",
-      "ville": "Gavray-sur-Sienne",
-      "adresse": "25, rue de l'hotel saint denis",
-      "pop": "R",
-      "lat": 4891277,
-      "lng": -135262,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.999,
-        "sp98": 2.049
-      }
-    },
-    {
       "id": "50420001",
       "cp": "50420",
       "ville": "Gouvets",
@@ -767,34 +550,6 @@
         "sp98": 2.562,
         "e10": 2.412,
         "gplc": 1.14
-      }
-    },
-    {
-      "id": "50600002",
-      "cp": "50600",
-      "ville": "Grandparigny",
-      "adresse": "7 ZA la Rivière",
-      "pop": "R",
-      "lat": 4858800,
-      "lng": -108700,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.019,
-        "sp98": 2.179
-      }
-    },
-    {
-      "id": "50400001",
-      "cp": "50400",
-      "ville": "Granville",
-      "adresse": "ZI RN 24 BIS",
-      "pop": "R",
-      "lat": 4884100,
-      "lng": -157700,
-      "fuels": {
-        "gazole": 2.037,
-        "sp98": 1.99,
-        "e10": 1.99
       }
     },
     {
@@ -846,7 +601,6 @@
       "lng": -154400,
       "fuels": {
         "gazole": 1.987,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -879,19 +633,6 @@
       }
     },
     {
-      "id": "50800004",
-      "cp": "50800",
-      "ville": "La Lande-d'Airou",
-      "adresse": "29 Le Bourg",
-      "pop": "R",
-      "lat": 4881600,
-      "lng": -129000,
-      "fuels": {
-        "gazole": 2.036,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "50000006",
       "cp": "50000",
       "ville": "La Meauffe",
@@ -913,79 +654,8 @@
       "lat": 4867300,
       "lng": -135500,
       "fuels": {
-        "gazole": 2.081,
-        "sp98": 1.99,
+        "gazole": 2.022,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "50270003",
-      "cp": "50270",
-      "ville": "Les Moitiers-d'Allonne",
-      "adresse": "5 ZA ROUTE TOURISTIQUE D650",
-      "pop": "R",
-      "lat": 4940700,
-      "lng": -178300,
-      "fuels": {
-        "gazole": 2.145,
-        "sp95": 1.954
-      }
-    },
-    {
-      "id": "50340002",
-      "cp": "50340",
-      "ville": "Les Pieux",
-      "adresse": "2 Route de Flamanville",
-      "pop": "R",
-      "lat": 4951200,
-      "lng": -181200,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.039,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "50340003",
-      "cp": "50340",
-      "ville": "Les Pieux",
-      "adresse": "26 route de Cherbourgtest",
-      "pop": "R",
-      "lat": 4951595,
-      "lng": -180055,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.039,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "50430002",
-      "cp": "50430",
-      "ville": "Lessay",
-      "adresse": "115 allée des rotisseurs",
-      "pop": "R",
-      "lat": 4921200,
-      "lng": -152800,
-      "fuels": {
-        "gazole": 1.955,
-        "sp95": 1.999,
-        "e10": 1.925,
-        "e85": 0.799
-      }
-    },
-    {
-      "id": "50430003",
-      "cp": "50430",
-      "ville": "Lessay",
-      "adresse": "94 RUE DE LA SAINTE CROIX",
-      "pop": "R",
-      "lat": 4921300,
-      "lng": -153000,
-      "fuels": {
-        "gazole": 1.949,
-        "sp95": 1.999,
-        "sp98": 2.045
       }
     },
     {
@@ -1045,20 +715,6 @@
       }
     },
     {
-      "id": "50140001",
-      "cp": "50140",
-      "ville": "Mortain-Bocage",
-      "adresse": "Les 4 Vents",
-      "pop": "R",
-      "lat": 4865500,
-      "lng": -93700,
-      "fuels": {
-        "gazole": 2.044,
-        "sp95": 1.999,
-        "sp98": 2.099
-      }
-    },
-    {
       "id": "50410002",
       "cp": "50410",
       "ville": "Percy-en-Normandie",
@@ -1081,7 +737,6 @@
       "lng": -141600,
       "fuels": {
         "gazole": 1.993,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -1100,20 +755,6 @@
       }
     },
     {
-      "id": "50360002",
-      "cp": "50360",
-      "ville": "Picauville",
-      "adresse": "14 Rue de Carneville",
-      "pop": "R",
-      "lat": 4938021.63783,
-      "lng": -142285.6188,
-      "fuels": {
-        "gazole": 2.058,
-        "sp98": 2.125,
-        "e10": 1.998
-      }
-    },
-    {
       "id": "50360003",
       "cp": "50360",
       "ville": "Picauville",
@@ -1124,33 +765,6 @@
       "fuels": {
         "gazole": 1.999,
         "sp95": 2.05
-      }
-    },
-    {
-      "id": "50340001",
-      "cp": "50340",
-      "ville": "Pierreville",
-      "adresse": "9 Route des Isles",
-      "pop": "R",
-      "lat": 4947400,
-      "lng": -178700,
-      "fuels": {
-        "gazole": 2.085,
-        "sp98": 2.064,
-        "e10": 1.978
-      }
-    },
-    {
-      "id": "50880001",
-      "cp": "50880",
-      "ville": "Pont-Hébert",
-      "adresse": "63 rue de liberation",
-      "pop": "R",
-      "lat": 4916500,
-      "lng": -112800,
-      "fuels": {
-        "gazole": 2.099,
-        "sp98": 1.99
       }
     },
     {
@@ -1165,20 +779,6 @@
         "gazole": 2.02,
         "sp95": 2.01,
         "sp98": 2.05
-      }
-    },
-    {
-      "id": "50170005",
-      "cp": "50170",
-      "ville": "Pontorson",
-      "adresse": "2 route du Mont Saint Michel",
-      "pop": "R",
-      "lat": 4856000,
-      "lng": -150900,
-      "fuels": {
-        "gazole": 1.971,
-        "sp95": 1.942,
-        "sp98": 2.009
       }
     },
     {
@@ -1204,7 +804,8 @@
       "lat": 4870900,
       "lng": -131900,
       "fuels": {
-        "gazole": 2.079
+        "gazole": 2.079,
+        "sp95": 1.989
       }
     },
     {
@@ -1222,20 +823,6 @@
       }
     },
     {
-      "id": "50630001",
-      "cp": "50630",
-      "ville": "Quettehou",
-      "adresse": "10 rue Val de Saire",
-      "pop": "R",
-      "lat": 4959838,
-      "lng": -129949,
-      "fuels": {
-        "gazole": 1.955,
-        "sp98": 2.01,
-        "e10": 1.925
-      }
-    },
-    {
       "id": "50160001",
       "cp": "50160",
       "ville": "Saint-Amand-Villages",
@@ -1247,35 +834,6 @@
         "gazole": 2.019,
         "sp98": 2.069,
         "e10": 1.949
-      }
-    },
-    {
-      "id": "50240003",
-      "cp": "50240",
-      "ville": "Saint-Aubin-de-Terregatte",
-      "adresse": "AUTOROUTE A84 - AIRE DU MONT SAINT MICHEL",
-      "pop": "A",
-      "lat": 4858491,
-      "lng": -132638,
-      "fuels": {
-        "gazole": 2.147,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.998,
-        "gplc": 1.078
-      }
-    },
-    {
-      "id": "50680001",
-      "cp": "50680",
-      "ville": "Saint-Clair-sur-l'Elle",
-      "adresse": "13 RUE DE LA LIBERATION",
-      "pop": "R",
-      "lat": 4919267.35214,
-      "lng": -102851.06003,
-      "fuels": {
-        "gazole": 2.09,
-        "e10": 1.95
       }
     },
     {
@@ -1301,24 +859,9 @@
       "lat": 4857375,
       "lng": -108262,
       "fuels": {
-        "gazole": 1.979,
+        "gazole": 1.944,
         "sp98": 2.059,
-        "e10": 1.984
-      }
-    },
-    {
-      "id": "50240001",
-      "cp": "50240",
-      "ville": "Saint-James",
-      "adresse": "ZONE DE BEAUFOUR",
-      "pop": "R",
-      "lat": 4852100,
-      "lng": -133900,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 1.999,
-        "e10": 1.935,
-        "e85": 0.799
+        "e10": 1.969
       }
     },
     {
@@ -1353,19 +896,6 @@
       }
     },
     {
-      "id": "50000008",
-      "cp": "50000",
-      "ville": "Saint-Lô",
-      "adresse": "147 RUE JOSEPH CUGNOT",
-      "pop": "R",
-      "lat": 4911200,
-      "lng": -105100,
-      "fuels": {
-        "gazole": 1.96,
-        "e10": 1.915
-      }
-    },
-    {
       "id": "50000005",
       "cp": "50000",
       "ville": "Saint-Lô",
@@ -1374,7 +904,7 @@
       "lat": 4911700,
       "lng": -109700,
       "fuels": {
-        "gazole": 1.969,
+        "gazole": 1.959,
         "sp95": 1.989,
         "sp98": 2.019
       }
@@ -1425,19 +955,6 @@
       }
     },
     {
-      "id": "50750002",
-      "cp": "50750",
-      "ville": "Saint-Martin-de-Bonfossé",
-      "adresse": "LA CROIX A LA MAIN",
-      "pop": "R",
-      "lat": 4902900,
-      "lng": -114200,
-      "fuels": {
-        "gazole": 2.15,
-        "sp95": 1.99
-      }
-    },
-    {
       "id": "50380003",
       "cp": "50380",
       "ville": "Saint-Pair-sur-Mer",
@@ -1448,7 +965,7 @@
       "fuels": {
         "gazole": 1.949,
         "sp98": 1.999,
-        "e10": 1.909
+        "e10": 1.91
       }
     },
     {
@@ -1521,20 +1038,6 @@
       }
     },
     {
-      "id": "50480002",
-      "cp": "50480",
-      "ville": "Sainte-Mère-Église",
-      "adresse": "Les Crutelles",
-      "pop": "R",
-      "lat": 4940500,
-      "lng": -132200,
-      "fuels": {
-        "gazole": 1.96,
-        "sp95": 1.965,
-        "sp98": 1.999
-      }
-    },
-    {
       "id": "50480001",
       "cp": "50480",
       "ville": "Sainte-Mère-Église",
@@ -1579,19 +1082,6 @@
       }
     },
     {
-      "id": "50170008",
-      "cp": "50170",
-      "ville": "Tanis",
-      "adresse": "31 Route Nationale",
-      "pop": "R",
-      "lat": 4857300,
-      "lng": -145800,
-      "fuels": {
-        "gazole": 1.997,
-        "sp95": 1.99
-      }
-    },
-    {
       "id": "50420002",
       "cp": "50420",
       "ville": "Tessy-Bocage",
@@ -1617,22 +1107,6 @@
       }
     },
     {
-      "id": "50700002",
-      "cp": "50700",
-      "ville": "Valognes",
-      "adresse": "1 Boulevard de Verdun",
-      "pop": "R",
-      "lat": 4950800,
-      "lng": -146600,
-      "fuels": {
-        "gazole": 1.995,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.852,
-        "gplc": 1.07
-      }
-    },
-    {
       "id": "50700003",
       "cp": "50700",
       "ville": "Valognes",
@@ -1641,24 +1115,10 @@
       "lat": 4949702.85076,
       "lng": -146670.11595,
       "fuels": {
-        "gazole": 1.955,
+        "gazole": 1.945,
         "sp98": 2.01,
-        "e10": 1.945,
+        "e10": 1.925,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "50700001",
-      "cp": "50700",
-      "ville": "Valognes",
-      "adresse": "Boulevard Félix-Buhot",
-      "pop": "R",
-      "lat": 4951200,
-      "lng": -147800,
-      "fuels": {
-        "gazole": 2.028,
-        "sp98": 2.076,
-        "e10": 1.956
       }
     },
     {
@@ -1670,10 +1130,9 @@
       "lat": 4950200,
       "lng": -145600,
       "fuels": {
-        "gazole": 1.955,
-        "sp95": 1.999,
+        "gazole": 1.945,
         "sp98": 2.01,
-        "e10": 1.945
+        "e10": 1.925
       }
     },
     {
@@ -1685,8 +1144,8 @@
       "lat": 4884445.5,
       "lng": -121492.5,
       "fuels": {
-        "gazole": 1.979,
-        "e10": 1.929,
+        "gazole": 1.97,
+        "e10": 1.94,
         "e85": 0.809
       }
     },

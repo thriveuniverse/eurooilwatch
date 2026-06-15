@@ -3,69 +3,55 @@
   "name": "Bouches-du-Rhône",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 264,
+  "stationCount": 182,
   "fuels": {
     "gazole": {
-      "count": 260,
-      "mean": 2.0063,
-      "median": 1.9965,
-      "min": 1.886,
-      "max": 2.25
+      "count": 179,
+      "mean": 2.0019,
+      "median": 1.994,
+      "min": 1.879,
+      "max": 2.249
     },
     "sp95": {
-      "count": 47,
-      "mean": 2.0106,
+      "count": 40,
+      "mean": 2.009,
       "median": 1.999,
-      "min": 1.944,
+      "min": 1.929,
       "max": 2.119
     },
     "sp98": {
-      "count": 207,
-      "mean": 2.0502,
-      "median": 2.038,
-      "min": 1.896,
+      "count": 139,
+      "mean": 2.0512,
+      "median": 2.039,
+      "min": 1.978,
       "max": 2.269
     },
     "e10": {
-      "count": 227,
-      "mean": 1.957,
+      "count": 153,
+      "mean": 1.9559,
       "median": 1.949,
       "min": 1.859,
       "max": 2.169
     },
     "e85": {
-      "count": 105,
-      "mean": 0.8651,
-      "median": 0.849,
-      "min": 0.769,
+      "count": 67,
+      "mean": 0.8603,
+      "median": 0.839,
+      "min": 0.772,
       "max": 1.05
     },
     "gplc": {
-      "count": 32,
-      "mean": 1.0538,
-      "median": 1.042,
+      "count": 21,
+      "mean": 1.0593,
+      "median": 1.045,
       "min": 0.923,
       "max": 1.206
     }
   },
   "stations": [
-    {
-      "id": "13100021",
-      "cp": "13100",
-      "ville": "Aix-en-Provence",
-      "adresse": "1 bld Maréchal Juin",
-      "pop": "R",
-      "lat": 4351913.24706,
-      "lng": 543347.41843,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 2.099,
-        "e10": 1.949
-      }
-    },
     {
       "id": "13090018",
       "cp": "13090",
@@ -87,24 +73,12 @@
       "lat": 4350600,
       "lng": 539900,
       "fuels": {
-        "gazole": 1.983,
-        "sp95": 1.972,
-        "sp98": 2.055,
-        "e10": 1.9,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "13100014",
-      "cp": "13100",
-      "ville": "Aix-en-Provence",
-      "adresse": "122 COURS GAMBETTA",
-      "pop": "R",
-      "lat": 4352086.41671,
-      "lng": 545900.21977,
-      "fuels": {
-        "gazole": 1.91,
-        "e85": 0.869
+        "gazole": 1.982,
+        "sp95": 1.983,
+        "sp98": 2.067,
+        "e10": 1.91,
+        "e85": 0.848,
+        "gplc": 0.949
       }
     },
     {
@@ -117,24 +91,10 @@
       "lng": 543300,
       "fuels": {
         "gazole": 1.998,
+        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.879,
         "gplc": 0.989
-      }
-    },
-    {
-      "id": "13090020",
-      "cp": "13090",
-      "ville": "Aix-en-Provence",
-      "adresse": "67 avenue De Lattre de Tassigny",
-      "pop": "R",
-      "lat": 4354289.1,
-      "lng": 543170.3,
-      "fuels": {
-        "gazole": 2.149,
-        "sp98": 2.169,
-        "e10": 2.069,
-        "gplc": 1.129
       }
     },
     {
@@ -146,9 +106,9 @@
       "lat": 4355986.7682,
       "lng": 546147.12807,
       "fuels": {
-        "gazole": 1.94,
-        "sp98": 1.995,
-        "e10": 1.915,
+        "gazole": 1.91,
+        "sp98": 1.986,
+        "e10": 1.906,
         "e85": 0.969
       }
     },
@@ -168,36 +128,6 @@
       }
     },
     {
-      "id": "13100015",
-      "cp": "13100",
-      "ville": "Aix-en-Provence",
-      "adresse": "AVENUE DU MAL DE LATTRE TASSIGNY",
-      "pop": "R",
-      "lat": 4353200.56086,
-      "lng": 543734.45106,
-      "fuels": {
-        "gazole": 1.91,
-        "sp98": 1.99,
-        "e10": 1.904,
-        "e85": 0.859
-      }
-    },
-    {
-      "id": "13100017",
-      "cp": "13100",
-      "ville": "Aix-en-Provence",
-      "adresse": "AVENUE HENRI MAURIAT",
-      "pop": "R",
-      "lat": 4351600,
-      "lng": 546600,
-      "fuels": {
-        "gazole": 1.91,
-        "e10": 1.904,
-        "e85": 0.869,
-        "gplc": 0.969
-      }
-    },
-    {
       "id": "13090021",
       "cp": "13090",
       "ville": "Aix-en-Provence",
@@ -206,25 +136,10 @@
       "lat": 4353600,
       "lng": 541300,
       "fuels": {
-        "gazole": 1.967,
-        "sp98": 2.05,
-        "e10": 1.88,
+        "gazole": 1.983,
+        "sp98": 2.055,
+        "e10": 1.9,
         "gplc": 0.981
-      }
-    },
-    {
-      "id": "13090017",
-      "cp": "13090",
-      "ville": "Aix-en-Provence",
-      "adresse": "RN8 PONT DE L ARC",
-      "pop": "R",
-      "lat": 4350900,
-      "lng": 543900,
-      "fuels": {
-        "gazole": 1.901,
-        "sp98": 1.99,
-        "e10": 1.894,
-        "e85": 0.854
       }
     },
     {
@@ -237,21 +152,7 @@
       "lng": 538300,
       "fuels": {
         "gazole": 1.894,
-        "sp98": 1.99,
-        "e10": 1.89
-      }
-    },
-    {
-      "id": "13190001",
-      "cp": "13190",
-      "ville": "Allauch",
-      "adresse": "AVENUE DE PROVENCE",
-      "pop": "R",
-      "lat": 4333134.07651,
-      "lng": 548618.92079,
-      "fuels": {
-        "gazole": 2.013,
-        "e10": 1.99
+        "sp98": 1.99
       }
     },
     {
@@ -277,10 +178,10 @@
       "lat": 4368200,
       "lng": 461200,
       "fuels": {
-        "gazole": 2.073,
-        "sp95": 2.048,
-        "sp98": 2.032,
-        "e85": 0.89
+        "gazole": 1.957,
+        "sp95": 1.996,
+        "sp98": 2.02,
+        "e85": 0.838
       }
     },
     {
@@ -306,24 +207,10 @@
       "lat": 4370600,
       "lng": 464100,
       "fuels": {
-        "gazole": 1.895,
+        "gazole": 1.894,
         "sp95": 1.997,
         "e10": 1.899,
         "gplc": 1.027
-      }
-    },
-    {
-      "id": "13200015",
-      "cp": "13200",
-      "ville": "Arles",
-      "adresse": "N°1 AV BACHAGA SAID BOUALEM",
-      "pop": "R",
-      "lat": 4367100,
-      "lng": 462200,
-      "fuels": {
-        "gazole": 1.997,
-        "sp98": 1.99,
-        "gplc": 1.029
       }
     },
     {
@@ -341,22 +228,6 @@
       }
     },
     {
-      "id": "13200014",
-      "cp": "13200",
-      "ville": "Arles",
-      "adresse": "RN 113 - DÉVIATION - AIRE DES CANTARELLES",
-      "pop": "R",
-      "lat": 4365159,
-      "lng": 467002,
-      "fuels": {
-        "gazole": 2.086,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.998,
-        "gplc": 1.078
-      }
-    },
-    {
       "id": "13200009",
       "cp": "13200",
       "ville": "Arles",
@@ -371,35 +242,6 @@
       }
     },
     {
-      "id": "13400003",
-      "cp": "13400",
-      "ville": "Aubagne",
-      "adresse": "1000 Route de Gemenos",
-      "pop": "R",
-      "lat": 4329700,
-      "lng": 558600,
-      "fuels": {
-        "gazole": 2.016,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.859
-      }
-    },
-    {
-      "id": "13400017",
-      "cp": "13400",
-      "ville": "Aubagne",
-      "adresse": "1509 RN8",
-      "pop": "R",
-      "lat": 4328384.39901,
-      "lng": 554405.1369,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.009,
-        "e10": 1.975
-      }
-    },
-    {
       "id": "13400015",
       "cp": "13400",
       "ville": "Aubagne",
@@ -409,22 +251,7 @@
       "lng": 560200,
       "fuels": {
         "gazole": 2.016,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "13400007",
-      "cp": "13400",
-      "ville": "Aubagne",
-      "adresse": "550 Avenue Antide Boyer",
-      "pop": "R",
-      "lat": 4329500,
-      "lng": 556000,
-      "fuels": {
-        "gazole": 2.088,
-        "sp98": 2.098,
-        "e10": 1.999,
-        "e85": 0.954
+        "e10": 1.99
       }
     },
     {
@@ -441,20 +268,6 @@
       }
     },
     {
-      "id": "13400014",
-      "cp": "13400",
-      "ville": "Aubagne",
-      "adresse": "AV. ROGER SALENGRO",
-      "pop": "R",
-      "lat": 4330053,
-      "lng": 556976,
-      "fuels": {
-        "gazole": 2.016,
-        "e10": 1.99,
-        "e85": 0.859
-      }
-    },
-    {
       "id": "13400002",
       "cp": "13400",
       "ville": "Aubagne",
@@ -464,23 +277,7 @@
       "lng": 554100,
       "fuels": {
         "gazole": 2.016,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "13400001",
-      "cp": "13783",
-      "ville": "Aubagne",
-      "adresse": "Route de gemenos",
-      "pop": "R",
-      "lat": 4329300,
-      "lng": 559300,
-      "fuels": {
-        "gazole": 2.079,
-        "sp98": 2.089,
-        "e10": 1.99,
-        "e85": 0.809,
-        "gplc": 0.999
+        "sp98": 1.99
       }
     },
     {
@@ -498,20 +295,6 @@
       }
     },
     {
-      "id": "13570001",
-      "cp": "13570",
-      "ville": "Barbentane",
-      "adresse": "Lieu-dit Le Grand Roumette",
-      "pop": "R",
-      "lat": 4390800,
-      "lng": 477300,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.099,
-        "e10": 1.999
-      }
-    },
-    {
       "id": "13130005",
       "cp": "13130",
       "ville": "Berre-l'Étang",
@@ -522,19 +305,6 @@
       "fuels": {
         "gazole": 2.099,
         "e10": 2.059
-      }
-    },
-    {
-      "id": "13130002",
-      "cp": "13130",
-      "ville": "Berre-l'Étang",
-      "adresse": "Boulevard Henri Wallon",
-      "pop": "R",
-      "lat": 4348942,
-      "lng": 517369,
-      "fuels": {
-        "gazole": 2.059,
-        "e10": 1.999
       }
     },
     {
@@ -553,21 +323,6 @@
       }
     },
     {
-      "id": "13320012",
-      "cp": "13320",
-      "ville": "Bouc-Bel-Air",
-      "adresse": "341 AV DE LA CROIX D OR",
-      "pop": "R",
-      "lat": 4346300,
-      "lng": 540700,
-      "fuels": {
-        "gazole": 1.985,
-        "sp98": 1.99,
-        "e10": 1.979,
-        "e85": 0.859
-      }
-    },
-    {
       "id": "13320005",
       "cp": "13320",
       "ville": "Bouc-Bel-Air",
@@ -580,21 +335,6 @@
         "sp98": 2.131,
         "e10": 2.031,
         "gplc": 1.129
-      }
-    },
-    {
-      "id": "13320010",
-      "cp": "13320",
-      "ville": "Bouc-Bel-Air",
-      "adresse": "687Avenue de Violèsi",
-      "pop": "R",
-      "lat": 4344100,
-      "lng": 539800,
-      "fuels": {
-        "gazole": 1.909,
-        "sp98": 1.989,
-        "e10": 1.879,
-        "e85": 0.769
       }
     },
     {
@@ -649,24 +389,10 @@
       "lat": 4343500,
       "lng": 539700,
       "fuels": {
-        "gazole": 1.918,
+        "gazole": 1.908,
         "sp98": 1.998,
         "e10": 1.888,
         "e85": 0.97
-      }
-    },
-    {
-      "id": "13440005",
-      "cp": "13440",
-      "ville": "Cabannes",
-      "adresse": "2 ROUTE DE CAVAILLON",
-      "pop": "R",
-      "lat": 4385949.5961,
-      "lng": 495214.07302,
-      "fuels": {
-        "gazole": 1.949,
-        "e10": 1.985,
-        "e85": 0.965
       }
     },
     {
@@ -678,9 +404,9 @@
       "lat": 4386000,
       "lng": 495100,
       "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.039,
-        "e10": 1.925
+        "gazole": 1.995,
+        "sp98": 2.059,
+        "e10": 1.939
       }
     },
     {
@@ -692,8 +418,7 @@
       "lat": 4346500,
       "lng": 535300,
       "fuels": {
-        "gazole": 1.994,
-        "e10": 1.989
+        "gazole": 1.994
       }
     },
     {
@@ -705,9 +430,9 @@
       "lat": 4341790.25073,
       "lng": 536031.9098,
       "fuels": {
-        "gazole": 1.962,
-        "sp98": 2.031,
-        "e10": 1.895
+        "gazole": 1.957,
+        "sp98": 2.019,
+        "e10": 1.905
       }
     },
     {
@@ -749,36 +474,7 @@
       "lat": 4333000,
       "lng": 513900,
       "fuels": {
-        "gazole": 1.998,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "13260002",
-      "cp": "13260",
-      "ville": "Cassis",
-      "adresse": "QUARTIER STE CROIX",
-      "pop": "R",
-      "lat": 4321700,
-      "lng": 554600,
-      "fuels": {
-        "gazole": 2.018,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "13220004",
-      "cp": "13220",
-      "ville": "Châteauneuf-les-Martigues",
-      "adresse": "CHEMIN DE PATAFLOUX, ZONE DU FOURNEILLER, CCIAL LES OLIVIERS",
-      "pop": "R",
-      "lat": 4339047.79339,
-      "lng": 516346.39373,
-      "fuels": {
-        "gazole": 2.05,
-        "sp98": 2.12,
-        "e10": 1.999
+        "gazole": 1.998
       }
     },
     {
@@ -790,39 +486,11 @@
       "lat": 4339400,
       "lng": 513500,
       "fuels": {
-        "gazole": 1.977,
+        "gazole": 1.976,
         "sp95": 1.976,
         "sp98": 2.06,
         "e10": 1.923,
         "gplc": 0.923
-      }
-    },
-    {
-      "id": "13160002",
-      "cp": "13160",
-      "ville": "Châteaurenard",
-      "adresse": "321 Boulevard Ernest Genevet",
-      "pop": "R",
-      "lat": 4388800,
-      "lng": 484900,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.059,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "13160004",
-      "cp": "13160",
-      "ville": "Châteaurenard",
-      "adresse": "AVENUE DELATTRE DE TASSIGNY",
-      "pop": "R",
-      "lat": 4387900,
-      "lng": 485000,
-      "fuels": {
-        "gazole": 1.989,
-        "e10": 1.959,
-        "e85": 0.839
       }
     },
     {
@@ -834,9 +502,9 @@
       "lat": 4388745.0324,
       "lng": 485111.37702,
       "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.059,
-        "e10": 1.959,
+        "gazole": 1.979,
+        "sp98": 2.049,
+        "e10": 1.939,
         "e85": 0.839
       }
     },
@@ -850,8 +518,8 @@
       "lng": 485382.92267,
       "fuels": {
         "gazole": 2.051,
-        "sp98": 2.087,
-        "e10": 1.967
+        "sp98": 2.077,
+        "e10": 1.957
       }
     },
     {
@@ -882,21 +550,6 @@
       }
     },
     {
-      "id": "13430001",
-      "cp": "13430",
-      "ville": "Eyguières",
-      "adresse": "Chemin Roudiers",
-      "pop": "R",
-      "lat": 4368780,
-      "lng": 503819,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.119,
-        "e10": 1.959,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "13630004",
       "cp": "13630",
       "ville": "Eyragues",
@@ -905,22 +558,9 @@
       "lat": 4384341.95311,
       "lng": 484036.84647,
       "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.049,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "13630003",
-      "cp": "13630",
-      "ville": "Eyragues",
-      "adresse": "48 avenue de la bouvine RD 571",
-      "pop": "R",
-      "lat": 4383669.85962,
-      "lng": 483683.02889,
-      "fuels": {
-        "sp98": 2.079,
-        "e10": 1.969
+        "gazole": 1.959,
+        "sp98": 2.029,
+        "e10": 1.919
       }
     },
     {
@@ -975,24 +615,9 @@
       "lat": 4344100,
       "lng": 494000,
       "fuels": {
-        "gazole": 1.949,
-        "sp98": 1.999,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "13270012",
-      "cp": "13270",
-      "ville": "Fos-sur-Mer",
-      "adresse": "ZI - SECTEUR 83 - RN 568",
-      "pop": "R",
-      "lat": 4347128.9006,
-      "lng": 490699.15254,
-      "fuels": {
-        "gazole": 1.892,
-        "sp98": 1.99,
-        "e10": 1.89,
-        "gplc": 1.019
+        "gazole": 1.927,
+        "sp98": 1.978,
+        "e10": 1.898
       }
     },
     {
@@ -1018,9 +643,9 @@
       "lat": 4346600,
       "lng": 560600,
       "fuels": {
-        "gazole": 2.032,
+        "gazole": 1.979,
         "sp98": 1.99,
-        "e10": 1.99,
+        "e10": 1.972,
         "gplc": 1.07
       }
     },
@@ -1055,19 +680,6 @@
       }
     },
     {
-      "id": "13710005",
-      "cp": "13710",
-      "ville": "Fuveau",
-      "adresse": "LOTISSEMENT GRAND VALLAT",
-      "pop": "R",
-      "lat": 4344460.60931,
-      "lng": 555289.95302,
-      "fuels": {
-        "gazole": 2.025,
-        "e10": 1.955
-      }
-    },
-    {
       "id": "13710002",
       "cp": "13710",
       "ville": "Fuveau",
@@ -1076,10 +688,10 @@
       "lat": 4347800,
       "lng": 553800,
       "fuels": {
-        "gazole": 1.946,
+        "gazole": 1.919,
         "sp98": 1.99,
-        "e10": 1.929,
-        "e85": 0.962
+        "e10": 1.913,
+        "e85": 0.951
       }
     },
     {
@@ -1094,21 +706,6 @@
         "gazole": 2.002,
         "sp98": 1.99,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "13120003",
-      "cp": "13120",
-      "ville": "Gardanne",
-      "adresse": "Chemin de la Plaine",
-      "pop": "R",
-      "lat": 4345200,
-      "lng": 545400,
-      "fuels": {
-        "gazole": 2.005,
-        "sp98": 2.061,
-        "e10": 1.941,
-        "e85": 0.809
       }
     },
     {
@@ -1168,33 +765,6 @@
       }
     },
     {
-      "id": "13180002",
-      "cp": "13180",
-      "ville": "Gignac-la-Nerthe",
-      "adresse": "rue du 19 mars 1962",
-      "pop": "R",
-      "lat": 4338753.608,
-      "lng": 523277.519,
-      "fuels": {
-        "gazole": 2.003,
-        "sp95": 1.977
-      }
-    },
-    {
-      "id": "13450001",
-      "cp": "13450",
-      "ville": "Grans",
-      "adresse": "50 IMPASSE DES CHENES VERTS",
-      "pop": "R",
-      "lat": 4360165.05115,
-      "lng": 507467.54516,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 2.049,
-        "e10": 1.893
-      }
-    },
-    {
       "id": "13850001",
       "cp": "13850",
       "ville": "Gréasque",
@@ -1218,7 +788,7 @@
       "lat": 4350100,
       "lng": 498700,
       "fuels": {
-        "gazole": 2.047
+        "gazole": 1.988
       }
     },
     {
@@ -1234,21 +804,6 @@
         "sp98": 2.039,
         "e10": 1.959,
         "e85": 0.925
-      }
-    },
-    {
-      "id": "13800009",
-      "cp": "13800",
-      "ville": "Istres",
-      "adresse": "Avenue Félix Gouin",
-      "pop": "R",
-      "lat": 4349500,
-      "lng": 498600,
-      "fuels": {
-        "gazole": 2.019,
-        "sp95": 1.999,
-        "sp98": 2.059,
-        "e10": 1.979
       }
     },
     {
@@ -1276,9 +831,10 @@
       "lng": 497900,
       "fuels": {
         "gazole": 1.945,
-        "sp98": 2.049,
+        "sp98": 1.999,
         "e10": 1.899,
-        "e85": 0.779
+        "e85": 0.779,
+        "gplc": 1.099
       }
     },
     {
@@ -1292,8 +848,7 @@
       "fuels": {
         "gazole": 1.981,
         "sp98": 1.999,
-        "e10": 1.949,
-        "e85": 0.909
+        "e10": 1.949
       }
     },
     {
@@ -1327,21 +882,6 @@
       }
     },
     {
-      "id": "13600026",
-      "cp": "13600",
-      "ville": "La Ciotat",
-      "adresse": "AVENUE ERNEST SUBILIA",
-      "pop": "R",
-      "lat": 4318438.70059,
-      "lng": 560914.58257,
-      "fuels": {
-        "gazole": 2.009,
-        "sp98": 2.059,
-        "e10": 1.969,
-        "e85": 0.899
-      }
-    },
-    {
       "id": "13600005",
       "cp": "13600",
       "ville": "La Ciotat",
@@ -1350,10 +890,10 @@
       "lat": 4318800,
       "lng": 560200,
       "fuels": {
-        "gazole": 2.002,
-        "sp95": 1.994,
-        "sp98": 2.071,
-        "e10": 1.921
+        "gazole": 2.001,
+        "sp95": 2.005,
+        "sp98": 2.083,
+        "e10": 1.932
       }
     },
     {
@@ -1401,20 +941,6 @@
       }
     },
     {
-      "id": "13112003",
-      "cp": "13112",
-      "ville": "La Destrousse",
-      "adresse": "Chemin des Matelots",
-      "pop": "R",
-      "lat": 4339000,
-      "lng": 559600,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.049,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "13580003",
       "cp": "13580",
       "ville": "La Fare-les-Oliviers",
@@ -1444,34 +970,6 @@
       }
     },
     {
-      "id": "13410004",
-      "cp": "13410",
-      "ville": "Lambesc",
-      "adresse": "2 AVENUE LEO LAGRANGE",
-      "pop": "R",
-      "lat": 4364900,
-      "lng": 526500,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.98,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "13410005",
-      "cp": "13410",
-      "ville": "Lambesc",
-      "adresse": "ZAC BERTOIRE - AVENUE JEAN MONNET",
-      "pop": "R",
-      "lat": 4364764.5,
-      "lng": 525628.7,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.014,
-        "e10": 1.915
-      }
-    },
-    {
       "id": "13680010",
       "cp": "13680",
       "ville": "Lançon-Provence",
@@ -1495,7 +993,6 @@
       "lng": 515904.85568,
       "fuels": {
         "gazole": 2.142,
-        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.998,
         "gplc": 1.078
@@ -1518,36 +1015,6 @@
       }
     },
     {
-      "id": "13680004",
-      "cp": "13680",
-      "ville": "Lançon-Provence",
-      "adresse": "Rue de l'Abbé Dureau",
-      "pop": "R",
-      "lat": 4359400,
-      "lng": 512800,
-      "fuels": {
-        "gazole": 2.134,
-        "sp98": 2.092,
-        "e10": 1.976,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "13610001",
-      "cp": "13610",
-      "ville": "Le Puy-Sainte-Réparade",
-      "adresse": "LES GOIRANDS",
-      "pop": "R",
-      "lat": 4366200,
-      "lng": 544800,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.129,
-        "e10": 1.999,
-        "e85": 0.799
-      }
-    },
-    {
       "id": "13740001",
       "cp": "13740",
       "ville": "Le Rove",
@@ -1556,41 +1023,8 @@
       "lat": 4336700,
       "lng": 524400,
       "fuels": {
-        "gazole": 2.061,
-        "sp98": 1.99,
+        "gazole": 2.006,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "13180001",
-      "cp": "13180",
-      "ville": "Le Rove",
-      "adresse": "AIRE DE REBUTY A55",
-      "pop": "A",
-      "lat": 4339229.55261,
-      "lng": 525694.21628,
-      "fuels": {
-        "gazole": 2.249,
-        "sp98": 2.269,
-        "e10": 2.169,
-        "e85": 0.999,
-        "gplc": 1.149
-      }
-    },
-    {
-      "id": "13700009",
-      "cp": "13180",
-      "ville": "Le Rove",
-      "adresse": "AUTOROUTE A55 - AIRE GIGNAC SUD LA NERTHE",
-      "pop": "A",
-      "lat": 4338800,
-      "lng": 524500,
-      "fuels": {
-        "gazole": 2.103,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.998,
-        "gplc": 1.068
       }
     },
     {
@@ -1616,10 +1050,10 @@
       "lat": 4338191.4829,
       "lng": 534660.57733,
       "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.979,
+        "gazole": 1.959,
+        "sp95": 1.959,
         "sp98": 1.999,
-        "e10": 1.959
+        "e10": 1.929
       }
     },
     {
@@ -1657,40 +1091,10 @@
       "lat": 4341711,
       "lng": 535583,
       "fuels": {
-        "gazole": 1.907,
+        "gazole": 1.897,
         "sp95": 1.964,
         "sp98": 1.987,
         "e10": 1.877
-      }
-    },
-    {
-      "id": "13170013",
-      "cp": "13170",
-      "ville": "Les Pennes-Mirabeau",
-      "adresse": "RN 113",
-      "pop": "R",
-      "lat": 4341113.91153,
-      "lng": 530965.98881,
-      "fuels": {
-        "gazole": 2.099,
-        "sp98": 2.099,
-        "e10": 1.999,
-        "e85": 0.899
-      }
-    },
-    {
-      "id": "13170011",
-      "cp": "13170",
-      "ville": "Les Pennes-Mirabeau",
-      "adresse": "ROUTE DE MARTIGUES",
-      "pop": "R",
-      "lat": 4340900,
-      "lng": 532100,
-      "fuels": {
-        "gazole": 1.902,
-        "sp98": 1.99,
-        "e10": 1.89,
-        "gplc": 1.009
       }
     },
     {
@@ -1723,20 +1127,6 @@
       }
     },
     {
-      "id": "13370006",
-      "cp": "13370",
-      "ville": "Mallemort",
-      "adresse": "Avenue du Pont Royal",
-      "pop": "R",
-      "lat": 4370800,
-      "lng": 520000,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.014,
-        "e10": 1.915
-      }
-    },
-    {
       "id": "13370005",
       "cp": "13370",
       "ville": "Mallemort",
@@ -1759,9 +1149,7 @@
       "lat": 4341459,
       "lng": 522304,
       "fuels": {
-        "gazole": 1.888,
-        "sp98": 1.99,
-        "e10": 1.892
+        "gazole": 1.888
       }
     },
     {
@@ -1773,9 +1161,9 @@
       "lat": 4341938.2,
       "lng": 522333.4,
       "fuels": {
-        "gazole": 1.985,
+        "gazole": 1.945,
         "sp98": 1.999,
-        "e10": 1.955
+        "e10": 1.925
       }
     },
     {
@@ -1787,7 +1175,7 @@
       "lat": 4341200,
       "lng": 520700,
       "fuels": {
-        "gazole": 1.888,
+        "gazole": 1.887,
         "sp95": 1.964,
         "sp98": 1.989,
         "e10": 1.891
@@ -1809,63 +1197,6 @@
       }
     },
     {
-      "id": "13008004",
-      "cp": "13008",
-      "ville": "Marseille",
-      "adresse": "1/3 BOULEVARD DU SABLIER",
-      "pop": "R",
-      "lat": 4325400,
-      "lng": 538200,
-      "fuels": {
-        "gazole": 1.957,
-        "sp98": 1.999,
-        "e10": 1.917,
-        "e85": 0.954
-      }
-    },
-    {
-      "id": "13005012",
-      "cp": "13005",
-      "ville": "Marseille",
-      "adresse": "103 BOULEVARD SAKAKINI",
-      "pop": "R",
-      "lat": 4329300,
-      "lng": 540200,
-      "fuels": {
-        "gazole": 2.016,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.879
-      }
-    },
-    {
-      "id": "13013003",
-      "cp": "13013",
-      "ville": "Marseille",
-      "adresse": "12 Avenue Jean-Paul Sartre",
-      "pop": "R",
-      "lat": 4331600,
-      "lng": 540900,
-      "fuels": {
-        "gazole": 2.099,
-        "sp98": 2.219,
-        "e10": 2.049
-      }
-    },
-    {
-      "id": "13012024",
-      "cp": "13012",
-      "ville": "Marseille",
-      "adresse": "120 rue saint jean du desert",
-      "pop": "R",
-      "lat": 4329600,
-      "lng": 543200,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.029
-      }
-    },
-    {
       "id": "13007001",
       "cp": "13007",
       "ville": "Marseille",
@@ -1874,9 +1205,9 @@
       "lat": 4329100,
       "lng": 535900,
       "fuels": {
-        "gazole": 1.946,
-        "sp98": 1.993,
-        "e10": 1.913
+        "gazole": 1.932,
+        "sp98": 1.99,
+        "e10": 1.91
       }
     },
     {
@@ -1960,23 +1291,9 @@
       "lat": 4333500.09426,
       "lng": 545385.91854,
       "fuels": {
-        "gazole": 1.924,
+        "gazole": 1.927,
         "sp98": 1.99,
-        "e10": 1.911
-      }
-    },
-    {
-      "id": "13015016",
-      "cp": "13015",
-      "ville": "Marseille",
-      "adresse": "20-22, RN DE ST ANTOINE",
-      "pop": "R",
-      "lat": 4336945.97399,
-      "lng": 535637.79452,
-      "fuels": {
-        "gazole": 2.129,
-        "sp98": 2.159,
-        "e10": 2.059
+        "e10": 1.913
       }
     },
     {
@@ -2009,18 +1326,6 @@
       }
     },
     {
-      "id": "13008017",
-      "cp": "13008",
-      "ville": "Marseille",
-      "adresse": "265 AVENUE DE MAZARGUES",
-      "pop": "R",
-      "lat": 4326300,
-      "lng": 539300,
-      "fuels": {
-        "gazole": 1.903
-      }
-    },
-    {
       "id": "13013011",
       "cp": "13013",
       "ville": "Marseille",
@@ -2030,50 +1335,10 @@
       "lng": 544699,
       "fuels": {
         "gazole": 1.977,
-        "sp95": 2.049,
-        "sp98": 2.079,
-        "e10": 1.932,
-        "e85": 0.979
-      }
-    },
-    {
-      "id": "13009008",
-      "cp": "13009",
-      "ville": "Marseille",
-      "adresse": "32 BOULEVARD SCHLOESING",
-      "pop": "R",
-      "lat": 4327200,
-      "lng": 540100,
-      "fuels": {
-        "gazole": 1.903
-      }
-    },
-    {
-      "id": "13014010",
-      "cp": "13014",
-      "ville": "Marseille",
-      "adresse": "33 Avenue Alexandre Ansaldi",
-      "pop": "R",
-      "lat": 4333500,
-      "lng": 540000,
-      "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.046,
-        "e10": 1.979,
-        "e85": 0.899
-      }
-    },
-    {
-      "id": "13000001",
-      "cp": "13004",
-      "ville": "Marseille",
-      "adresse": "33 Boulevard du Maréchal Juin",
-      "pop": "R",
-      "lat": 4331339,
-      "lng": 540524,
-      "fuels": {
-        "gazole": 1.999,
-        "e10": 1.929
+        "sp95": 2.039,
+        "sp98": 2.069,
+        "e10": 1.927,
+        "e85": 0.976
       }
     },
     {
@@ -2086,6 +1351,7 @@
       "lng": 539974,
       "fuels": {
         "gazole": 2.016,
+        "e10": 1.99,
         "e85": 0.879
       }
     },
@@ -2113,8 +1379,8 @@
       "lat": 4325300,
       "lng": 539700,
       "fuels": {
-        "gazole": 2.034,
-        "e10": 1.926
+        "gazole": 1.973,
+        "e10": 1.922
       }
     },
     {
@@ -2126,23 +1392,9 @@
       "lat": 4335200,
       "lng": 543700,
       "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.089,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "13015004",
-      "cp": "13015",
-      "ville": "Marseille",
-      "adresse": "437 Avenue de Saint-Antoine",
-      "pop": "R",
-      "lat": 4338500,
-      "lng": 535900,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.018,
-        "e10": 1.927
+        "gazole": 1.919,
+        "sp98": 2.069,
+        "e10": 1.919
       }
     },
     {
@@ -2190,52 +1442,6 @@
       }
     },
     {
-      "id": "13012025",
-      "cp": "13012",
-      "ville": "Marseille",
-      "adresse": "53 AV DE ST BARNABE",
-      "pop": "R",
-      "lat": 4330400,
-      "lng": 541200,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.119,
-        "e10": 1.969,
-        "e85": 0.899
-      }
-    },
-    {
-      "id": "13010001",
-      "cp": "13010",
-      "ville": "Marseille",
-      "adresse": "57 Boulevard Romain Rolland",
-      "pop": "R",
-      "lat": 4327972,
-      "lng": 542438,
-      "fuels": {
-        "gazole": 1.962,
-        "sp98": 1.99,
-        "e10": 1.914,
-        "e85": 0.859
-      }
-    },
-    {
-      "id": "13013014",
-      "cp": "13013",
-      "ville": "Marseille",
-      "adresse": "59 Avenue de Saint-Just",
-      "pop": "R",
-      "lat": 4331700,
-      "lng": 540400,
-      "fuels": {
-        "gazole": 2.129,
-        "sp98": 2.159,
-        "e10": 2.059,
-        "e85": 0.899,
-        "gplc": 1.099
-      }
-    },
-    {
       "id": "13000003",
       "cp": "13000",
       "ville": "Marseille",
@@ -2247,20 +1453,6 @@
         "gazole": 2.09,
         "sp95": 2.05,
         "sp98": 2.09
-      }
-    },
-    {
-      "id": "13016007",
-      "cp": "13016",
-      "ville": "Marseille",
-      "adresse": "654 CHEMIN DU LITTORAL",
-      "pop": "R",
-      "lat": 4335640,
-      "lng": 532755,
-      "fuels": {
-        "gazole": 1.991,
-        "sp98": 1.99,
-        "e10": 1.99
       }
     },
     {
@@ -2289,20 +1481,6 @@
         "sp95": 2.069,
         "sp98": 2.099,
         "e85": 0.899
-      }
-    },
-    {
-      "id": "13012028",
-      "cp": "13012",
-      "ville": "Marseille",
-      "adresse": "7 CHEMIN DES AMARYLLIS",
-      "pop": "R",
-      "lat": 4331700,
-      "lng": 544000,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 1.999,
-        "e10": 1.939
       }
     },
     {
@@ -2420,20 +1598,6 @@
       }
     },
     {
-      "id": "13007008",
-      "cp": "13007",
-      "ville": "Marseille",
-      "adresse": "95 Avenue des roches",
-      "pop": "R",
-      "lat": 4327856.7,
-      "lng": 536324.1,
-      "fuels": {
-        "gazole": 2.129,
-        "sp98": 2.159,
-        "e10": 2.059
-      }
-    },
-    {
       "id": "13005013",
       "cp": "13005",
       "ville": "Marseille",
@@ -2465,20 +1629,6 @@
       }
     },
     {
-      "id": "13008008",
-      "cp": "13008",
-      "ville": "Marseille",
-      "adresse": "AVENUE DE HAMBOURG",
-      "pop": "R",
-      "lat": 4324900,
-      "lng": 539100,
-      "fuels": {
-        "gazole": 1.966,
-        "sp98": 2.025,
-        "e10": 1.899
-      }
-    },
-    {
       "id": "13009011",
       "cp": "13009",
       "ville": "Marseille",
@@ -2490,22 +1640,6 @@
         "gazole": 1.989,
         "sp98": 2.029,
         "e10": 1.919
-      }
-    },
-    {
-      "id": "13013016",
-      "cp": "13013",
-      "ville": "Marseille",
-      "adresse": "AVENUE FREDERIC MISTRAL",
-      "pop": "R",
-      "lat": 4332400,
-      "lng": 545400,
-      "fuels": {
-        "gazole": 1.924,
-        "sp98": 1.99,
-        "e10": 1.913,
-        "e85": 0.869,
-        "gplc": 0.996
       }
     },
     {
@@ -2521,21 +1655,6 @@
         "sp95": 1.95,
         "sp98": 2.039,
         "e10": 1.89
-      }
-    },
-    {
-      "id": "13010005",
-      "cp": "13010",
-      "ville": "Marseille",
-      "adresse": "BOULEVARD JEAN MOULIN",
-      "pop": "R",
-      "lat": 4328700,
-      "lng": 540000,
-      "fuels": {
-        "gazole": 1.975,
-        "sp98": 2.014,
-        "e10": 1.934,
-        "e85": 0.968
       }
     },
     {
@@ -2561,25 +1680,10 @@
       "lat": 4336200,
       "lng": 534900,
       "fuels": {
-        "gazole": 1.975,
-        "sp95": 1.959,
+        "gazole": 1.919,
+        "sp95": 1.929,
         "sp98": 2.015,
-        "e10": 1.918
-      }
-    },
-    {
-      "id": "13009006",
-      "cp": "13009",
-      "ville": "Marseille",
-      "adresse": "CHEMIN DU ROY D'ESPAGNE",
-      "pop": "R",
-      "lat": 4323300,
-      "lng": 540100,
-      "fuels": {
-        "gazole": 1.887,
-        "sp98": 1.985,
-        "e10": 1.885,
-        "e85": 0.79
+        "e10": 1.889
       }
     },
     {
@@ -2614,34 +1718,6 @@
       }
     },
     {
-      "id": "13012016",
-      "cp": "13012",
-      "ville": "Marseille",
-      "adresse": "Rue Gaston de Flotte",
-      "pop": "R",
-      "lat": 4329600,
-      "lng": 542600,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.029,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "13500006",
-      "cp": "13500",
-      "ville": "Martigues",
-      "adresse": "4 Avenue des Ormeaux",
-      "pop": "R",
-      "lat": 4341100,
-      "lng": 502600,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 1.979,
-        "e10": 1.869
-      }
-    },
-    {
       "id": "13500012",
       "cp": "13500",
       "ville": "Martigues",
@@ -2654,21 +1730,6 @@
         "sp98": 1.99,
         "e10": 1.903,
         "e85": 0.813
-      }
-    },
-    {
-      "id": "13500001",
-      "cp": "13500",
-      "ville": "Martigues",
-      "adresse": "Avenue Julien Olive Canto-Perdrix",
-      "pop": "R",
-      "lat": 4341800,
-      "lng": 505300,
-      "fuels": {
-        "gazole": 1.907,
-        "sp98": 1.99,
-        "e10": 1.903,
-        "gplc": 0.94
       }
     },
     {
@@ -2694,9 +1755,9 @@
       "lat": 4340000,
       "lng": 506200,
       "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.139,
-        "e10": 1.989
+        "gazole": 1.999,
+        "sp98": 2.129,
+        "e10": 1.979
       }
     },
     {
@@ -2757,47 +1818,6 @@
       }
     },
     {
-      "id": "13105001",
-      "cp": "13105",
-      "ville": "Mimet",
-      "adresse": "Chemin des Fabres",
-      "pop": "R",
-      "lat": 4342967,
-      "lng": 547296,
-      "fuels": {
-        "gazole": 2.035,
-        "sp98": 2.142,
-        "e10": 1.96,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "13140010",
-      "cp": "13140",
-      "ville": "Miramas",
-      "adresse": "2 AVENUE DU SUD",
-      "pop": "R",
-      "lat": 4359400,
-      "lng": 499700,
-      "fuels": {
-        "gazole": 1.888
-      }
-    },
-    {
-      "id": "13140005",
-      "cp": "13140",
-      "ville": "Miramas",
-      "adresse": "Avenue du 8 Mai 1945",
-      "pop": "R",
-      "lat": 4360000,
-      "lng": 500300,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.045,
-        "e10": 1.925
-      }
-    },
-    {
       "id": "13140001",
       "cp": "13140",
       "ville": "Miramas",
@@ -2852,21 +1872,6 @@
         "sp98": 2.155,
         "e10": 2.025,
         "e85": 0.949
-      }
-    },
-    {
-      "id": "13660005",
-      "cp": "13660",
-      "ville": "Orgon",
-      "adresse": "AVENUE DE LA VICTOIRE",
-      "pop": "R",
-      "lat": 4379100,
-      "lng": 502800,
-      "fuels": {
-        "gazole": 1.968,
-        "sp98": 2.014,
-        "e10": 1.899,
-        "e85": 0.809
       }
     },
     {
@@ -2940,18 +1945,6 @@
       }
     },
     {
-      "id": "13750004",
-      "cp": "13750",
-      "ville": "Plan-d'Orgon",
-      "adresse": "114 Avenue de la Pomme",
-      "pop": "R",
-      "lat": 4382000,
-      "lng": 501600,
-      "fuels": {
-        "gazole": 2.068
-      }
-    },
-    {
       "id": "13750005",
       "cp": "13750",
       "ville": "Plan-d'Orgon",
@@ -2980,21 +1973,6 @@
       }
     },
     {
-      "id": "13380002",
-      "cp": "13380",
-      "ville": "Plan-de-Cuques",
-      "adresse": "89 AVENUE DE LA LIBERATION",
-      "pop": "R",
-      "lat": 4334100,
-      "lng": 545700,
-      "fuels": {
-        "gazole": 1.957,
-        "sp98": 1.99,
-        "e10": 1.913,
-        "e85": 0.963
-      }
-    },
-    {
       "id": "13110004",
       "cp": "13110",
       "ville": "Port-de-Bouc",
@@ -3003,7 +1981,7 @@
       "lat": 4340600,
       "lng": 498100,
       "fuels": {
-        "gazole": 2.05,
+        "gazole": 2.02,
         "sp98": 2.09,
         "e10": 1.99
       }
@@ -3017,10 +1995,10 @@
       "lat": 4341300,
       "lng": 500100,
       "fuels": {
-        "gazole": 1.949,
-        "sp95": 1.955,
-        "sp98": 1.896,
-        "e10": 1.896
+        "gazole": 1.967,
+        "sp95": 1.953,
+        "sp98": 2.025,
+        "e10": 1.903
       }
     },
     {
@@ -3067,18 +2045,6 @@
       }
     },
     {
-      "id": "13230004",
-      "cp": "13230",
-      "ville": "Port-Saint-Louis-du-Rhône",
-      "adresse": "ZA de Malebarge",
-      "pop": "R",
-      "lat": 4339096.07,
-      "lng": 481006,
-      "fuels": {
-        "gazole": 2.19
-      }
-    },
-    {
       "id": "13340001",
       "cp": "13340",
       "ville": "Rognac",
@@ -3102,9 +2068,7 @@
       "lat": 4351147.8,
       "lng": 520549.1,
       "fuels": {
-        "gazole": 1.919,
-        "sp98": 1.999,
-        "e10": 1.899
+        "gazole": 1.919
       }
     },
     {
@@ -3199,11 +2163,11 @@
       "lat": 4384548.77277,
       "lng": 493273.02741,
       "fuels": {
-        "gazole": 1.993,
-        "sp95": 2.079,
-        "sp98": 2.099,
-        "e10": 1.933,
-        "e85": 0.919
+        "gazole": 1.987,
+        "sp95": 2.069,
+        "sp98": 2.089,
+        "e10": 1.927,
+        "e85": 0.909
       }
     },
     {
@@ -3215,9 +2179,9 @@
       "lat": 4361756.01284,
       "lng": 530776.15095,
       "fuels": {
-        "gazole": 1.965,
+        "gazole": 1.935,
         "sp98": 2.02,
-        "e10": 1.92,
+        "e10": 1.904,
         "e85": 0.787
       }
     },
@@ -3279,20 +2243,6 @@
       }
     },
     {
-      "id": "13115001",
-      "cp": "13115",
-      "ville": "Saint-Paul-lès-Durance",
-      "adresse": "D952 LIEU DIT LE CARROUQUIER",
-      "pop": "R",
-      "lat": 4368600,
-      "lng": 571300,
-      "fuels": {
-        "gazole": 2.25,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
       "id": "13210004",
       "cp": "13210",
       "ville": "Saint-Rémy-de-Provence",
@@ -3302,7 +2252,6 @@
       "lng": 483654.28048,
       "fuels": {
         "gazole": 2.12,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -3316,9 +2265,9 @@
       "lng": 482700,
       "fuels": {
         "gazole": 1.989,
-        "sp95": 2.009,
+        "sp95": 1.999,
         "sp98": 2.059,
-        "e10": 1.959
+        "e10": 1.949
       }
     },
     {
@@ -3366,34 +2315,6 @@
       }
     },
     {
-      "id": "13460003",
-      "cp": "13460",
-      "ville": "Saintes-Maries-de-la-Mer",
-      "adresse": "26 avenue d'Arles",
-      "pop": "R",
-      "lat": 4345500,
-      "lng": 442800,
-      "fuels": {
-        "gazole": 2.119,
-        "sp95": 2.099,
-        "sp98": 2.159
-      }
-    },
-    {
-      "id": "13626002",
-      "cp": "13300",
-      "ville": "Salon-de-Provence",
-      "adresse": "551 avenue du 22 aout 1944",
-      "pop": "R",
-      "lat": 4363500,
-      "lng": 507700,
-      "fuels": {
-        "gazole": 1.963,
-        "sp98": 2.139,
-        "e10": 1.896
-      }
-    },
-    {
       "id": "13300001",
       "cp": "13300",
       "ville": "Salon-de-Provence",
@@ -3422,35 +2343,6 @@
       }
     },
     {
-      "id": "13300008",
-      "cp": "13300",
-      "ville": "Salon-de-Provence",
-      "adresse": "Boulevard Reine Jeanne",
-      "pop": "R",
-      "lat": 4363400,
-      "lng": 509100,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 2.109,
-        "e10": 1.909,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "13300002",
-      "cp": "13300",
-      "ville": "Salon-de-Provence",
-      "adresse": "LES BROQUETIERS",
-      "pop": "R",
-      "lat": 4361931.22131,
-      "lng": 509629.80068,
-      "fuels": {
-        "gazole": 1.977,
-        "e10": 1.968,
-        "e85": 0.829
-      }
-    },
-    {
       "id": "13300010",
       "cp": "13300",
       "ville": "Salon-de-Provence",
@@ -3466,20 +2358,6 @@
       }
     },
     {
-      "id": "13300009",
-      "cp": "13300",
-      "ville": "Salon-de-Provence",
-      "adresse": "Route Nationale 113",
-      "pop": "R",
-      "lat": 4361235.96394,
-      "lng": 509626.2162,
-      "fuels": {
-        "gazole": 1.997,
-        "sp98": 2.037,
-        "e10": 1.909
-      }
-    },
-    {
       "id": "13300005",
       "cp": "13300",
       "ville": "Salon-de-Provence",
@@ -3488,10 +2366,10 @@
       "lat": 4362800,
       "lng": 511600,
       "fuels": {
-        "gazole": 1.895,
-        "sp95": 1.944,
-        "e10": 1.889,
-        "e85": 0.769
+        "gazole": 1.879,
+        "sp95": 1.946,
+        "e10": 1.859,
+        "e85": 0.772
       }
     },
     {
@@ -3531,23 +2409,8 @@
       "lng": 507767,
       "fuels": {
         "gazole": 1.999,
-        "sp98": 2.099,
-        "e10": 1.947
-      }
-    },
-    {
-      "id": "13560004",
-      "cp": "13560",
-      "ville": "Sénas",
-      "adresse": "ZAC DE LA CAPELETTE",
-      "pop": "R",
-      "lat": 4374200,
-      "lng": 508600,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.049,
-        "e10": 1.934,
-        "e85": 0.798
+        "sp98": 2.079,
+        "e10": 1.933
       }
     },
     {
@@ -3586,9 +2449,9 @@
       "lat": 4381100,
       "lng": 466600,
       "fuels": {
-        "gazole": 1.972,
-        "sp98": 1.999,
-        "e10": 1.932
+        "gazole": 1.951,
+        "sp98": 1.99,
+        "e10": 1.912
       }
     },
     {
@@ -3629,9 +2492,9 @@
       "lat": 4345200,
       "lng": 568100,
       "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.976,
-        "sp98": 2.038
+        "gazole": 1.981,
+        "sp95": 1.979,
+        "sp98": 2.033
       }
     },
     {
@@ -3670,9 +2533,9 @@
       "lat": 4359500,
       "lng": 548200,
       "fuels": {
-        "gazole": 1.945,
-        "sp98": 1.969,
-        "e10": 1.859
+        "gazole": 1.925,
+        "sp98": 1.979,
+        "e10": 1.869
       }
     },
     {
@@ -3684,9 +2547,9 @@
       "lat": 4358234.50031,
       "lng": 547268.36758,
       "fuels": {
-        "gazole": 1.946,
-        "sp98": 1.974,
-        "e10": 1.862
+        "gazole": 1.926,
+        "sp98": 1.982,
+        "e10": 1.87
       }
     },
     {
@@ -3702,35 +2565,6 @@
         "sp98": 2.079,
         "e10": 1.949,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "13122001",
-      "cp": "13122",
-      "ville": "Ventabren",
-      "adresse": "RES.VAL LOURDES",
-      "pop": "R",
-      "lat": 4354117,
-      "lng": 527115,
-      "fuels": {
-        "gazole": 2.006,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "13127010",
-      "cp": "13127",
-      "ville": "Vitrolles",
-      "adresse": "1 ZAC ANJOLY AV. D'ITALIE",
-      "pop": "R",
-      "lat": 4342063,
-      "lng": 526826,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "gplc": 1.039
       }
     },
     {
@@ -3777,21 +2611,6 @@
       }
     },
     {
-      "id": "13127013",
-      "cp": "13127",
-      "ville": "Vitrolles",
-      "adresse": "LE RELAIS DE L'ETANG RN 113 - QUARTIER DES CADESTAUX",
-      "pop": "R",
-      "lat": 4347300,
-      "lng": 522900,
-      "fuels": {
-        "gazole": 1.966,
-        "sp98": 1.999,
-        "e10": 1.919,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "13127009",
       "cp": "13127",
       "ville": "Vitrolles",
@@ -3829,8 +2648,8 @@
       "lat": 4342600,
       "lng": 527000,
       "fuels": {
-        "gazole": 1.995,
-        "e10": 1.919,
+        "gazole": 1.887,
+        "e10": 1.899,
         "e85": 0.809
       }
     }

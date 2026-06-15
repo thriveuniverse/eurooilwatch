@@ -3,69 +3,55 @@
   "name": "Vendée",
   "regionCode": "PDL",
   "regionName": "Pays de la Loire",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 115,
+  "stationCount": 79,
   "fuels": {
     "gazole": {
-      "count": 114,
-      "mean": 2.0002,
-      "median": 1.966,
+      "count": 78,
+      "mean": 1.9925,
+      "median": 1.9615,
       "min": 1.881,
-      "max": 2.22
+      "max": 2.2
     },
     "sp95": {
-      "count": 34,
-      "mean": 2.0009,
+      "count": 23,
+      "mean": 2.011,
       "median": 1.99,
-      "min": 1.922,
+      "min": 1.95,
       "max": 2.209
     },
     "sp98": {
-      "count": 94,
-      "mean": 2.0357,
-      "median": 1.999,
+      "count": 63,
+      "mean": 2.0395,
+      "median": 2.005,
       "min": 1.976,
-      "max": 2.28
+      "max": 2.259
     },
     "e10": {
-      "count": 85,
-      "mean": 1.938,
+      "count": 59,
+      "mean": 1.9382,
       "median": 1.919,
-      "min": 1.872,
+      "min": 1.881,
       "max": 2.179
     },
     "e85": {
-      "count": 37,
-      "mean": 0.7921,
-      "median": 0.782,
-      "min": 0.758,
+      "count": 30,
+      "mean": 0.7934,
+      "median": 0.7865,
+      "min": 0.759,
       "max": 0.885
     },
     "gplc": {
-      "count": 8,
-      "mean": 1.1009,
-      "median": 1.0975,
+      "count": 7,
+      "mean": 1.1003,
+      "median": 1.09,
       "min": 1.046,
       "max": 1.161
     }
   },
   "stations": [
-    {
-      "id": "85190004",
-      "cp": "85190",
-      "ville": "Aizenay",
-      "adresse": "7 ROUTE DE SAINT-GILLES",
-      "pop": "R",
-      "lat": 4673700,
-      "lng": -161100,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.016,
-        "e10": 1.899
-      }
-    },
     {
       "id": "85190001",
       "cp": "85190",
@@ -79,19 +65,6 @@
         "sp98": 1.999,
         "e10": 1.919,
         "e85": 0.769
-      }
-    },
-    {
-      "id": "85190002",
-      "cp": "85190",
-      "ville": "Aizenay",
-      "adresse": "ROUTE DE LA ROCHE",
-      "pop": "R",
-      "lat": 4673510.51952,
-      "lng": -159515.86123,
-      "fuels": {
-        "gazole": 1.964,
-        "sp95": 1.99
       }
     },
     {
@@ -125,21 +98,6 @@
       }
     },
     {
-      "id": "85230003",
-      "cp": "85230",
-      "ville": "Beauvoir-sur-Mer",
-      "adresse": "39 Rue de la Roche",
-      "pop": "R",
-      "lat": 4691000,
-      "lng": -203000,
-      "fuels": {
-        "gazole": 1.98,
-        "sp98": 2.025,
-        "e10": 1.919,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "85230001",
       "cp": "85230",
       "ville": "Beauvoir-sur-Mer",
@@ -148,7 +106,7 @@
       "lat": 4691062,
       "lng": -204705,
       "fuels": {
-        "gazole": 1.961,
+        "gazole": 1.958,
         "sp98": 2.029,
         "e10": 1.919
       }
@@ -196,20 +154,6 @@
       }
     },
     {
-      "id": "85490001",
-      "cp": "85490",
-      "ville": "Benet",
-      "adresse": "2 rue de la Gare",
-      "pop": "R",
-      "lat": 4637000,
-      "lng": -59400,
-      "fuels": {
-        "gazole": 1.931,
-        "sp95": 1.922,
-        "sp98": 1.978
-      }
-    },
-    {
       "id": "85480001",
       "cp": "85480",
       "ville": "Bournezeau",
@@ -219,62 +163,6 @@
       "lng": -117961.7,
       "fuels": {
         "gazole": 1.968
-      }
-    },
-    {
-      "id": "85470002",
-      "cp": "85470",
-      "ville": "Bretignolles-sur-Mer",
-      "adresse": "Avenue de Verdun",
-      "pop": "R",
-      "lat": 4662588,
-      "lng": -185856,
-      "fuels": {
-        "gazole": 1.966,
-        "sp98": 1.995,
-        "e10": 1.915,
-        "e85": 0.779
-      }
-    },
-    {
-      "id": "85300001",
-      "cp": "85300",
-      "ville": "Challans",
-      "adresse": "3 Boulevard des F.f.i.",
-      "pop": "R",
-      "lat": 4684600,
-      "lng": -188200,
-      "fuels": {
-        "gazole": 2.129,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "85306001",
-      "cp": "85300",
-      "ville": "Challans",
-      "adresse": "BOULEVARD JEAN XXIII",
-      "pop": "R",
-      "lat": 4683600,
-      "lng": -187200,
-      "fuels": {
-        "gazole": 1.954,
-        "sp98": 1.995,
-        "e10": 1.908,
-        "gplc": 1.105
-      }
-    },
-    {
-      "id": "85300006",
-      "cp": "85300",
-      "ville": "Challans",
-      "adresse": "Route de Cholet",
-      "pop": "R",
-      "lat": 4684800,
-      "lng": -187200,
-      "fuels": {
-        "gazole": 2.149,
-        "sp98": 1.99
       }
     },
     {
@@ -345,9 +233,9 @@
       "lat": 4695063.01533,
       "lng": -98060.54194,
       "fuels": {
-        "gazole": 2.057,
+        "gazole": 2.002,
         "sp98": 1.99,
-        "e10": 1.981
+        "e10": 1.976
       }
     },
     {
@@ -389,24 +277,10 @@
       "lat": 4676500,
       "lng": -123500,
       "fuels": {
-        "gazole": 1.955,
-        "sp98": 1.996,
+        "gazole": 1.925,
+        "sp98": 1.999,
         "e10": 1.909,
         "e85": 0.789
-      }
-    },
-    {
-      "id": "85670002",
-      "cp": "85670",
-      "ville": "Falleron",
-      "adresse": "8 Rue Nationale",
-      "pop": "R",
-      "lat": 4688200,
-      "lng": -169700,
-      "fuels": {
-        "gazole": 2.15,
-        "sp98": 2.28,
-        "e10": 2.05
       }
     },
     {
@@ -419,8 +293,7 @@
       "lng": -78800,
       "fuels": {
         "gazole": 2.09,
-        "sp95": 1.99,
-        "sp98": 1.99
+        "sp95": 1.99
       }
     },
     {
@@ -432,26 +305,11 @@
       "lat": 4646500,
       "lng": -82300,
       "fuels": {
-        "gazole": 1.945,
-        "sp98": 2.05,
+        "gazole": 1.935,
+        "sp98": 1.999,
         "e10": 1.939,
         "e85": 0.772,
         "gplc": 1.046
-      }
-    },
-    {
-      "id": "85200005",
-      "cp": "85200",
-      "ville": "Fontenay-le-Comte",
-      "adresse": "Avenue du Président François Mitterrand",
-      "pop": "R",
-      "lat": 4645100,
-      "lng": -80800,
-      "fuels": {
-        "gazole": 1.945,
-        "sp98": 2.05,
-        "e10": 1.939,
-        "e85": 0.772
       }
     },
     {
@@ -463,9 +321,9 @@
       "lat": 4645200,
       "lng": -80600,
       "fuels": {
-        "gazole": 1.945,
+        "gazole": 1.935,
         "sp95": 1.995,
-        "sp98": 2.05,
+        "sp98": 1.999,
         "e10": 1.939,
         "e85": 0.772,
         "gplc": 1.05
@@ -509,36 +367,9 @@
       "lat": 4689000,
       "lng": -212300,
       "fuels": {
-        "gazole": 2.01,
-        "sp98": 2.145,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "85530003",
-      "cp": "85530",
-      "ville": "La Bruffière",
-      "adresse": "2 Rue André Defontaine",
-      "pop": "R",
-      "lat": 4700700,
-      "lng": -119000,
-      "fuels": {
-        "gazole": 2.17,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "85530001",
-      "cp": "85530",
-      "ville": "La Bruffière",
-      "adresse": "Rue de la Brûlerie",
-      "pop": "R",
-      "lat": 4701300,
-      "lng": -119300,
-      "fuels": {
-        "gazole": 1.976,
-        "sp98": 2.04,
-        "e10": 1.968
+        "gazole": 1.981,
+        "sp98": 2.025,
+        "e10": 1.914
       }
     },
     {
@@ -565,8 +396,8 @@
       "lat": 4664600,
       "lng": -74700,
       "fuels": {
-        "gazole": 1.941,
-        "sp98": 2.003,
+        "gazole": 1.9,
+        "sp98": 2.013,
         "e10": 1.909,
         "e85": 0.777,
         "gplc": 1.09
@@ -584,33 +415,6 @@
         "gazole": 1.969,
         "sp95": 1.989,
         "e10": 1.919
-      }
-    },
-    {
-      "id": "85280002",
-      "cp": "85280",
-      "ville": "La Ferrière",
-      "adresse": "Rue Nationale",
-      "pop": "R",
-      "lat": 4671100,
-      "lng": -131600,
-      "fuels": {
-        "gazole": 2.179,
-        "sp95": 1.989
-      }
-    },
-    {
-      "id": "85710002",
-      "cp": "85710",
-      "ville": "La Garnache",
-      "adresse": "Rue du Chemin Bas",
-      "pop": "R",
-      "lat": 4689100,
-      "lng": -182800,
-      "fuels": {
-        "gazole": 1.995,
-        "sp95": 1.999,
-        "sp98": 2.019
       }
     },
     {
@@ -640,21 +444,6 @@
       }
     },
     {
-      "id": "85680001",
-      "cp": "85680",
-      "ville": "La Guérinière",
-      "adresse": "Route de Noirmoutier",
-      "pop": "R",
-      "lat": 4697600,
-      "lng": -224200,
-      "fuels": {
-        "gazole": 1.962,
-        "sp98": 2.018,
-        "e10": 1.949,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "85000010",
       "cp": "85000",
       "ville": "La Roche-sur-Yon",
@@ -677,50 +466,7 @@
       "lat": 4666498.06305,
       "lng": -145227.30198,
       "fuels": {
-        "gazole": 1.953,
-        "sp98": 1.999,
-        "e10": 1.889
-      }
-    },
-    {
-      "id": "85000009",
-      "cp": "85000",
-      "ville": "La Roche-sur-Yon",
-      "adresse": "Boulevard Edison",
-      "pop": "R",
-      "lat": 4668200,
-      "lng": -143800,
-      "fuels": {
-        "gazole": 1.953,
-        "sp98": 2.025,
-        "e10": 1.912,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "85000003",
-      "cp": "85000",
-      "ville": "La Roche-sur-Yon",
-      "adresse": "Boulevard Stéphane Moreau",
-      "pop": "R",
-      "lat": 4666500,
-      "lng": -141100,
-      "fuels": {
-        "gazole": 1.947,
-        "sp98": 1.999,
-        "e10": 1.905
-      }
-    },
-    {
-      "id": "85000001",
-      "cp": "85000",
-      "ville": "La Roche-sur-Yon",
-      "adresse": "Route de Nantes",
-      "pop": "R",
-      "lat": 4670300,
-      "lng": -143000,
-      "fuels": {
-        "gazole": 1.953,
+        "gazole": 1.951,
         "sp98": 1.999,
         "e10": 1.899
       }
@@ -754,20 +500,6 @@
       }
     },
     {
-      "id": "85000004",
-      "cp": "85000",
-      "ville": "La Roche-sur-Yon",
-      "adresse": "RUE SAVARY DE L'EPINERAYE",
-      "pop": "R",
-      "lat": 4665300,
-      "lng": -144400,
-      "fuels": {
-        "gazole": 1.967,
-        "sp98": 1.99,
-        "e10": 1.951
-      }
-    },
-    {
       "id": "85360001",
       "cp": "85360",
       "ville": "La Tranche-sur-Mer",
@@ -778,49 +510,21 @@
       "fuels": {
         "gazole": 1.933,
         "sp98": 1.99,
-        "e10": 1.872
+        "e10": 1.891
       }
     },
     {
-      "id": "85510001",
-      "cp": "85510",
-      "ville": "Le Boupère",
-      "adresse": "Rue Eugène Charrier",
+      "id": "85540003",
+      "cp": "85540",
+      "ville": "Le Champ-Saint-Père",
+      "adresse": "rue des Tourterelles",
       "pop": "R",
-      "lat": 4679597,
-      "lng": -93220,
+      "lat": 4651000,
+      "lng": -134500,
       "fuels": {
-        "gazole": 1.995,
-        "sp95": 2.006,
-        "sp98": 2.083
-      }
-    },
-    {
-      "id": "85170011",
-      "cp": "85170",
-      "ville": "Le Poiré-sur-Vie",
-      "adresse": "2 rue de la brachetière",
-      "pop": "R",
-      "lat": 4676500,
-      "lng": -150500,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.029,
-        "e10": 1.969
-      }
-    },
-    {
-      "id": "85170006",
-      "cp": "85170",
-      "ville": "Le Poiré-sur-Vie",
-      "adresse": "48 BD DES DEUX MOULINS",
-      "pop": "R",
-      "lat": 4676400,
-      "lng": -149400,
-      "fuels": {
-        "gazole": 1.953,
-        "sp98": 1.999,
-        "e10": 1.889
+        "gazole": 2.03,
+        "sp95": 1.984,
+        "sp98": 2.06
       }
     },
     {
@@ -890,9 +594,9 @@
       "lat": 4688000,
       "lng": -90500,
       "fuels": {
-        "gazole": 1.94,
-        "sp95": 1.946,
-        "sp98": 1.993
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.009
       }
     },
     {
@@ -977,8 +681,7 @@
       "lat": 4651800,
       "lng": -177600,
       "fuels": {
-        "gazole": 2.124,
-        "sp98": 1.99
+        "gazole": 2.124
       }
     },
     {
@@ -990,9 +693,9 @@
       "lat": 4648700,
       "lng": -174600,
       "fuels": {
-        "gazole": 1.934,
+        "gazole": 1.935,
         "sp95": 1.969,
-        "e10": 1.898
+        "e10": 1.908
       }
     },
     {
@@ -1047,23 +750,9 @@
       "lng": -177800,
       "fuels": {
         "gazole": 1.934,
-        "sp98": 1.99,
-        "e10": 1.898,
-        "e85": 0.765
-      }
-    },
-    {
-      "id": "85100005",
-      "cp": "85100",
-      "ville": "Les Sables-d'Olonne",
-      "adresse": "RUE DE LA PETITE GARLIERE",
-      "pop": "R",
-      "lat": 4650462.1,
-      "lng": -178492.8,
-      "fuels": {
-        "gazole": 1.939,
         "sp98": 1.995,
-        "e10": 1.899
+        "e10": 1.898,
+        "e85": 0.779
       }
     },
     {
@@ -1075,24 +764,10 @@
       "lat": 4649343.58832,
       "lng": -174997.69987,
       "fuels": {
-        "gazole": 1.934,
-        "sp98": 1.999,
-        "e10": 1.898,
+        "gazole": 1.935,
+        "sp98": 2.019,
+        "e10": 1.908,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "85100002",
-      "cp": "85180",
-      "ville": "Les Sables-d'Olonne",
-      "adresse": "Rue du Bocage",
-      "pop": "R",
-      "lat": 4650361.11796,
-      "lng": -172936.89916,
-      "fuels": {
-        "gazole": 1.966,
-        "sp98": 1.99,
-        "e10": 1.953
       }
     },
     {
@@ -1104,7 +779,7 @@
       "lat": 4642500,
       "lng": -149500,
       "fuels": {
-        "gazole": 1.966,
+        "gazole": 1.939,
         "sp98": 2.029,
         "e10": 1.929
       }
@@ -1207,20 +882,6 @@
       }
     },
     {
-      "id": "85600001",
-      "cp": "85600",
-      "ville": "Montaigu-Vendée",
-      "adresse": "11 RUE DE LA VENDEE",
-      "pop": "R",
-      "lat": 4700000,
-      "lng": -133000,
-      "fuels": {
-        "gazole": 2.09,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "85600005",
       "cp": "85600",
       "ville": "Montaigu-Vendée",
@@ -1234,19 +895,6 @@
       }
     },
     {
-      "id": "85530002",
-      "cp": "85600",
-      "ville": "Montaigu-Vendée",
-      "adresse": "RN 753 - ROUTE DE MONTAIGU",
-      "pop": "R",
-      "lat": 4698400,
-      "lng": -124600,
-      "fuels": {
-        "gazole": 2.139,
-        "sp95": 1.99
-      }
-    },
-    {
       "id": "85600003",
       "cp": "85600",
       "ville": "Montaigu-Vendée",
@@ -1255,10 +903,10 @@
       "lat": 4696900,
       "lng": -133100,
       "fuels": {
-        "gazole": 1.936,
-        "sp98": 1.979,
-        "e10": 1.894,
-        "e85": 0.782
+        "gazole": 1.902,
+        "sp98": 1.988,
+        "e10": 1.907,
+        "e85": 0.784
       }
     },
     {
@@ -1285,23 +933,9 @@
       "lat": 4697800,
       "lng": -130600,
       "fuels": {
-        "gazole": 1.935,
+        "gazole": 1.92,
         "sp95": 1.978,
         "e10": 1.893
-      }
-    },
-    {
-      "id": "85290006",
-      "cp": "85290",
-      "ville": "Mortagne-sur-Sèvre",
-      "adresse": "Route de Cholet",
-      "pop": "R",
-      "lat": 4699400,
-      "lng": -94900,
-      "fuels": {
-        "gazole": 1.935,
-        "sp98": 1.999,
-        "e10": 1.889
       }
     },
     {
@@ -1333,21 +967,6 @@
       }
     },
     {
-      "id": "85540002",
-      "cp": "85540",
-      "ville": "Moutiers-les-Mauxfaits",
-      "adresse": "Avenue Georges Clemenceau",
-      "pop": "R",
-      "lat": 4649700,
-      "lng": -142400,
-      "fuels": {
-        "gazole": 1.946,
-        "sp98": 2.024,
-        "e10": 1.935,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "85430001",
       "cp": "85430",
       "ville": "Nieul-le-Dolent",
@@ -1370,9 +989,10 @@
       "lat": 4700200,
       "lng": -225900,
       "fuels": {
-        "gazole": 1.962,
+        "gazole": 1.955,
         "sp98": 1.995,
-        "e10": 1.929
+        "e10": 1.929,
+        "e85": 0.789
       }
     },
     {
@@ -1444,8 +1064,8 @@
       "fuels": {
         "gazole": 1.954,
         "sp98": 1.995,
-        "e10": 1.908,
-        "e85": 0.779
+        "e10": 1.91,
+        "e85": 0.769
       }
     },
     {
@@ -1471,7 +1091,7 @@
       "lat": 4669600,
       "lng": -192800,
       "fuels": {
-        "gazole": 1.949,
+        "gazole": 1.929,
         "sp98": 1.989,
         "e10": 1.899,
         "e85": 0.759
@@ -1491,21 +1111,6 @@
       }
     },
     {
-      "id": "85800003",
-      "cp": "85800",
-      "ville": "Saint-Gilles-Croix-de-Vie",
-      "adresse": "rd pt de l'Europe parc Océanis",
-      "pop": "R",
-      "lat": 4669400,
-      "lng": -191400,
-      "fuels": {
-        "gazole": 1.933,
-        "sp98": 1.988,
-        "e10": 1.897,
-        "e85": 0.758
-      }
-    },
-    {
       "id": "85270001",
       "cp": "85270",
       "ville": "Saint-Hilaire-de-Riez",
@@ -1514,10 +1119,10 @@
       "lat": 4671300,
       "lng": -196100,
       "fuels": {
-        "gazole": 1.959,
+        "gazole": 1.939,
         "sp98": 1.999,
         "e10": 1.919,
-        "e85": 0.764
+        "e85": 0.768
       }
     },
     {
@@ -1529,9 +1134,9 @@
       "lat": 4656232.3,
       "lng": -105918.5,
       "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.049,
-        "e10": 1.929
+        "gazole": 1.979,
+        "sp98": 2.069,
+        "e10": 1.949
       }
     },
     {
@@ -1543,66 +1148,8 @@
       "lat": 4652247.87,
       "lng": -108601.6,
       "fuels": {
-        "gazole": 2.025,
-        "sp98": 1.99,
-        "e10": 1.985
-      }
-    },
-    {
-      "id": "85210007",
-      "cp": "85210",
-      "ville": "Saint-Jean-d'Hermine",
-      "adresse": "SARL LES HARAS",
-      "pop": "A",
-      "lat": 4657300,
-      "lng": -111700,
-      "fuels": {
-        "gazole": 2.22,
-        "sp98": 2.25,
-        "e10": 2.15
-      }
-    },
-    {
-      "id": "85160005",
-      "cp": "85160",
-      "ville": "Saint-Jean-de-Monts",
-      "adresse": "Route de Challans",
-      "pop": "R",
-      "lat": 4679600,
-      "lng": -204600,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.995,
-        "e10": 1.92,
-        "e85": 0.773
-      }
-    },
-    {
-      "id": "85160006",
-      "cp": "85160",
-      "ville": "Saint-Jean-de-Monts",
-      "adresse": "Rue de la Rivière",
-      "pop": "R",
-      "lat": 4679567.74368,
-      "lng": -204948.00138,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.989,
-        "e10": 1.92
-      }
-    },
-    {
-      "id": "85290010",
-      "cp": "85290",
-      "ville": "Saint-Laurent-sur-Sèvre",
-      "adresse": "1 RUE DES MARTYRS",
-      "pop": "R",
-      "lat": 4696000,
-      "lng": -89000,
-      "fuels": {
-        "gazole": 2.059,
-        "sp95": 1.989,
-        "sp98": 2.069
+        "gazole": 1.966,
+        "sp98": 1.99
       }
     },
     {
@@ -1614,34 +1161,7 @@
       "lat": 4696800,
       "lng": -89400,
       "fuels": {
-        "gazole": 2.061,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "85460003",
-      "cp": "85460",
-      "ville": "Saint-Michel-en-l'Herm",
-      "adresse": "Route de Saint-Michel-en-l'Herm",
-      "pop": "R",
-      "lat": 4633342.67726,
-      "lng": -129125.783,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 1.995,
-        "e10": 1.909
-      }
-    },
-    {
-      "id": "85400008",
-      "cp": "85400",
-      "ville": "Sainte-Gemme-la-Plaine",
-      "adresse": "les quatre chemins",
-      "pop": "R",
-      "lat": 4646700,
-      "lng": -110900,
-      "fuels": {
-        "gazole": 2.021,
+        "gazole": 2.002,
         "sp95": 1.99
       }
     },
@@ -1656,37 +1176,9 @@
       "fuels": {
         "gazole": 1.954,
         "sp98": 1.995,
-        "e10": 1.908,
-        "e85": 0.759,
+        "e10": 1.91,
+        "e85": 0.762,
         "gplc": 1.105
-      }
-    },
-    {
-      "id": "85440001",
-      "cp": "85440",
-      "ville": "Talmont-Saint-Hilaire",
-      "adresse": "86 AVENUE DES SABLES",
-      "pop": "R",
-      "lat": 4646900,
-      "lng": -162900,
-      "fuels": {
-        "gazole": 1.939,
-        "sp95": 1.969,
-        "sp98": 1.999,
-        "e10": 1.899
-      }
-    },
-    {
-      "id": "85440002",
-      "cp": "85440",
-      "ville": "Talmont-Saint-Hilaire",
-      "adresse": "91 Avenue des Sables",
-      "pop": "R",
-      "lat": 4646800,
-      "lng": -162800,
-      "fuels": {
-        "gazole": 2.022,
-        "sp95": 1.99
       }
     }
   ]

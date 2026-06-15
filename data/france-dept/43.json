@@ -3,52 +3,52 @@
   "name": "Haute-Loire",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 50,
+  "stationCount": 27,
   "fuels": {
     "gazole": {
-      "count": 47,
-      "mean": 2.012,
-      "median": 1.999,
-      "min": 1.905,
+      "count": 27,
+      "mean": 2.0211,
+      "median": 2.01,
+      "min": 1.964,
       "max": 2.1
     },
     "sp95": {
-      "count": 22,
-      "mean": 2.0145,
-      "median": 1.999,
-      "min": 1.942,
-      "max": 2.089
+      "count": 11,
+      "mean": 2.039,
+      "median": 2.04,
+      "min": 1.99,
+      "max": 2.119
     },
     "sp98": {
-      "count": 31,
-      "mean": 2.0584,
-      "median": 2.059,
+      "count": 17,
+      "mean": 2.0657,
+      "median": 2.069,
       "min": 1.99,
       "max": 2.13
     },
     "e10": {
-      "count": 26,
-      "mean": 1.9653,
+      "count": 14,
+      "mean": 1.9624,
       "median": 1.9525,
-      "min": 1.899,
-      "max": 2.12
+      "min": 1.929,
+      "max": 2.017
     },
     "e85": {
-      "count": 11,
-      "mean": 0.8554,
+      "count": 5,
+      "mean": 0.8434,
       "median": 0.855,
-      "min": 0.798,
-      "max": 0.972
+      "min": 0.809,
+      "max": 0.889
     },
     "gplc": {
-      "count": 2,
-      "mean": 0.9445,
-      "median": 0.9445,
+      "count": 1,
+      "mean": 0.939,
+      "median": 0.939,
       "min": 0.939,
-      "max": 0.95
+      "max": 0.939
     }
   },
   "stations": [
@@ -77,20 +77,7 @@
       "fuels": {
         "gazole": 2.015,
         "sp98": 2.085,
-        "e10": 1.975
-      }
-    },
-    {
-      "id": "43210003",
-      "cp": "43210",
-      "ville": "Bas-en-Basset",
-      "adresse": "15 AVENUE ALFRED DE VISSAGUET",
-      "pop": "R",
-      "lat": 4530278.5,
-      "lng": 411399.4,
-      "fuels": {
-        "gazole": 1.979,
-        "e10": 1.949
+        "e10": 1.94
       }
     },
     {
@@ -177,21 +164,6 @@
       }
     },
     {
-      "id": "43320002",
-      "cp": "43320",
-      "ville": "Chaspuzac",
-      "adresse": "RUE DE L'AVIATION",
-      "pop": "R",
-      "lat": 4507186.18179,
-      "lng": 376132.53445,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.049,
-        "e10": 1.969,
-        "e85": 0.869
-      }
-    },
-    {
       "id": "43100005",
       "cp": "43100",
       "ville": "Cohade",
@@ -207,100 +179,6 @@
       }
     },
     {
-      "id": "43500002",
-      "cp": "43500",
-      "ville": "Craponne-sur-Arzon",
-      "adresse": "24 rue d'Ollias",
-      "pop": "R",
-      "lat": 4533300,
-      "lng": 384400,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 1.979
-      }
-    },
-    {
-      "id": "43500001",
-      "cp": "43500",
-      "ville": "Craponne-sur-Arzon",
-      "adresse": "ZA LE VERNET ROUTE DU PUY",
-      "pop": "R",
-      "lat": 4532544.86675,
-      "lng": 383961.40865,
-      "fuels": {
-        "gazole": 2.03,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "43220001",
-      "cp": "43220",
-      "ville": "Dunières",
-      "adresse": "Rue Traversière",
-      "pop": "R",
-      "lat": 4521400,
-      "lng": 434600,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999
-      }
-    },
-    {
-      "id": "43340001",
-      "cp": "43340",
-      "ville": "Landos",
-      "adresse": "La Sauvetat",
-      "pop": "R",
-      "lat": 4484947.156,
-      "lng": 385165.664,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.089,
-        "e85": 0.855
-      }
-    },
-    {
-      "id": "43300004",
-      "cp": "43300",
-      "ville": "Langeac",
-      "adresse": "56 AVENUE D'AUVERGNE",
-      "pop": "R",
-      "lat": 4510938.38,
-      "lng": 349199.15,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.099,
-        "e10": 1.995
-      }
-    },
-    {
-      "id": "43300002",
-      "cp": "43300",
-      "ville": "Langeac",
-      "adresse": "Avenue d'Auvergne",
-      "pop": "R",
-      "lat": 4511200,
-      "lng": 349200,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.049
-      }
-    },
-    {
-      "id": "43400001",
-      "cp": "43400",
-      "ville": "Le Chambon-sur-Lignon",
-      "adresse": "Route de Saint-Agrève-Valence",
-      "pop": "R",
-      "lat": 4505556,
-      "lng": 431412,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.959,
-        "e10": 1.899
-      }
-    },
-    {
       "id": "43150001",
       "cp": "43150",
       "ville": "Le Monastier-sur-Gazeille",
@@ -309,52 +187,23 @@
       "lat": 4494870,
       "lng": 398740,
       "fuels": {
-        "gazole": 2.05,
+        "gazole": 1.995,
         "sp98": 2.13,
-        "e10": 1.999,
-        "e85": 0.798
+        "e10": 1.99,
+        "e85": 0.809
       }
     },
     {
-      "id": "43200003",
-      "cp": "43200",
-      "ville": "Le Pertuis",
-      "adresse": "RN 88",
-      "pop": "R",
-      "lat": 4509700,
-      "lng": 405900,
-      "fuels": {
-        "gazole": 2.098,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "43000009",
+      "id": "43000011",
       "cp": "43000",
       "ville": "Le Puy-en-Velay",
-      "adresse": "10 BLD MARECHAL JOFFRE",
+      "adresse": "31 Bd Maréchal Joffre",
       "pop": "R",
-      "lat": 4504792.50728,
-      "lng": 389342.28469,
+      "lat": 4504908.36308,
+      "lng": 389402.9428,
       "fuels": {
-        "gazole": 1.905,
-        "sp98": 1.99,
-        "e85": 0.889
-      }
-    },
-    {
-      "id": "43000004",
-      "cp": "43000",
-      "ville": "Le Puy-en-Velay",
-      "adresse": "106 Avenue Maréchal Foch",
-      "pop": "R",
-      "lat": 4503300,
-      "lng": 388600,
-      "fuels": {
-        "gazole": 1.996,
-        "sp98": 2.035,
-        "e10": 1.941,
-        "e85": 0.972
+        "gazole": 2.099,
+        "sp95": 2.119
       }
     },
     {
@@ -441,20 +290,6 @@
       }
     },
     {
-      "id": "43130001",
-      "cp": "43130",
-      "ville": "Retournac",
-      "adresse": "Rue Jean-Baptiste Ribeyron",
-      "pop": "R",
-      "lat": 4521100,
-      "lng": 403000,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.029,
-        "e10": 1.899
-      }
-    },
-    {
       "id": "43220003",
       "cp": "43220",
       "ville": "Riotord",
@@ -466,19 +301,6 @@
         "gazole": 2.039,
         "sp95": 2.049,
         "sp98": 2.079
-      }
-    },
-    {
-      "id": "43230001",
-      "cp": "43230",
-      "ville": "Saint-Georges-d'Aurac",
-      "adresse": "La Buge",
-      "pop": "R",
-      "lat": 4514400,
-      "lng": 354300,
-      "fuels": {
-        "gazole": 2.022,
-        "e10": 1.99
       }
     },
     {
@@ -496,20 +318,6 @@
       }
     },
     {
-      "id": "43260002",
-      "cp": "43260",
-      "ville": "Saint-Julien-Chapteuil",
-      "adresse": "Route du Puy",
-      "pop": "R",
-      "lat": 4503700,
-      "lng": 405500,
-      "fuels": {
-        "gazole": 1.99,
-        "sp95": 1.99,
-        "sp98": 2.029
-      }
-    },
-    {
       "id": "43240001",
       "cp": "43240",
       "ville": "Saint-Just-Malmont",
@@ -522,33 +330,6 @@
         "sp95": 2.019,
         "sp98": 2.059,
         "e10": 1.999
-      }
-    },
-    {
-      "id": "43500004",
-      "cp": "43500",
-      "ville": "Saint-Pal-de-Chalencon",
-      "adresse": "Route du Velay",
-      "pop": "R",
-      "lat": 4535500,
-      "lng": 395100,
-      "fuels": {
-        "e10": 2.12
-      }
-    },
-    {
-      "id": "43350001",
-      "cp": "43350",
-      "ville": "Saint-Paulien",
-      "adresse": "Le Verdier",
-      "pop": "R",
-      "lat": 4513200,
-      "lng": 381400,
-      "fuels": {
-        "gazole": 1.99,
-        "sp95": 1.985,
-        "sp98": 2.037,
-        "e85": 0.809
       }
     },
     {
@@ -606,34 +387,6 @@
       }
     },
     {
-      "id": "43170002",
-      "cp": "43170",
-      "ville": "Saugues",
-      "adresse": "ZI du Gray",
-      "pop": "R",
-      "lat": 4496900,
-      "lng": 354100,
-      "fuels": {
-        "gazole": 2.029,
-        "sp95": 1.999,
-        "sp98": 2.069
-      }
-    },
-    {
-      "id": "43190003",
-      "cp": "43190",
-      "ville": "Tence",
-      "adresse": "44 Rue de Saint-Agrève",
-      "pop": "R",
-      "lat": 4510855.29708,
-      "lng": 429583.88576,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.942,
-        "sp98": 2.099
-      }
-    },
-    {
       "id": "43190002",
       "cp": "43190",
       "ville": "Tence",
@@ -646,35 +399,6 @@
       }
     },
     {
-      "id": "43750003",
-      "cp": "43750",
-      "ville": "Vals-près-le-Puy",
-      "adresse": "Avenue Jeanne d'Arc",
-      "pop": "R",
-      "lat": 4502704.6,
-      "lng": 387847.7,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.13,
-        "e10": 1.95,
-        "gplc": 0.95
-      }
-    },
-    {
-      "id": "43320003",
-      "cp": "43320",
-      "ville": "Vazeilles-Limandre",
-      "adresse": "2 route RN 102, Limandre",
-      "pop": "R",
-      "lat": 4511900,
-      "lng": 373000,
-      "fuels": {
-        "gazole": 2.022,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "43800002",
       "cp": "43800",
       "ville": "Vorey",
@@ -684,47 +408,6 @@
       "lng": 391500,
       "fuels": {
         "gazole": 2.01
-      }
-    },
-    {
-      "id": "43200002",
-      "cp": "43200",
-      "ville": "Yssingeaux",
-      "adresse": "101 avenue de la Marne",
-      "pop": "R",
-      "lat": 4514693,
-      "lng": 412796,
-      "fuels": {
-        "gazole": 2.069,
-        "sp95": 2.039,
-        "sp98": 2.059
-      }
-    },
-    {
-      "id": "43200005",
-      "cp": "43200",
-      "ville": "Yssingeaux",
-      "adresse": "195, route de Retournac",
-      "pop": "R",
-      "lat": 4514400,
-      "lng": 411600,
-      "fuels": {
-        "sp98": 2.039,
-        "e10": 1.939,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "43200004",
-      "cp": "43200",
-      "ville": "Yssingeaux",
-      "adresse": "45 Rue des Entreprises - Villeneuve",
-      "pop": "R",
-      "lat": 4514600,
-      "lng": 410900,
-      "fuels": {
-        "sp98": 2.039,
-        "e10": 1.939
       }
     },
     {

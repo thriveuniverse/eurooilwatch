@@ -3,52 +3,45 @@
   "name": "Aveyron",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 82,
+  "stationCount": 50,
   "fuels": {
     "gazole": {
-      "count": 79,
-      "mean": 2.0092,
+      "count": 48,
+      "mean": 2.0131,
       "median": 1.999,
-      "min": 1.922,
-      "max": 2.128
+      "min": 1.949,
+      "max": 2.119
     },
     "sp95": {
-      "count": 41,
-      "mean": 2.0209,
-      "median": 1.999,
+      "count": 26,
+      "mean": 2.0137,
+      "median": 1.998,
       "min": 1.98,
-      "max": 2.099
+      "max": 2.09
     },
     "sp98": {
-      "count": 50,
-      "mean": 2.0662,
-      "median": 2.059,
+      "count": 31,
+      "mean": 2.0679,
+      "median": 2.079,
       "min": 1.99,
       "max": 2.194
     },
     "e10": {
-      "count": 49,
-      "mean": 1.9628,
-      "median": 1.969,
-      "min": 1.918,
+      "count": 26,
+      "mean": 1.9675,
+      "median": 1.98,
+      "min": 1.929,
       "max": 2.049
     },
     "e85": {
-      "count": 14,
-      "mean": 0.8324,
-      "median": 0.809,
-      "min": 0.789,
-      "max": 0.998
-    },
-    "gplc": {
-      "count": 2,
-      "mean": 1.0955,
-      "median": 1.0955,
-      "min": 1.093,
-      "max": 1.098
+      "count": 6,
+      "mean": 0.8247,
+      "median": 0.827,
+      "min": 0.797,
+      "max": 0.849
     }
   },
   "stations": [
@@ -66,20 +59,6 @@
       }
     },
     {
-      "id": "12160003",
-      "cp": "12160",
-      "ville": "Baraqueville",
-      "adresse": "600 Avenue de Rodez",
-      "pop": "R",
-      "lat": 4427700,
-      "lng": 244400,
-      "fuels": {
-        "gazole": 1.995,
-        "sp95": 1.999,
-        "e10": 1.959
-      }
-    },
-    {
       "id": "12310001",
       "cp": "12310",
       "ville": "Bertholène",
@@ -94,33 +73,6 @@
       }
     },
     {
-      "id": "12340001",
-      "cp": "12340",
-      "ville": "Bozouls",
-      "adresse": "111 ROUTE DE RODEZ",
-      "pop": "R",
-      "lat": 4446900,
-      "lng": 272900,
-      "fuels": {
-        "gazole": 2.012,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "12340002",
-      "cp": "12340",
-      "ville": "Bozouls",
-      "adresse": "Route de Rodez",
-      "pop": "R",
-      "lat": 4446300,
-      "lng": 272700,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.099,
-        "e10": 1.929
-      }
-    },
-    {
       "id": "12360001",
       "cp": "12360",
       "ville": "Camarès",
@@ -132,19 +84,6 @@
         "gazole": 1.989,
         "sp95": 2.039,
         "e10": 1.999
-      }
-    },
-    {
-      "id": "12560002",
-      "cp": "12560",
-      "ville": "Campagnac",
-      "adresse": "12 Route du Banquier - Les Rebels - A75 - Sortie 41",
-      "pop": "R",
-      "lat": 4438500,
-      "lng": 311400,
-      "fuels": {
-        "gazole": 2.008,
-        "e10": 1.99
       }
     },
     {
@@ -205,35 +144,6 @@
       }
     },
     {
-      "id": "12100006",
-      "cp": "12100",
-      "ville": "Creissels",
-      "adresse": "Avenue de Saint Affrique",
-      "pop": "R",
-      "lat": 4408100,
-      "lng": 304200,
-      "fuels": {
-        "gazole": 1.968,
-        "e10": 1.987
-      }
-    },
-    {
-      "id": "12300005",
-      "cp": "12300",
-      "ville": "Decazeville",
-      "adresse": "280 Rue de la Renaissance",
-      "pop": "R",
-      "lat": 4455913.12756,
-      "lng": 225812.46899,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.039,
-        "sp98": 2.079,
-        "e10": 1.979,
-        "e85": 0.819
-      }
-    },
-    {
       "id": "12140002",
       "cp": "12140",
       "ville": "Entraygues-sur-Truyère",
@@ -277,20 +187,6 @@
       }
     },
     {
-      "id": "12500003",
-      "cp": "12500",
-      "ville": "Espalion",
-      "adresse": "RUE ANTOINE FANGUIN",
-      "pop": "R",
-      "lat": 4452400,
-      "lng": 276600,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.059,
-        "e10": 1.929
-      }
-    },
-    {
       "id": "12300004",
       "cp": "12300",
       "ville": "Flagnac",
@@ -311,9 +207,9 @@
       "lat": 4401125.64404,
       "lng": 314801.64568,
       "fuels": {
-        "gazole": 1.998,
-        "sp95": 2.045,
-        "sp98": 2.124
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
       }
     },
     {
@@ -352,7 +248,7 @@
       "lat": 4468500,
       "lng": 285100,
       "fuels": {
-        "gazole": 1.999,
+        "gazole": 1.979,
         "sp95": 1.999,
         "sp98": 2.039
       }
@@ -371,49 +267,6 @@
       }
     },
     {
-      "id": "12350002",
-      "cp": "12350",
-      "ville": "Lanuéjouls",
-      "adresse": "Avenue du rouergue",
-      "pop": "R",
-      "lat": 4442400,
-      "lng": 215600,
-      "fuels": {
-        "gazole": 2.019,
-        "sp98": 2.069,
-        "e10": 2.019
-      }
-    },
-    {
-      "id": "12450002",
-      "cp": "12450",
-      "ville": "Luc-la-Primaube",
-      "adresse": "10 AV.DE TOULOUSE",
-      "pop": "R",
-      "lat": 4429202,
-      "lng": 255855,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "12450001",
-      "cp": "12450",
-      "ville": "Luc-la-Primaube",
-      "adresse": "Avenue de Rodez",
-      "pop": "R",
-      "lat": 4429682,
-      "lng": 255795,
-      "fuels": {
-        "gazole": 1.948,
-        "sp98": 2.028,
-        "e10": 1.918,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "12100002",
       "cp": "12100",
       "ville": "Millau",
@@ -425,47 +278,6 @@
         "gazole": 2.004,
         "sp98": 1.99,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "12100011",
-      "cp": "12100",
-      "ville": "Millau",
-      "adresse": "150 bd Georges Brassens",
-      "pop": "R",
-      "lat": 4411600,
-      "lng": 307000,
-      "fuels": {
-        "gazole": 1.968,
-        "e10": 1.987
-      }
-    },
-    {
-      "id": "12100010",
-      "cp": "12100",
-      "ville": "Millau",
-      "adresse": "25 AVENUE EDOUARD ALFRED MARTEL",
-      "pop": "R",
-      "lat": 4411400,
-      "lng": 308200,
-      "fuels": {
-        "gazole": 1.998,
-        "sp95": 2.045,
-        "sp98": 2.124
-      }
-    },
-    {
-      "id": "12100005",
-      "cp": "12100",
-      "ville": "Millau",
-      "adresse": "82 Avenue Jean Jaurès",
-      "pop": "R",
-      "lat": 4410700,
-      "lng": 308100,
-      "fuels": {
-        "gazole": 1.968,
-        "sp98": 2.099,
-        "e10": 1.987
       }
     },
     {
@@ -519,18 +331,6 @@
       }
     },
     {
-      "id": "12800001",
-      "cp": "12800",
-      "ville": "Naucelle",
-      "adresse": "45 route d' Argent",
-      "pop": "R",
-      "lat": 4418300,
-      "lng": 236300,
-      "fuels": {
-        "sp95": 1.99
-      }
-    },
-    {
       "id": "12800002",
       "cp": "12800",
       "ville": "Naucelle",
@@ -580,40 +380,10 @@
       "lat": 4436400,
       "lng": 258800,
       "fuels": {
-        "gazole": 1.961,
+        "gazole": 1.949,
         "sp95": 1.98,
         "sp98": 2.029,
         "e10": 1.929
-      }
-    },
-    {
-      "id": "12850002",
-      "cp": "12850",
-      "ville": "Onet-le-Château",
-      "adresse": "l'Estréniol - Pôle Comtal Sud",
-      "pop": "R",
-      "lat": 4439400,
-      "lng": 260300,
-      "fuels": {
-        "gazole": 1.949,
-        "sp95": 1.98,
-        "e10": 1.929,
-        "gplc": 1.093
-      }
-    },
-    {
-      "id": "12850007",
-      "cp": "12850",
-      "ville": "Onet-le-Château",
-      "adresse": "Route d'Espalion",
-      "pop": "R",
-      "lat": 4437700,
-      "lng": 259300,
-      "fuels": {
-        "gazole": 2.07,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.849
       }
     },
     {
@@ -631,17 +401,17 @@
       }
     },
     {
-      "id": "12290003",
-      "cp": "12290",
-      "ville": "Pont-de-Salars",
-      "adresse": "Avenue de Rodez",
+      "id": "12850007",
+      "cp": "12850",
+      "ville": "Onet-le-Château",
+      "adresse": "Route d'Espalion",
       "pop": "R",
-      "lat": 4428800,
-      "lng": 271500,
+      "lat": 4437700,
+      "lng": 259300,
       "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.039,
-        "e10": 1.919
+        "gazole": 2.011,
+        "e10": 1.99,
+        "e85": 0.849
       }
     },
     {
@@ -665,9 +435,9 @@
       "lat": 4387600,
       "lng": 277800,
       "fuels": {
-        "gazole": 1.998,
-        "sp95": 2.045,
-        "sp98": 2.124
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
       }
     },
     {
@@ -700,75 +470,6 @@
       }
     },
     {
-      "id": "12230004",
-      "cp": "12240",
-      "ville": "Rieupeyroux",
-      "adresse": "3 AVENUE DU SEGALA",
-      "pop": "R",
-      "lat": 4430800,
-      "lng": 224200,
-      "fuels": {
-        "gazole": 1.922,
-        "e10": 1.924
-      }
-    },
-    {
-      "id": "12240002",
-      "cp": "12240",
-      "ville": "Rieupeyroux",
-      "adresse": "Route de Rodez",
-      "pop": "R",
-      "lat": 4430600,
-      "lng": 224900,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 2.055,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "12390001",
-      "cp": "12390",
-      "ville": "Rignac",
-      "adresse": "Chemin de la Cassagne",
-      "pop": "R",
-      "lat": 4440500,
-      "lng": 229600,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.999,
-        "sp98": 2.039
-      }
-    },
-    {
-      "id": "12000010",
-      "cp": "12000",
-      "ville": "Rodez",
-      "adresse": "10 bis Avenue de la Gineste",
-      "pop": "R",
-      "lat": 4436200,
-      "lng": 257200,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 2.029,
-        "e10": 1.929,
-        "e85": 0.799
-      }
-    },
-    {
-      "id": "12000014",
-      "cp": "12000",
-      "ville": "Rodez",
-      "adresse": "33 Bd Paul ramadier",
-      "pop": "R",
-      "lat": 4435921.92114,
-      "lng": 256985.24525,
-      "fuels": {
-        "gazole": 2.066,
-        "sp95": 1.99
-      }
-    },
-    {
       "id": "12000013",
       "cp": "12000",
       "ville": "Rodez",
@@ -781,21 +482,6 @@
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.845
-      }
-    },
-    {
-      "id": "12000011",
-      "cp": "12000",
-      "ville": "Rodez",
-      "adresse": "Avenue de Bamberg",
-      "pop": "R",
-      "lat": 4436135.13702,
-      "lng": 258846.1757,
-      "fuels": {
-        "gazole": 1.961,
-        "sp95": 1.98,
-        "e10": 1.929,
-        "e85": 0.809
       }
     },
     {
@@ -821,8 +507,8 @@
       "lat": 4395700,
       "lng": 287500,
       "fuels": {
-        "gazole": 2.048,
-        "e10": 1.99
+        "gazole": 1.989,
+        "e10": 1.986
       }
     },
     {
@@ -834,9 +520,9 @@
       "lat": 4395700,
       "lng": 286800,
       "fuels": {
-        "gazole": 1.998,
-        "sp95": 2.045,
-        "sp98": 2.124
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
       }
     },
     {
@@ -869,47 +555,6 @@
       }
     },
     {
-      "id": "12330004",
-      "cp": "12330",
-      "ville": "Saint-Christophe-Vallon",
-      "adresse": "Route de Rodez",
-      "pop": "R",
-      "lat": 4446900,
-      "lng": 241400,
-      "fuels": {
-        "gazole": 2.017,
-        "sp98": 2.095,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "12780002",
-      "cp": "12780",
-      "ville": "Saint-Léons",
-      "adresse": "D 911 LE BOIS DU FOUR",
-      "pop": "R",
-      "lat": 4423609.94618,
-      "lng": 298684.31229,
-      "fuels": {
-        "gazole": 1.995,
-        "sp95": 2.089,
-        "sp98": 2.129
-      }
-    },
-    {
-      "id": "12490001",
-      "cp": "12490",
-      "ville": "Saint-Rome-de-Cernon",
-      "adresse": "AV DE LA REPUBLIQUE",
-      "pop": "R",
-      "lat": 4401200,
-      "lng": 296400,
-      "fuels": {
-        "gazole": 2.059,
-        "sp95": 2.099
-      }
-    },
-    {
       "id": "12490002",
       "cp": "12490",
       "ville": "Saint-Rome-de-Tarn",
@@ -918,9 +563,9 @@
       "lat": 4404300,
       "lng": 290500,
       "fuels": {
-        "gazole": 1.998,
-        "sp95": 2.045,
-        "sp98": 2.124
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
       }
     },
     {
@@ -945,9 +590,9 @@
       "lat": 4445500,
       "lng": 247300,
       "fuels": {
-        "gazole": 2.021,
-        "sp98": 2.091,
-        "e10": 1.948
+        "gazole": 2.006,
+        "sp98": 2.079,
+        "e10": 1.939
       }
     },
     {
@@ -959,25 +604,9 @@
       "lat": 4432900,
       "lng": 306900,
       "fuels": {
-        "gazole": 1.998,
-        "sp95": 2.045,
-        "sp98": 2.124
-      }
-    },
-    {
-      "id": "12150006",
-      "cp": "12150",
-      "ville": "Sévérac d'Aveyron",
-      "adresse": "AUTOROUTE A75 - AIRE DE L'AVEYRON",
-      "pop": "A",
-      "lat": 4433000,
-      "lng": 308200,
-      "fuels": {
-        "gazole": 2.128,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.998,
-        "gplc": 1.098
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
       }
     },
     {
@@ -995,20 +624,6 @@
       }
     },
     {
-      "id": "12150005",
-      "cp": "12150",
-      "ville": "Sévérac d'Aveyron",
-      "adresse": "ZA le Plâ d'Aveyron RN88",
-      "pop": "R",
-      "lat": 4435100,
-      "lng": 297200,
-      "fuels": {
-        "gazole": 1.995,
-        "sp95": 2.089,
-        "e85": 0.895
-      }
-    },
-    {
       "id": "12600002",
       "cp": "12600",
       "ville": "Taussac",
@@ -1020,21 +635,6 @@
         "gazole": 2.06,
         "sp95": 2.08,
         "sp98": 2.13
-      }
-    },
-    {
-      "id": "12400003",
-      "cp": "12400",
-      "ville": "Vabres-l'Abbaye",
-      "adresse": "Route de Saint-Affrique",
-      "pop": "R",
-      "lat": 4395400,
-      "lng": 285000,
-      "fuels": {
-        "gazole": 1.967,
-        "sp95": 1.999,
-        "e10": 1.969,
-        "e85": 0.799
       }
     },
     {
@@ -1059,7 +659,7 @@
       "lat": 4409000,
       "lng": 270100,
       "fuels": {
-        "gazole": 2.099,
+        "gazole": 2.119,
         "sp95": 1.99
       }
     },
@@ -1076,51 +676,6 @@
         "sp95": 1.995,
         "sp98": 2.059,
         "e85": 0.799
-      }
-    },
-    {
-      "id": "12200001",
-      "cp": "12200",
-      "ville": "Villefranche-de-Rouergue",
-      "adresse": "9 Avenue des Croates",
-      "pop": "R",
-      "lat": 4436100,
-      "lng": 204100,
-      "fuels": {
-        "gazole": 2.062,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "12200002",
-      "cp": "12200",
-      "ville": "Villefranche-de-Rouergue",
-      "adresse": "Avenue de Toulouse",
-      "pop": "R",
-      "lat": 4436100,
-      "lng": 203400,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.989,
-        "sp98": 2.069,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "12200004",
-      "cp": "12200",
-      "ville": "Villefranche-de-Rouergue",
-      "adresse": "LIEU DIT BERNUSSOU",
-      "pop": "R",
-      "lat": 4435900,
-      "lng": 199700,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 1.989,
-        "sp98": 2.049,
-        "e10": 1.919,
-        "e85": 0.789
       }
     },
     {
@@ -1175,18 +730,6 @@
         "gazole": 2.09,
         "sp98": 1.99,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "12110003",
-      "cp": "12110",
-      "ville": "Viviez",
-      "adresse": "Zone de Laubarède",
-      "pop": "R",
-      "lat": 4455984.71104,
-      "lng": 221763.49504,
-      "fuels": {
-        "gazole": 2.025
       }
     }
   ]

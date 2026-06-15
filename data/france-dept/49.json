@@ -3,69 +3,55 @@
   "name": "Maine-et-Loire",
   "regionCode": "PDL",
   "regionName": "Pays de la Loire",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 109,
+  "stationCount": 67,
   "fuels": {
     "gazole": {
-      "count": 109,
-      "mean": 1.998,
-      "median": 1.973,
-      "min": 1.885,
+      "count": 66,
+      "mean": 1.9811,
+      "median": 1.966,
+      "min": 1.884,
       "max": 2.409
     },
     "sp95": {
-      "count": 30,
-      "mean": 1.9994,
+      "count": 17,
+      "mean": 1.9973,
       "median": 1.99,
-      "min": 1.955,
-      "max": 2.149
+      "min": 1.959,
+      "max": 2.119
     },
     "sp98": {
-      "count": 85,
-      "mean": 2.0563,
+      "count": 55,
+      "mean": 2.0565,
       "median": 2.029,
       "min": 1.981,
       "max": 2.569
     },
     "e10": {
-      "count": 88,
-      "mean": 1.9557,
+      "count": 56,
+      "mean": 1.9572,
       "median": 1.929,
       "min": 1.875,
       "max": 2.429
     },
     "e85": {
-      "count": 32,
-      "mean": 0.8281,
-      "median": 0.8095,
-      "min": 0.758,
+      "count": 24,
+      "mean": 0.8287,
+      "median": 0.8105,
+      "min": 0.759,
       "max": 0.999
     },
     "gplc": {
-      "count": 8,
-      "mean": 1.0899,
-      "median": 1.0495,
+      "count": 7,
+      "mean": 1.0857,
+      "median": 1.035,
       "min": 0.999,
       "max": 1.339
     }
   },
   "stations": [
-    {
-      "id": "49650003",
-      "cp": "49650",
-      "ville": "Allonnes",
-      "adresse": "25 rue Albert Pottier",
-      "pop": "R",
-      "lat": 4729311.73,
-      "lng": 2420.89,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.019,
-        "sp98": 2.089
-      }
-    },
     {
       "id": "49000004",
       "cp": "49100",
@@ -90,22 +76,7 @@
       "lng": -55400,
       "fuels": {
         "gazole": 1.897,
-        "e10": 1.898,
         "e85": 0.824
-      }
-    },
-    {
-      "id": "49003001",
-      "cp": "49100",
-      "ville": "Angers",
-      "adresse": "3 Boulevard Gaston Ramon",
-      "pop": "R",
-      "lat": 4748900,
-      "lng": -54400,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.059,
-        "e10": 1.919
       }
     },
     {
@@ -144,7 +115,7 @@
       "lat": 4746900,
       "lng": -52500,
       "fuels": {
-        "gazole": 1.965,
+        "gazole": 1.945,
         "sp98": 2.015,
         "e10": 1.925,
         "gplc": 1.035
@@ -174,24 +145,7 @@
       "lat": 4745600,
       "lng": -57100,
       "fuels": {
-        "gazole": 1.894,
-        "e10": 1.896,
         "e85": 0.824
-      }
-    },
-    {
-      "id": "49100003",
-      "cp": "49100",
-      "ville": "Angers",
-      "adresse": "BD HENRI DUNANT",
-      "pop": "R",
-      "lat": 4748300,
-      "lng": -52700,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 1.99,
-        "e10": 1.986,
-        "e85": 0.854
       }
     },
     {
@@ -203,9 +157,9 @@
       "lat": 4748140.59927,
       "lng": -57363.14129,
       "fuels": {
-        "gazole": 1.999,
+        "gazole": 1.965,
         "sp98": 2.045,
-        "e10": 1.895,
+        "e10": 1.91,
         "e85": 0.81
       }
     },
@@ -218,37 +172,11 @@
       "lat": 4746800,
       "lng": -59400,
       "fuels": {
-        "gazole": 1.966,
-        "sp95": 1.967,
-        "sp98": 2.045,
-        "e10": 1.914,
-        "e85": 0.797
-      }
-    },
-    {
-      "id": "49000011",
-      "cp": "49000",
-      "ville": "Angers",
-      "adresse": "Rue Michel Seurat",
-      "pop": "R",
-      "lat": 4746100,
-      "lng": -61600,
-      "fuels": {
-        "gazole": 1.969,
-        "e10": 1.909
-      }
-    },
-    {
-      "id": "49240003",
-      "cp": "49240",
-      "ville": "Avrillé",
-      "adresse": "30 Avenue Pierre Mendes France",
-      "pop": "R",
-      "lat": 4750389.38004,
-      "lng": -58604.06648,
-      "fuels": {
-        "gazole": 1.999,
-        "e10": 1.939
+        "gazole": 1.965,
+        "sp95": 1.98,
+        "sp98": 2.059,
+        "e10": 1.926,
+        "e85": 0.811
       }
     },
     {
@@ -283,35 +211,6 @@
       }
     },
     {
-      "id": "49150002",
-      "cp": "49150",
-      "ville": "Baugé-en-Anjou",
-      "adresse": "RUE FOULQUES NERRA",
-      "pop": "R",
-      "lat": 4753837,
-      "lng": -10628,
-      "fuels": {
-        "gazole": 1.891,
-        "sp98": 1.99,
-        "e10": 1.913
-      }
-    },
-    {
-      "id": "49070005",
-      "cp": "49070",
-      "ville": "Beaucouzé",
-      "adresse": "2 AVENUE DU PIN",
-      "pop": "R",
-      "lat": 4746800,
-      "lng": -62600,
-      "fuels": {
-        "gazole": 1.965,
-        "sp98": 2.035,
-        "e10": 1.945,
-        "e85": 0.789
-      }
-    },
-    {
       "id": "49070009",
       "cp": "49070",
       "ville": "Beaucouzé",
@@ -338,20 +237,6 @@
         "gazole": 1.949,
         "sp98": 1.999,
         "e10": 1.929
-      }
-    },
-    {
-      "id": "49510001",
-      "cp": "49510",
-      "ville": "Beaupréau-en-Mauges",
-      "adresse": "3 rue de la Chénaie",
-      "pop": "R",
-      "lat": 4720000,
-      "lng": -87300,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.997,
-        "sp98": 2.019
       }
     },
     {
@@ -413,47 +298,6 @@
       }
     },
     {
-      "id": "49122003",
-      "cp": "49122",
-      "ville": "Bégrolles-en-Mauges",
-      "adresse": "RD PT DU MOULIN DES LANDES",
-      "pop": "R",
-      "lat": 4713200,
-      "lng": -94300,
-      "fuels": {
-        "gazole": 2.159,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "49380001",
-      "cp": "49380",
-      "ville": "Bellevigne-en-Layon",
-      "adresse": "2 BD DE LA REPUBLIQUE",
-      "pop": "R",
-      "lat": 4726980,
-      "lng": -50396,
-      "fuels": {
-        "gazole": 2.019,
-        "sp98": 2.039,
-        "e10": 1.989
-      }
-    },
-    {
-      "id": "49320003",
-      "cp": "49320",
-      "ville": "Brissac Loire Aubance",
-      "adresse": "PARC D'ACTIVITE DES FONTENELLES",
-      "pop": "R",
-      "lat": 4734100,
-      "lng": -43200,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.029,
-        "e10": 1.935
-      }
-    },
-    {
       "id": "49440001",
       "cp": "49440",
       "ville": "Candé",
@@ -463,7 +307,7 @@
       "lng": -103300,
       "fuels": {
         "gazole": 1.949,
-        "sp98": 2.049,
+        "sp98": 2.029,
         "e10": 1.959
       }
     },
@@ -476,24 +320,9 @@
       "lat": 4734787.38685,
       "lng": -75958.487,
       "fuels": {
-        "gazole": 1.989,
+        "gazole": 1.959,
         "sp98": 2.049,
         "e10": 1.939
-      }
-    },
-    {
-      "id": "49290002",
-      "cp": "49290",
-      "ville": "Chalonnes-sur-Loire",
-      "adresse": "Route de Chemillé",
-      "pop": "R",
-      "lat": 4734600,
-      "lng": -76100,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.049,
-        "e10": 1.939,
-        "e85": 0.798
       }
     },
     {
@@ -505,25 +334,10 @@
       "lat": 4720800,
       "lng": -71500,
       "fuels": {
-        "gazole": 1.941,
-        "sp98": 1.986,
-        "e10": 1.902,
-        "e85": 0.769
-      }
-    },
-    {
-      "id": "49120004",
-      "cp": "49120",
-      "ville": "Chemillé-en-Anjou",
-      "adresse": "PARC D ACTIVITE DES 3 ROUTES",
-      "pop": "R",
-      "lat": 4723500,
-      "lng": -72300,
-      "fuels": {
         "gazole": 1.949,
-        "sp98": 2.089,
-        "e10": 1.915,
-        "e85": 0.758
+        "sp98": 2.009,
+        "e10": 1.929,
+        "e85": 0.779
       }
     },
     {
@@ -535,9 +349,9 @@
       "lat": 4705200,
       "lng": -85000,
       "fuels": {
-        "gazole": 1.93,
-        "sp98": 1.99,
-        "e10": 1.887
+        "gazole": 1.912,
+        "sp98": 2.009,
+        "e10": 1.897
       }
     },
     {
@@ -549,8 +363,8 @@
       "lat": 4704258.53855,
       "lng": -90027.21117,
       "fuels": {
-        "gazole": 1.93,
-        "e10": 1.898,
+        "gazole": 1.91,
+        "e10": 1.891,
         "e85": 0.817
       }
     },
@@ -563,23 +377,9 @@
       "lat": 4700200,
       "lng": -89100,
       "fuels": {
-        "gazole": 2.02,
-        "e10": 2.039,
+        "gazole": 1.954,
+        "e10": 2.072,
         "e85": 0.86
-      }
-    },
-    {
-      "id": "49300009",
-      "cp": "49300",
-      "ville": "Cholet",
-      "adresse": "65 Boulevard Delhumeau-Plessis",
-      "pop": "R",
-      "lat": 4705400,
-      "lng": -87500,
-      "fuels": {
-        "gazole": 1.949,
-        "sp95": 1.969,
-        "sp98": 2.019
       }
     },
     {
@@ -604,10 +404,10 @@
       "lat": 4707500,
       "lng": -84300,
       "fuels": {
-        "gazole": 1.92,
-        "sp95": 1.955,
-        "sp98": 1.989,
-        "e10": 1.885,
+        "gazole": 1.884,
+        "sp95": 1.959,
+        "sp98": 1.999,
+        "e10": 1.886,
         "e85": 0.845,
         "gplc": 1.029
       }
@@ -621,9 +421,9 @@
       "lat": 4705900,
       "lng": -89000,
       "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.109,
-        "e10": 1.959
+        "gazole": 1.939,
+        "sp98": 2.079,
+        "e10": 1.929
       }
     },
     {
@@ -719,9 +519,9 @@
       "lat": 4719000,
       "lng": -29100,
       "fuels": {
-        "gazole": 1.979,
-        "sp98": 1.999,
-        "e10": 1.929
+        "gazole": 1.959,
+        "sp98": 2.029,
+        "e10": 1.959
       }
     },
     {
@@ -734,8 +534,8 @@
       "lng": -26500,
       "fuels": {
         "gazole": 1.979,
-        "sp98": 1.999,
-        "e10": 1.929,
+        "sp98": 2.029,
+        "e10": 1.959,
         "e85": 0.809
       }
     },
@@ -755,18 +555,6 @@
       }
     },
     {
-      "id": "49220004",
-      "cp": "49220",
-      "ville": "Erdre-en-Anjou",
-      "adresse": "19 RUE DE L EGLISE",
-      "pop": "R",
-      "lat": 4759855.16173,
-      "lng": -83399.38221,
-      "fuels": {
-        "gazole": 2.11
-      }
-    },
-    {
       "id": "49350001",
       "cp": "49350",
       "ville": "Gennes-Val-de-Loire",
@@ -775,8 +563,8 @@
       "lat": 4733400,
       "lng": -23200,
       "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.059,
+        "gazole": 1.959,
+        "sp98": 2.029,
         "e10": 1.929
       }
     },
@@ -789,78 +577,10 @@
       "lat": 4761400,
       "lng": -70700,
       "fuels": {
-        "gazole": 1.97,
-        "sp95": 2.149,
-        "sp98": 2.159,
-        "e10": 1.953
-      }
-    },
-    {
-      "id": "49123002",
-      "cp": "49123",
-      "ville": "Ingrandes-le-Fresne-sur-Loire",
-      "adresse": "28 BIS VILLAGE LA RIOTTIERE",
-      "pop": "R",
-      "lat": 4741024.3343,
-      "lng": -93675.46567,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.049,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "49123001",
-      "cp": "49123",
-      "ville": "Ingrandes-le-Fresne-sur-Loire",
-      "adresse": "31 AVENUE DE LA RIOTTIERRE",
-      "pop": "R",
-      "lat": 4740600,
-      "lng": -92600,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.049,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "49280001",
-      "cp": "49280",
-      "ville": "La Séguinière",
-      "adresse": "38 Avenue de Nantes",
-      "pop": "R",
-      "lat": 4706000,
-      "lng": -94100,
-      "fuels": {
-        "gazole": 2.003,
-        "e10": 1.986
-      }
-    },
-    {
-      "id": "49280003",
-      "cp": "49280",
-      "ville": "La Tessoualle",
-      "adresse": "PLACE DE LA PAIX",
-      "pop": "R",
-      "lat": 4700500,
-      "lng": -85100,
-      "fuels": {
         "gazole": 1.959,
-        "sp95": 2.029,
-        "sp98": 2.089
-      }
-    },
-    {
-      "id": "49220003",
-      "cp": "49220",
-      "ville": "Le Lion-d'Angers",
-      "adresse": "4 rocade du Lion",
-      "pop": "R",
-      "lat": 4761800,
-      "lng": -72100,
-      "fuels": {
-        "gazole": 2.14,
-        "sp95": 1.96
+        "sp95": 2.119,
+        "sp98": 2.129,
+        "e10": 1.949
       }
     },
     {
@@ -872,9 +592,9 @@
       "lat": 4714300,
       "lng": -89300,
       "fuels": {
-        "gazole": 1.989,
+        "gazole": 1.959,
         "sp98": 2.018,
-        "e10": 1.918,
+        "e10": 1.908,
         "e85": 0.809
       }
     },
@@ -891,33 +611,6 @@
         "sp95": 1.999,
         "sp98": 2.019,
         "e10": 1.949
-      }
-    },
-    {
-      "id": "49330004",
-      "cp": "49330",
-      "ville": "Les Hauts-d'Anjou",
-      "adresse": "ROUTE D'ANGERS",
-      "pop": "R",
-      "lat": 4766421.50622,
-      "lng": -56045.99009,
-      "fuels": {
-        "gazole": 2.12,
-        "sp95": 1.97
-      }
-    },
-    {
-      "id": "49130004",
-      "cp": "49130",
-      "ville": "Les Ponts-de-Cé",
-      "adresse": "Rue des maisons rouges",
-      "pop": "R",
-      "lat": 4743700,
-      "lng": -51400,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.979,
-        "e10": 1.919
       }
     },
     {
@@ -950,20 +643,6 @@
       }
     },
     {
-      "id": "49160003",
-      "cp": "49160",
-      "ville": "Longué-Jumelles",
-      "adresse": "AUT A 85  AIRE DE LA COUAILLE",
-      "pop": "A",
-      "lat": 4741889.41681,
-      "lng": -13452.32213,
-      "fuels": {
-        "gazole": 2.382,
-        "sp98": 2.556,
-        "e10": 2.406
-      }
-    },
-    {
       "id": "49160004",
       "cp": "49160",
       "ville": "Longué-Jumelles",
@@ -978,22 +657,6 @@
       }
     },
     {
-      "id": "49160001",
-      "cp": "49160",
-      "ville": "Longué-Jumelles",
-      "adresse": "ROUTE DE SAUMUR",
-      "pop": "R",
-      "lat": 4737100,
-      "lng": -9800,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 2.029,
-        "e10": 1.929,
-        "e85": 0.829,
-        "gplc": 1.119
-      }
-    },
-    {
       "id": "49310001",
       "cp": "49310",
       "ville": "Lys-Haut-Layon",
@@ -1002,24 +665,10 @@
       "lat": 4714700,
       "lng": -52200,
       "fuels": {
-        "gazole": 1.969,
+        "gazole": 1.949,
         "sp95": 1.969,
         "sp98": 2.019,
         "e10": 1.929
-      }
-    },
-    {
-      "id": "49570001",
-      "cp": "49570",
-      "ville": "Mauges-sur-Loire",
-      "adresse": "24 rue d'Anjou",
-      "pop": "R",
-      "lat": 4739000,
-      "lng": -86200,
-      "fuels": {
-        "gazole": 1.986,
-        "sp98": 1.99,
-        "e10": 1.982
       }
     },
     {
@@ -1037,20 +686,6 @@
       }
     },
     {
-      "id": "49410002",
-      "cp": "49410",
-      "ville": "Mauges-sur-Loire",
-      "adresse": "zi de la chevallerie",
-      "pop": "R",
-      "lat": 4735900,
-      "lng": -101600,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.049,
-        "e10": 1.939
-      }
-    },
-    {
       "id": "49360003",
       "cp": "49360",
       "ville": "Maulévrier",
@@ -1059,10 +694,10 @@
       "lat": 4701000,
       "lng": -75600,
       "fuels": {
-        "gazole": 1.958,
+        "gazole": 1.909,
         "sp95": 1.998,
         "sp98": 2.028,
-        "e10": 1.928
+        "e10": 1.898
       }
     },
     {
@@ -1090,20 +725,6 @@
         "gazole": 1.949,
         "sp98": 1.999,
         "e10": 1.929
-      }
-    },
-    {
-      "id": "49260001",
-      "cp": "49260",
-      "ville": "Montreuil-Bellay",
-      "adresse": "Rue Estienvrin",
-      "pop": "R",
-      "lat": 4713000,
-      "lng": -15300,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.029,
-        "e10": 1.959
       }
     },
     {
@@ -1136,34 +757,6 @@
       }
     },
     {
-      "id": "49610001",
-      "cp": "49610",
-      "ville": "Mûrs-Erigné",
-      "adresse": "26 rue Valentin des Ormeaux",
-      "pop": "R",
-      "lat": 4739700,
-      "lng": -52900,
-      "fuels": {
-        "gazole": 1.965,
-        "sp98": 2.015,
-        "e10": 1.925
-      }
-    },
-    {
-      "id": "49610002",
-      "cp": "49610",
-      "ville": "Mûrs-Erigné",
-      "adresse": "3 route de cholet",
-      "pop": "R",
-      "lat": 4740343.97,
-      "lng": -52738.9,
-      "fuels": {
-        "gazole": 2.15,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
       "id": "49680001",
       "cp": "49680",
       "ville": "Neuillé",
@@ -1191,21 +784,6 @@
       }
     },
     {
-      "id": "49420001",
-      "cp": "49420",
-      "ville": "Ombrée d'Anjou",
-      "adresse": "5 RUE DE LA GRAND PREE",
-      "pop": "R",
-      "lat": 4774300,
-      "lng": -116600,
-      "fuels": {
-        "gazole": 1.985,
-        "sp95": 2.059,
-        "e10": 1.977,
-        "e85": 0.789
-      }
-    },
-    {
       "id": "49420002",
       "cp": "49420",
       "ville": "Ombrée d'Anjou",
@@ -1217,20 +795,6 @@
         "gazole": 1.971,
         "sp98": 1.99,
         "e10": 1.969
-      }
-    },
-    {
-      "id": "49270001",
-      "cp": "49270",
-      "ville": "Orée d'Anjou",
-      "adresse": "18 Rue de Vendée",
-      "pop": "R",
-      "lat": 4733300,
-      "lng": -126100,
-      "fuels": {
-        "gazole": 2.089,
-        "sp95": 2.075,
-        "sp98": 2.125
       }
     },
     {
@@ -1248,20 +812,6 @@
       }
     },
     {
-      "id": "49124003",
-      "cp": "49124",
-      "ville": "Saint-Barthélemy-d'Anjou",
-      "adresse": "9 rue de Verdun",
-      "pop": "R",
-      "lat": 4747730.34,
-      "lng": -49113.58,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.019,
-        "e10": 1.929
-      }
-    },
-    {
       "id": "49170002",
       "cp": "49170",
       "ville": "Saint-Georges-sur-Loire",
@@ -1273,35 +823,6 @@
         "gazole": 1.989,
         "sp98": 2.029,
         "e10": 1.949
-      }
-    },
-    {
-      "id": "49070006",
-      "cp": "49070",
-      "ville": "Saint-Léger-de-Linières",
-      "adresse": "54 Rue de la Liberté",
-      "pop": "R",
-      "lat": 4746600,
-      "lng": -67400,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.01,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "49412001",
-      "cp": "49400",
-      "ville": "Saumur",
-      "adresse": "51 Boulevard Mal de Lattre-de-Tassigny",
-      "pop": "R",
-      "lat": 4726400,
-      "lng": -9200,
-      "fuels": {
-        "gazole": 1.929,
-        "sp95": 1.989,
-        "sp98": 1.999,
-        "e10": 1.889
       }
     },
     {
@@ -1326,9 +847,9 @@
       "lat": 4727700,
       "lng": -7500,
       "fuels": {
-        "gazole": 1.929,
+        "gazole": 1.919,
         "sp98": 1.999,
-        "e10": 1.889,
+        "e10": 1.909,
         "e85": 0.809
       }
     },
@@ -1348,20 +869,6 @@
       }
     },
     {
-      "id": "49500002",
-      "cp": "49500",
-      "ville": "Segré-en-Anjou Bleu",
-      "adresse": "RUE DU 8 MAI 1945",
-      "pop": "R",
-      "lat": 4768000,
-      "lng": -87800,
-      "fuels": {
-        "gazole": 1.929,
-        "sp98": 1.989,
-        "e10": 1.909
-      }
-    },
-    {
       "id": "49450003",
       "cp": "49450",
       "ville": "Sèvremoine",
@@ -1372,21 +879,8 @@
       "fuels": {
         "gazole": 1.949,
         "sp98": 2.018,
-        "e10": 1.898,
+        "e10": 1.918,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "49710001",
-      "cp": "49710",
-      "ville": "Sèvremoine",
-      "adresse": "23 rue d'Anjou",
-      "pop": "R",
-      "lat": 4702300,
-      "lng": -105600,
-      "fuels": {
-        "gazole": 2.13,
-        "sp95": 1.99
       }
     },
     {
@@ -1404,33 +898,6 @@
       }
     },
     {
-      "id": "49230003",
-      "cp": "49230",
-      "ville": "Sèvremoine",
-      "adresse": "Parc d'activité VAL DE MOINE EST, 6 Avenue des Pays Bas, SAINT GERMAIN SUR MOINE",
-      "pop": "R",
-      "lat": 4711818.14779,
-      "lng": -109975.91906,
-      "fuels": {
-        "gazole": 1.969,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "49450001",
-      "cp": "49450",
-      "ville": "Sèvremoine",
-      "adresse": "ZC LES ALOUETTES",
-      "pop": "R",
-      "lat": 4711430.5886,
-      "lng": -99183.23486,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 2.018,
-        "e10": 1.898
-      }
-    },
-    {
       "id": "49540002",
       "cp": "49540",
       "ville": "Terranjou",
@@ -1439,7 +906,7 @@
       "lat": 4723000,
       "lng": -43800,
       "fuels": {
-        "gazole": 2.2,
+        "gazole": 2.06,
         "sp95": 2.01,
         "sp98": 2.079
       }
@@ -1453,25 +920,10 @@
       "lat": 4761508,
       "lng": -46414,
       "fuels": {
-        "gazole": 1.999,
+        "gazole": 1.979,
         "sp98": 2.019,
         "e10": 1.979,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "49800003",
-      "cp": "49800",
-      "ville": "Trélazé",
-      "adresse": "220 AVENUE MENDES FRANCE",
-      "pop": "R",
-      "lat": 4744900,
-      "lng": -50500,
-      "fuels": {
-        "gazole": 2.014,
-        "sp98": 2.044,
-        "e10": 1.969,
-        "e85": 0.889
       }
     },
     {
@@ -1489,21 +941,6 @@
       }
     },
     {
-      "id": "49340001",
-      "cp": "49340",
-      "ville": "Trémentines",
-      "adresse": "AIRE DE TREMENTINES A87",
-      "pop": "A",
-      "lat": 4713500,
-      "lng": -82600,
-      "fuels": {
-        "gazole": 2.164,
-        "sp98": 2.199,
-        "e10": 2.099,
-        "e85": 0.929
-      }
-    },
-    {
       "id": "49370002",
       "cp": "49370",
       "ville": "Val d'Erdre-Auxence",
@@ -1513,20 +950,8 @@
       "lng": -88000,
       "fuels": {
         "gazole": 1.967,
-        "sp98": 2.049,
-        "e10": 1.979
-      }
-    },
-    {
-      "id": "49230002",
-      "cp": "49230",
-      "ville": "Vallet",
-      "adresse": "place saint maurice",
-      "pop": "R",
-      "lat": 4715500,
-      "lng": -121000,
-      "fuels": {
-        "gazole": 1.999
+        "sp98": 2.029,
+        "e10": 1.919
       }
     },
     {
@@ -1540,7 +965,7 @@
       "fuels": {
         "gazole": 1.989,
         "sp98": 2.049,
-        "e10": 1.989
+        "e10": 1.979
       }
     },
     {
@@ -1573,20 +998,6 @@
         "e10": 2.149,
         "e85": 0.964,
         "gplc": 1.064
-      }
-    },
-    {
-      "id": "49480001",
-      "cp": "49480",
-      "ville": "Verrières-en-Anjou",
-      "adresse": "LA MAISON BLANCHE",
-      "pop": "R",
-      "lat": 4751400,
-      "lng": -47300,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.019,
-        "e10": 1.929
       }
     },
     {

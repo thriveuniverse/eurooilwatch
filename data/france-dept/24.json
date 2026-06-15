@@ -3,81 +3,55 @@
   "name": "Dordogne",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 90,
+  "stationCount": 58,
   "fuels": {
     "gazole": {
-      "count": 89,
-      "mean": 2.0036,
-      "median": 1.992,
+      "count": 57,
+      "mean": 1.9913,
+      "median": 1.99,
       "min": 1.898,
-      "max": 2.19
+      "max": 2.14
     },
     "sp95": {
-      "count": 38,
-      "mean": 1.9957,
+      "count": 24,
+      "mean": 1.9914,
       "median": 1.99,
       "min": 1.949,
-      "max": 2.16
+      "max": 2.097
     },
     "sp98": {
-      "count": 75,
-      "mean": 2.0397,
-      "median": 2.024,
-      "min": 1.979,
-      "max": 2.227
+      "count": 49,
+      "mean": 2.0393,
+      "median": 2.029,
+      "min": 1.968,
+      "max": 2.179
     },
     "e10": {
-      "count": 62,
-      "mean": 1.9407,
+      "count": 44,
+      "mean": 1.9423,
       "median": 1.9385,
-      "min": 1.878,
+      "min": 1.872,
       "max": 2.079
     },
     "e85": {
-      "count": 23,
-      "mean": 0.8425,
-      "median": 0.839,
-      "min": 0.809,
-      "max": 1.009
+      "count": 17,
+      "mean": 0.8222,
+      "median": 0.809,
+      "min": 0.741,
+      "max": 0.865
     },
     "gplc": {
-      "count": 13,
-      "mean": 1.0525,
-      "median": 1.064,
+      "count": 7,
+      "mean": 1.0551,
+      "median": 1.069,
       "min": 0.999,
       "max": 1.151
     }
   },
   "stations": [
-    {
-      "id": "24460003",
-      "cp": "24460",
-      "ville": "Agonac",
-      "adresse": "94 Avenue de la Beauronne",
-      "pop": "R",
-      "lat": 4529276.92,
-      "lng": 75169.24,
-      "fuels": {
-        "gazole": 2.13
-      }
-    },
-    {
-      "id": "24440001",
-      "cp": "24440",
-      "ville": "Beaumontois en Périgord",
-      "adresse": "Avenue de Monpazier",
-      "pop": "R",
-      "lat": 4475319,
-      "lng": 77283,
-      "fuels": {
-        "gazole": 1.994,
-        "sp95": 1.995,
-        "sp98": 2.045
-      }
-    },
     {
       "id": "24107001",
       "cp": "24100",
@@ -88,9 +62,9 @@
       "lng": 49800,
       "fuels": {
         "gazole": 1.929,
-        "sp95": 1.959,
-        "sp98": 1.979,
-        "e10": 1.909
+        "sp95": 1.949,
+        "sp98": 1.999,
+        "e10": 1.899
       }
     },
     {
@@ -102,22 +76,9 @@
       "lat": 4483276.65008,
       "lng": 47861.30492,
       "fuels": {
-        "gazole": 1.943,
-        "sp98": 1.992,
+        "gazole": 1.939,
+        "sp98": 2.018,
         "e10": 1.909
-      }
-    },
-    {
-      "id": "24100007",
-      "cp": "24100",
-      "ville": "Bergerac",
-      "adresse": "11 Boulevard Auguste Comte",
-      "pop": "R",
-      "lat": 4484800,
-      "lng": 49200,
-      "fuels": {
-        "gazole": 2.099,
-        "sp95": 1.961
       }
     },
     {
@@ -129,9 +90,10 @@
       "lat": 4485800,
       "lng": 48200,
       "fuels": {
-        "gazole": 1.966,
+        "gazole": 1.929,
         "sp98": 1.999,
-        "e10": 1.929
+        "e10": 1.909,
+        "e85": 0.809
       }
     },
     {
@@ -188,9 +150,10 @@
       "lng": 44823.90605,
       "fuels": {
         "gazole": 1.929,
-        "sp95": 1.959,
-        "sp98": 1.979,
-        "e10": 1.909,
+        "sp95": 1.949,
+        "sp98": 1.999,
+        "e10": 1.899,
+        "e85": 0.798,
         "gplc": 1.019
       }
     },
@@ -225,53 +188,6 @@
       }
     },
     {
-      "id": "24000004",
-      "cp": "24750",
-      "ville": "Boulazac Isle Manoire",
-      "adresse": "192 Route de Lyon",
-      "pop": "R",
-      "lat": 4518000,
-      "lng": 74600,
-      "fuels": {
-        "gazole": 1.898,
-        "sp98": 1.99,
-        "e10": 1.903
-      }
-    },
-    {
-      "id": "24750001",
-      "cp": "24750",
-      "ville": "Boulazac Isle Manoire",
-      "adresse": "allée Jacques Duclos",
-      "pop": "R",
-      "lat": 4518600,
-      "lng": 77500,
-      "fuels": {
-        "gazole": 1.949,
-        "sp95": 1.969,
-        "sp98": 2.019,
-        "e10": 1.881,
-        "e85": 0.851,
-        "gplc": 1.019
-      }
-    },
-    {
-      "id": "24330007",
-      "cp": "24330",
-      "ville": "Boulazac Isle Manoire",
-      "adresse": "Autoroute A89 - Aire de Manoire",
-      "pop": "A",
-      "lat": 4515100,
-      "lng": 79900,
-      "fuels": {
-        "gazole": 2.034,
-        "sp98": 2.084,
-        "e10": 1.978,
-        "e85": 0.921,
-        "gplc": 1.064
-      }
-    },
-    {
       "id": "24330003",
       "cp": "24330",
       "ville": "Boulazac Isle Manoire",
@@ -294,48 +210,8 @@
       "lat": 4536400,
       "lng": 65300,
       "fuels": {
-        "gazole": 2.063,
+        "gazole": 2.004,
         "sp95": 1.99
-      }
-    },
-    {
-      "id": "24310002",
-      "cp": "24310",
-      "ville": "Brantôme en Périgord",
-      "adresse": "566 rue Vendôme, Puy Laurent",
-      "pop": "R",
-      "lat": 4538100,
-      "lng": 64600,
-      "fuels": {
-        "e10": 1.969
-      }
-    },
-    {
-      "id": "24250001",
-      "cp": "24250",
-      "ville": "Cénac-et-Saint-Julien",
-      "adresse": "604 Rue de la République",
-      "pop": "R",
-      "lat": 4479700,
-      "lng": 120400,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.019,
-        "sp98": 2.099
-      }
-    },
-    {
-      "id": "24660003",
-      "cp": "24660",
-      "ville": "Coulounieix-Chamiers",
-      "adresse": "Avenue Winston Churchill",
-      "pop": "R",
-      "lat": 4517100,
-      "lng": 68900,
-      "fuels": {
-        "gazole": 1.97,
-        "sp98": 1.989,
-        "e10": 1.878
       }
     },
     {
@@ -347,7 +223,7 @@
       "lat": 4484900,
       "lng": 53800,
       "fuels": {
-        "gazole": 1.943,
+        "gazole": 1.928,
         "sp95": 1.959,
         "sp98": 1.995,
         "e10": 1.909,
@@ -383,20 +259,6 @@
       }
     },
     {
-      "id": "24250004",
-      "cp": "24250",
-      "ville": "Groléjac",
-      "adresse": "le bourg",
-      "pop": "R",
-      "lat": 4482100,
-      "lng": 129100,
-      "fuels": {
-        "gazole": 1.997,
-        "sp98": 1.99,
-        "e85": 0.839
-      }
-    },
-    {
       "id": "24390001",
       "cp": "24390",
       "ville": "Hautefort",
@@ -426,37 +288,6 @@
       }
     },
     {
-      "id": "24130003",
-      "cp": "24130",
-      "ville": "La Force",
-      "adresse": "5 Avenue du Commandant Pinson",
-      "pop": "R",
-      "lat": 4487000,
-      "lng": 37700,
-      "fuels": {
-        "gazole": 2.059,
-        "sp95": 2.039,
-        "sp98": 2.119
-      }
-    },
-    {
-      "id": "24490002",
-      "cp": "24490",
-      "ville": "La Roche-Chalais",
-      "adresse": "59 Avenue d'Aquitaine",
-      "pop": "R",
-      "lat": 4514600,
-      "lng": 500,
-      "fuels": {
-        "gazole": 1.965,
-        "sp95": 1.985,
-        "sp98": 2.015,
-        "e10": 1.915,
-        "e85": 0.809,
-        "gplc": 1.137
-      }
-    },
-    {
       "id": "24250003",
       "cp": "24250",
       "ville": "La Roque-Gageac",
@@ -468,20 +299,6 @@
         "gazole": 2.099,
         "sp95": 1.99,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "24320002",
-      "cp": "24320",
-      "ville": "La Tour-Blanche-Cercles",
-      "adresse": "11 rue Passadour",
-      "pop": "R",
-      "lat": 4536900,
-      "lng": 44600,
-      "fuels": {
-        "gazole": 2.059,
-        "sp95": 2.16,
-        "sp98": 2.227
       }
     },
     {
@@ -541,59 +358,16 @@
       }
     },
     {
-      "id": "24260001",
-      "cp": "24260",
-      "ville": "Le Bugue",
-      "adresse": "AVENUE DE LA LIBERATION",
+      "id": "24620001",
+      "cp": "24620",
+      "ville": "Les Eyzies",
+      "adresse": "24 av de la Forge",
       "pop": "R",
-      "lat": 4491400,
-      "lng": 92500,
+      "lat": 4493500,
+      "lng": 102000,
       "fuels": {
-        "gazole": 1.966,
-        "sp98": 2.039,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "24480001",
-      "cp": "24480",
-      "ville": "Le Buisson-de-Cadouin",
-      "adresse": "1 place mianne",
-      "pop": "R",
-      "lat": 4484600,
-      "lng": 91100,
-      "fuels": {
-        "gazole": 2.14,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "24340002",
-      "cp": "24340",
-      "ville": "Mareuil en Périgord",
-      "adresse": "Lieu dit chez Noillac",
-      "pop": "R",
-      "lat": 4544700,
-      "lng": 46700,
-      "fuels": {
-        "gazole": 2.079,
-        "sp95": 2.029,
-        "sp98": 2.139
-      }
-    },
-    {
-      "id": "24650001",
-      "cp": "24650",
-      "ville": "Marsac-sur-l'Isle",
-      "adresse": "16, Rue des Fleurs",
-      "pop": "R",
-      "lat": 4520000,
-      "lng": 66800,
-      "fuels": {
-        "gazole": 1.953,
-        "sp98": 1.989,
-        "e10": 1.881
+        "gazole": 2.091,
+        "sp95": 2.097
       }
     },
     {
@@ -618,7 +392,7 @@
       "lat": 4519400,
       "lng": 66000,
       "fuels": {
-        "gazole": 1.949,
+        "gazole": 1.919,
         "sp98": 1.989,
         "e10": 1.881,
         "e85": 0.851,
@@ -649,7 +423,7 @@
       "fuels": {
         "gazole": 1.981,
         "sp98": 2.073,
-        "e10": 1.938,
+        "e10": 1.939,
         "e85": 0.809
       }
     },
@@ -662,9 +436,9 @@
       "lat": 4500600,
       "lng": 14300,
       "fuels": {
-        "gazole": 1.944,
-        "sp98": 1.998,
-        "e10": 1.898,
+        "gazole": 1.942,
+        "sp98": 2.01,
+        "e10": 1.899,
         "gplc": 1.151
       }
     },
@@ -677,7 +451,7 @@
       "lat": 4534400,
       "lng": 86900,
       "fuels": {
-        "gazole": 2.1,
+        "gazole": 2.07,
         "sp95": 1.99,
         "sp98": 1.99
       }
@@ -741,22 +515,6 @@
       }
     },
     {
-      "id": "24000011",
-      "cp": "24000",
-      "ville": "Périgueux",
-      "adresse": "138 RUE PIERRE SEMARD LE TOULON",
-      "pop": "R",
-      "lat": 4519700,
-      "lng": 70100,
-      "fuels": {
-        "gazole": 1.899,
-        "sp98": 1.99,
-        "e10": 1.89,
-        "e85": 0.853,
-        "gplc": 0.999
-      }
-    },
-    {
       "id": "24000010",
       "cp": "24000",
       "ville": "Périgueux",
@@ -765,9 +523,9 @@
       "lat": 4518200,
       "lng": 72100,
       "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.099,
-        "e10": 1.949
+        "gazole": 1.929,
+        "sp98": 2.069,
+        "e10": 1.919
       }
     },
     {
@@ -779,9 +537,9 @@
       "lat": 4520000,
       "lng": 69400,
       "fuels": {
-        "gazole": 1.949,
-        "sp95": 1.949,
-        "e10": 1.881,
+        "gazole": 1.909,
+        "sp95": 1.969,
+        "e10": 1.889,
         "e85": 0.851
       }
     },
@@ -815,21 +573,6 @@
       }
     },
     {
-      "id": "24600003",
-      "cp": "24600",
-      "ville": "Ribérac",
-      "adresse": "Route de Mussidan",
-      "pop": "R",
-      "lat": 4523800,
-      "lng": 34800,
-      "fuels": {
-        "gazole": 1.947,
-        "sp98": 1.999,
-        "e10": 1.897,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "24600004",
       "cp": "24600",
       "ville": "Ribérac",
@@ -842,33 +585,6 @@
         "sp95": 1.985,
         "sp98": 1.999,
         "e10": 1.897
-      }
-    },
-    {
-      "id": "24600005",
-      "cp": "24600",
-      "ville": "Ribérac",
-      "adresse": "ROUTE DE PERIGUEUX LES CHAUMES EST",
-      "pop": "R",
-      "lat": 4525235.87399,
-      "lng": 35139.69231,
-      "fuels": {
-        "gazole": 2.19,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "24580001",
-      "cp": "24580",
-      "ville": "Rouffignac-Saint-Cernin-de-Reilhac",
-      "adresse": "LES PLATEAUX DE GRAULET",
-      "pop": "R",
-      "lat": 4504300,
-      "lng": 98100,
-      "fuels": {
-        "gazole": 2.07,
-        "sp95": 2.02,
-        "sp98": 2.06
       }
     },
     {
@@ -894,24 +610,10 @@
       "lat": 4514900,
       "lng": 52700,
       "fuels": {
-        "gazole": 1.974,
-        "sp98": 1.999,
-        "e10": 1.944,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "24110001",
-      "cp": "24110",
-      "ville": "Saint-Astier",
-      "adresse": "Bld De Lattre De Tassigny",
-      "pop": "R",
-      "lat": 4514511.71117,
-      "lng": 52366.18136,
-      "fuels": {
-        "gazole": 1.974,
-        "e10": 1.944,
-        "gplc": 0.999
+        "gazole": 1.913,
+        "sp98": 1.968,
+        "e10": 1.872,
+        "e85": 0.741
       }
     },
     {
@@ -929,20 +631,6 @@
       }
     },
     {
-      "id": "24160001",
-      "cp": "24160",
-      "ville": "Saint-Martial-d'Albarède",
-      "adresse": "Le Mayne",
-      "pop": "R",
-      "lat": 4533300,
-      "lng": 104300,
-      "fuels": {
-        "gazole": 1.994,
-        "sp98": 2.048,
-        "e10": 1.949
-      }
-    },
-    {
       "id": "24300007",
       "cp": "24300",
       "ville": "Saint-Martial-de-Valette",
@@ -951,22 +639,10 @@
       "lat": 4551966.70754,
       "lng": 65543.45589,
       "fuels": {
-        "gazole": 2.071,
+        "gazole": 2.012,
+        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.856
-      }
-    },
-    {
-      "id": "24400005",
-      "cp": "24400",
-      "ville": "Saint-Médard-de-Mussidan",
-      "adresse": "RN 89 au 50 rue de la paix (entre sortie 12 et 13 Autoroute A89/E70)",
-      "pop": "R",
-      "lat": 4503300,
-      "lng": 32100,
-      "fuels": {
-        "gazole": 1.933,
-        "sp95": 1.992
       }
     },
     {
@@ -984,48 +660,6 @@
         "e10": 1.919,
         "e85": 0.829,
         "gplc": 1.079
-      }
-    },
-    {
-      "id": "24400004",
-      "cp": "24400",
-      "ville": "Saint-Médard-de-Mussidan",
-      "adresse": "ZI",
-      "pop": "R",
-      "lat": 4503800,
-      "lng": 35400,
-      "fuels": {
-        "gazole": 1.946,
-        "sp98": 2,
-        "e10": 1.9
-      }
-    },
-    {
-      "id": "24330005",
-      "cp": "24330",
-      "ville": "Saint-Pierre-de-Chignac",
-      "adresse": "les guichoux",
-      "pop": "R",
-      "lat": 4512300,
-      "lng": 86000,
-      "fuels": {
-        "gazole": 2.069,
-        "sp95": 2.039,
-        "sp98": 2.069
-      }
-    },
-    {
-      "id": "24590002",
-      "cp": "24590",
-      "ville": "Salignac-Eyvigues",
-      "adresse": "Avenue de Sarlat",
-      "pop": "R",
-      "lat": 4497400,
-      "lng": 132100,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.069,
-        "e10": 1.959
       }
     },
     {
@@ -1051,23 +685,7 @@
       "lat": 4488800,
       "lng": 121700,
       "fuels": {
-        "gazole": 1.951,
-        "e10": 1.901,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "24200007",
-      "cp": "24200",
-      "ville": "Sarlat-la-Canéda",
-      "adresse": "8 Avenue de Selves",
-      "pop": "R",
-      "lat": 4490000,
-      "lng": 121200,
-      "fuels": {
-        "gazole": 2.01,
-        "sp98": 1.99,
-        "e10": 1.984
+        "e10": 1.901
       }
     },
     {
@@ -1081,7 +699,7 @@
       "fuels": {
         "gazole": 1.95,
         "sp98": 1.99,
-        "e10": 1.9,
+        "e10": 1.899,
         "e85": 0.809,
         "gplc": 1.069
       }
@@ -1129,36 +747,6 @@
       }
     },
     {
-      "id": "24420002",
-      "cp": "24420",
-      "ville": "Sorges et Ligueux en Périgord",
-      "adresse": "RD 68 PARC D'ACTIVITES DU DIAMANT NOIR, 40 BOULEVARD DES SAVEURS",
-      "pop": "R",
-      "lat": 4530468.59733,
-      "lng": 87342.48571,
-      "fuels": {
-        "gazole": 2.07,
-        "sp98": 1.999,
-        "e10": 1.999,
-        "e85": 1.009
-      }
-    },
-    {
-      "id": "24120007",
-      "cp": "24120",
-      "ville": "Terrasson-Lavilledieu",
-      "adresse": "740 avenue des jardins",
-      "pop": "R",
-      "lat": 4512400,
-      "lng": 132100,
-      "fuels": {
-        "gazole": 1.919,
-        "sp98": 1.99,
-        "e10": 1.922,
-        "gplc": 1.079
-      }
-    },
-    {
       "id": "24120006",
       "cp": "24120",
       "ville": "Terrasson-Lavilledieu",
@@ -1201,34 +789,6 @@
       }
     },
     {
-      "id": "24210004",
-      "cp": "24210",
-      "ville": "Thenon",
-      "adresse": "837 Avenue de la Libération",
-      "pop": "R",
-      "lat": 4514078.21194,
-      "lng": 106991.89889,
-      "fuels": {
-        "gazole": 2.09,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "24800004",
-      "cp": "24800",
-      "ville": "Thiviers",
-      "adresse": "32 AVENUE CHARLES DE GAULLE",
-      "pop": "R",
-      "lat": 4542456.14527,
-      "lng": 92805.33139,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.957,
-        "sp98": 2.004
-      }
-    },
-    {
       "id": "24800003",
       "cp": "24800",
       "ville": "Thiviers",
@@ -1243,20 +803,6 @@
       }
     },
     {
-      "id": "24350002",
-      "cp": "24350",
-      "ville": "Tocane-Saint-Apre",
-      "adresse": "Lieu-dit Grands Champs de Baunac",
-      "pop": "R",
-      "lat": 4525805,
-      "lng": 50632,
-      "fuels": {
-        "gazole": 2.04,
-        "sp98": 2.075,
-        "e10": 1.96
-      }
-    },
-    {
       "id": "24000001",
       "cp": "24750",
       "ville": "Trélissac",
@@ -1265,7 +811,7 @@
       "lat": 4519000,
       "lng": 73600,
       "fuels": {
-        "gazole": 2.057,
+        "gazole": 1.998,
         "e10": 1.99
       }
     },
@@ -1279,7 +825,7 @@
       "lng": 74100,
       "fuels": {
         "gazole": 1.989,
-        "sp98": 2.039,
+        "sp98": 2.029,
         "e10": 1.929
       }
     },
@@ -1292,9 +838,9 @@
       "lat": 4520000,
       "lng": 78500,
       "fuels": {
-        "gazole": 1.949,
-        "sp95": 1.973,
-        "sp98": 2.02,
+        "gazole": 1.898,
+        "sp95": 1.969,
+        "sp98": 1.989,
         "e10": 1.881,
         "e85": 0.851
       }

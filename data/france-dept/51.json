@@ -3,69 +3,55 @@
   "name": "Marne",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 88,
+  "stationCount": 53,
   "fuels": {
     "gazole": {
-      "count": 88,
-      "mean": 2.003,
-      "median": 1.989,
-      "min": 1.89,
+      "count": 53,
+      "mean": 2.0062,
+      "median": 1.985,
+      "min": 1.9,
       "max": 2.374
     },
     "sp95": {
-      "count": 21,
-      "mean": 2.018,
-      "median": 2.009,
-      "min": 1.967,
+      "count": 14,
+      "mean": 2.0239,
+      "median": 2.0135,
+      "min": 1.99,
       "max": 2.099
     },
     "sp98": {
-      "count": 71,
-      "mean": 2.0688,
-      "median": 2.049,
+      "count": 45,
+      "mean": 2.0764,
+      "median": 2.051,
       "min": 1.988,
       "max": 2.548
     },
     "e10": {
-      "count": 70,
-      "mean": 1.9577,
+      "count": 42,
+      "mean": 1.9621,
       "median": 1.939,
-      "min": 1.891,
+      "min": 1.903,
       "max": 2.398
     },
     "e85": {
-      "count": 41,
-      "mean": 0.8423,
-      "median": 0.821,
-      "min": 0.782,
+      "count": 24,
+      "mean": 0.8355,
+      "median": 0.82,
+      "min": 0.772,
       "max": 0.999
     },
     "gplc": {
-      "count": 19,
-      "mean": 1.0496,
+      "count": 12,
+      "mean": 1.0398,
       "median": 0.999,
-      "min": 0.989,
-      "max": 1.16
+      "min": 0.995,
+      "max": 1.154
     }
   },
   "stations": [
-    {
-      "id": "51260005",
-      "cp": "51260",
-      "ville": "Anglure",
-      "adresse": "38 rue de sezanne",
-      "pop": "R",
-      "lat": 4858900,
-      "lng": 381300,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.059,
-        "sp98": 2.139
-      }
-    },
     {
       "id": "51190001",
       "cp": "51190",
@@ -91,7 +77,7 @@
       "fuels": {
         "gazole": 1.973,
         "sp98": 2.047,
-        "e10": 1.915
+        "e10": 1.922
       }
     },
     {
@@ -110,19 +96,6 @@
       }
     },
     {
-      "id": "51360001",
-      "cp": "51360",
-      "ville": "Beaumont-sur-Vesle",
-      "adresse": "14 ROUTE NATIONALE",
-      "pop": "R",
-      "lat": 4917360,
-      "lng": 418370,
-      "fuels": {
-        "gazole": 2.076,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "51130002",
       "cp": "51130",
       "ville": "Blancs-Coteaux",
@@ -138,34 +111,6 @@
       }
     },
     {
-      "id": "51130001",
-      "cp": "51130",
-      "ville": "Blancs-Coteaux",
-      "adresse": "AVENUE DU GENERAL DE GAULLE",
-      "pop": "R",
-      "lat": 4889900,
-      "lng": 400600,
-      "fuels": {
-        "gazole": 1.974,
-        "sp98": 2.048,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "51000009",
-      "cp": "51000",
-      "ville": "Châlons-en-Champagne",
-      "adresse": "Avenue du Mont-Héry",
-      "pop": "R",
-      "lat": 4897900,
-      "lng": 435700,
-      "fuels": {
-        "gazole": 2.028,
-        "sp98": 2.113,
-        "e10": 1.961
-      }
-    },
-    {
       "id": "51000001",
       "cp": "51000",
       "ville": "Châlons-en-Champagne",
@@ -174,9 +119,9 @@
       "lat": 4894200,
       "lng": 438900,
       "fuels": {
-        "gazole": 2,
-        "sp98": 2.065,
-        "e10": 1.941,
+        "gazole": 1.999,
+        "sp98": 2.11,
+        "e10": 1.953,
         "e85": 0.785
       }
     },
@@ -195,34 +140,6 @@
       }
     },
     {
-      "id": "51000013",
-      "cp": "51000",
-      "ville": "Châlons-en-Champagne",
-      "adresse": "RN 44 - ROUTE DE VITRY LE FRANC",
-      "pop": "R",
-      "lat": 4893500,
-      "lng": 440200,
-      "fuels": {
-        "gazole": 1.919,
-        "e10": 1.914,
-        "gplc": 0.995
-      }
-    },
-    {
-      "id": "51000005",
-      "cp": "51000",
-      "ville": "Châlons-en-Champagne",
-      "adresse": "ROUTE D'EPERNAY",
-      "pop": "R",
-      "lat": 4895500,
-      "lng": 433200,
-      "fuels": {
-        "gazole": 1.982,
-        "sp98": 2.047,
-        "e10": 1.967
-      }
-    },
-    {
       "id": "51500002",
       "cp": "51500",
       "ville": "Champfleury",
@@ -233,7 +150,7 @@
       "fuels": {
         "gazole": 1.964,
         "sp98": 2.039,
-        "e10": 1.912,
+        "e10": 1.939,
         "e85": 0.798
       }
     },
@@ -249,50 +166,6 @@
         "gazole": 1.969,
         "sp98": 2.039,
         "e10": 1.935
-      }
-    },
-    {
-      "id": "51220001",
-      "cp": "51220",
-      "ville": "Cormicy",
-      "adresse": "38 Rue Franklin Roosevelt",
-      "pop": "R",
-      "lat": 4937051,
-      "lng": 388976,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.041,
-        "e10": 1.935
-      }
-    },
-    {
-      "id": "51350001",
-      "cp": "51350",
-      "ville": "Cormontreuil",
-      "adresse": "Route de louvois",
-      "pop": "R",
-      "lat": 4921600,
-      "lng": 405700,
-      "fuels": {
-        "gazole": 1.964,
-        "sp98": 2.052,
-        "e10": 1.914,
-        "e85": 0.798,
-        "gplc": 0.995
-      }
-    },
-    {
-      "id": "51460003",
-      "cp": "51460",
-      "ville": "Courtisols",
-      "adresse": "2 RUE DENIS PAPIN",
-      "pop": "R",
-      "lat": 4898800,
-      "lng": 450300,
-      "fuels": {
-        "gazole": 1.995,
-        "sp98": 2.045,
-        "e10": 1.945
       }
     },
     {
@@ -322,32 +195,6 @@
         "sp98": 2.047,
         "e10": 1.915,
         "e85": 0.837
-      }
-    },
-    {
-      "id": "51700007",
-      "cp": "51700",
-      "ville": "Dormans",
-      "adresse": "60 RUE DU DOCTEUR MORET",
-      "pop": "R",
-      "lat": 4908100,
-      "lng": 365000,
-      "fuels": {
-        "gazole": 1.923
-      }
-    },
-    {
-      "id": "51700001",
-      "cp": "51700",
-      "ville": "Dormans",
-      "adresse": "rue du faubourg chavenay",
-      "pop": "R",
-      "lat": 4907200,
-      "lng": 363800,
-      "fuels": {
-        "gazole": 2.003,
-        "sp95": 1.967,
-        "sp98": 2.049
       }
     },
     {
@@ -395,21 +242,6 @@
       }
     },
     {
-      "id": "51310001",
-      "cp": "51310",
-      "ville": "Esternay",
-      "adresse": "100 Rue des Limonières",
-      "pop": "R",
-      "lat": 4872200,
-      "lng": 355300,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 1.999,
-        "e10": 1.949,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "51510002",
       "cp": "51510",
       "ville": "Fagnières",
@@ -418,10 +250,10 @@
       "lat": 4895900,
       "lng": 431400,
       "fuels": {
-        "gazole": 1.955,
-        "sp98": 2.015,
-        "e10": 1.919,
-        "e85": 0.782,
+        "gazole": 1.945,
+        "sp98": 2.012,
+        "e10": 1.934,
+        "e85": 0.772,
         "gplc": 0.999
       }
     },
@@ -441,20 +273,6 @@
       }
     },
     {
-      "id": "51230001",
-      "cp": "51230",
-      "ville": "Fère-Champenoise",
-      "adresse": "83 CHEMIN DES LOGES",
-      "pop": "R",
-      "lat": 4875900,
-      "lng": 398600,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.099,
-        "e10": 1.939
-      }
-    },
-    {
       "id": "51170002",
       "cp": "51170",
       "ville": "Fismes",
@@ -465,21 +283,6 @@
       "fuels": {
         "gazole": 2.013,
         "sp98": 1.99
-      }
-    },
-    {
-      "id": "51170003",
-      "cp": "51170",
-      "ville": "Fismes",
-      "adresse": "Route de Soissons",
-      "pop": "R",
-      "lat": 4930800,
-      "lng": 366800,
-      "fuels": {
-        "gazole": 1.982,
-        "sp98": 1.999,
-        "e10": 1.891,
-        "e85": 0.798
       }
     },
     {
@@ -524,21 +327,6 @@
       }
     },
     {
-      "id": "51140003",
-      "cp": "51140",
-      "ville": "Jonchery-sur-Vesle",
-      "adresse": "RN 31",
-      "pop": "R",
-      "lat": 4928500,
-      "lng": 380800,
-      "fuels": {
-        "gazole": 1.962,
-        "sp98": 1.989,
-        "e10": 1.907,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "51370003",
       "cp": "51370",
       "ville": "Les Mesneux",
@@ -547,54 +335,9 @@
       "lat": 4921872,
       "lng": 396403,
       "fuels": {
-        "gazole": 1.965,
-        "sp98": 2.064,
-        "e10": 1.924
-      }
-    },
-    {
-      "id": "51400010",
-      "cp": "51400",
-      "ville": "Les Petites-Loges",
-      "adresse": "A4 - PARIS STRASBOURG",
-      "pop": "A",
-      "lat": 4912029,
-      "lng": 424286,
-      "fuels": {
-        "gazole": 2.017,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.999,
-        "gplc": 1.099
-      }
-    },
-    {
-      "id": "51400011",
-      "cp": "51400",
-      "ville": "Les Petites-Loges",
-      "adresse": "A4 - STRASBOURG PARIS",
-      "pop": "A",
-      "lat": 4911881.5359,
-      "lng": 424656.27917,
-      "fuels": {
-        "gazole": 2.017,
-        "e10": 1.99,
-        "e85": 0.999,
-        "gplc": 1.098
-      }
-    },
-    {
-      "id": "51500007",
-      "cp": "51500",
-      "ville": "Ludes",
-      "adresse": "8 RUE PUISIEULX",
-      "pop": "R",
-      "lat": 4916187.2,
-      "lng": 408077.8,
-      "fuels": {
-        "gazole": 2.009,
-        "sp95": 2.013,
-        "sp98": 2.108
+        "gazole": 1.99,
+        "sp98": 2.074,
+        "e10": 1.962
       }
     },
     {
@@ -623,21 +366,6 @@
         "gazole": 1.978,
         "sp98": 1.988,
         "e10": 1.939
-      }
-    },
-    {
-      "id": "51210005",
-      "cp": "51210",
-      "ville": "Montmirail",
-      "adresse": "RD 933 FAUBOURG DE PARIS",
-      "pop": "R",
-      "lat": 4887600,
-      "lng": 353800,
-      "fuels": {
-        "gazole": 1.89,
-        "sp98": 1.99,
-        "e10": 1.896,
-        "e85": 0.812
       }
     },
     {
@@ -678,19 +406,8 @@
       "lng": 436600,
       "fuels": {
         "gazole": 1.999,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "51140005",
-      "cp": "51140",
-      "ville": "Muizon",
-      "adresse": "N31",
-      "pop": "R",
-      "lat": 4927486.39814,
-      "lng": 386987.89993,
-      "fuels": {
-        "gazole": 2.12
+        "e10": 1.959,
+        "e85": 0.809
       }
     },
     {
@@ -716,7 +433,7 @@
       "lng": 394400,
       "fuels": {
         "gazole": 1.973,
-        "sp98": 2.047,
+        "sp98": 2.041,
         "e10": 1.915,
         "e85": 0.837,
         "gplc": 0.995
@@ -734,21 +451,6 @@
         "gazole": 1.985,
         "sp98": 2.034,
         "e10": 1.935
-      }
-    },
-    {
-      "id": "51490001",
-      "cp": "51490",
-      "ville": "Pontfaverger-Moronvilliers",
-      "adresse": "AVENUE BOILEAU - LES PLATANES",
-      "pop": "R",
-      "lat": 4930200,
-      "lng": 432300,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.062,
-        "e10": 1.952,
-        "e85": 0.798
       }
     },
     {
@@ -819,10 +521,10 @@
       "lat": 4926000,
       "lng": 406300,
       "fuels": {
-        "gazole": 1.989,
+        "gazole": 1.969,
         "sp95": 1.996,
         "sp98": 2.039,
-        "e10": 1.947
+        "e10": 1.939
       }
     },
     {
@@ -835,7 +537,6 @@
       "lng": 404547,
       "fuels": {
         "gazole": 1.903,
-        "e10": 1.905,
         "e85": 0.831,
         "gplc": 0.995
       }
@@ -849,67 +550,10 @@
       "lat": 4922500,
       "lng": 402500,
       "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.169,
-        "e10": 2.039,
-        "e85": 0.969
-      }
-    },
-    {
-      "id": "51100045",
-      "cp": "51100",
-      "ville": "Reims",
-      "adresse": "252 BIS, AVENUE JEAN JAURES",
-      "pop": "R",
-      "lat": 4926460,
-      "lng": 405954,
-      "fuels": {
-        "gazole": 1.906,
-        "sp98": 1.99,
-        "e10": 1.908,
-        "e85": 0.821
-      }
-    },
-    {
-      "id": "51100029",
-      "cp": "51100",
-      "ville": "Reims",
-      "adresse": "31 Rue de Neufchâtel",
-      "pop": "R",
-      "lat": 4927198,
-      "lng": 402634,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.989,
-        "sp98": 2.069
-      }
-    },
-    {
-      "id": "51100044",
-      "cp": "51100",
-      "ville": "Reims",
-      "adresse": "360, AVENUE DE LAON",
-      "pop": "R",
-      "lat": 4927500,
-      "lng": 401700,
-      "fuels": {
-        "gazole": 2.007,
-        "e10": 1.99,
-        "e85": 0.839
-      }
-    },
-    {
-      "id": "51100002",
-      "cp": "51100",
-      "ville": "Reims",
-      "adresse": "47 Rue Gosset",
-      "pop": "R",
-      "lat": 4926584,
-      "lng": 403950,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 1.999,
-        "sp98": 2.068
+        "gazole": 2.009,
+        "sp98": 2.129,
+        "e10": 1.999,
+        "e85": 0.929
       }
     },
     {
@@ -927,21 +571,6 @@
       }
     },
     {
-      "id": "51100060",
-      "cp": "51100",
-      "ville": "Reims",
-      "adresse": "58 Bd Président Wilson",
-      "pop": "R",
-      "lat": 4924146.1288,
-      "lng": 401758.68729,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.069,
-        "e10": 1.999,
-        "e85": 0.798
-      }
-    },
-    {
       "id": "51100051",
       "cp": "51100",
       "ville": "Reims",
@@ -950,23 +579,10 @@
       "lat": 4924200,
       "lng": 408200,
       "fuels": {
-        "gazole": 1.989,
+        "gazole": 1.969,
         "sp98": 2.039,
-        "e10": 1.947,
+        "e10": 1.939,
         "e85": 0.819
-      }
-    },
-    {
-      "id": "51370005",
-      "cp": "51370",
-      "ville": "Saint-Brice-Courcelles",
-      "adresse": "75 route de reims",
-      "pop": "R",
-      "lat": 4926475.2,
-      "lng": 398985.6,
-      "fuels": {
-        "gazole": 2.068,
-        "e85": 0.842
       }
     },
     {
@@ -980,7 +596,7 @@
       "fuels": {
         "gazole": 1.964,
         "sp98": 2.039,
-        "e10": 1.912,
+        "e10": 1.939,
         "e85": 0.798,
         "gplc": 0.995
       }
@@ -994,25 +610,9 @@
       "lat": 4922700,
       "lng": 410800,
       "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.169,
-        "e10": 2.039
-      }
-    },
-    {
-      "id": "51520002",
-      "cp": "51520",
-      "ville": "Saint-Martin-sur-le-Pré",
-      "adresse": "ROUTE NATIONALE 44 - AIRE DE SAINT MARTIN SUR LE PRÉ",
-      "pop": "R",
-      "lat": 4899100,
-      "lng": 434200,
-      "fuels": {
-        "gazole": 1.912,
-        "sp98": 1.99,
-        "e10": 1.919,
-        "e85": 0.829,
-        "gplc": 0.989
+        "gazole": 2.009,
+        "sp98": 2.139,
+        "e10": 2.009
       }
     },
     {
@@ -1027,21 +627,6 @@
         "gazole": 2.099,
         "sp95": 2.099,
         "sp98": 2.149
-      }
-    },
-    {
-      "id": "51800014",
-      "cp": "51800",
-      "ville": "Sainte-Menehould",
-      "adresse": "6 BIS RUE DU POIRIER AUX LOUPS",
-      "pop": "R",
-      "lat": 4909592.01198,
-      "lng": 492356.29037,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.049,
-        "e10": 1.939,
-        "e85": 0.798
       }
     },
     {
@@ -1082,10 +667,10 @@
       "lat": 4870900,
       "lng": 373400,
       "fuels": {
-        "gazole": 1.978,
+        "gazole": 1.985,
         "sp98": 1.989,
         "e10": 1.903,
-        "e85": 0.822,
+        "e85": 0.823,
         "gplc": 1.008
       }
     },
@@ -1105,36 +690,6 @@
       }
     },
     {
-      "id": "51230004",
-      "cp": "51320",
-      "ville": "Sommesous",
-      "adresse": "Aire de Sommesous - A26",
-      "pop": "A",
-      "lat": 4872900,
-      "lng": 422800,
-      "fuels": {
-        "gazole": 2.093,
-        "sp98": 2.198,
-        "e10": 2.077,
-        "gplc": 1.16
-      }
-    },
-    {
-      "id": "51320003",
-      "cp": "51320",
-      "ville": "Sommesous",
-      "adresse": "ROUTE NATIONALE 4",
-      "pop": "R",
-      "lat": 4873194.88344,
-      "lng": 420515.46437,
-      "fuels": {
-        "gazole": 1.914,
-        "sp98": 1.99,
-        "e10": 1.921,
-        "e85": 0.854
-      }
-    },
-    {
       "id": "51600004",
       "cp": "51600",
       "ville": "Suippes",
@@ -1143,24 +698,9 @@
       "lat": 4912800.2,
       "lng": 453547.9,
       "fuels": {
-        "gazole": 2.039,
+        "gazole": 2.009,
         "sp95": 2.049,
         "sp98": 2.105
-      }
-    },
-    {
-      "id": "51430007",
-      "cp": "51430",
-      "ville": "Tinqueux",
-      "adresse": "31, AVENUE DU 29 AOUT 1944",
-      "pop": "R",
-      "lat": 4924900,
-      "lng": 399200,
-      "fuels": {
-        "gazole": 1.907,
-        "sp98": 1.99,
-        "e10": 1.908,
-        "e85": 0.826
       }
     },
     {
@@ -1175,7 +715,7 @@
         "gazole": 1.965,
         "sp95": 2.029,
         "sp98": 2.064,
-        "e10": 1.917,
+        "e10": 1.929,
         "e85": 0.798
       }
     },
@@ -1210,36 +750,6 @@
       }
     },
     {
-      "id": "51800015",
-      "cp": "51800",
-      "ville": "Valmy",
-      "adresse": "Autoroute A4, 51 800 Valmy",
-      "pop": "A",
-      "lat": 4907228,
-      "lng": 478800,
-      "fuels": {
-        "gazole": 2.154,
-        "sp98": 2.189,
-        "e10": 2.099,
-        "e85": 0.999,
-        "gplc": 1.129
-      }
-    },
-    {
-      "id": "51300014",
-      "cp": "51300",
-      "ville": "Vitry-le-François",
-      "adresse": "16 FBG LEON BOURGEOIS",
-      "pop": "R",
-      "lat": 4872504,
-      "lng": 458843,
-      "fuels": {
-        "gazole": 2,
-        "e10": 1.99,
-        "e85": 0.849
-      }
-    },
-    {
       "id": "51300013",
       "cp": "51300",
       "ville": "Vitry-le-François",
@@ -1261,10 +771,10 @@
       "lat": 4873100,
       "lng": 460000,
       "fuels": {
-        "gazole": 1.974,
-        "sp95": 2.009,
+        "gazole": 1.984,
+        "sp95": 1.994,
         "sp98": 2.033,
-        "e10": 1.929,
+        "e10": 1.934,
         "e85": 0.819,
         "gplc": 1.082
       }
@@ -1308,26 +818,11 @@
       "lat": 4934900,
       "lng": 420900,
       "fuels": {
-        "gazole": 1.99,
-        "sp95": 1.999,
-        "sp98": 2.054,
-        "e10": 1.948,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "51420001",
-      "cp": "51420",
-      "ville": "Witry-lès-Reims",
-      "adresse": "Boulevard Charles de Gaulle",
-      "pop": "R",
-      "lat": 4928500,
-      "lng": 410900,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.996,
-        "sp98": 2.03,
-        "e10": 1.946
+        "gazole": 1.975,
+        "sp95": 1.994,
+        "sp98": 2.039,
+        "e10": 1.939,
+        "e85": 0.809
       }
     }
   ]

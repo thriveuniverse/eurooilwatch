@@ -3,70 +3,55 @@
   "name": "Aude",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 81,
+  "stationCount": 50,
   "fuels": {
     "gazole": {
-      "count": 80,
-      "mean": 2.0169,
+      "count": 50,
+      "mean": 2.0114,
       "median": 1.999,
-      "min": 1.894,
-      "max": 2.209
+      "min": 1.889,
+      "max": 2.189
     },
     "sp95": {
-      "count": 15,
-      "mean": 2.021,
+      "count": 11,
+      "mean": 1.9988,
       "median": 1.999,
       "min": 1.949,
-      "max": 2.244
+      "max": 2.049
     },
     "sp98": {
-      "count": 59,
-      "mean": 2.0691,
+      "count": 35,
+      "mean": 2.0622,
       "median": 2.047,
       "min": 1.989,
-      "max": 2.239
+      "max": 2.214
     },
     "e10": {
-      "count": 68,
-      "mean": 1.9753,
-      "median": 1.969,
-      "min": 1.885,
-      "max": 2.139
+      "count": 40,
+      "mean": 1.971,
+      "median": 1.9685,
+      "min": 1.879,
+      "max": 2.098
     },
     "e85": {
-      "count": 34,
-      "mean": 0.857,
-      "median": 0.841,
+      "count": 24,
+      "mean": 0.8647,
+      "median": 0.845,
       "min": 0.789,
       "max": 0.998
     },
     "gplc": {
-      "count": 15,
-      "mean": 1.1007,
+      "count": 11,
+      "mean": 1.0947,
       "median": 1.095,
       "min": 1.045,
       "max": 1.181
     }
   },
   "stations": [
-    {
-      "id": "11170002",
-      "cp": "11170",
-      "ville": "Alzonne",
-      "adresse": "AVENUE DE TOULOUSE",
-      "pop": "R",
-      "lat": 4325500,
-      "lng": 216800,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.099,
-        "e10": 1.999,
-        "e85": 0.798
-      }
-    },
     {
       "id": "11290002",
       "cp": "11290",
@@ -75,22 +60,6 @@
       "pop": "A",
       "lat": 4322100,
       "lng": 220200,
-      "fuels": {
-        "gazole": 2.124,
-        "sp98": 2.159,
-        "e10": 2.068,
-        "e85": 0.966,
-        "gplc": 1.181
-      }
-    },
-    {
-      "id": "11290001",
-      "cp": "11290",
-      "ville": "Arzens",
-      "adresse": "A61 Aire d'Arzens Sud",
-      "pop": "A",
-      "lat": 4322100,
-      "lng": 220600,
       "fuels": {
         "gazole": 2.124,
         "sp98": 2.159,
@@ -127,20 +96,6 @@
       }
     },
     {
-      "id": "11700008",
-      "cp": "11700",
-      "ville": "Capendu",
-      "adresse": "A61 Aire des Corbières Nord",
-      "pop": "A",
-      "lat": 4317845.58861,
-      "lng": 254326.53082,
-      "fuels": {
-        "gazole": 2.164,
-        "sp98": 2.229,
-        "e10": 2.127
-      }
-    },
-    {
       "id": "11700007",
       "cp": "11700",
       "ville": "Capendu",
@@ -164,10 +119,10 @@
       "lat": 4318807.54668,
       "lng": 256439.00511,
       "fuels": {
-        "gazole": 1.967,
-        "sp98": 2.039,
-        "e10": 1.969,
-        "e85": 0.798
+        "gazole": 1.959,
+        "sp98": 2.049,
+        "e10": 1.939,
+        "e85": 0.809
       }
     },
     {
@@ -193,9 +148,9 @@
       "lat": 4320700,
       "lng": 239300,
       "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.046,
-        "e10": 1.959
+        "gazole": 1.988,
+        "sp98": 2.045,
+        "e10": 1.958
       }
     },
     {
@@ -213,21 +168,6 @@
       }
     },
     {
-      "id": "11000014",
-      "cp": "11000",
-      "ville": "Carcassonne",
-      "adresse": "69 Allée d'Iéna",
-      "pop": "R",
-      "lat": 4321500,
-      "lng": 234500,
-      "fuels": {
-        "gazole": 2.109,
-        "sp98": 2.179,
-        "e10": 2.039,
-        "e85": 0.849
-      }
-    },
-    {
       "id": "11000003",
       "cp": "11000",
       "ville": "Carcassonne",
@@ -236,7 +176,7 @@
       "lat": 4320700,
       "lng": 238600,
       "fuels": {
-        "gazole": 2.057,
+        "gazole": 1.998,
         "e10": 1.99
       }
     },
@@ -252,21 +192,6 @@
         "gazole": 1.998,
         "sp95": 2.049,
         "e10": 1.968,
-        "gplc": 1.059
-      }
-    },
-    {
-      "id": "11000015",
-      "cp": "11000",
-      "ville": "Carcassonne",
-      "adresse": "ROUTE DE LIMOUX RN 118",
-      "pop": "R",
-      "lat": 4319700,
-      "lng": 232300,
-      "fuels": {
-        "gazole": 1.919,
-        "e10": 1.93,
-        "e85": 0.841,
         "gplc": 1.059
       }
     },
@@ -300,20 +225,6 @@
       }
     },
     {
-      "id": "11000016",
-      "cp": "11000",
-      "ville": "Carcassonne",
-      "adresse": "ZI PONT ROUGE",
-      "pop": "R",
-      "lat": 4323600,
-      "lng": 236900,
-      "fuels": {
-        "gazole": 1.988,
-        "sp98": 2.045,
-        "e10": 1.958
-      }
-    },
-    {
       "id": "11400009",
       "cp": "11400",
       "ville": "Castelnaudary",
@@ -326,20 +237,6 @@
         "sp98": 2.109,
         "e10": 1.949,
         "e85": 0.798
-      }
-    },
-    {
-      "id": "11400008",
-      "cp": "11400",
-      "ville": "Castelnaudary",
-      "adresse": "129 AVENUE MONSEIGNEUR DELANGLE",
-      "pop": "R",
-      "lat": 4331500,
-      "lng": 196000,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.009,
-        "e10": 1.949
       }
     },
     {
@@ -357,21 +254,6 @@
       }
     },
     {
-      "id": "11400002",
-      "cp": "11400",
-      "ville": "Castelnaudary",
-      "adresse": "88 Avenue Monseigneur de Langle",
-      "pop": "R",
-      "lat": 4331300,
-      "lng": 196500,
-      "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.079,
-        "e10": 2.019,
-        "e85": 0.839
-      }
-    },
-    {
       "id": "11400004",
       "cp": "11400",
       "ville": "Castelnaudary",
@@ -381,7 +263,6 @@
       "lng": 197100,
       "fuels": {
         "gazole": 2.067,
-        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.869
       }
@@ -395,9 +276,9 @@
       "lat": 4323000,
       "lng": 305100,
       "fuels": {
-        "gazole": 1.949,
-        "sp95": 1.995,
-        "e10": 1.915,
+        "gazole": 1.939,
+        "sp95": 1.989,
+        "e10": 1.902,
         "e85": 0.809
       }
     },
@@ -413,19 +294,6 @@
         "gazole": 1.999,
         "sp98": 2.109,
         "e10": 1.999
-      }
-    },
-    {
-      "id": "11260001",
-      "cp": "11260",
-      "ville": "Espéraza",
-      "adresse": "Route de Quillan",
-      "pop": "R",
-      "lat": 4293796.23571,
-      "lng": 223575.43639,
-      "fuels": {
-        "gazole": 1.979,
-        "e10": 1.969
       }
     },
     {
@@ -453,39 +321,10 @@
       "lat": 4311800,
       "lng": 310400,
       "fuels": {
-        "gazole": 2.08,
+        "gazole": 2.013,
         "sp98": 2.018,
-        "e10": 1.957,
+        "e10": 1.974,
         "e85": 0.798
-      }
-    },
-    {
-      "id": "11200007",
-      "cp": "11200",
-      "ville": "Homps",
-      "adresse": "ROUTE DEPARTEMENTALE 610",
-      "pop": "R",
-      "lat": 4326500,
-      "lng": 271800,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 2.019,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "11480007",
-      "cp": "11480",
-      "ville": "La Palme",
-      "adresse": "AIRE DE LAPALME EST",
-      "pop": "A",
-      "lat": 4297984,
-      "lng": 298637,
-      "fuels": {
-        "gazole": 2.209,
-        "sp98": 2.239,
-        "e10": 2.139,
-        "gplc": 1.16
       }
     },
     {
@@ -521,49 +360,6 @@
       }
     },
     {
-      "id": "11700005",
-      "cp": "11700",
-      "ville": "La Redorte",
-      "adresse": "4 Avenue du Minervois",
-      "pop": "R",
-      "lat": 4325200,
-      "lng": 265200,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.099,
-        "e10": 1.999,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "11290005",
-      "cp": "11290",
-      "ville": "Lavalette",
-      "adresse": "Lieu dit Le GOUTAL - Route d'ALAIRAC - D211",
-      "pop": "R",
-      "lat": 4318497.34562,
-      "lng": 226045.46015,
-      "fuels": {
-        "gazole": 1.986,
-        "sp98": 2.026,
-        "e10": 1.993
-      }
-    },
-    {
-      "id": "11370004",
-      "cp": "11370",
-      "ville": "Leucate",
-      "adresse": "LIEUDIT CAP DE FRONTAVENUE DES ROSEAUX",
-      "pop": "R",
-      "lat": 4285400,
-      "lng": 303500,
-      "fuels": {
-        "gazole": 2.03,
-        "sp98": 2.034,
-        "e10": 1.954
-      }
-    },
-    {
       "id": "11370001",
       "cp": "11370",
       "ville": "Leucate",
@@ -573,8 +369,8 @@
       "lng": 303680.63073,
       "fuels": {
         "gazole": 1.999,
-        "sp98": 2.084,
-        "e10": 1.996
+        "sp98": 2.053,
+        "e10": 1.956
       }
     },
     {
@@ -586,10 +382,10 @@
       "lat": 4318900,
       "lng": 275300,
       "fuels": {
-        "gazole": 1.929,
+        "gazole": 1.889,
         "sp95": 1.949,
         "sp98": 1.989,
-        "e10": 1.899
+        "e10": 1.879
       }
     },
     {
@@ -658,8 +454,8 @@
       "lat": 4307300,
       "lng": 222300,
       "fuels": {
-        "gazole": 1.953,
-        "sp98": 1.999,
+        "gazole": 1.915,
+        "sp98": 2.014,
         "e10": 1.93,
         "e85": 0.841,
         "gplc": 1.146
@@ -674,7 +470,7 @@
       "lat": 4305900,
       "lng": 221400,
       "fuels": {
-        "gazole": 1.962,
+        "gazole": 1.96,
         "sp98": 2.019,
         "e10": 1.939,
         "e85": 0.974
@@ -709,62 +505,6 @@
       }
     },
     {
-      "id": "11100015",
-      "cp": "11100",
-      "ville": "Montredon-des-Corbières",
-      "adresse": "7 rue du pont rouge",
-      "pop": "R",
-      "lat": 4318297.79736,
-      "lng": 293592.16901,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.059,
-        "e10": 1.939,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "11390001",
-      "cp": "11330",
-      "ville": "Mouthoumet",
-      "adresse": "1, impasse des Corbières",
-      "pop": "R",
-      "lat": 4296000,
-      "lng": 252900,
-      "fuels": {
-        "sp95": 2.244
-      }
-    },
-    {
-      "id": "11000013",
-      "cp": "11100",
-      "ville": "Narbonne",
-      "adresse": "10 Av. Maréchal Juin",
-      "pop": "R",
-      "lat": 4318205.5934,
-      "lng": 301535.44915,
-      "fuels": {
-        "gazole": 1.944,
-        "sp98": 1.999,
-        "e10": 1.888
-      }
-    },
-    {
-      "id": "11100003",
-      "cp": "11100",
-      "ville": "Narbonne",
-      "adresse": "108 Avenue de Bordeaux",
-      "pop": "R",
-      "lat": 4318200,
-      "lng": 298100,
-      "fuels": {
-        "gazole": 2.029,
-        "sp98": 2.129,
-        "e10": 1.979,
-        "e85": 0.799
-      }
-    },
-    {
       "id": "11100002",
       "cp": "11100",
       "ville": "Narbonne",
@@ -779,20 +519,6 @@
       }
     },
     {
-      "id": "11106001",
-      "cp": "11100",
-      "ville": "Narbonne",
-      "adresse": "199 avenue de Bordeaux",
-      "pop": "R",
-      "lat": 4318100,
-      "lng": 297000,
-      "fuels": {
-        "gazole": 1.944,
-        "sp98": 1.999,
-        "e10": 1.888
-      }
-    },
-    {
       "id": "11100009",
       "cp": "11100",
       "ville": "Narbonne",
@@ -801,9 +527,9 @@
       "lat": 4318700,
       "lng": 300400,
       "fuels": {
-        "gazole": 1.981,
-        "sp98": 2.093,
-        "e10": 1.936,
+        "gazole": 1.972,
+        "sp98": 2.054,
+        "e10": 1.922,
         "e85": 0.966
       }
     },
@@ -817,7 +543,6 @@
       "lng": 299200,
       "fuels": {
         "gazole": 1.898,
-        "e10": 1.914,
         "e85": 0.849,
         "gplc": 1.049
       }
@@ -865,32 +590,6 @@
       }
     },
     {
-      "id": "11100008",
-      "cp": "11100",
-      "ville": "Narbonne",
-      "adresse": "Avenue de la Croix Sud - PL uniquement",
-      "pop": "R",
-      "lat": 4316300,
-      "lng": 298900,
-      "fuels": {
-        "gazole": 1.964
-      }
-    },
-    {
-      "id": "11101001",
-      "cp": "11100",
-      "ville": "Narbonne",
-      "adresse": "AVENUE HUBERT MOULY",
-      "pop": "R",
-      "lat": 4317900,
-      "lng": 302900,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 1.999,
-        "e10": 1.885
-      }
-    },
-    {
       "id": "11100004",
       "cp": "11100",
       "ville": "Narbonne",
@@ -919,34 +618,6 @@
       }
     },
     {
-      "id": "11210002",
-      "cp": "11210",
-      "ville": "Port-la-Nouvelle",
-      "adresse": "928, Boulevard Général de Gaulle",
-      "pop": "R",
-      "lat": 4301500,
-      "lng": 305000,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.059,
-        "e10": 1.95
-      }
-    },
-    {
-      "id": "11500004",
-      "cp": "11500",
-      "ville": "Quillan",
-      "adresse": "6 Avenue F.Mitterrand",
-      "pop": "R",
-      "lat": 4287800,
-      "lng": 218600,
-      "fuels": {
-        "gazole": 2.05,
-        "sp98": 2.18,
-        "e10": 2.08
-      }
-    },
-    {
       "id": "11500002",
       "cp": "11500",
       "ville": "Quillan",
@@ -956,76 +627,6 @@
       "lng": 218300,
       "fuels": {
         "gazole": 2.131
-      }
-    },
-    {
-      "id": "11500005",
-      "cp": "11500",
-      "ville": "Quillan",
-      "adresse": "ZA LA PLAGE SUD",
-      "pop": "R",
-      "lat": 4289300,
-      "lng": 219400,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.969
-      }
-    },
-    {
-      "id": "11540001",
-      "cp": "11540",
-      "ville": "Roquefort-des-Corbières",
-      "adresse": "ROUTE NATIONALE 9",
-      "pop": "R",
-      "lat": 4299200,
-      "lng": 297100,
-      "fuels": {
-        "gazole": 1.992,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.859,
-        "gplc": 1.069
-      }
-    },
-    {
-      "id": "11250001",
-      "cp": "11250",
-      "ville": "Rouffiac-d'Aude",
-      "adresse": "100 chemin de la plaine, station service total",
-      "pop": "R",
-      "lat": 4312400,
-      "lng": 229400,
-      "fuels": {
-        "gazole": 2.179
-      }
-    },
-    {
-      "id": "11120003",
-      "cp": "11120",
-      "ville": "Saint-Marcel-sur-Aude",
-      "adresse": "2 ZONE ARTISANALE LA GARRIGUE",
-      "pop": "R",
-      "lat": 4325370.00106,
-      "lng": 291305.46119,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.109,
-        "e10": 1.968
-      }
-    },
-    {
-      "id": "11120001",
-      "cp": "11120",
-      "ville": "Saint-Marcel-sur-Aude",
-      "adresse": "Avenue de Saint-Pons",
-      "pop": "R",
-      "lat": 4325362,
-      "lng": 291366,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 2.1,
-        "sp98": 2.109,
-        "e10": 1.969
       }
     },
     {
@@ -1099,20 +700,6 @@
       }
     },
     {
-      "id": "11110004",
-      "cp": "11110",
-      "ville": "Salles-d'Aude",
-      "adresse": "Route de Coursan",
-      "pop": "R",
-      "lat": 4323900,
-      "lng": 311200,
-      "fuels": {
-        "gazole": 2,
-        "sp98": 2.035,
-        "e10": 1.916
-      }
-    },
-    {
       "id": "11130001",
       "cp": "11130",
       "ville": "Sigean",
@@ -1124,21 +711,6 @@
         "gazole": 1.969,
         "sp98": 2.059,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "11130002",
-      "cp": "11130",
-      "ville": "Sigean",
-      "adresse": "Rue François Arago",
-      "pop": "R",
-      "lat": 4302700,
-      "lng": 299500,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 1.99,
-        "e10": 1.909,
-        "e85": 0.798
       }
     },
     {
@@ -1165,23 +737,10 @@
       "lat": 4320300,
       "lng": 244300,
       "fuels": {
-        "gazole": 1.95,
+        "gazole": 1.9,
         "sp98": 2.02,
         "e10": 1.935,
         "e85": 0.798
-      }
-    },
-    {
-      "id": "11600005",
-      "cp": "11600",
-      "ville": "Villegly",
-      "adresse": "RD 620 Lieu dit la pièce",
-      "pop": "R",
-      "lat": 4328200,
-      "lng": 243700,
-      "fuels": {
-        "gazole": 2.109,
-        "e10": 2.039
       }
     },
     {

@@ -3,72 +3,27 @@
   "name": "Haute-Corse",
   "regionCode": "COR",
   "regionName": "Corse",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 57,
+  "stationCount": 34,
   "fuels": {
     "gazole": {
-      "count": 57,
-      "mean": 2.1273,
+      "count": 34,
+      "mean": 2.1196,
       "median": 2.12,
       "min": 2.07,
-      "max": 2.25
+      "max": 2.24
     },
     "sp95": {
-      "count": 33,
-      "mean": 2.0005,
+      "count": 15,
+      "mean": 1.9963,
       "median": 1.99,
       "min": 1.979,
-      "max": 2.09
-    },
-    "gplc": {
-      "count": 1,
-      "mean": 1.34,
-      "median": 1.34,
-      "min": 1.34,
-      "max": 1.34
+      "max": 2.05
     }
   },
   "stations": [
-    {
-      "id": "20270003",
-      "cp": "20270",
-      "ville": "Aléria",
-      "adresse": "Rn 198 Cateragghju",
-      "pop": "R",
-      "lat": 4211500,
-      "lng": 951400,
-      "fuels": {
-        "gazole": 2.19,
-        "sp95": 2.09
-      }
-    },
-    {
-      "id": "20270001",
-      "cp": "20270",
-      "ville": "Aléria",
-      "adresse": "ROUTE N 198",
-      "pop": "R",
-      "lat": 4211500,
-      "lng": 951400,
-      "fuels": {
-        "gazole": 2.19,
-        "sp95": 2.09
-      }
-    },
-    {
-      "id": "20220006",
-      "cp": "20220",
-      "ville": "Aregno",
-      "adresse": "RN 197",
-      "pop": "R",
-      "lat": 4260900,
-      "lng": 887500,
-      "fuels": {
-        "gazole": 2.135
-      }
-    },
     {
       "id": "20600015",
       "cp": "20600",
@@ -108,18 +63,6 @@
       }
     },
     {
-      "id": "20600009",
-      "cp": "20600",
-      "ville": "Bastia",
-      "adresse": "AVENUE DE LA LIBERATION",
-      "pop": "R",
-      "lat": 4268218.84689,
-      "lng": 944405.18899,
-      "fuels": {
-        "gazole": 2.15
-      }
-    },
-    {
       "id": "20600014",
       "cp": "20600",
       "ville": "Bastia",
@@ -128,7 +71,7 @@
       "lat": 4267927.54162,
       "lng": 944309.56413,
       "fuels": {
-        "gazole": 2.16,
+        "gazole": 2.13,
         "sp95": 1.98
       }
     },
@@ -157,19 +100,6 @@
       }
     },
     {
-      "id": "20200016",
-      "cp": "20200",
-      "ville": "Bastia",
-      "adresse": "rond point du fango avenue jean zuccarelli",
-      "pop": "R",
-      "lat": 4270358.14016,
-      "lng": 944219.35453,
-      "fuels": {
-        "gazole": 2.12,
-        "sp95": 1.99
-      }
-    },
-    {
       "id": "20620004",
       "cp": "20620",
       "ville": "Biguglia",
@@ -179,20 +109,6 @@
       "lng": 942900,
       "fuels": {
         "gazole": 2.129
-      }
-    },
-    {
-      "id": "20620005",
-      "cp": "20620",
-      "ville": "Biguglia",
-      "adresse": "RN 193",
-      "pop": "R",
-      "lat": 4262100,
-      "lng": 943700,
-      "fuels": {
-        "gazole": 2.12,
-        "sp95": 1.99,
-        "gplc": 1.34
       }
     },
     {
@@ -209,18 +125,6 @@
       }
     },
     {
-      "id": "20290003",
-      "cp": "20290",
-      "ville": "Borgo",
-      "adresse": "Lieu-dit Revinco - RN 193",
-      "pop": "R",
-      "lat": 4256756,
-      "lng": 944075,
-      "fuels": {
-        "gazole": 2.11
-      }
-    },
-    {
       "id": "20222001",
       "cp": "20222",
       "ville": "Brando",
@@ -233,56 +137,6 @@
       }
     },
     {
-      "id": "20224001",
-      "cp": "20224",
-      "ville": "Calacuccia",
-      "adresse": "Station TOTAL",
-      "pop": "R",
-      "lat": 4233399,
-      "lng": 900872,
-      "fuels": {
-        "gazole": 2.15
-      }
-    },
-    {
-      "id": "20260002",
-      "cp": "20260",
-      "ville": "Calvi",
-      "adresse": "Station TOTAL - relais de la balagne",
-      "pop": "R",
-      "lat": 4256429,
-      "lng": 875541,
-      "fuels": {
-        "gazole": 2.135,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "20235001",
-      "cp": "20235",
-      "ville": "Castello-di-Rostino",
-      "adresse": "Ponte Novu",
-      "pop": "R",
-      "lat": 4248820,
-      "lng": 928306,
-      "fuels": {
-        "gazole": 2.15,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "20221001",
-      "cp": "20221",
-      "ville": "Cervione",
-      "adresse": "T 10",
-      "pop": "R",
-      "lat": 4232500,
-      "lng": 953900,
-      "fuels": {
-        "gazole": 2.08
-      }
-    },
-    {
       "id": "20250002",
       "cp": "20250",
       "ville": "Corte",
@@ -292,32 +146,6 @@
       "lng": 915173.14413,
       "fuels": {
         "gazole": 2.24
-      }
-    },
-    {
-      "id": "20250003",
-      "cp": "20250",
-      "ville": "Corte",
-      "adresse": "RN 193 - lieu dit Pentone",
-      "pop": "R",
-      "lat": 4231700,
-      "lng": 915900,
-      "fuels": {
-        "gazole": 2.25,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "20250001",
-      "cp": "20250",
-      "ville": "Corte",
-      "adresse": "RT 20",
-      "pop": "R",
-      "lat": 4230179.01771,
-      "lng": 915751.78956,
-      "fuels": {
-        "gazole": 2.25,
-        "sp95": 1.99
       }
     },
     {
@@ -365,7 +193,7 @@
       "lat": 4266306,
       "lng": 943007,
       "fuels": {
-        "gazole": 2.12
+        "gazole": 2.09
       }
     },
     {
@@ -379,31 +207,6 @@
       "fuels": {
         "gazole": 2.179,
         "sp95": 1.999
-      }
-    },
-    {
-      "id": "20240004",
-      "cp": "20240",
-      "ville": "Ghisonaccia",
-      "adresse": "1680 avenue du 9 Septembre - Lotissement Feminiccia - RN 198",
-      "pop": "R",
-      "lat": 4202200,
-      "lng": 941100,
-      "fuels": {
-        "gazole": 2.08,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "20240001",
-      "cp": "20240",
-      "ville": "Ghisonaccia",
-      "adresse": "520 Avenue du 9 Septembre",
-      "pop": "R",
-      "lat": 4201351.14479,
-      "lng": 940397.08676,
-      "fuels": {
-        "gazole": 2.12
       }
     },
     {
@@ -432,43 +235,6 @@
       }
     },
     {
-      "id": "20220002",
-      "cp": "20220",
-      "ville": "L'Île-Rousse",
-      "adresse": "29, Ave Pdt Paul Doumer",
-      "pop": "R",
-      "lat": 4263200,
-      "lng": 894500,
-      "fuels": {
-        "gazole": 2.129
-      }
-    },
-    {
-      "id": "20220001",
-      "cp": "20220",
-      "ville": "L'Île-Rousse",
-      "adresse": "36 Avenue Paul Doumer",
-      "pop": "R",
-      "lat": 4263200,
-      "lng": 894400,
-      "fuels": {
-        "gazole": 2.13,
-        "sp95": 1.98
-      }
-    },
-    {
-      "id": "20290002",
-      "cp": "20290",
-      "ville": "Lucciana",
-      "adresse": "Casamozza - RN 193",
-      "pop": "R",
-      "lat": 4252490,
-      "lng": 944070,
-      "fuels": {
-        "gazole": 2.11
-      }
-    },
-    {
       "id": "20290010",
       "cp": "20290",
       "ville": "Lucciana",
@@ -478,19 +244,6 @@
       "lng": 944200,
       "fuels": {
         "gazole": 2.15
-      }
-    },
-    {
-      "id": "20290009",
-      "cp": "20290",
-      "ville": "Lucciana",
-      "adresse": "RN:193/T10 Crucetta",
-      "pop": "R",
-      "lat": 4255000,
-      "lng": 944200,
-      "fuels": {
-        "gazole": 2.11,
-        "sp95": 1.99
       }
     },
     {
@@ -592,8 +345,7 @@
       "lat": 4244500,
       "lng": 950800,
       "fuels": {
-        "gazole": 2.09,
-        "sp95": 1.99
+        "gazole": 2.09
       }
     },
     {
@@ -605,33 +357,7 @@
       "lat": 4240000,
       "lng": 953000,
       "fuels": {
-        "gazole": 2.09,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "20243001",
-      "cp": "20243",
-      "ville": "Prunelli-di-Fiumorbo",
-      "adresse": "Lieu-Dit Migliacciaro",
-      "pop": "R",
-      "lat": 4199868.57757,
-      "lng": 940286,
-      "fuels": {
-        "gazole": 2.08
-      }
-    },
-    {
-      "id": "20217004",
-      "cp": "20217",
-      "ville": "Saint-Florent",
-      "adresse": "36, rue principale",
-      "pop": "R",
-      "lat": 4268100,
-      "lng": 930400,
-      "fuels": {
-        "gazole": 2.11,
-        "sp95": 1.99
+        "gazole": 2.09
       }
     },
     {
@@ -648,32 +374,6 @@
       }
     },
     {
-      "id": "20217005",
-      "cp": "20217",
-      "ville": "Saint-Florent",
-      "adresse": "Route de Patrimonio",
-      "pop": "R",
-      "lat": 4268500,
-      "lng": 930700,
-      "fuels": {
-        "gazole": 2.15,
-        "sp95": 2.05
-      }
-    },
-    {
-      "id": "20230011",
-      "cp": "20230",
-      "ville": "San-Giuliano",
-      "adresse": "ALISTRO",
-      "pop": "R",
-      "lat": 4225900,
-      "lng": 954700,
-      "fuels": {
-        "gazole": 2.08,
-        "sp95": 1.99
-      }
-    },
-    {
       "id": "20200006",
       "cp": "20200",
       "ville": "San-Martino-di-Lota",
@@ -682,8 +382,7 @@
       "lat": 4272858.526,
       "lng": 945947.796,
       "fuels": {
-        "gazole": 2.12,
-        "sp95": 1.99
+        "gazole": 2.12
       }
     },
     {
@@ -695,8 +394,7 @@
       "lat": 4248700,
       "lng": 948000,
       "fuels": {
-        "gazole": 2.09,
-        "sp95": 1.99
+        "gazole": 2.09
       }
     },
     {

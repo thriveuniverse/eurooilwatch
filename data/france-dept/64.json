@@ -3,82 +3,55 @@
   "name": "Pyrénées-Atlantiques",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 111,
+  "stationCount": 80,
   "fuels": {
     "gazole": {
-      "count": 111,
-      "mean": 2.0083,
-      "median": 1.992,
+      "count": 80,
+      "mean": 1.9994,
+      "median": 1.988,
       "min": 1.889,
       "max": 2.269
     },
     "sp95": {
-      "count": 40,
-      "mean": 1.9999,
-      "median": 1.9895,
+      "count": 27,
+      "mean": 1.9991,
+      "median": 1.989,
       "min": 1.945,
       "max": 2.159
     },
     "sp98": {
-      "count": 83,
-      "mean": 2.0509,
+      "count": 60,
+      "mean": 2.0503,
       "median": 2.029,
       "min": 1.979,
       "max": 2.299
     },
     "e10": {
-      "count": 81,
-      "mean": 1.9528,
-      "median": 1.949,
+      "count": 57,
+      "mean": 1.9513,
+      "median": 1.942,
       "min": 1.879,
       "max": 2.199
     },
     "e85": {
-      "count": 43,
-      "mean": 0.8501,
-      "median": 0.836,
+      "count": 34,
+      "mean": 0.8549,
+      "median": 0.8415,
       "min": 0.775,
       "max": 1.049
     },
     "gplc": {
-      "count": 15,
-      "mean": 1.0494,
-      "median": 1.059,
+      "count": 10,
+      "mean": 1.0574,
+      "median": 1.064,
       "min": 0.923,
       "max": 1.159
     }
   },
   "stations": [
-    {
-      "id": "64120005",
-      "cp": "64120",
-      "ville": "Aïcirits-Camou-Suhast",
-      "adresse": "ZAC DE TTARGA",
-      "pop": "R",
-      "lat": 4333249.85,
-      "lng": -101614.24,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 1.999,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "64120001",
-      "cp": "64120",
-      "ville": "Amendeuix-Oneix",
-      "adresse": "ROUTE DE GARRIS",
-      "pop": "R",
-      "lat": 4333100,
-      "lng": -103900,
-      "fuels": {
-        "gazole": 2.016,
-        "e10": 1.99
-      }
-    },
     {
       "id": "64600007",
       "cp": "64600",
@@ -108,21 +81,6 @@
         "e10": 1.889,
         "e85": 0.855,
         "gplc": 0.954
-      }
-    },
-    {
-      "id": "64604001",
-      "cp": "64600",
-      "ville": "Anglet",
-      "adresse": "Boulevard du B.A.B.BP 423",
-      "pop": "R",
-      "lat": 4349346,
-      "lng": -151826,
-      "fuels": {
-        "gazole": 1.939,
-        "sp95": 1.969,
-        "sp98": 1.999,
-        "e10": 1.899
       }
     },
     {
@@ -162,7 +120,7 @@
       "lat": 4339800,
       "lng": -57100,
       "fuels": {
-        "gazole": 1.975,
+        "gazole": 1.949,
         "sp95": 1.979,
         "sp98": 2.009
       }
@@ -205,23 +163,9 @@
       "lat": 4353600,
       "lng": -41000,
       "fuels": {
-        "gazole": 2.05,
-        "sp95": 1.976,
-        "sp98": 2.112
-      }
-    },
-    {
-      "id": "64450001",
-      "cp": "64450",
-      "ville": "Astis",
-      "adresse": "21 ROUTE DE BORDEAUX",
-      "pop": "R",
-      "lat": 4344400,
-      "lng": -32400,
-      "fuels": {
-        "gazole": 1.959,
-        "sp98": 2.049,
-        "e10": 1.919
+        "gazole": 1.988,
+        "sp95": 1.953,
+        "sp98": 2.049
       }
     },
     {
@@ -249,49 +193,6 @@
         "gazole": 2.005,
         "sp95": 1.99,
         "e85": 0.864
-      }
-    },
-    {
-      "id": "64100013",
-      "cp": "64100",
-      "ville": "Bayonne",
-      "adresse": "14 Avenue Interne Jacques Loëb",
-      "pop": "R",
-      "lat": 4348200,
-      "lng": -148300,
-      "fuels": {
-        "gazole": 2.009,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "64100015",
-      "cp": "64100",
-      "ville": "Bayonne",
-      "adresse": "20 AVENUE MARECHAL JUIN",
-      "pop": "R",
-      "lat": 4349200,
-      "lng": -145900,
-      "fuels": {
-        "gazole": 1.911,
-        "sp98": 1.99,
-        "e10": 1.909,
-        "e85": 0.836,
-        "gplc": 0.933
-      }
-    },
-    {
-      "id": "64100010",
-      "cp": "64100",
-      "ville": "Bayonne",
-      "adresse": "22 Chemin d'Arancette",
-      "pop": "R",
-      "lat": 4348300,
-      "lng": -148800,
-      "fuels": {
-        "gazole": 2.01,
-        "sp95": 1.965,
-        "sp98": 2.006
       }
     },
     {
@@ -332,10 +233,10 @@
       "lat": 4350500,
       "lng": -144400,
       "fuels": {
-        "gazole": 1.911,
-        "sp95": 1.979,
-        "sp98": 1.989,
-        "e10": 1.899
+        "gazole": 1.907,
+        "sp95": 1.989,
+        "sp98": 1.99,
+        "e10": 1.901
       }
     },
     {
@@ -347,9 +248,9 @@
       "lat": 4349169.9414,
       "lng": -145279.16815,
       "fuels": {
-        "gazole": 2.019,
+        "gazole": 1.979,
         "sp98": 2.029,
-        "e10": 1.959,
+        "e10": 1.949,
         "e85": 0.809
       }
     },
@@ -382,20 +283,6 @@
       }
     },
     {
-      "id": "64200008",
-      "cp": "64200",
-      "ville": "Biarritz",
-      "adresse": "Rond-point de la Négresse",
-      "pop": "R",
-      "lat": 4346000,
-      "lng": -154800,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.099,
-        "e10": 1.969
-      }
-    },
-    {
       "id": "64200006",
       "cp": "64200",
       "ville": "Biarritz",
@@ -406,18 +293,6 @@
       "fuels": {
         "gazole": 1.943,
         "sp98": 1.997
-      }
-    },
-    {
-      "id": "64520001",
-      "cp": "64520",
-      "ville": "Bidache",
-      "adresse": "2 Rue Saint-Jacques",
-      "pop": "R",
-      "lat": 4348200,
-      "lng": -114400,
-      "fuels": {
-        "gazole": 2.15
       }
     },
     {
@@ -465,22 +340,6 @@
       }
     },
     {
-      "id": "64210004",
-      "cp": "64210",
-      "ville": "Bidart",
-      "adresse": "ROUTE NATIONALE 10",
-      "pop": "R",
-      "lat": 4344745,
-      "lng": -157436,
-      "fuels": {
-        "gazole": 1.939,
-        "sp95": 1.969,
-        "sp98": 1.997,
-        "e10": 1.899,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "64140006",
       "cp": "64140",
       "ville": "Billère",
@@ -489,7 +348,7 @@
       "lat": 4331900,
       "lng": -37900,
       "fuels": {
-        "gazole": 1.949,
+        "gazole": 1.912,
         "e10": 1.889,
         "e85": 0.809
       }
@@ -503,10 +362,10 @@
       "lat": 4330400,
       "lng": -40000,
       "fuels": {
-        "gazole": 1.994,
+        "gazole": 1.97,
         "sp98": 2.05,
-        "e10": 1.935,
-        "e85": 0.798
+        "e10": 1.956,
+        "e85": 0.809
       }
     },
     {
@@ -533,8 +392,7 @@
       "lat": 4330380.54768,
       "lng": -32323.73853,
       "fuels": {
-        "gazole": 1.91,
-        "gplc": 1.039
+        "gazole": 1.91
       }
     },
     {
@@ -546,9 +404,9 @@
       "lat": 4325000,
       "lng": -27900,
       "fuels": {
-        "gazole": 2.016,
-        "sp95": 1.978,
-        "sp98": 2.027
+        "gazole": 1.999,
+        "sp95": 1.989,
+        "sp98": 2.039
       }
     },
     {
@@ -574,72 +432,11 @@
       "lat": 4323000,
       "lng": -87400,
       "fuels": {
-        "gazole": 1.978,
-        "sp95": 1.965,
+        "gazole": 1.956,
+        "sp95": 1.973,
         "sp98": 2.147,
-        "e10": 1.902,
+        "e10": 1.911,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "64800005",
-      "cp": "64800",
-      "ville": "Coarraze",
-      "adresse": "Avenue de la Gare",
-      "pop": "R",
-      "lat": 4317490,
-      "lng": -23574,
-      "fuels": {
-        "gazole": 1.96,
-        "sp95": 2.02,
-        "sp98": 2.145,
-        "e10": 1.982
-      }
-    },
-    {
-      "id": "64290001",
-      "cp": "64290",
-      "ville": "Gan",
-      "adresse": "123 rue d'Ossau",
-      "pop": "R",
-      "lat": 4321800,
-      "lng": -38400,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.069,
-        "e10": 1.959,
-        "e85": 0.79
-      }
-    },
-    {
-      "id": "64330001",
-      "cp": "64330",
-      "ville": "Garlin",
-      "adresse": "Avenue Georges Phesans",
-      "pop": "R",
-      "lat": 4355700,
-      "lng": -28400,
-      "fuels": {
-        "gazole": 1.996,
-        "sp98": 2.196,
-        "e10": 2.076,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "64530004",
-      "cp": "64530",
-      "ville": "Ger",
-      "adresse": "AUTOROUTE A64 AIRE DE PYRÉNÉES - AIRE DES PYRÉNÉES",
-      "pop": "A",
-      "lat": 4323019,
-      "lng": -7925,
-      "fuels": {
-        "gazole": 2.111,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.999,
-        "gplc": 1.089
       }
     },
     {
@@ -665,9 +462,9 @@
       "lat": 4338644.03678,
       "lng": -131392.1444,
       "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.056,
-        "e10": 1.942
+        "gazole": 1.955,
+        "sp98": 2.036,
+        "e10": 1.936
       }
     },
     {
@@ -694,52 +491,9 @@
       "lat": 4329500,
       "lng": -32200,
       "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.999,
-        "e10": 1.922
-      }
-    },
-    {
-      "id": "64800003",
-      "cp": "64800",
-      "ville": "Igon",
-      "adresse": "59 Avenue du Pic du Midi",
-      "pop": "R",
-      "lat": 4315700,
-      "lng": -23000,
-      "fuels": {
-        "gazole": 2.13,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "64220003",
-      "cp": "64220",
-      "ville": "Ispoure",
-      "adresse": "CD 933",
-      "pop": "R",
-      "lat": 4316900,
-      "lng": -122800,
-      "fuels": {
-        "gazole": 1.982,
-        "sp95": 1.969,
-        "sp98": 2.016,
-        "e10": 1.907
-      }
-    },
-    {
-      "id": "64250001",
-      "cp": "64250",
-      "ville": "Itxassou",
-      "adresse": "ZA Errobi",
-      "pop": "R",
-      "lat": 4333800,
-      "lng": -140500,
-      "fuels": {
-        "gazole": 1.989,
-        "sp95": 2.039,
-        "sp98": 2.089,
-        "e10": 1.969
+        "gazole": 1.938,
+        "sp98": 1.99,
+        "e10": 1.901
       }
     },
     {
@@ -823,8 +577,7 @@
       "lat": 4337200,
       "lng": -143500,
       "fuels": {
-        "gazole": 2.18,
-        "e10": 1.99
+        "gazole": 2.18
       }
     },
     {
@@ -893,10 +646,10 @@
       "lat": 4332900,
       "lng": -38200,
       "fuels": {
-        "gazole": 1.949,
+        "gazole": 1.947,
         "sp98": 1.99,
         "e10": 1.898,
-        "e85": 0.821,
+        "e85": 0.819,
         "gplc": 1.159
       }
     },
@@ -917,20 +670,6 @@
       }
     },
     {
-      "id": "64260005",
-      "cp": "64260",
-      "ville": "Louvie-Juzon",
-      "adresse": "Avenue Aristide Briand",
-      "pop": "R",
-      "lat": 4309800,
-      "lng": -41600,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.069,
-        "e10": 1.959
-      }
-    },
-    {
       "id": "64130006",
       "cp": "64130",
       "ville": "Mauléon-Licharre",
@@ -945,22 +684,6 @@
       }
     },
     {
-      "id": "64110004",
-      "cp": "64110",
-      "ville": "Mazères-Lezons",
-      "adresse": "Avenue du Général de Gaulle",
-      "pop": "R",
-      "lat": 4327900,
-      "lng": -36100,
-      "fuels": {
-        "gazole": 1.951,
-        "sp98": 1.99,
-        "e10": 1.901,
-        "e85": 0.798,
-        "gplc": 1.059
-      }
-    },
-    {
       "id": "64230004",
       "cp": "64230",
       "ville": "Mazerolles",
@@ -969,21 +692,7 @@
       "lat": 4343644.4,
       "lng": -46642.54,
       "fuels": {
-        "gazole": 1.99
-      }
-    },
-    {
-      "id": "64360000",
-      "cp": "64360",
-      "ville": "Monein",
-      "adresse": "Avenue de la Résistance",
-      "pop": "R",
-      "lat": 4333600,
-      "lng": -58300,
-      "fuels": {
-        "gazole": 2.019,
-        "sp95": 2.029,
-        "sp98": 2.069
+        "gazole": 1.999
       }
     },
     {
@@ -996,7 +705,7 @@
       "lng": -38000,
       "fuels": {
         "gazole": 1.912,
-        "sp98": 1.99
+        "e10": 1.909
       }
     },
     {
@@ -1023,9 +732,9 @@
       "lat": 4334700,
       "lng": -25400,
       "fuels": {
-        "gazole": 1.952,
+        "gazole": 1.982,
         "sp98": 2.05,
-        "e10": 1.96
+        "e10": 1.939
       }
     },
     {
@@ -1037,7 +746,7 @@
       "lat": 4337400,
       "lng": -62300,
       "fuels": {
-        "gazole": 1.975,
+        "gazole": 1.949,
         "sp95": 1.979,
         "e10": 1.929
       }
@@ -1065,25 +774,11 @@
       "lat": 4327000,
       "lng": -20100,
       "fuels": {
-        "gazole": 2.019,
-        "sp95": 2.049,
-        "sp98": 2.139,
-        "e10": 1.979,
+        "gazole": 1.969,
+        "sp95": 1.989,
+        "sp98": 2.029,
+        "e10": 1.949,
         "e85": 0.798
-      }
-    },
-    {
-      "id": "64400005",
-      "cp": "64400",
-      "ville": "Oloron-Sainte-Marie",
-      "adresse": "65 Rue des Oustalots prolongés",
-      "pop": "R",
-      "lat": 4318100,
-      "lng": -61500,
-      "fuels": {
-        "gazole": 1.985,
-        "sp98": 2.061,
-        "e10": 1.954
       }
     },
     {
@@ -1095,10 +790,9 @@
       "lat": 4319735.94487,
       "lng": -61713.9057,
       "fuels": {
-        "gazole": 2.018,
-        "sp95": 1.984,
-        "e10": 1.944,
-        "e85": 0.829
+        "gazole": 1.955,
+        "sp95": 1.982,
+        "e10": 1.944
       }
     },
     {
@@ -1131,22 +825,6 @@
       }
     },
     {
-      "id": "64300003",
-      "cp": "64300",
-      "ville": "Orthez",
-      "adresse": "419 Route de Bayonne",
-      "pop": "R",
-      "lat": 4349000,
-      "lng": -79700,
-      "fuels": {
-        "gazole": 1.956,
-        "sp98": 1.989,
-        "e10": 1.894,
-        "e85": 0.838,
-        "gplc": 1.047
-      }
-    },
-    {
       "id": "64300005",
       "cp": "64300",
       "ville": "Orthez",
@@ -1155,23 +833,9 @@
       "lat": 4348000,
       "lng": -74800,
       "fuels": {
-        "gazole": 1.976,
-        "sp98": 2.026,
+        "gazole": 1.966,
+        "sp98": 2.015,
         "e10": 1.919
-      }
-    },
-    {
-      "id": "64780001",
-      "cp": "64780",
-      "ville": "Ossès",
-      "adresse": "Quartier Gahardou Sud",
-      "pop": "R",
-      "lat": 4323438.56372,
-      "lng": -129651.08393,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.049,
-        "e10": 1.949
       }
     },
     {
@@ -1274,11 +938,11 @@
       "lat": 4331700,
       "lng": -35600,
       "fuels": {
-        "gazole": 1.948,
+        "gazole": 1.911,
         "sp95": 1.978,
         "sp98": 1.99,
         "e10": 1.889,
-        "e85": 0.809
+        "e85": 0.819
       }
     },
     {
@@ -1305,7 +969,7 @@
       "lng": -91700,
       "fuels": {
         "gazole": 1.956,
-        "e10": 1.897,
+        "e10": 1.894,
         "e85": 0.838
       }
     },
@@ -1352,21 +1016,6 @@
       }
     },
     {
-      "id": "64500005",
-      "cp": "64500",
-      "ville": "Saint-Jean-de-Luz",
-      "adresse": "Avenue de Lahanchipia",
-      "pop": "R",
-      "lat": 4340155.93419,
-      "lng": -163327.01136,
-      "fuels": {
-        "gazole": 1.939,
-        "sp95": 1.969,
-        "sp98": 1.997,
-        "e10": 1.899
-      }
-    },
-    {
       "id": "64500004",
       "cp": "64500",
       "ville": "Saint-Jean-de-Luz",
@@ -1375,7 +1024,7 @@
       "lat": 4339172,
       "lng": -165483,
       "fuels": {
-        "gazole": 2.052,
+        "gazole": 1.993,
         "e10": 1.99
       }
     },
@@ -1388,7 +1037,7 @@
       "lat": 4316500,
       "lng": -119500,
       "fuels": {
-        "gazole": 2.085,
+        "gazole": 2.03,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -1417,24 +1066,10 @@
       "lat": 4332700,
       "lng": -103300,
       "fuels": {
-        "gazole": 2.029,
+        "gazole": 1.989,
         "sp95": 2.005,
         "sp98": 2.089,
         "e10": 1.999
-      }
-    },
-    {
-      "id": "64310002",
-      "cp": "64310",
-      "ville": "Saint-Pée-sur-Nivelle",
-      "adresse": "PLACE DU CHÂTEAU",
-      "pop": "R",
-      "lat": 4335200,
-      "lng": -155000,
-      "fuels": {
-        "gazole": 1.959,
-        "sp95": 1.969,
-        "e10": 1.899
       }
     },
     {
@@ -1450,34 +1085,6 @@
         "sp98": 1.999,
         "e10": 1.899,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "64990001",
-      "cp": "64990",
-      "ville": "Saint-Pierre-d'Irube",
-      "adresse": "RELAIS DES HIRONDELLES",
-      "pop": "R",
-      "lat": 4347800,
-      "lng": -145700,
-      "fuels": {
-        "gazole": 2.063,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "64270001",
-      "cp": "64270",
-      "ville": "Salies-de-Béarn",
-      "adresse": "62 Avenue des Docteurs Foix",
-      "pop": "R",
-      "lat": 4347500,
-      "lng": -91300,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 1.99,
-        "e10": 1.99
       }
     },
     {
@@ -1537,33 +1144,6 @@
       }
     },
     {
-      "id": "64190002",
-      "cp": "64190",
-      "ville": "Susmiou",
-      "adresse": "ROUTE DEPARTEMENTALE 936",
-      "pop": "R",
-      "lat": 4331906,
-      "lng": -77120,
-      "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.145,
-        "e10": 1.971,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "64470001",
-      "cp": "64470",
-      "ville": "Tardets-Sorholus",
-      "adresse": "-",
-      "pop": "R",
-      "lat": 4312100,
-      "lng": -86700,
-      "fuels": {
-        "gazole": 2.139
-      }
-    },
-    {
       "id": "64990002",
       "cp": "64990",
       "ville": "Urcuit",
@@ -1599,36 +1179,10 @@
       "lat": 4337500,
       "lng": -167900,
       "fuels": {
-        "gazole": 1.939,
-        "sp95": 1.969,
-        "sp98": 1.997,
-        "e10": 1.899
-      }
-    },
-    {
-      "id": "64240005",
-      "cp": "64240",
-      "ville": "Urt",
-      "adresse": "ALLEE DE LA CROIX",
-      "pop": "R",
-      "lat": 4349396.204,
-      "lng": -129340.512,
-      "fuels": {
-        "gazole": 2.079,
-        "sp95": 2.075
-      }
-    },
-    {
-      "id": "64480005",
-      "cp": "64480",
-      "ville": "Ustaritz",
-      "adresse": "506 CHEMIN ARKIA",
-      "pop": "R",
-      "lat": 4342300,
-      "lng": -146500,
-      "fuels": {
-        "gazole": 2.16,
-        "sp95": 1.98
+        "gazole": 1.919,
+        "sp95": 1.947,
+        "sp98": 1.987,
+        "e10": 1.888
       }
     },
     {
@@ -1640,9 +1194,9 @@
       "lat": 4339300,
       "lng": -145700,
       "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.059,
-        "e10": 1.949,
+        "gazole": 1.949,
+        "sp98": 2.049,
+        "e10": 1.929,
         "e85": 0.869
       }
     }

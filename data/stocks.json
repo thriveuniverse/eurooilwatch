@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-06-14T18:10:28.490Z",
+  "lastUpdated": "2026-06-15T10:50:14.294Z",
   "dataPeriod": "2026-03",
-  "countriesReporting": 24,
+  "countriesReporting": 25,
   "countriesTotal": 27,
   "dataSource": "Eurostat: 27 monthly, 0 annual fallback",
   "countries": [
@@ -270,6 +270,39 @@
       "overallStatus": "critical"
     },
     {
+      "countryCode": "SK",
+      "countryName": "Slovakia",
+      "datePeriod": "2026-03",
+      "fuels": [
+        {
+          "fuelType": "petrol",
+          "stockKilotonnes": 165.108,
+          "consumptionKilotonnes": 59.413,
+          "daysOfSupply": 83.4,
+          "mandatoryMinimumDays": 90,
+          "status": "warning"
+        },
+        {
+          "fuelType": "diesel",
+          "stockKilotonnes": 230.678,
+          "consumptionKilotonnes": 206.449,
+          "daysOfSupply": 33.5,
+          "mandatoryMinimumDays": 90,
+          "status": "critical"
+        },
+        {
+          "fuelType": "jet_fuel",
+          "stockKilotonnes": 17.494,
+          "consumptionKilotonnes": 6.202,
+          "daysOfSupply": 84.6,
+          "mandatoryMinimumDays": 90,
+          "status": "warning"
+        }
+      ],
+      "averageDays": 67.2,
+      "overallStatus": "critical"
+    },
+    {
       "countryCode": "HU",
       "countryName": "Hungary",
       "datePeriod": "2026-03",
@@ -465,39 +498,6 @@
         }
       ],
       "averageDays": 78.9,
-      "overallStatus": "critical"
-    },
-    {
-      "countryCode": "SK",
-      "countryName": "Slovakia",
-      "datePeriod": "2026-02",
-      "fuels": [
-        {
-          "fuelType": "petrol",
-          "stockKilotonnes": 161.678,
-          "consumptionKilotonnes": 53.58,
-          "daysOfSupply": 90.5,
-          "mandatoryMinimumDays": 90,
-          "status": "watch"
-        },
-        {
-          "fuelType": "diesel",
-          "stockKilotonnes": 224.35,
-          "consumptionKilotonnes": 150.601,
-          "daysOfSupply": 44.7,
-          "mandatoryMinimumDays": 90,
-          "status": "critical"
-        },
-        {
-          "fuelType": "jet_fuel",
-          "stockKilotonnes": 17.482,
-          "consumptionKilotonnes": 4.966,
-          "daysOfSupply": 105.6,
-          "mandatoryMinimumDays": 90,
-          "status": "safe"
-        }
-      ],
-      "averageDays": 80.3,
       "overallStatus": "critical"
     },
     {
@@ -898,9 +898,9 @@
     }
   ],
   "euAverage": {
-    "petrolDays": 96.3,
-    "dieselDays": 88.8,
-    "jetFuelDays": 87.3,
+    "petrolDays": 96.1,
+    "dieselDays": 88.4,
+    "jetFuelDays": 86.5,
     "overallStatus": "watch"
   }
 }

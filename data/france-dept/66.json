@@ -3,68 +3,55 @@
   "name": "Pyrénées-Orientales",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 68,
+  "stationCount": 39,
   "fuels": {
     "gazole": {
-      "count": 68,
-      "mean": 1.9799,
-      "median": 1.979,
+      "count": 39,
+      "mean": 1.9803,
+      "median": 1.989,
       "min": 1.894,
       "max": 2.159
     },
     "sp95": {
-      "count": 17,
-      "mean": 1.9923,
-      "median": 1.985,
-      "min": 1.9,
-      "max": 2.1
+      "count": 5,
+      "mean": 1.9852,
+      "median": 1.969,
+      "min": 1.941,
+      "max": 2.029
     },
     "sp98": {
-      "count": 45,
-      "mean": 2.0458,
-      "median": 2.045,
-      "min": 1.977,
+      "count": 25,
+      "mean": 2.0546,
+      "median": 2.049,
+      "min": 1.99,
       "max": 2.229
     },
     "e10": {
-      "count": 59,
-      "mean": 1.9424,
-      "median": 1.945,
-      "min": 1.855,
+      "count": 36,
+      "mean": 1.9493,
+      "median": 1.949,
+      "min": 1.878,
       "max": 2.099
     },
     "e85": {
-      "count": 32,
-      "mean": 0.8197,
+      "count": 18,
+      "mean": 0.8301,
       "median": 0.809,
-      "min": 0.759,
+      "min": 0.798,
       "max": 0.954
     },
     "gplc": {
-      "count": 5,
-      "mean": 1.0866,
-      "median": 1.099,
+      "count": 2,
+      "mean": 1.095,
+      "median": 1.095,
       "min": 1.029,
       "max": 1.161
     }
   },
   "stations": [
-    {
-      "id": "66700007",
-      "cp": "66700",
-      "ville": "Argelès-sur-Mer",
-      "adresse": "5 ROUTE DU LITTORAL",
-      "pop": "R",
-      "lat": 4257500,
-      "lng": 303500,
-      "fuels": {
-        "gazole": 2,
-        "e85": 0.832
-      }
-    },
     {
       "id": "66700003",
       "cp": "66700",
@@ -77,20 +64,6 @@
         "gazole": 2.039,
         "sp95": 2.029,
         "sp98": 2.089
-      }
-    },
-    {
-      "id": "66700001",
-      "cp": "66700",
-      "ville": "Argelès-sur-Mer",
-      "adresse": "ROUTE DE PERPIGNAN",
-      "pop": "R",
-      "lat": 4255700,
-      "lng": 301000,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.985,
-        "e10": 1.925
       }
     },
     {
@@ -117,23 +90,9 @@
       "lat": 4248173,
       "lng": 312928,
       "fuels": {
-        "gazole": 1.96,
-        "sp98": 2.065,
-        "e10": 1.945
-      }
-    },
-    {
-      "id": "66430002",
-      "cp": "66430",
-      "ville": "Bompas",
-      "adresse": "ROUTE DE TORREILLES",
-      "pop": "R",
-      "lat": 4272142.7735,
-      "lng": 293400.18281,
-      "fuels": {
-        "gazole": 1.959,
-        "sp95": 1.979,
-        "sp98": 2.099
+        "gazole": 1.929,
+        "sp98": 2.029,
+        "e10": 1.925
       }
     },
     {
@@ -145,9 +104,9 @@
       "lat": 4269200,
       "lng": 292000,
       "fuels": {
-        "gazole": 1.92,
-        "sp95": 1.932,
-        "e10": 1.867,
+        "gazole": 1.915,
+        "sp95": 1.941,
+        "e10": 1.878,
         "e85": 0.809
       }
     },
@@ -191,81 +150,9 @@
       "lng": 284600,
       "fuels": {
         "gazole": 2.009,
-        "sp98": 2.089,
-        "e10": 1.959,
+        "sp98": 2.099,
+        "e10": 1.969,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "66400004",
-      "cp": "66400",
-      "ville": "Céret",
-      "adresse": "3 rue Batère",
-      "pop": "R",
-      "lat": 4250100,
-      "lng": 275800,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 2.015,
-        "e10": 1.899,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "66400006",
-      "cp": "66400",
-      "ville": "Céret",
-      "adresse": "place de la resistance",
-      "pop": "R",
-      "lat": 4249000,
-      "lng": 275100,
-      "fuels": {
-        "gazole": 1.944,
-        "sp95": 1.959,
-        "sp98": 2.014
-      }
-    },
-    {
-      "id": "66530002",
-      "cp": "66530",
-      "ville": "Claira",
-      "adresse": "RD 83 borne 12",
-      "pop": "R",
-      "lat": 4277700,
-      "lng": 295100,
-      "fuels": {
-        "gazole": 1.973,
-        "e10": 1.919
-      }
-    },
-    {
-      "id": "66530001",
-      "cp": "66530",
-      "ville": "Claira",
-      "adresse": "Route du Barcares",
-      "pop": "R",
-      "lat": 4277700,
-      "lng": 291700,
-      "fuels": {
-        "gazole": 1.959,
-        "sp95": 1.969,
-        "sp98": 2.006,
-        "e10": 1.922,
-        "gplc": 1.099
-      }
-    },
-    {
-      "id": "66820001",
-      "cp": "66820",
-      "ville": "Corneilla-de-Conflent",
-      "adresse": "Avenue Clemenceau",
-      "pop": "R",
-      "lat": 4255700,
-      "lng": 238400,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.059,
-        "e10": 1.979
       }
     },
     {
@@ -297,20 +184,6 @@
       }
     },
     {
-      "id": "66201001",
-      "cp": "66200",
-      "ville": "Elne",
-      "adresse": "72 ROUTE DE PERPIGNAN",
-      "pop": "R",
-      "lat": 4261100,
-      "lng": 296200,
-      "fuels": {
-        "gazole": 2.039,
-        "sp95": 2.034,
-        "e10": 2.027
-      }
-    },
-    {
       "id": "66310002",
       "cp": "66310",
       "ville": "Estagel",
@@ -323,21 +196,6 @@
         "sp98": 2.029,
         "e10": 1.899,
         "e85": 0.799
-      }
-    },
-    {
-      "id": "66130002",
-      "cp": "66130",
-      "ville": "Ille-sur-Têt",
-      "adresse": "C.COMMERCIAL DU RIBERAL",
-      "pop": "R",
-      "lat": 4267700,
-      "lng": 263400,
-      "fuels": {
-        "gazole": 1.935,
-        "sp98": 1.999,
-        "e10": 1.895,
-        "e85": 0.798
       }
     },
     {
@@ -400,20 +258,6 @@
       }
     },
     {
-      "id": "66420002",
-      "cp": "66420",
-      "ville": "Le Barcarès",
-      "adresse": "Boulevard du 14 Juillet",
-      "pop": "R",
-      "lat": 4278700,
-      "lng": 303500,
-      "fuels": {
-        "gazole": 1.998,
-        "sp98": 2.009,
-        "e10": 1.959
-      }
-    },
-    {
       "id": "66420001",
       "cp": "66420",
       "ville": "Le Barcarès",
@@ -422,9 +266,9 @@
       "lat": 4278737,
       "lng": 303490,
       "fuels": {
-        "gazole": 1.959,
+        "gazole": 1.939,
         "sp98": 1.999,
-        "e10": 1.959
+        "e10": 1.929
       }
     },
     {
@@ -437,23 +281,7 @@
       "lng": 283900,
       "fuels": {
         "gazole": 1.897,
-        "sp98": 1.99,
         "e10": 1.909
-      }
-    },
-    {
-      "id": "66160001",
-      "cp": "66160",
-      "ville": "Le Boulou",
-      "adresse": "Route de Perpignan",
-      "pop": "R",
-      "lat": 4253200,
-      "lng": 284000,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 1.989,
-        "e10": 1.899,
-        "e85": 0.785
       }
     },
     {
@@ -465,7 +293,7 @@
       "lat": 4268600,
       "lng": 281300,
       "fuels": {
-        "gazole": 1.946,
+        "gazole": 1.988,
         "e10": 1.945
       }
     },
@@ -536,64 +364,6 @@
         "sp98": 2.069,
         "e10": 1.969,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "66360001",
-      "cp": "66360",
-      "ville": "Olette",
-      "adresse": "109 avenue du général de gaulle",
-      "pop": "R",
-      "lat": 4255353.96231,
-      "lng": 226787.83322,
-      "fuels": {
-        "gazole": 2.049,
-        "e10": 2.069
-      }
-    },
-    {
-      "id": "66000003",
-      "cp": "66000",
-      "ville": "Perpignan",
-      "adresse": "2060 Avenue Julien Panchot",
-      "pop": "R",
-      "lat": 4268400,
-      "lng": 286500,
-      "fuels": {
-        "gazole": 2.019,
-        "sp98": 2.119,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "66000005",
-      "cp": "66000",
-      "ville": "Perpignan",
-      "adresse": "21 Boulevard Docteur Joseph Dénoyes",
-      "pop": "R",
-      "lat": 4271000,
-      "lng": 288500,
-      "fuels": {
-        "gazole": 1.959,
-        "sp95": 1.989,
-        "sp98": 2.019,
-        "e10": 1.929
-      }
-    },
-    {
-      "id": "66962002",
-      "cp": "66962",
-      "ville": "Perpignan",
-      "adresse": "2130 avenue du Languedoc",
-      "pop": "R",
-      "lat": 4274200,
-      "lng": 289200,
-      "fuels": {
-        "gazole": 1.959,
-        "sp95": 1.969,
-        "sp98": 1.999,
-        "e85": 0.798,
-        "gplc": 1.099
       }
     },
     {
@@ -681,22 +451,6 @@
       }
     },
     {
-      "id": "66028001",
-      "cp": "66000",
-      "ville": "Perpignan",
-      "adresse": "AVENUE D'ESPAGNE",
-      "pop": "R",
-      "lat": 4266800,
-      "lng": 288400,
-      "fuels": {
-        "gazole": 1.956,
-        "sp98": 2.009,
-        "e10": 1.939,
-        "e85": 0.759,
-        "gplc": 1.045
-      }
-    },
-    {
       "id": "66005001",
       "cp": "66000",
       "ville": "Perpignan",
@@ -742,22 +496,6 @@
       }
     },
     {
-      "id": "66962001",
-      "cp": "66000",
-      "ville": "Perpignan",
-      "adresse": "route de canet",
-      "pop": "R",
-      "lat": 4270100,
-      "lng": 294400,
-      "fuels": {
-        "gazole": 1.908,
-        "sp95": 1.9,
-        "sp98": 1.977,
-        "e10": 1.855,
-        "e85": 0.84
-      }
-    },
-    {
       "id": "66380001",
       "cp": "66380",
       "ville": "Pia",
@@ -781,39 +519,8 @@
       "lng": 287700,
       "fuels": {
         "gazole": 1.997,
-        "sp95": 2.029,
         "e10": 1.949,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "66660002",
-      "cp": "66660",
-      "ville": "Port-Vendres",
-      "adresse": "ROUTE DE LA GARE",
-      "pop": "R",
-      "lat": 4251400,
-      "lng": 310400,
-      "fuels": {
-        "gazole": 2.006,
-        "sp98": 2.056,
-        "e10": 1.936,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "66500001",
-      "cp": "66500",
-      "ville": "Prades",
-      "adresse": "Grande Rocade",
-      "pop": "R",
-      "lat": 4262500,
-      "lng": 242800,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 1.999,
-        "e10": 1.899,
-        "e85": 0.795
       }
     },
     {
@@ -832,88 +539,17 @@
       }
     },
     {
-      "id": "66600001",
-      "cp": "66600",
-      "ville": "Rivesaltes",
-      "adresse": "Avenue de l'aéroport",
-      "pop": "R",
-      "lat": 4275770.57024,
-      "lng": 286563.29184,
-      "fuels": {
-        "gazole": 1.939,
-        "e10": 1.879,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "66690001",
-      "cp": "66690",
-      "ville": "Saint-André",
-      "adresse": "CD 618 LIEU DIT COULOUMES",
-      "pop": "R",
-      "lat": 4255300,
-      "lng": 297700,
-      "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.079,
-        "e10": 1.959,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "66750004",
-      "cp": "66750",
-      "ville": "Saint-Cyprien",
-      "adresse": "74 BOULEVARD DESNOYER",
-      "pop": "R",
-      "lat": 4263600,
-      "lng": 303400,
-      "fuels": {
-        "gazole": 1.904,
-        "e10": 1.921,
-        "e85": 0.829
-      }
-    },
-    {
-      "id": "66624001",
-      "cp": "66240",
-      "ville": "Saint-Estève",
-      "adresse": "14 rue des grillons",
-      "pop": "R",
-      "lat": 4271600,
-      "lng": 284400,
-      "fuels": {
-        "gazole": 2.06,
-        "sp95": 2.1,
-        "sp98": 2.17,
-        "e85": 0.83
-      }
-    },
-    {
-      "id": "66240001",
-      "cp": "66240",
-      "ville": "Saint-Estève",
-      "adresse": "8 Boulevard du Canigou",
-      "pop": "R",
-      "lat": 4271700,
-      "lng": 283900,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.009,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "66250003",
+      "id": "66250002",
       "cp": "66250",
       "ville": "Saint-Laurent-de-la-Salanque",
-      "adresse": "AVENUE DE LA COTE VERMEILLE",
+      "adresse": "Route du Barcarès",
       "pop": "R",
       "lat": 4277400,
-      "lng": 299800,
+      "lng": 301400,
       "fuels": {
-        "gazole": 2.05,
-        "sp95": 2.03
+        "gazole": 1.949,
+        "e10": 1.929,
+        "e85": 0.809
       }
     },
     {
@@ -925,22 +561,8 @@
       "lat": 4277300,
       "lng": 301100,
       "fuels": {
-        "gazole": 2.047,
+        "gazole": 1.988,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "66250002",
-      "cp": "66250",
-      "ville": "Saint-Laurent-de-la-Salanque",
-      "adresse": "Route du Barcarès",
-      "pop": "R",
-      "lat": 4277400,
-      "lng": 301400,
-      "fuels": {
-        "gazole": 1.939,
-        "e10": 1.889,
-        "e85": 0.809
       }
     },
     {
@@ -958,20 +580,6 @@
       }
     },
     {
-      "id": "66470002",
-      "cp": "66470",
-      "ville": "Sainte-Marie-la-Mer",
-      "adresse": "12 RUE GUSTAVE EIFFEL",
-      "pop": "R",
-      "lat": 4273219.50749,
-      "lng": 302526.47535,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.065,
-        "e10": 1.949
-      }
-    },
-    {
       "id": "66330001",
       "cp": "66280",
       "ville": "Saleilles",
@@ -983,34 +591,6 @@
         "gazole": 1.996,
         "sp98": 1.99,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "66300012",
-      "cp": "66300",
-      "ville": "Thuir",
-      "adresse": "1 AVENUE COTE VERMEILLE",
-      "pop": "R",
-      "lat": 4263100,
-      "lng": 276200,
-      "fuels": {
-        "gazole": 1.955,
-        "e10": 1.884
-      }
-    },
-    {
-      "id": "66300014",
-      "cp": "66300",
-      "ville": "Thuir",
-      "adresse": "chemin de Camalens av de la padrouze",
-      "pop": "R",
-      "lat": 4264000,
-      "lng": 275700,
-      "fuels": {
-        "gazole": 1.935,
-        "sp98": 1.999,
-        "e10": 1.895,
-        "e85": 0.809
       }
     },
     {

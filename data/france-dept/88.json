@@ -3,113 +3,55 @@
   "name": "Vosges",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-06-14T18:10:38.982Z",
+  "asOf": "2026-06-15T10:50:26.063Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 81,
+  "stationCount": 54,
   "fuels": {
     "gazole": {
-      "count": 78,
-      "mean": 2.0049,
+      "count": 53,
+      "mean": 2.0002,
       "median": 1.999,
-      "min": 1.904,
+      "min": 1.889,
       "max": 2.099
     },
     "sp95": {
-      "count": 18,
-      "mean": 2.0202,
-      "median": 2.021,
+      "count": 9,
+      "mean": 2.0219,
+      "median": 2.032,
       "min": 1.899,
       "max": 2.099
     },
     "sp98": {
-      "count": 63,
-      "mean": 2.0249,
+      "count": 39,
+      "mean": 2.0259,
       "median": 1.999,
-      "min": 1.986,
-      "max": 2.18
+      "min": 1.975,
+      "max": 2.149
     },
     "e10": {
-      "count": 63,
-      "mean": 1.9519,
+      "count": 42,
+      "mean": 1.9515,
       "median": 1.959,
       "min": 1.829,
       "max": 2.079
     },
     "e85": {
-      "count": 20,
-      "mean": 0.8213,
+      "count": 14,
+      "mean": 0.8138,
       "median": 0.809,
       "min": 0.795,
-      "max": 0.998
+      "max": 0.839
     },
     "gplc": {
-      "count": 8,
-      "mean": 1.0415,
-      "median": 1.042,
+      "count": 5,
+      "mean": 1.0312,
+      "median": 1.035,
       "min": 0.973,
-      "max": 1.098
+      "max": 1.07
     }
   },
   "stations": [
-    {
-      "id": "88650004",
-      "cp": "88650",
-      "ville": "Anould",
-      "adresse": "104 RUE DE COLMAR",
-      "pop": "R",
-      "lat": 4818800,
-      "lng": 695400,
-      "fuels": {
-        "gazole": 1.996,
-        "sp98": 1.99,
-        "e10": 1.984
-      }
-    },
-    {
-      "id": "88650001",
-      "cp": "88650",
-      "ville": "Anould",
-      "adresse": "493 AVENUE DE ST DIE",
-      "pop": "R",
-      "lat": 4819800,
-      "lng": 694700,
-      "fuels": {
-        "gazole": 1.986,
-        "sp95": 1.979,
-        "sp98": 2.019
-      }
-    },
-    {
-      "id": "88600002",
-      "cp": "88600",
-      "ville": "Bruyères",
-      "adresse": "3 et 10 Rue de Gérardmer",
-      "pop": "R",
-      "lat": 4819900,
-      "lng": 672700,
-      "fuels": {
-        "gazole": 1.998,
-        "sp95": 1.998,
-        "sp98": 2.018,
-        "e10": 1.988
-      }
-    },
-    {
-      "id": "88600003",
-      "cp": "88600",
-      "ville": "Bruyères",
-      "adresse": "Rue Abel Ferry",
-      "pop": "R",
-      "lat": 4820400,
-      "lng": 672300,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "e10": 1.989,
-        "e85": 0.809
-      }
-    },
     {
       "id": "88190003",
       "cp": "88190",
@@ -132,9 +74,9 @@
       "lat": 4837279.73657,
       "lng": 628222.01072,
       "fuels": {
-        "gazole": 2.029,
-        "sp98": 2.052,
-        "e10": 1.929
+        "gazole": 2.019,
+        "sp98": 2.063,
+        "e10": 1.939
       }
     },
     {
@@ -146,8 +88,8 @@
       "lat": 4837100,
       "lng": 629200,
       "fuels": {
-        "gazole": 1.979,
-        "e10": 1.949
+        "gazole": 1.94,
+        "e10": 1.929
       }
     },
     {
@@ -175,49 +117,6 @@
         "gazole": 2.047,
         "sp98": 1.99,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "88140004",
-      "cp": "88140",
-      "ville": "Contrexéville",
-      "adresse": "630 Avenue des Pierrottes",
-      "pop": "R",
-      "lat": 4818900,
-      "lng": 590200,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.99,
-        "e10": 1.929,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "88140006",
-      "cp": "88140",
-      "ville": "Contrexéville",
-      "adresse": "AV DIVISION LECLERC",
-      "pop": "R",
-      "lat": 4818800,
-      "lng": 589400,
-      "fuels": {
-        "sp98": 1.99,
-        "e85": 0.822,
-        "gplc": 1.029
-      }
-    },
-    {
-      "id": "88140003",
-      "cp": "88140",
-      "ville": "Contrexéville",
-      "adresse": "Rue François de Neufchâteau",
-      "pop": "R",
-      "lat": 4818846.19506,
-      "lng": 588337.42558,
-      "fuels": {
-        "gazole": 1.96,
-        "sp98": 1.986,
-        "e10": 1.923
       }
     },
     {
@@ -250,20 +149,6 @@
       }
     },
     {
-      "id": "88260001",
-      "cp": "88260",
-      "ville": "Darney",
-      "adresse": "Route de Vittel",
-      "pop": "R",
-      "lat": 4809300,
-      "lng": 604400,
-      "fuels": {
-        "gazole": 1.982,
-        "sp98": 1.987,
-        "e10": 1.88
-      }
-    },
-    {
       "id": "88270001",
       "cp": "88270",
       "ville": "Dompaire",
@@ -290,48 +175,6 @@
         "sp98": 2.039,
         "e10": 1.969,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "88000011",
-      "cp": "88000",
-      "ville": "Épinal",
-      "adresse": "51 route de Remiremont",
-      "pop": "R",
-      "lat": 4816000,
-      "lng": 645100,
-      "fuels": {
-        "gazole": 2.029,
-        "sp98": 2.099,
-        "e10": 1.999,
-        "gplc": 1.049
-      }
-    },
-    {
-      "id": "88230003",
-      "cp": "88230",
-      "ville": "Fraize",
-      "adresse": "14, Rue du Général Ingold",
-      "pop": "R",
-      "lat": 4818329.20504,
-      "lng": 700408.89058,
-      "fuels": {
-        "gazole": 1.99,
-        "sp98": 1.999,
-        "e10": 1.969
-      }
-    },
-    {
-      "id": "88230001",
-      "cp": "88230",
-      "ville": "Fraize",
-      "adresse": "46 Rue Eugène Mathis",
-      "pop": "R",
-      "lat": 4818500,
-      "lng": 699300,
-      "fuels": {
-        "gazole": 2.05,
-        "e10": 1.99
       }
     },
     {
@@ -372,23 +215,10 @@
       "lat": 4807900,
       "lng": 688900,
       "fuels": {
-        "gazole": 2.016,
-        "sp98": 2.026,
-        "e10": 1.916,
+        "gazole": 1.999,
+        "sp98": 2.036,
+        "e10": 1.934,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "88390003",
-      "cp": "88390",
-      "ville": "Girancourt",
-      "adresse": "Rue de Darney",
-      "pop": "R",
-      "lat": 4816178,
-      "lng": 630282,
-      "fuels": {
-        "sp98": 2.009,
-        "e10": 1.959
       }
     },
     {
@@ -401,7 +231,6 @@
       "lng": 644000,
       "fuels": {
         "gazole": 2.06,
-        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.829
       }
@@ -415,9 +244,9 @@
       "lat": 4819100,
       "lng": 641900,
       "fuels": {
-        "gazole": 1.945,
-        "sp98": 1.999,
-        "e10": 1.939,
+        "gazole": 1.889,
+        "sp98": 1.975,
+        "e10": 1.919,
         "e85": 0.795
       }
     },
@@ -430,7 +259,7 @@
       "lat": 4820000,
       "lng": 648000,
       "fuels": {
-        "gazole": 1.989,
+        "gazole": 1.969,
         "sp95": 2.01,
         "sp98": 2.019,
         "e10": 1.919,
@@ -474,9 +303,10 @@
       "lat": 4800600,
       "lng": 627500,
       "fuels": {
-        "gazole": 1.999,
+        "gazole": 1.995,
         "sp98": 2.118,
-        "e10": 1.995
+        "e10": 1.978,
+        "e85": 0.809
       }
     },
     {
@@ -488,9 +318,9 @@
       "lat": 4807449.084,
       "lng": 578766.316,
       "fuels": {
-        "gazole": 2.029,
-        "sp95": 2.009,
-        "sp98": 2.039
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.029
       }
     },
     {
@@ -532,21 +362,6 @@
         "gazole": 1.904,
         "sp98": 1.99,
         "e10": 1.878
-      }
-    },
-    {
-      "id": "88160003",
-      "cp": "88160",
-      "ville": "Le Thillot",
-      "adresse": "Route Ménil",
-      "pop": "R",
-      "lat": 4788900,
-      "lng": 677500,
-      "fuels": {
-        "gazole": 1.949,
-        "sp98": 1.989,
-        "e10": 1.889,
-        "e85": 0.809
       }
     },
     {
@@ -619,20 +434,6 @@
       }
     },
     {
-      "id": "88410001",
-      "cp": "88410",
-      "ville": "Monthureux-sur-Saône",
-      "adresse": "rue de La Croix de mission",
-      "pop": "R",
-      "lat": 4803200,
-      "lng": 597800,
-      "fuels": {
-        "gazole": 2.059,
-        "sp95": 2.039,
-        "sp98": 2.099
-      }
-    },
-    {
       "id": "88420002",
       "cp": "88420",
       "ville": "Moyenmoutier",
@@ -656,6 +457,7 @@
       "lng": 570700,
       "fuels": {
         "gazole": 1.928,
+        "sp98": 1.99,
         "e10": 1.932,
         "e85": 0.839
       }
@@ -674,19 +476,6 @@
       }
     },
     {
-      "id": "88300004",
-      "cp": "88300",
-      "ville": "Neufchâteau",
-      "adresse": "401 QUAI JEAN MOULIN",
-      "pop": "R",
-      "lat": 4835400,
-      "lng": 568800,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.099
-      }
-    },
-    {
       "id": "88307001",
       "cp": "88300",
       "ville": "Neufchâteau",
@@ -695,8 +484,9 @@
       "lat": 4836903,
       "lng": 570513.81,
       "fuels": {
-        "gazole": 1.986,
-        "e10": 1.951,
+        "gazole": 1.927,
+        "sp98": 1.989,
+        "e10": 1.931,
         "e85": 0.838
       }
     },
@@ -715,20 +505,6 @@
       }
     },
     {
-      "id": "88500001",
-      "cp": "88500",
-      "ville": "Poussay",
-      "adresse": "23 Rue du pré Paradis",
-      "pop": "R",
-      "lat": 4830300,
-      "lng": 611900,
-      "fuels": {
-        "gazole": 2.045,
-        "sp95": 2.048,
-        "sp98": 2.125
-      }
-    },
-    {
       "id": "88550001",
       "cp": "88550",
       "ville": "Pouxeux",
@@ -737,7 +513,7 @@
       "lat": 4811000,
       "lng": 657300,
       "fuels": {
-        "gazole": 1.979,
+        "gazole": 1.959,
         "sp98": 1.999,
         "e10": 1.899,
         "e85": 0.795
@@ -752,22 +528,7 @@
       "lat": 4834600,
       "lng": 663900,
       "fuels": {
-        "gazole": 2.094
-      }
-    },
-    {
-      "id": "88700003",
-      "cp": "88700",
-      "ville": "Rambervillers",
-      "adresse": "4 Avenue du 17ème B.C.P.",
-      "pop": "R",
-      "lat": 4833845,
-      "lng": 663507,
-      "fuels": {
-        "gazole": 2.06,
-        "sp95": 1.993,
-        "sp98": 2.037,
-        "e10": 1.925
+        "gazole": 2.039
       }
     },
     {
@@ -780,22 +541,7 @@
       "lng": 663600,
       "fuels": {
         "gazole": 2.06,
-        "e10": 1.932
-      }
-    },
-    {
-      "id": "88110002",
-      "cp": "88110",
-      "ville": "Raon-l'Étape",
-      "adresse": "Avenue du 21ème B.C.P.",
-      "pop": "R",
-      "lat": 4840700,
-      "lng": 685800,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.032,
-        "sp98": 2.02,
-        "e10": 1.938
+        "e10": 1.943
       }
     },
     {
@@ -809,35 +555,6 @@
       "fuels": {
         "gazole": 1.994,
         "e10": 1.895
-      }
-    },
-    {
-      "id": "88250003",
-      "cp": "88250",
-      "ville": "Rochesson",
-      "adresse": "2 bis route de Cornimont",
-      "pop": "R",
-      "lat": 4800400,
-      "lng": 683400,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.999,
-        "e10": 1.949,
-        "e85": 0.798
-      }
-    },
-    {
-      "id": "88360002",
-      "cp": "88360",
-      "ville": "Rupt-sur-Moselle",
-      "adresse": "3 QUAI DE LA PARELLE",
-      "pop": "R",
-      "lat": 4792500,
-      "lng": 665900,
-      "fuels": {
-        "gazole": 1.975,
-        "sp98": 1.999,
-        "e10": 1.929
       }
     },
     {
@@ -865,7 +582,6 @@
       "lng": 692800,
       "fuels": {
         "gazole": 1.998,
-        "sp98": 1.99,
         "e10": 1.984
       }
     },
@@ -892,7 +608,7 @@
       "lat": 4829300,
       "lng": 693500,
       "fuels": {
-        "gazole": 1.999,
+        "gazole": 1.995,
         "sp95": 2.032,
         "sp98": 2.042
       }
@@ -920,7 +636,7 @@
       "lat": 4801700,
       "lng": 661500,
       "fuels": {
-        "gazole": 1.939,
+        "gazole": 1.912,
         "sp98": 1.99,
         "e10": 1.899,
         "gplc": 0.973
@@ -967,34 +683,6 @@
       }
     },
     {
-      "id": "88200017",
-      "cp": "88200",
-      "ville": "Saint-Nabord",
-      "adresse": "6 Faubourg de Remiremont",
-      "pop": "R",
-      "lat": 4802618.6,
-      "lng": 658088.7,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 1.999,
-        "e10": 1.899
-      }
-    },
-    {
-      "id": "88200015",
-      "cp": "88200",
-      "ville": "Saint-Nabord",
-      "adresse": "ROUTE NATIONALE 57 - AIRE DE LA CROIX SAINT JACQUES",
-      "pop": "R",
-      "lat": 4804948.393,
-      "lng": 658206.806,
-      "fuels": {
-        "gazole": 1.911,
-        "sp98": 1.99,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "88100006",
       "cp": "88100",
       "ville": "Sainte-Marguerite",
@@ -1006,7 +694,7 @@
         "gazole": 2,
         "sp98": 2.043,
         "e10": 1.996,
-        "e85": 0.798,
+        "e85": 0.809,
         "gplc": 1.035
       }
     },
@@ -1022,36 +710,6 @@
         "gazole": 2.069,
         "sp98": 1.99,
         "e10": 1.99
-      }
-    },
-    {
-      "id": "88170006",
-      "cp": "88170",
-      "ville": "Sandaucourt",
-      "adresse": "AUT.A31-AIRE DE LORRAINE SANDAUCOURT-LES RAPPES",
-      "pop": "A",
-      "lat": 4826663.63,
-      "lng": 586374.4,
-      "fuels": {
-        "gazole": 2.069,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.998,
-        "gplc": 1.098
-      }
-    },
-    {
-      "id": "88580001",
-      "cp": "88580",
-      "ville": "Saulcy-sur-Meurthe",
-      "adresse": "RUE RAYMOND PANIN",
-      "pop": "R",
-      "lat": 4824200,
-      "lng": 695400,
-      "fuels": {
-        "gazole": 1.998,
-        "sp98": 1.99,
-        "e10": 1.984
       }
     },
     {
@@ -1097,20 +755,6 @@
       }
     },
     {
-      "id": "88150001",
-      "cp": "88150",
-      "ville": "Thaon-les-Vosges",
-      "adresse": "27 rue d'Alsace",
-      "pop": "R",
-      "lat": 4824600,
-      "lng": 642300,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.042,
-        "e10": 1.959
-      }
-    },
-    {
       "id": "88150004",
       "cp": "88150",
       "ville": "Thaon-les-Vosges",
@@ -1124,21 +768,6 @@
       }
     },
     {
-      "id": "88120001",
-      "cp": "88120",
-      "ville": "Vagney",
-      "adresse": "11 Rue du Général de Gaulle",
-      "pop": "R",
-      "lat": 4801200,
-      "lng": 671500,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.969,
-        "sp98": 1.999,
-        "e10": 1.899
-      }
-    },
-    {
       "id": "88450002",
       "cp": "88450",
       "ville": "Vincey",
@@ -1147,7 +776,7 @@
       "lat": 4833700,
       "lng": 633200,
       "fuels": {
-        "gazole": 2.091,
+        "gazole": 2.032,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.829
@@ -1177,20 +806,6 @@
       "lng": 594032.57296,
       "fuels": {
         "gazole": 1.999
-      }
-    },
-    {
-      "id": "88220004",
-      "cp": "88220",
-      "ville": "Xertigny",
-      "adresse": "18 Rue de la Vall. de L Aître",
-      "pop": "R",
-      "lat": 4804569.54574,
-      "lng": 639848.44638,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.18,
-        "e10": 1.995
       }
     }
   ]
