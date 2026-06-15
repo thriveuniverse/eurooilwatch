@@ -91,10 +91,11 @@ export default async function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        headline="Middle East — Hormuz constrained, energy-infrastructure strikes resume"
-        body="Hormuz is technically open but commercially constrained — only a thin, high-risk trickle of vessels is moving, often with AIS gaps, while Iran ties any fuller reopening to new conditions the US opposes — and Israel's strike on Iran's Mahshahr petrochemical complex marks the first hit on Iranian energy infrastructure since the April ceasefire."
-        linkLabel="Supply Routes →"
-        linkHref="/supply"
+        tone="update"
+        headline="Fragile de-escalation — tentative U.S.–Iran MOU"
+        body="a reported, still-provisional memorandum points to reopening Hormuz, a 60-day talks window and possible sanctions waivers — but a paper deal isn't barrels: our transit monitor still shows Hormuz near 1% of its 2023 tanker tonnage, and buffers drawn down over the disruption don't refill on an announcement"
+        linkLabel="What the MOU changes →"
+        linkHref="/analysis/us-iran-mou-fragile-deescalation"
       />
 
       {/* 1. Status Banner */}
