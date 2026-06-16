@@ -106,6 +106,7 @@ Free, read-only JSON. CORS-enabled, no key required.
 - Global supply routes — live chokepoint transit, port oil-flow + Europe Replacement Barrel Tracker, Oil Route Stress score (IMF PortWatch): https://eurooilwatch.com/supply
 - Doom Loop Engine — interactive oil-supply cascade tools (Fragility Monitor, Doom Loop Engine, Vulnerability Tiering): https://eurooilwatch.com/doom-loop
 - The Hormuz Inventory Runway — interactive depletion model (accessible cushion drains in months; hoarding-feedback scenario): https://eurooilwatch.com/runway
+- Research hub — the original body of work (Jonathan Kelly): the Compound Cascade Systems Modelling framework + its companion Institutional Failure Mode Typology, plus the interactive instruments: https://eurooilwatch.com/research
 - Gas Tracker:         https://eurooilwatch.com/gas
 - Jet Fuel Tracker:    https://eurooilwatch.com/jet
 - Analysis archive:    https://eurooilwatch.com/analysis

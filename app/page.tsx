@@ -98,6 +98,19 @@ export default async function DashboardPage() {
         linkHref="/analysis/us-iran-mou-fragile-deescalation"
       />
 
+      {/* Research hub — flagship body of work */}
+      <a
+        href="/research"
+        className="block rounded-lg border border-oil-700/60 bg-oil-900/40 px-4 py-3 hover:border-oil-500 hover:bg-oil-900/60 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-oil-400 uppercase">Research</span>
+        <span className="block text-sm text-gray-300 mt-0.5">
+          The analytical backbone — the <span className="text-white font-semibold">Compound Cascade framework</span> &amp; its companion{' '}
+          <span className="text-white font-semibold">Institutional Failure Mode Typology</span>, plus the interactive instruments{' '}
+          <span className="text-oil-300 group-hover:text-white">→</span>
+        </span>
+      </a>
+
       {/* 1. Status Banner */}
       <section aria-label="EU fuel security status">
         <StatusBanner
