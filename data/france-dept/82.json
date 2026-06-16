@@ -3,41 +3,83 @@
   "name": "Tarn-et-Garonne",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 6,
+  "stationCount": 59,
   "fuels": {
     "gazole": {
-      "count": 6,
-      "mean": 2.0135,
+      "count": 58,
+      "mean": 1.9872,
       "median": 1.979,
       "min": 1.881,
       "max": 2.193
     },
     "sp95": {
-      "count": 3,
-      "mean": 1.9757,
+      "count": 16,
+      "mean": 1.9899,
       "median": 1.99,
       "min": 1.918,
-      "max": 2.019
+      "max": 2.049
     },
     "sp98": {
-      "count": 4,
-      "mean": 2.087,
+      "count": 42,
+      "mean": 2.0519,
       "median": 2.039,
-      "min": 2.029,
+      "min": 1.99,
       "max": 2.241
     },
     "e10": {
-      "count": 5,
-      "mean": 1.9692,
-      "median": 1.949,
-      "min": 1.878,
+      "count": 46,
+      "mean": 1.9518,
+      "median": 1.944,
+      "min": 1.877,
       "max": 2.141
+    },
+    "e85": {
+      "count": 23,
+      "mean": 0.832,
+      "median": 0.809,
+      "min": 0.792,
+      "max": 0.998
+    },
+    "gplc": {
+      "count": 8,
+      "mean": 1.0529,
+      "median": 1.069,
+      "min": 0.959,
+      "max": 1.11
     }
   },
   "stations": [
+    {
+      "id": "82350001",
+      "cp": "82350",
+      "ville": "Albias",
+      "adresse": "60 RN 20",
+      "pop": "R",
+      "lat": 4409000,
+      "lng": 144700,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "82600002",
+      "cp": "82600",
+      "ville": "Aucamville",
+      "adresse": "CC LES SIGALERES - Avenue de Toulouse - RD 3",
+      "pop": "R",
+      "lat": 4380000,
+      "lng": 122100,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 1.99,
+        "e10": 1.99
+      }
+    },
     {
       "id": "82500002",
       "cp": "82500",
@@ -50,6 +92,20 @@
         "gazole": 1.959,
         "sp98": 2.029,
         "e10": 1.919
+      }
+    },
+    {
+      "id": "82500003",
+      "cp": "82500",
+      "ville": "Beaumont-de-Lomagne",
+      "adresse": "RUE OURASI ZAC DE BORDEVIEILLE",
+      "pop": "R",
+      "lat": 4389200,
+      "lng": 101200,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.039
       }
     },
     {
@@ -67,6 +123,449 @@
       }
     },
     {
+      "id": "82370003",
+      "cp": "82370",
+      "ville": "Campsas",
+      "adresse": "Lieu dit Sepat",
+      "pop": "R",
+      "lat": 4389921.54669,
+      "lng": 131098.21835,
+      "fuels": {
+        "gazole": 2.049
+      }
+    },
+    {
+      "id": "82100004",
+      "cp": "82100",
+      "ville": "Castelsarrasin",
+      "adresse": "1400 route de Moissac",
+      "pop": "R",
+      "lat": 4406100,
+      "lng": 109800,
+      "fuels": {
+        "gazole": 1.917,
+        "sp95": 1.977,
+        "sp98": 2.018,
+        "e10": 1.877,
+        "e85": 0.807
+      }
+    },
+    {
+      "id": "82100003",
+      "cp": "82100",
+      "ville": "Castelsarrasin",
+      "adresse": "20 Avenue du Maréchal Leclerc",
+      "pop": "R",
+      "lat": 4404315,
+      "lng": 110469,
+      "fuels": {
+        "gazole": 1.977,
+        "e10": 1.966,
+        "e85": 0.836,
+        "gplc": 1.11
+      }
+    },
+    {
+      "id": "82100007",
+      "cp": "82100",
+      "ville": "Castelsarrasin",
+      "adresse": "64 Route de Lafrançaise , Station TOTAL",
+      "pop": "R",
+      "lat": 4404500,
+      "lng": 111500,
+      "fuels": {
+        "gazole": 1.977,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "82100006",
+      "cp": "82100",
+      "ville": "Castelsarrasin",
+      "adresse": "ZAC du Barraouet",
+      "pop": "R",
+      "lat": 4405700,
+      "lng": 110200,
+      "fuels": {
+        "gazole": 1.919,
+        "sp95": 1.979,
+        "sp98": 2.029,
+        "e10": 1.879,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "82300005",
+      "cp": "82300",
+      "ville": "Caussade",
+      "adresse": "116 AVENUE EDOUARD HERRIOT",
+      "pop": "R",
+      "lat": 4415481.96019,
+      "lng": 153046.75093,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.099,
+        "e10": 1.969,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "82300004",
+      "cp": "82300",
+      "ville": "Caussade",
+      "adresse": "ZI de Meaux - BP 119",
+      "pop": "R",
+      "lat": 4415551.5,
+      "lng": 152676.783,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "82160002",
+      "cp": "82160",
+      "ville": "Caylus",
+      "adresse": "Z.A. le Chirou",
+      "pop": "R",
+      "lat": 4423140,
+      "lng": 175828,
+      "fuels": {
+        "gazole": 2.009,
+        "sp95": 2.049,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "82110002",
+      "cp": "82110",
+      "ville": "Cazes-Mondenard",
+      "adresse": "TRAVERS DE CAZES",
+      "pop": "R",
+      "lat": 4423500,
+      "lng": 120700,
+      "fuels": {
+        "gazole": 2.03,
+        "e10": 2.03
+      }
+    },
+    {
+      "id": "82700003",
+      "cp": "82700",
+      "ville": "Escatalens",
+      "adresse": "1187 Route de Toulouse",
+      "pop": "R",
+      "lat": 4398600,
+      "lng": 119400,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.13,
+        "e10": 2.03
+      }
+    },
+    {
+      "id": "82700004",
+      "cp": "82700",
+      "ville": "Finhan",
+      "adresse": "59 BIS RD 813",
+      "pop": "R",
+      "lat": 4391400,
+      "lng": 122400,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.199,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "82500004",
+      "cp": "82500",
+      "ville": "Gimat",
+      "adresse": "LE BOURG",
+      "pop": "R",
+      "lat": 4385100,
+      "lng": 94100,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "82400006",
+      "cp": "82400",
+      "ville": "Golfech",
+      "adresse": "avenue du midi",
+      "pop": "R",
+      "lat": 4411400,
+      "lng": 85100,
+      "fuels": {
+        "gazole": 1.96,
+        "sp98": 2.12,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "82290001",
+      "cp": "82290",
+      "ville": "La Ville-Dieu-du-Temple",
+      "adresse": "3 Ter, Grand Rue",
+      "pop": "R",
+      "lat": 4403400,
+      "lng": 121900,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "82370001",
+      "cp": "82370",
+      "ville": "Labastide-Saint-Pierre",
+      "adresse": "899 Avenue Jean Jaurès",
+      "pop": "R",
+      "lat": 4391700,
+      "lng": 136900,
+      "fuels": {
+        "gazole": 1.915,
+        "sp98": 2.039,
+        "e10": 1.925
+      }
+    },
+    {
+      "id": "82370005",
+      "cp": "82370",
+      "ville": "Labastide-Saint-Pierre",
+      "adresse": "AVENUE JEAN MOULIN",
+      "pop": "R",
+      "lat": 4391307.17917,
+      "lng": 136825.4619,
+      "fuels": {
+        "gazole": 2.135,
+        "sp95": 1.998,
+        "e85": 0.805
+      }
+    },
+    {
+      "id": "82370004",
+      "cp": "82370",
+      "ville": "Labastide-Saint-Pierre",
+      "adresse": "Z.A. GRAND SUD LOGISTIQUE",
+      "pop": "R",
+      "lat": 4391500,
+      "lng": 130800,
+      "fuels": {
+        "gazole": 2.009,
+        "sp98": 2.124,
+        "e10": 2.025,
+        "e85": 0.792
+      }
+    },
+    {
+      "id": "82130003",
+      "cp": "82130",
+      "ville": "Lafrançaise",
+      "adresse": "383, rue du rival bas",
+      "pop": "R",
+      "lat": 4412542.74262,
+      "lng": 122958.9622,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "82130002",
+      "cp": "82130",
+      "ville": "Lamothe-Capdeville",
+      "adresse": "Grande Rue d'Ardus",
+      "pop": "R",
+      "lat": 4407564,
+      "lng": 137073,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "82110001",
+      "cp": "82110",
+      "ville": "Lauzerte",
+      "adresse": "Lieu dit Aulery",
+      "pop": "R",
+      "lat": 4426100,
+      "lng": 114500,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.059,
+        "e10": 1.939,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "82120001",
+      "cp": "82120",
+      "ville": "Lavit",
+      "adresse": "rue notre dame",
+      "pop": "R",
+      "lat": 4395900,
+      "lng": 92100,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.12
+      }
+    },
+    {
+      "id": "82200001",
+      "cp": "82200",
+      "ville": "Moissac",
+      "adresse": "43 Avenue du Chasselas",
+      "pop": "R",
+      "lat": 4411000,
+      "lng": 110300,
+      "fuels": {
+        "gazole": 1.977,
+        "e10": 1.966,
+        "e85": 0.841
+      }
+    },
+    {
+      "id": "82200008",
+      "cp": "82200",
+      "ville": "Moissac",
+      "adresse": "805 Chemin de La Mégère",
+      "pop": "R",
+      "lat": 4411936.30063,
+      "lng": 112004.59499,
+      "fuels": {
+        "gazole": 1.961,
+        "sp98": 2.02,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "82200009",
+      "cp": "82200",
+      "ville": "Moissac",
+      "adresse": "Route Départementale 927",
+      "pop": "R",
+      "lat": 4411408.44078,
+      "lng": 111246.35756,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 1.979,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "82150001",
+      "cp": "82150",
+      "ville": "Montaigu-de-Quercy",
+      "adresse": "190 Avenue de Saint-Martin",
+      "pop": "R",
+      "lat": 4433700,
+      "lng": 101900,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.973,
+        "sp98": 2.059
+      }
+    },
+    {
+      "id": "82270002",
+      "cp": "82270",
+      "ville": "Montalzat",
+      "adresse": "AUTOROUTE A20 - AIRE DE BOIS DE DOURRE",
+      "pop": "A",
+      "lat": 4423161,
+      "lng": 152955,
+      "fuels": {
+        "gazole": 2.076,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.074
+      }
+    },
+    {
+      "id": "82000011",
+      "cp": "82000",
+      "ville": "Montauban",
+      "adresse": "1000D Avenue des Mourets",
+      "pop": "R",
+      "lat": 4402200,
+      "lng": 137900,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 2.019,
+        "e10": 1.897,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "82000019",
+      "cp": "82000",
+      "ville": "Montauban",
+      "adresse": "1155 Avenue de l'Europe",
+      "pop": "R",
+      "lat": 4398900,
+      "lng": 133100,
+      "fuels": {
+        "gazole": 1.881,
+        "sp95": 1.97,
+        "sp98": 1.99,
+        "e10": 1.878,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "82000018",
+      "cp": "82000",
+      "ville": "Montauban",
+      "adresse": "284 Avenue Jean Moulin",
+      "pop": "R",
+      "lat": 4402600,
+      "lng": 136600,
+      "fuels": {
+        "gazole": 1.969,
+        "e10": 1.965
+      }
+    },
+    {
+      "id": "82000016",
+      "cp": "82000",
+      "ville": "Montauban",
+      "adresse": "340 ROUTE DE BORDEAUX",
+      "pop": "R",
+      "lat": 4402600,
+      "lng": 133200,
+      "fuels": {
+        "gazole": 1.881,
+        "sp98": 1.99,
+        "e10": 1.878,
+        "e85": 0.812
+      }
+    },
+    {
+      "id": "82000015",
+      "cp": "82000",
+      "ville": "Montauban",
+      "adresse": "350 ROUTE DE TOULOUSE",
+      "pop": "R",
+      "lat": 4400400,
+      "lng": 134100,
+      "fuels": {
+        "gazole": 1.881,
+        "e85": 0.811,
+        "gplc": 1.009
+      }
+    },
+    {
       "id": "82000007",
       "cp": "82000",
       "ville": "Montauban",
@@ -81,6 +580,81 @@
       }
     },
     {
+      "id": "82000010",
+      "cp": "82000",
+      "ville": "Montauban",
+      "adresse": "445 Route du Nord - ZI AUSSONNE",
+      "pop": "R",
+      "lat": 4403300,
+      "lng": 137500,
+      "fuels": {
+        "gazole": 1.881,
+        "sp98": 1.99,
+        "e10": 1.878,
+        "e85": 0.798,
+        "gplc": 1.069
+      }
+    },
+    {
+      "id": "82017001",
+      "cp": "82000",
+      "ville": "Montauban",
+      "adresse": "785 Avenue Jean Moulin",
+      "pop": "R",
+      "lat": 4402900,
+      "lng": 137000,
+      "fuels": {
+        "gazole": 1.895,
+        "sp98": 1.99,
+        "e10": 1.878,
+        "gplc": 1.069
+      }
+    },
+    {
+      "id": "82000006",
+      "cp": "82000",
+      "ville": "Montauban",
+      "adresse": "Rue de l'Abbaye",
+      "pop": "R",
+      "lat": 4400346.25496,
+      "lng": 135560.56474,
+      "fuels": {
+        "gazole": 1.881,
+        "sp98": 1.99,
+        "e10": 1.878,
+        "e85": 0.798,
+        "gplc": 1.069
+      }
+    },
+    {
+      "id": "82290002",
+      "cp": "82290",
+      "ville": "Montbeton",
+      "adresse": "centre commercial",
+      "pop": "R",
+      "lat": 4401200,
+      "lng": 128700,
+      "fuels": {
+        "gazole": 1.99,
+        "e10": 2.03
+      }
+    },
+    {
+      "id": "82700002",
+      "cp": "82700",
+      "ville": "Montech",
+      "adresse": "13 avenue de la Mouscane",
+      "pop": "R",
+      "lat": 4396400,
+      "lng": 124600,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.919,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "82700001",
       "cp": "82700",
       "ville": "Montech",
@@ -91,6 +665,34 @@
       "fuels": {
         "gazole": 2.09,
         "sp95": 1.99
+      }
+    },
+    {
+      "id": "82300006",
+      "cp": "82300",
+      "ville": "Monteils",
+      "adresse": "2 CHEMIN DES ROUGES",
+      "pop": "R",
+      "lat": 4416300,
+      "lng": 155300,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.039,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "82800002",
+      "cp": "82800",
+      "ville": "Nègrepelisse",
+      "adresse": "Route de Montricoux",
+      "pop": "R",
+      "lat": 4407700,
+      "lng": 157100,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.949
       }
     },
     {
@@ -109,6 +711,120 @@
       }
     },
     {
+      "id": "82160001",
+      "cp": "82160",
+      "ville": "Parisot",
+      "adresse": "RD 926",
+      "pop": "R",
+      "lat": 4427782.49504,
+      "lng": 185779.40302,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "82170002",
+      "cp": "82170",
+      "ville": "Pompignan",
+      "adresse": "190 ROUTE DE TOULOUSE",
+      "pop": "R",
+      "lat": 4381300,
+      "lng": 131600,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 1.99,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "82440003",
+      "cp": "82440",
+      "ville": "Réalville",
+      "adresse": "38 RD 820",
+      "pop": "R",
+      "lat": 4411600,
+      "lng": 148000,
+      "fuels": {
+        "gazole": 1.974,
+        "sp98": 1.99,
+        "e10": 1.97,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "82140003",
+      "cp": "82140",
+      "ville": "Saint-Antonin-Noble-Val",
+      "adresse": "115 CHEMIN DE FONTALES",
+      "pop": "R",
+      "lat": 4415000,
+      "lng": 174900,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "82410003",
+      "cp": "82410",
+      "ville": "Saint-Étienne-de-Tulmont",
+      "adresse": "8 RUE DU MARCHE",
+      "pop": "R",
+      "lat": 4404900,
+      "lng": 146300,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "82210005",
+      "cp": "82210",
+      "ville": "Saint-Nicolas-de-la-Grave",
+      "adresse": "13 Av. de Notre Dame",
+      "pop": "R",
+      "lat": 4406609.05529,
+      "lng": 101853.72683,
+      "fuels": {
+        "gazole": 2.12,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "82210006",
+      "cp": "82210",
+      "ville": "Saint-Nicolas-de-la-Grave",
+      "adresse": "A62 Aire de Garonne",
+      "pop": "A",
+      "lat": 4404100,
+      "lng": 100400,
+      "fuels": {
+        "gazole": 2.115,
+        "sp98": 2.153,
+        "e10": 2.067,
+        "e85": 0.939,
+        "gplc": 1.064
+      }
+    },
+    {
+      "id": "82600004",
+      "cp": "82600",
+      "ville": "Saint-Sardos",
+      "adresse": "Chemin de Naudun",
+      "pop": "R",
+      "lat": 4389700,
+      "lng": 113400,
+      "fuels": {
+        "gazole": 1.99,
+        "e10": 2.08,
+        "e85": 0.96
+      }
+    },
+    {
       "id": "82240001",
       "cp": "82240",
       "ville": "Septfonds",
@@ -120,6 +836,62 @@
         "gazole": 1.979,
         "sp98": 2.039,
         "e10": 1.959
+      }
+    },
+    {
+      "id": "82400003",
+      "cp": "82400",
+      "ville": "Valence",
+      "adresse": "Avenue de Bordeaux",
+      "pop": "R",
+      "lat": 4411000,
+      "lng": 88200,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 2.019,
+        "e10": 1.89,
+        "e85": 0.809,
+        "gplc": 0.959
+      }
+    },
+    {
+      "id": "82400005",
+      "cp": "82400",
+      "ville": "Valence",
+      "adresse": "rd813 avenue de bordeau",
+      "pop": "R",
+      "lat": 4411179.77934,
+      "lng": 87839.67638,
+      "fuels": {
+        "gazole": 1.96,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "82600001",
+      "cp": "82600",
+      "ville": "Verdun-sur-Garonne",
+      "adresse": "195, Route de Mas Grenier",
+      "pop": "R",
+      "lat": 4385400,
+      "lng": 122800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.019,
+        "sp98": 2.079
+      }
+    },
+    {
+      "id": "82600003",
+      "cp": "82600",
+      "ville": "Verdun-sur-Garonne",
+      "adresse": "Lieu-dit Escoula",
+      "pop": "R",
+      "lat": 4383852,
+      "lng": 123942,
+      "fuels": {
+        "sp98": 2.079,
+        "e10": 1.955
       }
     }
   ]

@@ -3,41 +3,182 @@
   "name": "Ain",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 6,
+  "stationCount": 117,
   "fuels": {
     "gazole": {
-      "count": 5,
-      "mean": 2.0256,
-      "median": 1.999,
-      "min": 1.959,
-      "max": 2.16
+      "count": 115,
+      "mean": 1.9975,
+      "median": 1.985,
+      "min": 1.805,
+      "max": 2.269
+    },
+    "sp95": {
+      "count": 40,
+      "mean": 1.9926,
+      "median": 1.99,
+      "min": 1.849,
+      "max": 2.148
     },
     "sp98": {
-      "count": 4,
-      "mean": 2.1405,
-      "median": 2.064,
-      "min": 1.99,
+      "count": 97,
+      "mean": 2.0389,
+      "median": 2.022,
+      "min": 1.906,
       "max": 2.444
     },
     "e10": {
-      "count": 5,
-      "mean": 2.0262,
-      "median": 1.979,
-      "min": 1.899,
+      "count": 85,
+      "mean": 1.9415,
+      "median": 1.929,
+      "min": 1.81,
       "max": 2.294
     },
     "e85": {
-      "count": 2,
-      "mean": 0.7985,
-      "median": 0.7985,
-      "min": 0.798,
-      "max": 0.799
+      "count": 40,
+      "mean": 0.8401,
+      "median": 0.809,
+      "min": 0.779,
+      "max": 1.133
+    },
+    "gplc": {
+      "count": 8,
+      "mean": 1.0719,
+      "median": 1.093,
+      "min": 0.924,
+      "max": 1.219
     }
   },
   "stations": [
+    {
+      "id": "1500004",
+      "cp": "01500",
+      "ville": "Ambérieu-en-Bugey",
+      "adresse": "15 Avenue de la Libération",
+      "pop": "R",
+      "lat": 4595700,
+      "lng": 533285,
+      "fuels": {
+        "gazole": 2.149,
+        "sp95": 2.099,
+        "sp98": 2.169
+      }
+    },
+    {
+      "id": "1500008",
+      "cp": "01500",
+      "ville": "Ambérieu-en-Bugey",
+      "adresse": "Avenue Jules Pellaudin, station service total",
+      "pop": "R",
+      "lat": 4594000,
+      "lng": 537700,
+      "fuels": {
+        "gazole": 2.09,
+        "sp98": 1.98
+      }
+    },
+    {
+      "id": "1500007",
+      "cp": "01500",
+      "ville": "Ambérieu-en-Bugey",
+      "adresse": "CENTRE COMMERCIAL DE L'AVIATIONRAIS",
+      "pop": "R",
+      "lat": 4597200,
+      "lng": 533800,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 1.989,
+        "e10": 1.874,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1500001",
+      "cp": "01500",
+      "ville": "Ambérieu-en-Bugey",
+      "adresse": "Rue Alexandre Bérard",
+      "pop": "R",
+      "lat": 4596243.97543,
+      "lng": 535907.07857,
+      "fuels": {
+        "gazole": 1.945,
+        "sp98": 2.022,
+        "e10": 1.9
+      }
+    },
+    {
+      "id": "1330003",
+      "cp": "01330",
+      "ville": "Ambérieux-en-Dombes",
+      "adresse": "245 ROUTE DU 3 SEPTEMBRE 1944",
+      "pop": "R",
+      "lat": 4599900,
+      "lng": 489900,
+      "fuels": {
+        "gazole": 1.974,
+        "sp98": 1.99,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "1100004",
+      "cp": "01100",
+      "ville": "Arbent",
+      "adresse": "886 AVENUE JEAN COUTTY",
+      "pop": "R",
+      "lat": 4627200,
+      "lng": 566000,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 1.95,
+        "sp98": 2
+      }
+    },
+    {
+      "id": "1510003",
+      "cp": "01510",
+      "ville": "Artemare",
+      "adresse": "1 rue des champs \"les terrasses\"",
+      "pop": "R",
+      "lat": 4587303,
+      "lng": 569761,
+      "fuels": {
+        "gazole": 1.993,
+        "sp95": 2.039,
+        "sp98": 2.139
+      }
+    },
+    {
+      "id": "1340004",
+      "cp": "01340",
+      "ville": "Attignat",
+      "adresse": "771 Route de Bourg",
+      "pop": "R",
+      "lat": 4627900,
+      "lng": 516500,
+      "fuels": {
+        "gazole": 2.138,
+        "sp95": 2.148,
+        "sp98": 2.217,
+        "e85": 0.927
+      }
+    },
+    {
+      "id": "1380002",
+      "cp": "01380",
+      "ville": "Bâgé-Dommartin",
+      "adresse": "1 ROUTE DU BOURG",
+      "pop": "R",
+      "lat": 4631300,
+      "lng": 494100,
+      "fuels": {
+        "gazole": 1.97,
+        "sp98": 2.019,
+        "e10": 1.92
+      }
+    },
     {
       "id": "1300004",
       "cp": "01300",
@@ -50,6 +191,485 @@
         "gazole": 2.011,
         "sp98": 1.99,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "1300002",
+      "cp": "01300",
+      "ville": "Belley",
+      "adresse": "Rue Mante",
+      "pop": "R",
+      "lat": 4575572,
+      "lng": 568334,
+      "fuels": {
+        "gazole": 1.982
+      }
+    },
+    {
+      "id": "1300001",
+      "cp": "01300",
+      "ville": "Belley",
+      "adresse": "ZAC DE L OUSSON",
+      "pop": "R",
+      "lat": 4576000,
+      "lng": 568600,
+      "fuels": {
+        "gazole": 1.98,
+        "sp95": 1.97,
+        "sp98": 2.12
+      }
+    },
+    {
+      "id": "1700004",
+      "cp": "01700",
+      "ville": "Beynost",
+      "adresse": "ZAC des Baterses",
+      "pop": "A",
+      "lat": 4582600,
+      "lng": 499900,
+      "fuels": {
+        "gazole": 1.805,
+        "sp95": 1.849,
+        "sp98": 1.906,
+        "e10": 1.81,
+        "e85": 0.859,
+        "gplc": 1.219
+      }
+    },
+    {
+      "id": "1000016",
+      "cp": "01000",
+      "ville": "Bourg-en-Bresse",
+      "adresse": "1 bvd John Kennedy",
+      "pop": "R",
+      "lat": 4620516.06,
+      "lng": 522502.48,
+      "fuels": {
+        "gazole": 1.916,
+        "sp98": 1.99,
+        "e10": 1.911
+      }
+    },
+    {
+      "id": "1000002",
+      "cp": "01000",
+      "ville": "Bourg-en-Bresse",
+      "adresse": "16 Avenue de Marboz",
+      "pop": "R",
+      "lat": 4621842,
+      "lng": 522767,
+      "fuels": {
+        "gazole": 2.001,
+        "sp95": 1.996,
+        "sp98": 2.037
+      }
+    },
+    {
+      "id": "1000004",
+      "cp": "01000",
+      "ville": "Bourg-en-Bresse",
+      "adresse": "20 Avenue du Maréchal Juin",
+      "pop": "R",
+      "lat": 4618800,
+      "lng": 524500,
+      "fuels": {
+        "gazole": 2.11
+      }
+    },
+    {
+      "id": "1000009",
+      "cp": "01000",
+      "ville": "Bourg-en-Bresse",
+      "adresse": "56 Rue du Stand",
+      "pop": "R",
+      "lat": 4619600,
+      "lng": 522900,
+      "fuels": {
+        "gazole": 2.005,
+        "sp95": 1.996,
+        "sp98": 2.043,
+        "e10": 1.957,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1000007",
+      "cp": "01000",
+      "ville": "Bourg-en-Bresse",
+      "adresse": "AVENUE FRANCOIS PIGNIER",
+      "pop": "R",
+      "lat": 4622100,
+      "lng": 524500,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 1.995,
+        "sp98": 2.035,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "1000008",
+      "cp": "01000",
+      "ville": "Bourg-en-Bresse",
+      "adresse": "Bd Charles de Gaulle",
+      "pop": "R",
+      "lat": 4619900,
+      "lng": 524100,
+      "fuels": {
+        "gazole": 2.001,
+        "sp95": 1.996,
+        "sp98": 2.037,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1000013",
+      "cp": "01000",
+      "ville": "Bourg-en-Bresse",
+      "adresse": "BOULEVARD CHARLES DE GAULLE",
+      "pop": "R",
+      "lat": 4619900,
+      "lng": 524400,
+      "fuels": {
+        "gazole": 1.885,
+        "sp98": 1.99,
+        "e10": 1.878
+      }
+    },
+    {
+      "id": "1470002",
+      "cp": "01470",
+      "ville": "Briord",
+      "adresse": "Rue des Verchères",
+      "pop": "R",
+      "lat": 4578776,
+      "lng": 545414,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.049,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "1430003",
+      "cp": "01430",
+      "ville": "Ceignes",
+      "adresse": "AIRE DE CEIGNES HAUT BUGEY",
+      "pop": "A",
+      "lat": 4611809.56249,
+      "lng": 549110.62795,
+      "fuels": {
+        "gazole": 2.269,
+        "sp98": 2.299,
+        "e10": 2.199,
+        "gplc": 1.149
+      }
+    },
+    {
+      "id": "1430005",
+      "cp": "01430",
+      "ville": "Ceignes",
+      "adresse": "AUTOROUTE A40 - AIRE DE CEIGNES CERDON",
+      "pop": "A",
+      "lat": 4612370,
+      "lng": 549956,
+      "fuels": {
+        "gazole": 2.108,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.098
+      }
+    },
+    {
+      "id": "1250006",
+      "cp": "01250",
+      "ville": "Ceyzériat",
+      "adresse": "51 route de jasseron",
+      "pop": "R",
+      "lat": 4617972.08781,
+      "lng": 532494.62851,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.068,
+        "e10": 1.985
+      }
+    },
+    {
+      "id": "1320001",
+      "cp": "01320",
+      "ville": "Chalamont",
+      "adresse": "259 ROUTE DE MEXIMIEUX",
+      "pop": "R",
+      "lat": 4599100,
+      "lng": 516900,
+      "fuels": {
+        "gazole": 2.1,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "1320004",
+      "cp": "01320",
+      "ville": "Chalamont",
+      "adresse": "Lieu dit Le Petit Étang",
+      "pop": "R",
+      "lat": 4599846.11284,
+      "lng": 517437.23203,
+      "fuels": {
+        "gazole": 1.952,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "1260002",
+      "cp": "01260",
+      "ville": "Champagne-en-Valromey",
+      "adresse": "212 RUE DU STADE",
+      "pop": "R",
+      "lat": 4590707.71644,
+      "lng": 567694.4377,
+      "fuels": {
+        "gazole": 2.19
+      }
+    },
+    {
+      "id": "1500003",
+      "cp": "01500",
+      "ville": "Château-Gaillard",
+      "adresse": "550, Avenue Jean Mermoz",
+      "pop": "R",
+      "lat": 4597600,
+      "lng": 530900,
+      "fuels": {
+        "gazole": 2.129,
+        "sp98": 1.989
+      }
+    },
+    {
+      "id": "1500006",
+      "cp": "01500",
+      "ville": "Château-Gaillard",
+      "adresse": "550, RUE JEAN MERMOZ",
+      "pop": "R",
+      "lat": 4597600,
+      "lng": 531800,
+      "fuels": {
+        "gazole": 2.089,
+        "sp95": 2.039
+      }
+    },
+    {
+      "id": "1400001",
+      "cp": "01400",
+      "ville": "Châtillon-sur-Chalaronne",
+      "adresse": "AVENUE MARECHAL FOCH",
+      "pop": "R",
+      "lat": 4611900,
+      "lng": 496100,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.999,
+        "sp98": 2.049
+      }
+    },
+    {
+      "id": "1400006",
+      "cp": "01400",
+      "ville": "Châtillon-sur-Chalaronne",
+      "adresse": "AVENUE PIERRE MARCAULT",
+      "pop": "R",
+      "lat": 4611700,
+      "lng": 495000,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.999,
+        "e10": 1.93
+      }
+    },
+    {
+      "id": "1400005",
+      "cp": "01400",
+      "ville": "Châtillon-sur-Chalaronne",
+      "adresse": "ROUTE DE MARLIEUX",
+      "pop": "R",
+      "lat": 4611765,
+      "lng": 496036,
+      "fuels": {
+        "gazole": 1.958,
+        "sp98": 2.018,
+        "e10": 1.928,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1300003",
+      "cp": "01300",
+      "ville": "Chazey-Bons",
+      "adresse": "RN 504 - ZI de Penaye",
+      "pop": "R",
+      "lat": 4577800,
+      "lng": 568900,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "1410001",
+      "cp": "01410",
+      "ville": "Chézery-Forens",
+      "adresse": "PLACE DE LA MAIRIE",
+      "pop": "R",
+      "lat": 4622300,
+      "lng": 586800,
+      "fuels": {
+        "gazole": 2.09,
+        "sp98": 2.19,
+        "e10": 2.09
+      }
+    },
+    {
+      "id": "1270003",
+      "cp": "01270",
+      "ville": "Coligny",
+      "adresse": "82 GRANDE RUE",
+      "pop": "R",
+      "lat": 4638200,
+      "lng": 534500,
+      "fuels": {
+        "gazole": 2.149
+      }
+    },
+    {
+      "id": "1310005",
+      "cp": "01310",
+      "ville": "Confrançon",
+      "adresse": "105 ROUTE DE VANDEINS",
+      "pop": "R",
+      "lat": 4625500,
+      "lng": 505900,
+      "fuels": {
+        "gazole": 1.883,
+        "sp98": 1.967,
+        "e10": 1.85
+      }
+    },
+    {
+      "id": "1350003",
+      "cp": "01350",
+      "ville": "Culoz-Béon",
+      "adresse": "PARC D'ACTIVITE DES FOURS",
+      "pop": "R",
+      "lat": 4584829.08586,
+      "lng": 577006.40752,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 2.016,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "1120009",
+      "cp": "01120",
+      "ville": "Dagneux",
+      "adresse": "A 42 AIRE DE LYON DAGNEUX",
+      "pop": "A",
+      "lat": 4584315.9,
+      "lng": 506960.9,
+      "fuels": {
+        "gazole": 2.111,
+        "sp98": 2.142,
+        "e10": 2.047
+      }
+    },
+    {
+      "id": "1120008",
+      "cp": "01120",
+      "ville": "Dagneux",
+      "adresse": "AUTOROUTE A42 - AIRE DE LYON MONTUEL",
+      "pop": "A",
+      "lat": 4584700,
+      "lng": 507400,
+      "fuels": {
+        "gazole": 2.028,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.986
+      }
+    },
+    {
+      "id": "1220001",
+      "cp": "01220",
+      "ville": "Divonne-les-Bains",
+      "adresse": "691 AVENUE DU CRET D'EAU",
+      "pop": "R",
+      "lat": 4634300,
+      "lng": 614100,
+      "fuels": {
+        "gazole": 1.994,
+        "sp95": 1.972,
+        "sp98": 2.037
+      }
+    },
+    {
+      "id": "1590001",
+      "cp": "01590",
+      "ville": "Dortan",
+      "adresse": "18, Rue du 21 Juillet 1944",
+      "pop": "R",
+      "lat": 4632200,
+      "lng": 565600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.949,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "1570001",
+      "cp": "01570",
+      "ville": "Feillens",
+      "adresse": "195 Grande Rue",
+      "pop": "R",
+      "lat": 4632900,
+      "lng": 488500,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.99,
+        "e10": 1.905,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1210001",
+      "cp": "01210",
+      "ville": "Ferney-Voltaire",
+      "adresse": "Chemin de la Brunette",
+      "pop": "R",
+      "lat": 4625303,
+      "lng": 611817,
+      "fuels": {
+        "gazole": 1.965,
+        "sp95": 1.99,
+        "sp98": 2.045
+      }
+    },
+    {
+      "id": "1210003",
+      "cp": "01210",
+      "ville": "Ferney-Voltaire",
+      "adresse": "Route de Meyrin",
+      "pop": "R",
+      "lat": 4624400,
+      "lng": 609500,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 2.01,
+        "e10": 1.899,
+        "e85": 0.825
       }
     },
     {
@@ -68,6 +688,293 @@
       }
     },
     {
+      "id": "1170005",
+      "cp": "01170",
+      "ville": "Gex",
+      "adresse": "156 Av. des Tilleuls",
+      "pop": "R",
+      "lat": 4633522.32989,
+      "lng": 606033.43165,
+      "fuels": {
+        "gazole": 2.01,
+        "sp98": 2.02,
+        "e10": 1.95
+      }
+    },
+    {
+      "id": "1170002",
+      "cp": "01170",
+      "ville": "Gex",
+      "adresse": "Lieu-Dit les Vertes Campagnes",
+      "pop": "R",
+      "lat": 4632200,
+      "lng": 605300,
+      "fuels": {
+        "gazole": 2.026,
+        "sp95": 2.021,
+        "sp98": 2.111
+      }
+    },
+    {
+      "id": "1170003",
+      "cp": "01170",
+      "ville": "Gex",
+      "adresse": "Route de Divonne les Bains",
+      "pop": "R",
+      "lat": 4633755,
+      "lng": 607534,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.005,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1480001",
+      "cp": "01480",
+      "ville": "Jassans-Riottier",
+      "adresse": "Rue Édouard Herriot",
+      "pop": "R",
+      "lat": 4598403,
+      "lng": 475694,
+      "fuels": {
+        "gazole": 2.007,
+        "sp95": 1.97,
+        "sp98": 2.052
+      }
+    },
+    {
+      "id": "1250007",
+      "cp": "01250",
+      "ville": "Jasseron",
+      "adresse": "AUTOROUTE A 40 - AIRE DE BOURG TEYSSONGE",
+      "pop": "A",
+      "lat": 4620539.92126,
+      "lng": 529453.75361,
+      "fuels": {
+        "gazole": 2.043,
+        "sp98": 2.167,
+        "e10": 2.046,
+        "e85": 1.133
+      }
+    },
+    {
+      "id": "1250005",
+      "cp": "01250",
+      "ville": "Jasseron",
+      "adresse": "AUTOROUTE A40 - AIRE DE BOURG JASSERON",
+      "pop": "A",
+      "lat": 4620355.82377,
+      "lng": 529588.28488,
+      "fuels": {
+        "gazole": 2.119,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.088
+      }
+    },
+    {
+      "id": "1340003",
+      "cp": "01340",
+      "ville": "Jayat",
+      "adresse": "Route de Bourg, Prairie de Cezille",
+      "pop": "R",
+      "lat": 4634943.87863,
+      "lng": 512390.42439,
+      "fuels": {
+        "gazole": 1.972,
+        "sp95": 1.937,
+        "sp98": 2.035,
+        "e10": 1.897,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1120006",
+      "cp": "01120",
+      "ville": "La Boisse",
+      "adresse": "521 ROUTE NATIONALE",
+      "pop": "R",
+      "lat": 4584600,
+      "lng": 504100,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.99,
+        "e10": 1.951
+      }
+    },
+    {
+      "id": "1150001",
+      "cp": "01150",
+      "ville": "Lagnieu",
+      "adresse": "8 RUE DE L'INDUSTRIE",
+      "pop": "R",
+      "lat": 4590200,
+      "lng": 534600,
+      "fuels": {
+        "gazole": 2.008,
+        "sp98": 2.052,
+        "e10": 1.928
+      }
+    },
+    {
+      "id": "1290001",
+      "cp": "01290",
+      "ville": "Laiz",
+      "adresse": "254 Route de Chatillon Sur Chalaronne",
+      "pop": "R",
+      "lat": 4625500,
+      "lng": 489000,
+      "fuels": {
+        "gazole": 1.9,
+        "sp98": 1.97,
+        "e10": 1.88
+      }
+    },
+    {
+      "id": "1590002",
+      "cp": "01590",
+      "ville": "Lavancia-Epercy",
+      "adresse": "ZAC sous la Combe",
+      "pop": "R",
+      "lat": 4632500,
+      "lng": 567200,
+      "fuels": {
+        "gazole": 1.979,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1130002",
+      "cp": "01130",
+      "ville": "Le Poizat-Lalleyriat",
+      "adresse": "867 ROUTE DE GENEVE",
+      "pop": "R",
+      "lat": 4616700,
+      "lng": 569100,
+      "fuels": {
+        "gazole": 2,
+        "sp95": 1.97,
+        "sp98": 2.02
+      }
+    },
+    {
+      "id": "1980001",
+      "cp": "01360",
+      "ville": "Loyettes",
+      "adresse": "63 Rue du Bugey",
+      "pop": "R",
+      "lat": 4577900,
+      "lng": 521300,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 1.99,
+        "e10": 1.964
+      }
+    },
+    {
+      "id": "1430004",
+      "cp": "01430",
+      "ville": "Maillat",
+      "adresse": "2 Rue de l'Égalité",
+      "pop": "R",
+      "lat": 4612800,
+      "lng": 554000,
+      "fuels": {
+        "gazole": 2.087,
+        "sp95": 2.067,
+        "e10": 2.029
+      }
+    },
+    {
+      "id": "1340002",
+      "cp": "01340",
+      "ville": "Malafretaz",
+      "adresse": "1699 ROUTE DE BOURG",
+      "pop": "R",
+      "lat": 4632300,
+      "lng": 513700,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 1.99,
+        "e10": 1.966
+      }
+    },
+    {
+      "id": "1600003",
+      "cp": "01600",
+      "ville": "Massieux",
+      "adresse": "Avenue Lavoisier",
+      "pop": "R",
+      "lat": 4590400,
+      "lng": 482000,
+      "fuels": {
+        "sp98": 1.979,
+        "e10": 1.894,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1480004",
+      "cp": "01480",
+      "ville": "Messimy-sur-Saône",
+      "adresse": "850 RD 933",
+      "pop": "R",
+      "lat": 4605000,
+      "lng": 476600,
+      "fuels": {
+        "gazole": 1.991,
+        "sp98": 1.99,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "1800001",
+      "cp": "01800",
+      "ville": "Meximieux",
+      "adresse": "47 Route de Lyon",
+      "pop": "R",
+      "lat": 4590100,
+      "lng": 519100,
+      "fuels": {
+        "gazole": 1.93,
+        "sp98": 2.049,
+        "e10": 1.885
+      }
+    },
+    {
+      "id": "1800003",
+      "cp": "01800",
+      "ville": "Meximieux",
+      "adresse": "ROUTE DE CHALAMONT",
+      "pop": "R",
+      "lat": 4591162.32084,
+      "lng": 518971.44888,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 2.039,
+        "e10": 1.879,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1390009",
+      "cp": "01390",
+      "ville": "Mionnay",
+      "adresse": "AIRE DE MIONNAY EST CHATANAYAUTOROUTE A 46",
+      "pop": "A",
+      "lat": 4588900,
+      "lng": 489400,
+      "fuels": {
+        "gazole": 2.269,
+        "sp98": 2.299,
+        "e10": 2.199
+      }
+    },
+    {
       "id": "1390011",
       "cp": "01390",
       "ville": "Mionnay",
@@ -81,6 +988,330 @@
       }
     },
     {
+      "id": "1700003",
+      "cp": "01700",
+      "ville": "Miribel",
+      "adresse": "RN 83",
+      "pop": "R",
+      "lat": 4587100,
+      "lng": 491200,
+      "fuels": {
+        "gazole": 1.948,
+        "sp98": 2.002,
+        "e10": 1.922
+      }
+    },
+    {
+      "id": "1700005",
+      "cp": "01700",
+      "ville": "Miribel",
+      "adresse": "RUE DU FIGUIER",
+      "pop": "R",
+      "lat": 4582783.86291,
+      "lng": 497054.86061,
+      "fuels": {
+        "gazole": 1.935,
+        "sp95": 1.939,
+        "sp98": 1.99,
+        "e10": 1.879,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1090001",
+      "cp": "01090",
+      "ville": "Montceaux",
+      "adresse": "1 ROUTE DE FRANCHELEINS",
+      "pop": "R",
+      "lat": 4609600,
+      "lng": 477500,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 2.05,
+        "e10": 1.959,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1120004",
+      "cp": "01120",
+      "ville": "Montluel",
+      "adresse": "Cours de la Portelle",
+      "pop": "R",
+      "lat": 4585300,
+      "lng": 505900,
+      "fuels": {
+        "gazole": 1.9,
+        "sp98": 1.969,
+        "e10": 1.875,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "1120005",
+      "cp": "01120",
+      "ville": "Montluel",
+      "adresse": "Route de Thil",
+      "pop": "R",
+      "lat": 4584700,
+      "lng": 504800,
+      "fuels": {
+        "gazole": 1.869,
+        "sp98": 1.959,
+        "e10": 1.839,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1460001",
+      "cp": "01460",
+      "ville": "Montréal-la-Cluse",
+      "adresse": "68 Rue du Jura",
+      "pop": "R",
+      "lat": 4617225,
+      "lng": 557729,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.969,
+        "sp98": 2.059
+      }
+    },
+    {
+      "id": "1340005",
+      "cp": "01340",
+      "ville": "Montrevel-en-Bresse",
+      "adresse": "103 RUE DES LUYERS",
+      "pop": "R",
+      "lat": 4633472.64,
+      "lng": 512600.21,
+      "fuels": {
+        "gazole": 1.973,
+        "sp95": 1.938,
+        "e10": 1.898
+      }
+    },
+    {
+      "id": "1130003",
+      "cp": "01130",
+      "ville": "Nantua",
+      "adresse": "RTE DE LA CLUSE RN 84",
+      "pop": "R",
+      "lat": 4615800,
+      "lng": 560400,
+      "fuels": {
+        "gazole": 1.881,
+        "sp98": 1.99,
+        "e10": 1.893,
+        "e85": 0.825
+      }
+    },
+    {
+      "id": "1160003",
+      "cp": "01160",
+      "ville": "Neuville-sur-Ain",
+      "adresse": "Rue du Docteur Hubert",
+      "pop": "R",
+      "lat": 4607400,
+      "lng": 537600,
+      "fuels": {
+        "gazole": 1.869,
+        "sp98": 1.987,
+        "e10": 1.875,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1460002",
+      "cp": "01460",
+      "ville": "Nurieux-Volognat",
+      "adresse": "18 Route du Berthiand",
+      "pop": "R",
+      "lat": 4618700,
+      "lng": 552600,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "1100007",
+      "cp": "01100",
+      "ville": "Oyonnax",
+      "adresse": "174 COURS DE VERDUN",
+      "pop": "R",
+      "lat": 4625000,
+      "lng": 564100,
+      "fuels": {
+        "gazole": 1.977,
+        "sp98": 1.99,
+        "e10": 1.968,
+        "e85": 0.849,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "1100008",
+      "cp": "01100",
+      "ville": "Oyonnax",
+      "adresse": "32 COURS DE VERDUN",
+      "pop": "R",
+      "lat": 4626700,
+      "lng": 565500,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.01,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1100006",
+      "cp": "01100",
+      "ville": "Oyonnax",
+      "adresse": "74 Rue Jules Michelet",
+      "pop": "R",
+      "lat": 4626200,
+      "lng": 564800,
+      "fuels": {
+        "gazole": 1.989,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1100002",
+      "cp": "01100",
+      "ville": "Oyonnax",
+      "adresse": "Rue Brillat-Savarin",
+      "pop": "R",
+      "lat": 4625000,
+      "lng": 564400,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 1.995,
+        "sp98": 2.05
+      }
+    },
+    {
+      "id": "1100009",
+      "cp": "01100",
+      "ville": "Oyonnax",
+      "adresse": "RUE DU 19 MARS 1962",
+      "pop": "R",
+      "lat": 4625300,
+      "lng": 564600,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.949,
+        "e10": 1.929,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "1630004",
+      "cp": "01630",
+      "ville": "Péron",
+      "adresse": "ZA DU PRE MUNNY",
+      "pop": "R",
+      "lat": 4618300,
+      "lng": 592900,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 1.995,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1960006",
+      "cp": "01960",
+      "ville": "Péronnas",
+      "adresse": "148 AVENUE DE LYON",
+      "pop": "R",
+      "lat": 4619100,
+      "lng": 521100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.079,
+        "e10": 1.979,
+        "e85": 0.899,
+        "gplc": 1.099
+      }
+    },
+    {
+      "id": "1110001",
+      "cp": "01110",
+      "ville": "Plateau d'Hauteville",
+      "adresse": "Rue Masonod",
+      "pop": "R",
+      "lat": 4597800,
+      "lng": 559900,
+      "fuels": {
+        "gazole": 2.014,
+        "sp98": 2.06,
+        "e10": 1.935
+      }
+    },
+    {
+      "id": "1310001",
+      "cp": "01310",
+      "ville": "Polliat",
+      "adresse": "1123 Route de Mâcon",
+      "pop": "R",
+      "lat": 4625082.58935,
+      "lng": 511211.33274,
+      "fuels": {
+        "gazole": 1.966,
+        "sp98": 1.99,
+        "e10": 1.961
+      }
+    },
+    {
+      "id": "1160002",
+      "cp": "01160",
+      "ville": "Pont-d'Ain",
+      "adresse": "Le Pont Rompu - RD 1084",
+      "pop": "R",
+      "lat": 4604000,
+      "lng": 534200,
+      "fuels": {
+        "gazole": 1.873,
+        "sp95": 1.97,
+        "sp98": 1.99,
+        "e10": 1.878,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "1160005",
+      "cp": "01160",
+      "ville": "Pont-d'Ain",
+      "adresse": "RTE DE BOURG RN 75",
+      "pop": "R",
+      "lat": 4605335.06156,
+      "lng": 533741.03672,
+      "fuels": {
+        "gazole": 1.873,
+        "sp98": 1.99,
+        "e10": 1.878
+      }
+    },
+    {
+      "id": "1460003",
+      "cp": "01460",
+      "ville": "Port",
+      "adresse": "Rue de l'industrie",
+      "pop": "R",
+      "lat": 4616600,
+      "lng": 557100,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.939,
+        "e85": 0.809
+      }
+    },
+    {
       "id": "1750001",
       "cp": "01750",
       "ville": "Replonges",
@@ -91,6 +1322,139 @@
       "fuels": {
         "gazole": 1.959,
         "e10": 1.899
+      }
+    },
+    {
+      "id": "1390013",
+      "cp": "01390",
+      "ville": "Saint-André-de-Corcy",
+      "adresse": "70 ALLEE DES MARRONNIERS",
+      "pop": "R",
+      "lat": 4592887.65539,
+      "lng": 495536.31668,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.989,
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "1390002",
+      "cp": "01390",
+      "ville": "Saint-André-de-Corcy",
+      "adresse": "Z.I. DE SURE",
+      "pop": "R",
+      "lat": 4592800,
+      "lng": 498800,
+      "fuels": {
+        "gazole": 1.977,
+        "sp95": 1.972,
+        "sp98": 1.99,
+        "e10": 1.972
+      }
+    },
+    {
+      "id": "1390010",
+      "cp": "01390",
+      "ville": "Saint-André-de-Corcy",
+      "adresse": "ZI DE LA SURE",
+      "pop": "R",
+      "lat": 4593200,
+      "lng": 495800,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.969,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1190001",
+      "cp": "01190",
+      "ville": "Saint-Bénigne",
+      "adresse": "PAE Pont de Vaux Est",
+      "pop": "R",
+      "lat": 4644200,
+      "lng": 497000,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 2.029,
+        "sp98": 2.079
+      }
+    },
+    {
+      "id": "1000001",
+      "cp": "01000",
+      "ville": "Saint-Denis-lès-Bourg",
+      "adresse": "596 AVENUE DE TREVOUX",
+      "pop": "R",
+      "lat": 4620100,
+      "lng": 519800,
+      "fuels": {
+        "gazole": 1.945,
+        "sp95": 1.942,
+        "sp98": 2.023,
+        "e10": 1.901,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "1000012",
+      "cp": "01000",
+      "ville": "Saint-Denis-lès-Bourg",
+      "adresse": "642 AVENUE DE TREVOUX",
+      "pop": "R",
+      "lat": 4620100,
+      "lng": 520000,
+      "fuels": {
+        "gazole": 1.995,
+        "sp95": 1.988,
+        "sp98": 1.99,
+        "e10": 1.988,
+        "e85": 0.841
+      }
+    },
+    {
+      "id": "1140001",
+      "cp": "01140",
+      "ville": "Saint-Didier-sur-Chalaronne",
+      "adresse": "416 AVENUE DE LA LIBERATION",
+      "pop": "R",
+      "lat": 4618000,
+      "lng": 481700,
+      "fuels": {
+        "gazole": 1.929,
+        "e10": 1.899,
+        "e85": 0.779
+      }
+    },
+    {
+      "id": "1370003",
+      "cp": "01370",
+      "ville": "Saint-Étienne-du-Bois",
+      "adresse": "40 Chemin de la Bergaderie",
+      "pop": "R",
+      "lat": 4627000,
+      "lng": 529300,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.035,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "1630003",
+      "cp": "01630",
+      "ville": "Saint-Genis-Pouilly",
+      "adresse": "148 Rue des Chalets",
+      "pop": "R",
+      "lat": 4626326,
+      "lng": 602950,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 2.025,
+        "e10": 1.925,
+        "e85": 0.809
       }
     },
     {
@@ -109,6 +1473,19 @@
       }
     },
     {
+      "id": "1630001",
+      "cp": "01630",
+      "ville": "Saint-Genis-Pouilly",
+      "adresse": "RUE DE GENEVE -",
+      "pop": "R",
+      "lat": 4624200,
+      "lng": 602500,
+      "fuels": {
+        "gazole": 2.06,
+        "e10": 2.01
+      }
+    },
+    {
       "id": "1640003",
       "cp": "01640",
       "ville": "Saint-Jean-le-Vieux",
@@ -118,6 +1495,233 @@
       "lng": 538945.26948,
       "fuels": {
         "gazole": 2.16
+      }
+    },
+    {
+      "id": "1230002",
+      "cp": "01230",
+      "ville": "Saint-Rambert-en-Bugey",
+      "adresse": "38 AVENUE DE L EUROPE",
+      "pop": "R",
+      "lat": 4594200,
+      "lng": 543200,
+      "fuels": {
+        "gazole": 2.08,
+        "sp95": 2.05,
+        "sp98": 2.1
+      }
+    },
+    {
+      "id": "1560001",
+      "cp": "01560",
+      "ville": "Saint-Trivier-de-Courtes",
+      "adresse": "Route de Pont-de-Vaux",
+      "pop": "R",
+      "lat": 4645900,
+      "lng": 507500,
+      "fuels": {
+        "gazole": 1.963,
+        "sp98": 2.046,
+        "e10": 1.925
+      }
+    },
+    {
+      "id": "1150002",
+      "cp": "01150",
+      "ville": "Saint-Vulbas",
+      "adresse": "Avenue Charles de Gaulle",
+      "pop": "R",
+      "lat": 4583900,
+      "lng": 527800,
+      "fuels": {
+        "gazole": 1.942,
+        "sp98": 1.99,
+        "e10": 1.949,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "1170001",
+      "cp": "01170",
+      "ville": "Ségny",
+      "adresse": "RN5",
+      "pop": "R",
+      "lat": 4629300,
+      "lng": 607900,
+      "fuels": {
+        "gazole": 1.964,
+        "sp95": 1.996,
+        "sp98": 2.043,
+        "e10": 1.905,
+        "e85": 0.825,
+        "gplc": 0.924
+      }
+    },
+    {
+      "id": "1960005",
+      "cp": "01960",
+      "ville": "Servas",
+      "adresse": "50 RUE DES ACACIAS",
+      "pop": "R",
+      "lat": 4612800,
+      "lng": 516300,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.009,
+        "e10": 1.889,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "1710001",
+      "cp": "01710",
+      "ville": "Thoiry",
+      "adresse": "route de Bellegarde",
+      "pop": "R",
+      "lat": 4622700,
+      "lng": 599300,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "1250004",
+      "cp": "01250",
+      "ville": "Tossiat",
+      "adresse": "route de la Vavrette",
+      "pop": "R",
+      "lat": 4613408,
+      "lng": 528880,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.039,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "1600002",
+      "cp": "01600",
+      "ville": "Trévoux",
+      "adresse": "324 Route de Lyon",
+      "pop": "R",
+      "lat": 4593472.4745,
+      "lng": 479062.7705,
+      "fuels": {
+        "gazole": 1.992,
+        "sp98": 2.049,
+        "e10": 1.924
+      }
+    },
+    {
+      "id": "1200001",
+      "cp": "01200",
+      "ville": "Valserhône",
+      "adresse": "69 Rue de la République",
+      "pop": "R",
+      "lat": 4610600,
+      "lng": 582300,
+      "fuels": {
+        "gazole": 2.015,
+        "sp98": 2.061,
+        "e10": 1.937
+      }
+    },
+    {
+      "id": "1200003",
+      "cp": "01200",
+      "ville": "Valserhône",
+      "adresse": "Avenue Maréchal de Lattre de Tassigny",
+      "pop": "R",
+      "lat": 4612400,
+      "lng": 581200,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.979,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "1330002",
+      "cp": "01330",
+      "ville": "Villars-les-Dombes",
+      "adresse": "zac de la tuilerie",
+      "pop": "R",
+      "lat": 4600700,
+      "lng": 503500,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.019,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "1440001",
+      "cp": "01440",
+      "ville": "Viriat",
+      "adresse": "1029 ROUTE DE MARBOZ-LOUHANS",
+      "pop": "R",
+      "lat": 4623800,
+      "lng": 522800,
+      "fuels": {
+        "gazole": 1.967,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "1440003",
+      "cp": "01440",
+      "ville": "Viriat",
+      "adresse": "261 Route de Paris",
+      "pop": "R",
+      "lat": 4621700,
+      "lng": 521300,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.039,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "1440002",
+      "cp": "01440",
+      "ville": "Viriat",
+      "adresse": "531 Route de Strasbourg",
+      "pop": "R",
+      "lat": 4623600,
+      "lng": 526300,
+      "fuels": {
+        "gazole": 1.973,
+        "e10": 1.965
+      }
+    },
+    {
+      "id": "1540001",
+      "cp": "01540",
+      "ville": "Vonnas",
+      "adresse": "184 rue du 19 mars 1962",
+      "pop": "R",
+      "lat": 4619800,
+      "lng": 499400,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.035,
+        "e10": 1.875
+      }
+    },
+    {
+      "id": "1540003",
+      "cp": "01540",
+      "ville": "Vonnas",
+      "adresse": "zac les grand varays route de neuville",
+      "pop": "R",
+      "lat": 4621300,
+      "lng": 499500,
+      "fuels": {
+        "gazole": 1.944,
+        "sp98": 2.007,
+        "e10": 1.89
       }
     }
   ]

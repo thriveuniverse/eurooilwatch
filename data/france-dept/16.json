@@ -3,48 +3,386 @@
   "name": "Charente",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 1,
+  "stationCount": 64,
   "fuels": {
     "gazole": {
-      "count": 1,
-      "mean": 1.855,
-      "median": 1.855,
-      "min": 1.855,
-      "max": 1.855
+      "count": 64,
+      "mean": 1.9623,
+      "median": 1.949,
+      "min": 1.849,
+      "max": 2.168
     },
     "sp95": {
-      "count": 1,
-      "mean": 1.929,
-      "median": 1.929,
+      "count": 12,
+      "mean": 2.0256,
+      "median": 1.9865,
       "min": 1.929,
-      "max": 1.929
+      "max": 2.314
     },
     "sp98": {
-      "count": 1,
-      "mean": 1.965,
-      "median": 1.965,
+      "count": 55,
+      "mean": 2.0356,
+      "median": 1.999,
       "min": 1.965,
-      "max": 1.965
+      "max": 2.194
     },
     "e10": {
-      "count": 1,
-      "mean": 1.875,
-      "median": 1.875,
-      "min": 1.875,
-      "max": 1.875
+      "count": 51,
+      "mean": 1.9255,
+      "median": 1.919,
+      "min": 1.848,
+      "max": 2.068
+    },
+    "e85": {
+      "count": 22,
+      "mean": 0.8069,
+      "median": 0.809,
+      "min": 0.751,
+      "max": 0.855
     },
     "gplc": {
-      "count": 1,
-      "mean": 0.955,
-      "median": 0.955,
+      "count": 6,
+      "mean": 1.2083,
+      "median": 1.0825,
       "min": 0.955,
-      "max": 0.955
+      "max": 2.02
     }
   },
   "stations": [
+    {
+      "id": "16140002",
+      "cp": "16140",
+      "ville": "Aigre",
+      "adresse": "2 Clos Chabot",
+      "pop": "R",
+      "lat": 4589992.06418,
+      "lng": 1484.61757,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.989,
+        "sp98": 2.079
+      }
+    },
+    {
+      "id": "16000004",
+      "cp": "16000",
+      "ville": "Angoulême",
+      "adresse": "186 Rue de Saintes",
+      "pop": "R",
+      "lat": 4566100,
+      "lng": 14000,
+      "fuels": {
+        "gazole": 1.872,
+        "sp98": 1.975,
+        "e10": 1.867,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "16000008",
+      "cp": "16000",
+      "ville": "Angoulême",
+      "adresse": "430 ROUTE DE BORDEAUX",
+      "pop": "R",
+      "lat": 4564300,
+      "lng": 13500,
+      "fuels": {
+        "gazole": 1.864,
+        "sp98": 1.968,
+        "e10": 1.848,
+        "e85": 0.816
+      }
+    },
+    {
+      "id": "16021001",
+      "cp": "16000",
+      "ville": "Angoulême",
+      "adresse": "5 avenue Paul Desfarges",
+      "pop": "R",
+      "lat": 4565800,
+      "lng": 18100,
+      "fuels": {
+        "gazole": 1.872,
+        "sp98": 1.965,
+        "e10": 1.879,
+        "e85": 0.769
+      }
+    },
+    {
+      "id": "16000009",
+      "cp": "16000",
+      "ville": "Angoulême",
+      "adresse": "BD DU 8 MAI 1945",
+      "pop": "R",
+      "lat": 4566000,
+      "lng": 16500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.99,
+        "e10": 1.932,
+        "e85": 0.824
+      }
+    },
+    {
+      "id": "16000005",
+      "cp": "16000",
+      "ville": "Angoulême",
+      "adresse": "Boulevard Jean Moulin",
+      "pop": "R",
+      "lat": 4563200,
+      "lng": 15200,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 2.009,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "16500006",
+      "cp": "16500",
+      "ville": "Ansac-sur-Vienne",
+      "adresse": "Le cerisier de la Barre",
+      "pop": "R",
+      "lat": 4598900,
+      "lng": 61500,
+      "fuels": {
+        "gazole": 2.129,
+        "e10": 2.059
+      }
+    },
+    {
+      "id": "16300001",
+      "cp": "16300",
+      "ville": "Barbezieux-Saint-Hilaire",
+      "adresse": "38 route de montmoreau",
+      "pop": "R",
+      "lat": 4546000,
+      "lng": -14300,
+      "fuels": {
+        "gazole": 1.849,
+        "sp98": 1.99,
+        "e10": 1.92,
+        "gplc": 1.07
+      }
+    },
+    {
+      "id": "16300005",
+      "cp": "16300",
+      "ville": "Barbezieux-Saint-Hilaire",
+      "adresse": "Avenue de l'Europe",
+      "pop": "R",
+      "lat": 4546600,
+      "lng": -16400,
+      "fuels": {
+        "gazole": 1.892,
+        "sp98": 1.996,
+        "e10": 1.911,
+        "e85": 0.806
+      }
+    },
+    {
+      "id": "16300004",
+      "cp": "16300",
+      "ville": "Barbezieux-Saint-Hilaire",
+      "adresse": "Avenue de l'Europe",
+      "pop": "R",
+      "lat": 4546704,
+      "lng": -16519,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.996,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "16700009",
+      "cp": "16700",
+      "ville": "Barro",
+      "adresse": "AIRE DES EGLANTIERS",
+      "pop": "R",
+      "lat": 4600140.2,
+      "lng": 20060.7,
+      "fuels": {
+        "gazole": 2.115,
+        "sp98": 2.154,
+        "e10": 2.068
+      }
+    },
+    {
+      "id": "16480001",
+      "cp": "16480",
+      "ville": "Brossac",
+      "adresse": "11 RTE DE CHALAIS",
+      "pop": "R",
+      "lat": 4533682.7,
+      "lng": -4328,
+      "fuels": {
+        "gazole": 2.168,
+        "sp95": 2.314,
+        "sp98": 2.194,
+        "gplc": 2.02
+      }
+    },
+    {
+      "id": "16150003",
+      "cp": "16150",
+      "ville": "Chabanais",
+      "adresse": "ZA DE CHASSAT",
+      "pop": "R",
+      "lat": 4587800,
+      "lng": 72600,
+      "fuels": {
+        "gazole": 1.985,
+        "sp98": 2.035,
+        "e10": 1.945,
+        "gplc": 1.129
+      }
+    },
+    {
+      "id": "16210001",
+      "cp": "16210",
+      "ville": "Chalais",
+      "adresse": "Rue de la Tude",
+      "pop": "R",
+      "lat": 4527300,
+      "lng": 4200,
+      "fuels": {
+        "gazole": 1.934,
+        "sp98": 2.038,
+        "e10": 1.931,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "16350001",
+      "cp": "16350",
+      "ville": "Champagne-Mouton",
+      "adresse": "RUE sapin vert",
+      "pop": "R",
+      "lat": 4598900,
+      "lng": 40700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "e10": 1.96
+      }
+    },
+    {
+      "id": "16430005",
+      "cp": "16430",
+      "ville": "Champniers",
+      "adresse": "RN 10 - LES CHAUVAUDS",
+      "pop": "R",
+      "lat": 4570100,
+      "lng": 18200,
+      "fuels": {
+        "gazole": 1.861,
+        "sp98": 1.973,
+        "e10": 1.853,
+        "e85": 0.821
+      }
+    },
+    {
+      "id": "16430006",
+      "cp": "16430",
+      "ville": "Champniers",
+      "adresse": "RN 10 LES GRANDES CHAUMES",
+      "pop": "R",
+      "lat": 4569190.21969,
+      "lng": 18274.30412,
+      "fuels": {
+        "gazole": 1.919,
+        "e10": 1.889
+      }
+    },
+    {
+      "id": "16430004",
+      "cp": "16430",
+      "ville": "Champniers",
+      "adresse": "ZA Les Montagnes Les Plantes Neuves",
+      "pop": "R",
+      "lat": 4568300,
+      "lng": 17900,
+      "fuels": {
+        "gazole": 1.899,
+        "sp95": 1.965,
+        "e10": 1.879
+      }
+    },
+    {
+      "id": "16260002",
+      "cp": "16260",
+      "ville": "Chasseneuil-sur-Bonnieure",
+      "adresse": "2 Rue de la Gare",
+      "pop": "R",
+      "lat": 4582700,
+      "lng": 45400,
+      "fuels": {
+        "gazole": 1.974,
+        "sp98": 2.052,
+        "e10": 1.932
+      }
+    },
+    {
+      "id": "16260001",
+      "cp": "16260",
+      "ville": "Chasseneuil-sur-Bonnieure",
+      "adresse": "Route d'Angoulême",
+      "pop": "R",
+      "lat": 4581500,
+      "lng": 44300,
+      "fuels": {
+        "gazole": 1.968,
+        "sp98": 1.99,
+        "e10": 1.953,
+        "e85": 0.855
+      }
+    },
+    {
+      "id": "16100001",
+      "cp": "16100",
+      "ville": "Châteaubernard",
+      "adresse": "40 rue de l'Annisserie",
+      "pop": "R",
+      "lat": 4568400,
+      "lng": -30500,
+      "fuels": {
+        "gazole": 1.881,
+        "sp98": 1.973,
+        "e10": 1.875,
+        "gplc": 0.981
+      }
+    },
+    {
+      "id": "16120001",
+      "cp": "16120",
+      "ville": "Châteauneuf-sur-Charente",
+      "adresse": "21 ZA DE L'ETANG",
+      "pop": "R",
+      "lat": 4558900,
+      "lng": -4800,
+      "fuels": {
+        "gazole": 1.879,
+        "sp98": 1.975,
+        "e10": 1.875,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "16120004",
+      "cp": "16120",
+      "ville": "Châteauneuf-sur-Charente",
+      "adresse": "PLACE DE LA GARE - 3 BLD GAMBETTA",
+      "pop": "R",
+      "lat": 4560000,
+      "lng": -5500,
+      "fuels": {
+        "gazole": 2.018
+      }
+    },
     {
       "id": "16100004",
       "cp": "16100",
@@ -59,6 +397,573 @@
         "sp98": 1.965,
         "e10": 1.875,
         "gplc": 0.955
+      }
+    },
+    {
+      "id": "16100006",
+      "cp": "16100",
+      "ville": "Cognac",
+      "adresse": "20 avenue de Saintes",
+      "pop": "R",
+      "lat": 4569900,
+      "lng": -34400,
+      "fuels": {
+        "gazole": 1.881,
+        "sp98": 1.973,
+        "e10": 1.875,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "16100005",
+      "cp": "16100",
+      "ville": "Cognac",
+      "adresse": "220 Avenue Victor Hugo",
+      "pop": "R",
+      "lat": 4568800,
+      "lng": -31300,
+      "fuels": {
+        "gazole": 2.045,
+        "sp98": 2.13
+      }
+    },
+    {
+      "id": "16100008",
+      "cp": "16100",
+      "ville": "Cognac",
+      "adresse": "43 PLACE DE LA CORDERIE",
+      "pop": "R",
+      "lat": 4569309,
+      "lng": -32722,
+      "fuels": {
+        "gazole": 1.935,
+        "sp98": 1.99,
+        "e10": 1.917,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "16100007",
+      "cp": "16100",
+      "ville": "Cognac",
+      "adresse": "70 Rue de l'Échassier",
+      "pop": "R",
+      "lat": 4569200,
+      "lng": -30900,
+      "fuels": {
+        "gazole": 1.962,
+        "sp98": 1.999,
+        "e10": 1.89
+      }
+    },
+    {
+      "id": "16500005",
+      "cp": "16500",
+      "ville": "Confolens",
+      "adresse": "2 Rue Arnaud Beltrame - ZA du pré de l'étang",
+      "pop": "R",
+      "lat": 4600000,
+      "lng": 67300,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.985,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "16500002",
+      "cp": "16500",
+      "ville": "Confolens",
+      "adresse": "Avenue du 8 Mai 1945",
+      "pop": "R",
+      "lat": 4602100,
+      "lng": 65600,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.985,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "16700007",
+      "cp": "16700",
+      "ville": "Courcôme",
+      "adresse": "RN10 Aire des Groies",
+      "pop": "R",
+      "lat": 4598546.3883,
+      "lng": 20048.88907,
+      "fuels": {
+        "gazole": 2.059,
+        "sp98": 2.169,
+        "e10": 1.879,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "16320005",
+      "cp": "16320",
+      "ville": "Édon",
+      "adresse": "LA FORET RTE DE PERIGUEUX",
+      "pop": "R",
+      "lat": 4548900,
+      "lng": 36300,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.097,
+        "e10": 2.014
+      }
+    },
+    {
+      "id": "16160001",
+      "cp": "16160",
+      "ville": "Gond-Pontouvre",
+      "adresse": "Route de Paris",
+      "pop": "R",
+      "lat": 4568267.12926,
+      "lng": 17728.89502,
+      "fuels": {
+        "gazole": 1.998,
+        "sp98": 2.105,
+        "e10": 2.003,
+        "e85": 0.804,
+        "gplc": 1.095
+      }
+    },
+    {
+      "id": "16200005",
+      "cp": "16200",
+      "ville": "Jarnac",
+      "adresse": "40 avenue Général Leclerc",
+      "pop": "R",
+      "lat": 4568100,
+      "lng": -16400,
+      "fuels": {
+        "gazole": 1.95,
+        "sp98": 2.04,
+        "e10": 1.925
+      }
+    },
+    {
+      "id": "16200001",
+      "cp": "16200",
+      "ville": "Jarnac",
+      "adresse": "Avenue d'Ecosse",
+      "pop": "R",
+      "lat": 4569096.03642,
+      "lng": -17360.08148,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.04,
+        "e10": 1.925
+      }
+    },
+    {
+      "id": "16200003",
+      "cp": "16200",
+      "ville": "Jarnac",
+      "adresse": "Avenue de l'Europe",
+      "pop": "R",
+      "lat": 4568600,
+      "lng": -16500,
+      "fuels": {
+        "gazole": 1.95,
+        "sp98": 2.04,
+        "e10": 1.925
+      }
+    },
+    {
+      "id": "16340002",
+      "cp": "16340",
+      "ville": "L'Isle-d'Espagnac",
+      "adresse": "250 Avenue de la République",
+      "pop": "R",
+      "lat": 4566500,
+      "lng": 20100,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 2.059
+      }
+    },
+    {
+      "id": "16400002",
+      "cp": "16400",
+      "ville": "La Couronne",
+      "adresse": "96 Avenue de la Gare",
+      "pop": "R",
+      "lat": 4560700,
+      "lng": 9000,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.999,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "16400001",
+      "cp": "16400",
+      "ville": "La Couronne",
+      "adresse": "Route de Bordeaux",
+      "pop": "R",
+      "lat": 4562000,
+      "lng": 10600,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.979,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "16110004",
+      "cp": "16110",
+      "ville": "La Rochefoucauld-en-Angoumois",
+      "adresse": "18 Boulevard du 8 Mai",
+      "pop": "R",
+      "lat": 4574594,
+      "lng": 38625,
+      "fuels": {
+        "gazole": 2.07
+      }
+    },
+    {
+      "id": "16110005",
+      "cp": "16110",
+      "ville": "La Rochefoucauld-en-Angoumois",
+      "adresse": "22 Rue faubourg tête noire",
+      "pop": "R",
+      "lat": 4573600,
+      "lng": 38600,
+      "fuels": {
+        "gazole": 2.159,
+        "sp95": 2.149,
+        "sp98": 2.189
+      }
+    },
+    {
+      "id": "16110001",
+      "cp": "16110",
+      "ville": "La Rochefoucauld-en-Angoumois",
+      "adresse": "Route de Limoges",
+      "pop": "R",
+      "lat": 4574200,
+      "lng": 38700,
+      "fuels": {
+        "gazole": 1.905,
+        "sp98": 1.999,
+        "e10": 1.909,
+        "e85": 0.79
+      }
+    },
+    {
+      "id": "16730002",
+      "cp": "16730",
+      "ville": "Linars",
+      "adresse": "15 route des Boisdons - Le maine deliot",
+      "pop": "R",
+      "lat": 4565500,
+      "lng": 8500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.029,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "16230005",
+      "cp": "16230",
+      "ville": "Luxé",
+      "adresse": "16 route d’aigre",
+      "pop": "R",
+      "lat": 4588786.7,
+      "lng": 10565.1,
+      "fuels": {
+        "gazole": 2.159,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "16230004",
+      "cp": "16230",
+      "ville": "Mansle-les-Fontaines",
+      "adresse": "AVENUE PAUL MAIRAT",
+      "pop": "R",
+      "lat": 4587300,
+      "lng": 17300,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.129,
+        "e10": 2.059,
+        "e85": 0.835
+      }
+    },
+    {
+      "id": "16230002",
+      "cp": "16230",
+      "ville": "Mansle-les-Fontaines",
+      "adresse": "Rue Grange du Chapître",
+      "pop": "R",
+      "lat": 4587400,
+      "lng": 18100,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.099,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "16380001",
+      "cp": "16380",
+      "ville": "Marthon",
+      "adresse": "ZE de la PENOTTE",
+      "pop": "R",
+      "lat": 4561014.5,
+      "lng": 45299.2,
+      "fuels": {
+        "gazole": 2.06,
+        "sp95": 2.06,
+        "sp98": 2.15
+      }
+    },
+    {
+      "id": "16220001",
+      "cp": "16220",
+      "ville": "Montbron",
+      "adresse": "Place de l'Hôtel de Ville",
+      "pop": "R",
+      "lat": 4566500,
+      "lng": 50100,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.049,
+        "e10": 1.959
+      }
+    },
+    {
+      "id": "16190001",
+      "cp": "16190",
+      "ville": "Montmoreau",
+      "adresse": "58 Avenue de l Augoumois",
+      "pop": "R",
+      "lat": 4540063,
+      "lng": 13040,
+      "fuels": {
+        "gazole": 1.95,
+        "sp98": 1.999,
+        "e10": 1.915
+      }
+    },
+    {
+      "id": "16250001",
+      "cp": "16250",
+      "ville": "Pérignac",
+      "adresse": "AUX NAULETS PEREUIL",
+      "pop": "R",
+      "lat": 4547271.338,
+      "lng": 4810.332,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.149,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "16360001",
+      "cp": "16360",
+      "ville": "Reignac",
+      "adresse": "RN 10",
+      "pop": "R",
+      "lat": 4542600,
+      "lng": -17300,
+      "fuels": {
+        "gazole": 1.849
+      }
+    },
+    {
+      "id": "16170001",
+      "cp": "16170",
+      "ville": "Rouillac",
+      "adresse": "ROUTE DE GENAC",
+      "pop": "R",
+      "lat": 4577700,
+      "lng": -6100,
+      "fuels": {
+        "gazole": 1.895,
+        "sp98": 2.01,
+        "e10": 1.933,
+        "e85": 0.846
+      }
+    },
+    {
+      "id": "16600001",
+      "cp": "16600",
+      "ville": "Ruelle-sur-Touvre",
+      "adresse": "Avenue Foch",
+      "pop": "R",
+      "lat": 4568019,
+      "lng": 21081,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.979,
+        "sp98": 2.029
+      }
+    },
+    {
+      "id": "16700004",
+      "cp": "16700",
+      "ville": "Ruffec",
+      "adresse": "Avenue du Professeur Girard",
+      "pop": "R",
+      "lat": 4603100,
+      "lng": 20400,
+      "fuels": {
+        "gazole": 1.909,
+        "sp95": 1.984,
+        "sp98": 1.999,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "16700008",
+      "cp": "16700",
+      "ville": "Ruffec",
+      "adresse": "CHAMP BARBE JAUNE",
+      "pop": "R",
+      "lat": 4603490.1,
+      "lng": 18071.2,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.999,
+        "e10": 1.909,
+        "e85": 0.787
+      }
+    },
+    {
+      "id": "16700003",
+      "cp": "16700",
+      "ville": "Ruffec",
+      "adresse": "Route d'Aigre",
+      "pop": "R",
+      "lat": 4602138,
+      "lng": 18967,
+      "fuels": {
+        "gazole": 1.899,
+        "sp95": 1.984,
+        "sp98": 1.999,
+        "e85": 0.787
+      }
+    },
+    {
+      "id": "16330001",
+      "cp": "16330",
+      "ville": "Saint-Amant-de-Boixe",
+      "adresse": "Route de Mansle",
+      "pop": "R",
+      "lat": 4580400,
+      "lng": 14000,
+      "fuels": {
+        "gazole": 1.964
+      }
+    },
+    {
+      "id": "16710001",
+      "cp": "16710",
+      "ville": "Saint-Yrieix-sur-Charente",
+      "adresse": "183 rue de Saint Jean d'Angély",
+      "pop": "R",
+      "lat": 4567332.83631,
+      "lng": 12522.45983,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.999,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "16130002",
+      "cp": "16130",
+      "ville": "Segonzac",
+      "adresse": "ROUTE DE COGNAC",
+      "pop": "R",
+      "lat": 4561787,
+      "lng": -21934,
+      "fuels": {
+        "gazole": 1.943,
+        "sp98": 2.086,
+        "e10": 1.971
+      }
+    },
+    {
+      "id": "16800001",
+      "cp": "16800",
+      "ville": "Soyaux",
+      "adresse": "ave du general de gaulle",
+      "pop": "R",
+      "lat": 4563900,
+      "lng": 21900,
+      "fuels": {
+        "gazole": 1.882,
+        "sp95": 1.965,
+        "sp98": 2.076,
+        "e10": 1.902,
+        "e85": 0.751
+      }
+    },
+    {
+      "id": "16270003",
+      "cp": "16270",
+      "ville": "Terres-de-Haute-Charente",
+      "adresse": "122 Rue Nationale",
+      "pop": "R",
+      "lat": 4588400,
+      "lng": 57500,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.979,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "16270001",
+      "cp": "16270",
+      "ville": "Terres-de-Haute-Charente",
+      "adresse": "Rue des Paleines",
+      "pop": "R",
+      "lat": 4588200,
+      "lng": 58300,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.986,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "16360002",
+      "cp": "16360",
+      "ville": "Touvérac",
+      "adresse": "Route de Barbezieux CD 14",
+      "pop": "R",
+      "lat": 4538500,
+      "lng": -23000,
+      "fuels": {
+        "gazole": 2.006,
+        "sp98": 2.099,
+        "e10": 1.961
+      }
+    },
+    {
+      "id": "16320003",
+      "cp": "16320",
+      "ville": "Villebois-Lavalette",
+      "adresse": "1 ROUTE DE SIGALAUD",
+      "pop": "R",
+      "lat": 4549000,
+      "lng": 27500,
+      "fuels": {
+        "gazole": 1.946,
+        "sp98": 1.997,
+        "e10": 1.899,
+        "e85": 0.799
       }
     }
   ]

@@ -3,45 +3,52 @@
   "name": "Aveyron",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 6,
+  "stationCount": 82,
   "fuels": {
     "gazole": {
-      "count": 4,
-      "mean": 2.0065,
-      "median": 2.004,
-      "min": 1.928,
-      "max": 2.09
+      "count": 81,
+      "mean": 1.9836,
+      "median": 1.977,
+      "min": 1.891,
+      "max": 2.11
     },
     "sp95": {
-      "count": 3,
-      "mean": 2.0063,
-      "median": 1.99,
-      "min": 1.99,
-      "max": 2.039
+      "count": 38,
+      "mean": 2.0105,
+      "median": 1.998,
+      "min": 1.98,
+      "max": 2.099
     },
     "sp98": {
-      "count": 4,
-      "mean": 2.0415,
-      "median": 2.044,
-      "min": 1.999,
-      "max": 2.079
+      "count": 55,
+      "mean": 2.0451,
+      "median": 2.045,
+      "min": 1.99,
+      "max": 2.194
     },
     "e10": {
-      "count": 4,
-      "mean": 1.9685,
-      "median": 1.979,
-      "min": 1.929,
-      "max": 1.987
+      "count": 51,
+      "mean": 1.9558,
+      "median": 1.949,
+      "min": 1.891,
+      "max": 2.049
     },
     "e85": {
-      "count": 1,
-      "mean": 0.819,
-      "median": 0.819,
-      "min": 0.819,
-      "max": 0.819
+      "count": 18,
+      "mean": 0.8303,
+      "median": 0.8185,
+      "min": 0.784,
+      "max": 0.998
+    },
+    "gplc": {
+      "count": 2,
+      "mean": 1.0955,
+      "median": 1.0955,
+      "min": 1.093,
+      "max": 1.098
     }
   },
   "stations": [
@@ -54,8 +61,147 @@
       "lat": 4427800,
       "lng": 243000,
       "fuels": {
-        "gazole": 2.09,
-        "sp95": 1.99
+        "gazole": 2.09
+      }
+    },
+    {
+      "id": "12160003",
+      "cp": "12160",
+      "ville": "Baraqueville",
+      "adresse": "600 Avenue de Rodez",
+      "pop": "R",
+      "lat": 4427700,
+      "lng": 244400,
+      "fuels": {
+        "gazole": 1.945,
+        "sp95": 1.999,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "12310001",
+      "cp": "12310",
+      "ville": "Bertholène",
+      "adresse": "30 Avenue du Rouergue",
+      "pop": "R",
+      "lat": 4439367,
+      "lng": 277776,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "12340001",
+      "cp": "12340",
+      "ville": "Bozouls",
+      "adresse": "111 ROUTE DE RODEZ",
+      "pop": "R",
+      "lat": 4446900,
+      "lng": 272900,
+      "fuels": {
+        "gazole": 1.972,
+        "sp98": 1.99,
+        "e10": 1.946
+      }
+    },
+    {
+      "id": "12340002",
+      "cp": "12340",
+      "ville": "Bozouls",
+      "adresse": "Route de Rodez",
+      "pop": "R",
+      "lat": 4446300,
+      "lng": 272700,
+      "fuels": {
+        "gazole": 1.959,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "12360001",
+      "cp": "12360",
+      "ville": "Camarès",
+      "adresse": "Z.A. Bel air",
+      "pop": "R",
+      "lat": 4383200,
+      "lng": 287300,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 2.039,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "12560002",
+      "cp": "12560",
+      "ville": "Campagnac",
+      "adresse": "12 Route du Banquier - Les Rebels - A75 - Sortie 41",
+      "pop": "R",
+      "lat": 4438500,
+      "lng": 311400,
+      "fuels": {
+        "gazole": 1.977,
+        "e10": 1.975
+      }
+    },
+    {
+      "id": "12580001",
+      "cp": "12580",
+      "ville": "Campuac",
+      "adresse": "7 ROUTE DU QUILLODROME",
+      "pop": "R",
+      "lat": 4457000,
+      "lng": 259200,
+      "fuels": {
+        "gazole": 2.01,
+        "sp98": 2.05,
+        "e10": 1.98
+      }
+    },
+    {
+      "id": "12700001",
+      "cp": "12700",
+      "ville": "Capdenac-Gare",
+      "adresse": "37 Boulevard Paul Ramadier",
+      "pop": "R",
+      "lat": 4457100,
+      "lng": 207500,
+      "fuels": {
+        "gazole": 1.972,
+        "sp95": 2.039,
+        "sp98": 2.049,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "12120002",
+      "cp": "12120",
+      "ville": "Cassagnes-Bégonhès",
+      "adresse": "Lieu dit plaisance",
+      "pop": "R",
+      "lat": 4417498,
+      "lng": 252143,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "12110002",
+      "cp": "12110",
+      "ville": "Cransac",
+      "adresse": "Avenue du 19 Mars 1962",
+      "pop": "R",
+      "lat": 4452600,
+      "lng": 226900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.079,
+        "e10": 1.999
       }
     },
     {
@@ -88,6 +234,20 @@
       }
     },
     {
+      "id": "12140002",
+      "cp": "12140",
+      "ville": "Entraygues-sur-Truyère",
+      "adresse": "Le Moulinet, 10 Route de Las Peyssières",
+      "pop": "R",
+      "lat": 4465240.24418,
+      "lng": 257350.91837,
+      "fuels": {
+        "gazole": 2.104,
+        "sp95": 2.071,
+        "sp98": 2.194
+      }
+    },
+    {
       "id": "12500002",
       "cp": "12500",
       "ville": "Espalion",
@@ -101,6 +261,76 @@
       }
     },
     {
+      "id": "12500004",
+      "cp": "12500",
+      "ville": "Espalion",
+      "adresse": "route d'Estaing",
+      "pop": "R",
+      "lat": 4452300,
+      "lng": 276300,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.999,
+        "sp98": 2.059,
+        "e10": 1.929,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "12500003",
+      "cp": "12500",
+      "ville": "Espalion",
+      "adresse": "RUE ANTOINE FANGUIN",
+      "pop": "R",
+      "lat": 4452400,
+      "lng": 276600,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.059,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "12300004",
+      "cp": "12300",
+      "ville": "Flagnac",
+      "adresse": "RD 963 LIEU DIT LA PLANQUE",
+      "pop": "R",
+      "lat": 4460421.19875,
+      "lng": 224754.63212,
+      "fuels": {
+        "gazole": 2.025
+      }
+    },
+    {
+      "id": "12230003",
+      "cp": "12230",
+      "ville": "La Cavalerie",
+      "adresse": "La Méridienne - Parc d’activités Millau-Larzac",
+      "pop": "A",
+      "lat": 4401125.64404,
+      "lng": 314801.64568,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
+      }
+    },
+    {
+      "id": "12270002",
+      "cp": "12270",
+      "ville": "La Fouillade",
+      "adresse": "15 route du rouergue",
+      "pop": "R",
+      "lat": 4422900,
+      "lng": 203800,
+      "fuels": {
+        "gazole": 2.11,
+        "sp98": 1.99,
+        "e10": 1.98
+      }
+    },
+    {
       "id": "12270001",
       "cp": "12270",
       "ville": "La Fouillade",
@@ -109,8 +339,36 @@
       "lat": 4424024.10015,
       "lng": 203283.20468,
       "fuels": {
+        "gazole": 1.969,
         "sp98": 2.049,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "12210001",
+      "cp": "12210",
+      "ville": "Laguiole",
+      "adresse": "Rue Lavernhe",
+      "pop": "R",
+      "lat": 4468500,
+      "lng": 285100,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.999,
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "12310002",
+      "cp": "12310",
+      "ville": "Laissac-Sévérac l'Église",
+      "adresse": "LE FOIRAIL",
+      "pop": "R",
+      "lat": 4438400,
+      "lng": 282300,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.997
       }
     },
     {
@@ -125,6 +383,820 @@
         "gazole": 1.949,
         "sp98": 2.039,
         "e10": 1.979
+      }
+    },
+    {
+      "id": "12450002",
+      "cp": "12450",
+      "ville": "Luc-la-Primaube",
+      "adresse": "10 AV.DE TOULOUSE",
+      "pop": "R",
+      "lat": 4429202,
+      "lng": 255855,
+      "fuels": {
+        "gazole": 1.968,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "12450001",
+      "cp": "12450",
+      "ville": "Luc-la-Primaube",
+      "adresse": "Avenue de Rodez",
+      "pop": "R",
+      "lat": 4429682,
+      "lng": 255795,
+      "fuels": {
+        "gazole": 1.908,
+        "sp98": 2.028,
+        "e10": 1.918,
+        "e85": 0.818
+      }
+    },
+    {
+      "id": "12100002",
+      "cp": "12100",
+      "ville": "Millau",
+      "adresse": "144 Avenue Jean Jaurès",
+      "pop": "R",
+      "lat": 4411000,
+      "lng": 308200,
+      "fuels": {
+        "gazole": 1.973,
+        "sp98": 1.99,
+        "e10": 1.963
+      }
+    },
+    {
+      "id": "12100011",
+      "cp": "12100",
+      "ville": "Millau",
+      "adresse": "150 bd Georges Brassens",
+      "pop": "R",
+      "lat": 4411600,
+      "lng": 307000,
+      "fuels": {
+        "gazole": 1.968,
+        "sp98": 1.999,
+        "e10": 1.987,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "12100010",
+      "cp": "12100",
+      "ville": "Millau",
+      "adresse": "25 AVENUE EDOUARD ALFRED MARTEL",
+      "pop": "R",
+      "lat": 4411400,
+      "lng": 308200,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
+      }
+    },
+    {
+      "id": "12100005",
+      "cp": "12100",
+      "ville": "Millau",
+      "adresse": "82 Avenue Jean Jaurès",
+      "pop": "R",
+      "lat": 4410700,
+      "lng": 308100,
+      "fuels": {
+        "gazole": 1.928,
+        "sp98": 2.059,
+        "e10": 1.987
+      }
+    },
+    {
+      "id": "12100009",
+      "cp": "12100",
+      "ville": "Millau",
+      "adresse": "Avenue de l'Europe",
+      "pop": "R",
+      "lat": 4408729.48573,
+      "lng": 305648.93392,
+      "fuels": {
+        "gazole": 1.928
+      }
+    },
+    {
+      "id": "12100004",
+      "cp": "12100",
+      "ville": "Millau",
+      "adresse": "AVENUE DU PONT LEROUGE",
+      "pop": "R",
+      "lat": 4409100,
+      "lng": 307700,
+      "fuels": {
+        "gazole": 1.928,
+        "sp98": 1.999,
+        "e10": 1.987
+      }
+    },
+    {
+      "id": "12220001",
+      "cp": "12220",
+      "ville": "Montbazens",
+      "adresse": "le fargal haut",
+      "pop": "R",
+      "lat": 4446138.95689,
+      "lng": 222235.07921,
+      "fuels": {
+        "gazole": 2.05,
+        "sp95": 2.09
+      }
+    },
+    {
+      "id": "12230001",
+      "cp": "12230",
+      "ville": "Nant",
+      "adresse": "RN 99",
+      "pop": "R",
+      "lat": 4401406,
+      "lng": 330473,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "12800002",
+      "cp": "12800",
+      "ville": "Naucelle",
+      "adresse": "Place Frédéric Mistral",
+      "pop": "R",
+      "lat": 4419842,
+      "lng": 234030,
+      "fuels": {
+        "gazole": 1.945,
+        "sp95": 1.985,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "12800003",
+      "cp": "12800",
+      "ville": "Naucelle",
+      "adresse": "ZA de l'Issart",
+      "pop": "R",
+      "lat": 4418774.86215,
+      "lng": 236088.68494,
+      "fuels": {
+        "gazole": 1.979,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "12510001",
+      "cp": "12510",
+      "ville": "Olemps",
+      "adresse": "le lachet",
+      "pop": "R",
+      "lat": 4432500,
+      "lng": 255800,
+      "fuels": {
+        "gazole": 1.909,
+        "sp98": 2.029,
+        "e10": 1.919,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "12850004",
+      "cp": "12850",
+      "ville": "Onet-le-Château",
+      "adresse": "14 ROUTE DE SEVERAC LES QUATRES SAISONS",
+      "pop": "R",
+      "lat": 4436400,
+      "lng": 258800,
+      "fuels": {
+        "gazole": 1.909,
+        "sp95": 1.98,
+        "sp98": 2.029,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "12850002",
+      "cp": "12850",
+      "ville": "Onet-le-Château",
+      "adresse": "l'Estréniol - Pôle Comtal Sud",
+      "pop": "R",
+      "lat": 4439400,
+      "lng": 260300,
+      "fuels": {
+        "gazole": 1.909,
+        "sp95": 1.98,
+        "e10": 1.919,
+        "gplc": 1.093
+      }
+    },
+    {
+      "id": "12850007",
+      "cp": "12850",
+      "ville": "Onet-le-Château",
+      "adresse": "Route d'Espalion",
+      "pop": "R",
+      "lat": 4437700,
+      "lng": 259300,
+      "fuels": {
+        "gazole": 1.98,
+        "e10": 1.976,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "12850001",
+      "cp": "12850",
+      "ville": "Onet-le-Château",
+      "adresse": "Route d'Espalion",
+      "pop": "R",
+      "lat": 4437300,
+      "lng": 259200,
+      "fuels": {
+        "gazole": 1.909,
+        "sp98": 2.029,
+        "e10": 1.919,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "12290003",
+      "cp": "12290",
+      "ville": "Pont-de-Salars",
+      "adresse": "Avenue de Rodez",
+      "pop": "R",
+      "lat": 4428800,
+      "lng": 271500,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "12290001",
+      "cp": "12290",
+      "ville": "Pont-de-Salars",
+      "adresse": "Avenue de Rodez",
+      "pop": "R",
+      "lat": 4428900,
+      "lng": 271400,
+      "fuels": {
+        "gazole": 2.069
+      }
+    },
+    {
+      "id": "12400007",
+      "cp": "12400",
+      "ville": "Rebourguil",
+      "adresse": "PARC D’ACTIVITÉ SAINT PIERRE",
+      "pop": "R",
+      "lat": 4387600,
+      "lng": 277800,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
+      }
+    },
+    {
+      "id": "12170001",
+      "cp": "12170",
+      "ville": "Réquista",
+      "adresse": "28 Avenue de la Vallée du Tarn",
+      "pop": "R",
+      "lat": 4402900,
+      "lng": 253400,
+      "fuels": {
+        "gazole": 1.97,
+        "sp95": 1.995,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "12170004",
+      "cp": "12170",
+      "ville": "Réquista",
+      "adresse": "80 Avenue d'Albi",
+      "pop": "R",
+      "lat": 4403700,
+      "lng": 252300,
+      "fuels": {
+        "gazole": 1.97,
+        "sp95": 1.995,
+        "sp98": 1.999,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "12230004",
+      "cp": "12240",
+      "ville": "Rieupeyroux",
+      "adresse": "3 AVENUE DU SEGALA",
+      "pop": "R",
+      "lat": 4430800,
+      "lng": 224200,
+      "fuels": {
+        "gazole": 1.891,
+        "e10": 1.891
+      }
+    },
+    {
+      "id": "12240002",
+      "cp": "12240",
+      "ville": "Rieupeyroux",
+      "adresse": "Route de Rodez",
+      "pop": "R",
+      "lat": 4430600,
+      "lng": 224900,
+      "fuels": {
+        "gazole": 1.945,
+        "sp98": 2.055,
+        "e10": 1.935
+      }
+    },
+    {
+      "id": "12390001",
+      "cp": "12390",
+      "ville": "Rignac",
+      "adresse": "Chemin de la Cassagne",
+      "pop": "R",
+      "lat": 4440500,
+      "lng": 229600,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.999,
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "12000010",
+      "cp": "12000",
+      "ville": "Rodez",
+      "adresse": "10 bis Avenue de la Gineste",
+      "pop": "R",
+      "lat": 4436200,
+      "lng": 257200,
+      "fuels": {
+        "gazole": 1.909,
+        "sp98": 2.029,
+        "e10": 1.919,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "12000016",
+      "cp": "12000",
+      "ville": "Rodez",
+      "adresse": "24 avenue de la gineste",
+      "pop": "R",
+      "lat": 4436192,
+      "lng": 256611.6,
+      "fuels": {
+        "gazole": 1.909,
+        "sp98": 2.029,
+        "e10": 1.919,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "12000014",
+      "cp": "12000",
+      "ville": "Rodez",
+      "adresse": "33 Bd Paul ramadier",
+      "pop": "R",
+      "lat": 4435921.92114,
+      "lng": 256985.24525,
+      "fuels": {
+        "gazole": 1.976
+      }
+    },
+    {
+      "id": "12000013",
+      "cp": "12000",
+      "ville": "Rodez",
+      "adresse": "616 AVENUE DE DECAZEVILLE",
+      "pop": "R",
+      "lat": 4437000,
+      "lng": 254800,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 1.99,
+        "e10": 1.97,
+        "e85": 0.833
+      }
+    },
+    {
+      "id": "12000011",
+      "cp": "12000",
+      "ville": "Rodez",
+      "adresse": "Avenue de Bamberg",
+      "pop": "R",
+      "lat": 4436135.13702,
+      "lng": 258846.1757,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.98,
+        "e10": 1.919,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "12130002",
+      "cp": "12130",
+      "ville": "Saint Geniez d'Olt et d'Aubrac",
+      "adresse": "Avenue d'Espalion",
+      "pop": "R",
+      "lat": 4446000,
+      "lng": 296500,
+      "fuels": {
+        "gazole": 1.97,
+        "sp98": 2.045,
+        "e10": 1.935
+      }
+    },
+    {
+      "id": "12400002",
+      "cp": "12400",
+      "ville": "Saint-Affrique",
+      "adresse": "131 Avenue Docteur Lucien Galtier",
+      "pop": "R",
+      "lat": 4395700,
+      "lng": 287500,
+      "fuels": {
+        "gazole": 1.958,
+        "e10": 1.953
+      }
+    },
+    {
+      "id": "12400005",
+      "cp": "12400",
+      "ville": "Saint-Affrique",
+      "adresse": "664 AVENUE LUCIEN GALTIER",
+      "pop": "R",
+      "lat": 4395700,
+      "lng": 286800,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
+      }
+    },
+    {
+      "id": "12400006",
+      "cp": "12400",
+      "ville": "Saint-Affrique",
+      "adresse": "BOULEVARD DE LA CAPELLE",
+      "pop": "R",
+      "lat": 4395500,
+      "lng": 289100,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.149,
+        "e10": 2.049
+      }
+    },
+    {
+      "id": "12400001",
+      "cp": "12400",
+      "ville": "Saint-Affrique",
+      "adresse": "Lotissement de Vaxergues",
+      "pop": "R",
+      "lat": 4395800,
+      "lng": 287000,
+      "fuels": {
+        "gazole": 1.927,
+        "sp98": 1.999,
+        "e10": 1.986,
+        "e85": 0.784
+      }
+    },
+    {
+      "id": "12330004",
+      "cp": "12330",
+      "ville": "Saint-Christophe-Vallon",
+      "adresse": "Route de Rodez",
+      "pop": "R",
+      "lat": 4446900,
+      "lng": 241400,
+      "fuels": {
+        "gazole": 2.004,
+        "sp98": 2.077,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "12780002",
+      "cp": "12780",
+      "ville": "Saint-Léons",
+      "adresse": "D 911 LE BOIS DU FOUR",
+      "pop": "R",
+      "lat": 4423609.94618,
+      "lng": 298684.31229,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 2.049,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "12490001",
+      "cp": "12490",
+      "ville": "Saint-Rome-de-Cernon",
+      "adresse": "AV DE LA REPUBLIQUE",
+      "pop": "R",
+      "lat": 4401200,
+      "lng": 296400,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.099
+      }
+    },
+    {
+      "id": "12490002",
+      "cp": "12490",
+      "ville": "Saint-Rome-de-Tarn",
+      "adresse": "PARC ARTISANAL COMMUNAL ST FERREOL",
+      "pop": "R",
+      "lat": 4404300,
+      "lng": 290500,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
+      }
+    },
+    {
+      "id": "12560003",
+      "cp": "12560",
+      "ville": "Saint-Saturnin-de-Lenne",
+      "adresse": "ZA LE LAURADOUST SATURNIN DE LENNE",
+      "pop": "R",
+      "lat": 4442315.86094,
+      "lng": 301259.16033,
+      "fuels": {
+        "gazole": 1.985,
+        "sp98": 2.099,
+        "e10": 2.029
+      }
+    },
+    {
+      "id": "12330003",
+      "cp": "12330",
+      "ville": "Salles-la-Source",
+      "adresse": "ZA les Pradades - Salles la Source",
+      "pop": "R",
+      "lat": 4445500,
+      "lng": 247300,
+      "fuels": {
+        "gazole": 2.006,
+        "sp98": 2.079,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "12150007",
+      "cp": "12150",
+      "ville": "Sévérac d'Aveyron",
+      "adresse": "37 AVENUE DE PARIS",
+      "pop": "R",
+      "lat": 4432900,
+      "lng": 306900,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.998,
+        "sp98": 2.089
+      }
+    },
+    {
+      "id": "12150006",
+      "cp": "12150",
+      "ville": "Sévérac d'Aveyron",
+      "adresse": "AUTOROUTE A75 - AIRE DE L'AVEYRON",
+      "pop": "A",
+      "lat": 4433000,
+      "lng": 308200,
+      "fuels": {
+        "gazole": 2.097,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.098
+      }
+    },
+    {
+      "id": "12150004",
+      "cp": "12150",
+      "ville": "Sévérac d'Aveyron",
+      "adresse": "Avenue Marie Curie",
+      "pop": "R",
+      "lat": 4432524,
+      "lng": 306544,
+      "fuels": {
+        "gazole": 1.971,
+        "sp98": 2.09,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "12150005",
+      "cp": "12150",
+      "ville": "Sévérac d'Aveyron",
+      "adresse": "ZA le Plâ d'Aveyron RN88",
+      "pop": "R",
+      "lat": 4435100,
+      "lng": 297200,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 2.049,
+        "e85": 0.895
+      }
+    },
+    {
+      "id": "12600002",
+      "cp": "12600",
+      "ville": "Taussac",
+      "adresse": "Avenue de Brommat",
+      "pop": "R",
+      "lat": 4483608.93153,
+      "lng": 266278.91958,
+      "fuels": {
+        "gazole": 2.06,
+        "sp95": 2.08,
+        "sp98": 2.13
+      }
+    },
+    {
+      "id": "12400003",
+      "cp": "12400",
+      "ville": "Vabres-l'Abbaye",
+      "adresse": "Route de Saint-Affrique",
+      "pop": "R",
+      "lat": 4395400,
+      "lng": 285000,
+      "fuels": {
+        "gazole": 1.928,
+        "sp95": 1.997,
+        "e10": 1.987,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "12330002",
+      "cp": "12330",
+      "ville": "Valady",
+      "adresse": "D840",
+      "pop": "R",
+      "lat": 4444100,
+      "lng": 244100,
+      "fuels": {
+        "gazole": 2.069,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "12430001",
+      "cp": "12430",
+      "ville": "Villefranche-de-Panat",
+      "adresse": "33 AVENUE DU LAC",
+      "pop": "R",
+      "lat": 4409000,
+      "lng": 270100,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "12200005",
+      "cp": "12200",
+      "ville": "Villefranche-de-Rouergue",
+      "adresse": "125 Avenue du Quercy",
+      "pop": "R",
+      "lat": 4435769,
+      "lng": 202390,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.995,
+        "sp98": 2.059,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "12200001",
+      "cp": "12200",
+      "ville": "Villefranche-de-Rouergue",
+      "adresse": "9 Avenue des Croates",
+      "pop": "R",
+      "lat": 4436100,
+      "lng": 204100,
+      "fuels": {
+        "gazole": 1.972,
+        "sp98": 1.99,
+        "e10": 1.972
+      }
+    },
+    {
+      "id": "12200002",
+      "cp": "12200",
+      "ville": "Villefranche-de-Rouergue",
+      "adresse": "Avenue de Toulouse",
+      "pop": "R",
+      "lat": 4436100,
+      "lng": 203400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.989,
+        "sp98": 2.069,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "12200004",
+      "cp": "12200",
+      "ville": "Villefranche-de-Rouergue",
+      "adresse": "LIEU DIT BERNUSSOU",
+      "pop": "R",
+      "lat": 4435900,
+      "lng": 199700,
+      "fuels": {
+        "gazole": 1.939,
+        "sp95": 1.989,
+        "sp98": 2.049,
+        "e10": 1.919,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "12200006",
+      "cp": "12200",
+      "ville": "Villefranche-de-Rouergue",
+      "adresse": "Mas de souyri / Route de Montauban",
+      "pop": "R",
+      "lat": 4436000,
+      "lng": 198700,
+      "fuels": {
+        "gazole": 2.069
+      }
+    },
+    {
+      "id": "12260007",
+      "cp": "12260",
+      "ville": "Villeneuve",
+      "adresse": "Avenue de Rouergue RD922",
+      "pop": "R",
+      "lat": 4443181.63857,
+      "lng": 203147.25985,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.039,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "12260002",
+      "cp": "12260",
+      "ville": "Villeneuve",
+      "adresse": "Lieu-dit Fréjeroques - D 922",
+      "pop": "R",
+      "lat": 4443900,
+      "lng": 202800,
+      "fuels": {
+        "gazole": 2.11,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "12110004",
+      "cp": "12110",
+      "ville": "Viviez",
+      "adresse": "41ter Avenue Adam Grange",
+      "pop": "R",
+      "lat": 4456100,
+      "lng": 223100,
+      "fuels": {
+        "gazole": 2.09,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "12110003",
+      "cp": "12110",
+      "ville": "Viviez",
+      "adresse": "Zone de Laubarède",
+      "pop": "R",
+      "lat": 4455984.71104,
+      "lng": 221763.49504,
+      "fuels": {
+        "gazole": 1.999
       }
     }
   ]

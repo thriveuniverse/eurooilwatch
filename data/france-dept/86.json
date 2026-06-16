@@ -3,48 +3,703 @@
   "name": "Vienne",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 3,
+  "stationCount": 70,
   "fuels": {
     "gazole": {
-      "count": 3,
-      "mean": 2.0223,
-      "median": 1.999,
-      "min": 1.949,
-      "max": 2.119
+      "count": 69,
+      "mean": 1.9848,
+      "median": 1.969,
+      "min": 1.818,
+      "max": 2.294
     },
     "sp95": {
-      "count": 1,
-      "mean": 2.029,
-      "median": 2.029,
-      "min": 2.029,
-      "max": 2.029
+      "count": 16,
+      "mean": 1.9851,
+      "median": 1.982,
+      "min": 1.949,
+      "max": 2.039
     },
     "sp98": {
-      "count": 2,
-      "mean": 2.091,
-      "median": 2.091,
-      "min": 2.023,
-      "max": 2.159
+      "count": 53,
+      "mean": 2.0433,
+      "median": 2.019,
+      "min": 1.939,
+      "max": 2.294
     },
     "e10": {
-      "count": 3,
-      "mean": 1.99,
-      "median": 1.969,
-      "min": 1.922,
-      "max": 2.079
+      "count": 54,
+      "mean": 1.9463,
+      "median": 1.924,
+      "min": 1.824,
+      "max": 2.194
     },
     "e85": {
-      "count": 2,
-      "mean": 0.812,
-      "median": 0.812,
-      "min": 0.809,
-      "max": 0.815
+      "count": 18,
+      "mean": 0.7959,
+      "median": 0.809,
+      "min": 0.757,
+      "max": 0.835
+    },
+    "gplc": {
+      "count": 9,
+      "mean": 1.0674,
+      "median": 1.07,
+      "min": 1.029,
+      "max": 1.1
     }
   },
   "stations": [
+    {
+      "id": "86100013",
+      "cp": "86100",
+      "ville": "Antran",
+      "adresse": "AIRE DE CHATELLERAULT-ANTRAN",
+      "pop": "A",
+      "lat": 4690600,
+      "lng": 52400,
+      "fuels": {
+        "gazole": 2.269,
+        "sp98": 2.272,
+        "e10": 2.172,
+        "gplc": 1.064
+      }
+    },
+    {
+      "id": "86100014",
+      "cp": "86100",
+      "ville": "Antran",
+      "adresse": "AUTOROUTE A10",
+      "pop": "A",
+      "lat": 4690500,
+      "lng": 52300,
+      "fuels": {
+        "gazole": 2.284
+      }
+    },
+    {
+      "id": "86180002",
+      "cp": "86180",
+      "ville": "Buxerolles",
+      "adresse": "10 rue de la Charletterie",
+      "pop": "R",
+      "lat": 4659076,
+      "lng": 36886,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 2.041,
+        "e10": 1.93
+      }
+    },
+    {
+      "id": "86180001",
+      "cp": "86180",
+      "ville": "Buxerolles",
+      "adresse": "Rue des Ecoles",
+      "pop": "R",
+      "lat": 4659739.08809,
+      "lng": 35110.60718,
+      "fuels": {
+        "gazole": 1.849,
+        "sp95": 1.949,
+        "e10": 1.849,
+        "e85": 0.758
+      }
+    },
+    {
+      "id": "86360003",
+      "cp": "86360",
+      "ville": "Chasseneuil-du-Poitou",
+      "adresse": "6 Route de Paris",
+      "pop": "R",
+      "lat": 4663300,
+      "lng": 35800,
+      "fuels": {
+        "gazole": 1.82,
+        "sp98": 1.943,
+        "e10": 1.827,
+        "gplc": 1.07
+      }
+    },
+    {
+      "id": "86360004",
+      "cp": "86360",
+      "ville": "Chasseneuil-du-Poitou",
+      "adresse": "7 ROUTE DE PARIS",
+      "pop": "R",
+      "lat": 4663200,
+      "lng": 35600,
+      "fuels": {
+        "gazole": 1.818,
+        "sp98": 1.939,
+        "e10": 1.824,
+        "e85": 0.813
+      }
+    },
+    {
+      "id": "86360001",
+      "cp": "86360",
+      "ville": "Chasseneuil-du-Poitou",
+      "adresse": "RN10 LES PORTES DU FUTUR",
+      "pop": "R",
+      "lat": 4666700,
+      "lng": 37100,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.982,
+        "e10": 1.899,
+        "e85": 0.759,
+        "gplc": 1.1
+      }
+    },
+    {
+      "id": "86100015",
+      "cp": "86100",
+      "ville": "Châtellerault",
+      "adresse": "109 AV MARECHAL DE LATTRE DE TASSIGNY",
+      "pop": "R",
+      "lat": 4681842.67855,
+      "lng": 52557.1152,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "86102001",
+      "cp": "86100",
+      "ville": "Châtellerault",
+      "adresse": "13 Avenue Honoré de Balzac",
+      "pop": "R",
+      "lat": 4679200,
+      "lng": 52600,
+      "fuels": {
+        "gazole": 1.872,
+        "sp98": 1.986,
+        "e10": 1.87
+      }
+    },
+    {
+      "id": "86100009",
+      "cp": "86100",
+      "ville": "Châtellerault",
+      "adresse": "144, Avenue Foch",
+      "pop": "R",
+      "lat": 4682500,
+      "lng": 56000,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.999,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "86100001",
+      "cp": "86100",
+      "ville": "Châtellerault",
+      "adresse": "Avenue Jean Moulin",
+      "pop": "R",
+      "lat": 4679700,
+      "lng": 53100,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.989,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "86100003",
+      "cp": "86100",
+      "ville": "Châtellerault",
+      "adresse": "Rue du Paradis",
+      "pop": "R",
+      "lat": 4679896,
+      "lng": 54931,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.059,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "86100010",
+      "cp": "86100",
+      "ville": "Châtellerault",
+      "adresse": "Sortie A10 Nord - ZI Nord - Espace d Argenson",
+      "pop": "R",
+      "lat": 4684000,
+      "lng": 54700,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.999,
+        "e10": 1.919,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "86300001",
+      "cp": "86300",
+      "ville": "Chauvigny",
+      "adresse": "Route de Poitiers",
+      "pop": "R",
+      "lat": 4657100,
+      "lng": 63700,
+      "fuels": {
+        "gazole": 1.843,
+        "sp98": 1.991,
+        "e10": 1.862,
+        "e85": 0.808
+      }
+    },
+    {
+      "id": "86300002",
+      "cp": "86300",
+      "ville": "Chauvigny",
+      "adresse": "ZA DE PEURON 2 RUE ENTREPRENEURS",
+      "pop": "R",
+      "lat": 4655800,
+      "lng": 62500,
+      "fuels": {
+        "gazole": 1.96,
+        "sp98": 2.152,
+        "e10": 2.049
+      }
+    },
+    {
+      "id": "86400004",
+      "cp": "86400",
+      "ville": "Civray",
+      "adresse": "59 BIS AVENUE HENRI ROUCHER",
+      "pop": "R",
+      "lat": 4615200,
+      "lng": 29400,
+      "fuels": {
+        "gazole": 2.1,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "86400001",
+      "cp": "86400",
+      "ville": "Civray",
+      "adresse": "Rue de la Pierre du Theil",
+      "pop": "R",
+      "lat": 4614157,
+      "lng": 30294,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.045,
+        "e10": 1.953
+      }
+    },
+    {
+      "id": "86220001",
+      "cp": "86220",
+      "ville": "Dangé-Saint-Romain",
+      "adresse": "RN10",
+      "pop": "R",
+      "lat": 4693511,
+      "lng": 60576,
+      "fuels": {
+        "gazole": 1.989
+      }
+    },
+    {
+      "id": "86130002",
+      "cp": "86130",
+      "ville": "Dissay",
+      "adresse": "RN10 - LONGEVE",
+      "pop": "R",
+      "lat": 4671900,
+      "lng": 42000,
+      "fuels": {
+        "gazole": 1.982,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "86160002",
+      "cp": "86160",
+      "ville": "Gençay",
+      "adresse": "Rue Emilien Fillon",
+      "pop": "R",
+      "lat": 4637400,
+      "lng": 40700,
+      "fuels": {
+        "gazole": 1.948,
+        "sp98": 2.013,
+        "e10": 1.905
+      }
+    },
+    {
+      "id": "86800003",
+      "cp": "86800",
+      "ville": "Jardres",
+      "adresse": "RN 151 - La Carte",
+      "pop": "R",
+      "lat": 4656700,
+      "lng": 56400,
+      "fuels": {
+        "gazole": 1.929,
+        "sp95": 1.964,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "86130010",
+      "cp": "86130",
+      "ville": "Jaunay-Marigny",
+      "adresse": "AUTOROUTE A10",
+      "pop": "A",
+      "lat": 4669100,
+      "lng": 35500,
+      "fuels": {
+        "gazole": 2.25,
+        "sp98": 2.29,
+        "e10": 2.19
+      }
+    },
+    {
+      "id": "86130008",
+      "cp": "86130",
+      "ville": "Jaunay-Marigny",
+      "adresse": "SENS POITIERS TOURS",
+      "pop": "A",
+      "lat": 4670100,
+      "lng": 37100,
+      "fuels": {
+        "gazole": 2.294,
+        "sp98": 2.294,
+        "e10": 2.194
+      }
+    },
+    {
+      "id": "86130011",
+      "cp": "86130",
+      "ville": "Jaunay-Marigny",
+      "adresse": "ZAC DES GRANDS CHAMPS",
+      "pop": "R",
+      "lat": 4669958.365,
+      "lng": 37858.66896,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.999,
+        "e10": 1.906
+      }
+    },
+    {
+      "id": "86150002",
+      "cp": "86150",
+      "ville": "L'Isle-Jourdain",
+      "adresse": "Avenue Pasteur",
+      "pop": "R",
+      "lat": 4623300,
+      "lng": 68800,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.979,
+        "sp98": 2.019,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "86370005",
+      "cp": "86270",
+      "ville": "La Roche-Posay",
+      "adresse": "Les Chaumettes",
+      "pop": "R",
+      "lat": 4679420.09905,
+      "lng": 79782.88624,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.109,
+        "e10": 1.965
+      }
+    },
+    {
+      "id": "86140001",
+      "cp": "86140",
+      "ville": "Lencloître",
+      "adresse": "23 Rue Saint-Exupéry",
+      "pop": "R",
+      "lat": 4681700,
+      "lng": 33200,
+      "fuels": {
+        "gazole": 1.973
+      }
+    },
+    {
+      "id": "86220003",
+      "cp": "86220",
+      "ville": "Les Ormes",
+      "adresse": "Route Nationale 10 - Lieu-dit la Fosse aux Sables",
+      "pop": "R",
+      "lat": 4694800,
+      "lng": 60800,
+      "fuels": {
+        "gazole": 2.09,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "86120001",
+      "cp": "86120",
+      "ville": "Les Trois-Moutiers",
+      "adresse": "23 Avenue Aristide Gigot",
+      "pop": "R",
+      "lat": 4706300,
+      "lng": 1700,
+      "fuels": {
+        "gazole": 2.125,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "86200006",
+      "cp": "86200",
+      "ville": "Loudun",
+      "adresse": "2 BLD GUY CHAUVET",
+      "pop": "R",
+      "lat": 4701050.7,
+      "lng": 8122.72301,
+      "fuels": {
+        "gazole": 1.969,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "86200005",
+      "cp": "86200",
+      "ville": "Loudun",
+      "adresse": "BOULEVARD JEAN PASCAULT",
+      "pop": "R",
+      "lat": 4700600,
+      "lng": 8100,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.089,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "86200004",
+      "cp": "86200",
+      "ville": "Loudun",
+      "adresse": "FAUBOURG SAINT LAZARE",
+      "pop": "R",
+      "lat": 4699700,
+      "lng": 9200,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 2.039,
+        "sp98": 2.089,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "86600001",
+      "cp": "86600",
+      "ville": "Lusignan",
+      "adresse": "63 av Saintonge",
+      "pop": "R",
+      "lat": 4642874,
+      "lng": 11532,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 2.053,
+        "e10": 1.937,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "86320002",
+      "cp": "86320",
+      "ville": "Lussac-les-Châteaux",
+      "adresse": "Rue Julien David",
+      "pop": "R",
+      "lat": 4640200,
+      "lng": 72200,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.059,
+        "e10": 1.939,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "86550001",
+      "cp": "86550",
+      "ville": "Mignaloux-Beauvoir",
+      "adresse": "ZAE DE BEAUBATON",
+      "pop": "R",
+      "lat": 4654000,
+      "lng": 40300,
+      "fuels": {
+        "sp95": 1.969,
+        "sp98": 2.049
+      }
+    },
+    {
+      "id": "86440004",
+      "cp": "86440",
+      "ville": "Migné-Auxances",
+      "adresse": "8 ROUTE DE CHARDONCHAMPS",
+      "pop": "R",
+      "lat": 4661800,
+      "lng": 31600,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "86440001",
+      "cp": "86440",
+      "ville": "Migné-Auxances",
+      "adresse": "avenue de la Loge",
+      "pop": "R",
+      "lat": 4661400,
+      "lng": 31600,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 1.99,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "86110004",
+      "cp": "86110",
+      "ville": "Mirebeau",
+      "adresse": "5 ROUTE DE POITIERS",
+      "pop": "R",
+      "lat": 4677846.28782,
+      "lng": 18710.54436,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.023,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "86500001",
+      "cp": "86500",
+      "ville": "Montmorillon",
+      "adresse": "106 Avenue Victor Hugo",
+      "pop": "R",
+      "lat": 4643100,
+      "lng": 88400,
+      "fuels": {
+        "gazole": 1.945,
+        "sp98": 1.999,
+        "e10": 1.935
+      }
+    },
+    {
+      "id": "86500002",
+      "cp": "86500",
+      "ville": "Montmorillon",
+      "adresse": "2 AVENUE DE PROVENCE",
+      "pop": "R",
+      "lat": 4641900,
+      "lng": 85500,
+      "fuels": {
+        "gazole": 1.945,
+        "sp95": 1.965,
+        "e10": 1.935
+      }
+    },
+    {
+      "id": "86530001",
+      "cp": "86530",
+      "ville": "Naintré",
+      "adresse": "Avenue du Cerisier Noir",
+      "pop": "R",
+      "lat": 4675600,
+      "lng": 48400,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.019,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "86170002",
+      "cp": "86170",
+      "ville": "Neuville-de-Poitou",
+      "adresse": "41 allée jean monnet",
+      "pop": "R",
+      "lat": 4667863.48493,
+      "lng": 26579.98095,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "86170005",
+      "cp": "86170",
+      "ville": "Neuville-de-Poitou",
+      "adresse": "43 RUE ALPHONSE PLAULT",
+      "pop": "R",
+      "lat": 4668500,
+      "lng": 25500,
+      "fuels": {
+        "gazole": 1.901,
+        "sp98": 1.99,
+        "e10": 1.902,
+        "gplc": 1.07
+      }
+    },
+    {
+      "id": "86000023",
+      "cp": "86000",
+      "ville": "Poitiers",
+      "adresse": "10 Boulevard Jeanne d'Arc",
+      "pop": "R",
+      "lat": 4658900,
+      "lng": 34000,
+      "fuels": {
+        "gazole": 2.119,
+        "sp98": 2.159,
+        "e10": 2.059
+      }
+    },
+    {
+      "id": "86000012",
+      "cp": "86000",
+      "ville": "Poitiers",
+      "adresse": "10 rue de la Demi-Lune",
+      "pop": "R",
+      "lat": 4659700,
+      "lng": 32200,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 1.989,
+        "e10": 1.899,
+        "e85": 0.779,
+        "gplc": 1.1
+      }
+    },
+    {
+      "id": "86000013",
+      "cp": "86000",
+      "ville": "Poitiers",
+      "adresse": "108 Avenue du 8 Mai 1945",
+      "pop": "R",
+      "lat": 4656141,
+      "lng": 31494,
+      "fuels": {
+        "gazole": 1.929,
+        "sp95": 1.969
+      }
+    },
     {
       "id": "86000025",
       "cp": "86000",
@@ -54,10 +709,40 @@
       "lat": 4657584.38191,
       "lng": 37463.65127,
       "fuels": {
-        "gazole": 1.949,
+        "gazole": 1.89,
         "sp98": 2.023,
-        "e10": 1.922,
+        "e10": 1.888,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "86000014",
+      "cp": "86000",
+      "ville": "Poitiers",
+      "adresse": "250 AVE DU 8 MAI 1945",
+      "pop": "R",
+      "lat": 4655100,
+      "lng": 29900,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.989,
+        "e10": 1.906,
+        "e85": 0.779,
+        "gplc": 1.1
+      }
+    },
+    {
+      "id": "86000026",
+      "cp": "86000",
+      "ville": "Poitiers",
+      "adresse": "6 rue du pont St Cyprien",
+      "pop": "R",
+      "lat": 4657591.8,
+      "lng": 34535.2,
+      "fuels": {
+        "gazole": 2.099,
+        "e10": 2.059,
+        "e85": 0.835
       }
     },
     {
@@ -70,9 +755,121 @@
       "lng": 36000,
       "fuels": {
         "gazole": 2.119,
-        "sp98": 2.159,
+        "sp98": 2.139,
         "e10": 2.079,
         "e85": 0.815
+      }
+    },
+    {
+      "id": "86000024",
+      "cp": "86000",
+      "ville": "Poitiers",
+      "adresse": "ROCADE OUEST - Z.I.REPUBLIQUE III",
+      "pop": "R",
+      "lat": 4660400,
+      "lng": 33200,
+      "fuels": {
+        "gazole": 1.862,
+        "sp98": 1.964,
+        "e10": 1.851,
+        "e85": 0.812,
+        "gplc": 1.035
+      }
+    },
+    {
+      "id": "86036001",
+      "cp": "86000",
+      "ville": "Saint-Benoît",
+      "adresse": "93 Route de Gençay",
+      "pop": "R",
+      "lat": 4656606.71309,
+      "lng": 35440.52626,
+      "fuels": {
+        "gazole": 1.849,
+        "sp98": 1.955,
+        "e10": 1.862,
+        "e85": 0.757,
+        "gplc": 1.029
+      }
+    },
+    {
+      "id": "86140002",
+      "cp": "86140",
+      "ville": "Saint-Genest-d'Ambière",
+      "adresse": "route de lencloitre",
+      "pop": "R",
+      "lat": 4681600,
+      "lng": 33700,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.009,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "86130006",
+      "cp": "86130",
+      "ville": "Saint-Georges-lès-Baillargeaux",
+      "adresse": "ROUTE CHAMPS DE GAIN",
+      "pop": "R",
+      "lat": 4666600,
+      "lng": 44400,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.979,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "86310003",
+      "cp": "86310",
+      "ville": "Saint-Germain",
+      "adresse": "12 AVENUE DE L'EUROPE",
+      "pop": "R",
+      "lat": 4656400,
+      "lng": 87000,
+      "fuels": {
+        "gazole": 2.09
+      }
+    },
+    {
+      "id": "86800004",
+      "cp": "86800",
+      "ville": "Saint-Julien-l'Ars",
+      "adresse": "60 Route de Poitiers",
+      "pop": "R",
+      "lat": 4655889,
+      "lng": 49816,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.976,
+        "sp98": 2.049
+      }
+    },
+    {
+      "id": "86380002",
+      "cp": "86380",
+      "ville": "Saint-Martin-la-Pallu",
+      "adresse": "15 RUE MARIE CURIE",
+      "pop": "R",
+      "lat": 4673051.46,
+      "lng": 30673.72,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.159,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "86380001",
+      "cp": "86380",
+      "ville": "Saint-Martin-la-Pallu",
+      "adresse": "36 bis RTE POITIERS VENDEUVRE",
+      "pop": "R",
+      "lat": 4672900,
+      "lng": 30400,
+      "fuels": {
+        "gazole": 2.107
       }
     },
     {
@@ -87,6 +884,161 @@
         "gazole": 1.999,
         "sp95": 2.029,
         "e10": 1.969
+      }
+    },
+    {
+      "id": "86400003",
+      "cp": "86400",
+      "ville": "Savigné",
+      "adresse": "Route de Niort",
+      "pop": "R",
+      "lat": 4616000,
+      "lng": 31100,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.979,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "86350001",
+      "cp": "86350",
+      "ville": "Usson-du-Poitou",
+      "adresse": "4 LE CORMIER",
+      "pop": "R",
+      "lat": 4628300,
+      "lng": 53500,
+      "fuels": {
+        "gazole": 2.1,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "86700003",
+      "cp": "86700",
+      "ville": "Valence-en-Poitou",
+      "adresse": "28 avenue de Paris",
+      "pop": "R",
+      "lat": 4630500,
+      "lng": 18300,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.989,
+        "sp98": 2.039,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "86700005",
+      "cp": "86700",
+      "ville": "Valence-en-Poitou",
+      "adresse": "30 Grande rue",
+      "pop": "R",
+      "lat": 4629687.69205,
+      "lng": 17957.93399,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "86700004",
+      "cp": "86700",
+      "ville": "Valence-en-Poitou",
+      "adresse": "centre routier TOTAL",
+      "pop": "R",
+      "lat": 4633565.84205,
+      "lng": 18620.324,
+      "fuels": {
+        "gazole": 1.99
+      }
+    },
+    {
+      "id": "86370001",
+      "cp": "86370",
+      "ville": "Vivonne",
+      "adresse": "17, RUE PORTES ROUGES",
+      "pop": "R",
+      "lat": 4643100,
+      "lng": 26200,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.988,
+        "e10": 1.905,
+        "e85": 0.76,
+        "gplc": 1.039
+      }
+    },
+    {
+      "id": "86370006",
+      "cp": "86370",
+      "ville": "Vivonne",
+      "adresse": "Aire des vieilles etables RN 10",
+      "pop": "R",
+      "lat": 4638646.08457,
+      "lng": 22097.74113,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.149,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "86370008",
+      "cp": "86370",
+      "ville": "Vivonne",
+      "adresse": "Brandes De Cercigny RN10",
+      "pop": "R",
+      "lat": 4637700,
+      "lng": 21100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.089
+      }
+    },
+    {
+      "id": "86190004",
+      "cp": "86190",
+      "ville": "Vouillé",
+      "adresse": "4 ROUTE DE POITIERS",
+      "pop": "R",
+      "lat": 4664619.02982,
+      "lng": 17216.84565,
+      "fuels": {
+        "gazole": 1.905,
+        "sp98": 1.99,
+        "e10": 1.901
+      }
+    },
+    {
+      "id": "86190001",
+      "cp": "86190",
+      "ville": "Vouillé",
+      "adresse": "ZAE DE VAUGENDRON",
+      "pop": "R",
+      "lat": 4664200,
+      "lng": 17200,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.989,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "86580002",
+      "cp": "86580",
+      "ville": "Vouneuil-sous-Biard",
+      "adresse": "13 place de la croix cadet",
+      "pop": "R",
+      "lat": 4657109.72,
+      "lng": 27208.73,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.985,
+        "sp98": 2.049
       }
     }
   ]

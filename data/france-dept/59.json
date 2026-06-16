@@ -3,48 +3,110 @@
   "name": "Nord",
   "regionCode": "HDF",
   "regionName": "Hauts-de-France",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 15,
+  "stationCount": 228,
   "fuels": {
     "gazole": {
-      "count": 15,
-      "mean": 1.9603,
-      "median": 1.964,
-      "min": 1.868,
-      "max": 2.046
+      "count": 225,
+      "mean": 1.9636,
+      "median": 1.969,
+      "min": 1.836,
+      "max": 2.218
     },
     "sp95": {
-      "count": 1,
-      "mean": 1.959,
-      "median": 1.959,
-      "min": 1.959,
-      "max": 1.959
+      "count": 37,
+      "mean": 1.9816,
+      "median": 1.982,
+      "min": 1.861,
+      "max": 2.144
     },
     "sp98": {
-      "count": 13,
-      "mean": 2.0235,
-      "median": 2.028,
-      "min": 1.975,
-      "max": 2.079
+      "count": 203,
+      "mean": 2.0268,
+      "median": 2.019,
+      "min": 1.956,
+      "max": 2.219
     },
     "e10": {
-      "count": 15,
-      "mean": 1.9255,
-      "median": 1.918,
-      "min": 1.859,
-      "max": 1.99
+      "count": 195,
+      "mean": 1.9236,
+      "median": 1.919,
+      "min": 1.837,
+      "max": 2.114
     },
     "e85": {
-      "count": 7,
-      "mean": 0.8433,
-      "median": 0.815,
-      "min": 0.809,
-      "max": 0.998
+      "count": 112,
+      "mean": 0.83,
+      "median": 0.8125,
+      "min": 0.737,
+      "max": 1.269
+    },
+    "gplc": {
+      "count": 28,
+      "mean": 1.0435,
+      "median": 0.999,
+      "min": 0.923,
+      "max": 1.329
     }
   },
   "stations": [
+    {
+      "id": "59215001",
+      "cp": "59215",
+      "ville": "Abscon",
+      "adresse": "RUE EMILE ZOLA",
+      "pop": "R",
+      "lat": 5033600,
+      "lng": 330300,
+      "fuels": {
+        "gazole": 2.08,
+        "sp98": 2.145,
+        "e10": 2.009
+      }
+    },
+    {
+      "id": "59580001",
+      "cp": "59580",
+      "ville": "Aniche",
+      "adresse": "67 Boulevard Paul Vaillant-Couturier",
+      "pop": "R",
+      "lat": 5033003,
+      "lng": 324294,
+      "fuels": {
+        "gazole": 2.07
+      }
+    },
+    {
+      "id": "59112002",
+      "cp": "59112",
+      "ville": "Annœullin",
+      "adresse": "Rue du Lavoisier",
+      "pop": "R",
+      "lat": 5052800,
+      "lng": 294500,
+      "fuels": {
+        "gazole": 1.936,
+        "sp98": 2.036,
+        "e10": 1.915,
+        "e85": 0.737
+      }
+    },
+    {
+      "id": "59151002",
+      "cp": "59151",
+      "ville": "Arleux",
+      "adresse": "663 RUE SALVADOR ALLENDEE",
+      "pop": "R",
+      "lat": 5028300,
+      "lng": 310200,
+      "fuels": {
+        "gazole": 1.859,
+        "sp98": 2.059,
+        "e10": 1.939
+      }
+    },
     {
       "id": "59280001",
       "cp": "59280",
@@ -60,6 +122,153 @@
       }
     },
     {
+      "id": "59700003",
+      "cp": "59280",
+      "ville": "Armentières",
+      "adresse": "26 Avenue Aristide Briand",
+      "pop": "R",
+      "lat": 5068900,
+      "lng": 288600,
+      "fuels": {
+        "gazole": 1.972,
+        "sp95": 1.969,
+        "sp98": 2.048,
+        "e10": 1.923
+      }
+    },
+    {
+      "id": "59265001",
+      "cp": "59265",
+      "ville": "Aubigny-au-Bac",
+      "adresse": "Route Nationale 43",
+      "pop": "R",
+      "lat": 5026625.03272,
+      "lng": 315955.37708,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.1,
+        "e10": 1.918
+      }
+    },
+    {
+      "id": "59300025",
+      "cp": "59300",
+      "ville": "Aulnoy-lez-Valenciennes",
+      "adresse": "Z.A.C d'Aulnoy lez Valenciennes",
+      "pop": "R",
+      "lat": 5033437.54654,
+      "lng": 351662.78968,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 2.008,
+        "sp98": 2.046,
+        "e10": 1.938,
+        "e85": 0.807,
+        "gplc": 0.923
+      }
+    },
+    {
+      "id": "59620002",
+      "cp": "59620",
+      "ville": "Aulnoye-Aymeries",
+      "adresse": "Rue de la Fontaine",
+      "pop": "R",
+      "lat": 5020900,
+      "lng": 382800,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.011,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "59620005",
+      "cp": "59620",
+      "ville": "Aulnoye-Aymeries",
+      "adresse": "Rue Jean Catelas",
+      "pop": "R",
+      "lat": 5019800,
+      "lng": 384800,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.999,
+        "e10": 1.915,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "59710007",
+      "cp": "59710",
+      "ville": "Avelin",
+      "adresse": "81 RUE DE SECLIN",
+      "pop": "R",
+      "lat": 5054036.44915,
+      "lng": 307374.64096,
+      "fuels": {
+        "gazole": 1.86,
+        "sp98": 1.983,
+        "e10": 1.856,
+        "e85": 0.813,
+        "gplc": 0.989
+      }
+    },
+    {
+      "id": "59440001",
+      "cp": "59440",
+      "ville": "Avesnelles",
+      "adresse": "ROUTE DE LANDRECIES",
+      "pop": "R",
+      "lat": 5011924,
+      "lng": 392756,
+      "fuels": {
+        "gazole": 1.91,
+        "sp98": 2.069,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "59197001",
+      "cp": "59440",
+      "ville": "Avesnelles",
+      "adresse": "route de Trélon",
+      "pop": "R",
+      "lat": 5011800,
+      "lng": 394500,
+      "fuels": {
+        "gazole": 2.009,
+        "sp98": 2.038,
+        "e10": 1.924
+      }
+    },
+    {
+      "id": "59129004",
+      "cp": "59129",
+      "ville": "Avesnes-les-Aubert",
+      "adresse": "79 B RUE SADI CARNOT",
+      "pop": "R",
+      "lat": 5019210.05,
+      "lng": 338466.06,
+      "fuels": {
+        "gazole": 1.908,
+        "sp98": 2.023,
+        "e10": 1.924
+      }
+    },
+    {
+      "id": "59129001",
+      "cp": "59129",
+      "ville": "Avesnes-les-Aubert",
+      "adresse": "Rue Sadi Carnot",
+      "pop": "R",
+      "lat": 5019000,
+      "lng": 338800,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 2.019,
+        "e10": 1.929
+      }
+    },
+    {
       "id": "59440002",
       "cp": "59440",
       "ville": "Avesnes-sur-Helpe",
@@ -71,6 +280,321 @@
         "gazole": 1.953,
         "sp98": 2.009,
         "e10": 1.908
+      }
+    },
+    {
+      "id": "59270001",
+      "cp": "59270",
+      "ville": "Bailleul",
+      "adresse": "601 Route de Méteren",
+      "pop": "R",
+      "lat": 5073900,
+      "lng": 272600,
+      "fuels": {
+        "gazole": 1.957,
+        "sp98": 1.985,
+        "e10": 1.905
+      }
+    },
+    {
+      "id": "59270002",
+      "cp": "59270",
+      "ville": "Bailleul",
+      "adresse": "Avenue des Nations Unies",
+      "pop": "R",
+      "lat": 5072400,
+      "lng": 274000,
+      "fuels": {
+        "gazole": 1.945,
+        "sp98": 1.972,
+        "e10": 1.896,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "59270003",
+      "cp": "59270",
+      "ville": "Bailleul",
+      "adresse": "Rue Johannes Gutenberg",
+      "pop": "R",
+      "lat": 5073084,
+      "lng": 274532,
+      "fuels": {
+        "gazole": 1.952,
+        "sp98": 2.003,
+        "e10": 1.905
+      }
+    },
+    {
+      "id": "59780001",
+      "cp": "59780",
+      "ville": "Baisieux",
+      "adresse": "31 AVENUE D OGIMONT",
+      "pop": "R",
+      "lat": 5061500,
+      "lng": 323700,
+      "fuels": {
+        "gazole": 1.986,
+        "sp98": 2.026,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "59221001",
+      "cp": "59221",
+      "ville": "Bauvin",
+      "adresse": "75 bis rue jean jaures",
+      "pop": "R",
+      "lat": 5051700,
+      "lng": 289400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.976,
+        "sp98": 2.199
+      }
+    },
+    {
+      "id": "59570001",
+      "cp": "59570",
+      "ville": "Bavay",
+      "adresse": "Rue des Platanes",
+      "pop": "R",
+      "lat": 5030122,
+      "lng": 379447,
+      "fuels": {
+        "gazole": 2.03,
+        "sp98": 2.031,
+        "e10": 1.925
+      }
+    },
+    {
+      "id": "59157002",
+      "cp": "59157",
+      "ville": "Beauvois-en-Cambrésis",
+      "adresse": "RD 643 LE JEUNE BOIS",
+      "pop": "R",
+      "lat": 5013800,
+      "lng": 339500,
+      "fuels": {
+        "gazole": 1.922,
+        "sp98": 1.99,
+        "e10": 1.924,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "59135001",
+      "cp": "59135",
+      "ville": "Bellaing",
+      "adresse": "cd 13Lieu dit LEBERGER",
+      "pop": "R",
+      "lat": 5036500,
+      "lng": 343500,
+      "fuels": {
+        "gazole": 1.931,
+        "sp98": 1.976,
+        "e10": 1.867,
+        "e85": 0.761
+      }
+    },
+    {
+      "id": "59380002",
+      "cp": "59380",
+      "ville": "Bierne",
+      "adresse": "16 rue nationale",
+      "pop": "R",
+      "lat": 5097300,
+      "lng": 242300,
+      "fuels": {
+        "gazole": 1.987,
+        "sp98": 2.026,
+        "e10": 1.926
+      }
+    },
+    {
+      "id": "59910001",
+      "cp": "59910",
+      "ville": "Bondues",
+      "adresse": "AVENUE DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 5070600,
+      "lng": 310134,
+      "fuels": {
+        "gazole": 1.978,
+        "sp98": 2.058,
+        "e10": 1.934,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59111001",
+      "cp": "59111",
+      "ville": "Bouchain",
+      "adresse": "AVENUE KENNEDY",
+      "pop": "R",
+      "lat": 5029249.14941,
+      "lng": 330109.41552,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 2.064,
+        "e10": 1.941
+      }
+    },
+    {
+      "id": "59630003",
+      "cp": "59630",
+      "ville": "Bourbourg",
+      "adresse": "3 Rue Jean Varlet",
+      "pop": "R",
+      "lat": 5094384.99861,
+      "lng": 219784.86125,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.919,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59630002",
+      "cp": "59630",
+      "ville": "Bourbourg",
+      "adresse": "CHEMIN DE LA VIEILLE COLME",
+      "pop": "R",
+      "lat": 5093921,
+      "lng": 219998,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.959
+      }
+    },
+    {
+      "id": "59166001",
+      "cp": "59166",
+      "ville": "Bousbecque",
+      "adresse": "27 rue Auger",
+      "pop": "R",
+      "lat": 5076700,
+      "lng": 308700,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.984,
+        "sp98": 2.029,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "59222001",
+      "cp": "59222",
+      "ville": "Bousies",
+      "adresse": "RUE DE LANDRECIES",
+      "pop": "R",
+      "lat": 5015100,
+      "lng": 362300,
+      "fuels": {
+        "gazole": 1.955,
+        "sp95": 1.929,
+        "sp98": 2.08
+      }
+    },
+    {
+      "id": "59123001",
+      "cp": "59123",
+      "ville": "Bray-Dunes",
+      "adresse": "49 RUE PIERRE DECOCK",
+      "pop": "R",
+      "lat": 5106500,
+      "lng": 252000,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 1.969,
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "59860003",
+      "cp": "59860",
+      "ville": "Bruay-sur-l'Escaut",
+      "adresse": "386-388 Rue Jean Jaurès",
+      "pop": "R",
+      "lat": 5039900,
+      "lng": 354400,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 1.999,
+        "e10": 1.919,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "59554005",
+      "cp": "59554",
+      "ville": "Cambrai",
+      "adresse": "16 BIS, ROUTE DE BAPAUME",
+      "pop": "R",
+      "lat": 5017600,
+      "lng": 320400,
+      "fuels": {
+        "gazole": 1.88,
+        "sp98": 1.987,
+        "e10": 1.871
+      }
+    },
+    {
+      "id": "59400005",
+      "cp": "59400",
+      "ville": "Cambrai",
+      "adresse": "187 Rue Saint-Ladre",
+      "pop": "R",
+      "lat": 5016300,
+      "lng": 324800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.996,
+        "sp98": 2.09
+      }
+    },
+    {
+      "id": "59400006",
+      "cp": "59400",
+      "ville": "Cambrai",
+      "adresse": "2 Avenue Georges Nuttin",
+      "pop": "R",
+      "lat": 5014900,
+      "lng": 322200,
+      "fuels": {
+        "gazole": 1.946,
+        "sp98": 2.019,
+        "e10": 1.908,
+        "e85": 0.809,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "59400007",
+      "cp": "59400",
+      "ville": "Cambrai",
+      "adresse": "2, RUE DE CAUDRY",
+      "pop": "R",
+      "lat": 5016700,
+      "lng": 323800,
+      "fuels": {
+        "gazole": 1.986,
+        "e10": 1.966
+      }
+    },
+    {
+      "id": "59400003",
+      "cp": "59400",
+      "ville": "Cambrai",
+      "adresse": "491 Rue de Landrecies",
+      "pop": "R",
+      "lat": 5017500,
+      "lng": 324800,
+      "fuels": {
+        "gazole": 1.988,
+        "sp98": 2.013,
+        "e10": 1.924
       }
     },
     {
@@ -89,6 +613,92 @@
       }
     },
     {
+      "id": "59400004",
+      "cp": "59400",
+      "ville": "Cambrai",
+      "adresse": "BLD DE LA LIBERTE",
+      "pop": "R",
+      "lat": 5016900,
+      "lng": 323200,
+      "fuels": {
+        "gazole": 1.978,
+        "sp98": 2.001,
+        "e10": 1.921
+      }
+    },
+    {
+      "id": "59780003",
+      "cp": "59780",
+      "ville": "Camphin-en-Pévèle",
+      "adresse": "RD 93 GRANDE RUE",
+      "pop": "R",
+      "lat": 5059477.455,
+      "lng": 325781.84717,
+      "fuels": {
+        "gazole": 1.986,
+        "sp98": 2.026,
+        "e10": 1.909,
+        "e85": 0.772
+      }
+    },
+    {
+      "id": "59180001",
+      "cp": "59180",
+      "ville": "Cappelle-la-Grande",
+      "adresse": "1 Rue du Hoogheporte",
+      "pop": "R",
+      "lat": 5099600,
+      "lng": 236700,
+      "fuels": {
+        "gazole": 1.997,
+        "sp95": 1.962,
+        "sp98": 2.041
+      }
+    },
+    {
+      "id": "59670001",
+      "cp": "59670",
+      "ville": "Cassel",
+      "adresse": "769 avenue Albert Mahieu",
+      "pop": "R",
+      "lat": 5079800,
+      "lng": 249400,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 1.999,
+        "sp98": 2.079
+      }
+    },
+    {
+      "id": "59540003",
+      "cp": "59540",
+      "ville": "Caudry",
+      "adresse": "Boulevard du 19 Mars 1962",
+      "pop": "R",
+      "lat": 5011300,
+      "lng": 341600,
+      "fuels": {
+        "gazole": 1.98,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "59541001",
+      "cp": "59540",
+      "ville": "Caudry",
+      "adresse": "Boulevard du 8 Mai 1945",
+      "pop": "R",
+      "lat": 5012900,
+      "lng": 342600,
+      "fuels": {
+        "gazole": 1.948,
+        "sp95": 1.958,
+        "sp98": 2.012,
+        "e10": 1.894,
+        "e85": 0.808
+      }
+    },
+    {
       "id": "59540002",
       "cp": "59540",
       "ville": "Caudry",
@@ -101,6 +711,165 @@
         "sp95": 1.959,
         "e10": 1.895,
         "e85": 0.809
+      }
+    },
+    {
+      "id": "59163002",
+      "cp": "59163",
+      "ville": "Condé-sur-l'Escaut",
+      "adresse": "46 Avenue de la Liberté",
+      "pop": "R",
+      "lat": 5045300,
+      "lng": 358900,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 1.99,
+        "e10": 1.965,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "59163001",
+      "cp": "59163",
+      "ville": "Condé-sur-l'Escaut",
+      "adresse": "avenue de la liberté",
+      "pop": "R",
+      "lat": 5045200,
+      "lng": 359100,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 1.982,
+        "sp98": 2.063,
+        "e10": 1.936
+      }
+    },
+    {
+      "id": "59210003",
+      "cp": "59210",
+      "ville": "Coudekerque-Branche",
+      "adresse": "109 Route de Furnes",
+      "pop": "R",
+      "lat": 5103376,
+      "lng": 240223,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.979,
+        "sp98": 2.038
+      }
+    },
+    {
+      "id": "59210005",
+      "cp": "59210",
+      "ville": "Coudekerque-Branche",
+      "adresse": "14 ROUTE DE FURNES",
+      "pop": "R",
+      "lat": 5103200,
+      "lng": 239400,
+      "fuels": {
+        "gazole": 1.955,
+        "sp98": 1.99,
+        "e10": 1.921
+      }
+    },
+    {
+      "id": "59210004",
+      "cp": "59210",
+      "ville": "Coudekerque-Branche",
+      "adresse": "89 Avenue Jean Baptiste Lebas",
+      "pop": "R",
+      "lat": 5102400,
+      "lng": 237000,
+      "fuels": {
+        "gazole": 1.923,
+        "sp98": 1.999,
+        "e10": 1.883
+      }
+    },
+    {
+      "id": "59411001",
+      "cp": "59210",
+      "ville": "Coudekerque-Branche",
+      "adresse": "Rue Jacquard",
+      "pop": "R",
+      "lat": 5101600,
+      "lng": 238200,
+      "fuels": {
+        "gazole": 1.925,
+        "sp98": 1.99,
+        "e10": 1.885,
+        "e85": 0.892,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "59149002",
+      "cp": "59149",
+      "ville": "Cousolre",
+      "adresse": "72 route nationale",
+      "pop": "R",
+      "lat": 5024755.36545,
+      "lng": 414879.85556,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.036,
+        "e10": 1.923
+      }
+    },
+    {
+      "id": "59553003",
+      "cp": "59553",
+      "ville": "Cuincy",
+      "adresse": "759 RUE JEAN JAURES",
+      "pop": "R",
+      "lat": 5037748.61351,
+      "lng": 305775.04189,
+      "fuels": {
+        "gazole": 1.907,
+        "e10": 1.915
+      }
+    },
+    {
+      "id": "59830001",
+      "cp": "59830",
+      "ville": "Cysoing",
+      "adresse": "90 rue de la savonnière",
+      "pop": "R",
+      "lat": 5057523.3,
+      "lng": 321738.3,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.03,
+        "e10": 1.915
+      }
+    },
+    {
+      "id": "59450001",
+      "cp": "59187",
+      "ville": "Dechy",
+      "adresse": "Zone du Luc",
+      "pop": "R",
+      "lat": 5034000,
+      "lng": 310000,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.059,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "59721001",
+      "cp": "59220",
+      "ville": "Denain",
+      "adresse": "Rue de Villars",
+      "pop": "R",
+      "lat": 5032700,
+      "lng": 339400,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 2.019,
+        "sp98": 2.139,
+        "e10": 1.969,
+        "e85": 0.859
       }
     },
     {
@@ -118,6 +887,51 @@
       }
     },
     {
+      "id": "59500009",
+      "cp": "59500",
+      "ville": "Douai",
+      "adresse": "143 BOULEVARD PAUL HAYEZ",
+      "pop": "R",
+      "lat": 5036300,
+      "lng": 308300,
+      "fuels": {
+        "gazole": 1.962,
+        "sp98": 1.99,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "59500010",
+      "cp": "59500",
+      "ville": "Douai",
+      "adresse": "307 BOULEVARD PASTEUR",
+      "pop": "R",
+      "lat": 5037053.89,
+      "lng": 307672.51,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.149,
+        "e10": 2.079,
+        "e85": 0.899,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "59501001",
+      "cp": "59500",
+      "ville": "Douai",
+      "adresse": "345 Boulevard Louis Breguet",
+      "pop": "R",
+      "lat": 5038100,
+      "lng": 308500,
+      "fuels": {
+        "gazole": 1.909,
+        "sp98": 2.019,
+        "e10": 1.909,
+        "e85": 0.789
+      }
+    },
+    {
       "id": "59282001",
       "cp": "59282",
       "ville": "Douchy-les-Mines",
@@ -132,6 +946,310 @@
       }
     },
     {
+      "id": "59430002",
+      "cp": "59430",
+      "ville": "Dunkerque",
+      "adresse": "18 Rue de la République",
+      "pop": "R",
+      "lat": 5102900,
+      "lng": 235900,
+      "fuels": {
+        "gazole": 1.973,
+        "sp98": 2.053,
+        "e10": 1.94,
+        "e85": 0.927
+      }
+    },
+    {
+      "id": "59240001",
+      "cp": "59240",
+      "ville": "Dunkerque",
+      "adresse": "2 Rue des Forts",
+      "pop": "R",
+      "lat": 5104600,
+      "lng": 241500,
+      "fuels": {
+        "gazole": 1.924,
+        "sp95": 1.956,
+        "sp98": 1.989
+      }
+    },
+    {
+      "id": "59640002",
+      "cp": "59640",
+      "ville": "Dunkerque",
+      "adresse": "AV DE LA VILLETTE",
+      "pop": "R",
+      "lat": 5102400,
+      "lng": 236000,
+      "fuels": {
+        "gazole": 1.861,
+        "sp98": 1.957,
+        "e10": 1.837,
+        "e85": 0.892
+      }
+    },
+    {
+      "id": "59240002",
+      "cp": "59240",
+      "ville": "Dunkerque",
+      "adresse": "Boulevard de l'Europe",
+      "pop": "R",
+      "lat": 5105000,
+      "lng": 241400,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.959,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "59430001",
+      "cp": "59430",
+      "ville": "Dunkerque",
+      "adresse": "ZAC des Jardins",
+      "pop": "R",
+      "lat": 5102330.98397,
+      "lng": 234005.36207,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.059,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "59320005",
+      "cp": "59320",
+      "ville": "Emmerin",
+      "adresse": "Rue de la Canteraine",
+      "pop": "R",
+      "lat": 5059800,
+      "lng": 299400,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.019,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "59193003",
+      "cp": "59193",
+      "ville": "Erquinghem-Lys",
+      "adresse": "Rue d'Armentières",
+      "pop": "R",
+      "lat": 5067715.97,
+      "lng": 284638.16,
+      "fuels": {
+        "gazole": 2.028,
+        "sp98": 2.031,
+        "e10": 1.908
+      }
+    },
+    {
+      "id": "59161001",
+      "cp": "59161",
+      "ville": "Escaudœuvres",
+      "adresse": "2 Rue Jean Jaurès",
+      "pop": "R",
+      "lat": 5018500,
+      "lng": 325400,
+      "fuels": {
+        "gazole": 1.946,
+        "sp98": 2.019,
+        "e10": 1.908,
+        "gplc": 1.065
+      }
+    },
+    {
+      "id": "59278003",
+      "cp": "59278",
+      "ville": "Escautpont",
+      "adresse": "10 RUE JEAN JAURES",
+      "pop": "R",
+      "lat": 5042400,
+      "lng": 356400,
+      "fuels": {
+        "gazole": 1.97,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "59940001",
+      "cp": "59940",
+      "ville": "Estaires",
+      "adresse": "ROUTE DE MERVILLE",
+      "pop": "R",
+      "lat": 5064200,
+      "lng": 270500,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 1.999,
+        "e10": 1.898,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59155007",
+      "cp": "59155",
+      "ville": "Faches-Thumesnil",
+      "adresse": "C.C. AUCHAN - LIEU-DIT MOULIN DE",
+      "pop": "R",
+      "lat": 5058400,
+      "lng": 308400,
+      "fuels": {
+        "gazole": 1.865,
+        "sp98": 1.965,
+        "e10": 1.845,
+        "e85": 0.822
+      }
+    },
+    {
+      "id": "59179002",
+      "cp": "59179",
+      "ville": "Fenain",
+      "adresse": "79 PLACE DES FUSILLES",
+      "pop": "R",
+      "lat": 5036600,
+      "lng": 330000,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.999,
+        "sp98": 2.049
+      }
+    },
+    {
+      "id": "59680001",
+      "cp": "59680",
+      "ville": "Ferrière-la-Grande",
+      "adresse": "Avenue Georges Clémenceau",
+      "pop": "R",
+      "lat": 5026010,
+      "lng": 400607,
+      "fuels": {
+        "gazole": 1.95,
+        "sp95": 1.983,
+        "sp98": 2.065
+      }
+    },
+    {
+      "id": "59128002",
+      "cp": "59128",
+      "ville": "Flers-en-Escrebieux",
+      "adresse": "ANCIENNE RN 43",
+      "pop": "R",
+      "lat": 5040000,
+      "lng": 304300,
+      "fuels": {
+        "gazole": 1.967,
+        "sp95": 1.985,
+        "sp98": 2.019,
+        "e10": 1.939,
+        "e85": 0.799,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "59148003",
+      "cp": "59148",
+      "ville": "Flines-lez-Raches",
+      "adresse": "15 Rue des Résistants",
+      "pop": "R",
+      "lat": 5042800,
+      "lng": 318000,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 2.039,
+        "sp98": 2.089
+      }
+    },
+    {
+      "id": "59610004",
+      "cp": "59610",
+      "ville": "Fourmies",
+      "adresse": "1 PLACE DERIGNY",
+      "pop": "R",
+      "lat": 5002000,
+      "lng": 403000,
+      "fuels": {
+        "gazole": 1.887,
+        "sp98": 1.99,
+        "e10": 1.89,
+        "e85": 0.815
+      }
+    },
+    {
+      "id": "59610001",
+      "cp": "59610",
+      "ville": "Fourmies",
+      "adresse": "61 Rue Jean Jaurès",
+      "pop": "R",
+      "lat": 5001800,
+      "lng": 405300,
+      "fuels": {
+        "gazole": 1.894,
+        "sp98": 1.99,
+        "e10": 1.89
+      }
+    },
+    {
+      "id": "59242006",
+      "cp": "59242",
+      "ville": "Genech",
+      "adresse": "A 23 sens Lille-Valenciennes Aire de Genech",
+      "pop": "A",
+      "lat": 5051700,
+      "lng": 320800,
+      "fuels": {
+        "gazole": 1.962,
+        "sp98": 1.99,
+        "e10": 1.948,
+        "e85": 0.834
+      }
+    },
+    {
+      "id": "59231002",
+      "cp": "59231",
+      "ville": "Gouzeaucourt",
+      "adresse": "181 Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 5005700,
+      "lng": 313100,
+      "fuels": {
+        "gazole": 1.947,
+        "sp98": 2.039,
+        "e10": 1.92
+      }
+    },
+    {
+      "id": "59153001",
+      "cp": "59153",
+      "ville": "Grand-Fort-Philippe",
+      "adresse": "Le cochon noir",
+      "pop": "R",
+      "lat": 5098911.36748,
+      "lng": 211230.3883,
+      "fuels": {
+        "gazole": 2,
+        "sp98": 2.04,
+        "e10": 1.97,
+        "e85": 0.82
+      }
+    },
+    {
+      "id": "59760005",
+      "cp": "59760",
+      "ville": "Grande-Synthe",
+      "adresse": "1 AV DE PETITE SYNTHE",
+      "pop": "R",
+      "lat": 5101400,
+      "lng": 230700,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 1.99,
+        "e10": 1.939
+      }
+    },
+    {
       "id": "59760001",
       "cp": "59760",
       "ville": "Grande-Synthe",
@@ -143,6 +1261,238 @@
         "gazole": 1.979,
         "sp98": 2.059,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "59760002",
+      "cp": "59760",
+      "ville": "Grande-Synthe",
+      "adresse": "Voie du Courgain - Rocade Sud - A16",
+      "pop": "A",
+      "lat": 5100400,
+      "lng": 230400,
+      "fuels": {
+        "gazole": 2.109,
+        "sp98": 2.209,
+        "e10": 2.089,
+        "gplc": 1.329
+      }
+    },
+    {
+      "id": "59820001",
+      "cp": "59820",
+      "ville": "Gravelines",
+      "adresse": "ROUTE DE DUNKERQUE",
+      "pop": "R",
+      "lat": 5099600,
+      "lng": 214900,
+      "fuels": {
+        "gazole": 1.966,
+        "sp98": 1.99,
+        "e10": 1.946,
+        "gplc": 1.07
+      }
+    },
+    {
+      "id": "59287002",
+      "cp": "59287",
+      "ville": "Guesnain",
+      "adresse": "bd ambroize croizat",
+      "pop": "R",
+      "lat": 5034647.28361,
+      "lng": 314827.0737,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.066,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "59320007",
+      "cp": "59320",
+      "ville": "Hallennes-lez-Haubourdin",
+      "adresse": "7 RUE PAUL COLETTE",
+      "pop": "R",
+      "lat": 5060481.49967,
+      "lng": 295308.69634,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.019,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "59320006",
+      "cp": "59320",
+      "ville": "Hallennes-lez-Haubourdin",
+      "adresse": "RN 41",
+      "pop": "R",
+      "lat": 5060000,
+      "lng": 293800,
+      "fuels": {
+        "gazole": 1.865,
+        "sp98": 1.969,
+        "e10": 1.851,
+        "e85": 0.814,
+        "gplc": 1.006
+      }
+    },
+    {
+      "id": "59250001",
+      "cp": "59250",
+      "ville": "Halluin",
+      "adresse": "av Abbé Lemire",
+      "pop": "R",
+      "lat": 5078390.41325,
+      "lng": 314012.14931,
+      "fuels": {
+        "gazole": 1.836,
+        "sp98": 1.966,
+        "e10": 1.84
+      }
+    },
+    {
+      "id": "59250002",
+      "cp": "59250",
+      "ville": "Halluin",
+      "adresse": "Boulevard de Roncq",
+      "pop": "R",
+      "lat": 5077200,
+      "lng": 312700,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.939,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59198002",
+      "cp": "59198",
+      "ville": "Haspres",
+      "adresse": "2 RUE DE VALENCIENNES",
+      "pop": "R",
+      "lat": 5026000,
+      "lng": 341800,
+      "fuels": {
+        "gazole": 2.14,
+        "sp98": 1.99,
+        "e10": 1.98
+      }
+    },
+    {
+      "id": "59570003",
+      "cp": "59330",
+      "ville": "Hautmont",
+      "adresse": "VOIE RAPIDE HAUTMONT-MAUBEUGE",
+      "pop": "R",
+      "lat": 5025800,
+      "lng": 391300,
+      "fuels": {
+        "gazole": 1.969,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59190005",
+      "cp": "59190",
+      "ville": "Hazebrouck",
+      "adresse": "10 Boulevard de l'Abbé Lemire",
+      "pop": "R",
+      "lat": 5072500,
+      "lng": 253600,
+      "fuels": {
+        "gazole": 2.085,
+        "sp95": 1.985,
+        "e85": 1.049
+      }
+    },
+    {
+      "id": "59190010",
+      "cp": "59190",
+      "ville": "Hazebrouck",
+      "adresse": "48 rue notre dame",
+      "pop": "R",
+      "lat": 5072829.80118,
+      "lng": 254297.65413,
+      "fuels": {
+        "gazole": 1.915,
+        "sp98": 1.99,
+        "e10": 1.908
+      }
+    },
+    {
+      "id": "59190004",
+      "cp": "59190",
+      "ville": "Hazebrouck",
+      "adresse": "88 Rue Notre-Dame",
+      "pop": "R",
+      "lat": 5073100,
+      "lng": 254400,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.971,
+        "e10": 1.889,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "59190002",
+      "cp": "59190",
+      "ville": "Hazebrouck",
+      "adresse": "Parc d'Activités de la Creule",
+      "pop": "R",
+      "lat": 5073900,
+      "lng": 254900,
+      "fuels": {
+        "gazole": 1.899,
+        "sp95": 1.939,
+        "sp98": 1.971
+      }
+    },
+    {
+      "id": "59190003",
+      "cp": "59190",
+      "ville": "Hazebrouck",
+      "adresse": "Rue de l'Epeule",
+      "pop": "R",
+      "lat": 5071500,
+      "lng": 254300,
+      "fuels": {
+        "gazole": 1.899,
+        "sp95": 1.939,
+        "sp98": 1.971,
+        "e10": 1.889,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "59279004",
+      "cp": "59122",
+      "ville": "Hondschoote",
+      "adresse": "17 PLACE DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 5098200,
+      "lng": 258400,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.09,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "59141002",
+      "cp": "59141",
+      "ville": "Iwuy",
+      "adresse": "Rue Clemenceau",
+      "pop": "R",
+      "lat": 5022800,
+      "lng": 332000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.989,
+        "sp98": 2.059
       }
     },
     {
@@ -161,6 +1511,107 @@
       }
     },
     {
+      "id": "59460001",
+      "cp": "59460",
+      "ville": "Jeumont",
+      "adresse": "Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 5028975,
+      "lng": 410231,
+      "fuels": {
+        "sp98": 2.15,
+        "e10": 2.07
+      }
+    },
+    {
+      "id": "59480002",
+      "cp": "59480",
+      "ville": "La Bassée",
+      "adresse": "10 Rue Maurice Bouchery",
+      "pop": "R",
+      "lat": 5053009.05863,
+      "lng": 280486.53758,
+      "fuels": {
+        "gazole": 1.86,
+        "sp98": 1.999,
+        "e10": 1.891
+      }
+    },
+    {
+      "id": "59930002",
+      "cp": "59930",
+      "ville": "La Chapelle-d'Armentières",
+      "adresse": "ROUTE NATIONALE RD933",
+      "pop": "R",
+      "lat": 5067300,
+      "lng": 289700,
+      "fuels": {
+        "gazole": 1.866,
+        "sp98": 1.976,
+        "e10": 1.86,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59253001",
+      "cp": "59253",
+      "ville": "La Gorgue",
+      "adresse": "Avenue des Aulnes",
+      "pop": "R",
+      "lat": 5063346.09022,
+      "lng": 271151.36569,
+      "fuels": {
+        "gazole": 1.885,
+        "sp98": 1.989,
+        "e10": 1.875
+      }
+    },
+    {
+      "id": "59110007",
+      "cp": "59110",
+      "ville": "La Madeleine",
+      "adresse": "10 Rue Bernard Ruyant",
+      "pop": "R",
+      "lat": 5066100,
+      "lng": 306800,
+      "fuels": {
+        "gazole": 1.879,
+        "sp98": 1.985,
+        "e10": 1.869,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "59110006",
+      "cp": "59110",
+      "ville": "La Madeleine",
+      "adresse": "184 RUE DU GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 5065240.806,
+      "lng": 307726.756,
+      "fuels": {
+        "gazole": 1.867,
+        "sp98": 1.971,
+        "e85": 0.812
+      }
+    },
+    {
+      "id": "59110005",
+      "cp": "59110",
+      "ville": "La Madeleine",
+      "adresse": "BOULEVARD ROBERT SCHUMANN",
+      "pop": "R",
+      "lat": 5065100.8579,
+      "lng": 306270.15485,
+      "fuels": {
+        "gazole": 1.867,
+        "sp98": 1.973,
+        "e10": 1.857,
+        "e85": 0.814,
+        "gplc": 1.006
+      }
+    },
+    {
       "id": "59110001",
       "cp": "59110",
       "ville": "La Madeleine",
@@ -172,6 +1623,21 @@
         "gazole": 1.936,
         "sp98": 2.036,
         "e10": 1.916
+      }
+    },
+    {
+      "id": "59174003",
+      "cp": "59174",
+      "ville": "La Sentinelle",
+      "adresse": "960 avenue Jean Jaurès",
+      "pop": "R",
+      "lat": 5034600,
+      "lng": 348000,
+      "fuels": {
+        "gazole": 1.934,
+        "sp98": 2.006,
+        "e10": 1.908,
+        "e85": 0.809
       }
     },
     {
@@ -190,6 +1656,21 @@
       }
     },
     {
+      "id": "59167003",
+      "cp": "59167",
+      "ville": "Lallaing",
+      "adresse": "Rue de Pecquencourt",
+      "pop": "R",
+      "lat": 5038890.91232,
+      "lng": 317392.98638,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.089,
+        "e10": 1.959,
+        "e85": 0.819
+      }
+    },
+    {
       "id": "59130001",
       "cp": "59130",
       "ville": "Lambersart",
@@ -204,6 +1685,35 @@
       }
     },
     {
+      "id": "59130002",
+      "cp": "59130",
+      "ville": "Lambersart",
+      "adresse": "9 Rue Gustave Eiffel",
+      "pop": "R",
+      "lat": 5065900,
+      "lng": 301300,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59550002",
+      "cp": "59550",
+      "ville": "Landrecies",
+      "adresse": "57 Faubourg de France",
+      "pop": "R",
+      "lat": 5011864,
+      "lng": 370226,
+      "fuels": {
+        "gazole": 2.09,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "59550001",
       "cp": "59550",
       "ville": "Landrecies",
@@ -215,6 +1725,820 @@
         "gazole": 1.99,
         "sp98": 2.054,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "59219001",
+      "cp": "59219",
+      "ville": "Larouillies",
+      "adresse": "58 Route Nationale",
+      "pop": "R",
+      "lat": 5003100,
+      "lng": 392400,
+      "fuels": {
+        "gazole": 2.11
+      }
+    },
+    {
+      "id": "59360003",
+      "cp": "59360",
+      "ville": "Le Cateau-Cambrésis",
+      "adresse": "37 av Mal de Lattre de Tassigny",
+      "pop": "R",
+      "lat": 5009447.91504,
+      "lng": 353760.95732,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.029,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59134001",
+      "cp": "59134",
+      "ville": "Le Maisnil",
+      "adresse": "20 rue du haut quesnoy",
+      "pop": "R",
+      "lat": 5061300,
+      "lng": 288300,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.109,
+        "e10": 1.929,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "59530001",
+      "cp": "59530",
+      "ville": "Le Quesnoy",
+      "adresse": "2 PLACE DE LA GARE",
+      "pop": "R",
+      "lat": 5025000,
+      "lng": 364500,
+      "fuels": {
+        "gazole": 1.952,
+        "sp98": 2.018,
+        "e10": 1.914
+      }
+    },
+    {
+      "id": "59530002",
+      "cp": "59530",
+      "ville": "Le Quesnoy",
+      "adresse": "Centre Commercial Les Portes de l'Avesnois ZAE Ouest",
+      "pop": "R",
+      "lat": 5025500,
+      "lng": 363500,
+      "fuels": {
+        "gazole": 1.943,
+        "sp98": 2.018,
+        "e10": 1.905,
+        "e85": 0.798,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "59115001",
+      "cp": "59115",
+      "ville": "Leers",
+      "adresse": "1, avenue de l'Europe",
+      "pop": "R",
+      "lat": 5068000,
+      "lng": 322300,
+      "fuels": {
+        "gazole": 1.936,
+        "sp98": 1.984,
+        "e10": 1.893,
+        "e85": 0.821
+      }
+    },
+    {
+      "id": "59817002",
+      "cp": "59817",
+      "ville": "Lesquin",
+      "adresse": "BOULEVARD DU BOIS D'HENCHEMONT",
+      "pop": "R",
+      "lat": 5058123.99739,
+      "lng": 311136.89595,
+      "fuels": {
+        "gazole": 2.218
+      }
+    },
+    {
+      "id": "59260007",
+      "cp": "59260",
+      "ville": "Lezennes",
+      "adresse": "BOULEVARD DE TOURNAI",
+      "pop": "R",
+      "lat": 5061600,
+      "lng": 311900,
+      "fuels": {
+        "gazole": 1.864,
+        "sp98": 1.965,
+        "e10": 1.849,
+        "e85": 0.821
+      }
+    },
+    {
+      "id": "59000016",
+      "cp": "59000",
+      "ville": "Lille",
+      "adresse": "112 RUE DE LA BASSEE",
+      "pop": "R",
+      "lat": 5062600,
+      "lng": 303500,
+      "fuels": {
+        "gazole": 1.963,
+        "sp98": 1.99,
+        "e10": 1.946,
+        "e85": 0.836
+      }
+    },
+    {
+      "id": "59160002",
+      "cp": "59160",
+      "ville": "Lille",
+      "adresse": "130 RUE DU GRAND BUT",
+      "pop": "R",
+      "lat": 5064900,
+      "lng": 298000,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.14,
+        "e10": 1.9,
+        "e85": 0.797,
+        "gplc": 1.07
+      }
+    },
+    {
+      "id": "59160006",
+      "cp": "59160",
+      "ville": "Lille",
+      "adresse": "16 RUE HEGEL",
+      "pop": "R",
+      "lat": 5062869.85182,
+      "lng": 301746.57062,
+      "fuels": {
+        "gazole": 1.9,
+        "e10": 1.882,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "59000020",
+      "cp": "59000",
+      "ville": "Lille",
+      "adresse": "17 A 25 RUE ROGER SALENGRO",
+      "pop": "R",
+      "lat": 5062900,
+      "lng": 310300,
+      "fuels": {
+        "gazole": 1.867,
+        "sp98": 1.956,
+        "e10": 1.842,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "59000019",
+      "cp": "59000",
+      "ville": "Lille",
+      "adresse": "2, RUE DE TURENNE",
+      "pop": "R",
+      "lat": 5062976.41552,
+      "lng": 303570.57117,
+      "fuels": {
+        "gazole": 1.866,
+        "sp98": 1.968,
+        "e10": 1.849,
+        "e85": 0.819,
+        "gplc": 1.006
+      }
+    },
+    {
+      "id": "59160004",
+      "cp": "59160",
+      "ville": "Lille",
+      "adresse": "219, rue Jean Jaurès",
+      "pop": "R",
+      "lat": 5064300,
+      "lng": 301200,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.019,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "59160003",
+      "cp": "59160",
+      "ville": "Lille",
+      "adresse": "293, avenue de Dunkerque",
+      "pop": "R",
+      "lat": 5063900,
+      "lng": 302100,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.129,
+        "e10": 2.019,
+        "e85": 0.955
+      }
+    },
+    {
+      "id": "59000017",
+      "cp": "59000",
+      "ville": "Lille",
+      "adresse": "365, BOULEVARD VICTOR HUGO",
+      "pop": "R",
+      "lat": 5061800,
+      "lng": 305100,
+      "fuels": {
+        "gazole": 1.858,
+        "sp98": 1.964,
+        "e10": 1.849,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "59000010",
+      "cp": "59000",
+      "ville": "Lille",
+      "adresse": "72 Avenue du Président John F. Kennedy",
+      "pop": "R",
+      "lat": 5063200,
+      "lng": 307000,
+      "fuels": {
+        "gazole": 2.009,
+        "sp98": 1.984,
+        "e10": 1.904
+      }
+    },
+    {
+      "id": "59800002",
+      "cp": "59000",
+      "ville": "Lille",
+      "adresse": "94 Rue de Lannoy",
+      "pop": "R",
+      "lat": 5063400,
+      "lng": 309800,
+      "fuels": {
+        "gazole": 1.947,
+        "sp95": 1.985,
+        "sp98": 1.999,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "59279006",
+      "cp": "59279",
+      "ville": "Loon-Plage",
+      "adresse": "1 RUE DE GRAVELINES",
+      "pop": "R",
+      "lat": 5099534.12511,
+      "lng": 220443.99878,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.069,
+        "e10": 1.959,
+        "e85": 0.859
+      }
+    },
+    {
+      "id": "59279002",
+      "cp": "59279",
+      "ville": "Loon-Plage",
+      "adresse": "1476 route nationnale 1",
+      "pop": "R",
+      "lat": 5100100,
+      "lng": 224400,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.169,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "59120002",
+      "cp": "59120",
+      "ville": "Loos",
+      "adresse": "92, RUE GEORGES POTIE",
+      "pop": "R",
+      "lat": 5061300,
+      "lng": 300500,
+      "fuels": {
+        "gazole": 1.869,
+        "sp98": 1.969,
+        "e10": 1.851,
+        "e85": 0.814
+      }
+    },
+    {
+      "id": "59156002",
+      "cp": "59156",
+      "ville": "Lourches",
+      "adresse": "RUE SOCRATE",
+      "pop": "R",
+      "lat": 5031100,
+      "lng": 334600,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.039,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "59720001",
+      "cp": "59720",
+      "ville": "Louvroil",
+      "adresse": "Rue Jules Stephenne",
+      "pop": "R",
+      "lat": 5025400,
+      "lng": 393700,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.999,
+        "e10": 1.899,
+        "e85": 0.789,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "59233004",
+      "cp": "59233",
+      "ville": "Maing",
+      "adresse": "121 rue bantegnie",
+      "pop": "R",
+      "lat": 5031304.95101,
+      "lng": 349094.02808,
+      "fuels": {
+        "gazole": 1.991,
+        "sp95": 2.024,
+        "sp98": 2.06
+      }
+    },
+    {
+      "id": "59700008",
+      "cp": "59700",
+      "ville": "Marcq-en-Barœul",
+      "adresse": "1013 AVENUE DE LA REPUBLIQUE",
+      "pop": "R",
+      "lat": 5066418,
+      "lng": 310016,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 1.99,
+        "e10": 1.95,
+        "e85": 0.831
+      }
+    },
+    {
+      "id": "59700004",
+      "cp": "59700",
+      "ville": "Marcq-en-Barœul",
+      "adresse": "115 Boulevard Clemenceau",
+      "pop": "R",
+      "lat": 5066400,
+      "lng": 308900,
+      "fuels": {
+        "gazole": 1.978,
+        "sp98": 2.004,
+        "e10": 1.924
+      }
+    },
+    {
+      "id": "59700009",
+      "cp": "59700",
+      "ville": "Marcq-en-Barœul",
+      "adresse": "PARC DU CHEVAL BLANC",
+      "pop": "R",
+      "lat": 5068300,
+      "lng": 308500,
+      "fuels": {
+        "gazole": 1.863,
+        "sp98": 1.967
+      }
+    },
+    {
+      "id": "59770003",
+      "cp": "59770",
+      "ville": "Marly",
+      "adresse": "373 Avenue Henri Barbusse",
+      "pop": "R",
+      "lat": 5034300,
+      "lng": 356200,
+      "fuels": {
+        "gazole": 1.988,
+        "sp98": 1.99,
+        "e10": 1.978
+      }
+    },
+    {
+      "id": "59520003",
+      "cp": "59520",
+      "ville": "Marquette-lez-Lille",
+      "adresse": "Rue des moissons (ZAC DU TOUQUET)",
+      "pop": "R",
+      "lat": 5068127.5113,
+      "lng": 306236.29318,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.019,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59176001",
+      "cp": "59176",
+      "ville": "Masny",
+      "adresse": "1 Rue de Monchecourt",
+      "pop": "R",
+      "lat": 5033629,
+      "lng": 320489,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.989,
+        "e10": 1.889,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59600009",
+      "cp": "59600",
+      "ville": "Maubeuge",
+      "adresse": "QUARTIER DE L'EPINETTE",
+      "pop": "R",
+      "lat": 5029008.37,
+      "lng": 396577.30405,
+      "fuels": {
+        "gazole": 1.94
+      }
+    },
+    {
+      "id": "59660002",
+      "cp": "59660",
+      "ville": "Merville",
+      "adresse": "102 route d'estaires",
+      "pop": "R",
+      "lat": 5064100,
+      "lng": 265400,
+      "fuels": {
+        "gazole": 1.885,
+        "sp98": 1.999,
+        "e10": 1.889,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "59370002",
+      "cp": "59370",
+      "ville": "Mons-en-Barœul",
+      "adresse": "25 RUE FRANKLIN",
+      "pop": "R",
+      "lat": 5064505.01179,
+      "lng": 309655.19754,
+      "fuels": {
+        "gazole": 1.937,
+        "sp95": 1.958,
+        "e10": 1.893,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59370004",
+      "cp": "59370",
+      "ville": "Mons-en-Barœul",
+      "adresse": "RN 356 - VOIE RAPIDE URBAINE",
+      "pop": "R",
+      "lat": 5064800,
+      "lng": 309900,
+      "fuels": {
+        "gazole": 1.86,
+        "sp98": 1.963,
+        "e10": 1.847,
+        "e85": 0.823,
+        "gplc": 0.996
+      }
+    },
+    {
+      "id": "59246005",
+      "cp": "59246",
+      "ville": "Mons-en-Pévèle",
+      "adresse": "1 RUE SAINT JEAN",
+      "pop": "R",
+      "lat": 5047800,
+      "lng": 311000,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.959,
+        "sp98": 2.029
+      }
+    },
+    {
+      "id": "59182001",
+      "cp": "59182",
+      "ville": "Montigny-en-Ostrevent",
+      "adresse": "Avenue Raymond Honoré",
+      "pop": "R",
+      "lat": 5036750,
+      "lng": 319031,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "59420002",
+      "cp": "59420",
+      "ville": "Mouvaux",
+      "adresse": "160 RUE DE ROUBAIX",
+      "pop": "R",
+      "lat": 5069725.81,
+      "lng": 314084.45,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.149,
+        "e10": 2.099,
+        "e85": 0.899,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "59554002",
+      "cp": "59554",
+      "ville": "Neuville-Saint-Rémy",
+      "adresse": "RD 643",
+      "pop": "R",
+      "lat": 5019307.46494,
+      "lng": 321331.27496,
+      "fuels": {
+        "gazole": 1.946,
+        "sp98": 2.019,
+        "e10": 1.908,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59850002",
+      "cp": "59850",
+      "ville": "Nieppe",
+      "adresse": "Drève Du Bailly",
+      "pop": "R",
+      "lat": 5068700,
+      "lng": 284000,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.973,
+        "e10": 1.889,
+        "e85": 0.788,
+        "gplc": 1.219
+      }
+    },
+    {
+      "id": "59264001",
+      "cp": "59264",
+      "ville": "Onnaing",
+      "adresse": "ECHANGEUR 24",
+      "pop": "R",
+      "lat": 5038731.28,
+      "lng": 359873.62,
+      "fuels": {
+        "gazole": 1.876,
+        "sp95": 1.861,
+        "sp98": 1.979,
+        "e10": 1.861,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "59310004",
+      "cp": "59310",
+      "ville": "Orchies",
+      "adresse": "Carrière Pierre Tockaert",
+      "pop": "R",
+      "lat": 5048000,
+      "lng": 324700,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.919,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59310006",
+      "cp": "59310",
+      "ville": "Orchies",
+      "adresse": "Route dpt 938 zone de l'Europe / Zone d'Activites Europe, 3",
+      "pop": "R",
+      "lat": 5047610.10965,
+      "lng": 323490.29753,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "59310001",
+      "cp": "59310",
+      "ville": "Orchies",
+      "adresse": "RUE CLAUDE JEAN",
+      "pop": "R",
+      "lat": 5047100,
+      "lng": 324800,
+      "fuels": {
+        "gazole": 1.939,
+        "e10": 1.915,
+        "e85": 0.759
+      }
+    },
+    {
+      "id": "59162001",
+      "cp": "59162",
+      "ville": "Ostricourt",
+      "adresse": "Route de Thumeries",
+      "pop": "R",
+      "lat": 5046512,
+      "lng": 302745,
+      "fuels": {
+        "gazole": 1.923,
+        "sp95": 1.985,
+        "sp98": 2.039,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59494009",
+      "cp": "59494",
+      "ville": "Petite-Forêt",
+      "adresse": "AUTOROUTE A23 6 - AIRE DE PETITE FORÊT",
+      "pop": "A",
+      "lat": 5037000,
+      "lng": 348100,
+      "fuels": {
+        "gazole": 1.875,
+        "sp98": 1.99,
+        "e10": 1.87,
+        "e85": 0.809,
+        "gplc": 0.992
+      }
+    },
+    {
+      "id": "59494002",
+      "cp": "59494",
+      "ville": "Petite-Forêt",
+      "adresse": "RN45",
+      "pop": "R",
+      "lat": 5037600,
+      "lng": 347400,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.986,
+        "e10": 1.894,
+        "e85": 0.769
+      }
+    },
+    {
+      "id": "59133002",
+      "cp": "59133",
+      "ville": "Phalempin",
+      "adresse": "47 rue Jean Baptiste Lebas",
+      "pop": "R",
+      "lat": 5052100,
+      "lng": 302100,
+      "fuels": {
+        "gazole": 2.09
+      }
+    },
+    {
+      "id": "59710002",
+      "cp": "59710",
+      "ville": "Pont-à-Marcq",
+      "adresse": "Route d'Ennevelin",
+      "pop": "R",
+      "lat": 5052800,
+      "lng": 310800,
+      "fuels": {
+        "gazole": 1.972,
+        "sp98": 2.042,
+        "e10": 1.927
+      }
+    },
+    {
+      "id": "59138001",
+      "cp": "59138",
+      "ville": "Pont-sur-Sambre",
+      "adresse": "14 Grand Rue",
+      "pop": "R",
+      "lat": 5021700,
+      "lng": 384900,
+      "fuels": {
+        "gazole": 2,
+        "sp95": 1.979,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "59243002",
+      "cp": "59243",
+      "ville": "Quarouble",
+      "adresse": "221 avenue Jean Jaurès",
+      "pop": "R",
+      "lat": 5038700,
+      "lng": 362300,
+      "fuels": {
+        "gazole": 1.968,
+        "e10": 1.895,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59890001",
+      "cp": "59890",
+      "ville": "Quesnoy-sur-Deûle",
+      "adresse": "Route de Comines",
+      "pop": "R",
+      "lat": 5071687,
+      "lng": 300160,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.083,
+        "e10": 1.954
+      }
+    },
+    {
+      "id": "59194001",
+      "cp": "59194",
+      "ville": "Râches",
+      "adresse": "510 Rue Nationale",
+      "pop": "R",
+      "lat": 5041500,
+      "lng": 313600,
+      "fuels": {
+        "gazole": 1.955,
+        "sp98": 2.059,
+        "e10": 1.926,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59554008",
+      "cp": "59554",
+      "ville": "Raillencourt-Sainte-Olle",
+      "adresse": "Route de Bapaume",
+      "pop": "R",
+      "lat": 5019198.59,
+      "lng": 317036.5,
+      "fuels": {
+        "gazole": 2.04,
+        "sp98": 2.099,
+        "e10": 1.98
+      }
+    },
+    {
+      "id": "59790001",
+      "cp": "59790",
+      "ville": "Ronchin",
+      "adresse": "331 Rue Charles Saint-Venant",
+      "pop": "R",
+      "lat": 5060020.88404,
+      "lng": 308413.54894,
+      "fuels": {
+        "gazole": 1.962,
+        "sp98": 1.99,
+        "e10": 1.933
+      }
+    },
+    {
+      "id": "59223004",
+      "cp": "59223",
+      "ville": "Roncq",
+      "adresse": "AVENUE ROBERT SCHUMANN - C I T",
+      "pop": "R",
+      "lat": 5075400,
+      "lng": 313500,
+      "fuels": {
+        "gazole": 1.875,
+        "sp98": 1.99,
+        "e10": 1.869
+      }
+    },
+    {
+      "id": "59286002",
+      "cp": "59286",
+      "ville": "Roost-Warendin",
+      "adresse": "140 rue jean jaures",
+      "pop": "R",
+      "lat": 5041977.8,
+      "lng": 310704.6,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.069,
+        "sp98": 2.099
       }
     },
     {
@@ -233,6 +2557,523 @@
       }
     },
     {
+      "id": "59100011",
+      "cp": "59100",
+      "ville": "Roubaix",
+      "adresse": "660 AVENUE DES NATIONS UNIES",
+      "pop": "R",
+      "lat": 5069800,
+      "lng": 316600,
+      "fuels": {
+        "gazole": 1.974,
+        "sp98": 1.99,
+        "e10": 1.962,
+        "e85": 0.829,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "59100003",
+      "cp": "59100",
+      "ville": "Roubaix",
+      "adresse": "70 Avenue des Nations Unies",
+      "pop": "R",
+      "lat": 5069400,
+      "lng": 318300,
+      "fuels": {
+        "gazole": 1.942,
+        "sp98": 1.986,
+        "e10": 1.883
+      }
+    },
+    {
+      "id": "59230001",
+      "cp": "59230",
+      "ville": "Saint-Amand-les-Eaux",
+      "adresse": "Rue des Faïenciers Fauquez",
+      "pop": "R",
+      "lat": 5044200,
+      "lng": 342700,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.079,
+        "e10": 1.949,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "59230002",
+      "cp": "59230",
+      "ville": "Saint-Amand-les-Eaux",
+      "adresse": "ZA DU MONT DES BRUYERES ROCADE NORD",
+      "pop": "R",
+      "lat": 5043641.83357,
+      "lng": 344006.36257,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.979,
+        "e10": 1.889,
+        "e85": 0.779
+      }
+    },
+    {
+      "id": "59350002",
+      "cp": "59350",
+      "ville": "Saint-André-lez-Lille",
+      "adresse": "17 rue du Général Leclerc",
+      "pop": "R",
+      "lat": 5065800,
+      "lng": 305200,
+      "fuels": {
+        "gazole": 2.089,
+        "sp98": 2.119,
+        "e10": 2.029,
+        "e85": 0.945
+      }
+    },
+    {
+      "id": "59520001",
+      "cp": "59520",
+      "ville": "Saint-André-lez-Lille",
+      "adresse": "Rue Georges Maertens",
+      "pop": "R",
+      "lat": 5066330,
+      "lng": 304615,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.019,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59730003",
+      "cp": "59730",
+      "ville": "Saint-Python",
+      "adresse": "RUE DU PETIT SOLESMES",
+      "pop": "R",
+      "lat": 5018900,
+      "lng": 348700,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.019,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "59880001",
+      "cp": "59880",
+      "ville": "Saint-Saulve",
+      "adresse": "125 Rue Jean Jaurès",
+      "pop": "R",
+      "lat": 5036900,
+      "lng": 355100,
+      "fuels": {
+        "gazole": 1.946,
+        "sp98": 2.01,
+        "e10": 1.901
+      }
+    },
+    {
+      "id": "59216002",
+      "cp": "59216",
+      "ville": "Sars-Poteries",
+      "adresse": "27 rue du général de gaulle",
+      "pop": "R",
+      "lat": 5016700,
+      "lng": 404100,
+      "fuels": {
+        "gazole": 2.05,
+        "sp98": 2.11,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "59770002",
+      "cp": "59770",
+      "ville": "Saultain",
+      "adresse": "Avenue Henri Barbusse",
+      "pop": "R",
+      "lat": 5034100,
+      "lng": 356600,
+      "fuels": {
+        "gazole": 2.006,
+        "sp98": 2.098,
+        "e10": 1.972,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "59113009",
+      "cp": "59113",
+      "ville": "Seclin",
+      "adresse": "1 Route d'Avelin",
+      "pop": "R",
+      "lat": 5054600,
+      "lng": 305000,
+      "fuels": {
+        "e10": 1.851,
+        "e85": 0.815,
+        "gplc": 0.989
+      }
+    },
+    {
+      "id": "59474001",
+      "cp": "59113",
+      "ville": "Seclin",
+      "adresse": "15 Route de Lille",
+      "pop": "R",
+      "lat": 5055900,
+      "lng": 303400,
+      "fuels": {
+        "gazole": 1.87,
+        "sp98": 1.99,
+        "e10": 1.866,
+        "e85": 0.823
+      }
+    },
+    {
+      "id": "59113011",
+      "cp": "59113",
+      "ville": "Seclin",
+      "adresse": "A1 Aire de Phalempin Ouest",
+      "pop": "A",
+      "lat": 5053200,
+      "lng": 304600,
+      "fuels": {
+        "gazole": 2.01,
+        "sp98": 2.049,
+        "e10": 1.963,
+        "e85": 0.93,
+        "gplc": 0.989
+      }
+    },
+    {
+      "id": "59113013",
+      "cp": "59113",
+      "ville": "Seclin",
+      "adresse": "Autoroute A1 Km 198 Sens Paris - Lille",
+      "pop": "A",
+      "lat": 5052892.16,
+      "lng": 304570.24,
+      "fuels": {
+        "gazole": 2.03,
+        "sp98": 2.06,
+        "e10": 1.98,
+        "e85": 0.99,
+        "gplc": 1.12
+      }
+    },
+    {
+      "id": "59113001",
+      "cp": "59113",
+      "ville": "Seclin",
+      "adresse": "impasse roger bouvry",
+      "pop": "R",
+      "lat": 5054100,
+      "lng": 302100,
+      "fuels": {
+        "gazole": 1.978,
+        "sp95": 1.944,
+        "e10": 1.911,
+        "e85": 0.929
+      }
+    },
+    {
+      "id": "59113006",
+      "cp": "59113",
+      "ville": "Seclin",
+      "adresse": "ZI de l'Epinette",
+      "pop": "R",
+      "lat": 5055000,
+      "lng": 305300,
+      "fuels": {
+        "gazole": 1.874,
+        "sp98": 1.974,
+        "e10": 1.867,
+        "e85": 0.779
+      }
+    },
+    {
+      "id": "59320001",
+      "cp": "59320",
+      "ville": "Sequedin",
+      "adresse": "RN 352",
+      "pop": "R",
+      "lat": 5062600,
+      "lng": 296700,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.019,
+        "e10": 1.929,
+        "e85": 0.799,
+        "gplc": 1.05
+      }
+    },
+    {
+      "id": "59450005",
+      "cp": "59450",
+      "ville": "Sin-le-Noble",
+      "adresse": "RUE AMBROISE CROIZAT",
+      "pop": "R",
+      "lat": 5036802.2611,
+      "lng": 312012.85172,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.959,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "59380005",
+      "cp": "59380",
+      "ville": "Socx",
+      "adresse": "FAUBOURG DE CASSEL RD 916",
+      "pop": "R",
+      "lat": 5096273,
+      "lng": 243290,
+      "fuels": {
+        "gazole": 1.862,
+        "sp98": 1.972,
+        "e10": 1.857,
+        "e85": 0.842
+      }
+    },
+    {
+      "id": "59490002",
+      "cp": "59490",
+      "ville": "Somain",
+      "adresse": "Boulevard Louise Michel",
+      "pop": "R",
+      "lat": 5034813.69944,
+      "lng": 328197.33452,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.989,
+        "e10": 1.889,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "59490001",
+      "cp": "59490",
+      "ville": "Somain",
+      "adresse": "Rue Pierre Sémard",
+      "pop": "R",
+      "lat": 5035800,
+      "lng": 327800,
+      "fuels": {
+        "gazole": 1.982,
+        "sp98": 2.067,
+        "e10": 1.94,
+        "e85": 0.815
+      }
+    },
+    {
+      "id": "59114003",
+      "cp": "59114",
+      "ville": "Steenvoorde",
+      "adresse": "144 Route d'Eecke",
+      "pop": "R",
+      "lat": 5080000,
+      "lng": 259200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.049,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "59114006",
+      "cp": "59114",
+      "ville": "Steenvoorde",
+      "adresse": "AUTOROUTE A25 - AIRE DE ST LAURENT",
+      "pop": "A",
+      "lat": 5082600,
+      "lng": 258600,
+      "fuels": {
+        "gazole": 2.15,
+        "sp98": 2.219,
+        "e10": 2.103,
+        "gplc": 1.206
+      }
+    },
+    {
+      "id": "59114007",
+      "cp": "59114",
+      "ville": "Steenvoorde",
+      "adresse": "AUTOROUTE A25AIRE DE SAINT ELOI",
+      "pop": "A",
+      "lat": 5083000,
+      "lng": 258000,
+      "fuels": {
+        "gazole": 2.161,
+        "sp95": 2.144,
+        "sp98": 2.2,
+        "e10": 2.114,
+        "e85": 1.269,
+        "gplc": 1.204
+      }
+    },
+    {
+      "id": "59242003",
+      "cp": "59242",
+      "ville": "Templeuve-en-Pévèle",
+      "adresse": "29, rue de Maresquel",
+      "pop": "R",
+      "lat": 5052230,
+      "lng": 317427,
+      "fuels": {
+        "gazole": 1.855,
+        "sp98": 1.96,
+        "e10": 1.88,
+        "e85": 0.764
+      }
+    },
+    {
+      "id": "59114004",
+      "cp": "59114",
+      "ville": "Terdeghem",
+      "adresse": "Route d'Hazebrouck",
+      "pop": "R",
+      "lat": 5080400,
+      "lng": 257800,
+      "fuels": {
+        "gazole": 1.919,
+        "e10": 1.919,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "59200006",
+      "cp": "59200",
+      "ville": "Tourcoing",
+      "adresse": "185 Rue du Touquet",
+      "pop": "R",
+      "lat": 5072200,
+      "lng": 317800,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.039,
+        "e10": 1.923,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59200003",
+      "cp": "59200",
+      "ville": "Tourcoing",
+      "adresse": "2 Avenue de la Marne",
+      "pop": "R",
+      "lat": 5071300,
+      "lng": 315600,
+      "fuels": {
+        "gazole": 2.004,
+        "sp98": 2.048,
+        "e10": 1.947
+      }
+    },
+    {
+      "id": "59200009",
+      "cp": "59200",
+      "ville": "Tourcoing",
+      "adresse": "344 Chaussée Denis Papin",
+      "pop": "R",
+      "lat": 5072849.88,
+      "lng": 313724.15,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 2.149,
+        "e10": 2.099,
+        "e85": 0.899
+      }
+    },
+    {
+      "id": "59200008",
+      "cp": "59200",
+      "ville": "Tourcoing",
+      "adresse": "398, BOULEVARD DE L'EGALITE",
+      "pop": "R",
+      "lat": 5073700,
+      "lng": 316900,
+      "fuels": {
+        "gazole": 1.984,
+        "e10": 1.958,
+        "e85": 0.825
+      }
+    },
+    {
+      "id": "59223001",
+      "cp": "59223",
+      "ville": "Tourcoing",
+      "adresse": "Boulevard d'Halluin",
+      "pop": "R",
+      "lat": 5074000,
+      "lng": 313900,
+      "fuels": {
+        "gazole": 1.972,
+        "sp98": 2.039,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "59132001",
+      "cp": "59132",
+      "ville": "Trélon",
+      "adresse": "103 Rue Roland Rouleau",
+      "pop": "R",
+      "lat": 5005800,
+      "lng": 408700,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 2.087,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59125003",
+      "cp": "59125",
+      "ville": "Trith-Saint-Léger",
+      "adresse": "2 Rue de la Concorde",
+      "pop": "R",
+      "lat": 5032700,
+      "lng": 348900,
+      "fuels": {
+        "gazole": 1.973,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "59300016",
+      "cp": "59300",
+      "ville": "Valenciennes",
+      "adresse": "27 BD SALY",
+      "pop": "R",
+      "lat": 5035369,
+      "lng": 352025,
+      "fuels": {
+        "gazole": 1.865,
+        "sp98": 1.986,
+        "e10": 1.86,
+        "e85": 0.815
+      }
+    },
+    {
+      "id": "59300005",
+      "cp": "59300",
+      "ville": "Valenciennes",
+      "adresse": "3 Boulevard Eisen",
+      "pop": "R",
+      "lat": 5036300,
+      "lng": 353000,
+      "fuels": {
+        "gazole": 2.082,
+        "sp98": 2.015,
+        "e10": 1.935
+      }
+    },
+    {
       "id": "59300021",
       "cp": "59300",
       "ville": "Valenciennes",
@@ -247,18 +3088,276 @@
       }
     },
     {
-      "id": "59119003",
-      "cp": "59119",
-      "ville": "Waziers",
-      "adresse": "194 Route de Tournai",
+      "id": "59300015",
+      "cp": "59300",
+      "ville": "Valenciennes",
+      "adresse": "9-12 RUE E. MACAREZ",
       "pop": "R",
-      "lat": 5039200,
-      "lng": 310800,
+      "lat": 5036900,
+      "lng": 353200,
       "fuels": {
-        "gazole": 1.868,
-        "sp98": 1.975,
-        "e10": 1.859,
+        "gazole": 1.86,
+        "sp98": 1.981,
+        "e10": 1.855,
+        "e85": 0.816
+      }
+    },
+    {
+      "id": "59300006",
+      "cp": "59300",
+      "ville": "Valenciennes",
+      "adresse": "Chemin des Bourgeois",
+      "pop": "R",
+      "lat": 5034352,
+      "lng": 351736,
+      "fuels": {
+        "gazole": 1.938,
+        "sp98": 1.986,
+        "e10": 1.894
+      }
+    },
+    {
+      "id": "59300013",
+      "cp": "59300",
+      "ville": "Valenciennes",
+      "adresse": "Rue Ernest Macarez",
+      "pop": "R",
+      "lat": 5037900,
+      "lng": 354300,
+      "fuels": {
+        "gazole": 1.944,
+        "sp98": 1.989,
+        "e10": 1.901,
         "e85": 0.815
+      }
+    },
+    {
+      "id": "59237001",
+      "cp": "59237",
+      "ville": "Verlinghem",
+      "adresse": "31 Rue de Pérenchies",
+      "pop": "R",
+      "lat": 5068003,
+      "lng": 299646,
+      "fuels": {
+        "gazole": 2.12
+      }
+    },
+    {
+      "id": "59650001",
+      "cp": "59650",
+      "ville": "Villeneuve-d'Ascq",
+      "adresse": "10 PLACE DE LA REPUBLIQUE",
+      "pop": "R",
+      "lat": 5062625,
+      "lng": 314909,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.929,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "59658001",
+      "cp": "59650",
+      "ville": "Villeneuve-d'Ascq",
+      "adresse": "18 rue jules guesde",
+      "pop": "R",
+      "lat": 5063600,
+      "lng": 312200,
+      "fuels": {
+        "gazole": 1.948,
+        "sp98": 2,
+        "e10": 1.94,
+        "e85": 0.809,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "59650013",
+      "cp": "59491",
+      "ville": "Villeneuve-d'Ascq",
+      "adresse": "33 RUE JEAN JAURES",
+      "pop": "R",
+      "lat": 5065967.936,
+      "lng": 313539.032,
+      "fuels": {
+        "gazole": 1.861,
+        "sp98": 1.978,
+        "e10": 1.849,
+        "e85": 0.822
+      }
+    },
+    {
+      "id": "59650012",
+      "cp": "59650",
+      "ville": "Villeneuve-d'Ascq",
+      "adresse": "76, RUE JEAN JAURES",
+      "pop": "R",
+      "lat": 5065925,
+      "lng": 313527,
+      "fuels": {
+        "gazole": 1.861,
+        "sp98": 1.978
+      }
+    },
+    {
+      "id": "59650011",
+      "cp": "59650",
+      "ville": "Villeneuve-d'Ascq",
+      "adresse": "Boulevard de Mons",
+      "pop": "R",
+      "lat": 5064300,
+      "lng": 314400,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.069,
+        "e10": 1.919,
+        "e85": 0.929
+      }
+    },
+    {
+      "id": "59142001",
+      "cp": "59142",
+      "ville": "Villers-Outréaux",
+      "adresse": "Rue Gambetta",
+      "pop": "R",
+      "lat": 5002900,
+      "lng": 328600,
+      "fuels": {
+        "gazole": 1.947,
+        "sp95": 1.999,
+        "sp98": 2.049
+      }
+    },
+    {
+      "id": "59118001",
+      "cp": "59118",
+      "ville": "Wambrechies",
+      "adresse": "491 rue de Quesnoy",
+      "pop": "R",
+      "lat": 5069200,
+      "lng": 305100,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.019,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "59290001",
+      "cp": "59290",
+      "ville": "Wasquehal",
+      "adresse": "AVENUE DU GRAND COTTIGNIES",
+      "pop": "R",
+      "lat": 5068194.96755,
+      "lng": 312810.00357,
+      "fuels": {
+        "gazole": 1.971,
+        "sp98": 2.022,
+        "e10": 1.924,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "59290002",
+      "cp": "59290",
+      "ville": "Wasquehal",
+      "adresse": "Rue de la Couture",
+      "pop": "R",
+      "lat": 5065300,
+      "lng": 312600,
+      "fuels": {
+        "gazole": 1.984,
+        "sp98": 1.978,
+        "e10": 1.919,
+        "e85": 0.912
+      }
+    },
+    {
+      "id": "59139001",
+      "cp": "59139",
+      "ville": "Wattignies",
+      "adresse": "205 rue clémenceau",
+      "pop": "R",
+      "lat": 5059100,
+      "lng": 305200,
+      "fuels": {
+        "gazole": 1.927,
+        "sp98": 1.987,
+        "e10": 1.898
+      }
+    },
+    {
+      "id": "59150002",
+      "cp": "59150",
+      "ville": "Wattrelos",
+      "adresse": "RUE DE STALINGRAD",
+      "pop": "R",
+      "lat": 5069700,
+      "lng": 321000,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 1.983,
+        "e10": 1.889,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "59136001",
+      "cp": "59136",
+      "ville": "Wavrin",
+      "adresse": "30 Rue de Lille",
+      "pop": "R",
+      "lat": 5058000,
+      "lng": 293300,
+      "fuels": {
+        "gazole": 1.963,
+        "sp98": 1.99,
+        "e10": 1.941,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "59610002",
+      "cp": "59610",
+      "ville": "Wignehies",
+      "adresse": "rue theophile legrand",
+      "pop": "R",
+      "lat": 5002400,
+      "lng": 402800,
+      "fuels": {
+        "gazole": 2.021,
+        "sp98": 2.04,
+        "e10": 1.943
+      }
+    },
+    {
+      "id": "59470004",
+      "cp": "59470",
+      "ville": "Wormhout",
+      "adresse": "703 Route de Bergues",
+      "pop": "R",
+      "lat": 5089100,
+      "lng": 246300,
+      "fuels": {
+        "e10": 1.858
+      }
+    },
+    {
+      "id": "59470003",
+      "cp": "59470",
+      "ville": "Wormhout",
+      "adresse": "Route de Begues",
+      "pop": "R",
+      "lat": 5089100,
+      "lng": 246300,
+      "fuels": {
+        "gazole": 1.895,
+        "sp98": 1.999,
+        "e10": 1.915,
+        "e85": 0.799
       }
     }
   ]

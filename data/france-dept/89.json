@@ -3,48 +3,68 @@
   "name": "Yonne",
   "regionCode": "BFC",
   "regionName": "Bourgogne-Franche-Comté",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 3,
+  "stationCount": 82,
   "fuels": {
     "gazole": {
-      "count": 3,
-      "mean": 1.988,
+      "count": 82,
+      "mean": 2.0115,
       "median": 1.999,
-      "min": 1.95,
-      "max": 2.015
+      "min": 1.882,
+      "max": 2.209
     },
     "sp95": {
-      "count": 1,
-      "mean": 2.099,
+      "count": 31,
+      "mean": 2.0732,
       "median": 2.099,
-      "min": 2.099,
-      "max": 2.099
+      "min": 1.969,
+      "max": 2.2
     },
     "sp98": {
-      "count": 3,
-      "mean": 2.0697,
-      "median": 2.05,
-      "min": 2.01,
-      "max": 2.149
+      "count": 59,
+      "mean": 2.0975,
+      "median": 2.099,
+      "min": 1.969,
+      "max": 2.27
     },
     "e10": {
-      "count": 2,
-      "mean": 1.9465,
-      "median": 1.9465,
-      "min": 1.946,
-      "max": 1.947
+      "count": 54,
+      "mean": 1.9985,
+      "median": 1.98,
+      "min": 1.879,
+      "max": 2.139
     },
     "e85": {
-      "count": 1,
-      "mean": 0.809,
+      "count": 25,
+      "mean": 0.8576,
       "median": 0.809,
-      "min": 0.809,
-      "max": 0.809
+      "min": 0.783,
+      "max": 0.998
+    },
+    "gplc": {
+      "count": 13,
+      "mean": 1.0942,
+      "median": 1.07,
+      "min": 0.999,
+      "max": 1.188
     }
   },
   "stations": [
+    {
+      "id": "89380006",
+      "cp": "89380",
+      "ville": "Appoigny",
+      "adresse": "RN 6 - 29 ROUTE DE PARIS",
+      "pop": "R",
+      "lat": 4788099.49376,
+      "lng": 352801.24432,
+      "fuels": {
+        "gazole": 1.901,
+        "e85": 0.839
+      }
+    },
     {
       "id": "89380001",
       "cp": "89380",
@@ -57,6 +77,289 @@
         "gazole": 1.999,
         "sp95": 2.099,
         "sp98": 2.149
+      }
+    },
+    {
+      "id": "89000008",
+      "cp": "89000",
+      "ville": "Auxerre",
+      "adresse": "14 Avenue Jean Jaurès",
+      "pop": "R",
+      "lat": 4779700,
+      "lng": 357900,
+      "fuels": {
+        "gazole": 1.974,
+        "sp98": 2.01,
+        "e10": 1.935,
+        "e85": 0.785
+      }
+    },
+    {
+      "id": "89000004",
+      "cp": "89000",
+      "ville": "Auxerre",
+      "adresse": "16 Boulevard Vaulabelle",
+      "pop": "R",
+      "lat": 4779300,
+      "lng": 357500,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 1.99,
+        "e10": 1.981
+      }
+    },
+    {
+      "id": "89000005",
+      "cp": "89000",
+      "ville": "Auxerre",
+      "adresse": "2 Avenue Jean Mermoz",
+      "pop": "R",
+      "lat": 4780400,
+      "lng": 358900,
+      "fuels": {
+        "gazole": 1.984,
+        "e10": 1.973,
+        "gplc": 1.07
+      }
+    },
+    {
+      "id": "89000011",
+      "cp": "89000",
+      "ville": "Auxerre",
+      "adresse": "97-99 Avenue de Saint-Georges",
+      "pop": "R",
+      "lat": 4779700,
+      "lng": 354700,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.969,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "89000013",
+      "cp": "89000",
+      "ville": "Auxerre",
+      "adresse": "AVENUE HAUSSMANN",
+      "pop": "R",
+      "lat": 4781500,
+      "lng": 357300,
+      "fuels": {
+        "gazole": 1.974,
+        "e10": 1.935,
+        "e85": 0.785,
+        "gplc": 1.07
+      }
+    },
+    {
+      "id": "89000012",
+      "cp": "89000",
+      "ville": "Auxerre",
+      "adresse": "Boulevard de Verdun",
+      "pop": "R",
+      "lat": 4780907.46097,
+      "lng": 355881.00228,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.069,
+        "e10": 1.959,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "89000007",
+      "cp": "89000",
+      "ville": "Auxerre",
+      "adresse": "Boulevard Gallieni",
+      "pop": "R",
+      "lat": 4779900,
+      "lng": 355300,
+      "fuels": {
+        "gazole": 1.955,
+        "sp98": 2.033,
+        "e10": 1.953
+      }
+    },
+    {
+      "id": "89000002",
+      "cp": "89000",
+      "ville": "Auxerre",
+      "adresse": "RUE DE PREUILLY",
+      "pop": "R",
+      "lat": 4779200,
+      "lng": 358000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.149,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "89200008",
+      "cp": "89200",
+      "ville": "Avallon",
+      "adresse": "6 Rue de Lyon",
+      "pop": "R",
+      "lat": 4749100,
+      "lng": 391200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.059
+      }
+    },
+    {
+      "id": "89200009",
+      "cp": "89200",
+      "ville": "Avallon",
+      "adresse": "AVENUE DE LA MORLANDE",
+      "pop": "R",
+      "lat": 4749100,
+      "lng": 390200,
+      "fuels": {
+        "gazole": 1.996,
+        "sp95": 2.028,
+        "e10": 1.968
+      }
+    },
+    {
+      "id": "89200003",
+      "cp": "89200",
+      "ville": "Avallon",
+      "adresse": "ROUTE DE TONNERRE",
+      "pop": "R",
+      "lat": 4749900,
+      "lng": 390800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.059,
+        "e10": 2.049
+      }
+    },
+    {
+      "id": "89200006",
+      "cp": "89200",
+      "ville": "Avallon",
+      "adresse": "Route Nationale 6",
+      "pop": "R",
+      "lat": 4749827.22302,
+      "lng": 389684.37998,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.039,
+        "sp98": 2.159,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "89200002",
+      "cp": "89200",
+      "ville": "Avallon",
+      "adresse": "RUE DE LA GOULOTTE",
+      "pop": "R",
+      "lat": 4749000,
+      "lng": 390000,
+      "fuels": {
+        "gazole": 1.998,
+        "sp95": 2.059
+      }
+    },
+    {
+      "id": "89220001",
+      "cp": "89220",
+      "ville": "Bléneau",
+      "adresse": "RUE DES VALLEES",
+      "pop": "R",
+      "lat": 4769400,
+      "lng": 295000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.149,
+        "e10": 2.099
+      }
+    },
+    {
+      "id": "89210002",
+      "cp": "89210",
+      "ville": "Brienon-sur-Armançon",
+      "adresse": "Route de Joigny",
+      "pop": "R",
+      "lat": 4799000,
+      "lng": 360600,
+      "fuels": {
+        "gazole": 1.996,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "89800001",
+      "cp": "89800",
+      "ville": "Chablis",
+      "adresse": "Route d'Auxerre",
+      "pop": "R",
+      "lat": 4781846,
+      "lng": 378141,
+      "fuels": {
+        "gazole": 2.005,
+        "sp98": 2.099,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "89350001",
+      "cp": "89350",
+      "ville": "Champignelles",
+      "adresse": "LOT ST MICHEL",
+      "pop": "R",
+      "lat": 4777900,
+      "lng": 307700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "89290001",
+      "cp": "89290",
+      "ville": "Champs-sur-Yonne",
+      "adresse": "CENTRE ARTISANAL",
+      "pop": "R",
+      "lat": 4774000,
+      "lng": 359900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.199
+      }
+    },
+    {
+      "id": "89120001",
+      "cp": "89120",
+      "ville": "Charny Orée de Puisaye",
+      "adresse": "34 GRANDE RUE",
+      "pop": "R",
+      "lat": 4788700,
+      "lng": 309600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "89120003",
+      "cp": "89120",
+      "ville": "Charny Orée de Puisaye",
+      "adresse": "86 Route de Saint-Martin",
+      "pop": "R",
+      "lat": 4787700,
+      "lng": 309500,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.059,
+        "e10": 1.959,
+        "e85": 0.809
       }
     },
     {
@@ -75,6 +378,477 @@
       }
     },
     {
+      "id": "89560001",
+      "cp": "89560",
+      "ville": "Courson-les-Carrières",
+      "adresse": "ROUTE NATIONALE 151",
+      "pop": "R",
+      "lat": 4761600,
+      "lng": 349700,
+      "fuels": {
+        "gazole": 2.011,
+        "e10": 1.988
+      }
+    },
+    {
+      "id": "89130001",
+      "cp": "89130",
+      "ville": "Dracy",
+      "adresse": "Rue de la Chatterie",
+      "pop": "R",
+      "lat": 4776200,
+      "lng": 325400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.149,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "89400004",
+      "cp": "89400",
+      "ville": "Épineau-les-Voves",
+      "adresse": "48, route de Sens",
+      "pop": "R",
+      "lat": 4795000,
+      "lng": 346900,
+      "fuels": {
+        "gazole": 1.955,
+        "sp98": 2.014,
+        "e10": 1.924,
+        "e85": 0.783
+      }
+    },
+    {
+      "id": "89150002",
+      "cp": "89150",
+      "ville": "Fouchères",
+      "adresse": "AUTOROUTE A 19",
+      "pop": "A",
+      "lat": 4816600,
+      "lng": 317200,
+      "fuels": {
+        "gazole": 2.205,
+        "sp98": 2.239,
+        "e10": 2.139,
+        "gplc": 1.068
+      }
+    },
+    {
+      "id": "89420008",
+      "cp": "89420",
+      "ville": "Guillon-Terre-Plaine",
+      "adresse": "AIRE DE LA CHAPONNE AUTOROUTEA6",
+      "pop": "A",
+      "lat": 4750330.28754,
+      "lng": 403523.94865,
+      "fuels": {
+        "gazole": 2.091,
+        "sp98": 2.122,
+        "e10": 2.027,
+        "e85": 0.975,
+        "gplc": 1.188
+      }
+    },
+    {
+      "id": "89420003",
+      "cp": "89420",
+      "ville": "Guillon-Terre-Plaine",
+      "adresse": "Autoroute A6 Aire de Maison Dieu - Sens Lyon Paris",
+      "pop": "A",
+      "lat": 4750451.73271,
+      "lng": 403825.50769,
+      "fuels": {
+        "gazole": 2.189,
+        "sp98": 2.239,
+        "e10": 2.139,
+        "e85": 0.989,
+        "gplc": 1.16
+      }
+    },
+    {
+      "id": "89300003",
+      "cp": "89300",
+      "ville": "Joigny",
+      "adresse": "31 Avenue Jean Hemery",
+      "pop": "R",
+      "lat": 4797700,
+      "lng": 341100,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "89300002",
+      "cp": "89300",
+      "ville": "Joigny",
+      "adresse": "Rue des Entrepreneurs",
+      "pop": "R",
+      "lat": 4798000,
+      "lng": 338200,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.059,
+        "e10": 1.925,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "89440001",
+      "cp": "89440",
+      "ville": "L'Isle-sur-Serein",
+      "adresse": "9 Route de Dissangis",
+      "pop": "R",
+      "lat": 4759142.9,
+      "lng": 400218.9,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.059,
+        "sp98": 2.199
+      }
+    },
+    {
+      "id": "89144002",
+      "cp": "89144",
+      "ville": "Ligny-le-Châtel",
+      "adresse": "13 Avenue de Chablis",
+      "pop": "R",
+      "lat": 4789500,
+      "lng": 375800,
+      "fuels": {
+        "gazole": 2.045,
+        "e10": 1.978
+      }
+    },
+    {
+      "id": "89100009",
+      "cp": "89100",
+      "ville": "Malay-le-Grand",
+      "adresse": "RN 60",
+      "pop": "R",
+      "lat": 4818722.28613,
+      "lng": 331780.4372,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.999,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "89400002",
+      "cp": "89400",
+      "ville": "Migennes",
+      "adresse": "129 Avenue Jean Jaurès",
+      "pop": "R",
+      "lat": 4796300,
+      "lng": 350200,
+      "fuels": {
+        "gazole": 1.983,
+        "sp98": 2.015,
+        "e10": 1.935
+      }
+    },
+    {
+      "id": "89400001",
+      "cp": "89400",
+      "ville": "Migennes",
+      "adresse": "Rue Pierre et Marie Curie",
+      "pop": "R",
+      "lat": 4796200,
+      "lng": 350500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "89400003",
+      "cp": "89400",
+      "ville": "Migennes",
+      "adresse": "Voie Nouvelle Les Latteux",
+      "pop": "R",
+      "lat": 4797300,
+      "lng": 351100,
+      "fuels": {
+        "gazole": 1.958,
+        "sp98": 2.014,
+        "e10": 1.924,
+        "e85": 0.808
+      }
+    },
+    {
+      "id": "89470001",
+      "cp": "89470",
+      "ville": "Monéteau",
+      "adresse": "53 Avenue de Paris",
+      "pop": "R",
+      "lat": 4784400,
+      "lng": 355100,
+      "fuels": {
+        "gazole": 1.993,
+        "sp98": 2.05,
+        "e10": 1.927,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "89470004",
+      "cp": "89470",
+      "ville": "Monéteau",
+      "adresse": "ROUTE DE PARIS RN 6",
+      "pop": "R",
+      "lat": 4784600,
+      "lng": 355000,
+      "fuels": {
+        "gazole": 1.891,
+        "sp98": 1.99,
+        "e10": 1.883,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "89470005",
+      "cp": "89470",
+      "ville": "Monéteau",
+      "adresse": "RUE D'AUXERRE",
+      "pop": "R",
+      "lat": 4784700,
+      "lng": 358000,
+      "fuels": {
+        "gazole": 2.002,
+        "sp98": 1.99,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "89110001",
+      "cp": "89110",
+      "ville": "Montholon",
+      "adresse": "CHEMIN DE NEUILLY",
+      "pop": "R",
+      "lat": 4787600,
+      "lng": 335300,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "89140004",
+      "cp": "89140",
+      "ville": "Pont-sur-Yonne",
+      "adresse": "32 B AVENUE GENERAL LECLERC",
+      "pop": "R",
+      "lat": 4828400,
+      "lng": 321200,
+      "fuels": {
+        "gazole": 2.012
+      }
+    },
+    {
+      "id": "89140001",
+      "cp": "89140",
+      "ville": "Pont-sur-Yonne",
+      "adresse": "LES HAUTES VEUVES",
+      "pop": "R",
+      "lat": 4829458.47,
+      "lng": 319585.3,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.149
+      }
+    },
+    {
+      "id": "89132001",
+      "cp": "89116",
+      "ville": "Précy-sur-Vrin",
+      "adresse": "AUT A 6",
+      "pop": "A",
+      "lat": 4797400,
+      "lng": 319800,
+      "fuels": {
+        "gazole": 2.209,
+        "sp98": 2.239,
+        "e10": 2.139,
+        "e85": 0.989,
+        "gplc": 1.16
+      }
+    },
+    {
+      "id": "89116003",
+      "cp": "89116",
+      "ville": "Précy-sur-Vrin",
+      "adresse": "AUTOROUTE A6 - AIRE DE LA COULINE",
+      "pop": "A",
+      "lat": 4797408,
+      "lng": 319921,
+      "fuels": {
+        "gazole": 2.094,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.068
+      }
+    },
+    {
+      "id": "89630001",
+      "cp": "89630",
+      "ville": "Quarré-les-Tombes",
+      "adresse": "RUE DE L'ETANG",
+      "pop": "R",
+      "lat": 4737100,
+      "lng": 399800,
+      "fuels": {
+        "gazole": 2.075,
+        "e10": 2.06
+      }
+    },
+    {
+      "id": "89100014",
+      "cp": "89100",
+      "ville": "Rosoy",
+      "adresse": "RN 6",
+      "pop": "R",
+      "lat": 4814800,
+      "lng": 330700,
+      "fuels": {
+        "gazole": 1.882,
+        "sp98": 1.99,
+        "e10": 1.895,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "89520003",
+      "cp": "89520",
+      "ville": "Sainpuits",
+      "adresse": "2 Rue de la Montagne",
+      "pop": "R",
+      "lat": 4751800,
+      "lng": 326000,
+      "fuels": {
+        "gazole": 2.19,
+        "sp95": 2.2,
+        "sp98": 2.27
+      }
+    },
+    {
+      "id": "89420007",
+      "cp": "89420",
+      "ville": "Saint-André-en-Terre-Plaine",
+      "adresse": "Route nationale 6",
+      "pop": "R",
+      "lat": 4746741.98594,
+      "lng": 408030.19554,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.159,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "89100006",
+      "cp": "89100",
+      "ville": "Saint-Denis-lès-Sens",
+      "adresse": "Près Aubert St Denis les Sens",
+      "pop": "R",
+      "lat": 4821660.57601,
+      "lng": 327710.675,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 1.969,
+        "e10": 1.879
+      }
+    },
+    {
+      "id": "89170001",
+      "cp": "89170",
+      "ville": "Saint-Fargeau",
+      "adresse": "RUE DU MOULIN DE L ARCHE",
+      "pop": "R",
+      "lat": 4764200,
+      "lng": 306800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.149,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "89600003",
+      "cp": "89600",
+      "ville": "Saint-Florentin",
+      "adresse": "8 Avenue du 8 Mai",
+      "pop": "R",
+      "lat": 4800125.25338,
+      "lng": 372132.07423,
+      "fuels": {
+        "gazole": 1.992,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "89600001",
+      "cp": "89600",
+      "ville": "Saint-Florentin",
+      "adresse": "avenue du 8 mai 1945",
+      "pop": "R",
+      "lat": 4800053.0541,
+      "lng": 371870.19315,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.149,
+        "e10": 2.099
+      }
+    },
+    {
+      "id": "89600004",
+      "cp": "89600",
+      "ville": "Saint-Florentin",
+      "adresse": "Route d'Avrolles",
+      "pop": "R",
+      "lat": 4799973,
+      "lng": 371494,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.049,
+        "e10": 1.979,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "89000003",
+      "cp": "89000",
+      "ville": "Saint-Georges-sur-Baulche",
+      "adresse": "route de Perrigny",
+      "pop": "R",
+      "lat": 4781100,
+      "lng": 353600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.149,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "89330002",
+      "cp": "89330",
+      "ville": "Saint-Julien-du-Sault",
+      "adresse": "2 Avenue Pasteur",
+      "pop": "R",
+      "lat": 4803200,
+      "lng": 330400,
+      "fuels": {
+        "gazole": 2.094,
+        "sp95": 2.108
+      }
+    },
+    {
       "id": "89330001",
       "cp": "89330",
       "ville": "Saint-Julien-du-Sault",
@@ -86,6 +860,362 @@
         "gazole": 2.015,
         "sp98": 2.05,
         "e10": 1.946
+      }
+    },
+    {
+      "id": "89450002",
+      "cp": "89450",
+      "ville": "Saint-Père",
+      "adresse": "2 ROUTE DE NANCHEVRE",
+      "pop": "R",
+      "lat": 4746200,
+      "lng": 376800,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 2.025
+      }
+    },
+    {
+      "id": "89520001",
+      "cp": "89520",
+      "ville": "Saint-Sauveur-en-Puisaye",
+      "adresse": "Route de Ouanne",
+      "pop": "R",
+      "lat": 4762000,
+      "lng": 319800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "89520002",
+      "cp": "89520",
+      "ville": "Saint-Sauveur-en-Puisaye",
+      "adresse": "ROUTE DE ST FARGEAU",
+      "pop": "R",
+      "lat": 4762000,
+      "lng": 319200,
+      "fuels": {
+        "gazole": 2.019,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "89150004",
+      "cp": "89150",
+      "ville": "Saint-Valérien",
+      "adresse": "Route de Sens",
+      "pop": "R",
+      "lat": 4817800,
+      "lng": 311000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "89250001",
+      "cp": "89250",
+      "ville": "Seignelay",
+      "adresse": "ROUTE D HERY",
+      "pop": "R",
+      "lat": 4790235.4808,
+      "lng": 361057.20708,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "89100017",
+      "cp": "89100",
+      "ville": "Sens",
+      "adresse": "17 boulevard de Verdun",
+      "pop": "R",
+      "lat": 4820484.77677,
+      "lng": 328902.51042,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 2.159,
+        "e10": 2.069,
+        "e85": 0.945,
+        "gplc": 1.089
+      }
+    },
+    {
+      "id": "89100007",
+      "cp": "89100",
+      "ville": "Sens",
+      "adresse": "4 Quai Jean Moulin",
+      "pop": "R",
+      "lat": 4819800,
+      "lng": 327700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.149,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "89100015",
+      "cp": "89100",
+      "ville": "Sens",
+      "adresse": "7 boulevard du pont neuf",
+      "pop": "R",
+      "lat": 4820400,
+      "lng": 327100,
+      "fuels": {
+        "gazole": 1.884,
+        "e10": 1.886,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "89100013",
+      "cp": "89100",
+      "ville": "Sens",
+      "adresse": "Centre commercial ChampBertrand",
+      "pop": "R",
+      "lat": 4817200,
+      "lng": 329200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "89100004",
+      "cp": "89100",
+      "ville": "Sens",
+      "adresse": "Route de Lyon",
+      "pop": "R",
+      "lat": 4818400,
+      "lng": 328700,
+      "fuels": {
+        "gazole": 2.008,
+        "e10": 1.984
+      }
+    },
+    {
+      "id": "89700001",
+      "cp": "89700",
+      "ville": "Tonnerre",
+      "adresse": "ROUTE DE DIJON",
+      "pop": "R",
+      "lat": 4785200,
+      "lng": 398500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "89700002",
+      "cp": "89700",
+      "ville": "Tonnerre",
+      "adresse": "route de Paris",
+      "pop": "R",
+      "lat": 4787300,
+      "lng": 396700,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.079,
+        "e10": 1.949,
+        "e85": 0.808
+      }
+    },
+    {
+      "id": "89130002",
+      "cp": "89130",
+      "ville": "Toucy",
+      "adresse": "Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4772176.07339,
+      "lng": 331312.77129,
+      "fuels": {
+        "gazole": 1.975,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "89130003",
+      "cp": "89130",
+      "ville": "Toucy",
+      "adresse": "ROUTE DAUXERRE",
+      "pop": "R",
+      "lat": 4773200,
+      "lng": 331000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099
+      }
+    },
+    {
+      "id": "89920001",
+      "cp": "89290",
+      "ville": "Venoy",
+      "adresse": "Aire de Venoy Soleil Levant A6",
+      "pop": "A",
+      "lat": 4779000,
+      "lng": 367300,
+      "fuels": {
+        "gazole": 2.08,
+        "sp98": 2.149,
+        "e10": 2.043,
+        "e85": 0.921,
+        "gplc": 1.068
+      }
+    },
+    {
+      "id": "89290007",
+      "cp": "89290",
+      "ville": "Venoy",
+      "adresse": "AUTOROUTE A6 - AIRE DE VENOY-GROSSE-PIERRE",
+      "pop": "A",
+      "lat": 4778765,
+      "lng": 367211,
+      "fuels": {
+        "gazole": 2.09,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.068
+      }
+    },
+    {
+      "id": "89270001",
+      "cp": "89270",
+      "ville": "Vermenton",
+      "adresse": "Rue Restif de la Bretonne",
+      "pop": "R",
+      "lat": 4766413.00221,
+      "lng": 373877.14295,
+      "fuels": {
+        "gazole": 2.089,
+        "sp95": 2.029,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "89340001",
+      "cp": "89340",
+      "ville": "Villeblevin",
+      "adresse": "135 RN 6",
+      "pop": "R",
+      "lat": 4833600,
+      "lng": 308000,
+      "fuels": {
+        "gazole": 2.012,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "89340004",
+      "cp": "89340",
+      "ville": "Villeblevin",
+      "adresse": "150 RN6 le petit Villeblevin",
+      "pop": "R",
+      "lat": 4833600,
+      "lng": 308000,
+      "fuels": {
+        "gazole": 2.113,
+        "sp95": 2.03
+      }
+    },
+    {
+      "id": "89190007",
+      "cp": "89190",
+      "ville": "Villeneuve-l'Archevêque",
+      "adresse": "Aire de Villeneuve l'Archevêque autoroute A5 Sens PARIS TROYES",
+      "pop": "A",
+      "lat": 4824299.66784,
+      "lng": 355440.17645,
+      "fuels": {
+        "gazole": 2.074,
+        "sp98": 2.233,
+        "e10": 2.129,
+        "gplc": 1.108
+      }
+    },
+    {
+      "id": "89190008",
+      "cp": "89190",
+      "ville": "Villeneuve-l'Archevêque",
+      "adresse": "Aire de Villeneuve Vauluisant Autoroute A5 Sens TROYES PARIS",
+      "pop": "A",
+      "lat": 4824722.10523,
+      "lng": 355550.68346,
+      "fuels": {
+        "gazole": 2.074,
+        "sp98": 2.233,
+        "e10": 2.129,
+        "gplc": 1.108
+      }
+    },
+    {
+      "id": "89190006",
+      "cp": "89190",
+      "ville": "Villeneuve-l'Archevêque",
+      "adresse": "Avenue de la gare",
+      "pop": "R",
+      "lat": 4823700,
+      "lng": 355200,
+      "fuels": {
+        "gazole": 1.988,
+        "sp95": 1.999,
+        "sp98": 2.049
+      }
+    },
+    {
+      "id": "89340003",
+      "cp": "89340",
+      "ville": "Villeneuve-la-Guyard",
+      "adresse": "1 rue Guillaume des Barres",
+      "pop": "R",
+      "lat": 4833500,
+      "lng": 306500,
+      "fuels": {
+        "gazole": 2.009,
+        "sp98": 2.099,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "89500002",
+      "cp": "89500",
+      "ville": "Villeneuve-sur-Yonne",
+      "adresse": "4 rue de Braubach",
+      "pop": "R",
+      "lat": 4808752.41877,
+      "lng": 329729.51411,
+      "fuels": {
+        "gazole": 1.932,
+        "sp98": 2.035,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "89290008",
+      "cp": "89290",
+      "ville": "Vincelles",
+      "adresse": "RD 606",
+      "pop": "R",
+      "lat": 4770300,
+      "lng": 362800,
+      "fuels": {
+        "gazole": 2.089,
+        "sp98": 2.149,
+        "e10": 2.059
       }
     }
   ]

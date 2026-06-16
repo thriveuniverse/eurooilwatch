@@ -3,48 +3,273 @@
   "name": "Ardèche",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 3,
+  "stationCount": 70,
   "fuels": {
     "gazole": {
-      "count": 3,
-      "mean": 1.9717,
-      "median": 1.956,
-      "min": 1.949,
-      "max": 2.01
+      "count": 68,
+      "mean": 1.9921,
+      "median": 1.979,
+      "min": 1.871,
+      "max": 2.105
     },
     "sp95": {
-      "count": 1,
-      "mean": 1.986,
-      "median": 1.986,
-      "min": 1.986,
-      "max": 1.986
+      "count": 30,
+      "mean": 2.0267,
+      "median": 2.0335,
+      "min": 1.94,
+      "max": 2.114
     },
     "sp98": {
-      "count": 2,
-      "mean": 2.0345,
-      "median": 2.0345,
-      "min": 2.015,
-      "max": 2.054
+      "count": 52,
+      "mean": 2.0459,
+      "median": 2.029,
+      "min": 1.99,
+      "max": 2.299
     },
     "e10": {
-      "count": 2,
-      "mean": 1.915,
-      "median": 1.915,
-      "min": 1.899,
-      "max": 1.931
+      "count": 47,
+      "mean": 1.9451,
+      "median": 1.939,
+      "min": 1.872,
+      "max": 2.049
     },
     "e85": {
-      "count": 2,
-      "mean": 0.776,
-      "median": 0.776,
+      "count": 23,
+      "mean": 0.8212,
+      "median": 0.809,
       "min": 0.743,
-      "max": 0.809
+      "max": 0.91
+    },
+    "gplc": {
+      "count": 2,
+      "mean": 1.095,
+      "median": 1.095,
+      "min": 1.095,
+      "max": 1.095
     }
   },
   "stations": [
+    {
+      "id": "7210001",
+      "cp": "07210",
+      "ville": "Alissas",
+      "adresse": "La Clef du Sac",
+      "pop": "R",
+      "lat": 4471500,
+      "lng": 461500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 2.039,
+        "sp98": 2.079,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "7100008",
+      "cp": "07100",
+      "ville": "Annonay",
+      "adresse": "13-14 avenue Rhin Danube",
+      "pop": "R",
+      "lat": 4524100,
+      "lng": 469000,
+      "fuels": {
+        "gazole": 2.06,
+        "sp95": 2.07,
+        "e85": 0.91
+      }
+    },
+    {
+      "id": "7100002",
+      "cp": "07100",
+      "ville": "Annonay",
+      "adresse": "55 Avenue de l'Europe",
+      "pop": "R",
+      "lat": 4524400,
+      "lng": 466800,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.049,
+        "e10": 1.939,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "7100007",
+      "cp": "07100",
+      "ville": "Annonay",
+      "adresse": "Rue Mathieu Duret",
+      "pop": "R",
+      "lat": 4525700,
+      "lng": 467300,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.989,
+        "sp98": 2.029
+      }
+    },
+    {
+      "id": "7200010",
+      "cp": "07200",
+      "ville": "Aubenas",
+      "adresse": "56 Avenue de Bellande",
+      "pop": "R",
+      "lat": 4460500,
+      "lng": 438700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.99,
+        "sp98": 2.065,
+        "e85": 0.87
+      }
+    },
+    {
+      "id": "7200003",
+      "cp": "07200",
+      "ville": "Aubenas",
+      "adresse": "Route de Montélimar",
+      "pop": "R",
+      "lat": 4461400,
+      "lng": 440600,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.029,
+        "e10": 1.989,
+        "gplc": 1.095
+      }
+    },
+    {
+      "id": "7200008",
+      "cp": "07200",
+      "ville": "Aubenas",
+      "adresse": "RTE DE VALS",
+      "pop": "R",
+      "lat": 4463202.17749,
+      "lng": 437986.31229,
+      "fuels": {
+        "gazole": 1.879,
+        "sp98": 1.99,
+        "e10": 1.891,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "7200007",
+      "cp": "07200",
+      "ville": "Aubenas",
+      "adresse": "ZA Le Ponson Moulon",
+      "pop": "R",
+      "lat": 4461547.1045,
+      "lng": 440739.1561,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.015,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "7330001",
+      "cp": "07330",
+      "ville": "Barnas",
+      "adresse": "Barnas Haut",
+      "pop": "R",
+      "lat": 4466704,
+      "lng": 416313,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 1.99,
+        "e10": 1.98
+      }
+    },
+    {
+      "id": "7700004",
+      "cp": "07700",
+      "ville": "Bourg-Saint-Andéol",
+      "adresse": "12 AVENUE MARECHAL LECLERC",
+      "pop": "R",
+      "lat": 4438203.51631,
+      "lng": 464160.07386,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.929,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "7800001",
+      "cp": "07800",
+      "ville": "Charmes-sur-Rhône",
+      "adresse": "51 avenue de provence",
+      "pop": "R",
+      "lat": 4486300,
+      "lng": 483600,
+      "fuels": {
+        "gazole": 2.06,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "7130005",
+      "cp": "07130",
+      "ville": "Cornas",
+      "adresse": "102 avenue du colonel Rousset",
+      "pop": "R",
+      "lat": 4495800,
+      "lng": 484700,
+      "fuels": {
+        "gazole": 1.962,
+        "sp98": 1.99,
+        "e10": 1.956
+      }
+    },
+    {
+      "id": "7470001",
+      "cp": "07470",
+      "ville": "Coucouron",
+      "adresse": "Le Village",
+      "pop": "R",
+      "lat": 4480100,
+      "lng": 397200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.069,
+        "e10": 2.019,
+        "e85": 0.859
+      }
+    },
+    {
+      "id": "7430005",
+      "cp": "07430",
+      "ville": "Davézieux",
+      "adresse": "130 rue de Pourrat",
+      "pop": "R",
+      "lat": 4525595.89445,
+      "lng": 468816.47345,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.099,
+        "e10": 2.049,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "7340002",
+      "cp": "07430",
+      "ville": "Davézieux",
+      "adresse": "LE MAS OUEST - RTE DE LYON",
+      "pop": "R",
+      "lat": 4525700,
+      "lng": 469600,
+      "fuels": {
+        "gazole": 1.959,
+        "e10": 1.939,
+        "e85": 0.819
+      }
+    },
     {
       "id": "7430002",
       "cp": "07430",
@@ -54,10 +279,122 @@
       "lat": 4526100,
       "lng": 470300,
       "fuels": {
-        "gazole": 2.01,
-        "sp98": 2.054,
-        "e10": 1.931,
+        "gazole": 1.946,
+        "sp98": 2.024,
+        "e10": 1.902,
         "e85": 0.743
+      }
+    },
+    {
+      "id": "7430006",
+      "cp": "07430",
+      "ville": "Davézieux",
+      "adresse": "ZI LA LOMBARDIERE",
+      "pop": "R",
+      "lat": 4525171.4,
+      "lng": 469660.1,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.029,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "7340001",
+      "cp": "07340",
+      "ville": "Félines",
+      "adresse": "LA REMISE",
+      "pop": "R",
+      "lat": 4530900,
+      "lng": 474200,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 1.99,
+        "e10": 1.967
+      }
+    },
+    {
+      "id": "7120004",
+      "cp": "07120",
+      "ville": "Grospierres",
+      "adresse": "quartier de la gare",
+      "pop": "R",
+      "lat": 4441000,
+      "lng": 429400,
+      "fuels": {
+        "gazole": 2.09,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "7500001",
+      "cp": "07500",
+      "ville": "Guilherand-Granges",
+      "adresse": "1449 Avenue de la République",
+      "pop": "R",
+      "lat": 4493828,
+      "lng": 486654,
+      "fuels": {
+        "gazole": 1.871,
+        "sp98": 2.045,
+        "e10": 1.872,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "7260001",
+      "cp": "07260",
+      "ville": "Joyeuse",
+      "adresse": "Les Beaumes",
+      "pop": "R",
+      "lat": 4447900,
+      "lng": 424800,
+      "fuels": {
+        "gazole": 2.105,
+        "sp95": 2.039,
+        "sp98": 2.12
+      }
+    },
+    {
+      "id": "7800007",
+      "cp": "07800",
+      "ville": "La Voulte-sur-Rhône",
+      "adresse": "9 ALLEE DES CEDRES",
+      "pop": "R",
+      "lat": 4481000,
+      "lng": 478700,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "7800003",
+      "cp": "07800",
+      "ville": "La Voulte-sur-Rhône",
+      "adresse": "ZI JEAN JAURES - 70, RUE LOUIS PASTEUR",
+      "pop": "R",
+      "lat": 4480700,
+      "lng": 479200,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "7230001",
+      "cp": "07230",
+      "ville": "Lablachère",
+      "adresse": "453 Rue Charles Tourrel",
+      "pop": "R",
+      "lat": 4445900,
+      "lng": 421500,
+      "fuels": {
+        "gazole": 1.979,
+        "e10": 1.919,
+        "e85": 0.809
       }
     },
     {
@@ -76,6 +413,426 @@
       }
     },
     {
+      "id": "7270001",
+      "cp": "07270",
+      "ville": "Lamastre",
+      "adresse": "ZI La Sumène",
+      "pop": "R",
+      "lat": 4498200,
+      "lng": 456900,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.069
+      }
+    },
+    {
+      "id": "7110004",
+      "cp": "07110",
+      "ville": "Largentière",
+      "adresse": "76 avenue de la République",
+      "pop": "R",
+      "lat": 4453800,
+      "lng": 429300,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.049,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "7170002",
+      "cp": "07170",
+      "ville": "Lavilledieu",
+      "adresse": "RN 102",
+      "pop": "R",
+      "lat": 4457059,
+      "lng": 445910,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.989,
+        "sp98": 2.019,
+        "e10": 1.959
+      }
+    },
+    {
+      "id": "7160003",
+      "cp": "07160",
+      "ville": "Le Cheylard",
+      "adresse": "Allée des Vergers",
+      "pop": "R",
+      "lat": 4491400,
+      "lng": 444200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.169
+      }
+    },
+    {
+      "id": "7160001",
+      "cp": "07160",
+      "ville": "Le Cheylard",
+      "adresse": "chem Pra",
+      "pop": "R",
+      "lat": 4491200,
+      "lng": 444100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.169,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "7250001",
+      "cp": "07250",
+      "ville": "Le Pouzin",
+      "adresse": "160 Avenue du Soleil",
+      "pop": "R",
+      "lat": 4474700,
+      "lng": 474500,
+      "fuels": {
+        "gazole": 2.05,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "7250004",
+      "cp": "07250",
+      "ville": "Le Pouzin",
+      "adresse": "route de loriol",
+      "pop": "R",
+      "lat": 4475628,
+      "lng": 475673,
+      "fuels": {
+        "gazole": 2.089,
+        "sp95": 2.029,
+        "sp98": 2.059,
+        "gplc": 1.095
+      }
+    },
+    {
+      "id": "7400005",
+      "cp": "07400",
+      "ville": "Le Teil",
+      "adresse": "3 BIS AVENUE PAUL LANGEVIN",
+      "pop": "R",
+      "lat": 4453546.93228,
+      "lng": 468771.42395,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "7400002",
+      "cp": "07400",
+      "ville": "Le Teil",
+      "adresse": "ZAC LA ROTONDE",
+      "pop": "R",
+      "lat": 4455900,
+      "lng": 469000,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "7140002",
+      "cp": "07140",
+      "ville": "Les Vans",
+      "adresse": "20 chemin de champvert",
+      "pop": "R",
+      "lat": 4440600,
+      "lng": 413000,
+      "fuels": {
+        "sp95": 2.039,
+        "sp98": 2.059
+      }
+    },
+    {
+      "id": "7140001",
+      "cp": "07140",
+      "ville": "Les Vans",
+      "adresse": "Centre Commercial La Clairette",
+      "pop": "R",
+      "lat": 4440600,
+      "lng": 413700,
+      "fuels": {
+        "sp95": 2.039,
+        "sp98": 2.059
+      }
+    },
+    {
+      "id": "7400006",
+      "cp": "07400",
+      "ville": "Meysse",
+      "adresse": "2 AVENUE DE LA GARE",
+      "pop": "R",
+      "lat": 4461000,
+      "lng": 472500,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "7120005",
+      "cp": "07120",
+      "ville": "Pradons",
+      "adresse": "CHAMP DU SOULIER",
+      "pop": "R",
+      "lat": 4447200,
+      "lng": 435600,
+      "fuels": {
+        "gazole": 2.005,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "7000002",
+      "cp": "07000",
+      "ville": "Privas",
+      "adresse": "Boulevard de Paste",
+      "pop": "R",
+      "lat": 4472700,
+      "lng": 459700,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.079,
+        "e10": 1.979,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "7400003",
+      "cp": "07400",
+      "ville": "Rochemaure",
+      "adresse": "881 Boulevard de la Roche Noire",
+      "pop": "R",
+      "lat": 4460000,
+      "lng": 471700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 1.99,
+        "e10": 1.96
+      }
+    },
+    {
+      "id": "7260002",
+      "cp": "07260",
+      "ville": "Rosières",
+      "adresse": "135 ROUTES DES VERNADES",
+      "pop": "R",
+      "lat": 4448300,
+      "lng": 426700,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.049,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "7120001",
+      "cp": "07120",
+      "ville": "Ruoms",
+      "adresse": "Route de Vallon Pont d'Arc",
+      "pop": "R",
+      "lat": 4444340.55985,
+      "lng": 434813.25174,
+      "fuels": {
+        "gazole": 1.939,
+        "sp95": 1.94,
+        "sp98": 2.015,
+        "e10": 1.909,
+        "e85": 0.835
+      }
+    },
+    {
+      "id": "7320004",
+      "cp": "07320",
+      "ville": "Saint-Agrève",
+      "adresse": "1520 Route du Sara",
+      "pop": "R",
+      "lat": 4501276.4,
+      "lng": 438751.8,
+      "fuels": {
+        "gazole": 1.929,
+        "sp95": 1.959,
+        "sp98": 2.139
+      }
+    },
+    {
+      "id": "7200015",
+      "cp": "07200",
+      "ville": "Saint-Didier-sous-Aubenas",
+      "adresse": "RUE DE MONTELIMAR",
+      "pop": "R",
+      "lat": 4461123.44494,
+      "lng": 440950.38306,
+      "fuels": {
+        "gazole": 1.925,
+        "e10": 1.89,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "7200006",
+      "cp": "07200",
+      "ville": "Saint-Étienne-de-Fontbellon",
+      "adresse": "Quartier Les ChampsSaint Etienne Fontbellon",
+      "pop": "R",
+      "lat": 4459959.98093,
+      "lng": 438424.81318,
+      "fuels": {
+        "gazole": 1.909,
+        "sp95": 1.975,
+        "sp98": 1.998,
+        "e10": 1.89
+      }
+    },
+    {
+      "id": "7410002",
+      "cp": "07410",
+      "ville": "Saint-Félicien",
+      "adresse": "27 RUE CHARLES FOROT",
+      "pop": "R",
+      "lat": 4508994.48191,
+      "lng": 462968.41601,
+      "fuels": {
+        "gazole": 2.03,
+        "sp95": 2.04
+      }
+    },
+    {
+      "id": "7800008",
+      "cp": "07800",
+      "ville": "Saint-Georges-les-Bains",
+      "adresse": "RD 86 - LIEUDIT LES COTES",
+      "pop": "R",
+      "lat": 4485700,
+      "lng": 483000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.299,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "7300003",
+      "cp": "07300",
+      "ville": "Saint-Jean-de-Muzols",
+      "adresse": "6 Chemin de la Gare",
+      "pop": "R",
+      "lat": 4507600,
+      "lng": 481400,
+      "fuels": {
+        "gazole": 1.97,
+        "sp98": 2.02,
+        "e10": 1.904,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "7580002",
+      "cp": "07580",
+      "ville": "Saint-Jean-le-Centenier",
+      "adresse": "RN 102",
+      "pop": "R",
+      "lat": 4458400,
+      "lng": 453200,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.039,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "7700003",
+      "cp": "07700",
+      "ville": "Saint-Just-d'Ardèche",
+      "adresse": "505 ROUTE DE BOURG ST ANDEOL",
+      "pop": "R",
+      "lat": 4430500,
+      "lng": 461200,
+      "fuels": {
+        "gazole": 1.999
+      }
+    },
+    {
+      "id": "7130006",
+      "cp": "07130",
+      "ville": "Saint-Péray",
+      "adresse": "AVENUE GROSS UMSTADT",
+      "pop": "R",
+      "lat": 4494300,
+      "lng": 485900,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.039,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "7200016",
+      "cp": "07200",
+      "ville": "Saint-Privat",
+      "adresse": "730 ROUTE DE L'ESCRINET",
+      "pop": "R",
+      "lat": 4463203.90435,
+      "lng": 442185.74056,
+      "fuels": {
+        "gazole": 2.099,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "7190002",
+      "cp": "07190",
+      "ville": "Saint-Sauveur-de-Montagut",
+      "adresse": "105 ROUTE DE L EYRIEUX",
+      "pop": "R",
+      "lat": 4481900,
+      "lng": 459300,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.049
+      }
+    },
+    {
+      "id": "7190001",
+      "cp": "07190",
+      "ville": "Saint-Sauveur-de-Montagut",
+      "adresse": "Grande Rue",
+      "pop": "R",
+      "lat": 4482200,
+      "lng": 458400,
+      "fuels": {
+        "gazole": 1.998,
+        "sp95": 1.999,
+        "sp98": 2.04
+      }
+    },
+    {
+      "id": "7150001",
+      "cp": "07150",
+      "ville": "Salavas",
+      "adresse": "La Plaine",
+      "pop": "R",
+      "lat": 4439700,
+      "lng": 438200,
+      "fuels": {
+        "gazole": 2.047,
+        "sp95": 1.99
+      }
+    },
+    {
       "id": "7290000",
       "cp": "07290",
       "ville": "Satillieu",
@@ -86,6 +843,205 @@
       "fuels": {
         "gazole": 1.956,
         "sp95": 1.986
+      }
+    },
+    {
+      "id": "7500002",
+      "cp": "07130",
+      "ville": "Soyons",
+      "adresse": "Chemin des Basses Freydières",
+      "pop": "R",
+      "lat": 4491977.49041,
+      "lng": 486145.37844,
+      "fuels": {
+        "gazole": 1.881,
+        "sp98": 2.061,
+        "e10": 1.892,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "7300008",
+      "cp": "07300",
+      "ville": "Tournon-sur-Rhône",
+      "adresse": "3-5 avenue de Lyon",
+      "pop": "R",
+      "lat": 4507258.68544,
+      "lng": 482103.54374,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 2.039,
+        "e10": 2.009
+      }
+    },
+    {
+      "id": "7300006",
+      "cp": "07300",
+      "ville": "Tournon-sur-Rhône",
+      "adresse": "55 AVENUE DE NIMES - RN86",
+      "pop": "R",
+      "lat": 4505700,
+      "lng": 484000,
+      "fuels": {
+        "gazole": 1.96,
+        "sp98": 1.99,
+        "e10": 1.954
+      }
+    },
+    {
+      "id": "7300005",
+      "cp": "07300",
+      "ville": "Tournon-sur-Rhône",
+      "adresse": "Chemin de Saint-Vincent",
+      "pop": "R",
+      "lat": 4505500,
+      "lng": 483200,
+      "fuels": {
+        "gazole": 1.96,
+        "sp95": 2.038,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "7300001",
+      "cp": "07300",
+      "ville": "Tournon-sur-Rhône",
+      "adresse": "RUE HELENE DE TOURNON",
+      "pop": "R",
+      "lat": 4505500,
+      "lng": 483900,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.999,
+        "sp98": 2.05,
+        "e10": 1.899,
+        "e85": 0.85
+      }
+    },
+    {
+      "id": "7150003",
+      "cp": "07150",
+      "ville": "Vallon-Pont-d'Arc",
+      "adresse": "route Ruoms",
+      "pop": "R",
+      "lat": 4440700,
+      "lng": 439400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.019,
+        "sp98": 2.072,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "7240002",
+      "cp": "07240",
+      "ville": "Vernoux-en-Vivarais",
+      "adresse": "Domaine de la Garode",
+      "pop": "R",
+      "lat": 4489773,
+      "lng": 464767,
+      "fuels": {
+        "gazole": 2.071,
+        "sp95": 2.09
+      }
+    },
+    {
+      "id": "7200011",
+      "cp": "07200",
+      "ville": "Vesseaux",
+      "adresse": "37 ROUTE D'AUBENAS - LA PRADE",
+      "pop": "R",
+      "lat": 4464800,
+      "lng": 444000,
+      "fuels": {
+        "gazole": 2.079,
+        "sp95": 2.114
+      }
+    },
+    {
+      "id": "7000003",
+      "cp": "07000",
+      "ville": "Veyras",
+      "adresse": "635 ROUTE D'AUBENAS",
+      "pop": "R",
+      "lat": 4472900,
+      "lng": 456900,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.079,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "7170003",
+      "cp": "07170",
+      "ville": "Villeneuve-de-Berg",
+      "adresse": "QUARTIER LANSAS",
+      "pop": "R",
+      "lat": 4457200,
+      "lng": 451200,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.999,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "7170001",
+      "cp": "07170",
+      "ville": "Villeneuve-de-Berg",
+      "adresse": "rond point",
+      "pop": "R",
+      "lat": 4457063,
+      "lng": 451054,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "7110006",
+      "cp": "07110",
+      "ville": "Vinezac",
+      "adresse": "635 route d'ales",
+      "pop": "R",
+      "lat": 4453737.30904,
+      "lng": 434672.85781,
+      "fuels": {
+        "gazole": 1.993,
+        "sp98": 2.079,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "7220003",
+      "cp": "07220",
+      "ville": "Viviers",
+      "adresse": "QUARTIER PLANZOLLES RN86",
+      "pop": "R",
+      "lat": 4447589.64,
+      "lng": 469209.58,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.909,
+        "e85": 0.859
+      }
+    },
+    {
+      "id": "7200014",
+      "cp": "07200",
+      "ville": "Vogüé",
+      "adresse": "145 ROUTE D'AUBENAS",
+      "pop": "R",
+      "lat": 4455022.36,
+      "lng": 441595.74659,
+      "fuels": {
+        "gazole": 2,
+        "sp95": 2.026,
+        "sp98": 2.077
       }
     }
   ]

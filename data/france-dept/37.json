@@ -3,48 +3,673 @@
   "name": "Indre-et-Loire",
   "regionCode": "CVL",
   "regionName": "Centre-Val de Loire",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 1,
+  "stationCount": 85,
   "fuels": {
     "gazole": {
-      "count": 1,
-      "mean": 2.112,
-      "median": 2.112,
-      "min": 2.112,
-      "max": 2.112
+      "count": 82,
+      "mean": 1.9732,
+      "median": 1.959,
+      "min": 1.866,
+      "max": 2.32
+    },
+    "sp95": {
+      "count": 29,
+      "mean": 1.9856,
+      "median": 1.985,
+      "min": 1.959,
+      "max": 2.059
     },
     "sp98": {
-      "count": 1,
-      "mean": 1.99,
-      "median": 1.99,
-      "min": 1.99,
-      "max": 1.99
+      "count": 80,
+      "mean": 2.0265,
+      "median": 2.0025,
+      "min": 1.889,
+      "max": 2.379
     },
     "e10": {
-      "count": 1,
-      "mean": 1.99,
-      "median": 1.99,
-      "min": 1.99,
-      "max": 1.99
+      "count": 61,
+      "mean": 1.9416,
+      "median": 1.937,
+      "min": 1.863,
+      "max": 2.229
     },
     "e85": {
-      "count": 1,
-      "mean": 0.999,
-      "median": 0.999,
-      "min": 0.999,
+      "count": 31,
+      "mean": 0.8207,
+      "median": 0.809,
+      "min": 0.779,
       "max": 0.999
     },
     "gplc": {
-      "count": 1,
-      "mean": 1.084,
-      "median": 1.084,
-      "min": 1.084,
-      "max": 1.084
+      "count": 9,
+      "mean": 1.1073,
+      "median": 1.064,
+      "min": 0.989,
+      "max": 1.339
     }
   },
   "stations": [
+    {
+      "id": "37340002",
+      "cp": "37340",
+      "ville": "Ambillou",
+      "adresse": "Place des Petits Pavés",
+      "pop": "R",
+      "lat": 4745100,
+      "lng": 45500,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.989,
+        "sp98": 2.079
+      }
+    },
+    {
+      "id": "37400006",
+      "cp": "37400",
+      "ville": "Amboise",
+      "adresse": "1786 Boulevard saint denis hors",
+      "pop": "R",
+      "lat": 4739300,
+      "lng": 98200,
+      "fuels": {
+        "gazole": 1.969,
+        "e10": 1.953
+      }
+    },
+    {
+      "id": "37400004",
+      "cp": "37400",
+      "ville": "Amboise",
+      "adresse": "21 Avenue de Tours",
+      "pop": "R",
+      "lat": 4740900,
+      "lng": 97100,
+      "fuels": {
+        "gazole": 1.982,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "37400002",
+      "cp": "37400",
+      "ville": "Amboise",
+      "adresse": "Avenue Léonard de Vinci",
+      "pop": "R",
+      "lat": 4740400,
+      "lng": 101800,
+      "fuels": {
+        "gazole": 1.942,
+        "sp95": 1.969,
+        "sp98": 1.999,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "37260005",
+      "cp": "37260",
+      "ville": "Artannes-sur-Indre",
+      "adresse": "RUE DES GRANDS CLOS",
+      "pop": "R",
+      "lat": 4727057.87748,
+      "lng": 59254.97839,
+      "fuels": {
+        "gazole": 1.998,
+        "sp95": 1.999,
+        "sp98": 2.099
+      }
+    },
+    {
+      "id": "37270006",
+      "cp": "37270",
+      "ville": "Athée-sur-Cher",
+      "adresse": "Aire de Athée-sur-Cher Autoroute A 85",
+      "pop": "A",
+      "lat": 4730218.425,
+      "lng": 89067.687,
+      "fuels": {
+        "gazole": 2.269,
+        "sp98": 2.299,
+        "e10": 2.199,
+        "gplc": 1.149
+      }
+    },
+    {
+      "id": "37420003",
+      "cp": "37420",
+      "ville": "Avoine",
+      "adresse": "11 PLACE EMILE ZOLA",
+      "pop": "R",
+      "lat": 4720600,
+      "lng": 18500,
+      "fuels": {
+        "gazole": 2.094,
+        "sp95": 2.052,
+        "sp98": 2.095
+      }
+    },
+    {
+      "id": "37420002",
+      "cp": "37420",
+      "ville": "Avoine",
+      "adresse": "ZA LES BUTTES",
+      "pop": "R",
+      "lat": 4721400,
+      "lng": 16900,
+      "fuels": {
+        "gazole": 2.09,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.834
+      }
+    },
+    {
+      "id": "37190002",
+      "cp": "37190",
+      "ville": "Azay-le-Rideau",
+      "adresse": "LA LOGE CITE BELLEVUE",
+      "pop": "R",
+      "lat": 4726415.41779,
+      "lng": 47375.20548,
+      "fuels": {
+        "gazole": 1.995,
+        "sp95": 1.984,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "37190001",
+      "cp": "37190",
+      "ville": "Azay-le-Rideau",
+      "adresse": "Lieu-dit La Loge",
+      "pop": "R",
+      "lat": 4726800,
+      "lng": 47600,
+      "fuels": {
+        "gazole": 2.15,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "37510001",
+      "cp": "37510",
+      "ville": "Ballan-Miré",
+      "adresse": "9, rue Jean Mermoz",
+      "pop": "R",
+      "lat": 4734400,
+      "lng": 61500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "37150002",
+      "cp": "37150",
+      "ville": "Bléré",
+      "adresse": "25 Rue de Tours",
+      "pop": "R",
+      "lat": 4732800,
+      "lng": 98700,
+      "fuels": {
+        "gazole": 1.925,
+        "sp98": 1.999,
+        "e10": 1.91
+      }
+    },
+    {
+      "id": "37150003",
+      "cp": "37150",
+      "ville": "Bléré",
+      "adresse": "5 Avenue du 11 Novembre 1918",
+      "pop": "R",
+      "lat": 4732500,
+      "lng": 100400,
+      "fuels": {
+        "gazole": 1.9,
+        "sp98": 1.999,
+        "e10": 1.9,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "37140001",
+      "cp": "37140",
+      "ville": "Bourgueil",
+      "adresse": "27 avenue du general de gaulle",
+      "pop": "R",
+      "lat": 4727400,
+      "lng": 16700,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 1.999,
+        "e10": 1.909,
+        "e85": 0.779
+      }
+    },
+    {
+      "id": "37170006",
+      "cp": "37170",
+      "ville": "Chambray-lès-Tours",
+      "adresse": "340 avenue du grand sud RD910",
+      "pop": "R",
+      "lat": 4731700,
+      "lng": 71100,
+      "fuels": {
+        "gazole": 1.868,
+        "sp98": 1.98,
+        "e10": 1.866,
+        "e85": 0.816
+      }
+    },
+    {
+      "id": "37170007",
+      "cp": "37170",
+      "ville": "Chambray-lès-Tours",
+      "adresse": "77 GRAND SUD AVENUE",
+      "pop": "R",
+      "lat": 4734200,
+      "lng": 70400,
+      "fuels": {
+        "gazole": 1.866,
+        "sp98": 1.98,
+        "e10": 1.863
+      }
+    },
+    {
+      "id": "37172001",
+      "cp": "37170",
+      "ville": "Chambray-lès-Tours",
+      "adresse": "Rue de Joué",
+      "pop": "R",
+      "lat": 4733700,
+      "lng": 69800,
+      "fuels": {
+        "gazole": 1.888,
+        "sp98": 1.99,
+        "e10": 1.899,
+        "gplc": 1.039
+      }
+    },
+    {
+      "id": "37390003",
+      "cp": "37390",
+      "ville": "Chanceaux-sur-Choisille",
+      "adresse": "ZAC DE LA GRANDE PIECE",
+      "pop": "R",
+      "lat": 4747000,
+      "lng": 70200,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.989,
+        "sp98": 2.029,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "37330001",
+      "cp": "37330",
+      "ville": "Château-la-Vallière",
+      "adresse": "75 Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4754200,
+      "lng": 33700,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 1.995,
+        "sp98": 2.025,
+        "e10": 1.945
+      }
+    },
+    {
+      "id": "37110003",
+      "cp": "37110",
+      "ville": "Château-Renault",
+      "adresse": "Rue du Petit Versailles",
+      "pop": "R",
+      "lat": 4759100,
+      "lng": 89900,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.039,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "37120001",
+      "cp": "37120",
+      "ville": "Chaveignes",
+      "adresse": "28 route de Tours",
+      "pop": "R",
+      "lat": 4702058,
+      "lng": 33397,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.989,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "37500001",
+      "cp": "37500",
+      "ville": "Chinon",
+      "adresse": "2 Rue René Cassin",
+      "pop": "R",
+      "lat": 4715000,
+      "lng": 23700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.059,
+        "sp98": 2.079,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "37500003",
+      "cp": "37500",
+      "ville": "Chinon",
+      "adresse": "Route de Tours",
+      "pop": "R",
+      "lat": 4717400,
+      "lng": 25100,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 1.999,
+        "e10": 1.909,
+        "e85": 0.779
+      }
+    },
+    {
+      "id": "37150004",
+      "cp": "37150",
+      "ville": "Civray-de-Touraine",
+      "adresse": "77 RUE DE CHENONCEAUX",
+      "pop": "R",
+      "lat": 4733300,
+      "lng": 106100,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 1.99,
+        "e10": 1.956
+      }
+    },
+    {
+      "id": "37320010",
+      "cp": "37320",
+      "ville": "Cormery",
+      "adresse": "ZA Du Bois Joly RD 82-9000",
+      "pop": "R",
+      "lat": 4725700,
+      "lng": 84200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.089,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "37160003",
+      "cp": "37160",
+      "ville": "Descartes",
+      "adresse": "Rue Jean Monnet",
+      "pop": "R",
+      "lat": 4698100,
+      "lng": 69000,
+      "fuels": {
+        "gazole": 1.984,
+        "sp98": 2.032,
+        "e10": 1.942,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "37190003",
+      "cp": "37190",
+      "ville": "Druye",
+      "adresse": "aire des Jardins de Villandry A85",
+      "pop": "A",
+      "lat": 4730700,
+      "lng": 53600,
+      "fuels": {
+        "gazole": 2.32
+      }
+    },
+    {
+      "id": "37320001",
+      "cp": "37320",
+      "ville": "Esvres",
+      "adresse": "ZAE Le Grand Berchenay",
+      "pop": "R",
+      "lat": 4729100,
+      "lng": 79000,
+      "fuels": {
+        "gazole": 1.942,
+        "sp98": 2.006,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "37230003",
+      "cp": "37230",
+      "ville": "Fondettes",
+      "adresse": "4 AVENUE JAURES",
+      "pop": "R",
+      "lat": 4740336.68855,
+      "lng": 60544.86659,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 1.999,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "37300008",
+      "cp": "37300",
+      "ville": "Joué-lès-Tours",
+      "adresse": "119-123 BD JEAN JAURES",
+      "pop": "R",
+      "lat": 4734900,
+      "lng": 66100,
+      "fuels": {
+        "gazole": 1.866,
+        "sp98": 1.984,
+        "e10": 1.864
+      }
+    },
+    {
+      "id": "37300009",
+      "cp": "37300",
+      "ville": "Joué-lès-Tours",
+      "adresse": "2 rue de la LIODIERE",
+      "pop": "R",
+      "lat": 4732184.77558,
+      "lng": 66316.95558,
+      "fuels": {
+        "gazole": 1.921,
+        "sp95": 1.969,
+        "sp98": 1.99,
+        "e10": 1.899,
+        "gplc": 1.039
+      }
+    },
+    {
+      "id": "37300004",
+      "cp": "37300",
+      "ville": "Joué-lès-Tours",
+      "adresse": "42 rue de la Gitonnière",
+      "pop": "R",
+      "lat": 4733800,
+      "lng": 65700,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 1.889,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "37300007",
+      "cp": "37300",
+      "ville": "Joué-lès-Tours",
+      "adresse": "6 Rue du Franc Palais",
+      "pop": "R",
+      "lat": 4735800,
+      "lng": 64600,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.989,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "37300001",
+      "cp": "37300",
+      "ville": "Joué-lès-Tours",
+      "adresse": "Boulevard des Bretonnières",
+      "pop": "R",
+      "lat": 4734600,
+      "lng": 64300,
+      "fuels": {
+        "gazole": 1.939,
+        "sp95": 1.979,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "37306001",
+      "cp": "37300",
+      "ville": "Joué-lès-Tours",
+      "adresse": "Rue de la Bondonnière",
+      "pop": "R",
+      "lat": 4735657.14492,
+      "lng": 69812.87798,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.029
+      }
+    },
+    {
+      "id": "37220001",
+      "cp": "37220",
+      "ville": "L'Île-Bouchard",
+      "adresse": "CENTRE CIAL LA ROCADE",
+      "pop": "R",
+      "lat": 4712200,
+      "lng": 43100,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 2.031,
+        "e10": 1.938,
+        "e85": 0.797
+      }
+    },
+    {
+      "id": "37390004",
+      "cp": "37390",
+      "ville": "La Membrolle-sur-Choisille",
+      "adresse": "81 route de Château-la-Vallière",
+      "pop": "R",
+      "lat": 4744200,
+      "lng": 62400,
+      "fuels": {
+        "gazole": 1.916,
+        "e10": 1.922
+      }
+    },
+    {
+      "id": "37520002",
+      "cp": "37520",
+      "ville": "La Riche",
+      "adresse": "42 Rue des Hautes Marches",
+      "pop": "R",
+      "lat": 4738600,
+      "lng": 65800,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.989,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "37700004",
+      "cp": "37700",
+      "ville": "La Ville-aux-Dames",
+      "adresse": "ZAC Les Fougerolles LA VILLE AUX DAMES",
+      "pop": "R",
+      "lat": 4739600,
+      "lng": 78800,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 2.017,
+        "e10": 1.948,
+        "e85": 0.815,
+        "gplc": 1.004
+      }
+    },
+    {
+      "id": "37130001",
+      "cp": "37130",
+      "ville": "Langeais",
+      "adresse": "Rue Carnot",
+      "pop": "R",
+      "lat": 4732800,
+      "lng": 40600,
+      "fuels": {
+        "gazole": 1.943,
+        "sp95": 1.959,
+        "sp98": 2.013
+      }
+    },
+    {
+      "id": "37240001",
+      "cp": "37240",
+      "ville": "Ligueil",
+      "adresse": "Avenue des Martyrs",
+      "pop": "R",
+      "lat": 4704104.65966,
+      "lng": 81778.14413,
+      "fuels": {
+        "gazole": 1.95,
+        "sp98": 2.02,
+        "e10": 1.937
+      }
+    },
+    {
+      "id": "37600001",
+      "cp": "37600",
+      "ville": "Loches",
+      "adresse": "ROUTE DE VAUZELLES",
+      "pop": "R",
+      "lat": 4713000,
+      "lng": 98400,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.969,
+        "sp98": 2.025,
+        "e10": 1.955,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "37230004",
+      "cp": "37230",
+      "ville": "Luynes",
+      "adresse": "ZONE INDUSTRIELLE DU CHAPELET",
+      "pop": "R",
+      "lat": 4739200,
+      "lng": 53900,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.045,
+        "e10": 1.965
+      }
+    },
     {
       "id": "37380004",
       "cp": "37380",
@@ -59,6 +684,599 @@
         "e10": 1.99,
         "e85": 0.999,
         "gplc": 1.084
+      }
+    },
+    {
+      "id": "37380003",
+      "cp": "37380",
+      "ville": "Monnaie",
+      "adresse": "AUTOROUTE A10 AIRE DE LA BRUNELLERIE",
+      "pop": "A",
+      "lat": 4747600,
+      "lng": 77900,
+      "fuels": {
+        "gazole": 2.199,
+        "sp98": 2.359,
+        "e10": 2.179,
+        "gplc": 1.339
+      }
+    },
+    {
+      "id": "37380001",
+      "cp": "37380",
+      "ville": "Monnaie",
+      "adresse": "La Croix Poêlon",
+      "pop": "R",
+      "lat": 4750100,
+      "lng": 78900,
+      "fuels": {
+        "gazole": 1.984,
+        "sp95": 2.001,
+        "sp98": 2.057,
+        "e85": 0.804
+      }
+    },
+    {
+      "id": "37270001",
+      "cp": "37270",
+      "ville": "Montlouis-sur-Loire",
+      "adresse": "Avenue Victor Laloux",
+      "pop": "R",
+      "lat": 4738400,
+      "lng": 84300,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 2.019,
+        "e10": 1.949,
+        "e85": 0.816
+      }
+    },
+    {
+      "id": "37260001",
+      "cp": "37260",
+      "ville": "Monts",
+      "adresse": "RUE DE LA VASSELIERE",
+      "pop": "R",
+      "lat": 4727673,
+      "lng": 64244,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.979,
+        "sp98": 1.999,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "37530002",
+      "cp": "37530",
+      "ville": "Nazelles-Négron",
+      "adresse": "Boulevard du Sevrage",
+      "pop": "R",
+      "lat": 4742300,
+      "lng": 97600,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.045,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "37360001",
+      "cp": "37360",
+      "ville": "Neuillé-Pont-Pierre",
+      "adresse": "C C DE L HIPPODROME",
+      "pop": "R",
+      "lat": 4754666,
+      "lng": 55172,
+      "fuels": {
+        "gazole": 1.929,
+        "sp95": 1.979,
+        "sp98": 2.029,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "37110002",
+      "cp": "37110",
+      "ville": "Neuville-sur-Brenne",
+      "adresse": "rue gambetta",
+      "pop": "R",
+      "lat": 4759800,
+      "lng": 91400,
+      "fuels": {
+        "gazole": 1.883,
+        "sp95": 1.982,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "37390002",
+      "cp": "37390",
+      "ville": "Notre-Dame-d'Oé",
+      "adresse": "1 rue rené Cassin",
+      "pop": "R",
+      "lat": 4743900,
+      "lng": 69900,
+      "fuels": {
+        "gazole": 1.925,
+        "sp95": 1.959,
+        "sp98": 2.066,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "37800004",
+      "cp": "37800",
+      "ville": "Noyant-de-Touraine",
+      "adresse": "75 ROUTE DE CHINON",
+      "pop": "R",
+      "lat": 4710900,
+      "lng": 58400,
+      "fuels": {
+        "gazole": 1.958,
+        "sp98": 1.99,
+        "e10": 1.947
+      }
+    },
+    {
+      "id": "37600004",
+      "cp": "37600",
+      "ville": "Perrusson",
+      "adresse": "La Cloutiere    PERRUSSON",
+      "pop": "R",
+      "lat": 4711100,
+      "lng": 100500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.969,
+        "sp98": 2.025,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "37290002",
+      "cp": "37290",
+      "ville": "Preuilly-sur-Claise",
+      "adresse": "16 ROUTE DE LOCHES",
+      "pop": "R",
+      "lat": 4685893.66627,
+      "lng": 93924.21249,
+      "fuels": {
+        "gazole": 2.1,
+        "sp95": 1.96,
+        "sp98": 1.95
+      }
+    },
+    {
+      "id": "37550001",
+      "cp": "37550",
+      "ville": "Saint-Avertin",
+      "adresse": "355 ROUTE DE CORMERY",
+      "pop": "R",
+      "lat": 4735300,
+      "lng": 73300,
+      "fuels": {
+        "gazole": 1.943,
+        "sp98": 1.98,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "37320008",
+      "cp": "37320",
+      "ville": "Saint-Branchs",
+      "adresse": "Rte de Tours",
+      "pop": "R",
+      "lat": 4722988.7205,
+      "lng": 76833.21882,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.998,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "37540005",
+      "cp": "37540",
+      "ville": "Saint-Cyr-sur-Loire",
+      "adresse": "181 Boulevard Charles De Gaulle",
+      "pop": "R",
+      "lat": 4741869.50918,
+      "lng": 66465.51653,
+      "fuels": {
+        "gazole": 1.96,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "37540001",
+      "cp": "37540",
+      "ville": "Saint-Cyr-sur-Loire",
+      "adresse": "247 Boulevard Charles de Gaulle",
+      "pop": "R",
+      "lat": 4742585.70023,
+      "lng": 65617.90748,
+      "fuels": {
+        "gazole": 1.925,
+        "sp98": 2.009,
+        "e10": 1.899,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "37800006",
+      "cp": "37800",
+      "ville": "Saint-Épain",
+      "adresse": "AUTOROUTE A10 - AIRE DE SAINTE MAURE DE TOURAINE",
+      "pop": "A",
+      "lat": 4716719,
+      "lng": 63050,
+      "fuels": {
+        "gazole": 2.079,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998,
+        "gplc": 1.064
+      }
+    },
+    {
+      "id": "37800008",
+      "cp": "37800",
+      "ville": "Saint-Épain",
+      "adresse": "Autoroute A10 Aire de Fontaine Colette",
+      "pop": "A",
+      "lat": 4716600,
+      "lng": 63200,
+      "fuels": {
+        "gazole": 2.299,
+        "sp98": 2.379,
+        "e10": 2.229,
+        "gplc": 1.259
+      }
+    },
+    {
+      "id": "37700010",
+      "cp": "37700",
+      "ville": "Saint-Pierre-des-Corps",
+      "adresse": "76, QUAI DE LA LOIRE",
+      "pop": "R",
+      "lat": 4739668,
+      "lng": 71715,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 1.99,
+        "e10": 1.954,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "37700001",
+      "cp": "37700",
+      "ville": "Saint-Pierre-des-Corps",
+      "adresse": "Avenue Jacques DUCLOS",
+      "pop": "R",
+      "lat": 4738000,
+      "lng": 71500,
+      "fuels": {
+        "gazole": 1.987,
+        "sp95": 1.995,
+        "sp98": 2.062,
+        "e10": 1.957
+      }
+    },
+    {
+      "id": "37700011",
+      "cp": "37700",
+      "ville": "Saint-Pierre-des-Corps",
+      "adresse": "AVENUE JACQUES DUCLOS",
+      "pop": "R",
+      "lat": 4738100,
+      "lng": 73000,
+      "fuels": {
+        "gazole": 1.875,
+        "sp98": 1.99,
+        "e10": 1.884,
+        "e85": 0.816,
+        "gplc": 0.989
+      }
+    },
+    {
+      "id": "37800005",
+      "cp": "37800",
+      "ville": "Sainte-Maure-de-Touraine",
+      "adresse": "ZAC Les Marchaux - Les Rotes",
+      "pop": "R",
+      "lat": 4710400,
+      "lng": 61500,
+      "fuels": {
+        "gazole": 1.9,
+        "sp98": 2.042,
+        "e10": 1.9,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "37340001",
+      "cp": "37340",
+      "ville": "Savigné-sur-Lathan",
+      "adresse": "CHEMIN DU PONT DE LA FORGE,",
+      "pop": "R",
+      "lat": 4744000,
+      "lng": 33200,
+      "fuels": {
+        "sp98": 2.029,
+        "e10": 1.935
+      }
+    },
+    {
+      "id": "37250006",
+      "cp": "37250",
+      "ville": "Sorigny",
+      "adresse": "RUE DES PEUPLIERS - ROND POINT DU FOUR A CHAUX",
+      "pop": "R",
+      "lat": 4724655.38395,
+      "lng": 69664.14447,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.939,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "37000016",
+      "cp": "37000",
+      "ville": "Tours",
+      "adresse": "13 à 17 rue du 501e régiment",
+      "pop": "R",
+      "lat": 4739377.902,
+      "lng": 66974.657,
+      "fuels": {
+        "gazole": 1.993,
+        "sp95": 1.961,
+        "sp98": 2.038
+      }
+    },
+    {
+      "id": "37000007",
+      "cp": "37000",
+      "ville": "Tours",
+      "adresse": "300 Rue du Général Renault",
+      "pop": "R",
+      "lat": 4738000,
+      "lng": 66900,
+      "fuels": {
+        "sp98": 2.079
+      }
+    },
+    {
+      "id": "37200004",
+      "cp": "37200",
+      "ville": "Tours",
+      "adresse": "32 ROUTE DE ST AVERTIN",
+      "pop": "R",
+      "lat": 4736500,
+      "lng": 71100,
+      "fuels": {
+        "gazole": 1.872,
+        "sp98": 1.986,
+        "e10": 1.866,
+        "e85": 0.815
+      }
+    },
+    {
+      "id": "37100012",
+      "cp": "37100",
+      "ville": "Tours",
+      "adresse": "35 rue de jemmapes",
+      "pop": "R",
+      "lat": 4742500,
+      "lng": 68200,
+      "fuels": {
+        "gazole": 1.967,
+        "sp95": 1.998,
+        "sp98": 2.026
+      }
+    },
+    {
+      "id": "37100010",
+      "cp": "37100",
+      "ville": "Tours",
+      "adresse": "45, QUAI DE MARMOUTIER",
+      "pop": "R",
+      "lat": 4740385,
+      "lng": 72656,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 1.99,
+        "e10": 1.96
+      }
+    },
+    {
+      "id": "37000014",
+      "cp": "37000",
+      "ville": "Tours",
+      "adresse": "63 BLD DU TONNELLE",
+      "pop": "R",
+      "lat": 4738100,
+      "lng": 66800,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 1.99,
+        "e10": 1.971,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "37000015",
+      "cp": "37000",
+      "ville": "Tours",
+      "adresse": "65 BOULEVARD HEURTELOUP",
+      "pop": "R",
+      "lat": 4739100,
+      "lng": 69700,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 1.99,
+        "e10": 1.967
+      }
+    },
+    {
+      "id": "37000011",
+      "cp": "37000",
+      "ville": "Tours",
+      "adresse": "89 Boulevard Richard Wagner",
+      "pop": "R",
+      "lat": 4737500,
+      "lng": 70900,
+      "fuels": {
+        "sp98": 2.109,
+        "e10": 1.959
+      }
+    },
+    {
+      "id": "37100001",
+      "cp": "37100",
+      "ville": "Tours",
+      "adresse": "ROND POINT GUSTAVE EFFEIL",
+      "pop": "R",
+      "lat": 4742600,
+      "lng": 70000,
+      "fuels": {
+        "gazole": 1.925,
+        "sp98": 2.009,
+        "e10": 1.899,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "37100011",
+      "cp": "37100",
+      "ville": "Tours",
+      "adresse": "RUE ABEL GANCE - ZAC DE L'AEROGA",
+      "pop": "R",
+      "lat": 4742644.47325,
+      "lng": 71075.64989,
+      "fuels": {
+        "gazole": 1.869,
+        "sp98": 1.973,
+        "e85": 0.812
+      }
+    },
+    {
+      "id": "37003001",
+      "cp": "37100",
+      "ville": "Tours",
+      "adresse": "RUE DES BORDIERS",
+      "pop": "R",
+      "lat": 4742500,
+      "lng": 67400,
+      "fuels": {
+        "gazole": 1.925,
+        "sp95": 1.959,
+        "sp98": 2.009,
+        "e10": 1.899,
+        "e85": 0.799
+      }
+    },
+    {
+      "id": "37100002",
+      "cp": "37100",
+      "ville": "Tours",
+      "adresse": "Rue Frédéric Chopin",
+      "pop": "R",
+      "lat": 4741200,
+      "lng": 70200,
+      "fuels": {
+        "gazole": 1.943,
+        "sp98": 1.976,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "37250002",
+      "cp": "37250",
+      "ville": "Veigné",
+      "adresse": "2 Rue de Tivoli",
+      "pop": "R",
+      "lat": 4729300,
+      "lng": 71900,
+      "fuels": {
+        "gazole": 1.935,
+        "sp98": 1.99,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "37270005",
+      "cp": "37270",
+      "ville": "Véretz",
+      "adresse": "62 CHEMIN DE LA BUSSARDIERE",
+      "pop": "R",
+      "lat": 4735500,
+      "lng": 81700,
+      "fuels": {
+        "gazole": 1.9,
+        "sp98": 1.989,
+        "e10": 1.899,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "37210002",
+      "cp": "37210",
+      "ville": "Vernou-sur-Brenne",
+      "adresse": "25 Rue du Professeur Robert Debré",
+      "pop": "R",
+      "lat": 4741400,
+      "lng": 85000,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.985,
+        "sp98": 2.013
+      }
+    },
+    {
+      "id": "37110004",
+      "cp": "37110",
+      "ville": "Villedômer",
+      "adresse": "RN 10",
+      "pop": "R",
+      "lat": 4758361.02961,
+      "lng": 89735.60135,
+      "fuels": {
+        "gazole": 1.883,
+        "sp98": 1.99,
+        "e10": 1.903
+      }
+    },
+    {
+      "id": "37210005",
+      "cp": "37210",
+      "ville": "Vouvray",
+      "adresse": "27-29 rue des Ecoles",
+      "pop": "R",
+      "lat": 4741170.7,
+      "lng": 80343.3,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.985,
+        "sp98": 2.014
+      }
+    },
+    {
+      "id": "37290001",
+      "cp": "37290",
+      "ville": "Yzeures-sur-Creuse",
+      "adresse": "Les Chalussons",
+      "pop": "R",
+      "lat": 4678398.29037,
+      "lng": 88024.43228,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.109,
+        "e10": 1.965
       }
     }
   ]

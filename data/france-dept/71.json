@@ -3,48 +3,498 @@
   "name": "Saône-et-Loire",
   "regionCode": "BFC",
   "regionName": "Bourgogne-Franche-Comté",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 6,
+  "stationCount": 140,
   "fuels": {
     "gazole": {
-      "count": 6,
-      "mean": 1.9657,
-      "median": 1.969,
-      "min": 1.929,
-      "max": 1.999
+      "count": 140,
+      "mean": 1.9962,
+      "median": 1.998,
+      "min": 1.877,
+      "max": 2.25
     },
     "sp95": {
-      "count": 4,
-      "mean": 2.029,
-      "median": 1.999,
-      "min": 1.969,
+      "count": 65,
+      "mean": 2.0207,
+      "median": 2.004,
+      "min": 1.923,
       "max": 2.149
     },
     "sp98": {
-      "count": 5,
-      "mean": 2.0292,
-      "median": 2.029,
-      "min": 1.99,
-      "max": 2.069
+      "count": 111,
+      "mean": 2.0622,
+      "median": 2.049,
+      "min": 1.979,
+      "max": 2.314
     },
     "e10": {
-      "count": 5,
-      "mean": 1.9182,
-      "median": 1.919,
-      "min": 1.899,
-      "max": 1.939
+      "count": 94,
+      "mean": 1.9474,
+      "median": 1.939,
+      "min": 1.859,
+      "max": 2.164
     },
     "e85": {
-      "count": 1,
-      "mean": 0.899,
-      "median": 0.899,
-      "min": 0.899,
-      "max": 0.899
+      "count": 37,
+      "mean": 0.8532,
+      "median": 0.809,
+      "min": 0.789,
+      "max": 1.254
+    },
+    "gplc": {
+      "count": 7,
+      "mean": 1.0436,
+      "median": 1.059,
+      "min": 0.923,
+      "max": 1.099
     }
   },
   "stations": [
+    {
+      "id": "71400016",
+      "cp": "71400",
+      "ville": "Autun",
+      "adresse": "2 ROUTE DE BEAUNE",
+      "pop": "R",
+      "lat": 4695640.68309,
+      "lng": 431634.77589,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71400011",
+      "cp": "71400",
+      "ville": "Autun",
+      "adresse": "3-5 RUE NICEPHORE NIEPCE",
+      "pop": "R",
+      "lat": 4696800,
+      "lng": 430400,
+      "fuels": {
+        "gazole": 1.878,
+        "sp98": 1.988,
+        "e10": 1.865
+      }
+    },
+    {
+      "id": "71400013",
+      "cp": "71400",
+      "ville": "Autun",
+      "adresse": "AVENUE DU 2 EME DRAGON RD 978",
+      "pop": "R",
+      "lat": 4695595.17637,
+      "lng": 431256.30336,
+      "fuels": {
+        "gazole": 1.879,
+        "e10": 1.866
+      }
+    },
+    {
+      "id": "71400005",
+      "cp": "71400",
+      "ville": "Autun",
+      "adresse": "Route de Château-Chinon",
+      "pop": "R",
+      "lat": 4696860.16542,
+      "lng": 427399.89901,
+      "fuels": {
+        "gazole": 1.879,
+        "sp98": 1.989,
+        "e10": 1.859
+      }
+    },
+    {
+      "id": "71800003",
+      "cp": "71800",
+      "ville": "Baudemont",
+      "adresse": "26 Rue des Forges",
+      "pop": "R",
+      "lat": 4628900,
+      "lng": 429900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.01
+      }
+    },
+    {
+      "id": "71110003",
+      "cp": "71110",
+      "ville": "Baugy",
+      "adresse": "Le Champêtre",
+      "pop": "R",
+      "lat": 4628900,
+      "lng": 404100,
+      "fuels": {
+        "gazole": 2.066,
+        "sp95": 2.062,
+        "sp98": 2.219
+      }
+    },
+    {
+      "id": "71450002",
+      "cp": "71450",
+      "ville": "Blanzy",
+      "adresse": "37, rue de la République",
+      "pop": "R",
+      "lat": 4670200,
+      "lng": 438800,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71450001",
+      "cp": "71450",
+      "ville": "Blanzy",
+      "adresse": "RUE DES COMMUNAUTES",
+      "pop": "R",
+      "lat": 4670700,
+      "lng": 439000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71140002",
+      "cp": "71140",
+      "ville": "Bourbon-Lancy",
+      "adresse": "47 Avenue Claude et Émile Puzenat",
+      "pop": "R",
+      "lat": 4662400,
+      "lng": 375700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.989,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "71140003",
+      "cp": "71140",
+      "ville": "Bourbon-Lancy",
+      "adresse": "6 route de Digoin",
+      "pop": "R",
+      "lat": 4662800,
+      "lng": 373600,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 2.058,
+        "e10": 1.939,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71140001",
+      "cp": "71140",
+      "ville": "Bourbon-Lancy",
+      "adresse": "ROUTE DE MOULINS",
+      "pop": "R",
+      "lat": 4662300,
+      "lng": 376100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71700010",
+      "cp": "71700",
+      "ville": "Boyer",
+      "adresse": "1923 venière",
+      "pop": "R",
+      "lat": 4659822.72488,
+      "lng": 490386.7221,
+      "fuels": {
+        "gazole": 2.006,
+        "sp98": 1.99,
+        "e10": 1.98
+      }
+    },
+    {
+      "id": "71390006",
+      "cp": "71390",
+      "ville": "Buxy",
+      "adresse": "1 rue des cordiers",
+      "pop": "R",
+      "lat": 4671495.0668,
+      "lng": 469663.31021,
+      "fuels": {
+        "gazole": 2.19
+      }
+    },
+    {
+      "id": "71390001",
+      "cp": "71390",
+      "ville": "Buxy",
+      "adresse": "LE CHAMP FLEURY",
+      "pop": "R",
+      "lat": 4671600,
+      "lng": 470400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71150004",
+      "cp": "71150",
+      "ville": "Chagny",
+      "adresse": "19-21 route de Chassagne, RN6",
+      "pop": "R",
+      "lat": 4692100,
+      "lng": 474800,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.079,
+        "e10": 1.979,
+        "gplc": 1.049
+      }
+    },
+    {
+      "id": "71100003",
+      "cp": "71100",
+      "ville": "Chalon-sur-Saône",
+      "adresse": "144 Avenue de Paris",
+      "pop": "R",
+      "lat": 4679804,
+      "lng": 484741,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71100030",
+      "cp": "71100",
+      "ville": "Chalon-sur-Saône",
+      "adresse": "20-22 AVENUE MONOT",
+      "pop": "R",
+      "lat": 4678976.2,
+      "lng": 486116.1,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.079,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "71100008",
+      "cp": "71100",
+      "ville": "Chalon-sur-Saône",
+      "adresse": "37 AV NICEPHORE NIEPCE",
+      "pop": "R",
+      "lat": 4678200,
+      "lng": 484700,
+      "fuels": {
+        "gazole": 2.066,
+        "sp98": 2.011,
+        "e10": 1.931
+      }
+    },
+    {
+      "id": "71000010",
+      "cp": "71100",
+      "ville": "Chalon-sur-Saône",
+      "adresse": "6, Rue Paul Sabatier",
+      "pop": "R",
+      "lat": 4681201,
+      "lng": 485551,
+      "fuels": {
+        "gazole": 1.928,
+        "sp95": 1.947,
+        "sp98": 1.988,
+        "e10": 1.919,
+        "gplc": 1.097
+      }
+    },
+    {
+      "id": "71100002",
+      "cp": "71100",
+      "ville": "Chalon-sur-Saône",
+      "adresse": "7 Rue Thomas Dumorey",
+      "pop": "R",
+      "lat": 4677277.9712,
+      "lng": 485949.54554,
+      "fuels": {
+        "gazole": 1.892,
+        "sp95": 1.923,
+        "sp98": 2.002,
+        "e10": 1.881,
+        "e85": 0.797,
+        "gplc": 0.923
+      }
+    },
+    {
+      "id": "71100011",
+      "cp": "71100",
+      "ville": "Chalon-sur-Saône",
+      "adresse": "70 rue des lieutenants chauveau",
+      "pop": "R",
+      "lat": 4677600,
+      "lng": 483700,
+      "fuels": {
+        "gazole": 1.951,
+        "sp95": 1.972,
+        "sp98": 2.025,
+        "e10": 1.897
+      }
+    },
+    {
+      "id": "71100031",
+      "cp": "71100",
+      "ville": "Chalon-sur-Saône",
+      "adresse": "RUE DES POILUS D'ORIENT",
+      "pop": "R",
+      "lat": 4679734.64454,
+      "lng": 483564.86413,
+      "fuels": {
+        "gazole": 1.879,
+        "sp98": 1.979,
+        "e10": 1.869,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71100026",
+      "cp": "71100",
+      "ville": "Chalon-sur-Saône",
+      "adresse": "RUE RAYMOND ARNAL",
+      "pop": "R",
+      "lat": 4679300,
+      "lng": 485400,
+      "fuels": {
+        "gazole": 1.879,
+        "sp98": 1.99,
+        "e10": 1.873,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "71850004",
+      "cp": "71850",
+      "ville": "Charnay-lès-Mâcon",
+      "adresse": "60, Grande Rue de la Coupée",
+      "pop": "R",
+      "lat": 4630800,
+      "lng": 481100,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.039,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "71850002",
+      "cp": "71850",
+      "ville": "Charnay-lès-Mâcon",
+      "adresse": "710 Route de Cluny",
+      "pop": "R",
+      "lat": 4631100,
+      "lng": 479100,
+      "fuels": {
+        "gazole": 2.05,
+        "e10": 1.96
+      }
+    },
+    {
+      "id": "71850001",
+      "cp": "71850",
+      "ville": "Charnay-lès-Mâcon",
+      "adresse": "Rue de la Chapelle",
+      "pop": "R",
+      "lat": 4630944,
+      "lng": 481183,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.959,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "71120002",
+      "cp": "71120",
+      "ville": "Charolles",
+      "adresse": "Avenue du 8 Juin 1944",
+      "pop": "R",
+      "lat": 4643700,
+      "lng": 426800,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71380002",
+      "cp": "71380",
+      "ville": "Châtenoy-en-Bresse",
+      "adresse": "ZAC CHAMP CHASSY RTE DE DOLE",
+      "pop": "R",
+      "lat": 4679200,
+      "lng": 491200,
+      "fuels": {
+        "gazole": 1.981,
+        "sp98": 2.026,
+        "e10": 1.908,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71880002",
+      "cp": "71880",
+      "ville": "Châtenoy-le-Royal",
+      "adresse": "ZAC DU MAUPAS AVENUE GENERAL DE GAULLE",
+      "pop": "R",
+      "lat": 4679646.09653,
+      "lng": 481133.69146,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.991,
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "71150002",
+      "cp": "71150",
+      "ville": "Chaudenay",
+      "adresse": "Rue de Wissen",
+      "pop": "R",
+      "lat": 4690400,
+      "lng": 478800,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.019,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71170001",
+      "cp": "71170",
+      "ville": "Chauffailles",
+      "adresse": "1, AVENUE VAN DE WALLE",
+      "pop": "R",
+      "lat": 4620400,
+      "lng": 433600,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.099
+      }
+    },
     {
       "id": "71170003",
       "cp": "71170",
@@ -58,6 +508,674 @@
         "sp95": 2.009,
         "sp98": 2.069,
         "e10": 1.939
+      }
+    },
+    {
+      "id": "71250004",
+      "cp": "71250",
+      "ville": "Cluny",
+      "adresse": "14 route de la Digue",
+      "pop": "R",
+      "lat": 4642800,
+      "lng": 466400,
+      "fuels": {
+        "gazole": 2.059,
+        "sp98": 2.059,
+        "e10": 2.019,
+        "e85": 0.949
+      }
+    },
+    {
+      "id": "71250001",
+      "cp": "71250",
+      "ville": "Cluny",
+      "adresse": "AVENUE CHARLES DE GAULLE",
+      "pop": "R",
+      "lat": 4642800,
+      "lng": 466200,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 2.039,
+        "sp98": 2.069,
+        "e10": 2.009
+      }
+    },
+    {
+      "id": "71250008",
+      "cp": "71250",
+      "ville": "Cluny",
+      "adresse": "Rue Maurice Lacoque",
+      "pop": "R",
+      "lat": 4643700,
+      "lng": 465000,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.039,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "71270008",
+      "cp": "71270",
+      "ville": "Clux-Villeneuve",
+      "adresse": "2 route",
+      "pop": "R",
+      "lat": 4696354.13373,
+      "lng": 517425.84054,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.029,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "71490007",
+      "cp": "71490",
+      "ville": "Couches",
+      "adresse": "71 RUE SAINT NICOLAS",
+      "pop": "R",
+      "lat": 4686641.8,
+      "lng": 458006.9,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 1.999,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "71680001",
+      "cp": "71680",
+      "ville": "Crêches-sur-Saône",
+      "adresse": "Centre commercial CARREFOUR des Bouchardes",
+      "pop": "R",
+      "lat": 4625400,
+      "lng": 478900,
+      "fuels": {
+        "gazole": 1.933,
+        "e10": 1.883,
+        "e85": 0.804
+      }
+    },
+    {
+      "id": "71680002",
+      "cp": "71680",
+      "ville": "Crêches-sur-Saône",
+      "adresse": "RN6",
+      "pop": "R",
+      "lat": 4625000,
+      "lng": 478800,
+      "fuels": {
+        "gazole": 2.02,
+        "sp98": 2.093,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "71480001",
+      "cp": "71480",
+      "ville": "Cuiseaux",
+      "adresse": "Route de Dommartin",
+      "pop": "R",
+      "lat": 4649200,
+      "lng": 538600,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.055,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "71290002",
+      "cp": "71290",
+      "ville": "Cuisery",
+      "adresse": "20 RUE DU BOIS BERNOUX",
+      "pop": "R",
+      "lat": 4655788.92005,
+      "lng": 498340.25489,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 2.049,
+        "e10": 1.94,
+        "e85": 0.798,
+        "gplc": 1.059
+      }
+    },
+    {
+      "id": "71290003",
+      "cp": "71290",
+      "ville": "Cuisery",
+      "adresse": "37 RUE DES TONNETTES",
+      "pop": "R",
+      "lat": 4655900,
+      "lng": 499600,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 2.049,
+        "e10": 1.96
+      }
+    },
+    {
+      "id": "71620002",
+      "cp": "71620",
+      "ville": "Damerey",
+      "adresse": "STATION TOTAL RN.73",
+      "pop": "R",
+      "lat": 4683800,
+      "lng": 499600,
+      "fuels": {
+        "gazole": 1.981
+      }
+    },
+    {
+      "id": "71160001",
+      "cp": "71160",
+      "ville": "Digoin",
+      "adresse": "19 Avenue des Platanes",
+      "pop": "R",
+      "lat": 4648300,
+      "lng": 397500,
+      "fuels": {
+        "gazole": 1.972,
+        "sp98": 1.99,
+        "e10": 1.958
+      }
+    },
+    {
+      "id": "71160003",
+      "cp": "71160",
+      "ville": "Digoin",
+      "adresse": "CC LIGERVAL-ZAC DES CHARMES-AVENUE DE L' EUROPE",
+      "pop": "R",
+      "lat": 4647400,
+      "lng": 400400,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.979,
+        "sp98": 2.039,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71160002",
+      "cp": "71160",
+      "ville": "Digoin",
+      "adresse": "Rue de la Faïencerie",
+      "pop": "R",
+      "lat": 4648800,
+      "lng": 399300,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.979,
+        "sp98": 2.049,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "71480007",
+      "cp": "71480",
+      "ville": "Dommartin-lès-Cuiseaux",
+      "adresse": "A 39 AIRE DU POULET DE BRESSE",
+      "pop": "A",
+      "lat": 4649615.49924,
+      "lng": 531181.21885,
+      "fuels": {
+        "gazole": 2.229,
+        "sp98": 2.239,
+        "e10": 2.139
+      }
+    },
+    {
+      "id": "71520001",
+      "cp": "71520",
+      "ville": "Dompierre-les-Ormes",
+      "adresse": "PLACE DE LA BASCULE",
+      "pop": "R",
+      "lat": 4636200,
+      "lng": 448400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.02
+      }
+    },
+    {
+      "id": "71360002",
+      "cp": "71360",
+      "ville": "Épinac",
+      "adresse": "9 RUE DU 19 MARS 1962",
+      "pop": "R",
+      "lat": 4698911.2,
+      "lng": 452318.2,
+      "fuels": {
+        "gazole": 1.967,
+        "sp98": 2.004,
+        "e10": 1.889
+      }
+    },
+    {
+      "id": "71190003",
+      "cp": "71190",
+      "ville": "Étang-sur-Arroux",
+      "adresse": "47 rue Gabriel Bouthiere",
+      "pop": "R",
+      "lat": 4686600,
+      "lng": 419000,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 1.969,
+        "sp98": 2.059
+      }
+    },
+    {
+      "id": "71260005",
+      "cp": "71260",
+      "ville": "Fleurville",
+      "adresse": "RD 906",
+      "pop": "R",
+      "lat": 4644500,
+      "lng": 488500,
+      "fuels": {
+        "gazole": 1.881,
+        "sp98": 1.99,
+        "e10": 1.877,
+        "e85": 0.865
+      }
+    },
+    {
+      "id": "71420002",
+      "cp": "71420",
+      "ville": "Génelard",
+      "adresse": "Route de Martigny",
+      "pop": "R",
+      "lat": 4657900,
+      "lng": 424100,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 2.049,
+        "sp98": 2.079
+      }
+    },
+    {
+      "id": "71590001",
+      "cp": "71590",
+      "ville": "Gergy",
+      "adresse": "90 route de Chalon",
+      "pop": "R",
+      "lat": 4686200,
+      "lng": 495000,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.029,
+        "e10": 1.939,
+        "e85": 0.819
+      }
+    },
+    {
+      "id": "71460004",
+      "cp": "71460",
+      "ville": "Germagny",
+      "adresse": "28 Grande Rue",
+      "pop": "R",
+      "lat": 4667055.2,
+      "lng": 460224.8,
+      "fuels": {
+        "gazole": 2.25,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "71640004",
+      "cp": "71640",
+      "ville": "Givry",
+      "adresse": "AVENUE DE CHALON",
+      "pop": "R",
+      "lat": 4678181.4,
+      "lng": 475193.4,
+      "fuels": {
+        "gazole": 1.978,
+        "sp98": 2.058,
+        "e10": 1.987
+      }
+    },
+    {
+      "id": "71300009",
+      "cp": "71300",
+      "ville": "Gourdon",
+      "adresse": "Lieu-Dit Beauregard",
+      "pop": "R",
+      "lat": 4666500,
+      "lng": 439200,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.959,
+        "e10": 1.889
+      }
+    },
+    {
+      "id": "71130005",
+      "cp": "71130",
+      "ville": "Gueugnon",
+      "adresse": "31 RUE DU 8 MAI 1945",
+      "pop": "R",
+      "lat": 4659700,
+      "lng": 405200,
+      "fuels": {
+        "gazole": 1.99
+      }
+    },
+    {
+      "id": "71130002",
+      "cp": "71130",
+      "ville": "Gueugnon",
+      "adresse": "ROUTE DE DIGOIN",
+      "pop": "R",
+      "lat": 4659100,
+      "lng": 406500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71130004",
+      "cp": "71130",
+      "ville": "Gueugnon",
+      "adresse": "Route de Toulon sur Arroux",
+      "pop": "R",
+      "lat": 4660400,
+      "lng": 407100,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 1.995,
+        "e10": 1.965,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71540001",
+      "cp": "71540",
+      "ville": "Igornay",
+      "adresse": "Le Bourg",
+      "pop": "R",
+      "lat": 4704522,
+      "lng": 437921,
+      "fuels": {
+        "gazole": 2.05,
+        "sp95": 2.12,
+        "sp98": 2.12
+      }
+    },
+    {
+      "id": "71760001",
+      "cp": "71760",
+      "ville": "Issy-l'Évêque",
+      "adresse": "22 route de Luzy",
+      "pop": "R",
+      "lat": 4671100,
+      "lng": 397200,
+      "fuels": {
+        "gazole": 2.08,
+        "sp98": 2.12,
+        "e85": 0.79
+      }
+    },
+    {
+      "id": "71370007",
+      "cp": "71370",
+      "ville": "L'Abergement-Sainte-Colombe",
+      "adresse": "2a rue du bourg",
+      "pop": "R",
+      "lat": 4675204.4144,
+      "lng": 500660.65145,
+      "fuels": {
+        "gazole": 2.006,
+        "sp98": 2.09,
+        "e10": 1.956
+      }
+    },
+    {
+      "id": "71570003",
+      "cp": "71570",
+      "ville": "La Chapelle-de-Guinchay",
+      "adresse": "le pré des grandes terres",
+      "pop": "R",
+      "lat": 4621000,
+      "lng": 475700,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.039,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "71800001",
+      "cp": "71800",
+      "ville": "La Clayette",
+      "adresse": "route des forges",
+      "pop": "R",
+      "lat": 4629000,
+      "lng": 430000,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.039,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "71670001",
+      "cp": "71670",
+      "ville": "Le Breuil",
+      "adresse": "AV DE CHAMBREUIL",
+      "pop": "R",
+      "lat": 4680500,
+      "lng": 447400,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 2.009,
+        "sp98": 2.049,
+        "e10": 1.945
+      }
+    },
+    {
+      "id": "71200013",
+      "cp": "71200",
+      "ville": "Le Creusot",
+      "adresse": "75 ROUTE DE MONTCENIS",
+      "pop": "R",
+      "lat": 4680019.5,
+      "lng": 440636.5,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.099,
+        "e10": 1.999,
+        "gplc": 1.099
+      }
+    },
+    {
+      "id": "71200011",
+      "cp": "71200",
+      "ville": "Le Creusot",
+      "adresse": "Centre commercial de l'arche",
+      "pop": "R",
+      "lat": 4680800,
+      "lng": 442900,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 2.004,
+        "sp98": 2.06
+      }
+    },
+    {
+      "id": "71200004",
+      "cp": "71200",
+      "ville": "Le Creusot",
+      "adresse": "rue de pologne",
+      "pop": "R",
+      "lat": 4680300,
+      "lng": 445400,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.049,
+        "e10": 1.945
+      }
+    },
+    {
+      "id": "71480006",
+      "cp": "71480",
+      "ville": "Le Miroir",
+      "adresse": "ZI DE MILLEURE",
+      "pop": "A",
+      "lat": 4654700,
+      "lng": 532400,
+      "fuels": {
+        "gazole": 1.991,
+        "e10": 1.986,
+        "e85": 0.869
+      }
+    },
+    {
+      "id": "71500003",
+      "cp": "71500",
+      "ville": "Louhans",
+      "adresse": "7 Route de Sornay",
+      "pop": "R",
+      "lat": 4662600,
+      "lng": 521400,
+      "fuels": {
+        "gazole": 2.001,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "71500004",
+      "cp": "71500",
+      "ville": "Louhans",
+      "adresse": "92 Rue des Bordes",
+      "pop": "R",
+      "lat": 4662200,
+      "lng": 522700,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 2.039,
+        "e10": 1.899,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "71500001",
+      "cp": "71500",
+      "ville": "Louhans",
+      "adresse": "99 RUE DU GUIDON",
+      "pop": "R",
+      "lat": 4663900,
+      "lng": 521300,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.149,
+        "e10": 2.099
+      }
+    },
+    {
+      "id": "71500008",
+      "cp": "71500",
+      "ville": "Louhans",
+      "adresse": "RUE DE BEAUFORT",
+      "pop": "R",
+      "lat": 4662639.90737,
+      "lng": 523410.68682,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.004,
+        "sp98": 2.086
+      }
+    },
+    {
+      "id": "71260004",
+      "cp": "71260",
+      "ville": "Lugny",
+      "adresse": "143 rue du four a chaux",
+      "pop": "R",
+      "lat": 4647200,
+      "lng": 481600,
+      "fuels": {
+        "gazole": 2.17,
+        "sp98": 1.98
+      }
+    },
+    {
+      "id": "71100022",
+      "cp": "71100",
+      "ville": "Lux",
+      "adresse": "27 rue charles dumoulin",
+      "pop": "R",
+      "lat": 4675200,
+      "lng": 484900,
+      "fuels": {
+        "gazole": 1.89,
+        "sp95": 1.939,
+        "sp98": 1.994,
+        "e10": 1.881
+      }
+    },
+    {
+      "id": "71000023",
+      "cp": "71000",
+      "ville": "Mâcon",
+      "adresse": "55 Rue du Château",
+      "pop": "R",
+      "lat": 4636500,
+      "lng": 484300,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.089,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "71000021",
+      "cp": "71000",
+      "ville": "Mâcon",
+      "adresse": "97 ROUTE DE LYON RN 6",
+      "pop": "R",
+      "lat": 4628500,
+      "lng": 480800,
+      "fuels": {
+        "gazole": 1.877,
+        "sp98": 1.99,
+        "e10": 1.875,
+        "e85": 0.849,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "71000022",
+      "cp": "71000",
+      "ville": "Mâcon",
+      "adresse": "AVENUE EDOUARD HERRIOT",
+      "pop": "R",
+      "lat": 4630000,
+      "lng": 482900,
+      "fuels": {
+        "gazole": 1.881,
+        "sp98": 1.99,
+        "e10": 1.875,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "71000001",
+      "cp": "71000",
+      "ville": "Mâcon",
+      "adresse": "RN 6",
+      "pop": "R",
+      "lat": 4632536,
+      "lng": 483854,
+      "fuels": {
+        "gazole": 1.965,
+        "sp98": 1.99,
+        "e10": 1.92
       }
     },
     {
@@ -75,6 +1193,105 @@
       }
     },
     {
+      "id": "71110001",
+      "cp": "71110",
+      "ville": "Marcigny",
+      "adresse": "ZONE ARTISANALE",
+      "pop": "R",
+      "lat": 4627800,
+      "lng": 403100,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 2.039,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "71710004",
+      "cp": "71710",
+      "ville": "Marmagne",
+      "adresse": "26 ROUTE DU BOIS DU RUAULT",
+      "pop": "R",
+      "lat": 4683382.82529,
+      "lng": 436101.79067,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.149,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "71250006",
+      "cp": "71250",
+      "ville": "Mazille",
+      "adresse": "ROUTE NATIONALE 79",
+      "pop": "R",
+      "lat": 4637720.49457,
+      "lng": 460698.49553,
+      "fuels": {
+        "gazole": 2.005,
+        "e10": 1.99,
+        "e85": 0.869
+      }
+    },
+    {
+      "id": "71640002",
+      "cp": "71640",
+      "ville": "Mercurey",
+      "adresse": "49 Grande Rue",
+      "pop": "R",
+      "lat": 4683600,
+      "lng": 471800,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.199,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "71300013",
+      "cp": "71300",
+      "ville": "Montceau-les-Mines",
+      "adresse": "5 RUE DE LA COUDRAIE",
+      "pop": "R",
+      "lat": 4669100,
+      "lng": 435500,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.959,
+        "e10": 1.889,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71304001",
+      "cp": "71300",
+      "ville": "Montceau-les-Mines",
+      "adresse": "AVENUE DU MARECHAL LECLERC",
+      "pop": "R",
+      "lat": 4668098,
+      "lng": 437140,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.989,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "71300015",
+      "cp": "71300",
+      "ville": "Montceau-les-Mines",
+      "adresse": "RN 70",
+      "pop": "R",
+      "lat": 4668364.92383,
+      "lng": 434930.46664,
+      "fuels": {
+        "gazole": 2.199,
+        "sp98": 2.199,
+        "e10": 2.149
+      }
+    },
+    {
       "id": "71210010",
       "cp": "71210",
       "ville": "Montchanin",
@@ -86,6 +1303,91 @@
         "gazole": 1.999,
         "sp95": 2.149,
         "e85": 0.899
+      }
+    },
+    {
+      "id": "71210006",
+      "cp": "71210",
+      "ville": "Montchanin",
+      "adresse": "Avenue des Mouettes",
+      "pop": "R",
+      "lat": 4673871.577,
+      "lng": 447440.139,
+      "fuels": {
+        "gazole": 1.995,
+        "sp95": 2.009,
+        "sp98": 2.057,
+        "e10": 1.945
+      }
+    },
+    {
+      "id": "71210009",
+      "cp": "71210",
+      "ville": "Montchanin",
+      "adresse": "RN 80 ROND POINT J. ROSE",
+      "pop": "R",
+      "lat": 4675547,
+      "lng": 448622,
+      "fuels": {
+        "gazole": 1.883,
+        "e10": 1.88,
+        "e85": 0.825
+      }
+    },
+    {
+      "id": "71370003",
+      "cp": "71370",
+      "ville": "Ouroux-sur-Saône",
+      "adresse": "Rue du Pranet",
+      "pop": "R",
+      "lat": 4670461,
+      "lng": 496891,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.029
+      }
+    },
+    {
+      "id": "71600004",
+      "cp": "71600",
+      "ville": "Paray-le-Monial",
+      "adresse": "14 Quai du Commerce",
+      "pop": "R",
+      "lat": 4644800,
+      "lng": 411600,
+      "fuels": {
+        "gazole": 2.08,
+        "sp95": 2.04
+      }
+    },
+    {
+      "id": "71600012",
+      "cp": "71600",
+      "ville": "Paray-le-Monial",
+      "adresse": "35 QUAI DE L'INDUSTRIE",
+      "pop": "R",
+      "lat": 4645400,
+      "lng": 410300,
+      "fuels": {
+        "gazole": 1.929,
+        "sp95": 1.959,
+        "e10": 1.879,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71600001",
+      "cp": "71600",
+      "ville": "Paray-le-Monial",
+      "adresse": "40, quai du commerce",
+      "pop": "R",
+      "lat": 4644600,
+      "lng": 412000,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 1.99,
+        "e10": 1.966
       }
     },
     {
@@ -104,6 +1406,366 @@
       }
     },
     {
+      "id": "71600009",
+      "cp": "71600",
+      "ville": "Paray-le-Monial",
+      "adresse": "rue de la grande bruyère",
+      "pop": "R",
+      "lat": 4646800,
+      "lng": 412000,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.959,
+        "sp98": 2.049,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "71260007",
+      "cp": "71260",
+      "ville": "Péronne",
+      "adresse": "AUX TEPPES SOLDATS",
+      "pop": "R",
+      "lat": 4644018.08,
+      "lng": 481076.04,
+      "fuels": {
+        "gazole": 2.01,
+        "sp98": 2.059,
+        "e10": 1.939,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71420003",
+      "cp": "71420",
+      "ville": "Perrecy-les-Forges",
+      "adresse": "Avenue Francis Pautonnier",
+      "pop": "R",
+      "lat": 4661500,
+      "lng": 421200,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "e10": 1.959,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "71270005",
+      "cp": "71270",
+      "ville": "Pierre-de-Bresse",
+      "adresse": "98 ROUTE DE CHALON",
+      "pop": "R",
+      "lat": 4688300,
+      "lng": 524800,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.999,
+        "e10": 1.889
+      }
+    },
+    {
+      "id": "71270004",
+      "cp": "71270",
+      "ville": "Pierre-de-Bresse",
+      "adresse": "Route de Lons-le-Saunier",
+      "pop": "R",
+      "lat": 4687800,
+      "lng": 527100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71960001",
+      "cp": "71960",
+      "ville": "Prissé",
+      "adresse": "Espace commercial \"Les deux roches\" ZA du Pré de Lit",
+      "pop": "R",
+      "lat": 4632800,
+      "lng": 474200,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.999,
+        "sp98": 2.029,
+        "e10": 1.929,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71570004",
+      "cp": "71570",
+      "ville": "Romanèche-Thorins",
+      "adresse": "RN 6 LA MAISON BLANCHE",
+      "pop": "R",
+      "lat": 4618534.6,
+      "lng": 475238.6,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.109,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71470004",
+      "cp": "71470",
+      "ville": "Romenay",
+      "adresse": "2144 quai de la gare",
+      "pop": "R",
+      "lat": 4650233.80701,
+      "lng": 506363.33085,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.989,
+        "sp98": 2.079,
+        "e85": 0.823
+      }
+    },
+    {
+      "id": "71580002",
+      "cp": "71580",
+      "ville": "Saillenard",
+      "adresse": "99 Route de Saint-Germain",
+      "pop": "R",
+      "lat": 4669067,
+      "lng": 536630,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.02,
+        "sp98": 2.045
+      }
+    },
+    {
+      "id": "71260006",
+      "cp": "71260",
+      "ville": "Saint-Albain",
+      "adresse": "AUTOROUTE A6 - AIRE DE MACON LA SALLE",
+      "pop": "A",
+      "lat": 4641766,
+      "lng": 486506,
+      "fuels": {
+        "gazole": 2.066,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.939,
+        "gplc": 1.079
+      }
+    },
+    {
+      "id": "71260009",
+      "cp": "71260",
+      "ville": "Saint-Albain",
+      "adresse": "Autoroute A6 - Aire de Macon Saint-Albain",
+      "pop": "A",
+      "lat": 4642000,
+      "lng": 486300,
+      "fuels": {
+        "gazole": 2.211,
+        "sp98": 2.314,
+        "e10": 2.164
+      }
+    },
+    {
+      "id": "71240008",
+      "cp": "71240",
+      "ville": "Saint-Ambreuil",
+      "adresse": "Autoroute A6",
+      "pop": "A",
+      "lat": 4669200,
+      "lng": 484500,
+      "fuels": {
+        "gazole": 2.077,
+        "sp98": 2.155,
+        "e10": 2.05,
+        "e85": 1.254
+      }
+    },
+    {
+      "id": "71240009",
+      "cp": "71240",
+      "ville": "Saint-Ambreuil",
+      "adresse": "AUTOROUTE DU SOLEIL A6 - SENS PARIS / PROVINCE",
+      "pop": "A",
+      "lat": 4669482.1,
+      "lng": 485784.4,
+      "fuels": {
+        "gazole": 2.037,
+        "sp98": 2.156,
+        "e10": 2.05,
+        "e85": 1.24
+      }
+    },
+    {
+      "id": "71220002",
+      "cp": "71220",
+      "ville": "Saint-Bonnet-de-Joux",
+      "adresse": "Lieu-dit Les Renauds",
+      "pop": "R",
+      "lat": 4647900,
+      "lng": 442500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "e85": 0.859
+      }
+    },
+    {
+      "id": "71390005",
+      "cp": "71390",
+      "ville": "Saint-Désert",
+      "adresse": "LIEU DIT LA CONDEMAINE",
+      "pop": "R",
+      "lat": 4675200,
+      "lng": 471800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.969,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "71460001",
+      "cp": "71460",
+      "ville": "Saint-Gengoux-le-National",
+      "adresse": "Route de Chalon",
+      "pop": "R",
+      "lat": 4661000,
+      "lng": 467200,
+      "fuels": {
+        "gazole": 2.039,
+        "sp95": 2.039,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "71330001",
+      "cp": "71330",
+      "ville": "Saint-Germain-du-Bois",
+      "adresse": "Allée de la Balme",
+      "pop": "R",
+      "lat": 4675500,
+      "lng": 524500,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 2.029,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "71370001",
+      "cp": "71370",
+      "ville": "Saint-Germain-du-Plain",
+      "adresse": "PLACE DU MARCHE",
+      "pop": "R",
+      "lat": 4670500,
+      "lng": 498100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71510001",
+      "cp": "71510",
+      "ville": "Saint-Léger-sur-Dheune",
+      "adresse": "RUE DE LA GARE",
+      "pop": "R",
+      "lat": 4684900,
+      "lng": 463100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71350002",
+      "cp": "71350",
+      "ville": "Saint-Loup-Géanges",
+      "adresse": "ZAC DES PLANTES",
+      "pop": "R",
+      "lat": 4694800,
+      "lng": 490900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.06,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "71380003",
+      "cp": "71380",
+      "ville": "Saint-Marcel",
+      "adresse": "5 rue du curtil canot",
+      "pop": "R",
+      "lat": 4677754.04,
+      "lng": 489662.89,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.963,
+        "sp98": 2.045
+      }
+    },
+    {
+      "id": "71118001",
+      "cp": "71118",
+      "ville": "Saint-Martin-Belle-Roche",
+      "adresse": "LIEU DIT CHASSAGNE",
+      "pop": "R",
+      "lat": 4638200,
+      "lng": 485100,
+      "fuels": {
+        "gazole": 1.97,
+        "sp98": 1.995,
+        "e10": 1.92
+      }
+    },
+    {
+      "id": "71100027",
+      "cp": "71100",
+      "ville": "Saint-Rémy",
+      "adresse": "52 RTE DE LYON",
+      "pop": "R",
+      "lat": 4676543,
+      "lng": 484228,
+      "fuels": {
+        "gazole": 1.974,
+        "sp98": 1.99,
+        "e10": 1.964
+      }
+    },
+    {
+      "id": "71710002",
+      "cp": "71710",
+      "ville": "Saint-Symphorien-de-Marmagne",
+      "adresse": "4413 Route du Morvan",
+      "pop": "R",
+      "lat": 4686300,
+      "lng": 429700,
+      "fuels": {
+        "gazole": 2.049
+      }
+    },
+    {
+      "id": "71230003",
+      "cp": "71230",
+      "ville": "Saint-Vallier",
+      "adresse": "26 RUE GAMBETTA",
+      "pop": "R",
+      "lat": 4664353.04836,
+      "lng": 437080.6826,
+      "fuels": {
+        "gazole": 2.124,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
       "id": "71230002",
       "cp": "71230",
       "ville": "Saint-Vallier",
@@ -112,10 +1774,137 @@
       "lat": 4664800,
       "lng": 434000,
       "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.989,
-        "sp98": 2.019,
-        "e10": 1.919
+        "gazole": 1.949,
+        "sp95": 1.959,
+        "sp98": 1.989,
+        "e10": 1.889
+      }
+    },
+    {
+      "id": "71600005",
+      "cp": "71600",
+      "ville": "Saint-Yan",
+      "adresse": "route de marcigny",
+      "pop": "R",
+      "lat": 4641100,
+      "lng": 403900,
+      "fuels": {
+        "gazole": 1.978,
+        "sp98": 1.99,
+        "e10": 1.956
+      }
+    },
+    {
+      "id": "71250007",
+      "cp": "71250",
+      "ville": "Sainte-Cécile",
+      "adresse": "RN 79",
+      "pop": "R",
+      "lat": 4638622.56868,
+      "lng": 461930.85587,
+      "fuels": {
+        "gazole": 2.009,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "71000009",
+      "cp": "71000",
+      "ville": "Sancé",
+      "adresse": "180 Rue Louise Michel",
+      "pop": "R",
+      "lat": 4633100,
+      "lng": 482800,
+      "fuels": {
+        "gazole": 1.94,
+        "sp95": 1.98,
+        "sp98": 1.98,
+        "e10": 1.895
+      }
+    },
+    {
+      "id": "71000026",
+      "cp": "71000",
+      "ville": "Sancé",
+      "adresse": "2 RUE DES GRANDES VARENNES",
+      "pop": "R",
+      "lat": 4633047.6,
+      "lng": 484302.5,
+      "fuels": {
+        "gazole": 1.977,
+        "e10": 1.967
+      }
+    },
+    {
+      "id": "71410001",
+      "cp": "71410",
+      "ville": "Sanvignes-les-Mines",
+      "adresse": "128 Rue François Mitterrand",
+      "pop": "R",
+      "lat": 4666500,
+      "lng": 428700,
+      "fuels": {
+        "gazole": 2.053,
+        "sp98": 2.057,
+        "e10": 1.963
+      }
+    },
+    {
+      "id": "71240004",
+      "cp": "71240",
+      "ville": "Sennecey-le-Grand",
+      "adresse": "ZA DU CHEMIN FERRE",
+      "pop": "R",
+      "lat": 4663200,
+      "lng": 487500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71210011",
+      "cp": "71200",
+      "ville": "Torcy",
+      "adresse": "41 rue des Abattoirs",
+      "pop": "R",
+      "lat": 4678730.74046,
+      "lng": 444046.84848,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.149,
+        "e10": 2.079
+      }
+    },
+    {
+      "id": "71320001",
+      "cp": "71320",
+      "ville": "Toulon-sur-Arroux",
+      "adresse": "ROUTE DE GUEUGNON",
+      "pop": "R",
+      "lat": 4669400,
+      "lng": 413800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71700006",
+      "cp": "71700",
+      "ville": "Tournus",
+      "adresse": "13 AVENUE DU CLOS MOURON",
+      "pop": "R",
+      "lat": 4657300,
+      "lng": 490400,
+      "fuels": {
+        "gazole": 1.909,
+        "sp98": 1.99,
+        "e10": 1.895,
+        "e85": 0.859
       }
     },
     {
@@ -127,9 +1916,134 @@
       "lat": 4657300,
       "lng": 490400,
       "fuels": {
-        "gazole": 1.929,
-        "sp98": 2.029,
+        "gazole": 1.899,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "71700002",
+      "cp": "71700",
+      "ville": "Tournus",
+      "adresse": "8 Rue de Saône",
+      "pop": "R",
+      "lat": 4655813.93832,
+      "lng": 491585.45135,
+      "fuels": {
+        "gazole": 1.944,
+        "sp98": 1.99,
+        "e10": 1.932
+      }
+    },
+    {
+      "id": "71700001",
+      "cp": "71700",
+      "ville": "Tournus",
+      "adresse": "AVENUE DE LA RESISTANCE",
+      "pop": "R",
+      "lat": 4656600,
+      "lng": 490200,
+      "fuels": {
+        "gazole": 2.011,
+        "sp95": 1.974,
+        "e10": 1.932
+      }
+    },
+    {
+      "id": "71000024",
+      "cp": "71000",
+      "ville": "Varennes-lès-Mâcon",
+      "adresse": "715 ROUTE NATIONALE 6",
+      "pop": "R",
+      "lat": 4627000,
+      "lng": 479700,
+      "fuels": {
+        "gazole": 1.985,
+        "sp98": 1.99,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "71480005",
+      "cp": "71480",
+      "ville": "Varennes-Saint-Sauveur",
+      "adresse": "540 route des CHARMETTES",
+      "pop": "R",
+      "lat": 4648200,
+      "lng": 524300,
+      "fuels": {
+        "gazole": 2.049,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71800002",
+      "cp": "71800",
+      "ville": "Varennes-sous-Dun",
+      "adresse": "Au Village de la Croix Bouthier",
+      "pop": "R",
+      "lat": 4628900,
+      "lng": 432000,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.049,
         "e10": 1.929
+      }
+    },
+    {
+      "id": "71120001",
+      "cp": "71120",
+      "ville": "Vendenesse-lès-Charolles",
+      "adresse": "62 RTE DE MACON",
+      "pop": "R",
+      "lat": 4644149.22616,
+      "lng": 430970.58805,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.039
+      }
+    },
+    {
+      "id": "71350001",
+      "cp": "71350",
+      "ville": "Verdun-Ciel",
+      "adresse": "AVENUE GISCARD D ESTAING",
+      "pop": "R",
+      "lat": 4689200,
+      "lng": 502400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "71600013",
+      "cp": "71600",
+      "ville": "Vitry-en-Charollais",
+      "adresse": "D979",
+      "pop": "R",
+      "lat": 4646500,
+      "lng": 407900,
+      "fuels": {
+        "gazole": 1.979
+      }
+    },
+    {
+      "id": "71600008",
+      "cp": "71600",
+      "ville": "Vitry-en-Charollais",
+      "adresse": "le mont",
+      "pop": "R",
+      "lat": 4646400,
+      "lng": 408600,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.969,
+        "sp98": 2.039,
+        "e10": 1.899,
+        "e85": 0.789
       }
     }
   ]

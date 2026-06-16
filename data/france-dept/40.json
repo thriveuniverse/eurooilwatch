@@ -3,41 +3,940 @@
   "name": "Landes",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 2,
+  "stationCount": 100,
   "fuels": {
     "gazole": {
-      "count": 2,
-      "mean": 1.964,
-      "median": 1.964,
-      "min": 1.959,
-      "max": 1.969
+      "count": 97,
+      "mean": 1.9983,
+      "median": 1.972,
+      "min": 1.873,
+      "max": 2.327
+    },
+    "sp95": {
+      "count": 36,
+      "mean": 1.9942,
+      "median": 1.99,
+      "min": 1.939,
+      "max": 2.129
     },
     "sp98": {
-      "count": 1,
-      "mean": 2.099,
-      "median": 2.099,
-      "min": 2.099,
-      "max": 2.099
+      "count": 67,
+      "mean": 2.0608,
+      "median": 2.039,
+      "min": 1.986,
+      "max": 2.32
     },
     "e10": {
-      "count": 1,
-      "mean": 1.939,
-      "median": 1.939,
-      "min": 1.939,
-      "max": 1.939
+      "count": 76,
+      "mean": 1.9519,
+      "median": 1.9295,
+      "min": 1.863,
+      "max": 2.22
+    },
+    "e85": {
+      "count": 35,
+      "mean": 0.8281,
+      "median": 0.819,
+      "min": 0.789,
+      "max": 0.998
     },
     "gplc": {
-      "count": 1,
-      "mean": 1.106,
-      "median": 1.106,
-      "min": 1.106,
-      "max": 1.106
+      "count": 16,
+      "mean": 1.0776,
+      "median": 1.064,
+      "min": 0.994,
+      "max": 1.238
     }
   },
   "stations": [
+    {
+      "id": "40800007",
+      "cp": "40800",
+      "ville": "Aire-sur-l'Adour",
+      "adresse": "AUTOROUTE A65 - AIRE DE L'ADOUR",
+      "pop": "A",
+      "lat": 4373200,
+      "lng": -23900,
+      "fuels": {
+        "gazole": 2.134,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.998
+      }
+    },
+    {
+      "id": "40800008",
+      "cp": "40800",
+      "ville": "Aire-sur-l'Adour",
+      "adresse": "Avenue de Bordeaux",
+      "pop": "R",
+      "lat": 4370739.37,
+      "lng": -25655.32,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 2.129,
+        "e10": 1.97
+      }
+    },
+    {
+      "id": "40800006",
+      "cp": "40800",
+      "ville": "Aire-sur-l'Adour",
+      "adresse": "Chemin de Perrot",
+      "pop": "R",
+      "lat": 4371700,
+      "lng": -26900,
+      "fuels": {
+        "gazole": 1.956,
+        "sp98": 1.99,
+        "e10": 1.945,
+        "e85": 0.825,
+        "gplc": 1.046
+      }
+    },
+    {
+      "id": "40800002",
+      "cp": "40800",
+      "ville": "Aire-sur-l'Adour",
+      "adresse": "route de tarbes",
+      "pop": "R",
+      "lat": 4373203,
+      "lng": -26679,
+      "fuels": {
+        "gazole": 1.95,
+        "sp98": 2.05,
+        "e10": 1.94,
+        "e85": 0.82
+      }
+    },
+    {
+      "id": "40330001",
+      "cp": "40330",
+      "ville": "Amou",
+      "adresse": "355, avenue de l'Océan",
+      "pop": "R",
+      "lat": 4359300,
+      "lng": -75500,
+      "fuels": {
+        "gazole": 1.957,
+        "sp98": 2.006,
+        "e10": 1.895
+      }
+    },
+    {
+      "id": "40150002",
+      "cp": "40150",
+      "ville": "Angresse",
+      "adresse": "627 route de Tyrosse",
+      "pop": "R",
+      "lat": 4365901.01,
+      "lng": -136837.53,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.035,
+        "e10": 1.937,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "40400005",
+      "cp": "40400",
+      "ville": "Bégaar",
+      "adresse": "CHEMIN DU TUCAT",
+      "pop": "R",
+      "lat": 4382736.3479,
+      "lng": -83440.30125,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.969,
+        "sp98": 2.12,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "40230006",
+      "cp": "40230",
+      "ville": "Bénesse-Maremne",
+      "adresse": "617 route de Dax, RD 810",
+      "pop": "R",
+      "lat": 4363709.61487,
+      "lng": -135325.57978,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.149,
+        "e10": 2.049,
+        "e85": 0.845
+      }
+    },
+    {
+      "id": "40600002",
+      "cp": "40600",
+      "ville": "Biscarrosse",
+      "adresse": "Route de la Plage",
+      "pop": "R",
+      "lat": 4441100,
+      "lng": -116900,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.059,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "40600004",
+      "cp": "40600",
+      "ville": "Biscarrosse",
+      "adresse": "Route de Parentis",
+      "pop": "R",
+      "lat": 4438310,
+      "lng": -114726,
+      "fuels": {
+        "sp95": 1.999,
+        "sp98": 2.059,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "40220006",
+      "cp": "40220",
+      "ville": "Boucau",
+      "adresse": "60 Boulevard Jacques Duclos",
+      "pop": "R",
+      "lat": 4352600,
+      "lng": -146600,
+      "fuels": {
+        "gazole": 1.966,
+        "sp98": 2.029,
+        "e10": 1.92,
+        "e85": 0.835
+      }
+    },
+    {
+      "id": "40130004",
+      "cp": "40130",
+      "ville": "Capbreton",
+      "adresse": "boulevard des cigales",
+      "pop": "R",
+      "lat": 4363900,
+      "lng": -142600,
+      "fuels": {
+        "gazole": 1.972,
+        "sp98": 2.038,
+        "e10": 1.927
+      }
+    },
+    {
+      "id": "40130003",
+      "cp": "40130",
+      "ville": "Capbreton",
+      "adresse": "Boulevard des Cigales",
+      "pop": "R",
+      "lat": 4364500,
+      "lng": -142600,
+      "fuels": {
+        "gazole": 1.972,
+        "sp98": 2.038,
+        "e10": 1.927
+      }
+    },
+    {
+      "id": "40260009",
+      "cp": "40260",
+      "ville": "Castets",
+      "adresse": "1270 ROUTE DE DAX",
+      "pop": "R",
+      "lat": 4386994.12194,
+      "lng": -113382.2849,
+      "fuels": {
+        "e10": 1.869,
+        "e85": 0.825
+      }
+    },
+    {
+      "id": "40260005",
+      "cp": "40260",
+      "ville": "Castets",
+      "adresse": "RUE JEAN DE NASSE",
+      "pop": "A",
+      "lat": 4387700,
+      "lng": -114300,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.988,
+        "e10": 1.894
+      }
+    },
+    {
+      "id": "40300005",
+      "cp": "40300",
+      "ville": "Cauneille",
+      "adresse": "Plaine de la Règle RN 117",
+      "pop": "R",
+      "lat": 4354400,
+      "lng": -107500,
+      "fuels": {
+        "gazole": 1.989,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "40180002",
+      "cp": "40180",
+      "ville": "Dax",
+      "adresse": "1941 ROUTE DE TERCIS",
+      "pop": "R",
+      "lat": 4368000,
+      "lng": -109300,
+      "fuels": {
+        "gazole": 2.13,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "40100001",
+      "cp": "40100",
+      "ville": "Dax",
+      "adresse": "40 BD DES SPORTS",
+      "pop": "R",
+      "lat": 4371000,
+      "lng": -104100,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 1.999,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "40100004",
+      "cp": "40100",
+      "ville": "Dax",
+      "adresse": "Avenue Georges Clémenceau",
+      "pop": "R",
+      "lat": 4370800,
+      "lng": -104400,
+      "fuels": {
+        "gazole": 1.876,
+        "sp95": 1.975,
+        "sp98": 1.99,
+        "e10": 1.863
+      }
+    },
+    {
+      "id": "40100005",
+      "cp": "40100",
+      "ville": "Dax",
+      "adresse": "Route de la Parcelle",
+      "pop": "R",
+      "lat": 4369256.11584,
+      "lng": -104982.32326,
+      "fuels": {
+        "gazole": 1.92,
+        "sp98": 1.99,
+        "e10": 1.87,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "40100008",
+      "cp": "40100",
+      "ville": "Dax",
+      "adresse": "RUE GEORGES CHAULET",
+      "pop": "R",
+      "lat": 4371700,
+      "lng": -105100,
+      "fuels": {
+        "gazole": 1.876,
+        "e10": 1.863,
+        "e85": 0.819,
+        "gplc": 1.029
+      }
+    },
+    {
+      "id": "40310001",
+      "cp": "40310",
+      "ville": "Gabarret",
+      "adresse": "za LAMARRAQUE",
+      "pop": "R",
+      "lat": 4398646,
+      "lng": 999,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 1.995,
+        "sp98": 2.098
+      }
+    },
+    {
+      "id": "40320001",
+      "cp": "40320",
+      "ville": "Geaune",
+      "adresse": "ZA LE BOURDET",
+      "pop": "R",
+      "lat": 4363586.54913,
+      "lng": -37221.61486,
+      "fuels": {
+        "gazole": 1.99,
+        "e10": 2.02
+      }
+    },
+    {
+      "id": "40270004",
+      "cp": "40270",
+      "ville": "Grenade-sur-l'Adour",
+      "adresse": "2 Avenue de Mont de Marsan",
+      "pop": "R",
+      "lat": 4377400,
+      "lng": -43200,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.979,
+        "sp98": 2.04
+      }
+    },
+    {
+      "id": "40270005",
+      "cp": "40270",
+      "ville": "Grenade-sur-l'Adour",
+      "adresse": "42 AVENUE DE MONT DE MARSAN",
+      "pop": "R",
+      "lat": 4378000,
+      "lng": -43700,
+      "fuels": {
+        "gazole": 1.966,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "40700004",
+      "cp": "40700",
+      "ville": "Hagetmau",
+      "adresse": "Avenue du Tursan",
+      "pop": "R",
+      "lat": 4365700,
+      "lng": -58000,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.979,
+        "sp98": 2.139
+      }
+    },
+    {
+      "id": "40700003",
+      "cp": "40700",
+      "ville": "Hagetmau",
+      "adresse": "Centre Commercial Intermarché",
+      "pop": "R",
+      "lat": 4363700,
+      "lng": -61400,
+      "fuels": {
+        "gazole": 1.98,
+        "sp98": 2.028,
+        "e10": 1.93
+      }
+    },
+    {
+      "id": "40700001",
+      "cp": "40700",
+      "ville": "Hagetmau",
+      "adresse": "ROUTE DE ST SEVER",
+      "pop": "R",
+      "lat": 4365900,
+      "lng": -59100,
+      "fuels": {
+        "gazole": 1.98,
+        "e10": 1.934
+      }
+    },
+    {
+      "id": "40300009",
+      "cp": "40300",
+      "ville": "Hastingues",
+      "adresse": "A64 - Aire d'Hastingues",
+      "pop": "A",
+      "lat": 4352900,
+      "lng": -115200,
+      "fuels": {
+        "gazole": 2.259,
+        "sp98": 2.289,
+        "e10": 2.189,
+        "gplc": 1.064
+      }
+    },
+    {
+      "id": "40530002",
+      "cp": "40530",
+      "ville": "Labenne",
+      "adresse": "AUTOROUTE A63 COTE EST",
+      "pop": "A",
+      "lat": 4358600,
+      "lng": -142000,
+      "fuels": {
+        "gazole": 2.31,
+        "sp98": 2.221,
+        "e10": 2.121,
+        "gplc": 1.064
+      }
+    },
+    {
+      "id": "40530001",
+      "cp": "40530",
+      "ville": "Labenne",
+      "adresse": "AUTOROUTE A63 COTE OUEST",
+      "pop": "A",
+      "lat": 4358700,
+      "lng": -142000,
+      "fuels": {
+        "gazole": 2.327,
+        "sp98": 2.227,
+        "e10": 2.127,
+        "gplc": 1.064
+      }
+    },
+    {
+      "id": "40530003",
+      "cp": "40530",
+      "ville": "Labenne",
+      "adresse": "AVENUE CHARLES DE GAULLE",
+      "pop": "R",
+      "lat": 4358800,
+      "lng": -142900,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 2.029,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "40210001",
+      "cp": "40210",
+      "ville": "Labouheyre",
+      "adresse": "500 Rue de Gouveia",
+      "pop": "R",
+      "lat": 4421000,
+      "lng": -92500,
+      "fuels": {
+        "gazole": 1.946,
+        "sp95": 1.939,
+        "e10": 1.915,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "40210004",
+      "cp": "40210",
+      "ville": "Labouheyre",
+      "adresse": "67 allée de Genets",
+      "pop": "R",
+      "lat": 4420200,
+      "lng": -92900,
+      "fuels": {
+        "gazole": 1.946,
+        "sp95": 1.939,
+        "e10": 1.915,
+        "gplc": 1.142
+      }
+    },
+    {
+      "id": "40420002",
+      "cp": "40420",
+      "ville": "Labrit",
+      "adresse": "170 Route de Sabres",
+      "pop": "R",
+      "lat": 4410600,
+      "lng": -54700,
+      "fuels": {
+        "gazole": 2.035,
+        "sp98": 2.169,
+        "e10": 1.998
+      }
+    },
+    {
+      "id": "40400003",
+      "cp": "40400",
+      "ville": "Lesgor",
+      "adresse": "129 Rue Victor Hugo",
+      "pop": "R",
+      "lat": 4386062.2025,
+      "lng": -88263.83405,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 1.969,
+        "e10": 1.93,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "40260008",
+      "cp": "40260",
+      "ville": "Lesperon",
+      "adresse": "A63 Aire de l'Ocean Ouest",
+      "pop": "A",
+      "lat": 4393700,
+      "lng": -109300,
+      "fuels": {
+        "gazole": 2.27,
+        "sp98": 2.26,
+        "e10": 2.16
+      }
+    },
+    {
+      "id": "40260002",
+      "cp": "40260",
+      "ville": "Lesperon",
+      "adresse": "Aire de l'Océan EST",
+      "pop": "A",
+      "lat": 4393700,
+      "lng": -108700,
+      "fuels": {
+        "gazole": 2.195,
+        "sp98": 2.298,
+        "e10": 2.148,
+        "gplc": 1.238
+      }
+    },
+    {
+      "id": "40260006",
+      "cp": "40260",
+      "ville": "Linxe",
+      "adresse": "rue des morilles",
+      "pop": "R",
+      "lat": 4392800,
+      "lng": -125500,
+      "fuels": {
+        "gazole": 1.899,
+        "sp95": 1.979,
+        "sp98": 1.988,
+        "e10": 1.894
+      }
+    },
+    {
+      "id": "40170003",
+      "cp": "40170",
+      "ville": "Lit-et-Mixe",
+      "adresse": "Route des Lacs",
+      "pop": "R",
+      "lat": 4402500,
+      "lng": -125900,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 1.979,
+        "sp98": 2.039,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "40240007",
+      "cp": "40240",
+      "ville": "Losse",
+      "adresse": "8 D933N",
+      "pop": "R",
+      "lat": 4406400,
+      "lng": -5700,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.098,
+        "e10": 1.995
+      }
+    },
+    {
+      "id": "40140001",
+      "cp": "40140",
+      "ville": "Magescq",
+      "adresse": "8 Rue Robert Dubaa",
+      "pop": "R",
+      "lat": 4377900,
+      "lng": -121600,
+      "fuels": {
+        "gazole": 2.179
+      }
+    },
+    {
+      "id": "40660005",
+      "cp": "40660",
+      "ville": "Messanges",
+      "adresse": "2447 ROUTE DES LACS",
+      "pop": "R",
+      "lat": 4379536.30981,
+      "lng": -139012.42711,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.039,
+        "e10": 1.905
+      }
+    },
+    {
+      "id": "40200001",
+      "cp": "40200",
+      "ville": "Mimizan",
+      "adresse": "3 route de Baleste",
+      "pop": "R",
+      "lat": 4419300,
+      "lng": -122900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.099,
+        "e10": 1.998
+      }
+    },
+    {
+      "id": "40200002",
+      "cp": "40200",
+      "ville": "Mimizan",
+      "adresse": "52 Avenue de Bordeaux",
+      "pop": "R",
+      "lat": 4420500,
+      "lng": -122000,
+      "fuels": {
+        "gazole": 1.946,
+        "sp98": 2.055,
+        "e10": 1.915,
+        "e85": 0.808
+      }
+    },
+    {
+      "id": "40660002",
+      "cp": "40660",
+      "ville": "Moliets-et-Maa",
+      "adresse": "2401 AVENUE DES LACS",
+      "pop": "R",
+      "lat": 4385074.046,
+      "lng": -135495.785,
+      "fuels": {
+        "gazole": 1.979,
+        "e10": 1.905,
+        "e85": 0.845
+      }
+    },
+    {
+      "id": "40006001",
+      "cp": "40000",
+      "ville": "Mont-de-Marsan",
+      "adresse": "1234 Avenue du Vignau",
+      "pop": "R",
+      "lat": 4387700,
+      "lng": -46700,
+      "fuels": {
+        "gazole": 1.899,
+        "sp95": 1.999,
+        "e10": 1.866,
+        "e85": 0.839,
+        "gplc": 1.106
+      }
+    },
+    {
+      "id": "40000001",
+      "cp": "40000",
+      "ville": "Mont-de-Marsan",
+      "adresse": "19 Boulevard Yves Mainguy",
+      "pop": "R",
+      "lat": 4388300,
+      "lng": -48200,
+      "fuels": {
+        "gazole": 1.995,
+        "sp98": 2.029,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "40000012",
+      "cp": "40000",
+      "ville": "Mont-de-Marsan",
+      "adresse": "394 AVENUE GEORGES CLEMENCEAU",
+      "pop": "R",
+      "lat": 4388600,
+      "lng": -49500,
+      "fuels": {
+        "sp98": 1.986,
+        "e85": 0.839,
+        "gplc": 0.994
+      }
+    },
+    {
+      "id": "40000007",
+      "cp": "40000",
+      "ville": "Mont-de-Marsan",
+      "adresse": "410 Avenue du Président John F. Kennedy",
+      "pop": "R",
+      "lat": 4388400,
+      "lng": -49800,
+      "fuels": {
+        "gazole": 1.971,
+        "sp95": 1.999,
+        "e10": 1.922
+      }
+    },
+    {
+      "id": "40000002",
+      "cp": "40000",
+      "ville": "Mont-de-Marsan",
+      "adresse": "760 Avenue du Maréchal Juin",
+      "pop": "R",
+      "lat": 4390100,
+      "lng": -48300,
+      "fuels": {
+        "gazole": 1.899,
+        "sp98": 1.99,
+        "e10": 1.866,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "40380003",
+      "cp": "40380",
+      "ville": "Montfort-en-Chalosse",
+      "adresse": "520 avenue Jean Jaurès",
+      "pop": "R",
+      "lat": 4371040,
+      "lng": -83440,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.039,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "40110002",
+      "cp": "40110",
+      "ville": "Morcenx-la-Nouvelle",
+      "adresse": "47 rue Roger Salengro",
+      "pop": "R",
+      "lat": 4403100,
+      "lng": -91100,
+      "fuels": {
+        "gazole": 1.977,
+        "sp98": 2.019,
+        "e10": 1.959
+      }
+    },
+    {
+      "id": "40110001",
+      "cp": "40110",
+      "ville": "Morcenx-la-Nouvelle",
+      "adresse": "C/C Les Grands Carolins",
+      "pop": "R",
+      "lat": 4403053.11496,
+      "lng": -92438.93274,
+      "fuels": {
+        "gazole": 1.977,
+        "sp95": 1.982,
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "40250001",
+      "cp": "40250",
+      "ville": "Mugron",
+      "adresse": "Route de Monfort",
+      "pop": "R",
+      "lat": 4374608.6877,
+      "lng": -75802.15922,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.999,
+        "sp98": 2.049
+      }
+    },
+    {
+      "id": "40160005",
+      "cp": "40160",
+      "ville": "Parentis-en-Born",
+      "adresse": "593 AVENUE HENRI GUILLAUMET",
+      "pop": "R",
+      "lat": 4435300,
+      "lng": -108000,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.059,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "40160001",
+      "cp": "40160",
+      "ville": "Parentis-en-Born",
+      "adresse": "606 Avenue Bremontier",
+      "pop": "R",
+      "lat": 4434909,
+      "lng": -106754,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "40160003",
+      "cp": "40160",
+      "ville": "Parentis-en-Born",
+      "adresse": "71 Route de Pontenx",
+      "pop": "R",
+      "lat": 4434746.95584,
+      "lng": -107650.71888,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.059,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "40300008",
+      "cp": "40300",
+      "ville": "Peyrehorade",
+      "adresse": "77 route de Bayonne",
+      "pop": "R",
+      "lat": 4354700,
+      "lng": -111300,
+      "fuels": {
+        "gazole": 2.011
+      }
+    },
+    {
+      "id": "40300003",
+      "cp": "40300",
+      "ville": "Peyrehorade",
+      "adresse": "Route de Bayonne",
+      "pop": "R",
+      "lat": 4355000,
+      "lng": -112300,
+      "fuels": {
+        "gazole": 1.994,
+        "sp95": 1.985,
+        "sp98": 2.06
+      }
+    },
+    {
+      "id": "40410002",
+      "cp": "40410",
+      "ville": "Pissos",
+      "adresse": "901 Route de Mont-de-Marsan",
+      "pop": "R",
+      "lat": 4430400,
+      "lng": -77700,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.939,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "40360003",
+      "cp": "40360",
+      "ville": "Pomarez",
+      "adresse": "362 AVENUE DE LA COURSE LANDAISE",
+      "pop": "R",
+      "lat": 4362600,
+      "lng": -82500,
+      "fuels": {
+        "gazole": 1.95,
+        "sp95": 1.989,
+        "sp98": 2.049
+      }
+    },
     {
       "id": "40465002",
       "cp": "40465",
@@ -52,6 +951,210 @@
       }
     },
     {
+      "id": "40350001",
+      "cp": "40350",
+      "ville": "Pouillon",
+      "adresse": "160, route d'Estibeaux",
+      "pop": "R",
+      "lat": 4360651,
+      "lng": -99139,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.049,
+        "e10": 1.899,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "40370003",
+      "cp": "40370",
+      "ville": "Rion-des-Landes",
+      "adresse": "241 Avenue d'Albret",
+      "pop": "R",
+      "lat": 4391800,
+      "lng": -91600,
+      "fuels": {
+        "gazole": 1.873,
+        "sp98": 1.988,
+        "e10": 1.869,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "40630004",
+      "cp": "40630",
+      "ville": "Sabres",
+      "adresse": "210 route de Mont de Marsan",
+      "pop": "R",
+      "lat": 4414717.26389,
+      "lng": -73739.5979,
+      "fuels": {
+        "gazole": 2.25,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "40230005",
+      "cp": "40230",
+      "ville": "Saint-Geours-de-Maremne",
+      "adresse": "ZAE Atlantisud 90 rue du pays d'orthe",
+      "pop": "R",
+      "lat": 4371400,
+      "lng": -123300,
+      "fuels": {
+        "gazole": 1.935,
+        "sp98": 2.079,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "40170004",
+      "cp": "40170",
+      "ville": "Saint-Julien-en-Born",
+      "adresse": "Route des Lacs",
+      "pop": "R",
+      "lat": 4406700,
+      "lng": -122800,
+      "fuels": {
+        "gazole": 1.939,
+        "sp95": 1.991,
+        "sp98": 2.06
+      }
+    },
+    {
+      "id": "40390001",
+      "cp": "40390",
+      "ville": "Saint-Martin-de-Seignanx",
+      "adresse": "C/C CD 54",
+      "pop": "R",
+      "lat": 4354300,
+      "lng": -138700,
+      "fuels": {
+        "gazole": 1.909,
+        "sp95": 1.999,
+        "sp98": 2.055,
+        "e10": 1.899
+      }
+    },
+    {
+      "id": "40550001",
+      "cp": "40550",
+      "ville": "Saint-Michel-Escalus",
+      "adresse": "Route des Lacs",
+      "pop": "R",
+      "lat": 4388670,
+      "lng": -129501,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.04,
+        "e10": 1.92,
+        "e85": 0.845
+      }
+    },
+    {
+      "id": "40990004",
+      "cp": "40990",
+      "ville": "Saint-Paul-lès-Dax",
+      "adresse": "1800, Avenue de la Résistance",
+      "pop": "R",
+      "lat": 4372600,
+      "lng": -107200,
+      "fuels": {
+        "gazole": 1.92,
+        "sp98": 1.99,
+        "e10": 1.87,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "40990002",
+      "cp": "40990",
+      "ville": "Saint-Paul-lès-Dax",
+      "adresse": "226 Rue Maurice Menton",
+      "pop": "R",
+      "lat": 4373200,
+      "lng": -104500,
+      "fuels": {
+        "gazole": 1.876,
+        "sp95": 1.975,
+        "e10": 1.863,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "40280006",
+      "cp": "40280",
+      "ville": "Saint-Pierre-du-Mont",
+      "adresse": "200 boulevard oscar niemeyer",
+      "pop": "R",
+      "lat": 4386700,
+      "lng": -48500,
+      "fuels": {
+        "gazole": 1.899,
+        "sp95": 1.999,
+        "e10": 1.866,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "40280009",
+      "cp": "40280",
+      "ville": "Saint-Pierre-du-Mont",
+      "adresse": "302 Avenue Du Corps Franc Pommies",
+      "pop": "R",
+      "lat": 4388600,
+      "lng": -52000,
+      "fuels": {
+        "gazole": 2.124,
+        "sp95": 2.124,
+        "e10": 2.099
+      }
+    },
+    {
+      "id": "40280005",
+      "cp": "40280",
+      "ville": "Saint-Pierre-du-Mont",
+      "adresse": "600 AVENUE DE SAINT SEVER",
+      "pop": "R",
+      "lat": 4387600,
+      "lng": -50700,
+      "fuels": {
+        "gazole": 1.953,
+        "sp98": 1.989,
+        "e10": 1.922,
+        "e85": 0.8
+      }
+    },
+    {
+      "id": "40280008",
+      "cp": "40280",
+      "ville": "Saint-Pierre-du-Mont",
+      "adresse": "745 AVENUE DE SAINT SEVER",
+      "pop": "R",
+      "lat": 4387700,
+      "lng": -50600,
+      "fuels": {
+        "gazole": 1.97,
+        "sp98": 1.99,
+        "e10": 1.96,
+        "gplc": 1.07
+      }
+    },
+    {
+      "id": "40500001",
+      "cp": "40500",
+      "ville": "Saint-Sever",
+      "adresse": "15 bis avenue du Tursan",
+      "pop": "R",
+      "lat": 4374900,
+      "lng": -56400,
+      "fuels": {
+        "gazole": 1.959,
+        "sp95": 2.029,
+        "sp98": 2.1
+      }
+    },
+    {
       "id": "40500002",
       "cp": "40500",
       "ville": "Saint-Sever",
@@ -63,6 +1166,317 @@
         "gazole": 1.959,
         "sp98": 2.099,
         "gplc": 1.106
+      }
+    },
+    {
+      "id": "40990001",
+      "cp": "40990",
+      "ville": "Saint-Vincent-de-Paul",
+      "adresse": "RN.124",
+      "pop": "R",
+      "lat": 4374100,
+      "lng": -101800,
+      "fuels": {
+        "gazole": 1.916,
+        "sp98": 1.99,
+        "e10": 1.924,
+        "e85": 0.859,
+        "gplc": 1.07
+      }
+    },
+    {
+      "id": "40230001",
+      "cp": "40230",
+      "ville": "Saint-Vincent-de-Tyrosse",
+      "adresse": "RN 10",
+      "pop": "R",
+      "lat": 4366698.9042,
+      "lng": -128531.96366,
+      "fuels": {
+        "gazole": 1.885,
+        "sp98": 1.99,
+        "e10": 1.889,
+        "gplc": 1.029
+      }
+    },
+    {
+      "id": "40320002",
+      "cp": "40320",
+      "ville": "Samadet",
+      "adresse": "Lieudit Lamarque - Route d'Hagetmau",
+      "pop": "R",
+      "lat": 4364140.23155,
+      "lng": -51206.76745,
+      "fuels": {
+        "gazole": 1.99,
+        "e10": 2.02,
+        "e85": 0.92
+      }
+    },
+    {
+      "id": "40460002",
+      "cp": "40460",
+      "ville": "Sanguinet",
+      "adresse": "169 RUE DE L'AIGUILLE",
+      "pop": "R",
+      "lat": 4449732.42,
+      "lng": -105584.37,
+      "fuels": {
+        "gazole": 1.999,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "40460001",
+      "cp": "40460",
+      "ville": "Sanguinet",
+      "adresse": "Avenue des Grands Lacs",
+      "pop": "R",
+      "lat": 4448127.212,
+      "lng": -107975.102,
+      "fuels": {
+        "gazole": 1.999,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "40120003",
+      "cp": "40120",
+      "ville": "Sarbazan",
+      "adresse": "1070 Av. du Marsan",
+      "pop": "R",
+      "lat": 4402381.33825,
+      "lng": -33892.59734,
+      "fuels": {
+        "gazole": 1.953,
+        "sp95": 1.999,
+        "e10": 1.922
+      }
+    },
+    {
+      "id": "40120001",
+      "cp": "40120",
+      "ville": "Sarbazan",
+      "adresse": "Route de Pau",
+      "pop": "R",
+      "lat": 4401900,
+      "lng": -31300,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.935,
+        "e85": 0.855
+      }
+    },
+    {
+      "id": "40180001",
+      "cp": "40180",
+      "ville": "Saugnac-et-Cambran",
+      "adresse": "STATION TOTAL",
+      "pop": "R",
+      "lat": 4368334.7419,
+      "lng": -99557.4457,
+      "fuels": {
+        "gazole": 1.966,
+        "sp98": 1.99,
+        "e10": 1.953
+      }
+    },
+    {
+      "id": "40410004",
+      "cp": "40410",
+      "ville": "Saugnac-et-Muret",
+      "adresse": "Aire Portes Landes Ouest",
+      "pop": "A",
+      "lat": 4436286.08075,
+      "lng": -85169.80338,
+      "fuels": {
+        "gazole": 2.29,
+        "sp98": 2.31,
+        "e10": 2.21,
+        "gplc": 1.06
+      }
+    },
+    {
+      "id": "40410005",
+      "cp": "40410",
+      "ville": "Saugnac-et-Muret",
+      "adresse": "AUTOROUTE A63",
+      "pop": "A",
+      "lat": 4436000,
+      "lng": -85100,
+      "fuels": {
+        "gazole": 2.29,
+        "sp98": 2.32,
+        "e10": 2.22,
+        "gplc": 1.06
+      }
+    },
+    {
+      "id": "40150001",
+      "cp": "40150",
+      "ville": "Soorts-Hossegor",
+      "adresse": "Route de Seignosse",
+      "pop": "R",
+      "lat": 4367000,
+      "lng": -139100,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.039,
+        "e10": 1.929,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "40140005",
+      "cp": "40140",
+      "ville": "Soustons",
+      "adresse": "9 AVENUE DE CRAMAT",
+      "pop": "R",
+      "lat": 4374700,
+      "lng": -132100,
+      "fuels": {
+        "gazole": 1.969,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "40140002",
+      "cp": "40140",
+      "ville": "Soustons",
+      "adresse": "Route de Tosse",
+      "pop": "R",
+      "lat": 4374500,
+      "lng": -133400,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 1.99,
+        "e10": 1.899,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "40220002",
+      "cp": "40220",
+      "ville": "Tarnos",
+      "adresse": "Avenue du 1er Mai",
+      "pop": "R",
+      "lat": 4354900,
+      "lng": -148600,
+      "fuels": {
+        "gazole": 2.049,
+        "e10": 2.049,
+        "e85": 0.829
+      }
+    },
+    {
+      "id": "40400002",
+      "cp": "40400",
+      "ville": "Tartas",
+      "adresse": "1850 ROUTE DE LALANDE",
+      "pop": "R",
+      "lat": 4383300,
+      "lng": -80800,
+      "fuels": {
+        "gazole": 2.079,
+        "sp95": 1.989,
+        "sp98": 1.99,
+        "gplc": 1.1
+      }
+    },
+    {
+      "id": "40400004",
+      "cp": "40400",
+      "ville": "Tartas",
+      "adresse": "le claous",
+      "pop": "R",
+      "lat": 4382800,
+      "lng": -80500,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.979
+      }
+    },
+    {
+      "id": "40400001",
+      "cp": "40400",
+      "ville": "Tartas",
+      "adresse": "RUE CHANZY",
+      "pop": "R",
+      "lat": 4382900,
+      "lng": -80400,
+      "fuels": {
+        "gazole": 1.964,
+        "sp98": 1.99,
+        "e10": 1.95
+      }
+    },
+    {
+      "id": "40230004",
+      "cp": "40230",
+      "ville": "Tosse",
+      "adresse": "27 Avenue du Général de Gaulle",
+      "pop": "R",
+      "lat": 4368939.21968,
+      "lng": -133300.44457,
+      "fuels": {
+        "gazole": 1.885,
+        "sp95": 1.989,
+        "sp98": 1.99,
+        "e10": 1.889
+      }
+    },
+    {
+      "id": "40190003",
+      "cp": "40190",
+      "ville": "Villeneuve-de-Marsan",
+      "adresse": "AVENUE JEAN JAURES",
+      "pop": "R",
+      "lat": 4388500,
+      "lng": -30700,
+      "fuels": {
+        "gazole": 2.072
+      }
+    },
+    {
+      "id": "40160004",
+      "cp": "40160",
+      "ville": "Ychoux",
+      "adresse": "1 rue Brémontier",
+      "pop": "R",
+      "lat": 4432700,
+      "lng": -94400,
+      "fuels": {
+        "gazole": 2.14,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "40110003",
+      "cp": "40110",
+      "ville": "Ygos-Saint-Saturnin",
+      "adresse": "RD38 ZAC DE SEGUES",
+      "pop": "R",
+      "lat": 4397600,
+      "lng": -73700,
+      "fuels": {
+        "gazole": 1.963,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "40180003",
+      "cp": "40100",
+      "ville": "Yzosse",
+      "adresse": "Route de Montfort",
+      "pop": "R",
+      "lat": 4370718.59967,
+      "lng": -102297.83097,
+      "fuels": {
+        "gazole": 1.92,
+        "sp98": 1.99,
+        "e10": 1.87,
+        "e85": 0.809
       }
     }
   ]

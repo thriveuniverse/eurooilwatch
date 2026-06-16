@@ -3,48 +3,845 @@
   "name": "Moselle",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 7,
+  "stationCount": 124,
   "fuels": {
     "gazole": {
-      "count": 7,
-      "mean": 1.9913,
+      "count": 121,
+      "mean": 1.9892,
       "median": 1.989,
-      "min": 1.891,
+      "min": 1.845,
+      "max": 2.12
+    },
+    "sp95": {
+      "count": 25,
+      "mean": 1.9808,
+      "median": 1.985,
+      "min": 1.703,
       "max": 2.099
     },
     "sp98": {
-      "count": 7,
-      "mean": 2.0306,
-      "median": 1.99,
-      "min": 1.989,
-      "max": 2.109
+      "count": 98,
+      "mean": 2.0437,
+      "median": 2.047,
+      "min": 1.949,
+      "max": 2.183
     },
     "e10": {
-      "count": 7,
-      "mean": 1.9537,
-      "median": 1.969,
-      "min": 1.879,
-      "max": 1.999
+      "count": 109,
+      "mean": 1.9544,
+      "median": 1.955,
+      "min": 1.843,
+      "max": 2.073
     },
     "e85": {
-      "count": 3,
-      "mean": 0.83,
-      "median": 0.839,
-      "min": 0.809,
-      "max": 0.842
+      "count": 36,
+      "mean": 0.834,
+      "median": 0.8255,
+      "min": 0.789,
+      "max": 0.999
     },
     "gplc": {
-      "count": 1,
-      "mean": 0.959,
-      "median": 0.959,
-      "min": 0.959,
-      "max": 0.959
+      "count": 13,
+      "mean": 1.0223,
+      "median": 0.999,
+      "min": 0.949,
+      "max": 1.211
     }
   },
   "stations": [
+    {
+      "id": "57350001",
+      "cp": "57350",
+      "ville": "",
+      "adresse": "3, RUE NATIONALE",
+      "pop": "R",
+      "lat": 4920500,
+      "lng": 695600,
+      "fuels": {
+        "gazole": 2.108,
+        "sp98": 2.106,
+        "e10": 2.027
+      }
+    },
+    {
+      "id": "57440002",
+      "cp": "57440",
+      "ville": "Algrange",
+      "adresse": "ZAC de la Paix, Rue de Knutange",
+      "pop": "R",
+      "lat": 4934965.21501,
+      "lng": 604019.83201,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 2.05,
+        "e85": 0.79
+      }
+    },
+    {
+      "id": "57360001",
+      "cp": "57360",
+      "ville": "Amnéville",
+      "adresse": "RUE CLEMENCEAU",
+      "pop": "R",
+      "lat": 4925636.72628,
+      "lng": 613017.46661,
+      "fuels": {
+        "gazole": 1.919,
+        "sp95": 1.959,
+        "e10": 1.939,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "57130001",
+      "cp": "57130",
+      "ville": "Ars-sur-Moselle",
+      "adresse": "132 Rue Georges Clemenceau",
+      "pop": "R",
+      "lat": 4908457,
+      "lng": 608798,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.151,
+        "e10": 2.045
+      }
+    },
+    {
+      "id": "57130003",
+      "cp": "57130",
+      "ville": "Ars-sur-Moselle",
+      "adresse": "RUE DU BOIS LE PRETRE",
+      "pop": "R",
+      "lat": 4907300,
+      "lng": 607400,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 2.063,
+        "e10": 1.923
+      }
+    },
+    {
+      "id": "57710001",
+      "cp": "57710",
+      "ville": "Aumetz",
+      "adresse": "Rue de l'Ancienne Scierie",
+      "pop": "R",
+      "lat": 4941200,
+      "lng": 595000,
+      "fuels": {
+        "gazole": 2.075,
+        "sp98": 2.053,
+        "e10": 1.941
+      }
+    },
+    {
+      "id": "57300002",
+      "cp": "57300",
+      "ville": "Ay-sur-Moselle",
+      "adresse": "Chemin départemental",
+      "pop": "R",
+      "lat": 4924100,
+      "lng": 621000,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 1.99,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "57970002",
+      "cp": "57970",
+      "ville": "Basse-Ham",
+      "adresse": "Parc Unicom",
+      "pop": "R",
+      "lat": 4937500,
+      "lng": 622900,
+      "fuels": {
+        "gazole": 2.021,
+        "sp98": 2.059,
+        "e10": 1.959,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "57600014",
+      "cp": "57600",
+      "ville": "Behren-lès-Forbach",
+      "adresse": "Rue de Sarreguemines",
+      "pop": "R",
+      "lat": 4917700,
+      "lng": 692700,
+      "fuels": {
+        "gazole": 2.013,
+        "sp98": 2.106,
+        "e10": 1.997
+      }
+    },
+    {
+      "id": "57804001",
+      "cp": "57800",
+      "ville": "Betting",
+      "adresse": "4 rue des Genêts Zac de Betting",
+      "pop": "R",
+      "lat": 4913700,
+      "lng": 680800,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.07,
+        "e10": 1.989,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "57800002",
+      "cp": "57800",
+      "ville": "Betting",
+      "adresse": "RN 3",
+      "pop": "R",
+      "lat": 4913900,
+      "lng": 679900,
+      "fuels": {
+        "gazole": 1.998,
+        "sp98": 2.078,
+        "e10": 1.998,
+        "e85": 0.948
+      }
+    },
+    {
+      "id": "57230001",
+      "cp": "57230",
+      "ville": "Bitche",
+      "adresse": "2 Rue de la Paix",
+      "pop": "R",
+      "lat": 4904800,
+      "lng": 742700,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.013,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "57230003",
+      "cp": "57230",
+      "ville": "Bitche",
+      "adresse": "31 Rue Jean-Jacques Kieffer",
+      "pop": "R",
+      "lat": 4904700,
+      "lng": 742600,
+      "fuels": {
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "57220002",
+      "cp": "57220",
+      "ville": "Boulay-Moselle",
+      "adresse": "RUE DU GENERAL NEWINGER",
+      "pop": "R",
+      "lat": 4917800,
+      "lng": 649400,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.999,
+        "sp98": 2.029,
+        "e10": 1.979
+      }
+    },
+    {
+      "id": "57170002",
+      "cp": "57170",
+      "ville": "Château-Salins",
+      "adresse": "29 RUE DE METZ",
+      "pop": "R",
+      "lat": 4882400,
+      "lng": 650700,
+      "fuels": {
+        "gazole": 2.006,
+        "sp98": 2.045,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "57170001",
+      "cp": "57170",
+      "ville": "Château-Salins",
+      "adresse": "Rue de METZ",
+      "pop": "R",
+      "lat": 4882386,
+      "lng": 650710,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 2.049,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "57160006",
+      "cp": "57160",
+      "ville": "Châtel-Saint-Germain",
+      "adresse": "AVENUE DE LA LIBERATION",
+      "pop": "R",
+      "lat": 4912000,
+      "lng": 608300,
+      "fuels": {
+        "gazole": 1.891,
+        "sp98": 1.99,
+        "e10": 1.883,
+        "e85": 0.859
+      }
+    },
+    {
+      "id": "57185002",
+      "cp": "57185",
+      "ville": "Clouange",
+      "adresse": "ZAC DE BELLE FONTAINE",
+      "pop": "R",
+      "lat": 4925800,
+      "lng": 608400,
+      "fuels": {
+        "gazole": 1.849,
+        "sp95": 1.899,
+        "sp98": 1.949,
+        "e10": 1.879
+      }
+    },
+    {
+      "id": "57150002",
+      "cp": "57150",
+      "ville": "Creutzwald",
+      "adresse": "3 Rue du Barrois",
+      "pop": "R",
+      "lat": 4920200,
+      "lng": 670800,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 2.058,
+        "e10": 1.964
+      }
+    },
+    {
+      "id": "57150005",
+      "cp": "57150",
+      "ville": "Creutzwald",
+      "adresse": "35 Rue du Barrois",
+      "pop": "R",
+      "lat": 4919543,
+      "lng": 670652,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.049,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "57150006",
+      "cp": "57150",
+      "ville": "Creutzwald",
+      "adresse": "Z. A.",
+      "pop": "R",
+      "lat": 4918800,
+      "lng": 669800,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.049,
+        "e10": 1.955,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "57850001",
+      "cp": "57850",
+      "ville": "Dabo",
+      "adresse": "14 Rue du Général Leclerc",
+      "pop": "R",
+      "lat": 4867600,
+      "lng": 720200,
+      "fuels": {
+        "gazole": 2.11,
+        "sp95": 2.09,
+        "sp98": 2.12
+      }
+    },
+    {
+      "id": "57590003",
+      "cp": "57590",
+      "ville": "Delme",
+      "adresse": "RUE RAYMOND POINCARE",
+      "pop": "R",
+      "lat": 4888862.9,
+      "lng": 638945.9,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 2.029,
+        "e10": 1.909
+      }
+    },
+    {
+      "id": "57980003",
+      "cp": "57980",
+      "ville": "Diebling",
+      "adresse": "130 RUE PRINCIPALE",
+      "pop": "R",
+      "lat": 4911240.5,
+      "lng": 693069.5,
+      "fuels": {
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "57260001",
+      "cp": "57260",
+      "ville": "Dieuze",
+      "adresse": "105 Impasse Jean Laurain",
+      "pop": "R",
+      "lat": 4881100,
+      "lng": 671400,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.967,
+        "sp98": 2.043,
+        "e10": 1.921
+      }
+    },
+    {
+      "id": "57260003",
+      "cp": "57260",
+      "ville": "Dieuze",
+      "adresse": "18 Avenue Foch",
+      "pop": "R",
+      "lat": 4881200,
+      "lng": 671500,
+      "fuels": {
+        "gazole": 2.099
+      }
+    },
+    {
+      "id": "57260005",
+      "cp": "57260",
+      "ville": "Dieuze",
+      "adresse": "5 rue René Peltre",
+      "pop": "R",
+      "lat": 4881985,
+      "lng": 672319,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.012,
+        "e10": 1.921
+      }
+    },
+    {
+      "id": "57365001",
+      "cp": "57365",
+      "ville": "Ennery",
+      "adresse": "Rue Auguste Renoir",
+      "pop": "R",
+      "lat": 4922000,
+      "lng": 621300,
+      "fuels": {
+        "gazole": 1.959,
+        "sp98": 2.029,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "57660001",
+      "cp": "57660",
+      "ville": "Erstroff",
+      "adresse": "5 rue du Kreuzhof",
+      "pop": "R",
+      "lat": 4899000,
+      "lng": 678400,
+      "fuels": {
+        "gazole": 2.085,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "57290002",
+      "cp": "57290",
+      "ville": "Fameck",
+      "adresse": "AVENUE FRANCOIS MITTERRAND",
+      "pop": "R",
+      "lat": 4930800,
+      "lng": 611800,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 1.989,
+        "e10": 1.909,
+        "e85": 0.789,
+        "gplc": 0.949
+      }
+    },
+    {
+      "id": "57450003",
+      "cp": "57450",
+      "ville": "Farébersviller",
+      "adresse": "63 avenue Saint Jean",
+      "pop": "R",
+      "lat": 4911000,
+      "lng": 685600,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.099,
+        "sp98": 2.129,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "57380002",
+      "cp": "57380",
+      "ville": "Faulquemont",
+      "adresse": "42, rue de Créhange",
+      "pop": "R",
+      "lat": 4904800,
+      "lng": 659300,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.069,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "57380004",
+      "cp": "57380",
+      "ville": "Faulquemont",
+      "adresse": "6 RUE EMILE HOUPERT",
+      "pop": "R",
+      "lat": 4904813.2,
+      "lng": 659812.9,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.099,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "57930002",
+      "cp": "57930",
+      "ville": "Fénétrange",
+      "adresse": "33 rue du Maréchal Leclerc",
+      "pop": "R",
+      "lat": 4884300,
+      "lng": 702100,
+      "fuels": {
+        "gazole": 2.013,
+        "sp98": 1.99,
+        "e10": 1.988
+      }
+    },
+    {
+      "id": "57650001",
+      "cp": "57650",
+      "ville": "Fontoy",
+      "adresse": "CD 59 A",
+      "pop": "R",
+      "lat": 4935500,
+      "lng": 599500,
+      "fuels": {
+        "gazole": 2.029,
+        "sp95": 1.999,
+        "sp98": 2.069
+      }
+    },
+    {
+      "id": "57600015",
+      "cp": "57600",
+      "ville": "Forbach",
+      "adresse": "19 RUE NATIONALE",
+      "pop": "R",
+      "lat": 4919000,
+      "lng": 690800,
+      "fuels": {
+        "gazole": 1.909,
+        "e10": 1.881,
+        "e85": 0.822,
+        "gplc": 1.029
+      }
+    },
+    {
+      "id": "57600002",
+      "cp": "57600",
+      "ville": "Forbach",
+      "adresse": "199 Rue Nationale",
+      "pop": "R",
+      "lat": 4918200,
+      "lng": 689000,
+      "fuels": {
+        "gazole": 2.008,
+        "sp98": 2.099,
+        "e10": 1.998
+      }
+    },
+    {
+      "id": "57600005",
+      "cp": "57600",
+      "ville": "Forbach",
+      "adresse": "Avenue de l'Europe",
+      "pop": "R",
+      "lat": 4917500,
+      "lng": 688400,
+      "fuels": {
+        "gazole": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "57800001",
+      "cp": "57800",
+      "ville": "Freyming-Merlebach",
+      "adresse": "Rue Houillère",
+      "pop": "R",
+      "lat": 4914808.47556,
+      "lng": 681026.71383,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.07,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "57420006",
+      "cp": "57420",
+      "ville": "Goin",
+      "adresse": "AEROPORT METZ NANCY LORRAINE",
+      "pop": "R",
+      "lat": 4898375.7,
+      "lng": 624541.8,
+      "fuels": {
+        "gazole": 1.996,
+        "e10": 1.982
+      }
+    },
+    {
+      "id": "57520001",
+      "cp": "57520",
+      "ville": "Grosbliederstroff",
+      "adresse": "15 AVENUE MARCHANDE",
+      "pop": "R",
+      "lat": 4913400,
+      "lng": 704400,
+      "fuels": {
+        "gazole": 1.969,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "57310001",
+      "cp": "57310",
+      "ville": "Guénange",
+      "adresse": "1, rue Bellevue",
+      "pop": "R",
+      "lat": 4930121,
+      "lng": 618923,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.076,
+        "e10": 1.938
+      }
+    },
+    {
+      "id": "57310002",
+      "cp": "57310",
+      "ville": "Guénange",
+      "adresse": "Boulevard de la Tournaille",
+      "pop": "R",
+      "lat": 4929965,
+      "lng": 620930,
+      "fuels": {
+        "gazole": 1.975,
+        "e10": 1.912
+      }
+    },
+    {
+      "id": "57910002",
+      "cp": "57910",
+      "ville": "Hambach",
+      "adresse": "Rue Principale",
+      "pop": "R",
+      "lat": 4908300,
+      "lng": 704000,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 1.985,
+        "sp98": 1.999,
+        "e10": 1.965
+      }
+    },
+    {
+      "id": "57280003",
+      "cp": "57280",
+      "ville": "Hauconcourt",
+      "adresse": "A 31 Sortie Maizières les Metz",
+      "pop": "R",
+      "lat": 4921400,
+      "lng": 617000,
+      "fuels": {
+        "gazole": 1.919,
+        "sp95": 1.953,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "57700004",
+      "cp": "57700",
+      "ville": "Hayange",
+      "adresse": "27 rue Jean Jaurès",
+      "pop": "R",
+      "lat": 4933060.31915,
+      "lng": 607954.06453,
+      "fuels": {
+        "gazole": 1.919,
+        "e10": 1.919,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "57700002",
+      "cp": "57700",
+      "ville": "Hayange",
+      "adresse": "RUE DU MARECHAL FOCH",
+      "pop": "R",
+      "lat": 4933100,
+      "lng": 605700,
+      "fuels": {
+        "gazole": 2.047,
+        "sp98": 2.066,
+        "e10": 1.932
+      }
+    },
+    {
+      "id": "57470004",
+      "cp": "57470",
+      "ville": "Hombourg-Haut",
+      "adresse": "6 RUE DE METZ",
+      "pop": "R",
+      "lat": 4912359.6,
+      "lng": 677739,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.07,
+        "e10": 1.989,
+        "e85": 0.789
+      }
+    },
+    {
+      "id": "57130004",
+      "cp": "57130",
+      "ville": "Jouy-aux-Arches",
+      "adresse": "41 ROUTE DE METZ",
+      "pop": "R",
+      "lat": 4907000,
+      "lng": 608600,
+      "fuels": {
+        "gazole": 1.982,
+        "e10": 1.966
+      }
+    },
+    {
+      "id": "57140005",
+      "cp": "57140",
+      "ville": "La Maxe",
+      "adresse": "Autoroute A31",
+      "pop": "A",
+      "lat": 4915000,
+      "lng": 618500,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.079,
+        "e10": 1.989
+      }
+    },
+    {
+      "id": "57620002",
+      "cp": "57620",
+      "ville": "Lemberg",
+      "adresse": "1 RUE DE SARREGUEMINES",
+      "pop": "R",
+      "lat": 4899781.2058,
+      "lng": 737935.27494,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.019,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "57000005",
+      "cp": "57050",
+      "ville": "Longeville-lès-Metz",
+      "adresse": "108 Boulevard Saint-Symphorien",
+      "pop": "R",
+      "lat": 4911629,
+      "lng": 615026,
+      "fuels": {
+        "gazole": 2.013,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "57740008",
+      "cp": "57740",
+      "ville": "Longeville-lès-Saint-Avold",
+      "adresse": "AUTOROUTE A4 - AIRE DE LONGEVILLE SUD",
+      "pop": "A",
+      "lat": 4913300,
+      "lng": 666100,
+      "fuels": {
+        "gazole": 2.068,
+        "sp98": 2.094,
+        "e10": 2.025,
+        "gplc": 1.211
+      }
+    },
+    {
+      "id": "57740010",
+      "cp": "57740",
+      "ville": "Longeville-lès-Saint-Avold",
+      "adresse": "Autoroute A4 km 358 sens Paris - Strasbourg",
+      "pop": "A",
+      "lat": 4913430,
+      "lng": 665722,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.069,
+        "e10": 1.979,
+        "e85": 0.999
+      }
+    },
+    {
+      "id": "57740007",
+      "cp": "57740",
+      "ville": "Longeville-lès-Saint-Avold",
+      "adresse": "RN 3",
+      "pop": "R",
+      "lat": 4910900,
+      "lng": 668600,
+      "fuels": {
+        "gazole": 1.892,
+        "sp98": 1.99,
+        "e10": 1.87,
+        "e85": 0.839
+      }
+    },
+    {
+      "id": "57740003",
+      "cp": "57740",
+      "ville": "Longeville-lès-Saint-Avold",
+      "adresse": "RTE NATIONALE 3",
+      "pop": "R",
+      "lat": 4911100,
+      "lng": 667900,
+      "fuels": {
+        "gazole": 2.09,
+        "sp95": 2.09
+      }
+    },
     {
       "id": "57790001",
       "cp": "57790",
@@ -61,6 +858,262 @@
       }
     },
     {
+      "id": "57210001",
+      "cp": "57280",
+      "ville": "Maizières-lès-Metz",
+      "adresse": "59 Route de Thionville",
+      "pop": "R",
+      "lat": 4922100,
+      "lng": 616300,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 1.99,
+        "e10": 1.962
+      }
+    },
+    {
+      "id": "57280001",
+      "cp": "57280",
+      "ville": "Maizières-lès-Metz",
+      "adresse": "VOIE ROMAINE",
+      "pop": "R",
+      "lat": 4919900,
+      "lng": 615000,
+      "fuels": {
+        "gazole": 1.919,
+        "sp98": 2.019,
+        "e10": 1.919,
+        "e85": 0.871
+      }
+    },
+    {
+      "id": "57100001",
+      "cp": "57100",
+      "ville": "Manom",
+      "adresse": "1 route de Mondorf",
+      "pop": "R",
+      "lat": 4937932.99391,
+      "lng": 617033.70379,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.087,
+        "e10": 1.97
+      }
+    },
+    {
+      "id": "57155002",
+      "cp": "57155",
+      "ville": "Marly",
+      "adresse": "1, la Belle Fontaine",
+      "pop": "R",
+      "lat": 4906705.36,
+      "lng": 614256.08,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.021,
+        "e10": 1.904,
+        "e85": 0.84
+      }
+    },
+    {
+      "id": "57000022",
+      "cp": "57050",
+      "ville": "Metz",
+      "adresse": "10 RUE DES ALLIES",
+      "pop": "R",
+      "lat": 4913000,
+      "lng": 616500,
+      "fuels": {
+        "gazole": 1.891,
+        "e10": 1.888,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "57070011",
+      "cp": "57070",
+      "ville": "Metz",
+      "adresse": "174 AVE DE STRASBOURG",
+      "pop": "R",
+      "lat": 4910800,
+      "lng": 620600,
+      "fuels": {
+        "gazole": 1.991,
+        "sp98": 1.99,
+        "e10": 1.978
+      }
+    },
+    {
+      "id": "57070005",
+      "cp": "57070",
+      "ville": "Metz",
+      "adresse": "192 Avenue de Strasbourg",
+      "pop": "R",
+      "lat": 4910600,
+      "lng": 620900,
+      "fuels": {
+        "gazole": 2.003,
+        "sp98": 2.068,
+        "e10": 1.988,
+        "e85": 0.943
+      }
+    },
+    {
+      "id": "57000009",
+      "cp": "57000",
+      "ville": "Metz",
+      "adresse": "28 Avenue André Malraux",
+      "pop": "R",
+      "lat": 4910600,
+      "lng": 617900,
+      "fuels": {
+        "gazole": 2.015,
+        "sp98": 2.073,
+        "e10": 1.993
+      }
+    },
+    {
+      "id": "57050001",
+      "cp": "57050",
+      "ville": "Metz",
+      "adresse": "36 Route de Lorry",
+      "pop": "R",
+      "lat": 4913056.26972,
+      "lng": 615747.06719,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.001,
+        "sp98": 2.149
+      }
+    },
+    {
+      "id": "57000001",
+      "cp": "57000",
+      "ville": "Metz",
+      "adresse": "45 Avenue André Malraux",
+      "pop": "R",
+      "lat": 4910449,
+      "lng": 617949,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.703
+      }
+    },
+    {
+      "id": "57000011",
+      "cp": "57000",
+      "ville": "Metz",
+      "adresse": "56 Rue de Pouilly",
+      "pop": "R",
+      "lat": 4907468,
+      "lng": 618439,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "57070003",
+      "cp": "57070",
+      "ville": "Metz",
+      "adresse": "62 Rue du Général Metman",
+      "pop": "R",
+      "lat": 4912009,
+      "lng": 621832,
+      "fuels": {
+        "gazole": 2.069,
+        "sp98": 2.099,
+        "e10": 2.049,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "57050002",
+      "cp": "57050",
+      "ville": "Metz",
+      "adresse": "66 Route de Woippy",
+      "pop": "R",
+      "lat": 4913400,
+      "lng": 616200,
+      "fuels": {
+        "gazole": 1.905,
+        "sp98": 1.99,
+        "e10": 1.888
+      }
+    },
+    {
+      "id": "57000002",
+      "cp": "57070",
+      "ville": "Metz",
+      "adresse": "78 Rue du Général Metman",
+      "pop": "R",
+      "lat": 4912000,
+      "lng": 622100,
+      "fuels": {
+        "gazole": 1.941,
+        "sp98": 1.99,
+        "e10": 1.946
+      }
+    },
+    {
+      "id": "57000008",
+      "cp": "57000",
+      "ville": "Metz",
+      "adresse": "8 Avenue Leclerc de Hauteclocque",
+      "pop": "R",
+      "lat": 4911000,
+      "lng": 617100,
+      "fuels": {
+        "gazole": 2.039,
+        "sp98": 2.073,
+        "e10": 1.999
+      }
+    },
+    {
+      "id": "57000025",
+      "cp": "57000",
+      "ville": "Metz",
+      "adresse": "Bd du Pontiffroy",
+      "pop": "R",
+      "lat": 4912600,
+      "lng": 617900,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.069,
+        "e10": 1.969,
+        "gplc": 1.029
+      }
+    },
+    {
+      "id": "57071001",
+      "cp": "57070",
+      "ville": "Metz",
+      "adresse": "Bd SOLIDARITE",
+      "pop": "R",
+      "lat": 4910700,
+      "lng": 623100,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.032,
+        "e10": 1.915,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "57070001",
+      "cp": "57070",
+      "ville": "Metz",
+      "adresse": "Rue de Belletanche",
+      "pop": "R",
+      "lat": 4911000,
+      "lng": 620900,
+      "fuels": {
+        "gazole": 1.991,
+        "sp98": 2.051,
+        "e10": 1.916
+      }
+    },
+    {
       "id": "57940001",
       "cp": "57940",
       "ville": "Metzervisse",
@@ -72,6 +1125,64 @@
         "gazole": 2.099,
         "sp98": 2.109,
         "e10": 1.999
+      }
+    },
+    {
+      "id": "57303001",
+      "cp": "57300",
+      "ville": "Mondelange",
+      "adresse": "1 rue de Bousse BP20 MONDELANGE",
+      "pop": "R",
+      "lat": 4926200,
+      "lng": 617500,
+      "fuels": {
+        "gazole": 1.958,
+        "sp95": 1.982,
+        "e10": 1.94,
+        "e85": 0.871
+      }
+    },
+    {
+      "id": "57157001",
+      "cp": "57155",
+      "ville": "Montigny-lès-Metz",
+      "adresse": "1 Rue Costes et Bellonte",
+      "pop": "R",
+      "lat": 4908700,
+      "lng": 615100,
+      "fuels": {
+        "gazole": 1.997,
+        "sp98": 2.108,
+        "e10": 1.938
+      }
+    },
+    {
+      "id": "57950002",
+      "cp": "57950",
+      "ville": "Montigny-lès-Metz",
+      "adresse": "rue de Nomény",
+      "pop": "R",
+      "lat": 4908729,
+      "lng": 615686,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.058,
+        "e10": 1.935
+      }
+    },
+    {
+      "id": "57340003",
+      "cp": "57340",
+      "ville": "Morhange",
+      "adresse": "AVENUE POMPIDOU",
+      "pop": "R",
+      "lat": 4893275.04696,
+      "lng": 665262.11168,
+      "fuels": {
+        "gazole": 1.942,
+        "sp98": 2.049,
+        "e10": 1.949,
+        "e85": 0.798
       }
     },
     {
@@ -90,6 +1201,22 @@
       }
     },
     {
+      "id": "57160001",
+      "cp": "57160",
+      "ville": "Moulins-lès-Metz",
+      "adresse": "44 AVENUE JEAN CLAUDE THEOBALD",
+      "pop": "R",
+      "lat": 4908300,
+      "lng": 611000,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.032,
+        "e10": 1.915,
+        "e85": 0.86,
+        "gplc": 0.999
+      }
+    },
+    {
       "id": "57600003",
       "cp": "57600",
       "ville": "Œting",
@@ -101,6 +1228,101 @@
         "gazole": 2.014,
         "sp98": 2.107,
         "e10": 1.998
+      }
+    },
+    {
+      "id": "57117001",
+      "cp": "57645",
+      "ville": "Ogy-Montoy-Flanville",
+      "adresse": "16 Route Sarrebruck",
+      "pop": "R",
+      "lat": 4911700,
+      "lng": 627900,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 2.069
+      }
+    },
+    {
+      "id": "57370001",
+      "cp": "57370",
+      "ville": "Phalsbourg",
+      "adresse": "1 RUE DE SARREBOURG",
+      "pop": "R",
+      "lat": 4876800,
+      "lng": 724800,
+      "fuels": {
+        "gazole": 1.972,
+        "sp98": 2.017,
+        "e10": 1.918
+      }
+    },
+    {
+      "id": "57370008",
+      "cp": "57370",
+      "ville": "Phalsbourg",
+      "adresse": "5 RUE DE NANCY",
+      "pop": "R",
+      "lat": 4876900,
+      "lng": 724200,
+      "fuels": {
+        "gazole": 1.986,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "57370004",
+      "cp": "57370",
+      "ville": "Phalsbourg",
+      "adresse": "rue de Strasbourg Zac Louvois",
+      "pop": "R",
+      "lat": 4877400,
+      "lng": 724400,
+      "fuels": {
+        "gazole": 1.963,
+        "sp98": 2.01,
+        "e10": 1.909,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "57370003",
+      "cp": "57370",
+      "ville": "Phalsbourg",
+      "adresse": "Rue des Glacis",
+      "pop": "R",
+      "lat": 4876591,
+      "lng": 725404,
+      "fuels": {
+        "gazole": 1.955,
+        "sp95": 1.9,
+        "sp98": 1.965
+      }
+    },
+    {
+      "id": "57510004",
+      "cp": "57510",
+      "ville": "Puttelange-aux-Lacs",
+      "adresse": "RUE DE FORBACH",
+      "pop": "R",
+      "lat": 4905849.70273,
+      "lng": 692065.45359,
+      "fuels": {
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "57580001",
+      "cp": "57580",
+      "ville": "Rémilly",
+      "adresse": "51 Rue de Metz",
+      "pop": "R",
+      "lat": 4901700,
+      "lng": 638400,
+      "fuels": {
+        "gazole": 1.991,
+        "sp98": 1.99,
+        "e10": 1.986
       }
     },
     {
@@ -119,6 +1341,167 @@
       }
     },
     {
+      "id": "57270001",
+      "cp": "57270",
+      "ville": "Richemont",
+      "adresse": "Rue de Metz",
+      "pop": "R",
+      "lat": 4929755.07615,
+      "lng": 616521.67441,
+      "fuels": {
+        "gazole": 1.985,
+        "sp98": 1.99,
+        "e10": 1.975,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "57410001",
+      "cp": "57410",
+      "ville": "Rohrbach-lès-Bitche",
+      "adresse": "Route de Strasbourg",
+      "pop": "R",
+      "lat": 4904700,
+      "lng": 728400,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 2.069,
+        "sp98": 2.019,
+        "e10": 1.949,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "57120001",
+      "cp": "57120",
+      "ville": "Rombas",
+      "adresse": "ROUTE DE METZ",
+      "pop": "R",
+      "lat": 4923600,
+      "lng": 610900,
+      "fuels": {
+        "gazole": 1.935,
+        "sp98": 1.99,
+        "e10": 1.941
+      }
+    },
+    {
+      "id": "57120005",
+      "cp": "57120",
+      "ville": "Rombas",
+      "adresse": "RUE DU MUGUET",
+      "pop": "R",
+      "lat": 4925000,
+      "lng": 609600,
+      "fuels": {
+        "gazole": 1.919,
+        "sp95": 1.939,
+        "sp98": 1.989
+      }
+    },
+    {
+      "id": "57800003",
+      "cp": "57800",
+      "ville": "Rosbruck",
+      "adresse": "26 Rue Nationale",
+      "pop": "R",
+      "lat": 4915900,
+      "lng": 685000,
+      "fuels": {
+        "gazole": 2.11,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "57500001",
+      "cp": "57500",
+      "ville": "Saint-Avold",
+      "adresse": "Avenue du Général Patton",
+      "pop": "R",
+      "lat": 4911600,
+      "lng": 670800,
+      "fuels": {
+        "gazole": 1.938,
+        "sp98": 1.99,
+        "e10": 1.916,
+        "e85": 0.844
+      }
+    },
+    {
+      "id": "57500002",
+      "cp": "57500",
+      "ville": "Saint-Avold",
+      "adresse": "Rue du Général Mangin",
+      "pop": "R",
+      "lat": 4910800,
+      "lng": 671900,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.081,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "57740004",
+      "cp": "57740",
+      "ville": "Saint-Avold",
+      "adresse": "ZONE COMMERCIALE DU HECKENWALD",
+      "pop": "R",
+      "lat": 4911100,
+      "lng": 669800,
+      "fuels": {
+        "gazole": 1.98,
+        "e10": 1.956,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "57070013",
+      "cp": "57070",
+      "ville": "Saint-Julien-lès-Metz",
+      "adresse": "RUE DE L ABATTOIR",
+      "pop": "R",
+      "lat": 4912700,
+      "lng": 618900,
+      "fuels": {
+        "gazole": 1.891,
+        "sp98": 1.99,
+        "e10": 1.888,
+        "e85": 0.849
+      }
+    },
+    {
+      "id": "57855003",
+      "cp": "57855",
+      "ville": "Saint-Privat-la-Montagne",
+      "adresse": "A4 Aire De Metz",
+      "pop": "A",
+      "lat": 4917923.33656,
+      "lng": 605361.60147,
+      "fuels": {
+        "gazole": 2.074,
+        "sp98": 2.183,
+        "e10": 2.067
+      }
+    },
+    {
+      "id": "57255001",
+      "cp": "57255",
+      "ville": "Sainte-Marie-aux-Chênes",
+      "adresse": "RD 643",
+      "pop": "R",
+      "lat": 4919700,
+      "lng": 599500,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.921,
+        "e85": 0.87,
+        "gplc": 1.057
+      }
+    },
+    {
       "id": "57430004",
       "cp": "57430",
       "ville": "Sarralbe",
@@ -130,6 +1513,220 @@
         "gazole": 1.986,
         "sp98": 1.99,
         "e10": 1.955
+      }
+    },
+    {
+      "id": "57430001",
+      "cp": "57430",
+      "ville": "Sarralbe",
+      "adresse": "ROUTE DE STRASBOURG",
+      "pop": "R",
+      "lat": 4899100,
+      "lng": 702800,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.059,
+        "e10": 1.985
+      }
+    },
+    {
+      "id": "57400005",
+      "cp": "57400",
+      "ville": "Sarrebourg",
+      "adresse": "15 Avenue de France",
+      "pop": "R",
+      "lat": 4873500,
+      "lng": 704600,
+      "fuels": {
+        "gazole": 1.987,
+        "sp98": 2.056,
+        "e10": 1.976
+      }
+    },
+    {
+      "id": "57402001",
+      "cp": "57400",
+      "ville": "Sarrebourg",
+      "adresse": "19 Route de Lunéville",
+      "pop": "R",
+      "lat": 4873200,
+      "lng": 704600,
+      "fuels": {
+        "gazole": 1.911,
+        "sp98": 1.99,
+        "e10": 1.901,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "57400007",
+      "cp": "57400",
+      "ville": "Sarrebourg",
+      "adresse": "8 Rue de Strasbourg",
+      "pop": "R",
+      "lat": 4874200,
+      "lng": 707800,
+      "fuels": {
+        "gazole": 2.049,
+        "sp98": 2.119,
+        "e10": 2.049,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "57400003",
+      "cp": "57400",
+      "ville": "Sarrebourg",
+      "adresse": "RN 4",
+      "pop": "R",
+      "lat": 4872841.80491,
+      "lng": 702808.94664,
+      "fuels": {
+        "gazole": 1.845,
+        "sp98": 1.963,
+        "e10": 1.843
+      }
+    },
+    {
+      "id": "57400001",
+      "cp": "57400",
+      "ville": "Sarrebourg",
+      "adresse": "route de Phalsbourg",
+      "pop": "R",
+      "lat": 4874000,
+      "lng": 707000,
+      "fuels": {
+        "gazole": 1.912,
+        "e10": 1.902,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "57200002",
+      "cp": "57200",
+      "ville": "Sarreguemines",
+      "adresse": "24 Rue du Maréchal Foch",
+      "pop": "R",
+      "lat": 4911400,
+      "lng": 707400,
+      "fuels": {
+        "gazole": 2.098,
+        "sp98": 2.093,
+        "e10": 1.956
+      }
+    },
+    {
+      "id": "57200001",
+      "cp": "57200",
+      "ville": "Sarreguemines",
+      "adresse": "60 Route de Nancy",
+      "pop": "R",
+      "lat": 4910011,
+      "lng": 705924,
+      "fuels": {
+        "gazole": 2.059,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "57200004",
+      "cp": "57200",
+      "ville": "Sarreguemines",
+      "adresse": "Route de Bitche",
+      "pop": "R",
+      "lat": 4911700,
+      "lng": 710100,
+      "fuels": {
+        "gazole": 1.969,
+        "sp95": 1.982,
+        "sp98": 1.992,
+        "e10": 1.919,
+        "e85": 0.798,
+        "gplc": 0.999
+      }
+    },
+    {
+      "id": "57200003",
+      "cp": "57200",
+      "ville": "Sarreguemines",
+      "adresse": "Rue Poincarré",
+      "pop": "R",
+      "lat": 4910655,
+      "lng": 707164,
+      "fuels": {
+        "gazole": 1.969,
+        "sp98": 2.009,
+        "e10": 1.919,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "57160002",
+      "cp": "57160",
+      "ville": "Scy-Chazelles",
+      "adresse": "66/68 voie de la Liberté",
+      "pop": "R",
+      "lat": 4910900,
+      "lng": 612300,
+      "fuels": {
+        "gazole": 1.967,
+        "sp95": 1.958,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "57420002",
+      "cp": "57420",
+      "ville": "Solgne",
+      "adresse": "1 Rue d'Alsace et de Lorraine",
+      "pop": "R",
+      "lat": 4897000,
+      "lng": 629600,
+      "fuels": {
+        "gazole": 1.989,
+        "e10": 1.976
+      }
+    },
+    {
+      "id": "57300005",
+      "cp": "57300",
+      "ville": "Talange",
+      "adresse": "153 ROUTE DE METZ",
+      "pop": "R",
+      "lat": 4924300,
+      "lng": 617000,
+      "fuels": {
+        "gazole": 1.981
+      }
+    },
+    {
+      "id": "57525001",
+      "cp": "57525",
+      "ville": "Talange",
+      "adresse": "Zone commerciale du Triangle",
+      "pop": "R",
+      "lat": 4924121.18697,
+      "lng": 617203.29781,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.079,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "57100008",
+      "cp": "57100",
+      "ville": "Thionville",
+      "adresse": "1 ROUTE DE METZ",
+      "pop": "R",
+      "lat": 4933700,
+      "lng": 615600,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 1.99,
+        "e10": 1.975,
+        "e85": 0.829
       }
     },
     {
@@ -145,6 +1742,80 @@
         "sp98": 1.99,
         "e10": 1.975,
         "gplc": 0.959
+      }
+    },
+    {
+      "id": "57100006",
+      "cp": "57100",
+      "ville": "Thionville",
+      "adresse": "20 Route d'Arlon - Linkling 3",
+      "pop": "R",
+      "lat": 4936300,
+      "lng": 611800,
+      "fuels": {
+        "gazole": 1.962,
+        "sp98": 2.032,
+        "e10": 1.934,
+        "e85": 0.79
+      }
+    },
+    {
+      "id": "57100002",
+      "cp": "57100",
+      "ville": "Thionville",
+      "adresse": "Rue du Maillet",
+      "pop": "R",
+      "lat": 4935600,
+      "lng": 614000,
+      "fuels": {
+        "gazole": 1.973,
+        "sp95": 1.94,
+        "sp98": 2.042,
+        "e10": 1.925
+      }
+    },
+    {
+      "id": "57730001",
+      "cp": "57730",
+      "ville": "Valmont",
+      "adresse": "RD 910 A",
+      "pop": "R",
+      "lat": 4907700,
+      "lng": 669300,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 1.969,
+        "sp98": 2.069,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "57420005",
+      "cp": "57420",
+      "ville": "Verny",
+      "adresse": "1 RUE DU FORT",
+      "pop": "R",
+      "lat": 4901200,
+      "lng": 620400,
+      "fuels": {
+        "gazole": 1.999,
+        "sp95": 1.999,
+        "sp98": 2.089
+      }
+    },
+    {
+      "id": "57140003",
+      "cp": "57140",
+      "ville": "Woippy",
+      "adresse": "AUTOROUTE A31",
+      "pop": "A",
+      "lat": 4918100,
+      "lng": 617800,
+      "fuels": {
+        "gazole": 2.12,
+        "sp98": 2.179,
+        "e10": 2.073,
+        "gplc": 1.062
       }
     }
   ]

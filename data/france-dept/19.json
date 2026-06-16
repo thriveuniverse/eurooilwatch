@@ -3,48 +3,255 @@
   "name": "Corrèze",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-16T10:02:11.865Z",
+  "asOf": "2026-06-16T20:12:19.883Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 4,
+  "stationCount": 58,
   "fuels": {
     "gazole": {
-      "count": 4,
-      "mean": 2.013,
-      "median": 2.0015,
-      "min": 1.959,
-      "max": 2.09
+      "count": 57,
+      "mean": 1.9918,
+      "median": 1.979,
+      "min": 1.832,
+      "max": 2.189
     },
     "sp95": {
-      "count": 1,
-      "mean": 2.116,
-      "median": 2.116,
-      "min": 2.116,
+      "count": 19,
+      "mean": 1.9991,
+      "median": 1.99,
+      "min": 1.962,
       "max": 2.116
     },
     "sp98": {
-      "count": 3,
-      "mean": 2.045,
-      "median": 2.04,
-      "min": 2.036,
-      "max": 2.059
+      "count": 44,
+      "mean": 2.0471,
+      "median": 2.0375,
+      "min": 1.956,
+      "max": 2.249
     },
     "e10": {
-      "count": 3,
-      "mean": 1.9473,
-      "median": 1.946,
-      "min": 1.939,
-      "max": 1.957
+      "count": 46,
+      "mean": 1.9496,
+      "median": 1.943,
+      "min": 1.844,
+      "max": 2.149
     },
     "e85": {
-      "count": 1,
-      "mean": 0.946,
-      "median": 0.946,
-      "min": 0.946,
-      "max": 0.946
+      "count": 15,
+      "mean": 0.8575,
+      "median": 0.835,
+      "min": 0.798,
+      "max": 0.988
+    },
+    "gplc": {
+      "count": 3,
+      "mean": 1.1017,
+      "median": 1.079,
+      "min": 1.078,
+      "max": 1.148
     }
   },
   "stations": [
+    {
+      "id": "19240003",
+      "cp": "19240",
+      "ville": "Allassac",
+      "adresse": "CD N°9 RTE DU SAILLANT",
+      "pop": "R",
+      "lat": 4525300,
+      "lng": 146100,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.103,
+        "e10": 1.986,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "19120001",
+      "cp": "19120",
+      "ville": "Altillac",
+      "adresse": "39 Avenue des Généraux Marbot",
+      "pop": "R",
+      "lat": 4497300,
+      "lng": 184900,
+      "fuels": {
+        "gazole": 1.915,
+        "sp95": 1.962,
+        "e10": 1.905
+      }
+    },
+    {
+      "id": "19400005",
+      "cp": "19400",
+      "ville": "Argentat-sur-Dordogne",
+      "adresse": "25, avenue des XAINTRIES",
+      "pop": "R",
+      "lat": 4509100,
+      "lng": 194100,
+      "fuels": {
+        "gazole": 2.09,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.98
+      }
+    },
+    {
+      "id": "19400006",
+      "cp": "19400",
+      "ville": "Argentat-sur-Dordogne",
+      "adresse": "LIEU DIT MOULIN BAS",
+      "pop": "R",
+      "lat": 4509200,
+      "lng": 193100,
+      "fuels": {
+        "gazole": 1.935,
+        "sp98": 2.029,
+        "e10": 1.925
+      }
+    },
+    {
+      "id": "19190001",
+      "cp": "19190",
+      "ville": "Beynat",
+      "adresse": "RD 921",
+      "pop": "R",
+      "lat": 4512554.2414,
+      "lng": 172250.66548,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.079,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "19110003",
+      "cp": "19110",
+      "ville": "Bort-les-Orgues",
+      "adresse": "1160 BOULEVARD JEAN JAURES",
+      "pop": "R",
+      "lat": 4539317.6,
+      "lng": 249349.6,
+      "fuels": {
+        "gazole": 2.14,
+        "sp95": 1.99,
+        "sp98": 1.99
+      }
+    },
+    {
+      "id": "19110001",
+      "cp": "19110",
+      "ville": "Bort-les-Orgues",
+      "adresse": "av victor hugo",
+      "pop": "R",
+      "lat": 4540410.32586,
+      "lng": 249992.35676,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.009,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "19100016",
+      "cp": "19100",
+      "ville": "Brive-la-Gaillarde",
+      "adresse": "108 AVENUE PIERRE SEMARD",
+      "pop": "R",
+      "lat": 4515600,
+      "lng": 151800,
+      "fuels": {
+        "gazole": 1.884,
+        "sp98": 1.99,
+        "e10": 1.871,
+        "e85": 0.823
+      }
+    },
+    {
+      "id": "19100015",
+      "cp": "19100",
+      "ville": "Brive-la-Gaillarde",
+      "adresse": "112 Avenue Jacques et Bernadette Chirac ex Kennedy",
+      "pop": "R",
+      "lat": 4516700,
+      "lng": 155000,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 2.059,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "19316001",
+      "cp": "19100",
+      "ville": "Brive-la-Gaillarde",
+      "adresse": "14,rue louis taurisson",
+      "pop": "R",
+      "lat": 4514500,
+      "lng": 148300,
+      "fuels": {
+        "gazole": 1.935,
+        "sp95": 1.991,
+        "sp98": 2.07
+      }
+    },
+    {
+      "id": "19100010",
+      "cp": "19100",
+      "ville": "Brive-la-Gaillarde",
+      "adresse": "147 Avenue Ribot",
+      "pop": "R",
+      "lat": 4516500,
+      "lng": 150400,
+      "fuels": {
+        "gazole": 1.947,
+        "sp95": 1.972,
+        "e10": 1.898
+      }
+    },
+    {
+      "id": "19100011",
+      "cp": "19100",
+      "ville": "Brive-la-Gaillarde",
+      "adresse": "86 Avenue Président John Kennedy",
+      "pop": "R",
+      "lat": 4516671,
+      "lng": 154590,
+      "fuels": {
+        "gazole": 1.929,
+        "sp95": 1.969,
+        "sp98": 1.999
+      }
+    },
+    {
+      "id": "19100017",
+      "cp": "19100",
+      "ville": "Brive-la-Gaillarde",
+      "adresse": "90 AV RIBOT",
+      "pop": "R",
+      "lat": 4516500,
+      "lng": 151100,
+      "fuels": {
+        "gazole": 1.887,
+        "sp98": 1.987,
+        "e10": 1.868,
+        "gplc": 1.079
+      }
+    },
+    {
+      "id": "19100001",
+      "cp": "19100",
+      "ville": "Brive-la-Gaillarde",
+      "adresse": "90 Avenue Abbé Jean Alvitre",
+      "pop": "R",
+      "lat": 4515300,
+      "lng": 150900,
+      "fuels": {
+        "gazole": 1.947,
+        "sp98": 1.99,
+        "e10": 1.898
+      }
+    },
     {
       "id": "19100014",
       "cp": "19100",
@@ -60,6 +267,104 @@
       }
     },
     {
+      "id": "19170001",
+      "cp": "19170",
+      "ville": "Bugeat",
+      "adresse": "RUE DE LA REPUBLIQUE",
+      "pop": "R",
+      "lat": 4559855,
+      "lng": 192571,
+      "fuels": {
+        "gazole": 1.985,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "19350002",
+      "cp": "19350",
+      "ville": "Chabrignac",
+      "adresse": "LASCHAMPS",
+      "pop": "R",
+      "lat": 4531683.16615,
+      "lng": 133697.71189,
+      "fuels": {
+        "gazole": 1.99,
+        "sp98": 2.079,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "19500002",
+      "cp": "19500",
+      "ville": "Collonges-la-Rouge",
+      "adresse": "La Peyrague Route de Collonges D38",
+      "pop": "R",
+      "lat": 4505600,
+      "lng": 166900,
+      "fuels": {
+        "sp98": 2.121,
+        "e10": 2.029
+      }
+    },
+    {
+      "id": "19360002",
+      "cp": "19360",
+      "ville": "Cosnac",
+      "adresse": "215 Route de Rochelongue",
+      "pop": "R",
+      "lat": 4511600,
+      "lng": 156000,
+      "fuels": {
+        "gazole": 2.029,
+        "sp98": 2.125,
+        "e10": 2.015,
+        "e85": 0.895
+      }
+    },
+    {
+      "id": "19600003",
+      "cp": "19600",
+      "ville": "Cressensac-Sarrazac",
+      "adresse": "Lieu-dit La Croix-Blanche",
+      "pop": "R",
+      "lat": 4503300,
+      "lng": 150300,
+      "fuels": {
+        "gazole": 1.981,
+        "sp98": 1.99,
+        "e10": 1.981,
+        "e85": 0.846
+      }
+    },
+    {
+      "id": "19270003",
+      "cp": "19270",
+      "ville": "Donzenac",
+      "adresse": "155 rue de la riviére",
+      "pop": "R",
+      "lat": 4521900,
+      "lng": 152100,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.029,
+        "e10": 1.919
+      }
+    },
+    {
+      "id": "19300001",
+      "cp": "19300",
+      "ville": "Égletons",
+      "adresse": "Avenue Charles de Gaulle",
+      "pop": "R",
+      "lat": 4540194,
+      "lng": 204280,
+      "fuels": {
+        "gazole": 1.979,
+        "sp98": 2.009,
+        "e10": 1.957
+      }
+    },
+    {
       "id": "19300002",
       "cp": "19300",
       "ville": "Égletons",
@@ -71,6 +376,376 @@
         "gazole": 1.979,
         "sp98": 2.036,
         "e10": 1.957
+      }
+    },
+    {
+      "id": "19300003",
+      "cp": "19300",
+      "ville": "Égletons",
+      "adresse": "CHAULAUDRE",
+      "pop": "R",
+      "lat": 4539800,
+      "lng": 203600,
+      "fuels": {
+        "gazole": 1.989,
+        "e10": 1.972,
+        "e85": 0.845
+      }
+    },
+    {
+      "id": "19150002",
+      "cp": "19150",
+      "ville": "Laguenne-sur-Avalouze",
+      "adresse": "1 Avenue de Coulaud",
+      "pop": "R",
+      "lat": 4524621,
+      "lng": 177323,
+      "fuels": {
+        "gazole": 1.976,
+        "sp95": 1.999,
+        "sp98": 2.039,
+        "e85": 0.798
+      }
+    },
+    {
+      "id": "19210001",
+      "cp": "19210",
+      "ville": "Lubersac",
+      "adresse": "Avenue du 8 Mai 1945",
+      "pop": "R",
+      "lat": 4543800,
+      "lng": 139700,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 1.999,
+        "sp98": 2.189,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "19360003",
+      "cp": "19360",
+      "ville": "Malemort",
+      "adresse": "285 AVENUE JEAN BOUNIE",
+      "pop": "R",
+      "lat": 4517800,
+      "lng": 159700,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.039,
+        "e10": 1.939
+      }
+    },
+    {
+      "id": "19100009",
+      "cp": "19100",
+      "ville": "Malemort",
+      "adresse": "Impasse du Pilou",
+      "pop": "R",
+      "lat": 4515800,
+      "lng": 156300,
+      "fuels": {
+        "gazole": 1.919,
+        "sp95": 1.973,
+        "e10": 1.896,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "19510002",
+      "cp": "19510",
+      "ville": "Masseret",
+      "adresse": "AUTOROUTE A20 - AIRE DE PORTE DE CORREZE",
+      "pop": "A",
+      "lat": 4554068,
+      "lng": 152039,
+      "fuels": {
+        "gazole": 2.074,
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.988,
+        "gplc": 1.078
+      }
+    },
+    {
+      "id": "19340003",
+      "cp": "19340",
+      "ville": "Messeix",
+      "adresse": "Viaduc du Chavanon",
+      "pop": "A",
+      "lat": 4562400,
+      "lng": 248100,
+      "fuels": {
+        "gazole": 2.189,
+        "sp98": 2.249,
+        "e10": 2.149
+      }
+    },
+    {
+      "id": "19250003",
+      "cp": "19250",
+      "ville": "Meymac",
+      "adresse": "RUE DU PAS REDON",
+      "pop": "R",
+      "lat": 4553200,
+      "lng": 214200,
+      "fuels": {
+        "gazole": 1.989,
+        "sp95": 2.019,
+        "e10": 1.959
+      }
+    },
+    {
+      "id": "19460002",
+      "cp": "19460",
+      "ville": "Naves",
+      "adresse": "42 route nationale 120",
+      "pop": "R",
+      "lat": 4531600,
+      "lng": 177000,
+      "fuels": {
+        "gazole": 1.832,
+        "sp98": 1.956,
+        "e10": 1.844,
+        "e85": 0.831
+      }
+    },
+    {
+      "id": "19130002",
+      "cp": "19130",
+      "ville": "Objat",
+      "adresse": "AVENUE RAYMOND POINCARE",
+      "pop": "R",
+      "lat": 4525900,
+      "lng": 141300,
+      "fuels": {
+        "gazole": 1.979,
+        "sp95": 1.963,
+        "sp98": 2.039
+      }
+    },
+    {
+      "id": "19130004",
+      "cp": "19130",
+      "ville": "Objat",
+      "adresse": "Lieu-dit Bridal",
+      "pop": "R",
+      "lat": 4524500,
+      "lng": 141300,
+      "fuels": {
+        "gazole": 1.919,
+        "e10": 1.935,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "19130003",
+      "cp": "19130",
+      "ville": "Objat",
+      "adresse": "Route de Brive",
+      "pop": "R",
+      "lat": 4524400,
+      "lng": 141500,
+      "fuels": {
+        "gazole": 1.906,
+        "sp98": 1.99,
+        "e10": 1.93
+      }
+    },
+    {
+      "id": "19130001",
+      "cp": "19130",
+      "ville": "Saint-Aulaire",
+      "adresse": "15 av Général de Gaulle",
+      "pop": "R",
+      "lat": 4523073,
+      "lng": 137255,
+      "fuels": {
+        "gazole": 1.988,
+        "sp95": 1.975,
+        "sp98": 2.04,
+        "e10": 1.945
+      }
+    },
+    {
+      "id": "19330002",
+      "cp": "19330",
+      "ville": "Saint-Mexant",
+      "adresse": "Lieu-dit La Chapelle",
+      "pop": "R",
+      "lat": 4528398,
+      "lng": 165828,
+      "fuels": {
+        "gazole": 1.999,
+        "sp98": 2.069,
+        "e10": 1.969
+      }
+    },
+    {
+      "id": "19600004",
+      "cp": "19600",
+      "ville": "Saint-Pantaléon-de-Larche",
+      "adresse": "AUTOROUTE A89",
+      "pop": "A",
+      "lat": 4516055.22909,
+      "lng": 143982.00337,
+      "fuels": {
+        "gazole": 2.104,
+        "sp98": 2.183,
+        "e10": 2.057
+      }
+    },
+    {
+      "id": "19270004",
+      "cp": "19270",
+      "ville": "Saint-Pardoux-l'Ortigier",
+      "adresse": "LA CROIX DE FER",
+      "pop": "R",
+      "lat": 4531063.40375,
+      "lng": 156254.61875,
+      "fuels": {
+        "gazole": 2.17,
+        "sp95": 1.99
+      }
+    },
+    {
+      "id": "19230001",
+      "cp": "19230",
+      "ville": "Saint-Sornin-Lavolps",
+      "adresse": "55 Avenue du Midi",
+      "pop": "R",
+      "lat": 4539300,
+      "lng": 137700,
+      "fuels": {
+        "gazole": 1.949,
+        "sp98": 2.099,
+        "e10": 1.955
+      }
+    },
+    {
+      "id": "19490002",
+      "cp": "19490",
+      "ville": "Sainte-Fortunade",
+      "adresse": "la chapeloune",
+      "pop": "R",
+      "lat": 4519600,
+      "lng": 177400,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 1.99,
+        "e10": 1.963
+      }
+    },
+    {
+      "id": "19700001",
+      "cp": "19700",
+      "ville": "Seilhac",
+      "adresse": "Avenue Jean Vinatier",
+      "pop": "R",
+      "lat": 4536779,
+      "lng": 171550,
+      "fuels": {
+        "gazole": 1.975,
+        "sp98": 2.036,
+        "e10": 1.933,
+        "e85": 0.84
+      }
+    },
+    {
+      "id": "19290002",
+      "cp": "19290",
+      "ville": "Sornac",
+      "adresse": "rue de la Pierre Grosse",
+      "pop": "R",
+      "lat": 4566200,
+      "lng": 220200,
+      "fuels": {
+        "gazole": 2.003,
+        "sp95": 2.001
+      }
+    },
+    {
+      "id": "19550001",
+      "cp": "19550",
+      "ville": "Soursac",
+      "adresse": "65 GRAND'RUE",
+      "pop": "R",
+      "lat": 4527537.08257,
+      "lng": 220128.66039,
+      "fuels": {
+        "gazole": 2.08,
+        "sp95": 2.1
+      }
+    },
+    {
+      "id": "19260002",
+      "cp": "19260",
+      "ville": "Treignac",
+      "adresse": "Route d'Egletons",
+      "pop": "R",
+      "lat": 4553300,
+      "lng": 180400,
+      "fuels": {
+        "gazole": 2.022,
+        "sp98": 2.054,
+        "e10": 1.941,
+        "e85": 0.809
+      }
+    },
+    {
+      "id": "19000008",
+      "cp": "19000",
+      "ville": "Tulle",
+      "adresse": "12 AV ALSACE LORRAINE",
+      "pop": "R",
+      "lat": 4526170,
+      "lng": 175672,
+      "fuels": {
+        "gazole": 1.976,
+        "sp98": 1.99,
+        "e10": 1.963
+      }
+    },
+    {
+      "id": "19000002",
+      "cp": "19000",
+      "ville": "Tulle",
+      "adresse": "14 RUE DU DOCTEUR RAMON",
+      "pop": "R",
+      "lat": 4525800,
+      "lng": 174900,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 1.997,
+        "sp98": 2.036,
+        "e10": 1.928
+      }
+    },
+    {
+      "id": "19000006",
+      "cp": "19000",
+      "ville": "Tulle",
+      "adresse": "2 QUAI CONTINSOUZA",
+      "pop": "R",
+      "lat": 4527218.92408,
+      "lng": 177587.66548,
+      "fuels": {
+        "gazole": 1.976,
+        "e10": 1.929
+      }
+    },
+    {
+      "id": "19600001",
+      "cp": "19270",
+      "ville": "Ussac",
+      "adresse": "Les Combettes",
+      "pop": "R",
+      "lat": 4519500,
+      "lng": 154200,
+      "fuels": {
+        "gazole": 1.939,
+        "sp98": 1.959,
+        "e10": 1.859
       }
     },
     {
@@ -99,6 +774,104 @@
         "gazole": 2.024,
         "sp98": 2.04,
         "e10": 1.946
+      }
+    },
+    {
+      "id": "19200006",
+      "cp": "19200",
+      "ville": "Ussel",
+      "adresse": "8 Place de la Victoire",
+      "pop": "R",
+      "lat": 4555500,
+      "lng": 231600,
+      "fuels": {
+        "gazole": 2.089,
+        "e10": 1.99
+      }
+    },
+    {
+      "id": "19200003",
+      "cp": "19200",
+      "ville": "Ussel",
+      "adresse": "Route de Ponty",
+      "pop": "R",
+      "lat": 4554275,
+      "lng": 229749,
+      "fuels": {
+        "gazole": 1.975,
+        "sp95": 1.969,
+        "sp98": 2.009,
+        "e10": 1.918
+      }
+    },
+    {
+      "id": "19140003",
+      "cp": "19140",
+      "ville": "Uzerche",
+      "adresse": "Lieu-dit les Paturaux",
+      "pop": "R",
+      "lat": 4541736,
+      "lng": 158159,
+      "fuels": {
+        "gazole": 1.989,
+        "sp98": 2.065,
+        "e10": 1.949
+      }
+    },
+    {
+      "id": "19140001",
+      "cp": "19140",
+      "ville": "Uzerche",
+      "adresse": "Route de Limoges",
+      "pop": "R",
+      "lat": 4544000,
+      "lng": 156100,
+      "fuels": {
+        "gazole": 1.934,
+        "sp98": 2.029,
+        "e10": 1.931,
+        "e85": 0.835
+      }
+    },
+    {
+      "id": "19240002",
+      "cp": "19240",
+      "ville": "Varetz",
+      "adresse": "8 AV 11 NOVEMBRE",
+      "pop": "R",
+      "lat": 4519264,
+      "lng": 145208,
+      "fuels": {
+        "gazole": 2.018,
+        "sp95": 2.008,
+        "sp98": 2.098
+      }
+    },
+    {
+      "id": "19800004",
+      "cp": "19800",
+      "ville": "Vitrac-sur-Montane",
+      "adresse": "15 ROUTE NATIONALE",
+      "pop": "R",
+      "lat": 4534300,
+      "lng": 193400,
+      "fuels": {
+        "gazole": 2.099
+      }
+    },
+    {
+      "id": "19800005",
+      "cp": "19800",
+      "ville": "Vitrac-sur-Montane",
+      "adresse": "AIRE DE LA CORREZE - AUTOROUTE A8",
+      "pop": "A",
+      "lat": 4535945.71,
+      "lng": 193726.25,
+      "fuels": {
+        "gazole": 2.104,
+        "sp98": 2.143,
+        "e10": 2.057,
+        "gplc": 1.148
       }
     }
   ]
