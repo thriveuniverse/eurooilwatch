@@ -427,10 +427,10 @@ function syncInputs(){
 </script>
 <script>/* iframe auto-resize: report true content height to the host (no 100vh feedback loop) */
 (function(){
-  if(window.self!==window.top){document.documentElement.style.minHeight='0';document.body.style.minHeight='0';}
-  function postH(){try{parent.postMessage({oilwatchToolHeight:document.body.scrollHeight},'*');}catch(e){}}
-  window.addEventListener('load',postH);window.addEventListener('resize',postH);
-  if(window.ResizeObserver){new ResizeObserver(function(){postH();}).observe(document.body);}
+  if(window.self!==window.top){document.documentElement.style.minHeight='0';document.body.style.minHeight='0';document.documentElement.style.overflowY='hidden';document.body.style.overflowY='hidden';}
+  var __lastH=0,__rafH=0;function postH(){try{var h=document.body.scrollHeight;if(Math.abs(h-__lastH)<2)return;__lastH=h;parent.postMessage({oilwatchToolHeight:h},'*');}catch(e){}}function __schedH(){if(__rafH)return;__rafH=requestAnimationFrame(function(){__rafH=0;postH();});}
+  window.addEventListener('load',postH);window.addEventListener('resize',__schedH);
+  if(window.ResizeObserver){new ResizeObserver(__schedH).observe(document.body);}
   setTimeout(postH,300);setTimeout(postH,1200);
 })();</script>
 </body>
