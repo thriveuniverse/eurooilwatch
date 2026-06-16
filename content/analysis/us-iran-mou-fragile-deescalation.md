@@ -9,7 +9,7 @@ A tentative U.S.–Iran memorandum of understanding is the first major diplomati
 
 According to reporting (Reuters), the **draft, preliminary** framework points to a reopening of the Strait of Hormuz, the lifting of the U.S. blockade on Iranian ports, a **60-day negotiation window**, sanctions-waiver elements and nuclear limits. That is not a completed, durable settlement — it is a market-moving but politically and operationally **fragile** preliminary deal, and there has already been one failed reopening in this crisis.
 
-Markets reacted immediately: part of the war-risk premium has come out of crude. Brent reads around **$87 on the EuroOilWatch dashboard**, having reportedly traded as low as **~$83 intraday** as the Hormuz premium deflated. A genuine relief signal — not "crisis over."
+Markets reacted immediately: part of the war-risk premium has come out of crude. Brent reads around **$84 on the EuroOilWatch dashboard** (down about 4% on the day) as the Hormuz premium deflated. A genuine relief signal — not "crisis over."
 
 ## A paper deal is not barrels
 
