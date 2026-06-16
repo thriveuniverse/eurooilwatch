@@ -46,6 +46,13 @@ export default function CompoundCascadePage() {
             Available on SSRN ↗
           </a>
         </p>
+
+        <p className="mt-2 text-sm text-gray-400">
+          Companion paper:{' '}
+          <a href="/analysis/institutional-failure-typology" className="text-oil-400 hover:underline">
+            Institutional Failure Mode Typology — why institutions fail to see cascades coming →
+          </a>
+        </p>
       </header>
 
       {/* Distribution / context note */}
