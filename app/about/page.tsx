@@ -6,6 +6,7 @@ import ProTeaser from '@/components/ProTeaser';
 export const metadata: Metadata = {
   title: 'About | EuroOilWatch',
   description: 'About EuroOilWatch — fuel security intelligence for Europe. Who built it, who uses it, and how the data works.',
+  alternates: { canonical: 'https://eurooilwatch.com/about' },
 };
 
 export default function AboutPage() {
