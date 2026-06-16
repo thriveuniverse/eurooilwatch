@@ -3,97 +3,48 @@
   "name": "Ardennes",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-06-15T20:24:05.320Z",
+  "asOf": "2026-06-16T10:02:11.865Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 46,
+  "stationCount": 7,
   "fuels": {
     "gazole": {
-      "count": 45,
-      "mean": 2.0174,
-      "median": 1.999,
-      "min": 1.928,
+      "count": 7,
+      "mean": 2.0301,
+      "median": 2.008,
+      "min": 1.975,
       "max": 2.13
     },
     "sp95": {
-      "count": 16,
-      "mean": 2.0069,
-      "median": 2.009,
-      "min": 1.96,
-      "max": 2.049
+      "count": 2,
+      "mean": 2.0145,
+      "median": 2.0145,
+      "min": 2.009,
+      "max": 2.02
     },
     "sp98": {
-      "count": 36,
-      "mean": 2.0878,
-      "median": 2.099,
-      "min": 1.99,
-      "max": 2.255
+      "count": 4,
+      "mean": 2.158,
+      "median": 2.1635,
+      "min": 2.129,
+      "max": 2.176
     },
     "e10": {
-      "count": 30,
-      "mean": 1.9802,
-      "median": 1.99,
-      "min": 1.901,
+      "count": 3,
+      "mean": 2.009,
+      "median": 2.004,
+      "min": 1.929,
       "max": 2.094
     },
-    "e85": {
-      "count": 16,
-      "mean": 0.8464,
-      "median": 0.809,
-      "min": 0.79,
-      "max": 0.999
-    },
     "gplc": {
-      "count": 6,
-      "mean": 0.9977,
+      "count": 1,
+      "mean": 0.995,
       "median": 0.995,
-      "min": 0.924,
-      "max": 1.079
+      "min": 0.995,
+      "max": 0.995
     }
   },
   "stations": [
-    {
-      "id": "8300007",
-      "cp": "08300",
-      "ville": "Amagne",
-      "adresse": "Rue Arthur Rimbaud",
-      "pop": "R",
-      "lat": 4951743,
-      "lng": 449483,
-      "fuels": {
-        "gazole": 2.029,
-        "sp98": 2.099,
-        "e10": 1.999
-      }
-    },
-    {
-      "id": "8190003",
-      "cp": "08190",
-      "ville": "Asfeld",
-      "adresse": "1 Rue Chantereine",
-      "pop": "R",
-      "lat": 4947064,
-      "lng": 412341,
-      "fuels": {
-        "gazole": 1.98,
-        "sp95": 1.96,
-        "sp98": 2.04
-      }
-    },
-    {
-      "id": "8190001",
-      "cp": "08190",
-      "ville": "Asfeld",
-      "adresse": "70 Rue Chantereine",
-      "pop": "R",
-      "lat": 4946500,
-      "lng": 411200,
-      "fuels": {
-        "gazole": 2.003,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
     {
       "id": "8130003",
       "cp": "08130",
@@ -108,136 +59,6 @@
       }
     },
     {
-      "id": "8130004",
-      "cp": "08130",
-      "ville": "Attigny",
-      "adresse": "5 ROUTE DE CHARLEVILLE",
-      "pop": "R",
-      "lat": 4948500,
-      "lng": 458100,
-      "fuels": {
-        "gazole": 2.13,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "8240001",
-      "cp": "08240",
-      "ville": "Bar-lès-Buzancy",
-      "adresse": "15 RUE DE LA GARE",
-      "pop": "R",
-      "lat": 4942885.79838,
-      "lng": 495181.4593,
-      "fuels": {
-        "gazole": 2.13,
-        "sp95": 1.99
-      }
-    },
-    {
-      "id": "8140003",
-      "cp": "08140",
-      "ville": "Bazeilles",
-      "adresse": "centre commercial Mac Mahon route Nationale",
-      "pop": "R",
-      "lat": 4968455.26904,
-      "lng": 497236.54982,
-      "fuels": {
-        "gazole": 1.979
-      }
-    },
-    {
-      "id": "8120001",
-      "cp": "08120",
-      "ville": "Bogny-sur-Meuse",
-      "adresse": "63 Avenue Blanqui",
-      "pop": "R",
-      "lat": 4985700,
-      "lng": 476400,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.099,
-        "e10": 1.99,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "8110002",
-      "cp": "08110",
-      "ville": "Carignan",
-      "adresse": "ZAC DE Wé - 2 avenue de l'Europe",
-      "pop": "R",
-      "lat": 4963700,
-      "lng": 516200,
-      "fuels": {
-        "gazole": 1.979,
-        "sp95": 2.017,
-        "sp98": 2.011,
-        "e10": 1.901,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "8000001",
-      "cp": "08000",
-      "ville": "Charleville-Mézières",
-      "adresse": "1 rue Paulin Richier",
-      "pop": "R",
-      "lat": 4973900,
-      "lng": 470700,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.041,
-        "sp98": 2.159,
-        "e10": 1.999,
-        "e85": 0.809,
-        "gplc": 0.924
-      }
-    },
-    {
-      "id": "8000005",
-      "cp": "08000",
-      "ville": "Charleville-Mézières",
-      "adresse": "17 Avenue Charles de Gaulle",
-      "pop": "R",
-      "lat": 4976700,
-      "lng": 471800,
-      "fuels": {
-        "gazole": 2.008,
-        "sp98": 2.084,
-        "e10": 2.004
-      }
-    },
-    {
-      "id": "8000008",
-      "cp": "08000",
-      "ville": "Charleville-Mézières",
-      "adresse": "197 Avenue Carnot",
-      "pop": "R",
-      "lat": 4974600,
-      "lng": 472700,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.159,
-        "e10": 1.999,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "8000002",
-      "cp": "08000",
-      "ville": "Charleville-Mézières",
-      "adresse": "42 Avenue des Martyrs-de-la-Résistance",
-      "pop": "R",
-      "lat": 4975869,
-      "lng": 472653,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.159,
-        "e10": 1.995
-      }
-    },
-    {
       "id": "8000007",
       "cp": "08000",
       "ville": "Charleville-Mézières",
@@ -248,37 +69,6 @@
       "fuels": {
         "gazole": 1.999,
         "sp98": 2.159
-      }
-    },
-    {
-      "id": "8000010",
-      "cp": "08000",
-      "ville": "Charleville-Mézières",
-      "adresse": "RTE DE LAFRANCHEVILLE",
-      "pop": "R",
-      "lat": 4974100,
-      "lng": 472600,
-      "fuels": {
-        "gazole": 2.043,
-        "sp95": 1.99,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.829,
-        "gplc": 0.994
-      }
-    },
-    {
-      "id": "8360003",
-      "cp": "08360",
-      "ville": "Château-Porcien",
-      "adresse": "37 Rue de la Sommevue",
-      "pop": "R",
-      "lat": 4953000,
-      "lng": 424900,
-      "fuels": {
-        "gazole": 2.019,
-        "sp95": 2.015,
-        "sp98": 2.255
       }
     },
     {
@@ -296,102 +86,6 @@
       }
     },
     {
-      "id": "8170001",
-      "cp": "08170",
-      "ville": "Fumay",
-      "adresse": "225 rue des evignes",
-      "pop": "R",
-      "lat": 4998900,
-      "lng": 469200,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.997,
-        "sp98": 2.14
-      }
-    },
-    {
-      "id": "8170005",
-      "cp": "08170",
-      "ville": "Fumay",
-      "adresse": "RN 51",
-      "pop": "R",
-      "lat": 4999467.11395,
-      "lng": 469713.76514,
-      "fuels": {
-        "gazole": 2.011,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "8600003",
-      "cp": "08600",
-      "ville": "Givet",
-      "adresse": "Route de Beauraing",
-      "pop": "R",
-      "lat": 5013400,
-      "lng": 485400,
-      "fuels": {
-        "gazole": 1.977,
-        "sp98": 2.044,
-        "e10": 1.932,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "8320003",
-      "cp": "08320",
-      "ville": "Hierges",
-      "adresse": "ROUTE NATIONALE 51",
-      "pop": "R",
-      "lat": 5010600,
-      "lng": 474300,
-      "fuels": {
-        "gazole": 1.98
-      }
-    },
-    {
-      "id": "8260002",
-      "cp": "08260",
-      "ville": "Maubert-Fontaine",
-      "adresse": "RN43 Lieu dit Le Pré Meumon",
-      "pop": "R",
-      "lat": 4986700,
-      "lng": 442800,
-      "fuels": {
-        "gazole": 2.05,
-        "sp98": 2.099,
-        "e10": 1.98,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "8800004",
-      "cp": "08800",
-      "ville": "Monthermé",
-      "adresse": "RUE ANDRE COMPAIN",
-      "pop": "R",
-      "lat": 4988500,
-      "lng": 473900,
-      "fuels": {
-        "gazole": 2.047,
-        "sp95": 2.015,
-        "sp98": 2.099
-      }
-    },
-    {
-      "id": "8800001",
-      "cp": "08800",
-      "ville": "Monthermé",
-      "adresse": "Rue André Compain",
-      "pop": "R",
-      "lat": 4988000,
-      "lng": 474200,
-      "fuels": {
-        "gazole": 2.029,
-        "e10": 1.99
-      }
-    },
-    {
       "id": "8210001",
       "cp": "08210",
       "ville": "Mouzon",
@@ -406,48 +100,6 @@
       }
     },
     {
-      "id": "8700004",
-      "cp": "08700",
-      "ville": "Nouzonville",
-      "adresse": "42 RUE PARMENTIER",
-      "pop": "R",
-      "lat": 4982218.57226,
-      "lng": 474293.65808,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.049,
-        "sp98": 2.099
-      }
-    },
-    {
-      "id": "8430001",
-      "cp": "08430",
-      "ville": "Poix-Terron",
-      "adresse": "32 GRANDE RUE",
-      "pop": "R",
-      "lat": 4965100,
-      "lng": 464200,
-      "fuels": {
-        "gazole": 2.13,
-        "sp98": 2.146,
-        "e10": 2.062
-      }
-    },
-    {
-      "id": "8150002",
-      "cp": "08150",
-      "ville": "Renwez",
-      "adresse": "103 Avenue Martyrs de la Résistance",
-      "pop": "R",
-      "lat": 4984000,
-      "lng": 460500,
-      "fuels": {
-        "gazole": 2.01,
-        "sp98": 2.099,
-        "e10": 1.98
-      }
-    },
-    {
       "id": "8150003",
       "cp": "08150",
       "ville": "Renwez",
@@ -456,95 +108,7 @@
       "lat": 4983362.8,
       "lng": 460390.4,
       "fuels": {
-        "gazole": 2.09
-      }
-    },
-    {
-      "id": "8300008",
-      "cp": "08300",
-      "ville": "Rethel",
-      "adresse": "4 RUE DE MONTPELLIER",
-      "pop": "R",
-      "lat": 4950400,
-      "lng": 436000,
-      "fuels": {
-        "gazole": 1.928,
-        "e10": 1.933,
-        "e85": 0.819
-      }
-    },
-    {
-      "id": "8300001",
-      "cp": "08300",
-      "ville": "Rethel",
-      "adresse": "ZONE DE L'ETOILE",
-      "pop": "R",
-      "lat": 4951100,
-      "lng": 436800,
-      "fuels": {
-        "gazole": 1.986,
-        "sp98": 2.12,
-        "e10": 1.966
-      }
-    },
-    {
-      "id": "8150001",
-      "cp": "08150",
-      "ville": "Rimogne",
-      "adresse": "RUE PASTEUR",
-      "pop": "R",
-      "lat": 4984000,
-      "lng": 454500,
-      "fuels": {
-        "gazole": 2.016,
-        "sp95": 2.01,
-        "sp98": 2.105,
-        "e85": 0.82
-      }
-    },
-    {
-      "id": "8230001",
-      "cp": "08230",
-      "ville": "Rocroi",
-      "adresse": "Route de la Petite Chapelle",
-      "pop": "R",
-      "lat": 4992800,
-      "lng": 452600,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "sp98": 2.142
-      }
-    },
-    {
-      "id": "8270002",
-      "cp": "08270",
-      "ville": "Saulces-Monclin",
-      "adresse": "AUTOROUTE A34 - AIRE DES ARDENNES - WOINIC",
-      "pop": "A",
-      "lat": 4959406.95373,
-      "lng": 450291.88207,
-      "fuels": {
-        "gazole": 2.088,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.999,
-        "gplc": 1.079
-      }
-    },
-    {
-      "id": "8300006",
-      "cp": "08300",
-      "ville": "Sault-lès-Rethel",
-      "adresse": "24 Rue de Reims",
-      "pop": "R",
-      "lat": 4950033,
-      "lng": 435794,
-      "fuels": {
-        "gazole": 1.986,
-        "sp98": 2.009,
-        "e10": 1.959,
-        "e85": 0.809
+        "gazole": 2.06
       }
     },
     {
@@ -556,141 +120,9 @@
       "lat": 4969900,
       "lng": 492800,
       "fuels": {
-        "gazole": 1.978,
-        "e10": 1.934,
-        "gplc": 0.995
-      }
-    },
-    {
-      "id": "8200004",
-      "cp": "08200",
-      "ville": "Sedan",
-      "adresse": "45 Avenue de la Marne",
-      "pop": "R",
-      "lat": 4969700,
-      "lng": 491900,
-      "fuels": {
-        "gazole": 2.017,
-        "sp98": 2.07,
-        "e10": 1.99,
-        "e85": 0.944
-      }
-    },
-    {
-      "id": "8200010",
-      "cp": "08200",
-      "ville": "Sedan",
-      "adresse": "8 AVENUE DE LA MARNE",
-      "pop": "R",
-      "lat": 4969926,
-      "lng": 492701,
-      "fuels": {
-        "e85": 0.932,
-        "gplc": 0.995
-      }
-    },
-    {
-      "id": "8200007",
-      "cp": "08200",
-      "ville": "Sedan",
-      "adresse": "Rue Cadeau",
-      "pop": "R",
-      "lat": 4970600,
-      "lng": 493600,
-      "fuels": {
-        "gazole": 1.978,
-        "sp98": 2.059,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "8460001",
-      "cp": "08460",
-      "ville": "Signy-l'Abbaye",
-      "adresse": "1 route de rocroi",
-      "pop": "R",
-      "lat": 4969976.3,
-      "lng": 442306.6,
-      "fuels": {
-        "gazole": 2.088,
-        "sp95": 1.99,
-        "sp98": 1.99
-      }
-    },
-    {
-      "id": "8000011",
-      "cp": "08000",
-      "ville": "Villers-Semeuse",
-      "adresse": "RD 764",
-      "pop": "R",
-      "lat": 4973281.6065,
-      "lng": 475309.17036,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.139,
-        "e10": 1.989,
-        "e85": 0.79,
-        "gplc": 0.999
-      }
-    },
-    {
-      "id": "8320002",
-      "cp": "08320",
-      "ville": "Vireux-Molhain",
-      "adresse": "140 Avenue Roger Posty",
-      "pop": "R",
-      "lat": 5008100,
-      "lng": 472500,
-      "fuels": {
-        "gazole": 1.994,
-        "sp98": 2.027,
-        "e10": 1.925,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "8400003",
-      "cp": "08400",
-      "ville": "Vouziers",
-      "adresse": "115 rue Bournizet",
-      "pop": "R",
-      "lat": 4939600,
-      "lng": 468200,
-      "fuels": {
-        "gazole": 1.966,
-        "sp95": 2.009,
-        "sp98": 2.035,
-        "e10": 1.962,
-        "e85": 0.937
-      }
-    },
-    {
-      "id": "8400002",
-      "cp": "08400",
-      "ville": "Vouziers",
-      "adresse": "Rd 976, Chestres",
-      "pop": "R",
-      "lat": 4939868.71705,
-      "lng": 471563.44214,
-      "fuels": {
         "gazole": 1.975,
-        "sp98": 2.051,
-        "e10": 1.971
-      }
-    },
-    {
-      "id": "8400004",
-      "cp": "08400",
-      "ville": "Vouziers",
-      "adresse": "Rue Verte",
-      "pop": "R",
-      "lat": 4940500,
-      "lng": 469700,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "sp98": 2.029,
-        "e10": 1.959
+        "e10": 1.929,
+        "gplc": 0.995
       }
     },
     {

@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-06-15T20:23:45.898Z",
+  "lastUpdated": "2026-06-16T10:02:01.957Z",
   "dataPeriod": "2026-03",
-  "countriesReporting": 25,
+  "countriesReporting": 26,
   "countriesTotal": 27,
   "dataSource": "Eurostat: 27 monthly, 0 annual fallback",
   "countries": [
@@ -701,34 +701,34 @@
     {
       "countryCode": "NL",
       "countryName": "Netherlands",
-      "datePeriod": "2026-02",
+      "datePeriod": "2026-03",
       "fuels": [
         {
           "fuelType": "petrol",
-          "stockKilotonnes": 887.298,
-          "consumptionKilotonnes": 327.919,
-          "daysOfSupply": 81.2,
+          "stockKilotonnes": 864.908,
+          "consumptionKilotonnes": 371.175,
+          "daysOfSupply": 69.9,
           "mandatoryMinimumDays": 90,
-          "status": "warning"
+          "status": "critical"
         },
         {
           "fuelType": "diesel",
-          "stockKilotonnes": 2925.906,
-          "consumptionKilotonnes": 405.775,
-          "daysOfSupply": 216.3,
+          "stockKilotonnes": 2945.837,
+          "consumptionKilotonnes": 425.834,
+          "daysOfSupply": 207.5,
           "mandatoryMinimumDays": 90,
           "status": "safe"
         },
         {
           "fuelType": "jet_fuel",
-          "stockKilotonnes": 443.393,
-          "consumptionKilotonnes": 260.26,
-          "daysOfSupply": 51.1,
+          "stockKilotonnes": 619.651,
+          "consumptionKilotonnes": 294.242,
+          "daysOfSupply": 63.2,
           "mandatoryMinimumDays": 90,
           "status": "critical"
         }
       ],
-      "averageDays": 116.2,
+      "averageDays": 113.5,
       "overallStatus": "critical"
     },
     {
@@ -898,9 +898,9 @@
     }
   ],
   "euAverage": {
-    "petrolDays": 96.1,
-    "dieselDays": 88.4,
-    "jetFuelDays": 86.5,
+    "petrolDays": 95.6,
+    "dieselDays": 88.1,
+    "jetFuelDays": 87,
     "overallStatus": "watch"
   }
 }

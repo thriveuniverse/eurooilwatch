@@ -3,200 +3,48 @@
   "name": "Val-d'Oise",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-06-15T20:24:05.320Z",
+  "asOf": "2026-06-16T10:02:11.865Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 103,
+  "stationCount": 13,
   "fuels": {
     "gazole": {
-      "count": 103,
-      "mean": 1.9882,
+      "count": 13,
+      "mean": 1.9853,
       "median": 1.984,
-      "min": 1.899,
-      "max": 2.21
-    },
-    "sp95": {
-      "count": 11,
-      "mean": 1.9898,
-      "median": 1.986,
-      "min": 1.935,
-      "max": 2.075
+      "min": 1.942,
+      "max": 2.028
     },
     "sp98": {
-      "count": 88,
-      "mean": 2.0551,
-      "median": 2.0365,
+      "count": 12,
+      "mean": 2.0519,
+      "median": 2.0465,
       "min": 1.989,
-      "max": 2.308
+      "max": 2.149
     },
     "e10": {
-      "count": 90,
-      "mean": 1.9686,
-      "median": 1.957,
-      "min": 1.908,
-      "max": 2.138
+      "count": 13,
+      "mean": 1.9559,
+      "median": 1.955,
+      "min": 1.898,
+      "max": 2.009
     },
     "e85": {
-      "count": 45,
-      "mean": 0.8506,
-      "median": 0.849,
+      "count": 4,
+      "mean": 0.848,
+      "median": 0.8585,
       "min": 0.75,
-      "max": 0.934
+      "max": 0.925
     },
     "gplc": {
-      "count": 14,
-      "mean": 1.0949,
-      "median": 1.027,
+      "count": 2,
+      "mean": 1.081,
+      "median": 1.081,
       "min": 0.923,
-      "max": 1.319
+      "max": 1.239
     }
   },
   "stations": [
-    {
-      "id": "95100034",
-      "cp": "95100",
-      "ville": "Argenteuil",
-      "adresse": "176 AVE STALINGRAD",
-      "pop": "R",
-      "lat": 4895500,
-      "lng": 227300,
-      "fuels": {
-        "gazole": 1.922,
-        "sp98": 1.99,
-        "e10": 1.932
-      }
-    },
-    {
-      "id": "95100033",
-      "cp": "95100",
-      "ville": "Argenteuil",
-      "adresse": "193 AVENUE HENRI BARBUSSE",
-      "pop": "R",
-      "lat": 4893300,
-      "lng": 223300,
-      "fuels": {
-        "gazole": 1.936,
-        "sp98": 1.99,
-        "e10": 1.948
-      }
-    },
-    {
-      "id": "95100011",
-      "cp": "95100",
-      "ville": "Argenteuil",
-      "adresse": "2 Avenue Gabriel Péri",
-      "pop": "R",
-      "lat": 4894300,
-      "lng": 225300,
-      "fuels": {
-        "gazole": 1.998,
-        "sp98": 2.046,
-        "e10": 1.966,
-        "e85": 0.934
-      }
-    },
-    {
-      "id": "95100006",
-      "cp": "95100",
-      "ville": "Argenteuil",
-      "adresse": "239 Route d'Enghien",
-      "pop": "R",
-      "lat": 4895700,
-      "lng": 228400,
-      "fuels": {
-        "gazole": 2.029,
-        "sp98": 2.169,
-        "e10": 1.999
-      }
-    },
-    {
-      "id": "95100037",
-      "cp": "95100",
-      "ville": "Argenteuil",
-      "adresse": "5-7 BLD DES MARTYRS DE CHATEAUBRIAND",
-      "pop": "R",
-      "lat": 4895163.41096,
-      "lng": 221229.29706,
-      "fuels": {
-        "gazole": 1.937,
-        "sp98": 1.99,
-        "e10": 1.953
-      }
-    },
-    {
-      "id": "95100021",
-      "cp": "95100",
-      "ville": "Argenteuil",
-      "adresse": "63 Avenue Jean Jaurès",
-      "pop": "R",
-      "lat": 4894000,
-      "lng": 223300,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.179,
-        "e10": 2.009,
-        "e85": 0.929
-      }
-    },
-    {
-      "id": "95100035",
-      "cp": "95100",
-      "ville": "Argenteuil",
-      "adresse": "8 R DES MARTYRS CHATEAUBRIANT",
-      "pop": "R",
-      "lat": 4895230.64796,
-      "lng": 221301.5758,
-      "fuels": {
-        "gazole": 1.937,
-        "sp98": 1.99,
-        "e10": 1.953,
-        "e85": 0.869
-      }
-    },
-    {
-      "id": "95110007",
-      "cp": "95110",
-      "ville": "Argenteuil",
-      "adresse": "82 BLD GABRIEL PERI",
-      "pop": "R",
-      "lat": 4896300,
-      "lng": 226000,
-      "fuels": {
-        "gazole": 1.931,
-        "sp98": 1.99,
-        "e10": 1.935,
-        "e85": 0.885
-      }
-    },
-    {
-      "id": "95100007",
-      "cp": "95100",
-      "ville": "Argenteuil",
-      "adresse": "RN 311 QUAI ST DENIS",
-      "pop": "R",
-      "lat": 4894500,
-      "lng": 226300,
-      "fuels": {
-        "gazole": 2.099,
-        "sp98": 2.219,
-        "e10": 2.069
-      }
-    },
-    {
-      "id": "95100032",
-      "cp": "95100",
-      "ville": "Argenteuil",
-      "adresse": "Rue des Grives Zac Fosse Aux Loups",
-      "pop": "R",
-      "lat": 4894500,
-      "lng": 220700,
-      "fuels": {
-        "gazole": 1.943,
-        "sp98": 1.99,
-        "e10": 1.955,
-        "e85": 0.869
-      }
-    },
     {
       "id": "95100030",
       "cp": "95100",
@@ -206,7 +54,7 @@
       "lat": 4895763,
       "lng": 227971,
       "fuels": {
-        "gazole": 2.022,
+        "gazole": 1.996,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.884
@@ -221,39 +69,9 @@
       "lat": 4898200,
       "lng": 243100,
       "fuels": {
-        "gazole": 1.981,
-        "sp98": 2.046,
-        "e10": 1.966
-      }
-    },
-    {
-      "id": "95400004",
-      "cp": "95400",
-      "ville": "Arnouville",
-      "adresse": "59 Avenue Charles Vaillant",
-      "pop": "R",
-      "lat": 4898600,
-      "lng": 241300,
-      "fuels": {
-        "gazole": 1.966,
-        "sp98": 2.071,
-        "e10": 1.944,
-        "e85": 0.769
-      }
-    },
-    {
-      "id": "95270002",
-      "cp": "95270",
-      "ville": "Asnières-sur-Oise",
-      "adresse": "ROUTE DE ROYAUMONT",
-      "pop": "R",
-      "lat": 4913700,
-      "lng": 237300,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.038,
-        "e10": 1.929,
-        "e85": 0.929
+        "gazole": 1.98,
+        "sp98": 2.044,
+        "e10": 1.964
       }
     },
     {
@@ -266,83 +84,9 @@
       "lng": 234800,
       "fuels": {
         "gazole": 1.999,
-        "sp98": 2.159,
-        "e10": 1.989,
-        "gplc": 1.239
-      }
-    },
-    {
-      "id": "95260003",
-      "cp": "95260",
-      "ville": "Beaumont-sur-Oise",
-      "adresse": "48 RUE DE L'ISLE ADAM - RN322",
-      "pop": "R",
-      "lat": 4913800,
-      "lng": 227500,
-      "fuels": {
-        "gazole": 1.9,
-        "sp98": 1.99,
-        "e10": 1.908,
-        "e85": 0.822
-      }
-    },
-    {
-      "id": "95550002",
-      "cp": "95550",
-      "ville": "Bessancourt",
-      "adresse": "ZAC DES MEUNIERS - 7 RUE STEPHANE HESSEL",
-      "pop": "R",
-      "lat": 4903300,
-      "lng": 220500,
-      "fuels": {
-        "gazole": 1.949,
-        "sp95": 1.991,
-        "sp98": 2.024,
-        "e10": 1.939,
-        "e85": 0.799
-      }
-    },
-    {
-      "id": "95870009",
-      "cp": "95870",
-      "ville": "Bezons",
-      "adresse": "151 Avenue Gabriel Péri",
-      "pop": "R",
-      "lat": 4893600,
-      "lng": 220800,
-      "fuels": {
-        "gazole": 1.937,
-        "sp98": 1.99,
-        "e10": 1.949
-      }
-    },
-    {
-      "id": "95870010",
-      "cp": "95870",
-      "ville": "Bezons",
-      "adresse": "179 avenue Gabriel Péri",
-      "pop": "R",
-      "lat": 4893688.86078,
-      "lng": 220698.30018,
-      "fuels": {
-        "gazole": 2.044,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.879
-      }
-    },
-    {
-      "id": "95000011",
-      "cp": "95000",
-      "ville": "Cergy",
-      "adresse": "ANGLE AV GROUETTES BLD L'HAUTIL",
-      "pop": "R",
-      "lat": 4903200,
-      "lng": 206900,
-      "fuels": {
-        "gazole": 2.039,
         "sp98": 2.149,
-        "e10": 1.999
+        "e10": 1.979,
+        "gplc": 1.239
       }
     },
     {
@@ -360,131 +104,6 @@
       }
     },
     {
-      "id": "95420005",
-      "cp": "95420",
-      "ville": "Charmont",
-      "adresse": "RN 14",
-      "pop": "R",
-      "lat": 4913514,
-      "lng": 178964,
-      "fuels": {
-        "gazole": 1.913,
-        "e85": 0.855
-      }
-    },
-    {
-      "id": "95270001",
-      "cp": "95270",
-      "ville": "Chaumontel",
-      "adresse": "LE CLOS PONTCEL D 316",
-      "pop": "R",
-      "lat": 4911900,
-      "lng": 242700,
-      "fuels": {
-        "gazole": 2.02,
-        "sp95": 2.019,
-        "sp98": 2.08
-      }
-    },
-    {
-      "id": "95270006",
-      "cp": "95270",
-      "ville": "Chaumontel",
-      "adresse": "RN 16",
-      "pop": "R",
-      "lat": 4912300,
-      "lng": 242700,
-      "fuels": {
-        "gazole": 1.904,
-        "sp98": 1.99,
-        "e10": 1.911,
-        "e85": 0.832,
-        "gplc": 0.989
-      }
-    },
-    {
-      "id": "95240003",
-      "cp": "95240",
-      "ville": "Cormeilles-en-Parisis",
-      "adresse": "27, 29, 31, Boulevard Clemenceau",
-      "pop": "R",
-      "lat": 4897100,
-      "lng": 219200,
-      "fuels": {
-        "gazole": 2.025,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "95170002",
-      "cp": "95170",
-      "ville": "Deuil-la-Barre",
-      "adresse": "17 Route de Saint-Denis",
-      "pop": "R",
-      "lat": 4896100,
-      "lng": 232600,
-      "fuels": {
-        "gazole": 2.005,
-        "sp98": 2.054,
-        "e10": 1.974
-      }
-    },
-    {
-      "id": "95170001",
-      "cp": "95170",
-      "ville": "Deuil-la-Barre",
-      "adresse": "28 Avenue de la Division Leclerc",
-      "pop": "R",
-      "lat": 4896800,
-      "lng": 231600,
-      "fuels": {
-        "gazole": 2.129,
-        "sp98": 2.269,
-        "e10": 2.099
-      }
-    },
-    {
-      "id": "95330010",
-      "cp": "95330",
-      "ville": "Domont",
-      "adresse": "2 avenue du lycée",
-      "pop": "R",
-      "lat": 4902800,
-      "lng": 233900,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "95331002",
-      "cp": "95331",
-      "ville": "Domont",
-      "adresse": "RN 1 - BP4",
-      "pop": "R",
-      "lat": 4902800,
-      "lng": 234700,
-      "fuels": {
-        "gazole": 2.029,
-        "sp98": 2.119,
-        "e10": 1.949,
-        "gplc": 1.239
-      }
-    },
-    {
-      "id": "95600001",
-      "cp": "95600",
-      "ville": "Eaubonne",
-      "adresse": "48 AVENUE KELLERMANN",
-      "pop": "R",
-      "lat": 4897800,
-      "lng": 229100,
-      "fuels": {
-        "gazole": 2.022
-      }
-    },
-    {
       "id": "95600002",
       "cp": "95600",
       "ville": "Eaubonne",
@@ -493,9 +112,9 @@
       "lat": 4899400,
       "lng": 228000,
       "fuels": {
-        "gazole": 1.984,
-        "sp98": 2.048,
-        "e10": 1.968,
+        "gazole": 1.944,
+        "sp98": 2.012,
+        "e10": 1.928,
         "e85": 0.925
       }
     },
@@ -515,18 +134,6 @@
       }
     },
     {
-      "id": "95440002",
-      "cp": "95440",
-      "ville": "Écouen",
-      "adresse": "Route Départementale 316",
-      "pop": "R",
-      "lat": 4903000,
-      "lng": 239000,
-      "fuels": {
-        "gazole": 2.19
-      }
-    },
-    {
       "id": "95610007",
       "cp": "95610",
       "ville": "Éragny",
@@ -535,98 +142,9 @@
       "lat": 4902600,
       "lng": 210300,
       "fuels": {
-        "gazole": 2.039,
-        "sp98": 2.129,
-        "e10": 2.019
-      }
-    },
-    {
-      "id": "95610008",
-      "cp": "95610",
-      "ville": "Éragny",
-      "adresse": "ROUTE NATIONALE 184",
-      "pop": "R",
-      "lat": 4902600,
-      "lng": 210400,
-      "fuels": {
-        "gazole": 2.049,
-        "sp98": 2.179,
-        "e10": 2.029,
-        "e85": 0.919,
-        "gplc": 1.319
-      }
-    },
-    {
-      "id": "95120002",
-      "cp": "95120",
-      "ville": "Ermont",
-      "adresse": "16 Rue du 18 Juin",
-      "pop": "R",
-      "lat": 4899000,
-      "lng": 225700,
-      "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.229,
-        "e10": 2.059
-      }
-    },
-    {
-      "id": "95120001",
-      "cp": "95120",
-      "ville": "Ermont",
-      "adresse": "Avenue du Président Georges Pompidou",
-      "pop": "R",
-      "lat": 4898700,
-      "lng": 224700,
-      "fuels": {
-        "gazole": 1.976,
-        "sp98": 2.054,
-        "e10": 1.96
-      }
-    },
-    {
-      "id": "95460003",
-      "cp": "95460",
-      "ville": "Ézanville",
-      "adresse": "ROUTE D'ECOUEN RN 370",
-      "pop": "R",
-      "lat": 4902824.10577,
-      "lng": 236550.05925,
-      "fuels": {
-        "gazole": 2.003,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "95470006",
-      "cp": "95470",
-      "ville": "Fosses",
-      "adresse": "2 AVENUE HENRI BARBUSSE",
-      "pop": "R",
-      "lat": 4910021,
-      "lng": 252395,
-      "fuels": {
-        "gazole": 2.003,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "95137001",
-      "cp": "95130",
-      "ville": "Franconville",
-      "adresse": "362 Rue du Général Leclerc",
-      "pop": "R",
-      "lat": 4898928.59381,
-      "lng": 220654.67999,
-      "fuels": {
-        "gazole": 1.905,
-        "sp95": 1.965,
-        "sp98": 1.989,
-        "e10": 1.919,
-        "e85": 0.849
+        "gazole": 2.019,
+        "sp98": 2.119,
+        "e10": 2.009
       }
     },
     {
@@ -640,138 +158,7 @@
       "fuels": {
         "gazole": 1.966,
         "sp98": 2.01,
-        "e10": 1.928
-      }
-    },
-    {
-      "id": "95740005",
-      "cp": "95740",
-      "ville": "Frépillon",
-      "adresse": "14 AVENUE DU GENERAL DE GAULLE",
-      "pop": "R",
-      "lat": 4904800,
-      "lng": 220100,
-      "fuels": {
-        "gazole": 1.915,
-        "sp98": 1.99,
-        "e10": 1.923,
-        "e85": 0.839
-      }
-    },
-    {
-      "id": "95140001",
-      "cp": "95140",
-      "ville": "Garges-lès-Gonesse",
-      "adresse": "Boulevard de la MUETTE",
-      "pop": "R",
-      "lat": 4897500,
-      "lng": 241800,
-      "fuels": {
-        "gazole": 1.96,
-        "sp98": 2.044,
-        "e10": 1.961,
-        "gplc": 0.981
-      }
-    },
-    {
-      "id": "95500006",
-      "cp": "95500",
-      "ville": "Gonesse",
-      "adresse": "1 Rue Georges Pompidou",
-      "pop": "R",
-      "lat": 4898940.86701,
-      "lng": 243354.88524,
-      "fuels": {
-        "gazole": 1.959,
-        "sp95": 2.008,
-        "sp98": 2.043,
-        "e10": 1.96,
-        "e85": 0.769
-      }
-    },
-    {
-      "id": "95500012",
-      "cp": "95500",
-      "ville": "Gonesse",
-      "adresse": "19 RUE GABRIEL PERI",
-      "pop": "R",
-      "lat": 4899401,
-      "lng": 242407,
-      "fuels": {
-        "gazole": 1.917,
-        "sp98": 1.99,
-        "e10": 1.922,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "95500010",
-      "cp": "95500",
-      "ville": "Gonesse",
-      "adresse": "RN 370",
-      "pop": "R",
-      "lat": 4896700,
-      "lng": 246500,
-      "fuels": {
-        "gazole": 2.016,
-        "e85": 0.869
-      }
-    },
-    {
-      "id": "95190003",
-      "cp": "95190",
-      "ville": "Goussainville",
-      "adresse": "1 rue Jacques Anquetil",
-      "pop": "R",
-      "lat": 4902200,
-      "lng": 245600,
-      "fuels": {
-        "gazole": 2.004,
-        "sp98": 2.057,
-        "e10": 1.965
-      }
-    },
-    {
-      "id": "95190006",
-      "cp": "95190",
-      "ville": "Goussainville",
-      "adresse": "182, RUE ALBERT SARRAUT",
-      "pop": "R",
-      "lat": 4903800,
-      "lng": 245500,
-      "fuels": {
-        "gazole": 1.923,
-        "sp98": 1.99,
-        "e10": 1.928
-      }
-    },
-    {
-      "id": "95190005",
-      "cp": "95190",
-      "ville": "Goussainville",
-      "adresse": "32/38 AV DE LA GARE",
-      "pop": "R",
-      "lat": 4901562.58436,
-      "lng": 247026.20933,
-      "fuels": {
-        "gazole": 2.018,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.862
-      }
-    },
-    {
-      "id": "95220005",
-      "cp": "95220",
-      "ville": "Herblay-sur-Seine",
-      "adresse": "421 Route de Conflans",
-      "pop": "R",
-      "lat": 4900469,
-      "lng": 212666,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.049,
-        "e10": 1.979
+        "e10": 1.898
       }
     },
     {
@@ -789,163 +176,6 @@
       }
     },
     {
-      "id": "95280001",
-      "cp": "95280",
-      "ville": "Jouy-le-Moutier",
-      "adresse": "Les versants de l'Hautil",
-      "pop": "R",
-      "lat": 4901084.14768,
-      "lng": 202983.30279,
-      "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.999,
-        "sp98": 2.079
-      }
-    },
-    {
-      "id": "95290003",
-      "cp": "95290",
-      "ville": "L'Isle-Adam",
-      "adresse": "44 AVENUE DE PARIS",
-      "pop": "R",
-      "lat": 4911045.09641,
-      "lng": 222459.19218,
-      "fuels": {
-        "gazole": 2,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.869
-      }
-    },
-    {
-      "id": "95290001",
-      "cp": "95290",
-      "ville": "L'Isle-Adam",
-      "adresse": "BOULEVARD TILSIT",
-      "pop": "R",
-      "lat": 4912400,
-      "lng": 224800,
-      "fuels": {
-        "gazole": 1.974,
-        "sp98": 2.08,
-        "e10": 1.952,
-        "e85": 0.759,
-        "gplc": 0.923
-      }
-    },
-    {
-      "id": "95380002",
-      "cp": "95380",
-      "ville": "Louvres",
-      "adresse": "145 Rue de Paris",
-      "pop": "R",
-      "lat": 4904806.137,
-      "lng": 250257.752,
-      "fuels": {
-        "gazole": 2.144,
-        "sp98": 2.175,
-        "e10": 2.113
-      }
-    },
-    {
-      "id": "95380001",
-      "cp": "95380",
-      "ville": "Louvres",
-      "adresse": "zi de la briquetterie",
-      "pop": "R",
-      "lat": 4904900,
-      "lng": 249800,
-      "fuels": {
-        "gazole": 2.025,
-        "sp98": 2.069,
-        "e10": 1.969
-      }
-    },
-    {
-      "id": "95420003",
-      "cp": "95420",
-      "ville": "Magny-en-Vexin",
-      "adresse": "Route de Mantes",
-      "pop": "R",
-      "lat": 4914700,
-      "lng": 178700,
-      "fuels": {
-        "gazole": 1.912,
-        "sp98": 2.089,
-        "e10": 1.928
-      }
-    },
-    {
-      "id": "95420002",
-      "cp": "95420",
-      "ville": "Magny-en-Vexin",
-      "adresse": "Route de rouen",
-      "pop": "R",
-      "lat": 4915700,
-      "lng": 178400,
-      "fuels": {
-        "gazole": 2.077
-      }
-    },
-    {
-      "id": "95640002",
-      "cp": "95640",
-      "ville": "Marines",
-      "adresse": "Boulevard Gambetta",
-      "pop": "R",
-      "lat": 4914672.5,
-      "lng": 197444.2,
-      "fuels": {
-        "gazole": 1.98,
-        "sp98": 2.035,
-        "e10": 1.92
-      }
-    },
-    {
-      "id": "95180001",
-      "cp": "95180",
-      "ville": "Menucourt",
-      "adresse": "1 Côte des Auges",
-      "pop": "R",
-      "lat": 4902938,
-      "lng": 199173,
-      "fuels": {
-        "gazole": 1.94,
-        "sp95": 1.94,
-        "sp98": 2.015
-      }
-    },
-    {
-      "id": "95540005",
-      "cp": "95540",
-      "ville": "Méry-sur-Oise",
-      "adresse": "LIEUDIT LES 4 CHEMINS-RN1",
-      "pop": "R",
-      "lat": 4905400,
-      "lng": 217500,
-      "fuels": {
-        "gazole": 1.989,
-        "sp98": 2.109,
-        "e10": 1.969,
-        "gplc": 1.179
-      }
-    },
-    {
-      "id": "95540002",
-      "cp": "95540",
-      "ville": "Méry-sur-Oise",
-      "adresse": "Route de Pontoise",
-      "pop": "R",
-      "lat": 4906100,
-      "lng": 217000,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.059,
-        "e10": 1.939,
-        "e85": 0.809
-      }
-    },
-    {
       "id": "95570007",
       "cp": "95570",
       "ville": "Moisselles",
@@ -956,315 +186,7 @@
       "fuels": {
         "gazole": 2.028,
         "sp98": 2.085,
-        "e10": 1.947
-      }
-    },
-    {
-      "id": "95570003",
-      "cp": "95570",
-      "ville": "Moisselles",
-      "adresse": "Route Nationale 1",
-      "pop": "R",
-      "lat": 4904117.74675,
-      "lng": 234220.49553,
-      "fuels": {
-        "gazole": 1.899,
-        "sp95": 1.985,
-        "sp98": 2.009,
-        "e10": 1.929,
-        "e85": 0.795
-      }
-    },
-    {
-      "id": "95370008",
-      "cp": "95370",
-      "ville": "Montigny-lès-Cormeilles",
-      "adresse": "177 BD VICTOR BORDIER",
-      "pop": "R",
-      "lat": 4899694,
-      "lng": 218922,
-      "fuels": {
-        "gazole": 1.922,
-        "e10": 1.928,
-        "gplc": 1.024
-      }
-    },
-    {
-      "id": "95370003",
-      "cp": "95370",
-      "ville": "Montigny-lès-Cormeilles",
-      "adresse": "211 Boulevard de Pontoise",
-      "pop": "R",
-      "lat": 4899200,
-      "lng": 218200,
-      "fuels": {
-        "gazole": 2.039,
-        "sp98": 2.179,
-        "e10": 2.029
-      }
-    },
-    {
-      "id": "95370001",
-      "cp": "95370",
-      "ville": "Montigny-lès-Cormeilles",
-      "adresse": "66 Boulevard Victor Bordier",
-      "pop": "R",
-      "lat": 4899300,
-      "lng": 219800,
-      "fuels": {
-        "gazole": 1.925,
-        "sp95": 1.985,
-        "sp98": 2.009,
-        "e10": 1.939,
-        "e85": 0.869
-      }
-    },
-    {
-      "id": "95360001",
-      "cp": "95360",
-      "ville": "Montmagny",
-      "adresse": "136 Rue Jules Ferry",
-      "pop": "R",
-      "lat": 4896300,
-      "lng": 233900,
-      "fuels": {
-        "gazole": 1.998,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "95160003",
-      "cp": "95160",
-      "ville": "Montmorency",
-      "adresse": "Avenue de Domont",
-      "pop": "R",
-      "lat": 4901000,
-      "lng": 231300,
-      "fuels": {
-        "gazole": 1.987,
-        "sp98": 2.056,
-        "e10": 1.943
-      }
-    },
-    {
-      "id": "95520002",
-      "cp": "95520",
-      "ville": "Osny",
-      "adresse": "4 Chaussée Jules César",
-      "pop": "R",
-      "lat": 4905000,
-      "lng": 207500,
-      "fuels": {
-        "gazole": 2.002,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.855
-      }
-    },
-    {
-      "id": "95650002",
-      "cp": "95650",
-      "ville": "Osny",
-      "adresse": "CD 916 - ROUTE DE GISORS",
-      "pop": "R",
-      "lat": 4908200,
-      "lng": 206900,
-      "fuels": {
-        "gazole": 1.909,
-        "sp98": 1.99,
-        "e10": 1.919,
-        "e85": 0.831,
-        "gplc": 1.029
-      }
-    },
-    {
-      "id": "95520004",
-      "cp": "95520",
-      "ville": "Osny",
-      "adresse": "Chemin des Hayettes",
-      "pop": "R",
-      "lat": 4906800,
-      "lng": 208800,
-      "fuels": {
-        "gazole": 1.933,
-        "sp98": 2.028,
-        "e10": 1.942,
-        "e85": 0.809
-      }
-    },
-    {
-      "id": "95520001",
-      "cp": "95520",
-      "ville": "Osny",
-      "adresse": "chemin du Poirier Charles Guérin",
-      "pop": "R",
-      "lat": 4907700,
-      "lng": 207700,
-      "fuels": {
-        "gazole": 1.975,
-        "sp98": 2.022,
-        "e10": 1.935
-      }
-    },
-    {
-      "id": "95520005",
-      "cp": "95520",
-      "ville": "Osny",
-      "adresse": "LIEUDIT LE CHAMP POURRI CD 915",
-      "pop": "R",
-      "lat": 4906100,
-      "lng": 208400,
-      "fuels": {
-        "gazole": 1.979,
-        "sp98": 2.129,
-        "e10": 1.989
-      }
-    },
-    {
-      "id": "95340004",
-      "cp": "95340",
-      "ville": "Persan",
-      "adresse": "5 A 11 Avenue JEAN-JAURES",
-      "pop": "R",
-      "lat": 4914666.712,
-      "lng": 228372.882,
-      "fuels": {
-        "gazole": 1.939,
-        "sp98": 2.089,
-        "e10": 1.939,
-        "e85": 0.909
-      }
-    },
-    {
-      "id": "95340003",
-      "cp": "95340",
-      "ville": "Persan",
-      "adresse": "Rue du 8 Mai 1945",
-      "pop": "R",
-      "lat": 4914600,
-      "lng": 228200,
-      "fuels": {
-        "gazole": 1.969,
-        "sp98": 1.999,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "95480002",
-      "cp": "95480",
-      "ville": "Pierrelaye",
-      "adresse": "AUTOROUTE A 15",
-      "pop": "A",
-      "lat": 4901500,
-      "lng": 214600,
-      "fuels": {
-        "gazole": 2.101,
-        "sp98": 2.143,
-        "e10": 2.043,
-        "gplc": 1.26
-      }
-    },
-    {
-      "id": "95480003",
-      "cp": "95480",
-      "ville": "Pierrelaye",
-      "adresse": "AUTOROUTE A15 - AIRE DE PIERRELAYE",
-      "pop": "A",
-      "lat": 4901300,
-      "lng": 214900,
-      "fuels": {
-        "gazole": 2.015,
-        "sp98": 1.99,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "95300004",
-      "cp": "95300",
-      "ville": "Pontoise",
-      "adresse": "11, AV DU GENERAL GABRIEL DELARUE",
-      "pop": "R",
-      "lat": 4904500,
-      "lng": 209600,
-      "fuels": {
-        "gazole": 1.915,
-        "e10": 1.921
-      }
-    },
-    {
-      "id": "95800001",
-      "cp": "95650",
-      "ville": "Puiseux-Pontoise",
-      "adresse": "RUE NEUVE",
-      "pop": "R",
-      "lat": 4905600,
-      "lng": 201900,
-      "fuels": {
-        "gazole": 1.981,
-        "sp95": 1.986,
-        "sp98": 2.068,
-        "e10": 1.943,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "95712004",
-      "cp": "95700",
-      "ville": "Roissy-en-France",
-      "adresse": "1 RUE DE L'OR - BP.20212",
-      "pop": "R",
-      "lat": 4900910,
-      "lng": 253736,
-      "fuels": {
-        "gazole": 2.018,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.862,
-        "gplc": 1.019
-      }
-    },
-    {
-      "id": "95712003",
-      "cp": "95700",
-      "ville": "Roissy-en-France",
-      "adresse": "VOIE P5 ET F2 BP 20212",
-      "pop": "R",
-      "lat": 4900000,
-      "lng": 252300,
-      "fuels": {
-        "gazole": 2.018,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "95450006",
-      "cp": "95450",
-      "ville": "Sagy",
-      "adresse": "RN 14 LIEUDIT LA MARLIERE",
-      "pop": "R",
-      "lat": 4906461.0343,
-      "lng": 197894.64314,
-      "fuels": {
-        "gazole": 1.913,
-        "sp98": 1.99,
-        "e10": 1.929,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "95450007",
-      "cp": "95450",
-      "ville": "Sagy",
-      "adresse": "RN14 - LIEU DIT LA MARLIERE",
-      "pop": "R",
-      "lat": 4906419.55396,
-      "lng": 198270.89209,
-      "fuels": {
-        "gazole": 1.913,
-        "sp98": 1.99,
-        "e10": 1.929,
-        "e85": 0.849,
-        "gplc": 1.025
+        "e10": 1.933
       }
     },
     {
@@ -1278,67 +200,9 @@
       "fuels": {
         "gazole": 2.019,
         "sp98": 2.076,
-        "e10": 1.938,
+        "e10": 1.924,
         "e85": 0.75,
         "gplc": 0.923
-      }
-    },
-    {
-      "id": "95350004",
-      "cp": "95350",
-      "ville": "Saint-Brice-sous-Forêt",
-      "adresse": "47 AVENUE DU GENERAL DE GAULLE",
-      "pop": "R",
-      "lat": 4899300,
-      "lng": 235900,
-      "fuels": {
-        "gazole": 2.011,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.849
-      }
-    },
-    {
-      "id": "95320006",
-      "cp": "95320",
-      "ville": "Saint-Leu-la-Forêt",
-      "adresse": "AV JEAN ROSTAND",
-      "pop": "R",
-      "lat": 4901300,
-      "lng": 224900,
-      "fuels": {
-        "gazole": 1.919,
-        "sp98": 1.99,
-        "e85": 0.879
-      }
-    },
-    {
-      "id": "95320005",
-      "cp": "95320",
-      "ville": "Saint-Leu-la-Forêt",
-      "adresse": "Boulevard André Brémond",
-      "pop": "R",
-      "lat": 4900800,
-      "lng": 224200,
-      "fuels": {
-        "gazole": 1.919,
-        "sp98": 2.079,
-        "e10": 1.929
-      }
-    },
-    {
-      "id": "95310003",
-      "cp": "95310",
-      "ville": "Saint-Ouen-l'Aumône",
-      "adresse": "27 Rue d'Épluches",
-      "pop": "R",
-      "lat": 4905700,
-      "lng": 212400,
-      "fuels": {
-        "gazole": 1.954,
-        "sp98": 1.994,
-        "e10": 1.919,
-        "e85": 0.797
       }
     },
     {
@@ -1350,92 +214,9 @@
       "lat": 4904000,
       "lng": 211600,
       "fuels": {
-        "gazole": 1.969,
-        "sp98": 2.079,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "95310011",
-      "cp": "95310",
-      "ville": "Saint-Ouen-l'Aumône",
-      "adresse": "RN 184 - ZI VERT GALANT",
-      "pop": "R",
-      "lat": 4904775.666,
-      "lng": 213195.072,
-      "fuels": {
-        "gazole": 2.017,
-        "sp98": 1.99,
-        "e10": 1.99,
-        "e85": 0.855
-      }
-    },
-    {
-      "id": "95390001",
-      "cp": "95390",
-      "ville": "Saint-Prix",
-      "adresse": "41 Avenue du Général Leclerc",
-      "pop": "R",
-      "lat": 4900335.2,
-      "lng": 226089.8,
-      "fuels": {
-        "gazole": 1.975,
-        "sp98": 2.035,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "95110006",
-      "cp": "95110",
-      "ville": "Sannois",
-      "adresse": "38-42 BOULEVARD GABRIEL PERI",
-      "pop": "R",
-      "lat": 4896700,
-      "lng": 226200,
-      "fuels": {
-        "gazole": 1.931,
-        "sp95": 1.935
-      }
-    },
-    {
-      "id": "95100029",
-      "cp": "95200",
-      "ville": "Sarcelles",
-      "adresse": "141 Av. de la Division Leclerc",
-      "pop": "R",
-      "lat": 4898361.509,
-      "lng": 236997.12456,
-      "fuels": {
-        "gazole": 2.019,
-        "e10": 1.938,
-        "e85": 0.75
-      }
-    },
-    {
-      "id": "95230008",
-      "cp": "95230",
-      "ville": "Soisy-sous-Montmorency",
-      "adresse": "20 AV.DE PARIS",
-      "pop": "R",
-      "lat": 4898690,
-      "lng": 229595,
-      "fuels": {
-        "gazole": 2.017
-      }
-    },
-    {
-      "id": "95230006",
-      "cp": "95230",
-      "ville": "Soisy-sous-Montmorency",
-      "adresse": "59 Avenue Kellermann",
-      "pop": "R",
-      "lat": 4897800,
-      "lng": 229200,
-      "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.308,
-        "e10": 2.138,
-        "e85": 0.929
+        "gazole": 1.959,
+        "sp98": 2.069,
+        "e10": 1.949
       }
     },
     {
@@ -1447,93 +228,8 @@
       "lat": 4899075.3655,
       "lng": 228923.81273,
       "fuels": {
-        "gazole": 2.018,
-        "e10": 1.99
-      }
-    },
-    {
-      "id": "95150002",
-      "cp": "95150",
-      "ville": "Taverny",
-      "adresse": "180 Rue d'Herblay",
-      "pop": "R",
-      "lat": 4901600,
-      "lng": 220700,
-      "fuels": {
-        "gazole": 2.21,
-        "sp95": 2.075,
-        "sp98": 2.15
-      }
-    },
-    {
-      "id": "95150005",
-      "cp": "95150",
-      "ville": "Taverny",
-      "adresse": "AVENUE DE LA DIVISION LECLERC",
-      "pop": "R",
-      "lat": 4901800,
-      "lng": 222000,
-      "fuels": {
-        "gazole": 1.929,
-        "sp98": 2.019,
-        "e10": 1.939,
-        "e85": 0.929,
-        "gplc": 1.179
-      }
-    },
-    {
-      "id": "95150001",
-      "cp": "95150",
-      "ville": "Taverny",
-      "adresse": "CENTRE COMMERCIAL LES PORTES DE TAVERNY",
-      "pop": "R",
-      "lat": 4901466.69398,
-      "lng": 222190.16815,
-      "fuels": {
-        "gazole": 1.943,
-        "e10": 1.939
-      }
-    },
-    {
-      "id": "95470008",
-      "cp": "95470",
-      "ville": "Vémars",
-      "adresse": "AUT A1 Aire de Vémars Ouest",
-      "pop": "A",
-      "lat": 4907100,
-      "lng": 255100,
-      "fuels": {
-        "gazole": 2.103,
-        "sp98": 2.198,
-        "e10": 2.077
-      }
-    },
-    {
-      "id": "95470009",
-      "cp": "95470",
-      "ville": "Vémars",
-      "adresse": "Autoroute A1 - Aire de vémars Est",
-      "pop": "A",
-      "lat": 4907200,
-      "lng": 255300,
-      "fuels": {
-        "gazole": 2.109,
-        "sp98": 2.154,
-        "e10": 2.063
-      }
-    },
-    {
-      "id": "95400008",
-      "cp": "95400",
-      "ville": "Villiers-le-Bel",
-      "adresse": "AVENUE DES ERABLES",
-      "pop": "R",
-      "lat": 4900053,
-      "lng": 239389,
-      "fuels": {
-        "gazole": 1.921,
-        "sp98": 1.99,
-        "e10": 1.93
+        "gazole": 1.992,
+        "e10": 1.985
       }
     }
   ]
