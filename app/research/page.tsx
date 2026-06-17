@@ -108,6 +108,46 @@ export default function ResearchPage() {
         </div>
       </section>
 
+      {/* Strategic reports & applied analysis */}
+      <section className="space-y-4">
+        <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-400 uppercase">
+          Strategic reports &amp; applied analysis
+        </h2>
+        <p className="text-sm text-gray-400 leading-relaxed max-w-3xl">
+          The framework applied to live and historical shocks — how a disruption propagates through real
+          infrastructure, markets and institutions.
+        </p>
+
+        <div className="grid sm:grid-cols-2 gap-4">
+          <a href="/analysis/the-missing-barrel-energy-infrastructure-blind-spot" className="block rounded-lg border border-oil-800 bg-oil-900/30 px-6 py-5 space-y-2 hover:border-oil-600 transition">
+            <h3 className="text-base font-bold text-white">The Missing Barrel</h3>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              Why energy <em>infrastructure</em> — not the barrel count — is the blind spot in the oil shock. The
+              capstone, infrastructure-level statement of the framework.
+            </p>
+          </a>
+          <a href="/analysis/russia-fuel-shortage-food-logistics" className="block rounded-lg border border-oil-800 bg-oil-900/30 px-6 py-5 space-y-2 hover:border-oil-600 transition">
+            <h3 className="text-base font-bold text-white">Russia's Fuel Shortage: a Food-Logistics Warning</h3>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              A live compound-cascade case: drone-driven refining strain turning fuel into the bottleneck through
+              which food, logistics and public confidence must pass.
+            </p>
+          </a>
+          <a href="/reports/from-hormuz-to-hunger" className="block rounded-lg border border-oil-800 bg-oil-900/30 px-6 py-5 space-y-2 hover:border-oil-600 transition">
+            <h3 className="text-base font-bold text-white">From Hormuz to Hunger</h3>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              The fuel-to-food cascade set off by a Gulf chokepoint shock — the original application of the framework.
+            </p>
+          </a>
+          <a href="/reports/the-fall-of-the-uk" className="block rounded-lg border border-oil-800 bg-oil-900/30 px-6 py-5 space-y-2 hover:border-oil-600 transition">
+            <h3 className="text-base font-bold text-white">The Fall of the UK?</h3>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              What a shrinking domestic refining base and deep import-dependence mean for national fuel security.
+            </p>
+          </a>
+        </div>
+      </section>
+
       {/* The interactive instruments */}
       <section className="space-y-4">
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-400 uppercase">
