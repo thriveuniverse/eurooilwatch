@@ -3,36 +3,36 @@
   "name": "Haute-Marne",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-06-17T09:25:53.047Z",
+  "asOf": "2026-06-17T19:24:43.721Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 43,
+  "stationCount": 41,
   "fuels": {
     "gazole": {
-      "count": 43,
-      "mean": 1.9968,
-      "median": 1.982,
+      "count": 41,
+      "mean": 1.9844,
+      "median": 1.968,
       "min": 1.858,
       "max": 2.188
     },
     "sp95": {
-      "count": 8,
-      "mean": 2.0315,
-      "median": 2.019,
-      "min": 1.979,
-      "max": 2.099
+      "count": 7,
+      "mean": 2.0219,
+      "median": 2.014,
+      "min": 1.972,
+      "max": 2.15
     },
     "sp98": {
       "count": 33,
-      "mean": 2.0538,
+      "mean": 2.0531,
       "median": 2.049,
       "min": 1.989,
       "max": 2.189
     },
     "e10": {
       "count": 34,
-      "mean": 1.9552,
-      "median": 1.945,
+      "mean": 1.9513,
+      "median": 1.941,
       "min": 1.863,
       "max": 2.089
     },
@@ -101,7 +101,9 @@
       "lat": 4795420,
       "lng": 575166,
       "fuels": {
-        "gazole": 2.1
+        "gazole": 1.95,
+        "sp95": 2.15,
+        "sp98": 2.13
       }
     },
     {
@@ -113,23 +115,9 @@
       "lat": 4780400,
       "lng": 542700,
       "fuels": {
-        "gazole": 1.999,
-        "sp95": 2.019,
-        "e10": 1.959
-      }
-    },
-    {
-      "id": "52600001",
-      "cp": "52600",
-      "ville": "Chalindrey",
-      "adresse": "46 Rue de Langres",
-      "pop": "R",
-      "lat": 4780400,
-      "lng": 542600,
-      "fuels": {
-        "gazole": 2.099,
-        "sp95": 2.099,
-        "sp98": 2.149
+        "gazole": 1.925,
+        "sp95": 1.972,
+        "e10": 1.912
       }
     },
     {
@@ -309,8 +297,8 @@
       "lat": 4845000,
       "lng": 514600,
       "fuels": {
-        "gazole": 1.982,
-        "e10": 1.992,
+        "gazole": 1.95,
+        "e10": 1.909,
         "e85": 0.809
       }
     },
@@ -545,24 +533,11 @@
       "lat": 4862700,
       "lng": 497300,
       "fuels": {
-        "gazole": 1.988,
-        "sp95": 2.018,
-        "sp98": 2.027,
-        "e10": 1.917,
+        "gazole": 1.934,
+        "sp95": 2.014,
+        "sp98": 2.021,
+        "e10": 1.915,
         "e85": 0.793
-      }
-    },
-    {
-      "id": "52150001",
-      "cp": "52150",
-      "ville": "Saint-Thiébault",
-      "adresse": "Rue Carnot",
-      "pop": "R",
-      "lat": 4820200,
-      "lng": 558100,
-      "fuels": {
-        "gazole": 2.049,
-        "sp95": 2.099
       }
     },
     {
@@ -647,7 +622,7 @@
       "lat": 4861700,
       "lng": 491200,
       "fuels": {
-        "gazole": 1.981,
+        "gazole": 1.937,
         "sp95": 1.99
       }
     },
