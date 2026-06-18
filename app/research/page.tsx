@@ -106,6 +106,27 @@ export default function ResearchPage() {
             </a>
           </p>
         </div>
+
+        <div className="rounded-lg border border-oil-800 bg-oil-900/30 px-6 py-5 space-y-2">
+          <h3 className="text-lg font-bold text-white">Last Prompt — decision intelligence at the individual scale</h3>
+          <p className="text-sm text-gray-400 leading-relaxed">
+            The typology asks why <em>institutions</em> fail to see cascades coming; <em>Last Prompt</em> asks the
+            same question one scale down. It is a decision-intelligence training engine in which an AI evaluator —
+            <em> the Mandate</em> — scores the quality of your reasoning under pressure while you live the
+            consequences, with no undo. A separate project by Jonathan &amp; Miranda Kelly, from the research
+            behind this site. <span className="text-gray-500">(beta)</span>
+          </p>
+          <p className="text-sm">
+            <a
+              href="https://last-prompt.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-oil-400 hover:text-white underline underline-offset-2"
+            >
+              Explore Last Prompt ↗
+            </a>
+          </p>
+        </div>
       </section>
 
       {/* Strategic reports & applied analysis */}
