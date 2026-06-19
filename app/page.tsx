@@ -92,8 +92,8 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <DisruptionBanner
         tone="update"
-        headline="Fragile de-escalation — tentative U.S.–Iran MOU"
-        body="a reported, still-provisional memorandum points to reopening Hormuz, a 60-day talks window and possible sanctions waivers — but the eased price premium isn't barrels moving: buffers drawn down over the disruption don't refill on an announcement, and the satellite-transit data that would confirm a real reopening lags by ~a week"
+        headline="MOU under strain"
+        body="the U.S.–Iran memorandum is still technically alive, but renewed Israel–Lebanon escalation has put the de-escalation trade on hold; Hormuz recovery is still possible but uncertain, and the risk premium is partly returning"
         linkLabel="What the MOU changes →"
         linkHref="/analysis/us-iran-mou-fragile-deescalation"
       />

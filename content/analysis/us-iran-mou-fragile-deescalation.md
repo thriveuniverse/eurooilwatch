@@ -5,6 +5,18 @@ excerpt: "A tentative U.S.–Iran memorandum of understanding has shifted Europe
 author: "Jon Kelly"
 ---
 
+## Update — 19 June 2026: MOU under strain, not dead
+
+The U.S.–Iran memorandum is still technically in effect, but the de-escalation story has weakened. Planned follow-up talks in Switzerland have been postponed, while renewed Israeli strikes in Lebanon have raised doubts over whether Iran will proceed toward a final settlement. Oil prices have moved back up from the post-deal lows, but the market is not yet repricing a full return to war conditions.
+
+The correct framing is now: **de-escalation delayed, Hormuz recovery uncertain, risk premium partly returning.**
+
+President Trump has also claimed that global reserves could have run short within "about four weeks" without the deal. That should be read as a **political warning, not a verified inventory figure** — no EIA or IEA calculation supports it. The hard market signal remains tanker movement, export restoration, and whether Brent holds near $80 or moves back toward the crisis range.
+
+*The original 15 June analysis follows.*
+
+---
+
 A tentative U.S.–Iran memorandum of understanding is the first major diplomatic signal that the Hormuz crisis may be moving from escalation into managed de-escalation. For European fuel markets it is worth taking seriously — and worth not overstating.
 
 According to reporting (Reuters), the **draft, preliminary** framework points to a reopening of the Strait of Hormuz, the lifting of the U.S. blockade on Iranian ports, a **60-day negotiation window**, sanctions-waiver elements and nuclear limits. That is not a completed, durable settlement — it is a market-moving but politically and operationally **fragile** preliminary deal, and there has already been one failed reopening in this crisis.
