@@ -13,6 +13,8 @@ The correct framing is now: **de-escalation delayed, Hormuz recovery uncertain, 
 
 President Trump has also claimed that global reserves could have run short within "about four weeks" without the deal. That should be read as a **political warning, not a verified inventory figure** — no EIA or IEA calculation supports it. The hard market signal remains tanker movement, export restoration, and whether Brent holds near $80 or moves back toward the crisis range.
 
+**Hormuz reality-check (19 June):** a partial restart — the busiest day in months on 18 June — but still far below the normal dozens-plus daily transits, with Iran's IRGC asserting control and conditioning passage, and maritime trackers conflicting on whether the strait is meaningfully open. Treat the reopening as unconfirmed until the (lagging) transit data sustains.
+
 *The original 15 June analysis follows.*
 
 ---
