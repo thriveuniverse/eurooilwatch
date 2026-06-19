@@ -3,42 +3,42 @@
   "name": "Creuse",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-19T09:24:34.008Z",
+  "asOf": "2026-06-19T18:52:44.088Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 33,
+  "stationCount": 32,
   "fuels": {
     "gazole": {
-      "count": 33,
-      "mean": 1.9702,
-      "median": 1.959,
+      "count": 32,
+      "mean": 1.9584,
+      "median": 1.954,
       "min": 1.839,
-      "max": 2.159
+      "max": 2.142
     },
     "sp95": {
       "count": 14,
-      "mean": 1.9881,
+      "mean": 1.9822,
       "median": 1.9845,
       "min": 1.929,
       "max": 2.059
     },
     "sp98": {
-      "count": 18,
-      "mean": 2.0704,
-      "median": 2.067,
+      "count": 19,
+      "mean": 2.0651,
+      "median": 2.049,
       "min": 1.956,
       "max": 2.199
     },
     "e10": {
-      "count": 21,
-      "mean": 1.9484,
-      "median": 1.944,
+      "count": 22,
+      "mean": 1.948,
+      "median": 1.9415,
       "min": 1.86,
       "max": 2.099
     },
     "e85": {
-      "count": 8,
-      "mean": 0.8261,
+      "count": 10,
+      "mean": 0.8293,
       "median": 0.809,
       "min": 0.808,
       "max": 0.875
@@ -90,7 +90,7 @@
       "lat": 4596400,
       "lng": 219300,
       "fuels": {
-        "gazole": 1.899,
+        "gazole": 1.889,
         "e10": 1.934,
         "e85": 0.809
       }
@@ -104,7 +104,10 @@
       "lat": 4602700,
       "lng": 249700,
       "fuels": {
-        "gazole": 1.999
+        "gazole": 1.899,
+        "sp98": 1.989,
+        "e10": 1.939,
+        "e85": 0.809
       }
     },
     {
@@ -172,7 +175,7 @@
       "lng": 176475.46488,
       "fuels": {
         "gazole": 1.949,
-        "sp98": 2.058,
+        "sp98": 2.038,
         "e10": 1.958
       }
     },
@@ -269,7 +272,7 @@
       "lat": 4588800,
       "lng": 217600,
       "fuels": {
-        "gazole": 1.899,
+        "gazole": 1.889,
         "sp95": 1.934,
         "sp98": 1.956
       }
@@ -423,8 +426,9 @@
       "lat": 4616600,
       "lng": 164900,
       "fuels": {
-        "gazole": 1.927,
-        "sp95": 1.976
+        "gazole": 1.908,
+        "sp95": 1.934,
+        "e85": 0.875
       }
     },
     {
@@ -480,8 +484,8 @@
       "lat": 4620000,
       "lng": 176000,
       "fuels": {
-        "gazole": 1.949,
-        "sp95": 2.039,
+        "gazole": 1.898,
+        "sp95": 1.999,
         "e10": 1.958
       }
     },
@@ -498,18 +502,6 @@
         "e10": 1.899,
         "e85": 0.809,
         "gplc": 1.069
-      }
-    },
-    {
-      "id": "23250001",
-      "cp": "23250",
-      "ville": "Sardent",
-      "adresse": "Nouallet",
-      "pop": "R",
-      "lat": 4604300,
-      "lng": 187800,
-      "fuels": {
-        "gazole": 2.159
       }
     }
   ]
