@@ -3,36 +3,36 @@
   "name": "Cantal",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-06-19T18:52:44.088Z",
+  "asOf": "2026-06-20T08:17:15.566Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 47,
+  "stationCount": 48,
   "fuels": {
     "gazole": {
-      "count": 46,
-      "mean": 1.9613,
-      "median": 1.952,
+      "count": 47,
+      "mean": 1.9587,
+      "median": 1.95,
       "min": 1.814,
       "max": 2.21
     },
     "sp95": {
       "count": 28,
-      "mean": 1.993,
+      "mean": 1.9881,
       "median": 1.99,
       "min": 1.896,
       "max": 2.17
     },
     "sp98": {
-      "count": 25,
-      "mean": 2.0636,
-      "median": 2.065,
-      "min": 1.966,
+      "count": 27,
+      "mean": 2.053,
+      "median": 2.04,
+      "min": 1.911,
       "max": 2.23
     },
     "e10": {
       "count": 23,
-      "mean": 1.9182,
-      "median": 1.919,
+      "mean": 1.9108,
+      "median": 1.898,
       "min": 1.823,
       "max": 2.1
     },
@@ -45,10 +45,10 @@
     },
     "gplc": {
       "count": 1,
-      "mean": 1.14,
-      "median": 1.14,
-      "min": 1.14,
-      "max": 1.14
+      "mean": 1.11,
+      "median": 1.11,
+      "min": 1.11,
+      "max": 1.11
     }
   },
   "stations": [
@@ -61,9 +61,10 @@
       "lat": 4503800,
       "lng": 306500,
       "fuels": {
-        "gazole": 1.898,
-        "sp95": 1.971,
-        "e10": 1.898,
+        "gazole": 1.848,
+        "sp95": 1.928,
+        "sp98": 1.999,
+        "e10": 1.878,
         "e85": 0.799
       }
     },
@@ -121,7 +122,7 @@
       "lat": 4491572,
       "lng": 243189,
       "fuels": {
-        "gazole": 1.834,
+        "gazole": 1.824,
         "sp95": 1.906,
         "sp98": 2.09,
         "e10": 1.833,
@@ -165,9 +166,9 @@
       "lat": 4490800,
       "lng": 242100,
       "fuels": {
-        "gazole": 1.819,
-        "sp98": 1.967,
-        "e10": 1.847
+        "gazole": 1.859,
+        "sp98": 1.953,
+        "e10": 1.833
       }
     },
     {
@@ -355,9 +356,9 @@
       "lat": 4522200,
       "lng": 234000,
       "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.065,
-        "e10": 1.943
+        "gazole": 1.836,
+        "sp98": 1.911,
+        "e10": 1.827
       }
     },
     {
@@ -371,7 +372,7 @@
       "fuels": {
         "gazole": 2.079,
         "e10": 1.99,
-        "gplc": 1.14
+        "gplc": 1.11
       }
     },
     {
@@ -561,8 +562,8 @@
       "lat": 4503100,
       "lng": 309300,
       "fuels": {
-        "gazole": 1.901,
-        "sp95": 1.99
+        "gazole": 1.937,
+        "sp95": 1.983
       }
     },
     {
@@ -574,8 +575,9 @@
       "lat": 4503500,
       "lng": 308900,
       "fuels": {
-        "gazole": 1.898,
-        "sp95": 1.971
+        "gazole": 1.848,
+        "sp95": 1.928,
+        "sp98": 2.01
       }
     },
     {
@@ -602,9 +604,21 @@
       "lat": 4503203.5,
       "lng": 313041.2,
       "fuels": {
-        "gazole": 1.898,
-        "sp95": 1.971,
-        "e10": 1.898
+        "gazole": 1.848,
+        "sp95": 1.928,
+        "e10": 1.878
+      }
+    },
+    {
+      "id": "15220002",
+      "cp": "15220",
+      "ville": "Saint-Mamet-la-Salvetat",
+      "adresse": "RN122 La Croix Blanche",
+      "pop": "R",
+      "lat": 4485900,
+      "lng": 229200,
+      "fuels": {
+        "gazole": 2.09
       }
     },
     {
