@@ -311,7 +311,7 @@ export default async function DashboardPage() {
         );
       })()}
 
-      {/* Active supply disruption — Middle East (Hormuz + Mahshahr) primary; Druzhba secondary */}
+      {/* Active supply disruption — Hormuz / U.S.–Iran MoU primary; Druzhba secondary */}
       <section aria-label="Active supply disruption">
         <div className="rounded-lg border border-amber-700/40 bg-amber-950/20 overflow-hidden">
           <div className="px-5 py-3 border-b border-amber-700/30 flex items-center justify-between">
@@ -322,15 +322,17 @@ export default async function DashboardPage() {
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              Hormuz still constrained; Israel strikes Iran&apos;s Mahshahr energy complex
+              Signed MoU under strain; Iran declares Hormuz closed, U.S. disputes it
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              The Gulf&apos;s master chokepoint is technically open but commercially constrained — only a
-              thin, high-risk trickle of crude, product and LNG vessels has moved, often with AIS gaps, while Iran ties
-              any reopening to new conditions (possible Oman-set transit fees, which Washington opposes),
-              and the EIA assumed Hormuz effectively closed into late May with traffic only now picking up.
-              Israel&apos;s strike on the Mahshahr petrochemical complex is the first hit on Iranian energy
-              infrastructure since the April ceasefire, putting a direct energy-asset risk premium back on.
+              A U.S.–Iran memorandum signed on 17 June briefly pulled the war-risk premium out of crude —
+              Brent eased from above $120 toward $80 — but the de-escalation is fragile: follow-up talks in
+              Switzerland were postponed and Israeli strikes resumed in southern Lebanon. On 20 June
+              Iran&apos;s military <em>declared</em> the Strait of Hormuz closed and the IRGC warned vessels
+              away; U.S. Central Command disputes a physical closure, saying traffic is still flowing. So the
+              verified picture is a signed-but-strained deal plus a contested closure declaration — not a
+              confirmed halt. Price and threat lead; the lagging satellite-transit data confirms whether
+              barrels actually stop.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
@@ -345,7 +347,7 @@ export default async function DashboardPage() {
             </p>
           </div>
           <div className="px-5 py-2 border-t border-amber-700/20 bg-amber-950/10">
-            <p className="text-[10px] text-gray-600">Sources: Reuters, IEA OMR, EIA STEO (June 2026).</p>
+            <p className="text-[10px] text-gray-600">Sources: Reuters, S&amp;P Global, IEA, U.S. CENTCOM (June 2026).</p>
           </div>
         </div>
       </section>
