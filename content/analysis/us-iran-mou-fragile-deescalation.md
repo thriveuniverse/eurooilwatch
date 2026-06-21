@@ -5,6 +5,16 @@ excerpt: "A tentative U.S.–Iran memorandum of understanding has shifted Europe
 author: "Jon Kelly"
 ---
 
+## Update — 20 June 2026: Iran declares the Strait of Hormuz closed (U.S. disputes it)
+
+Iran's joint military command has **declared the Strait of Hormuz closed to shipping**, with the IRGC warning vessels to stay away — citing U.S. "bad faith" over the memorandum and continued Israeli strikes in southern Lebanon. This is a sharp re-escalation only days after the deal was signed, and it reverses the de-escalation story below.
+
+**Physical closure is not yet confirmed.** U.S. Central Command disputes the announcement, saying commercial traffic actually rose over the weekend and that "Iran does not control the Strait of Hormuz." So the verified fact is a *declaration* of closure plus an IRGC threat to vessels — not a demonstrated halt in flows. The war-risk premium returns on the declaration regardless; whether barrels actually stop is what the (lagging) satellite-transit data will show over the coming days. Price and threat lead; transit confirms after the fact — watch the [Chokepoint Transit Monitor](/supply), and weigh both "closed" and "open" claims against the tanker data rather than the rhetoric.
+
+*Earlier updates and the original 15 June analysis follow.*
+
+---
+
 ## Update — 19 June 2026: MOU under strain, not dead
 
 The U.S.–Iran memorandum is still technically in effect, but the de-escalation story has weakened. Planned follow-up talks in Switzerland have been postponed, while renewed Israeli strikes in Lebanon have raised doubts over whether Iran will proceed toward a final settlement. Oil prices have moved back up from the post-deal lows, but the market is not yet repricing a full return to war conditions.

@@ -91,9 +91,9 @@ export default async function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        tone="update"
-        headline="MOU under strain"
-        body="the 14-point U.S.–Iran framework is still in effect, but the formal Switzerland signing ceremony was postponed (Vance pulled out) amid renewed Israel–Lebanon strikes; Hormuz transit has only tentatively restarted and stays far below normal, with the IRGC still conditioning passage"
+        tone="alert"
+        headline="Hormuz closure declared"
+        body="Iran's military has declared the Strait of Hormuz closed and the IRGC is warning vessels away, citing U.S. bad faith and Israeli strikes in Lebanon — a sharp re-escalation days after the signed MoU. The U.S. (CENTCOM) disputes it and says traffic is still flowing, so physical closure is unconfirmed — but the war-risk premium is back. Price leads; transit data confirms."
         linkLabel="What the MOU changes →"
         linkHref="/analysis/us-iran-mou-fragile-deescalation"
       />
