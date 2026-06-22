@@ -3,16 +3,16 @@
   "name": "Hauts-de-Seine",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-06-22T10:32:43.091Z",
+  "asOf": "2026-06-22T20:08:26.576Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 65,
   "fuels": {
     "gazole": {
-      "count": 64,
-      "mean": 1.9737,
-      "median": 1.974,
-      "min": 1.846,
+      "count": 63,
+      "mean": 1.9733,
+      "median": 1.959,
+      "min": 1.839,
       "max": 2.199
     },
     "sp95": {
@@ -23,16 +23,16 @@
       "max": 1.949
     },
     "sp98": {
-      "count": 52,
-      "mean": 2.0594,
-      "median": 1.993,
-      "min": 1.965,
+      "count": 53,
+      "mean": 2.0557,
+      "median": 1.99,
+      "min": 1.95,
       "max": 2.279
     },
     "e10": {
-      "count": 57,
-      "mean": 1.9587,
-      "median": 1.969,
+      "count": 59,
+      "mean": 1.9562,
+      "median": 1.949,
       "min": 1.871,
       "max": 2.129
     },
@@ -61,7 +61,9 @@
       "lat": 4873800,
       "lng": 229500,
       "fuels": {
-        "gazole": 1.872
+        "gazole": 1.872,
+        "sp98": 1.99,
+        "e10": 1.878
       }
     },
     {
@@ -73,8 +75,8 @@
       "lat": 4874000,
       "lng": 231500,
       "fuels": {
-        "gazole": 1.846,
-        "sp98": 1.986,
+        "gazole": 1.839,
+        "sp98": 1.982,
         "e10": 1.871,
         "e85": 0.944,
         "gplc": 0.999
@@ -132,6 +134,8 @@
       "lng": 223100,
       "fuels": {
         "gazole": 2.025,
+        "sp98": 1.99,
+        "e10": 1.99,
         "e85": 0.915
       }
     },
@@ -470,9 +474,9 @@
       "lat": 4892600,
       "lng": 229200,
       "fuels": {
-        "gazole": 1.999,
-        "sp98": 2.099,
-        "e10": 1.999
+        "gazole": 1.899,
+        "sp98": 1.95,
+        "e10": 1.899
       }
     },
     {
@@ -681,7 +685,6 @@
       "lat": 4888100,
       "lng": 220600,
       "fuels": {
-        "gazole": 1.895,
         "sp98": 1.99,
         "e10": 1.905
       }
@@ -939,7 +942,6 @@
       "fuels": {
         "gazole": 1.899,
         "sp95": 1.945,
-        "sp98": 1.965,
         "e10": 1.883
       }
     },

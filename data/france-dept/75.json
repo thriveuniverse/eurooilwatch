@@ -3,16 +3,16 @@
   "name": "Paris",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-06-22T10:32:43.091Z",
+  "asOf": "2026-06-22T20:08:26.576Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 40,
+  "stationCount": 39,
   "fuels": {
     "gazole": {
-      "count": 36,
-      "mean": 2.0454,
-      "median": 2.018,
-      "min": 1.845,
+      "count": 35,
+      "mean": 2.0448,
+      "median": 2.012,
+      "min": 1.849,
       "max": 2.59
     },
     "sp95": {
@@ -23,9 +23,9 @@
       "max": 2.39
     },
     "sp98": {
-      "count": 30,
-      "mean": 2.0929,
-      "median": 1.991,
+      "count": 31,
+      "mean": 2.0895,
+      "median": 1.99,
       "min": 1.979,
       "max": 2.46
     },
@@ -174,7 +174,9 @@
       "lat": 4883200,
       "lng": 231600,
       "fuels": {
-        "gazole": 2.028
+        "gazole": 2.009,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -254,7 +256,7 @@
       "lat": 4889300,
       "lng": 230200,
       "fuels": {
-        "gazole": 1.845,
+        "gazole": 1.849,
         "sp98": 1.979,
         "e10": 1.875,
         "e85": 0.885
@@ -505,19 +507,6 @@
         "gazole": 1.959,
         "sp98": 2.069,
         "e10": 1.979
-      }
-    },
-    {
-      "id": "75016029",
-      "cp": "75016",
-      "ville": "Paris",
-      "adresse": "99 AVENUE DE VERSAILLES",
-      "pop": "R",
-      "lat": 4884500,
-      "lng": 227100,
-      "fuels": {
-        "gazole": 2.05,
-        "e10": 1.99
       }
     },
     {
