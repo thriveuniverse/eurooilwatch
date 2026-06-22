@@ -5,6 +5,18 @@ excerpt: "A tentative U.S.–Iran memorandum of understanding has shifted Europe
 author: "Jon Kelly"
 ---
 
+## Update — 22 June 2026: a 60-day roadmap, and a fragile reopening
+
+U.S. and Iran negotiators meeting in Switzerland have agreed a **60-day roadmap** toward a final deal: the Strait of Hormuz stays open toll-free for at least 60 days, hostilities — including in Lebanon — are to end, and a new **safe-passage communications line** plus a Lebanon **"de-confliction cell"** (facilitated by Qatar and Pakistan) are meant to prevent incidents. Mediators reported "encouraging progress," with working groups on sanctions, nuclear issues and oversight continuing through the week. Markets read it as de-escalation — Brent eased to around **$79**.
+
+The operational picture is improving but not settled. The Joint Maritime Information Center has cut its Hormuz threat level to **moderate** and says the U.S. blockade has ended, while still warning of **active mine-clearance** and advising the clearer southern route along Omani waters. Tankers are moving again — VLCCs, Qatari LNG carriers and Korean-operated vessels have transited — but transit is erratic: Iran briefly halted traffic over the weekend amid the Lebanon fighting, and Kpler counted only about **five vessels on Sunday against 26 the day before** (some "missing" ships may simply have switched off transponders).
+
+So the 20 June "closure" reads, in hindsight, as exactly what we called it: a *declaration*, not a demonstrated halt — barrels kept moving. The honest framing now is **fragile reprieve, not all-clear.** The headline war-risk premium is easing, but the physical system is still low-cushion: U.S. commercial crude stocks fell 8.3 million barrels last week to about 418 million (~6% below the five-year average), with distillates roughly 13% below average and refinery utilisation running hot near 97%. A 60-day roadmap buys time; it does not rebuild the buffers the shock drew down. Watch the [Chokepoint Transit Monitor](/supply): a real reopening registers there when the (lagging) tanker counts sustain — not in the rhetoric, either way.
+
+*Earlier updates and the original 15 June analysis follow.*
+
+---
+
 ## Update — 20 June 2026: Iran declares the Strait of Hormuz closed (U.S. disputes it)
 
 Iran's joint military command has **declared the Strait of Hormuz closed to shipping**, with the IRGC warning vessels to stay away — citing U.S. "bad faith" over the memorandum and continued Israeli strikes in southern Lebanon. This is a sharp re-escalation only days after the deal was signed, and it reverses the de-escalation story below.

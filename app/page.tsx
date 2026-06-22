@@ -91,9 +91,9 @@ export default async function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        tone="alert"
-        headline="Hormuz closure declared"
-        body="Iran's military has declared the Strait of Hormuz closed and the IRGC is warning vessels away, citing U.S. bad faith and Israeli strikes in Lebanon — a sharp re-escalation days after the signed MoU. The U.S. (CENTCOM) disputes it and says traffic is still flowing, so physical closure is unconfirmed — but the war-risk premium is back. Price leads; transit data confirms."
+        tone="update"
+        headline="Hormuz: fragile reopening, not settled"
+        body="U.S. and Iran have agreed a 60-day roadmap with a safe-passage communications line for the Strait; the JMIC has cut its threat level to moderate and the U.S. blockade has ended, and tankers (VLCCs, Qatari LNG and Korean-operated vessels) are moving again. But it isn't an all-clear — mine-clearance continues, Iran briefly halted traffic over the weekend, and transit is erratic (Kpler counted ~5 vessels Sunday vs 26 a day earlier). Brent has eased to ~$79. Fragile reprieve, not resolution."
         linkLabel="What the MOU changes →"
         linkHref="/analysis/us-iran-mou-fragile-deescalation"
       />
@@ -322,17 +322,17 @@ export default async function DashboardPage() {
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              Signed MoU under strain; Iran declares Hormuz closed, U.S. disputes it
+              Hormuz: fragile reopening under a 60-day roadmap
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              A U.S.–Iran memorandum signed on 17 June briefly pulled the war-risk premium out of crude —
-              Brent eased from above $120 toward $80 — but the de-escalation is fragile: follow-up talks in
-              Switzerland were postponed and Israeli strikes resumed in southern Lebanon. On 20 June
-              Iran&apos;s military <em>declared</em> the Strait of Hormuz closed and the IRGC warned vessels
-              away; U.S. Central Command disputes a physical closure, saying traffic is still flowing. So the
-              verified picture is a signed-but-strained deal plus a contested closure declaration — not a
-              confirmed halt. Price and threat lead; the lagging satellite-transit data confirms whether
-              barrels actually stop.
+              U.S.–Iran talks in Switzerland produced a 60-day roadmap on 22 June — reopening the Strait
+              toll-free, a safe-passage communications line, and a de-confliction cell to wind down the
+              Lebanon fighting. The JMIC has cut its Hormuz threat level to moderate and the U.S. blockade
+              has ended, and tankers are moving again: VLCCs, Qatari LNG carriers and Korean-operated
+              vessels have transited, with Brent easing to about $79. But it is a fragile reprieve, not an
+              all-clear — mine-clearance continues, Iran briefly halted traffic over the weekend amid the
+              Lebanon fighting, and transit counts are erratic (Kpler logged roughly five vessels on Sunday
+              against 26 the day before). The physical system stays low-cushion beneath the calmer headlines.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
