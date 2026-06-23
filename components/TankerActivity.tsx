@@ -42,9 +42,19 @@ const ZONE_CONTEXT: Record<string, { label: string; pre: string; significance: s
 
 const ZONE_ORDER = ['ara', 'hormuz', 'suez'] as const;
 
+// The collector runs every 4 hours; treat the feed as paused after ~12h (≈3 missed runs).
+const STALE_AFTER_MS = 12 * 60 * 60 * 1000;
+
 export default function TankerActivity() {
   const data = readTraffic();
   if (!data) return null;
+
+  const generatedMs = new Date(data.generatedAt).getTime();
+  const ageMs = Date.now() - generatedMs;
+  const stale = !Number.isFinite(generatedMs) || ageMs > STALE_AFTER_MS;
+  const updatedLabel = Number.isFinite(generatedMs)
+    ? new Date(data.generatedAt).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })
+    : 'unknown';
 
   return (
     <div className="rounded-lg border border-oil-800 bg-oil-900/20 overflow-hidden">
@@ -52,11 +62,22 @@ export default function TankerActivity() {
         <h2 className="text-xs font-mono font-semibold tracking-widest text-gray-500 uppercase">
           Tanker Activity at Key Chokepoints
         </h2>
-        <span className="text-[10px] font-mono uppercase tracking-wider text-amber-400/80">
-          Preliminary · baseline building
+        <span className={`text-[10px] font-mono uppercase tracking-wider ${stale ? 'text-amber-300' : 'text-amber-400/80'}`}>
+          {stale ? 'Feed paused · reconnecting' : 'Preliminary · baseline building'}
         </span>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-oil-800/40">
+
+      {stale && (
+        <div className="px-5 py-2 border-b border-amber-700/30 bg-amber-950/20">
+          <p className="text-[10px] text-amber-200/80 leading-relaxed">
+            ⚠ Live AIS feed paused (last snapshot {updatedLabel}). The figures below are that last
+            reading, not current — counts resume automatically when the feed reconnects. Authoritative
+            transit data remains live on the <a href="/supply" className="underline hover:text-white">Chokepoint Monitor</a>.
+          </p>
+        </div>
+      )}
+
+      <div className={`grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-oil-800/40${stale ? ' opacity-60' : ''}`}>
         {ZONE_ORDER.map(zid => {
           const z = data.zones[zid];
           const ctx = ZONE_CONTEXT[zid];
@@ -84,8 +105,9 @@ export default function TankerActivity() {
       <div className="px-5 py-2 border-t border-oil-800/40 bg-oil-900/30">
         <p className="text-[10px] text-gray-500 leading-relaxed">
           Live AIS tanker tracking via aisstream.io, captured every 4 hours and aggregated into rolling 24-hour, 7-day, and 28-day counts.
-          {' '}<strong className="text-gray-400">Baseline accumulating since 20 May 2026</strong> — week-on-week and 28-day comparisons populate by ~17 June 2026.
-          {' '}Updated {new Date(data.generatedAt).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}.
+          {' '}<strong className="text-gray-400">Baseline accumulating since 20 May 2026.</strong>
+          {' '}{stale ? `Last snapshot ${updatedLabel} — feed paused.` : `Updated ${updatedLabel}.`}
+          {' '}Counts can fall toward zero in conflict zones when vessels switch off AIS transponders.
         </p>
       </div>
     </div>
