@@ -35,6 +35,7 @@ interface Snapshot {
   capturedAt: string;            // ISO timestamp
   captureWindowMs: number;       // how long we listened
   messageCount?: number;         // total AIS frames received during capture (diagnostic)
+  serverNotice?: string;         // first non-AIS frame from aisstream (e.g. auth/quota error)
   zones: Record<ZoneKey, {
     name: string;
     uniqueTankers: number;       // unique MMSIs of vessel types 80-89 seen in window
@@ -68,6 +69,10 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
   // like errors or keepalives. Used by main() to distinguish "auth/subscription
   // broken" (zero frames) from "data flowing but filter wrong" (frames but no tankers).
   let messageCount = 0;
+  // aisstream sends auth/quota rejections as a frame WITHOUT MetaData (e.g.
+  // {"error":"Api Key is not valid"}). We capture the first such notice — it is
+  // the single most useful diagnostic when no AIS data arrives.
+  let serverNotice = '';
 
   function tryClassify(mmsi: string) {
     const zone = positionZone.get(mmsi);
@@ -86,6 +91,7 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
         capturedAt: new Date().toISOString(),
         captureWindowMs: Date.now() - startedAt,
         messageCount,
+        serverNotice: serverNotice || undefined,
         zones: {
           hormuz: { name: ZONES.hormuz.name, uniqueTankers: seenInZone.hormuz.size, mmsis: [...seenInZone.hormuz] },
           ara:    { name: ZONES.ara.name,    uniqueTankers: seenInZone.ara.size,    mmsis: [...seenInZone.ara] },
@@ -122,7 +128,15 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
           : await (ev.data as Blob).text();
         const msg = JSON.parse(data);
         const meta = msg.MetaData;
-        if (!meta) return;
+        if (!meta) {
+          // No MetaData → not an AIS report. Surface the first one (auth/quota
+          // error, subscription ack, etc.) so the failure mode is visible.
+          if (!serverNotice) {
+            serverNotice = (typeof data === 'string' ? data : JSON.stringify(msg)).slice(0, 300);
+            console.error(`📡 aisstream notice: ${serverNotice}`);
+          }
+          return;
+        }
         const mmsi = String(meta.MMSI);
         if (msg.MessageType === 'PositionReport') {
           const pr = msg.Message?.PositionReport;
@@ -158,6 +172,8 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
         const snapshot: Snapshot = {
           capturedAt: new Date().toISOString(),
           captureWindowMs: Date.now() - startedAt,
+          messageCount,
+          serverNotice: serverNotice || undefined,
           zones: {
             hormuz: { name: ZONES.hormuz.name, uniqueTankers: seenInZone.hormuz.size, mmsis: [...seenInZone.hormuz] },
             ara:    { name: ZONES.ara.name,    uniqueTankers: seenInZone.ara.size,    mmsis: [...seenInZone.ara] },
@@ -187,11 +203,18 @@ function pruneOld(snapshots: Snapshot[]): Snapshot[] {
 }
 
 async function main() {
-  const apiKey = process.env.AISSTREAM_API_KEY;
-  if (!apiKey) {
+  const rawKey = process.env.AISSTREAM_API_KEY;
+  if (!rawKey) {
     console.error('❌ AISSTREAM_API_KEY env var not set');
     process.exit(1);
   }
+  // Guard against the most common secret-paste mistake: a trailing newline or
+  // surrounding spaces, which aisstream silently rejects (→ zero frames).
+  const apiKey = rawKey.trim();
+  if (apiKey !== rawKey) {
+    console.warn('⚠️  AISSTREAM_API_KEY had surrounding whitespace — trimmed. Re-save the secret without trailing newlines.');
+  }
+  console.log(`🔑 Using API key of length ${apiKey.length}.`);
 
   console.log(`🛢️  Capturing tanker snapshot (${CAPTURE_MS / 1000}s window)…`);
   const snap = await captureSnapshot(apiKey);
@@ -214,6 +237,11 @@ async function main() {
     console.error('   The WebSocket opened but the subscription delivered no data, which usually');
     console.error('   means auth was silently rejected or the free-tier quota is exhausted.');
     console.error('   Check the aisstream.io dashboard. Not writing snapshot.');
+    if (snap.serverNotice) {
+      console.error(`   aisstream said: ${snap.serverNotice}`);
+    } else {
+      console.error('   (aisstream returned no message at all — key likely invalid/inactive, or quota blocked at connect.)');
+    }
     process.exit(1);
   }
   if (totalTankers === 0) {
