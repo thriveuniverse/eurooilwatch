@@ -356,6 +356,12 @@ export default async function SupplyPage() {
           The transit, port-flow and sea-state panels below refresh daily from satellite-AIS and weather feeds; the
           chokepoint risk assessments further down are maintained editorially.
         </p>
+        <p className="mt-3 text-sm">
+          <a href="/hormuz-timeline" className="text-oil-300 hover:text-white underline underline-offset-2">
+            → Strait of Hormuz crisis timeline
+          </a>
+          <span className="text-gray-500"> — a sourced, filterable chronology of the 2026 crisis.</span>
+        </p>
       </div>
 
       {/* Chokepoints overview map */}

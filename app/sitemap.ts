@@ -79,6 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: baseUrl,                                          lastModified: new Date(),                changeFrequency: 'daily',   priority: 1.0 },
     { url: `${baseUrl}/prices`,                              lastModified: new Date(),                changeFrequency: 'weekly',  priority: 0.9 },
     { url: `${baseUrl}/supply`,                              lastModified: new Date(),                changeFrequency: 'daily',   priority: 0.9 },
+    { url: `${baseUrl}/hormuz-timeline`,                     lastModified: new Date(),                changeFrequency: 'daily',   priority: 0.85 },
     { url: `${baseUrl}/fertilizer`,                          lastModified: new Date(),                changeFrequency: 'weekly',  priority: 0.85 },
     { url: `${baseUrl}/analysis`,                            lastModified: new Date(),                changeFrequency: 'weekly',  priority: 0.8 },
     { url: `${baseUrl}/reports/from-hormuz-to-hunger`,       lastModified: new Date('2026-04-30'),    changeFrequency: 'monthly', priority: 0.8 },
