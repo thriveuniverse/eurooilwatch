@@ -69,13 +69,21 @@ export default function HormuzTimeline({ events, counts, total }: Props) {
         {shown.map((e) => {
           const c = CATEGORY_STYLE[e.category];
           return (
-            <li key={e.id} id={e.id} className="mb-8 ml-6 scroll-mt-24">
+            <li key={e.id} id={e.id} className="mb-8 ml-6 scroll-mt-24 group">
               <span className={`absolute -left-[7px] mt-1.5 h-3.5 w-3.5 rounded-full ring-4 ring-oil-950 ${c.dot}`} aria-hidden="true" />
               <div className="flex items-center gap-2 flex-wrap">
                 <time dateTime={e.date} className="text-xs font-mono text-gray-500">{fmtDate(e.date)}</time>
                 <span className={`rounded border px-1.5 py-0.5 text-[10px] font-mono uppercase tracking-wider ${c.tag}`}>
                   {c.label}
                 </span>
+                <a
+                  href={`#${e.id}`}
+                  aria-label="Permalink to this event"
+                  title="Link to this event"
+                  className="opacity-0 group-hover:opacity-100 focus:opacity-100 transition text-gray-600 hover:text-gray-300 text-xs font-mono leading-none"
+                >
+                  #
+                </a>
               </div>
               <h3 className="mt-1.5 text-base font-semibold text-white">{e.headline}</h3>
               <p className="mt-1 text-sm text-gray-400 leading-relaxed">{e.summary}</p>
