@@ -5,6 +5,16 @@ excerpt: "A tentative U.S.–Iran memorandum of understanding has shifted Europe
 author: "Jon Kelly"
 ---
 
+## Update — 25 June 2026: reopening stalls — Iran reasserts control of the Strait
+
+The brief post-roadmap recovery has reversed. After tanker traffic spiked over the weekend (Kpler logged a jump toward ~90 transits on 19–21 June), Iran's IRGC **reasserted routing control** over the Strait of Hormuz on 25 June — warning that vessels must seek clearance and that deviating from Tehran-cleared corridors is "unacceptable and dangerous." Transits collapsed back toward **~5 a day** (against a pre-crisis norm near 90–125), with several hundred ships still anchored or stranded. The U.S. disputes any closure and points to continued transits.
+
+The market, tellingly, went the other way: **Brent fell to about $73 and WTI below $70** — a multi-month low — as traders leaned on the 60-day diplomatic framework, the OFAC licence on Iranian barrels, and ample Atlantic-basin supply rather than the messy physical picture. That divergence is the story: **price says de-escalation; the water says still contested.** Our standing rule holds — price and threat lead, and the lagging transit data confirms; right now it is pointing back down. Watch the [Chokepoint Transit Monitor](/supply).
+
+*Earlier updates and the original 15 June analysis follow.*
+
+---
+
 ## Update — 22 June 2026: a 60-day roadmap, and a fragile reopening
 
 U.S. and Iran negotiators meeting in Switzerland have agreed a **60-day roadmap** toward a final deal: the Strait of Hormuz stays open toll-free for at least 60 days, hostilities — including in Lebanon — are to end, and a new **safe-passage communications line** plus a Lebanon **"de-confliction cell"** (facilitated by Qatar and Pakistan) are meant to prevent incidents. Mediators reported "encouraging progress," with working groups on sanctions, nuclear issues and oversight continuing through the week. Markets read it as de-escalation — Brent eased to around **$79**.

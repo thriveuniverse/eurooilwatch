@@ -92,8 +92,8 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <DisruptionBanner
         tone="update"
-        headline="Hormuz: fragile reopening, not settled"
-        body="U.S. and Iran have agreed a 60-day roadmap with a safe-passage communications line for the Strait; the JMIC has cut its threat level to moderate and the U.S. blockade has ended, and tankers (VLCCs, Qatari LNG and Korean-operated vessels) are moving again. But it isn't an all-clear — mine-clearance continues, Iran briefly halted traffic over the weekend, and transit is erratic (Kpler counted ~5 vessels Sunday vs 26 a day earlier). Brent has eased to ~$79. Fragile reprieve, not resolution."
+        headline="Hormuz: reopening stalls as Iran reasserts control"
+        body="The brief reopening has stalled. On 25 June Iran's IRGC reasserted routing control over the Strait — vessels must seek clearance or 'face consequences' — and transits collapsed back toward ~5 a day after a weekend spike, with several hundred ships still stranded; the U.S. disputes any closure. Yet crude kept falling (Brent ~$73, WTI below $70) as the market leans on the 60-day diplomatic framework and ample Atlantic-basin supply. Price says calm; the water says contested."
         linkLabel="What the MOU changes →"
         linkHref="/analysis/us-iran-mou-fragile-deescalation"
       />
@@ -322,20 +322,19 @@ export default async function DashboardPage() {
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              Hormuz: fragile reopening under a 60-day roadmap
+              Hormuz: reopening stalls, strait still contested
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              U.S.–Iran talks in Switzerland produced a 60-day roadmap on 22 June — reopening the Strait
-              toll-free, a safe-passage communications line, and a de-confliction cell to wind down the
-              Lebanon fighting. The JMIC has cut its Hormuz threat level to moderate and the U.S. blockade
-              has ended, and tankers are moving again, with Brent easing to about $79. But the recovery is
-              lopsided: the vessels conspicuously back in the strait are largely Iranian, switching
-              transponders on to rush crude out under the new 60-day U.S. licence, alongside some Gulf
-              (Saudi, UAE, Qatari LNG) cargoes — while broader international traffic stays thin, far below
-              the 100-plus ships a day seen before the war. It is a fragile reprieve, not an all-clear:
-              mine-clearance continues, transit counts are erratic (Kpler logged roughly five vessels on
-              Sunday against 26 the day before), and Israeli strikes on southern Lebanon have continued
-              despite the ceasefire. The physical system stays low-cushion beneath the calmer headlines.
+              After the 22 June 60-day roadmap, the JMIC cut its Hormuz threat to moderate and traffic
+              briefly recovered — Kpler logged a weekend spike toward ~90 transits. But it has reversed:
+              on 25 June Iran&apos;s IRGC reasserted routing control over the Strait (vessels must seek
+              clearance or &ldquo;face consequences&rdquo;) and transits collapsed back toward ~5 a day,
+              with several hundred ships still stranded; the U.S. disputes any closure. The brief recovery
+              was also lopsided — the vessels that moved were largely Iranian, rushing crude out under the
+              new U.S. licence, while broader international traffic stayed thin. Crude has fallen regardless
+              (Brent ~$73, WTI below $70) as the market leans on the diplomatic track and ample
+              Atlantic-basin supply. Price and threat lead; the lagging transit data confirms — and right
+              now it points back down.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
