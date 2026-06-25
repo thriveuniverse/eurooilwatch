@@ -3,36 +3,36 @@
   "name": "Lozère",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-25T08:17:22.887Z",
+  "asOf": "2026-06-25T18:03:11.228Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 35,
+  "stationCount": 36,
   "fuels": {
     "gazole": {
-      "count": 35,
-      "mean": 1.9188,
-      "median": 1.909,
+      "count": 36,
+      "mean": 1.917,
+      "median": 1.9025,
       "min": 1.819,
       "max": 2.119
     },
     "sp95": {
-      "count": 11,
-      "mean": 2.0061,
-      "median": 1.999,
+      "count": 12,
+      "mean": 2.0047,
+      "median": 1.997,
       "min": 1.963,
       "max": 2.149
     },
     "sp98": {
       "count": 19,
-      "mean": 2.0396,
+      "mean": 2.0375,
       "median": 2.01,
       "min": 1.919,
       "max": 2.3
     },
     "e10": {
       "count": 24,
-      "mean": 1.9093,
-      "median": 1.912,
+      "mean": 1.9072,
+      "median": 1.907,
       "min": 1.805,
       "max": 2.019
     },
@@ -42,6 +42,13 @@
       "median": 0.8395,
       "min": 0.809,
       "max": 0.899
+    },
+    "gplc": {
+      "count": 1,
+      "mean": 1.2,
+      "median": 1.2,
+      "min": 1.2,
+      "max": 1.2
     }
   },
   "stations": [
@@ -260,9 +267,9 @@
       "lat": 4485600,
       "lng": 333200,
       "fuels": {
-        "gazole": 1.949,
-        "sp98": 2.079,
-        "e10": 1.959
+        "gazole": 1.899,
+        "sp98": 2.039,
+        "e10": 1.909
       }
     },
     {
@@ -277,6 +284,20 @@
         "gazole": 1.942,
         "sp98": 2.068,
         "e10": 1.962
+      }
+    },
+    {
+      "id": "48100001",
+      "cp": "48100",
+      "ville": "Marvejols",
+      "adresse": "38 AVENUE THEOPHILE ROUSSEL",
+      "pop": "R",
+      "lat": 4456242.8946,
+      "lng": 329229.52134,
+      "fuels": {
+        "gazole": 1.906,
+        "sp95": 1.989,
+        "gplc": 1.2
       }
     },
     {
@@ -352,8 +373,8 @@
       "ville": "Mende",
       "adresse": "14 AVENUE FOCH",
       "pop": "R",
-      "lat": 4451841.20487,
-      "lng": 349212.09787,
+      "lat": 4451800,
+      "lng": 349200,
       "fuels": {
         "gazole": 1.827,
         "sp98": 1.92,
