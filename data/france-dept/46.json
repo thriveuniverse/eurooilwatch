@@ -3,15 +3,15 @@
   "name": "Lot",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-26T08:25:46.149Z",
+  "asOf": "2026-06-26T18:50:15.212Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 57,
+  "stationCount": 58,
   "fuels": {
     "gazole": {
       "count": 57,
-      "mean": 1.9186,
-      "median": 1.895,
+      "mean": 1.917,
+      "median": 1.89,
       "min": 1.799,
       "max": 2.164
     },
@@ -23,15 +23,15 @@
       "max": 1.99
     },
     "sp98": {
-      "count": 46,
-      "mean": 1.9954,
+      "count": 47,
+      "mean": 1.9953,
       "median": 1.99,
       "min": 1.946,
       "max": 2.264
     },
     "e10": {
-      "count": 46,
-      "mean": 1.9111,
+      "count": 48,
+      "mean": 1.9096,
       "median": 1.892,
       "min": 1.838,
       "max": 2.164
@@ -375,7 +375,9 @@
       "lat": 4474000,
       "lng": 139100,
       "fuels": {
-        "gazole": 1.953
+        "gazole": 1.953,
+        "sp98": 1.99,
+        "e10": 1.931
       }
     },
     {
@@ -403,8 +405,7 @@
       "fuels": {
         "gazole": 1.859,
         "sp98": 1.979,
-        "e10": 1.859,
-        "e85": 0.809
+        "e10": 1.859
       }
     },
     {
@@ -431,9 +432,9 @@
       "lat": 4472000,
       "lng": 136800,
       "fuels": {
-        "gazole": 1.989,
+        "gazole": 1.969,
         "sp98": 1.99,
-        "e10": 1.977
+        "e10": 1.959
       }
     },
     {
@@ -556,9 +557,9 @@
       "lat": 4446900,
       "lng": 148300,
       "fuels": {
-        "gazole": 1.951,
+        "gazole": 1.919,
         "sp98": 1.99,
-        "e10": 1.933
+        "e10": 1.91
       }
     },
     {
@@ -611,7 +612,6 @@
       "lat": 4465531.4565,
       "lng": 185084.49976,
       "fuels": {
-        "gazole": 1.899,
         "e10": 1.906
       }
     },
@@ -828,6 +828,20 @@
       "fuels": {
         "gazole": 1.89,
         "e10": 1.99
+      }
+    },
+    {
+      "id": "46200004",
+      "cp": "46200",
+      "ville": "Souillac",
+      "adresse": "51 rue de la Récège",
+      "pop": "R",
+      "lat": 4489900,
+      "lng": 147500,
+      "fuels": {
+        "gazole": 1.859,
+        "e10": 1.859,
+        "e85": 0.809
       }
     },
     {
