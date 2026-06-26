@@ -5,6 +5,16 @@ excerpt: "A tentative U.S.–Iran memorandum of understanding has shifted Europe
 author: "Jon Kelly"
 ---
 
+## Update — 26 June 2026: a vessel is struck — Hormuz effectively shut again
+
+The stand-off has turned kinetic. After Iran's IRGC reasserted routing control on 25 June, a container ship — the Singapore-flagged *Ever Lovely* — was hit by an **"unknown projectile"** off the coast of Oman that evening while using the UN-backed transit route, sustaining bridge damage (no casualties or spill, per UKMTO). A U.S. official attributes the strike to an **Iranian drone**; Iran has not claimed it. The IMO has **suspended the evacuation of stranded ships** through the Strait pending safety guarantees.
+
+With commercial transits already down to a trickle, an actual attack on shipping plus a suspended evacuation leaves the Strait **effectively shut again** — this time on a demonstrated incident, not just a declaration. Crude had fallen to about $73 (WTI below $70) on de-escalation hopes; a confirmed strike on a vessel challenges that calm. We have moved the homepage alert back to red. Price and threat lead; watch the [Chokepoint Transit Monitor](/supply) for whether transits and the evacuation resume.
+
+*Earlier updates and the original 15 June analysis follow.*
+
+---
+
 ## Update — 25 June 2026: reopening stalls — Iran reasserts control of the Strait
 
 The brief post-roadmap recovery has reversed. After tanker traffic spiked over the weekend (Kpler logged a jump toward ~90 transits on 19–21 June), Iran's IRGC **reasserted routing control** over the Strait of Hormuz on 25 June — warning that vessels must seek clearance and that deviating from Tehran-cleared corridors is "unacceptable and dangerous." Transits collapsed back toward **~5 a day** (against a pre-crisis norm near 90–125), with several hundred ships still anchored or stranded. The U.S. disputes any closure and points to continued transits.

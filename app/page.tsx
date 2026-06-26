@@ -91,9 +91,9 @@ export default async function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        tone="update"
-        headline="Hormuz: reopening stalls as Iran reasserts control"
-        body="The brief reopening has stalled. On 25 June Iran's IRGC reasserted routing control over the Strait — vessels must seek clearance or 'face consequences' — and transits collapsed back toward ~5 a day after a weekend spike, with several hundred ships still stranded; the U.S. disputes any closure. Yet crude kept falling (Brent ~$73, WTI below $70) as the market leans on the 60-day diplomatic framework and ample Atlantic-basin supply. Price says calm; the water says contested."
+        tone="alert"
+        headline="Hormuz effectively shut after vessel struck"
+        body="A container ship (the Singapore-flagged Ever Lovely) was hit by an 'unknown projectile' off Oman on 25 June while using the UN-backed transit route — bridge damaged, no casualties; a U.S. official attributes it to an Iranian drone, though Iran has not claimed it. The IMO has suspended the evacuation of stranded ships pending safety guarantees, after Iran's IRGC warned that only its declared route is permitted. With transits already near a trickle, the strait is effectively shut again. Crude had eased to ~$73 on de-escalation hopes; a confirmed strike on shipping puts that in question."
         linkLabel="What the MOU changes →"
         linkHref="/analysis/us-iran-mou-fragile-deescalation"
       />
@@ -322,19 +322,18 @@ export default async function DashboardPage() {
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              Hormuz: reopening stalls, strait still contested
+              Hormuz effectively shut after vessel struck
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              After the 22 June 60-day roadmap, the JMIC cut its Hormuz threat to moderate and traffic
-              briefly recovered — Kpler logged a weekend spike toward ~90 transits. But it has reversed:
-              on 25 June Iran&apos;s IRGC reasserted routing control over the Strait (vessels must seek
-              clearance or &ldquo;face consequences&rdquo;) and transits collapsed back toward ~5 a day,
-              with several hundred ships still stranded; the U.S. disputes any closure. The brief recovery
-              was also lopsided — the vessels that moved were largely Iranian, rushing crude out under the
-              new U.S. licence, while broader international traffic stayed thin. Crude has fallen regardless
-              (Brent ~$73, WTI below $70) as the market leans on the diplomatic track and ample
-              Atlantic-basin supply. Price and threat lead; the lagging transit data confirms — and right
-              now it points back down.
+              The brief reopening has given way to a strike. On 25 June Iran&apos;s IRGC reasserted routing
+              control over the Strait — only its declared route is permitted, &ldquo;violators will be dealt
+              with&rdquo; — and that evening a container ship (the Singapore-flagged Ever Lovely) was hit by
+              an &ldquo;unknown projectile&rdquo; off Oman on the UN-backed route, sustaining bridge damage
+              (no casualties). A U.S. official attributes the strike to an Iranian drone; Iran has not
+              claimed it. The IMO has suspended the evacuation of stranded ships pending safety guarantees,
+              leaving transits — already near a trickle (~5/day against a ~90–125 norm) — effectively halted.
+              Crude had fallen to ~$73 (WTI below $70) on de-escalation hopes; a confirmed attack on shipping
+              puts that in question. Price and threat lead; the lagging transit data confirms.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
