@@ -111,6 +111,15 @@ export default async function DashboardPage() {
         </span>
       </a>
 
+      {/* Latest flagship — direct flag to the current centrepiece analysis */}
+      <a
+        href="/analysis/oil-crisis-moving-downstream"
+        className="block text-xs text-oil-300 hover:text-white transition"
+      >
+        <span className="font-mono uppercase tracking-widest text-oil-500">Latest</span>{' '}
+        The Oil Crisis Is Not Ending — It Is Moving Downstream →
+      </a>
+
       {/* 1. Status Banner */}
       <section aria-label="EU fuel security status">
         <StatusBanner
