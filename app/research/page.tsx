@@ -140,6 +140,13 @@ export default function ResearchPage() {
         </p>
 
         <div className="grid sm:grid-cols-2 gap-4">
+          <a href="/analysis/oil-crisis-moving-downstream" className="block rounded-lg border border-oil-800 bg-oil-900/30 px-6 py-5 space-y-2 hover:border-oil-600 transition">
+            <h3 className="text-base font-bold text-white">The Crisis Is Moving Downstream</h3>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              Why falling crude prices don&apos;t mean the oil crisis is over — it&apos;s shifting from a single
+              chokepoint into a distributed resilience crisis across refineries, products, tankers and inventories.
+            </p>
+          </a>
           <a href="/analysis/the-missing-barrel-energy-infrastructure-blind-spot" className="block rounded-lg border border-oil-800 bg-oil-900/30 px-6 py-5 space-y-2 hover:border-oil-600 transition">
             <h3 className="text-base font-bold text-white">The Missing Barrel</h3>
             <p className="text-sm text-gray-400 leading-relaxed">
