@@ -91,11 +91,11 @@ export default async function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        tone="alert"
-        headline="Hormuz effectively shut after vessel struck"
-        body="A container ship (the Singapore-flagged Ever Lovely) was hit by an 'unknown projectile' off Oman on 25 June while using the UN-backed transit route — bridge damaged, no casualties; a U.S. official attributes it to an Iranian drone, though Iran has not claimed it. The IMO has suspended the evacuation of stranded ships pending safety guarantees, after Iran's IRGC warned that only its declared route is permitted. With transits already near a trickle, the strait is effectively shut again. Crude had eased to ~$73 on de-escalation hopes; a confirmed strike on shipping puts that in question."
-        linkLabel="What the MOU changes →"
-        linkHref="/analysis/us-iran-mou-fragile-deescalation"
+        tone="update"
+        headline="Hormuz relief crushes crude — but the stress moves downstream"
+        body="Oil flows through the Strait are running at their fastest since the war began — roughly 75% of pre-war levels — and Brent has fallen to about $72 (its lowest since February), WTI below $71, as the market prices returning supply. But it isn't resolution: a cargo ship was struck off Oman and the UN paused its evacuation of stranded vessels, so shipping risk and war-risk insurance remain. And the real pressure has rotated downstream — diesel is tight, refineries are damaged, and power grids are stressed. De-escalation, not all-clear."
+        linkLabel="The crisis is moving downstream →"
+        linkHref="/analysis/oil-crisis-moving-downstream"
       />
 
       {/* Research hub — flagship body of work */}
@@ -331,18 +331,18 @@ export default async function DashboardPage() {
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              Hormuz effectively shut after vessel struck
+              Hormuz: crude relief, stress moving downstream
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              The brief reopening has given way to a strike. On 25 June Iran&apos;s IRGC reasserted routing
-              control over the Strait — only its declared route is permitted, &ldquo;violators will be dealt
-              with&rdquo; — and that evening a container ship (the Singapore-flagged Ever Lovely) was hit by
-              an &ldquo;unknown projectile&rdquo; off Oman on the UN-backed route, sustaining bridge damage
-              (no casualties). A U.S. official attributes the strike to an Iranian drone; Iran has not
-              claimed it. The IMO has suspended the evacuation of stranded ships pending safety guarantees,
-              leaving transits — already near a trickle (~5/day against a ~90–125 norm) — effectively halted.
-              Crude had fallen to ~$73 (WTI below $70) on de-escalation hopes; a confirmed attack on shipping
-              puts that in question. Price and threat lead; the lagging transit data confirms.
+              The crude panic is easing. Oil flows through the Strait are running at their fastest since the
+              war began — about 75% of pre-war levels — and Brent has fallen to ~$72 (its lowest since
+              February), WTI below $71, as the market prices returning supply after the U.S.–Iran framework.
+              But it is de-escalation, not resolution: a cargo ship (the Ever Lovely) was struck off Oman on
+              26 June and the UN paused its evacuation of stranded vessels, so war-risk insurance and
+              shipping caution persist. And the real pressure has rotated downstream — U.S. distillate
+              (diesel) stocks sit ~12M barrels below the five-year average with crack spreads at multi-week
+              highs; Russian refineries are damaged by drone strikes; and Europe&apos;s heatwave is curbing
+              nuclear output. The stress is now in the plumbing — refineries, products, ports and grids.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
