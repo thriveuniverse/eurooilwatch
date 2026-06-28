@@ -91,11 +91,11 @@ export default async function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        tone="update"
-        headline="Hormuz relief crushes crude — but the stress moves downstream"
-        body="Oil flows through the Strait are running at their fastest since the war began — roughly 75% of pre-war levels — and Brent has fallen to about $72 (its lowest since February), WTI below $71, as the market prices returning supply. But it isn't resolution: a cargo ship was struck off Oman and the UN paused its evacuation of stranded vessels, so shipping risk and war-risk insurance remain. And the real pressure has rotated downstream — diesel is tight, refineries are damaged, and power grids are stressed. De-escalation, not all-clear."
-        linkLabel="The crisis is moving downstream →"
-        linkHref="/analysis/oil-crisis-moving-downstream"
+        tone="alert"
+        headline="Hormuz escalates: second tanker hit, U.S. strikes Iran"
+        body="On 27 June an Iranian drone struck a second tanker — the Panama-flagged M/T Kiku, ~2M barrels of crude — and the U.S. launched airstrikes on Iranian air-defence, drone and minelaying sites; Iranian drones also hit Bahrain, and Iran says it struck U.S. sites in the Gulf. The 60-day ceasefire is being violated on both sides. Yet the market is leaning the other way — heavy short positioning is betting the escalation stays contained and supply ample, so crude has not spiked the way the headlines suggest. That gap between the shooting and the price could unwind fast. Active escalation."
+        linkLabel="Live Hormuz timeline →"
+        linkHref="/hormuz-timeline"
       />
 
       {/* Research hub — flagship body of work */}
@@ -331,18 +331,19 @@ export default async function DashboardPage() {
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              Hormuz: crude relief, stress moving downstream
+              Hormuz escalates: second tanker hit, U.S. strikes Iran
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              The crude panic is easing. Oil flows through the Strait are running at their fastest since the
-              war began — about 75% of pre-war levels — and Brent has fallen to ~$72 (its lowest since
-              February), WTI below $71, as the market prices returning supply after the U.S.–Iran framework.
-              But it is de-escalation, not resolution: a cargo ship (the Ever Lovely) was struck off Oman on
-              26 June and the UN paused its evacuation of stranded vessels, so war-risk insurance and
-              shipping caution persist. And the real pressure has rotated downstream — U.S. distillate
-              (diesel) stocks sit ~12M barrels below the five-year average with crack spreads at multi-week
-              highs; Russian refineries are damaged by drone strikes; and Europe&apos;s heatwave is curbing
-              nuclear output. The stress is now in the plumbing — refineries, products, ports and grids.
+              The de-escalation has reversed. On 27 June an Iranian one-way drone struck a second tanker —
+              the Panama-flagged M/T Kiku, carrying about 2 million barrels of crude — near the Strait, and
+              the U.S. answered with airstrikes on Iranian air-defence, surveillance, drone-storage and
+              minelaying sites (CENTCOM). Iranian drones also struck Bahrain, and Iran says it hit U.S. sites
+              in the Gulf — a tit-for-tat that began with the 25 June Ever Lovely strike. The 60-day
+              ceasefire is being violated on both sides. Yet the price is leaning the other way: speculators
+              have built heavy short positions on the de-escalation and ample-supply view (Saudi loadings
+              back, Atlantic-basin barrels flowing), so crude has not spiked despite the strikes. That
+              divergence between the shooting and the price is the danger — if the strikes sustain, those
+              shorts unwind violently. Price and threat lead; right now they disagree.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}

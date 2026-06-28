@@ -5,6 +5,16 @@ excerpt: "A tentative U.S.–Iran memorandum of understanding has shifted Europe
 author: "Jon Kelly"
 ---
 
+## Update — 27 June 2026: open exchange — a second tanker hit, the U.S. strikes Iran
+
+The de-escalation has reversed into a kinetic exchange. On 27 June an Iranian one-way attack drone struck a **second tanker** — the Panama-flagged **M/T Kiku**, carrying more than two million barrels of crude — near the Strait of Hormuz. The U.S. responded with **airstrikes on Iranian targets**: air-defence sites, surveillance and communications infrastructure, drone-storage and **minelaying** capabilities (CENTCOM). Iranian drones also struck **Bahrain**, which condemned the violation of its sovereignty, and Iran said it had **hit U.S. sites in the Gulf** in return. This follows the 25 June strike on the *Ever Lovely* and U.S. strikes the day before — a tit-for-tat in which both sides accuse the other of breaking the 60-day ceasefire.
+
+For the oil market the reaction is split: the renewed war-risk puts a floor under crude, but speculators are heavily short on the de-escalation and ample-supply view, so prices have not spiked the way the strikes might suggest — a divergence that could resolve violently if the exchange sustains. We have moved the homepage alert back to red. Price and threat lead; watch the [Hormuz timeline](/hormuz-timeline) and the [Chokepoint Transit Monitor](/supply).
+
+*Earlier updates and the original 15 June analysis follow.*
+
+---
+
 ## Update — 26 June 2026: a vessel is struck — Hormuz effectively shut again
 
 The stand-off has turned kinetic. After Iran's IRGC reasserted routing control on 25 June, a container ship — the Singapore-flagged *Ever Lovely* — was hit by an **"unknown projectile"** off the coast of Oman that evening while using the UN-backed transit route, sustaining bridge damage (no casualties or spill, per UKMTO). A U.S. official attributes the strike to an **Iranian drone**; Iran has not claimed it. The IMO has **suspended the evacuation of stranded ships** through the Strait pending safety guarantees.
