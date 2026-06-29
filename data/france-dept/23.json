@@ -3,52 +3,52 @@
   "name": "Creuse",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-06-28T18:03:46.101Z",
+  "asOf": "2026-06-29T09:22:03.218Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 32,
+  "stationCount": 31,
   "fuels": {
     "gazole": {
-      "count": 32,
+      "count": 31,
       "mean": 1.909,
-      "median": 1.899,
-      "min": 1.839,
+      "median": 1.889,
+      "min": 1.843,
       "max": 2.122
     },
     "sp95": {
-      "count": 13,
-      "mean": 1.9675,
-      "median": 1.979,
-      "min": 1.889,
+      "count": 12,
+      "mean": 1.9624,
+      "median": 1.969,
+      "min": 1.903,
       "max": 2.04
     },
     "sp98": {
       "count": 21,
-      "mean": 2.0334,
-      "median": 1.999,
-      "min": 1.97,
+      "mean": 2.0347,
+      "median": 2.009,
+      "min": 1.976,
       "max": 2.169
     },
     "e10": {
       "count": 22,
-      "mean": 1.9272,
-      "median": 1.908,
-      "min": 1.86,
+      "mean": 1.9233,
+      "median": 1.901,
+      "min": 1.869,
       "max": 2.069
     },
     "e85": {
-      "count": 8,
-      "mean": 0.8261,
+      "count": 7,
+      "mean": 0.8286,
       "median": 0.809,
       "min": 0.808,
       "max": 0.875
     },
     "gplc": {
-      "count": 2,
-      "mean": 1.0475,
-      "median": 1.0475,
+      "count": 1,
+      "mean": 1.026,
+      "median": 1.026,
       "min": 1.026,
-      "max": 1.069
+      "max": 1.026
     }
   },
   "stations": [
@@ -61,10 +61,9 @@
       "lat": 4608600,
       "lng": 203400,
       "fuels": {
-        "gazole": 1.844,
+        "gazole": 1.875,
         "sp98": 1.991,
-        "e10": 1.901,
-        "e85": 0.809
+        "e10": 1.903
       }
     },
     {
@@ -91,8 +90,8 @@
       "lng": 219300,
       "fuels": {
         "gazole": 1.852,
-        "sp98": 1.999,
-        "e10": 1.907,
+        "sp98": 1.976,
+        "e10": 1.889,
         "e85": 0.809
       }
     },
@@ -188,7 +187,8 @@
       "lat": 4635000,
       "lng": 221500,
       "fuels": {
-        "gazole": 1.919
+        "gazole": 1.849,
+        "e10": 1.869
       }
     },
     {
@@ -242,23 +242,9 @@
       "lat": 4630300,
       "lng": 166900,
       "fuels": {
-        "gazole": 1.839,
-        "sp98": 1.97,
-        "e10": 1.86
-      }
-    },
-    {
-      "id": "23110002",
-      "cp": "23110",
-      "ville": "Évaux-les-Bains",
-      "adresse": "55 Avenue de la République",
-      "pop": "R",
-      "lat": 4616900,
-      "lng": 248300,
-      "fuels": {
-        "gazole": 1.969,
-        "sp95": 2.029,
-        "e10": 1.959
+        "gazole": 1.869,
+        "sp98": 1.991,
+        "e10": 1.879
       }
     },
     {
@@ -298,9 +284,9 @@
       "lat": 4619516,
       "lng": 223891,
       "fuels": {
-        "gazole": 1.859,
-        "sp95": 1.889,
-        "sp98": 1.989
+        "gazole": 1.879,
+        "sp95": 1.909,
+        "sp98": 2.019
       }
     },
     {
@@ -312,8 +298,8 @@
       "lat": 4616200,
       "lng": 187300,
       "fuels": {
-        "gazole": 1.839,
-        "sp95": 1.959,
+        "gazole": 1.869,
+        "sp95": 1.949,
         "e10": 1.885
       }
     },
@@ -340,10 +326,10 @@
       "lat": 4618000,
       "lng": 187600,
       "fuels": {
-        "gazole": 1.843,
-        "sp95": 1.959,
+        "gazole": 1.869,
+        "sp95": 1.949,
         "sp98": 1.991,
-        "e10": 1.899
+        "e10": 1.885
       }
     },
     {
@@ -369,7 +355,7 @@
       "lat": 4623901.92355,
       "lng": 149485.83345,
       "fuels": {
-        "gazole": 1.934,
+        "gazole": 1.922,
         "sp95": 1.99
       }
     },
@@ -496,10 +482,9 @@
       "lat": 4617672.80503,
       "lng": 189791.91985,
       "fuels": {
-        "gazole": 1.839,
-        "e10": 1.885,
-        "e85": 0.809,
-        "gplc": 1.069
+        "gazole": 1.843,
+        "e10": 1.899,
+        "e85": 0.809
       }
     }
   ]

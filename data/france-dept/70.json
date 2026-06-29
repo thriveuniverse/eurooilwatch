@@ -3,21 +3,21 @@
   "name": "Haute-Saône",
   "regionCode": "BFC",
   "regionName": "Bourgogne-Franche-Comté",
-  "asOf": "2026-06-28T18:03:46.101Z",
+  "asOf": "2026-06-29T09:22:03.218Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 56,
   "fuels": {
     "gazole": {
       "count": 55,
-      "mean": 1.8875,
+      "mean": 1.887,
       "median": 1.869,
       "min": 1.828,
-      "max": 1.989
+      "max": 1.969
     },
     "sp95": {
       "count": 17,
-      "mean": 1.9441,
+      "mean": 1.9435,
       "median": 1.93,
       "min": 1.896,
       "max": 2.049
@@ -42,6 +42,13 @@
       "median": 0.809,
       "min": 0.79,
       "max": 0.899
+    },
+    "gplc": {
+      "count": 2,
+      "mean": 1.07,
+      "median": 1.07,
+      "min": 1.07,
+      "max": 1.07
     }
   },
   "stations": [
@@ -81,8 +88,8 @@
       "lat": 4755200,
       "lng": 568700,
       "fuels": {
-        "gazole": 1.929,
-        "sp95": 1.969,
+        "gazole": 1.899,
+        "sp95": 1.959,
         "e85": 0.809
       }
     },
@@ -207,7 +214,7 @@
       "lat": 4755610.8,
       "lng": 567760.1,
       "fuels": {
-        "gazole": 1.989,
+        "gazole": 1.899,
         "sp98": 1.999,
         "e10": 1.949
       }
@@ -303,7 +310,7 @@
       "lat": 4741100,
       "lng": 581900,
       "fuels": {
-        "gazole": 1.859,
+        "gazole": 1.949,
         "sp98": 1.959,
         "e10": 1.859
       }
@@ -416,7 +423,8 @@
       "fuels": {
         "gazole": 1.85,
         "sp95": 1.93,
-        "e10": 1.9
+        "e10": 1.9,
+        "gplc": 1.07
       }
     },
     {
@@ -625,7 +633,8 @@
       "fuels": {
         "gazole": 1.85,
         "sp95": 1.93,
-        "e10": 1.9
+        "e10": 1.9,
+        "gplc": 1.07
       }
     },
     {
