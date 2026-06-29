@@ -91,11 +91,11 @@ export default async function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        tone="alert"
-        headline="Hormuz escalates: second tanker hit, U.S. strikes Iran"
-        body="On 27 June an Iranian drone struck a second tanker — the Panama-flagged M/T Kiku, ~2M barrels of crude — and the U.S. launched airstrikes on Iranian air-defence, drone and minelaying sites; Iranian drones also hit Bahrain, and Iran says it struck U.S. sites in the Gulf. The 60-day ceasefire is being violated on both sides. Yet the market is leaning the other way — heavy short positioning is betting the escalation stays contained and supply ample, so crude has not spiked the way the headlines suggest. That gap between the shooting and the price could unwind fast. Active escalation."
-        linkLabel="Live Hormuz timeline →"
-        linkHref="/hormuz-timeline"
+        tone="update"
+        headline="Energy resilience under pressure: heat, nuclear, products"
+        body="Europe's story is now broader than oil. The heatwave has become an energy-system event — French nuclear output was cut by ~4.1 GW (about 7% of demand) as hot rivers limited reactor cooling, French power exports fell and spot prices spiked. European gasoline exports to the U.S. have dropped to their lowest since 2020 on firmer domestic demand and refinery disruption. The vulnerability is shifting from crude availability to system resilience — heat, power, and product (diesel and jet) tightness."
+        linkLabel="The crisis is moving downstream →"
+        linkHref="/analysis/oil-crisis-moving-downstream"
       />
 
       {/* Research hub — flagship body of work */}
@@ -325,25 +325,26 @@ export default async function DashboardPage() {
         <div className="rounded-lg border border-amber-700/40 bg-amber-950/20 overflow-hidden">
           <div className="px-5 py-3 border-b border-amber-700/30 flex items-center justify-between">
             <h2 className="text-xs font-mono font-semibold tracking-widest text-amber-300 uppercase">
-              Active Supply Disruption
+              Global Oil — Where We Stand
             </h2>
-            <span className="text-[10px] font-mono text-amber-400/70">Active since Feb 2026</span>
+            <span className="text-[10px] font-mono text-amber-400/70">Updated 28 Jun 2026</span>
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              Hormuz escalates: second tanker hit, U.S. strikes Iran
+              Oil prices fall as Hormuz traffic resumes — but U.S. messaging shifts, IRGC leverage, diesel
+              tightness and power-grid stress keep the system on edge
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              The de-escalation has reversed. On 27 June an Iranian one-way drone struck a second tanker —
-              the Panama-flagged M/T Kiku, carrying about 2 million barrels of crude — near the Strait, and
-              the U.S. answered with airstrikes on Iranian air-defence, surveillance, drone-storage and
-              minelaying sites (CENTCOM). Iranian drones also struck Bahrain, and Iran says it hit U.S. sites
-              in the Gulf — a tit-for-tat that began with the 25 June Ever Lovely strike. The 60-day
-              ceasefire is being violated on both sides. Yet the price is leaning the other way: speculators
-              have built heavy short positions on the de-escalation and ample-supply view (Saudi loadings
-              back, Atlantic-basin barrels flowing), so crude has not spiked despite the strikes. That
-              divergence between the shooting and the price is the danger — if the strikes sustain, those
-              shorts unwind violently. Price and threat lead; right now they disagree.
+              The crude panic has eased and Brent is back in the low-$70s (around $72.6, WTI ~$69.8) after a
+              10%+ drop last week. Middle East loadings are restarting under a temporary U.S. sanctions
+              waiver and Hormuz traffic is up toward ~75% of pre-war levels — but volumes remain well below
+              normal, many vessels still go dark, and the IRGC retains real leverage over Iranian exports and
+              strait security. After a sharp 27 June exchange (U.S. strikes on Iran; Iranian missiles and
+              drones at U.S. bases in Bahrain and Kuwait), both sides agreed on 28 June to halt the
+              tit-for-tat and return to talks. A pattern of rapid U.S. messaging shifts — strike threats,
+              cancellations citing &ldquo;productive talks,&rdquo; repeated &ldquo;deal imminent&rdquo; calls
+              that slipped — adds uncertainty. The stress has moved downstream: diesel, refineries, ports,
+              power and shipping risk stay elevated.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
@@ -358,9 +359,23 @@ export default async function DashboardPage() {
             </p>
           </div>
           <div className="px-5 py-2 border-t border-amber-700/20 bg-amber-950/10">
-            <p className="text-[10px] text-gray-600">Sources: Reuters, S&amp;P Global, IEA, U.S. CENTCOM (June 2026).</p>
+            <p className="text-[10px] text-gray-600">Sources: Reuters, U.S. CENTCOM, EIA, IEA (28 June 2026).</p>
           </div>
         </div>
+      </section>
+
+      {/* Big overlooked story — Russia's fuel crunch reaches agriculture */}
+      <section aria-label="Russia fuel shortage" className="rounded-lg border border-oil-800 bg-oil-900/30 px-5 py-4">
+        <p className="text-[10px] font-mono font-semibold tracking-widest text-gray-500 uppercase">Big overlooked story</p>
+        <p className="mt-1 text-sm font-semibold text-white">Russia&apos;s fuel problem reaches agriculture and domestic supply</p>
+        <p className="mt-1 text-xs text-gray-400 leading-relaxed">
+          President Putin has publicly acknowledged fuel shortages in Russian regions, tying them to Ukrainian drone
+          strikes on oil infrastructure and stressing the need to protect supply for agriculture ahead of the harvest.
+          Refinery capacity is sharply reduced (an estimated 20%+ offline), several regions are rationing, and the
+          squeeze is reaching logistics and food systems — the same downstream cascade seen elsewhere: refinery hits →
+          diesel scarcity → agriculture and supply-chain risk.{' '}
+          <a href="/analysis/russia-fuel-shortage-food-logistics" className="text-oil-300 hover:text-white underline underline-offset-2">Read our analysis →</a>
+        </p>
       </section>
 
       {/* Refinery Health Watch — NASA FIRMS thermal anomalies, compact homepage view */}

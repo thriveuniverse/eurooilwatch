@@ -5,6 +5,16 @@ excerpt: "A tentative U.S.–Iran memorandum of understanding has shifted Europe
 author: "Jon Kelly"
 ---
 
+## Update — 28 June 2026: both sides stand down — talks resume
+
+After the 27 June exchange, the United States and Iran agreed to **halt the tit-for-tat strikes** and return to talks (reportedly in Qatar), with a commitment to let shipping flow safely through the Strait. CENTCOM said its 27 June operation hit 10 Iranian military targets; in response the IRGC fired **ballistic missiles and drones at U.S. bases in Bahrain (the Fifth Fleet) and Kuwait (the Ali Al Salem airbase)**, both of which condemned the attacks. The stand-down pulled the situation back from the brink — but the ceasefire is visibly fragile, and the IRGC retains leverage over the Strait.
+
+Oil, tellingly, kept falling: Brent settled near **$72.6 and WTI near $69.8**, down 10%+ on the week, as Hormuz throughput recovered toward ~75% of pre-war levels and the market priced de-escalation and ample supply. The stress has moved downstream — diesel, refineries, ports and power. Price and threat lead; watch the [Hormuz timeline](/hormuz-timeline) and the [Chokepoint Transit Monitor](/supply).
+
+*Earlier updates and the original 15 June analysis follow.*
+
+---
+
 ## Update — 27 June 2026: open exchange — a second tanker hit, the U.S. strikes Iran
 
 The de-escalation has reversed into a kinetic exchange. On 27 June an Iranian one-way attack drone struck a **second tanker** — the Panama-flagged **M/T Kiku**, carrying more than two million barrels of crude — near the Strait of Hormuz. The U.S. responded with **airstrikes on Iranian targets**: air-defence sites, surveillance and communications infrastructure, drone-storage and **minelaying** capabilities (CENTCOM). Iranian drones also struck **Bahrain**, which condemned the violation of its sovereignty, and Iran said it had **hit U.S. sites in the Gulf** in return. This follows the 25 June strike on the *Ever Lovely* and U.S. strikes the day before — a tit-for-tat in which both sides accuse the other of breaking the 60-day ceasefire.
