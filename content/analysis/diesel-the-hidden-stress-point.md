@@ -7,7 +7,7 @@ author: "Jon Kelly"
 
 Crude is having a bad week — and diesel barely noticed.
 
-Brent has fallen to about **$72, its lowest since February**, as Strait of Hormuz flows recover toward roughly 75% of pre-war levels; WTI is below $71. But diesel has not followed it down. The U.S. diesel **crack spread** — the refining margin between crude and diesel — hit a **three-week high** this week, and U.S. distillate inventories sit at about **106 million barrels, roughly 12 million below the five-year average** and the tightest of any refined product (Reuters, EIA). Diesel is falling far less than crude because the scarcity is no longer in the barrel. It is in the fuel.
+Brent has fallen to about **$72, its lowest since February**, as Strait of Hormuz flows recover to their highest since the war began (still well below the ~15M bpd pre-war norm); WTI is below $71. But diesel has not followed it down. The U.S. diesel **crack spread** — the refining margin between crude and diesel — hit a **three-week high** this week, and U.S. distillate inventories sit at about **106 million barrels, roughly 12 million below the five-year average** and the tightest of any refined product (Reuters, EIA). Diesel is falling far less than crude because the scarcity is no longer in the barrel. It is in the fuel.
 
 This is the clearest evidence of the rotation we set out in [The Oil Crisis Is Moving Downstream](/analysis/oil-crisis-moving-downstream): the crude panic is easing while the product crunch persists.
 

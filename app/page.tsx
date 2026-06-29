@@ -337,7 +337,7 @@ export default async function DashboardPage() {
             <p className="text-xs text-gray-400 leading-relaxed">
               The crude panic has eased and Brent is back in the low-$70s (around $72.6, WTI ~$69.8) after a
               10%+ drop last week. Middle East loadings are restarting under a temporary U.S. sanctions
-              waiver and Hormuz traffic is up toward ~75% of pre-war levels — but volumes remain well below
+              waiver and Hormuz oil flows are at their highest since the war began (~4.8M bpd, still only about a third of the ~15M bpd pre-war norm), but volumes remain well below
               normal, many vessels still go dark, and the IRGC retains real leverage over Iranian exports and
               strait security. After a sharp 27 June exchange (U.S. strikes on Iran; Iranian missiles and
               drones at U.S. bases in Bahrain and Kuwait), both sides agreed on 28 June to halt the
