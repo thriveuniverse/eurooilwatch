@@ -142,3 +142,36 @@ export interface RefineryOutageData {
 export function getRefineryOutages(): RefineryOutageData | null {
   return loadJSON<RefineryOutageData>('refinery-outages.json');
 }
+
+// ── EU crude oil import origins (Eurostat NRG_TI_OIL) ──
+export interface EuCrudePartner {
+  name: string;
+  region: string;
+  /** Imports in Mt, keyed by year (e.g. "2024") */
+  mt: Record<string, number>;
+}
+
+export interface EuCrudeImports {
+  meta: {
+    title: string;
+    source: string;
+    source_url: string;
+    api: string;
+    product: string;
+    reporter: string;
+    unit_source: string;
+    conversion: string;
+    /** barrels per tonne used to derive mb/d from Mt */
+    conversion_factor_bbl_per_tonne: number;
+    retrieved: string;
+    note: string;
+  };
+  years: string[];
+  /** Total EU-27 crude imports in Mt, keyed by year */
+  total_mt: Record<string, number>;
+  partners: Record<string, EuCrudePartner>;
+}
+
+export function getEuCrudeImports(): EuCrudeImports | null {
+  return loadJSON<EuCrudeImports>('eu-crude-imports.json');
+}
