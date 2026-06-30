@@ -14,7 +14,9 @@ import ChokepointsMap from '@/components/ChokepointsMap';
 import ChokepointTransitPanel, { type PortwatchData } from '@/components/ChokepointTransitPanel';
 import PortFlowPanel, { type PortFlowData } from '@/components/PortFlowPanel';
 import EuropeBarrelTracker from '@/components/EuropeBarrelTracker';
+import CrudeImportSankey from '@/components/CrudeImportSankey';
 import TankerActivity from '@/components/TankerActivity';
+import { getEuCrudeImports } from '@/lib/data';
 import { maradOverrideFor } from '@/lib/marad-risk';
 
 export const revalidate = 3600;
@@ -291,6 +293,7 @@ export default async function SupplyPage() {
   const bunker = readBunker();
   const marad  = readMarad();
   const crea   = readCrea();
+  const euCrude = getEuCrudeImports();
 
   const chokepoints: Chokepoint[] = (() => {
     const pwPath = path.join(process.cwd(), 'data', 'portwatch-chokepoints.json');
@@ -375,6 +378,9 @@ export default async function SupplyPage() {
 
       {/* Europe Replacement Barrel Tracker — EuroOilWatch only */}
       {portFlows && <EuropeBarrelTracker data={portFlows} />}
+
+      {/* Crude import origins — which barrels feed Europe, by supplier (Eurostat) */}
+      {euCrude && <CrudeImportSankey data={euCrude} />}
 
       {/* Tanker activity — Phase 1: live counts, baselines accumulating */}
       <TankerActivity />
