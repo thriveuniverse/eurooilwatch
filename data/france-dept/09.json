@@ -3,36 +3,36 @@
   "name": "Ariège",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-07-01T08:44:17.090Z",
+  "asOf": "2026-07-01T18:58:46.568Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 31,
   "fuels": {
     "gazole": {
-      "count": 30,
-      "mean": 1.8953,
-      "median": 1.8795,
+      "count": 31,
+      "mean": 1.897,
+      "median": 1.88,
       "min": 1.828,
       "max": 2.007
     },
     "sp95": {
-      "count": 8,
-      "mean": 1.9703,
-      "median": 1.9485,
+      "count": 7,
+      "mean": 1.9546,
+      "median": 1.948,
       "min": 1.935,
-      "max": 2.08
+      "max": 1.997
     },
     "sp98": {
       "count": 25,
-      "mean": 2.0137,
+      "mean": 2.0117,
       "median": 1.99,
       "min": 1.95,
-      "max": 2.1
+      "max": 2.099
     },
     "e10": {
-      "count": 28,
-      "mean": 1.8993,
-      "median": 1.884,
+      "count": 29,
+      "mean": 1.9007,
+      "median": 1.889,
       "min": 1.854,
       "max": 1.99
     },
@@ -52,6 +52,20 @@
     }
   },
   "stations": [
+    {
+      "id": "9300008",
+      "cp": "09300",
+      "ville": "Bélesta",
+      "adresse": "Avenue de Lavelanet",
+      "pop": "R",
+      "lat": 4290776.92662,
+      "lng": 192699.59773,
+      "fuels": {
+        "gazole": 1.927,
+        "sp98": 2.05,
+        "e10": 1.93
+      }
+    },
     {
       "id": "9000003",
       "cp": "09000",
@@ -161,7 +175,7 @@
       "lat": 4292800,
       "lng": 185800,
       "fuels": {
-        "gazole": 1.9,
+        "gazole": 1.95,
         "sp98": 1.95,
         "e10": 1.875
       }
@@ -227,20 +241,6 @@
       }
     },
     {
-      "id": "9500002",
-      "cp": "09500",
-      "ville": "Mirepoix",
-      "adresse": "Avenue Gabriel Faure",
-      "pop": "R",
-      "lat": 4308856,
-      "lng": 186719,
-      "fuels": {
-        "gazole": 1.99,
-        "sp95": 2.08,
-        "sp98": 2.1
-      }
-    },
-    {
       "id": "9140003",
       "cp": "09140",
       "ville": "Oust",
@@ -278,6 +278,7 @@
       "lat": 4312000,
       "lng": 161100,
       "fuels": {
+        "gazole": 1.96,
         "e85": 0.859
       }
     },
@@ -292,7 +293,7 @@
       "fuels": {
         "gazole": 1.845,
         "sp98": 1.975,
-        "e10": 1.855,
+        "e10": 1.865,
         "e85": 0.809
       }
     },
