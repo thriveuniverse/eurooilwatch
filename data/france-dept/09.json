@@ -3,17 +3,17 @@
   "name": "Ariège",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-06-30T18:54:58.909Z",
+  "asOf": "2026-07-01T08:44:17.090Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 32,
+  "stationCount": 31,
   "fuels": {
     "gazole": {
-      "count": 32,
-      "mean": 1.8981,
-      "median": 1.8835,
+      "count": 30,
+      "mean": 1.8953,
+      "median": 1.8795,
       "min": 1.828,
-      "max": 2.003
+      "max": 2.007
     },
     "sp95": {
       "count": 8,
@@ -23,16 +23,16 @@
       "max": 2.08
     },
     "sp98": {
-      "count": 26,
-      "mean": 2.0167,
-      "median": 1.991,
+      "count": 25,
+      "mean": 2.0137,
+      "median": 1.99,
       "min": 1.95,
       "max": 2.1
     },
     "e10": {
-      "count": 30,
-      "mean": 1.9039,
-      "median": 1.889,
+      "count": 28,
+      "mean": 1.8993,
+      "median": 1.884,
       "min": 1.854,
       "max": 1.99
     },
@@ -53,20 +53,6 @@
   },
   "stations": [
     {
-      "id": "9300008",
-      "cp": "09300",
-      "ville": "Bélesta",
-      "adresse": "Avenue de Lavelanet",
-      "pop": "R",
-      "lat": 4290776.92662,
-      "lng": 192699.59773,
-      "fuels": {
-        "gazole": 2.003,
-        "sp98": 2.092,
-        "e10": 1.957
-      }
-    },
-    {
       "id": "9000003",
       "cp": "09000",
       "ville": "Foix",
@@ -75,7 +61,7 @@
       "lat": 4294967.40212,
       "lng": 162517.42883,
       "fuels": {
-        "gazole": 1.99,
+        "gazole": 2.007,
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.849
@@ -221,7 +207,7 @@
         "gazole": 1.843,
         "sp95": 1.935,
         "sp98": 1.972,
-        "e10": 1.859,
+        "e10": 1.864,
         "e85": 0.799
       }
     },
@@ -234,9 +220,9 @@
       "lat": 4308500,
       "lng": 187600,
       "fuels": {
-        "gazole": 1.844,
+        "gazole": 1.861,
         "sp98": 1.99,
-        "e10": 1.883,
+        "e10": 1.873,
         "e85": 0.842
       }
     },
@@ -263,9 +249,9 @@
       "lat": 4288314.17949,
       "lng": 121508.59611,
       "fuels": {
-        "gazole": 1.969,
+        "gazole": 1.986,
         "sp98": 1.99,
-        "e10": 1.99,
+        "e10": 1.983,
         "e85": 0.869
       }
     },
@@ -278,9 +264,9 @@
       "lat": 4310400,
       "lng": 162100,
       "fuels": {
-        "gazole": 1.943,
+        "gazole": 1.96,
         "sp98": 1.99,
-        "e10": 1.969
+        "e10": 1.959
       }
     },
     {
@@ -292,8 +278,6 @@
       "lat": 4312000,
       "lng": 161100,
       "fuels": {
-        "gazole": 1.943,
-        "e10": 1.967,
         "e85": 0.859
       }
     },
@@ -512,7 +496,7 @@
       "fuels": {
         "gazole": 1.845,
         "sp98": 1.975,
-        "e10": 1.855
+        "e10": 1.865
       }
     }
   ]
