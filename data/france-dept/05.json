@@ -3,37 +3,37 @@
   "name": "Hautes-Alpes",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-07-03T07:55:26.114Z",
+  "asOf": "2026-07-03T18:11:29.176Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 42,
+  "stationCount": 41,
   "fuels": {
     "gazole": {
-      "count": 41,
-      "mean": 1.8783,
-      "median": 1.867,
-      "min": 1.79,
+      "count": 40,
+      "mean": 1.8753,
+      "median": 1.868,
+      "min": 1.787,
       "max": 2.09
     },
     "sp95": {
-      "count": 16,
-      "mean": 1.954,
+      "count": 15,
+      "mean": 1.9419,
       "median": 1.949,
-      "min": 1.889,
+      "min": 1.863,
       "max": 2.08
     },
     "sp98": {
-      "count": 31,
-      "mean": 1.9683,
-      "median": 1.979,
-      "min": 1.888,
+      "count": 29,
+      "mean": 1.9603,
+      "median": 1.974,
+      "min": 1.87,
       "max": 2.11
     },
     "e10": {
       "count": 31,
-      "mean": 1.8705,
-      "median": 1.879,
-      "min": 1.788,
+      "mean": 1.8657,
+      "median": 1.872,
+      "min": 1.78,
       "max": 1.969
     },
     "e85": {
@@ -44,11 +44,11 @@
       "max": 0.89
     },
     "gplc": {
-      "count": 3,
-      "mean": 1.0153,
-      "median": 1.019,
+      "count": 4,
+      "mean": 1.0613,
+      "median": 1.0235,
       "min": 0.999,
-      "max": 1.028
+      "max": 1.199
     }
   },
   "stations": [
@@ -216,10 +216,10 @@
       "lat": 4467200,
       "lng": 661800,
       "fuels": {
-        "gazole": 1.849,
-        "sp95": 1.949,
-        "sp98": 1.979,
-        "e10": 1.879
+        "gazole": 1.803,
+        "sp95": 1.863,
+        "sp98": 1.903,
+        "e10": 1.797
       }
     },
     {
@@ -260,8 +260,8 @@
       "lat": 4456400,
       "lng": 608400,
       "fuels": {
-        "gazole": 1.797,
-        "sp98": 1.897,
+        "gazole": 1.79,
+        "sp98": 1.888,
         "e10": 1.791
       }
     },
@@ -274,8 +274,8 @@
       "lat": 4457000,
       "lng": 610500,
       "fuels": {
-        "gazole": 1.798,
-        "sp98": 1.897,
+        "gazole": 1.789,
+        "sp98": 1.888,
         "e10": 1.792,
         "gplc": 1.028
       }
@@ -333,9 +333,9 @@
       "lat": 4456400,
       "lng": 609400,
       "fuels": {
-        "gazole": 1.79,
-        "sp98": 1.888,
-        "e10": 1.798,
+        "gazole": 1.787,
+        "sp98": 1.87,
+        "e10": 1.78,
         "e85": 0.767
       }
     },
@@ -348,9 +348,9 @@
       "lat": 4466100,
       "lng": 661800,
       "fuels": {
-        "gazole": 1.849,
-        "sp95": 1.949,
-        "sp98": 1.979
+        "gazole": 1.803,
+        "sp95": 1.863,
+        "sp98": 1.903
       }
     },
     {
@@ -403,9 +403,9 @@
       "lat": 4494200,
       "lng": 656900,
       "fuels": {
-        "gazole": 1.859,
-        "sp95": 1.925,
-        "sp98": 1.919
+        "gazole": 1.879,
+        "sp95": 1.929,
+        "sp98": 1.955
       }
     },
     {
@@ -472,9 +472,9 @@
       "lat": 4493400,
       "lng": 673300,
       "fuels": {
-        "gazole": 1.857,
-        "sp98": 2.02,
-        "e10": 1.939,
+        "gazole": 1.859,
+        "sp98": 1.999,
+        "e10": 1.889,
         "e85": 0.89
       }
     },
@@ -489,7 +489,8 @@
       "fuels": {
         "gazole": 1.879,
         "sp98": 1.979,
-        "e10": 1.899
+        "e10": 1.899,
+        "gplc": 1.199
       }
     },
     {
@@ -548,20 +549,6 @@
       }
     },
     {
-      "id": "5700002",
-      "cp": "05700",
-      "ville": "Serres",
-      "adresse": "RD 1075- quartier les Chambons",
-      "pop": "R",
-      "lat": 4443500,
-      "lng": 571300,
-      "fuels": {
-        "gazole": 1.908,
-        "sp95": 1.968,
-        "sp98": 1.998
-      }
-    },
-    {
       "id": "5130002",
       "cp": "05130",
       "ville": "Tallard",
@@ -585,7 +572,6 @@
       "lng": 605000,
       "fuels": {
         "gazole": 1.899,
-        "sp98": 1.999,
         "e10": 1.929
       }
     },
