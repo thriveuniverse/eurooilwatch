@@ -91,11 +91,11 @@ export default async function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        tone="update"
-        headline="Energy resilience under pressure: heat, nuclear, products"
-        body="Europe's story is now broader than oil. The heatwave has become an energy-system event — French nuclear output was cut by ~4.1 GW (about 7% of demand) as hot rivers limited reactor cooling, French power exports fell and spot prices spiked. European gasoline exports to the U.S. have dropped to their lowest since 2020 on firmer domestic demand and refinery disruption. The vulnerability is shifting from crude availability to system resilience — heat, power, and product (diesel and jet) tightness."
-        linkLabel="The crisis is moving downstream →"
-        linkHref="/analysis/oil-crisis-moving-downstream"
+        tone="alert"
+        headline="Escalation risk: this week is the flashpoint"
+        body="Crude has fallen to ~$71 (lowest since 27 February) on a glut of previously stranded Gulf barrels — but the market has priced out the geopolitical premium faster than the risk has receded. Vectors are converging on the 4–9 July window: a US–Iran ceasefire negotiators concede is more likely to collapse than hold (Axios); a hardening US build-up (USS Boxer in-theatre, three carrier groups, ~50,000 personnel, the 82nd Airborne ordered from Fort Bragg); a Houthi ban on Israeli-linked Red Sea shipping since 8 June squeezing Bab-el-Mandeb while Hormuz stays contested; and the 4–9 July Khamenei funeral, with Israel having declared his successor 'marked for death'. A confirmed trigger would re-price oil sharply — products and freight first."
+        linkLabel="Supply routes & escalation →"
+        linkHref="/supply"
       />
 
       {/* Research hub — flagship body of work */}
