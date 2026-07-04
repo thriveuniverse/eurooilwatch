@@ -92,10 +92,10 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <DisruptionBanner
         tone="alert"
-        headline="Escalation risk: this week is the flashpoint"
-        body="Crude has fallen to ~$71 (lowest since 27 February) on a glut of previously stranded Gulf barrels — but the market has priced out the geopolitical premium faster than the risk has receded. Vectors are converging on the 4–9 July window: a US–Iran ceasefire negotiators concede is more likely to collapse than hold (Axios); a hardening US build-up (USS Boxer in-theatre, three carrier groups, ~50,000 personnel, the 82nd Airborne ordered from Fort Bragg); a Houthi ban on Israeli-linked Red Sea shipping since 8 June squeezing Bab-el-Mandeb while Hormuz stays contested; and the 4–9 July Khamenei funeral, with Israel having declared his successor 'marked for death'. A confirmed trigger would re-price oil sharply — products and freight first. Meanwhile the UK and France are leading a multinational mine-clearance mission to reopen the strait — French minehunters and frigates and the Royal Navy's RFA Lyme Bay — even as France returns its carrier Charles de Gaulle to Toulon — though Iran rejects any foreign mine-clearance, insisting it will clear the strait alone and that passage stays conditional on Tehran."
-        linkLabel="Supply routes & escalation →"
-        linkHref="/supply"
+        headline="A low oil price is not safety"
+        body="Crude is pricing a glut while Hormuz stays unsafe and Europe's diesel tightens. Brent has slipped to ~$71.94 — into contango — as stranded Gulf barrels finally sail, but that backlog is nearly exhausted (Kpler), Gulf exports are still ~40% below normal, major lines like CMA CGM won't return, and JMIC still rates the Hormuz threat 'substantial'. Meanwhile Russia weighs a diesel-export ban and European diesel margins have topped $46/bbl — a cheaper barrel that may not reach the pump. Escalation risk around the 4–9 July funeral window remains live."
+        linkLabel="The two-speed reopening →"
+        linkHref="/analysis/low-oil-price-is-not-safety"
       />
 
       {/* Research hub — flagship body of work */}
