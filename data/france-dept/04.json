@@ -3,42 +3,42 @@
   "name": "Alpes-de-Haute-Provence",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-07-06T08:55:01.629Z",
+  "asOf": "2026-07-06T18:53:40.173Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 49,
+  "stationCount": 50,
   "fuels": {
     "gazole": {
       "count": 48,
-      "mean": 1.9113,
-      "median": 1.894,
+      "mean": 1.9125,
+      "median": 1.8985,
       "min": 1.809,
-      "max": 2.12
+      "max": 2.1
     },
     "sp95": {
-      "count": 12,
-      "mean": 1.9762,
-      "median": 1.9575,
+      "count": 13,
+      "mean": 1.9772,
+      "median": 1.959,
       "min": 1.929,
       "max": 2.15
     },
     "sp98": {
-      "count": 37,
-      "mean": 1.9812,
+      "count": 39,
+      "mean": 1.9824,
       "median": 1.989,
       "min": 1.9,
       "max": 2.169
     },
     "e10": {
       "count": 38,
-      "mean": 1.8962,
+      "mean": 1.8974,
       "median": 1.885,
       "min": 1.823,
       "max": 2.069
     },
     "e85": {
-      "count": 14,
-      "mean": 0.8514,
+      "count": 15,
+      "mean": 0.8485,
       "median": 0.829,
       "min": 0.779,
       "max": 0.998
@@ -61,7 +61,9 @@
       "lat": 4426338,
       "lng": 664132,
       "fuels": {
-        "gazole": 2.12
+        "gazole": 1.99,
+        "sp95": 1.99,
+        "sp98": 2.07
       }
     },
     {
@@ -158,9 +160,9 @@
       "lat": 4407461.64721,
       "lng": 599264.32546,
       "fuels": {
-        "gazole": 1.843,
-        "sp98": 1.919,
-        "e10": 1.849,
+        "gazole": 1.86,
+        "sp98": 1.949,
+        "e10": 1.859,
         "e85": 0.779
       }
     },
@@ -173,8 +175,8 @@
       "lat": 4410700,
       "lng": 600500,
       "fuels": {
-        "gazole": 1.843,
-        "e10": 1.849
+        "gazole": 1.86,
+        "e10": 1.859
       }
     },
     {
@@ -229,7 +231,6 @@
       "lat": 4408960,
       "lng": 623748,
       "fuels": {
-        "gazole": 1.899,
         "sp95": 1.956,
         "e10": 1.89
       }
@@ -287,9 +288,10 @@
       "lat": 4395817,
       "lng": 579229,
       "fuels": {
-        "gazole": 1.859,
+        "gazole": 1.899,
         "sp98": 1.979,
-        "e10": 1.869
+        "e10": 1.869,
+        "e85": 0.809
       }
     },
     {
@@ -302,6 +304,7 @@
       "lng": 577100,
       "fuels": {
         "gazole": 1.824,
+        "sp98": 1.907,
         "e10": 1.823
       }
     },
@@ -513,9 +516,9 @@
       "lat": 4392229.97642,
       "lng": 591433.81366,
       "fuels": {
-        "gazole": 1.966,
+        "gazole": 1.979,
         "sp98": 1.99,
-        "e10": 1.949
+        "e10": 1.976
       }
     },
     {
@@ -616,6 +619,18 @@
       }
     },
     {
+      "id": "4400004",
+      "cp": "04400",
+      "ville": "Saint-Pons",
+      "adresse": "Terres Neuves. St Pons",
+      "pop": "R",
+      "lat": 4438700,
+      "lng": 662900,
+      "fuels": {
+        "gazole": 1.959
+      }
+    },
+    {
       "id": "4140001",
       "cp": "04140",
       "ville": "Seyne",
@@ -638,7 +653,7 @@
       "lat": 4419200,
       "lng": 594500,
       "fuels": {
-        "gazole": 1.817,
+        "gazole": 1.856,
         "sp98": 1.9,
         "e10": 1.834
       }
