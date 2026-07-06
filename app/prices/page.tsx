@@ -8,6 +8,7 @@ import BrentHistoryChart from '@/components/BrentHistoryChart';
 import BrentHistoricalContext from '@/components/BrentHistoricalContext';
 import EUPriceHistoryChart from '@/components/EUPriceHistoryChart';
 import JsonLd from '@/components/JsonLd';
+import CrackSpreadPanel, { type CrackData } from '@/components/CrackSpreadPanel';
 
 export const metadata: Metadata = {
   title: 'EU Fuel Prices — Heatmap & Comparison',
@@ -34,6 +35,7 @@ export default function PricesPage() {
     allTimeLow:  { date: string; priceUsd: number };
   }>('brent-eia-daily.json');
   const liveBrent = readHistory<{ priceUsd: number }>('brent.json');
+  const crack = readHistory<CrackData>('crack.json');
 
   return (
     <div className="space-y-6">
@@ -77,6 +79,9 @@ export default function PricesPage() {
           livePriceUsd={liveBrent?.priceUsd}
         />
       )}
+
+      {/* Brent 3-2-1 refining margin */}
+      {crack && crack.history?.length > 1 && <CrackSpreadPanel data={crack} />}
 
       {/* Sortable table */}
       <section className="rounded-lg border border-oil-800 bg-oil-900/30 overflow-hidden">
