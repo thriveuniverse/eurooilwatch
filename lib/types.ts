@@ -97,6 +97,7 @@ export interface BrentData {
   lastUpdated: string;
   priceUsd: number;
   priceEur: number;
+  eurUsd?: number; // live USD-per-EUR used for the priceEur conversion
   changeUsd: number;
   changePct: number;
   dataSource: string;

@@ -18,7 +18,7 @@ import { BrentData } from '../lib/types';
 
 const OUTPUT_FILE  = path.join(__dirname, '..', 'data', 'brent.json');
 const HISTORY_FILE = path.join(__dirname, '..', 'data', 'brent-history.json');
-const EUR_USD      = 0.92;
+const EUR_USD_FALLBACK = 1.087; // USD per EUR — used only if the live FX fetch fails (matches fetch-gas.ts)
 
 interface HistoryEntry { date: string; priceUsd: number; priceEur: number; }
 interface BrentHistory { lastUpdated: string; entries: HistoryEntry[]; }
@@ -70,6 +70,30 @@ async function fetchFromYahoo(): Promise<number | null> {
   }
 }
 
+async function fetchEurUsd(): Promise<number | null> {
+  // Live EUR/USD (USD per EUR) from Yahoo — the SAME source fetch-gas.ts uses,
+  // so every EUR figure on the site reconciles to one rate. This was previously
+  // a hardcoded 0.92, which drifted ~5% from the live market rate.
+  console.log('💱 Fetching live EUR/USD (EURUSD=X)...');
+  try {
+    const res = await fetch(
+      'https://query1.finance.yahoo.com/v8/finance/chart/EURUSD=X?interval=1d&range=5d',
+      { headers: { 'User-Agent': 'EuroOilWatch/0.1' } }
+    );
+    if (!res.ok) return null;
+    const data = await res.json();
+    const closes = (data?.chart?.result?.[0]?.indicators?.quote?.[0]?.close ?? []).filter((c: any) => c != null);
+    if (closes.length === 0) return null;
+    const rate = closes[closes.length - 1];
+    if (!isFinite(rate) || rate < 0.5 || rate > 2) return null;
+    console.log(`  ✅ EUR/USD: ${rate.toFixed(4)}`);
+    return rate;
+  } catch (err: any) {
+    console.log(`  ⚠️ EUR/USD fetch failed: ${err.message} — using fallback ${EUR_USD_FALLBACK}`);
+    return null;
+  }
+}
+
 function getPreviousClose(today: string): { price: number; date: string } | null {
   if (!fs.existsSync(HISTORY_FILE)) return null;
   try {
@@ -115,7 +139,8 @@ async function main() {
 
   const today    = new Date().toISOString().slice(0, 10);
   const prev     = getPreviousClose(today);
-  const priceEur = Math.round(priceUsd * EUR_USD * 100) / 100;
+  const eurUsd   = await fetchEurUsd() ?? EUR_USD_FALLBACK;
+  const priceEur = Math.round((priceUsd / eurUsd) * 100) / 100;
 
   let changeUsd = 0;
   let changePct = 0;
@@ -133,6 +158,7 @@ async function main() {
     lastUpdated: new Date().toISOString(),
     priceUsd:    Math.round(priceUsd * 100) / 100,
     priceEur,
+    eurUsd:      Math.round(eurUsd * 10000) / 10000,
     changeUsd,
     changePct,
     dataSource:  'Stooq (cb.f front-month)',
@@ -140,7 +166,7 @@ async function main() {
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(data, null, 2));
   console.log(`\n✅ Written to ${OUTPUT_FILE}`);
-  console.log(`   Brent: $${data.priceUsd} / €${data.priceEur} (${changeUsd >= 0 ? '+' : ''}${changeUsd} USD, ${changePct >= 0 ? '+' : ''}${changePct}%)`);
+  console.log(`   Brent: $${data.priceUsd} / €${data.priceEur} @ EUR/USD ${data.eurUsd} (${changeUsd >= 0 ? '+' : ''}${changeUsd} USD, ${changePct >= 0 ? '+' : ''}${changePct}%)`);
 
   await updateBrentHistory(data.priceUsd, data.priceEur);
 }

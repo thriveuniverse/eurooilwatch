@@ -16,6 +16,22 @@ function readSpot(): SpotPhysical | null {
   try { return JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { return null; }
 }
 
+// Single source of truth for EUR/USD: the live rate written by the daily
+// fetchers. gas.json (fetch-gas) and brent.json (fetch-brent) both pull the
+// same Yahoo EURUSD=X, so every EUR figure on the site reconciles to one rate.
+// Falls back to the stored editorial priceEur only if neither file has it.
+function liveEurUsd(): number | null {
+  for (const f of ['gas.json', 'brent.json']) {
+    try {
+      const p = path.join(process.cwd(), 'data', f);
+      if (!fs.existsSync(p)) continue;
+      const rate = JSON.parse(fs.readFileSync(p, 'utf-8'))?.eurUsd;
+      if (typeof rate === 'number' && rate > 0.5 && rate < 2) return rate;
+    } catch { /* try next */ }
+  }
+  return null;
+}
+
 interface Props {
   brentUsd?: number;
 }
@@ -23,6 +39,9 @@ interface Props {
 export default function PhysicalSpotPanel({ brentUsd }: Props) {
   const spot = readSpot();
   if (!spot) return null;
+  // Convert the USD editorial estimate at the live rate so €/$ never disagree.
+  const eurUsd = liveEurUsd();
+  const priceEur = eurUsd ? Math.round(spot.priceUsd / eurUsd) : spot.priceEur;
   const premiumPct = brentUsd && brentUsd > 0
     ? ((spot.priceUsd - brentUsd) / brentUsd) * 100
     : null;
@@ -35,7 +54,7 @@ export default function PhysicalSpotPanel({ brentUsd }: Props) {
             Physical NWE Crude — Editorial Estimate
           </p>
           <div className="mt-2 flex items-baseline gap-2 flex-wrap">
-            <span className="text-2xl font-bold text-white font-mono">€{spot.priceEur}</span>
+            <span className="text-2xl font-bold text-white font-mono">€{priceEur}</span>
             <span className="text-sm text-gray-400">/bbl</span>
             <span className="text-sm text-gray-500 font-mono">· ${spot.priceUsd}</span>
           </div>
