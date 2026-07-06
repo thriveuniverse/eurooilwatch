@@ -58,6 +58,10 @@ jobs:
         run: npm run fetch:crack
         continue-on-error: true
 
+      - name: Fetch European gasoil (diesel) crack
+        run: npm run fetch:gasoil
+        continue-on-error: true
+
       - name: Fetch sea-state at shipping chokepoints
         run: npm run fetch:sea-state
         continue-on-error: true
