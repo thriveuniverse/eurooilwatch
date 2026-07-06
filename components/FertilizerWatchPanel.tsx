@@ -52,7 +52,7 @@ export default function FertilizerWatchPanel() {
             <div className="flex items-baseline justify-between gap-2 flex-wrap">
               <span className="text-sm font-semibold text-white">{r.product}</span>
               <span className={`text-[10px] font-mono uppercase tracking-wider ${wowColor(r.wow)}`}>
-                w/w {r.wow}
+                {r.wow}
               </span>
             </div>
             <div className="mt-1 text-[10px] font-mono text-gray-500">{r.benchmark}</div>
