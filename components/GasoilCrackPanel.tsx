@@ -106,6 +106,11 @@ export default function GasoilCrackPanel({ data }: { data: GasoilData }) {
           A wide crack means diesel is holding its value even as crude falls, so pump prices need not
           follow crude down. Unlike the 3-2-1 above, this is a traded European benchmark, not a proxy.
         </p>
+        <p className="mt-2 text-[10px] leading-relaxed text-amber-500/70">
+          Gross paper margin vs Brent — a refiner's cash margin runs lower after sour-crude
+          differentials and energy/hydrogen costs. Read it as a diesel-tightness gauge.{' '}
+          <a href="/analysis/record-crack-is-not-record-profit" className="underline hover:text-amber-400">Why →</a>
+        </p>
         <p className="mt-2 text-[10px] font-mono text-gray-600">
           {data.dataSource} · latest {data.latestDate}
         </p>
