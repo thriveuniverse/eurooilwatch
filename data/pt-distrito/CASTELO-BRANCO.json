@@ -3,26 +3,39 @@
   "name": "Castelo Branco",
   "regionCode": "C",
   "regionName": "Centro",
-  "asOf": "2026-07-05T18:01:28.585Z",
+  "asOf": "2026-07-06T08:55:31.439Z",
   "source": "https://precoscombustiveis.dgeg.gov.pt/",
-  "stationCount": 45,
+  "stationCount": 60,
   "fuels": {
     "gazole": {
-      "count": 43,
-      "mean": 1.8189,
-      "median": 1.829,
+      "count": 58,
+      "mean": 1.8397,
+      "median": 1.849,
       "min": 1.659,
-      "max": 1.948
+      "max": 1.949
     },
     "sp95": {
-      "count": 45,
-      "mean": 1.9117,
-      "median": 1.919,
-      "min": 1.769,
-      "max": 2.02
+      "count": 60,
+      "mean": 1.9266,
+      "median": 1.937,
+      "min": 1.759,
+      "max": 2.04
     }
   },
   "stations": [
+    {
+      "id": "94582",
+      "cp": "6250-076",
+      "ville": "Belmonte",
+      "adresse": "e. n. 18, Km 24,100 - Ginjal",
+      "brand": "Galp",
+      "lat": 40.37086,
+      "lng": -7.34567,
+      "fuels": {
+        "gazole": 1.859,
+        "sp95": 1.937
+      }
+    },
     {
       "id": "86466",
       "cp": "6520-111",
@@ -32,8 +45,8 @@
       "lat": 40.299593,
       "lng": -7.365259,
       "fuels": {
-        "gazole": 1.834,
-        "sp95": 1.919
+        "gazole": 1.857,
+        "sp95": 1.939
       }
     },
     {
@@ -62,16 +75,16 @@
       }
     },
     {
-      "id": "69060",
-      "cp": "6005-999",
-      "ville": "Castelo Branco",
-      "adresse": "a23, Km 127, Sublanço Castelo branco, apt. 86",
-      "brand": "Moeve",
-      "lat": 39.88884,
-      "lng": -7.48802,
+      "id": "67091",
+      "cp": "6250-020",
+      "ville": "Belmonte",
+      "adresse": "Varanda De Pilatos",
+      "brand": "Intermarché",
+      "lat": 40.36175,
+      "lng": -7.34262,
       "fuels": {
-        "gazole": 1.904,
-        "sp95": 2.001
+        "gazole": 1.669,
+        "sp95": 1.759
       }
     },
     {
@@ -84,7 +97,33 @@
       "lng": -7.487027,
       "fuels": {
         "gazole": 1.904,
-        "sp95": 2.001
+        "sp95": 1.999
+      }
+    },
+    {
+      "id": "69060",
+      "cp": "6005-999",
+      "ville": "Castelo Branco",
+      "adresse": "a23, Km 127, Sublanço Castelo branco, apt. 86",
+      "brand": "Moeve",
+      "lat": 39.88884,
+      "lng": -7.48802,
+      "fuels": {
+        "gazole": 1.904,
+        "sp95": 1.999
+      }
+    },
+    {
+      "id": "68779",
+      "cp": "6000-082",
+      "ville": "Castelo Branco",
+      "adresse": "av. Infante De Sagres",
+      "brand": "Galp",
+      "lat": 39.81659,
+      "lng": -7.50138,
+      "fuels": {
+        "gazole": 1.834,
+        "sp95": 1.917
       }
     },
     {
@@ -109,8 +148,8 @@
       "lat": 39.83191,
       "lng": -7.4968,
       "fuels": {
-        "gazole": 1.809,
-        "sp95": 1.899
+        "gazole": 1.834,
+        "sp95": 1.917
       }
     },
     {
@@ -122,8 +161,8 @@
       "lat": 39.857197,
       "lng": -7.459347,
       "fuels": {
-        "gazole": 1.824,
-        "sp95": 1.909
+        "gazole": 1.847,
+        "sp95": 1.929
       }
     },
     {
@@ -135,8 +174,47 @@
       "lat": 39.91574,
       "lng": -7.4651,
       "fuels": {
-        "gazole": 1.739,
-        "sp95": 1.849
+        "gazole": 1.759,
+        "sp95": 1.859
+      }
+    },
+    {
+      "id": "91326",
+      "cp": "6000-050",
+      "ville": "Castelo Branco",
+      "adresse": "Estrada Nacional 18, Km 108.255 - Cruz Do Montalvão",
+      "brand": "Bp",
+      "lat": 39.808372,
+      "lng": -7.511121,
+      "fuels": {
+        "gazole": 1.834,
+        "sp95": 1.909
+      }
+    },
+    {
+      "id": "93158",
+      "cp": "6000-082",
+      "ville": "Castelo Branco",
+      "adresse": "Estrada Nacional 233, Km 108.2 - Cruz De Montalvão",
+      "brand": "Galp",
+      "lat": 39.831863,
+      "lng": -7.480762,
+      "fuels": {
+        "gazole": 1.834,
+        "sp95": 1.917
+      }
+    },
+    {
+      "id": "65885",
+      "cp": "6000-170",
+      "ville": "Castelo Branco",
+      "adresse": "Rua Da Mina",
+      "brand": "Bp",
+      "lat": 39.830833,
+      "lng": -7.495811,
+      "fuels": {
+        "gazole": 1.834,
+        "sp95": 1.909
       }
     },
     {
@@ -148,8 +226,8 @@
       "lat": 39.806209,
       "lng": -7.512566,
       "fuels": {
-        "gazole": 1.804,
-        "sp95": 1.889
+        "gazole": 1.827,
+        "sp95": 1.909
       }
     },
     {
@@ -161,8 +239,8 @@
       "lat": 39.80939,
       "lng": -7.52527,
       "fuels": {
-        "gazole": 1.709,
-        "sp95": 1.809
+        "gazole": 1.729,
+        "sp95": 1.819
       }
     },
     {
@@ -174,8 +252,8 @@
       "lat": 39.81447,
       "lng": -7.521308,
       "fuels": {
-        "gazole": 1.709,
-        "sp95": 1.809
+        "gazole": 1.739,
+        "sp95": 1.829
       }
     },
     {
@@ -200,8 +278,8 @@
       "lat": 39.80789,
       "lng": -7.51844,
       "fuels": {
-        "gazole": 1.718,
-        "sp95": 1.815
+        "gazole": 1.743,
+        "sp95": 1.833
       }
     },
     {
@@ -226,7 +304,7 @@
       "lat": 40.29479,
       "lng": -7.48117,
       "fuels": {
-        "sp95": 1.919
+        "sp95": 1.929
       }
     },
     {
@@ -238,8 +316,8 @@
       "lat": 40.23535,
       "lng": -7.52772,
       "fuels": {
-        "gazole": 1.86,
-        "sp95": 2.02
+        "gazole": 1.89,
+        "sp95": 2.04
       }
     },
     {
@@ -251,8 +329,8 @@
       "lat": 40.26687,
       "lng": -7.49996,
       "fuels": {
-        "gazole": 1.834,
-        "sp95": 1.919
+        "gazole": 1.857,
+        "sp95": 1.939
       }
     },
     {
@@ -269,6 +347,19 @@
       }
     },
     {
+      "id": "94496",
+      "cp": "6200-251",
+      "ville": "Covilhã",
+      "adresse": "Quinta Do Alvito",
+      "brand": "Galp",
+      "lat": 40.264874,
+      "lng": -7.491277,
+      "fuels": {
+        "gazole": 1.859,
+        "sp95": 1.937
+      }
+    },
+    {
       "id": "66417",
       "cp": "6200-053",
       "ville": "Covilhã",
@@ -277,8 +368,21 @@
       "lat": 40.279561,
       "lng": -7.5022,
       "fuels": {
-        "gazole": 1.709,
-        "sp95": 1.789
+        "gazole": 1.734,
+        "sp95": 1.807
+      }
+    },
+    {
+      "id": "69855",
+      "cp": "6200-161",
+      "ville": "Covilhã",
+      "adresse": "Sítio Da Palmatória",
+      "brand": "Bp",
+      "lat": 40.275993,
+      "lng": -7.505951,
+      "fuels": {
+        "gazole": 1.899,
+        "sp95": 1.979
       }
     },
     {
@@ -291,7 +395,7 @@
       "lng": -7.486373,
       "fuels": {
         "gazole": 1.904,
-        "sp95": 2.001
+        "sp95": 1.999
       }
     },
     {
@@ -304,7 +408,20 @@
       "lng": -7.488123,
       "fuels": {
         "gazole": 1.904,
-        "sp95": 2.001
+        "sp95": 1.999
+      }
+    },
+    {
+      "id": "65920",
+      "cp": "6234-909",
+      "ville": "Fundão",
+      "adresse": "av. Da Liberdade",
+      "brand": "Bp",
+      "lat": 40.14067,
+      "lng": -7.49803,
+      "fuels": {
+        "gazole": 1.899,
+        "sp95": 1.979
       }
     },
     {
@@ -316,8 +433,8 @@
       "lat": 40.09677,
       "lng": -7.46729,
       "fuels": {
-        "gazole": 1.874,
-        "sp95": 1.964
+        "gazole": 1.899,
+        "sp95": 1.982
       }
     },
     {
@@ -373,6 +490,32 @@
       }
     },
     {
+      "id": "66907",
+      "cp": "6060-621",
+      "ville": "Idanha-A-Nova",
+      "adresse": "En 233 - Km 87,845 - Ponte De São Gens",
+      "brand": "Bp",
+      "lat": 39.97335,
+      "lng": -7.34772,
+      "fuels": {
+        "gazole": 1.949,
+        "sp95": 2.009
+      }
+    },
+    {
+      "id": "88899",
+      "cp": "6060-302",
+      "ville": "Idanha-A-Nova",
+      "adresse": "En 239 - Km 36,4",
+      "brand": "Bp",
+      "lat": 40.03261,
+      "lng": -7.0094,
+      "fuels": {
+        "gazole": 1.889,
+        "sp95": 1.969
+      }
+    },
+    {
       "id": "77814",
       "cp": "6060-715",
       "ville": "Idanha-A-Nova",
@@ -381,8 +524,8 @@
       "lat": 39.933403,
       "lng": -7.238221,
       "fuels": {
-        "gazole": 1.739,
-        "sp95": 1.849
+        "gazole": 1.759,
+        "sp95": 1.859
       }
     },
     {
@@ -394,8 +537,34 @@
       "lat": 39.93026,
       "lng": -7.24106,
       "fuels": {
-        "gazole": 1.739,
-        "sp95": 1.849
+        "gazole": 1.759,
+        "sp95": 1.859
+      }
+    },
+    {
+      "id": "67052",
+      "cp": "6160-301",
+      "ville": "Oleiros",
+      "adresse": "En 238",
+      "brand": "Galp",
+      "lat": 39.917868,
+      "lng": -7.908097,
+      "fuels": {
+        "gazole": 1.893,
+        "sp95": 1.983
+      }
+    },
+    {
+      "id": "68823",
+      "cp": "6185-303",
+      "ville": "Oleiros",
+      "adresse": "Lugar Da Costa",
+      "brand": "Freitas",
+      "lat": 40.0257,
+      "lng": -7.79607,
+      "fuels": {
+        "gazole": 1.893,
+        "sp95": 1.983
       }
     },
     {
@@ -407,8 +576,8 @@
       "lat": 40.10869,
       "lng": -7.223459,
       "fuels": {
-        "gazole": 1.824,
-        "sp95": 1.914
+        "gazole": 1.849,
+        "sp95": 1.932
       }
     },
     {
@@ -446,8 +615,8 @@
       "lat": 39.74906,
       "lng": -7.9174,
       "fuels": {
-        "gazole": 1.803,
-        "sp95": 1.855
+        "gazole": 1.743,
+        "sp95": 1.833
       }
     },
     {
@@ -459,8 +628,8 @@
       "lat": 39.773824,
       "lng": -7.847984,
       "fuels": {
-        "gazole": 1.844,
-        "sp95": 1.929
+        "gazole": 1.867,
+        "sp95": 1.949
       }
     },
     {
@@ -485,8 +654,8 @@
       "lat": 39.90387,
       "lng": -8.131163,
       "fuels": {
-        "gazole": 1.864,
-        "sp95": 1.954
+        "gazole": 1.889,
+        "sp95": 1.972
       }
     },
     {
@@ -498,8 +667,8 @@
       "lat": 39.803629,
       "lng": -8.101364,
       "fuels": {
-        "gazole": 1.824,
-        "sp95": 1.914
+        "gazole": 1.849,
+        "sp95": 1.932
       }
     },
     {
@@ -511,8 +680,8 @@
       "lat": 39.819511,
       "lng": -8.179675,
       "fuels": {
-        "gazole": 1.824,
-        "sp95": 1.914
+        "gazole": 1.849,
+        "sp95": 1.932
       }
     },
     {
@@ -524,8 +693,21 @@
       "lat": 39.773658,
       "lng": -8.109689,
       "fuels": {
-        "gazole": 1.824,
-        "sp95": 1.909
+        "gazole": 1.847,
+        "sp95": 1.929
+      }
+    },
+    {
+      "id": "68287",
+      "cp": "6104-909",
+      "ville": "Sertã",
+      "adresse": "Paque industrial, Lote 15ap. 10",
+      "brand": "Galp",
+      "lat": 39.81495,
+      "lng": -8.10892,
+      "fuels": {
+        "gazole": 1.849,
+        "sp95": 1.932
       }
     },
     {
@@ -537,8 +719,21 @@
       "lat": 39.79967,
       "lng": -8.09258,
       "fuels": {
-        "gazole": 1.829,
-        "sp95": 1.919
+        "gazole": 1.859,
+        "sp95": 1.949
+      }
+    },
+    {
+      "id": "67101",
+      "cp": "6100-266",
+      "ville": "Sertã",
+      "adresse": "Rua Nossa Senhora Da conceição, n.º75",
+      "brand": "Genérico",
+      "lat": 39.809929,
+      "lng": -8.193969,
+      "fuels": {
+        "gazole": 1.848,
+        "sp95": 1.931
       }
     },
     {
@@ -550,8 +745,8 @@
       "lat": 39.678694,
       "lng": -8.14244,
       "fuels": {
-        "gazole": 1.874,
-        "sp95": 1.964
+        "gazole": 1.899,
+        "sp95": 1.982
       }
     },
     {
@@ -563,8 +758,8 @@
       "lat": 39.574207,
       "lng": -7.782874,
       "fuels": {
-        "gazole": 1.904,
-        "sp95": 1.999
+        "gazole": 1.939,
+        "sp95": 2.029
       }
     },
     {
@@ -576,8 +771,8 @@
       "lat": 39.572548,
       "lng": -7.78226,
       "fuels": {
-        "gazole": 1.904,
-        "sp95": 1.999
+        "gazole": 1.939,
+        "sp95": 2.029
       }
     },
     {
@@ -589,8 +784,8 @@
       "lat": 39.656713,
       "lng": -7.660509,
       "fuels": {
-        "gazole": 1.829,
-        "sp95": 1.919
+        "gazole": 1.859,
+        "sp95": 1.939
       }
     },
     {
@@ -602,8 +797,8 @@
       "lat": 39.75248,
       "lng": -7.616475,
       "fuels": {
-        "gazole": 1.814,
-        "sp95": 1.904
+        "gazole": 1.889,
+        "sp95": 1.972
       }
     }
   ]
