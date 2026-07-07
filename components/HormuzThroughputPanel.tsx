@@ -112,6 +112,11 @@ export default function HormuzThroughputPanel({ data }: { data: PortwatchData })
           rebounded to about {pct}% of its 2023 norm — a real recovery, but still far below normal.
           {transits != null && ` The 7-day transit rate (~${transits.toFixed(0)}/day) matches independent shipbroker counts.`}
         </p>
+        <p className="mt-2 text-[11px] leading-relaxed text-amber-500/70">
+          Read it as a floor. This is an AIS-based count, and a meaningful share of post-conflict Hormuz
+          traffic runs with transponders off (dark transit) or via evasive routing — so true movement is
+          likely higher than the figure shown.
+        </p>
         <p className="mt-2 text-[10px] leading-relaxed text-gray-600">
           Aggregate strait transits (all tankers, all origins) — <span className="text-gray-500">not</span> by-country
           loadings or empty-tanker inflows, which require paid vessel intelligence. mb/d derived from cargo tonnage

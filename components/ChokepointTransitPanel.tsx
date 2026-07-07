@@ -153,7 +153,8 @@ export default function ChokepointTransitPanel({ data }: { data: PortwatchData }
         <span className="text-gray-400">after the fact, not in real time</span>. The % is <span className="text-gray-400">tanker capacity (DWT)</span> vs the {data.baselineYear}
         {' '}daily average (trailing 7-day); ship counts shown for context. Lanes marked{' '}
         <span className="text-amber-300/90">AIS low</span> are conflict zones where spoofing, jamming or vessels going dark
-        can make figures undercount actual movement. Source:{' '}
+        mean these figures are a <span className="text-gray-400">floor</span> — a significant share of Hormuz traffic runs
+        with transponders off, so true movement is likely higher. Source:{' '}
         <a href={data.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-oil-400 hover:underline">
           IMF PortWatch
         </a>{' '}
