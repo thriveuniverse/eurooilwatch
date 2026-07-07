@@ -377,16 +377,17 @@ export default async function SupplyPage() {
           7 July 2026 — Hormuz escalation
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
-          UKMTO issued warnings <strong className="text-white">081-26</strong> (tanker struck by a projectile)
-          and <strong className="text-white">082-26</strong> (tanker hit by a UAV); both report structural damage
-          and no casualties. Qatar&rsquo;s foreign ministry has publicly held <strong className="text-white">Iran responsible</strong>{' '}
-          for an attack on the Qatari vessel <em>Al-Rekayyat</em> — though UKMTO lists the attacker as{' '}
-          <span className="text-gray-400">&ldquo;unknown.&rdquo;</span> JMIC advisory <strong className="text-white">012-26</strong>{' '}
-          (6 July) keeps the threat level <strong className="text-red-300">SUBSTANTIAL</strong>, southern corridor open with a
-          mine-danger area flagged in the traditional lane.
+          The British military (UKMTO) confirmed <strong className="text-white">three tankers struck</strong> in the
+          Strait of Hormuz on 7 July (AP). One — the Qatari LNG tanker <em>Al-Rekayyat</em> — was hit near Limah, Oman
+          (port side, projectile) and caught fire; another was struck by a <strong className="text-white">drone</strong>;
+          all sustained damage with no injuries, and at least one continued its voyage. Qatar&rsquo;s foreign ministry holds{' '}
+          <strong className="text-white">Iran &ldquo;fully legally responsible&rdquo;</strong>; Iranian state TV implied Tehran
+          was responsible but issued <span className="text-gray-400">no official claim</span>, and UKMTO says it is investigating.
+          JMIC advisory <strong className="text-white">012-26</strong> keeps the threat <strong className="text-red-300">SUBSTANTIAL</strong>,
+          with the Omani corridor &ldquo;expanded and available for all traffic.&rdquo;
         </p>
         <p className="mt-2 text-[10px] text-gray-500 leading-relaxed">
-          Sources: UKMTO, JMIC, Qatar MFA. Attribution to Iran is a Qatari/diplomatic claim, not independently confirmed.
+          Sources: AP (7 Jul), UKMTO, JMIC, Qatar MFA, Iranian state TV. No official Iranian claim of responsibility.
         </p>
       </div>
 

@@ -93,7 +93,7 @@ export default async function DashboardPage() {
       <DisruptionBanner
         tone="alert"
         headline="Multiple tanker strikes near Hormuz"
-        body="UKMTO reports multiple tanker strikes near the Strait of Hormuz on 7 July — warnings 081-26 (projectile) and 082-26 (UAV), both structural damage, no casualties. Qatar's foreign ministry has publicly blamed Iran for an attack on the Qatari vessel Al-Rekayyat; UKMTO itself lists the attacker as 'unknown'. JMIC still rates the Hormuz threat SUBSTANTIAL (advisory 012-26) — southern corridor open, mine-danger area flagged. Crude has eased into contango, but the route has not calmed with it: a low price is not safety. Europe's diesel remains the exposed flank."
+        body="AP: the British military (UKMTO) confirmed three tankers struck in the Strait of Hormuz on 7 July — one, the Qatari LNG tanker Al-Rekayyat, caught fire off Oman; another was hit by a drone; all damaged, no injuries. Qatar blames Iran; Iranian state TV implied responsibility but made no official claim. JMIC keeps the Hormuz threat SUBSTANTIAL (advisory 012-26). Crude has eased into contango, yet the route has not calmed with it — a low price is not safety. Europe's diesel remains the exposed flank."
         linkLabel="The two-speed reopening →"
         linkHref="/analysis/low-oil-price-is-not-safety"
       />
