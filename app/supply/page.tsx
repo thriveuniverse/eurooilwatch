@@ -12,6 +12,7 @@ import SeaStatePanel, { type SeaStateData } from '@/components/SeaStatePanel';
 import WarRiskWatchPanel from '@/components/WarRiskWatchPanel';
 import ChokepointsMap from '@/components/ChokepointsMap';
 import ChokepointTransitPanel, { type PortwatchData } from '@/components/ChokepointTransitPanel';
+import HormuzThroughputPanel from '@/components/HormuzThroughputPanel';
 import PortFlowPanel, { type PortFlowData } from '@/components/PortFlowPanel';
 import EuropeBarrelTracker from '@/components/EuropeBarrelTracker';
 import CrudeImportSankey from '@/components/CrudeImportSankey';
@@ -369,6 +370,9 @@ export default async function SupplyPage() {
 
       {/* Chokepoints overview map */}
       <ChokepointsMap />
+
+      {/* Hormuz recovery tracker — dedicated view of the flagship chokepoint */}
+      {portwatch && <HormuzThroughputPanel data={portwatch} />}
 
       {/* Live chokepoint transit monitor — IMF PortWatch daily transits vs baseline */}
       {portwatch && <ChokepointTransitPanel data={portwatch} />}

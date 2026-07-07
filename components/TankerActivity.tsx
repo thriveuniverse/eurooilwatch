@@ -40,7 +40,11 @@ const ZONE_CONTEXT: Record<string, { label: string; pre: string; significance: s
   },
 };
 
-const ZONE_ORDER = ['ara', 'hormuz', 'suez'] as const;
+// Hormuz is intentionally excluded: our AIS source (aisstream.io) is terrestrial
+// and has effectively no Persian Gulf coverage, so the Hormuz zone reads a false
+// zero. Hormuz throughput is shown from satellite-AIS data (IMF PortWatch) in the
+// Hormuz Throughput and Chokepoint Transit panels above.
+const ZONE_ORDER = ['ara', 'suez'] as const;
 
 // The collector runs every 4 hours; treat the feed as paused after ~12h (≈3 missed runs).
 const STALE_AFTER_MS = 12 * 60 * 60 * 1000;
@@ -77,7 +81,7 @@ export default function TankerActivity() {
         </div>
       )}
 
-      <div className={`grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-oil-800/40${stale ? ' opacity-60' : ''}`}>
+      <div className={`grid grid-cols-1 sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-oil-800/40${stale ? ' opacity-60' : ''}`}>
         {ZONE_ORDER.map(zid => {
           const z = data.zones[zid];
           const ctx = ZONE_CONTEXT[zid];
@@ -107,7 +111,9 @@ export default function TankerActivity() {
           Live AIS tanker tracking via aisstream.io, captured every 4 hours and aggregated into rolling 24-hour, 7-day, and 28-day counts.
           {' '}<strong className="text-gray-400">Baseline accumulating since 20 May 2026.</strong>
           {' '}{stale ? `Last snapshot ${updatedLabel} — feed paused.` : `Updated ${updatedLabel}.`}
-          {' '}Counts can fall toward zero in conflict zones when vessels switch off AIS transponders.
+          {' '}Terrestrial AIS covers the North Sea and Mediterranean approaches well; the Persian Gulf is not
+          covered here, so <strong className="text-gray-400">Strait of Hormuz throughput is shown from satellite-AIS
+          data (IMF PortWatch)</strong> in the panels above rather than counted here.
         </p>
       </div>
     </div>
