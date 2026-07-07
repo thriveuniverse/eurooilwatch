@@ -94,8 +94,8 @@ export default async function DashboardPage() {
         tone="alert"
         headline="Multiple tanker strikes near Hormuz"
         body="AP: the British military (UKMTO) confirmed three tankers struck in the Strait of Hormuz on 7 July — one, the Qatari LNG tanker Al-Rekayyat, caught fire off Oman; another was hit by a drone; all damaged, no injuries. Qatar blames Iran; Iranian state TV implied responsibility but made no official claim. JMIC keeps the Hormuz threat SUBSTANTIAL (advisory 012-26). Crude has eased into contango, yet the route has not calmed with it — a low price is not safety. Europe's diesel remains the exposed flank."
-        linkLabel="The two-speed reopening →"
-        linkHref="/analysis/low-oil-price-is-not-safety"
+        linkLabel="Hormuz as a toll road →"
+        linkHref="/analysis/hormuz-toll-road-strikes-are-enforcement"
       />
 
       {/* Research hub — flagship body of work */}
