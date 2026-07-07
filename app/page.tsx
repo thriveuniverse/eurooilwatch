@@ -92,8 +92,8 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <DisruptionBanner
         tone="alert"
-        headline="A low oil price is not safety"
-        body="Crude is pricing a glut while Hormuz stays unsafe and Europe's diesel tightens. Brent has slipped to ~$71.94 — into contango — as stranded Gulf barrels finally sail, but that backlog is nearly exhausted (Kpler), Gulf exports are still ~40% below normal, major lines like CMA CGM won't return, and JMIC still rates the Hormuz threat 'substantial'. Meanwhile Russia weighs a diesel-export ban and European diesel margins have topped $46/bbl — a cheaper barrel that may not reach the pump. Escalation risk around the 4–9 July funeral window remains live."
+        headline="Multiple tanker strikes near Hormuz"
+        body="UKMTO reports multiple tanker strikes near the Strait of Hormuz on 7 July — warnings 081-26 (projectile) and 082-26 (UAV), both structural damage, no casualties. Qatar's foreign ministry has publicly blamed Iran for an attack on the Qatari vessel Al-Rekayyat; UKMTO itself lists the attacker as 'unknown'. JMIC still rates the Hormuz threat SUBSTANTIAL (advisory 012-26) — southern corridor open, mine-danger area flagged. Crude has eased into contango, but the route has not calmed with it: a low price is not safety. Europe's diesel remains the exposed flank."
         linkLabel="The two-speed reopening →"
         linkHref="/analysis/low-oil-price-is-not-safety"
       />

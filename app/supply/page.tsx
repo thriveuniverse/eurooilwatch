@@ -371,6 +371,25 @@ export default async function SupplyPage() {
       {/* Chokepoints overview map */}
       <ChokepointsMap />
 
+      {/* 7 July 2026 Hormuz escalation note */}
+      <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
+        <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
+          7 July 2026 — Hormuz escalation
+        </p>
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          UKMTO issued warnings <strong className="text-white">081-26</strong> (tanker struck by a projectile)
+          and <strong className="text-white">082-26</strong> (tanker hit by a UAV); both report structural damage
+          and no casualties. Qatar&rsquo;s foreign ministry has publicly held <strong className="text-white">Iran responsible</strong>{' '}
+          for an attack on the Qatari vessel <em>Al-Rekayyat</em> — though UKMTO lists the attacker as{' '}
+          <span className="text-gray-400">&ldquo;unknown.&rdquo;</span> JMIC advisory <strong className="text-white">012-26</strong>{' '}
+          (6 July) keeps the threat level <strong className="text-red-300">SUBSTANTIAL</strong>, southern corridor open with a
+          mine-danger area flagged in the traditional lane.
+        </p>
+        <p className="mt-2 text-[10px] text-gray-500 leading-relaxed">
+          Sources: UKMTO, JMIC, Qatar MFA. Attribution to Iran is a Qatari/diplomatic claim, not independently confirmed.
+        </p>
+      </div>
+
       {/* Hormuz recovery tracker — dedicated view of the flagship chokepoint */}
       {portwatch && <HormuzThroughputPanel data={portwatch} />}
 
