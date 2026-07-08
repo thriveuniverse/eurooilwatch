@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 // Version this key — changing it will re-show the banner even for users who dismissed it.
 // Update the date suffix whenever you update the banner content.
-const DISMISS_KEY = 'disruption-banner-v20260707b-hormuz-3tankers';
+const DISMISS_KEY = 'disruption-banner-v20260708-us-iran-strikes';
 
 interface Props {
   /** Short bold label, e.g. "Active supply disruption" */

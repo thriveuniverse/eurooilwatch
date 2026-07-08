@@ -371,23 +371,28 @@ export default async function SupplyPage() {
       {/* Chokepoints overview map */}
       <ChokepointsMap />
 
-      {/* 7 July 2026 Hormuz escalation note */}
+      {/* 8 July 2026 US–Iran strikes escalation note */}
       <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
         <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
-          7 July 2026 — Hormuz escalation
+          8 July 2026 — US–Iran strikes
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
-          The British military (UKMTO) confirmed <strong className="text-white">three tankers struck</strong> in the
-          Strait of Hormuz on 7 July (AP). One — the Qatari LNG tanker <em>Al-Rekayyat</em> — was hit near Limah, Oman
-          (port side, projectile) and caught fire; another was struck by a <strong className="text-white">drone</strong>;
-          all sustained damage with no injuries, and at least one continued its voyage. Qatar&rsquo;s foreign ministry holds{' '}
-          <strong className="text-white">Iran &ldquo;fully legally responsible&rdquo;</strong>; Iranian state TV implied Tehran
-          was responsible but issued <span className="text-gray-400">no official claim</span>, and UKMTO says it is investigating.
-          JMIC advisory <strong className="text-white">012-26</strong> keeps the threat <strong className="text-red-300">SUBSTANTIAL</strong>,
-          with the Omani corridor &ldquo;expanded and available for all traffic.&rdquo;
+          The fragile US–Iran truce is under its most serious pressure since it was agreed. US forces have launched
+          renewed strikes on Iran, Tehran has retaliated against US-linked military sites in Bahrain and Kuwait, and
+          commercial shipping is again reconsidering passage through the Strait of Hormuz. Reuters ship-tracking
+          analysis found <strong className="text-white">at least four oil and gas tankers reversed course</strong> near
+          the strait after vessels were damaged on Tuesday. Other tankers have continued to transit, so{' '}
+          <strong className="text-white">Hormuz is not closed</strong> — but the return of diversions shows the
+          late-June recovery in shipping cannot yet be treated as secure.
+        </p>
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          Brent rose to about <strong className="text-white">$76.56</strong> and WTI to{' '}
+          <strong className="text-white">$72.70</strong> at 06:45 GMT on 8 July, both around{' '}
+          <strong className="text-red-300">3.2% higher</strong> on the day.
         </p>
         <p className="mt-2 text-[10px] text-gray-500 leading-relaxed">
-          Sources: AP (7 Jul), UKMTO, JMIC, Qatar MFA, Iranian state TV. No official Iranian claim of responsibility.
+          Sources: Reuters, CENTCOM, UKMTO. Iran has not issued a formal claim for the tanker attacks; US strike
+          figures are per CENTCOM.
         </p>
       </div>
 
