@@ -92,8 +92,8 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <DisruptionBanner
         tone="alert"
-        headline="US and Iran exchange strikes as Hormuz risk escalates"
-        body="Oil prices have jumped more than 3% after renewed US strikes on Iran and Iranian retaliation in the Gulf. At least four oil and gas tankers have turned away from the Strait of Hormuz following attacks on commercial vessels, while Washington has reinstated restrictions on Iranian crude sales."
+        headline="Trump declares the US–Iran ceasefire over"
+        body="At the NATO summit in Ankara, President Trump declared the US–Iran interim agreement effectively over and tore into Iran's leadership, calling its leaders 'scum' and 'sick people' (Reuters, WSJ). It followed a further round of Iranian attacks on Hormuz shipping; oil had jumped more than 3% on the earlier strikes, and the truce's collapse removes the framework that was holding Gulf passage together."
         linkLabel="Hormuz as a toll road →"
         linkHref="/analysis/hormuz-toll-road-strikes-are-enforcement"
       />

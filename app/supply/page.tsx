@@ -371,28 +371,30 @@ export default async function SupplyPage() {
       {/* Chokepoints overview map */}
       <ChokepointsMap />
 
-      {/* 8 July 2026 US–Iran strikes escalation note */}
+      {/* 8 July 2026 — ceasefire declared over */}
       <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
         <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
-          8 July 2026 — US–Iran strikes
+          8 July 2026 — Ceasefire declared over
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
-          The fragile US–Iran truce is under its most serious pressure since it was agreed. US forces have launched
-          renewed strikes on Iran, Tehran has retaliated against US-linked military sites in Bahrain and Kuwait, and
-          commercial shipping is again reconsidering passage through the Strait of Hormuz. Reuters ship-tracking
-          analysis found <strong className="text-white">at least four oil and gas tankers reversed course</strong> near
-          the strait after vessels were damaged on Tuesday. Other tankers have continued to transit, so{' '}
-          <strong className="text-white">Hormuz is not closed</strong> — but the return of diversions shows the
-          late-June recovery in shipping cannot yet be treated as secure.
+          The US–Iran truce has collapsed as a political framework. At the NATO summit in Ankara, President Trump
+          declared the interim agreement <strong className="text-white">effectively over</strong> and attacked
+          Iran&rsquo;s leadership — calling its leaders &ldquo;scum&rdquo; and &ldquo;sick people,&rdquo; and likening
+          the threat from Iran&rsquo;s government to a cancer that should be &ldquo;cut out &hellip; early.&rdquo; The
+          remarks followed a further round of Iranian attacks on ships in the Strait of Hormuz, after earlier US
+          strikes on Iran were met by Iranian retaliation against US-linked sites in Bahrain and Kuwait.
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
-          Brent rose to about <strong className="text-white">$76.56</strong> and WTI to{' '}
+          Reuters ship-tracking found <strong className="text-white">at least four oil and gas tankers reversed
+          course</strong> near the strait; others continued to transit, so <strong className="text-white">Hormuz is
+          not closed</strong>. Brent rose to about <strong className="text-white">$76.56</strong> and WTI to{' '}
           <strong className="text-white">$72.70</strong> at 06:45 GMT on 8 July, both around{' '}
           <strong className="text-red-300">3.2% higher</strong> on the day.
         </p>
         <p className="mt-2 text-[10px] text-gray-500 leading-relaxed">
-          Sources: Reuters, CENTCOM, UKMTO. Iran has not issued a formal claim for the tanker attacks; US strike
-          figures are per CENTCOM.
+          Sources: Reuters, WSJ, CENTCOM, UKMTO. Available footage and Tier-1 reporting attribute the
+          &ldquo;cancer&rdquo; remark to Iran&rsquo;s government and leadership — not the Iranian people, and not a
+          call for their eradication.
         </p>
       </div>
 
