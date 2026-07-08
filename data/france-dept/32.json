@@ -3,35 +3,35 @@
   "name": "Gers",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-07-08T07:23:35.577Z",
+  "asOf": "2026-07-08T18:15:58.655Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 46,
+  "stationCount": 48,
   "fuels": {
     "gazole": {
-      "count": 42,
-      "mean": 1.9183,
+      "count": 45,
+      "mean": 1.9197,
       "median": 1.899,
       "min": 1.829,
       "max": 2
     },
     "sp95": {
-      "count": 12,
-      "mean": 1.966,
-      "median": 1.964,
+      "count": 13,
+      "mean": 1.9639,
+      "median": 1.959,
       "min": 1.919,
       "max": 2.06
     },
     "sp98": {
-      "count": 32,
-      "mean": 2.0018,
-      "median": 1.9955,
+      "count": 34,
+      "mean": 2.0017,
+      "median": 1.996,
       "min": 1.959,
       "max": 2.11
     },
     "e10": {
-      "count": 36,
-      "mean": 1.9153,
+      "count": 37,
+      "mean": 1.9145,
       "median": 1.899,
       "min": 1.829,
       "max": 2.019
@@ -44,9 +44,9 @@
       "max": 0.995
     },
     "gplc": {
-      "count": 6,
-      "mean": 1.1473,
-      "median": 1.1375,
+      "count": 5,
+      "mean": 1.1518,
+      "median": 1.15,
       "min": 1.05,
       "max": 1.24
     }
@@ -61,6 +61,7 @@
       "lat": 4364900,
       "lng": 59500,
       "fuels": {
+        "gazole": 1.932,
         "sp98": 2.056,
         "e10": 1.956
       }
@@ -74,7 +75,7 @@
       "lat": 4365500,
       "lng": 56600,
       "fuels": {
-        "gazole": 1.982,
+        "gazole": 1.992,
         "e10": 2.019,
         "e85": 0.83
       }
@@ -91,8 +92,7 @@
         "gazole": 1.879,
         "sp98": 1.999,
         "e10": 1.909,
-        "e85": 0.795,
-        "gplc": 1.125
+        "e85": 0.795
       }
     },
     {
@@ -131,9 +131,9 @@
       "lat": 4366400,
       "lng": 61800,
       "fuels": {
-        "gazole": 1.879,
+        "gazole": 1.899,
         "sp98": 1.999,
-        "e10": 1.909
+        "e10": 1.879
       }
     },
     {
@@ -684,6 +684,20 @@
       }
     },
     {
+      "id": "32310004",
+      "cp": "32310",
+      "ville": "Valence-sur-Baïse",
+      "adresse": "Route D'Auche, Lieu Dit Haut Rege",
+      "pop": "R",
+      "lat": 4386900,
+      "lng": 39200,
+      "fuels": {
+        "gazole": 1.929,
+        "sp98": 1.999,
+        "e10": 1.915
+      }
+    },
+    {
       "id": "32190003",
       "cp": "32190",
       "ville": "Vic-Fezensac",
@@ -692,9 +706,23 @@
       "lat": 4376600,
       "lng": 31100,
       "fuels": {
-        "gazole": 1.869,
+        "gazole": 1.895,
         "sp98": 1.995,
         "e10": 1.899
+      }
+    },
+    {
+      "id": "32190001",
+      "cp": "32190",
+      "ville": "Vic-Fezensac",
+      "adresse": "ROCADE SUD",
+      "pop": "R",
+      "lat": 4375500,
+      "lng": 29500,
+      "fuels": {
+        "gazole": 1.899,
+        "sp95": 1.939,
+        "sp98": 1.999
       }
     }
   ]
