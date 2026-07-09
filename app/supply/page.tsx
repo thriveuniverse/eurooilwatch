@@ -387,6 +387,13 @@ export default async function SupplyPage() {
           IRGC called it the &ldquo;first phase&rdquo; of its response and warned of more.
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          Iranian officials say a US projectile hit the <strong className="text-white">perimeter area</strong> of the
+          Bushehr nuclear power plant, and Reuters has carried the perimeter claim — but there is{' '}
+          <strong className="text-white">no independent confirmation that the reactor itself was hit</strong>. Earlier
+          IAEA and Reuters reporting on previous Bushehr incidents found no reactor damage or radiological release; no
+          fresh IAEA confirmation has yet been seen for this latest strike.
+        </p>
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           Reuters ship-tracking found <strong className="text-white">at least four oil and gas tankers reversed
           course</strong> near the strait; others continued to transit, so <strong className="text-white">Hormuz is
           not closed</strong>. The US Navy-led Joint Maritime Information Center has raised the transit threat to{' '}
@@ -395,6 +402,12 @@ export default async function SupplyPage() {
           shipowners not to expose crews to unnecessary danger by transiting while safety cannot be assured. Brent
           spiked about <strong className="text-white">6% to a two-week high near $80</strong> on Wednesday before
           easing to about <strong className="text-white">$77</strong> on Thursday.
+        </p>
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          On a second front, Ukraine&rsquo;s military says its drones hit a dozen more Russian tankers in the Sea of
+          Azov, part of an intensified campaign against fuel logistics to occupied Crimea. Reuters carried the claim
+          but could not independently verify the full number; Russian regional officials acknowledged{' '}
+          <strong className="text-white">two</strong> tankers were hit.
         </p>
         <p className="mt-2 text-[10px] text-gray-500 leading-relaxed">
           Sources: Reuters, WSJ, JMIC, IMO, CENTCOM, UKMTO. Available footage and Tier-1 reporting attribute the
