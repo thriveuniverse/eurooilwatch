@@ -381,8 +381,10 @@ export default async function SupplyPage() {
           declared the interim agreement <strong className="text-white">effectively over</strong> and attacked
           Iran&rsquo;s leadership — calling its leaders &ldquo;scum&rdquo; and &ldquo;sick people,&rdquo; and likening
           the threat from Iran&rsquo;s government to a cancer that should be &ldquo;cut out &hellip; early.&rdquo; The
-          remarks followed a further round of Iranian attacks on ships in the Strait of Hormuz, after earlier US
-          strikes on Iran were met by Iranian retaliation against US-linked sites in Bahrain and Kuwait.
+          remarks followed a further round of Iranian attacks on ships in the Strait of Hormuz; US strikes on Iran,
+          now into a second day, have been met by a wave of Iranian retaliation against US facilities across Bahrain,
+          Kuwait and <strong className="text-white">Qatar</strong> — home to the region&rsquo;s largest US base. The
+          IRGC called it the &ldquo;first phase&rdquo; of its response and warned of more.
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           Reuters ship-tracking found <strong className="text-white">at least four oil and gas tankers reversed
