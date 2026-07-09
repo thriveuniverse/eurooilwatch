@@ -3,15 +3,15 @@
   "name": "Lozère",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-07-09T08:19:11.803Z",
+  "asOf": "2026-07-09T17:47:36.379Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 35,
   "fuels": {
     "gazole": {
       "count": 35,
-      "mean": 1.924,
-      "median": 1.919,
+      "mean": 1.9265,
+      "median": 1.924,
       "min": 1.839,
       "max": 2.059
     },
@@ -23,15 +23,15 @@
       "max": 2.049
     },
     "sp98": {
-      "count": 19,
-      "mean": 2.0157,
+      "count": 20,
+      "mean": 2.0153,
       "median": 1.999,
       "min": 1.939,
       "max": 2.109
     },
     "e10": {
-      "count": 22,
-      "mean": 1.9122,
+      "count": 23,
+      "mean": 1.9145,
       "median": 1.899,
       "min": 1.849,
       "max": 2.019
@@ -42,13 +42,6 @@
       "median": 0.8115,
       "min": 0.794,
       "max": 0.899
-    },
-    "gplc": {
-      "count": 1,
-      "mean": 1.2,
-      "median": 1.2,
-      "min": 1.2,
-      "max": 1.2
     }
   },
   "stations": [
@@ -251,7 +244,7 @@
       "lat": 4473530,
       "lng": 385840,
       "fuels": {
-        "gazole": 1.899,
+        "gazole": 1.919,
         "sp95": 1.969,
         "sp98": 1.999
       }
@@ -294,8 +287,7 @@
       "lng": 329229.52134,
       "fuels": {
         "gazole": 1.932,
-        "sp95": 1.99,
-        "gplc": 1.2
+        "sp95": 1.99
       }
     },
     {
@@ -419,7 +411,9 @@
       "lat": 4418000,
       "lng": 343000,
       "fuels": {
-        "gazole": 1.899
+        "gazole": 1.926,
+        "sp98": 2.009,
+        "e10": 1.965
       }
     },
     {
@@ -458,7 +452,7 @@
       "lat": 4469766.4561,
       "lng": 312322.40123,
       "fuels": {
-        "gazole": 1.949,
+        "gazole": 1.989,
         "e10": 1.959,
         "e85": 0.849
       }
