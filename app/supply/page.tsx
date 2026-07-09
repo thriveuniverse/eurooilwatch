@@ -387,12 +387,15 @@ export default async function SupplyPage() {
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           Reuters ship-tracking found <strong className="text-white">at least four oil and gas tankers reversed
           course</strong> near the strait; others continued to transit, so <strong className="text-white">Hormuz is
-          not closed</strong>. Brent rose to about <strong className="text-white">$76.56</strong> and WTI to{' '}
-          <strong className="text-white">$72.70</strong> at 06:45 GMT on 8 July, both around{' '}
-          <strong className="text-red-300">3.2% higher</strong> on the day.
+          not closed</strong>. The US Navy-led Joint Maritime Information Center has raised the transit threat to{' '}
+          <strong className="text-red-300">&ldquo;severe&rdquo;</strong> — up from &ldquo;substantial,&rdquo; its
+          highest since mid-June — and the <strong className="text-white">IMO Secretary-General</strong> has urged
+          shipowners not to expose crews to unnecessary danger by transiting while safety cannot be assured. Brent
+          spiked about <strong className="text-white">6% to a two-week high near $80</strong> on Wednesday before
+          easing to about <strong className="text-white">$77</strong> on Thursday.
         </p>
         <p className="mt-2 text-[10px] text-gray-500 leading-relaxed">
-          Sources: Reuters, WSJ, CENTCOM, UKMTO. Available footage and Tier-1 reporting attribute the
+          Sources: Reuters, WSJ, JMIC, IMO, CENTCOM, UKMTO. Available footage and Tier-1 reporting attribute the
           &ldquo;cancer&rdquo; remark to Iran&rsquo;s government and leadership — not the Iranian people, and not a
           call for their eradication.
         </p>

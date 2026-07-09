@@ -93,7 +93,7 @@ export default async function DashboardPage() {
       <DisruptionBanner
         tone="alert"
         headline="Trump declares the US–Iran ceasefire over"
-        body="At the NATO summit in Ankara, President Trump declared the US–Iran interim agreement effectively over and tore into Iran's leadership, calling its leaders 'scum' and 'sick people' (Reuters, WSJ). It followed a further round of Iranian attacks on Hormuz shipping; oil had jumped more than 3% on the earlier strikes, and the truce's collapse removes the framework that was holding Gulf passage together."
+        body="At the NATO summit in Ankara, President Trump declared the US–Iran interim agreement effectively over and tore into Iran's leadership, calling its leaders 'scum' and 'sick people' (Reuters, WSJ). Iranian attacks on Hormuz shipping drew US strikes and sent Brent up about 6% to a two-week high near $80; the US Navy-led JMIC has since raised the Hormuz transit threat to its highest level, 'severe.' The truce's collapse removes the framework that was holding Gulf passage together."
         linkLabel="Hormuz as a toll road →"
         linkHref="/analysis/hormuz-toll-road-strikes-are-enforcement"
       />
