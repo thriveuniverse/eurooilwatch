@@ -57,7 +57,7 @@ marked.use({
       const headerCells = token.header
         .map((cell) => {
           const align = cell.align ? ` style="text-align:${cell.align}"` : '';
-          return `<th class="border border-oil-800 bg-oil-900/60 px-3 py-2 text-left font-semibold text-white"${align}>${cell.text}</th>`;
+          return `<th class="border border-oil-800 bg-oil-900/60 px-3 py-2 text-left font-semibold text-white"${align}>${this.parser.parseInline(cell.tokens)}</th>`;
         })
         .join('');
       const headerRow = `<thead><tr>${headerCells}</tr></thead>`;
@@ -66,7 +66,7 @@ marked.use({
           const cells = row
             .map((cell) => {
               const align = cell.align ? ` style="text-align:${cell.align}"` : '';
-              return `<td class="border border-oil-800 bg-oil-900/30 px-3 py-2 text-gray-300"${align}>${cell.text}</td>`;
+              return `<td class="border border-oil-800 bg-oil-900/30 px-3 py-2 text-gray-300"${align}>${this.parser.parseInline(cell.tokens)}</td>`;
             })
             .join('');
           return `<tr>${cells}</tr>`;
