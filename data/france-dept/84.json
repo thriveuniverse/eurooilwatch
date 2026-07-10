@@ -3,17 +3,17 @@
   "name": "Vaucluse",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-07-10T15:05:44.919Z",
+  "asOf": "2026-07-10T19:08:38.565Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 102,
   "fuels": {
     "gazole": {
       "count": 102,
-      "mean": 1.95,
-      "median": 1.9345,
+      "mean": 1.9545,
+      "median": 1.939,
       "min": 1.849,
-      "max": 2.212
+      "max": 2.302
     },
     "sp95": {
       "count": 16,
@@ -23,23 +23,23 @@
       "max": 2.052
     },
     "sp98": {
-      "count": 79,
-      "mean": 2.0019,
+      "count": 80,
+      "mean": 2.0051,
       "median": 1.99,
       "min": 1.93,
-      "max": 2.274
+      "max": 2.32
     },
     "e10": {
       "count": 91,
-      "mean": 1.9168,
+      "mean": 1.9187,
       "median": 1.899,
       "min": 1.839,
-      "max": 2.15
+      "max": 2.196
     },
     "e85": {
-      "count": 44,
-      "mean": 0.8357,
-      "median": 0.812,
+      "count": 45,
+      "mean": 0.8351,
+      "median": 0.809,
       "min": 0.739,
       "max": 1.039
     },
@@ -222,8 +222,10 @@
       "lat": 4394000,
       "lng": 483000,
       "fuels": {
-        "gazole": 1.894,
-        "e10": 1.988
+        "gazole": 1.982,
+        "sp98": 2.15,
+        "e10": 1.978,
+        "e85": 0.809
       }
     },
     {
@@ -664,9 +666,9 @@
       "lat": 4411569,
       "lng": 489531,
       "fuels": {
-        "gazole": 1.909,
-        "sp98": 1.999,
-        "e10": 1.899
+        "gazole": 2.069,
+        "sp98": 2.059,
+        "e10": 1.959
       }
     },
     {
@@ -981,9 +983,9 @@
       "lat": 4419500,
       "lng": 473100,
       "fuels": {
-        "gazole": 2.212,
-        "sp98": 2.274,
-        "e10": 2.15,
+        "gazole": 2.302,
+        "sp98": 2.32,
+        "e10": 2.196,
         "e85": 1.008,
         "gplc": 1.115
       }
@@ -1211,8 +1213,8 @@
       "lat": 4368100,
       "lng": 550100,
       "fuels": {
-        "gazole": 1.887,
-        "e10": 1.852
+        "gazole": 2.015,
+        "e10": 1.9
       }
     },
     {
@@ -1502,7 +1504,7 @@
       "fuels": {
         "gazole": 1.989,
         "sp98": 1.99,
-        "e10": 1.959,
+        "e10": 1.984,
         "e85": 0.844
       }
     },
