@@ -2,13 +2,13 @@ name: Update Data Pipeline
 
 on:
   schedule:
-    # Run at 05:00 UTC daily (07:00 CEST)
-    - cron: '0 5 * * *'
-    # Second daily run at 17:00 UTC (19:00 CEST) — national station-price feeds
-    # (FR/ES/IT/DE) refresh through the day; keeps pump data fresher
-    - cron: '0 17 * * *'
-    # Also run at 16:00 UTC on Thursdays (after EC Oil Bulletin publishes)
-    - cron: '0 16 * * 4'
+    # Times are staggered OFF the top of the hour: GitHub drops/delays far fewer
+    # off-:00 scheduled runs. Three daily runs give redundancy — if GitHub skips
+    # one, a later one catches it the same day.
+    - cron: '7 5 * * *'    # 05:07 UTC (07:07 CEST) — morning
+    - cron: '23 12 * * *'  # 12:23 UTC — midday redundancy (catches a dropped morning run)
+    - cron: '43 17 * * *'  # 17:43 UTC — evening; national station-price feeds (FR/ES/IT/DE) refreshed
+    - cron: '17 16 * * 4'  # 16:17 UTC Thu — after EC Oil Bulletin publishes
   workflow_dispatch: # Allow manual triggers
 
 permissions:
