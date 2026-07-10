@@ -7,12 +7,12 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: 'Strait of Hormuz Crisis Timeline (2026) | EuroOilWatch',
   description:
-    'A sourced, filterable chronology of the 2026 Strait of Hormuz crisis — military, diplomatic, shipping and market events from the outbreak of war through the fragile reopening. Every entry cited.',
+    'A sourced, filterable chronology of the 2026 Strait of Hormuz crisis — military, diplomatic, shipping and market events from the outbreak of war through reopening and renewed escalation. Every entry cited.',
   alternates: { canonical: 'https://eurooilwatch.com/hormuz-timeline' },
   openGraph: {
     title: 'Strait of Hormuz Crisis Timeline (2026) | EuroOilWatch',
     description:
-      'Sourced, filterable chronology of the 2026 Strait of Hormuz crisis — outbreak to fragile reopening.',
+      'Sourced, filterable chronology of the 2026 Strait of Hormuz crisis — outbreak to renewed escalation.',
     url: 'https://eurooilwatch.com/hormuz-timeline',
     siteName: 'EuroOilWatch',
     type: 'website',
@@ -51,7 +51,7 @@ export default function HormuzTimelinePage() {
         <h1 className="mt-2 text-2xl font-bold text-white">Strait of Hormuz — Crisis Timeline</h1>
         <p className="mt-2 text-sm text-gray-400 leading-relaxed">
           A sourced, filterable chronology of the 2026 Strait of Hormuz crisis — from the outbreak of
-          war on 28 February through the fragile reopening. Europe is more Gulf-dependent than the US,
+          war on 28 February through reopening and renewed escalation. Europe is more Gulf-dependent than the US,
           so the strait&apos;s swings land hard on European crude and product flows. Every entry links to
           its source; many link to our deeper analysis. Price and threat lead the story; the lagging
           transit data confirms it.
