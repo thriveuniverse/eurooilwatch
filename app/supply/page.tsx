@@ -415,6 +415,16 @@ export default async function SupplyPage() {
           scheme and to expect VHF hailing from naval forces.
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          War-risk insurance underlines the caution. Marsh, the world&rsquo;s largest marine broker, says premiums to
+          transit Hormuz now run <strong className="text-white">2–6% of a vessel&rsquo;s value</strong> — up from a
+          fraction of a percent before the war, having peaked near <strong className="text-white">10%</strong> at the
+          height of the fighting (large no-claim discounts often trim the headline rate). Brokers report{' '}
+          <strong className="text-white">fewer requests for quotes</strong> since the ceasefire frayed this week,
+          though cover remains available (Bloomberg, 9 Jul). The Lloyd&rsquo;s Joint War Committee has listed the
+          whole Gulf as high-risk since March — a listing that adds cost and a notification duty but does not bar
+          transit.
+        </p>
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           On a second front, Ukraine&rsquo;s drone forces say they hit <strong className="text-white">21 Russian
           vessels</strong> — mostly tankers — in the Sea of Azov over 72 hours, choking fuel supplies to occupied
           Crimea; maritime-security firm <strong className="text-white">Ambrey</strong> calls it the war&rsquo;s
@@ -423,7 +433,7 @@ export default async function SupplyPage() {
           acknowledged fewer.
         </p>
         <p className="mt-2 text-[10px] text-gray-500 leading-relaxed">
-          Sources: Reuters, WSJ, JMIC 013-26, NAVCENT/NCAGS, IMO, CENTCOM, UKMTO. Available footage and Tier-1 reporting attribute the
+          Sources: Reuters, WSJ, Bloomberg, JMIC 013-26, NAVCENT/NCAGS, Lloyd&rsquo;s JWC, IMO, CENTCOM, UKMTO. Available footage and Tier-1 reporting attribute the
           &ldquo;cancer&rdquo; remark to Iran&rsquo;s government and leadership — not the Iranian people, and not a
           call for their eradication.
         </p>
