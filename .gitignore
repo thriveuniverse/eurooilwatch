@@ -33,3 +33,27 @@ next-env.d.ts
 
 # temporary local tankerkoenig unblock watcher (contains API key — never commit)
 scripts/_germany-watch.mjs
+
+# ── Research / draft protection ─────────────────────────────────────────────
+# This is a PUBLIC repo. Unpublished analysis drafts and modelling artifacts must
+# never be committable here — a stray `git add -A` would leak them on github.com.
+# Keep drafts in /home/julie/hormuz-report-drafts/ or a private repo; if they must
+# live in this working tree for editing, these patterns keep them un-committable.
+# Finished pieces are published via content/analysis/ only, never as loose files.
+*.md.draft
+*-draft.md
+*-report-draft.md
+*-spec.md
+*-reconciliation.md
+second-shock-*.md
+monte-carlo-*.md
+buffer-state-*.md
+temp_docs/
+newsletters/drafts/
+
+# Cascade / Monte Carlo modelling artifacts (research, not site code)
+*.py
+__pycache__/
+calibrated_params.json
+fig_*.png
+*:Zone.Identifier
