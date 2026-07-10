@@ -404,6 +404,17 @@ export default async function SupplyPage() {
           easing to about <strong className="text-white">$77</strong> on Thursday.
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          A fresh <strong className="text-white">JMIC advisory (013-26, 10 July)</strong> keeps the threat level at{' '}
+          <strong className="text-red-300">&ldquo;severe&rdquo;</strong> but stresses the strait stays open: the
+          southern transit route has been <strong className="text-white">expanded and remains available to all
+          traffic</strong>, coordination with NAVCENT&rsquo;s NCAGS is offered but not mandatory, and — pointedly —{' '}
+          <strong className="text-white">&ldquo;there is no controlling authority regulating passage or fee required
+          for any route.&rdquo;</strong> US NAVCENT added that <strong className="text-white">&ldquo;no nation has the
+          authority to close or control the Strait of Hormuz,&rdquo;</strong> with US forces prepared to defend
+          freedom of navigation. Mariners are warned of a mine-danger area in the traditional traffic-separation
+          scheme and to expect VHF hailing from naval forces.
+        </p>
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           On a second front, Ukraine&rsquo;s drone forces say they hit <strong className="text-white">21 Russian
           vessels</strong> — mostly tankers — in the Sea of Azov over 72 hours, choking fuel supplies to occupied
           Crimea; maritime-security firm <strong className="text-white">Ambrey</strong> calls it the war&rsquo;s
@@ -412,7 +423,7 @@ export default async function SupplyPage() {
           acknowledged fewer.
         </p>
         <p className="mt-2 text-[10px] text-gray-500 leading-relaxed">
-          Sources: Reuters, WSJ, JMIC, IMO, CENTCOM, UKMTO. Available footage and Tier-1 reporting attribute the
+          Sources: Reuters, WSJ, JMIC 013-26, NAVCENT/NCAGS, IMO, CENTCOM, UKMTO. Available footage and Tier-1 reporting attribute the
           &ldquo;cancer&rdquo; remark to Iran&rsquo;s government and leadership — not the Iranian people, and not a
           call for their eradication.
         </p>
