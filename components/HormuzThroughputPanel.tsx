@@ -78,7 +78,7 @@ export default function HormuzThroughputPanel({ data }: { data: PortwatchData })
               <span className="text-sm font-normal text-gray-500 ml-1">of normal</span>
             </p>
             <p className="mt-1.5 text-xs font-mono text-sky-300">
-              ▲ recovering from ~{trough.pct.toFixed(0)}% trough ({trough.date})
+              ▲ rebounded from ~{trough.pct.toFixed(0)}% trough ({trough.date})
             </p>
           </div>
           <div className="flex-1 max-w-[240px]">
@@ -108,10 +108,19 @@ export default function HormuzThroughputPanel({ data }: { data: PortwatchData })
         </div>
 
         <p className="mt-3 text-[11px] leading-relaxed text-gray-500">
-          Tanker throughput through Hormuz collapsed to near-zero at the height of the conflict and has
-          rebounded to about {pct}% of its 2023 norm — a real recovery, but still far below normal.
+          Tanker throughput through Hormuz collapsed to near-zero at the height of the conflict and had
+          rebounded to about {pct}% of its 2023 norm through {hz.latestDate} — a real recovery, but still far
+          below normal.
           {transits != null && ` The 7-day transit rate (~${transits.toFixed(0)}/day) matches independent shipbroker counts.`}
         </p>
+        {hz.latestDate && hz.latestDate < '2026-07-08' && (
+          <p className="mt-2 text-[11px] leading-relaxed text-red-400/80">
+            Note: this series runs only to {hz.latestDate} — before the 8 July collapse of the U.S.–Iran
+            ceasefire and the return of U.S. strikes. Independent trackers (Lloyd&apos;s List) report Hormuz
+            transits falling back toward a near standstill since, so current movement is likely well below the{' '}
+            {pct}% shown here.
+          </p>
+        )}
         <p className="mt-2 text-[11px] leading-relaxed text-amber-500/70">
           Read it as a floor. This is an AIS-based count, and a meaningful share of post-conflict Hormuz
           traffic runs with transponders off (dark transit) or via evasive routing — so true movement is

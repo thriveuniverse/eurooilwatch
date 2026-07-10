@@ -347,24 +347,14 @@ export default async function DashboardPage() {
             <h2 className="text-xs font-mono font-semibold tracking-widest text-amber-300 uppercase">
               Global Oil — Where We Stand
             </h2>
-            <span className="text-[10px] font-mono text-amber-400/70">Updated 28 Jun 2026</span>
+            <span className="text-[10px] font-mono text-amber-400/70">Updated 10 Jul 2026</span>
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              Oil prices fall as Hormuz traffic resumes — but U.S. messaging shifts, IRGC leverage, diesel
-              tightness and power-grid stress keep the system on edge
+              The U.S.–Iran ceasefire has collapsed and strikes have resumed — yet crude holds in the mid-$70s as Hormuz traffic thins to a near standstill and the stress stays downstream
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              The crude panic has eased and Brent is back in the low-$70s (around $72.6, WTI ~$69.8) after a
-              10%+ drop last week. Middle East loadings are restarting under a temporary U.S. sanctions
-              waiver and Hormuz oil flows are at their highest since the war began (~4.8M bpd, still only about a third of the ~15M bpd pre-war norm), but volumes remain well below
-              normal, many vessels still go dark, and the IRGC retains real leverage over Iranian exports and
-              strait security. After a sharp 27 June exchange (U.S. strikes on Iran; Iranian missiles and
-              drones at U.S. bases in Bahrain and Kuwait), both sides agreed on 28 June to halt the
-              tit-for-tat and return to talks. A pattern of rapid U.S. messaging shifts — strike threats,
-              cancellations citing &ldquo;productive talks,&rdquo; repeated &ldquo;deal imminent&rdquo; calls
-              that slipped — adds uncertainty. The stress has moved downstream: diesel, refineries, ports,
-              power and shipping risk stay elevated.
+              The three-week-old U.S.–Iran ceasefire is over. On 8 July President Trump declared the interim deal dead; U.S. strikes on Iran resumed and Iran retaliated against U.S. positions across the Gulf (Bahrain, Kuwait, Qatar). Yet crude has stayed strikingly calm — Brent spiked about 6% to a two-week high near $80 on 8 July before easing to ~$76, still in contango. Visible Hormuz traffic has slowed to a near standstill: Lloyd&apos;s List Intelligence has not identified a single large vessel transiting the U.S.-coordinated Omani corridor with its transponder active since 7 July, though ships keep crossing dark — the strait is constrained, not closed. The U.S. Navy-led JMIC has raised the transit threat to its highest level, &ldquo;severe,&rdquo; while U.S. NAVCENT stresses no nation can close or control the strait; Lloyd&apos;s-market war-risk cover for a Hormuz transit now runs 2–6% of hull value (Marsh), from a fraction of a percent before the war. The stress remains downstream: diesel, refineries, ports, power and shipping risk stay elevated. On a second front, Ukraine&apos;s drone forces say they hit 21 Russian vessels in the Sea of Azov over 72 hours, choking fuel logistics to occupied Crimea (Ukraine&apos;s count; Russia acknowledges fewer).
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
@@ -379,7 +369,7 @@ export default async function DashboardPage() {
             </p>
           </div>
           <div className="px-5 py-2 border-t border-amber-700/20 bg-amber-950/10">
-            <p className="text-[10px] text-gray-600">Sources: Reuters, U.S. CENTCOM, EIA, IEA (28 June 2026).</p>
+            <p className="text-[10px] text-gray-600">Sources: Reuters, WSJ, Bloomberg, JMIC 013-26, U.S. NAVCENT, Marsh, Lloyd&apos;s List, IEA, CENTCOM (10 July 2026).</p>
           </div>
         </div>
       </section>
