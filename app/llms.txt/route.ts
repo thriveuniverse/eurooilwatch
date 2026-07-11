@@ -52,7 +52,7 @@ export async function GET() {
 
 > Independent EU fuel reserve and price intelligence. Daily-refreshed dashboard built on official Eurostat and European Commission data, covering all 27 member states.
 
-EuroOilWatch tracks EU-27 country fuel reserves, weekly pump prices from the EC Oil Bulletin, station-level pump prices for France, Spain and Italy (national open-data feeds, refreshed twice daily), Brent crude, TTF / Henry Hub gas + AGSI storage, ARA hub commercial stocks, jet fuel days-of-cover by country, refinery thermal anomalies, supply-route risk, live chokepoint ship-transit and port oil-flow data (IMF PortWatch) including a Europe Replacement Barrel Tracker, and interactive compound-cascade risk tools. All data traces back to named institutional sources. Free public API for programmatic access — see below.
+EuroOilWatch tracks EU-27 country fuel reserves, weekly pump prices from the EC Oil Bulletin, station-level pump prices for France, Spain and Italy (national open-data feeds, refreshed twice daily), Brent crude, TTF / Henry Hub gas + AGSI storage, ARA hub commercial stocks, jet fuel days-of-cover by country, Brent 3-2-1 and ICE gasoil refining-margin (crack-spread) panels, a Dow–Nasdaq divergence indicator, a Strait of Hormuz tanker-throughput tracker, a weekly Fertilizer Watch (urea / ammonia / DAP / potash + TTF gas), refinery thermal anomalies, supply-route risk, live chokepoint ship-transit and port oil-flow data (IMF PortWatch) including a Europe Replacement Barrel Tracker, and interactive compound-cascade risk tools. All data traces back to named institutional sources. Free public API for programmatic access — see below.
 
 ## Current snapshot (auto-refreshes daily; this page generated ${today})
 
@@ -104,12 +104,15 @@ Free, read-only JSON. CORS-enabled, no key required.
 - Spain station prices:  https://eurooilwatch.com/country/es
 - Italy station prices:  https://eurooilwatch.com/country/it
 - Global supply routes — live chokepoint transit, port oil-flow + Europe Replacement Barrel Tracker, Oil Route Stress score (IMF PortWatch): https://eurooilwatch.com/supply
-- Strait of Hormuz crisis timeline — a sourced, filterable chronology of the 2026 Hormuz crisis (military/diplomatic/shipping/market events, outbreak to fragile reopening): https://eurooilwatch.com/hormuz-timeline
+- Strait of Hormuz crisis timeline — a sourced, filterable chronology of the 2026 Hormuz crisis (military/diplomatic/shipping/market events, outbreak to renewed escalation): https://eurooilwatch.com/hormuz-timeline
 - Doom Loop Engine — interactive oil-supply cascade tools (Fragility Monitor, Doom Loop Engine, Vulnerability Tiering): https://eurooilwatch.com/doom-loop
 - The Hormuz Inventory Runway — interactive depletion model (accessible cushion drains in months; hoarding-feedback scenario): https://eurooilwatch.com/runway
 - Research hub — the original body of work (Jonathan Kelly): the Compound Cascade Systems Modelling framework + its companion Institutional Failure Mode Typology, plus the interactive instruments: https://eurooilwatch.com/research
 - Gas Tracker:         https://eurooilwatch.com/gas
 - Jet Fuel Tracker:    https://eurooilwatch.com/jet
+- The Second Shock Is Not the First — buffer-depletion analysis + a pre-registered, backcast-validated Monte Carlo (why the market has stopped pricing Hormuz): https://eurooilwatch.com/analysis/the-second-shock-is-not-the-first
+- Hormuz Is Not Reopened — a controlled high-risk corridor as a second diesel shock emerges (Part II): https://eurooilwatch.com/analysis/hormuz-controlled-corridor-diesel-shock
+- Fertilizer Watch — weekly urea / ammonia / DAP / potash + TTF gas benchmark tracker: https://eurooilwatch.com/fertilizer
 - Analysis archive:    https://eurooilwatch.com/analysis
 - Methodology:         https://eurooilwatch.com/methodology
 
