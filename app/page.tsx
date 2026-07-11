@@ -92,10 +92,10 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <DisruptionBanner
         tone="alert"
-        headline="Trump declares the US–Iran ceasefire over"
-        body="At the NATO summit in Ankara, President Trump declared the US–Iran interim agreement effectively over and tore into Iran's leadership, calling its leaders 'scum' and 'sick people' (Reuters, WSJ). Iranian attacks on Hormuz shipping drew US strikes and sent Brent up about 6% to a two-week high near $80; the US Navy-led JMIC has since raised the Hormuz transit threat to its highest level, 'severe.' The truce's collapse removes the framework that was holding Gulf passage together."
-        linkLabel="Hormuz as a toll road →"
-        linkHref="/analysis/hormuz-toll-road-strikes-are-enforcement"
+        headline="Hormuz is a controlled corridor, not reopened — and a second diesel shock is emerging"
+        body="Safe-passage talks resumed in Oman — Iran's FM Araqchi met a US team as Washington pressed for a public guarantee that all Hormuz lanes stay open, ships won't be fired on, and no tolls apply; Trump says talks continue though he calls the ceasefire over. The strait runs as a controlled high-risk corridor: some tankers cross the US-protected Omani route (two supertankers on 9–10 Jul), many wait, and vessels were struck near Oman on 7 Jul. Crude stays contained — Brent closed Friday at $76 (up ~5% on the week) — even as Russia's 8 July diesel export ban cut loadings to ~234k b/d and drove European diesel margins to a record."
+        linkLabel="Why the calm is deceptive →"
+        linkHref="/analysis/the-second-shock-is-not-the-first"
       />
 
       {/* Flagship analysis — bold feature banner */}
@@ -347,14 +347,14 @@ export default async function DashboardPage() {
             <h2 className="text-xs font-mono font-semibold tracking-widest text-amber-300 uppercase">
               Global Oil — Where We Stand
             </h2>
-            <span className="text-[10px] font-mono text-amber-400/70">Updated 10 Jul 2026</span>
+            <span className="text-[10px] font-mono text-amber-400/70">Updated 11 Jul 2026</span>
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              The U.S.–Iran ceasefire has collapsed and strikes have resumed — yet crude holds in the mid-$70s as Hormuz traffic thins to a near standstill and the stress stays downstream
+              Two crises at once — Hormuz is now a controlled high-risk corridor while Russia&apos;s diesel export ban opens a second, downstream shock, yet crude stays contained in the mid-$70s
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              The three-week-old U.S.–Iran ceasefire is over. On 8 July President Trump declared the interim deal dead; U.S. strikes on Iran resumed and Iran retaliated against U.S. positions across the Gulf (Bahrain, Kuwait, Qatar). Yet crude has stayed strikingly calm — Brent spiked about 6% to a two-week high near $80 on 8 July before easing to ~$76, still in contango. Visible Hormuz traffic has slowed to a near standstill: Lloyd&apos;s List Intelligence has not identified a single large vessel transiting the U.S.-coordinated Omani corridor with its transponder active since 7 July, though ships keep crossing dark — the strait is constrained, not closed. The U.S. Navy-led JMIC has raised the transit threat to its highest level, &ldquo;severe,&rdquo; while U.S. NAVCENT stresses no nation can close or control the strait; Lloyd&apos;s-market war-risk cover for a Hormuz transit now runs 2–6% of hull value (Marsh), from a fraction of a percent before the war. The stress remains downstream: diesel, refineries, ports, power and shipping risk stay elevated. On a second front, Ukraine&apos;s drone forces say they hit 21 Russian vessels in the Sea of Azov over 72 hours, choking fuel logistics to occupied Crimea (Ukraine&apos;s count; Russia acknowledges fewer).
+              The Hormuz stand-off is back at the centre of the market — but it is now a two-front supply story. Diplomacy has shifted: Iran&apos;s foreign minister Abbas Araqchi is in Oman for talks with a U.S. team (Vance, Rubio, Witkoff, Kushner), and Washington&apos;s demand is no longer merely a ceasefire but a public Iranian guarantee that all Hormuz lanes stay open, that ships will not be fired on, and that no tolls are imposed; President Trump says talks continue even as he calls the ceasefire over. On the water the strait is neither closed nor normal — it runs as a controlled high-risk corridor: a handful of tankers cross on the U.S.-protected Omani-side route (two supertankers did so on 9–10 July) while at least eight vessels U-turned over Friday–Saturday and Iran presses traffic toward its own northern lane; tankers were struck near the Oman coast on 7 July. Second — and potentially bigger for fuel users — Russia banned all diesel exports on 8 July after Ukrainian strikes on its refineries: loadings collapsed to about 234,000 b/d over 1–10 July from a 2025 average near 817,000, and European diesel margins hit a record $60.17/bbl. Yet crude stays contained — Brent closed Friday at $76.01 (up about 5% on the week), WTI at $71.41 — still pricing eventual containment rather than a total loss of Gulf exports. The squeeze is moving downstream, into diesel, freight and the pump, faster than into headline Brent.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
@@ -369,7 +369,7 @@ export default async function DashboardPage() {
             </p>
           </div>
           <div className="px-5 py-2 border-t border-amber-700/20 bg-amber-950/10">
-            <p className="text-[10px] text-gray-600">Sources: Reuters, WSJ, Bloomberg, JMIC 013-26, U.S. NAVCENT, Marsh, Lloyd&apos;s List, IEA, CENTCOM (10 July 2026).</p>
+            <p className="text-[10px] text-gray-600">Sources: Reuters, WSJ, Bloomberg, FT, Kpler, Al-Monitor, JMIC 013-26, U.S. NAVCENT, Marsh, IEA (11 July 2026).</p>
           </div>
         </div>
       </section>
