@@ -3,15 +3,15 @@
   "name": "Sarthe",
   "regionCode": "PDL",
   "regionName": "Pays de la Loire",
-  "asOf": "2026-07-12T07:36:00.525Z",
+  "asOf": "2026-07-12T13:59:14.519Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 93,
+  "stationCount": 94,
   "fuels": {
     "gazole": {
-      "count": 92,
-      "mean": 1.9848,
-      "median": 1.9825,
+      "count": 93,
+      "mean": 1.9845,
+      "median": 1.981,
       "min": 1.85,
       "max": 2.383
     },
@@ -23,15 +23,15 @@
       "max": 2.192
     },
     "sp98": {
-      "count": 73,
-      "mean": 2.037,
+      "count": 71,
+      "mean": 2.0383,
       "median": 1.998,
       "min": 1.949,
       "max": 2.535
     },
     "e10": {
-      "count": 76,
-      "mean": 1.9533,
+      "count": 75,
+      "mean": 1.9528,
       "median": 1.919,
       "min": 1.872,
       "max": 2.385
@@ -633,6 +633,18 @@
       }
     },
     {
+      "id": "72100014",
+      "cp": "72100",
+      "ville": "Le Mans",
+      "adresse": "110 -112 BLD DEMORIEUX",
+      "pop": "R",
+      "lat": 4799700,
+      "lng": 18700,
+      "fuels": {
+        "gazole": 1.951
+      }
+    },
+    {
       "id": "72100012",
       "cp": "72100",
       "ville": "Le Mans",
@@ -642,7 +654,6 @@
       "lng": 22100,
       "fuels": {
         "gazole": 1.945,
-        "sp98": 1.99,
         "gplc": 0.929
       }
     },
@@ -1248,8 +1259,6 @@
       "lng": 25581.709,
       "fuels": {
         "gazole": 1.99,
-        "sp98": 1.99,
-        "e10": 1.99,
         "e85": 0.998,
         "gplc": 1.084
       }

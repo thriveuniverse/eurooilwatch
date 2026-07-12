@@ -3,21 +3,21 @@
   "name": "Côtes-d'Armor",
   "regionCode": "BRE",
   "regionName": "Bretagne",
-  "asOf": "2026-07-12T07:36:00.525Z",
+  "asOf": "2026-07-12T13:59:14.519Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 110,
   "fuels": {
     "gazole": {
       "count": 110,
-      "mean": 1.9507,
+      "mean": 1.9518,
       "median": 1.949,
-      "min": 1.859,
+      "min": 1.869,
       "max": 2.089
     },
     "sp95": {
-      "count": 33,
-      "mean": 1.9598,
+      "count": 34,
+      "mean": 1.9601,
       "median": 1.959,
       "min": 1.918,
       "max": 2.01
@@ -61,7 +61,9 @@
       "lat": 4857584.65688,
       "lng": -214954.28181,
       "fuels": {
-        "gazole": 1.859
+        "gazole": 1.979,
+        "sp95": 1.969,
+        "sp98": 1.989
       }
     },
     {
@@ -707,7 +709,6 @@
       "lng": -240400,
       "fuels": {
         "gazole": 1.99,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
