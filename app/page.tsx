@@ -92,8 +92,8 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <DisruptionBanner
         tone="alert"
-        headline="Hormuz is a controlled corridor, not reopened — and a second diesel shock is emerging"
-        body="Safe-passage talks resumed in Oman — Iran's FM Araqchi met a US team as Washington pressed for a public guarantee that all Hormuz lanes stay open, ships won't be fired on, and no tolls apply; Trump says talks continue though he calls the ceasefire over. The strait runs as a controlled high-risk corridor: some tankers cross the US-protected Omani route (two supertankers on 9–10 Jul), many wait, and vessels were struck near Oman on 7 Jul. Crude stays contained — Brent closed Friday at $76 (up ~5% on the week) — even as Russia's 8 July diesel export ban cut loadings to ~234k b/d and drove European diesel margins to a record."
+        headline="Iran declares Hormuz closed after the GFS Galaxy attack; the U.S. strikes back — closure contested, Monday is the test"
+        body="Iran's IRGC has declared the Strait of Hormuz closed 'until further notice' after striking the Cyprus-flagged container ship GFS Galaxy (engine-room fire, crew evacuated to a lifeboat, one missing; CENTCOM). The US answered with a third round of strikes this week — ~140 targets overnight, 300+ over three nights. The closure is contested: CENTCOM says transit is still possible and some ships cross dark or under escort, but traffic has collapsed toward a standstill and insurers are pausing voyages. Brent closed Friday at $76 — Monday's open is the first market test."
         linkLabel="Why the calm is deceptive →"
         linkHref="/analysis/the-second-shock-is-not-the-first"
       />
@@ -344,14 +344,14 @@ export default async function DashboardPage() {
             <h2 className="text-xs font-mono font-semibold tracking-widest text-amber-300 uppercase">
               Global Oil — Where We Stand
             </h2>
-            <span className="text-[10px] font-mono text-amber-400/70">Updated 11 Jul 2026</span>
+            <span className="text-[10px] font-mono text-amber-400/70">Updated 12 Jul 2026</span>
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              Two crises at once — Hormuz is now a controlled high-risk corridor while Russia&apos;s diesel export ban opens a second, downstream shock, yet crude stays contained in the mid-$70s
+              Iran declares Hormuz closed after striking the container ship GFS Galaxy — the U.S. answers with a third round of strikes; the closure is contested, and Monday&apos;s open is the first market test
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              The Hormuz stand-off is back at the centre of the market — but it is now a two-front supply story. Diplomacy has shifted: Iran&apos;s foreign minister Abbas Araqchi is in Oman for talks with a U.S. team (Vance, Rubio, Witkoff, Kushner), and Washington&apos;s demand is no longer merely a ceasefire but a public Iranian guarantee that all Hormuz lanes stay open, that ships will not be fired on, and that no tolls are imposed; President Trump says talks continue even as he calls the ceasefire over. On the water the strait is neither closed nor normal — it runs as a controlled high-risk corridor: a handful of tankers cross on the U.S.-protected Omani-side route (two supertankers did so on 9–10 July) while at least eight vessels U-turned over Friday–Saturday and Iran presses traffic toward its own northern lane; tankers were struck near the Oman coast on 7 July. Second — and potentially bigger for fuel users — Russia banned all diesel exports on 8 July after Ukrainian strikes on its refineries: loadings collapsed to about 234,000 b/d over 1–10 July from a 2025 average near 817,000, and European diesel margins hit a record $60.17/bbl. Yet crude stays contained — Brent closed Friday at $76.01 (up about 5% on the week), WTI at $71.41 — still pricing eventual containment rather than a total loss of Gulf exports. The squeeze is moving downstream, into diesel, freight and the pump, faster than into headline Brent.
+              The crisis has entered its most dangerous phase. Overnight into Sunday, Iran&apos;s IRGC declared the Strait of Hormuz closed &ldquo;until further notice&rdquo; — until, it said, the end of U.S. intervention in the region — after its forces struck the Cyprus-flagged container ship GFS Galaxy, setting off an engine-room fire that forced the crew into a lifeboat; one crew member is missing (CENTCOM). It caps a week of attacks on shipping, including the Qatari LNG carrier Al Rekayat and the Saudi supertanker Wedyan on 7 July. The U.S. answered with its third round of strikes this week — about 140 Iranian targets overnight, more than 300 over three nights — citing the assault on commercial vessels. Crucially, the closure is a declaration, not a physical seal: CENTCOM says lawful transit is still possible and some tankers keep crossing dark or under escort, while Iran claims it fired only on a ship that had switched off its tracking and strayed from an approved route. For the market, behaviour matters more than proclamations — and behaviour has collapsed toward a standstill, with insurers pausing voyages and war-risk cover restricted. Brent closed Friday at $76.01; the first real test of this escalation comes at Monday&apos;s open. The squeeze also keeps building downstream, where Russia&apos;s diesel export ban has driven European diesel margins to a record.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
@@ -366,7 +366,7 @@ export default async function DashboardPage() {
             </p>
           </div>
           <div className="px-5 py-2 border-t border-amber-700/20 bg-amber-950/10">
-            <p className="text-[10px] text-gray-600">Sources: Reuters, WSJ, Bloomberg, FT, Kpler, Al-Monitor, JMIC 013-26, U.S. NAVCENT, Marsh, IEA (11 July 2026).</p>
+            <p className="text-[10px] text-gray-600">Sources: CENTCOM, Reuters, Al Jazeera, Al-Monitor, CNN, The Hill, UKMTO, Kpler (12 July 2026).</p>
           </div>
         </div>
       </section>
