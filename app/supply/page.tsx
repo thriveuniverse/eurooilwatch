@@ -371,20 +371,13 @@ export default async function SupplyPage() {
       {/* Chokepoints overview map */}
       <ChokepointsMap />
 
-      {/* 8 July 2026 — ceasefire declared over */}
+      {/* 13 July 2026 — Iran declares Hormuz closed */}
       <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
         <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
-          8 July 2026 — Ceasefire declared over
+          13 July 2026 — Iran declares Hormuz closed; conflict widens toward oil
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
-          The US–Iran truce has collapsed as a political framework. At the NATO summit in Ankara, President Trump
-          declared the interim agreement <strong className="text-white">effectively over</strong> and attacked
-          Iran&rsquo;s leadership — calling its leaders &ldquo;scum&rdquo; and &ldquo;sick people,&rdquo; and likening
-          the threat from Iran&rsquo;s government to a cancer that should be &ldquo;cut out &hellip; early.&rdquo; The
-          remarks followed a further round of Iranian attacks on ships in the Strait of Hormuz; US strikes on Iran,
-          now into a second day, have been met by a wave of Iranian retaliation against US facilities across Bahrain,
-          Kuwait and <strong className="text-white">Qatar</strong> — home to the region&rsquo;s largest US base. The
-          IRGC called it the &ldquo;first phase&rdquo; of its response and warned of more.
+          The US–Iran conflict has escalated sharply since the July ceasefire collapsed. Over the weekend Iran&rsquo;s IRGC declared the Strait of Hormuz <strong className="text-white">closed &ldquo;until further notice&rdquo;</strong> — after its forces struck the Cyprus-flagged container ship <strong className="text-white">GFS Galaxy</strong> (engine-room fire, crew evacuated to a lifeboat, one crew member missing; CENTCOM). The US answered with further rounds of strikes, the latest on Sunday using one-way attack sea drones for the first time, and Iran retaliated across Kuwait, Jordan, Qatar, Bahrain and Oman — including the <strong className="text-white">first strike on Gulf oil infrastructure in weeks</strong>, a Kuwaiti drilling facility. Oil jumped at Monday&rsquo;s open, Brent trading above <strong className="text-white">$79</strong> and WTI near $74 as the war premium returned.
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           Iranian officials say a US projectile hit the <strong className="text-white">perimeter area</strong> of the
@@ -395,13 +388,10 @@ export default async function SupplyPage() {
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           Reuters ship-tracking found <strong className="text-white">at least four oil and gas tankers reversed
-          course</strong> near the strait; others continued to transit, so <strong className="text-white">Hormuz is
-          not closed</strong>. The US Navy-led Joint Maritime Information Center has raised the transit threat to{' '}
+          course</strong> near the strait; others continued to transit. The strait&rsquo;s status is now <strong className="text-white">openly contested</strong> — Iran declares it closed while the US and CENTCOM insist it stays open to lawful transit, and the JMIC says the Oman-coordinated southern lane remains available. The US Navy-led Joint Maritime Information Center has raised the transit threat to{' '}
           <strong className="text-red-300">&ldquo;severe&rdquo;</strong> — up from &ldquo;substantial,&rdquo; its
           highest since mid-June — and the <strong className="text-white">IMO Secretary-General</strong> has urged
-          shipowners not to expose crews to unnecessary danger by transiting while safety cannot be assured. Brent
-          spiked about <strong className="text-white">6% to a two-week high near $80</strong> on Wednesday before
-          easing to about <strong className="text-white">$77</strong> on Thursday.
+          shipowners not to expose crews to unnecessary danger by transiting while safety cannot be assured. Brent spiked about <strong className="text-white">6% to near $80</strong> as the fighting resumed, round-tripped to about <strong className="text-white">$76</strong> by Friday, then jumped back above <strong className="text-white">$79</strong> at Monday&rsquo;s open.
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           A fresh <strong className="text-white">JMIC advisory (013-26, 10 July)</strong> keeps the threat level at{' '}
