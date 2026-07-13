@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import FreshnessGuard from '@/components/FreshnessGuard';
 import fs from 'fs';
 import path from 'path';
 import { getGDACSEvents, EVENT_TYPE_LABELS, EVENT_TYPE_ICONS } from '@/lib/gdacs';
@@ -285,6 +286,7 @@ function portwatchOverrideFor(
 }
 
 export default async function SupplyPage() {
+  const supplyNoteAsOf = '2026-07-13'; // single source: the dateline + the FreshnessGuard below
   const [gdacsEvents, usgsQuakes, firmsResult] = await Promise.all([
     getGDACSEvents(),
     getUSGSQuakes(),
@@ -374,8 +376,9 @@ export default async function SupplyPage() {
       {/* 13 July 2026 — Iran declares Hormuz closed */}
       <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
         <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
-          13 July 2026 — Iran declares Hormuz closed; conflict widens toward oil
+          {new Date(supplyNoteAsOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} — Iran declares Hormuz closed; conflict widens toward oil
         </p>
+        <FreshnessGuard lastUpdated={supplyNoteAsOf} maxAgeDays={5} label="This note" className="mt-2" />
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           The US–Iran conflict has escalated sharply since the July ceasefire collapsed. Over the weekend Iran&rsquo;s IRGC declared the Strait of Hormuz <strong className="text-white">closed &ldquo;until further notice&rdquo;</strong> — after its forces struck the Cyprus-flagged container ship <strong className="text-white">GFS Galaxy</strong> (engine-room fire, crew evacuated to a lifeboat, one crew member missing; CENTCOM). The US answered with further rounds of strikes, the latest on Sunday using one-way attack sea drones for the first time, and Iran retaliated across Kuwait, Jordan, Qatar, Bahrain and Oman — including the <strong className="text-white">first strike on Gulf oil infrastructure in weeks</strong>, a Kuwaiti drilling facility. Oil jumped at Monday&rsquo;s open, Brent trading above <strong className="text-white">$79</strong> and WTI near $74 as the war premium returned.
         </p>

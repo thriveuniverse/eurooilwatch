@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import FreshnessGuard from '@/components/FreshnessGuard';
 
 // Version this key — changing it will re-show the banner even for users who dismissed it.
 // Update the date suffix whenever you update the banner content.
@@ -17,9 +18,11 @@ interface Props {
   linkHref: string;
   /** 'alert' = red (active disruption) | 'update' = amber (de-escalation / status change) */
   tone?: 'alert' | 'update';
+  /** ISO date the banner was last updated — shows a stale badge past a few days */
+  lastUpdated?: string;
 }
 
-export default function DisruptionBanner({ headline, body, linkLabel, linkHref, tone = 'alert' }: Props) {
+export default function DisruptionBanner({ headline, body, linkLabel, linkHref, tone = 'alert', lastUpdated }: Props) {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -39,6 +42,7 @@ export default function DisruptionBanner({ headline, body, linkLabel, linkHref, 
       : { box: 'border-red-800/70 bg-red-950/50', icon: 'text-red-400', head: 'text-red-300', body: 'text-red-200/80', link: 'text-red-300', dismiss: 'text-red-500 hover:text-red-200', glyph: '⚠' };
 
   return (
+    <>
     <div role="alert" className={`rounded-lg border ${c.box} px-4 py-3 flex items-start gap-3 text-sm`}>
       <span className={`flex-shrink-0 mt-0.5 ${c.icon} text-base leading-none`}>{c.glyph}</span>
 
@@ -62,5 +66,7 @@ export default function DisruptionBanner({ headline, body, linkLabel, linkHref, 
         ×
       </button>
     </div>
+    {lastUpdated && <FreshnessGuard lastUpdated={lastUpdated} maxAgeDays={4} label="This alert" className="mt-1" />}
+    </>
   );
 }
