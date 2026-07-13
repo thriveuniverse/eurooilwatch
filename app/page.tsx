@@ -92,8 +92,8 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <DisruptionBanner
         tone="alert"
-        headline="Iran declares Hormuz closed after the GFS Galaxy attack; the U.S. strikes back — closure contested, Monday is the test"
-        body="Iran's IRGC has declared the Strait of Hormuz closed 'until further notice' after striking the Cyprus-flagged container ship GFS Galaxy (engine-room fire, crew evacuated to a lifeboat, one missing; CENTCOM). The US answered with a third round of strikes this week — ~140 targets overnight, 300+ over three nights. The closure is contested: CENTCOM says transit is still possible and some ships cross dark or under escort, but traffic has collapsed toward a standstill and insurers are pausing voyages. Brent closed Friday at $76 — Monday's open is the first market test."
+        headline="Oil tops $79 as the Hormuz conflict escalates — Trump says the strait is open, Iran says closed; first Gulf oil-infrastructure strike in weeks"
+        body="Oil jumped at Monday's open — Brent above $79, WTI ~$74 — as the US and Iran traded fresh strikes over the weekend and the strait's status is openly contested: Trump says it's open, Iran's IRGC says closed 'until further notice.' Just six vessels transited Sunday, a five-week low (Kpler); Monday was near-nonexistent, most crossing dark. Iranian retaliation hit a Kuwaiti oil facility — the first strike on Gulf energy infrastructure in weeks — putting $100 back in view if it widens (MST Marquee). The IEA warns the flare-up could derail the inventory rebuild."
         linkLabel="Why the calm is deceptive →"
         linkHref="/analysis/the-second-shock-is-not-the-first"
       />
@@ -344,14 +344,14 @@ export default async function DashboardPage() {
             <h2 className="text-xs font-mono font-semibold tracking-widest text-amber-300 uppercase">
               Global Oil — Where We Stand
             </h2>
-            <span className="text-[10px] font-mono text-amber-400/70">Updated 12 Jul 2026</span>
+            <span className="text-[10px] font-mono text-amber-400/70">Updated 13 Jul 2026</span>
           </div>
           <div className="px-5 py-4 space-y-2">
             <p className="text-sm font-semibold text-white">
-              Iran declares Hormuz closed after striking the container ship GFS Galaxy — the U.S. answers with a third round of strikes; the closure is contested, and Monday&apos;s open is the first market test
+              Oil jumps as the Hormuz conflict escalates — Brent tops $79 with Trump calling the strait open and Iran calling it closed; the first strike on Gulf oil infrastructure in weeks puts $100 back in view
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              The crisis has entered its most dangerous phase. Overnight into Sunday, Iran&apos;s IRGC declared the Strait of Hormuz closed &ldquo;until further notice&rdquo; — until, it said, the end of U.S. intervention in the region — after its forces struck the Cyprus-flagged container ship GFS Galaxy, setting off an engine-room fire that forced the crew into a lifeboat; one crew member is missing (CENTCOM). It caps a week of attacks on shipping, including the Qatari LNG carrier Al Rekayat and the Saudi supertanker Wedyan on 7 July. The U.S. answered with its third round of strikes this week — about 140 Iranian targets overnight, more than 300 over three nights — citing the assault on commercial vessels. Crucially, the closure is a declaration, not a physical seal: CENTCOM says lawful transit is still possible and some tankers keep crossing dark or under escort, while Iran claims it fired only on a ship that had switched off its tracking and strayed from an approved route. For the market, behaviour matters more than proclamations — and behaviour has collapsed toward a standstill, with insurers pausing voyages and war-risk cover restricted. Brent closed Friday at $76.01; the first real test of this escalation comes at Monday&apos;s open. The squeeze also keeps building downstream, where Russia&apos;s diesel export ban has driven European diesel margins to a record.
+              Markets delivered their verdict at Monday&apos;s open: Brent jumped above $79 (about +4.5%) and WTI to around $74 as the U.S.–Iran conflict escalated over the weekend, reinserting the war premium the June truce had erased. The strait&apos;s status is now openly contested — President Trump says it is open (&ldquo;we bombed the hell out of them&rdquo;), while Iran&apos;s IRGC insists it is closed &ldquo;until further notice,&rdquo; until the U.S. ends what it calls interference; the U.S. Navy-led JMIC says the southern, Oman-coordinated lane remains available. What actually moved tells the story: just six vessels transited on Sunday, a five-week low (Kpler), and Monday&apos;s traffic was &ldquo;almost nonexistent,&rdquo; most ships crossing with transponders off — the UAE among those using dark shuttle tankers. Further U.S. strikes on Sunday — the latest in a near-daily series, and the first to use one-way attack sea drones — drew Iranian retaliation across Kuwait, Jordan, Qatar, Bahrain and Oman, including the first strike on Gulf oil infrastructure in weeks: a Kuwaiti drilling facility. If energy infrastructure is targeted more broadly, $100 oil is back in view (Saul Kavonic, MST Marquee). The IEA warned on Friday that the flare-up risks derailing the rebuild of depleted global inventories later this year — the same thin buffers this site has tracked all along.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
@@ -366,7 +366,7 @@ export default async function DashboardPage() {
             </p>
           </div>
           <div className="px-5 py-2 border-t border-amber-700/20 bg-amber-950/10">
-            <p className="text-[10px] text-gray-600">Sources: CENTCOM, Reuters, Al Jazeera, Al-Monitor, CNN, The Hill, UKMTO, Kpler (12 July 2026).</p>
+            <p className="text-[10px] text-gray-600">Sources: Reuters, Bloomberg, FT, CENTCOM, Kpler, JMIC, IEA, CNN (13 July 2026).</p>
           </div>
         </div>
       </section>
