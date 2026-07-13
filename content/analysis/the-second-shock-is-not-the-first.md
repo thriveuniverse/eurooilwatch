@@ -9,7 +9,7 @@ author: "Jon Kelly"
 
 *Editorial note: This is a dated snapshot, current as of 10 July 2026. The buffer-state Monte Carlo behind Section 6 is built and validated against the February–June episode; because one input — the July days-of-cover figure from the IEA Oil Market Report — publishes only mid-month, Section 6's magnitudes are reported here as ranges across the plausible cover band rather than as point estimates. **This analysis will be updated when the July IEA OMR publishes**, with the single figure dropped as a marker on the Section 6 exhibit and the magnitudes finalised; the pre-registered paragraphs and the ledger's direction do not depend on it. Model code and configuration are available on request.*
 
-*Update — Part II (11 July): [Hormuz Is Not Reopened — a Controlled High-Risk Corridor as a Second Diesel Shock Emerges](/analysis/hormuz-controlled-corridor-diesel-shock) extends this argument as the downstream squeeze it predicted begins to surface.*
+*Update — Part II (11 July): [Hormuz Is Not Reopened — a Controlled High-Risk Corridor as a Second Diesel Shock Emerges](/analysis/hormuz-controlled-corridor-diesel-shock) extends this argument as the downstream squeeze it predicted begins to surface. Part III (13 July): [Europe's Self-Inflicted Exposure](/analysis/europes-self-inflicted-exposure) traces the same fragility to Europe's own energy choices.*
 
 ---
 

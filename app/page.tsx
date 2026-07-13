@@ -115,6 +115,23 @@ export default async function DashboardPage() {
         </span>
       </a>
 
+      {/* EuroOilWatch flagship — Europe's self-inflicted exposure (third in the series) */}
+      <a
+        href="/analysis/europes-self-inflicted-exposure"
+        className="block rounded-lg border border-sky-600/50 bg-sky-950/20 px-4 py-3.5 hover:border-sky-500 hover:bg-sky-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-sky-400 uppercase">
+          EuroOilWatch Analysis · New
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          Europe&apos;s Self-Inflicted Exposure &mdash; Record Russian LNG, Stalled Electrification, and a Gulf Oil Shock{' '}
+          <span className="text-sky-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          In one week Europe bought record Russian LNG, a Gulf war reinserted an oil premium, and the IEA&apos;s own chief called the continent&apos;s failure to electrify a &ldquo;major mistake.&rdquo; The exposure now being stress-tested at Hormuz is, to a substantial degree, self-inflicted. Third in a connected series.
+        </span>
+      </a>
+
       {/* Research hub — flagship body of work */}
       <a
         href="/research"
