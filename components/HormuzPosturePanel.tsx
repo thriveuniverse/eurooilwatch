@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import FreshnessGuard from '@/components/FreshnessGuard';
+import { getHormuzTimeline } from '@/lib/hormuz-timeline';
 
 /**
  * Hormuz Force Posture — a SOURCED US/Iran naval order-of-battle for the strait.
@@ -82,6 +83,10 @@ export default function HormuzPosturePanel() {
   const d = readPosture();
   if (!d) return null;
 
+  const incidents = getHormuzTimeline()
+    .events.filter((e) => e.category === 'military' || e.category === 'shipping')
+    .slice(0, 4);
+
   return (
     <section aria-label="Hormuz force posture" className="rounded-lg border border-oil-800 bg-oil-900/20 overflow-hidden">
       <div className="px-5 py-3 border-b border-oil-800/60 flex items-center justify-between flex-wrap gap-2">
@@ -98,6 +103,43 @@ export default function HormuzPosturePanel() {
           <Column side={d.us} accent="text-sky-400/80" />
           <Column side={d.iran} accent="text-red-400/80" />
         </div>
+
+        {incidents.length > 0 && (
+          <div className="mt-4 pt-3 border-t border-oil-800/50">
+            <h3 className="text-[10px] font-mono font-semibold tracking-widest text-gray-500 uppercase">
+              Recent incidents · from the crisis timeline
+            </h3>
+            <ul className="mt-2 space-y-1.5">
+              {incidents.map((e) => (
+                <li key={e.id} className="flex gap-2 text-[11px] leading-relaxed">
+                  <span className="flex-shrink-0 font-mono text-gray-600">{fmt(e.date)}</span>
+                  <span className="text-gray-400">
+                    {e.headline}
+                    {e.sources?.[0] && (
+                      <>
+                        {' · '}
+                        <a
+                          href={e.sources[0].url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-600 underline hover:text-gray-400"
+                        >
+                          {e.sources[0].label}
+                        </a>
+                      </>
+                    )}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-2 text-[10px] text-gray-600">
+              Full chronology:{' '}
+              <a href="/hormuz-timeline" className="underline hover:text-gray-400">
+                Strait of Hormuz crisis timeline &rarr;
+              </a>
+            </p>
+          </div>
+        )}
 
         <p className="mt-4 pt-3 border-t border-oil-800/50 text-[10px] text-gray-500 leading-relaxed">
           {d.disclaimer}
