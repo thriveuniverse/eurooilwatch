@@ -385,6 +385,20 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* In his own words — Trump's 20% Hormuz toll declaration (13 Jul) */}
+            <div className="rounded border border-amber-700/40 bg-oil-950/50 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-amber-400/80 uppercase">
+                In his own words — Trump, Truth Social, 13 July 2026
+              </p>
+              <div className="mt-2 space-y-1.5 border-l-2 border-amber-600/40 pl-3 text-xs italic text-gray-300 leading-relaxed">
+                <p>&ldquo;The Strait of Hormuz is OPEN, and will remain OPEN, with or without Iran.&rdquo;</p>
+                <p>&ldquo;We are reinstating THE IRANIAN BLOCKADE&hellip; All other countries will have fair and open use of the Strait.&rdquo;</p>
+                <p>&ldquo;The U.S.A. will be, from this point forward, known as &lsquo;THE GUARDIAN OF THE HORMUZ STRAIT,&rsquo; but as such&hellip; will be reimbursed, at the rate of 20% on all cargo shipped&hellip; The process and formation will begin immediately.&rdquo;</p>
+              </div>
+              <p className="mt-2 text-[11px] text-gray-500 leading-relaxed">
+                A 20% levy on a strait carrying roughly a fifth of global oil consumption would be an unprecedented assertion of control, and oil rose on the announcement. There is <strong className="text-gray-400">no executive order, legal framework or collection mechanism</strong> &mdash; and the IMO Council has ruled that transit through international straits may not be tolled. Iran&rsquo;s Persian Gulf Strait Authority called passage &ldquo;currently unfeasible&rdquo; and suspended permits. Both powers now claim the strait; neither has implemented anything.
+              </p>
+            </div>
             <p className="text-sm font-semibold text-white">
               Oil jumps as the Hormuz conflict escalates — Brent tops $79 with Trump calling the strait open and Iran calling it closed; the first strike on Gulf oil infrastructure in weeks puts $100 back in view
             </p>
