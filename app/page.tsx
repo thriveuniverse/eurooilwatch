@@ -95,8 +95,8 @@ export default async function DashboardPage() {
       <DisruptionBanner
         lastUpdated={whereWeStandAsOf}
         tone="alert"
-        headline="Oil tops $79 as the Hormuz conflict escalates — Trump says the strait is open, Iran says closed; first Gulf oil-infrastructure strike in weeks"
-        body="Oil jumped at Monday's open — Brent above $79, WTI ~$74 — as the US and Iran traded fresh strikes over the weekend and the strait's status is openly contested: Trump says it's open, Iran's IRGC says closed 'until further notice.' Just six vessels transited Sunday, a five-week low (Kpler); Monday was near-nonexistent, most crossing dark. Iranian retaliation hit a Kuwaiti oil facility — the first strike on Gulf energy infrastructure in weeks — putting $100 back in view if it widens (MST Marquee). The IEA warns the flare-up could derail the inventory rebuild."
+        headline="Trump reinstates an Iran blockade and proposes a 20% US toll on all Hormuz cargo"
+        body="In a Truth Social post the president declared Hormuz 'OPEN, with or without Iran,' reinstated a US blockade of Iranian ships, styled the US the 'Guardian of the Hormuz Strait,' and demanded a 20% fee on all cargo transiting the waterway. Iran's Persian Gulf Strait Authority counters that passage is 'currently unfeasible' and has suspended permits; Brent trades above $79 as the war premium returns. Both powers now claim the strait — the IMO Council has ruled neither may toll it — and there is no US executive order or collection mechanism yet: a declaration, not a mechanism."
         linkLabel="Why the calm is deceptive →"
         linkHref="/analysis/the-second-shock-is-not-the-first"
       />
