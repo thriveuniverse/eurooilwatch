@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import FreshnessGuard from '@/components/FreshnessGuard';
 
 interface SpotPhysical {
   priceEur: number;
@@ -76,6 +77,7 @@ export default function PhysicalSpotPanel({ brentUsd }: Props) {
           {spot.note}
         </p>
       )}
+      <FreshnessGuard lastUpdated={spot.asOf} maxAgeDays={6} label="This estimate" className="mt-2" />
     </section>
   );
 }

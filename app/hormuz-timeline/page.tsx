@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getHormuzTimeline } from '@/lib/hormuz-timeline';
 import HormuzTimeline from '@/components/HormuzTimeline';
+import FreshnessGuard from '@/components/FreshnessGuard';
 
 export const revalidate = 3600;
 
@@ -61,6 +62,7 @@ export default function HormuzTimelinePage() {
             Current phase — {meta.phase}
           </p>
         )}
+        <FreshnessGuard lastUpdated={meta.lastUpdated} maxAgeDays={4} label="This timeline" className="mt-3" />
       </div>
 
       {/* Crisis at a glance */}

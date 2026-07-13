@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import FreshnessGuard from '@/components/FreshnessGuard';
 
 interface Reading {
   product: string;
@@ -45,6 +46,8 @@ export default function FertilizerWatchPanel() {
           Editorial · updated weekly
         </span>
       </div>
+
+      <FreshnessGuard lastUpdated={data.asOf} maxAgeDays={9} label="This fertilizer read" className="mx-5 mt-3" />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-amber-800/30">
         {data.readings.map((r, i) => (
