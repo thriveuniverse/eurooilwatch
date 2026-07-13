@@ -135,6 +135,23 @@ export default async function DashboardPage() {
         </span>
       </a>
 
+      {/* Framework keystone — Why Cheap Energy Isn't Always Cheap */}
+      <a
+        href="/analysis/why-cheap-energy-isnt-always-cheap"
+        className="block rounded-lg border border-emerald-600/50 bg-emerald-950/20 px-4 py-3.5 hover:border-emerald-500 hover:bg-emerald-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-emerald-400 uppercase">
+          New · The Framework
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          Why Cheap Energy Isn&rsquo;t Always Cheap{' '}
+          <span className="text-emerald-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          The theory beneath the headlines &mdash; Ricardo&rsquo;s comparative advantage and rent, the electricity merit order, Jevons and chokepoint rent. Why a cheap unit of energy is not a cheap energy system, and why the scarcity prices that should fund resilience are the ones policy keeps switching off.
+        </span>
+      </a>
+
       {/* Research hub — flagship body of work */}
       <a
         href="/research"

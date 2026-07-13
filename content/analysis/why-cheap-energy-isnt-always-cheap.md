@@ -585,3 +585,7 @@ Ricardo explains why economies pursue the cheapest unit.
 Strategic analysis explains why societies must also protect the system that delivers it.
 
 The challenge is not to choose between efficiency and security. It is to recognise that a system incapable of surviving disruption was never truly efficient in the first place.
+
+---
+
+*This essay is the framework beneath our live coverage of the 2026 energy shock — the categories it names (buffer, threshold, chokepoint rent, the marginal unit) appear there in real time. See it at work: [The Second Shock Is Not the First](/analysis/the-second-shock-is-not-the-first) audits, buffer by buffer, a system that has already spent its shock absorbers; [Hormuz Is Not Reopened](/analysis/hormuz-controlled-corridor-diesel-shock) traces chokepoint rent and the diesel squeeze as they surface downstream.*
