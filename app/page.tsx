@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-07-13'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-07-14'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -96,7 +96,7 @@ export default async function DashboardPage() {
         lastUpdated={whereWeStandAsOf}
         tone="alert"
         headline="Trump reinstates an Iran blockade and proposes a 20% US toll on all Hormuz cargo"
-        body="In a Truth Social post the president declared Hormuz 'OPEN, with or without Iran,' reinstated a US blockade of Iranian ships, styled the US the 'Guardian of the Hormuz Strait,' and demanded a 20% fee on all cargo transiting the waterway. Iran's Persian Gulf Strait Authority counters that passage is 'currently unfeasible' and has suspended permits; Brent trades above $79 as the war premium returns. Both powers now claim the strait — the IMO Council has ruled neither may toll it — and there is no US executive order or collection mechanism yet: a declaration, not a mechanism."
+        body="In a Truth Social post the president declared Hormuz 'OPEN, with or without Iran,' reinstated a US blockade of Iranian ships, styled the US the 'Guardian of the Hormuz Strait,' and demanded a 20% fee on all cargo transiting the waterway. Iran's Persian Gulf Strait Authority counters that passage is 'currently unfeasible' and has suspended permits; Brent has jumped above $85 as the war premium returns. Both powers now claim the strait — the IMO Council has ruled neither may toll it — and there is no US executive order or collection mechanism yet: a declaration, not a mechanism."
         linkLabel="Why the calm is deceptive →"
         linkHref="/analysis/the-second-shock-is-not-the-first"
       />
@@ -400,10 +400,10 @@ export default async function DashboardPage() {
               </p>
             </div>
             <p className="text-sm font-semibold text-white">
-              Oil jumps as the Hormuz conflict escalates — Brent tops $79 with Trump calling the strait open and Iran calling it closed; the first strike on Gulf oil infrastructure in weeks puts $100 back in view
+              Brent tops $85 as Trump proposes a 20% US toll on all Hormuz cargo and reinstates an Iran blockade — Iran strikes two UAE tankers, the Saudi–Houthi truce breaks, and $100 is back in view if the strait&apos;s last buffer is hit
             </p>
             <p className="text-xs text-gray-400 leading-relaxed">
-              Markets delivered their verdict at Monday&apos;s open: Brent jumped above $79 (about +4.5%) and WTI to around $74 as the U.S.–Iran conflict escalated over the weekend, reinserting the war premium the June truce had erased. The strait&apos;s status is now openly contested — President Trump says it is open (&ldquo;we bombed the hell out of them&rdquo;), while Iran&apos;s IRGC insists it is closed &ldquo;until further notice,&rdquo; until the U.S. ends what it calls interference; the U.S. Navy-led JMIC says the southern, Oman-coordinated lane remains available. What actually moved tells the story: just six vessels transited on Sunday, a five-week low (Kpler), and Monday&apos;s traffic was &ldquo;almost nonexistent,&rdquo; most ships crossing with transponders off — the UAE among those using dark shuttle tankers. Further U.S. strikes on Sunday — the latest in a near-daily series, and the first to use one-way attack sea drones — drew Iranian retaliation across Kuwait, Jordan, Qatar, Bahrain and Oman, including the first strike on Gulf oil infrastructure in weeks: a Kuwaiti drilling facility. If energy infrastructure is targeted more broadly, $100 oil is back in view (Saul Kavonic, MST Marquee). The IEA warned on Friday that the flare-up risks derailing the rebuild of depleted global inventories later this year — the same thin buffers this site has tracked all along.
+              The escalation hardened into Tuesday: Brent has jumped above $85 — a four-week high, after a near-10% single-session surge, its biggest daily gain since 2020 — with WTI around $80, after President Trump said he would reinstate a US blockade of Iranian shipping and charge a 20% fee on all cargo transiting Hormuz. The strait&apos;s status is now openly contested — both Washington and Tehran claim to control it, while the IMO Council has ruled that transit may not be tolled. What actually moved tells the story: tanker traffic fell to a two-month low, just six vessels transited on Sunday (a five-week low, Kpler), no LNG carriers were visible over the weekend, and more ships are crossing dark. The violence is now hitting commercial tonnage directly — Iran struck two UAE tankers, al-Bahiya and Mombasa, with cruise missiles in Omani waters, killing one crew member and wounding eight. And a second front has opened: Yemen&apos;s Houthis fired on Saudi Arabia&apos;s Abha airport (intercepted), breaking the March 2022 truce — no Saudi oil was hit, but Saudi spare capacity is the buffer holding the price, and it is now in play alongside the strait. If energy infrastructure is targeted more broadly, $100 oil is back in view (Saul Kavonic, MST Marquee); the IEA has warned the flare-up risks derailing the rebuild of depleted global inventories — the same thin buffers this site has tracked all along.
             </p>
             <p className="text-xs text-gray-500 leading-relaxed">
               <span className="text-oil-300 font-medium">EU angle:</span>{' '}
@@ -418,7 +418,7 @@ export default async function DashboardPage() {
             </p>
           </div>
           <div className="px-5 py-2 border-t border-amber-700/20 bg-amber-950/10">
-            <p className="text-[10px] text-gray-600">Sources: Reuters, Bloomberg, FT, CENTCOM, Kpler, JMIC, IEA, CNN (13 July 2026).</p>
+            <p className="text-[10px] text-gray-600">Sources: Reuters, Bloomberg, FT, CENTCOM, Kpler, JMIC, IEA, AP, WaPo (14 July 2026).</p>
           </div>
         </div>
       </section>
