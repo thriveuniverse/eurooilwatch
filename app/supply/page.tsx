@@ -422,12 +422,16 @@ export default async function SupplyPage() {
           transit.
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
-          On a second front, Ukraine&rsquo;s drone forces say they hit <strong className="text-white">21 Russian
-          vessels</strong> — mostly tankers — in the Sea of Azov over 72 hours, choking fuel supplies to occupied
-          Crimea; maritime-security firm <strong className="text-white">Ambrey</strong> calls it the war&rsquo;s
-          largest such wave and warns of likely Russian retaliation within days. Eight ships have been named and
-          matched on the Equasis registry (Seatrade / Ambrey). It remains Ukraine&rsquo;s count — Russia has
-          acknowledged fewer.
+          On a second front, Ukraine&rsquo;s drone campaign in the Sea of Azov has escalated sharply. Kyiv says it
+          struck <strong className="text-white">around 76 Russian vessels over six days</strong> (6&ndash;11 July)
+          &mdash; including <strong className="text-white">21 tankers</strong> in a single overnight wave &mdash;
+          targeting the shadow fleet that moves sanctioned Russian oil and products; it now claims more than 100 hit.
+          In response Russia <strong className="text-white">suspended shipping through the Kerch Strait and the
+          Don&ndash;Azov Canal</strong> (FSB Border Service, from 10 July) and says it is weighing alternative routes
+          &mdash; a self-imposed chokepoint closure that cut Azov AIS traffic roughly <strong className="text-white">55%</strong>
+          (Starboard Maritime). With up to a quarter of Russian wheat exports transiting the Azov, Euronext wheat
+          jumped about 4% to a six-week high. It remains largely Ukraine&rsquo;s count &mdash; Russia has acknowledged
+          fewer (Reuters, TWZ, gCaptain).
         </p>
         <p className="mt-2 text-[10px] text-gray-500 leading-relaxed">
           Sources: Reuters, WSJ, Bloomberg, JMIC 013-26, NAVCENT/NCAGS, Lloyd&rsquo;s JWC, IMO, CENTCOM, UKMTO. Available footage and Tier-1 reporting attribute the
