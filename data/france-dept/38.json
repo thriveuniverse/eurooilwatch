@@ -3,22 +3,22 @@
   "name": "Isère",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-07-14T14:17:00.052Z",
+  "asOf": "2026-07-14T18:46:36.011Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 181,
+  "stationCount": 182,
   "fuels": {
     "gazole": {
-      "count": 180,
+      "count": 181,
       "mean": 2.0026,
       "median": 1.99,
       "min": 1.865,
       "max": 2.403
     },
     "sp95": {
-      "count": 40,
-      "mean": 1.9543,
-      "median": 1.9445,
+      "count": 41,
+      "mean": 1.9549,
+      "median": 1.945,
       "min": 1.906,
       "max": 2.1
     },
@@ -30,15 +30,15 @@
       "max": 2.51
     },
     "e10": {
-      "count": 153,
-      "mean": 1.9388,
-      "median": 1.912,
+      "count": 152,
+      "mean": 1.9391,
+      "median": 1.9135,
       "min": 1.848,
       "max": 2.99
     },
     "e85": {
-      "count": 49,
-      "mean": 0.864,
+      "count": 48,
+      "mean": 0.8648,
       "median": 0.841,
       "min": 0.77,
       "max": 1.009
@@ -52,6 +52,19 @@
     }
   },
   "stations": [
+    {
+      "id": "38114002",
+      "cp": "38114",
+      "ville": "Allemond",
+      "adresse": "100 Route de Savoie",
+      "pop": "R",
+      "lat": 4512600,
+      "lng": 603300,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 1.98
+      }
+    },
     {
       "id": "38580004",
       "cp": "38580",
@@ -1846,7 +1859,7 @@
         "gazole": 2.069,
         "sp98": 2.079,
         "e10": 1.929,
-        "e85": 0.979
+        "e85": 1.009
       }
     },
     {
@@ -1959,8 +1972,7 @@
       "lat": 4532600,
       "lng": 480700,
       "fuels": {
-        "gazole": 1.965,
-        "e10": 1.891
+        "gazole": 1.965
       }
     },
     {
@@ -2003,8 +2015,7 @@
         "gazole": 2.01,
         "sp95": 1.989,
         "sp98": 2.02,
-        "e10": 1.93,
-        "e85": 0.857
+        "e10": 1.93
       }
     },
     {
