@@ -422,16 +422,19 @@ export default async function SupplyPage() {
           transit.
         </p>
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
-          On a second front, Ukraine&rsquo;s drone campaign in the Sea of Azov has escalated sharply. Kyiv says it
-          struck <strong className="text-white">around 76 Russian vessels over six days</strong> (6&ndash;11 July)
-          &mdash; including <strong className="text-white">21 tankers</strong> in a single overnight wave &mdash;
-          targeting the shadow fleet that moves sanctioned Russian oil and products; it now claims more than 100 hit.
-          In response Russia <strong className="text-white">suspended shipping through the Kerch Strait and the
-          Don&ndash;Azov Canal</strong> (FSB Border Service, from 10 July) and says it is weighing alternative routes
-          &mdash; a self-imposed chokepoint closure that cut Azov AIS traffic roughly <strong className="text-white">55%</strong>
-          (Starboard Maritime). With up to a quarter of Russian wheat exports transiting the Azov, Euronext wheat
-          jumped about 4% to a six-week high. It remains largely Ukraine&rsquo;s count &mdash; Russia has acknowledged
-          fewer (Reuters, TWZ, gCaptain).
+          On a second front, Ukraine&rsquo;s drone campaign in the Sea of Azov has escalated sharply. Its Unmanned
+          Systems Forces say they have struck Russian shadow-fleet shipping &mdash; the tankers that move sanctioned
+          oil and products &mdash; across a nine-day operation, with Kyiv now putting the total at <strong className="text-white">116 vessels</strong>
+          (an unverified claim; <strong className="text-white">~76</strong>, including 21 tankers, was the earlier
+          multi-sourced count). In response Russia <strong className="text-white">suspended shipping through the Kerch
+          Strait and the Don&ndash;Azov Canal</strong> (FSB Border Service, from 10 July) and says it may divert to
+          Black Sea and Baltic ports &mdash; a self-imposed chokepoint closure that cut Azov AIS traffic roughly
+          <strong className="text-white">55%</strong> (Starboard Maritime). With up to a quarter of Russian wheat
+          exports transiting the Azov, Euronext wheat jumped about 4% to a six-week high. The <strong className="text-white">IMO
+          Secretary-General</strong> condemned the Azov and Black Sea attacks, warning the focus on Hormuz should not
+          overshadow threats elsewhere; Russia&rsquo;s Lavrov called them &ldquo;terrorism,&rdquo; while Kyiv says it
+          strikes only military or war-supporting assets. Neither side&rsquo;s figures are independently verified
+          (Reuters, TWZ, gCaptain).
         </p>
         <p className="mt-2 text-[10px] text-gray-500 leading-relaxed">
           Sources: Reuters, WSJ, Bloomberg, JMIC 013-26, NAVCENT/NCAGS, Lloyd&rsquo;s JWC, IMO, CENTCOM, UKMTO. Available footage and Tier-1 reporting attribute the
