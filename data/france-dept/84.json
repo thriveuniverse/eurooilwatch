@@ -3,42 +3,42 @@
   "name": "Vaucluse",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-07-14T07:18:59.447Z",
+  "asOf": "2026-07-14T14:17:00.052Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 103,
   "fuels": {
     "gazole": {
       "count": 102,
-      "mean": 1.9921,
-      "median": 1.9865,
+      "mean": 1.9942,
+      "median": 1.989,
       "min": 1.874,
-      "max": 2.248
+      "max": 2.212
     },
     "sp95": {
       "count": 17,
-      "mean": 1.9756,
-      "median": 1.969,
+      "mean": 1.9764,
+      "median": 1.973,
       "min": 1.919,
       "max": 2.052
     },
     "sp98": {
-      "count": 76,
-      "mean": 2.0144,
-      "median": 1.99,
+      "count": 75,
+      "mean": 2.0156,
+      "median": 1.992,
       "min": 1.93,
-      "max": 2.324
+      "max": 2.29
     },
     "e10": {
-      "count": 88,
-      "mean": 1.9301,
-      "median": 1.9145,
+      "count": 87,
+      "mean": 1.9313,
+      "median": 1.918,
       "min": 1.839,
-      "max": 2.199
+      "max": 2.165
     },
     "e85": {
-      "count": 43,
-      "mean": 0.8384,
+      "count": 42,
+      "mean": 0.8389,
       "median": 0.809,
       "min": 0.771,
       "max": 1.039
@@ -119,7 +119,8 @@
       "lat": 4409204.53,
       "lng": 502966.13,
       "fuels": {
-        "gazole": 1.919
+        "gazole": 1.969,
+        "e10": 1.929
       }
     },
     {
@@ -188,10 +189,10 @@
       "lat": 4391892.91395,
       "lng": 480941.60711,
       "fuels": {
-        "gazole": 1.957,
-        "sp95": 1.959,
+        "gazole": 1.979,
+        "sp95": 1.973,
         "sp98": 2.009,
-        "e10": 1.879,
+        "e10": 1.899,
         "e85": 0.879
       }
     },
@@ -265,20 +266,6 @@
         "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.843
-      }
-    },
-    {
-      "id": "84000021",
-      "cp": "84000",
-      "ville": "Avignon",
-      "adresse": "AVENUE DE L AMANDIER",
-      "pop": "R",
-      "lat": 4393500,
-      "lng": 484800,
-      "fuels": {
-        "gazole": 1.975,
-        "sp98": 1.99,
-        "e10": 1.906
       }
     },
     {
@@ -456,6 +443,19 @@
       }
     },
     {
+      "id": "84200008",
+      "cp": "84200",
+      "ville": "Carpentras",
+      "adresse": "2875 Route de malaucene",
+      "pop": "R",
+      "lat": 4408000,
+      "lng": 506700,
+      "fuels": {
+        "gazole": 2.08,
+        "sp98": 2.069
+      }
+    },
+    {
       "id": "84200012",
       "cp": "84200",
       "ville": "Carpentras",
@@ -561,8 +561,6 @@
       "fuels": {
         "gazole": 1.965,
         "sp98": 1.99,
-        "e10": 1.893,
-        "e85": 0.819,
         "gplc": 1.011
       }
     },
@@ -714,7 +712,6 @@
       "lng": 505000,
       "fuels": {
         "gazole": 2.089,
-        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.844
       }
@@ -756,7 +753,7 @@
       "lat": 4431200,
       "lng": 468600,
       "fuels": {
-        "gazole": 1.959,
+        "gazole": 1.999,
         "e10": 1.929,
         "e85": 0.809
       }
@@ -957,9 +954,9 @@
       "lat": 4394345,
       "lng": 490789,
       "fuels": {
-        "gazole": 1.969,
+        "gazole": 1.979,
         "sp98": 1.989,
-        "e10": 1.899,
+        "e10": 1.919,
         "e85": 0.779
       }
     },
@@ -1002,9 +999,9 @@
       "lat": 4419500,
       "lng": 473100,
       "fuels": {
-        "gazole": 2.248,
-        "sp98": 2.324,
-        "e10": 2.199,
+        "gazole": 2.212,
+        "sp98": 2.29,
+        "e10": 2.165,
         "e85": 1.008,
         "gplc": 1.115
       }
@@ -1258,9 +1255,9 @@
       "lat": 4374700,
       "lng": 533700,
       "fuels": {
-        "gazole": 1.939,
-        "sp98": 1.958,
-        "e10": 1.879,
+        "gazole": 1.969,
+        "sp98": 1.978,
+        "e10": 1.911,
         "e85": 0.771
       }
     },
