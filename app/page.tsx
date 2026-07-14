@@ -114,7 +114,7 @@ export default async function DashboardPage() {
           <span className="text-amber-300 group-hover:text-white">&rarr;</span>
         </span>
         <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
-          The market is fighting two wars at once &mdash; renewed Hormuz risk and Russia&apos;s diesel export ban. Crude stays contained near $76 while European diesel margins hit a record; the squeeze is surfacing downstream first, in the fuels that move trucks, ships and food. Part II to The Second Shock.
+          The market is fighting two wars at once &mdash; renewed Hormuz risk and Russia&apos;s diesel export ban. European diesel margins have hit a record, and the squeeze is surfacing downstream first, in the fuels that move trucks, ships and food &mdash; a product-market stress that crude prices alone don&apos;t capture. Part II to The Second Shock.
         </span>
       </a>
 
