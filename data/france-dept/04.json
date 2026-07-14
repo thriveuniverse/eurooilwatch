@@ -3,14 +3,14 @@
   "name": "Alpes-de-Haute-Provence",
   "regionCode": "PAC",
   "regionName": "Provence-Alpes-Côte d'Azur",
-  "asOf": "2026-07-13T19:03:27.321Z",
+  "asOf": "2026-07-14T07:18:59.447Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 49,
+  "stationCount": 50,
   "fuels": {
     "gazole": {
-      "count": 49,
-      "mean": 1.9891,
+      "count": 50,
+      "mean": 1.9935,
       "median": 1.99,
       "min": 1.89,
       "max": 2.169
@@ -24,16 +24,16 @@
     },
     "sp98": {
       "count": 37,
-      "mean": 1.9986,
+      "mean": 2,
       "median": 1.99,
       "min": 1.946,
       "max": 2.119
     },
     "e10": {
-      "count": 37,
-      "mean": 1.9316,
+      "count": 39,
+      "mean": 1.9345,
       "median": 1.929,
-      "min": 1.859,
+      "min": 1.869,
       "max": 2.029
     },
     "e85": {
@@ -44,9 +44,9 @@
       "max": 0.998
     },
     "gplc": {
-      "count": 4,
-      "mean": 0.9862,
-      "median": 0.954,
+      "count": 5,
+      "mean": 0.9888,
+      "median": 0.959,
       "min": 0.877,
       "max": 1.16
     }
@@ -135,6 +135,19 @@
       }
     },
     {
+      "id": "4120004",
+      "cp": "04120",
+      "ville": "Castellane",
+      "adresse": "Boulevard Saint Michel",
+      "pop": "R",
+      "lat": 4385100,
+      "lng": 650800,
+      "fuels": {
+        "gazole": 1.999,
+        "e10": 1.969
+      }
+    },
+    {
       "id": "4120006",
       "cp": "04120",
       "ville": "Castellane",
@@ -157,9 +170,9 @@
       "lat": 4385800,
       "lng": 559700,
       "fuels": {
-        "gazole": 1.919,
-        "sp98": 2,
-        "e10": 1.93
+        "gazole": 2.001,
+        "sp98": 2.042,
+        "e10": 1.967
       }
     },
     {
@@ -173,7 +186,7 @@
       "fuels": {
         "gazole": 1.934,
         "sp98": 1.965,
-        "e10": 1.881,
+        "e10": 1.892,
         "e85": 0.804
       }
     },
@@ -227,9 +240,11 @@
       "lat": 4408800,
       "lng": 600900,
       "fuels": {
-        "gazole": 1.944,
+        "gazole": 1.974,
         "sp98": 1.99,
-        "e85": 0.829
+        "e10": 1.909,
+        "e85": 0.829,
+        "gplc": 0.999
       }
     },
     {
@@ -285,7 +300,7 @@
       "lat": 4394900,
       "lng": 681000,
       "fuels": {
-        "gazole": 2.029,
+        "gazole": 2.049,
         "sp98": 2.049,
         "e10": 2.029
       }
@@ -426,9 +441,9 @@
       "lat": 4382400,
       "lng": 578800,
       "fuels": {
-        "gazole": 2.044,
+        "gazole": 2.074,
         "sp98": 1.99,
-        "e10": 1.965
+        "e10": 1.99
       }
     },
     {
@@ -482,9 +497,9 @@
       "lat": 4382300,
       "lng": 578700,
       "fuels": {
-        "gazole": 1.933,
-        "sp98": 1.979,
-        "e10": 1.859,
+        "gazole": 1.963,
+        "sp98": 1.99,
+        "e10": 1.886,
         "e85": 0.844,
         "gplc": 0.949
       }
@@ -697,7 +712,7 @@
       "lat": 4418816.66081,
       "lng": 594679.75978,
       "fuels": {
-        "gazole": 1.939,
+        "gazole": 1.959,
         "sp95": 1.959,
         "sp98": 1.979,
         "e10": 1.899
