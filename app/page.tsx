@@ -97,7 +97,7 @@ export default async function DashboardPage() {
         tone="alert"
         headline="Trump drops the 20% Hormuz toll — but tightens a full Iran-only blockade"
         body="A day after floating it, Trump has abandoned the proposed 20% 'reimbursement fee' on Hormuz cargo — which clashed with the IMO Council's ruling that straits transit may not be tolled — replacing it with a push for 'trade and investment deals' from Gulf states, while keeping a stated FULL blockade on Iran-linked shipping (vessels to or from Iranian ports, or carrying Iranian cargo) that CENTCOM began enforcing Tuesday. Transits have collapsed to just 4–12 a day against a ~138 norm (JMIC, threat level SEVERE). Iran, meanwhile, is signalling a second front — a Houthi threat to close Bab el-Mandeb, warning that shutting both straits could send oil to $200. Brent holds above $85."
-        linkLabel="Why the calm is deceptive →"
+        linkLabel="The second shock, explained →"
         linkHref="/analysis/the-second-shock-is-not-the-first"
       />
 
