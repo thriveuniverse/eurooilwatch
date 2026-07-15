@@ -3,36 +3,36 @@
   "name": "Meuse",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-07-14T18:46:36.011Z",
+  "asOf": "2026-07-15T07:22:34.511Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 35,
+  "stationCount": 36,
   "fuels": {
     "gazole": {
-      "count": 35,
-      "mean": 1.9918,
+      "count": 36,
+      "mean": 1.9977,
       "median": 1.99,
-      "min": 1.829,
+      "min": 1.925,
       "max": 2.082
     },
     "sp95": {
       "count": 11,
-      "mean": 1.9949,
+      "mean": 2.0013,
       "median": 1.99,
-      "min": 1.919,
+      "min": 1.985,
       "max": 2.099
     },
     "sp98": {
-      "count": 25,
-      "mean": 2.0253,
-      "median": 2.01,
+      "count": 28,
+      "mean": 2.0261,
+      "median": 2.0105,
       "min": 1.972,
       "max": 2.139
     },
     "e10": {
-      "count": 27,
-      "mean": 1.9488,
-      "median": 1.933,
+      "count": 28,
+      "mean": 1.9492,
+      "median": 1.9325,
       "min": 1.886,
       "max": 2.055
     },
@@ -103,7 +103,7 @@
       "lat": 4916840.341,
       "lng": 538679.00423,
       "fuels": {
-        "gazole": 1.937,
+        "gazole": 1.983,
         "sp98": 1.999,
         "e10": 1.922
       }
@@ -147,9 +147,9 @@
       "lat": 4875600,
       "lng": 558500,
       "fuels": {
-        "gazole": 1.995,
+        "gazole": 1.986,
         "sp98": 2.042,
-        "e10": 1.933,
+        "e10": 1.917,
         "e85": 0.809
       }
     },
@@ -251,6 +251,20 @@
       }
     },
     {
+      "id": "55160015",
+      "cp": "55160",
+      "ville": "Fresnes-en-Woëvre",
+      "adresse": "15 rue de VERDUN",
+      "pop": "R",
+      "lat": 4910000,
+      "lng": 562400,
+      "fuels": {
+        "gazole": 2.019,
+        "sp98": 2.069,
+        "e10": 1.976
+      }
+    },
+    {
       "id": "55160014",
       "cp": "55160",
       "ville": "Haudiomont",
@@ -328,8 +342,9 @@
       "lat": 4951300,
       "lng": 537500,
       "fuels": {
-        "gazole": 1.829,
-        "sp95": 1.919
+        "gazole": 1.979,
+        "sp95": 1.989,
+        "sp98": 2.039
       }
     },
     {
@@ -485,6 +500,7 @@
       "lng": 538000,
       "fuels": {
         "gazole": 2.082,
+        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.836
       }
