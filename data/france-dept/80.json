@@ -3,15 +3,15 @@
   "name": "Somme",
   "regionCode": "HDF",
   "regionName": "Hauts-de-France",
-  "asOf": "2026-07-15T14:14:31.521Z",
+  "asOf": "2026-07-15T18:44:23.101Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 107,
+  "stationCount": 106,
   "fuels": {
     "gazole": {
       "count": 103,
-      "mean": 1.9995,
-      "median": 1.989,
+      "mean": 1.9986,
+      "median": 1.986,
       "min": 1.86,
       "max": 2.434
     },
@@ -24,15 +24,15 @@
     },
     "sp98": {
       "count": 89,
-      "mean": 2.0278,
+      "mean": 2.0277,
       "median": 2.004,
       "min": 1.947,
       "max": 2.514
     },
     "e10": {
-      "count": 83,
-      "mean": 1.945,
-      "median": 1.929,
+      "count": 84,
+      "mean": 1.9442,
+      "median": 1.9235,
       "min": 1.856,
       "max": 2.364
     },
@@ -90,6 +90,9 @@
       "lat": 5011300,
       "lng": 182900,
       "fuels": {
+        "gazole": 1.956,
+        "sp98": 1.99,
+        "e10": 1.906,
         "e85": 0.825
       }
     },
@@ -164,18 +167,6 @@
         "sp98": 2.039,
         "e10": 1.929,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "80690001",
-      "cp": "80690",
-      "ville": "Ailly-le-Haut-Clocher",
-      "adresse": "17 ROUTE NATIONALE",
-      "pop": "R",
-      "lat": 5007880.52,
-      "lng": 199553.59,
-      "fuels": {
-        "gazole": 1.99
       }
     },
     {
@@ -632,7 +623,6 @@
       "lng": 251000,
       "fuels": {
         "gazole": 1.939,
-        "sp98": 1.999,
         "e10": 1.886
       }
     },
@@ -1245,9 +1235,9 @@
       "lat": 4977400,
       "lng": 199000,
       "fuels": {
-        "gazole": 2.031,
-        "sp98": 2.031,
-        "e10": 1.939
+        "gazole": 1.976,
+        "sp98": 2.019,
+        "e10": 1.909
       }
     },
     {
@@ -1569,8 +1559,8 @@
       "lat": 4986000,
       "lng": 252400,
       "fuels": {
-        "gazole": 1.938,
-        "sp98": 1.989,
+        "gazole": 1.939,
+        "sp98": 1.999,
         "e10": 1.886,
         "e85": 0.809
       }
