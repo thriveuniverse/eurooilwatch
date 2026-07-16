@@ -14,6 +14,7 @@ import WarRiskWatchPanel from '@/components/WarRiskWatchPanel';
 import ChokepointsMap from '@/components/ChokepointsMap';
 import ChokepointTransitPanel, { type PortwatchData } from '@/components/ChokepointTransitPanel';
 import HormuzThroughputPanel from '@/components/HormuzThroughputPanel';
+import VesselFinderMap from '@/components/VesselFinderMap';
 import HormuzPosturePanel from '@/components/HormuzPosturePanel';
 import PortFlowPanel, { type PortFlowData } from '@/components/PortFlowPanel';
 import EuropeBarrelTracker from '@/components/EuropeBarrelTracker';
@@ -370,6 +371,9 @@ export default async function SupplyPage() {
           <span className="text-gray-500"> — a sourced, filterable chronology of the 2026 crisis.</span>
         </p>
       </div>
+
+      {/* Live global AIS map (VesselFinder embed) — illustrative; AIS-transmitting vessels only */}
+      <VesselFinderMap lat={35} lon={5} zoom={3} />
 
       {/* Chokepoints overview map */}
       <ChokepointsMap />
