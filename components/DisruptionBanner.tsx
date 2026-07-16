@@ -5,7 +5,7 @@ import FreshnessGuard from '@/components/FreshnessGuard';
 
 // Version this key — changing it will re-show the banner even for users who dismissed it.
 // Update the date suffix whenever you update the banner content.
-const DISMISS_KEY = 'disruption-banner-v20260716-tehran-strikes';
+const DISMISS_KEY = 'disruption-banner-v20260716b-red-sea-trigger';
 
 interface Props {
   /** Short bold label, e.g. "Active supply disruption" */

@@ -95,8 +95,8 @@ export default async function DashboardPage() {
       <DisruptionBanner
         lastUpdated="2026-07-16"
         tone="alert"
-        headline="US strikes reach Tehran and disable a tanker in Hormuz; Iran hits Gulf states"
-        body="In the sharpest escalation yet, US forces struck Tehran for the first time in this round overnight — alongside Bandar Abbas and coastal missile sites — and disabled an oil tanker in the Strait of Hormuz, firing Hellfire missiles into the Curaçao-flagged Belma after it ignored warnings while trying to reach Kharg Island. It is the first vessel stopped by force since CENTCOM reimposed its full Iran-only blockade. Iran retaliated against US-allied Bahrain, Kuwait and Jordan with missiles and drones (Jordan says it intercepted several). Hormuz transits remain just 4–12 a day against a ~138 norm (JMIC, threat level SEVERE). Brent is holding around $85 (it settled at $84.95 on 15 July) — up roughly 16% since early July, though still short of the ~$120 conflict peak."
+        headline="Iran arms a second chokepoint: Houthis told to ready a Red Sea closure if the US hits Iran's power grid"
+        body="Reuters reports (citing three sources) that Iran has told Yemen's Houthis to stand ready to close the Red Sea at Bab el-Mandeb if the US strikes Iranian power infrastructure — the group has reportedly deployed missiles and drones and is awaiting the order, with IRGC officers in Yemen holding the trigger. With Hormuz already throttled to 4–12 transits a day (JMIC: SEVERE), a Red Sea closure would sever the Middle East's two main export routes at once — and Saudi Arabia now ships around 70% of its exports through the Red Sea port of Yanbu. The threat is conditional and unconfirmed by Tehran or the Houthis, and no order has been given. It caps a day in which US strikes reached Tehran for the first time and disabled a blockade-running tanker near Kharg Island, with Iran striking back at Bahrain, Kuwait and Jordan. Brent is holding around $85."
         linkLabel="The second shock, explained →"
         linkHref="/analysis/the-second-shock-is-not-the-first"
       />
