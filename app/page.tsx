@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-07-14'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-07-16'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -93,10 +93,10 @@ export default async function DashboardPage() {
 
       {/* Disruption alert */}
       <DisruptionBanner
-        lastUpdated={whereWeStandAsOf}
+        lastUpdated="2026-07-16"
         tone="alert"
-        headline="Trump drops the 20% Hormuz toll — but tightens a full Iran-only blockade"
-        body="A day after floating it, Trump has abandoned the proposed 20% 'reimbursement fee' on Hormuz cargo — which clashed with the IMO Council's ruling that straits transit may not be tolled — replacing it with a push for 'trade and investment deals' from Gulf states, while keeping a stated FULL blockade on Iran-linked shipping (vessels to or from Iranian ports, or carrying Iranian cargo) that CENTCOM began enforcing Tuesday. Transits have collapsed to just 4–12 a day against a ~138 norm (JMIC, threat level SEVERE). Iran, meanwhile, is signalling a second front — a Houthi threat to close Bab el-Mandeb, warning that shutting both straits could send oil to $200. Brent holds above $85."
+        headline="US strikes reach Tehran and disable a tanker in Hormuz; Iran hits Gulf states"
+        body="In the sharpest escalation yet, US forces struck Tehran for the first time in this round overnight — alongside Bandar Abbas and coastal missile sites — and disabled an oil tanker in the Strait of Hormuz, firing Hellfire missiles into the Curaçao-flagged Belma after it ignored warnings while trying to reach Kharg Island. It is the first vessel stopped by force since CENTCOM reimposed its full Iran-only blockade. Iran retaliated against US-allied Bahrain, Kuwait and Jordan with missiles and drones (Jordan says it intercepted several). Hormuz transits remain just 4–12 a day against a ~138 norm (JMIC, threat level SEVERE). Brent is holding around $85 (it settled at $84.95 on 15 July) — up roughly 16% since early July, though still short of the ~$120 conflict peak."
         linkLabel="The second shock, explained →"
         linkHref="/analysis/the-second-shock-is-not-the-first"
       />
@@ -385,6 +385,27 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Thu 16 Jul: two-front escalation (Tehran strikes + tanker; Russian refining ~40% offline) */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Thu 16 Jul 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                The war has widened on two fronts. US strikes reached{' '}
+                <strong className="text-gray-200">Tehran for the first time</strong> in this round overnight
+                &mdash; alongside Bandar Abbas and coastal missile sites &mdash; and US forces{' '}
+                <strong className="text-gray-200">disabled a blockade-running oil tanker</strong> (the
+                Cura&ccedil;ao-flagged <em>Belma</em>) in Hormuz as it tried to reach Kharg Island, the first
+                vessel stopped by force since the full Iran-only blockade resumed. Iran retaliated against
+                US-allied <strong className="text-gray-200">Bahrain, Kuwait and Jordan</strong>. No Iranian
+                oilfield, refinery or the Kharg terminal has been confirmed hit &mdash; strikes have stayed on
+                military and maritime targets, which is why Brent sits around $85 ($84.95 settle, 15 Jul) rather
+                than back above $100. Separately, Reuters reports roughly{' '}
+                <strong className="text-gray-200">40% of Russian refining capacity is now offline</strong>{' '}
+                (repairs and outages, not destroyed) after Ukraine&rsquo;s sustained drone campaign &mdash; the
+                clearest verified physical loss in the system right now.
+              </p>
+            </div>
             {/* In his own words — Trump's 20% Hormuz toll declaration (13 Jul) */}
             <div className="rounded border border-amber-700/40 bg-oil-950/50 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-amber-400/80 uppercase">
@@ -418,7 +439,7 @@ export default async function DashboardPage() {
             </p>
           </div>
           <div className="px-5 py-2 border-t border-amber-700/20 bg-amber-950/10">
-            <p className="text-[10px] text-gray-600">Sources: Reuters, Bloomberg, FT, CENTCOM, Kpler, JMIC, IEA, AP, WaPo (14 July 2026).</p>
+            <p className="text-[10px] text-gray-600">Sources: Reuters, Bloomberg, FT, CENTCOM, Kpler, JMIC, IEA, AP, WaPo (16 July 2026).</p>
           </div>
         </div>
       </section>
@@ -430,7 +451,7 @@ export default async function DashboardPage() {
         <p className="mt-1 text-xs text-gray-400 leading-relaxed">
           President Putin has publicly acknowledged fuel shortages in Russian regions, tying them to Ukrainian drone
           strikes on oil infrastructure and stressing the need to protect supply for agriculture ahead of the harvest.
-          Refinery capacity is sharply reduced (an estimated 20%+ offline), several regions are rationing, and the
+          Refinery capacity is sharply reduced — Reuters reported on 16 July that roughly 40% is offline (plants under repair and outages of varying severity, not destroyed; Ukrainian sources say ~43%), several regions are rationing, and the
           squeeze is reaching logistics and food systems — the same downstream cascade seen elsewhere: refinery hits →
           diesel scarcity → agriculture and supply-chain risk.{' '}
           <a href="/analysis/russia-fuel-shortage-food-logistics" className="text-oil-300 hover:text-white underline underline-offset-2">Read our analysis →</a>
