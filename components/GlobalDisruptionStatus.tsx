@@ -1,0 +1,168 @@
+/**
+ * GlobalDisruptionStatus — prominent top-of-dashboard status board.
+ *
+ * Replaces the single-headline DisruptionBanner with the full convergent picture:
+ * energy, shipping and food-security risks colour-coded by severity. Figures are
+ * verified/attributed; the Hormuz count uses JMIC's 12–15 July advisory (not an
+ * unverified daily tally). Pairs with the "From Hormuz to the Checkout" analysis below.
+ */
+
+type Severity = 'critical' | 'elevated';
+
+interface Row {
+  sev: Severity;
+  label: string;
+  body: string;
+}
+
+const ROWS: Row[] = [
+  {
+    sev: 'critical',
+    label: 'Strait of Hormuz — severe disruption',
+    body: 'JMIC recorded only 4–13 vessel transits per day between 12 and 15 July, against a historical average of about 138. The strait remains physically navigable, but traffic is severely suppressed and JMIC assesses deliberate hostile action as highly likely (threat level SEVERE). VLCC crude and LNG movements remain intermittent.',
+  },
+  {
+    sev: 'critical',
+    label: 'Middle East conflict — regional retaliation',
+    body: 'A sixth consecutive night of US strikes on Iranian military, air-defence and logistical targets. Iranian missile and drone attacks have targeted Bahrain, Kuwait, Qatar and Jordan, with incoming fire also striking northern Iraq (attribution there less certain); a claimed strike in Syria is unverified. Military and economic exposure now extends across the Gulf.',
+  },
+  {
+    sev: 'critical',
+    label: 'Red Sea & Bab el-Mandeb — high escalation risk',
+    body: "Not confirmed closed, but Iran has reportedly told the Houthis to be ready to disrupt Red Sea shipping if the US strikes Iran's power grid (Reuters). The route matters more because Saudi Arabia has diverted much of its oil through Yanbu to bypass Hormuz — a simultaneous Hormuz-plus-Red-Sea disruption would hit the main Gulf route and its main alternative at once.",
+  },
+  {
+    sev: 'critical',
+    label: 'Oil products — tighter than crude',
+    body: 'Brent is near $84 (about +12% on the week), but the deeper stress is in diesel and jet. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
+  },
+  {
+    sev: 'critical',
+    label: 'Russian refining — major disruption',
+    body: 'Repeated Ukrainian strikes have forced Russian refineries to cut or suspend runs. Russia has banned diesel exports (8–31 July). Diesel and gasoil exports fell to about 234,000 b/d in early July, against a 2025 average near 817,000 b/d (Kpler).',
+  },
+  {
+    sev: 'critical',
+    label: 'Global diesel — immediate transmission',
+    body: 'The Russian collapse has pushed US diesel futures sharply higher and driven benchmark European diesel refining margins above $60/bbl. Diesel is the fast transmission channel into trucking, farming, mining, construction, shipping and backup power — product shortages can keep inflation rising even if crude stabilises.',
+  },
+  {
+    sev: 'elevated',
+    label: 'LNG — major supply loss continues',
+    body: "The IEA estimates disrupted Hormuz transit has removed more than 300 million cubic metres a day of Qatar and UAE LNG since 1 March — over 2 bcm a week. Qatar's Ras Laffan complex has stayed offline since the 2 March attack, raising power and industrial costs and directly hitting ammonia and nitrogen-fertiliser production.",
+  },
+  {
+    sev: 'critical',
+    label: 'Sulphur & phosphate fertiliser — physical bottleneck',
+    body: 'The sulphur spike has moved from the trading screen into factory operations. Sulphur is needed to make sulphuric acid and phosphate fertilisers; high prices and tight availability have pushed phosphate producers to curtail output, notably Mosaic in Brazil. This is now a supply-volume risk, not just a price rise.',
+  },
+  {
+    sev: 'elevated',
+    label: 'Chinese fertiliser controls — supply retained',
+    body: 'China has tightened restrictions and customs controls on fertiliser exports to protect domestic availability. It also depends on Middle East sulphur imports, so Hormuz raises both Chinese production costs and how much Beijing is willing to release abroad.',
+  },
+  {
+    sev: 'elevated',
+    label: 'Brazil — high fertiliser exposure',
+    body: 'Brazil imports about 85% of all the fertiliser it consumes and covered effectively 100% of its urea needs by imports in 2025 — around 41% of those urea imports (nearly 3 million tonnes) routed through Hormuz. It also faces high sulphur costs and phosphate curtailments; its September soybean planting is the key test of whether input disruption becomes reduced production.',
+  },
+  {
+    sev: 'elevated',
+    label: 'Mexico — US food-system transmission point',
+    body: 'Higher fertiliser, diesel and agrochemical costs meet rising dependence on imported corn. Lower Mexican output could hit the US from two sides — less Mexican fruit and veg moving north, more US corn moving south — pressuring US produce prices and animal-feed costs at once.',
+  },
+  {
+    sev: 'elevated',
+    label: 'Global grain balance — margin shrinking',
+    body: 'USDA projects both wheat and corn below consumption in 2026/27, with global corn ending stocks about 275 Mt — the lowest since 2013/14. Not yet a shortage, but less room to absorb another crop, trade or shipping shock.',
+  },
+  {
+    sev: 'critical',
+    label: 'European maize — weather + input shock',
+    body: 'Heat and drought have pushed French maize conditions to their lowest in at least 15 years; Coceral has cut its EU maize forecast about 8% to 52.7 Mt, potentially the smallest harvest since 2007. High fertiliser and energy costs had already trimmed planted area.',
+  },
+];
+
+const LOCAL: Record<'euro' | 'uk' | 'americas', string> = {
+  euro:
+    'For Europe specifically: the tightest diesel balance in the system, heavy import reliance for fertiliser after losing domestic ammonia capacity, and a failing home maize crop — three exposures stacking at once.',
+  uk:
+    'For the UK specifically: close to half its food imported, almost no domestic fertiliser production left, and a net importer of the diesel that moves its farms, lorries and food — exposed at every link in the chain.',
+  americas:
+    'For the Americas specifically: the US is the system’s swing supplier, but its diesel balance is tightening and its fresh-produce and feed exposure runs directly through Mexico.',
+};
+
+const BRAND: Record<'euro' | 'uk' | 'americas', string> = {
+  euro: 'EuroOilWatch',
+  uk: 'UKOilWatch',
+  americas: 'AmericasOilWatch',
+};
+
+export default function GlobalDisruptionStatus({
+  site,
+  lastUpdated = '2026-07-17',
+}: {
+  site: 'euro' | 'uk' | 'americas';
+  lastUpdated?: string;
+}) {
+  const dateLabel = new Date(lastUpdated).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+
+  return (
+    <section
+      aria-label="Global disruption status"
+      className="rounded-lg border border-red-700/50 bg-red-950/20 overflow-hidden"
+    >
+      {/* Header band */}
+      <div className="px-5 py-3.5 border-b border-red-700/40 bg-red-950/40">
+        <div className="flex items-center justify-between flex-wrap gap-2">
+          <h2 className="text-sm font-mono font-bold tracking-widest text-white uppercase">
+            Global Disruption Status: <span className="text-red-400">SEVERE</span>
+          </h2>
+          <span className="text-[10px] font-mono text-red-300/70 uppercase tracking-widest">
+            Updated {dateLabel}
+          </span>
+        </div>
+        <p className="mt-1 text-xs text-gray-300">
+          Energy, shipping and food-security risks are now converging.
+        </p>
+      </div>
+
+      {/* Status rows — 2-up on large screens */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-oil-800/40">
+        {ROWS.map((r) => {
+          const dot = r.sev === 'critical' ? 'bg-red-500' : 'bg-amber-500';
+          const labelColor = r.sev === 'critical' ? 'text-red-300' : 'text-amber-300';
+          return (
+            <div key={r.label} className="bg-oil-950/40 px-4 py-3">
+              <div className="flex items-center gap-2">
+                <span className={`inline-block h-2 w-2 rounded-full ${dot} shrink-0`} aria-hidden />
+                <span className={`text-[11px] font-mono font-semibold uppercase tracking-wide ${labelColor}`}>
+                  {r.label}
+                </span>
+              </div>
+              <p className="mt-1 text-xs text-gray-400 leading-relaxed">{r.body}</p>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Assessment footer */}
+      <div className="px-5 py-3.5 border-t border-red-700/40 bg-red-950/30">
+        <p className="text-xs text-gray-300 leading-relaxed">
+          <span className="font-mono font-semibold uppercase tracking-widest text-red-300">
+            {BRAND[site]} assessment —
+          </span>{' '}
+          This is not one isolated shortage but the convergence of war, chokepoint disruption,
+          refinery damage, diesel scarcity, fertiliser restrictions, drought and narrowing grain
+          reserves. Inventories, alternative routes and replacement suppliers are still preventing a
+          generalised crisis — but those buffers are being consumed faster than the disrupted
+          systems are being restored. {LOCAL[site]}
+        </p>
+      </div>
+    </section>
+  );
+}
