@@ -19,22 +19,22 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Strait of Hormuz — severe disruption',
-    body: 'JMIC recorded only 4–13 vessel transits per day between 12 and 15 July, against a historical average of about 138. The strait remains physically navigable, but traffic is severely suppressed and JMIC assesses deliberate hostile action as highly likely (threat level SEVERE). VLCC crude and LNG movements remain intermittent.',
+    body: 'JMIC recorded only 4–13 vessel transits per day between 12 and 15 July, against a historical average of about 138. The strait remains physically navigable, but traffic is severely suppressed and JMIC assesses deliberate hostile action as highly likely (threat level SEVERE). VLCC crude and LNG movements remain intermittent. Routing has turned defensive, with most transits now hugging the Iranian side north of the traffic-separation scheme, and India has barred its seafarers from Hormuz voyages after crew deaths.',
   },
   {
     sev: 'critical',
     label: 'Middle East conflict — regional retaliation',
-    body: 'A sixth consecutive night of US strikes on Iranian military, air-defence and logistical targets. Iranian missile and drone attacks have targeted Bahrain, Kuwait, Qatar and Jordan, with incoming fire also striking northern Iraq (attribution there less certain); a claimed strike in Syria is unverified. Military and economic exposure now extends across the Gulf.',
+    body: 'Both sides are now hitting infrastructure — a threshold they had mostly avoided. US strikes have hit bridges, an airport and a port tower in southern Iran (CENTCOM citing ‘military logistics infrastructure’), while Iran struck a Kuwaiti power-and-desalination plant (fire, multiple generation units damaged) and US bases in Bahrain, Qatar and Kuwait, plus a claimed but largely ineffective strike at Tanf in Syria (US forces had reportedly withdrawn). Exposure now spans the Gulf.',
   },
   {
     sev: 'critical',
     label: 'Red Sea & Bab el-Mandeb — high escalation risk',
-    body: "Not confirmed closed, but Iran has reportedly told the Houthis to be ready to disrupt Red Sea shipping if the US strikes Iran's power grid (Reuters). The route matters more because Saudi Arabia has diverted much of its oil through Yanbu to bypass Hormuz — a simultaneous Hormuz-plus-Red-Sea disruption would hit the main Gulf route and its main alternative at once.",
+    body: "Not confirmed closed, but Iran has reportedly told the Houthis to be ready to disrupt Red Sea shipping if the US strikes Iran's power grid (Reuters). The route matters more because Saudi Arabia has diverted much of its oil through Yanbu to bypass Hormuz — a simultaneous Hormuz-plus-Red-Sea disruption would hit the main Gulf route and its main alternative at once. As of 17 July, though, INTERTANKO (citing the JMIC) reported no current indications the Houthis are preparing to resume attacks — the threat is armed and conditional, not yet active.",
   },
   {
     sev: 'critical',
     label: 'Oil products — tighter than crude',
-    body: 'Brent is near $84 (about +12% on the week), but the deeper stress is in diesel and jet. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
+    body: 'Brent has pushed toward $86 — its highest since the ceasefire — but the deeper stress is in diesel and jet. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
   },
   {
     sev: 'critical',
