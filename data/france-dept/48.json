@@ -3,45 +3,52 @@
   "name": "Lozère",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-07-17T07:27:26.136Z",
+  "asOf": "2026-07-17T14:06:24.230Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 36,
+  "stationCount": 37,
   "fuels": {
     "gazole": {
-      "count": 36,
-      "mean": 2.0469,
-      "median": 2.049,
-      "min": 1.939,
-      "max": 2.189
+      "count": 37,
+      "mean": 2.0555,
+      "median": 2.059,
+      "min": 1.969,
+      "max": 2.209
     },
     "sp95": {
-      "count": 10,
-      "mean": 2.0064,
-      "median": 1.997,
-      "min": 1.959,
+      "count": 12,
+      "mean": 2.0136,
+      "median": 1.999,
+      "min": 1.98,
       "max": 2.069
     },
     "sp98": {
-      "count": 20,
-      "mean": 2.0555,
-      "median": 2.056,
+      "count": 19,
+      "mean": 2.064,
+      "median": 2.072,
       "min": 1.989,
       "max": 2.14
     },
     "e10": {
       "count": 24,
-      "mean": 1.9723,
-      "median": 1.9705,
+      "mean": 1.9758,
+      "median": 1.984,
       "min": 1.929,
       "max": 2.039
     },
     "e85": {
-      "count": 6,
-      "mean": 0.828,
-      "median": 0.8085,
+      "count": 5,
+      "mean": 0.8338,
+      "median": 0.814,
       "min": 0.794,
       "max": 0.899
+    },
+    "gplc": {
+      "count": 1,
+      "mean": 1.15,
+      "median": 1.15,
+      "min": 1.15,
+      "max": 1.15
     }
   },
   "stations": [
@@ -54,7 +61,7 @@
       "lat": 4487100,
       "lng": 325300,
       "fuels": {
-        "gazole": 2.189,
+        "gazole": 2.209,
         "sp98": 2.129,
         "e10": 2.039
       }
@@ -68,7 +75,8 @@
       "lat": 4485347,
       "lng": 366108,
       "fuels": {
-        "gazole": 1.979
+        "gazole": 2.059,
+        "sp95": 1.999
       }
     },
     {
@@ -185,8 +193,8 @@
       "lat": 4478400,
       "lng": 363600,
       "fuels": {
-        "gazole": 1.979,
-        "sp95": 1.959
+        "gazole": 2.059,
+        "sp95": 1.999
       }
     },
     {
@@ -240,9 +248,9 @@
       "lat": 4473530,
       "lng": 385840,
       "fuels": {
-        "gazole": 2.049,
-        "sp95": 1.979,
-        "sp98": 1.999
+        "gazole": 2.095,
+        "sp95": 2.049,
+        "sp98": 2.074
       }
     },
     {
@@ -274,6 +282,20 @@
       }
     },
     {
+      "id": "48100001",
+      "cp": "48100",
+      "ville": "Marvejols",
+      "adresse": "38 AVENUE THEOPHILE ROUSSEL",
+      "pop": "R",
+      "lat": 4456242.8946,
+      "lng": 329229.52134,
+      "fuels": {
+        "gazole": 1.99,
+        "sp95": 1.99,
+        "gplc": 1.15
+      }
+    },
+    {
       "id": "48100007",
       "cp": "48100",
       "ville": "Marvejols",
@@ -296,8 +318,8 @@
       "lat": 4455700,
       "lng": 329100,
       "fuels": {
-        "gazole": 1.939,
-        "e10": 1.929,
+        "gazole": 2.035,
+        "e10": 1.959,
         "e85": 0.899
       }
     },
@@ -310,8 +332,8 @@
       "lat": 4455129.36314,
       "lng": 329110.64193,
       "fuels": {
-        "gazole": 2.039,
-        "e10": 1.959
+        "gazole": 2.069,
+        "e10": 1.989
       }
     },
     {
@@ -324,9 +346,7 @@
       "lng": 329300,
       "fuels": {
         "gazole": 2.025,
-        "sp98": 1.999,
-        "e10": 1.929,
-        "e85": 0.799
+        "e10": 1.929
       }
     },
     {
@@ -396,9 +416,9 @@
       "lat": 4418000,
       "lng": 343000,
       "fuels": {
-        "gazole": 2.099,
-        "sp98": 2.059,
-        "e10": 2.009
+        "gazole": 2.119,
+        "sp98": 2.088,
+        "e10": 2.034
       }
     },
     {
