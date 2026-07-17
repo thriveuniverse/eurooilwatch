@@ -1,44 +1,65 @@
 {
-  "asOf": "2026-07-16T18:46:49.236Z",
+  "asOf": "2026-07-17T07:28:15.821Z",
   "source": "https://precoscombustiveis.dgeg.gov.pt/",
   "licence": "DGEG — free, non-commercial use",
-  "totalStations": 3165,
-  "freshStations": 3165,
+  "totalStations": 3134,
+  "freshStations": 3134,
   "national": {
-    "stationCount": 3165,
+    "stationCount": 3134,
     "fuels": {
       "gazole": {
-        "count": 2965,
-        "mean": 1.9145,
-        "median": 1.924,
-        "min": 1.659,
+        "count": 2937,
+        "mean": 1.9142,
+        "median": 1.919,
+        "min": 1.634,
         "max": 2.109
       },
       "sp95": {
-        "count": 3125,
-        "mean": 1.9568,
+        "count": 3094,
+        "mean": 1.9561,
         "median": 1.959,
-        "min": 1.699,
+        "min": 1.696,
         "max": 2.209
       }
     }
   },
   "regions": {
+    "AG": {
+      "name": "Algarve",
+      "provinceCount": 1,
+      "stationCount": 176,
+      "fuels": {
+        "gazole": {
+          "count": 168,
+          "mean": 1.9235,
+          "median": 1.929,
+          "min": 1.634,
+          "max": 1.999
+        },
+        "sp95": {
+          "count": 175,
+          "mean": 1.9646,
+          "median": 1.969,
+          "min": 1.759,
+          "max": 2.044
+        }
+      }
+    },
     "C": {
       "name": "Centro",
       "provinceCount": 6,
-      "stationCount": 981,
+      "stationCount": 968,
       "fuels": {
         "gazole": {
-          "count": 922,
-          "mean": 1.9061,
+          "count": 912,
+          "mean": 1.9063,
           "median": 1.919,
           "min": 1.659,
           "max": 2.034
         },
         "sp95": {
-          "count": 975,
-          "mean": 1.951,
+          "count": 962,
+          "mean": 1.9507,
           "median": 1.959,
           "min": 1.699,
           "max": 2.209
@@ -48,62 +69,41 @@
     "L": {
       "name": "Lisboa e Vale do Tejo",
       "provinceCount": 3,
-      "stationCount": 809,
+      "stationCount": 811,
       "fuels": {
         "gazole": {
-          "count": 759,
-          "mean": 1.922,
-          "median": 1.934,
+          "count": 761,
+          "mean": 1.9213,
+          "median": 1.929,
           "min": 1.699,
           "max": 2.071
         },
         "sp95": {
-          "count": 796,
-          "mean": 1.9641,
+          "count": 798,
+          "mean": 1.9633,
           "median": 1.969,
           "min": 1.739,
           "max": 2.108
         }
       }
     },
-    "AG": {
-      "name": "Algarve",
-      "provinceCount": 1,
-      "stationCount": 178,
-      "fuels": {
-        "gazole": {
-          "count": 170,
-          "mean": 1.926,
-          "median": 1.9325,
-          "min": 1.729,
-          "max": 1.999
-        },
-        "sp95": {
-          "count": 177,
-          "mean": 1.965,
-          "median": 1.969,
-          "min": 1.759,
-          "max": 2.044
-        }
-      }
-    },
     "N": {
       "name": "Norte",
       "provinceCount": 5,
-      "stationCount": 981,
+      "stationCount": 965,
       "fuels": {
         "gazole": {
-          "count": 912,
-          "mean": 1.9119,
+          "count": 896,
+          "mean": 1.9114,
           "median": 1.919,
           "min": 1.749,
           "max": 2.109
         },
         "sp95": {
-          "count": 971,
-          "mean": 1.9531,
-          "median": 1.959,
-          "min": 1.769,
+          "count": 955,
+          "mean": 1.9515,
+          "median": 1.956,
+          "min": 1.696,
           "max": 2.099
         }
       }
@@ -111,18 +111,18 @@
     "AL": {
       "name": "Alentejo",
       "provinceCount": 3,
-      "stationCount": 216,
+      "stationCount": 214,
       "fuels": {
         "gazole": {
-          "count": 202,
-          "mean": 1.9263,
+          "count": 200,
+          "mean": 1.9279,
           "median": 1.949,
           "min": 1.759,
           "max": 2.019
         },
         "sp95": {
-          "count": 206,
-          "mean": 1.9672,
+          "count": 204,
+          "mean": 1.9679,
           "median": 1.986,
           "min": 1.819,
           "max": 2.05
@@ -131,6 +131,27 @@
     }
   },
   "provinces": {
+    "FARO": {
+      "name": "Faro",
+      "regionCode": "AG",
+      "stationCount": 176,
+      "fuels": {
+        "gazole": {
+          "count": 168,
+          "mean": 1.9235,
+          "median": 1.929,
+          "min": 1.634,
+          "max": 1.999
+        },
+        "sp95": {
+          "count": 175,
+          "mean": 1.9646,
+          "median": 1.969,
+          "min": 1.759,
+          "max": 2.044
+        }
+      }
+    },
     "GUARDA": {
       "name": "Guarda",
       "regionCode": "C",
@@ -138,14 +159,14 @@
       "fuels": {
         "gazole": {
           "count": 94,
-          "mean": 1.9178,
+          "mean": 1.9165,
           "median": 1.919,
           "min": 1.659,
           "max": 1.999
         },
         "sp95": {
           "count": 96,
-          "mean": 1.9658,
+          "mean": 1.9646,
           "median": 1.966,
           "min": 1.699,
           "max": 2.209
@@ -155,19 +176,19 @@
     "LISBOA": {
       "name": "Lisboa",
       "regionCode": "L",
-      "stationCount": 393,
+      "stationCount": 395,
       "fuels": {
         "gazole": {
-          "count": 370,
-          "mean": 1.9307,
-          "median": 1.959,
+          "count": 372,
+          "mean": 1.9298,
+          "median": 1.9535,
           "min": 1.699,
           "max": 2.071
         },
         "sp95": {
-          "count": 387,
-          "mean": 1.9722,
-          "median": 1.991,
+          "count": 389,
+          "mean": 1.9712,
+          "median": 1.989,
           "min": 1.739,
           "max": 2.108
         }
@@ -180,38 +201,17 @@
       "fuels": {
         "gazole": {
           "count": 205,
-          "mean": 1.9061,
+          "mean": 1.905,
           "median": 1.919,
           "min": 1.709,
           "max": 2.029
         },
         "sp95": {
           "count": 214,
-          "mean": 1.9508,
+          "mean": 1.9498,
           "median": 1.959,
           "min": 1.802,
           "max": 2.095
-        }
-      }
-    },
-    "VISEU": {
-      "name": "Viseu",
-      "regionCode": "C",
-      "stationCount": 163,
-      "fuels": {
-        "gazole": {
-          "count": 155,
-          "mean": 1.9034,
-          "median": 1.919,
-          "min": 1.717,
-          "max": 1.999
-        },
-        "sp95": {
-          "count": 161,
-          "mean": 1.9497,
-          "median": 1.956,
-          "min": 1.809,
-          "max": 2.039
         }
       }
     },
@@ -222,15 +222,15 @@
       "fuels": {
         "gazole": {
           "count": 147,
-          "mean": 1.911,
-          "median": 1.929,
+          "mean": 1.9088,
+          "median": 1.92,
           "min": 1.719,
           "max": 2.024
         },
         "sp95": {
           "count": 153,
-          "mean": 1.9544,
-          "median": 1.969,
+          "mean": 1.9523,
+          "median": 1.962,
           "min": 1.799,
           "max": 2.064
         }
@@ -243,14 +243,14 @@
       "fuels": {
         "gazole": {
           "count": 212,
-          "mean": 1.9041,
+          "mean": 1.9033,
           "median": 1.919,
           "min": 1.719,
           "max": 2.024
         },
         "sp95": {
           "count": 224,
-          "mean": 1.9492,
+          "mean": 1.9485,
           "median": 1.959,
           "min": 1.759,
           "max": 2.064
@@ -264,38 +264,17 @@
       "fuels": {
         "gazole": {
           "count": 80,
-          "mean": 1.9101,
+          "mean": 1.9096,
           "median": 1.919,
           "min": 1.729,
           "max": 2.034
         },
         "sp95": {
           "count": 85,
-          "mean": 1.9595,
-          "median": 1.97,
+          "mean": 1.959,
+          "median": 1.964,
           "min": 1.779,
           "max": 2.145
-        }
-      }
-    },
-    "FARO": {
-      "name": "Faro",
-      "regionCode": "AG",
-      "stationCount": 178,
-      "fuels": {
-        "gazole": {
-          "count": 170,
-          "mean": 1.926,
-          "median": 1.9325,
-          "min": 1.729,
-          "max": 1.999
-        },
-        "sp95": {
-          "count": 177,
-          "mean": 1.965,
-          "median": 1.969,
-          "min": 1.759,
-          "max": 2.044
         }
       }
     },
@@ -323,19 +302,19 @@
     "AVEIRO": {
       "name": "Aveiro",
       "regionCode": "C",
-      "stationCount": 258,
+      "stationCount": 257,
       "fuels": {
         "gazole": {
-          "count": 234,
-          "mean": 1.9005,
+          "count": 233,
+          "mean": 1.9002,
           "median": 1.919,
           "min": 1.739,
           "max": 2.024
         },
         "sp95": {
-          "count": 256,
-          "mean": 1.9431,
-          "median": 1.956,
+          "count": 255,
+          "mean": 1.9428,
+          "median": 1.954,
           "min": 1.749,
           "max": 2.209
         }
@@ -344,18 +323,18 @@
     "BRAGA": {
       "name": "Braga",
       "regionCode": "N",
-      "stationCount": 274,
+      "stationCount": 271,
       "fuels": {
         "gazole": {
-          "count": 252,
-          "mean": 1.9045,
+          "count": 249,
+          "mean": 1.9046,
           "median": 1.919,
           "min": 1.749,
           "max": 1.999
         },
         "sp95": {
-          "count": 270,
-          "mean": 1.9445,
+          "count": 267,
+          "mean": 1.9441,
           "median": 1.954,
           "min": 1.785,
           "max": 2.069
@@ -365,20 +344,20 @@
     "PORTO": {
       "name": "Porto",
       "regionCode": "N",
-      "stationCount": 462,
+      "stationCount": 455,
       "fuels": {
         "gazole": {
-          "count": 426,
-          "mean": 1.9108,
-          "median": 1.9265,
+          "count": 419,
+          "mean": 1.9093,
+          "median": 1.919,
           "min": 1.749,
           "max": 2.024
         },
         "sp95": {
-          "count": 460,
-          "mean": 1.9531,
-          "median": 1.959,
-          "min": 1.769,
+          "count": 453,
+          "mean": 1.9506,
+          "median": 1.956,
+          "min": 1.696,
           "max": 2.064
         }
       }
@@ -390,15 +369,15 @@
       "fuels": {
         "gazole": {
           "count": 86,
-          "mean": 1.9299,
-          "median": 1.949,
+          "mean": 1.9296,
+          "median": 1.934,
           "min": 1.759,
           "max": 2.109
         },
         "sp95": {
           "count": 90,
-          "mean": 1.9653,
-          "median": 1.974,
+          "mean": 1.9647,
+          "median": 1.966,
           "min": 1.846,
           "max": 2.089
         }
@@ -407,39 +386,60 @@
     "BEJA": {
       "name": "Beja",
       "regionCode": "AL",
-      "stationCount": 80,
+      "stationCount": 79,
       "fuels": {
         "gazole": {
-          "count": 76,
-          "mean": 1.9259,
+          "count": 75,
+          "mean": 1.9275,
           "median": 1.949,
           "min": 1.759,
           "max": 2.019
         },
         "sp95": {
-          "count": 75,
-          "mean": 1.9725,
+          "count": 74,
+          "mean": 1.9728,
           "median": 1.986,
           "min": 1.819,
           "max": 2.05
         }
       }
     },
+    "VISEU": {
+      "name": "Viseu",
+      "regionCode": "C",
+      "stationCount": 151,
+      "fuels": {
+        "gazole": {
+          "count": 146,
+          "mean": 1.9097,
+          "median": 1.919,
+          "min": 1.769,
+          "max": 1.999
+        },
+        "sp95": {
+          "count": 149,
+          "mean": 1.9523,
+          "median": 1.959,
+          "min": 1.809,
+          "max": 2.039
+        }
+      }
+    },
     "VIANA-DO-CASTELO": {
       "name": "Viana do Castelo",
       "regionCode": "N",
-      "stationCount": 77,
+      "stationCount": 75,
       "fuels": {
         "gazole": {
-          "count": 72,
+          "count": 70,
           "mean": 1.9125,
           "median": 1.919,
           "min": 1.769,
           "max": 1.999
         },
         "sp95": {
-          "count": 77,
-          "mean": 1.9519,
+          "count": 75,
+          "mean": 1.9509,
           "median": 1.956,
           "min": 1.816,
           "max": 2.039
@@ -449,19 +449,19 @@
     "BRAGANCA": {
       "name": "Bragança",
       "regionCode": "N",
-      "stationCount": 77,
+      "stationCount": 73,
       "fuels": {
         "gazole": {
-          "count": 76,
-          "mean": 1.9225,
+          "count": 72,
+          "mean": 1.9239,
           "median": 1.939,
           "min": 1.789,
           "max": 1.999
         },
         "sp95": {
-          "count": 74,
-          "mean": 1.9712,
-          "median": 1.987,
+          "count": 70,
+          "mean": 1.9692,
+          "median": 1.9885,
           "min": 1.819,
           "max": 2.099
         }
@@ -470,18 +470,18 @@
     "EVORA": {
       "name": "Évora",
       "regionCode": "AL",
-      "stationCount": 82,
+      "stationCount": 81,
       "fuels": {
         "gazole": {
-          "count": 76,
-          "mean": 1.9285,
+          "count": 75,
+          "mean": 1.9309,
           "median": 1.949,
           "min": 1.799,
           "max": 2.014
         },
         "sp95": {
-          "count": 78,
-          "mean": 1.966,
+          "count": 77,
+          "mean": 1.9677,
           "median": 1.986,
           "min": 1.819,
           "max": 2.044
@@ -495,14 +495,14 @@
       "fuels": {
         "gazole": {
           "count": 50,
-          "mean": 1.9236,
-          "median": 1.944,
+          "mean": 1.924,
+          "median": 1.949,
           "min": 1.799,
           "max": 1.999
         },
         "sp95": {
           "count": 53,
-          "mean": 1.9615,
+          "mean": 1.9613,
           "median": 1.966,
           "min": 1.819,
           "max": 2.029
