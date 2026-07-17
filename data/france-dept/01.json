@@ -3,15 +3,15 @@
   "name": "Ain",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-07-17T14:06:24.230Z",
+  "asOf": "2026-07-17T18:39:58.955Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 113,
+  "stationCount": 114,
   "fuels": {
     "gazole": {
-      "count": 112,
-      "mean": 2.0785,
-      "median": 2.072,
+      "count": 113,
+      "mean": 2.0791,
+      "median": 2.074,
       "min": 1.949,
       "max": 2.369
     },
@@ -24,14 +24,14 @@
     },
     "sp98": {
       "count": 95,
-      "mean": 2.0532,
+      "mean": 2.0537,
       "median": 2.036,
       "min": 1.952,
       "max": 2.636
     },
     "e10": {
       "count": 85,
-      "mean": 1.9771,
+      "mean": 1.9774,
       "median": 1.949,
       "min": 1.889,
       "max": 2.486
@@ -52,6 +52,18 @@
     }
   },
   "stations": [
+    {
+      "id": "1500004",
+      "cp": "01500",
+      "ville": "Ambérieu-en-Bugey",
+      "adresse": "15 Avenue de la Libération",
+      "pop": "R",
+      "lat": 4595700,
+      "lng": 533285,
+      "fuels": {
+        "gazole": 2.099
+      }
+    },
     {
       "id": "1500007",
       "cp": "01500",
@@ -686,9 +698,9 @@
       "lat": 4620539.92126,
       "lng": 529453.75361,
       "fuels": {
-        "gazole": 2.239,
-        "sp98": 2.235,
-        "e10": 2.114,
+        "gazole": 2.237,
+        "sp98": 2.248,
+        "e10": 2.126,
         "e85": 1.133
       }
     },
@@ -1158,9 +1170,9 @@
       "lat": 4619100,
       "lng": 521100,
       "fuels": {
-        "gazole": 2.149,
-        "sp98": 2.099,
-        "e10": 2.029,
+        "gazole": 2.199,
+        "sp98": 2.129,
+        "e10": 2.049,
         "e85": 0.899,
         "gplc": 1.099
       }

@@ -3,45 +3,45 @@
   "name": "Cantal",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-07-17T14:06:24.230Z",
+  "asOf": "2026-07-17T18:39:58.955Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 43,
   "fuels": {
     "gazole": {
       "count": 43,
-      "mean": 2.045,
-      "median": 2.048,
+      "mean": 2.0572,
+      "median": 2.058,
       "min": 1.878,
-      "max": 2.161
+      "max": 2.24
     },
     "sp95": {
-      "count": 23,
-      "mean": 2.0046,
+      "count": 24,
+      "mean": 2.0102,
       "median": 1.998,
       "min": 1.968,
       "max": 2.089
     },
     "sp98": {
-      "count": 26,
-      "mean": 2.0396,
-      "median": 2.039,
+      "count": 27,
+      "mean": 2.0511,
+      "median": 2.049,
       "min": 1.988,
-      "max": 2.109
+      "max": 2.28
     },
     "e10": {
-      "count": 23,
-      "mean": 1.9576,
-      "median": 1.959,
+      "count": 24,
+      "mean": 1.9699,
+      "median": 1.9665,
       "min": 1.889,
-      "max": 2.008
+      "max": 2.18
     },
     "e85": {
       "count": 6,
-      "mean": 0.8265,
+      "mean": 0.8275,
       "median": 0.817,
       "min": 0.798,
-      "max": 0.879
+      "max": 0.885
     },
     "gplc": {
       "count": 2,
@@ -135,7 +135,8 @@
       "lat": 4492300,
       "lng": 242800,
       "fuels": {
-        "gazole": 2.161
+        "gazole": 2.161,
+        "sp95": 2.089
       }
     },
     {
@@ -175,9 +176,9 @@
       "lat": 4491400,
       "lng": 244100,
       "fuels": {
-        "gazole": 2.077,
-        "sp95": 1.983,
-        "e10": 1.941,
+        "gazole": 2.091,
+        "sp95": 1.988,
+        "e10": 1.945,
         "e85": 0.839
       }
     },
@@ -216,18 +217,6 @@
       "lng": 276036,
       "fuels": {
         "gazole": 2.02
-      }
-    },
-    {
-      "id": "15250001",
-      "cp": "15250",
-      "ville": "Jussac",
-      "adresse": "AV.DE LA PRADE",
-      "pop": "R",
-      "lat": 4498584,
-      "lng": 241672,
-      "fuels": {
-        "gazole": 1.972
       }
     },
     {
@@ -411,6 +400,20 @@
       }
     },
     {
+      "id": "15700001",
+      "cp": "15700",
+      "ville": "Pleaux",
+      "adresse": "29 Avenue des Estourocs",
+      "pop": "R",
+      "lat": 4513300,
+      "lng": 222000,
+      "fuels": {
+        "gazole": 2.24,
+        "sp98": 2.28,
+        "e10": 2.18
+      }
+    },
+    {
       "id": "15700005",
       "cp": "15700",
       "ville": "Pleaux",
@@ -475,9 +478,9 @@
       "lat": 4471400,
       "lng": 220300,
       "fuels": {
-        "gazole": 1.999,
+        "gazole": 2.109,
         "sp98": 1.995,
-        "e10": 1.899
+        "e10": 1.968
       }
     },
     {
@@ -584,9 +587,9 @@
       "lat": 4494448.371,
       "lng": 231132.819,
       "fuels": {
-        "gazole": 1.999,
-        "sp95": 1.969,
-        "sp98": 1.999
+        "gazole": 2.109,
+        "sp95": 2.009,
+        "sp98": 2.069
       }
     },
     {
@@ -641,11 +644,11 @@
       "lat": 4489455.91392,
       "lng": 240159.25602,
       "fuels": {
-        "gazole": 2.109,
-        "sp95": 2.009,
+        "gazole": 2.129,
+        "sp95": 2.015,
         "sp98": 2.069,
         "e10": 1.979,
-        "e85": 0.879
+        "e85": 0.885
       }
     }
   ]
