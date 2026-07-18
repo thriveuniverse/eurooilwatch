@@ -128,6 +128,23 @@ export default async function DashboardPage() {
         </span>
       </a>
 
+      {/* Framework illustration — Bypassing a Chokepoint 135 Barrels at a Time */}
+      <a
+        href="/analysis/bypassing-a-chokepoint-135-barrels-at-a-time"
+        className="block rounded-lg border border-emerald-600/50 bg-emerald-950/20 px-4 py-3.5 hover:border-emerald-500 hover:bg-emerald-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-emerald-400 uppercase">
+          New &middot; The Framework, Illustrated
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          Bypassing a Chokepoint 135 Barrels at a Time{' '}
+          <span className="text-emerald-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          It takes nearly 15,000 tanker trucks to equal one supertanker, and 111,000 journeys a day to replace Hormuz&rsquo;s crude. Iraq&rsquo;s convoys are keeping oil moving &mdash; and proving why the infrastructure of cheap energy cannot be improvised once a crisis has begun.
+        </span>
+      </a>
+
       {/* Financial frame — Pressure Cooker + Yen carry-trade pair */}
       <a
         href="/analysis/the-world-is-a-pressure-cooker"
