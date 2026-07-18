@@ -24,7 +24,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Middle East conflict — regional retaliation',
-    body: 'Both sides are now hitting infrastructure — a threshold they had mostly avoided. US strikes have hit bridges, an airport and a port tower in southern Iran (CENTCOM citing ‘military logistics infrastructure’), while Iran struck a Kuwaiti power-and-desalination plant (fire, multiple generation units damaged) and US bases in Bahrain, Qatar and Kuwait, plus a claimed but largely ineffective strike at Tanf in Syria (US forces had reportedly withdrawn). Exposure now spans the Gulf.',
+    body: 'The infrastructure war is widening. After a seventh consecutive night of US strikes on Iranian logistics, surveillance and weapons sites, Iran hit Kuwait with its heaviest barrage of the conflict: Kuwait Petroleum Corporation reported an oil facility struck with significant material damage and injuries, another power-and-water plant was hit with generation units deactivated for a second straight day, and Kuwait International Airport suspended operations. Earlier US strikes hit bridges, an airport and a port tower in southern Iran. Water, power, airports, oil facilities and shipping are now interconnected targets.',
   },
   {
     sev: 'critical',
@@ -34,7 +34,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Oil products — tighter than crude',
-    body: 'Brent has pushed toward $86 — its highest since the ceasefire — but the deeper stress is in diesel and jet. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
+    body: 'Brent settled Friday at $88.10 (+4.6%) with WTI at $82.47 (+4.5%), both up more than 14% on the week — and the deeper stress is still in diesel and jet. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
   },
   {
     sev: 'critical',
@@ -75,6 +75,11 @@ const ROWS: Row[] = [
     sev: 'elevated',
     label: 'Global grain balance — margin shrinking',
     body: 'USDA projects both wheat and corn below consumption in 2026/27, with global corn ending stocks about 275 Mt — the lowest since 2013/14. Not yet a shortage, but less room to absorb another crop, trade or shipping shock.',
+  },
+  {
+    sev: 'elevated',
+    label: 'Financial transmission — leveraged equity retreating',
+    body: "The second system is now moving. The Philadelphia semiconductor index has entered a bear market, down 20.2% from its 22 June record close and 11% in a single week — its worst since March 2025 — wiping roughly $1.5tn of value after a 105% March-to-June AI rally. Reuters reports growing concern over retail margin debt, leveraged ETFs and short-dated options, with hedge funds trimming AI-infrastructure exposure. This is not yet a deleveraging event: investors are still rotating and buying dips. But a rising physical-energy shock and a crowded, leveraged financial trade are now under strain at the same time.",
   },
   {
     sev: 'critical',
