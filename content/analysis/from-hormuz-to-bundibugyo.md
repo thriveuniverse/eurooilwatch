@@ -108,3 +108,44 @@ If the framework is right, the next twelve weeks of observable data in eastern D
 *This is the second cascade application of the Compound Cascade Modelling Framework. The first, the [Hormuz to Hunger](/reports/from-hormuz-to-hunger) report, treats global fertilizer disruption following a Strait of Hormuz blockade. The framework methodology itself is detailed in the [Compound Cascade Systems Modelling Framework v3](/reports/from-hormuz-to-hunger) accompanying document.*
 
 *Sources: WHO situation reports, International Rescue Committee Watchlist Flash Alert (26 May 2026), historical Ebola CFR data (CDC, WHO archives), 2014–2016 West African outbreak case data (WHO Final Report 2016), 2018–2020 eastern DRC outbreak data (WHO 2020). Cross-published on [ukoilwatch.com](https://ukoilwatch.com/analysis/from-hormuz-to-bundibugyo), [eurooilwatch.com](https://eurooilwatch.com/analysis/from-hormuz-to-bundibugyo), and [americasoilwatch.com](https://americasoilwatch.com/analysis/from-hormuz-to-bundibugyo).*
+
+
+---
+
+## Update — 18 July 2026
+
+*Appended seven weeks into the twelve-week test window this article committed to on 29 May. The analysis above is unchanged and deliberately so: the framework's credibility rests on the original reading being time-stamped and then tested, not revised after the fact.*
+
+### The numbers
+
+WHO data as of 16 July put the outbreak at **2,124 confirmed cases and 828 deaths** in the DRC. Ituri remains the epicentre, with 1,904 cases and 692 deaths reported across **27 of its 36 health zones**, with further cases in North Kivu and Tshopo. Between 15 and 16 July alone, 51 new confirmed cases and 32 deaths were recorded. Roughly 80.3% of identified contacts are under follow-up across the three affected provinces.
+
+Against the baseline this article used on 27 May — 1,205 cases and at least 264 deaths — that is a **76% rise in cases and a 214% rise in deaths** in seven weeks.
+
+WHO's representative to the DRC, Dr Anne Ancia, has been explicit about the uncertainty: *"We would like to say it is stabilising, but frankly, we cannot say it yet."* WHO also states that the outbreak's true scale **has not yet been fully established**, and acknowledges surveillance gaps in conflict-affected areas — meaning the confirmed toll is likely an undercount. That is a weaker and more careful claim than "spreading undetected," and it is the one the evidence supports.
+
+### Trigger status: none resolved, in either direction
+
+**Upward triggers**
+
+- **Confirmed cases in Mombasa, Dar es Salaam, Nairobi or a West African capital — not fired.** This requires a specific caution. Seven American aid workers returning from the response are currently quarantining in Kenya under a contested US arrangement that is itself subject to court action. That is *managed repatriation quarantine, not community transmission in Nairobi.* It superficially resembles the transport-hub breach this framework watches for, and it is not one. Recording it as a firing would be exactly the category error the framework was built to avoid.
+- **Healthcare-worker infection rate above 5% for a continuous four-week period — unresolved.** Not established in published data. The framework treats an unmeasured trigger as unresolved, not as absent.
+- **Cumulative case count above 5,000 by end of August 2026 — not fired, but now live.** At 2,124 confirmed cases with roughly six weeks remaining and recent daily confirmations near 50, this is genuinely uncertain in both directions. It is the single decisive observable left in the window.
+- **WHO escalation of the PHEIC to highest-severity language — not fired.**
+
+**Downward triggers**
+
+- **Emergency-use authorisation for a Bundibugyo-targeted vaccine candidate — not fired.** The countermeasure gap identified above remains a permanent structural feature of this cascade.
+- **PHEIC formally downgraded or withdrawn — not fired.**
+- **Case-count declines in both Goma and Kampala across two consecutive weekly WHO updates — not fired.**
+- **A responding agency stating containment is achievable on current trajectory — not fired.** WHO is explicitly declining to make that statement.
+
+### What this does and does not change
+
+The central reading is **unchanged**, and that is the discipline working rather than an evasion: this article committed to moving the reading only when triggers resolve, and none has. Restating the range now, on the strength of a worsening trajectory alone, would be the additive thinking the framework exists to reject.
+
+What has changed is the base state on which those triggers sit. Every structural multiplier the model named in May is still active and none has been relieved: the responder layer remains degraded, conflict-zone surveillance gaps are now formally acknowledged by WHO, the countermeasure gap is untouched, and geographic spread has widened to three provinces and three-quarters of Ituri's health zones. The trajectory has deteriorated inside a range the framework already contained — which is a different statement from the range being wrong.
+
+The twelve-week window closes around 21 August, which coincides closely with the end-August case threshold. That is the point at which this node should produce its first genuinely resolved trigger, and at which the framework's reading should move — in whichever direction the data dictates.
+
+*Update sources: WHO Disease Outbreak News and situation reporting (July 2026), UN News, WHO DRC country office statements.*
