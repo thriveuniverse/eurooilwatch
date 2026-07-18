@@ -128,6 +128,23 @@ export default async function DashboardPage() {
         </span>
       </a>
 
+      {/* Financial frame — Pressure Cooker + Yen carry-trade pair */}
+      <a
+        href="/analysis/the-world-is-a-pressure-cooker"
+        className="block rounded-lg border border-emerald-600/50 bg-emerald-950/20 px-4 py-3.5 hover:border-emerald-500 hover:bg-emerald-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-emerald-400 uppercase">
+          New &middot; The Financial Frame
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          The World Is a Pressure Cooker &mdash; and Energy Is the Flame Beneath It{' '}
+          <span className="text-emerald-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          Energy is the flame, sovereign debt the weakened vessel, hidden leverage the pressure &mdash; and collateral the likeliest point of fracture. With its companion piece on how an energy shock could detonate the yen carry trade: the financial mechanism most likely to transmit it.
+        </span>
+      </a>
+
       {/* Flagship analysis — bold feature banner */}
       <a
         href="/analysis/hormuz-controlled-corridor-diesel-shock"
