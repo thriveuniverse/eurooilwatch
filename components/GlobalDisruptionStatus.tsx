@@ -24,7 +24,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Middle East conflict — regional retaliation',
-    body: 'The infrastructure war is widening. After a seventh consecutive night of US strikes on Iranian logistics, surveillance and weapons sites, Iran hit Kuwait with its heaviest barrage of the conflict: Kuwait Petroleum Corporation reported an oil facility struck with significant material damage and injuries, another power-and-water plant was hit with generation units deactivated for a second straight day, and Kuwait International Airport suspended operations. Earlier US strikes hit bridges, an airport and a port tower in southern Iran. Water, power, airports, oil facilities and shipping are now interconnected targets.',
+    body: 'The war has crossed into US fatalities and Gulf oil infrastructure. An Iranian strike on a base in Jordan killed two US service members (one missing) — the first American deaths since March, bringing the total to 16 killed and 430+ wounded — and the US renewed its strikes on Iran to punish it. Iran’s barrage on Kuwait widened to an offshore Kuwait Oil Company drilling platform, border posts and the airport, on top of the KPC oil facility already hit (IRGC: "15th wave of Operation Nasr 2"). Saudi Arabia issued shelter warnings for Al-Kharj and Yanbu — reportedly an Iranian missile, the first on the kingdom in three months, though Riyadh has not confirmed the cause and the danger later passed. No confirmed strike on Yanbu itself — the Red Sea bypass — but its appearance in the target set is the escalation to watch.',
   },
   {
     sev: 'critical',
@@ -34,7 +34,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Oil products — tighter than crude',
-    body: 'Brent settled Friday at $88.10 (+4.6%) with WTI at $82.47 (+4.5%), both up more than 14% on the week — and the deeper stress is still in diesel and jet. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
+    body: 'Brent settled Friday at $88.10 (+4.6%) with WTI at $82.47 (+4.5%), both up more than 14% on the week — the deeper stress is still in diesel and jet. Markets are closed for the weekend, so Monday’s open is the first test of the latest escalation. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
   },
   {
     sev: 'critical',
@@ -79,7 +79,7 @@ const ROWS: Row[] = [
   {
     sev: 'elevated',
     label: 'Financial transmission — leveraged equity retreating',
-    body: "The second system is now moving. The Philadelphia semiconductor index has entered a bear market, down 20.2% from its 22 June record close and 11% in a single week — its worst since March 2025 — wiping roughly $1.5tn of value after a 105% March-to-June AI rally. Reuters reports growing concern over retail margin debt, leveraged ETFs and short-dated options, with hedge funds trimming AI-infrastructure exposure. This is not yet a deleveraging event: investors are still rotating and buying dips. But a rising physical-energy shock and a crowded, leveraged financial trade are now under strain at the same time.",
+    body: "The second system is moving, but the decisive signal has not appeared. The Philadelphia semiconductor index is in a bear market — around 20% below its 22 June record, off 11% in a week (its worst since March 2025), roughly $1.5tn wiped after a 105% AI rally — and Japan's Nikkei fell 4% on Friday. Crucially, US Treasuries still drew safe-haven demand: stocks and sovereign bonds are not yet falling together, which is the actual marker of systemic rupture. This remains a serious risk-off episode, not a deleveraging event — investors are still rotating and buying dips — but a rising energy shock and a crowded, leveraged trade are now under strain at once.",
   },
   {
     sev: 'critical',

@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-18" />
+      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-19" />
 
       {/* Flagship analysis — From Hormuz to the Checkout */}
       <a
