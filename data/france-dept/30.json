@@ -3,42 +3,42 @@
   "name": "Gard",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-07-18T18:34:53.115Z",
+  "asOf": "2026-07-19T07:33:57.876Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 132,
+  "stationCount": 131,
   "fuels": {
     "gazole": {
-      "count": 131,
-      "mean": 2.1057,
+      "count": 130,
+      "mean": 2.1067,
       "median": 2.099,
       "min": 1.92,
       "max": 2.404
     },
     "sp95": {
       "count": 40,
-      "mean": 2.019,
-      "median": 1.999,
+      "mean": 2.0192,
+      "median": 2.0015,
       "min": 1.938,
       "max": 2.22
     },
     "sp98": {
       "count": 103,
-      "mean": 2.0677,
+      "mean": 2.0689,
       "median": 2.049,
       "min": 1.983,
       "max": 2.344
     },
     "e10": {
       "count": 105,
-      "mean": 1.9823,
+      "mean": 1.9835,
       "median": 1.965,
       "min": 1.889,
       "max": 2.284
     },
     "e85": {
-      "count": 46,
-      "mean": 0.8292,
+      "count": 48,
+      "mean": 0.8285,
       "median": 0.809,
       "min": 0.778,
       "max": 1.059
@@ -251,7 +251,10 @@
       "lat": 4413800,
       "lng": 410400,
       "fuels": {
-        "gazole": 2.089
+        "gazole": 2.089,
+        "sp98": 2.08,
+        "e10": 1.966,
+        "e85": 0.824
       }
     },
     {
@@ -348,7 +351,6 @@
       "fuels": {
         "gazole": 2.099,
         "sp95": 1.989,
-        "sp98": 1.999,
         "e10": 1.949
       }
     },
@@ -1180,18 +1182,6 @@
       }
     },
     {
-      "id": "30900018",
-      "cp": "30900",
-      "ville": "Nîmes",
-      "adresse": "35 RUE RUDOLPHE DIESEL",
-      "pop": "R",
-      "lat": 4381200,
-      "lng": 433900,
-      "fuels": {
-        "gazole": 2.099
-      }
-    },
-    {
       "id": "30000019",
       "cp": "30000",
       "ville": "Nîmes",
@@ -1200,7 +1190,8 @@
       "lat": 4382500,
       "lng": 437900,
       "fuels": {
-        "sp98": 2.093
+        "sp98": 2.093,
+        "e85": 0.799
       }
     },
     {
@@ -1502,9 +1493,9 @@
       "lat": 4405271,
       "lng": 477918,
       "fuels": {
-        "gazole": 2.099,
+        "gazole": 2.199,
         "sp98": 2.078,
-        "e10": 1.989
+        "e10": 2.078
       }
     },
     {
@@ -1615,9 +1606,9 @@
       "lat": 4366500,
       "lng": 440100,
       "fuels": {
-        "gazole": 2.089,
-        "sp95": 1.999,
-        "e10": 1.949
+        "gazole": 2.099,
+        "sp95": 2.009,
+        "e10": 1.969
       }
     },
     {
@@ -1629,9 +1620,9 @@
       "lat": 4367700,
       "lng": 443200,
       "fuels": {
-        "gazole": 2.089,
-        "sp98": 2.019,
-        "e10": 1.949
+        "gazole": 2.099,
+        "sp98": 2.059,
+        "e10": 1.969
       }
     },
     {
@@ -1908,8 +1899,7 @@
       "lat": 4395800,
       "lng": 477800,
       "fuels": {
-        "gazole": 2.125,
-        "e10": 1.969
+        "gazole": 2.125
       }
     },
     {
