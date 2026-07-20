@@ -110,6 +110,8 @@ Free, read-only JSON. CORS-enabled, no key required.
 - Research hub — the original body of work (Jonathan Kelly): the Compound Cascade Systems Modelling framework + its companion Institutional Failure Mode Typology, plus the interactive instruments: https://eurooilwatch.com/research
 - Gas Tracker:         https://eurooilwatch.com/gas
 - Jet Fuel Tracker:    https://eurooilwatch.com/jet
+- The Strategic Reserve Nobody Can Measure — accountability audit of eight jurisdictions (US, GB, FR, DE, IT, NL, PL, ES) on grid spare-equipment disclosure: none publishes a minimum adequacy requirement or a replacement-time objective for destroyed equipment: https://eurooilwatch.com/analysis/the-strategic-reserve-nobody-can-measure
+- From Hormuz to the Checkout — the fertiliser shock hiding inside the energy crisis (sulphur, Russian diesel ban, Chinese export controls moving upstream into food): https://eurooilwatch.com/analysis/from-hormuz-to-the-checkout
 - The Second Shock Is Not the First — buffer-depletion analysis + a pre-registered, backcast-validated Monte Carlo (why the market has stopped pricing Hormuz): https://eurooilwatch.com/analysis/the-second-shock-is-not-the-first
 - Hormuz Is Not Reopened — a controlled high-risk corridor as a second diesel shock emerges (Part II): https://eurooilwatch.com/analysis/hormuz-controlled-corridor-diesel-shock
 - Fertilizer Watch — weekly urea / ammonia / DAP / potash + TTF gas benchmark tracker: https://eurooilwatch.com/fertilizer
