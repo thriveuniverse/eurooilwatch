@@ -94,6 +94,23 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-20" />
 
+      {/* Accountability audit — The Strategic Reserve Nobody Can Measure */}
+      <a
+        href="/analysis/the-strategic-reserve-nobody-can-measure"
+        className="block rounded-lg border border-amber-600/50 bg-amber-950/20 px-4 py-3.5 hover:border-amber-500 hover:bg-amber-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-amber-400 uppercase">
+          New &middot; Accountability Audit
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          The Strategic Reserve Nobody Can Measure{' '}
+          <span className="text-amber-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          European law makes grid operators rehearse restoring the network &mdash; and imposes secrecy on the plans they rehearse. Spain&rsquo;s national blackout produced an 800-page post-mortem in which nobody asked whether the spare equipment was sufficient. We audited eight jurisdictions: not one publishes an adequacy standard, and not one publishes how long a destroyed transformer takes to replace.
+        </span>
+      </a>
+
       {/* Flagship analysis — From Hormuz to the Checkout */}
       <a
         href="/analysis/from-hormuz-to-the-checkout"
