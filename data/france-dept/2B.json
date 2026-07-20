@@ -3,31 +3,31 @@
   "name": "Haute-Corse",
   "regionCode": "COR",
   "regionName": "Corse",
-  "asOf": "2026-07-19T18:36:38.014Z",
+  "asOf": "2026-07-20T08:16:11.667Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 55,
+  "stationCount": 56,
   "fuels": {
     "gazole": {
       "count": 55,
-      "mean": 2.1697,
+      "mean": 2.173,
       "median": 2.19,
       "min": 1.95,
       "max": 2.25
     },
     "sp95": {
-      "count": 38,
-      "mean": 2.0087,
+      "count": 41,
+      "mean": 2.013,
       "median": 1.999,
       "min": 1.95,
       "max": 2.18
     },
     "gplc": {
-      "count": 1,
-      "mean": 1.34,
-      "median": 1.34,
+      "count": 2,
+      "mean": 1.345,
+      "median": 1.345,
       "min": 1.34,
-      "max": 1.34
+      "max": 1.35
     }
   },
   "stations": [
@@ -64,7 +64,8 @@
       "lat": 4270400,
       "lng": 945300,
       "fuels": {
-        "gazole": 2.22
+        "gazole": 2.22,
+        "sp95": 2.04
       }
     },
     {
@@ -115,7 +116,8 @@
       "lat": 4267700,
       "lng": 944400,
       "fuels": {
-        "gazole": 2.22
+        "gazole": 2.22,
+        "sp95": 2.04
       }
     },
     {
@@ -140,7 +142,7 @@
       "lng": 944219.35453,
       "fuels": {
         "gazole": 2.22,
-        "sp95": 1.999
+        "sp95": 2.04
       }
     },
     {
@@ -204,7 +206,7 @@
       "lng": 946900,
       "fuels": {
         "gazole": 2.22,
-        "sp95": 1.999
+        "sp95": 2.04
       }
     },
     {
@@ -393,7 +395,8 @@
       "lng": 940900,
       "fuels": {
         "gazole": 2.12,
-        "sp95": 1.96
+        "sp95": 1.96,
+        "gplc": 1.35
       }
     },
     {
@@ -431,7 +434,7 @@
       "lat": 4263200,
       "lng": 894100,
       "fuels": {
-        "gazole": 2.099,
+        "gazole": 2.179,
         "sp95": 2.019
       }
     },
@@ -456,7 +459,7 @@
       "lat": 4254300,
       "lng": 944200,
       "fuels": {
-        "gazole": 2.19
+        "gazole": 2.2
       }
     },
     {
@@ -507,7 +510,7 @@
       "lat": 4246300,
       "lng": 920500,
       "fuels": {
-        "gazole": 2.059,
+        "gazole": 2.149,
         "sp95": 1.999
       }
     },
@@ -728,6 +731,18 @@
       "fuels": {
         "gazole": 2.19,
         "sp95": 2.03
+      }
+    },
+    {
+      "id": "20200014",
+      "cp": "20200",
+      "ville": "Ville-di-Pietrabugno",
+      "adresse": "9 ROUTE DU CAP",
+      "pop": "R",
+      "lat": 4271166.17562,
+      "lng": 945429.599,
+      "fuels": {
+        "sp95": 2.04
       }
     }
   ]

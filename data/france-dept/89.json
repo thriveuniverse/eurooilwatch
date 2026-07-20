@@ -3,43 +3,43 @@
   "name": "Yonne",
   "regionCode": "BFC",
   "regionName": "Bourgogne-Franche-Comté",
-  "asOf": "2026-07-19T18:36:38.014Z",
+  "asOf": "2026-07-20T08:16:11.667Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 82,
   "fuels": {
     "gazole": {
       "count": 79,
-      "mean": 2.1206,
-      "median": 2.109,
+      "mean": 2.1221,
+      "median": 2.119,
       "min": 1.99,
       "max": 2.319
     },
     "sp95": {
-      "count": 30,
-      "mean": 2.0657,
+      "count": 31,
+      "mean": 2.0698,
       "median": 2.079,
       "min": 1.989,
       "max": 2.124
     },
     "sp98": {
       "count": 61,
-      "mean": 2.1126,
+      "mean": 2.1133,
       "median": 2.099,
       "min": 1.99,
       "max": 2.255
     },
     "e10": {
-      "count": 56,
-      "mean": 2.0347,
-      "median": 2.017,
+      "count": 57,
+      "mean": 2.0379,
+      "median": 2.019,
       "min": 1.948,
       "max": 2.155
     },
     "e85": {
-      "count": 23,
-      "mean": 0.8831,
-      "median": 0.872,
+      "count": 24,
+      "mean": 0.8813,
+      "median": 0.8505,
       "min": 0.79,
       "max": 0.998
     },
@@ -118,6 +118,7 @@
       "lat": 4780400,
       "lng": 358900,
       "fuels": {
+        "e10": 2.104,
         "gplc": 1.01
       }
     },
@@ -477,7 +478,8 @@
       "lat": 4797700,
       "lng": 341100,
       "fuels": {
-        "gazole": 2.232
+        "gazole": 2.232,
+        "sp95": 2.124
       }
     },
     {
@@ -489,9 +491,9 @@
       "lat": 4798000,
       "lng": 338200,
       "fuels": {
-        "gazole": 2.095,
+        "gazole": 2.125,
         "sp98": 2.005,
-        "e10": 1.985
+        "e10": 1.995
       }
     },
     {
@@ -717,7 +719,6 @@
       "lat": 4814800,
       "lng": 330700,
       "fuels": {
-        "gazole": 2.093,
         "sp98": 2.114,
         "e10": 2.013,
         "e85": 0.829
@@ -747,10 +748,10 @@
       "lat": 4821660.57601,
       "lng": 327710.675,
       "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.069,
-        "e10": 1.989,
-        "e85": 0.819
+        "gazole": 2.109,
+        "sp98": 2.099,
+        "e10": 2.019,
+        "e85": 0.829
       }
     },
     {
@@ -860,7 +861,7 @@
       "lng": 376800,
       "fuels": {
         "gazole": 2.079,
-        "sp95": 1.995
+        "sp95": 2.015
       }
     },
     {
@@ -875,18 +876,6 @@
         "gazole": 2.149,
         "sp95": 2.079,
         "sp98": 2.099
-      }
-    },
-    {
-      "id": "89520002",
-      "cp": "89520",
-      "ville": "Saint-Sauveur-en-Puisaye",
-      "adresse": "ROUTE DE ST FARGEAU",
-      "pop": "R",
-      "lat": 4762000,
-      "lng": 319200,
-      "fuels": {
-        "sp95": 1.99
       }
     },
     {
@@ -969,9 +958,9 @@
       "lat": 4819700,
       "lng": 326600,
       "fuels": {
-        "gazole": 2.069,
+        "gazole": 2.109,
         "sp95": 2.029,
-        "e10": 1.989
+        "e10": 2.019
       }
     },
     {
@@ -983,9 +972,10 @@
       "lat": 4818300,
       "lng": 330900,
       "fuels": {
-        "gazole": 2.069,
-        "sp98": 2.089,
-        "e10": 1.989
+        "gazole": 2.109,
+        "sp98": 2.099,
+        "e10": 2.019,
+        "e85": 0.829
       }
     },
     {
@@ -1201,7 +1191,7 @@
       "fuels": {
         "gazole": 2.129,
         "sp98": 2.135,
-        "e10": 1.999
+        "e10": 2.015
       }
     },
     {
@@ -1216,6 +1206,19 @@
         "gazole": 2.129,
         "sp98": 2.139,
         "e10": 2.089
+      }
+    },
+    {
+      "id": "89290002",
+      "cp": "89290",
+      "ville": "Vincelles",
+      "adresse": "ROUTE DE VINCELOTTES",
+      "pop": "R",
+      "lat": 4770500,
+      "lng": 363400,
+      "fuels": {
+        "gazole": 2.059,
+        "sp95": 2.039
       }
     }
   ]

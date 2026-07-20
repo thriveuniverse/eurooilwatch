@@ -3,36 +3,36 @@
   "name": "Hauts-de-Seine",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-07-19T18:36:38.014Z",
+  "asOf": "2026-07-20T08:16:11.667Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 65,
   "fuels": {
     "gazole": {
-      "count": 64,
-      "mean": 2.1915,
-      "median": 2.2155,
+      "count": 63,
+      "mean": 2.1924,
+      "median": 2.212,
       "min": 1.999,
       "max": 2.459
     },
     "sp95": {
-      "count": 2,
-      "mean": 2.069,
-      "median": 2.069,
+      "count": 3,
+      "mean": 2.0793,
+      "median": 2.099,
       "min": 2.039,
-      "max": 2.099
+      "max": 2.1
     },
     "sp98": {
       "count": 51,
-      "mean": 2.2007,
+      "mean": 2.2006,
       "median": 2.184,
       "min": 2.033,
       "max": 2.439
     },
     "e10": {
-      "count": 55,
-      "mean": 2.0783,
-      "median": 2.069,
+      "count": 56,
+      "mean": 2.0788,
+      "median": 2.074,
       "min": 1.94,
       "max": 2.189
     },
@@ -132,7 +132,6 @@
       "lng": 223100,
       "fuels": {
         "gazole": 2.244,
-        "sp98": 2.184,
         "e85": 0.885
       }
     },
@@ -145,7 +144,9 @@
       "lat": 4883468,
       "lng": 224193,
       "fuels": {
-        "gazole": 2.1
+        "gazole": 2.2,
+        "sp95": 2.1,
+        "sp98": 2.18
       }
     },
     {
@@ -171,7 +172,9 @@
       "lat": 4883585,
       "lng": 223898,
       "fuels": {
-        "gazole": 2.244
+        "gazole": 2.244,
+        "sp98": 2.184,
+        "e10": 2.104
       }
     },
     {
@@ -321,7 +324,6 @@
       "lat": 4891900,
       "lng": 222300,
       "fuels": {
-        "gazole": 2.239,
         "gplc": 0.999
       }
     },
@@ -393,7 +395,6 @@
       "lng": 225900,
       "fuels": {
         "gazole": 2.236,
-        "sp98": 2.184,
         "e10": 2.104,
         "e85": 0.885
       }

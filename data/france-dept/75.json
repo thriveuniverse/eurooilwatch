@@ -3,14 +3,14 @@
   "name": "Paris",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-07-19T18:36:38.014Z",
+  "asOf": "2026-07-20T08:16:11.667Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 38,
   "fuels": {
     "gazole": {
       "count": 35,
-      "mean": 2.2238,
+      "mean": 2.2245,
       "median": 2.239,
       "min": 2.05,
       "max": 2.379
@@ -23,15 +23,15 @@
       "max": 2.299
     },
     "sp98": {
-      "count": 31,
-      "mean": 2.2061,
+      "count": 32,
+      "mean": 2.2054,
       "median": 2.184,
       "min": 2.059,
       "max": 2.369
     },
     "e10": {
-      "count": 30,
-      "mean": 2.1154,
+      "count": 31,
+      "mean": 2.1161,
       "median": 2.104,
       "min": 1.99,
       "max": 2.269
@@ -103,8 +103,7 @@
       "lat": 4887100,
       "lng": 240900,
       "fuels": {
-        "gazole": 2.241,
-        "sp98": 2.184
+        "gazole": 2.241
       }
     },
     {
@@ -159,7 +158,9 @@
       "lat": 4883200,
       "lng": 231600,
       "fuels": {
-        "gazole": 2.244
+        "gazole": 2.244,
+        "sp98": 2.184,
+        "e10": 2.104
       }
     },
     {
@@ -241,9 +242,9 @@
       "lat": 4889300,
       "lng": 230200,
       "fuels": {
-        "gazole": 2.111,
+        "gazole": 2.135,
         "sp98": 2.059,
-        "e10": 2.012,
+        "e10": 2.045,
         "e85": 0.875
       }
     },
@@ -384,6 +385,7 @@
       "lng": 232987.43609,
       "fuels": {
         "gazole": 2.239,
+        "sp98": 2.184,
         "e10": 2.104,
         "e85": 0.879
       }
