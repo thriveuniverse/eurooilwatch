@@ -19,12 +19,12 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Strait of Hormuz — severe disruption',
-    body: 'JMIC recorded only 4–13 vessel transits per day between 12 and 15 July, against a historical average of about 138. The strait remains physically navigable, but traffic is severely suppressed and JMIC assesses deliberate hostile action as highly likely (threat level SEVERE). VLCC crude and LNG movements remain intermittent. Routing has turned defensive, with most transits now hugging the Iranian side north of the traffic-separation scheme, and India has barred its seafarers from Hormuz voyages after crew deaths.',
+    body: 'JMIC recorded only 4–13 transits a day between 12 and 15 July against a ~138 norm, and traffic has fallen further since: Sunday crossings were down roughly 60% on the same day a week earlier, with only about four crude tankers among them. Crucially, every commodity carrier that crossed did so with transponders off, so visible counts now understate real movement — and no LNG carrier has been visibly recorded since Thursday. JMIC assesses deliberate hostile action as highly likely (SEVERE). UKMTO reported a vessel on fire about eight nautical miles north-west of Kumzar, Oman, cause unverified; Iran separately claimed two tankers were disabled attempting the southern passage, which Reuters could not confirm. India has barred its seafarers from Hormuz voyages.',
   },
   {
     sev: 'critical',
     label: 'Middle East conflict — regional retaliation',
-    body: 'The war has crossed into US fatalities and Gulf oil infrastructure. An Iranian strike on a base in Jordan killed two US service members (one missing) — the first American deaths since March, bringing the total to 16 killed and 430+ wounded — and the US renewed its strikes on Iran to punish it. Iran’s barrage on Kuwait widened to an offshore Kuwait Oil Company drilling platform, border posts and the airport, on top of the KPC oil facility already hit (IRGC: "15th wave of Operation Nasr 2"). Saudi Arabia issued shelter warnings for Al-Kharj and Yanbu — reportedly an Iranian missile, the first on the kingdom in three months, though Riyadh has not confirmed the cause and the danger later passed. No confirmed strike on Yanbu itself — the Red Sea bypass — but its appearance in the target set is the escalation to watch.',
+    body: 'The war has crossed into US fatalities and Gulf oil infrastructure. An Iranian strike on a base in Jordan killed two US service members (one missing) — the first American deaths since March, taking the toll to 16 killed and 430+ wounded — and a further service member has since reportedly died in Iraq during the controlled detonation of a downed Iranian drone. The US has now run nine consecutive nights of strikes on command centres, air defences, coastal surveillance, launch sites and communications networks; Iran has answered with attacks on Bahrain and Kuwait. Iran’s barrage on Kuwait widened to an offshore Kuwait Oil Company drilling platform, border posts and the airport, on top of the KPC oil facility already hit (IRGC: "15th wave of Operation Nasr 2"). Saudi Arabia issued shelter warnings for Al-Kharj and Yanbu — reportedly an Iranian missile, the first on the kingdom in three months, though Riyadh has not confirmed the cause and the danger later passed. No confirmed strike on Yanbu itself — the Red Sea bypass — but its appearance in the target set is the escalation to watch.',
   },
   {
     sev: 'critical',
@@ -34,7 +34,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Oil products — tighter than crude',
-    body: 'Brent settled Friday at $88.10 (+4.6%) with WTI at $82.47 (+4.5%), both up more than 14% on the week — the deeper stress is still in diesel and jet. Markets are closed for the weekend, so Monday’s open is the first test of the latest escalation. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
+    body: 'Brent has pushed above $90 — around $91.40 in early Monday trade, up 3.2% — with WTI above $84, after gaining roughly 16% last week. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
   },
   {
     sev: 'critical',
@@ -49,7 +49,7 @@ const ROWS: Row[] = [
   {
     sev: 'elevated',
     label: 'LNG — major supply loss continues',
-    body: "The IEA estimates disrupted Hormuz transit has removed more than 300 million cubic metres a day of Qatar and UAE LNG since 1 March — over 2 bcm a week. Qatar's Ras Laffan complex has stayed offline since the 2 March attack, raising power and industrial costs and directly hitting ammonia and nitrogen-fertiliser production.",
+    body: "The IEA estimates disrupted Hormuz transit has removed more than 300 million cubic metres a day of Qatar and UAE LNG since 1 March — over 2 bcm a week. Qatar's Ras Laffan complex has stayed offline since the 2 March attack, raising power and industrial costs and directly hitting ammonia and nitrogen-fertiliser production. A backlog is now building inside the Gulf: seven laden Qatari carriers were holding about 0.57 million tonnes, and S&P Global puts nearly 1.9 million tonnes of LNG tanker capacity inside the Gulf — roughly eight days of typical pre-war peak exports from the two projects. Production can continue while ships wait; once storage fills, producers may be forced to cut output. That is the next escalation to watch.",
   },
   {
     sev: 'critical',
@@ -79,7 +79,7 @@ const ROWS: Row[] = [
   {
     sev: 'elevated',
     label: 'Financial transmission — leveraged equity retreating',
-    body: "The second system is moving, but the decisive signal has not appeared. The Philadelphia semiconductor index is in a bear market — around 20% below its 22 June record, off 11% in a week (its worst since March 2025), roughly $1.5tn wiped after a 105% AI rally — and Japan's Nikkei fell 4% on Friday. Crucially, US Treasuries still drew safe-haven demand: stocks and sovereign bonds are not yet falling together, which is the actual marker of systemic rupture. This remains a serious risk-off episode, not a deleveraging event — investors are still rotating and buying dips — but a rising energy shock and a crowded, leveraged trade are now under strain at once.",
+    body: "The first rupture marker has fired. Thirty-year US Treasury yields are back above 5% (10-year near 4.55%) as the oil shock revives inflation fears, and futures have swung toward pricing a September Fed hike as near-certain, from roughly two-thirds probability a week earlier. Bonds and equities are therefore falling together — the loss of the traditional safe haven that our pressure-cooker analysis names as the first of three markers of systemic rupture — though so far this reflects inflation repricing the rate path rather than a liquidation overwhelming the safe-haven bid. Equity stress is broadening: South Korea's chip-heavy market fell 4.1% after nearly 9% the week before, and the Philadelphia semiconductor index sits ~20% below its June record. The second marker has not fired: the yen is still near a 40-year low around 162 to the dollar, so the yen-funded carry trade has not entered forced repayment. Energy is now actively driving rate expectations while leveraged positions weaken — dangerous, but not yet global liquidation.",
   },
   {
     sev: 'critical',
