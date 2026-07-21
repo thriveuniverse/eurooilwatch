@@ -34,7 +34,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Oil products — tighter than crude',
-    body: 'Brent has eased back below $90 — around $88.26 in early Tuesday trade, after touching $91.42 on Monday, its highest since 11 June, with WTI near $82.50; prices remain up about 20% this month. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
+    body: 'Brent has eased back below $90 — around \$89 in early Tuesday trade, after touching $91.42 on Monday, its highest since 11 June, with WTI near $82.50; prices remain up about 20% this month. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
   },
   {
     sev: 'critical',
