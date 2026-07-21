@@ -3,23 +3,23 @@
   "name": "Haute-Marne",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-07-21T07:41:08.341Z",
+  "asOf": "2026-07-21T14:27:16.710Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 51,
+  "stationCount": 50,
   "fuels": {
     "gazole": {
       "count": 50,
-      "mean": 2.1498,
+      "mean": 2.1568,
       "median": 2.149,
       "min": 1.99,
       "max": 2.382
     },
     "sp95": {
-      "count": 14,
-      "mean": 2.0757,
-      "median": 2.089,
-      "min": 1.99,
+      "count": 13,
+      "mean": 2.0825,
+      "median": 2.099,
+      "min": 2.036,
       "max": 2.149
     },
     "sp98": {
@@ -30,11 +30,11 @@
       "max": 2.229
     },
     "e10": {
-      "count": 36,
-      "mean": 2.0412,
-      "median": 2.026,
+      "count": 37,
+      "mean": 2.0436,
+      "median": 2.029,
       "min": 1.953,
-      "max": 2.129
+      "max": 2.145
     },
     "e85": {
       "count": 14,
@@ -75,7 +75,8 @@
       "lat": 4865287.48837,
       "lng": 496326.91537,
       "fuels": {
-        "gazole": 2.049
+        "gazole": 2.239,
+        "e10": 2.145
       }
     },
     {
@@ -215,7 +216,7 @@
       "lat": 4810557.63923,
       "lng": 514231.99096,
       "fuels": {
-        "gazole": 2.113,
+        "gazole": 2.133,
         "sp98": 2.101,
         "e10": 2.021
       }
@@ -405,6 +406,7 @@
       "lat": 4849100,
       "lng": 477800,
       "fuels": {
+        "gazole": 1.99,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -447,9 +449,9 @@
       "lat": 4787081,
       "lng": 534034.5,
       "fuels": {
-        "gazole": 2.128,
+        "gazole": 2.145,
         "sp98": 2.119,
-        "e10": 2.014,
+        "e10": 2.003,
         "e85": 0.809
       }
     },
@@ -551,7 +553,7 @@
       "lat": 4825051,
       "lng": 532944,
       "fuels": {
-        "gazole": 2.025,
+        "gazole": 2.11,
         "sp98": 2.069,
         "e10": 1.953
       }
@@ -611,7 +613,7 @@
         "gazole": 2.113,
         "sp95": 2.036,
         "sp98": 2.058,
-        "e10": 2.036,
+        "e10": 2.013,
         "gplc": 0.949
       }
     },
@@ -638,10 +640,10 @@
       "lat": 4862700,
       "lng": 497300,
       "fuels": {
-        "gazole": 2.112,
-        "sp95": 2.035,
-        "sp98": 2.057,
-        "e10": 2.012,
+        "gazole": 2.149,
+        "sp95": 2.037,
+        "sp98": 2.056,
+        "e10": 2.032,
         "e85": 0.804
       }
     },
@@ -729,19 +731,6 @@
         "sp98": 2.023,
         "e10": 1.999,
         "e85": 0.809
-      }
-    },
-    {
-      "id": "52100003",
-      "cp": "52100",
-      "ville": "Valcourt",
-      "adresse": "AV. DU PIEMONT",
-      "pop": "R",
-      "lat": 4861700,
-      "lng": 491200,
-      "fuels": {
-        "gazole": 1.99,
-        "sp95": 1.99
       }
     },
     {

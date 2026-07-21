@@ -3,52 +3,52 @@
   "name": "Indre",
   "regionCode": "CVL",
   "regionName": "Centre-Val de Loire",
-  "asOf": "2026-07-21T07:41:08.341Z",
+  "asOf": "2026-07-21T14:27:16.710Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 44,
+  "stationCount": 45,
   "fuels": {
     "gazole": {
-      "count": 43,
-      "mean": 2.1213,
+      "count": 45,
+      "mean": 2.1121,
       "median": 2.114,
       "min": 1.97,
-      "max": 2.575
+      "max": 2.31
     },
     "sp95": {
-      "count": 17,
-      "mean": 2.0292,
-      "median": 2.033,
+      "count": 20,
+      "mean": 2.0336,
+      "median": 2.0315,
       "min": 1.93,
       "max": 2.129
     },
     "sp98": {
-      "count": 40,
-      "mean": 2.11,
-      "median": 2.0965,
+      "count": 41,
+      "mean": 2.1,
+      "median": 2.098,
       "min": 1.99,
-      "max": 2.663
+      "max": 2.265
     },
     "e10": {
-      "count": 34,
-      "mean": 2.0316,
-      "median": 2.004,
+      "count": 32,
+      "mean": 2.0224,
+      "median": 2.0065,
       "min": 1.976,
-      "max": 2.513
+      "max": 2.219
     },
     "e85": {
-      "count": 11,
-      "mean": 0.882,
-      "median": 0.851,
+      "count": 12,
+      "mean": 0.8902,
+      "median": 0.8535,
       "min": 0.804,
       "max": 1.117
     },
     "gplc": {
-      "count": 4,
-      "mean": 1.0397,
-      "median": 1.0365,
+      "count": 3,
+      "mean": 1.0163,
+      "median": 0.989,
       "min": 0.976,
-      "max": 1.11
+      "max": 1.084
     }
   },
   "stations": [
@@ -139,6 +139,20 @@
       }
     },
     {
+      "id": "36500005",
+      "cp": "36500",
+      "ville": "Buzançais",
+      "adresse": "route de chateauroux",
+      "pop": "R",
+      "lat": 4688797.95857,
+      "lng": 143432.91894,
+      "fuels": {
+        "gazole": 2.116,
+        "sp95": 2.025,
+        "sp98": 2.049
+      }
+    },
+    {
       "id": "36210001",
       "cp": "36210",
       "ville": "Chabris",
@@ -176,8 +190,9 @@
       "lat": 4680500,
       "lng": 167400,
       "fuels": {
-        "sp95": 1.959,
-        "sp98": 2.02
+        "gazole": 2.15,
+        "sp95": 1.99,
+        "sp98": 2.15
       }
     },
     {
@@ -205,7 +220,6 @@
       "fuels": {
         "gazole": 2.113,
         "sp98": 2.114,
-        "e10": 1.985,
         "e85": 0.859,
         "gplc": 0.976
       }
@@ -219,9 +233,9 @@
       "lat": 4698700,
       "lng": 116900,
       "fuels": {
-        "gazole": 2.099,
-        "sp98": 2.099,
-        "e10": 1.999
+        "gazole": 2.129,
+        "sp98": 2.119,
+        "e10": 2.019
       }
     },
     {
@@ -277,7 +291,9 @@
       "lat": 4708083.04741,
       "lng": 134648.21263,
       "fuels": {
-        "gazole": 2.174
+        "gazole": 2.182,
+        "sp95": 2.129,
+        "sp98": 2.139
       }
     },
     {
@@ -392,9 +408,9 @@
       "lat": 4663124.59394,
       "lng": 107885.97264,
       "fuels": {
-        "gazole": 2.079,
-        "sp98": 2.068,
-        "e10": 1.999
+        "gazole": 2.099,
+        "sp98": 2.093,
+        "e10": 2.013
       }
     },
     {
@@ -512,7 +528,7 @@
       "fuels": {
         "gazole": 2.135,
         "sp98": 2.232,
-        "e10": 2.112,
+        "e10": 2.219,
         "e85": 1.117
       }
     },
@@ -555,6 +571,20 @@
         "gazole": 1.999,
         "sp95": 1.976,
         "sp98": 2.053
+      }
+    },
+    {
+      "id": "36100003",
+      "cp": "36100",
+      "ville": "Saint-Aoustrille",
+      "adresse": "RN 151",
+      "pop": "R",
+      "lat": 4693800,
+      "lng": 194700,
+      "fuels": {
+        "gazole": 2.08,
+        "sp95": 1.99,
+        "e85": 0.98
       }
     },
     {
@@ -668,21 +698,6 @@
         "gazole": 2.145,
         "sp98": 2.119,
         "e10": 2.047
-      }
-    },
-    {
-      "id": "36330001",
-      "cp": "36330",
-      "ville": "Velles",
-      "adresse": "aire du Val de l'Indre - autoroute A20",
-      "pop": "A",
-      "lat": 4672400,
-      "lng": 160400,
-      "fuels": {
-        "gazole": 2.575,
-        "sp98": 2.663,
-        "e10": 2.513,
-        "gplc": 1.11
       }
     }
   ]
