@@ -65,6 +65,8 @@ These are not random consumer goods that can always be placed on the next availa
 
 The Rhine connects Rotterdam and the wider Amsterdam–Rotterdam–Antwerp trading and refining system with German and central European industrial demand. It carries fuels, refinery products, chemicals, coal, ores and other bulk materials for which water transport is particularly efficient.
 
+And ARA is not only the gateway to inland Europe. It is the hub that supplies markets beyond the continent — Britain, Ireland and the Nordics among them. The United Kingdom, a large net importer of diesel, draws heavily on north-west European refining and the ARA storage-and-blending complex. So when low water disrupts how ARA moves product inland, it does not stay a German or Swiss problem: barge premiums, inland shortages and repositioned cargoes ripple through the same north-west European gasoil market whose prices help set the cost of a British import. The direction is not always simple — product that cannot get up the Rhine past Kaub can back up at the coast and flow to sea, briefly easing seaborne availability even as inland prices firm. But the regional balance Britain relies on is disturbed either way, and it is disturbed at the same moment the diesel market is already tight from Russia's export ban and the risk around Hormuz.
+
 The Danube forms part of Europe's main west-to-east transport corridor, connecting central Europe to the Black Sea and passing through or alongside many of the countries most exposed to the loss of former Russian energy routes.
 
 Europe's rivers are, in effect, inland pipelines with variable walls.
