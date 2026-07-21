@@ -288,7 +288,7 @@ function portwatchOverrideFor(
 }
 
 export default async function SupplyPage() {
-  const supplyNoteAsOf = '2026-07-14'; // single source: the dateline + the FreshnessGuard below
+  const supplyNoteAsOf = '2026-07-21'; // single source: the dateline + the FreshnessGuard below
   const [gdacsEvents, usgsQuakes, firmsResult] = await Promise.all([
     getGDACSEvents(),
     getUSGSQuakes(),
@@ -378,12 +378,22 @@ export default async function SupplyPage() {
       {/* Chokepoints overview map */}
       <ChokepointsMap />
 
+      {/* 21 July 2026 — ceasefire collapse #2 + Houthi Saudi-port embargo */}
+      <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
+        <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
+          {new Date(supplyNoteAsOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} — Ceasefire collapses again; Houthis declare an embargo on all ships to Saudi ports
+        </p>
+        <FreshnessGuard lastUpdated={supplyNoteAsOf} maxAgeDays={5} label="This note" className="mt-2" />
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          The interim <strong className="text-white">17 June truce has broken down</strong> and US strikes have run a <strong className="text-white">tenth consecutive night</strong> (CENTCOM), with Iran striking a Kuwaiti power and desalination plant. The Red Sea threat is now concrete: in an email to shipowners seen by <strong className="text-white">Bloomberg</strong>, Yemen&rsquo;s Houthis warned their reimposed blockade covers <strong className="text-white">all ships calling at Saudi ports</strong> &mdash; not just Saudi-flagged vessels &mdash; directly threatening <strong className="text-white">Yanbu</strong>, the Red Sea outlet Saudi Arabia uses to bypass Hormuz. Enforcement is unproven, and a Saudi-led coalition says it has begun protective measures at Bab el-Mandeb. Hormuz itself runs at a near-halt &mdash; about <strong className="text-white">four commodity vessels</strong> crossed Monday (Kpler), every one dark. Brent touched <strong className="text-white">$91.42</strong> Monday, its highest since 11 June, before easing to about <strong className="text-white">$89</strong> on hopes of a fresh ceasefire, while European low-sulphur gasoil hit a <strong className="text-white">record premium near $60/bbl</strong> over Brent. The dated detail below remains the fuller background.
+        </p>
+      </div>
+
       {/* 13 July 2026 — Iran declares Hormuz closed */}
       <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
         <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
-          {new Date(supplyNoteAsOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} — Both powers claim Hormuz: Iran declares it closed; the US drops its 20% toll but tightens a full Iran blockade
+          13&ndash;14 July 2026 — Both powers claim Hormuz: Iran declares it closed; the US drops its 20% toll but tightens a full Iran blockade
         </p>
-        <FreshnessGuard lastUpdated={supplyNoteAsOf} maxAgeDays={5} label="This note" className="mt-2" />
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           The US–Iran conflict has escalated sharply since the July ceasefire collapsed. Over the weekend Iran&rsquo;s IRGC declared the Strait of Hormuz <strong className="text-white">closed &ldquo;until further notice&rdquo;</strong> — after its forces struck the Cyprus-flagged container ship <strong className="text-white">GFS Galaxy</strong> (engine-room fire, crew evacuated to a lifeboat, one crew member missing; CENTCOM). The US answered with further rounds of strikes, the latest on Sunday using one-way attack sea drones for the first time, and Iran retaliated across Kuwait, Jordan, Qatar, Bahrain and Oman — including the <strong className="text-white">first strike on Gulf oil infrastructure in weeks</strong>, a Kuwaiti drilling facility. Oil jumped at Monday&rsquo;s open, Brent trading above <strong className="text-white">$79</strong> and WTI near $74; by Tuesday Brent had pushed above <strong className="text-white">$85</strong>, a four-week high, as the war premium returned in force.
         </p>
