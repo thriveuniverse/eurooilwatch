@@ -94,6 +94,23 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-21" />
 
+      {/* Framework analysis — The Chokepoints Inside Europe */}
+      <a
+        href="/analysis/the-chokepoints-inside-europe"
+        className="block rounded-lg border border-emerald-600/50 bg-emerald-950/20 px-4 py-3.5 hover:border-emerald-500 hover:bg-emerald-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-emerald-400 uppercase">
+          New &middot; The Framework, Illustrated
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          The Chokepoints Inside Europe{' '}
+          <span className="text-emerald-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          Europe is watching Hormuz &mdash; but the Rhine and Danube are losing carrying capacity at home. A river need not close to become a chokepoint; it only has to grow too shallow to carry what Europe expects of it. Landing energy at a port is not the same as delivering it inland.
+        </span>
+      </a>
+
       {/* Accountability audit — The Strategic Reserve Nobody Can Measure */}
       <a
         href="/analysis/the-strategic-reserve-nobody-can-measure"
