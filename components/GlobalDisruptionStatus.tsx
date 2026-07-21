@@ -24,17 +24,17 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Middle East conflict — regional retaliation',
-    body: 'The war has crossed into US fatalities and Gulf oil infrastructure. An Iranian strike on a base in Jordan killed two US service members (one missing) — the first American deaths since March, taking the toll to 16 killed and 430+ wounded — and a further service member has since reportedly died in Iraq during the controlled detonation of a downed Iranian drone. The US has now run nine consecutive nights of strikes on command centres, air defences, coastal surveillance, launch sites and communications networks; Iran has answered with attacks on Bahrain and Kuwait. Iran’s barrage on Kuwait widened to an offshore Kuwait Oil Company drilling platform, border posts and the airport, on top of the KPC oil facility already hit (IRGC: "15th wave of Operation Nasr 2"). Saudi Arabia issued shelter warnings for Al-Kharj and Yanbu — reportedly an Iranian missile, the first on the kingdom in three months, though Riyadh has not confirmed the cause and the danger later passed. No confirmed strike on Yanbu itself — the Red Sea bypass — but its appearance in the target set is the escalation to watch.',
+    body: 'The war has crossed into US fatalities and Gulf oil infrastructure. An Iranian strike on a base in Jordan killed two US service members (one missing) — the first American deaths since March, taking the toll to 16 killed and 430+ wounded — and a further service member has since reportedly died in Iraq during the controlled detonation of a downed Iranian drone. The US has now run ten consecutive nights of strikes on command centres, air defences, coastal surveillance, launch sites and communications networks; Iran has answered with attacks on Bahrain and Kuwait. Iran’s barrage on Kuwait widened to an offshore Kuwait Oil Company drilling platform, border posts and the airport, on top of the KPC oil facility already hit (IRGC: "15th wave of Operation Nasr 2"). Saudi Arabia issued shelter warnings for Al-Kharj and Yanbu — reportedly an Iranian missile, the first on the kingdom in three months, though Riyadh has not confirmed the cause and the danger later passed. No confirmed strike on Yanbu itself — the Red Sea bypass — but its appearance in the target set is the escalation to watch.',
   },
   {
     sev: 'critical',
-    label: 'Red Sea & Bab el-Mandeb — high escalation risk',
-    body: "Not confirmed closed, but Iran has reportedly told the Houthis to be ready to disrupt Red Sea shipping if the US strikes Iran's power grid (Reuters). The route matters more because Saudi Arabia has diverted much of its oil through Yanbu to bypass Hormuz — a simultaneous Hormuz-plus-Red-Sea disruption would hit the main Gulf route and its main alternative at once. As of 17 July, though, INTERTANKO (citing the JMIC) reported no current indications the Houthis are preparing to resume attacks — the threat is armed and conditional, not yet active.",
+    label: 'Red Sea & Bab el-Mandeb — Saudi-port embargo declared',
+    body: 'Not confirmed closed, but the earlier "armed but not active" reading no longer holds. On 21 July the Houthis emailed shipowners warning that their embargo covers not just Saudi-flagged vessels but all ships calling at Saudi ports, which "may be subject to targeting" anywhere within reach of the Yemeni armed forces (Bloomberg). That directly threatens Yanbu — the Red Sea hub Saudi Arabia has leaned on, via its east–west pipeline, to keep crude moving while Hormuz is near-halted. A simultaneous Hormuz-and-Red-Sea disruption would hit the main Gulf route and its main alternative at once. How effective the blockade will prove is still unclear, and a Saudi-led coalition says it has begun measures to protect shipping in Bab el-Mandeb — but the threat has moved from conditional to declared.',
   },
   {
     sev: 'critical',
     label: 'Oil products — tighter than crude',
-    body: 'Brent has pushed above $90 — around $91.40 in early Monday trade, up 3.2% — with WTI above $84, after gaining roughly 16% last week. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
+    body: 'Brent has eased back below $90 — around $88.26 in early Tuesday trade, after touching $91.42 on Monday, its highest since 11 June, with WTI near $82.50; prices remain up about 20% this month. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
   },
   {
     sev: 'critical',
@@ -105,7 +105,7 @@ const BRAND: Record<'euro' | 'uk' | 'americas', string> = {
 
 export default function GlobalDisruptionStatus({
   site,
-  lastUpdated = '2026-07-17',
+  lastUpdated = '2026-07-21',
 }: {
   site: 'euro' | 'uk' | 'americas';
   lastUpdated?: string;
