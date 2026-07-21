@@ -19,7 +19,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Strait of Hormuz — severe disruption',
-    body: 'JMIC recorded only 4–13 transits a day between 12 and 15 July against a ~138 norm, and traffic has fallen further since: Sunday crossings were down roughly 60% on the same day a week earlier, with only about four crude tankers among them. Crucially, every commodity carrier that crossed did so with transponders off, so visible counts now understate real movement — and no LNG carrier has been visibly recorded since Thursday. JMIC assesses deliberate hostile action as highly likely (SEVERE). UKMTO reported a vessel on fire about eight nautical miles north-west of Kumzar, Oman, cause unverified; Iran separately claimed two tankers were disabled attempting the southern passage, which Reuters could not confirm. India has barred its seafarers from Hormuz voyages.',
+    body: 'Kpler recorded only about four commodity-vessel crossings on Monday, with no visible VLCC or LNG-carrier passage; JMIC logged 4–13 a day between 12 and 15 July against a ~138 norm, and every carrier that crosses now runs with transponders off, so visible counts understate real movement. JMIC assesses deliberate hostile action as highly likely (SEVERE). The attacks are now sustained: UKMTO reports two tankers abandoned by their crews within 24 hours after projectile strikes off Oman — the latest about eight nautical miles north-east of Limah — while Dynacom confirmed two of its managed vessels were hit off the Omani coast, one of them abandoned. Crews reached lifeboats; no injuries or environmental impact have been reported, and not every vessel has been officially identified. India has barred its seafarers from Hormuz voyages.',
   },
   {
     sev: 'critical',
