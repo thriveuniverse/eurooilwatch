@@ -34,7 +34,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Oil products — tighter than crude',
-    body: 'Brent has eased back below $90 — around \$89 in early Tuesday trade, after touching $91.42 on Monday, its highest since 11 June, with WTI near $82.50; prices remain up about 20% this month. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
+    body: 'Brent has pushed past $94 — briefly through $95 (Bloomberg) and up more than 30% this month — as the war premium builds on a “two-chokepoint” escalation across Hormuz and the Red Sea; WTI is above $85. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
   },
   {
     sev: 'critical',
@@ -105,7 +105,7 @@ const BRAND: Record<'euro' | 'uk' | 'americas', string> = {
 
 export default function GlobalDisruptionStatus({
   site,
-  lastUpdated = '2026-07-21',
+  lastUpdated = '2026-07-22',
 }: {
   site: 'euro' | 'uk' | 'americas';
   lastUpdated?: string;
