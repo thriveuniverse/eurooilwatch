@@ -24,7 +24,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Middle East conflict — regional retaliation',
-    body: 'The war has crossed into US fatalities and Gulf oil infrastructure. An Iranian strike on a base in Jordan killed two US service members (one missing) — the first American deaths since March, taking the toll to 16 killed and 430+ wounded — and a further service member has since reportedly died in Iraq during the controlled detonation of a downed Iranian drone. The US has now run eleven consecutive nights of strikes on command centres, air defences, coastal surveillance, launch sites and communications networks; Iran has answered with attacks on Bahrain and Kuwait. Iran’s barrage on Kuwait widened to an offshore Kuwait Oil Company drilling platform, border posts and the airport, on top of the KPC oil facility already hit (IRGC: "15th wave of Operation Nasr 2"). Saudi Arabia issued shelter warnings for Al-Kharj and Yanbu — reportedly an Iranian missile, the first on the kingdom in three months, though Riyadh has not confirmed the cause and the danger later passed. No confirmed strike on Yanbu itself — the Red Sea bypass — but its appearance in the target set is the escalation to watch.',
+    body: 'The war has crossed into US fatalities and Gulf oil infrastructure. An Iranian strike on a base in Jordan killed two US service members (one missing) — the first American deaths since March, taking the toll to 16 killed and 430+ wounded — and a further service member has since reportedly died in Iraq during the controlled detonation of a downed Iranian drone. The US has now run twelve consecutive nights of strikes on command centres, air defences, coastal surveillance, launch sites and communications networks; Iran has answered with attacks on Bahrain and Kuwait. Iran’s barrage on Kuwait widened to an offshore Kuwait Oil Company drilling platform, border posts and the airport, on top of the KPC oil facility already hit (IRGC: "15th wave of Operation Nasr 2"). Saudi Arabia issued shelter warnings for Al-Kharj and Yanbu — reportedly an Iranian missile, the first on the kingdom in three months, though Riyadh has not confirmed the cause and the danger later passed. No confirmed strike on Yanbu itself — the Red Sea bypass — but its appearance in the target set is the escalation to watch.',
   },
   {
     sev: 'critical',
@@ -34,7 +34,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Oil products — tighter than crude',
-    body: 'Brent has pushed past $94 — briefly through $95 (Bloomberg) and up more than 30% this month — as the war premium builds on a “two-chokepoint” escalation across Hormuz and the Red Sea; WTI is above $85. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
+    body: 'Brent is trading near $96 (about $95.93, up ~2%; Reuters had $96.49 at 06:40 GMT) — up more than 30% this month — as the two-chokepoint escalation across Hormuz and the Red Sea builds; WTI is above $88. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
   },
   {
     sev: 'critical',
@@ -105,7 +105,7 @@ const BRAND: Record<'euro' | 'uk' | 'americas', string> = {
 
 export default function GlobalDisruptionStatus({
   site,
-  lastUpdated = '2026-07-22',
+  lastUpdated = '2026-07-23',
 }: {
   site: 'euro' | 'uk' | 'americas';
   lastUpdated?: string;
