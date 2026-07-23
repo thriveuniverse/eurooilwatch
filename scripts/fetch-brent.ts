@@ -130,15 +130,51 @@ async function main() {
   console.log('🛢️  EuroOilWatch — Fetching Brent Crude Price');
   console.log('==============================================');
 
-  const priceUsd = await fetchFromStooq() ?? await fetchFromYahoo();
+  const today = new Date().toISOString().slice(0, 10);
+  const prev  = getPreviousClose(today);
+
+  // --- Roll-artifact guard ---------------------------------------------------
+  // Stooq's cb.f is a *continuous front-month* series: on contract roll it can
+  // print a large artificial step (especially in backwardation) that looks like
+  // a crash or spike but is not a real market move — e.g. on 23 Jul 2026 it
+  // showed -8.5% against a Reuters +2.6% print an hour earlier. Any single-day
+  // move beyond MAX_DAILY_MOVE_PCT is corroborated against Yahoo (BZ=F, the
+  // actual front-month) before we trust it; an uncorroborated spike is refused
+  // rather than published (the last good brent.json is kept).
+  const MAX_DAILY_MOVE_PCT = 6;
+  const movePct = (price: number): number | null =>
+    (!prev || daysBetween(prev.date, today) > 5) ? null : ((price - prev.price) / prev.price) * 100;
+
+  const stooq = await fetchFromStooq();
+  let priceUsd: number | null = stooq;
+  let dataSource = 'Stooq (cb.f front-month)';
+
+  const stooqMove = stooq !== null ? movePct(stooq) : null;
+  if (stooq !== null && stooqMove !== null && Math.abs(stooqMove) > MAX_DAILY_MOVE_PCT) {
+    console.log(`  ⚠️ Stooq implies a ${stooqMove.toFixed(1)}% move vs ${prev?.date} ($${prev?.price}) — beyond ±${MAX_DAILY_MOVE_PCT}%. Corroborating against Yahoo (possible front-month roll artifact)...`);
+    const yahoo = await fetchFromYahoo();
+    const yahooMove = yahoo !== null ? movePct(yahoo) : null;
+    if (yahoo !== null && yahooMove !== null && Math.abs(yahooMove) <= MAX_DAILY_MOVE_PCT) {
+      console.log(`  ✅ Yahoo shows only ${yahooMove.toFixed(1)}% ($${yahoo.toFixed(2)}) — treating the Stooq print as a roll artifact and using Yahoo.`);
+      priceUsd = yahoo;
+      dataSource = 'Yahoo Finance (BZ=F)';
+    } else if (yahoo !== null) {
+      console.log(`  ✅ Yahoo also shows a large move (${(yahooMove ?? 0).toFixed(1)}%, $${yahoo.toFixed(2)}) — corroborated by two sources, treating as real.`);
+    } else {
+      console.error(`❌ Stooq shows a ${stooqMove.toFixed(1)}% move and Yahoo could not corroborate — refusing to overwrite brent.json with an unverified spike. Keeping the last good value.`);
+      process.exit(1);
+    }
+  } else if (stooq === null) {
+    console.log('  ↪ Stooq unavailable — using Yahoo fallback.');
+    priceUsd = await fetchFromYahoo();
+    dataSource = 'Yahoo Finance (BZ=F)';
+  }
 
   if (priceUsd === null) {
     console.error('❌ All sources failed — not overwriting brent.json');
     process.exit(1);
   }
 
-  const today    = new Date().toISOString().slice(0, 10);
-  const prev     = getPreviousClose(today);
   const eurUsd   = await fetchEurUsd() ?? EUR_USD_FALLBACK;
   const priceEur = Math.round((priceUsd / eurUsd) * 100) / 100;
 
@@ -161,7 +197,7 @@ async function main() {
     eurUsd:      Math.round(eurUsd * 10000) / 10000,
     changeUsd,
     changePct,
-    dataSource:  'Stooq (cb.f front-month)',
+    dataSource,
   };
 
   fs.writeFileSync(OUTPUT_FILE, JSON.stringify(data, null, 2));
