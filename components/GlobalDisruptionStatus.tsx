@@ -34,7 +34,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Oil products — tighter than crude',
-    body: 'Brent is trading near $96 (about $95.93, up ~2%; Reuters had $96.49 at 06:40 GMT) — up more than 30% this month — as the two-chokepoint escalation across Hormuz and the Red Sea builds; WTI is above $88. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
+    body: 'Brent has pushed to about $98.75 — up more than 30% this month — as the two-chokepoint escalation across Hormuz and the Red Sea builds and Saudi loadings at Yanbu thin; WTI is tracking it higher. The deeper stress is still in diesel and jet. One analyst quoted by Reuters cautioned that a prolonged closure and wider war could ultimately require prices near $150 to destroy enough demand to match lost supply — explicitly not his base case. Global refinery runs are about 6 mb/d below a year ago (IEA), with Gulf export refineries slow to restart, Russian throughput damaged and Asian plants below normal rates.',
   },
   {
     sev: 'critical',
