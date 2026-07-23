@@ -77,7 +77,7 @@ export default function PhysicalSpotPanel({ brentUsd }: Props) {
           {spot.note}
         </p>
       )}
-      <FreshnessGuard lastUpdated={spot.asOf} maxAgeDays={6} label="This estimate" className="mt-2" />
+      <FreshnessGuard lastUpdated={spot.asOf} maxAgeDays={3} label="This estimate" className="mt-2" />
     </section>
   );
 }
