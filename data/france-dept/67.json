@@ -3,15 +3,15 @@
   "name": "Bas-Rhin",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-07-23T14:36:28.016Z",
+  "asOf": "2026-07-23T17:50:59.542Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 139,
   "fuels": {
     "gazole": {
-      "count": 136,
-      "mean": 2.2259,
-      "median": 2.2285,
+      "count": 137,
+      "mean": 2.2248,
+      "median": 2.228,
       "min": 1.99,
       "max": 2.544
     },
@@ -23,16 +23,16 @@
       "max": 2.169
     },
     "sp98": {
-      "count": 120,
-      "mean": 2.1437,
+      "count": 121,
+      "mean": 2.1424,
       "median": 2.169,
       "min": 1.99,
       "max": 2.42
     },
     "e10": {
-      "count": 118,
-      "mean": 2.0765,
-      "median": 2.076,
+      "count": 119,
+      "mean": 2.0758,
+      "median": 2.075,
       "min": 1.99,
       "max": 2.331
     },
@@ -853,18 +853,6 @@
       }
     },
     {
-      "id": "67340001",
-      "cp": "67340",
-      "ville": "Ingwiller",
-      "adresse": "ROUTE DE BOUXWILLER",
-      "pop": "R",
-      "lat": 4886600,
-      "lng": 747400,
-      "fuels": {
-        "e10": 1.99
-      }
-    },
-    {
       "id": "67260010",
       "cp": "67260",
       "ville": "Keskastel",
@@ -1281,6 +1269,19 @@
       }
     },
     {
+      "id": "67480001",
+      "cp": "67480",
+      "ville": "Rœschwoog",
+      "adresse": "1 Rue Principale",
+      "pop": "R",
+      "lat": 4882400,
+      "lng": 803200,
+      "fuels": {
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "67480002",
       "cp": "67480",
       "ville": "Rœschwoog",
@@ -1599,9 +1600,9 @@
       "lat": 4827608,
       "lng": 746520,
       "fuels": {
-        "gazole": 2.197,
+        "gazole": 2.21,
         "sp98": 2.165,
-        "e10": 2.061
+        "e10": 2.069
       }
     },
     {
@@ -1912,7 +1913,9 @@
       "lat": 4834037.63,
       "lng": 731338.29,
       "fuels": {
-        "sp98": 1.99
+        "gazole": 2.056,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
