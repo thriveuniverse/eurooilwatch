@@ -94,6 +94,23 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-25" />
 
+      {/* Framework analysis — Europe's Reliability Debt */}
+      <a
+        href="/analysis/europes-reliability-debt"
+        className="block rounded-lg border border-emerald-600/50 bg-emerald-950/20 px-4 py-3.5 hover:border-emerald-500 hover:bg-emerald-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-emerald-400 uppercase">
+          New &middot; The Framework, Illustrated
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          Europe&rsquo;s Reliability Debt{' '}
+          <span className="text-emerald-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          Brussels asked refiners to defer maintenance to get Europe through the Hormuz shock. Nobody has published what that borrowing cost &mdash; so we built a bounded estimate, assumptions exposed: a real but mid-sized exposure that falls due in the autumn turnaround season.
+        </span>
+      </a>
+
       {/* Framework analysis — The Chokepoints Inside Europe */}
       <a
         href="/analysis/the-chokepoints-inside-europe"
