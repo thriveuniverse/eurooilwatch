@@ -94,6 +94,23 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-26" />
 
+      {/* Flagship analysis — Europe's Summer Gas Refill Is Being Repriced by the Iran War */}
+      <a
+        href="/analysis/europes-summer-gas-refill-repriced"
+        className="block rounded-lg border border-sky-600/50 bg-sky-950/20 px-4 py-3.5 hover:border-sky-500 hover:bg-sky-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-sky-400 uppercase">
+          New &middot; Gas &amp; Power
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          Europe&rsquo;s Summer Gas Refill Is Being Repriced by the Iran War{' '}
+          <span className="text-sky-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          One of the war&rsquo;s most direct lines into European and British homes this summer isn&rsquo;t crude &mdash; it&rsquo;s gas. TTF is up more than half in a month to four-month highs, just as Europe must rebuild an unusually low winter buffer (~54% on 22 Jul). Not a shortage: a shared LNG market repricing the cost of winter security.
+        </span>
+      </a>
+
       {/* Flagship analysis — The War Reaches the Route Built to Bypass Hormuz */}
       <a
         href="/analysis/the-route-built-to-bypass-hormuz"

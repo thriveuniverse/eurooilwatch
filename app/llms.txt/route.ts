@@ -119,6 +119,7 @@ Free, read-only JSON. CORS-enabled, no key required.
 - Fertilizer Watch — weekly urea / ammonia / DAP / potash + TTF gas benchmark tracker: https://eurooilwatch.com/fertilizer
 - Analysis archive:    https://eurooilwatch.com/analysis
 - The War Reaches the Route Built to Bypass Hormuz — Saudi Arabia spent decades building a way to move oil without Hormuz (the pipeline west to Yanbu on the Red Sea); this weekend Houthi strikes on Jizan and Yanbu brought the war to that route, exposing Hormuz and its Red Sea alternative to the same conflict — correlated-corridor risk, where the independence a backup depends on is breaking down: https://eurooilwatch.com/analysis/the-route-built-to-bypass-hormuz
+- Europe's Summer Gas Refill Is Being Repriced by the Iran War — the Gulf war's most direct line into European and British homes this summer runs through gas, not crude: TTF up ~55% in a month to four-month highs while storage sits unusually low, the summer-winter curve has inverted, and Europe competes with Asia for the Atlantic cargoes replacing lost Qatari LNG — repricing the cost of the winter buffer without any European delivery being lost: https://eurooilwatch.com/analysis/europes-summer-gas-refill-repriced
 - Methodology:         https://eurooilwatch.com/methodology
 
 ## Data sources
