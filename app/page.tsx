@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-07-21'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-07-26'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-25" />
+      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-26" />
 
       {/* Framework analysis — Europe's Reliability Debt */}
       <a
@@ -497,6 +497,15 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Sun 26 Jul: Saudi Red Sea bypass under direct attack + US strikes pause */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Sun 26 Jul 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-gray-200">The war has begun attacking the infrastructure built to bypass the war.</strong> On Saturday the Houthis fired at Aramco installations at <strong className="text-gray-200">Jizan and Yanbu</strong> &mdash; Saudi Arabia&rsquo;s Red Sea outlet for crude routed west to avoid Hormuz. Reuters-verified footage showed a column of smoke from the direction of the ~400 kb/d Jizan refinery and trading sources reported possible damage to fuel and oil storage there; <strong className="text-gray-200">Aramco has confirmed no outage or production loss</strong>, and the Yanbu-bound missiles were reportedly intercepted with no confirmed damage. The Houthis have declared a blockade of Saudi Arabia and warned all its oil facilities could be targeted. Counter-signal: the US ran a <strong className="text-gray-200">second night without striking Iran</strong>, ending a 13-night run, with no Gulf-state retaliation overnight &mdash; the naval blockade stays in force and Washington is reportedly holding back while China-brokered diplomacy continues. That is a political opening, not a reopened chokepoint: Hormuz still ran only about <strong className="text-gray-200">three transits a day</strong> on 22&ndash;24 July (Kpler), though one laden VLCC with ~2m bbl of Basrah crude did exit. Ukraine&rsquo;s drone campaign widened to Russia&rsquo;s Caspian (Lukoil&rsquo;s Filanovsky platform) and Siberia (a Tyumen refinery fire), and Moscow is extending its gasoline-export ban to end-2026. European gas is repricing too &mdash; TTF near &euro;63/MWh and UK gas above 150p/therm, about four-month highs, lifting the cost of the winter storage refill. Markets were closed Saturday; Brent settled Friday at <strong className="text-gray-200">$96.78</strong> (&minus;3.9% on a China-talks report, ~+10% on the week) &mdash; a close struck <em>before</em> the weekend attacks, so any Monday rebuild of the risk premium is an inference, not a confirmed move.
+              </p>
+            </div>
             {/* Update — Tue 21 Jul: ceasefire collapse #2 + Houthi Saudi-port embargo */}
             <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
