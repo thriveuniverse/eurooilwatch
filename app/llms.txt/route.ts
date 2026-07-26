@@ -118,6 +118,7 @@ Free, read-only JSON. CORS-enabled, no key required.
 - Hormuz Is Not Reopened — a controlled high-risk corridor as a second diesel shock emerges (Part II): https://eurooilwatch.com/analysis/hormuz-controlled-corridor-diesel-shock
 - Fertilizer Watch — weekly urea / ammonia / DAP / potash + TTF gas benchmark tracker: https://eurooilwatch.com/fertilizer
 - Analysis archive:    https://eurooilwatch.com/analysis
+- The War Reaches the Route Built to Bypass Hormuz — Saudi Arabia spent decades building a way to move oil without Hormuz (the pipeline west to Yanbu on the Red Sea); this weekend Houthi strikes on Jizan and Yanbu brought the war to that route, exposing Hormuz and its Red Sea alternative to the same conflict — correlated-corridor risk, where the independence a backup depends on is breaking down: https://eurooilwatch.com/analysis/the-route-built-to-bypass-hormuz
 - Methodology:         https://eurooilwatch.com/methodology
 
 ## Data sources
