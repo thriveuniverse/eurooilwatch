@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-07-26'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-07-27'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-26" />
+      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-27" />
 
       {/* Flagship analysis — Europe's Summer Gas Refill Is Being Repriced by the Iran War */}
       <a
@@ -531,6 +531,15 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Mon 27 Jul: markets price a truce, the tankers do not */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Mon 27 Jul 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-gray-200">The shooting has paused; the shipping crisis has not.</strong> Brent fell more than <strong className="text-gray-200">6% on Monday to about $90.58</strong> (WTI ~$83.51) after the US and Iran held fire for a second consecutive day and Oman pressed to restore a ceasefire framework &mdash; roughly $11 of war premium out since Brent hit about $102 on 23 July, lifting equities and bonds. But the physical system has barely moved: Hormuz ran in <strong className="text-gray-200">single digits</strong> over the weekend (about 7 vessels Friday, 3 Saturday all dark, 7 Sunday; Kpler), and Bab el-Mandeb fell to just <strong className="text-gray-200">11 crossings on Sunday</strong>, the lowest in months, after the Jizan/Yanbu attacks. Physical crude hit two-month highs last week and traders reckon ~10 mb/d of Middle Eastern barrels is still displaced &mdash; oil is falling because the market thinks the disruption can be <em>managed</em>, not because the barrels have returned. This is <strong className="text-gray-200">market de-escalation without physical normalisation</strong>: the nuclear dispute is unresolved, the US naval blockade still operates, and Hormuz has not reopened. Europe&rsquo;s winter-fuel deficit is untouched &mdash; gas storage about 55% (lowest since 2021), diesel stocks the lowest since 2022, European diesel margins near a record ~$65/bbl.
+              </p>
+            </div>
             {/* Update — Sun 26 Jul: Saudi Red Sea bypass under direct attack + US strikes pause */}
             <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">

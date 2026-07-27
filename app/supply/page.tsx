@@ -288,7 +288,7 @@ function portwatchOverrideFor(
 }
 
 export default async function SupplyPage() {
-  const supplyNoteAsOf = '2026-07-21'; // single source: the dateline + the FreshnessGuard below
+  const supplyNoteAsOf = '2026-07-27'; // single source: the dateline + the FreshnessGuard below
   const [gdacsEvents, usgsQuakes, firmsResult] = await Promise.all([
     getGDACSEvents(),
     getUSGSQuakes(),
@@ -378,12 +378,22 @@ export default async function SupplyPage() {
       {/* Chokepoints overview map */}
       <ChokepointsMap />
 
+      {/* 27 July 2026 — market de-escalation without physical normalisation */}
+      <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
+        <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
+          {new Date(supplyNoteAsOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} — The shooting has paused; the shipping crisis has not
+        </p>
+        <FreshnessGuard lastUpdated={supplyNoteAsOf} maxAgeDays={5} label="This note" className="mt-2" />
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          Financial markets are pricing a pause; the physical system is not. Brent fell more than <strong className="text-white">6% on Monday to about $90.58</strong> a barrel (WTI ~$83.51) after the US and Iran refrained from striking each other for a <strong className="text-white">second consecutive day</strong>, with Oman and other intermediaries working to restore the interim ceasefire framework and negotiate Hormuz shipping arrangements &mdash; roughly $11 of war premium out since Brent reached about $102 on 23 July. But traffic through both chokepoints stayed severely depressed. <strong className="text-white">Hormuz</strong> ran in single digits over the weekend &mdash; about seven commodity vessels Friday, three Saturday (all dark) and seven Sunday (Kpler) &mdash; so the strait has <strong className="text-white">not meaningfully reopened</strong>. <strong className="text-white">Bab el-Mandeb</strong> fell to just <strong className="text-white">11 crossings on Sunday</strong> (seven of them oil tankers), the lowest in months, after the Houthi strikes on Jizan and Yanbu, though several large VLCCs carrying Saudi, Emirati and Russian crude still escaped south toward Asia. Physical crude cargoes reached two-month highs last week and roughly 10 mb/d of Middle Eastern barrels may still be displaced. The signal has changed; the supply system has barely changed &mdash; <strong className="text-white">market de-escalation without physical normalisation</strong>, with the US naval blockade still operating and the nuclear dispute unresolved.
+        </p>
+      </div>
+
       {/* 21 July 2026 — ceasefire collapse #2 + Houthi Saudi-port embargo */}
       <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
         <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
-          {new Date(supplyNoteAsOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} — Ceasefire collapses again; Houthis declare an embargo on all ships to Saudi ports
+          21 July 2026 — Ceasefire collapses again; Houthis declare an embargo on all ships to Saudi ports
         </p>
-        <FreshnessGuard lastUpdated={supplyNoteAsOf} maxAgeDays={5} label="This note" className="mt-2" />
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           The interim <strong className="text-white">17 June truce has broken down</strong> and US strikes have run a <strong className="text-white">tenth consecutive night</strong> (CENTCOM), with Iran striking a Kuwaiti power and desalination plant. The Red Sea threat is now concrete: in an email to shipowners seen by <strong className="text-white">Bloomberg</strong>, Yemen&rsquo;s Houthis warned their reimposed blockade covers <strong className="text-white">all ships calling at Saudi ports</strong> &mdash; not just Saudi-flagged vessels &mdash; directly threatening <strong className="text-white">Yanbu</strong>, the Red Sea outlet Saudi Arabia uses to bypass Hormuz. Enforcement is unproven, and a Saudi-led coalition says it has begun protective measures at Bab el-Mandeb. Hormuz itself runs at a near-halt &mdash; about <strong className="text-white">four commodity vessels</strong> crossed Monday (Kpler), every one dark. Brent touched <strong className="text-white">$91.42</strong> Monday, its highest since 11 June, before easing to about <strong className="text-white">$89</strong> on hopes of a fresh ceasefire, while European low-sulphur gasoil hit a <strong className="text-white">record premium near $60/bbl</strong> over Brent. The dated detail below remains the fuller background.
         </p>
