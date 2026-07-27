@@ -94,6 +94,23 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-27" />
 
+      {/* Russia–Ukraine analysis — Russia Is Importing Fuel While Exporting Crude */}
+      <a
+        href="/analysis/russia-importing-fuel-exporting-crude"
+        className="block rounded-lg border border-sky-600/50 bg-sky-950/20 px-4 py-3.5 hover:border-sky-500 hover:bg-sky-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-sky-400 uppercase">
+          New &middot; Russia&ndash;Ukraine Analysis
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          Russia Is Importing Fuel While Exporting Crude{' '}
+          <span className="text-sky-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          One of the world&rsquo;s largest crude producers has begun importing gasoline. The paradox is the clearest measure of Ukraine&rsquo;s refinery campaign: producing crude and converting it into fuel are different capabilities &mdash; and attacks on the concentrated refining and logistics system have forced shortages, export bans and imports, tightening global diesel.
+        </span>
+      </a>
+
       {/* Flagship analysis — Oil Is Pricing a Pause. Shipping Is Waiting for Proof. */}
       <a
         href="/analysis/oil-is-pricing-a-pause"
