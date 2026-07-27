@@ -3,24 +3,31 @@
   "name": "Haute-Corse",
   "regionCode": "COR",
   "regionName": "Corse",
-  "asOf": "2026-07-26T18:40:07.935Z",
+  "asOf": "2026-07-27T08:42:53.662Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 57,
+  "stationCount": 58,
   "fuels": {
     "gazole": {
-      "count": 57,
-      "mean": 2.2214,
-      "median": 2.24,
-      "min": 1.99,
+      "count": 58,
+      "mean": 2.2297,
+      "median": 2.2495,
+      "min": 2.059,
       "max": 2.29
     },
     "sp95": {
-      "count": 42,
-      "mean": 2.0367,
+      "count": 43,
+      "mean": 2.0361,
       "median": 2.04,
       "min": 1.97,
       "max": 2.19
+    },
+    "sp98": {
+      "count": 1,
+      "mean": 1.99,
+      "median": 1.99,
+      "min": 1.99,
+      "max": 1.99
     },
     "gplc": {
       "count": 3,
@@ -224,6 +231,20 @@
       "fuels": {
         "gazole": 2.25,
         "sp95": 2.06
+      }
+    },
+    {
+      "id": "20224001",
+      "cp": "20224",
+      "ville": "Calacuccia",
+      "adresse": "Station TOTAL",
+      "pop": "R",
+      "lat": 4233399,
+      "lng": 900872,
+      "fuels": {
+        "gazole": 2.25,
+        "sp95": 1.99,
+        "sp98": 1.99
       }
     },
     {
@@ -552,7 +573,7 @@
       "lat": 4246700,
       "lng": 920900,
       "fuels": {
-        "gazole": 2.059,
+        "gazole": 2.249,
         "sp95": 1.989
       }
     },
@@ -578,7 +599,7 @@
       "lat": 4243518.76239,
       "lng": 929976.53603,
       "fuels": {
-        "gazole": 1.99,
+        "gazole": 2.25,
         "sp95": 1.99
       }
     },
@@ -757,7 +778,7 @@
       "lng": 945429.599,
       "fuels": {
         "gazole": 2.24,
-        "sp95": 2.04
+        "sp95": 2.06
       }
     }
   ]

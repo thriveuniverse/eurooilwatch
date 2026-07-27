@@ -3,14 +3,14 @@
   "name": "Hauts-de-Seine",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-07-26T18:40:07.935Z",
+  "asOf": "2026-07-27T08:42:53.662Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 66,
+  "stationCount": 65,
   "fuels": {
     "gazole": {
-      "count": 66,
-      "mean": 2.2549,
+      "count": 65,
+      "mean": 2.255,
       "median": 2.25,
       "min": 2.171,
       "max": 2.579
@@ -30,17 +30,17 @@
       "max": 2.459
     },
     "e10": {
-      "count": 56,
-      "mean": 2.0526,
+      "count": 57,
+      "mean": 2.0515,
       "median": 2.039,
       "min": 1.99,
       "max": 2.199
     },
     "e85": {
-      "count": 26,
-      "mean": 0.9582,
-      "median": 0.9155,
-      "min": 0.884,
+      "count": 25,
+      "mean": 0.9611,
+      "median": 0.922,
+      "min": 0.895,
       "max": 1.139
     },
     "gplc": {
@@ -133,6 +133,8 @@
       "lng": 223100,
       "fuels": {
         "gazole": 2.25,
+        "sp98": 1.99,
+        "e10": 1.99,
         "e85": 0.905
       }
     },
@@ -173,7 +175,9 @@
       "lat": 4883585,
       "lng": 223898,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -326,7 +330,6 @@
       "lng": 222300,
       "fuels": {
         "gazole": 2.25,
-        "e85": 0.884,
         "gplc": 0.999
       }
     },
@@ -370,7 +373,6 @@
       "lng": 226100,
       "fuels": {
         "gazole": 2.213,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -473,20 +475,6 @@
         "gazole": 2.199,
         "sp98": 2.209,
         "e10": 2.121
-      }
-    },
-    {
-      "id": "92600009",
-      "cp": "92600",
-      "ville": "Gennevilliers",
-      "adresse": "272 AVENUE DES GRESILLONS",
-      "pop": "R",
-      "lat": 4892000,
-      "lng": 231300,
-      "fuels": {
-        "gazole": 2.25,
-        "sp98": 1.99,
-        "e10": 1.99
       }
     },
     {
