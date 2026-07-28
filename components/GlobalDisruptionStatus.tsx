@@ -49,7 +49,7 @@ const ROWS: Row[] = [
   {
     sev: 'critical',
     label: 'Global diesel — immediate transmission',
-    body: 'The Russian collapse has pushed US diesel futures sharply higher and driven benchmark European diesel refining margins to about $65/bbl, near a record. European diesel stocks are at their lowest since 2022, with Russia curbing diesel exports after refinery attacks and China also restricting fuel exports. Diesel is the fast transmission channel into trucking, farming, mining, construction, shipping and backup power — product shortages can keep inflation rising even if crude stabilises.',
+    body: 'The Russian collapse has pushed US diesel futures sharply higher and driven benchmark European diesel refining margins to about $65/bbl, near a record. European diesel stocks are at their lowest since 2022, with Russia curbing diesel exports after refinery attacks and China also restricting fuel exports. Diesel is the fast transmission channel into trucking, farming, mining, construction, shipping and backup power — product shortages can keep inflation rising even if crude stabilises. And the last mile is tightening too: low water on the Rhine (Kaub near its lowest since 1990) has pushed the cost of barging diesel inland from Rotterdam to its highest since 2009 (Bloomberg), so even landed product is harder to move to German and Swiss demand.',
   },
   {
     sev: 'elevated',

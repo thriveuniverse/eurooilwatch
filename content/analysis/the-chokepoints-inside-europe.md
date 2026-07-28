@@ -9,6 +9,10 @@ author: "Jon Kelly"
 
 ---
 
+> **Update — 28 July 2026 (Bloomberg).** The position described below has since deepened to record territory. Water at Kaub — the chokepoint governing cargoes bound for southern Germany and Switzerland — has fallen to about **28 cm**, the lowest since 2018, with German federal forecasts showing roughly **24 cm by Friday**: the lowest in data going back to 1990, a **36-year low**. The cost to barge diesel from Rotterdam to Karlsruhe has climbed to its **highest since Bloomberg’s series began in 2009**, and the coal effect is starker still — Amsterdam–Rotterdam–Antwerp inventories are up about **75% since spring** while inland barge loadings have been **cut by three-quarters** (DBX Commodities), one executive putting it that “the Rhine has effectively locked the door on inland coal delivery.” A fresh heat wave (Frankfurt forecast near 39 °C, little rain) is expected to push levels lower still. The thesis below — that a river need not close to become a chokepoint — is now playing out at a 36-year low.
+
+---
+
 Europe is watching the Strait of Hormuz because it understands what happens when a narrow maritime passage loses capacity.
 
 Tankers queue. Insurance costs rise. Cargoes are delayed. Prices separate from physical reality. A route may remain technically open while becoming commercially unusable.

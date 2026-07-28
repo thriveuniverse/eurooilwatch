@@ -11,6 +11,10 @@ author: "Jon Kelly"
 
 ---
 
+> **Update — 28 July 2026 (Financial Times).** The argument below has now been settled — in Russia’s favour. Under pressure from Greece, whose backing for an unrelated sanctions slate was the price, the EU has abandoned its own October plan to bar European companies from shipping Russian LNG to countries outside the bloc from the end of 2026. European firms may keep honouring pre-February-2022 “transfer” contracts, provided volumes do not exceed 2025 levels. **TotalEnergies** — a 20% owner of Yamal LNG, which the FT reports earns it about **$400m a year** plus dividends — is expected to be a direct beneficiary, free to keep selling Siberian gas to Asia; the transport of Sakhalin-2 LNG has likewise been exempted until March 2028 to protect Japanese and South Korean supply. An EU official’s own justification makes the point for us: bar the shipments and the tankers would simply be “repossessed and taken by Chinese operators … we would have had a ban but we would not have had an effect on Russian flows.” Europe is still buying the gas. Now it has formally decided to keep carrying it, too.
+
+---
+
 More than 100 European lawmakers are demanding that Denmark's Fayard shipyard immediately stop servicing the specialised icebreaking tankers that carry Russian LNG from the Arctic.
 
 They present the demand as moral clarity.
