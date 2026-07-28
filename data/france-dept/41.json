@@ -3,14 +3,14 @@
   "name": "Loir-et-Cher",
   "regionCode": "CVL",
   "regionName": "Centre-Val de Loire",
-  "asOf": "2026-07-28T14:42:40.193Z",
+  "asOf": "2026-07-28T18:56:50.407Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 59,
+  "stationCount": 60,
   "fuels": {
     "gazole": {
-      "count": 59,
-      "mean": 2.2069,
+      "count": 60,
+      "mean": 2.206,
       "median": 2.198,
       "min": 1.99,
       "max": 2.543
@@ -23,15 +23,15 @@
       "max": 2.172
     },
     "sp98": {
-      "count": 48,
-      "mean": 2.1419,
+      "count": 50,
+      "mean": 2.1338,
       "median": 2.129,
       "min": 1.99,
       "max": 2.56
     },
     "e10": {
-      "count": 45,
-      "mean": 2.059,
+      "count": 44,
+      "mean": 2.0564,
       "median": 2.039,
       "min": 1.989,
       "max": 2.41
@@ -44,11 +44,11 @@
       "max": 0.999
     },
     "gplc": {
-      "count": 8,
-      "mean": 1.0149,
-      "median": 1.0315,
+      "count": 9,
+      "mean": 1.0242,
+      "median": 1.064,
       "min": 0.929,
-      "max": 1.079
+      "max": 1.099
     }
   },
   "stations": [
@@ -189,10 +189,10 @@
       "lat": 4766500,
       "lng": 192500,
       "fuels": {
-        "gazole": 2.319,
-        "sp98": 2.234,
-        "e10": 2.174,
-        "e85": 0.939
+        "gazole": 2.219,
+        "sp98": 2.134,
+        "e85": 0.939,
+        "gplc": 1.099
       }
     },
     {
@@ -265,6 +265,19 @@
         "gazole": 2.229,
         "sp95": 2.172,
         "e10": 2.036
+      }
+    },
+    {
+      "id": "41370001",
+      "cp": "41370",
+      "ville": "Josnes",
+      "adresse": "ROUTE DE MER",
+      "pop": "R",
+      "lat": 4778296.94401,
+      "lng": 151275.67619,
+      "fuels": {
+        "gazole": 2.25,
+        "sp98": 1.99
       }
     },
     {
@@ -655,6 +668,7 @@
       "lng": 107590,
       "fuels": {
         "gazole": 2.25,
+        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.899
       }

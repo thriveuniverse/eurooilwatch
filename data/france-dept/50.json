@@ -3,15 +3,15 @@
   "name": "Manche",
   "regionCode": "NOR",
   "regionName": "Normandie",
-  "asOf": "2026-07-28T14:42:40.193Z",
+  "asOf": "2026-07-28T18:56:50.407Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 119,
   "fuels": {
     "gazole": {
-      "count": 116,
-      "mean": 2.1919,
-      "median": 2.184,
+      "count": 117,
+      "mean": 2.1925,
+      "median": 2.185,
       "min": 2.1,
       "max": 2.538
     },
@@ -24,14 +24,14 @@
     },
     "sp98": {
       "count": 86,
-      "mean": 2.1058,
+      "mean": 2.1051,
       "median": 2.11,
       "min": 1.99,
       "max": 2.554
     },
     "e10": {
-      "count": 74,
-      "mean": 2.0333,
+      "count": 76,
+      "mean": 2.0321,
       "median": 2.029,
       "min": 1.979,
       "max": 2.404
@@ -44,8 +44,8 @@
       "max": 0.999
     },
     "gplc": {
-      "count": 8,
-      "mean": 1.0186,
+      "count": 9,
+      "mean": 1.0177,
       "median": 1.02,
       "min": 0.877,
       "max": 1.108
@@ -349,8 +349,7 @@
       "lat": 4930700,
       "lng": -125300,
       "fuels": {
-        "gazole": 2.139,
-        "sp98": 2.049
+        "gazole": 2.139
       }
     },
     {
@@ -667,7 +666,7 @@
       "lat": 4955900,
       "lng": -166700,
       "fuels": {
-        "gazole": 2.185,
+        "gazole": 2.193,
         "sp98": 1.99
       }
     },
@@ -929,7 +928,9 @@
       "lat": 4867300,
       "lng": -135500,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -1541,7 +1542,7 @@
       "lat": 4938000,
       "lng": -129600,
       "fuels": {
-        "gazole": 2.188,
+        "gazole": 2.185,
         "e10": 1.99,
         "e85": 0.869
       }
@@ -1638,7 +1639,10 @@
       "lat": 4950800,
       "lng": -146600,
       "fuels": {
-        "e85": 0.855
+        "gazole": 2.25,
+        "e10": 1.99,
+        "e85": 0.855,
+        "gplc": 1.01
       }
     },
     {

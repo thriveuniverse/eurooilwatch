@@ -3,7 +3,7 @@
   "name": "Calvados",
   "regionCode": "NOR",
   "regionName": "Normandie",
-  "asOf": "2026-07-28T14:42:40.193Z",
+  "asOf": "2026-07-28T18:56:50.407Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 119,
@@ -17,21 +17,21 @@
     },
     "sp95": {
       "count": 41,
-      "mean": 2.0767,
+      "mean": 2.0755,
       "median": 2.072,
       "min": 1.99,
-      "max": 2.16
+      "max": 2.149
     },
     "sp98": {
-      "count": 91,
-      "mean": 2.1044,
+      "count": 90,
+      "mean": 2.1057,
       "median": 2.113,
       "min": 1.99,
       "max": 2.33
     },
     "e10": {
-      "count": 82,
-      "mean": 2.0274,
+      "count": 84,
+      "mean": 2.0265,
       "median": 2.019,
       "min": 1.985,
       "max": 2.2
@@ -490,7 +490,8 @@
       "lat": 4932400,
       "lng": -45700,
       "fuels": {
-        "gazole": 2.214
+        "gazole": 2.214,
+        "e10": 1.99
       }
     },
     {
@@ -888,7 +889,6 @@
       "lng": -33738.5,
       "fuels": {
         "gazole": 2.172,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -1128,8 +1128,8 @@
       "lat": 4884100,
       "lng": -104300,
       "fuels": {
-        "gazole": 2.26,
-        "sp95": 2.16,
+        "gazole": 2.25,
+        "sp95": 2.11,
         "sp98": 2.19
       }
     },
@@ -1200,7 +1200,6 @@
       "lng": 18900,
       "fuels": {
         "gazole": 2.195,
-        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.816
       }
@@ -1613,7 +1612,9 @@
       "lat": 4915600,
       "lng": -45000,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
