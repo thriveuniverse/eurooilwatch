@@ -107,4 +107,22 @@ The war has been about whether these waterways stay open. The next phase is abou
 
 ---
 
+## Update — 29 July 2026, later the same day
+
+Three developments arrived after this piece was published, and all three sharpen it.
+
+**Iran's fee ambition is now explicit, not inferred.** Reuters, reporting Tehran's rejection of the Omani plan, describes the Strait as a waterway "which Iran says it controls and where it aims to collect fees." The senior Iranian official called Oman's proposal *unreasonable*: a 50-50 arrangement would not serve Iran's interests, because Tehran wants **sole control of the inbound route and partial control of the outbound one**. That removes any ambiguity about what was refused. Iran did not reject the idea of charging for passage. It rejected sharing the revenue and the authority.
+
+That makes four claims on the same two waterways in a month, not three — and it means every actor in this dispute now accepts the premise. What they disagree about is who holds the gate.
+
+**The industry has answered with private ordering.** In its latest security advisory, INTERTANKO — the independent tanker owners' association — advises members to delay Hormuz transits where possible, coordinate with military reporting centres, run enhanced voyage risk assessments, review AIS and LRIT transmission policies in high-risk areas, and, explicitly, **not to pay transit fees to either Iranian or Houthi authorities.**
+
+That last instruction is the most consequential sentence in this story so far. With navies overstretched and no binding legal remedy in prospect, the counter-measure to a toll is not enforcement but a **collective refusal to pay** — owners coordinating to deny the fee a market. It is the same mechanism that ended the Sound Dues, in reverse: instead of the maritime powers buying the toll out, they are attempting to price it at zero. Whether that holds depends on whether every owner behaves the same way, and the reported Chinese exemption is precisely the wedge that would break it.
+
+**And the escape route just widened again.** PanStar Line has opened bookings for South Korea's first container voyage to Europe via the Northern Sea Route — a 2,800 TEU ship sailing from Busan on 22 August for Rotterdam, Hamburg and Gdansk, with transhipment enquiries arriving from Japan and China. Seoul is explicitly following Beijing in developing Arctic container services, and the stated reason is uncertainty over the Suez route caused by the Red Sea crisis.
+
+Russia's crude and LNG going north was one data point. A South Korean box service booking European cargo for August is another, in a different trade entirely. The pattern in the closing argument above is holding faster than expected: **every fee proposal is an advertisement for the route that escapes it.**
+
+---
+
 *EuroOilWatch / UKOilWatch / AmericasOilWatch track fuel reserves, prices and supply-route risk across Europe, Britain and the Americas. This piece is analysis, not a price forecast; confirmed facts are stated as confirmed and unverified reports are flagged as such.*
