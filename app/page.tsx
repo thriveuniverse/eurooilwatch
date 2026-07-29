@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-07-27'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-07-29'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-27" />
+      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-29" />
 
       {/* Russia–Ukraine analysis — Russia Is Importing Fuel While Exporting Crude */}
       <a
@@ -565,6 +565,15 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Wed 29 Jul: the pause breaks; physical converges; the US buffer thins */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Wed 29 Jul 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-gray-200">The pause was a lull, not a settlement.</strong> Saudi Arabia said its armed forces, coordinating with US Central Command, carried out <strong className="text-gray-200">joint strikes on Iran-backed groups in eastern Iraq</strong> after drones launched from Iraqi territory targeted oil facilities in the kingdom&rsquo;s Eastern Province &mdash; <strong className="text-gray-200">Saudi air defences intercepted those drones and no damage to the facilities has been reported</strong> (a separate event from the Houthi strikes near Jizan on 24&ndash;25 July). CENTCOM said the groups were behind more than 30 drone attacks in 72 hours; Iraq&rsquo;s Popular Mobilisation Forces said several headquarters were struck, reporting casualties. Iran denied involvement; Iraq ordered an investigation (Reuters). Oil retraced its fall &mdash; Brent back to about <strong className="text-gray-200">$86.79</strong>, WTI <strong className="text-gray-200">$81.91</strong> &mdash; and Hormuz thinned again to just <strong className="text-gray-200">five commodity vessels on Tuesday</strong>. The physical premium, meanwhile, has <strong className="text-gray-200">collapsed rather than persisted</strong>: Argus North Sea Dated has fallen from about $103 on 24 July to roughly $86 on 28 July, back in line with the screen. The durable story is the shrinking margin for error &mdash; the <strong className="text-gray-200">US Strategic Petroleum Reserve is down to about 307.7 million barrels, its lowest since March 1983</strong>, while US commercial stocks stay below seasonal norms, refineries run at 96.1% of operable capacity and US diesel sits above <strong className="text-gray-200">$5.31/gal</strong>. Not a shortage &mdash; a system with less room to absorb the next shock.
+              </p>
+            </div>
             {/* Update — Mon 27 Jul: markets price a truce, the tankers do not */}
             <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
