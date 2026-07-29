@@ -3,15 +3,15 @@
   "name": "Morbihan",
   "regionCode": "BRE",
   "regionName": "Bretagne",
-  "asOf": "2026-07-29T14:34:00.527Z",
+  "asOf": "2026-07-29T18:38:46.011Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 140,
   "fuels": {
     "gazole": {
       "count": 139,
-      "mean": 2.1903,
-      "median": 2.179,
+      "mean": 2.1901,
+      "median": 2.175,
       "min": 2.09,
       "max": 2.492
     },
@@ -23,15 +23,15 @@
       "max": 2.344
     },
     "sp98": {
-      "count": 104,
-      "mean": 2.0925,
+      "count": 102,
+      "mean": 2.0952,
       "median": 2.099,
       "min": 1.978,
       "max": 2.474
     },
     "e10": {
-      "count": 107,
-      "mean": 2.0119,
+      "count": 108,
+      "mean": 2.0112,
       "median": 1.999,
       "min": 1.955,
       "max": 2.324
@@ -45,10 +45,10 @@
     },
     "gplc": {
       "count": 9,
-      "mean": 1.0169,
+      "mean": 1.1169,
       "median": 0.999,
       "min": 0.929,
-      "max": 1.159
+      "max": 1.99
     }
   },
   "stations": [
@@ -118,6 +118,7 @@
       "lng": -251100,
       "fuels": {
         "gazole": 2.169,
+        "sp98": 2.076,
         "e10": 1.992
       }
     },
@@ -814,7 +815,6 @@
       "lng": -316400,
       "fuels": {
         "gazole": 2.245,
-        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.829
       }
@@ -985,7 +985,7 @@
       "lat": 4776153.54656,
       "lng": -337733.44111,
       "fuels": {
-        "gazole": 2.246,
+        "gazole": 2.25,
         "e10": 1.99
       }
     },
@@ -1293,7 +1293,8 @@
       "lat": 4766900,
       "lng": -280300,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "e10": 1.99
       }
     },
     {
@@ -1333,7 +1334,6 @@
       "lng": -236376.1608,
       "fuels": {
         "gazole": 2.25,
-        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.998
       }
@@ -1362,7 +1362,7 @@
       "lat": 4793100,
       "lng": -238100,
       "fuels": {
-        "gazole": 2.159,
+        "gazole": 2.169,
         "sp98": 2.119,
         "e10": 2.019,
         "e85": 0.809
@@ -1488,9 +1488,9 @@
       "lat": 4767200,
       "lng": -296400,
       "fuels": {
-        "gazole": 2.211,
-        "sp98": 2.103,
-        "e10": 2.039
+        "gazole": 2.164,
+        "sp98": 2.08,
+        "e10": 1.986
       }
     },
     {
@@ -1531,7 +1531,7 @@
       "lng": -296300,
       "fuels": {
         "gazole": 2.25,
-        "gplc": 1.09
+        "gplc": 1.99
       }
     },
     {
@@ -2009,7 +2009,6 @@
       "lng": -275500,
       "fuels": {
         "gazole": 2.166,
-        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.819
       }
