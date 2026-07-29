@@ -94,6 +94,23 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-29" />
 
+      {/* Flagship analysis — The Chokepoints Are Becoming Tollbooths */}
+      <a
+        href="/analysis/chokepoints-becoming-tollbooths"
+        className="block rounded-lg border border-amber-600/50 bg-amber-950/20 px-4 py-3.5 hover:border-amber-500 hover:bg-amber-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-amber-400 uppercase">
+          New &middot; Flagship Analysis
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          The Chokepoints Are Becoming Tollbooths{' '}
+          <span className="text-amber-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          In one month three actors &mdash; Washington, an Omani framework and the Houthis &mdash; proposed charging ships for passage through the same two waterways. The tell isn&rsquo;t the fee, it&rsquo;s the exemption: a toll needs a rule about who doesn&rsquo;t pay, and that makes it a claim to jurisdiction rather than a raid.
+        </span>
+      </a>
+
       {/* Russia–Ukraine analysis — Russia Is Importing Fuel While Exporting Crude */}
       <a
         href="/analysis/russia-importing-fuel-exporting-crude"
