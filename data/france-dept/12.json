@@ -3,51 +3,51 @@
   "name": "Aveyron",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-07-29T07:51:15.642Z",
+  "asOf": "2026-07-29T14:34:00.527Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 86,
+  "stationCount": 85,
   "fuels": {
     "gazole": {
-      "count": 86,
-      "mean": 2.1932,
+      "count": 85,
+      "mean": 2.1953,
       "median": 2.189,
       "min": 2.04,
       "max": 2.279
     },
     "sp95": {
-      "count": 45,
-      "mean": 2.0507,
+      "count": 44,
+      "mean": 2.0486,
       "median": 2.059,
       "min": 1.99,
       "max": 2.129
     },
     "sp98": {
       "count": 55,
-      "mean": 2.0953,
+      "mean": 2.0942,
       "median": 2.112,
       "min": 1.99,
       "max": 2.179
     },
     "e10": {
-      "count": 51,
-      "mean": 2.0146,
+      "count": 52,
+      "mean": 2.0143,
       "median": 1.999,
       "min": 1.969,
       "max": 2.129
     },
     "e85": {
-      "count": 20,
-      "mean": 0.8657,
-      "median": 0.859,
-      "min": 0.818,
+      "count": 21,
+      "mean": 0.8634,
+      "median": 0.849,
+      "min": 0.798,
       "max": 0.998
     },
     "gplc": {
-      "count": 2,
-      "mean": 1.0885,
-      "median": 1.0885,
-      "min": 1.084,
+      "count": 3,
+      "mean": 1.082,
+      "median": 1.084,
+      "min": 1.069,
       "max": 1.093
     }
   },
@@ -88,7 +88,8 @@
       "lat": 4439367,
       "lng": 277776,
       "fuels": {
-        "gazole": 2.2
+        "gazole": 2.196,
+        "sp95": 1.99
       }
     },
     {
@@ -112,7 +113,7 @@
       "lat": 4446300,
       "lng": 272700,
       "fuels": {
-        "gazole": 2.189,
+        "gazole": 2.199,
         "sp98": 2.129,
         "e10": 2.029
       }
@@ -167,7 +168,7 @@
       "lat": 4457100,
       "lng": 207500,
       "fuels": {
-        "gazole": 2.149,
+        "gazole": 2.189,
         "sp95": 2.049,
         "sp98": 2.089,
         "e10": 1.969
@@ -229,19 +230,6 @@
         "sp98": 2.099,
         "e10": 2.049,
         "e85": 0.839
-      }
-    },
-    {
-      "id": "12140002",
-      "cp": "12140",
-      "ville": "Entraygues-sur-Truyère",
-      "adresse": "Le Moulinet, 10 Route de Las Peyssières",
-      "pop": "R",
-      "lat": 4465200,
-      "lng": 257400,
-      "fuels": {
-        "gazole": 2.084,
-        "sp95": 2.057
       }
     },
     {
@@ -337,7 +325,7 @@
       "lat": 4424024.10015,
       "lng": 203283.20468,
       "fuels": {
-        "gazole": 2.149,
+        "gazole": 2.169,
         "sp98": 2.099,
         "e10": 1.989
       }
@@ -354,19 +342,6 @@
         "gazole": 2.189,
         "sp95": 2.069,
         "sp98": 2.119
-      }
-    },
-    {
-      "id": "12310002",
-      "cp": "12310",
-      "ville": "Laissac-Sévérac l'Église",
-      "adresse": "LE FOIRAIL",
-      "pop": "R",
-      "lat": 4438400,
-      "lng": 282300,
-      "fuels": {
-        "gazole": 2.169,
-        "sp95": 2.039
       }
     },
     {
@@ -453,6 +428,21 @@
         "sp98": 2.112,
         "e10": 1.998,
         "e85": 0.838
+      }
+    },
+    {
+      "id": "12100009",
+      "cp": "12100",
+      "ville": "Millau",
+      "adresse": "Avenue de l'Europe",
+      "pop": "R",
+      "lat": 4408729.48573,
+      "lng": 305648.93392,
+      "fuels": {
+        "gazole": 2.189,
+        "e10": 1.998,
+        "e85": 0.798,
+        "gplc": 1.069
       }
     },
     {
@@ -575,9 +565,9 @@
       "lat": 4436400,
       "lng": 258800,
       "fuels": {
-        "gazole": 2.179,
-        "sp95": 2.069,
-        "sp98": 2.102,
+        "gazole": 2.175,
+        "sp95": 2.049,
+        "sp98": 2.069,
         "e10": 2.029
       }
     },
@@ -590,8 +580,8 @@
       "lat": 4439400,
       "lng": 260300,
       "fuels": {
-        "gazole": 2.185,
-        "sp95": 2.069,
+        "gazole": 2.183,
+        "sp95": 2.055,
         "e10": 2.029,
         "gplc": 1.093
       }
@@ -746,10 +736,10 @@
       "lat": 4436200,
       "lng": 257200,
       "fuels": {
-        "gazole": 2.185,
-        "sp98": 2.129,
+        "gazole": 2.183,
+        "sp98": 2.099,
         "e10": 2.029,
-        "e85": 0.819
+        "e85": 0.829
       }
     },
     {
@@ -774,7 +764,7 @@
       "lat": 4436192,
       "lng": 256611.6,
       "fuels": {
-        "gazole": 2.179,
+        "gazole": 2.175,
         "sp98": 2.129,
         "e10": 2.029,
         "e85": 0.829
@@ -817,7 +807,7 @@
       "lat": 4436135.13702,
       "lng": 258846.1757,
       "fuels": {
-        "gazole": 2.179,
+        "gazole": 2.175,
         "sp95": 2.049,
         "e10": 2.029,
         "e85": 0.829
@@ -1102,7 +1092,7 @@
         "gazole": 2.189,
         "sp95": 2.059,
         "e10": 2.029,
-        "e85": 0.819
+        "e85": 0.829
       }
     },
     {
