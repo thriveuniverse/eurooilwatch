@@ -94,6 +94,23 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-30" />
 
+      {/* Country focus — France: strong reserve, tight fuel system */}
+      <a
+        href="/analysis/france-strong-reserve-tight-fuel-system"
+        className="block rounded-lg border border-emerald-600/50 bg-emerald-950/20 px-4 py-3.5 hover:border-emerald-500 hover:bg-emerald-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-emerald-400 uppercase">
+          New &middot; Country Focus &mdash; France
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          France Has One of Europe&rsquo;s Stronger Oil Reserves &mdash; but Its Fuel System Is More Vulnerable Than It Looks{' '}
+          <span className="text-emerald-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          SAGESS holds ~16 million m&sup3; across ~80 sites, deliberately weighted toward finished fuels. But France imports more than half its diesel, jet demand is at a record and Europe&rsquo;s commercial jet buffer is under a month &mdash; a strong strategic reserve sitting on top of a tight everyday product system.
+        </span>
+      </a>
+
       {/* Flagship analysis — The Chokepoints Are Becoming Tollbooths */}
       <a
         href="/analysis/chokepoints-becoming-tollbooths"
