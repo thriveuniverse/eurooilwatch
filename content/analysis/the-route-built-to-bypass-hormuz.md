@@ -65,4 +65,12 @@ Either way, the analytical point survives the damage report. The strategic comfo
 
 ---
 
+## Update — 31 July 2026: the confirmation arrived
+
+This article's test read: *"The thesis confirms if the corridor damage becomes physical: a verified outage at Jizan or Yanbu…"* That has now happened. Saudi Arabia's ~400,000 b/d **Jizan refinery has been shut since 27 July** following the Houthi attack — it had exported more than 200,000 b/d of fuels, predominantly diesel and gasoil, over the preceding three months. Last week's carefully held "no confirmed outage" has resolved the wrong way: correlated risk has become **correlated loss**, in product supply if not yet in crude exports.
+
+The corridor logic has kept extending exactly as described. With Hormuz near-halted and the Red Sea hostile, displaced barrels have leaned on the Suez/SUMED detour — Saudi loadings from Sidi Kerir surged to about 28.79 million barrels in July from 19.52 million in April — and on Wednesday a drone struck two gas vessels at Egypt's Damietta port, with no credible claim of responsibility yet. Reuters cites an estimate that as much as 5 million b/d of Hormuz-bypassing oil could be exposed if the Suez/SUMED corridor became insecure. Each alternative inherits the threat the previous one was meant to escape; the detours are becoming fewer, longer and more expensive.
+
+---
+
 *EuroOilWatch / UKOilWatch / AmericasOilWatch track fuel reserves, prices and supply-route risk across Europe, Britain and the Americas. This piece is analysis, not a price forecast; confirmed facts are stated as confirmed and unverified reports are flagged as such.*

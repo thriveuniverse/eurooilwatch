@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-07-29'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-07-31'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-30" />
+      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-31" />
 
       {/* Country focus — France: strong reserve, tight fuel system */}
       <a
@@ -599,6 +599,15 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Fri 31 Jul: not an oil-supply problem — a conversion-and-delivery problem */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Fri 31 Jul 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-gray-200">The crisis has moved downstream.</strong> Brent eased to about <strong className="text-gray-200">$87.59</strong> (WTI ~$82, both still up roughly 20% on the month) &mdash; but the product market set records: European diesel cracks at an all-time <strong className="text-gray-200">$74.66/bbl</strong>, US diesel cracks at <strong className="text-gray-200">$93.44</strong>, jet above $80, and European diesel stocks now assessed at their <strong className="text-gray-200">lowest since 2014</strong>. The refining losses explain it: Saudi Arabia&rsquo;s <strong className="text-gray-200">~400 kb/d Jizan refinery has been shut since 27 July</strong> (last week&rsquo;s &ldquo;no confirmed outage&rdquo; has resolved the wrong way), part of Kuwait&rsquo;s Al-Zour is down, Russia&rsquo;s <strong className="text-gray-200">Ryazan has halted processing</strong> (~2 weeks, Reuters sources) and Perm lost a unit carrying ~34% of its capacity &mdash; and Moscow has extended fuel-export restrictions to <strong className="text-gray-200">31 January 2027</strong>. Hormuz ran <strong className="text-gray-200">two vessels Thursday, both ballast, both inbound</strong> &mdash; the directional signal we flagged, at a scale that is a flicker, not a recovery; Bab el-Mandeb improved to 25 crossings, with AIS-dark transits keeping every count a minimum. And the strain is reaching the last detour: a drone hit two gas vessels at Egypt&rsquo;s <strong className="text-gray-200">Damietta</strong> port as SUMED loadings surge. The world does not simply have an oil-supply problem; it has an <strong className="text-gray-200">oil-conversion-and-delivery problem</strong> &mdash; crude exists, and the system that turns it into fuel in the right place is what is being degraded.
+              </p>
+            </div>
             {/* Update — Wed 29 Jul: the pause breaks; physical converges; the US buffer thins */}
             <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
