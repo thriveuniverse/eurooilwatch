@@ -94,6 +94,23 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-31" />
 
+      {/* Cross-site analysis — Running Out of Safe Detours */}
+      <a
+        href="/analysis/running-out-of-safe-detours"
+        className="block rounded-lg border border-amber-600/50 bg-amber-950/20 px-4 py-3.5 hover:border-amber-500 hover:bg-amber-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-amber-400 uppercase">
+          New &middot; Flagship Analysis
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          Hormuz, Bab el-Mandeb, Suez: The Oil Market Is Running Out of Safe Detours{' '}
+          <span className="text-amber-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          No single event has closed the oil map. Each escape route has inherited the load &mdash; then the threat &mdash; of the one before it: Hormuz to Yanbu to Bab el-Mandeb to Suez/SUMED, where Sidi Kerir loadings have surged and a drone just struck Damietta. The convexity problem: every workaround used up makes the next disruption cost more.
+        </span>
+      </a>
+
       {/* Flagship analysis — Europe Has Crude. What It Is Running Short Of Is Diesel. */}
       <a
         href="/analysis/europe-has-crude-short-of-diesel"
