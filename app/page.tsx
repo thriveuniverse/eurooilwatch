@@ -94,6 +94,23 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-31" />
 
+      {/* Flagship analysis — Europe Has Crude. What It Is Running Short Of Is Diesel. */}
+      <a
+        href="/analysis/europe-has-crude-short-of-diesel"
+        className="block rounded-lg border border-amber-600/50 bg-amber-950/20 px-4 py-3.5 hover:border-amber-500 hover:bg-amber-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-amber-400 uppercase">
+          New &middot; Flagship Analysis
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          Europe Has Crude. What It Is Running Short Of Is Diesel.{' '}
+          <span className="text-amber-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          Brent is easing while European diesel cracks set an all-time record ($74.66/bbl) and stocks sit at their lowest since 2014. The scarcity is no longer the barrel &mdash; it is the machine that turns the barrel into fuel, just as Europe enters its winter stock-building season with a ~833,000 b/d middle-distillate shortfall.
+        </span>
+      </a>
+
       {/* Country focus — France: strong reserve, tight fuel system */}
       <a
         href="/analysis/france-strong-reserve-tight-fuel-system"
