@@ -3,21 +3,21 @@
   "name": "Aveyron",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-07-31T14:40:18.427Z",
+  "asOf": "2026-07-31T18:59:40.380Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 86,
   "fuels": {
     "gazole": {
       "count": 86,
-      "mean": 2.2247,
-      "median": 2.229,
+      "mean": 2.2276,
+      "median": 2.2325,
       "min": 2.14,
       "max": 2.359
     },
     "sp95": {
-      "count": 44,
-      "mean": 2.0628,
+      "count": 45,
+      "mean": 2.0611,
       "median": 2.069,
       "min": 1.99,
       "max": 2.179
@@ -30,8 +30,8 @@
       "max": 2.199
     },
     "e10": {
-      "count": 52,
-      "mean": 2.0152,
+      "count": 53,
+      "mean": 2.0148,
       "median": 1.999,
       "min": 1.986,
       "max": 2.129
@@ -88,7 +88,9 @@
       "lat": 4439367,
       "lng": 277776,
       "fuels": {
-        "gazole": 2.236
+        "gazole": 2.25,
+        "sp95": 1.99,
+        "sp98": 1.99
       }
     },
     {
@@ -101,7 +103,8 @@
       "lng": 272900,
       "fuels": {
         "gazole": 2.25,
-        "sp98": 1.99
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -113,7 +116,7 @@
       "lat": 4446300,
       "lng": 272700,
       "fuels": {
-        "gazole": 2.193,
+        "gazole": 2.248,
         "sp98": 2.129,
         "e10": 2.029
       }
@@ -285,7 +288,7 @@
       "lat": 4460421.19875,
       "lng": 224754.63212,
       "fuels": {
-        "gazole": 2.191,
+        "gazole": 2.275,
         "sp95": 2.024
       }
     },
@@ -626,7 +629,6 @@
       "lng": 259300,
       "fuels": {
         "gazole": 2.25,
-        "sp98": 1.99,
         "e10": 1.99,
         "e85": 0.874
       }
@@ -1256,7 +1258,7 @@
       "lat": 4455984.71104,
       "lng": 221763.49504,
       "fuels": {
-        "gazole": 2.179,
+        "gazole": 2.275,
         "e10": 1.999,
         "e85": 0.818
       }
