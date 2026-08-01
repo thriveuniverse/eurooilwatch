@@ -79,7 +79,7 @@ It is exporting crude and importing fuel. Once you see why those two facts sit t
 
 Within days of publication the downstream squeeze this article described deepened on every axis. Russia's **Ryazan refinery halted crude processing entirely** after a drone attack, with industry sources telling Reuters the shutdown is expected to last about two weeks; a strike on Lukoil's **Perm** refinery forced unit CDU-5 offline — roughly 34% of the plant's capacity. Moscow then **extended restrictions on exports of gasoline, diesel, marine fuel and gasoils to 31 January 2027** (producer exemptions for diesel, marine fuel and gasoils begin 1 September), superseding the end-2026 gasoline horizon reported above — a formal admission that the domestic market is not stabilising on the earlier timetable.
 
-The global transmission strengthened in step: European diesel refining margins reached an all-time record **$74.66/bbl** and European diesel inventories are now assessed at their **lowest since 2014** (superseding the lowest-since-2022 reading current when this piece was published), with India's Reliance becoming the emergency swing supplier to Europe. The seam the war found is widening.
+The global transmission strengthened in step: European diesel refining margins reached an all-time record **$74.66/bbl** and European diesel inventories are at their **thinnest since 2022** — with total independently held product stocks in the ARA hub at a 2014 low — and India's Reliance has become the emergency swing supplier to Europe. The seam the war found is widening.
 
 ---
 

@@ -111,6 +111,23 @@ export default async function DashboardPage() {
         </span>
       </a>
 
+      {/* Analysis — Russia Has Oil. It Is Now Importing Petrol From Morocco. */}
+      <a
+        href="/analysis/russia-importing-petrol-from-morocco"
+        className="block rounded-lg border border-sky-600/50 bg-sky-950/20 px-4 py-3.5 hover:border-sky-500 hover:bg-sky-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-sky-400 uppercase">
+          New &middot; Russia&ndash;Ukraine Analysis
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          Russia Has Oil. It Is Now Importing Petrol From Morocco.{' '}
+          <span className="text-sky-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          ~30,000t of AI-92, loaded at Tangier, discharged at Murmansk &mdash; reported supplier: Lukoil. Morocco has no operating refinery, which sharpens the signal: Russia&rsquo;s fourth emergency supply route now runs through a third-country transshipment hub, for petrol of undisclosed origin, carried from Gibraltar to the Arctic.
+        </span>
+      </a>
+
       {/* Flagship analysis — Europe Has Crude. What It Is Running Short Of Is Diesel. */}
       <a
         href="/analysis/europe-has-crude-short-of-diesel"
@@ -124,7 +141,7 @@ export default async function DashboardPage() {
           <span className="text-amber-300 group-hover:text-white">&rarr;</span>
         </span>
         <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
-          Brent is easing while European diesel cracks set an all-time record ($74.66/bbl) and stocks sit at their lowest since 2014. The scarcity is no longer the barrel &mdash; it is the machine that turns the barrel into fuel, just as Europe enters its winter stock-building season with a ~833,000 b/d middle-distillate shortfall.
+          Brent is easing while European diesel cracks set an all-time record ($74.66/bbl), diesel inventories sit at their thinnest since 2022 and total ARA product stocks at a 2014 low. The scarcity is no longer the barrel &mdash; it is the machine that turns the barrel into fuel, just as Europe enters its winter stock-building season.
         </span>
       </a>
 
@@ -648,7 +665,7 @@ export default async function DashboardPage() {
                 Update &mdash; Fri 31 Jul 2026
               </p>
               <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
-                <strong className="text-gray-200">The crisis has moved downstream.</strong> Brent eased to about <strong className="text-gray-200">$87.59</strong> (WTI ~$82, both still up roughly 20% on the month) &mdash; but the product market set records: European diesel cracks at an all-time <strong className="text-gray-200">$74.66/bbl</strong>, US diesel cracks at <strong className="text-gray-200">$93.44</strong>, jet above $80, and European diesel stocks now assessed at their <strong className="text-gray-200">lowest since 2014</strong>. The refining losses explain it: Saudi Arabia&rsquo;s <strong className="text-gray-200">~400 kb/d Jizan refinery has been shut since 27 July</strong> (last week&rsquo;s &ldquo;no confirmed outage&rdquo; has resolved the wrong way), part of Kuwait&rsquo;s Al-Zour is down, Russia&rsquo;s <strong className="text-gray-200">Ryazan has halted processing</strong> (~2 weeks, Reuters sources) and Perm lost a unit carrying ~34% of its capacity &mdash; and Moscow has extended fuel-export restrictions to <strong className="text-gray-200">31 January 2027</strong>. Hormuz ran <strong className="text-gray-200">two vessels Thursday, both ballast, both inbound</strong> &mdash; the directional signal we flagged, at a scale that is a flicker, not a recovery; Bab el-Mandeb improved to 25 crossings, with AIS-dark transits keeping every count a minimum. And the strain is reaching the last detour: a drone hit two gas vessels at Egypt&rsquo;s <strong className="text-gray-200">Damietta</strong> port as SUMED loadings surge. The world does not simply have an oil-supply problem; it has an <strong className="text-gray-200">oil-conversion-and-delivery problem</strong> &mdash; crude exists, and the system that turns it into fuel in the right place is what is being degraded.
+                <strong className="text-gray-200">The crisis has moved downstream.</strong> Brent eased to about <strong className="text-gray-200">$87.59</strong> (WTI ~$82, both still up roughly 20% on the month) &mdash; but the product market set records: European diesel cracks at an all-time <strong className="text-gray-200">$74.66/bbl</strong>, US diesel cracks at <strong className="text-gray-200">$93.44</strong>, jet above $80, and European diesel inventories at their <strong className="text-gray-200">thinnest since 2022</strong>, with total ARA product stocks at a 2014 low (corrected 1 Aug). The refining losses explain it: Saudi Arabia&rsquo;s <strong className="text-gray-200">~400 kb/d Jizan refinery has been shut since 27 July</strong> (last week&rsquo;s &ldquo;no confirmed outage&rdquo; has resolved the wrong way), part of Kuwait&rsquo;s Al-Zour is down, Russia&rsquo;s <strong className="text-gray-200">Ryazan has halted processing</strong> (~2 weeks, Reuters sources) and Perm lost a unit carrying ~34% of its capacity &mdash; and Moscow has extended fuel-export restrictions to <strong className="text-gray-200">31 January 2027</strong>. Hormuz ran <strong className="text-gray-200">two vessels Thursday, both ballast, both inbound</strong> &mdash; the directional signal we flagged, at a scale that is a flicker, not a recovery; Bab el-Mandeb improved to 25 crossings, with AIS-dark transits keeping every count a minimum. And the strain is reaching the last detour: a drone hit two gas vessels at Egypt&rsquo;s <strong className="text-gray-200">Damietta</strong> port as SUMED loadings surge. The world does not simply have an oil-supply problem; it has an <strong className="text-gray-200">oil-conversion-and-delivery problem</strong> &mdash; crude exists, and the system that turns it into fuel in the right place is what is being degraded.
               </p>
             </div>
             {/* Update — Wed 29 Jul: the pause breaks; physical converges; the US buffer thins */}

@@ -1,7 +1,7 @@
 ---
 title: "Europe Has Crude. What It Is Running Short Of Is Diesel."
 date: "2026-07-31"
-excerpt: "Brent is easing. European diesel refining margins just set an all-time record of $74.66 a barrel, and diesel inventories are at their lowest since 2014. The market is saying, as clearly as a market can, that the scarce thing is no longer the barrel — it is the machine that turns the barrel into fuel."
+excerpt: "Brent is easing. European diesel refining margins just set an all-time record of $74.66 a barrel, European diesel inventories are at their thinnest since 2022, and total ARA product stocks are at a 2014 low. The market is saying, as clearly as a market can, that the scarce thing is no longer the barrel — it is the machine that turns the barrel into fuel."
 author: "Jon Kelly"
 ---
 
@@ -15,7 +15,7 @@ On Friday morning Brent was easing — around $87.59, down on the day, though st
 
 Read those two moves together and the market is saying something precise. A record crack spread with a falling crude price means the scarcity is not in oil. It is in **conversion** — the refining capacity that turns oil into the fuel Europe's trucks, farms, and heating systems actually burn. Reuters' framing this week is the right one: refining capacity may now be as important a problem as crude scarcity.
 
-That is the story underneath the entire month. European diesel inventories are now assessed at their **lowest since 2014** — a deeper hole than the lowest-since-2022 reading of only days ago. Europe is not short of crude. It is short of the finished product it uses most, at the start of the season when it needs to be building heating-oil stocks for winter.
+That is the story underneath the entire month. European diesel inventories are at their **thinnest since 2022**, and total independently held product stocks in the Amsterdam–Rotterdam–Antwerp hub have fallen to their **lowest since 2014**. Europe is not short of crude. It is short of the finished product it uses most, at the start of the season when it needs to be building heating-oil stocks for winter.
 
 ---
 
@@ -39,9 +39,7 @@ Remove that much conversion capacity and export supply from one product, in one 
 
 Europe has found a swing supplier. Reliance — operator of the world's largest refining complex — shipped roughly **4.2 to 5 million barrels of diesel to Europe in July**, its highest European volume in ten months. India has effectively become the emergency diesel supplier to a continent that used to buy from Russia.
 
-But the lifeline has a catch, and it is quantified. Energy Aspects estimates Europe faces a **third-quarter middle-distillate shortfall of roughly 833,000 barrels a day** across diesel and jet fuel. July's Indian cargoes do not close a gap that size. And in August, Europe will have to **compete with Asia for those same Indian barrels** — the identical auction dynamic we documented in LNG, where every replacement cargo Europe wins is one it outbid somebody else for.
-
-A shortfall of 833,000 b/d, for context, is roughly the output of two large export refineries — approximately what Jizan and a Ryazan-scale plant produce together. The gap is the outages, made visible in a single number.
+But the lifeline has a catch. The gap Indian cargoes are filling is the product of Europe's lost supply — Russian exports restricted, Jizan shut, Al-Zour partly down — and July's cargoes do not close it. In August, Europe will have to **compete with Asia for those same Indian barrels** — the identical auction dynamic we documented in LNG, where every replacement cargo Europe wins is one it outbid somebody else for.
 
 ---
 
@@ -49,7 +47,7 @@ A shortfall of 833,000 b/d, for context, is roughly the output of two large expo
 
 None of this means European forecourts run dry. Diesel is arriving; it is arriving expensive. The issue is when the tightness lands.
 
-August and September are when Europe would normally build heating-oil and diesel stocks for winter — the same seasonal logic we described for gas, where storage at ~55% is being refilled at stress prices. The oil-product version is now worse than the gas version: the inventory being built is at a **twelve-year low**, the refining system meant to build it is setting record margins because it cannot keep up, and the import pool it draws on is contested by Asia.
+August and September are when Europe would normally build heating-oil and diesel stocks for winter — the same seasonal logic we described for gas, where storage at ~55% is being refilled at stress prices. The oil-product version is now worse than the gas version: the diesel inventory being built is at a **four-year low** (the ARA hub's total product stocks at a twelve-year low), the refining system meant to build it is setting record margins because it cannot keep up, and the import pool it draws on is contested by Asia.
 
 And the two winters compound. If gas stays expensive, some industrial and heating demand switches toward oil products. That substitution is Europe's traditional safety valve — and it opens onto a diesel market that is already the tightest in over a decade.
 
@@ -69,11 +67,17 @@ That maximises output today and raises the probability of unplanned failures tom
 
 The squeeze eases if any of the big pieces returns: Ryazan back inside two weeks as sourced, Jizan repaired, Al-Zour restored, Russian producer exemptions from 1 September actually releasing diesel, or Hormuz product flows normalising. Cracks this extreme can also self-correct — margins at records pull every marginal barrel of capacity and every arbitrage cargo toward Europe, and they can fall as fast as they rose.
 
-What we are watching: the **weekly ARA gasoil inventory prints** against the 2014 comparison; **Indian export allocations in August** (Europe versus Asia); the **1 September Russian exemptions** — the first scheduled event that could return meaningful supply; **unplanned European refinery outages** as units run hard through the autumn; and the crack spread itself, which is currently the single most honest indicator in the European energy system.
+What we are watching: the **weekly ARA inventory prints** against those lows; **Indian export allocations in August** (Europe versus Asia); the **1 September Russian exemptions** — the first scheduled event that could return meaningful supply; **unplanned European refinery outages** as units run hard through the autumn; and the crack spread itself, which is currently the single most honest indicator in the European energy system.
 
 Europe spent July watching Brent swing ten dollars on war headlines. The quieter number — the one that sets what a French farmer, a German haulier or a Polish household actually pays this winter — was the crack spread, and it ended the month at the highest level ever recorded.
 
 Europe has crude. What it is running short of is diesel — and the season for fixing that is now.
+
+---
+
+## Correction — 1 August 2026
+
+Two figures in the original text have been corrected after further verification. First, the inventory comparison conflated two measures: broad **European diesel inventories are at their thinnest since 2022**, while it is **total independently held product stocks in the Amsterdam–Rotterdam–Antwerp hub** — all products, one region — that recently fell to their lowest since 2014. The text above now reflects that distinction. Second, a third-quarter middle-distillate shortfall estimate of roughly 833,000 b/d has been **withdrawn pending a verifiable source**; the argument stands on the confirmed outages, the record margins and the thin inventories without it.
 
 ---
 
