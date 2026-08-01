@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-07-31'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-08-01'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-07-31" />
+      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-01" />
 
       {/* Cross-site analysis — Running Out of Safe Detours */}
       <a
@@ -633,6 +633,15 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Sat 1 Aug: tanker disabled at Hormuz entrance; US-Israel strikes reportedly weighed */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Sat 1 Aug 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-gray-200">A tanker was disabled by an unknown projectile near the entrance to the Strait of Hormuz early Saturday</strong> &mdash; about 11 nautical miles north-east of Limah, Oman: engine room damaged, the vessel &ldquo;not under command&rdquo;, no casualties or pollution initially reported (UKMTO). Its identity, cargo and the party responsible are undisclosed, and we do not attribute the attack. Separately, Reuters &mdash; citing CBS News &mdash; reported late Friday that the US and Israel are <strong className="text-gray-200">planning a possible bombing campaign against energy-related targets inside Iran</strong>, potentially this weekend; President Trump had <strong className="text-gray-200">not given final approval</strong> when the report was published, and no target set is specified. That is reported planning, not an operation &mdash; and no new Iranian fixed energy facility has been verified hit. The strait remains in its strange in-between state: the IRGC claims two tankers hit and four turned back (unconfirmed), while tracking showed two laden VLCCs transiting &mdash; <strong className="text-gray-200">Hormuz is permitting, or failing to prevent, individual passages; it has not returned to normal navigation.</strong> July closed with Brent at <strong className="text-gray-200">$90.12</strong> and WTI $84.67 &mdash; monthly gains of 24% and 21%. And the conversion story deepened: <strong className="text-gray-200">Russia has begun importing petrol from Morocco</strong> (~30,000t of AI-92, unloading at Murmansk), its fourth fuel-supply country, with output near 65% of summer consumption.
+              </p>
+            </div>
             {/* Update — Fri 31 Jul: not an oil-supply problem — a conversion-and-delivery problem */}
             <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
