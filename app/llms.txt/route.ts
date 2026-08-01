@@ -103,6 +103,7 @@ Free, read-only JSON. CORS-enabled, no key required.
 - France station prices: https://eurooilwatch.com/country/fr
 - Spain station prices:  https://eurooilwatch.com/country/es
 - Italy station prices:  https://eurooilwatch.com/country/it
+- Global Disruption Status — the live status board tracking the compound energy, shipping and food-security disruption (Hormuz, Red Sea, refining, diesel, LNG, fertiliser, food), every entry sourced and dated: https://eurooilwatch.com/global-disruption-status
 - Global supply routes — live chokepoint transit, port oil-flow + Europe Replacement Barrel Tracker, Oil Route Stress score (IMF PortWatch): https://eurooilwatch.com/supply
 - Strait of Hormuz crisis timeline — a sourced, filterable chronology of the 2026 Hormuz crisis (military/diplomatic/shipping/market events, outbreak to renewed escalation): https://eurooilwatch.com/hormuz-timeline
 - Doom Loop Engine — interactive oil-supply cascade tools (Fragility Monitor, Doom Loop Engine, Vulnerability Tiering): https://eurooilwatch.com/doom-loop

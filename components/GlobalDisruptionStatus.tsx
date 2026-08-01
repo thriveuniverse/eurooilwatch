@@ -186,3 +186,48 @@ export default function GlobalDisruptionStatus({
     </section>
   );
 }
+
+/**
+ * Compact one-line variant for the dashboard: a single sentence + link to the
+ * full board page. Severity counts derive from ROWS so they cannot go stale.
+ */
+export function GlobalDisruptionStatusCompact({
+  site,
+  lastUpdated = '2026-07-31',
+  href = '/global-disruption-status',
+}: {
+  site: 'euro' | 'uk' | 'americas';
+  lastUpdated?: string;
+  href?: string;
+}) {
+  const critical = ROWS.filter((r) => r.sev === 'critical').length;
+  const elevated = ROWS.length - critical;
+  const dateLabel = new Date(lastUpdated).toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  });
+  return (
+    <a
+      href={href}
+      aria-label={`Global Disruption Status — full board, updated ${dateLabel}`}
+      className="block rounded-lg border border-red-700/50 bg-red-950/30 px-4 py-3 hover:border-red-500 hover:bg-red-950/40 transition group"
+    >
+      <div className="flex items-center justify-between gap-3 flex-wrap">
+        <span className="text-xs font-mono font-bold tracking-widest text-white uppercase">
+          Global Disruption Status: <span className="text-red-400">SEVERE</span>
+        </span>
+        <span className="text-[10px] font-mono text-red-300/70 uppercase tracking-widest">
+          {dateLabel}
+        </span>
+      </div>
+      <p className="mt-1 text-xs text-gray-300 leading-relaxed">
+        Energy, shipping and food-security risks are converging &mdash; {critical} critical and{' '}
+        {elevated} elevated situations tracked, from the Strait of Hormuz to Europe&rsquo;s rivers.{' '}
+        <span className="text-red-300 group-hover:text-white font-medium whitespace-nowrap">
+          View the full board &rarr;
+        </span>
+      </p>
+    </a>
+  );
+}

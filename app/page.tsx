@@ -9,7 +9,7 @@ import CountryGrid from '@/components/CountryGrid';
 import AnalysisPanel from '@/components/AnalysisPanel';
 import StockChart from '@/components/StockChart';
 import EmailCTA from '@/components/EmailCTA';
-import GlobalDisruptionStatus from '@/components/GlobalDisruptionStatus';
+import { GlobalDisruptionStatusCompact } from '@/components/GlobalDisruptionStatus';
 import FreshnessGuard from '@/components/FreshnessGuard';
 import FuelPriceSearch, { type CityTuple } from '@/components/FuelPriceSearch';
 import type { Metadata } from 'next';
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatus site="euro" lastUpdated="2026-07-31" />
+      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-07-31" />
 
       {/* Cross-site analysis — Running Out of Safe Detours */}
       <a

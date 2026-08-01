@@ -70,13 +70,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <span className="font-bold text-lg tracking-tight text-white">
                   Euro<span className="text-oil-400">Oil</span>Watch
                 </span>
-                <span className="hidden sm:inline text-xs text-gray-500 ml-2">
+                <span className="hidden xl:inline text-xs text-gray-500 ml-2">
                   Fuel security intelligence for Europe
                 </span>
               </div>
             </a>
             <nav className="hidden sm:flex items-center gap-6 text-sm text-gray-400" aria-label="Main navigation">
               <a href="/" className="hover:text-white transition">Dashboard</a>
+              <a href="/global-disruption-status" className="hover:text-white transition">Disruption Status</a>
               <a href="/prices" className="hover:text-white transition">Prices</a>
               <a href="/supply" className="hover:text-white transition">Supply Routes</a>
               <a href="/hormuz-timeline" className="hover:text-white transition">Hormuz Timeline</a>
