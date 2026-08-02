@@ -111,6 +111,23 @@ export default async function DashboardPage() {
         </span>
       </a>
 
+      {/* Framework analysis — The Danube Falls. Half of Hungary's Electricity Goes With It. */}
+      <a
+        href="/analysis/danube-falls-hungary-electricity"
+        className="block rounded-lg border border-emerald-600/50 bg-emerald-950/20 px-4 py-3.5 hover:border-emerald-500 hover:bg-emerald-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-emerald-400 uppercase">
+          New &middot; The Framework, Illustrated
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          The Danube Falls. Half of Hungary&rsquo;s Electricity Goes With It.{' '}
+          <span className="text-emerald-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          Hungary is shutting down the entire Paks nuclear plant &mdash; nearly half its electricity, the first complete shutdown in 44 years &mdash; because the river that cools it is too low. Not war, not sanctions: a shared input failing across nuclear, coal, hydro, barges and grain at once. Europe&rsquo;s drought has crossed from making energy expensive to switching it off.
+        </span>
+      </a>
+
       {/* Analysis — Russia Has Oil. It Is Now Importing Petrol From Morocco. */}
       <a
         href="/analysis/russia-importing-petrol-from-morocco"
