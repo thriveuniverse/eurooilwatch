@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-08-01'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-08-02'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-01" />
+      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-02" />
 
       {/* Cross-site analysis — Running Out of Safe Detours */}
       <a
@@ -650,6 +650,15 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Sun 2 Aug: negotiating pause at Hormuz; Paks shuts; Kirkuk–Ceyhan extended */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Sun 2 Aug 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-gray-200">A negotiating pause, not a ceasefire.</strong> President Trump says he has cancelled or postponed the planned strikes on Iranian energy targets while Middle Eastern governments try to complete a deal covering Iran&rsquo;s nuclear programme and the &ldquo;immediate, complete and total&rdquo; reopening of Hormuz. Israel is said to have joined; <strong className="text-gray-200">Iran has not publicly accepted</strong> &mdash; and nothing verified shows normal commercial traffic resuming. The water stayed dangerous regardless: after Saturday&rsquo;s disabled tanker, the master of a second vessel reported <strong className="text-gray-200">an explosion close alongside ~21nm north-west of Khasab</strong> (no damage; attacker unidentified). Iranian drones reached Kuwait, damaging facilities whose nature is undisclosed. The biggest European development is on the Danube: <strong className="text-gray-200">Hungary is shutting the entire Paks nuclear plant &mdash; nearly half its electricity, the first complete shutdown in 44 years</strong> &mdash; for lack of cooling water, possibly for weeks, with demand curbs prepared and imports costed in the hundreds of millions. One durable positive: Turkey and Iraq extended the <strong className="text-gray-200">Kirkuk&ndash;Ceyhan pipeline deal</strong> by a year with reserved capacity up to 750,000 b/d against ~170&ndash;180,000 flowing &mdash; a Hormuz bypass secured, on conditions. OPEC+ has an in-principle September increase of ~188,000 b/d, then a Q4 pause &mdash; targets, not delivered barrels. Markets closed; Friday&rsquo;s $90.12 Brent stands.
+              </p>
+            </div>
             {/* Update — Sat 1 Aug: tanker disabled at Hormuz entrance; US-Israel strikes reportedly weighed */}
             <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">

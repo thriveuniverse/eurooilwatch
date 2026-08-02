@@ -288,7 +288,7 @@ function portwatchOverrideFor(
 }
 
 export default async function SupplyPage() {
-  const supplyNoteAsOf = '2026-07-27'; // single source: the dateline + the FreshnessGuard below
+  const supplyNoteAsOf = '2026-08-02'; // single source: the dateline + the FreshnessGuard below
   const [gdacsEvents, usgsQuakes, firmsResult] = await Promise.all([
     getGDACSEvents(),
     getUSGSQuakes(),
@@ -378,12 +378,22 @@ export default async function SupplyPage() {
       {/* Chokepoints overview map */}
       <ChokepointsMap />
 
+      {/* 2 August 2026 — negotiating pause; the water stays dangerous; Kirkuk–Ceyhan extended */}
+      <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
+        <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
+          {new Date(supplyNoteAsOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} — Negotiating pause at Hormuz; the water stays dangerous; Kirkuk–Ceyhan extended
+        </p>
+        <FreshnessGuard lastUpdated={supplyNoteAsOf} maxAgeDays={5} label="This note" className="mt-2" />
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          President Trump says the planned strikes on Iranian energy targets are <strong className="text-white">cancelled or postponed</strong> while Gulf governments try to complete a deal covering Iran&rsquo;s nuclear programme and the &ldquo;immediate, complete and total&rdquo; reopening of Hormuz; Israel is said to have joined, <strong className="text-white">Iran has not publicly accepted</strong>, and no verified reporting shows normal traffic resuming. The weekend produced <strong className="text-white">two tanker incidents</strong> regardless: a vessel disabled by an unknown projectile off Limah (engine room hit, &ldquo;not under command&rdquo;), and a reported explosion close alongside a second tanker ~21nm north-west of Khasab &mdash; both unattributed. Hormuz is permitting, or failing to prevent, <strong className="text-white">individual passages</strong>; Bab el-Mandeb improved to ~25 crossings but every count is a minimum with ships running dark; SUMED loadings have surged (Sidi Kerir 28.79M bbl for July, per Kpler via Reuters) even as a drone struck gas vessels at Damietta, and CPC has suspended loadings twice in a week. One durable positive: <strong className="text-white">Turkey and Iraq extended the Kirkuk&ndash;Ceyhan pipeline deal by a year</strong> &mdash; reserved capacity up to 750,000 b/d against ~170&ndash;180,000 flowing, a Mediterranean outlet for Iraqi crude that needs no strait transit, secured on conditions. A pause in the shooting is not a reopening of the sea.
+        </p>
+      </div>
+
       {/* 27 July 2026 — market de-escalation without physical normalisation */}
       <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
         <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
-          {new Date(supplyNoteAsOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} — The shooting has paused; the shipping crisis has not
+          27 July 2026 — The shooting has paused; the shipping crisis has not
         </p>
-        <FreshnessGuard lastUpdated={supplyNoteAsOf} maxAgeDays={5} label="This note" className="mt-2" />
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           Financial markets are pricing a pause; the physical system is not. Brent fell more than <strong className="text-white">6% on Monday to about $90.58</strong> a barrel (WTI ~$83.51) after the US and Iran refrained from striking each other for a <strong className="text-white">second consecutive day</strong>, with Oman and other intermediaries working to restore the interim ceasefire framework and negotiate Hormuz shipping arrangements &mdash; roughly $11 of war premium out since Brent reached about $102 on 23 July. But traffic through both chokepoints stayed severely depressed. <strong className="text-white">Hormuz</strong> ran in single digits over the weekend &mdash; about seven commodity vessels Friday, three Saturday (all dark) and seven Sunday (Kpler) &mdash; so the strait has <strong className="text-white">not meaningfully reopened</strong>. <strong className="text-white">Bab el-Mandeb</strong> fell to just <strong className="text-white">11 crossings on Sunday</strong> (seven of them oil tankers), the lowest in months, after the Houthi strikes on Jizan and Yanbu, though several large VLCCs carrying Saudi, Emirati and Russian crude still escaped south toward Asia. Physical crude cargoes reached two-month highs last week and roughly 10 mb/d of Middle Eastern barrels may still be displaced. The signal has changed; the supply system has barely changed &mdash; <strong className="text-white">market de-escalation without physical normalisation</strong>, with the US naval blockade still operating and the nuclear dispute unresolved.
         </p>
