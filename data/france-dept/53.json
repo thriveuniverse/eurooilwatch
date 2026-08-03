@@ -3,42 +3,42 @@
   "name": "Mayenne",
   "regionCode": "PDL",
   "regionName": "Pays de la Loire",
-  "asOf": "2026-08-03T08:39:31.875Z",
+  "asOf": "2026-08-03T15:20:55.898Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 53,
+  "stationCount": 54,
   "fuels": {
     "gazole": {
-      "count": 53,
-      "mean": 2.2064,
+      "count": 54,
+      "mean": 2.207,
       "median": 2.199,
       "min": 2.14,
       "max": 2.304
     },
     "sp95": {
       "count": 28,
-      "mean": 2.0704,
-      "median": 2.081,
+      "mean": 2.0703,
+      "median": 2.0795,
       "min": 1.99,
       "max": 2.119
     },
     "sp98": {
-      "count": 41,
-      "mean": 2.1033,
-      "median": 2.117,
+      "count": 42,
+      "mean": 2.1002,
+      "median": 2.1125,
       "min": 1.99,
       "max": 2.219
     },
     "e10": {
-      "count": 30,
-      "mean": 2.0236,
-      "median": 2.029,
-      "min": 1.979,
+      "count": 32,
+      "mean": 2.02,
+      "median": 1.998,
+      "min": 1.975,
       "max": 2.156
     },
     "e85": {
       "count": 13,
-      "mean": 0.8522,
+      "mean": 0.8517,
       "median": 0.839,
       "min": 0.815,
       "max": 0.909
@@ -61,9 +61,9 @@
       "lat": 4839606.95,
       "lng": -62468.13,
       "fuels": {
-        "gazole": 2.159,
-        "sp95": 2.093,
-        "sp98": 2.144
+        "gazole": 2.217,
+        "sp95": 2.061,
+        "sp98": 2.116
       }
     },
     {
@@ -248,7 +248,6 @@
       "lng": -96900,
       "fuels": {
         "gazole": 2.171,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -319,7 +318,9 @@
       "lat": 4815000,
       "lng": -40900,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -403,9 +404,9 @@
       "lat": 4841100,
       "lng": -80500,
       "fuels": {
-        "gazole": 2.159,
-        "sp95": 2.039,
-        "sp98": 2.099
+        "gazole": 2.179,
+        "sp95": 2.069,
+        "sp98": 2.109
       }
     },
     {
@@ -420,6 +421,20 @@
         "gazole": 2.14,
         "sp95": 2.03,
         "sp98": 2.075
+      }
+    },
+    {
+      "id": "53410003",
+      "cp": "53410",
+      "ville": "La Gravelle",
+      "adresse": "2 route Neuve",
+      "pop": "R",
+      "lat": 4807400,
+      "lng": -101600,
+      "fuels": {
+        "gazole": 2.189,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -461,7 +476,7 @@
       "fuels": {
         "gazole": 2.189,
         "sp98": 2.095,
-        "e10": 1.99
+        "e10": 1.994
       }
     },
     {
@@ -487,11 +502,11 @@
       "lat": 4807900,
       "lng": -79900,
       "fuels": {
-        "gazole": 2.219,
+        "gazole": 2.189,
         "sp95": 2.069,
         "sp98": 2.099,
-        "e10": 2.029,
-        "e85": 0.849
+        "e10": 1.975,
+        "e85": 0.842
       }
     },
     {
@@ -548,7 +563,6 @@
       "lng": -75300,
       "fuels": {
         "gazole": 2.25,
-        "e10": 1.99,
         "e85": 0.844
       }
     },
@@ -632,6 +646,7 @@
       "lng": -60549.9136,
       "fuels": {
         "gazole": 2.22,
+        "e10": 1.99,
         "e85": 0.909
       }
     },

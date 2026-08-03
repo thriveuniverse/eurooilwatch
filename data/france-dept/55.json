@@ -3,52 +3,52 @@
   "name": "Meuse",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-08-03T08:39:31.875Z",
+  "asOf": "2026-08-03T15:20:55.898Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 37,
+  "stationCount": 36,
   "fuels": {
     "gazole": {
-      "count": 36,
-      "mean": 2.2478,
-      "median": 2.249,
+      "count": 35,
+      "mean": 2.2477,
+      "median": 2.25,
       "min": 2.142,
       "max": 2.339
     },
     "sp95": {
       "count": 10,
-      "mean": 2.1249,
-      "median": 2.134,
+      "mean": 2.1159,
+      "median": 2.1135,
       "min": 1.99,
       "max": 2.229
     },
     "sp98": {
-      "count": 26,
-      "mean": 2.1499,
-      "median": 2.1675,
+      "count": 25,
+      "mean": 2.1463,
+      "median": 2.164,
       "min": 1.99,
       "max": 2.269
     },
     "e10": {
-      "count": 27,
-      "mean": 2.0578,
-      "median": 2.056,
+      "count": 28,
+      "mean": 2.0623,
+      "median": 2.054,
       "min": 1.97,
       "max": 2.239
     },
     "e85": {
       "count": 11,
-      "mean": 0.8425,
+      "mean": 0.8434,
       "median": 0.835,
       "min": 0.808,
       "max": 0.899
     },
     "gplc": {
       "count": 4,
-      "mean": 1.0795,
+      "mean": 1.0587,
       "median": 1.059,
       "min": 0.989,
-      "max": 1.211
+      "max": 1.128
     }
   },
   "stations": [
@@ -74,7 +74,7 @@
       "lat": 4875700,
       "lng": 519200,
       "fuels": {
-        "gazole": 2.218,
+        "gazole": 2.216,
         "sp98": 2.104,
         "e10": 2.017,
         "e85": 0.808
@@ -130,10 +130,10 @@
       "lat": 4890200,
       "lng": 551500,
       "fuels": {
-        "gazole": 2.249,
+        "gazole": 2.269,
         "sp98": 2.146,
-        "e10": 2.042,
-        "e85": 0.818
+        "e10": 2.049,
+        "e85": 0.828
       }
     },
     {
@@ -175,9 +175,9 @@
       "lat": 4876069,
       "lng": 560211,
       "fuels": {
-        "gazole": 2.211,
+        "gazole": 2.188,
         "sp98": 2.169,
-        "e10": 2.056
+        "e10": 2.239
       }
     },
     {
@@ -286,7 +286,7 @@
       "lat": 4912032.6,
       "lng": 550839.83,
       "fuels": {
-        "gazole": 2.294,
+        "gazole": 2.29,
         "sp98": 2.217,
         "e10": 2.138,
         "gplc": 1.128
@@ -382,8 +382,10 @@
       "lat": 4882500,
       "lng": 499300,
       "fuels": {
-        "gazole": 2.238,
-        "sp98": 2.136
+        "gazole": 2.209,
+        "sp95": 2.06,
+        "sp98": 2.109,
+        "e10": 1.999
       }
     },
     {
@@ -424,10 +426,10 @@
       "lat": 4911800,
       "lng": 550800,
       "fuels": {
-        "gazole": 2.336,
+        "gazole": 2.332,
         "sp98": 2.228,
         "e10": 2.152,
-        "gplc": 1.211
+        "gplc": 1.128
       }
     },
     {
@@ -457,20 +459,6 @@
         "sp95": 2.093,
         "e10": 2.033,
         "e85": 0.829
-      }
-    },
-    {
-      "id": "55270002",
-      "cp": "55270",
-      "ville": "Varennes-en-Argonne",
-      "adresse": "Porte de Cheppy",
-      "pop": "R",
-      "lat": 4922846.9477,
-      "lng": 504075.4201,
-      "fuels": {
-        "gazole": 2.215,
-        "sp95": 2.15,
-        "sp98": 2.21
       }
     },
     {
@@ -522,9 +510,9 @@
       "lat": 4914200,
       "lng": 540800,
       "fuels": {
-        "gazole": 2.292,
+        "gazole": 2.298,
         "sp98": 2.168,
-        "e10": 2.089,
+        "e10": 2.076,
         "e85": 0.818,
         "gplc": 0.99
       }
@@ -539,8 +527,8 @@
       "lng": 538000,
       "fuels": {
         "gazole": 2.297,
-        "sp98": 2.167,
-        "e10": 2.075,
+        "sp98": 2.163,
+        "e10": 2.083,
         "gplc": 0.989
       }
     },
