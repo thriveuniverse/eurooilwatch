@@ -3,14 +3,14 @@
   "name": "Lot",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-08-03T15:20:55.898Z",
+  "asOf": "2026-08-03T19:09:59.677Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 61,
   "fuels": {
     "gazole": {
       "count": 61,
-      "mean": 2.2269,
+      "mean": 2.2264,
       "median": 2.22,
       "min": 2.149,
       "max": 2.524
@@ -23,16 +23,16 @@
       "max": 2.119
     },
     "sp98": {
-      "count": 46,
-      "mean": 2.1104,
+      "count": 48,
+      "mean": 2.1054,
       "median": 2.089,
       "min": 1.99,
       "max": 2.394
     },
     "e10": {
-      "count": 46,
-      "mean": 2.0297,
-      "median": 2.007,
+      "count": 48,
+      "mean": 2.0281,
+      "median": 1.999,
       "min": 1.969,
       "max": 2.324
     },
@@ -90,7 +90,8 @@
       "lng": 184200,
       "fuels": {
         "gazole": 2.17,
-        "sp95": 1.99
+        "sp95": 1.99,
+        "sp98": 1.99
       }
     },
     {
@@ -304,7 +305,8 @@
       "lat": 4502100,
       "lng": 152000,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.225,
+        "e10": 1.99
       }
     },
     {
@@ -524,6 +526,8 @@
       "lng": 192100,
       "fuels": {
         "gazole": 2.25,
+        "sp98": 1.99,
+        "e10": 1.99,
         "e85": 0.854
       }
     },

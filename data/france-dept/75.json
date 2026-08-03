@@ -3,14 +3,14 @@
   "name": "Paris",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-08-03T15:20:55.898Z",
+  "asOf": "2026-08-03T19:09:59.677Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 39,
+  "stationCount": 40,
   "fuels": {
     "gazole": {
-      "count": 35,
-      "mean": 2.2904,
+      "count": 36,
+      "mean": 2.289,
       "median": 2.25,
       "min": 2.215,
       "max": 2.499
@@ -23,15 +23,15 @@
       "max": 2.329
     },
     "sp98": {
-      "count": 28,
-      "mean": 2.1263,
-      "median": 2.1405,
+      "count": 29,
+      "mean": 2.1216,
+      "median": 2.129,
       "min": 1.99,
       "max": 2.399
     },
     "e10": {
-      "count": 32,
-      "mean": 2.0536,
+      "count": 34,
+      "mean": 2.0498,
       "median": 1.99,
       "min": 1.99,
       "max": 2.269
@@ -151,6 +151,20 @@
       }
     },
     {
+      "id": "75014012",
+      "cp": "75014",
+      "ville": "Paris",
+      "adresse": "154 Rue d'Alésia",
+      "pop": "R",
+      "lat": 4883200,
+      "lng": 231600,
+      "fuels": {
+        "gazole": 2.25,
+        "sp98": 1.99,
+        "e10": 1.99
+      }
+    },
+    {
       "id": "75008006",
       "cp": "75008",
       "ville": "Paris",
@@ -159,7 +173,7 @@
       "lat": 4887500,
       "lng": 231000,
       "fuels": {
-        "gazole": 2.35,
+        "gazole": 2.34,
         "sp98": 2.26,
         "e10": 2.19
       }
@@ -188,6 +202,7 @@
       "lng": 235900,
       "fuels": {
         "gazole": 2.25,
+        "e10": 1.99,
         "gplc": 0.959
       }
     },

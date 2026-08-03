@@ -3,22 +3,22 @@
   "name": "Sarthe",
   "regionCode": "PDL",
   "regionName": "Pays de la Loire",
-  "asOf": "2026-08-03T15:20:55.898Z",
+  "asOf": "2026-08-03T19:09:59.677Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 95,
   "fuels": {
     "gazole": {
-      "count": 94,
-      "mean": 2.23,
-      "median": 2.208,
+      "count": 93,
+      "mean": 2.2307,
+      "median": 2.209,
       "min": 2.145,
       "max": 2.586
     },
     "sp95": {
-      "count": 32,
-      "mean": 2.0801,
-      "median": 2.0695,
+      "count": 31,
+      "mean": 2.0836,
+      "median": 2.07,
       "min": 1.99,
       "max": 2.242
     },
@@ -30,9 +30,9 @@
       "max": 2.549
     },
     "e10": {
-      "count": 65,
-      "mean": 2.0468,
-      "median": 2.029,
+      "count": 67,
+      "mean": 2.0451,
+      "median": 2.026,
       "min": 1.986,
       "max": 2.399
     },
@@ -164,6 +164,7 @@
       "lat": 4783000,
       "lng": 75000,
       "fuels": {
+        "gazole": 2.19,
         "sp95": 1.99
       }
     },
@@ -637,7 +638,7 @@
       "lng": 22100,
       "fuels": {
         "gazole": 2.195,
-        "sp95": 1.99,
+        "e10": 1.99,
         "gplc": 0.929
       }
     },
@@ -737,7 +738,6 @@
       "lat": 4802300,
       "lng": 18300,
       "fuels": {
-        "gazole": 2.193,
         "gplc": 0.916
       }
     },
@@ -864,7 +864,8 @@
       "lat": 4801700,
       "lng": 14200,
       "fuels": {
-        "gazole": 2.196
+        "gazole": 2.196,
+        "e10": 1.99
       }
     },
     {
@@ -876,7 +877,6 @@
       "lat": 4799267.17607,
       "lng": -15416.67335,
       "fuels": {
-        "gazole": 2.15,
         "sp95": 2.07,
         "sp98": 2.13
       }
@@ -1129,7 +1129,7 @@
       "lat": 4791800,
       "lng": 74600,
       "fuels": {
-        "gazole": 2.228,
+        "gazole": 2.215,
         "sp95": 1.99
       }
     },
@@ -1289,7 +1289,7 @@
       "lng": 29600,
       "fuels": {
         "gazole": 2.189,
-        "sp95": 2.099,
+        "sp95": 2.119,
         "sp98": 2.196
       }
     },

@@ -3,21 +3,21 @@
   "name": "Manche",
   "regionCode": "NOR",
   "regionName": "Normandie",
-  "asOf": "2026-08-03T15:20:55.898Z",
+  "asOf": "2026-08-03T19:09:59.677Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 119,
   "fuels": {
     "gazole": {
       "count": 117,
-      "mean": 2.213,
-      "median": 2.208,
+      "mean": 2.2129,
+      "median": 2.205,
       "min": 2.123,
       "max": 2.584
     },
     "sp95": {
-      "count": 45,
-      "mean": 2.0712,
+      "count": 46,
+      "mean": 2.0694,
       "median": 2.072,
       "min": 1.989,
       "max": 2.15
@@ -30,15 +30,15 @@
       "max": 2.546
     },
     "e10": {
-      "count": 73,
+      "count": 74,
       "mean": 2.0317,
-      "median": 2.025,
+      "median": 2.027,
       "min": 1.979,
       "max": 2.396
     },
     "e85": {
       "count": 37,
-      "mean": 0.8354,
+      "mean": 0.8357,
       "median": 0.828,
       "min": 0.784,
       "max": 0.999
@@ -482,9 +482,10 @@
       "lat": 4963700,
       "lng": -159600,
       "fuels": {
-        "gazole": 2.177,
+        "gazole": 2.185,
         "sp98": 2.106,
-        "e85": 0.819
+        "e10": 2.035,
+        "e85": 0.828
       }
     },
     {
@@ -620,8 +621,7 @@
       "lat": 4905700,
       "lng": -143100,
       "fuels": {
-        "gazole": 2.25,
-        "e10": 1.99
+        "gazole": 2.25
       }
     },
     {
@@ -1185,7 +1185,9 @@
       "lat": 4855400,
       "lng": -150100,
       "fuels": {
-        "gazole": 2.214
+        "gazole": 2.203,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -1396,7 +1398,6 @@
       "lng": -111600,
       "fuels": {
         "gazole": 2.231,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -1576,7 +1577,8 @@
       "lat": 4857300,
       "lng": -145800,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "sp95": 1.99
       }
     },
     {

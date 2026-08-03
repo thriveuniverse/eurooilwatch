@@ -3,14 +3,14 @@
   "name": "Vosges",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-08-03T15:20:55.898Z",
+  "asOf": "2026-08-03T19:09:59.677Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 82,
+  "stationCount": 81,
   "fuels": {
     "gazole": {
-      "count": 81,
-      "mean": 2.2811,
+      "count": 79,
+      "mean": 2.2819,
       "median": 2.279,
       "min": 2.122,
       "max": 2.449
@@ -23,16 +23,16 @@
       "max": 2.189
     },
     "sp98": {
-      "count": 57,
-      "mean": 2.1607,
-      "median": 2.178,
+      "count": 58,
+      "mean": 2.1578,
+      "median": 2.1735,
       "min": 1.99,
       "max": 2.299
     },
     "e10": {
-      "count": 56,
-      "mean": 2.0711,
-      "median": 2.08,
+      "count": 55,
+      "mean": 2.0713,
+      "median": 2.083,
       "min": 1.99,
       "max": 2.199
     },
@@ -61,7 +61,9 @@
       "lat": 4818800,
       "lng": 695400,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -202,7 +204,6 @@
       "lng": 589400,
       "fuels": {
         "gazole": 2.24,
-        "e10": 1.99,
         "e85": 0.849,
         "gplc": 1.019
       }
@@ -447,18 +448,6 @@
         "gazole": 2.299,
         "sp95": 2.129,
         "sp98": 2.169
-      }
-    },
-    {
-      "id": "88250001",
-      "cp": "88250",
-      "ville": "La Bresse",
-      "adresse": "GRAND RUE",
-      "pop": "R",
-      "lat": 4799900,
-      "lng": 687000,
-      "fuels": {
-        "gazole": 2.25
       }
     },
     {
@@ -970,9 +959,7 @@
       "lat": 4785607.74,
       "lng": 682048.37,
       "fuels": {
-        "gazole": 2.25,
-        "sp98": 2.159,
-        "e10": 2.059
+        "sp98": 2.159
       }
     },
     {
