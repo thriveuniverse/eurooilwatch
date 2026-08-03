@@ -77,4 +77,12 @@ It is running out of ways that are safe, short and cheap — and those were the 
 
 ---
 
+## Update — 3 August 2026
+
+The Northern Sea Route entry above has since scaled dramatically. Vessels carrying roughly **8 million barrels of crude** were transiting the route or staged to enter it on 3 August — about **60% of last season's entire ~13.1-million-barrel total, only weeks into this year's window** — with more than a dozen tankers involved, the largest group staging in the Kara Sea and three nuclear icebreakers deployed in support (gCaptain, MagicPort data). The pattern this article describes is compounding: the one corridor whose risks do not correlate with the Gulf's is being loaded as fast as the ice allows, before the season closes it in the autumn.
+
+Which underlines the asymmetry worth restating: the escape route being used at scale is Russia's. The West's displaced barrels still have no equivalent.
+
+---
+
 *EuroOilWatch / UKOilWatch / AmericasOilWatch track fuel reserves, prices and supply-route risk across Europe, Britain and the Americas. This piece is analysis, not a price forecast; confirmed facts are stated as confirmed and unverified reports are flagged as such.*
