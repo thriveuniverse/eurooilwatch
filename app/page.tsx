@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-08-02'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-08-03'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-02" />
+      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-03" />
 
       {/* Cross-site analysis — Running Out of Safe Detours */}
       <a
@@ -667,6 +667,15 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Mon 3 Aug: oil falls on talks that Iran says are not happening */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Mon 3 Aug 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-gray-200">Oil is falling on talks that Iran says are not happening.</strong> Brent dropped about $4.65 to <strong className="text-gray-200">$83.28</strong> and WTI roughly $5.20 to <strong className="text-gray-200">$79.47</strong> on Monday morning after President Trump said negotiations with Iran would take place that day &mdash; but <strong className="text-gray-200">Iran&rsquo;s Foreign Ministry says no US&ndash;Iran negotiations are under way</strong>. Tehran confirms only discussions with Oman over temporary safe passage through Hormuz, and insists the strait cannot return to normal while US military action continues. The fall is expectations, not restored exports: Hormuz remains thin (two laden VLCCs out late last week), two Saudi tankers crossed Bab el-Mandeb as the week opened, and neither route is at reliable pre-war capacity. OPEC+ formally approved its ~188,000 b/d September increase &mdash; completing the 1.65 mb/d voluntary-cut rollback, with ~2 mb/d of older cuts running to end-2026 &mdash; largely theoretical while producers sit below quota for want of safe export routes. And the infrastructure wars did not pause for the diplomacy: Ukraine says its weekend wave targeted the Saratov refinery, Engels airbase and a Kaluga oil depot (no confirmed refinery shutdown), and at least eight deaths were reported. <strong className="text-gray-200">A market de-escalation, not yet a physical one</strong> &mdash; and it could reverse quickly if Monday produces no concrete framework or measurable increase in tanker traffic.
+              </p>
+            </div>
             {/* Update — Sun 2 Aug: negotiating pause at Hormuz; Paks shuts; Kirkuk–Ceyhan extended */}
             <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
