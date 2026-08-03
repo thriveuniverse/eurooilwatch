@@ -111,6 +111,23 @@ export default async function DashboardPage() {
         </span>
       </a>
 
+      {/* Analysis — As Hormuz Falters, Iraq's Pipeline to the Mediterranean Matters Again */}
+      <a
+        href="/analysis/iraq-pipeline-mediterranean-matters-again"
+        className="block rounded-lg border border-amber-600/50 bg-amber-950/20 px-4 py-3.5 hover:border-amber-500 hover:bg-amber-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-amber-400 uppercase">
+          New &middot; Supply-Route Analysis
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          As Hormuz Falters, Iraq&rsquo;s Pipeline to the Mediterranean Matters Again{' '}
+          <span className="text-amber-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          Turkey and Iraq have extended the Kirkuk&ndash;Ceyhan operating deal for a year, reserving capacity of up to 750,000 b/d against ~170&ndash;180,000 flowing &mdash; the first commitment of the crisis to expand use of a corridor that bypasses the war&rsquo;s maritime bottlenecks. Its risks are political and commercial, not maritime &mdash; and in a crisis of correlated chokepoints, a route whose risks are different is the scarce asset.
+        </span>
+      </a>
+
       {/* Framework analysis — The Danube Falls. Half of Hungary's Electricity Goes With It. */}
       <a
         href="/analysis/danube-falls-hungary-electricity"
