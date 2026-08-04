@@ -3,35 +3,35 @@
   "name": "Oise",
   "regionCode": "HDF",
   "regionName": "Hauts-de-France",
-  "asOf": "2026-08-04T14:42:49.813Z",
+  "asOf": "2026-08-04T19:11:13.075Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 114,
   "fuels": {
     "gazole": {
       "count": 111,
-      "mean": 2.2071,
+      "mean": 2.2069,
       "median": 2.199,
       "min": 2.104,
       "max": 2.299
     },
     "sp95": {
-      "count": 35,
-      "mean": 2.0568,
+      "count": 34,
+      "mean": 2.0588,
       "median": 2.064,
       "min": 1.99,
       "max": 2.109
     },
     "sp98": {
-      "count": 86,
-      "mean": 2.0935,
-      "median": 2.114,
+      "count": 84,
+      "mean": 2.096,
+      "median": 2.1145,
       "min": 1.99,
       "max": 2.209
     },
     "e10": {
-      "count": 85,
-      "mean": 2.0038,
+      "count": 83,
+      "mean": 2.0042,
       "median": 1.996,
       "min": 1.824,
       "max": 2.099
@@ -89,7 +89,8 @@
       "lat": 4921043,
       "lng": 215118.7,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "e10": 1.99
       }
     },
     {
@@ -602,9 +603,7 @@
       "lat": 4938626,
       "lng": 278480,
       "fuels": {
-        "gazole": 2.25,
-        "sp98": 1.99,
-        "e10": 1.99
+        "gazole": 2.25
       }
     },
     {
@@ -839,7 +838,7 @@
       "lat": 4965500,
       "lng": 305000,
       "fuels": {
-        "gazole": 2.25,
+        "gazole": 2.224,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -884,8 +883,6 @@
       "lng": 273900,
       "fuels": {
         "gazole": 2.187,
-        "sp95": 1.99,
-        "e10": 1.99,
         "e85": 0.829
       }
     },
@@ -1421,8 +1418,7 @@
       "lat": 4920476.22946,
       "lng": 246187.66548,
       "fuels": {
-        "gazole": 2.208,
-        "e10": 1.99
+        "gazole": 2.208
       }
     },
     {
@@ -1561,7 +1557,6 @@
       "lng": 210000,
       "fuels": {
         "gazole": 2.244,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },

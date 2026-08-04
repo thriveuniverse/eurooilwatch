@@ -3,35 +3,35 @@
   "name": "Gard",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-08-04T14:42:49.813Z",
+  "asOf": "2026-08-04T19:11:13.075Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 132,
   "fuels": {
     "gazole": {
-      "count": 130,
-      "mean": 2.2554,
+      "count": 131,
+      "mean": 2.2559,
       "median": 2.249,
       "min": 2.18,
       "max": 2.524
     },
     "sp95": {
-      "count": 38,
-      "mean": 2.0703,
+      "count": 39,
+      "mean": 2.0686,
       "median": 2.069,
       "min": 1.99,
       "max": 2.25
     },
     "sp98": {
-      "count": 101,
-      "mean": 2.1064,
+      "count": 100,
+      "mean": 2.1079,
       "median": 2.099,
       "min": 1.99,
       "max": 2.394
     },
     "e10": {
-      "count": 102,
-      "mean": 2.0182,
+      "count": 99,
+      "mean": 2.0194,
       "median": 1.999,
       "min": 1.951,
       "max": 2.324
@@ -237,6 +237,8 @@
       "lng": 410700,
       "fuels": {
         "gazole": 2.219,
+        "sp95": 2.019,
+        "sp98": 2.039,
         "e10": 1.979
       }
     },
@@ -339,6 +341,18 @@
       }
     },
     {
+      "id": "30200003",
+      "cp": "30200",
+      "ville": "Bagnols-sur-Cèze",
+      "adresse": "22 Avenue F Mitterrand",
+      "pop": "R",
+      "lat": 4417200,
+      "lng": 462000,
+      "fuels": {
+        "gazole": 2.25
+      }
+    },
+    {
       "id": "30330001",
       "cp": "30200",
       "ville": "Bagnols-sur-Cèze",
@@ -391,7 +405,6 @@
       "lng": 463450.02259,
       "fuels": {
         "gazole": 2.24,
-        "e10": 1.979,
         "e85": 0.834
       }
     },
@@ -627,8 +640,8 @@
       "lat": 4421900,
       "lng": 448400,
       "fuels": {
-        "gazole": 2.214,
-        "sp95": 2.069
+        "gazole": 2.275,
+        "sp95": 2.055
       }
     },
     {
@@ -1059,7 +1072,7 @@
       "lat": 4381522.77013,
       "lng": 436934.88212,
       "fuels": {
-        "gazole": 2.225,
+        "gazole": 2.232,
         "sp95": 2.045,
         "e10": 1.985
       }
@@ -1131,8 +1144,6 @@
       "lng": 432900,
       "fuels": {
         "gazole": 2.231,
-        "sp98": 1.999,
-        "e10": 1.983,
         "gplc": 0.999
       }
     },
@@ -1150,19 +1161,6 @@
         "e10": 1.99,
         "e85": 0.844,
         "gplc": 0.989
-      }
-    },
-    {
-      "id": "30900018",
-      "cp": "30900",
-      "ville": "Nîmes",
-      "adresse": "35 RUE RUDOLPHE DIESEL",
-      "pop": "R",
-      "lat": 4381200,
-      "lng": 433900,
-      "fuels": {
-        "sp98": 1.99,
-        "e10": 1.976
       }
     },
     {
@@ -1274,8 +1272,8 @@
       "lat": 4383700,
       "lng": 439500,
       "fuels": {
-        "gazole": 2.225,
-        "sp98": 2.049,
+        "gazole": 2.232,
+        "sp98": 2.045,
         "e10": 1.985,
         "e85": 0.808,
         "gplc": 1.036
@@ -1451,7 +1449,6 @@
       "lng": 457000,
       "fuels": {
         "gazole": 2.25,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -1800,6 +1797,7 @@
       "lng": 441900,
       "fuels": {
         "gazole": 2.217,
+        "sp98": 1.99,
         "e10": 1.952
       }
     },

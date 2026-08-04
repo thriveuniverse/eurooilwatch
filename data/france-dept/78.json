@@ -3,15 +3,15 @@
   "name": "Yvelines",
   "regionCode": "IDF",
   "regionName": "Île-de-France",
-  "asOf": "2026-08-04T14:42:49.813Z",
+  "asOf": "2026-08-04T19:11:13.075Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 139,
   "fuels": {
     "gazole": {
       "count": 139,
-      "mean": 2.2276,
-      "median": 2.229,
+      "mean": 2.2274,
+      "median": 2.226,
       "min": 2.149,
       "max": 2.384
     },
@@ -23,16 +23,16 @@
       "max": 2.15
     },
     "sp98": {
-      "count": 103,
-      "mean": 2.097,
-      "median": 2.111,
+      "count": 104,
+      "mean": 2.096,
+      "median": 2.1105,
       "min": 1.99,
       "max": 2.375
     },
     "e10": {
-      "count": 121,
-      "mean": 2.0145,
-      "median": 1.994,
+      "count": 124,
+      "mean": 2.0139,
+      "median": 1.9935,
       "min": 1.975,
       "max": 2.225
     },
@@ -435,7 +435,9 @@
       "lat": 4900600,
       "lng": 211300,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -1657,7 +1659,8 @@
       "lat": 4879400,
       "lng": 207000,
       "fuels": {
-        "gazole": 2.194
+        "gazole": 2.194,
+        "e10": 1.99
       }
     },
     {
@@ -1945,6 +1948,7 @@
       "lng": 215000,
       "fuels": {
         "gazole": 2.25,
+        "e10": 1.99,
         "e85": 0.879
       }
     },
@@ -2001,7 +2005,7 @@
       "lat": 4879100,
       "lng": 211400,
       "fuels": {
-        "gazole": 2.229,
+        "gazole": 2.199,
         "sp98": 2.139,
         "e10": 2.009
       }

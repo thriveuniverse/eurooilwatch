@@ -3,14 +3,14 @@
   "name": "Meuse",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-08-04T14:42:49.813Z",
+  "asOf": "2026-08-04T19:11:13.075Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 36,
   "fuels": {
     "gazole": {
       "count": 35,
-      "mean": 2.2491,
+      "mean": 2.2485,
       "median": 2.249,
       "min": 2.142,
       "max": 2.339
@@ -23,16 +23,16 @@
       "max": 2.229
     },
     "sp98": {
-      "count": 26,
-      "mean": 2.1404,
-      "median": 2.1655,
+      "count": 25,
+      "mean": 2.1461,
+      "median": 2.164,
       "min": 1.988,
       "max": 2.269
     },
     "e10": {
-      "count": 27,
-      "mean": 2.0642,
-      "median": 2.059,
+      "count": 28,
+      "mean": 2.0613,
+      "median": 2.054,
       "min": 1.97,
       "max": 2.239
     },
@@ -61,7 +61,8 @@
       "lat": 4876700,
       "lng": 517300,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "e10": 1.99
       }
     },
     {
@@ -88,9 +89,9 @@
       "lat": 4916800,
       "lng": 538700,
       "fuels": {
-        "gazole": 2.306,
-        "sp98": 2.172,
-        "e10": 2.092
+        "gazole": 2.283,
+        "sp98": 2.164,
+        "e10": 2.084
       }
     },
     {
@@ -369,7 +370,6 @@
       "lng": 572600,
       "fuels": {
         "gazole": 2.246,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },

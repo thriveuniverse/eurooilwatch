@@ -3,50 +3,50 @@
   "name": "Ille-et-Vilaine",
   "regionCode": "BRE",
   "regionName": "Bretagne",
-  "asOf": "2026-08-04T14:42:49.813Z",
+  "asOf": "2026-08-04T19:11:13.075Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 146,
+  "stationCount": 145,
   "fuels": {
     "gazole": {
       "count": 145,
-      "mean": 2.2049,
+      "mean": 2.2053,
       "median": 2.199,
       "min": 2.139,
       "max": 2.387
     },
     "sp95": {
-      "count": 46,
-      "mean": 2.0601,
-      "median": 2.059,
+      "count": 44,
+      "mean": 2.0593,
+      "median": 2.056,
       "min": 1.99,
       "max": 2.21
     },
     "sp98": {
-      "count": 103,
-      "mean": 2.0927,
+      "count": 99,
+      "mean": 2.0928,
       "median": 2.099,
       "min": 1.99,
       "max": 2.379
     },
     "e10": {
-      "count": 107,
-      "mean": 2.0103,
+      "count": 106,
+      "mean": 2.01,
       "median": 1.999,
       "min": 1.951,
       "max": 2.229
     },
     "e85": {
-      "count": 56,
-      "mean": 0.8356,
+      "count": 55,
+      "mean": 0.8355,
       "median": 0.829,
       "min": 0.717,
       "max": 0.998
     },
     "gplc": {
-      "count": 19,
-      "mean": 0.9673,
-      "median": 0.919,
+      "count": 18,
+      "mean": 0.97,
+      "median": 0.939,
       "min": 0.885,
       "max": 1.108
     }
@@ -122,6 +122,19 @@
       "lng": -157100,
       "fuels": {
         "gazole": 2.149
+      }
+    },
+    {
+      "id": "35830002",
+      "cp": "35830",
+      "ville": "Betton",
+      "adresse": "64 RUE DE RENNES",
+      "pop": "R",
+      "lat": 4817227.3,
+      "lng": -164120.1,
+      "fuels": {
+        "gazole": 2.25,
+        "sp98": 1.99
       }
     },
     {
@@ -237,20 +250,6 @@
       }
     },
     {
-      "id": "35510006",
-      "cp": "35510",
-      "ville": "Cesson-Sévigné",
-      "adresse": "50 rue de belle épine et boulevard des métairies",
-      "pop": "R",
-      "lat": 4812200,
-      "lng": -160000,
-      "fuels": {
-        "gazole": 2.15,
-        "sp95": 2.077,
-        "sp98": 2.137
-      }
-    },
-    {
       "id": "35510001",
       "cp": "35510",
       "ville": "Cesson-Sévigné",
@@ -276,7 +275,7 @@
       "lat": 4808000,
       "lng": -160100,
       "fuels": {
-        "gazole": 2.232,
+        "gazole": 2.19,
         "e10": 2.006,
         "e85": 0.838
       }
@@ -407,7 +406,6 @@
       "lng": -205800,
       "fuels": {
         "gazole": 2.168,
-        "e10": 1.98,
         "e85": 0.824
       }
     },
@@ -535,11 +533,7 @@
       "lat": 4834735,
       "lng": -119382,
       "fuels": {
-        "gazole": 2.226,
-        "sp95": 2.078,
-        "sp98": 2.119,
-        "e10": 2.039,
-        "e85": 0.899
+        "gazole": 2.226
       }
     },
     {
@@ -608,7 +602,6 @@
       "lng": -173300,
       "fuels": {
         "gazole": 2.199,
-        "sp98": 2.12,
         "e10": 2.029
       }
     },
@@ -637,7 +630,6 @@
       "lng": -185700,
       "fuels": {
         "gazole": 2.18,
-        "sp98": 1.99,
         "e10": 1.986
       }
     },
@@ -1411,7 +1403,9 @@
       "lng": -172600,
       "fuels": {
         "gazole": 2.25,
-        "e85": 0.839
+        "sp98": 1.99,
+        "e10": 1.99,
+        "e85": 0.899
       }
     },
     {
@@ -1525,7 +1519,6 @@
       "lng": -167600,
       "fuels": {
         "gazole": 2.181,
-        "sp98": 1.99,
         "e10": 1.989
       }
     },
@@ -1828,7 +1821,8 @@
       "lat": 4862900,
       "lng": -200500,
       "fuels": {
-        "gazole": 2.2
+        "gazole": 2.2,
+        "e10": 1.99
       }
     },
     {
@@ -1859,18 +1853,6 @@
         "sp98": 2.095,
         "e10": 1.999,
         "e85": 0.829
-      }
-    },
-    {
-      "id": "35400011",
-      "cp": "35400",
-      "ville": "Saint-Malo",
-      "adresse": "RN 137 - COTE OUEST - DIRECTION",
-      "pop": "R",
-      "lat": 4861500,
-      "lng": -198400,
-      "fuels": {
-        "gplc": 0.919
       }
     },
     {
@@ -1932,7 +1914,6 @@
       "fuels": {
         "gazole": 2.219,
         "sp98": 2.099,
-        "e10": 1.999,
         "e85": 0.819
       }
     },
@@ -2014,7 +1995,6 @@
       "lng": -161100,
       "fuels": {
         "gazole": 2.185,
-        "sp98": 1.99,
         "e10": 1.987,
         "gplc": 0.909
       }
