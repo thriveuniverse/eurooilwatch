@@ -6,6 +6,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import matter from 'gray-matter';
 
 export const revalidate = 3600;
 
@@ -35,6 +36,36 @@ function loadJson<T>(filename: string): T | null {
   const p = path.join(process.cwd(), 'data', filename);
   if (!fs.existsSync(p)) return null;
   try { return JSON.parse(fs.readFileSync(p, 'utf-8')) as T; } catch { return null; }
+}
+
+
+// Auto-generated article index: reads every analysis article's frontmatter at
+// request time (revalidated hourly), so this list can never go stale when a
+// new piece publishes. Curated "Key pages" above remain hand-written.
+function articlesIndex(): string {
+  const dir = path.join(process.cwd(), 'content', 'analysis');
+  if (!fs.existsSync(dir)) return '(no articles found)';
+  const items = fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith('.md'))
+    .map((f) => {
+      try {
+        const { data } = matter(fs.readFileSync(path.join(dir, f), 'utf-8'));
+        return {
+          slug: f.replace(/\.md$/, ''),
+          title: String(data.title ?? f),
+          date: String(data.date ?? ''),
+          excerpt: String(data.excerpt ?? '').replace(/\s+/g, ' ').trim(),
+        };
+      } catch {
+        return null;
+      }
+    })
+    .filter((a): a is { slug: string; title: string; date: string; excerpt: string } => a !== null)
+    .sort((a, b) => b.date.localeCompare(a.date));
+  return items
+    .map((a) => `- ${a.date} · ${a.title} — ${a.excerpt} https://eurooilwatch.com/analysis/${a.slug}`)
+    .join('\n');
 }
 
 export async function GET() {
@@ -131,6 +162,10 @@ Free, read-only JSON. CORS-enabled, no key required.
 - The Danube Falls. Half of Hungary's Electricity Goes With It. — Hungary shuts the entire Paks nuclear plant (nearly half its electricity, first complete shutdown in 44 years) for lack of Danube cooling water, with weeks of outage possible, demand curbs prepared and a party estimate of $315–630m in import costs. The compound-cascade at its sharpest: one shared input (river water) simultaneously hitting nuclear and coal cooling, hydro output, Rhine fuel barges and Danube grain cargo — 'the water was infrastructure all along': https://eurooilwatch.com/analysis/danube-falls-hungary-electricity
 - As Hormuz Falters, Iraq's Pipeline to the Mediterranean Matters Again — Turkey and Iraq extend the Kirkuk–Ceyhan operating deal (BOTAS/SOMO/NOC, one year, backdated 27 Jul) reserving up to 750k b/d on three conditions vs ~170–180k flowing (1.5M technical); TPAO takes 15% of the Kirkuk redevelopment operating company; Basra–Haditha–Kirkuk link said to be under way. The route resumed Sept 2025 after a 2.5-year arbitration deadlock — Hormuz did not reopen it, the war repriced it: in a crisis of correlated chokepoints, the scarce asset is a route whose risks are different: https://eurooilwatch.com/analysis/iraq-pipeline-mediterranean-matters-again
 - Methodology:         https://eurooilwatch.com/methodology
+
+## All analysis articles (auto-generated from article frontmatter; newest first)
+
+${articlesIndex()}
 
 ## Data sources
 
