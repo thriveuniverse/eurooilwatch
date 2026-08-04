@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-08-03'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-08-04'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-03" />
+      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-04" />
 
       {/* Analysis — France Is Spending €10 Billion to Escape Diesel */}
       <a
@@ -701,6 +701,15 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Tue 4 Aug: the war runs down its missiles; the rivers run down their water */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Tue 4 Aug 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-gray-200">The war is running down its missiles, and the rivers are running down their water.</strong> Reuters reports, citing three people familiar with internal data, that the US Army has used <strong className="text-gray-200">&lsquo;virtually all&rsquo; of its long-range ATACMS and Precision Strike Missiles</strong> in five months of war with Iran &mdash; with roughly <strong className="text-gray-200">65% of Patriot interceptors</strong> and at least <strong className="text-gray-200">38% of THAAD interceptors</strong> expended (CSIS estimates said to match internal figures) and a little under half the global Tomahawk supply used (one source; unverified by Reuters). The White House and Pentagon dispute any readiness gap, and CENTCOM has reloaded from stocks elsewhere. This is the material constraint beneath the diplomacy: it pushes Washington toward the negotiated pause the market is already pricing &mdash; but it also thins the interceptor shield that Gulf oil infrastructure has sheltered behind. Meanwhile the <strong className="text-gray-200">Rhine hit its lowest level since records began in 1880</strong> &mdash; 21cm at Kaub, forecast 17cm by Saturday, with the seasonal bottom still ahead. Diesel barge freight from Rotterdam to Karlsruhe is the costliest since Bloomberg&rsquo;s data began in 2009; Shell is moving Rhineland deliveries to rail and truck; and Romania&rsquo;s military <strong className="text-gray-200">detonated a rock formation in the Danube</strong> to push water toward the Cernavod&#259; nuclear plant. Two depletions, one pattern: the buffers &mdash; munitions stockpiles and river depth alike &mdash; are being spent faster than they are being replaced.
+              </p>
+            </div>
             {/* Update — Mon 3 Aug: oil falls on talks that Iran says are not happening */}
             <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
