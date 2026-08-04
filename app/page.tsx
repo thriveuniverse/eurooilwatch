@@ -94,6 +94,23 @@ export default async function DashboardPage() {
       {/* Disruption alert */}
       <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-03" />
 
+      {/* Analysis — France Is Spending €10 Billion to Escape Diesel */}
+      <a
+        href="/analysis/france-canal-seine-nord-diesel-bet"
+        className="block rounded-lg border border-emerald-600/50 bg-emerald-950/20 px-4 py-3.5 hover:border-emerald-500 hover:bg-emerald-950/30 transition group"
+      >
+        <span className="text-[10px] font-mono font-semibold tracking-widest text-emerald-400 uppercase">
+          New &middot; Infrastructure Analysis
+        </span>
+        <span className="mt-0.5 block text-base font-bold text-white leading-snug">
+          France Is Spending &euro;10 Billion to Escape Diesel. The Route May Not Be Ready When the Canal Opens.{' '}
+          <span className="text-emerald-300 group-hover:text-white">&rarr;</span>
+        </span>
+        <span className="mt-1 block text-xs text-gray-400 leading-relaxed">
+          The Canal Seine-Nord Europe could remove a million lorry journeys a year &mdash; a permanent demand-side reserve of diesel that no longer has to be burned. But the canal is due in 2032, its large-barge connection to the Seine may not arrive until 2035, and the bill has risen from &euro;5.1bn to as much as &euro;10.5bn with finance. The real gamble is synchronisation.
+        </span>
+      </a>
+
       {/* Cross-site analysis — Running Out of Safe Detours */}
       <a
         href="/analysis/running-out-of-safe-detours"
