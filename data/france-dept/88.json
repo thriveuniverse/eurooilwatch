@@ -3,14 +3,14 @@
   "name": "Vosges",
   "regionCode": "GES",
   "regionName": "Grand Est",
-  "asOf": "2026-08-05T14:36:59.365Z",
+  "asOf": "2026-08-05T19:05:33.669Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 81,
+  "stationCount": 80,
   "fuels": {
     "gazole": {
-      "count": 81,
-      "mean": 2.2714,
+      "count": 79,
+      "mean": 2.2721,
       "median": 2.275,
       "min": 2.122,
       "max": 2.449
@@ -23,16 +23,16 @@
       "max": 2.189
     },
     "sp98": {
-      "count": 54,
-      "mean": 2.1566,
+      "count": 55,
+      "mean": 2.1536,
       "median": 2.169,
       "min": 1.99,
       "max": 2.299
     },
     "e10": {
-      "count": 55,
-      "mean": 2.063,
-      "median": 2.061,
+      "count": 56,
+      "mean": 2.0617,
+      "median": 2.06,
       "min": 1.99,
       "max": 2.199
     },
@@ -203,7 +203,6 @@
       "lng": 589400,
       "fuels": {
         "gazole": 2.181,
-        "e10": 1.99,
         "e85": 0.849,
         "gplc": 1.019
       }
@@ -359,7 +358,6 @@
       "lat": 4807500,
       "lng": 688400,
       "fuels": {
-        "gazole": 2.236,
         "e85": 0.845,
         "gplc": 0.977
       }
@@ -629,6 +627,7 @@
       "lng": 570700,
       "fuels": {
         "gazole": 2.25,
+        "e10": 1.99,
         "e85": 0.899
       }
     },
@@ -1061,7 +1060,9 @@
       "lat": 4824200,
       "lng": 695400,
       "fuels": {
-        "gazole": 2.25
+        "gazole": 2.25,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -1103,18 +1104,6 @@
         "gazole": 2.299,
         "sp98": 2.169,
         "e10": 2.099
-      }
-    },
-    {
-      "id": "88150004",
-      "cp": "88150",
-      "ville": "Thaon-les-Vosges",
-      "adresse": "Rue d'Alsace",
-      "pop": "R",
-      "lat": 4824700,
-      "lng": 642500,
-      "fuels": {
-        "gazole": 2.25
       }
     },
     {

@@ -3,42 +3,42 @@
   "name": "Dordogne",
   "regionCode": "NAQ",
   "regionName": "Nouvelle-Aquitaine",
-  "asOf": "2026-08-05T14:36:59.365Z",
+  "asOf": "2026-08-05T19:05:33.669Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 97,
+  "stationCount": 96,
   "fuels": {
     "gazole": {
-      "count": 97,
-      "mean": 2.1914,
-      "median": 2.195,
+      "count": 95,
+      "mean": 2.1895,
+      "median": 2.189,
       "min": 2.11,
       "max": 2.287
     },
     "sp95": {
       "count": 40,
-      "mean": 2.0577,
-      "median": 2.0585,
+      "mean": 2.0502,
+      "median": 2.0565,
       "min": 1.96,
       "max": 2.149
     },
     "sp98": {
-      "count": 73,
-      "mean": 2.0947,
-      "median": 2.1,
+      "count": 75,
+      "mean": 2.0858,
+      "median": 2.096,
       "min": 1.989,
       "max": 2.209
     },
     "e10": {
-      "count": 61,
-      "mean": 1.9968,
+      "count": 64,
+      "mean": 1.9955,
       "median": 1.99,
       "min": 1.912,
       "max": 2.119
     },
     "e85": {
       "count": 27,
-      "mean": 0.8389,
+      "mean": 0.8392,
       "median": 0.828,
       "min": 0.809,
       "max": 1.009
@@ -147,6 +147,7 @@
       "lng": 49700,
       "fuels": {
         "gazole": 2.24,
+        "sp98": 1.99,
         "e10": 1.99,
         "gplc": 1.01
       }
@@ -219,7 +220,6 @@
       "lat": 4485000,
       "lng": 49300,
       "fuels": {
-        "gazole": 2.144,
         "sp98": 1.99,
         "e10": 1.986,
         "e85": 0.819,
@@ -393,9 +393,9 @@
       "lat": 4467551.21122,
       "lng": 40553.53558,
       "fuels": {
-        "gazole": 2.239,
-        "sp95": 2.129,
-        "sp98": 2.179
+        "gazole": 2.149,
+        "sp95": 1.969,
+        "sp98": 2.019
       }
     },
     {
@@ -422,8 +422,7 @@
       "fuels": {
         "gazole": 2.199,
         "sp98": 2.135,
-        "e10": 2.049,
-        "e85": 0.819
+        "e10": 2.049
       }
     },
     {
@@ -592,9 +591,9 @@
       "lat": 4491400,
       "lng": 92500,
       "fuels": {
-        "gazole": 2.199,
-        "sp98": 2.129,
-        "e10": 1.999
+        "gazole": 2.139,
+        "sp98": 2.019,
+        "e10": 1.929
       }
     },
     {
@@ -820,7 +819,7 @@
       "lng": 69400,
       "fuels": {
         "gazole": 2.132,
-        "sp95": 2.028,
+        "sp95": 2.032,
         "e10": 1.971,
         "e85": 0.814
       }
@@ -1056,20 +1055,6 @@
       }
     },
     {
-      "id": "24330005",
-      "cp": "24330",
-      "ville": "Saint-Pierre-de-Chignac",
-      "adresse": "les guichoux",
-      "pop": "R",
-      "lat": 4512300,
-      "lng": 86000,
-      "fuels": {
-        "gazole": 2.229,
-        "sp95": 2.139,
-        "sp98": 2.179
-      }
-    },
-    {
       "id": "24590002",
       "cp": "24590",
       "ville": "Salignac-Eyvigues",
@@ -1106,7 +1091,9 @@
       "lat": 4488800,
       "lng": 121700,
       "fuels": {
-        "gazole": 2.209
+        "gazole": 2.185,
+        "e10": 1.999,
+        "e85": 0.828
       }
     },
     {
@@ -1118,7 +1105,9 @@
       "lat": 4490000,
       "lng": 121200,
       "fuels": {
-        "gazole": 2.203
+        "gazole": 2.181,
+        "sp98": 1.99,
+        "e10": 1.99
       }
     },
     {
@@ -1244,6 +1233,9 @@
       "lng": 132100,
       "fuels": {
         "gazole": 2.134,
+        "sp95": 1.99,
+        "sp98": 1.99,
+        "e10": 1.99,
         "gplc": 0.999
       }
     },
@@ -1381,7 +1373,7 @@
       "lng": 78500,
       "fuels": {
         "gazole": 2.132,
-        "sp95": 2.028,
+        "sp95": 2.032,
         "sp98": 1.989,
         "e10": 1.971,
         "e85": 0.814

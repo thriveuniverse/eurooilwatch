@@ -3,14 +3,14 @@
   "name": "Vendée",
   "regionCode": "PDL",
   "regionName": "Pays de la Loire",
-  "asOf": "2026-08-05T14:36:59.365Z",
+  "asOf": "2026-08-05T19:05:33.669Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
   "stationCount": 118,
   "fuels": {
     "gazole": {
       "count": 116,
-      "mean": 2.2,
+      "mean": 2.1998,
       "median": 2.184,
       "min": 2.084,
       "max": 2.732
@@ -30,9 +30,9 @@
       "max": 2.269
     },
     "e10": {
-      "count": 83,
+      "count": 84,
       "mean": 1.9931,
-      "median": 1.982,
+      "median": 1.9835,
       "min": 1.93,
       "max": 2.194
     },
@@ -788,7 +788,8 @@
       "lat": 4665300,
       "lng": -144400,
       "fuels": {
-        "gazole": 2.213
+        "gazole": 2.213,
+        "e10": 1.99
       }
     },
     {
@@ -1111,7 +1112,7 @@
       "lat": 4650361.11796,
       "lng": -172936.89916,
       "fuels": {
-        "gazole": 2.216,
+        "gazole": 2.19,
         "sp98": 1.99,
         "e10": 1.99
       }
@@ -1350,7 +1351,6 @@
       "lng": -143100,
       "fuels": {
         "gazole": 2.124,
-        "sp98": 1.99,
         "e10": 1.963,
         "e85": 0.821
       }
@@ -1511,6 +1511,7 @@
       "lng": -193000,
       "fuels": {
         "gazole": 2.224,
+        "sp98": 1.99,
         "e10": 1.99,
         "gplc": 1.01
       }
