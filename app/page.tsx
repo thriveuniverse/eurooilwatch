@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-08-04'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-08-05'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-04" />
+      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-05" />
 
       {/* Cross-site analysis — The War Is Spending Its Buffers */}
       <a
@@ -718,6 +718,15 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Wed 5 Aug: the blockade is visibly working — which is why a deal is being drafted */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Wed 5 Aug 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-gray-200">The blockade is visibly working &mdash; which is exactly why a deal is being drafted.</strong> Some <strong className="text-gray-200">50 laden Iranian tankers</strong> are idling along Iran&rsquo;s coast &mdash; up from 36 when the US blockade was renewed on 14 July &mdash; and advocacy group UANI says it has tracked <strong className="text-gray-200">no laden Iranian crude tanker successfully exiting the Gulf of Oman</strong> since then (transponder-off departures possible). Iranian crude in floating storage is up 14% in a month to <strong className="text-gray-200">135 million barrels</strong> (Vortexa), Iranian Light discounts have narrowed to ~$4 under Brent as sellers hold cargoes, and the Shandong refiners who buy most of it are running at ~48% of capacity. Set that against Monday&rsquo;s reporting that the US has spent &lsquo;virtually all&rsquo; of its long-range ATACMS/PrSM missiles, and the shape of the week is clear: <strong className="text-gray-200">both sides are visibly depleting</strong> &mdash; Iran&rsquo;s export revenue and floating-storage pool, America&rsquo;s deep-strike and interceptor stockpiles &mdash; and that mutual depletion is what has put a drafted interim proposal on the table. Qatar says a text to free up Hormuz shipping exists; Bloomberg reports both US and Iranian officials sounding optimistic. Oil has priced much of it already: WTI below $75, Brent below $79, down more than 11&ndash;12% on the week. A drafted proposal is not a signed one &mdash; and the physical strait remains blockaded, thin and abnormal until it is.
+              </p>
+            </div>
             {/* Update — Tue 4 Aug: the war runs down its missiles; the rivers run down their water */}
             <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
