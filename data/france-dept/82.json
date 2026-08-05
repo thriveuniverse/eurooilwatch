@@ -3,17 +3,17 @@
   "name": "Tarn-et-Garonne",
   "regionCode": "OCC",
   "regionName": "Occitanie",
-  "asOf": "2026-08-04T19:11:13.075Z",
+  "asOf": "2026-08-05T07:47:59.808Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 64,
+  "stationCount": 63,
   "fuels": {
     "gazole": {
-      "count": 63,
-      "mean": 2.249,
-      "median": 2.245,
-      "min": 2.163,
-      "max": 2.425
+      "count": 62,
+      "mean": 2.2482,
+      "median": 2.247,
+      "min": 2.189,
+      "max": 2.416
     },
     "sp95": {
       "count": 20,
@@ -24,31 +24,31 @@
     },
     "sp98": {
       "count": 41,
-      "mean": 2.1249,
+      "mean": 2.1237,
       "median": 2.129,
       "min": 1.99,
-      "max": 2.28
+      "max": 2.261
     },
     "e10": {
       "count": 46,
-      "mean": 2.0375,
+      "mean": 2.035,
       "median": 2.019,
       "min": 1.966,
-      "max": 2.18
+      "max": 2.161
     },
     "e85": {
       "count": 26,
-      "mean": 0.8575,
+      "mean": 0.8572,
       "median": 0.8285,
-      "min": 0.808,
+      "min": 0.799,
       "max": 1.159
     },
     "gplc": {
       "count": 7,
-      "mean": 1.0216,
+      "mean": 1.023,
       "median": 0.988,
       "min": 0.969,
-      "max": 1.084
+      "max": 1.094
     }
   },
   "stations": [
@@ -117,9 +117,9 @@
       "lat": 4396800,
       "lng": 133900,
       "fuels": {
-        "gazole": 2.425,
-        "sp98": 2.28,
-        "e10": 2.18
+        "gazole": 2.416,
+        "sp98": 2.261,
+        "e10": 2.161
       }
     },
     {
@@ -207,8 +207,8 @@
       "lat": 4415481.96019,
       "lng": 153046.75093,
       "fuels": {
-        "gazole": 2.299,
-        "sp98": 2.139,
+        "gazole": 2.289,
+        "sp98": 2.129,
         "e10": 2.009,
         "e85": 0.829
       }
@@ -348,8 +348,7 @@
       "lng": 136900,
       "fuels": {
         "gazole": 2.245,
-        "sp98": 2.149,
-        "e10": 2.069
+        "sp98": 2.149
       }
     },
     {
@@ -375,10 +374,10 @@
       "lat": 4391500,
       "lng": 130800,
       "fuels": {
-        "gazole": 2.229,
-        "sp98": 2.183,
-        "e10": 2.072,
-        "e85": 0.808
+        "gazole": 2.209,
+        "sp98": 2.163,
+        "e10": 2.052,
+        "e85": 0.799
       }
     },
     {
@@ -519,8 +518,9 @@
       "fuels": {
         "gazole": 2.25,
         "sp95": 1.99,
+        "sp98": 1.99,
         "e85": 0.998,
-        "gplc": 1.084
+        "gplc": 1.094
       }
     },
     {
@@ -564,7 +564,6 @@
       "lng": 136600,
       "fuels": {
         "gazole": 2.25,
-        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -577,7 +576,7 @@
       "lat": 4402600,
       "lng": 133200,
       "fuels": {
-        "gazole": 2.235,
+        "gazole": 2.189,
         "e10": 1.99,
         "e85": 0.818
       }
@@ -591,7 +590,8 @@
       "lat": 4400400,
       "lng": 134100,
       "fuels": {
-        "gazole": 2.235,
+        "gazole": 2.189,
+        "e10": 1.99,
         "e85": 0.814,
         "gplc": 0.969
       }
@@ -917,18 +917,6 @@
       "fuels": {
         "gazole": 2.21,
         "e10": 2.09
-      }
-    },
-    {
-      "id": "82220001",
-      "cp": "82220",
-      "ville": "Vazerac",
-      "adresse": "LE VILLAGE",
-      "pop": "R",
-      "lat": 4419000,
-      "lng": 128500,
-      "fuels": {
-        "gazole": 2.163
       }
     },
     {
