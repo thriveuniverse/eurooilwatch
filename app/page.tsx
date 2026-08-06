@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export const revalidate = 1800;
 
 export default async function DashboardPage() {
-  const whereWeStandAsOf = '2026-08-05'; // single source of truth: the Updated label + the FreshnessGuard below
+  const whereWeStandAsOf = '2026-08-06'; // single source of truth: the Updated label + the FreshnessGuard below
   const { stocks, prices, brent, analysis } = getDashboardData();
   const centcom = getCentcom();
   const euHistory = getEUHistory();
@@ -92,7 +92,7 @@ export default async function DashboardPage() {
       <h1 className="sr-only">EuroOilWatch — EU Fuel Reserve & Price Intelligence</h1>
 
       {/* Disruption alert */}
-      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-05" />
+      <GlobalDisruptionStatusCompact site="euro" lastUpdated="2026-08-06" />
 
       {/* Cross-site analysis — The War Is Spending Its Buffers */}
       <a
@@ -718,6 +718,15 @@ export default async function DashboardPage() {
           </div>
           <FreshnessGuard lastUpdated={whereWeStandAsOf} maxAgeDays={4} label="This summary" className="mx-5 mt-3" />
           <div className="px-5 py-4 space-y-2">
+            {/* Update — Thu 6 Aug: the escape corridor reaches 81 degrees north; the rains will miss the rivers */}
+            <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
+              <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
+                Update &mdash; Thu 6 Aug 2026
+              </p>
+              <p className="mt-1.5 text-xs text-gray-300 leading-relaxed">
+                <strong className="text-gray-200">The escape corridor has reached 81 degrees north.</strong> Nearly twenty sanctioned Russian tankers are being routed north of the Severnaya Zemlya archipelago &mdash; within about 500 nautical miles of the North Pole, on one of the most northerly commercial passages ever attempted &mdash; because ice has blocked the traditional Vilkitsky Strait gateway (gCaptain). Only four vessels on earth are operating farther north, all icebreakers or research ships. Roughly the whole of last season&rsquo;s 13.1-million-barrel eastbound Arctic crude volume has already departed in this season&rsquo;s opening weeks &mdash; and the risks are keeping pace: one tanker has already reversed course on heavy ice, and three nuclear icebreakers are escorting the traffic. When the safest remaining detour runs within sight of the Pole, the detour ladder is close to fully extended. Meanwhile Europe&rsquo;s rivers will get little help: this week&rsquo;s rains will be sporadic and largely miss the drought regions (&lsquo;still not enough to make much impact on the low river flows&rsquo; &mdash; MetDesk), Vienna hit <strong className="text-gray-200">40.8C, a national record for Austria</strong>, and ECMWF models point to a possible fifth major heatwave building by early next week. The Rhine sits at its 1880 record low, Paks remains down, and the restrictions on barges and riverside power generation extend into the deepest weeks of the dry season.
+              </p>
+            </div>
             {/* Update — Wed 5 Aug: the blockade is visibly working — which is why a deal is being drafted */}
             <div className="rounded border border-red-700/40 bg-red-950/20 px-4 py-3">
               <p className="text-[10px] font-mono font-semibold tracking-widest text-red-400/80 uppercase">
