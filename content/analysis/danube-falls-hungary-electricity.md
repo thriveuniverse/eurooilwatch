@@ -1,7 +1,7 @@
 ---
 title: "The Danube Falls. Half of Hungary's Electricity Goes With It."
 date: "2026-08-02"
-excerpt: "Hungary is shutting down its entire Paks nuclear plant — the first complete shutdown in 44 years — not because of war, sanctions or a fault, but because the river that cools it is too low. Europe's drought has crossed a line: from making energy expensive to switching it off."
+excerpt: "Hungary came within hours of the first complete shutdown of its Paks nuclear plant in 44 years — not because of war, sanctions or a fault, but because the river that cools it is too low. A temporary rise in the Danube kept one turbine online; nearly 90% of the plant's capacity is unavailable. Europe's drought has crossed a line: from making energy expensive to switching it off."
 author: "Jon Kelly"
 ---
 
@@ -11,7 +11,7 @@ author: "Jon Kelly"
 
 ## Not war. Not sanctions. Water.
 
-Hungary is shutting down the entire **Paks nuclear power plant** — the source of nearly half the country's electricity — because record-low water levels on the Danube have left it without sufficient cooling water to operate safely. It is the plant's **first complete shutdown in 44 years**, and Prime Minister Peter Magyar has warned it could remain offline **for weeks**. The power-down is under way on Sunday: the penultimate generating unit was scheduled to close at 01:30 local time, leaving 240 MW on the grid, with the remaining output to be removed later in the day.
+Hungary came within hours of shutting down the entire **Paks nuclear power plant** — the source of nearly half the country's electricity — for the first time in 44 years, after record-low water levels on the Danube left it without sufficient cooling water to operate safely. The power-down began on Sunday: the penultimate generating unit closed at 01:30 local time, leaving 240 MW on the grid, with the remaining output to be removed later in the day. Then a temporary rise in the river allowed the final generating turbine to remain online *(see the update of 6 August below)* — but nearly 90% of the plant's capacity is unavailable, and Prime Minister Peter Magyar has warned the constraint could last **for weeks**.
 
 Pause on what is *not* happening here. No strike has hit Paks. No sanction touches it. No technical fault at the nuclear plant has been reported — the reactors are being taken offline intact because the Danube can no longer provide sufficient cooling water for safe operation. Every engineered layer remains available; the failing input is the river — the one thing nobody lists on an infrastructure register.
 
@@ -61,13 +61,22 @@ Kpler analyst Alessandro Armenia's summary from Friday still frames the trajecto
 
 **Regional spot prices and the gas draw.** How much of the replacement is generated from the gas Europe is trying to store for winter.
 
-**How long "weeks" becomes.** Paks restarting in mid-August is a footnote. Paks still down in September, as the heating season approaches and the autumn refinery turnarounds begin, is a chapter.
+**How long "weeks" becomes.** Paks back to full output in mid-August is a footnote. Paks still at one-tenth capacity in September, as the heating season approaches and the autumn refinery turnarounds begin, is a chapter.
 
 ---
 
 Europe has spent this crisis discovering, one system at a time, that its security depended on buffers it had not counted: commercial inventories, spare refining capacity, alternative shipping routes, deferred maintenance. This week it found another one.
 
 The water was infrastructure all along. Nobody listed it, nobody priced it, and there is no negotiating table where it can be asked to come back.
+
+---
+
+## Update — 6 August 2026
+
+The complete shutdown announced for Sunday 2 August was narrowly avoided. After output fell to 240 MW, a modest rise in the Danube allowed the final generating turbine to keep operating safely — it was still running on Tuesday 4 August, leaving the plant at just over 10% of its normal 2,000 MW capacity. Reuters described Hungary as having "narrowly avoided" the first complete shutdown in 44 years.
+
+The substance of this analysis is unchanged: nearly 90% of the plant's capacity remains unavailable, the demand-reduction measures and electricity imports remain in place, and the binding constraint is still the river. But the historical record should read precisely: a full shutdown was announced — the first in 44 years — and narrowly avoided. The opening paragraphs have been amended accordingly; this note records the change.
+
 
 ---
 
