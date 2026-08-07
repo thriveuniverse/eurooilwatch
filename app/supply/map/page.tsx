@@ -30,13 +30,9 @@ const TankerMap = dynamic(() => import('@/components/TankerMap'), {
   ),
 });
 
-// EU-focused bounding boxes:
-// Core European waters: covers North Sea, English Channel, Baltic, Mediterranean, Black Sea
-// Red Sea / Suez approaches: covers the Suez Canal corridor and Bab-el-Mandeb
-const EU_BOUNDING_BOXES: [[number, number], [number, number]][] = [
-  [[35.0, -15.0], [66.0, 40.0]],  // European waters — Atlantic coast, North Sea, Med, Black Sea
-  [[10.0, 32.0],  [32.0, 62.0]],  // Red Sea, Bab-el-Mandeb, Gulf of Aden, Persian Gulf, Hormuz
-];
+// Bounding boxes now live server-side, with the producer that actually
+// subscribes to aisstream (scripts/collect-tanker-snapshot.ts). The browser no
+// longer opens its own AIS connection, so it has no need to know the geography.
 
 export default function TankerMapPage() {
   return (
@@ -46,16 +42,17 @@ export default function TankerMapPage() {
         <a href="/supply" className="text-xs text-oil-400 hover:underline">← Supply Routes</a>
         <div className="flex flex-wrap items-start justify-between gap-3 mt-2">
           <div>
-            <h1 className="text-xl font-bold text-white">Live Tanker Map — European Waters</h1>
+            <h1 className="text-xl font-bold text-white">Tanker Map — European Waters</h1>
             <p className="mt-1 text-sm text-gray-400 max-w-2xl">
-              Real-time AIS positions of oil tankers (vessel types 80–89) across European waters:
-              North Sea, English Channel, Mediterranean, Baltic Sea, and key chokepoint approaches
-              including Suez and the Red Sea. Click any vessel for details.
+              AIS positions of oil tankers (vessel types 80–89) captured on a fixed schedule
+              server-side, not streamed to your browser. Coverage is terrestrial AIS, so it is
+              strongest around the ARA approaches and North-West European waters. Click any
+              vessel for details; the header shows how old the current capture is.
             </p>
           </div>
           <div className="flex items-center gap-2 text-xs">
             <span className="px-2 py-1 rounded border border-oil-700 text-gray-400 bg-oil-900/40">
-              🔴 Live
+              Scheduled capture
             </span>
           </div>
         </div>
@@ -64,7 +61,6 @@ export default function TankerMapPage() {
       {/* Map — fills most of the viewport */}
       <div className="rounded-lg border border-oil-800 overflow-hidden" style={{ height: 'calc(100vh - 16rem)', minHeight: '500px', maxHeight: '780px' }}>
         <TankerMap
-          boundingBoxes={EU_BOUNDING_BOXES}
           defaultCenter={[51.0, 10.0]}
           defaultZoom={5}
         />

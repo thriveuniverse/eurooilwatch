@@ -31,6 +31,19 @@ const ZONES = {
 
 type ZoneKey = keyof typeof ZONES;
 
+// Latest known position for a confirmed tanker inside one of our zones.
+// Shared shape with the 5-minute scheduled producer so /api/ais-snapshot can
+// serve either source without the map caring which one it got.
+export interface Vessel {
+  mmsi: string;
+  name?: string;                 // from ShipStaticData, when seen in the window
+  lat: number;
+  lon: number;
+  cog?: number;                  // course over ground, degrees
+  sog?: number;                  // speed over ground, knots
+  zone: ZoneKey;
+}
+
 interface Snapshot {
   capturedAt: string;            // ISO timestamp
   captureWindowMs: number;       // how long we listened
@@ -41,6 +54,10 @@ interface Snapshot {
     uniqueTankers: number;       // unique MMSIs of vessel types 80-89 seen in window
     mmsis: string[];             // for downstream dedup / transit detection
   }>;
+  // Latest position per MMSI. Added Aug 2026: the collector previously read
+  // lat/lon to assign a zone and then threw them away, which meant the map had
+  // no coordinates to fall back to when the live feed was unavailable.
+  vessels?: Vessel[];
 }
 
 interface SnapshotsFile {
@@ -65,6 +82,7 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
   // Track last-known zone per MMSI and last-known type, then count once we know both.
   const positionZone = new Map<string, ZoneKey>();
   const knownType = new Map<string, number>();
+  const knownName = new Map<string, string>();
   // Count every frame received from the WebSocket — including non-AIS frames
   // like errors or keepalives. Used by main() to distinguish "auth/subscription
   // broken" (zero frames) from "data flowing but filter wrong" (frames but no tankers).
@@ -73,6 +91,10 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
   // {"error":"Api Key is not valid"}). We capture the first such notice — it is
   // the single most useful diagnostic when no AIS data arrives.
   let serverNotice = '';
+
+  // Latest position seen for each MMSI during the window. Kept for every vessel;
+  // filtered down to confirmed tankers in a zone when the snapshot is built.
+  const lastPosition = new Map<string, { lat: number; lon: number; cog?: number; sog?: number }>();
 
   function tryClassify(mmsi: string) {
     const zone = positionZone.get(mmsi);
@@ -85,9 +107,18 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
     const ws = new WebSocket('wss://stream.aisstream.io/v0/stream');
     const startedAt = Date.now();
 
-    const closeAndResolve = () => {
-      try { ws.close(); } catch { /* ignore */ }
-      const snapshot: Snapshot = {
+    // Single builder used by BOTH resolve paths (timeout and early close) so the
+    // two can never drift out of sync — they did before this was extracted.
+    const buildSnapshot = (): Snapshot => {
+      const vessels: Vessel[] = [];
+      for (const zoneKey of Object.keys(seenInZone) as ZoneKey[]) {
+        for (const mmsi of seenInZone[zoneKey]) {
+          const pos = lastPosition.get(mmsi);
+          if (!pos) continue;
+          vessels.push({ mmsi, name: knownName.get(mmsi), lat: pos.lat, lon: pos.lon, cog: pos.cog, sog: pos.sog, zone: zoneKey });
+        }
+      }
+      return {
         capturedAt: new Date().toISOString(),
         captureWindowMs: Date.now() - startedAt,
         messageCount,
@@ -97,8 +128,13 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
           ara:    { name: ZONES.ara.name,    uniqueTankers: seenInZone.ara.size,    mmsis: [...seenInZone.ara] },
           suez:   { name: ZONES.suez.name,   uniqueTankers: seenInZone.suez.size,   mmsis: [...seenInZone.suez] },
         },
+        vessels,
       };
-      resolve(snapshot);
+    };
+
+    const closeAndResolve = () => {
+      try { ws.close(); } catch { /* ignore */ }
+      resolve(buildSnapshot());
     };
 
     ws.addEventListener('open', () => {
@@ -142,9 +178,12 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
           const pr = msg.Message?.PositionReport;
           if (!pr) return;
           const lat = pr.Latitude, lon = pr.Longitude;
+          if (typeof lat !== 'number' || typeof lon !== 'number') return;
           for (const [key, z] of Object.entries(ZONES) as [ZoneKey, typeof ZONES[ZoneKey]][]) {
             if (inBox(lat, lon, z.box)) {
               positionZone.set(mmsi, key);
+              // Keep the latest fix so the snapshot carries plottable coordinates.
+              lastPosition.set(mmsi, { lat, lon, cog: pr.Cog, sog: pr.Sog });
               break;
             }
           }
@@ -153,6 +192,7 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
           const sd = msg.Message?.ShipStaticData;
           if (!sd) return;
           knownType.set(mmsi, sd.Type ?? 0);
+          if (typeof sd.Name === 'string' && sd.Name.trim()) knownName.set(mmsi, sd.Name.trim());
           tryClassify(mmsi);
         }
       } catch (e) {
@@ -169,18 +209,7 @@ async function captureSnapshot(apiKey: string): Promise<Snapshot> {
       // If we close before timeout, still resolve with whatever we got
       if (Date.now() - startedAt < CAPTURE_MS - 1000) {
         console.log('  socket closed early, returning partial snapshot');
-        const snapshot: Snapshot = {
-          capturedAt: new Date().toISOString(),
-          captureWindowMs: Date.now() - startedAt,
-          messageCount,
-          serverNotice: serverNotice || undefined,
-          zones: {
-            hormuz: { name: ZONES.hormuz.name, uniqueTankers: seenInZone.hormuz.size, mmsis: [...seenInZone.hormuz] },
-            ara:    { name: ZONES.ara.name,    uniqueTankers: seenInZone.ara.size,    mmsis: [...seenInZone.ara] },
-            suez:   { name: ZONES.suez.name,   uniqueTankers: seenInZone.suez.size,   mmsis: [...seenInZone.suez] },
-          },
-        };
-        resolve(snapshot);
+        resolve(buildSnapshot());
       }
     });
   });

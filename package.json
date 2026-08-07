@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "npx tsx scripts/check-supply-staleness.ts && npx tsx scripts/generate-changelog.ts",
-    "build": "next build",
+    "build": "npm run check:no-public-ais-key && next build",
     "start": "next start",
     "lint": "next lint",
     "fetch:stocks": "npx tsx scripts/fetch-eurostat-stocks.ts",
@@ -39,9 +39,12 @@
     "update": "npm run fetch:all && npm run analyze",
     "draft:newsletter": "npx tsx scripts/generate-newsletter.ts",
     "send:newsletter": "npx tsx scripts/send-newsletter.ts",
-    "setup:resend": "npx tsx scripts/setup-resend.ts"
+    "setup:resend": "npx tsx scripts/setup-resend.ts",
+    "check:no-public-ais-key": "node scripts/check-no-public-ais-key.mjs"
   },
   "dependencies": {
+    "@netlify/blobs": "^10.7.12",
+    "@netlify/functions": "^5.3.0",
     "@types/leaflet": "^1.9.21",
     "clsx": "^2.1.1",
     "csv-parse": "^6.2.1",
@@ -56,12 +59,14 @@
     "react-leaflet": "^4.2.1",
     "recharts": "^2.12.7",
     "rss-parser": "^3.13.0",
+    "ws": "^8.21.2",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/ws": "^8.18.1",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4",
