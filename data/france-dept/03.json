@@ -3,51 +3,51 @@
   "name": "Allier",
   "regionCode": "ARA",
   "regionName": "Auvergne-Rhône-Alpes",
-  "asOf": "2026-08-07T13:42:19.019Z",
+  "asOf": "2026-08-07T18:28:32.270Z",
   "source": "https://data.economie.gouv.fr/explore/dataset/prix-des-carburants-en-france-flux-instantane-v2/",
   "freshnessFilterDays": 14,
-  "stationCount": 77,
+  "stationCount": 75,
   "fuels": {
     "gazole": {
-      "count": 75,
-      "mean": 2.2123,
+      "count": 73,
+      "mean": 2.2088,
       "median": 2.219,
       "min": 2.079,
       "max": 2.466
     },
     "sp95": {
-      "count": 23,
-      "mean": 2.0862,
-      "median": 2.079,
+      "count": 22,
+      "mean": 2.0811,
+      "median": 2.074,
       "min": 2.029,
-      "max": 2.199
+      "max": 2.197
     },
     "sp98": {
       "count": 58,
-      "mean": 2.1009,
-      "median": 2.119,
+      "mean": 2.0979,
+      "median": 2.114,
       "min": 1.988,
-      "max": 2.229
+      "max": 2.227
     },
     "e10": {
-      "count": 51,
-      "mean": 1.9995,
-      "median": 1.999,
+      "count": 50,
+      "mean": 1.9999,
+      "median": 1.998,
       "min": 1.878,
       "max": 2.113
     },
     "e85": {
       "count": 17,
-      "mean": 0.8852,
+      "mean": 0.8848,
       "median": 0.834,
       "min": 0.828,
       "max": 1.164
     },
     "gplc": {
-      "count": 5,
-      "mean": 1.1262,
-      "median": 1.127,
-      "min": 1.069,
+      "count": 7,
+      "mean": 1.1036,
+      "median": 1.099,
+      "min": 0.995,
       "max": 1.168
     }
   },
@@ -154,7 +154,9 @@
       "lat": 4619200,
       "lng": 326500,
       "fuels": {
-        "gazole": 2.257
+        "gazole": 2.197,
+        "sp98": 2.199,
+        "e10": 2.098
       }
     },
     {
@@ -184,20 +186,6 @@
       }
     },
     {
-      "id": "3600004",
-      "cp": "03600",
-      "ville": "Commentry",
-      "adresse": "12 RUE JEAN JACQUES ROUSSEAU",
-      "pop": "R",
-      "lat": 4628900,
-      "lng": 274400,
-      "fuels": {
-        "gazole": 2.196,
-        "e10": 1.99,
-        "e85": 0.85
-      }
-    },
-    {
       "id": "3600001",
       "cp": "03600",
       "ville": "Commentry",
@@ -206,9 +194,9 @@
       "lat": 4629400,
       "lng": 274100,
       "fuels": {
-        "gazole": 2.199,
-        "sp98": 2.119,
-        "e10": 2.049
+        "gazole": 2.129,
+        "sp98": 2.069,
+        "e10": 1.989
       }
     },
     {
@@ -220,9 +208,9 @@
       "lat": 4629151,
       "lng": 273992,
       "fuels": {
-        "gazole": 2.199,
-        "sp98": 2.119,
-        "e10": 1.999,
+        "gazole": 2.129,
+        "sp98": 2.069,
+        "e10": 1.989,
         "e85": 0.829
       }
     },
@@ -306,6 +294,7 @@
       "lng": 261900,
       "fuels": {
         "gazole": 2.131,
+        "sp98": 1.99,
         "e10": 1.99
       }
     },
@@ -489,8 +478,7 @@
       "lat": 4609963.00266,
       "lng": 321174.61922,
       "fuels": {
-        "gazole": 2.208,
-        "e10": 1.99
+        "gazole": 2.208
       }
     },
     {
@@ -815,7 +803,9 @@
       "lng": 333500,
       "fuels": {
         "sp98": 1.99,
-        "e10": 1.99
+        "e10": 1.99,
+        "e85": 0.842,
+        "gplc": 1.099
       }
     },
     {
@@ -902,7 +892,6 @@
       "lng": 329404.326,
       "fuels": {
         "gazole": 2.1,
-        "sp98": 1.99,
         "e10": 1.945
       }
     },
@@ -1094,24 +1083,11 @@
       "lat": 4614300,
       "lng": 341500,
       "fuels": {
-        "gazole": 2.2,
-        "sp98": 2.093,
-        "e10": 1.97,
-        "e85": 0.859
-      }
-    },
-    {
-      "id": "3400003",
-      "cp": "03400",
-      "ville": "Yzeure",
-      "adresse": "28 Rue Bergeron-Vebret",
-      "pop": "R",
-      "lat": 4656300,
-      "lng": 335500,
-      "fuels": {
-        "gazole": 2.249,
-        "sp95": 2.199,
-        "sp98": 2.229
+        "gazole": 2.163,
+        "sp98": 2.048,
+        "e10": 1.947,
+        "e85": 0.859,
+        "gplc": 0.995
       }
     },
     {
