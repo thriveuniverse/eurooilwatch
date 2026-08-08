@@ -288,7 +288,7 @@ function portwatchOverrideFor(
 }
 
 export default async function SupplyPage() {
-  const supplyNoteAsOf = '2026-08-02'; // single source: the dateline + the FreshnessGuard below
+  const supplyNoteAsOf = '2026-08-08'; // single source: the dateline + the FreshnessGuard below
   const [gdacsEvents, usgsQuakes, firmsResult] = await Promise.all([
     getGDACSEvents(),
     getUSGSQuakes(),
@@ -378,12 +378,31 @@ export default async function SupplyPage() {
       {/* Chokepoints overview map */}
       <ChokepointsMap />
 
+      {/* 8 August 2026 — an Iran–Oman routing agreement, but the strait is still shut */}
+      <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
+        <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
+          {new Date(supplyNoteAsOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} — Iran and Oman agree a route; eight vessels crossed
+        </p>
+        <FreshnessGuard lastUpdated={supplyNoteAsOf} maxAgeDays={5} label="This note" className="mt-2" />
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          The negotiating pause below has produced something concrete. Iran says it has <strong className="text-white">reached agreement with Oman on a proposed shipping route</strong> through Hormuz, with a joint statement in final drafting (Foreign Ministry spokesman Esmail Baghaei, 5 August, via Bloomberg). The reported framework routes <strong className="text-white">inbound vessels near the Iranian side and outbound vessels down the Omani side</strong>, imposes no transit or service fees, and may include regional participation in demining; Deputy Foreign Minister Kazem Gharibabadi told IRNA it is a <strong className="text-white">temporary route intended to run two to four months</strong>. Fortune reports (7 August) that the emerging deal recognises Iran&rsquo;s control of the waterway. NPR called a partial reopening &ldquo;close&rdquo; on 6 August.
+        </p>
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          <strong className="text-white">An agreed route is not a reopened strait.</strong> Kpler counted <strong className="text-white">eight vessels crossing on 5 August</strong> — five tankers and three bulk carriers — against more than 100 a day before the conflict. That is the same order of magnitude as the single-digit weekends recorded on 27 July, so on the only metric that measures actual movement, nothing has yet changed. A return to normal tanker, LNG and container flows plausibly requires several consecutive weeks of incident-free transits, published routing protocols, credible mine clearance and a stable US&ndash;Iran political agreement — none of which is in place.
+        </p>
+        <p className="mt-2 text-xs text-gray-300 leading-relaxed">
+          Futures have traded the negotiation rather than the flow: Brent hit a three-week low of <strong className="text-white">$79.36 on 4 August</strong>, settled <strong className="text-white">$79.45 on 5 August</strong>, then recovered to <strong className="text-white">$83.55 on 7 August</strong> (+$1.06, +1.3%) as the terms of who would control the strait came back into doubt (Reuters). Friday&rsquo;s settlement is the latest available; 8 August is a Saturday.
+        </p>
+        <p className="mt-2 text-xs text-gray-400 leading-relaxed border-t border-red-800/30 pt-2">
+          <strong className="text-gray-300">Provenance, so nothing is rolled forward silently.</strong> Two figures in the 2 August note below have <strong className="text-white">not</strong> been refreshed and should not be read as current: the <strong className="text-white">~25 Bab el-Mandeb crossings</strong>, which was already a floor rather than a count because vessels run dark, and the Kirkuk&ndash;Ceyhan <strong className="text-white">~170&ndash;180,000 b/d</strong> flow against 750,000 b/d of reserved capacity. Both are dated 2 August and stand as of that date only. Note also that vessel counts and barrel-per-day flow estimates are different metrics measured by different methods — they are not interchangeable, and a recovery in one does not evidence a recovery in the other.
+        </p>
+      </div>
+
       {/* 2 August 2026 — negotiating pause; the water stays dangerous; Kirkuk–Ceyhan extended */}
       <div className="rounded-lg border border-red-800/50 bg-red-950/20 px-5 py-4">
         <p className="text-[10px] font-mono font-semibold tracking-widest text-red-300/90 uppercase">
-          {new Date(supplyNoteAsOf).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })} — Negotiating pause at Hormuz; the water stays dangerous; Kirkuk–Ceyhan extended
+          2 August 2026 — Negotiating pause at Hormuz; the water stays dangerous; Kirkuk–Ceyhan extended
         </p>
-        <FreshnessGuard lastUpdated={supplyNoteAsOf} maxAgeDays={5} label="This note" className="mt-2" />
         <p className="mt-2 text-xs text-gray-300 leading-relaxed">
           President Trump says the planned strikes on Iranian energy targets are <strong className="text-white">cancelled or postponed</strong> while Gulf governments try to complete a deal covering Iran&rsquo;s nuclear programme and the &ldquo;immediate, complete and total&rdquo; reopening of Hormuz; Israel is said to have joined, <strong className="text-white">Iran has not publicly accepted</strong>, and no verified reporting shows normal traffic resuming. The weekend produced <strong className="text-white">two tanker incidents</strong> regardless: a vessel disabled by an unknown projectile off Limah (engine room hit, &ldquo;not under command&rdquo;), and a reported explosion close alongside a second tanker ~21nm north-west of Khasab &mdash; both unattributed. Hormuz is permitting, or failing to prevent, <strong className="text-white">individual passages</strong>; Bab el-Mandeb improved to ~25 crossings but every count is a minimum with ships running dark; SUMED loadings have surged (Sidi Kerir 28.79M bbl for July, per Kpler via Reuters) even as a drone struck gas vessels at Damietta, and CPC has suspended loadings twice in a week. One durable positive: <strong className="text-white">Turkey and Iraq extended the Kirkuk&ndash;Ceyhan pipeline deal by a year</strong> &mdash; reserved capacity up to 750,000 b/d against ~170&ndash;180,000 flowing, a Mediterranean outlet for Iraqi crude that needs no strait transit, secured on conditions. A pause in the shooting is not a reopening of the sea.
         </p>
